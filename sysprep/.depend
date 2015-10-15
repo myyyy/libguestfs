@@ -1,0 +1,81 @@
+./main.cmo: /home/franklin/temp/libguestfs/mllib/uRI.cmi sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./main.cmx: /home/franklin/temp/libguestfs/mllib/uRI.cmx sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation.cmi: ../ocaml/guestfs.cmi
+./sysprep_operation.cmo: ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./sysprep_operation.cmi
+./sysprep_operation.cmx: ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./sysprep_operation.cmi
+./sysprep_operation_abrt_data.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_abrt_data.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_bash_history.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_bash_history.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_blkid_tab.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_blkid_tab.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_ca_certificates.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_ca_certificates.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_crash_data.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_crash_data.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_cron_spool.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_cron_spool.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_customize.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/customize/customize_run.cmi /home/franklin/temp/libguestfs/customize/customize_cmdline.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_customize.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/customize/customize_run.cmx /home/franklin/temp/libguestfs/customize/customize_cmdline.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_dhcp_client_state.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_dhcp_client_state.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_dhcp_server_state.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_dhcp_server_state.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_dovecot_data.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_dovecot_data.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_firewall_rules.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_firewall_rules.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_flag_reconfiguration.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_flag_reconfiguration.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_fs_uuids.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_fs_uuids.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_kerberos_data.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_kerberos_data.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_logfiles.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_logfiles.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_lvm_uuids.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_lvm_uuids.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_machine_id.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_machine_id.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_mail_spool.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_mail_spool.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_net_hostname.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_net_hostname.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_net_hwaddr.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_net_hwaddr.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_pacct_log.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_pacct_log.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_package_manager_cache.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_package_manager_cache.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_pam_data.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_pam_data.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_puppet_data_log.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_puppet_data_log.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_rh_subscription_manager.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_rh_subscription_manager.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_rhn_systemid.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_rhn_systemid.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_rpm_db.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_rpm_db.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_samba_db_log.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_samba_db_log.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_script.cmo: sysprep_operation.cmi /home/franklin/temp/libguestfs/mllib/mkdtemp.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_script.cmx: sysprep_operation.cmx /home/franklin/temp/libguestfs/mllib/mkdtemp.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_smolt_uuid.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_smolt_uuid.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_ssh_hostkeys.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_ssh_hostkeys.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_ssh_userdir.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_ssh_userdir.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_sssd_db_log.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_sssd_db_log.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_tmp_files.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_tmp_files.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_udev_persistent_net.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_udev_persistent_net.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_user_account.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_user_account.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_utmp.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_utmp.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./sysprep_operation_yum_uuid.cmo: sysprep_operation.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./sysprep_operation_yum_uuid.cmx: sysprep_operation.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx

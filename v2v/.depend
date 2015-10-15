@@ -1,0 +1,83 @@
+./DOM.cmi:
+./DOM.cmo: utils.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi ./DOM.cmi
+./DOM.cmx: utils.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx ./DOM.cmi
+./OVF.cmi: types.cmi DOM.cmi
+./OVF.cmo: utils.cmo types.cmi DOM.cmi /home/franklin/temp/libguestfs/mllib/config.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./OVF.cmi
+./OVF.cmx: utils.cmx types.cmx DOM.cmx /home/franklin/temp/libguestfs/mllib/config.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./OVF.cmi
+./cmdline.cmo: utils.cmo types.cmi output_vdsm.cmi output_rhev.cmi output_qemu.cmi output_null.cmi output_local.cmi output_libvirt.cmi output_glance.cmi modules_list.cmi input_ova.cmi input_libvirtxml.cmi input_libvirt.cmi input_disk.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./cmdline.cmx: utils.cmx types.cmx output_vdsm.cmx output_rhev.cmx output_qemu.cmx output_null.cmx output_local.cmx output_libvirt.cmx output_glance.cmx modules_list.cmx input_ova.cmx input_libvirtxml.cmx input_libvirt.cmx input_disk.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./convert_linux.cmi:
+./convert_linux.cmo: utils.cmo types.cmi modules_list.cmi linux.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./convert_linux.cmi
+./convert_linux.cmx: utils.cmx types.cmx modules_list.cmx linux.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./convert_linux.cmi
+./convert_windows.cmi:
+./convert_windows.cmo: utils.cmo types.cmi /home/franklin/temp/libguestfs/mllib/regedit.cmi modules_list.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/customize/firstboot.cmi /home/franklin/temp/libguestfs/mllib/config.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./convert_windows.cmi
+./convert_windows.cmx: utils.cmx types.cmx /home/franklin/temp/libguestfs/mllib/regedit.cmx modules_list.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/customize/firstboot.cmx /home/franklin/temp/libguestfs/mllib/config.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./convert_windows.cmi
+./domainxml.cmi:
+./domainxml.cmo: ./domainxml.cmi
+./domainxml.cmx: ./domainxml.cmi
+./input_disk.cmi: types.cmi
+./input_disk.cmo: utils.cmo types.cmi modules_list.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./input_disk.cmi
+./input_disk.cmx: utils.cmx types.cmx modules_list.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./input_disk.cmi
+./input_libvirt.cmi: types.cmi
+./input_libvirt.cmo: xml.cmi utils.cmo types.cmi modules_list.cmi input_libvirt_xen_ssh.cmi input_libvirt_vcenter_https.cmi input_libvirt_other.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./input_libvirt.cmi
+./input_libvirt.cmx: xml.cmx utils.cmx types.cmx modules_list.cmx input_libvirt_xen_ssh.cmx input_libvirt_vcenter_https.cmx input_libvirt_other.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./input_libvirt.cmi
+./input_libvirt_other.cmi: types.cmi
+./input_libvirt_other.cmo: utils.cmo types.cmi input_libvirtxml.cmi ../ocaml/guestfs.cmi domainxml.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./input_libvirt_other.cmi
+./input_libvirt_other.cmx: utils.cmx types.cmx input_libvirtxml.cmx ../ocaml/guestfs.cmx domainxml.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./input_libvirt_other.cmi
+./input_libvirt_vcenter_https.cmi: xml.cmi types.cmi
+./input_libvirt_vcenter_https.cmo: xml.cmi utils.cmo types.cmi /home/franklin/temp/libguestfs/mllib/JSON.cmi input_libvirtxml.cmi input_libvirt_other.cmi domainxml.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./input_libvirt_vcenter_https.cmi
+./input_libvirt_vcenter_https.cmx: xml.cmx utils.cmx types.cmx /home/franklin/temp/libguestfs/mllib/JSON.cmx input_libvirtxml.cmx input_libvirt_other.cmx domainxml.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./input_libvirt_vcenter_https.cmi
+./input_libvirt_xen_ssh.cmi: xml.cmi types.cmi
+./input_libvirt_xen_ssh.cmo: xml.cmi utils.cmo types.cmi /home/franklin/temp/libguestfs/mllib/JSON.cmi input_libvirtxml.cmi input_libvirt_other.cmi domainxml.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./input_libvirt_xen_ssh.cmi
+./input_libvirt_xen_ssh.cmx: xml.cmx utils.cmx types.cmx /home/franklin/temp/libguestfs/mllib/JSON.cmx input_libvirtxml.cmx input_libvirt_other.cmx domainxml.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./input_libvirt_xen_ssh.cmi
+./input_libvirtxml.cmi: types.cmi
+./input_libvirtxml.cmo: xml.cmi utils.cmo types.cmi modules_list.cmi domainxml.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./input_libvirtxml.cmi
+./input_libvirtxml.cmx: xml.cmx utils.cmx types.cmx modules_list.cmx domainxml.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./input_libvirtxml.cmi
+./input_ova.cmi: types.cmi
+./input_ova.cmo: xml.cmi utils.cmo types.cmi modules_list.cmi /home/franklin/temp/libguestfs/mllib/mkdtemp.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./input_ova.cmi
+./input_ova.cmx: xml.cmx utils.cmx types.cmx modules_list.cmx /home/franklin/temp/libguestfs/mllib/mkdtemp.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./input_ova.cmi
+./kvmuid.cmi:
+./kvmuid.cmo: utils.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./kvmuid.cmi
+./kvmuid.cmx: utils.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./kvmuid.cmi
+./linux.cmi: types.cmi ../ocaml/guestfs.cmi
+./linux.cmo: utils.cmo types.cmi stringMap.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./linux.cmi
+./linux.cmx: utils.cmx types.cmx stringMap.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./linux.cmi
+./modules_list.cmi: types.cmi ../ocaml/guestfs.cmi
+./modules_list.cmo: types.cmi ../ocaml/guestfs.cmi ./modules_list.cmi
+./modules_list.cmx: types.cmx ../ocaml/guestfs.cmx ./modules_list.cmi
+./output_glance.cmi: types.cmi
+./output_glance.cmo: utils.cmo types.cmi modules_list.cmi /home/franklin/temp/libguestfs/mllib/mkdtemp.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./output_glance.cmi
+./output_glance.cmx: utils.cmx types.cmx modules_list.cmx /home/franklin/temp/libguestfs/mllib/mkdtemp.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./output_glance.cmi
+./output_libvirt.cmi: types.cmi DOM.cmi
+./output_libvirt.cmo: xml.cmi utils.cmo types.cmi modules_list.cmi domainxml.cmi DOM.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./output_libvirt.cmi
+./output_libvirt.cmx: xml.cmx utils.cmx types.cmx modules_list.cmx domainxml.cmx DOM.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./output_libvirt.cmi
+./output_local.cmi: types.cmi
+./output_local.cmo: utils.cmo types.cmi output_libvirt.cmi modules_list.cmi DOM.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./output_local.cmi
+./output_local.cmx: utils.cmx types.cmx output_libvirt.cmx modules_list.cmx DOM.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./output_local.cmi
+./output_null.cmi: types.cmi
+./output_null.cmo: utils.cmo types.cmi modules_list.cmi /home/franklin/temp/libguestfs/mllib/mkdtemp.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./output_null.cmi
+./output_null.cmx: utils.cmx types.cmx modules_list.cmx /home/franklin/temp/libguestfs/mllib/mkdtemp.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./output_null.cmi
+./output_qemu.cmi: types.cmi
+./output_qemu.cmo: utils.cmo types.cmi modules_list.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./output_qemu.cmi
+./output_qemu.cmx: utils.cmx types.cmx modules_list.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./output_qemu.cmi
+./output_rhev.cmi: types.cmi
+./output_rhev.cmo: utils.cmo types.cmi OVF.cmi modules_list.cmi /home/franklin/temp/libguestfs/mllib/mkdtemp.cmi kvmuid.cmi ../ocaml/guestfs.cmi DOM.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./output_rhev.cmi
+./output_rhev.cmx: utils.cmx types.cmx OVF.cmx modules_list.cmx /home/franklin/temp/libguestfs/mllib/mkdtemp.cmx kvmuid.cmx ../ocaml/guestfs.cmx DOM.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./output_rhev.cmi
+./output_vdsm.cmi: types.cmi
+./output_vdsm.cmo: utils.cmo types.cmi OVF.cmi modules_list.cmi ../ocaml/guestfs.cmi DOM.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./output_vdsm.cmi
+./output_vdsm.cmx: utils.cmx types.cmx OVF.cmx modules_list.cmx ../ocaml/guestfs.cmx DOM.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./output_vdsm.cmi
+./stringMap.cmi:
+./stringMap.cmo: ./stringMap.cmi
+./stringMap.cmx: ./stringMap.cmi
+./types.cmi: stringMap.cmi ../ocaml/guestfs.cmi
+./types.cmo: stringMap.cmi ../ocaml/guestfs.cmi ./types.cmi
+./types.cmx: stringMap.cmx ../ocaml/guestfs.cmx ./types.cmi
+./utils.cmo: xml.cmi types.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./utils.cmx: xml.cmx types.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./v2v.cmo: utils.cmo types.cmi stringMap.cmi modules_list.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/config.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo cmdline.cmo
+./v2v.cmx: utils.cmx types.cmx stringMap.cmx modules_list.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/config.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx cmdline.cmx
+./v2v_unit_tests.cmo: utils.cmo types.cmi stringMap.cmi OVF.cmi
+./v2v_unit_tests.cmx: utils.cmx types.cmx stringMap.cmx OVF.cmx
+./xml.cmi:
+./xml.cmo: ./xml.cmi
+./xml.cmx: ./xml.cmi

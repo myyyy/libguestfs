@@ -1,0 +1,8 @@
+./cmdline.cmo: utils.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./cmdline.cmx: utils.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./dib.cmo: utils.cmo /home/franklin/temp/libguestfs/mllib/mkdtemp.cmi ../ocaml/guestfs.cmi elements.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo cmdline.cmo
+./dib.cmx: utils.cmx /home/franklin/temp/libguestfs/mllib/mkdtemp.cmx ../ocaml/guestfs.cmx elements.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx cmdline.cmx
+./elements.cmo: utils.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./elements.cmx: utils.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./utils.cmo: /home/franklin/temp/libguestfs/mllib/config.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./utils.cmx: /home/franklin/temp/libguestfs/mllib/config.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx

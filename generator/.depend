@@ -1,0 +1,67 @@
+./actions.cmi: types.cmo
+./actions.cmo: utils.cmi types.cmo ./actions.cmi
+./actions.cmx: utils.cmx types.cmx ./actions.cmi
+./bindtests.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo docstrings.cmo c.cmo actions.cmi
+./bindtests.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx docstrings.cmx c.cmx actions.cmx
+./c.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo events.cmo docstrings.cmo actions.cmi
+./c.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx events.cmx docstrings.cmx actions.cmx
+./checks.cmo: utils.cmi types.cmo actions.cmi
+./checks.cmx: utils.cmx types.cmx actions.cmx
+./csharp.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo docstrings.cmo actions.cmi
+./csharp.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx docstrings.cmx actions.cmx
+./customize.cmo: pr.cmi docstrings.cmo
+./customize.cmx: pr.cmx docstrings.cmx
+./daemon.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo docstrings.cmo c.cmo actions.cmi
+./daemon.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx docstrings.cmx c.cmx actions.cmx
+./docstrings.cmo: utils.cmi types.cmo pr.cmi
+./docstrings.cmx: utils.cmx types.cmx pr.cmx
+./erlang.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo events.cmo docstrings.cmo c.cmo actions.cmi
+./erlang.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx events.cmx docstrings.cmx c.cmx actions.cmx
+./errnostring.cmo: utils.cmi types.cmo pr.cmi docstrings.cmo
+./errnostring.cmx: utils.cmx types.cmx pr.cmx docstrings.cmx
+./events.cmo: utils.cmi
+./events.cmx: utils.cmx
+./fish.cmo: utils.cmi types.cmo structs.cmi prepopts.cmi pr.cmi optgroups.cmo events.cmo docstrings.cmo c.cmo actions.cmi
+./fish.cmx: utils.cmx types.cmx structs.cmx prepopts.cmx pr.cmx optgroups.cmx events.cmx docstrings.cmx c.cmx actions.cmx
+./gobject.cmo: utils.cmi types.cmo structs.cmi pr.cmi events.cmo docstrings.cmo actions.cmi
+./gobject.cmx: utils.cmx types.cmx structs.cmx pr.cmx events.cmx docstrings.cmx actions.cmx
+./golang.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo events.cmo docstrings.cmo c.cmo actions.cmi
+./golang.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx events.cmx docstrings.cmx c.cmx actions.cmx
+./haskell.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo docstrings.cmo actions.cmi
+./haskell.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx docstrings.cmx actions.cmx
+./java.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo events.cmo docstrings.cmo c.cmo actions.cmi
+./java.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx events.cmx docstrings.cmx c.cmx actions.cmx
+./lua.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo events.cmo docstrings.cmo c.cmo actions.cmi
+./lua.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx events.cmx docstrings.cmx c.cmx actions.cmx
+./main.cmo: xdr.cmo types.cmo tests_c_api.cmo structs.cmi ruby.cmo python.cmo pr.cmi php.cmo perl.cmo ocaml.cmo lua.cmo java.cmo haskell.cmo golang.cmo gobject.cmo fish.cmo errnostring.cmo erlang.cmo daemon.cmo customize.cmo csharp.cmo c.cmo bindtests.cmo actions.cmi
+./main.cmx: xdr.cmx types.cmx tests_c_api.cmx structs.cmx ruby.cmx python.cmx pr.cmx php.cmx perl.cmx ocaml.cmx lua.cmx java.cmx haskell.cmx golang.cmx gobject.cmx fish.cmx errnostring.cmx erlang.cmx daemon.cmx customize.cmx csharp.cmx c.cmx bindtests.cmx actions.cmx
+./ocaml.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo events.cmo docstrings.cmo c.cmo actions.cmi
+./ocaml.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx events.cmx docstrings.cmx c.cmx actions.cmx
+./optgroups.cmo: utils.cmi types.cmo actions.cmi
+./optgroups.cmx: utils.cmx types.cmx actions.cmx
+./perl.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo events.cmo docstrings.cmo c.cmo actions.cmi
+./perl.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx events.cmx docstrings.cmx c.cmx actions.cmx
+./php.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo docstrings.cmo c.cmo actions.cmi
+./php.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx docstrings.cmx c.cmx actions.cmx
+./pr.cmi:
+./pr.cmo: utils.cmi ./pr.cmi
+./pr.cmx: utils.cmx ./pr.cmi
+./prepopts.cmi:
+./prepopts.cmo: ./prepopts.cmi
+./prepopts.cmx: ./prepopts.cmi
+./python.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo events.cmo docstrings.cmo c.cmo actions.cmi
+./python.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx events.cmx docstrings.cmx c.cmx actions.cmx
+./ruby.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo events.cmo docstrings.cmo c.cmo actions.cmi
+./ruby.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx events.cmx docstrings.cmx c.cmx actions.cmx
+./structs.cmi: types.cmo
+./structs.cmo: utils.cmi types.cmo ./structs.cmi
+./structs.cmx: utils.cmx types.cmx ./structs.cmi
+./tests_c_api.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo docstrings.cmo actions.cmi
+./tests_c_api.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx docstrings.cmx actions.cmx
+./types.cmo:
+./types.cmx:
+./utils.cmi: types.cmo
+./utils.cmo: types.cmo ./utils.cmi
+./utils.cmx: types.cmx ./utils.cmi
+./xdr.cmo: utils.cmi types.cmo structs.cmi pr.cmi optgroups.cmo docstrings.cmo actions.cmi
+./xdr.cmx: utils.cmx types.cmx structs.cmx pr.cmx optgroups.cmx docstrings.cmx actions.cmx

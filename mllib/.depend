@@ -1,0 +1,32 @@
+./JSON.cmi:
+./JSON.cmo: ./JSON.cmi
+./JSON.cmx: ./JSON.cmi
+./JSON_tests.cmo: JSON.cmi
+./JSON_tests.cmx: JSON.cmx
+./common_gettext.cmo:
+./common_gettext.cmx:
+./common_utils.cmi: ../ocaml/guestfs.cmi
+./common_utils.cmo: ../ocaml/guestfs.cmi config.cmo common_gettext.cmo ./common_utils.cmi
+./common_utils.cmx: ../ocaml/guestfs.cmx config.cmx common_gettext.cmx ./common_utils.cmi
+./common_utils_tests.cmo: common_utils.cmi
+./common_utils_tests.cmx: common_utils.cmx
+./config.cmo:
+./config.cmx:
+./fsync.cmi:
+./fsync.cmo: ./fsync.cmi
+./fsync.cmx: ./fsync.cmi
+./mkdtemp.cmi:
+./mkdtemp.cmo: common_utils.cmi ./mkdtemp.cmi
+./mkdtemp.cmx: common_utils.cmx ./mkdtemp.cmi
+./planner.cmi:
+./planner.cmo: ./planner.cmi
+./planner.cmx: ./planner.cmi
+./progress.cmi: ../ocaml/guestfs.cmi
+./progress.cmo: ../ocaml/guestfs.cmi ./progress.cmi
+./progress.cmx: ../ocaml/guestfs.cmx ./progress.cmi
+./regedit.cmi: ../ocaml/guestfs.cmi
+./regedit.cmo: ../ocaml/guestfs.cmi common_utils.cmi common_gettext.cmo ./regedit.cmi
+./regedit.cmx: ../ocaml/guestfs.cmx common_utils.cmx common_gettext.cmx ./regedit.cmi
+./uRI.cmi:
+./uRI.cmo: ./uRI.cmi
+./uRI.cmx: ./uRI.cmi

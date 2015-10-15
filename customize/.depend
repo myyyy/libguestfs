@@ -1,0 +1,40 @@
+./crypt.cmi:
+./crypt.cmo: ./crypt.cmi
+./crypt.cmx: ./crypt.cmi
+./customize_cmdline.cmi: subscription_manager.cmi ssh_key.cmi password.cmi
+./customize_cmdline.cmo: subscription_manager.cmi ssh_key.cmi password.cmi customize_utils.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./customize_cmdline.cmi
+./customize_cmdline.cmx: subscription_manager.cmx ssh_key.cmx password.cmx customize_utils.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./customize_cmdline.cmi
+./customize_main.cmo: /home/franklin/temp/libguestfs/mllib/uRI.cmi ../ocaml/guestfs.cmi customize_utils.cmo customize_run.cmi customize_cmdline.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./customize_main.cmx: /home/franklin/temp/libguestfs/mllib/uRI.cmx ../ocaml/guestfs.cmx customize_utils.cmx customize_run.cmx customize_cmdline.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./customize_run.cmi: ../ocaml/guestfs.cmi customize_cmdline.cmi
+./customize_run.cmo: timezone.cmi subscription_manager.cmi ssh_key.cmi random_seed.cmi perl_edit.cmi password.cmi hostname.cmi ../ocaml/guestfs.cmi firstboot.cmi customize_utils.cmo customize_cmdline.cmi /home/franklin/temp/libguestfs/mllib/config.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./customize_run.cmi
+./customize_run.cmx: timezone.cmx subscription_manager.cmx ssh_key.cmx random_seed.cmx perl_edit.cmx password.cmx hostname.cmx ../ocaml/guestfs.cmx firstboot.cmx customize_utils.cmx customize_cmdline.cmx /home/franklin/temp/libguestfs/mllib/config.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./customize_run.cmi
+./customize_utils.cmo: /home/franklin/temp/libguestfs/mllib/common_utils.cmi
+./customize_utils.cmx: /home/franklin/temp/libguestfs/mllib/common_utils.cmx
+./firstboot.cmi: ../ocaml/guestfs.cmi
+./firstboot.cmo: /home/franklin/temp/libguestfs/mllib/regedit.cmi ../ocaml/guestfs.cmi customize_utils.cmo /home/franklin/temp/libguestfs/mllib/config.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./firstboot.cmi
+./firstboot.cmx: /home/franklin/temp/libguestfs/mllib/regedit.cmx ../ocaml/guestfs.cmx customize_utils.cmx /home/franklin/temp/libguestfs/mllib/config.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./firstboot.cmi
+./hostname.cmi: ../ocaml/guestfs.cmi
+./hostname.cmo: ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi ./hostname.cmi
+./hostname.cmx: ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx ./hostname.cmi
+./password.cmi: ../ocaml/guestfs.cmi
+./password.cmo: urandom.cmi ../ocaml/guestfs.cmi customize_utils.cmo crypt.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./password.cmi
+./password.cmx: urandom.cmx ../ocaml/guestfs.cmx customize_utils.cmx crypt.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./password.cmi
+./perl_edit.cmi: ../ocaml/guestfs.cmi
+./perl_edit.cmo: ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi ./perl_edit.cmi
+./perl_edit.cmx: ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx ./perl_edit.cmi
+./random_seed.cmi: ../ocaml/guestfs.cmi
+./random_seed.cmo: urandom.cmi ../ocaml/guestfs.cmi ./random_seed.cmi
+./random_seed.cmx: urandom.cmx ../ocaml/guestfs.cmx ./random_seed.cmi
+./ssh_key.cmi: ../ocaml/guestfs.cmi
+./ssh_key.cmo: ../ocaml/guestfs.cmi customize_utils.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./ssh_key.cmi
+./ssh_key.cmx: ../ocaml/guestfs.cmx customize_utils.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./ssh_key.cmi
+./subscription_manager.cmi:
+./subscription_manager.cmo: /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./subscription_manager.cmi
+./subscription_manager.cmx: /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./subscription_manager.cmi
+./timezone.cmi: ../ocaml/guestfs.cmi
+./timezone.cmo: ../ocaml/guestfs.cmi customize_utils.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi ./timezone.cmi
+./timezone.cmx: ../ocaml/guestfs.cmx customize_utils.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx ./timezone.cmi
+./urandom.cmi:
+./urandom.cmo: ./urandom.cmi
+./urandom.cmx: ./urandom.cmi

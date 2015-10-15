@@ -1,0 +1,10 @@
+./cmdline.cmo: utils.cmo ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./cmdline.cmx: utils.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./copying.cmo: utils.cmo /home/franklin/temp/libguestfs/mllib/progress.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo cmdline.cmo
+./copying.cmx: utils.cmx /home/franklin/temp/libguestfs/mllib/progress.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx cmdline.cmx
+./in_place.cmo: utils.cmo /home/franklin/temp/libguestfs/mllib/progress.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo cmdline.cmo
+./in_place.cmx: utils.cmx /home/franklin/temp/libguestfs/mllib/progress.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx cmdline.cmx
+./sparsify.cmo: utils.cmo in_place.cmo ../ocaml/guestfs.cmi copying.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo cmdline.cmo
+./sparsify.cmx: utils.cmx in_place.cmx ../ocaml/guestfs.cmx copying.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx cmdline.cmx
+./utils.cmo: ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi
+./utils.cmx: ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx

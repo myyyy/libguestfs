@@ -1,0 +1,2 @@
+./resize.cmo: /home/franklin/temp/libguestfs/mllib/uRI.cmi /home/franklin/temp/libguestfs/mllib/progress.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/fsync.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./resize.cmx: /home/franklin/temp/libguestfs/mllib/uRI.cmx /home/franklin/temp/libguestfs/mllib/progress.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/fsync.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx

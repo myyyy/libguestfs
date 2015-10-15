@@ -1,0 +1,6 @@
+name="guestfs"
+version="1.30.3"
+description="libguestfs bindings for OCaml"
+requires="unix"
+archive(byte)="mlguestfs.cma"
+archive(native)="mlguestfs.cmxa"

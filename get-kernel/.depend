@@ -1,0 +1,2 @@
+./get_kernel.cmo: /home/franklin/temp/libguestfs/mllib/uRI.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./get_kernel.cmx: /home/franklin/temp/libguestfs/mllib/uRI.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx

@@ -1,0 +1,38 @@
+./builder.cmo: utils.cmo sources.cmi sigchecker.cmi pxzcat.cmi /home/franklin/temp/libguestfs/mllib/planner.cmi /home/franklin/temp/libguestfs/customize/password.cmi list_entries.cmi languages.cmi index_parser.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/mllib/fsync.cmi downloader.cmi /home/franklin/temp/libguestfs/customize/customize_run.cmi /home/franklin/temp/libguestfs/customize/customize_cmdline.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo cmdline.cmo cache.cmi
+./builder.cmx: utils.cmx sources.cmx sigchecker.cmx pxzcat.cmx /home/franklin/temp/libguestfs/mllib/planner.cmx /home/franklin/temp/libguestfs/customize/password.cmx list_entries.cmx languages.cmx index_parser.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/mllib/fsync.cmx downloader.cmx /home/franklin/temp/libguestfs/customize/customize_run.cmx /home/franklin/temp/libguestfs/customize/customize_cmdline.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx cmdline.cmx cache.cmx
+./cache.cmi:
+./cache.cmo: utils.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./cache.cmi
+./cache.cmx: utils.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./cache.cmi
+./cmdline.cmo: utils.cmo pxzcat.cmi paths.cmo /home/franklin/temp/libguestfs/customize/password.cmi ../ocaml/guestfs.cmi /home/franklin/temp/libguestfs/customize/customize_cmdline.cmi /home/franklin/temp/libguestfs/mllib/config.cmo /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo
+./cmdline.cmx: utils.cmx pxzcat.cmx paths.cmx /home/franklin/temp/libguestfs/customize/password.cmx ../ocaml/guestfs.cmx /home/franklin/temp/libguestfs/customize/customize_cmdline.cmx /home/franklin/temp/libguestfs/mllib/config.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx
+./downloader.cmi: cache.cmi
+./downloader.cmo: utils.cmo /home/franklin/temp/libguestfs/mllib/uRI.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo cache.cmi ./downloader.cmi
+./downloader.cmx: utils.cmx /home/franklin/temp/libguestfs/mllib/uRI.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx cache.cmx ./downloader.cmi
+./index_parser.cmi: sources.cmi sigchecker.cmi downloader.cmi
+./index_parser.cmo: utils.cmo sources.cmi sigchecker.cmi ini_reader.cmi downloader.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./index_parser.cmi
+./index_parser.cmx: utils.cmx sources.cmx sigchecker.cmx ini_reader.cmx downloader.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./index_parser.cmi
+./ini_reader.cmi:
+./ini_reader.cmo: /home/franklin/temp/libguestfs/mllib/common_utils.cmi ./ini_reader.cmi
+./ini_reader.cmx: /home/franklin/temp/libguestfs/mllib/common_utils.cmx ./ini_reader.cmi
+./languages.cmi:
+./languages.cmo: setlocale.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi ./languages.cmi
+./languages.cmx: setlocale.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx ./languages.cmi
+./list_entries.cmi: sources.cmi index_parser.cmi
+./list_entries.cmo: utils.cmo sources.cmi languages.cmi /home/franklin/temp/libguestfs/mllib/JSON.cmi index_parser.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./list_entries.cmi
+./list_entries.cmx: utils.cmx sources.cmx languages.cmx /home/franklin/temp/libguestfs/mllib/JSON.cmx index_parser.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./list_entries.cmi
+./paths.cmo: /home/franklin/temp/libguestfs/mllib/common_utils.cmi
+./paths.cmx: /home/franklin/temp/libguestfs/mllib/common_utils.cmx
+./pxzcat.cmi:
+./pxzcat.cmo: ./pxzcat.cmi
+./pxzcat.cmx: ./pxzcat.cmi
+./setlocale.cmi:
+./setlocale.cmo: ./setlocale.cmi
+./setlocale.cmx: ./setlocale.cmi
+./sigchecker.cmi: utils.cmo
+./sigchecker.cmo: utils.cmo /home/franklin/temp/libguestfs/mllib/mkdtemp.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./sigchecker.cmi
+./sigchecker.cmx: utils.cmx /home/franklin/temp/libguestfs/mllib/mkdtemp.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./sigchecker.cmi
+./sources.cmi: utils.cmo downloader.cmi
+./sources.cmo: utils.cmo /home/franklin/temp/libguestfs/mllib/uRI.cmi paths.cmo ini_reader.cmi downloader.cmi /home/franklin/temp/libguestfs/mllib/common_utils.cmi /home/franklin/temp/libguestfs/mllib/common_gettext.cmo ./sources.cmi
+./sources.cmx: utils.cmx /home/franklin/temp/libguestfs/mllib/uRI.cmx paths.cmx ini_reader.cmx downloader.cmx /home/franklin/temp/libguestfs/mllib/common_utils.cmx /home/franklin/temp/libguestfs/mllib/common_gettext.cmx ./sources.cmi
+./utils.cmo: /home/franklin/temp/libguestfs/mllib/common_utils.cmi
+./utils.cmx: /home/franklin/temp/libguestfs/mllib/common_utils.cmx
