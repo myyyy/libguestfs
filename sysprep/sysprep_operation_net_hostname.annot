@@ -1,0 +1,564 @@
+"sysprep_operation_net_hostname.ml" 25 869 873 "sysprep_operation_net_hostname.ml" 25 869 893
+type(
+  < glob_expand : string -> 'a array; inspect_get_distro : 'b -> string;
+    inspect_get_type : 'b -> string; read_lines : 'a -> string array;
+    write : 'a -> string -> 'c; .. > ->
+  'b -> < created_file : unit -> unit; .. > -> unit
+)
+ident(
+  def net_hostname_perform "sysprep_operation_net_hostname.ml" 45 1585 1585 --
+)
+"sysprep_operation_net_hostname.ml" 25 869 894 "sysprep_operation_net_hostname.ml" 25 869 895
+type(
+  < glob_expand : string -> 'a array; inspect_get_distro : 'b -> string;
+    inspect_get_type : 'b -> string; read_lines : 'a -> string array;
+    write : 'a -> string -> 'c; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_net_hostname.ml" 25 869 896 "sysprep_operation_net_hostname.ml" 43 1572 1583
+)
+"sysprep_operation_net_hostname.ml" 25 869 896 "sysprep_operation_net_hostname.ml" 25 869 900
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_net_hostname.ml" 25 869 901 "sysprep_operation_net_hostname.ml" 43 1572 1583
+)
+"sysprep_operation_net_hostname.ml" 25 869 901 "sysprep_operation_net_hostname.ml" 25 869 913
+type(
+  < created_file : unit -> unit; .. > as 'e
+)
+ident(
+  def side_effects "sysprep_operation_net_hostname.ml" 26 916 918 "sysprep_operation_net_hostname.ml" 43 1572 1583
+)
+"sysprep_operation_net_hostname.ml" 26 916 922 "sysprep_operation_net_hostname.ml" 26 916 925
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 26 916 928 "sysprep_operation_net_hostname.ml" 26 916 929
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_net_hostname.ml" 25 869 894 "sysprep_operation_net_hostname.ml" 25 869 895
+)
+"sysprep_operation_net_hostname.ml" 26 916 928 "sysprep_operation_net_hostname.ml" 26 916 946
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_net_hostname.ml" 26 916 947 "sysprep_operation_net_hostname.ml" 26 916 951
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_net_hostname.ml" 25 869 896 "sysprep_operation_net_hostname.ml" 25 869 900
+)
+"sysprep_operation_net_hostname.ml" 26 916 928 "sysprep_operation_net_hostname.ml" 26 916 951
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 27 955 961 "sysprep_operation_net_hostname.ml" 27 955 967
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 27 955 970 "sysprep_operation_net_hostname.ml" 27 955 971
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_net_hostname.ml" 25 869 894 "sysprep_operation_net_hostname.ml" 25 869 895
+)
+"sysprep_operation_net_hostname.ml" 27 955 970 "sysprep_operation_net_hostname.ml" 27 955 990
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_net_hostname.ml" 27 955 991 "sysprep_operation_net_hostname.ml" 27 955 995
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_net_hostname.ml" 25 869 896 "sysprep_operation_net_hostname.ml" 25 869 900
+)
+"sysprep_operation_net_hostname.ml" 27 955 970 "sysprep_operation_net_hostname.ml" 27 955 995
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 28 999 1007 "sysprep_operation_net_hostname.ml" 28 999 1010
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_net_hostname.ml" 26 916 922 "sysprep_operation_net_hostname.ml" 26 916 925
+)
+"sysprep_operation_net_hostname.ml" 28 999 1012 "sysprep_operation_net_hostname.ml" 28 999 1018
+type(
+  string
+)
+ident(
+  int_ref distro "sysprep_operation_net_hostname.ml" 27 955 961 "sysprep_operation_net_hostname.ml" 27 955 967
+)
+"sysprep_operation_net_hostname.ml" 28 999 1007 "sysprep_operation_net_hostname.ml" 28 999 1018
+type(
+  string * string
+)
+"sysprep_operation_net_hostname.ml" 29 1024 1028 "sysprep_operation_net_hostname.ml" 29 1024 1035
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 29 1024 1038 "sysprep_operation_net_hostname.ml" 29 1024 1046
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 29 1024 1047 "sysprep_operation_net_hostname.ml" 29 1024 1053
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 29 1024 1038 "sysprep_operation_net_hostname.ml" 29 1024 1053
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 29 1024 1054 "sysprep_operation_net_hostname.ml" 29 1024 1062
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 29 1024 1038 "sysprep_operation_net_hostname.ml" 29 1024 1062
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 29 1024 1063 "sysprep_operation_net_hostname.ml" 29 1024 1080
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 29 1024 1038 "sysprep_operation_net_hostname.ml" 29 1024 1080
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 29 1024 1081 "sysprep_operation_net_hostname.ml" 29 1024 1095
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 29 1024 1037 "sysprep_operation_net_hostname.ml" 29 1024 1096
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 29 1024 1028 "sysprep_operation_net_hostname.ml" 29 1024 1096
+type(
+  string * string
+)
+"sysprep_operation_net_hostname.ml" 30 1100 1108 "sysprep_operation_net_hostname.ml" 30 1100 1117
+type(
+  'a array
+)
+"sysprep_operation_net_hostname.ml" 30 1100 1120 "sysprep_operation_net_hostname.ml" 30 1100 1121
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_net_hostname.ml" 25 869 894 "sysprep_operation_net_hostname.ml" 25 869 895
+)
+"sysprep_operation_net_hostname.ml" 30 1100 1120 "sysprep_operation_net_hostname.ml" 30 1100 1133
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_net_hostname.ml" 30 1100 1134 "sysprep_operation_net_hostname.ml" 30 1100 1174
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 30 1100 1120 "sysprep_operation_net_hostname.ml" 30 1100 1174
+type(
+  'a array
+)
+"sysprep_operation_net_hostname.ml" 31 1178 1182 "sysprep_operation_net_hostname.ml" 31 1178 1192
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_net_hostname.ml" 32 1195 1205 "sysprep_operation_net_hostname.ml" 32 1195 1213
+type(
+  'a
+)
+ident(
+  def filename "sysprep_operation_net_hostname.ml" 34 1259 1267 "sysprep_operation_net_hostname.ml" 40 1517 1553
+)
+"sysprep_operation_net_hostname.ml" 34 1259 1271 "sysprep_operation_net_hostname.ml" 34 1259 1276
+type(
+  string list
+)
+"sysprep_operation_net_hostname.ml" 34 1259 1279 "sysprep_operation_net_hostname.ml" 34 1259 1292
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"sysprep_operation_net_hostname.ml" 34 1259 1294 "sysprep_operation_net_hostname.ml" 34 1259 1295
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_net_hostname.ml" 25 869 894 "sysprep_operation_net_hostname.ml" 25 869 895
+)
+"sysprep_operation_net_hostname.ml" 34 1259 1294 "sysprep_operation_net_hostname.ml" 34 1259 1306
+call(
+  stack
+)
+type(
+  'a -> string array
+)
+"sysprep_operation_net_hostname.ml" 34 1259 1307 "sysprep_operation_net_hostname.ml" 34 1259 1315
+type(
+  'a
+)
+ident(
+  int_ref filename "sysprep_operation_net_hostname.ml" 32 1195 1205 "sysprep_operation_net_hostname.ml" 32 1195 1213
+)
+"sysprep_operation_net_hostname.ml" 34 1259 1293 "sysprep_operation_net_hostname.ml" 34 1259 1316
+type(
+  string array
+)
+"sysprep_operation_net_hostname.ml" 34 1259 1279 "sysprep_operation_net_hostname.ml" 34 1259 1316
+call(
+  stack
+)
+type(
+  string list
+)
+"sysprep_operation_net_hostname.ml" 35 1320 1332 "sysprep_operation_net_hostname.ml" 35 1320 1337
+type(
+  string list
+)
+"sysprep_operation_net_hostname.ml" 35 1320 1340 "sysprep_operation_net_hostname.ml" 35 1320 1351
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"sysprep_operation_net_hostname.ml" 36 1354 1368 "sysprep_operation_net_hostname.ml" 36 1354 1372
+type(
+  string
+)
+ident(
+  def line "sysprep_operation_net_hostname.ml" 36 1354 1376 "sysprep_operation_net_hostname.ml" 36 1354 1412
+)
+"sysprep_operation_net_hostname.ml" 36 1354 1376 "sysprep_operation_net_hostname.ml" 36 1354 1379
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"sysprep_operation_net_hostname.ml" 36 1354 1381 "sysprep_operation_net_hostname.ml" 36 1354 1394
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Common_utils.string_prefix
+)
+"sysprep_operation_net_hostname.ml" 36 1354 1395 "sysprep_operation_net_hostname.ml" 36 1354 1399
+type(
+  string
+)
+ident(
+  int_ref line "sysprep_operation_net_hostname.ml" 36 1354 1368 "sysprep_operation_net_hostname.ml" 36 1354 1372
+)
+"sysprep_operation_net_hostname.ml" 36 1354 1400 "sysprep_operation_net_hostname.ml" 36 1354 1411
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 36 1354 1380 "sysprep_operation_net_hostname.ml" 36 1354 1412
+call(
+  stack
+)
+type(
+  bool
+)
+"sysprep_operation_net_hostname.ml" 36 1354 1376 "sysprep_operation_net_hostname.ml" 36 1354 1412
+type(
+  bool
+)
+"sysprep_operation_net_hostname.ml" 35 1320 1352 "sysprep_operation_net_hostname.ml" 37 1413 1422
+type(
+  string -> bool
+)
+"sysprep_operation_net_hostname.ml" 37 1413 1423 "sysprep_operation_net_hostname.ml" 37 1413 1428
+type(
+  string list
+)
+ident(
+  int_ref lines "sysprep_operation_net_hostname.ml" 34 1259 1271 "sysprep_operation_net_hostname.ml" 34 1259 1276
+)
+"sysprep_operation_net_hostname.ml" 35 1320 1340 "sysprep_operation_net_hostname.ml" 37 1413 1428
+call(
+  stack
+)
+type(
+  string list
+)
+"sysprep_operation_net_hostname.ml" 38 1432 1444 "sysprep_operation_net_hostname.ml" 38 1432 1448
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 38 1432 1451 "sysprep_operation_net_hostname.ml" 38 1432 1464
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"sysprep_operation_net_hostname.ml" 38 1432 1465 "sysprep_operation_net_hostname.ml" 38 1432 1469
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 38 1432 1470 "sysprep_operation_net_hostname.ml" 38 1432 1475
+type(
+  string list
+)
+ident(
+  int_ref lines "sysprep_operation_net_hostname.ml" 35 1320 1332 "sysprep_operation_net_hostname.ml" 35 1320 1337
+)
+"sysprep_operation_net_hostname.ml" 38 1432 1451 "sysprep_operation_net_hostname.ml" 38 1432 1475
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 38 1432 1476 "sysprep_operation_net_hostname.ml" 38 1432 1477
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_net_hostname.ml" 38 1432 1478 "sysprep_operation_net_hostname.ml" 38 1432 1482
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 38 1432 1451 "sysprep_operation_net_hostname.ml" 38 1432 1482
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 39 1486 1494 "sysprep_operation_net_hostname.ml" 39 1486 1495
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_net_hostname.ml" 25 869 894 "sysprep_operation_net_hostname.ml" 25 869 895
+)
+"sysprep_operation_net_hostname.ml" 39 1486 1494 "sysprep_operation_net_hostname.ml" 39 1486 1501
+call(
+  stack
+)
+type(
+  'a -> string -> 'c
+)
+"sysprep_operation_net_hostname.ml" 39 1486 1502 "sysprep_operation_net_hostname.ml" 39 1486 1510
+type(
+  'a
+)
+ident(
+  int_ref filename "sysprep_operation_net_hostname.ml" 32 1195 1205 "sysprep_operation_net_hostname.ml" 32 1195 1213
+)
+"sysprep_operation_net_hostname.ml" 39 1486 1511 "sysprep_operation_net_hostname.ml" 39 1486 1515
+type(
+  string
+)
+ident(
+  int_ref file "sysprep_operation_net_hostname.ml" 38 1432 1444 "sysprep_operation_net_hostname.ml" 38 1432 1448
+)
+"sysprep_operation_net_hostname.ml" 39 1486 1494 "sysprep_operation_net_hostname.ml" 39 1486 1515
+type(
+  'c
+)
+"sysprep_operation_net_hostname.ml" 40 1517 1525 "sysprep_operation_net_hostname.ml" 40 1517 1537
+type(
+  'e
+)
+ident(
+  int_ref side_effects "sysprep_operation_net_hostname.ml" 25 869 901 "sysprep_operation_net_hostname.ml" 25 869 913
+)
+"sysprep_operation_net_hostname.ml" 40 1517 1525 "sysprep_operation_net_hostname.ml" 40 1517 1550
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"sysprep_operation_net_hostname.ml" 40 1517 1551 "sysprep_operation_net_hostname.ml" 40 1517 1553
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 40 1517 1525 "sysprep_operation_net_hostname.ml" 40 1517 1553
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 39 1486 1494 "sysprep_operation_net_hostname.ml" 40 1517 1553
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 38 1432 1440 "sysprep_operation_net_hostname.ml" 40 1517 1553
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 35 1320 1328 "sysprep_operation_net_hostname.ml" 40 1517 1553
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 34 1259 1267 "sysprep_operation_net_hostname.ml" 40 1517 1553
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 31 1178 1193 "sysprep_operation_net_hostname.ml" 41 1554 1559
+type(
+  'a -> unit
+)
+"sysprep_operation_net_hostname.ml" 41 1554 1560 "sysprep_operation_net_hostname.ml" 41 1554 1569
+type(
+  'a array
+)
+ident(
+  int_ref filenames "sysprep_operation_net_hostname.ml" 30 1100 1108 "sysprep_operation_net_hostname.ml" 30 1100 1117
+)
+"sysprep_operation_net_hostname.ml" 31 1178 1182 "sysprep_operation_net_hostname.ml" 41 1554 1570
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 30 1100 1104 "sysprep_operation_net_hostname.ml" 41 1554 1570
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 43 1572 1576 "sysprep_operation_net_hostname.ml" 43 1572 1577
+type(
+  string * string
+)
+"sysprep_operation_net_hostname.ml" 43 1572 1581 "sysprep_operation_net_hostname.ml" 43 1572 1583
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 28 999 1001 "sysprep_operation_net_hostname.ml" 43 1572 1583
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 27 955 957 "sysprep_operation_net_hostname.ml" 43 1572 1583
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 26 916 918 "sysprep_operation_net_hostname.ml" 43 1572 1583
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 45 1585 1589 "sysprep_operation_net_hostname.ml" 45 1585 1591
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_net_hostname.ml" 56 1915 1915 --
+)
+"sysprep_operation_net_hostname.ml" 46 1596 1598 "sysprep_operation_net_hostname.ml" 46 1596 1606
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_net_hostname.ml" 47 1612 1623 "sysprep_operation_net_hostname.ml" 47 1612 1637
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 48 1639 1664 "sysprep_operation_net_hostname.ml" 48 1639 1668
+type(
+  bool
+)
+"sysprep_operation_net_hostname.ml" 49 1670 1684 "sysprep_operation_net_hostname.ml" 49 1670 1686
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_net_hostname.ml" 49 1670 1686 "sysprep_operation_net_hostname.ml" 49 1670 1738
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 49 1670 1684 "sysprep_operation_net_hostname.ml" 49 1670 1738
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 50 1740 1768 "sysprep_operation_net_hostname.ml" 50 1740 1770
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_net_hostname.ml" 50 1740 1770 "sysprep_operation_net_hostname.ml" 52 1814 1853
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 50 1740 1767 "sysprep_operation_net_hostname.ml" 52 1814 1854
+type(
+  string
+)
+"sysprep_operation_net_hostname.ml" 50 1740 1762 "sysprep_operation_net_hostname.ml" 52 1814 1854
+type(
+  string option
+)
+"sysprep_operation_net_hostname.ml" 53 1856 1890 "sysprep_operation_net_hostname.ml" 53 1856 1910
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref net_hostname_perform "sysprep_operation_net_hostname.ml" 25 869 873 "sysprep_operation_net_hostname.ml" 25 869 893
+)
+"sysprep_operation_net_hostname.ml" 53 1856 1885 "sysprep_operation_net_hostname.ml" 53 1856 1910
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_net_hostname.ml" 45 1585 1594 "sysprep_operation_net_hostname.ml" 54 1912 1913
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_net_hostname.ml" 56 1915 1919 "sysprep_operation_net_hostname.ml" 56 1915 1921
+type(
+  unit
+)
+"sysprep_operation_net_hostname.ml" 56 1915 1924 "sysprep_operation_net_hostname.ml" 56 1915 1942
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_net_hostname.ml" 56 1915 1943 "sysprep_operation_net_hostname.ml" 56 1915 1945
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_net_hostname.ml" 45 1585 1589 "sysprep_operation_net_hostname.ml" 45 1585 1591
+)
+"sysprep_operation_net_hostname.ml" 56 1915 1924 "sysprep_operation_net_hostname.ml" 56 1915 1945
+call(
+  stack
+)
+type(
+  unit
+)

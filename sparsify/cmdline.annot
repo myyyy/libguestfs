@@ -1,0 +1,3180 @@
+"cmdline.ml" 34 1063 1067 "cmdline.ml" 34 1063 1080
+type(
+  unit -> string * string option * string list * bool * string list * mode_t
+)
+ident(
+  def parse_cmdline "cmdline.ml" 178 6157 6214 --
+)
+"cmdline.ml" 34 1063 1081 "cmdline.ml" 34 1063 1083
+type(
+  unit
+)
+"cmdline.ml" 35 1086 1092 "cmdline.ml" 35 1086 1095
+type(
+  'a list ref -> 'a -> unit
+)
+"cmdline.ml" 35 1086 1096 "cmdline.ml" 35 1086 1098
+type(
+  'a list ref
+)
+ident(
+  def xs "cmdline.ml" 35 1086 1099 "cmdline.ml" 35 1086 1117
+)
+"cmdline.ml" 35 1086 1099 "cmdline.ml" 35 1086 1100
+type(
+  'a
+)
+ident(
+  def s "cmdline.ml" 35 1086 1103 "cmdline.ml" 35 1086 1117
+)
+"cmdline.ml" 35 1086 1103 "cmdline.ml" 35 1086 1105
+type(
+  'a list ref
+)
+ident(
+  int_ref xs "cmdline.ml" 35 1086 1096 "cmdline.ml" 35 1086 1098
+)
+"cmdline.ml" 35 1086 1106 "cmdline.ml" 35 1086 1108
+type(
+  'a list ref -> 'a list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"cmdline.ml" 35 1086 1109 "cmdline.ml" 35 1086 1110
+type(
+  'a
+)
+ident(
+  int_ref s "cmdline.ml" 35 1086 1099 "cmdline.ml" 35 1086 1100
+)
+"cmdline.ml" 35 1086 1114 "cmdline.ml" 35 1086 1115
+type(
+  'a list ref -> 'a list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 35 1086 1115 "cmdline.ml" 35 1086 1117
+type(
+  'a list ref
+)
+ident(
+  int_ref xs "cmdline.ml" 35 1086 1096 "cmdline.ml" 35 1086 1098
+)
+"cmdline.ml" 35 1086 1114 "cmdline.ml" 35 1086 1117
+type(
+  'a list
+)
+"cmdline.ml" 35 1086 1109 "cmdline.ml" 35 1086 1117
+type(
+  'a list
+)
+"cmdline.ml" 35 1086 1103 "cmdline.ml" 35 1086 1117
+type(
+  unit
+)
+"cmdline.ml" 37 1122 1128 "cmdline.ml" 37 1122 1140
+type(
+  check_t ref
+)
+"cmdline.ml" 37 1122 1143 "cmdline.ml" 37 1122 1146
+type(
+  check_t -> check_t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"cmdline.ml" 37 1122 1147 "cmdline.ml" 37 1122 1152
+type(
+  check_t
+)
+"cmdline.ml" 37 1122 1143 "cmdline.ml" 37 1122 1152
+type(
+  check_t ref
+)
+"cmdline.ml" 38 1156 1162 "cmdline.ml" 38 1156 1178
+type(
+  string -> unit
+)
+"cmdline.ml" 39 1190 1196 "cmdline.ml" 39 1190 1204
+type(
+  string
+)
+"cmdline.ml" 39 1190 1207 "cmdline.ml" 39 1190 1210
+type(
+  string
+)
+"cmdline.ml" 39 1190 1196 "cmdline.ml" 39 1190 1210
+type(
+  string
+)
+"cmdline.ml" 39 1190 1214 "cmdline.ml" 39 1190 1226
+type(
+  check_t ref
+)
+ident(
+  int_ref check_tmpdir "cmdline.ml" 37 1122 1128 "cmdline.ml" 37 1122 1140
+)
+"cmdline.ml" 39 1190 1227 "cmdline.ml" 39 1190 1229
+type(
+  check_t ref -> check_t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"cmdline.ml" 39 1190 1230 "cmdline.ml" 39 1190 1237
+type(
+  check_t
+)
+"cmdline.ml" 39 1190 1214 "cmdline.ml" 39 1190 1237
+type(
+  unit
+)
+"cmdline.ml" 40 1238 1244 "cmdline.ml" 40 1238 1254
+type(
+  string
+)
+"cmdline.ml" 40 1238 1257 "cmdline.ml" 40 1238 1263
+type(
+  string
+)
+"cmdline.ml" 40 1238 1244 "cmdline.ml" 40 1238 1263
+type(
+  string
+)
+"cmdline.ml" 40 1238 1266 "cmdline.ml" 40 1238 1269
+type(
+  string
+)
+"cmdline.ml" 40 1238 1244 "cmdline.ml" 40 1238 1269
+type(
+  string
+)
+"cmdline.ml" 40 1238 1273 "cmdline.ml" 40 1238 1285
+type(
+  check_t ref
+)
+ident(
+  int_ref check_tmpdir "cmdline.ml" 37 1122 1128 "cmdline.ml" 37 1122 1140
+)
+"cmdline.ml" 40 1238 1286 "cmdline.ml" 40 1238 1288
+type(
+  check_t ref -> check_t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"cmdline.ml" 40 1238 1289 "cmdline.ml" 40 1238 1298
+type(
+  check_t
+)
+"cmdline.ml" 40 1238 1273 "cmdline.ml" 40 1238 1298
+type(
+  unit
+)
+"cmdline.ml" 41 1299 1305 "cmdline.ml" 41 1299 1311
+type(
+  string
+)
+"cmdline.ml" 41 1299 1314 "cmdline.ml" 41 1299 1323
+type(
+  string
+)
+"cmdline.ml" 41 1299 1305 "cmdline.ml" 41 1299 1323
+type(
+  string
+)
+"cmdline.ml" 41 1299 1326 "cmdline.ml" 41 1299 1329
+type(
+  string
+)
+"cmdline.ml" 41 1299 1305 "cmdline.ml" 41 1299 1329
+type(
+  string
+)
+"cmdline.ml" 41 1299 1333 "cmdline.ml" 41 1299 1345
+type(
+  check_t ref
+)
+ident(
+  int_ref check_tmpdir "cmdline.ml" 37 1122 1128 "cmdline.ml" 37 1122 1140
+)
+"cmdline.ml" 41 1299 1346 "cmdline.ml" 41 1299 1348
+type(
+  check_t ref -> check_t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"cmdline.ml" 41 1299 1349 "cmdline.ml" 41 1299 1354
+type(
+  check_t
+)
+"cmdline.ml" 41 1299 1333 "cmdline.ml" 41 1299 1354
+type(
+  unit
+)
+"cmdline.ml" 42 1355 1361 "cmdline.ml" 42 1355 1367
+type(
+  string
+)
+"cmdline.ml" 42 1355 1370 "cmdline.ml" 42 1355 1373
+type(
+  string
+)
+"cmdline.ml" 42 1355 1361 "cmdline.ml" 42 1355 1373
+type(
+  string
+)
+"cmdline.ml" 42 1355 1376 "cmdline.ml" 42 1355 1383
+type(
+  string
+)
+"cmdline.ml" 42 1355 1361 "cmdline.ml" 42 1355 1383
+type(
+  string
+)
+"cmdline.ml" 42 1355 1387 "cmdline.ml" 42 1355 1399
+type(
+  check_t ref
+)
+ident(
+  int_ref check_tmpdir "cmdline.ml" 37 1122 1128 "cmdline.ml" 37 1122 1140
+)
+"cmdline.ml" 42 1355 1400 "cmdline.ml" 42 1355 1402
+type(
+  check_t ref -> check_t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"cmdline.ml" 42 1355 1403 "cmdline.ml" 42 1355 1408
+type(
+  check_t
+)
+"cmdline.ml" 42 1355 1387 "cmdline.ml" 42 1355 1408
+type(
+  unit
+)
+"cmdline.ml" 43 1409 1415 "cmdline.ml" 43 1409 1418
+type(
+  string
+)
+ident(
+  def str "cmdline.ml" 44 1422 1428 "cmdline.ml" 44 1422 1481
+)
+"cmdline.ml" 44 1422 1428 "cmdline.ml" 44 1422 1433
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"cmdline.ml" 44 1422 1435 "cmdline.ml" 44 1422 1437
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"cmdline.ml" 44 1422 1437 "cmdline.ml" 44 1422 1476
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"cmdline.ml" 44 1422 1434 "cmdline.ml" 44 1422 1477
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"cmdline.ml" 44 1422 1478 "cmdline.ml" 44 1422 1481
+type(
+  string
+)
+ident(
+  int_ref str "cmdline.ml" 43 1409 1415 "cmdline.ml" 43 1409 1418
+)
+"cmdline.ml" 44 1422 1428 "cmdline.ml" 44 1422 1481
+call(
+  tail
+)
+type(
+  unit
+)
+"cmdline.ml" 38 1156 1181 "cmdline.ml" 44 1422 1481
+type(
+  string -> unit
+)
+"cmdline.ml" 47 1488 1494 "cmdline.ml" 47 1488 1502
+type(
+  bool ref
+)
+"cmdline.ml" 47 1488 1505 "cmdline.ml" 47 1488 1508
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"cmdline.ml" 47 1488 1509 "cmdline.ml" 47 1488 1514
+type(
+  bool
+)
+"cmdline.ml" 47 1488 1505 "cmdline.ml" 47 1488 1514
+type(
+  bool ref
+)
+"cmdline.ml" 48 1518 1524 "cmdline.ml" 48 1518 1531
+type(
+  string ref
+)
+"cmdline.ml" 48 1518 1534 "cmdline.ml" 48 1518 1537
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"cmdline.ml" 48 1518 1538 "cmdline.ml" 48 1518 1540
+type(
+  string
+)
+"cmdline.ml" 48 1518 1534 "cmdline.ml" 48 1518 1540
+type(
+  string ref
+)
+"cmdline.ml" 49 1544 1550 "cmdline.ml" 49 1544 1556
+type(
+  string ref
+)
+"cmdline.ml" 49 1544 1559 "cmdline.ml" 49 1544 1562
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"cmdline.ml" 49 1544 1563 "cmdline.ml" 49 1544 1565
+type(
+  string
+)
+"cmdline.ml" 49 1544 1559 "cmdline.ml" 49 1544 1565
+type(
+  string ref
+)
+"cmdline.ml" 50 1569 1575 "cmdline.ml" 50 1569 1582
+type(
+  string list ref
+)
+"cmdline.ml" 50 1569 1585 "cmdline.ml" 50 1569 1588
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"cmdline.ml" 50 1569 1589 "cmdline.ml" 50 1569 1591
+type(
+  string list
+)
+"cmdline.ml" 50 1569 1585 "cmdline.ml" 50 1569 1591
+type(
+  string list ref
+)
+"cmdline.ml" 51 1595 1601 "cmdline.ml" 51 1595 1609
+type(
+  bool ref
+)
+"cmdline.ml" 51 1595 1612 "cmdline.ml" 51 1595 1615
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"cmdline.ml" 51 1595 1616 "cmdline.ml" 51 1595 1621
+type(
+  bool
+)
+"cmdline.ml" 51 1595 1612 "cmdline.ml" 51 1595 1621
+type(
+  bool ref
+)
+"cmdline.ml" 52 1625 1631 "cmdline.ml" 52 1625 1647
+type(
+  bool ref
+)
+"cmdline.ml" 52 1625 1650 "cmdline.ml" 52 1625 1653
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"cmdline.ml" 52 1625 1654 "cmdline.ml" 52 1625 1659
+type(
+  bool
+)
+"cmdline.ml" 52 1625 1650 "cmdline.ml" 52 1625 1659
+type(
+  bool ref
+)
+"cmdline.ml" 53 1663 1669 "cmdline.ml" 53 1663 1675
+type(
+  string ref
+)
+"cmdline.ml" 53 1663 1678 "cmdline.ml" 53 1663 1681
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"cmdline.ml" 53 1663 1682 "cmdline.ml" 53 1663 1684
+type(
+  string
+)
+"cmdline.ml" 53 1663 1678 "cmdline.ml" 53 1663 1684
+type(
+  string ref
+)
+"cmdline.ml" 54 1688 1694 "cmdline.ml" 54 1688 1697
+type(
+  string ref
+)
+"cmdline.ml" 54 1688 1700 "cmdline.ml" 54 1688 1703
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"cmdline.ml" 54 1688 1704 "cmdline.ml" 54 1688 1706
+type(
+  string
+)
+"cmdline.ml" 54 1688 1700 "cmdline.ml" 54 1688 1706
+type(
+  string ref
+)
+"cmdline.ml" 55 1710 1716 "cmdline.ml" 55 1710 1722
+type(
+  string list ref
+)
+"cmdline.ml" 55 1710 1725 "cmdline.ml" 55 1710 1728
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"cmdline.ml" 55 1710 1729 "cmdline.ml" 55 1710 1731
+type(
+  string list
+)
+"cmdline.ml" 55 1710 1725 "cmdline.ml" 55 1710 1731
+type(
+  string list ref
+)
+"cmdline.ml" 57 1736 1742 "cmdline.ml" 57 1736 1747
+type(
+  string
+)
+"cmdline.ml" 57 1736 1750 "cmdline.ml" 57 1736 1757
+type(
+  string
+)
+"cmdline.ml" 58 1761 1767 "cmdline.ml" 58 1761 1774
+type(
+  (string * Arg.spec * string) list
+)
+"cmdline.ml" 59 1779 1783 "cmdline.ml" 59 1779 1799
+type(
+  string
+)
+"cmdline.ml" 59 1779 1812 "cmdline.ml" 59 1779 1828
+type(
+  string -> unit
+)
+ident(
+  int_ref set_check_tmpdir "cmdline.ml" 38 1156 1162 "cmdline.ml" 38 1156 1178
+)
+"cmdline.ml" 59 1779 1801 "cmdline.ml" 59 1779 1828
+type(
+  Arg.spec
+)
+"cmdline.ml" 59 1779 1831 "cmdline.ml" 59 1779 1843
+type(
+  string
+)
+"cmdline.ml" 59 1779 1844 "cmdline.ml" 59 1779 1845
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 59 1779 1846 "cmdline.ml" 59 1779 1849
+type(
+  string
+)
+"cmdline.ml" 59 1779 1850 "cmdline.ml" 59 1779 1851
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 59 1779 1852 "cmdline.ml" 59 1779 1854
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 59 1779 1854 "cmdline.ml" 59 1779 1894
+type(
+  string
+)
+"cmdline.ml" 59 1779 1852 "cmdline.ml" 59 1779 1894
+type(
+  string
+)
+"cmdline.ml" 59 1779 1846 "cmdline.ml" 59 1779 1894
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 59 1779 1831 "cmdline.ml" 59 1779 1894
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 59 1779 1783 "cmdline.ml" 59 1779 1894
+type(
+  string * Arg.spec * string
+)
+"cmdline.ml" 60 1896 1900 "cmdline.ml" 60 1896 1912
+type(
+  string
+)
+"cmdline.ml" 60 1896 1922 "cmdline.ml" 60 1896 1930
+type(
+  bool ref
+)
+ident(
+  int_ref compress "cmdline.ml" 47 1488 1494 "cmdline.ml" 47 1488 1502
+)
+"cmdline.ml" 60 1896 1914 "cmdline.ml" 60 1896 1930
+type(
+  Arg.spec
+)
+"cmdline.ml" 60 1896 1940 "cmdline.ml" 60 1896 1943
+type(
+  string
+)
+"cmdline.ml" 60 1896 1944 "cmdline.ml" 60 1896 1945
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 60 1896 1946 "cmdline.ml" 60 1896 1948
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 60 1896 1948 "cmdline.ml" 60 1896 1974
+type(
+  string
+)
+"cmdline.ml" 60 1896 1946 "cmdline.ml" 60 1896 1974
+type(
+  string
+)
+"cmdline.ml" 60 1896 1940 "cmdline.ml" 60 1896 1974
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 60 1896 1900 "cmdline.ml" 60 1896 1974
+type(
+  string * Arg.spec * string
+)
+"cmdline.ml" 61 1976 1980 "cmdline.ml" 61 1976 1991
+type(
+  string
+)
+"cmdline.ml" 61 1976 2008 "cmdline.ml" 61 1976 2015
+type(
+  string ref
+)
+ident(
+  int_ref convert "cmdline.ml" 48 1518 1524 "cmdline.ml" 48 1518 1531
+)
+"cmdline.ml" 61 1976 1993 "cmdline.ml" 61 1976 2015
+type(
+  Arg.spec
+)
+"cmdline.ml" 61 1976 2020 "cmdline.ml" 61 1976 2022
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 61 1976 2022 "cmdline.ml" 61 1976 2030
+type(
+  string
+)
+"cmdline.ml" 61 1976 2020 "cmdline.ml" 61 1976 2030
+type(
+  string
+)
+"cmdline.ml" 61 1976 2031 "cmdline.ml" 61 1976 2032
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 61 1976 2033 "cmdline.ml" 61 1976 2036
+type(
+  string
+)
+"cmdline.ml" 61 1976 2037 "cmdline.ml" 61 1976 2038
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 61 1976 2039 "cmdline.ml" 61 1976 2041
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 61 1976 2041 "cmdline.ml" 61 1976 2089
+type(
+  string
+)
+"cmdline.ml" 61 1976 2039 "cmdline.ml" 61 1976 2089
+type(
+  string
+)
+"cmdline.ml" 61 1976 2033 "cmdline.ml" 61 1976 2089
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 61 1976 2020 "cmdline.ml" 61 1976 2089
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 61 1976 1980 "cmdline.ml" 61 1976 2089
+type(
+  string * Arg.spec * string
+)
+"cmdline.ml" 62 2091 2095 "cmdline.ml" 62 2091 2105
+type(
+  string
+)
+"cmdline.ml" 62 2091 2123 "cmdline.ml" 62 2091 2129
+type(
+  string ref
+)
+ident(
+  int_ref format "cmdline.ml" 49 1544 1550 "cmdline.ml" 49 1544 1556
+)
+"cmdline.ml" 62 2091 2108 "cmdline.ml" 62 2091 2129
+type(
+  Arg.spec
+)
+"cmdline.ml" 62 2091 2135 "cmdline.ml" 62 2091 2137
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 62 2091 2137 "cmdline.ml" 62 2091 2145
+type(
+  string
+)
+"cmdline.ml" 62 2091 2135 "cmdline.ml" 62 2091 2145
+type(
+  string
+)
+"cmdline.ml" 62 2091 2146 "cmdline.ml" 62 2091 2147
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 62 2091 2148 "cmdline.ml" 62 2091 2151
+type(
+  string
+)
+"cmdline.ml" 62 2091 2152 "cmdline.ml" 62 2091 2153
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 62 2091 2154 "cmdline.ml" 62 2091 2156
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 62 2091 2156 "cmdline.ml" 62 2091 2178
+type(
+  string
+)
+"cmdline.ml" 62 2091 2154 "cmdline.ml" 62 2091 2178
+type(
+  string
+)
+"cmdline.ml" 62 2091 2148 "cmdline.ml" 62 2091 2178
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 62 2091 2135 "cmdline.ml" 62 2091 2178
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 62 2091 2095 "cmdline.ml" 62 2091 2178
+type(
+  string * Arg.spec * string
+)
+"cmdline.ml" 63 2180 2184 "cmdline.ml" 63 2180 2194
+type(
+  string
+)
+"cmdline.ml" 63 2180 2209 "cmdline.ml" 63 2180 2212
+type(
+  string list ref -> string -> unit
+)
+ident(
+  int_ref add "cmdline.ml" 35 1086 1092 "cmdline.ml" 35 1086 1095
+)
+"cmdline.ml" 63 2180 2213 "cmdline.ml" 63 2180 2220
+type(
+  string list ref
+)
+ident(
+  int_ref ignores "cmdline.ml" 50 1569 1575 "cmdline.ml" 50 1569 1582
+)
+"cmdline.ml" 63 2180 2208 "cmdline.ml" 63 2180 2221
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"cmdline.ml" 63 2180 2197 "cmdline.ml" 63 2180 2221
+type(
+  Arg.spec
+)
+"cmdline.ml" 63 2180 2224 "cmdline.ml" 63 2180 2226
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 63 2180 2226 "cmdline.ml" 63 2180 2230
+type(
+  string
+)
+"cmdline.ml" 63 2180 2224 "cmdline.ml" 63 2180 2230
+type(
+  string
+)
+"cmdline.ml" 63 2180 2231 "cmdline.ml" 63 2180 2232
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 63 2180 2233 "cmdline.ml" 63 2180 2236
+type(
+  string
+)
+"cmdline.ml" 63 2180 2237 "cmdline.ml" 63 2180 2238
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 63 2180 2239 "cmdline.ml" 63 2180 2241
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 63 2180 2241 "cmdline.ml" 63 2180 2260
+type(
+  string
+)
+"cmdline.ml" 63 2180 2239 "cmdline.ml" 63 2180 2260
+type(
+  string
+)
+"cmdline.ml" 63 2180 2233 "cmdline.ml" 63 2180 2260
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 63 2180 2224 "cmdline.ml" 63 2180 2260
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 63 2180 2184 "cmdline.ml" 63 2180 2260
+type(
+  string * Arg.spec * string
+)
+"cmdline.ml" 64 2262 2266 "cmdline.ml" 64 2262 2278
+type(
+  string
+)
+"cmdline.ml" 64 2262 2288 "cmdline.ml" 64 2262 2296
+type(
+  bool ref
+)
+ident(
+  int_ref in_place "cmdline.ml" 51 1595 1601 "cmdline.ml" 51 1595 1609
+)
+"cmdline.ml" 64 2262 2280 "cmdline.ml" 64 2262 2296
+type(
+  Arg.spec
+)
+"cmdline.ml" 64 2262 2306 "cmdline.ml" 64 2262 2309
+type(
+  string
+)
+"cmdline.ml" 64 2262 2310 "cmdline.ml" 64 2262 2311
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 64 2262 2312 "cmdline.ml" 64 2262 2314
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 64 2262 2314 "cmdline.ml" 64 2262 2346
+type(
+  string
+)
+"cmdline.ml" 64 2262 2312 "cmdline.ml" 64 2262 2346
+type(
+  string
+)
+"cmdline.ml" 64 2262 2306 "cmdline.ml" 64 2262 2346
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 64 2262 2266 "cmdline.ml" 64 2262 2346
+type(
+  string * Arg.spec * string
+)
+"cmdline.ml" 65 2348 2352 "cmdline.ml" 65 2348 2363
+type(
+  string
+)
+"cmdline.ml" 65 2348 2373 "cmdline.ml" 65 2348 2381
+type(
+  bool ref
+)
+ident(
+  int_ref in_place "cmdline.ml" 51 1595 1601 "cmdline.ml" 51 1595 1609
+)
+"cmdline.ml" 65 2348 2365 "cmdline.ml" 65 2348 2381
+type(
+  Arg.spec
+)
+"cmdline.ml" 65 2348 2392 "cmdline.ml" 65 2348 2397
+type(
+  string
+)
+ident(
+  int_ref ditto "cmdline.ml" 57 1736 1742 "cmdline.ml" 57 1736 1747
+)
+"cmdline.ml" 65 2348 2352 "cmdline.ml" 65 2348 2397
+type(
+  string * Arg.spec * string
+)
+"cmdline.ml" 66 2399 2403 "cmdline.ml" 66 2399 2423
+type(
+  string
+)
+"cmdline.ml" 66 2399 2433 "cmdline.ml" 66 2399 2449
+type(
+  bool ref
+)
+ident(
+  int_ref machine_readable "cmdline.ml" 52 1625 1631 "cmdline.ml" 52 1625 1647
+)
+"cmdline.ml" 66 2399 2425 "cmdline.ml" 66 2399 2449
+type(
+  Arg.spec
+)
+"cmdline.ml" 66 2399 2451 "cmdline.ml" 66 2399 2454
+type(
+  string
+)
+"cmdline.ml" 66 2399 2455 "cmdline.ml" 66 2399 2456
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 66 2399 2457 "cmdline.ml" 66 2399 2459
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 66 2399 2459 "cmdline.ml" 66 2399 2489
+type(
+  string
+)
+"cmdline.ml" 66 2399 2457 "cmdline.ml" 66 2399 2489
+type(
+  string
+)
+"cmdline.ml" 66 2399 2451 "cmdline.ml" 66 2399 2489
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 66 2399 2403 "cmdline.ml" 66 2399 2489
+type(
+  string * Arg.spec * string
+)
+"cmdline.ml" 67 2491 2495 "cmdline.ml" 67 2491 2499
+type(
+  string
+)
+"cmdline.ml" 67 2491 2523 "cmdline.ml" 67 2491 2529
+type(
+  string ref
+)
+ident(
+  int_ref option "cmdline.ml" 53 1663 1669 "cmdline.ml" 53 1663 1675
+)
+"cmdline.ml" 67 2491 2508 "cmdline.ml" 67 2491 2529
+type(
+  Arg.spec
+)
+"cmdline.ml" 67 2491 2535 "cmdline.ml" 67 2491 2537
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 67 2491 2537 "cmdline.ml" 67 2491 2545
+type(
+  string
+)
+"cmdline.ml" 67 2491 2535 "cmdline.ml" 67 2491 2545
+type(
+  string
+)
+"cmdline.ml" 67 2491 2546 "cmdline.ml" 67 2491 2547
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 67 2491 2548 "cmdline.ml" 67 2491 2551
+type(
+  string
+)
+"cmdline.ml" 67 2491 2552 "cmdline.ml" 67 2491 2553
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 67 2491 2554 "cmdline.ml" 67 2491 2556
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 67 2491 2556 "cmdline.ml" 67 2491 2578
+type(
+  string
+)
+"cmdline.ml" 67 2491 2554 "cmdline.ml" 67 2491 2578
+type(
+  string
+)
+"cmdline.ml" 67 2491 2548 "cmdline.ml" 67 2491 2578
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 67 2491 2535 "cmdline.ml" 67 2491 2578
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 67 2491 2495 "cmdline.ml" 67 2491 2578
+type(
+  string * Arg.spec * string
+)
+"cmdline.ml" 68 2580 2584 "cmdline.ml" 68 2580 2591
+type(
+  string
+)
+"cmdline.ml" 68 2580 2612 "cmdline.ml" 68 2580 2615
+type(
+  string ref
+)
+ident(
+  int_ref tmp "cmdline.ml" 54 1688 1694 "cmdline.ml" 54 1688 1697
+)
+"cmdline.ml" 68 2580 2597 "cmdline.ml" 68 2580 2615
+type(
+  Arg.spec
+)
+"cmdline.ml" 68 2580 2624 "cmdline.ml" 68 2580 2626
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 68 2580 2626 "cmdline.ml" 68 2580 2651
+type(
+  string
+)
+"cmdline.ml" 68 2580 2624 "cmdline.ml" 68 2580 2651
+type(
+  string
+)
+"cmdline.ml" 68 2580 2652 "cmdline.ml" 68 2580 2653
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 68 2580 2654 "cmdline.ml" 68 2580 2657
+type(
+  string
+)
+"cmdline.ml" 68 2580 2658 "cmdline.ml" 68 2580 2659
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 68 2580 2660 "cmdline.ml" 68 2580 2662
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 68 2580 2662 "cmdline.ml" 68 2580 2718
+type(
+  string
+)
+"cmdline.ml" 68 2580 2660 "cmdline.ml" 68 2580 2718
+type(
+  string
+)
+"cmdline.ml" 68 2580 2654 "cmdline.ml" 68 2580 2718
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 68 2580 2624 "cmdline.ml" 68 2580 2718
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 68 2580 2584 "cmdline.ml" 68 2580 2718
+type(
+  string * Arg.spec * string
+)
+"cmdline.ml" 69 2720 2724 "cmdline.ml" 69 2720 2732
+type(
+  string
+)
+"cmdline.ml" 69 2720 2749 "cmdline.ml" 69 2720 2752
+type(
+  string list ref -> string -> unit
+)
+ident(
+  int_ref add "cmdline.ml" 35 1086 1092 "cmdline.ml" 35 1086 1095
+)
+"cmdline.ml" 69 2720 2753 "cmdline.ml" 69 2720 2759
+type(
+  string list ref
+)
+ident(
+  int_ref zeroes "cmdline.ml" 55 1710 1716 "cmdline.ml" 55 1710 1722
+)
+"cmdline.ml" 69 2720 2748 "cmdline.ml" 69 2720 2760
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"cmdline.ml" 69 2720 2737 "cmdline.ml" 69 2720 2760
+type(
+  Arg.spec
+)
+"cmdline.ml" 69 2720 2764 "cmdline.ml" 69 2720 2766
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 69 2720 2766 "cmdline.ml" 69 2720 2770
+type(
+  string
+)
+"cmdline.ml" 69 2720 2764 "cmdline.ml" 69 2720 2770
+type(
+  string
+)
+"cmdline.ml" 69 2720 2771 "cmdline.ml" 69 2720 2772
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 69 2720 2773 "cmdline.ml" 69 2720 2776
+type(
+  string
+)
+"cmdline.ml" 69 2720 2777 "cmdline.ml" 69 2720 2778
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"cmdline.ml" 69 2720 2779 "cmdline.ml" 69 2720 2781
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cmdline.ml" 69 2720 2781 "cmdline.ml" 69 2720 2798
+type(
+  string
+)
+"cmdline.ml" 69 2720 2779 "cmdline.ml" 69 2720 2798
+type(
+  string
+)
+"cmdline.ml" 69 2720 2773 "cmdline.ml" 69 2720 2798
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 69 2720 2764 "cmdline.ml" 69 2720 2798
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 69 2720 2724 "cmdline.ml" 69 2720 2798
+type(
+  string * Arg.spec * string
+)
+"cmdline.ml" 58 1761 1777 "cmdline.ml" 70 2800 2803
+type(
+  (string * Arg.spec * string) list
+)
+"cmdline.ml" 71 2807 2813 "cmdline.ml" 71 2807 2820
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"cmdline.ml" 71 2807 2823 "cmdline.ml" 71 2807 2843
+type(
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Common_utils.set_standard_options
+)
+"cmdline.ml" 71 2807 2844 "cmdline.ml" 71 2807 2851
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref argspec "cmdline.ml" 58 1761 1767 "cmdline.ml" 58 1761 1774
+)
+"cmdline.ml" 71 2807 2823 "cmdline.ml" 71 2807 2851
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"cmdline.ml" 72 2855 2861 "cmdline.ml" 72 2855 2866
+type(
+  string list ref
+)
+"cmdline.ml" 72 2855 2869 "cmdline.ml" 72 2855 2872
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"cmdline.ml" 72 2855 2873 "cmdline.ml" 72 2855 2875
+type(
+  string list
+)
+"cmdline.ml" 72 2855 2869 "cmdline.ml" 72 2855 2875
+type(
+  string list ref
+)
+"cmdline.ml" 73 2879 2885 "cmdline.ml" 73 2879 2893
+type(
+  string -> unit
+)
+"cmdline.ml" 73 2879 2894 "cmdline.ml" 73 2879 2895
+type(
+  string
+)
+ident(
+  def s "cmdline.ml" 73 2879 2898 "cmdline.ml" 73 2879 2918
+)
+"cmdline.ml" 73 2879 2898 "cmdline.ml" 73 2879 2903
+type(
+  string list ref
+)
+ident(
+  int_ref disks "cmdline.ml" 72 2855 2861 "cmdline.ml" 72 2855 2866
+)
+"cmdline.ml" 73 2879 2904 "cmdline.ml" 73 2879 2906
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"cmdline.ml" 73 2879 2907 "cmdline.ml" 73 2879 2908
+type(
+  string
+)
+ident(
+  int_ref s "cmdline.ml" 73 2879 2894 "cmdline.ml" 73 2879 2895
+)
+"cmdline.ml" 73 2879 2912 "cmdline.ml" 73 2879 2913
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 73 2879 2913 "cmdline.ml" 73 2879 2918
+type(
+  string list ref
+)
+ident(
+  int_ref disks "cmdline.ml" 72 2855 2861 "cmdline.ml" 72 2855 2866
+)
+"cmdline.ml" 73 2879 2912 "cmdline.ml" 73 2879 2918
+type(
+  string list
+)
+"cmdline.ml" 73 2879 2907 "cmdline.ml" 73 2879 2918
+type(
+  string list
+)
+"cmdline.ml" 73 2879 2898 "cmdline.ml" 73 2879 2918
+type(
+  unit
+)
+"cmdline.ml" 74 2922 2928 "cmdline.ml" 74 2922 2937
+type(
+  string
+)
+"cmdline.ml" 75 2940 2944 "cmdline.ml" 75 2940 2951
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"cmdline.ml" 75 2940 2953 "cmdline.ml" 75 2940 2955
+type(
+  (string -> string, unit, string, string, string, string) format6 ->
+  (string -> string, unit, string) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"cmdline.ml" 75 2940 2955 "cmdline.ml" 84 3191 3192
+type(
+  (string -> string, unit, string, string, string, string) format6
+)
+"cmdline.ml" 75 2940 2952 "cmdline.ml" 84 3191 3193
+type(
+  (string -> string, unit, string) format
+)
+"cmdline.ml" 85 3194 3200 "cmdline.ml" 85 3194 3204
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"cmdline.ml" 75 2940 2944 "cmdline.ml" 85 3194 3204
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 86 3208 3210 "cmdline.ml" 86 3208 3219
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  Arg.anon_fun -> Arg.usage_msg -> unit
+)
+ident(
+  ext_ref Arg.parse
+)
+"cmdline.ml" 86 3208 3220 "cmdline.ml" 86 3208 3227
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref argspec "cmdline.ml" 71 2807 2813 "cmdline.ml" 71 2807 2820
+)
+"cmdline.ml" 86 3208 3228 "cmdline.ml" 86 3208 3236
+type(
+  Arg.anon_fun
+)
+ident(
+  int_ref anon_fun "cmdline.ml" 73 2879 2885 "cmdline.ml" 73 2879 2893
+)
+"cmdline.ml" 86 3208 3237 "cmdline.ml" 86 3208 3246
+type(
+  Arg.usage_msg
+)
+ident(
+  int_ref usage_msg "cmdline.ml" 74 2922 2928 "cmdline.ml" 74 2922 2937
+)
+"cmdline.ml" 86 3208 3210 "cmdline.ml" 86 3208 3246
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 89 3291 3297 "cmdline.ml" 89 3291 3309
+type(
+  check_t
+)
+"cmdline.ml" 89 3291 3312 "cmdline.ml" 89 3291 3313
+type(
+  check_t ref -> check_t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 89 3291 3313 "cmdline.ml" 89 3291 3325
+type(
+  check_t ref
+)
+ident(
+  int_ref check_tmpdir "cmdline.ml" 37 1122 1128 "cmdline.ml" 37 1122 1140
+)
+"cmdline.ml" 89 3291 3312 "cmdline.ml" 89 3291 3325
+type(
+  check_t
+)
+"cmdline.ml" 90 3329 3335 "cmdline.ml" 90 3329 3343
+type(
+  bool
+)
+"cmdline.ml" 90 3329 3346 "cmdline.ml" 90 3329 3347
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 90 3329 3347 "cmdline.ml" 90 3329 3355
+type(
+  bool ref
+)
+ident(
+  int_ref compress "cmdline.ml" 47 1488 1494 "cmdline.ml" 47 1488 1502
+)
+"cmdline.ml" 90 3329 3346 "cmdline.ml" 90 3329 3355
+type(
+  bool
+)
+"cmdline.ml" 91 3359 3365 "cmdline.ml" 91 3359 3372
+type(
+  string option
+)
+"cmdline.ml" 91 3359 3381 "cmdline.ml" 91 3359 3382
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 91 3359 3382 "cmdline.ml" 91 3359 3389
+type(
+  string ref
+)
+ident(
+  int_ref convert "cmdline.ml" 48 1518 1524 "cmdline.ml" 48 1518 1531
+)
+"cmdline.ml" 91 3359 3381 "cmdline.ml" 91 3359 3389
+type(
+  string
+)
+"cmdline.ml" 91 3359 3395 "cmdline.ml" 91 3359 3397
+type(
+  string
+)
+"cmdline.ml" 91 3359 3401 "cmdline.ml" 91 3359 3405
+type(
+  string option
+)
+"cmdline.ml" 91 3359 3408 "cmdline.ml" 91 3359 3411
+type(
+  string
+)
+ident(
+  def str "cmdline.ml" 91 3359 3415 "cmdline.ml" 91 3359 3423
+)
+"cmdline.ml" 91 3359 3420 "cmdline.ml" 91 3359 3423
+type(
+  string
+)
+ident(
+  int_ref str "cmdline.ml" 91 3359 3408 "cmdline.ml" 91 3359 3411
+)
+"cmdline.ml" 91 3359 3415 "cmdline.ml" 91 3359 3423
+type(
+  string option
+)
+"cmdline.ml" 91 3359 3375 "cmdline.ml" 91 3359 3423
+type(
+  string option
+)
+"cmdline.ml" 92 3427 3433 "cmdline.ml" 92 3427 3439
+type(
+  string option
+)
+"cmdline.ml" 92 3427 3448 "cmdline.ml" 92 3427 3449
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 92 3427 3449 "cmdline.ml" 92 3427 3455
+type(
+  string ref
+)
+ident(
+  int_ref format "cmdline.ml" 49 1544 1550 "cmdline.ml" 49 1544 1556
+)
+"cmdline.ml" 92 3427 3448 "cmdline.ml" 92 3427 3455
+type(
+  string
+)
+"cmdline.ml" 92 3427 3461 "cmdline.ml" 92 3427 3463
+type(
+  string
+)
+"cmdline.ml" 92 3427 3467 "cmdline.ml" 92 3427 3471
+type(
+  string option
+)
+"cmdline.ml" 92 3427 3474 "cmdline.ml" 92 3427 3477
+type(
+  string
+)
+ident(
+  def str "cmdline.ml" 92 3427 3481 "cmdline.ml" 92 3427 3489
+)
+"cmdline.ml" 92 3427 3486 "cmdline.ml" 92 3427 3489
+type(
+  string
+)
+ident(
+  int_ref str "cmdline.ml" 92 3427 3474 "cmdline.ml" 92 3427 3477
+)
+"cmdline.ml" 92 3427 3481 "cmdline.ml" 92 3427 3489
+type(
+  string option
+)
+"cmdline.ml" 92 3427 3442 "cmdline.ml" 92 3427 3489
+type(
+  string option
+)
+"cmdline.ml" 93 3493 3499 "cmdline.ml" 93 3493 3506
+type(
+  string list
+)
+"cmdline.ml" 93 3493 3509 "cmdline.ml" 93 3493 3517
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"cmdline.ml" 93 3493 3518 "cmdline.ml" 93 3493 3519
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 93 3493 3519 "cmdline.ml" 93 3493 3526
+type(
+  string list ref
+)
+ident(
+  int_ref ignores "cmdline.ml" 50 1569 1575 "cmdline.ml" 50 1569 1582
+)
+"cmdline.ml" 93 3493 3518 "cmdline.ml" 93 3493 3526
+type(
+  string list
+)
+"cmdline.ml" 93 3493 3509 "cmdline.ml" 93 3493 3526
+call(
+  stack
+)
+type(
+  string list
+)
+"cmdline.ml" 94 3530 3536 "cmdline.ml" 94 3530 3544
+type(
+  bool
+)
+"cmdline.ml" 94 3530 3547 "cmdline.ml" 94 3530 3548
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 94 3530 3548 "cmdline.ml" 94 3530 3556
+type(
+  bool ref
+)
+ident(
+  int_ref in_place "cmdline.ml" 51 1595 1601 "cmdline.ml" 51 1595 1609
+)
+"cmdline.ml" 94 3530 3547 "cmdline.ml" 94 3530 3556
+type(
+  bool
+)
+"cmdline.ml" 95 3560 3566 "cmdline.ml" 95 3560 3582
+type(
+  bool
+)
+"cmdline.ml" 95 3560 3585 "cmdline.ml" 95 3560 3586
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 95 3560 3586 "cmdline.ml" 95 3560 3602
+type(
+  bool ref
+)
+ident(
+  int_ref machine_readable "cmdline.ml" 52 1625 1631 "cmdline.ml" 52 1625 1647
+)
+"cmdline.ml" 95 3560 3585 "cmdline.ml" 95 3560 3602
+type(
+  bool
+)
+"cmdline.ml" 96 3606 3612 "cmdline.ml" 96 3606 3618
+type(
+  string option
+)
+"cmdline.ml" 96 3606 3627 "cmdline.ml" 96 3606 3628
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 96 3606 3628 "cmdline.ml" 96 3606 3634
+type(
+  string ref
+)
+ident(
+  int_ref option "cmdline.ml" 53 1663 1669 "cmdline.ml" 53 1663 1675
+)
+"cmdline.ml" 96 3606 3627 "cmdline.ml" 96 3606 3634
+type(
+  string
+)
+"cmdline.ml" 96 3606 3640 "cmdline.ml" 96 3606 3642
+type(
+  string
+)
+"cmdline.ml" 96 3606 3646 "cmdline.ml" 96 3606 3650
+type(
+  string option
+)
+"cmdline.ml" 96 3606 3653 "cmdline.ml" 96 3606 3656
+type(
+  string
+)
+ident(
+  def str "cmdline.ml" 96 3606 3660 "cmdline.ml" 96 3606 3668
+)
+"cmdline.ml" 96 3606 3665 "cmdline.ml" 96 3606 3668
+type(
+  string
+)
+ident(
+  int_ref str "cmdline.ml" 96 3606 3653 "cmdline.ml" 96 3606 3656
+)
+"cmdline.ml" 96 3606 3660 "cmdline.ml" 96 3606 3668
+type(
+  string option
+)
+"cmdline.ml" 96 3606 3621 "cmdline.ml" 96 3606 3668
+type(
+  string option
+)
+"cmdline.ml" 97 3672 3678 "cmdline.ml" 97 3672 3681
+type(
+  string option
+)
+"cmdline.ml" 97 3672 3690 "cmdline.ml" 97 3672 3691
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 97 3672 3691 "cmdline.ml" 97 3672 3694
+type(
+  string ref
+)
+ident(
+  int_ref tmp "cmdline.ml" 54 1688 1694 "cmdline.ml" 54 1688 1697
+)
+"cmdline.ml" 97 3672 3690 "cmdline.ml" 97 3672 3694
+type(
+  string
+)
+"cmdline.ml" 97 3672 3700 "cmdline.ml" 97 3672 3702
+type(
+  string
+)
+"cmdline.ml" 97 3672 3706 "cmdline.ml" 97 3672 3710
+type(
+  string option
+)
+"cmdline.ml" 97 3672 3713 "cmdline.ml" 97 3672 3716
+type(
+  string
+)
+ident(
+  def str "cmdline.ml" 97 3672 3720 "cmdline.ml" 97 3672 3728
+)
+"cmdline.ml" 97 3672 3725 "cmdline.ml" 97 3672 3728
+type(
+  string
+)
+ident(
+  int_ref str "cmdline.ml" 97 3672 3713 "cmdline.ml" 97 3672 3716
+)
+"cmdline.ml" 97 3672 3720 "cmdline.ml" 97 3672 3728
+type(
+  string option
+)
+"cmdline.ml" 97 3672 3684 "cmdline.ml" 97 3672 3728
+type(
+  string option
+)
+"cmdline.ml" 98 3732 3738 "cmdline.ml" 98 3732 3744
+type(
+  string list
+)
+"cmdline.ml" 98 3732 3747 "cmdline.ml" 98 3732 3755
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"cmdline.ml" 98 3732 3756 "cmdline.ml" 98 3732 3757
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 98 3732 3757 "cmdline.ml" 98 3732 3763
+type(
+  string list ref
+)
+ident(
+  int_ref zeroes "cmdline.ml" 55 1710 1716 "cmdline.ml" 55 1710 1722
+)
+"cmdline.ml" 98 3732 3756 "cmdline.ml" 98 3732 3763
+type(
+  string list
+)
+"cmdline.ml" 98 3732 3747 "cmdline.ml" 98 3732 3763
+call(
+  stack
+)
+type(
+  string list
+)
+"cmdline.ml" 103 3879 3884 "cmdline.ml" 103 3879 3885
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 103 3879 3885 "cmdline.ml" 103 3879 3890
+type(
+  string list ref
+)
+ident(
+  int_ref disks "cmdline.ml" 72 2855 2861 "cmdline.ml" 72 2855 2866
+)
+"cmdline.ml" 103 3879 3884 "cmdline.ml" 103 3879 3890
+type(
+  string list
+)
+"cmdline.ml" 103 3879 3891 "cmdline.ml" 103 3879 3892
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"cmdline.ml" 103 3879 3893 "cmdline.ml" 103 3879 3895
+type(
+  string list
+)
+"cmdline.ml" 103 3879 3884 "cmdline.ml" 103 3879 3895
+type(
+  bool
+)
+"cmdline.ml" 103 3879 3896 "cmdline.ml" 103 3879 3898
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"cmdline.ml" 103 3879 3899 "cmdline.ml" 103 3879 3915
+type(
+  bool
+)
+ident(
+  int_ref machine_readable "cmdline.ml" 95 3560 3566 "cmdline.ml" 95 3560 3582
+)
+"cmdline.ml" 103 3879 3884 "cmdline.ml" 103 3879 3915
+type(
+  bool
+)
+"cmdline.ml" 104 3923 3927 "cmdline.ml" 104 3923 3933
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"cmdline.ml" 104 3923 3934 "cmdline.ml" 104 3923 3951
+type(
+  (unit, out_channel, unit) format
+)
+"cmdline.ml" 104 3923 3927 "cmdline.ml" 104 3923 3951
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 105 3953 3957 "cmdline.ml" 105 3953 3963
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"cmdline.ml" 105 3953 3964 "cmdline.ml" 105 3953 3978
+type(
+  (unit, out_channel, unit) format
+)
+"cmdline.ml" 105 3953 3957 "cmdline.ml" 105 3953 3978
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 106 3980 3984 "cmdline.ml" 106 3980 3990
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"cmdline.ml" 106 3980 3991 "cmdline.ml" 106 3980 3999
+type(
+  (unit, out_channel, unit) format
+)
+"cmdline.ml" 106 3980 3984 "cmdline.ml" 106 3980 3999
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 107 4001 4005 "cmdline.ml" 107 4001 4011
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"cmdline.ml" 107 4001 4012 "cmdline.ml" 107 4001 4028
+type(
+  (unit, out_channel, unit) format
+)
+"cmdline.ml" 107 4001 4005 "cmdline.ml" 107 4001 4028
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 108 4030 4034 "cmdline.ml" 108 4030 4040
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"cmdline.ml" 108 4030 4041 "cmdline.ml" 108 4030 4053
+type(
+  (unit, out_channel, unit) format
+)
+"cmdline.ml" 108 4030 4034 "cmdline.ml" 108 4030 4053
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 109 4055 4059 "cmdline.ml" 109 4055 4065
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"cmdline.ml" 109 4055 4066 "cmdline.ml" 109 4055 4080
+type(
+  (unit, out_channel, unit) format
+)
+"cmdline.ml" 109 4055 4059 "cmdline.ml" 109 4055 4080
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 110 4082 4090 "cmdline.ml" 110 4082 4091
+type(
+  Guestfs.guestfs
+)
+"cmdline.ml" 110 4082 4094 "cmdline.ml" 110 4082 4113
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> Guestfs.guestfs
+)
+"cmdline.ml" 110 4082 4114 "cmdline.ml" 110 4082 4116
+type(
+  unit
+)
+"cmdline.ml" 110 4082 4094 "cmdline.ml" 110 4082 4116
+call(
+  stack
+)
+type(
+  Guestfs.guestfs
+)
+"cmdline.ml" 111 4120 4124 "cmdline.ml" 111 4120 4125
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "cmdline.ml" 110 4082 4090 "cmdline.ml" 110 4082 4091
+)
+"cmdline.ml" 111 4120 4124 "cmdline.ml" 111 4120 4135
+call(
+  stack
+)
+type(
+  ?readonly:bool ->
+  ?format:string ->
+  ?iface:string ->
+  ?name:string ->
+  ?label:string ->
+  ?protocol:string ->
+  ?server:string array ->
+  ?username:string ->
+  ?secret:string ->
+  ?cachemode:string -> ?discard:string -> ?copyonread:bool -> string -> unit
+)
+"cmdline.ml" 111 4120 4136 "cmdline.ml" 111 4120 4147
+type(
+  string
+)
+"cmdline.ml" 111 4120 4124 "cmdline.ml" 111 4120 4147
+type(
+  unit
+)
+"cmdline.ml" 112 4149 4153 "cmdline.ml" 112 4149 4154
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "cmdline.ml" 110 4082 4090 "cmdline.ml" 110 4082 4091
+)
+"cmdline.ml" 112 4149 4153 "cmdline.ml" 112 4149 4161
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"cmdline.ml" 112 4149 4162 "cmdline.ml" 112 4149 4164
+type(
+  unit
+)
+"cmdline.ml" 112 4149 4153 "cmdline.ml" 112 4149 4164
+type(
+  unit
+)
+"cmdline.ml" 113 4166 4173 "cmdline.ml" 113 4166 4174
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "cmdline.ml" 110 4082 4090 "cmdline.ml" 110 4082 4091
+)
+"cmdline.ml" 113 4166 4173 "cmdline.ml" 113 4166 4192
+call(
+  stack
+)
+type(
+  string array -> bool
+)
+"cmdline.ml" 113 4166 4196 "cmdline.ml" 113 4166 4207
+type(
+  string
+)
+"cmdline.ml" 113 4166 4209 "cmdline.ml" 113 4166 4217
+type(
+  string
+)
+"cmdline.ml" 113 4166 4193 "cmdline.ml" 113 4166 4220
+type(
+  string array
+)
+"cmdline.ml" 113 4166 4173 "cmdline.ml" 113 4166 4220
+type(
+  bool
+)
+"cmdline.ml" 114 4226 4232 "cmdline.ml" 114 4226 4238
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"cmdline.ml" 114 4226 4239 "cmdline.ml" 114 4226 4247
+type(
+  (unit, out_channel, unit) format
+)
+"cmdline.ml" 114 4226 4232 "cmdline.ml" 114 4226 4247
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 113 4166 4170 "cmdline.ml" 114 4226 4247
+type(
+  unit
+)
+"cmdline.ml" 115 4249 4256 "cmdline.ml" 115 4249 4257
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "cmdline.ml" 110 4082 4090 "cmdline.ml" 110 4082 4091
+)
+"cmdline.ml" 115 4249 4256 "cmdline.ml" 115 4249 4275
+call(
+  stack
+)
+type(
+  string array -> bool
+)
+"cmdline.ml" 115 4249 4279 "cmdline.ml" 115 4249 4286
+type(
+  string
+)
+"cmdline.ml" 115 4249 4276 "cmdline.ml" 115 4249 4289
+type(
+  string array
+)
+"cmdline.ml" 115 4249 4256 "cmdline.ml" 115 4249 4289
+type(
+  bool
+)
+"cmdline.ml" 116 4295 4301 "cmdline.ml" 116 4295 4307
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"cmdline.ml" 116 4295 4308 "cmdline.ml" 116 4295 4317
+type(
+  (unit, out_channel, unit) format
+)
+"cmdline.ml" 116 4295 4301 "cmdline.ml" 116 4295 4317
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 115 4249 4253 "cmdline.ml" 116 4295 4317
+type(
+  unit
+)
+"cmdline.ml" 117 4319 4323 "cmdline.ml" 117 4319 4327
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"cmdline.ml" 117 4319 4328 "cmdline.ml" 117 4319 4329
+type(
+  int
+)
+"cmdline.ml" 117 4319 4323 "cmdline.ml" 117 4319 4329
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 115 4249 4253 "cmdline.ml" 117 4319 4329
+type(
+  unit
+)
+"cmdline.ml" 113 4166 4170 "cmdline.ml" 117 4319 4329
+type(
+  unit
+)
+"cmdline.ml" 112 4149 4153 "cmdline.ml" 117 4319 4329
+type(
+  unit
+)
+"cmdline.ml" 111 4120 4124 "cmdline.ml" 117 4319 4329
+type(
+  unit
+)
+"cmdline.ml" 110 4082 4086 "cmdline.ml" 117 4319 4329
+type(
+  unit
+)
+"cmdline.ml" 109 4055 4059 "cmdline.ml" 117 4319 4329
+type(
+  unit
+)
+"cmdline.ml" 108 4030 4034 "cmdline.ml" 117 4319 4329
+type(
+  unit
+)
+"cmdline.ml" 107 4001 4005 "cmdline.ml" 117 4319 4329
+type(
+  unit
+)
+"cmdline.ml" 106 3980 3984 "cmdline.ml" 117 4319 4329
+type(
+  unit
+)
+"cmdline.ml" 105 3953 3957 "cmdline.ml" 117 4319 4329
+type(
+  unit
+)
+"cmdline.ml" 103 3879 3921 "cmdline.ml" 118 4330 4333
+type(
+  unit
+)
+"cmdline.ml" 103 3879 3881 "cmdline.ml" 118 4330 4333
+type(
+  unit
+)
+"cmdline.ml" 121 4403 4409 "cmdline.ml" 121 4403 4415
+type(
+  string
+)
+"cmdline.ml" 121 4403 4417 "cmdline.ml" 121 4403 4424
+type(
+  string
+)
+"cmdline.ml" 121 4403 4409 "cmdline.ml" 121 4403 4424
+type(
+  string * string
+)
+"cmdline.ml" 122 4427 4437 "cmdline.ml" 122 4427 4445
+type(
+  bool
+)
+ident(
+  int_ref in_place "cmdline.ml" 94 3530 3536 "cmdline.ml" 94 3530 3544
+)
+"cmdline.ml" 122 4427 4447 "cmdline.ml" 122 4427 4455
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"cmdline.ml" 122 4427 4456 "cmdline.ml" 122 4427 4457
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"cmdline.ml" 122 4427 4457 "cmdline.ml" 122 4427 4462
+type(
+  string list ref
+)
+ident(
+  int_ref disks "cmdline.ml" 72 2855 2861 "cmdline.ml" 72 2855 2866
+)
+"cmdline.ml" 122 4427 4456 "cmdline.ml" 122 4427 4462
+type(
+  string list
+)
+"cmdline.ml" 122 4427 4447 "cmdline.ml" 122 4427 4462
+call(
+  stack
+)
+type(
+  string list
+)
+"cmdline.ml" 122 4427 4437 "cmdline.ml" 122 4427 4462
+type(
+  bool * string list
+)
+"cmdline.ml" 123 4468 4474 "cmdline.ml" 123 4468 4479
+type(
+  bool
+)
+"cmdline.ml" 123 4468 4482 "cmdline.ml" 123 4468 4488
+type(
+  string
+)
+ident(
+  def indisk "cmdline.ml" 123 4468 4502 "cmdline.ml" 123 4468 4517
+)
+"cmdline.ml" 123 4468 4490 "cmdline.ml" 123 4468 4497
+type(
+  string
+)
+ident(
+  def outdisk "cmdline.ml" 123 4468 4502 "cmdline.ml" 123 4468 4517
+)
+"cmdline.ml" 123 4468 4481 "cmdline.ml" 123 4468 4498
+type(
+  string list
+)
+"cmdline.ml" 123 4468 4474 "cmdline.ml" 123 4468 4498
+type(
+  bool * string list
+)
+"cmdline.ml" 123 4468 4502 "cmdline.ml" 123 4468 4508
+type(
+  string
+)
+ident(
+  int_ref indisk "cmdline.ml" 123 4468 4482 "cmdline.ml" 123 4468 4488
+)
+"cmdline.ml" 123 4468 4510 "cmdline.ml" 123 4468 4517
+type(
+  string
+)
+ident(
+  int_ref outdisk "cmdline.ml" 123 4468 4490 "cmdline.ml" 123 4468 4497
+)
+"cmdline.ml" 123 4468 4502 "cmdline.ml" 123 4468 4517
+type(
+  string * string
+)
+"cmdline.ml" 124 4518 4524 "cmdline.ml" 124 4518 4528
+type(
+  bool
+)
+"cmdline.ml" 124 4518 4531 "cmdline.ml" 124 4518 4535
+type(
+  string
+)
+ident(
+  def disk "cmdline.ml" 124 4518 4540 "cmdline.ml" 124 4518 4548
+)
+"cmdline.ml" 124 4518 4530 "cmdline.ml" 124 4518 4536
+type(
+  string list
+)
+"cmdline.ml" 124 4518 4524 "cmdline.ml" 124 4518 4536
+type(
+  bool * string list
+)
+"cmdline.ml" 124 4518 4540 "cmdline.ml" 124 4518 4544
+type(
+  string
+)
+ident(
+  int_ref disk "cmdline.ml" 124 4518 4531 "cmdline.ml" 124 4518 4535
+)
+"cmdline.ml" 124 4518 4546 "cmdline.ml" 124 4518 4548
+type(
+  string
+)
+"cmdline.ml" 124 4518 4540 "cmdline.ml" 124 4518 4548
+type(
+  string * string
+)
+"cmdline.ml" 125 4549 4555 "cmdline.ml" 125 4549 4556
+type(
+  bool * string list
+)
+"cmdline.ml" 126 4560 4566 "cmdline.ml" 126 4560 4571
+type(
+  ?exit_code:int ->
+  (string -> string -> string * string, unit, string, string * string)
+  format4 -> string -> string -> string * string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"cmdline.ml" 126 4560 4572 "cmdline.ml" 126 4560 4635
+type(
+  (string -> string -> string * string, unit, string, string * string)
+  format4
+)
+"cmdline.ml" 127 4636 4644 "cmdline.ml" 127 4636 4648
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"cmdline.ml" 127 4636 4649 "cmdline.ml" 127 4636 4653
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"cmdline.ml" 126 4560 4566 "cmdline.ml" 127 4636 4653
+call(
+  stack
+)
+type(
+  string * string
+)
+"cmdline.ml" 122 4427 4431 "cmdline.ml" 127 4636 4653
+type(
+  string * string
+)
+"cmdline.ml" 132 4764 4769 "cmdline.ml" 132 4764 4775
+type(
+  string
+)
+ident(
+  int_ref indisk "cmdline.ml" 121 4403 4409 "cmdline.ml" 121 4403 4415
+)
+"cmdline.ml" 132 4764 4776 "cmdline.ml" 132 4764 4777
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"cmdline.ml" 132 4764 4778 "cmdline.ml" 132 4764 4785
+type(
+  string
+)
+ident(
+  int_ref outdisk "cmdline.ml" 121 4403 4417 "cmdline.ml" 121 4403 4424
+)
+"cmdline.ml" 132 4764 4769 "cmdline.ml" 132 4764 4785
+type(
+  bool
+)
+"cmdline.ml" 133 4791 4795 "cmdline.ml" 133 4791 4800
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"cmdline.ml" 133 4791 4802 "cmdline.ml" 133 4791 4804
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"cmdline.ml" 133 4791 4804 "cmdline.ml" 133 4791 4861
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"cmdline.ml" 133 4791 4801 "cmdline.ml" 133 4791 4862
+type(
+  (unit, unit, string, unit) format4
+)
+"cmdline.ml" 133 4791 4795 "cmdline.ml" 133 4791 4862
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 132 4764 4766 "cmdline.ml" 133 4791 4862
+type(
+  unit
+)
+"cmdline.ml" 135 4865 4871 "cmdline.ml" 135 4865 4877
+type(
+  string
+)
+"cmdline.ml" 136 4880 4887 "cmdline.ml" 136 4880 4890
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"cmdline.ml" 136 4880 4891 "cmdline.ml" 136 4880 4899
+type(
+  bool
+)
+ident(
+  int_ref in_place "cmdline.ml" 94 3530 3536 "cmdline.ml" 94 3530 3544
+)
+"cmdline.ml" 136 4880 4887 "cmdline.ml" 136 4880 4899
+type(
+  bool
+)
+"cmdline.ml" 140 5022 5032 "cmdline.ml" 140 5022 5038
+type(
+  string
+)
+ident(
+  def indisk "cmdline.ml" 147 5226 5232 "cmdline.ml" 151 5371 5383
+)
+"cmdline.ml" 141 5041 5052 "cmdline.ml" 141 5041 5055
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"cmdline.ml" 141 5041 5057 "cmdline.ml" 141 5041 5077
+type(
+  string -> bool
+)
+ident(
+  ext_ref Filename.is_relative
+)
+"cmdline.ml" 141 5041 5078 "cmdline.ml" 141 5041 5084
+type(
+  string
+)
+ident(
+  int_ref indisk "cmdline.ml" 121 4403 4409 "cmdline.ml" 121 4403 4415
+)
+"cmdline.ml" 141 5041 5056 "cmdline.ml" 141 5041 5085
+call(
+  stack
+)
+type(
+  bool
+)
+"cmdline.ml" 141 5041 5052 "cmdline.ml" 141 5041 5085
+type(
+  bool
+)
+"cmdline.ml" 142 5091 5101 "cmdline.ml" 142 5091 5107
+type(
+  string
+)
+ident(
+  int_ref indisk "cmdline.ml" 121 4403 4409 "cmdline.ml" 121 4403 4415
+)
+"cmdline.ml" 144 5121 5131 "cmdline.ml" 144 5121 5141
+type(
+  unit -> string
+)
+ident(
+  ext_ref Sys.getcwd
+)
+"cmdline.ml" 144 5121 5142 "cmdline.ml" 144 5121 5144
+type(
+  unit
+)
+"cmdline.ml" 144 5121 5131 "cmdline.ml" 144 5121 5144
+type(
+  string
+)
+"cmdline.ml" 144 5121 5145 "cmdline.ml" 144 5121 5147
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"cmdline.ml" 144 5121 5148 "cmdline.ml" 144 5121 5154
+type(
+  string
+)
+ident(
+  int_ref indisk "cmdline.ml" 121 4403 4409 "cmdline.ml" 121 4403 4415
+)
+"cmdline.ml" 144 5121 5131 "cmdline.ml" 144 5121 5154
+call(
+  stack
+)
+type(
+  string
+)
+"cmdline.ml" 141 5041 5049 "cmdline.ml" 144 5121 5154
+type(
+  string
+)
+"cmdline.ml" 147 5226 5235 "cmdline.ml" 147 5226 5249
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_char_device
+)
+"cmdline.ml" 147 5226 5250 "cmdline.ml" 147 5226 5257
+type(
+  string
+)
+ident(
+  int_ref outdisk "cmdline.ml" 121 4403 4417 "cmdline.ml" 121 4403 4424
+)
+"cmdline.ml" 147 5226 5235 "cmdline.ml" 147 5226 5257
+call(
+  stack
+)
+type(
+  bool
+)
+"cmdline.ml" 148 5263 5271 "cmdline.ml" 148 5263 5276
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"cmdline.ml" 148 5263 5278 "cmdline.ml" 148 5263 5280
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"cmdline.ml" 148 5263 5280 "cmdline.ml" 148 5263 5349
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"cmdline.ml" 148 5263 5277 "cmdline.ml" 148 5263 5350
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"cmdline.ml" 149 5351 5361 "cmdline.ml" 149 5351 5368
+type(
+  string
+)
+ident(
+  int_ref outdisk "cmdline.ml" 121 4403 4417 "cmdline.ml" 121 4403 4424
+)
+"cmdline.ml" 148 5263 5271 "cmdline.ml" 149 5351 5368
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 147 5226 5232 "cmdline.ml" 149 5351 5368
+type(
+  unit
+)
+"cmdline.ml" 151 5371 5377 "cmdline.ml" 151 5371 5383
+type(
+  string
+)
+ident(
+  int_ref indisk "cmdline.ml" 140 5022 5032 "cmdline.ml" 140 5022 5038
+)
+"cmdline.ml" 147 5226 5232 "cmdline.ml" 151 5371 5383
+type(
+  string
+)
+"cmdline.ml" 136 4880 4905 "cmdline.ml" 152 5384 5389
+type(
+  string
+)
+"cmdline.ml" 154 5454 5463 "cmdline.ml" 154 5454 5475
+type(
+  check_t
+)
+ident(
+  int_ref check_tmpdir "cmdline.ml" 89 3291 3297 "cmdline.ml" 89 3291 3309
+)
+"cmdline.ml" 154 5454 5476 "cmdline.ml" 154 5454 5478
+type(
+  check_t -> check_t -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"cmdline.ml" 154 5454 5479 "cmdline.ml" 154 5454 5484
+type(
+  check_t
+)
+"cmdline.ml" 154 5454 5463 "cmdline.ml" 154 5454 5484
+type(
+  bool
+)
+"cmdline.ml" 155 5490 5498 "cmdline.ml" 155 5490 5503
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"cmdline.ml" 155 5490 5505 "cmdline.ml" 155 5490 5507
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"cmdline.ml" 155 5490 5507 "cmdline.ml" 155 5490 5570
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"cmdline.ml" 155 5490 5504 "cmdline.ml" 155 5490 5571
+type(
+  (unit, unit, string, unit) format4
+)
+"cmdline.ml" 155 5490 5498 "cmdline.ml" 155 5490 5571
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 154 5454 5460 "cmdline.ml" 155 5490 5571
+type(
+  unit
+)
+"cmdline.ml" 157 5574 5583 "cmdline.ml" 157 5574 5591
+type(
+  bool
+)
+ident(
+  int_ref compress "cmdline.ml" 90 3329 3335 "cmdline.ml" 90 3329 3343
+)
+"cmdline.ml" 158 5597 5605 "cmdline.ml" 158 5597 5610
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"cmdline.ml" 158 5597 5612 "cmdline.ml" 158 5597 5614
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"cmdline.ml" 158 5597 5614 "cmdline.ml" 158 5597 5673
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"cmdline.ml" 158 5597 5611 "cmdline.ml" 158 5597 5674
+type(
+  (unit, unit, string, unit) format4
+)
+"cmdline.ml" 158 5597 5605 "cmdline.ml" 158 5597 5674
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 157 5574 5580 "cmdline.ml" 158 5597 5674
+type(
+  unit
+)
+"cmdline.ml" 160 5677 5686 "cmdline.ml" 160 5677 5693
+type(
+  string option
+)
+ident(
+  int_ref convert "cmdline.ml" 91 3359 3365 "cmdline.ml" 91 3359 3372
+)
+"cmdline.ml" 160 5677 5694 "cmdline.ml" 160 5677 5696
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"cmdline.ml" 160 5677 5697 "cmdline.ml" 160 5677 5701
+type(
+  string option
+)
+"cmdline.ml" 160 5677 5686 "cmdline.ml" 160 5677 5701
+type(
+  bool
+)
+"cmdline.ml" 161 5707 5715 "cmdline.ml" 161 5707 5720
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"cmdline.ml" 161 5707 5722 "cmdline.ml" 161 5707 5724
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"cmdline.ml" 161 5707 5724 "cmdline.ml" 161 5707 5782
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"cmdline.ml" 161 5707 5721 "cmdline.ml" 161 5707 5783
+type(
+  (unit, unit, string, unit) format4
+)
+"cmdline.ml" 161 5707 5715 "cmdline.ml" 161 5707 5783
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 160 5677 5683 "cmdline.ml" 161 5707 5783
+type(
+  unit
+)
+"cmdline.ml" 163 5786 5795 "cmdline.ml" 163 5786 5801
+type(
+  string option
+)
+ident(
+  int_ref option "cmdline.ml" 96 3606 3612 "cmdline.ml" 96 3606 3618
+)
+"cmdline.ml" 163 5786 5802 "cmdline.ml" 163 5786 5804
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"cmdline.ml" 163 5786 5805 "cmdline.ml" 163 5786 5809
+type(
+  string option
+)
+"cmdline.ml" 163 5786 5795 "cmdline.ml" 163 5786 5809
+type(
+  bool
+)
+"cmdline.ml" 164 5815 5823 "cmdline.ml" 164 5815 5828
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"cmdline.ml" 164 5815 5830 "cmdline.ml" 164 5815 5832
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"cmdline.ml" 164 5815 5832 "cmdline.ml" 164 5815 5883
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"cmdline.ml" 164 5815 5829 "cmdline.ml" 164 5815 5884
+type(
+  (unit, unit, string, unit) format4
+)
+"cmdline.ml" 164 5815 5823 "cmdline.ml" 164 5815 5884
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 163 5786 5792 "cmdline.ml" 164 5815 5884
+type(
+  unit
+)
+"cmdline.ml" 166 5887 5896 "cmdline.ml" 166 5887 5899
+type(
+  string option
+)
+ident(
+  int_ref tmp "cmdline.ml" 97 3672 3678 "cmdline.ml" 97 3672 3681
+)
+"cmdline.ml" 166 5887 5900 "cmdline.ml" 166 5887 5902
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"cmdline.ml" 166 5887 5903 "cmdline.ml" 166 5887 5907
+type(
+  string option
+)
+"cmdline.ml" 166 5887 5896 "cmdline.ml" 166 5887 5907
+type(
+  bool
+)
+"cmdline.ml" 167 5913 5921 "cmdline.ml" 167 5913 5926
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"cmdline.ml" 167 5913 5928 "cmdline.ml" 167 5913 5930
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"cmdline.ml" 167 5913 5930 "cmdline.ml" 167 5913 5984
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"cmdline.ml" 167 5913 5927 "cmdline.ml" 167 5913 5985
+type(
+  (unit, unit, string, unit) format4
+)
+"cmdline.ml" 167 5913 5921 "cmdline.ml" 167 5913 5985
+call(
+  stack
+)
+type(
+  unit
+)
+"cmdline.ml" 166 5887 5893 "cmdline.ml" 167 5913 5985
+type(
+  unit
+)
+"cmdline.ml" 169 5988 5994 "cmdline.ml" 169 5988 6000
+type(
+  string
+)
+ident(
+  int_ref indisk "cmdline.ml" 121 4403 4409 "cmdline.ml" 121 4403 4415
+)
+"cmdline.ml" 166 5887 5893 "cmdline.ml" 169 5988 6000
+type(
+  string
+)
+"cmdline.ml" 163 5786 5792 "cmdline.ml" 169 5988 6000
+type(
+  string
+)
+"cmdline.ml" 160 5677 5683 "cmdline.ml" 169 5988 6000
+type(
+  string
+)
+"cmdline.ml" 157 5574 5580 "cmdline.ml" 169 5988 6000
+type(
+  string
+)
+"cmdline.ml" 153 5390 5399 "cmdline.ml" 170 6001 6006
+type(
+  string
+)
+"cmdline.ml" 136 4880 4884 "cmdline.ml" 170 6001 6006
+type(
+  string
+)
+"cmdline.ml" 172 6011 6017 "cmdline.ml" 172 6011 6021
+type(
+  mode_t
+)
+"cmdline.ml" 173 6024 6031 "cmdline.ml" 173 6024 6034
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"cmdline.ml" 173 6024 6035 "cmdline.ml" 173 6024 6043
+type(
+  bool
+)
+ident(
+  int_ref in_place "cmdline.ml" 94 3530 3536 "cmdline.ml" 94 3530 3544
+)
+"cmdline.ml" 173 6024 6031 "cmdline.ml" 173 6024 6043
+type(
+  bool
+)
+"cmdline.ml" 174 6049 6069 "cmdline.ml" 174 6049 6076
+type(
+  string
+)
+ident(
+  int_ref outdisk "cmdline.ml" 121 4403 4417 "cmdline.ml" 121 4403 4424
+)
+"cmdline.ml" 174 6049 6078 "cmdline.ml" 174 6049 6090
+type(
+  check_t
+)
+ident(
+  int_ref check_tmpdir "cmdline.ml" 89 3291 3297 "cmdline.ml" 89 3291 3309
+)
+"cmdline.ml" 174 6049 6092 "cmdline.ml" 174 6049 6100
+type(
+  bool
+)
+ident(
+  int_ref compress "cmdline.ml" 90 3329 3335 "cmdline.ml" 90 3329 3343
+)
+"cmdline.ml" 174 6049 6102 "cmdline.ml" 174 6049 6109
+type(
+  string option
+)
+ident(
+  int_ref convert "cmdline.ml" 91 3359 3365 "cmdline.ml" 91 3359 3372
+)
+"cmdline.ml" 174 6049 6111 "cmdline.ml" 174 6049 6117
+type(
+  string option
+)
+ident(
+  int_ref option "cmdline.ml" 96 3606 3612 "cmdline.ml" 96 3606 3618
+)
+"cmdline.ml" 174 6049 6119 "cmdline.ml" 174 6049 6122
+type(
+  string option
+)
+ident(
+  int_ref tmp "cmdline.ml" 97 3672 3678 "cmdline.ml" 97 3672 3681
+)
+"cmdline.ml" 174 6049 6055 "cmdline.ml" 174 6049 6123
+type(
+  mode_t
+)
+"cmdline.ml" 176 6133 6139 "cmdline.ml" 176 6133 6152
+type(
+  mode_t
+)
+"cmdline.ml" 173 6024 6028 "cmdline.ml" 176 6133 6152
+type(
+  mode_t
+)
+"cmdline.ml" 178 6157 6159 "cmdline.ml" 178 6157 6165
+type(
+  string
+)
+ident(
+  int_ref indisk "cmdline.ml" 135 4865 4871 "cmdline.ml" 135 4865 4877
+)
+"cmdline.ml" 178 6157 6167 "cmdline.ml" 178 6157 6173
+type(
+  string option
+)
+ident(
+  int_ref format "cmdline.ml" 92 3427 3433 "cmdline.ml" 92 3427 3439
+)
+"cmdline.ml" 178 6157 6175 "cmdline.ml" 178 6157 6182
+type(
+  string list
+)
+ident(
+  int_ref ignores "cmdline.ml" 93 3493 3499 "cmdline.ml" 93 3493 3506
+)
+"cmdline.ml" 178 6157 6184 "cmdline.ml" 178 6157 6200
+type(
+  bool
+)
+ident(
+  int_ref machine_readable "cmdline.ml" 95 3560 3566 "cmdline.ml" 95 3560 3582
+)
+"cmdline.ml" 178 6157 6202 "cmdline.ml" 178 6157 6208
+type(
+  string list
+)
+ident(
+  int_ref zeroes "cmdline.ml" 98 3732 3738 "cmdline.ml" 98 3732 3744
+)
+"cmdline.ml" 178 6157 6210 "cmdline.ml" 178 6157 6214
+type(
+  mode_t
+)
+ident(
+  int_ref mode "cmdline.ml" 172 6011 6017 "cmdline.ml" 172 6011 6021
+)
+"cmdline.ml" 178 6157 6159 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 172 6011 6013 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 135 4865 4867 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 132 4764 4766 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 121 4403 4405 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 103 3879 3881 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 98 3732 3734 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 97 3672 3674 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 96 3606 3608 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 95 3560 3562 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 94 3530 3532 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 93 3493 3495 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 92 3427 3429 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 91 3359 3361 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 90 3329 3331 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 89 3291 3293 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 86 3208 3210 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 74 2922 2924 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 73 2879 2881 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 72 2855 2857 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 71 2807 2809 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 58 1761 1763 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 57 1736 1738 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 55 1710 1712 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 54 1688 1690 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 53 1663 1665 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 52 1625 1627 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 51 1595 1597 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 50 1569 1571 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 49 1544 1546 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 48 1518 1520 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 47 1488 1490 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 38 1156 1158 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 37 1122 1124 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)
+"cmdline.ml" 35 1086 1088 "cmdline.ml" 178 6157 6214
+type(
+  string * string option * string list * bool * string list * mode_t
+)

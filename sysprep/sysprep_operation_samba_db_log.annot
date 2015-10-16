@@ -1,0 +1,334 @@
+"sysprep_operation_samba_db_log.ml" 24 851 855 "sysprep_operation_samba_db_log.ml" 24 851 875
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def samba_db_log_perform "sysprep_operation_samba_db_log.ml" 41 1329 1329 --
+)
+"sysprep_operation_samba_db_log.ml" 24 851 876 "sysprep_operation_samba_db_log.ml" 24 851 877
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_samba_db_log.ml" 24 851 878 "sysprep_operation_samba_db_log.ml" 39 1324 1327
+)
+"sysprep_operation_samba_db_log.ml" 24 851 878 "sysprep_operation_samba_db_log.ml" 24 851 882
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_samba_db_log.ml" 24 851 883 "sysprep_operation_samba_db_log.ml" 39 1324 1327
+)
+"sysprep_operation_samba_db_log.ml" 24 851 883 "sysprep_operation_samba_db_log.ml" 24 851 895
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_samba_db_log.ml" 25 898 900 "sysprep_operation_samba_db_log.ml" 39 1324 1327
+)
+"sysprep_operation_samba_db_log.ml" 25 898 904 "sysprep_operation_samba_db_log.ml" 25 898 907
+type(
+  string
+)
+"sysprep_operation_samba_db_log.ml" 25 898 910 "sysprep_operation_samba_db_log.ml" 25 898 911
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_samba_db_log.ml" 24 851 876 "sysprep_operation_samba_db_log.ml" 24 851 877
+)
+"sysprep_operation_samba_db_log.ml" 25 898 910 "sysprep_operation_samba_db_log.ml" 25 898 928
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_samba_db_log.ml" 25 898 929 "sysprep_operation_samba_db_log.ml" 25 898 933
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_samba_db_log.ml" 24 851 878 "sysprep_operation_samba_db_log.ml" 24 851 882
+)
+"sysprep_operation_samba_db_log.ml" 25 898 910 "sysprep_operation_samba_db_log.ml" 25 898 933
+type(
+  string
+)
+"sysprep_operation_samba_db_log.ml" 26 937 942 "sysprep_operation_samba_db_log.ml" 26 937 945
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_samba_db_log.ml" 25 898 904 "sysprep_operation_samba_db_log.ml" 25 898 907
+)
+"sysprep_operation_samba_db_log.ml" 26 937 946 "sysprep_operation_samba_db_log.ml" 26 937 948
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_samba_db_log.ml" 26 937 949 "sysprep_operation_samba_db_log.ml" 26 937 958
+type(
+  string
+)
+"sysprep_operation_samba_db_log.ml" 26 937 942 "sysprep_operation_samba_db_log.ml" 26 937 958
+type(
+  bool
+)
+"sysprep_operation_samba_db_log.ml" 27 966 974 "sysprep_operation_samba_db_log.ml" 27 966 979
+type(
+  string list
+)
+"sysprep_operation_samba_db_log.ml" 27 966 984 "sysprep_operation_samba_db_log.ml" 27 966 1006
+type(
+  string
+)
+"sysprep_operation_samba_db_log.ml" 28 1008 1026 "sysprep_operation_samba_db_log.ml" 28 1008 1044
+type(
+  string
+)
+"sysprep_operation_samba_db_log.ml" 29 1046 1064 "sysprep_operation_samba_db_log.ml" 29 1046 1084
+type(
+  string
+)
+"sysprep_operation_samba_db_log.ml" 30 1086 1104 "sysprep_operation_samba_db_log.ml" 30 1086 1122
+type(
+  string
+)
+"sysprep_operation_samba_db_log.ml" 27 966 982 "sysprep_operation_samba_db_log.ml" 30 1086 1125
+type(
+  string list
+)
+"sysprep_operation_samba_db_log.ml" 31 1129 1133 "sysprep_operation_samba_db_log.ml" 31 1129 1142
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_samba_db_log.ml" 32 1145 1155 "sysprep_operation_samba_db_log.ml" 32 1145 1159
+type(
+  string
+)
+ident(
+  def path "sysprep_operation_samba_db_log.ml" 33 1163 1171 "sysprep_operation_samba_db_log.ml" 37 1295 1311
+)
+"sysprep_operation_samba_db_log.ml" 33 1163 1175 "sysprep_operation_samba_db_log.ml" 33 1163 1180
+type(
+  'a array
+)
+"sysprep_operation_samba_db_log.ml" 33 1163 1183 "sysprep_operation_samba_db_log.ml" 33 1163 1184
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_samba_db_log.ml" 24 851 876 "sysprep_operation_samba_db_log.ml" 24 851 877
+)
+"sysprep_operation_samba_db_log.ml" 33 1163 1183 "sysprep_operation_samba_db_log.ml" 33 1163 1196
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_samba_db_log.ml" 33 1163 1197 "sysprep_operation_samba_db_log.ml" 33 1163 1201
+type(
+  string
+)
+ident(
+  int_ref path "sysprep_operation_samba_db_log.ml" 32 1145 1155 "sysprep_operation_samba_db_log.ml" 32 1145 1159
+)
+"sysprep_operation_samba_db_log.ml" 33 1163 1183 "sysprep_operation_samba_db_log.ml" 33 1163 1201
+type(
+  'a array
+)
+"sysprep_operation_samba_db_log.ml" 34 1205 1213 "sysprep_operation_samba_db_log.ml" 34 1205 1223
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_samba_db_log.ml" 35 1226 1240 "sysprep_operation_samba_db_log.ml" 35 1226 1244
+type(
+  'a
+)
+ident(
+  def file "sysprep_operation_samba_db_log.ml" 36 1248 1260 "sysprep_operation_samba_db_log.ml" 36 1248 1294
+)
+"sysprep_operation_samba_db_log.ml" 36 1248 1264 "sysprep_operation_samba_db_log.ml" 36 1248 1265
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_samba_db_log.ml" 24 851 876 "sysprep_operation_samba_db_log.ml" 24 851 877
+)
+"sysprep_operation_samba_db_log.ml" 36 1248 1264 "sysprep_operation_samba_db_log.ml" 36 1248 1268
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_samba_db_log.ml" 36 1248 1269 "sysprep_operation_samba_db_log.ml" 36 1248 1273
+type(
+  'a
+)
+ident(
+  int_ref file "sysprep_operation_samba_db_log.ml" 35 1226 1240 "sysprep_operation_samba_db_log.ml" 35 1226 1244
+)
+"sysprep_operation_samba_db_log.ml" 36 1248 1264 "sysprep_operation_samba_db_log.ml" 36 1248 1273
+type(
+  unit
+)
+"sysprep_operation_samba_db_log.ml" 36 1248 1287 "sysprep_operation_samba_db_log.ml" 36 1248 1288
+type(
+  string
+)
+"sysprep_operation_samba_db_log.ml" 36 1248 1279 "sysprep_operation_samba_db_log.ml" 36 1248 1288
+type(
+  exn
+)
+"sysprep_operation_samba_db_log.ml" 36 1248 1292 "sysprep_operation_samba_db_log.ml" 36 1248 1294
+type(
+  unit
+)
+"sysprep_operation_samba_db_log.ml" 36 1248 1260 "sysprep_operation_samba_db_log.ml" 36 1248 1294
+type(
+  unit
+)
+"sysprep_operation_samba_db_log.ml" 34 1205 1224 "sysprep_operation_samba_db_log.ml" 37 1295 1304
+type(
+  'a -> unit
+)
+"sysprep_operation_samba_db_log.ml" 37 1295 1305 "sysprep_operation_samba_db_log.ml" 37 1295 1310
+type(
+  'a array
+)
+ident(
+  int_ref files "sysprep_operation_samba_db_log.ml" 33 1163 1175 "sysprep_operation_samba_db_log.ml" 33 1163 1180
+)
+"sysprep_operation_samba_db_log.ml" 34 1205 1213 "sysprep_operation_samba_db_log.ml" 37 1295 1311
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_samba_db_log.ml" 33 1163 1171 "sysprep_operation_samba_db_log.ml" 37 1295 1311
+type(
+  unit
+)
+"sysprep_operation_samba_db_log.ml" 31 1129 1143 "sysprep_operation_samba_db_log.ml" 38 1312 1317
+type(
+  string -> unit
+)
+"sysprep_operation_samba_db_log.ml" 38 1312 1318 "sysprep_operation_samba_db_log.ml" 38 1312 1323
+type(
+  string list
+)
+ident(
+  int_ref paths "sysprep_operation_samba_db_log.ml" 27 966 974 "sysprep_operation_samba_db_log.ml" 27 966 979
+)
+"sysprep_operation_samba_db_log.ml" 31 1129 1133 "sysprep_operation_samba_db_log.ml" 38 1312 1323
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_samba_db_log.ml" 26 937 964 "sysprep_operation_samba_db_log.ml" 39 1324 1327
+type(
+  unit
+)
+"sysprep_operation_samba_db_log.ml" 26 937 939 "sysprep_operation_samba_db_log.ml" 39 1324 1327
+type(
+  unit
+)
+"sysprep_operation_samba_db_log.ml" 25 898 900 "sysprep_operation_samba_db_log.ml" 39 1324 1327
+type(
+  unit
+)
+"sysprep_operation_samba_db_log.ml" 41 1329 1333 "sysprep_operation_samba_db_log.ml" 41 1329 1335
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_samba_db_log.ml" 49 1535 1535 --
+)
+"sysprep_operation_samba_db_log.ml" 42 1340 1342 "sysprep_operation_samba_db_log.ml" 42 1340 1350
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_samba_db_log.ml" 43 1356 1367 "sysprep_operation_samba_db_log.ml" 43 1356 1381
+type(
+  string
+)
+"sysprep_operation_samba_db_log.ml" 44 1383 1408 "sysprep_operation_samba_db_log.ml" 44 1383 1412
+type(
+  bool
+)
+"sysprep_operation_samba_db_log.ml" 45 1414 1428 "sysprep_operation_samba_db_log.ml" 45 1414 1430
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_samba_db_log.ml" 45 1414 1430 "sysprep_operation_samba_db_log.ml" 45 1414 1474
+type(
+  string
+)
+"sysprep_operation_samba_db_log.ml" 45 1414 1428 "sysprep_operation_samba_db_log.ml" 45 1414 1474
+type(
+  string
+)
+"sysprep_operation_samba_db_log.ml" 46 1476 1510 "sysprep_operation_samba_db_log.ml" 46 1476 1530
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref samba_db_log_perform "sysprep_operation_samba_db_log.ml" 24 851 855 "sysprep_operation_samba_db_log.ml" 24 851 875
+)
+"sysprep_operation_samba_db_log.ml" 46 1476 1505 "sysprep_operation_samba_db_log.ml" 46 1476 1530
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_samba_db_log.ml" 41 1329 1338 "sysprep_operation_samba_db_log.ml" 47 1532 1533
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_samba_db_log.ml" 49 1535 1539 "sysprep_operation_samba_db_log.ml" 49 1535 1541
+type(
+  unit
+)
+"sysprep_operation_samba_db_log.ml" 49 1535 1544 "sysprep_operation_samba_db_log.ml" 49 1535 1562
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_samba_db_log.ml" 49 1535 1563 "sysprep_operation_samba_db_log.ml" 49 1535 1565
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_samba_db_log.ml" 41 1329 1333 "sysprep_operation_samba_db_log.ml" 41 1329 1335
+)
+"sysprep_operation_samba_db_log.ml" 49 1535 1544 "sysprep_operation_samba_db_log.ml" 49 1535 1565
+call(
+  stack
+)
+type(
+  unit
+)

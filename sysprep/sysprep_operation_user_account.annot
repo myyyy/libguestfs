@@ -1,0 +1,1961 @@
+"sysprep_operation_user_account.ml" 29 918 937 "sysprep_operation_user_account.ml" 29 918 954
+call(
+  stack
+)
+"sysprep_operation_user_account.ml" 31 956 960 "sysprep_operation_user_account.ml" 31 956 972
+type(
+  StringSet.t ref
+)
+ident(
+  def remove_users "sysprep_operation_user_account.ml" 32 995 995 --
+)
+"sysprep_operation_user_account.ml" 31 956 975 "sysprep_operation_user_account.ml" 31 956 978
+type(
+  StringSet.t -> StringSet.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sysprep_operation_user_account.ml" 31 956 979 "sysprep_operation_user_account.ml" 31 956 994
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"sysprep_operation_user_account.ml" 31 956 975 "sysprep_operation_user_account.ml" 31 956 994
+type(
+  StringSet.t ref
+)
+"sysprep_operation_user_account.ml" 32 995 999 "sysprep_operation_user_account.ml" 32 995 1009
+type(
+  StringSet.t ref
+)
+ident(
+  def keep_users "sysprep_operation_user_account.ml" 33 1032 1032 --
+)
+"sysprep_operation_user_account.ml" 32 995 1012 "sysprep_operation_user_account.ml" 32 995 1015
+type(
+  StringSet.t -> StringSet.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sysprep_operation_user_account.ml" 32 995 1016 "sysprep_operation_user_account.ml" 32 995 1031
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"sysprep_operation_user_account.ml" 32 995 1012 "sysprep_operation_user_account.ml" 32 995 1031
+type(
+  StringSet.t ref
+)
+"sysprep_operation_user_account.ml" 33 1032 1036 "sysprep_operation_user_account.ml" 33 1032 1045
+type(
+  StringSet.t ref -> string -> unit
+)
+ident(
+  def add_users "sysprep_operation_user_account.ml" 43 1249 1249 --
+)
+"sysprep_operation_user_account.ml" 33 1032 1046 "sysprep_operation_user_account.ml" 33 1032 1049
+type(
+  StringSet.t ref
+)
+ident(
+  def set "sysprep_operation_user_account.ml" 33 1032 1050 "sysprep_operation_user_account.ml" 41 1238 1247
+)
+"sysprep_operation_user_account.ml" 33 1032 1050 "sysprep_operation_user_account.ml" 33 1032 1055
+type(
+  string
+)
+ident(
+  def users "sysprep_operation_user_account.ml" 34 1058 1060 "sysprep_operation_user_account.ml" 41 1238 1247
+)
+"sysprep_operation_user_account.ml" 34 1058 1064 "sysprep_operation_user_account.ml" 34 1058 1069
+type(
+  string list
+)
+"sysprep_operation_user_account.ml" 34 1058 1072 "sysprep_operation_user_account.ml" 34 1058 1085
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"sysprep_operation_user_account.ml" 34 1058 1086 "sysprep_operation_user_account.ml" 34 1058 1089
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 34 1058 1090 "sysprep_operation_user_account.ml" 34 1058 1095
+type(
+  string
+)
+ident(
+  int_ref users "sysprep_operation_user_account.ml" 33 1032 1050 "sysprep_operation_user_account.ml" 33 1032 1055
+)
+"sysprep_operation_user_account.ml" 34 1058 1072 "sysprep_operation_user_account.ml" 34 1058 1095
+call(
+  stack
+)
+type(
+  string list
+)
+"sysprep_operation_user_account.ml" 35 1099 1101 "sysprep_operation_user_account.ml" 35 1099 1110
+type(
+  (StringSet.elt -> unit) -> StringSet.elt list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_user_account.ml" 37 1126 1132 "sysprep_operation_user_account.ml" 37 1126 1134
+type(
+  StringSet.elt
+)
+"sysprep_operation_user_account.ml" 38 1138 1144 "sysprep_operation_user_account.ml" 38 1138 1149
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation_user_account.ml" 38 1138 1151 "sysprep_operation_user_account.ml" 38 1138 1153
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation_user_account.ml" 38 1138 1153 "sysprep_operation_user_account.ml" 38 1138 1185
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation_user_account.ml" 38 1138 1150 "sysprep_operation_user_account.ml" 38 1138 1186
+type(
+  (unit, unit, string, unit) format4
+)
+"sysprep_operation_user_account.ml" 38 1138 1144 "sysprep_operation_user_account.ml" 38 1138 1186
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 39 1187 1193 "sysprep_operation_user_account.ml" 39 1187 1197
+type(
+  StringSet.elt
+)
+ident(
+  def user "sysprep_operation_user_account.ml" 40 1201 1207 "sysprep_operation_user_account.ml" 40 1201 1237
+)
+"sysprep_operation_user_account.ml" 40 1201 1207 "sysprep_operation_user_account.ml" 40 1201 1210
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref set "sysprep_operation_user_account.ml" 33 1032 1046 "sysprep_operation_user_account.ml" 33 1032 1049
+)
+"sysprep_operation_user_account.ml" 40 1201 1211 "sysprep_operation_user_account.ml" 40 1201 1213
+type(
+  StringSet.t ref -> StringSet.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sysprep_operation_user_account.ml" 40 1201 1214 "sysprep_operation_user_account.ml" 40 1201 1227
+type(
+  StringSet.elt -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.add
+)
+"sysprep_operation_user_account.ml" 40 1201 1228 "sysprep_operation_user_account.ml" 40 1201 1232
+type(
+  StringSet.elt
+)
+ident(
+  int_ref user "sysprep_operation_user_account.ml" 39 1187 1193 "sysprep_operation_user_account.ml" 39 1187 1197
+)
+"sysprep_operation_user_account.ml" 40 1201 1233 "sysprep_operation_user_account.ml" 40 1201 1234
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation_user_account.ml" 40 1201 1234 "sysprep_operation_user_account.ml" 40 1201 1237
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref set "sysprep_operation_user_account.ml" 33 1032 1046 "sysprep_operation_user_account.ml" 33 1032 1049
+)
+"sysprep_operation_user_account.ml" 40 1201 1233 "sysprep_operation_user_account.ml" 40 1201 1237
+type(
+  StringSet.t
+)
+"sysprep_operation_user_account.ml" 40 1201 1214 "sysprep_operation_user_account.ml" 40 1201 1237
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"sysprep_operation_user_account.ml" 40 1201 1207 "sysprep_operation_user_account.ml" 40 1201 1237
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 35 1099 1111 "sysprep_operation_user_account.ml" 41 1238 1241
+type(
+  StringSet.elt -> unit
+)
+"sysprep_operation_user_account.ml" 41 1238 1242 "sysprep_operation_user_account.ml" 41 1238 1247
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref users "sysprep_operation_user_account.ml" 34 1058 1064 "sysprep_operation_user_account.ml" 34 1058 1069
+)
+"sysprep_operation_user_account.ml" 35 1099 1101 "sysprep_operation_user_account.ml" 41 1238 1247
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 34 1058 1060 "sysprep_operation_user_account.ml" 41 1238 1247
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 43 1249 1253 "sysprep_operation_user_account.ml" 43 1249 1270
+type(
+  StringSet.elt -> bool
+)
+ident(
+  def check_remove_user "sysprep_operation_user_account.ml" 56 1689 1689 --
+)
+"sysprep_operation_user_account.ml" 43 1249 1271 "sysprep_operation_user_account.ml" 43 1249 1275
+type(
+  StringSet.elt
+)
+ident(
+  def user "sysprep_operation_user_account.ml" 45 1330 1332 "sysprep_operation_user_account.ml" 54 1678 1687
+)
+"sysprep_operation_user_account.ml" 45 1330 1335 "sysprep_operation_user_account.ml" 45 1330 1348
+type(
+  StringSet.elt -> StringSet.t -> bool
+)
+ident(
+  ext_ref StringSet.mem
+)
+"sysprep_operation_user_account.ml" 45 1330 1349 "sysprep_operation_user_account.ml" 45 1330 1353
+type(
+  StringSet.elt
+)
+ident(
+  int_ref user "sysprep_operation_user_account.ml" 43 1249 1271 "sysprep_operation_user_account.ml" 43 1249 1275
+)
+"sysprep_operation_user_account.ml" 45 1330 1354 "sysprep_operation_user_account.ml" 45 1330 1355
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation_user_account.ml" 45 1330 1355 "sysprep_operation_user_account.ml" 45 1330 1365
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref keep_users "sysprep_operation_user_account.ml" 32 995 999 "sysprep_operation_user_account.ml" 32 995 1009
+)
+"sysprep_operation_user_account.ml" 45 1330 1354 "sysprep_operation_user_account.ml" 45 1330 1365
+type(
+  StringSet.t
+)
+"sysprep_operation_user_account.ml" 45 1330 1335 "sysprep_operation_user_account.ml" 45 1330 1365
+call(
+  stack
+)
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 46 1371 1375 "sysprep_operation_user_account.ml" 46 1371 1380
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 49 1521 1531 "sysprep_operation_user_account.ml" 49 1521 1549
+type(
+  StringSet.t -> bool
+)
+ident(
+  ext_ref StringSet.is_empty
+)
+"sysprep_operation_user_account.ml" 49 1521 1550 "sysprep_operation_user_account.ml" 49 1521 1551
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation_user_account.ml" 49 1521 1551 "sysprep_operation_user_account.ml" 49 1521 1563
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref remove_users "sysprep_operation_user_account.ml" 31 956 960 "sysprep_operation_user_account.ml" 31 956 972
+)
+"sysprep_operation_user_account.ml" 49 1521 1550 "sysprep_operation_user_account.ml" 49 1521 1563
+type(
+  StringSet.t
+)
+"sysprep_operation_user_account.ml" 49 1521 1531 "sysprep_operation_user_account.ml" 49 1521 1563
+call(
+  stack
+)
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 50 1564 1570 "sysprep_operation_user_account.ml" 50 1564 1572
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"sysprep_operation_user_account.ml" 50 1564 1573 "sysprep_operation_user_account.ml" 50 1564 1586
+type(
+  StringSet.elt -> StringSet.t -> bool
+)
+ident(
+  ext_ref StringSet.mem
+)
+"sysprep_operation_user_account.ml" 50 1564 1587 "sysprep_operation_user_account.ml" 50 1564 1591
+type(
+  StringSet.elt
+)
+ident(
+  int_ref user "sysprep_operation_user_account.ml" 43 1249 1271 "sysprep_operation_user_account.ml" 43 1249 1275
+)
+"sysprep_operation_user_account.ml" 50 1564 1592 "sysprep_operation_user_account.ml" 50 1564 1593
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation_user_account.ml" 50 1564 1593 "sysprep_operation_user_account.ml" 50 1564 1605
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref remove_users "sysprep_operation_user_account.ml" 31 956 960 "sysprep_operation_user_account.ml" 31 956 972
+)
+"sysprep_operation_user_account.ml" 50 1564 1592 "sysprep_operation_user_account.ml" 50 1564 1605
+type(
+  StringSet.t
+)
+"sysprep_operation_user_account.ml" 50 1564 1573 "sysprep_operation_user_account.ml" 50 1564 1605
+call(
+  stack
+)
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 49 1521 1531 "sysprep_operation_user_account.ml" 50 1564 1605
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 51 1611 1615 "sysprep_operation_user_account.ml" 51 1611 1619
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 54 1678 1682 "sysprep_operation_user_account.ml" 54 1678 1687
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 49 1521 1528 "sysprep_operation_user_account.ml" 54 1678 1687
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 45 1330 1332 "sysprep_operation_user_account.ml" 54 1678 1687
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 56 1689 1693 "sysprep_operation_user_account.ml" 56 1689 1713
+type(
+  < aug_get : string -> string; aug_init : string -> int -> 'a;
+    aug_ls : string -> string array; aug_rm : string -> 'b;
+    aug_save : unit -> unit; inspect_get_type : 'c -> string;
+    rm_rf : string -> unit; .. > ->
+  'c -> < changed_file : unit -> unit; .. > -> unit
+)
+ident(
+  def user_account_perform "sysprep_operation_user_account.ml" 100 3274 3274 --
+)
+"sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+type(
+  < aug_get : string -> string; aug_init : string -> int -> 'a;
+    aug_ls : string -> string array; aug_rm : string -> 'b;
+    aug_save : unit -> unit; inspect_get_type : 'c -> string;
+    rm_rf : string -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_user_account.ml" 56 1689 1716 "sysprep_operation_user_account.ml" 98 3240 3272
+)
+"sysprep_operation_user_account.ml" 56 1689 1716 "sysprep_operation_user_account.ml" 56 1689 1720
+type(
+  'c
+)
+ident(
+  def root "sysprep_operation_user_account.ml" 56 1689 1721 "sysprep_operation_user_account.ml" 98 3240 3272
+)
+"sysprep_operation_user_account.ml" 56 1689 1721 "sysprep_operation_user_account.ml" 56 1689 1733
+type(
+  < changed_file : unit -> unit; .. > as 'e
+)
+ident(
+  def side_effects "sysprep_operation_user_account.ml" 57 1736 1738 "sysprep_operation_user_account.ml" 98 3240 3272
+)
+"sysprep_operation_user_account.ml" 57 1736 1742 "sysprep_operation_user_account.ml" 57 1736 1745
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 57 1736 1748 "sysprep_operation_user_account.ml" 57 1736 1749
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 57 1736 1748 "sysprep_operation_user_account.ml" 57 1736 1766
+call(
+  stack
+)
+type(
+  'c -> string
+)
+"sysprep_operation_user_account.ml" 57 1736 1767 "sysprep_operation_user_account.ml" 57 1736 1771
+type(
+  'c
+)
+ident(
+  int_ref root "sysprep_operation_user_account.ml" 56 1689 1716 "sysprep_operation_user_account.ml" 56 1689 1720
+)
+"sysprep_operation_user_account.ml" 57 1736 1748 "sysprep_operation_user_account.ml" 57 1736 1771
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 58 1775 1781 "sysprep_operation_user_account.ml" 58 1775 1788
+type(
+  bool ref
+)
+"sysprep_operation_user_account.ml" 58 1775 1791 "sysprep_operation_user_account.ml" 58 1775 1794
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sysprep_operation_user_account.ml" 58 1775 1795 "sysprep_operation_user_account.ml" 58 1775 1800
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 58 1775 1791 "sysprep_operation_user_account.ml" 58 1775 1800
+type(
+  bool ref
+)
+"sysprep_operation_user_account.ml" 59 1804 1809 "sysprep_operation_user_account.ml" 59 1804 1812
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_user_account.ml" 57 1736 1742 "sysprep_operation_user_account.ml" 57 1736 1745
+)
+"sysprep_operation_user_account.ml" 59 1804 1813 "sysprep_operation_user_account.ml" 59 1804 1815
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_user_account.ml" 59 1804 1816 "sysprep_operation_user_account.ml" 59 1804 1825
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 59 1804 1809 "sysprep_operation_user_account.ml" 59 1804 1825
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 60 1833 1837 "sysprep_operation_user_account.ml" 60 1833 1838
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 60 1833 1837 "sysprep_operation_user_account.ml" 60 1833 1847
+call(
+  stack
+)
+type(
+  string -> int -> 'a
+)
+"sysprep_operation_user_account.ml" 60 1833 1848 "sysprep_operation_user_account.ml" 60 1833 1851
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 60 1833 1852 "sysprep_operation_user_account.ml" 60 1833 1853
+type(
+  int
+)
+"sysprep_operation_user_account.ml" 60 1833 1837 "sysprep_operation_user_account.ml" 60 1833 1853
+type(
+  'a
+)
+"sysprep_operation_user_account.ml" 61 1855 1863 "sysprep_operation_user_account.ml" 61 1855 1870
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 61 1855 1873 "sysprep_operation_user_account.ml" 61 1855 1874
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 61 1855 1873 "sysprep_operation_user_account.ml" 61 1855 1882
+call(
+  stack
+)
+type(
+  string -> string
+)
+"sysprep_operation_user_account.ml" 61 1855 1883 "sysprep_operation_user_account.ml" 61 1855 1914
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 61 1855 1873 "sysprep_operation_user_account.ml" 61 1855 1914
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 62 1918 1926 "sysprep_operation_user_account.ml" 62 1918 1933
+type(
+  int
+)
+"sysprep_operation_user_account.ml" 62 1918 1936 "sysprep_operation_user_account.ml" 62 1918 1949
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"sysprep_operation_user_account.ml" 62 1918 1950 "sysprep_operation_user_account.ml" 62 1918 1957
+type(
+  string
+)
+ident(
+  int_ref uid_min "sysprep_operation_user_account.ml" 61 1855 1863 "sysprep_operation_user_account.ml" 61 1855 1870
+)
+"sysprep_operation_user_account.ml" 62 1918 1936 "sysprep_operation_user_account.ml" 62 1918 1957
+type(
+  int
+)
+"sysprep_operation_user_account.ml" 63 1961 1969 "sysprep_operation_user_account.ml" 63 1961 1976
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 63 1961 1979 "sysprep_operation_user_account.ml" 63 1961 1980
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 63 1961 1979 "sysprep_operation_user_account.ml" 63 1961 1988
+call(
+  stack
+)
+type(
+  string -> string
+)
+"sysprep_operation_user_account.ml" 63 1961 1989 "sysprep_operation_user_account.ml" 63 1961 2020
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 63 1961 1979 "sysprep_operation_user_account.ml" 63 1961 2020
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 64 2024 2032 "sysprep_operation_user_account.ml" 64 2024 2039
+type(
+  int
+)
+"sysprep_operation_user_account.ml" 64 2024 2042 "sysprep_operation_user_account.ml" 64 2024 2055
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"sysprep_operation_user_account.ml" 64 2024 2056 "sysprep_operation_user_account.ml" 64 2024 2063
+type(
+  string
+)
+ident(
+  int_ref uid_max "sysprep_operation_user_account.ml" 63 1961 1969 "sysprep_operation_user_account.ml" 63 1961 1976
+)
+"sysprep_operation_user_account.ml" 64 2024 2042 "sysprep_operation_user_account.ml" 64 2024 2063
+type(
+  int
+)
+"sysprep_operation_user_account.ml" 65 2067 2075 "sysprep_operation_user_account.ml" 65 2067 2080
+type(
+  string list
+)
+"sysprep_operation_user_account.ml" 65 2067 2083 "sysprep_operation_user_account.ml" 65 2067 2096
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"sysprep_operation_user_account.ml" 65 2067 2098 "sysprep_operation_user_account.ml" 65 2067 2099
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 65 2067 2098 "sysprep_operation_user_account.ml" 65 2067 2106
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"sysprep_operation_user_account.ml" 65 2067 2107 "sysprep_operation_user_account.ml" 65 2067 2126
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 65 2067 2097 "sysprep_operation_user_account.ml" 65 2067 2127
+type(
+  string array
+)
+"sysprep_operation_user_account.ml" 65 2067 2083 "sysprep_operation_user_account.ml" 65 2067 2127
+call(
+  stack
+)
+type(
+  string list
+)
+"sysprep_operation_user_account.ml" 66 2131 2135 "sysprep_operation_user_account.ml" 66 2131 2144
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_user_account.ml" 67 2147 2157 "sysprep_operation_user_account.ml" 67 2147 2165
+type(
+  string
+)
+ident(
+  def userpath "sysprep_operation_user_account.ml" 68 2169 2177 "sysprep_operation_user_account.ml" 93 3174 3183
+)
+"sysprep_operation_user_account.ml" 68 2169 2181 "sysprep_operation_user_account.ml" 68 2169 2184
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 68 2169 2187 "sysprep_operation_user_account.ml" 68 2169 2195
+type(
+  string
+)
+ident(
+  int_ref userpath "sysprep_operation_user_account.ml" 67 2147 2157 "sysprep_operation_user_account.ml" 67 2147 2165
+)
+"sysprep_operation_user_account.ml" 68 2169 2196 "sysprep_operation_user_account.ml" 68 2169 2197
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_user_account.ml" 68 2169 2198 "sysprep_operation_user_account.ml" 68 2169 2204
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 68 2169 2187 "sysprep_operation_user_account.ml" 68 2169 2204
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 69 2208 2220 "sysprep_operation_user_account.ml" 69 2208 2223
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 69 2208 2226 "sysprep_operation_user_account.ml" 69 2208 2227
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 69 2208 2226 "sysprep_operation_user_account.ml" 69 2208 2235
+call(
+  stack
+)
+type(
+  string -> string
+)
+"sysprep_operation_user_account.ml" 69 2208 2236 "sysprep_operation_user_account.ml" 69 2208 2239
+type(
+  string
+)
+ident(
+  int_ref uid "sysprep_operation_user_account.ml" 68 2169 2181 "sysprep_operation_user_account.ml" 68 2169 2184
+)
+"sysprep_operation_user_account.ml" 69 2208 2226 "sysprep_operation_user_account.ml" 69 2208 2239
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 70 2243 2255 "sysprep_operation_user_account.ml" 70 2243 2258
+type(
+  int
+)
+"sysprep_operation_user_account.ml" 70 2243 2261 "sysprep_operation_user_account.ml" 70 2243 2274
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"sysprep_operation_user_account.ml" 70 2243 2275 "sysprep_operation_user_account.ml" 70 2243 2278
+type(
+  string
+)
+ident(
+  int_ref uid "sysprep_operation_user_account.ml" 69 2208 2220 "sysprep_operation_user_account.ml" 69 2208 2223
+)
+"sysprep_operation_user_account.ml" 70 2243 2261 "sysprep_operation_user_account.ml" 70 2243 2278
+type(
+  int
+)
+"sysprep_operation_user_account.ml" 71 2282 2294 "sysprep_operation_user_account.ml" 71 2282 2302
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 72 2305 2321 "sysprep_operation_user_account.ml" 72 2305 2333
+type(
+  string -> char -> string option
+)
+ident(
+  ext_ref Common_utils.last_part_of
+)
+"sysprep_operation_user_account.ml" 72 2305 2334 "sysprep_operation_user_account.ml" 72 2305 2342
+type(
+  string
+)
+ident(
+  int_ref userpath "sysprep_operation_user_account.ml" 67 2147 2157 "sysprep_operation_user_account.ml" 67 2147 2165
+)
+"sysprep_operation_user_account.ml" 72 2305 2343 "sysprep_operation_user_account.ml" 72 2305 2346
+type(
+  char
+)
+"sysprep_operation_user_account.ml" 72 2305 2321 "sysprep_operation_user_account.ml" 72 2305 2346
+call(
+  stack
+)
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 73 2352 2369 "sysprep_operation_user_account.ml" 73 2352 2370
+type(
+  string
+)
+ident(
+  def x "sysprep_operation_user_account.ml" 73 2352 2374 "sysprep_operation_user_account.ml" 73 2352 2375
+)
+"sysprep_operation_user_account.ml" 73 2352 2364 "sysprep_operation_user_account.ml" 73 2352 2370
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 73 2352 2374 "sysprep_operation_user_account.ml" 73 2352 2375
+type(
+  string
+)
+ident(
+  int_ref x "sysprep_operation_user_account.ml" 73 2352 2369 "sysprep_operation_user_account.ml" 73 2352 2370
+)
+"sysprep_operation_user_account.ml" 74 2376 2388 "sysprep_operation_user_account.ml" 74 2376 2392
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 74 2376 2396 "sysprep_operation_user_account.ml" 74 2376 2401
+type(
+  ?exit_code:int ->
+  (string -> string, unit, string, string) format4 -> string -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation_user_account.ml" 74 2376 2402 "sysprep_operation_user_account.ml" 74 2376 2436
+type(
+  (string -> string, unit, string, string) format4
+)
+"sysprep_operation_user_account.ml" 74 2376 2437 "sysprep_operation_user_account.ml" 74 2376 2445
+type(
+  string
+)
+ident(
+  int_ref userpath "sysprep_operation_user_account.ml" 67 2147 2157 "sysprep_operation_user_account.ml" 67 2147 2165
+)
+"sysprep_operation_user_account.ml" 74 2376 2396 "sysprep_operation_user_account.ml" 74 2376 2445
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 72 2305 2315 "sysprep_operation_user_account.ml" 74 2376 2445
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 75 2449 2460 "sysprep_operation_user_account.ml" 75 2449 2463
+type(
+  int
+)
+ident(
+  int_ref uid "sysprep_operation_user_account.ml" 70 2243 2255 "sysprep_operation_user_account.ml" 70 2243 2258
+)
+"sysprep_operation_user_account.ml" 75 2449 2464 "sysprep_operation_user_account.ml" 75 2449 2466
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"sysprep_operation_user_account.ml" 75 2449 2467 "sysprep_operation_user_account.ml" 75 2449 2474
+type(
+  int
+)
+ident(
+  int_ref uid_min "sysprep_operation_user_account.ml" 62 1918 1926 "sysprep_operation_user_account.ml" 62 1918 1933
+)
+"sysprep_operation_user_account.ml" 75 2449 2460 "sysprep_operation_user_account.ml" 75 2449 2474
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 75 2449 2475 "sysprep_operation_user_account.ml" 75 2449 2477
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"sysprep_operation_user_account.ml" 75 2449 2478 "sysprep_operation_user_account.ml" 75 2449 2481
+type(
+  int
+)
+ident(
+  int_ref uid "sysprep_operation_user_account.ml" 70 2243 2255 "sysprep_operation_user_account.ml" 70 2243 2258
+)
+"sysprep_operation_user_account.ml" 75 2449 2482 "sysprep_operation_user_account.ml" 75 2449 2484
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"sysprep_operation_user_account.ml" 75 2449 2485 "sysprep_operation_user_account.ml" 75 2449 2492
+type(
+  int
+)
+ident(
+  int_ref uid_max "sysprep_operation_user_account.ml" 64 2024 2032 "sysprep_operation_user_account.ml" 64 2024 2039
+)
+"sysprep_operation_user_account.ml" 75 2449 2478 "sysprep_operation_user_account.ml" 75 2449 2492
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 76 2493 2504 "sysprep_operation_user_account.ml" 76 2493 2506
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"sysprep_operation_user_account.ml" 76 2493 2507 "sysprep_operation_user_account.ml" 76 2493 2524
+type(
+  StringSet.elt -> bool
+)
+ident(
+  int_ref check_remove_user "sysprep_operation_user_account.ml" 43 1249 1253 "sysprep_operation_user_account.ml" 43 1249 1270
+)
+"sysprep_operation_user_account.ml" 76 2493 2525 "sysprep_operation_user_account.ml" 76 2493 2533
+type(
+  StringSet.elt
+)
+ident(
+  int_ref username "sysprep_operation_user_account.ml" 71 2282 2294 "sysprep_operation_user_account.ml" 71 2282 2302
+)
+"sysprep_operation_user_account.ml" 76 2493 2507 "sysprep_operation_user_account.ml" 76 2493 2533
+call(
+  stack
+)
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 75 2449 2478 "sysprep_operation_user_account.ml" 76 2493 2533
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 75 2449 2460 "sysprep_operation_user_account.ml" 76 2493 2533
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 77 2541 2551 "sysprep_operation_user_account.ml" 77 2541 2558
+type(
+  bool ref
+)
+ident(
+  int_ref changed "sysprep_operation_user_account.ml" 58 1775 1781 "sysprep_operation_user_account.ml" 58 1775 1788
+)
+"sysprep_operation_user_account.ml" 77 2541 2559 "sysprep_operation_user_account.ml" 77 2541 2561
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sysprep_operation_user_account.ml" 77 2541 2562 "sysprep_operation_user_account.ml" 77 2541 2566
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 77 2541 2551 "sysprep_operation_user_account.ml" 77 2541 2566
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 79 2631 2645 "sysprep_operation_user_account.ml" 79 2631 2653
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 80 2656 2678 "sysprep_operation_user_account.ml" 80 2656 2679
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 80 2656 2678 "sysprep_operation_user_account.ml" 80 2656 2687
+call(
+  stack
+)
+type(
+  string -> string
+)
+"sysprep_operation_user_account.ml" 80 2656 2689 "sysprep_operation_user_account.ml" 80 2656 2697
+type(
+  string
+)
+ident(
+  int_ref userpath "sysprep_operation_user_account.ml" 67 2147 2157 "sysprep_operation_user_account.ml" 67 2147 2165
+)
+"sysprep_operation_user_account.ml" 80 2656 2698 "sysprep_operation_user_account.ml" 80 2656 2699
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_user_account.ml" 80 2656 2700 "sysprep_operation_user_account.ml" 80 2656 2707
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 80 2656 2688 "sysprep_operation_user_account.ml" 80 2656 2708
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 80 2656 2677 "sysprep_operation_user_account.ml" 80 2656 2709
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 80 2656 2672 "sysprep_operation_user_account.ml" 80 2656 2709
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 81 2710 2727 "sysprep_operation_user_account.ml" 81 2710 2728
+type(
+  exn
+)
+"sysprep_operation_user_account.ml" 82 2732 2749 "sysprep_operation_user_account.ml" 82 2732 2756
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sysprep_operation_user_account.ml" 82 2732 2757 "sysprep_operation_user_account.ml" 82 2732 2759
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 82 2732 2749 "sysprep_operation_user_account.ml" 82 2732 2759
+call(
+  stack
+)
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 83 2765 2781 "sysprep_operation_user_account.ml" 83 2765 2788
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"sysprep_operation_user_account.ml" 83 2765 2790 "sysprep_operation_user_account.ml" 83 2765 2792
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation_user_account.ml" 83 2765 2792 "sysprep_operation_user_account.ml" 83 2765 2830
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation_user_account.ml" 83 2765 2789 "sysprep_operation_user_account.ml" 83 2765 2831
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"sysprep_operation_user_account.ml" 84 2832 2850 "sysprep_operation_user_account.ml" 84 2832 2858
+type(
+  string
+)
+ident(
+  int_ref username "sysprep_operation_user_account.ml" 71 2282 2294 "sysprep_operation_user_account.ml" 71 2282 2302
+)
+"sysprep_operation_user_account.ml" 83 2765 2781 "sysprep_operation_user_account.ml" 84 2832 2858
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 82 2732 2746 "sysprep_operation_user_account.ml" 84 2832 2858
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 85 2860 2874 "sysprep_operation_user_account.ml" 85 2860 2878
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 82 2732 2746 "sysprep_operation_user_account.ml" 85 2860 2878
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 80 2656 2668 "sysprep_operation_user_account.ml" 85 2860 2878
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 86 2882 2892 "sysprep_operation_user_account.ml" 86 2882 2893
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 86 2882 2892 "sysprep_operation_user_account.ml" 86 2882 2900
+call(
+  stack
+)
+type(
+  string -> 'b
+)
+"sysprep_operation_user_account.ml" 86 2882 2901 "sysprep_operation_user_account.ml" 86 2882 2909
+type(
+  string
+)
+ident(
+  int_ref userpath "sysprep_operation_user_account.ml" 67 2147 2157 "sysprep_operation_user_account.ml" 67 2147 2165
+)
+"sysprep_operation_user_account.ml" 86 2882 2892 "sysprep_operation_user_account.ml" 86 2882 2909
+type(
+  'b
+)
+"sysprep_operation_user_account.ml" 87 2911 2921 "sysprep_operation_user_account.ml" 87 2911 2922
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 87 2911 2921 "sysprep_operation_user_account.ml" 87 2911 2929
+call(
+  stack
+)
+type(
+  string -> 'b
+)
+"sysprep_operation_user_account.ml" 87 2911 2931 "sysprep_operation_user_account.ml" 87 2911 2938
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sysprep_operation_user_account.ml" 87 2911 2939 "sysprep_operation_user_account.ml" 87 2911 2961
+type(
+  (string -> string, unit, string) format
+)
+"sysprep_operation_user_account.ml" 87 2911 2962 "sysprep_operation_user_account.ml" 87 2911 2970
+type(
+  string
+)
+ident(
+  int_ref username "sysprep_operation_user_account.ml" 71 2282 2294 "sysprep_operation_user_account.ml" 71 2282 2302
+)
+"sysprep_operation_user_account.ml" 87 2911 2930 "sysprep_operation_user_account.ml" 87 2911 2971
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 87 2911 2921 "sysprep_operation_user_account.ml" 87 2911 2971
+type(
+  'b
+)
+"sysprep_operation_user_account.ml" 88 2973 2983 "sysprep_operation_user_account.ml" 88 2973 2984
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 88 2973 2983 "sysprep_operation_user_account.ml" 88 2973 2991
+call(
+  stack
+)
+type(
+  string -> 'b
+)
+"sysprep_operation_user_account.ml" 88 2973 2993 "sysprep_operation_user_account.ml" 88 2973 3000
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sysprep_operation_user_account.ml" 88 2973 3001 "sysprep_operation_user_account.ml" 88 2973 3022
+type(
+  (string -> string, unit, string) format
+)
+"sysprep_operation_user_account.ml" 88 2973 3023 "sysprep_operation_user_account.ml" 88 2973 3031
+type(
+  string
+)
+ident(
+  int_ref username "sysprep_operation_user_account.ml" 71 2282 2294 "sysprep_operation_user_account.ml" 71 2282 2302
+)
+"sysprep_operation_user_account.ml" 88 2973 2992 "sysprep_operation_user_account.ml" 88 2973 3032
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 88 2973 2983 "sysprep_operation_user_account.ml" 88 2973 3032
+type(
+  'b
+)
+"sysprep_operation_user_account.ml" 89 3034 3044 "sysprep_operation_user_account.ml" 89 3034 3045
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 89 3034 3044 "sysprep_operation_user_account.ml" 89 3034 3051
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_user_account.ml" 89 3034 3053 "sysprep_operation_user_account.ml" 89 3034 3071
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 89 3034 3072 "sysprep_operation_user_account.ml" 89 3034 3073
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_user_account.ml" 89 3034 3074 "sysprep_operation_user_account.ml" 89 3034 3082
+type(
+  string
+)
+ident(
+  int_ref username "sysprep_operation_user_account.ml" 71 2282 2294 "sysprep_operation_user_account.ml" 71 2282 2302
+)
+"sysprep_operation_user_account.ml" 89 3034 3052 "sysprep_operation_user_account.ml" 89 3034 3083
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 89 3034 3044 "sysprep_operation_user_account.ml" 89 3034 3083
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 90 3085 3101 "sysprep_operation_user_account.ml" 90 3085 3109
+type(
+  string option
+)
+ident(
+  int_ref home_dir "sysprep_operation_user_account.ml" 79 2631 2645 "sysprep_operation_user_account.ml" 79 2631 2653
+)
+"sysprep_operation_user_account.ml" 91 3115 3127 "sysprep_operation_user_account.ml" 91 3115 3131
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 91 3115 3135 "sysprep_operation_user_account.ml" 91 3115 3137
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 92 3138 3155 "sysprep_operation_user_account.ml" 92 3138 3158
+type(
+  string
+)
+ident(
+  def dir "sysprep_operation_user_account.ml" 92 3138 3162 "sysprep_operation_user_account.ml" 92 3138 3173
+)
+"sysprep_operation_user_account.ml" 92 3138 3150 "sysprep_operation_user_account.ml" 92 3138 3158
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 92 3138 3162 "sysprep_operation_user_account.ml" 92 3138 3163
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 92 3138 3162 "sysprep_operation_user_account.ml" 92 3138 3169
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"sysprep_operation_user_account.ml" 92 3138 3170 "sysprep_operation_user_account.ml" 92 3138 3173
+type(
+  string
+)
+ident(
+  int_ref dir "sysprep_operation_user_account.ml" 92 3138 3155 "sysprep_operation_user_account.ml" 92 3138 3158
+)
+"sysprep_operation_user_account.ml" 92 3138 3162 "sysprep_operation_user_account.ml" 92 3138 3173
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 90 3085 3095 "sysprep_operation_user_account.ml" 92 3138 3173
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 89 3034 3044 "sysprep_operation_user_account.ml" 92 3138 3173
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 88 2973 2983 "sysprep_operation_user_account.ml" 92 3138 3173
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 87 2911 2921 "sysprep_operation_user_account.ml" 92 3138 3173
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 86 2882 2892 "sysprep_operation_user_account.ml" 92 3138 3173
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 79 2631 2641 "sysprep_operation_user_account.ml" 92 3138 3173
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 76 2493 2539 "sysprep_operation_user_account.ml" 93 3174 3183
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 75 2449 2457 "sysprep_operation_user_account.ml" 93 3174 3183
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 71 2282 2290 "sysprep_operation_user_account.ml" 93 3174 3183
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 70 2243 2251 "sysprep_operation_user_account.ml" 93 3174 3183
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 69 2208 2216 "sysprep_operation_user_account.ml" 93 3174 3183
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 68 2169 2177 "sysprep_operation_user_account.ml" 93 3174 3183
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 66 2131 2145 "sysprep_operation_user_account.ml" 94 3184 3189
+type(
+  string -> unit
+)
+"sysprep_operation_user_account.ml" 94 3184 3190 "sysprep_operation_user_account.ml" 94 3184 3195
+type(
+  string list
+)
+ident(
+  int_ref users "sysprep_operation_user_account.ml" 65 2067 2075 "sysprep_operation_user_account.ml" 65 2067 2080
+)
+"sysprep_operation_user_account.ml" 66 2131 2135 "sysprep_operation_user_account.ml" 94 3184 3195
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 95 3197 3201 "sysprep_operation_user_account.ml" 95 3197 3202
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_user_account.ml" 56 1689 1714 "sysprep_operation_user_account.ml" 56 1689 1715
+)
+"sysprep_operation_user_account.ml" 95 3197 3201 "sysprep_operation_user_account.ml" 95 3197 3211
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"sysprep_operation_user_account.ml" 95 3197 3212 "sysprep_operation_user_account.ml" 95 3197 3214
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 95 3197 3201 "sysprep_operation_user_account.ml" 95 3197 3215
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 66 2131 2135 "sysprep_operation_user_account.ml" 95 3197 3215
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 65 2067 2071 "sysprep_operation_user_account.ml" 95 3197 3215
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 64 2024 2028 "sysprep_operation_user_account.ml" 95 3197 3215
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 63 1961 1965 "sysprep_operation_user_account.ml" 95 3197 3215
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 62 1918 1922 "sysprep_operation_user_account.ml" 95 3197 3215
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 61 1855 1859 "sysprep_operation_user_account.ml" 95 3197 3215
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 59 1804 1831 "sysprep_operation_user_account.ml" 96 3216 3219
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 59 1804 1806 "sysprep_operation_user_account.ml" 96 3216 3219
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 97 3221 3226 "sysprep_operation_user_account.ml" 97 3221 3227
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation_user_account.ml" 97 3221 3227 "sysprep_operation_user_account.ml" 97 3221 3234
+type(
+  bool ref
+)
+ident(
+  int_ref changed "sysprep_operation_user_account.ml" 58 1775 1781 "sysprep_operation_user_account.ml" 58 1775 1788
+)
+"sysprep_operation_user_account.ml" 97 3221 3226 "sysprep_operation_user_account.ml" 97 3221 3234
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 98 3240 3244 "sysprep_operation_user_account.ml" 98 3240 3256
+type(
+  'e
+)
+ident(
+  int_ref side_effects "sysprep_operation_user_account.ml" 56 1689 1721 "sysprep_operation_user_account.ml" 56 1689 1733
+)
+"sysprep_operation_user_account.ml" 98 3240 3244 "sysprep_operation_user_account.ml" 98 3240 3269
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"sysprep_operation_user_account.ml" 98 3240 3270 "sysprep_operation_user_account.ml" 98 3240 3272
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 98 3240 3244 "sysprep_operation_user_account.ml" 98 3240 3272
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 97 3221 3223 "sysprep_operation_user_account.ml" 98 3240 3272
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 59 1804 1806 "sysprep_operation_user_account.ml" 98 3240 3272
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 58 1775 1777 "sysprep_operation_user_account.ml" 98 3240 3272
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 57 1736 1738 "sysprep_operation_user_account.ml" 98 3240 3272
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 100 3274 3278 "sysprep_operation_user_account.ml" 100 3274 3280
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_user_account.ml" 150 5207 5207 --
+)
+"sysprep_operation_user_account.ml" 101 3285 3287 "sysprep_operation_user_account.ml" 101 3285 3295
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_user_account.ml" 102 3301 3312 "sysprep_operation_user_account.ml" 102 3301 3326
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 103 3328 3353 "sysprep_operation_user_account.ml" 103 3328 3358
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 104 3360 3374 "sysprep_operation_user_account.ml" 104 3360 3376
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_user_account.ml" 104 3360 3376 "sysprep_operation_user_account.ml" 104 3360 3415
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 104 3360 3374 "sysprep_operation_user_account.ml" 104 3360 3415
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 105 3417 3445 "sysprep_operation_user_account.ml" 105 3417 3447
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_user_account.ml" 105 3417 3447 "sysprep_operation_user_account.ml" 110 3621 3682
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 105 3417 3444 "sysprep_operation_user_account.ml" 110 3621 3683
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 105 3417 3439 "sysprep_operation_user_account.ml" 110 3621 3683
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 112 3704 3728 "sysprep_operation_user_account.ml" 112 3704 3752
+type(
+  Arg.key
+)
+"sysprep_operation_user_account.ml" 112 3704 3766 "sysprep_operation_user_account.ml" 112 3704 3775
+type(
+  StringSet.t ref -> string -> unit
+)
+ident(
+  int_ref add_users "sysprep_operation_user_account.ml" 33 1032 1036 "sysprep_operation_user_account.ml" 33 1032 1045
+)
+"sysprep_operation_user_account.ml" 112 3704 3776 "sysprep_operation_user_account.ml" 112 3704 3788
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref remove_users "sysprep_operation_user_account.ml" 31 956 960 "sysprep_operation_user_account.ml" 31 956 972
+)
+"sysprep_operation_user_account.ml" 112 3704 3765 "sysprep_operation_user_account.ml" 112 3704 3789
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_user_account.ml" 112 3704 3754 "sysprep_operation_user_account.ml" 112 3704 3789
+type(
+  Arg.spec
+)
+"sysprep_operation_user_account.ml" 112 3704 3791 "sysprep_operation_user_account.ml" 112 3704 3793
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_user_account.ml" 112 3704 3793 "sysprep_operation_user_account.ml" 112 3704 3800
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 112 3704 3791 "sysprep_operation_user_account.ml" 112 3704 3800
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 112 3704 3801 "sysprep_operation_user_account.ml" 112 3704 3802
+type(
+  string -> string -> Arg.doc
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_user_account.ml" 112 3704 3803 "sysprep_operation_user_account.ml" 112 3704 3806
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 112 3704 3807 "sysprep_operation_user_account.ml" 112 3704 3808
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_user_account.ml" 112 3704 3809 "sysprep_operation_user_account.ml" 112 3704 3811
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_user_account.ml" 112 3704 3811 "sysprep_operation_user_account.ml" 112 3704 3828
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 112 3704 3809 "sysprep_operation_user_account.ml" 112 3704 3828
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 112 3704 3803 "sysprep_operation_user_account.ml" 112 3704 3828
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 112 3704 3791 "sysprep_operation_user_account.ml" 112 3704 3828
+call(
+  stack
+)
+type(
+  Arg.doc
+)
+"sysprep_operation_user_account.ml" 112 3704 3728 "sysprep_operation_user_account.ml" 112 3704 3828
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"sysprep_operation_user_account.ml" 113 3830 3862 "sysprep_operation_user_account.ml" 113 3830 3869
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 113 3830 3857 "sysprep_operation_user_account.ml" 113 3830 3869
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 114 3871 3903 "sysprep_operation_user_account.ml" 114 3871 3905
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_user_account.ml" 114 3871 3905 "sysprep_operation_user_account.ml" 124 4186 4231
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 114 3871 3903 "sysprep_operation_user_account.ml" 124 4186 4231
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 112 3704 3710 "sysprep_operation_user_account.ml" 125 4232 4239
+type(
+  Sysprep_operation.extra_arg
+)
+"sysprep_operation_user_account.ml" 127 4242 4266 "sysprep_operation_user_account.ml" 127 4242 4288
+type(
+  Arg.key
+)
+"sysprep_operation_user_account.ml" 127 4242 4302 "sysprep_operation_user_account.ml" 127 4242 4311
+type(
+  StringSet.t ref -> string -> unit
+)
+ident(
+  int_ref add_users "sysprep_operation_user_account.ml" 33 1032 1036 "sysprep_operation_user_account.ml" 33 1032 1045
+)
+"sysprep_operation_user_account.ml" 127 4242 4312 "sysprep_operation_user_account.ml" 127 4242 4322
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref keep_users "sysprep_operation_user_account.ml" 32 995 999 "sysprep_operation_user_account.ml" 32 995 1009
+)
+"sysprep_operation_user_account.ml" 127 4242 4301 "sysprep_operation_user_account.ml" 127 4242 4323
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_user_account.ml" 127 4242 4290 "sysprep_operation_user_account.ml" 127 4242 4323
+type(
+  Arg.spec
+)
+"sysprep_operation_user_account.ml" 127 4242 4325 "sysprep_operation_user_account.ml" 127 4242 4327
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_user_account.ml" 127 4242 4327 "sysprep_operation_user_account.ml" 127 4242 4334
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 127 4242 4325 "sysprep_operation_user_account.ml" 127 4242 4334
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 127 4242 4335 "sysprep_operation_user_account.ml" 127 4242 4336
+type(
+  string -> string -> Arg.doc
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_user_account.ml" 127 4242 4337 "sysprep_operation_user_account.ml" 127 4242 4340
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 127 4242 4341 "sysprep_operation_user_account.ml" 127 4242 4342
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_user_account.ml" 127 4242 4343 "sysprep_operation_user_account.ml" 127 4242 4345
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_user_account.ml" 127 4242 4345 "sysprep_operation_user_account.ml" 127 4242 4360
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 127 4242 4343 "sysprep_operation_user_account.ml" 127 4242 4360
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 127 4242 4337 "sysprep_operation_user_account.ml" 127 4242 4360
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 127 4242 4325 "sysprep_operation_user_account.ml" 127 4242 4360
+call(
+  stack
+)
+type(
+  Arg.doc
+)
+"sysprep_operation_user_account.ml" 127 4242 4266 "sysprep_operation_user_account.ml" 127 4242 4360
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"sysprep_operation_user_account.ml" 128 4362 4394 "sysprep_operation_user_account.ml" 128 4362 4401
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 128 4362 4389 "sysprep_operation_user_account.ml" 128 4362 4401
+type(
+  string option
+)
+"sysprep_operation_user_account.ml" 129 4403 4435 "sysprep_operation_user_account.ml" 129 4403 4437
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_user_account.ml" 129 4403 4437 "sysprep_operation_user_account.ml" 139 4687 4732
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 129 4403 4435 "sysprep_operation_user_account.ml" 139 4687 4732
+type(
+  string
+)
+"sysprep_operation_user_account.ml" 127 4242 4248 "sysprep_operation_user_account.ml" 140 4733 4740
+type(
+  Sysprep_operation.extra_arg
+)
+"sysprep_operation_user_account.ml" 111 3685 3702 "sysprep_operation_user_account.ml" 141 4742 4747
+type(
+  Sysprep_operation.extra_arg list
+)
+"sysprep_operation_user_account.ml" 142 4749 4783 "sysprep_operation_user_account.ml" 142 4749 4803
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref user_account_perform "sysprep_operation_user_account.ml" 56 1689 1693 "sysprep_operation_user_account.ml" 56 1689 1713
+)
+"sysprep_operation_user_account.ml" 142 4749 4778 "sysprep_operation_user_account.ml" 142 4749 4803
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_user_account.ml" 143 4805 4838 "sysprep_operation_user_account.ml" 143 4805 4840
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 144 4844 4853 "sysprep_operation_user_account.ml" 144 4844 4856
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"sysprep_operation_user_account.ml" 144 4844 4858 "sysprep_operation_user_account.ml" 144 4844 4876
+type(
+  StringSet.t -> bool
+)
+ident(
+  ext_ref StringSet.is_empty
+)
+"sysprep_operation_user_account.ml" 144 4844 4877 "sysprep_operation_user_account.ml" 144 4844 4878
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation_user_account.ml" 144 4844 4878 "sysprep_operation_user_account.ml" 144 4844 4888
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref keep_users "sysprep_operation_user_account.ml" 32 995 999 "sysprep_operation_user_account.ml" 32 995 1009
+)
+"sysprep_operation_user_account.ml" 144 4844 4877 "sysprep_operation_user_account.ml" 144 4844 4888
+type(
+  StringSet.t
+)
+"sysprep_operation_user_account.ml" 144 4844 4857 "sysprep_operation_user_account.ml" 144 4844 4889
+call(
+  stack
+)
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 144 4844 4853 "sysprep_operation_user_account.ml" 144 4844 4889
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 145 4895 4903 "sysprep_operation_user_account.ml" 145 4895 4908
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation_user_account.ml" 145 4895 4910 "sysprep_operation_user_account.ml" 145 4895 4912
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation_user_account.ml" 145 4895 4912 "sysprep_operation_user_account.ml" 145 4895 5019
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation_user_account.ml" 145 4895 4909 "sysprep_operation_user_account.ml" 145 4895 5020
+type(
+  (unit, unit, string, unit) format4
+)
+"sysprep_operation_user_account.ml" 145 4895 4903 "sysprep_operation_user_account.ml" 145 4895 5020
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 144 4844 4850 "sysprep_operation_user_account.ml" 145 4895 5020
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 146 5022 5031 "sysprep_operation_user_account.ml" 146 5022 5034
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"sysprep_operation_user_account.ml" 146 5022 5036 "sysprep_operation_user_account.ml" 146 5022 5054
+type(
+  StringSet.t -> bool
+)
+ident(
+  ext_ref StringSet.is_empty
+)
+"sysprep_operation_user_account.ml" 146 5022 5055 "sysprep_operation_user_account.ml" 146 5022 5056
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation_user_account.ml" 146 5022 5056 "sysprep_operation_user_account.ml" 146 5022 5068
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref remove_users "sysprep_operation_user_account.ml" 31 956 960 "sysprep_operation_user_account.ml" 31 956 972
+)
+"sysprep_operation_user_account.ml" 146 5022 5055 "sysprep_operation_user_account.ml" 146 5022 5068
+type(
+  StringSet.t
+)
+"sysprep_operation_user_account.ml" 146 5022 5035 "sysprep_operation_user_account.ml" 146 5022 5069
+call(
+  stack
+)
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 146 5022 5031 "sysprep_operation_user_account.ml" 146 5022 5069
+type(
+  bool
+)
+"sysprep_operation_user_account.ml" 147 5075 5083 "sysprep_operation_user_account.ml" 147 5075 5088
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation_user_account.ml" 147 5075 5090 "sysprep_operation_user_account.ml" 147 5075 5092
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation_user_account.ml" 147 5075 5092 "sysprep_operation_user_account.ml" 147 5075 5201
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation_user_account.ml" 147 5075 5089 "sysprep_operation_user_account.ml" 147 5075 5202
+type(
+  (unit, unit, string, unit) format4
+)
+"sysprep_operation_user_account.ml" 147 5075 5083 "sysprep_operation_user_account.ml" 147 5075 5202
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 146 5022 5028 "sysprep_operation_user_account.ml" 147 5075 5203
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 144 4844 4850 "sysprep_operation_user_account.ml" 147 5075 5203
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 143 4805 4834 "sysprep_operation_user_account.ml" 147 5075 5203
+type(
+  unit -> unit
+)
+"sysprep_operation_user_account.ml" 100 3274 3283 "sysprep_operation_user_account.ml" 148 5204 5205
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_user_account.ml" 150 5207 5211 "sysprep_operation_user_account.ml" 150 5207 5213
+type(
+  unit
+)
+"sysprep_operation_user_account.ml" 150 5207 5216 "sysprep_operation_user_account.ml" 150 5207 5234
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_user_account.ml" 150 5207 5235 "sysprep_operation_user_account.ml" 150 5207 5237
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_user_account.ml" 100 3274 3278 "sysprep_operation_user_account.ml" 100 3274 3280
+)
+"sysprep_operation_user_account.ml" 150 5207 5216 "sysprep_operation_user_account.ml" 150 5207 5237
+call(
+  stack
+)
+type(
+  unit
+)

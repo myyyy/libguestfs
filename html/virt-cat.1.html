@@ -1,0 +1,328 @@
+
+<html>
+<head>
+<title>virt-cat</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#examples">EXAMPLES</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#old-style-command-line-arguments">OLD-STYLE COMMAND LINE ARGUMENTS</a></li>
+  <li><a href="#log-files">LOG FILES</a></li>
+  <li><a href="#windows-paths">WINDOWS PATHS</a></li>
+  <li><a href="#using-guestfish">USING GUESTFISH</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-cat - Display files in a virtual machine</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-cat [--options] -d domname file [file ...]
+
+ virt-cat [--options] -a disk.img [-a disk.img ...] file [file ...]</code></pre>
+
+<p>Old-style:</p>
+
+<pre><code> virt-cat domname file
+
+ virt-cat disk.img file</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><code>virt-cat</code> is a command line tool to display the contents of <code>file</code> where <code>file</code> exists in the named virtual machine (or disk image).</p>
+
+<p>Multiple filenames can be given, in which case they are concatenated together. Each filename must be a full path, starting at the root directory (starting with &#39;/&#39;).</p>
+
+<p><code>virt-cat</code> can be used to quickly view a file. To edit a file, use <code>virt-edit</code>. For more complex cases you should look at the <a href="guestfish.1.html">guestfish(1)</a> tool (see <a href="#using-guestfish">&quot;USING GUESTFISH&quot;</a> below).</p>
+
+<h1 id="examples">EXAMPLES</h1>
+
+<p>Display <i>/etc/fstab</i> file from inside the libvirt VM called <code>mydomain</code>:</p>
+
+<pre><code> virt-cat -d mydomain /etc/fstab</code></pre>
+
+<p>Find out what packages were recently installed:</p>
+
+<pre><code> virt-cat -d mydomain /var/log/yum.log | tail</code></pre>
+
+<p>Find out who is logged on inside a virtual machine:</p>
+
+<pre><code> virt-cat -d mydomain /var/run/utmp &gt; /tmp/utmp
+ who /tmp/utmp</code></pre>
+
+<p>or who was logged on:</p>
+
+<pre><code> virt-cat -d mydomain /var/log/wtmp &gt; /tmp/wtmp
+ last -f /tmp/wtmp</code></pre>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display brief help.</p>
+
+</dd>
+<dt><b>-a</b> file</dt>
+<dd>
+
+</dd>
+<dt><b>--add</b> file</dt>
+<dd>
+
+<p>Add <i>file</i> which should be a disk image from a virtual machine. If the virtual machine has multiple block devices, you must supply all of them with separate <i>-a</i> options.</p>
+
+<p>The format of the disk image is auto-detected. To override this and force a particular format use the <i>--format=..</i> option.</p>
+
+</dd>
+<dt><b>-a URI</b></dt>
+<dd>
+
+</dd>
+<dt><b>--add URI</b></dt>
+<dd>
+
+<p>Add a remote disk. See <a href="guestfish.1.html#adding-remote-storage">&quot;ADDING REMOTE STORAGE&quot; in guestfish(1)</a>.</p>
+
+</dd>
+<dt><b>-c</b> URI</dt>
+<dd>
+
+</dd>
+<dt><b>--connect</b> URI</dt>
+<dd>
+
+<p>If using libvirt, connect to the given <i>URI</i>. If omitted, then we connect to the default libvirt hypervisor.</p>
+
+<p>If you specify guest block devices directly (<i>-a</i>), then libvirt is not used at all.</p>
+
+</dd>
+<dt><b>-d</b> guest</dt>
+<dd>
+
+</dd>
+<dt><b>--domain</b> guest</dt>
+<dd>
+
+<p>Add all the disks from the named libvirt guest. Domain UUIDs can be used instead of names.</p>
+
+</dd>
+<dt><b>--echo-keys</b></dt>
+<dd>
+
+<p>When prompting for keys and passphrases, virt-cat normally turns echoing off so you cannot see what you are typing. If you are not worried about Tempest attacks and there is no one else in the room you can specify this flag to see what you are typing.</p>
+
+</dd>
+<dt><b>--format=raw|qcow2|..</b></dt>
+<dd>
+
+</dd>
+<dt><b>--format</b></dt>
+<dd>
+
+<p>The default for the <i>-a</i> option is to auto-detect the format of the disk image. Using this forces the disk format for <i>-a</i> options which follow on the command line. Using <i>--format</i> with no argument switches back to auto-detection for subsequent <i>-a</i> options.</p>
+
+<p>For example:</p>
+
+<pre><code> virt-cat --format=raw -a disk.img file</code></pre>
+
+<p>forces raw format (no auto-detection) for <i>disk.img</i>.</p>
+
+<pre><code> virt-cat --format=raw -a disk.img --format -a another.img file</code></pre>
+
+<p>forces raw format (no auto-detection) for <i>disk.img</i> and reverts to auto-detection for <i>another.img</i>.</p>
+
+<p>If you have untrusted raw-format guest disk images, you should use this option to specify the disk format. This avoids a possible security problem with malicious guests (CVE-2010-3851).</p>
+
+</dd>
+<dt><b>--keys-from-stdin</b></dt>
+<dd>
+
+<p>Read key or passphrase parameters from stdin. The default is to try to read passphrases from the user by opening <i>/dev/tty</i>.</p>
+
+</dd>
+<dt><b>-m dev[:mountpoint[:options[:fstype]]]</b></dt>
+<dd>
+
+</dd>
+<dt><b>--mount dev[:mountpoint[:options[:fstype]]]</b></dt>
+<dd>
+
+<p>Mount the named partition or logical volume on the given mountpoint.</p>
+
+<p>If the mountpoint is omitted, it defaults to <i>/</i>.</p>
+
+<p>Specifying any mountpoint disables the inspection of the guest and the mount of its root and all of its mountpoints, so make sure to mount all the mountpoints needed to work with the filenames given as arguments.</p>
+
+<p>If you don&#39;t know what filesystems a disk image contains, you can either run guestfish without this option, then list the partitions, filesystems and LVs available (see <a href="#list-partitions">&quot;list-partitions&quot;</a>, <a href="#list-filesystems">&quot;list-filesystems&quot;</a> and <a href="#lvs">&quot;lvs&quot;</a> commands), or you can use the <a href="virt-filesystems.1.html">virt-filesystems(1)</a> program.</p>
+
+<p>The third (and rarely used) part of the mount parameter is the list of mount options used to mount the underlying filesystem. If this is not given, then the mount options are either the empty string or <code>ro</code> (the latter if the <i>--ro</i> flag is used). By specifying the mount options, you override this default choice. Probably the only time you would use this is to enable ACLs and/or extended attributes if the filesystem can support them:</p>
+
+<pre><code> -m /dev/sda1:/:acl,user_xattr</code></pre>
+
+<p>Using this flag is equivalent to using the <code>mount-options</code> command.</p>
+
+<p>The fourth part of the parameter is the filesystem driver to use, such as <code>ext3</code> or <code>ntfs</code>. This is rarely needed, but can be useful if multiple drivers are valid for a filesystem (eg: <code>ext2</code> and <code>ext3</code>), or if libguestfs misidentifies a filesystem.</p>
+
+</dd>
+<dt><b>-v</b></dt>
+<dd>
+
+</dd>
+<dt><b>--verbose</b></dt>
+<dd>
+
+<p>Enable verbose messages for debugging.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+<dt><b>-x</b></dt>
+<dd>
+
+<p>Enable tracing of libguestfs API calls.</p>
+
+</dd>
+</dl>
+
+<h1 id="old-style-command-line-arguments">OLD-STYLE COMMAND LINE ARGUMENTS</h1>
+
+<p>Previous versions of virt-cat allowed you to write either:</p>
+
+<pre><code> virt-cat disk.img [disk.img ...] file</code></pre>
+
+<p>or</p>
+
+<pre><code> virt-cat guestname file</code></pre>
+
+<p>whereas in this version you should use <i>-a</i> or <i>-d</i> respectively to avoid the confusing case where a disk image might have the same name as a guest.</p>
+
+<p>For compatibility the old style is still supported.</p>
+
+<h1 id="log-files">LOG FILES</h1>
+
+<p>To list out the log files from guests, see the related tool <a href="virt-log.1.html">virt-log(1)</a>. It understands binary log formats such as the systemd journal.</p>
+
+<h1 id="windows-paths">WINDOWS PATHS</h1>
+
+<p><code>virt-cat</code> has a limited ability to understand Windows drive letters and paths (eg. <i>E:\foo\bar.txt</i>).</p>
+
+<p>If and only if the guest is running Windows then:</p>
+
+<ul>
+
+<li><p>Drive letter prefixes like <code>C:</code> are resolved against the Windows Registry to the correct filesystem.</p>
+
+</li>
+<li><p>Any backslash (<code>\</code>) characters in the path are replaced with forward slashes so that libguestfs can process it.</p>
+
+</li>
+<li><p>The path is resolved case insensitively to locate the file that should be displayed.</p>
+
+</li>
+</ul>
+
+<p>There are some known shortcomings:</p>
+
+<ul>
+
+<li><p>Some NTFS symbolic links may not be followed correctly.</p>
+
+</li>
+<li><p>NTFS junction points that cross filesystems are not followed.</p>
+
+</li>
+</ul>
+
+<h1 id="using-guestfish">USING GUESTFISH</h1>
+
+<p><a href="guestfish.1.html">guestfish(1)</a> is a more powerful, lower level tool which you can use when <code>virt-cat</code> doesn&#39;t work.</p>
+
+<p>Using <code>virt-cat</code> is approximately equivalent to doing:</p>
+
+<pre><code> guestfish --ro -i -d domname download file -</code></pre>
+
+<p>where <code>domname</code> is the name of the libvirt guest, and <code>file</code> is the full path to the file. Note the final <code>-</code> (meaning &quot;output to stdout&quot;).</p>
+
+<p>The command above uses libguestfs&#39;s guest inspection feature and so does not work on guests that libguestfs cannot inspect, or on things like arbitrary disk images that don&#39;t contain guests. To display a file from a disk image directly, use:</p>
+
+<pre><code> guestfish --ro -a disk.img -m /dev/sda1 download file -</code></pre>
+
+<p>where <i>disk.img</i> is the disk image, <i>/dev/sda1</i> is the filesystem within the disk image, and <code>file</code> is the full path to the file.</p>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>This program returns 0 if successful, or non-zero if there was an error.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="virt-copy-out.1.html">virt-copy-out(1)</a>, <a href="virt-edit.1.html">virt-edit(1)</a>, <a href="virt-log.1.html">virt-log(1)</a>, <a href="virt-tar-out.1.html">virt-tar-out(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2010-2012 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

@@ -1,0 +1,289 @@
+
+<html>
+<head>
+<title>virt-make-fs</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a>
+    <ul>
+      <li><a href="#filesystem-type">FILESYSTEM TYPE</a>
+        <ul>
+          <li><a href="#example">EXAMPLE</a></li>
+        </ul>
+      </li>
+      <li><a href="#to-partition-or-not-to-partition">TO PARTITION OR NOT TO PARTITION</a>
+        <ul>
+          <li><a href="#example1">EXAMPLE</a></li>
+        </ul>
+      </li>
+      <li><a href="#extra-space">EXTRA SPACE</a>
+        <ul>
+          <li><a href="#example2">EXAMPLE</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-make-fs - Make a filesystem from a tar archive or files</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-make-fs [--options] input.tar output.img
+
+ virt-make-fs [--options] input.tar.gz output.img
+
+ virt-make-fs [--options] directory output.img</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>Virt-make-fs is a command line tool for creating a filesystem from a tar archive or some files in a directory. It is similar to tools like <a href="http://man.he.net/man1/mkisofs">mkisofs(1)</a>, <a href="http://man.he.net/man1/genisoimage">genisoimage(1)</a> and <a href="http://man.he.net/man1/mksquashfs">mksquashfs(1)</a>. Unlike those tools, it can create common filesystem types like ext2/3 or NTFS, which can be useful if you want to attach these filesystems to existing virtual machines (eg. to import large amounts of read-only data to a VM).</p>
+
+<p>To create blank disks, use <a href="virt-format.1.html">virt-format(1)</a>. To create complex layouts, use <a href="guestfish.1.html">guestfish(1)</a>.</p>
+
+<p>Basic usage is:</p>
+
+<pre><code> virt-make-fs input output.img</code></pre>
+
+<p>where <code>input</code> is either a directory containing files that you want to add, or a tar archive (either uncompressed tar or gzip-compressed tar); and <i>output.img</i> is a disk image. The input type is detected automatically. The output disk image defaults to a raw ext2 sparse image unless you specify extra flags (see <a href="#options">&quot;OPTIONS&quot;</a> below).</p>
+
+<h2 id="filesystem-type">FILESYSTEM TYPE</h2>
+
+<p>The default filesystem type is <code>ext2</code>. Just about any filesystem type that libguestfs supports can be used (but <i>not</i> read-only formats like ISO9660). Here are some of the more common choices:</p>
+
+<dl>
+
+<dt><i>ext3</i></dt>
+<dd>
+
+<p>Note that ext3 filesystems contain a journal, typically 1-32 MB in size. If you are not going to use the filesystem in a way that requires the journal, then this is just wasted overhead.</p>
+
+</dd>
+<dt><i>ntfs</i> or <i>vfat</i></dt>
+<dd>
+
+<p>Useful if exporting data to a Windows guest.</p>
+
+</dd>
+<dt><i>minix</i></dt>
+<dd>
+
+<p>Lower overhead than <code>ext2</code>, but certain limitations on filename length and total filesystem size.</p>
+
+</dd>
+</dl>
+
+<h3 id="example">EXAMPLE</h3>
+
+<pre><code> virt-make-fs --type=minix input minixfs.img</code></pre>
+
+<h2 id="to-partition-or-not-to-partition">TO PARTITION OR NOT TO PARTITION</h2>
+
+<p>Optionally virt-make-fs can add a partition table to the output disk.</p>
+
+<p>Adding a partition can make the disk image more compatible with certain virtualized operating systems which don&#39;t expect to see a filesystem directly located on a block device (Linux doesn&#39;t care and will happily handle both types).</p>
+
+<p>On the other hand, if you have a partition table then the output image is no longer a straight filesystem. For example you cannot run <a href="http://man.he.net/man8/fsck">fsck(8)</a> directly on a partitioned disk image. (However libguestfs tools such as <a href="guestfish.1.html">guestfish(1)</a> and <a href="virt-resize.1.html">virt-resize(1)</a> can still be used).</p>
+
+<h3 id="example1">EXAMPLE</h3>
+
+<p>Add an MBR partition:</p>
+
+<pre><code> virt-make-fs --partition -- input disk.img</code></pre>
+
+<p>If the output disk image could be terabyte-sized or larger, it&#39;s better to use an EFI/GPT-compatible partition table:</p>
+
+<pre><code> virt-make-fs --partition=gpt --size=+4T --format=qcow2 input disk.img</code></pre>
+
+<h2 id="extra-space">EXTRA SPACE</h2>
+
+<p>Unlike formats such as tar and squashfs, a filesystem does not &quot;just fit&quot; the files that it contains, but might have extra space. Depending on how you are going to use the output, you might think this extra space is wasted and want to minimize it, or you might want to leave space so that more files can be added later. Virt-make-fs defaults to minimizing the extra space, but you can use the <i>--size</i> flag to leave space in the filesystem if you want it.</p>
+
+<p>An alternative way to leave extra space but not make the output image any bigger is to use an alternative disk image format (instead of the default &quot;raw&quot; format). Using <i>--format=qcow2</i> will use the native qemu/KVM qcow2 image format (check your hypervisor supports this before using it). This allows you to choose a large <i>--size</i> but the extra space won&#39;t actually be allocated in the image until you try to store something in it.</p>
+
+<p>Don&#39;t forget that you can also use local commands including <a href="http://man.he.net/man8/resize2fs">resize2fs(8)</a> and <a href="virt-resize.1.html">virt-resize(1)</a> to resize existing filesystems, or rerun virt-make-fs to build another image from scratch.</p>
+
+<h3 id="example2">EXAMPLE</h3>
+
+<pre><code> virt-make-fs --format=qcow2 --size=+200M input output.img</code></pre>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display brief help.</p>
+
+</dd>
+<dt><b>--floppy</b></dt>
+<dd>
+
+<p>Create a virtual floppy disk.</p>
+
+<p>Currently this preselects the size (1440K), partition type (MBR) and filesystem type (VFAT). In future it may also choose the geometry.</p>
+
+</dd>
+<dt><b>--size=&lt;N&gt;</b></dt>
+<dd>
+
+</dd>
+<dt><b>--size=+&lt;N&gt;</b></dt>
+<dd>
+
+</dd>
+<dt><b>-s &lt;N&gt;</b></dt>
+<dd>
+
+</dd>
+<dt><b>-s +&lt;N&gt;</b></dt>
+<dd>
+
+<p>Use the <i>--size</i> (or <i>-s</i>) option to choose the size of the output image.</p>
+
+<p>If this option is <i>not</i> given, then the output image will be just large enough to contain all the files, with not much wasted space.</p>
+
+<p>To choose a fixed size output disk, specify an absolute number followed by b/K/M/G/T/P/E to mean bytes, Kilobytes, Megabytes, Gigabytes, Terabytes, Petabytes or Exabytes. This must be large enough to contain all the input files, else you will get an error.</p>
+
+<p>To leave extra space, specify <code>+</code> (plus sign) and a number followed by b/K/M/G/T/P/E to mean bytes, Kilobytes, Megabytes, Gigabytes, Terabytes, Petabytes or Exabytes. For example: <i>--size=+200M</i> means enough space for the input files, and (approximately) an extra 200 MB free space.</p>
+
+<p>Note that virt-make-fs estimates free space, and therefore will not produce filesystems containing precisely the free space requested. (It is much more expensive and time-consuming to produce a filesystem which has precisely the desired free space).</p>
+
+</dd>
+<dt><b>--format=&lt;fmt&gt;</b></dt>
+<dd>
+
+</dd>
+<dt><b>-F &lt;fmt&gt;</b></dt>
+<dd>
+
+<p>Choose the output disk image format.</p>
+
+<p>The default is <code>raw</code> (raw sparse disk image).</p>
+
+</dd>
+<dt><b>--type=&lt;fs&gt;</b></dt>
+<dd>
+
+</dd>
+<dt><b>-t &lt;fs&gt;</b></dt>
+<dd>
+
+<p>Choose the output filesystem type.</p>
+
+<p>The default is <code>ext2</code>.</p>
+
+<p>Any filesystem which is supported read-write by libguestfs can be used here.</p>
+
+</dd>
+<dt><b>--label=&lt;LABEL&gt;</b></dt>
+<dd>
+
+<p>Set the filesystem label.</p>
+
+</dd>
+<dt><b>--partition</b></dt>
+<dd>
+
+</dd>
+<dt><b>--partition=&lt;parttype&gt;</b></dt>
+<dd>
+
+<p>If specified, this flag adds an MBR partition table to the output disk image.</p>
+
+<p>You can change the partition table type, eg. <i>--partition=gpt</i> for large disks.</p>
+
+<p>For MBR, virt-make-fs sets the partition type byte automatically.</p>
+
+</dd>
+<dt><b>-v</b></dt>
+<dd>
+
+</dd>
+<dt><b>--verbose</b></dt>
+<dd>
+
+<p>Enable debugging information.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+<dt><b>-x</b></dt>
+<dd>
+
+<p>Enable libguestfs trace.</p>
+
+</dd>
+</dl>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfish.1.html">guestfish(1)</a>, <a href="virt-format.1.html">virt-format(1)</a>, <a href="virt-resize.1.html">virt-resize(1)</a>, <a href="virt-tar-in.1.html">virt-tar-in(1)</a>, <a href="http://man.he.net/man1/mkisofs">mkisofs(1)</a>, <a href="http://man.he.net/man1/genisoimage">genisoimage(1)</a>, <a href="http://man.he.net/man1/mksquashfs">mksquashfs(1)</a>, <a href="http://man.he.net/man8/mke2fs">mke2fs(8)</a>, <a href="http://man.he.net/man8/resize2fs">resize2fs(8)</a>, <a href="guestfs.3.html">guestfs(3)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2010-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

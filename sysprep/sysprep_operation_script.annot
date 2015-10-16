@@ -1,0 +1,1373 @@
+"sysprep_operation_script.ml" 29 890 894 "sysprep_operation_script.ml" 29 890 903
+type(
+  string option ref
+)
+ident(
+  def scriptdir "sysprep_operation_script.ml" 30 915 915 --
+)
+"sysprep_operation_script.ml" 29 890 906 "sysprep_operation_script.ml" 29 890 909
+type(
+  string option -> string option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sysprep_operation_script.ml" 29 890 910 "sysprep_operation_script.ml" 29 890 914
+type(
+  string option
+)
+"sysprep_operation_script.ml" 29 890 906 "sysprep_operation_script.ml" 29 890 914
+type(
+  string option ref
+)
+"sysprep_operation_script.ml" 30 915 919 "sysprep_operation_script.ml" 30 915 932
+type(
+  string -> unit
+)
+ident(
+  def set_scriptdir "sysprep_operation_script.ml" 35 1052 1052 --
+)
+"sysprep_operation_script.ml" 30 915 933 "sysprep_operation_script.ml" 30 915 936
+type(
+  string
+)
+ident(
+  def dir "sysprep_operation_script.ml" 31 939 941 "sysprep_operation_script.ml" 33 1027 1050
+)
+"sysprep_operation_script.ml" 31 939 944 "sysprep_operation_script.ml" 31 939 945
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation_script.ml" 31 939 945 "sysprep_operation_script.ml" 31 939 954
+type(
+  string option ref
+)
+ident(
+  int_ref scriptdir "sysprep_operation_script.ml" 29 890 894 "sysprep_operation_script.ml" 29 890 903
+)
+"sysprep_operation_script.ml" 31 939 944 "sysprep_operation_script.ml" 31 939 954
+type(
+  string option
+)
+"sysprep_operation_script.ml" 31 939 955 "sysprep_operation_script.ml" 31 939 957
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_script.ml" 31 939 958 "sysprep_operation_script.ml" 31 939 962
+type(
+  string option
+)
+"sysprep_operation_script.ml" 31 939 944 "sysprep_operation_script.ml" 31 939 962
+type(
+  bool
+)
+"sysprep_operation_script.ml" 32 968 972 "sysprep_operation_script.ml" 32 968 977
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation_script.ml" 32 968 979 "sysprep_operation_script.ml" 32 968 981
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation_script.ml" 32 968 981 "sysprep_operation_script.ml" 32 968 1024
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation_script.ml" 32 968 978 "sysprep_operation_script.ml" 32 968 1025
+type(
+  (unit, unit, string, unit) format4
+)
+"sysprep_operation_script.ml" 32 968 972 "sysprep_operation_script.ml" 32 968 1025
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_script.ml" 31 939 941 "sysprep_operation_script.ml" 32 968 1025
+type(
+  unit
+)
+"sysprep_operation_script.ml" 33 1027 1029 "sysprep_operation_script.ml" 33 1027 1038
+type(
+  string option ref
+)
+ident(
+  int_ref scriptdir "sysprep_operation_script.ml" 29 890 894 "sysprep_operation_script.ml" 29 890 903
+)
+"sysprep_operation_script.ml" 33 1027 1039 "sysprep_operation_script.ml" 33 1027 1041
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sysprep_operation_script.ml" 33 1027 1047 "sysprep_operation_script.ml" 33 1027 1050
+type(
+  string
+)
+ident(
+  int_ref dir "sysprep_operation_script.ml" 30 915 933 "sysprep_operation_script.ml" 30 915 936
+)
+"sysprep_operation_script.ml" 33 1027 1042 "sysprep_operation_script.ml" 33 1027 1050
+type(
+  string option
+)
+"sysprep_operation_script.ml" 33 1027 1029 "sysprep_operation_script.ml" 33 1027 1050
+type(
+  unit
+)
+"sysprep_operation_script.ml" 31 939 941 "sysprep_operation_script.ml" 33 1027 1050
+type(
+  unit
+)
+"sysprep_operation_script.ml" 35 1052 1056 "sysprep_operation_script.ml" 35 1052 1063
+type(
+  string list ref
+)
+ident(
+  def scripts "sysprep_operation_script.ml" 36 1073 1073 --
+)
+"sysprep_operation_script.ml" 35 1052 1066 "sysprep_operation_script.ml" 35 1052 1069
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sysprep_operation_script.ml" 35 1052 1070 "sysprep_operation_script.ml" 35 1052 1072
+type(
+  string list
+)
+"sysprep_operation_script.ml" 35 1052 1066 "sysprep_operation_script.ml" 35 1052 1072
+type(
+  string list ref
+)
+"sysprep_operation_script.ml" 36 1073 1077 "sysprep_operation_script.ml" 36 1073 1087
+type(
+  string -> unit
+)
+ident(
+  def add_script "sysprep_operation_script.ml" 38 1128 1128 --
+)
+"sysprep_operation_script.ml" 36 1073 1088 "sysprep_operation_script.ml" 36 1073 1094
+type(
+  string
+)
+ident(
+  def script "sysprep_operation_script.ml" 36 1073 1097 "sysprep_operation_script.ml" 36 1073 1126
+)
+"sysprep_operation_script.ml" 36 1073 1097 "sysprep_operation_script.ml" 36 1073 1104
+type(
+  string list ref
+)
+ident(
+  int_ref scripts "sysprep_operation_script.ml" 35 1052 1056 "sysprep_operation_script.ml" 35 1052 1063
+)
+"sysprep_operation_script.ml" 36 1073 1105 "sysprep_operation_script.ml" 36 1073 1107
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sysprep_operation_script.ml" 36 1073 1108 "sysprep_operation_script.ml" 36 1073 1114
+type(
+  string
+)
+ident(
+  int_ref script "sysprep_operation_script.ml" 36 1073 1088 "sysprep_operation_script.ml" 36 1073 1094
+)
+"sysprep_operation_script.ml" 36 1073 1118 "sysprep_operation_script.ml" 36 1073 1119
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation_script.ml" 36 1073 1119 "sysprep_operation_script.ml" 36 1073 1126
+type(
+  string list ref
+)
+ident(
+  int_ref scripts "sysprep_operation_script.ml" 35 1052 1056 "sysprep_operation_script.ml" 35 1052 1063
+)
+"sysprep_operation_script.ml" 36 1073 1118 "sysprep_operation_script.ml" 36 1073 1126
+type(
+  string list
+)
+"sysprep_operation_script.ml" 36 1073 1108 "sysprep_operation_script.ml" 36 1073 1126
+type(
+  string list
+)
+"sysprep_operation_script.ml" 36 1073 1097 "sysprep_operation_script.ml" 36 1073 1126
+type(
+  unit
+)
+"sysprep_operation_script.ml" 38 1128 1136 "sysprep_operation_script.ml" 38 1128 1150
+type(
+  Guestfs.guestfs -> 'a -> 'b -> unit
+)
+ident(
+  def script_perform "sysprep_operation_script.ml" 38 1128 1128 --
+)
+"sysprep_operation_script.ml" 38 1128 1152 "sysprep_operation_script.ml" 38 1128 1153
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "sysprep_operation_script.ml" 38 1128 1173 "sysprep_operation_script.ml" 73 2103 2106
+)
+"sysprep_operation_script.ml" 38 1128 1173 "sysprep_operation_script.ml" 38 1128 1177
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_script.ml" 38 1128 1178 "sysprep_operation_script.ml" 73 2103 2106
+)
+"sysprep_operation_script.ml" 38 1128 1178 "sysprep_operation_script.ml" 38 1128 1190
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_script.ml" 39 1193 1195 "sysprep_operation_script.ml" 73 2103 2106
+)
+"sysprep_operation_script.ml" 39 1193 1199 "sysprep_operation_script.ml" 39 1193 1206
+type(
+  string list
+)
+"sysprep_operation_script.ml" 39 1193 1209 "sysprep_operation_script.ml" 39 1193 1217
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"sysprep_operation_script.ml" 39 1193 1218 "sysprep_operation_script.ml" 39 1193 1219
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation_script.ml" 39 1193 1219 "sysprep_operation_script.ml" 39 1193 1226
+type(
+  string list ref
+)
+ident(
+  int_ref scripts "sysprep_operation_script.ml" 35 1052 1056 "sysprep_operation_script.ml" 35 1052 1063
+)
+"sysprep_operation_script.ml" 39 1193 1218 "sysprep_operation_script.ml" 39 1193 1226
+type(
+  string list
+)
+"sysprep_operation_script.ml" 39 1193 1209 "sysprep_operation_script.ml" 39 1193 1226
+call(
+  stack
+)
+type(
+  string list
+)
+"sysprep_operation_script.ml" 40 1230 1235 "sysprep_operation_script.ml" 40 1230 1242
+type(
+  string list
+)
+ident(
+  int_ref scripts "sysprep_operation_script.ml" 39 1193 1199 "sysprep_operation_script.ml" 39 1193 1206
+)
+"sysprep_operation_script.ml" 40 1230 1243 "sysprep_operation_script.ml" 40 1230 1245
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_script.ml" 40 1230 1246 "sysprep_operation_script.ml" 40 1230 1248
+type(
+  string list
+)
+"sysprep_operation_script.ml" 40 1230 1235 "sysprep_operation_script.ml" 40 1230 1248
+type(
+  bool
+)
+"sysprep_operation_script.ml" 42 1296 1304 "sysprep_operation_script.ml" 42 1296 1313
+type(
+  string
+)
+"sysprep_operation_script.ml" 42 1296 1315 "sysprep_operation_script.ml" 42 1296 1322
+type(
+  bool
+)
+"sysprep_operation_script.ml" 42 1296 1304 "sysprep_operation_script.ml" 42 1296 1322
+type(
+  string * bool
+)
+"sysprep_operation_script.ml" 43 1325 1337 "sysprep_operation_script.ml" 43 1325 1338
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation_script.ml" 43 1325 1338 "sysprep_operation_script.ml" 43 1325 1347
+type(
+  string option ref
+)
+ident(
+  int_ref scriptdir "sysprep_operation_script.ml" 29 890 894 "sysprep_operation_script.ml" 29 890 903
+)
+"sysprep_operation_script.ml" 43 1325 1337 "sysprep_operation_script.ml" 43 1325 1347
+type(
+  string option
+)
+"sysprep_operation_script.ml" 44 1353 1366 "sysprep_operation_script.ml" 44 1353 1369
+type(
+  string
+)
+ident(
+  def dir "sysprep_operation_script.ml" 44 1353 1373 "sysprep_operation_script.ml" 44 1353 1383
+)
+"sysprep_operation_script.ml" 44 1353 1361 "sysprep_operation_script.ml" 44 1353 1369
+type(
+  string option
+)
+"sysprep_operation_script.ml" 44 1353 1373 "sysprep_operation_script.ml" 44 1353 1376
+type(
+  string
+)
+ident(
+  int_ref dir "sysprep_operation_script.ml" 44 1353 1366 "sysprep_operation_script.ml" 44 1353 1369
+)
+"sysprep_operation_script.ml" 44 1353 1378 "sysprep_operation_script.ml" 44 1353 1383
+type(
+  bool
+)
+"sysprep_operation_script.ml" 44 1353 1373 "sysprep_operation_script.ml" 44 1353 1383
+type(
+  string * bool
+)
+"sysprep_operation_script.ml" 45 1384 1392 "sysprep_operation_script.ml" 45 1384 1396
+type(
+  string option
+)
+"sysprep_operation_script.ml" 46 1400 1412 "sysprep_operation_script.ml" 46 1400 1418
+type(
+  string
+)
+"sysprep_operation_script.ml" 46 1400 1421 "sysprep_operation_script.ml" 46 1400 1437
+type(
+  ?base_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Mkdtemp.temp_dir
+)
+"sysprep_operation_script.ml" 46 1400 1438 "sysprep_operation_script.ml" 46 1400 1453
+type(
+  string
+)
+"sysprep_operation_script.ml" 46 1400 1454 "sysprep_operation_script.ml" 46 1400 1456
+type(
+  string
+)
+"sysprep_operation_script.ml" 46 1400 1421 "sysprep_operation_script.ml" 46 1400 1456
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_script.ml" 47 1460 1468 "sysprep_operation_script.ml" 47 1460 1474
+type(
+  string
+)
+ident(
+  int_ref tmpdir "sysprep_operation_script.ml" 46 1400 1412 "sysprep_operation_script.ml" 46 1400 1418
+)
+"sysprep_operation_script.ml" 47 1460 1476 "sysprep_operation_script.ml" 47 1460 1480
+type(
+  bool
+)
+"sysprep_operation_script.ml" 47 1460 1468 "sysprep_operation_script.ml" 47 1460 1480
+type(
+  string * bool
+)
+"sysprep_operation_script.ml" 46 1400 1408 "sysprep_operation_script.ml" 47 1460 1480
+type(
+  string * bool
+)
+"sysprep_operation_script.ml" 43 1325 1331 "sysprep_operation_script.ml" 47 1460 1480
+type(
+  string * bool
+)
+"sysprep_operation_script.ml" 50 1524 1528 "sysprep_operation_script.ml" 50 1524 1529
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_script.ml" 38 1128 1152 "sysprep_operation_script.ml" 38 1128 1153
+)
+"sysprep_operation_script.ml" 50 1524 1528 "sysprep_operation_script.ml" 50 1524 1541
+call(
+  stack
+)
+type(
+  ?readonly:bool ->
+  ?options:string -> ?cachetimeout:int -> ?debugcalls:bool -> string -> unit
+)
+"sysprep_operation_script.ml" 50 1524 1542 "sysprep_operation_script.ml" 50 1524 1551
+type(
+  string
+)
+ident(
+  int_ref scriptdir "sysprep_operation_script.ml" 42 1296 1304 "sysprep_operation_script.ml" 42 1296 1313
+)
+"sysprep_operation_script.ml" 50 1524 1528 "sysprep_operation_script.ml" 50 1524 1551
+type(
+  unit
+)
+"sysprep_operation_script.ml" 53 1594 1602 "sysprep_operation_script.ml" 53 1594 1605
+type(
+  int
+)
+"sysprep_operation_script.ml" 53 1594 1608 "sysprep_operation_script.ml" 53 1594 1619
+type(
+  string -> string list -> int
+)
+ident(
+  int_ref run_scripts "sysprep_operation_script.ml" 78 2201 2205 "sysprep_operation_script.ml" 78 2201 2216
+)
+"sysprep_operation_script.ml" 53 1594 1620 "sysprep_operation_script.ml" 53 1594 1629
+type(
+  string
+)
+ident(
+  int_ref scriptdir "sysprep_operation_script.ml" 42 1296 1304 "sysprep_operation_script.ml" 42 1296 1313
+)
+"sysprep_operation_script.ml" 53 1594 1630 "sysprep_operation_script.ml" 53 1594 1637
+type(
+  string list
+)
+ident(
+  int_ref scripts "sysprep_operation_script.ml" 39 1193 1199 "sysprep_operation_script.ml" 39 1193 1206
+)
+"sysprep_operation_script.ml" 53 1594 1608 "sysprep_operation_script.ml" 53 1594 1637
+call(
+  stack
+)
+type(
+  int
+)
+"sysprep_operation_script.ml" 56 1662 1666 "sysprep_operation_script.ml" 56 1662 1667
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_script.ml" 38 1128 1152 "sysprep_operation_script.ml" 38 1128 1153
+)
+"sysprep_operation_script.ml" 56 1662 1666 "sysprep_operation_script.ml" 56 1662 1683
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"sysprep_operation_script.ml" 56 1662 1684 "sysprep_operation_script.ml" 56 1662 1686
+type(
+  unit
+)
+"sysprep_operation_script.ml" 56 1662 1666 "sysprep_operation_script.ml" 56 1662 1686
+type(
+  unit
+)
+"sysprep_operation_script.ml" 58 1689 1697 "sysprep_operation_script.ml" 58 1689 1699
+type(
+  bool
+)
+"sysprep_operation_script.ml" 59 1702 1714 "sysprep_operation_script.ml" 59 1702 1717
+type(
+  int * Unix.process_status -> Unix.process_status
+)
+ident(
+  ext_ref Pervasives.snd
+)
+"sysprep_operation_script.ml" 59 1702 1719 "sysprep_operation_script.ml" 59 1702 1726
+type(
+  Unix.wait_flag list -> int -> int * Unix.process_status
+)
+ident(
+  ext_ref Unix.waitpid
+)
+"sysprep_operation_script.ml" 59 1702 1727 "sysprep_operation_script.ml" 59 1702 1729
+type(
+  Unix.wait_flag list
+)
+"sysprep_operation_script.ml" 59 1702 1730 "sysprep_operation_script.ml" 59 1702 1733
+type(
+  int
+)
+ident(
+  int_ref pid "sysprep_operation_script.ml" 53 1594 1602 "sysprep_operation_script.ml" 53 1594 1605
+)
+"sysprep_operation_script.ml" 59 1702 1718 "sysprep_operation_script.ml" 59 1702 1734
+call(
+  stack
+)
+type(
+  int * Unix.process_status
+)
+"sysprep_operation_script.ml" 59 1702 1714 "sysprep_operation_script.ml" 59 1702 1734
+type(
+  Unix.process_status
+)
+"sysprep_operation_script.ml" 60 1740 1756 "sysprep_operation_script.ml" 60 1740 1757
+type(
+  int
+)
+"sysprep_operation_script.ml" 60 1740 1748 "sysprep_operation_script.ml" 60 1740 1757
+type(
+  Unix.process_status
+)
+"sysprep_operation_script.ml" 60 1740 1761 "sysprep_operation_script.ml" 60 1740 1765
+type(
+  bool
+)
+"sysprep_operation_script.ml" 61 1766 1782 "sysprep_operation_script.ml" 61 1766 1783
+type(
+  int
+)
+ident(
+  def i "sysprep_operation_script.ml" 62 1787 1795 "sysprep_operation_script.ml" 63 1837 1850
+)
+"sysprep_operation_script.ml" 61 1766 1774 "sysprep_operation_script.ml" 61 1766 1783
+type(
+  Unix.process_status
+)
+"sysprep_operation_script.ml" 62 1787 1795 "sysprep_operation_script.ml" 62 1787 1802
+type(
+  (int -> unit, unit, string, unit) format4 -> int -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"sysprep_operation_script.ml" 62 1787 1804 "sysprep_operation_script.ml" 62 1787 1806
+type(
+  (int -> unit, unit, string, string, string, unit) format6 ->
+  (int -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation_script.ml" 62 1787 1806 "sysprep_operation_script.ml" 62 1787 1832
+type(
+  (int -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation_script.ml" 62 1787 1803 "sysprep_operation_script.ml" 62 1787 1833
+type(
+  (int -> unit, unit, string, unit) format4
+)
+"sysprep_operation_script.ml" 62 1787 1834 "sysprep_operation_script.ml" 62 1787 1835
+type(
+  int
+)
+ident(
+  int_ref i "sysprep_operation_script.ml" 61 1766 1782 "sysprep_operation_script.ml" 61 1766 1783
+)
+"sysprep_operation_script.ml" 62 1787 1795 "sysprep_operation_script.ml" 62 1787 1835
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_script.ml" 63 1837 1845 "sysprep_operation_script.ml" 63 1837 1850
+type(
+  bool
+)
+"sysprep_operation_script.ml" 62 1787 1795 "sysprep_operation_script.ml" 63 1837 1850
+type(
+  bool
+)
+"sysprep_operation_script.ml" 64 1851 1869 "sysprep_operation_script.ml" 64 1851 1870
+type(
+  int
+)
+ident(
+  def i "sysprep_operation_script.ml" 66 1893 1901 "sysprep_operation_script.ml" 67 1948 1961
+)
+"sysprep_operation_script.ml" 64 1851 1859 "sysprep_operation_script.ml" 64 1851 1870
+type(
+  Unix.process_status
+)
+"sysprep_operation_script.ml" 65 1871 1888 "sysprep_operation_script.ml" 65 1871 1889
+type(
+  int
+)
+ident(
+  def i "sysprep_operation_script.ml" 66 1893 1901 "sysprep_operation_script.ml" 67 1948 1961
+)
+"sysprep_operation_script.ml" 65 1871 1879 "sysprep_operation_script.ml" 65 1871 1889
+type(
+  Unix.process_status
+)
+"sysprep_operation_script.ml" 64 1851 1859 "sysprep_operation_script.ml" 65 1871 1889
+type(
+  Unix.process_status
+)
+"sysprep_operation_script.ml" 66 1893 1901 "sysprep_operation_script.ml" 66 1893 1908
+type(
+  (int -> unit, unit, string, unit) format4 -> int -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"sysprep_operation_script.ml" 66 1893 1910 "sysprep_operation_script.ml" 66 1893 1912
+type(
+  (int -> unit, unit, string, string, string, unit) format6 ->
+  (int -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation_script.ml" 66 1893 1912 "sysprep_operation_script.ml" 66 1893 1943
+type(
+  (int -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation_script.ml" 66 1893 1909 "sysprep_operation_script.ml" 66 1893 1944
+type(
+  (int -> unit, unit, string, unit) format4
+)
+"sysprep_operation_script.ml" 66 1893 1945 "sysprep_operation_script.ml" 66 1893 1946
+type(
+  int
+)
+ident(
+  int_ref i "sysprep_operation_script.ml" 64 1851 1869 "sysprep_operation_script.ml" 64 1851 1870
+)
+"sysprep_operation_script.ml" 66 1893 1901 "sysprep_operation_script.ml" 66 1893 1946
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_script.ml" 67 1948 1956 "sysprep_operation_script.ml" 67 1948 1961
+type(
+  bool
+)
+"sysprep_operation_script.ml" 66 1893 1901 "sysprep_operation_script.ml" 67 1948 1961
+type(
+  bool
+)
+"sysprep_operation_script.ml" 59 1702 1708 "sysprep_operation_script.ml" 67 1948 1961
+type(
+  bool
+)
+"sysprep_operation_script.ml" 70 2017 2024 "sysprep_operation_script.ml" 70 2017 2031
+type(
+  bool
+)
+ident(
+  int_ref cleanup "sysprep_operation_script.ml" 42 1296 1315 "sysprep_operation_script.ml" 42 1296 1322
+)
+"sysprep_operation_script.ml" 70 2017 2037 "sysprep_operation_script.ml" 70 2017 2042
+type(
+  string -> unit
+)
+ident(
+  ext_ref Unix.rmdir
+)
+"sysprep_operation_script.ml" 70 2017 2043 "sysprep_operation_script.ml" 70 2017 2052
+type(
+  string
+)
+ident(
+  int_ref scriptdir "sysprep_operation_script.ml" 42 1296 1304 "sysprep_operation_script.ml" 42 1296 1313
+)
+"sysprep_operation_script.ml" 70 2017 2037 "sysprep_operation_script.ml" 70 2017 2052
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_script.ml" 70 2017 2021 "sysprep_operation_script.ml" 70 2017 2052
+type(
+  unit
+)
+"sysprep_operation_script.ml" 72 2055 2062 "sysprep_operation_script.ml" 72 2055 2065
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"sysprep_operation_script.ml" 72 2055 2066 "sysprep_operation_script.ml" 72 2055 2068
+type(
+  bool
+)
+ident(
+  int_ref ok "sysprep_operation_script.ml" 58 1689 1697 "sysprep_operation_script.ml" 58 1689 1699
+)
+"sysprep_operation_script.ml" 72 2055 2062 "sysprep_operation_script.ml" 72 2055 2068
+type(
+  bool
+)
+"sysprep_operation_script.ml" 72 2055 2074 "sysprep_operation_script.ml" 72 2055 2082
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"sysprep_operation_script.ml" 72 2055 2084 "sysprep_operation_script.ml" 72 2055 2086
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_script.ml" 72 2055 2086 "sysprep_operation_script.ml" 72 2055 2101
+type(
+  string
+)
+"sysprep_operation_script.ml" 72 2055 2083 "sysprep_operation_script.ml" 72 2055 2102
+type(
+  string
+)
+"sysprep_operation_script.ml" 72 2055 2074 "sysprep_operation_script.ml" 72 2055 2102
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_script.ml" 72 2055 2059 "sysprep_operation_script.ml" 72 2055 2102
+type(
+  unit
+)
+"sysprep_operation_script.ml" 70 2017 2021 "sysprep_operation_script.ml" 72 2055 2102
+type(
+  unit
+)
+"sysprep_operation_script.ml" 58 1689 1693 "sysprep_operation_script.ml" 72 2055 2102
+type(
+  unit
+)
+"sysprep_operation_script.ml" 56 1662 1666 "sysprep_operation_script.ml" 72 2055 2102
+type(
+  unit
+)
+"sysprep_operation_script.ml" 53 1594 1598 "sysprep_operation_script.ml" 72 2055 2102
+type(
+  unit
+)
+"sysprep_operation_script.ml" 50 1524 1528 "sysprep_operation_script.ml" 72 2055 2102
+type(
+  unit
+)
+"sysprep_operation_script.ml" 40 1230 1254 "sysprep_operation_script.ml" 73 2103 2106
+type(
+  unit
+)
+"sysprep_operation_script.ml" 40 1230 1232 "sysprep_operation_script.ml" 73 2103 2106
+type(
+  unit
+)
+"sysprep_operation_script.ml" 39 1193 1195 "sysprep_operation_script.ml" 73 2103 2106
+type(
+  unit
+)
+"sysprep_operation_script.ml" 78 2201 2205 "sysprep_operation_script.ml" 78 2201 2216
+type(
+  string -> string list -> int
+)
+ident(
+  def run_scripts "sysprep_operation_script.ml" 38 1128 1128 --
+)
+"sysprep_operation_script.ml" 78 2201 2217 "sysprep_operation_script.ml" 78 2201 2219
+type(
+  string
+)
+ident(
+  def mp "sysprep_operation_script.ml" 78 2201 2220 "sysprep_operation_script.ml" 101 2601 2606
+)
+"sysprep_operation_script.ml" 78 2201 2220 "sysprep_operation_script.ml" 78 2201 2227
+type(
+  string list
+)
+ident(
+  def scripts "sysprep_operation_script.ml" 79 2230 2232 "sysprep_operation_script.ml" 101 2601 2606
+)
+"sysprep_operation_script.ml" 79 2230 2236 "sysprep_operation_script.ml" 79 2230 2238
+type(
+  string
+)
+"sysprep_operation_script.ml" 79 2230 2241 "sysprep_operation_script.ml" 79 2230 2252
+type(
+  string
+)
+"sysprep_operation_script.ml" 80 2256 2262 "sysprep_operation_script.ml" 80 2256 2265
+type(
+  string
+)
+"sysprep_operation_script.ml" 81 2268 2272 "sysprep_operation_script.ml" 81 2268 2279
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sysprep_operation_script.ml" 81 2268 2280 "sysprep_operation_script.ml" 91 2369 2407
+type(
+  (string -> string, unit, string) format
+)
+"sysprep_operation_script.ml" 92 2408 2415 "sysprep_operation_script.ml" 92 2408 2429
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.quote
+)
+"sysprep_operation_script.ml" 92 2408 2430 "sysprep_operation_script.ml" 92 2408 2432
+type(
+  string
+)
+ident(
+  int_ref mp "sysprep_operation_script.ml" 78 2201 2217 "sysprep_operation_script.ml" 78 2201 2219
+)
+"sysprep_operation_script.ml" 92 2408 2414 "sysprep_operation_script.ml" 92 2408 2433
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_script.ml" 81 2268 2272 "sysprep_operation_script.ml" 92 2408 2433
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_script.ml" 92 2408 2434 "sysprep_operation_script.ml" 92 2408 2435
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_script.ml" 93 2436 2442 "sysprep_operation_script.ml" 93 2436 2455
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"sysprep_operation_script.ml" 93 2436 2456 "sysprep_operation_script.ml" 93 2436 2460
+type(
+  string
+)
+"sysprep_operation_script.ml" 93 2436 2461 "sysprep_operation_script.ml" 93 2436 2468
+type(
+  string list
+)
+ident(
+  int_ref scripts "sysprep_operation_script.ml" 78 2201 2220 "sysprep_operation_script.ml" 78 2201 2227
+)
+"sysprep_operation_script.ml" 93 2436 2442 "sysprep_operation_script.ml" 93 2436 2468
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_script.ml" 81 2268 2272 "sysprep_operation_script.ml" 93 2436 2468
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_script.ml" 94 2472 2478 "sysprep_operation_script.ml" 94 2472 2482
+type(
+  string array
+)
+"sysprep_operation_script.ml" 94 2472 2488 "sysprep_operation_script.ml" 94 2472 2490
+type(
+  string
+)
+ident(
+  int_ref sh "sysprep_operation_script.ml" 79 2230 2236 "sysprep_operation_script.ml" 79 2230 2238
+)
+"sysprep_operation_script.ml" 94 2472 2492 "sysprep_operation_script.ml" 94 2472 2496
+type(
+  string
+)
+"sysprep_operation_script.ml" 94 2472 2498 "sysprep_operation_script.ml" 94 2472 2501
+type(
+  string
+)
+ident(
+  int_ref cmd "sysprep_operation_script.ml" 80 2256 2262 "sysprep_operation_script.ml" 80 2256 2265
+)
+"sysprep_operation_script.ml" 94 2472 2485 "sysprep_operation_script.ml" 94 2472 2504
+type(
+  string array
+)
+"sysprep_operation_script.ml" 96 2509 2515 "sysprep_operation_script.ml" 96 2509 2518
+type(
+  int
+)
+"sysprep_operation_script.ml" 96 2509 2521 "sysprep_operation_script.ml" 96 2509 2525
+type(
+  unit -> int
+)
+ident(
+  ext_ref Unix.fork
+)
+"sysprep_operation_script.ml" 96 2509 2526 "sysprep_operation_script.ml" 96 2509 2528
+type(
+  unit
+)
+"sysprep_operation_script.ml" 96 2509 2521 "sysprep_operation_script.ml" 96 2509 2528
+call(
+  stack
+)
+type(
+  int
+)
+"sysprep_operation_script.ml" 97 2532 2537 "sysprep_operation_script.ml" 97 2532 2540
+type(
+  int
+)
+ident(
+  int_ref pid "sysprep_operation_script.ml" 96 2509 2515 "sysprep_operation_script.ml" 96 2509 2518
+)
+"sysprep_operation_script.ml" 97 2532 2541 "sysprep_operation_script.ml" 97 2532 2542
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation_script.ml" 97 2532 2543 "sysprep_operation_script.ml" 97 2532 2544
+type(
+  int
+)
+"sysprep_operation_script.ml" 97 2532 2537 "sysprep_operation_script.ml" 97 2532 2544
+type(
+  bool
+)
+"sysprep_operation_script.ml" 98 2564 2568 "sysprep_operation_script.ml" 98 2564 2573
+type(
+  string -> unit
+)
+ident(
+  ext_ref Unix.chdir
+)
+"sysprep_operation_script.ml" 98 2564 2574 "sysprep_operation_script.ml" 98 2564 2576
+type(
+  string
+)
+ident(
+  int_ref mp "sysprep_operation_script.ml" 78 2201 2217 "sysprep_operation_script.ml" 78 2201 2219
+)
+"sysprep_operation_script.ml" 98 2564 2568 "sysprep_operation_script.ml" 98 2564 2576
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_script.ml" 99 2578 2582 "sysprep_operation_script.ml" 99 2578 2587
+type(
+  string -> string array -> unit
+)
+ident(
+  ext_ref Unix.execv
+)
+"sysprep_operation_script.ml" 99 2578 2588 "sysprep_operation_script.ml" 99 2578 2590
+type(
+  string
+)
+ident(
+  int_ref sh "sysprep_operation_script.ml" 79 2230 2236 "sysprep_operation_script.ml" 79 2230 2238
+)
+"sysprep_operation_script.ml" 99 2578 2591 "sysprep_operation_script.ml" 99 2578 2595
+type(
+  string array
+)
+ident(
+  int_ref args "sysprep_operation_script.ml" 94 2472 2478 "sysprep_operation_script.ml" 94 2472 2482
+)
+"sysprep_operation_script.ml" 99 2578 2582 "sysprep_operation_script.ml" 99 2578 2595
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_script.ml" 97 2532 2550 "sysprep_operation_script.ml" 100 2596 2599
+type(
+  unit
+)
+"sysprep_operation_script.ml" 97 2532 2534 "sysprep_operation_script.ml" 100 2596 2599
+type(
+  unit
+)
+"sysprep_operation_script.ml" 101 2601 2603 "sysprep_operation_script.ml" 101 2601 2606
+type(
+  int
+)
+ident(
+  int_ref pid "sysprep_operation_script.ml" 96 2509 2515 "sysprep_operation_script.ml" 96 2509 2518
+)
+"sysprep_operation_script.ml" 97 2532 2534 "sysprep_operation_script.ml" 101 2601 2606
+type(
+  int
+)
+"sysprep_operation_script.ml" 96 2509 2511 "sysprep_operation_script.ml" 101 2601 2606
+type(
+  int
+)
+"sysprep_operation_script.ml" 94 2472 2474 "sysprep_operation_script.ml" 101 2601 2606
+type(
+  int
+)
+"sysprep_operation_script.ml" 80 2256 2258 "sysprep_operation_script.ml" 101 2601 2606
+type(
+  int
+)
+"sysprep_operation_script.ml" 79 2230 2232 "sysprep_operation_script.ml" 101 2601 2606
+type(
+  int
+)
+"sysprep_operation_script.ml" 103 2608 2612 "sysprep_operation_script.ml" 103 2608 2614
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_script.ml" 159 4827 4827 --
+)
+"sysprep_operation_script.ml" 104 2619 2621 "sysprep_operation_script.ml" 104 2619 2629
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_script.ml" 105 2635 2646 "sysprep_operation_script.ml" 105 2635 2654
+type(
+  string
+)
+"sysprep_operation_script.ml" 106 2656 2681 "sysprep_operation_script.ml" 106 2656 2685
+type(
+  bool
+)
+"sysprep_operation_script.ml" 107 2687 2701 "sysprep_operation_script.ml" 107 2687 2703
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_script.ml" 107 2687 2703 "sysprep_operation_script.ml" 107 2687 2744
+type(
+  string
+)
+"sysprep_operation_script.ml" 107 2687 2701 "sysprep_operation_script.ml" 107 2687 2744
+type(
+  string
+)
+"sysprep_operation_script.ml" 108 2746 2774 "sysprep_operation_script.ml" 108 2746 2776
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_script.ml" 108 2746 2776 "sysprep_operation_script.ml" 130 3703 3758
+type(
+  string
+)
+"sysprep_operation_script.ml" 108 2746 2773 "sysprep_operation_script.ml" 130 3703 3759
+type(
+  string
+)
+"sysprep_operation_script.ml" 108 2746 2768 "sysprep_operation_script.ml" 130 3703 3759
+type(
+  string option
+)
+"sysprep_operation_script.ml" 132 3780 3804 "sysprep_operation_script.ml" 132 3780 3817
+type(
+  Arg.key
+)
+"sysprep_operation_script.ml" 132 3780 3830 "sysprep_operation_script.ml" 132 3780 3843
+type(
+  string -> unit
+)
+ident(
+  int_ref set_scriptdir "sysprep_operation_script.ml" 30 915 919 "sysprep_operation_script.ml" 30 915 932
+)
+"sysprep_operation_script.ml" 132 3780 3819 "sysprep_operation_script.ml" 132 3780 3843
+type(
+  Arg.spec
+)
+"sysprep_operation_script.ml" 132 3780 3845 "sysprep_operation_script.ml" 132 3780 3847
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_script.ml" 132 3780 3847 "sysprep_operation_script.ml" 132 3780 3852
+type(
+  string
+)
+"sysprep_operation_script.ml" 132 3780 3845 "sysprep_operation_script.ml" 132 3780 3852
+type(
+  string
+)
+"sysprep_operation_script.ml" 132 3780 3853 "sysprep_operation_script.ml" 132 3780 3854
+type(
+  string -> string -> Arg.doc
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_script.ml" 132 3780 3855 "sysprep_operation_script.ml" 132 3780 3858
+type(
+  string
+)
+"sysprep_operation_script.ml" 132 3780 3859 "sysprep_operation_script.ml" 132 3780 3860
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_script.ml" 132 3780 3861 "sysprep_operation_script.ml" 132 3780 3863
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_script.ml" 132 3780 3863 "sysprep_operation_script.ml" 132 3780 3884
+type(
+  string
+)
+"sysprep_operation_script.ml" 132 3780 3861 "sysprep_operation_script.ml" 132 3780 3884
+type(
+  string
+)
+"sysprep_operation_script.ml" 132 3780 3855 "sysprep_operation_script.ml" 132 3780 3884
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_script.ml" 132 3780 3845 "sysprep_operation_script.ml" 132 3780 3884
+call(
+  stack
+)
+type(
+  Arg.doc
+)
+"sysprep_operation_script.ml" 132 3780 3804 "sysprep_operation_script.ml" 132 3780 3884
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"sysprep_operation_script.ml" 133 3886 3918 "sysprep_operation_script.ml" 133 3886 3929
+type(
+  string
+)
+"sysprep_operation_script.ml" 133 3886 3913 "sysprep_operation_script.ml" 133 3886 3929
+type(
+  string option
+)
+"sysprep_operation_script.ml" 134 3931 3963 "sysprep_operation_script.ml" 134 3931 3965
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_script.ml" 134 3931 3965 "sysprep_operation_script.ml" 142 4248 4265
+type(
+  string
+)
+"sysprep_operation_script.ml" 134 3931 3963 "sysprep_operation_script.ml" 142 4248 4265
+type(
+  string
+)
+"sysprep_operation_script.ml" 132 3780 3786 "sysprep_operation_script.ml" 143 4266 4273
+type(
+  Sysprep_operation.extra_arg
+)
+"sysprep_operation_script.ml" 145 4276 4300 "sysprep_operation_script.ml" 145 4276 4310
+type(
+  Arg.key
+)
+"sysprep_operation_script.ml" 145 4276 4323 "sysprep_operation_script.ml" 145 4276 4333
+type(
+  string -> unit
+)
+ident(
+  int_ref add_script "sysprep_operation_script.ml" 36 1073 1077 "sysprep_operation_script.ml" 36 1073 1087
+)
+"sysprep_operation_script.ml" 145 4276 4312 "sysprep_operation_script.ml" 145 4276 4333
+type(
+  Arg.spec
+)
+"sysprep_operation_script.ml" 145 4276 4335 "sysprep_operation_script.ml" 145 4276 4337
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_script.ml" 145 4276 4337 "sysprep_operation_script.ml" 145 4276 4345
+type(
+  string
+)
+"sysprep_operation_script.ml" 145 4276 4335 "sysprep_operation_script.ml" 145 4276 4345
+type(
+  string
+)
+"sysprep_operation_script.ml" 145 4276 4346 "sysprep_operation_script.ml" 145 4276 4347
+type(
+  string -> string -> Arg.doc
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_script.ml" 145 4276 4348 "sysprep_operation_script.ml" 145 4276 4351
+type(
+  string
+)
+"sysprep_operation_script.ml" 145 4276 4352 "sysprep_operation_script.ml" 145 4276 4353
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_script.ml" 145 4276 4354 "sysprep_operation_script.ml" 145 4276 4356
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_script.ml" 145 4276 4356 "sysprep_operation_script.ml" 145 4276 4391
+type(
+  string
+)
+"sysprep_operation_script.ml" 145 4276 4354 "sysprep_operation_script.ml" 145 4276 4391
+type(
+  string
+)
+"sysprep_operation_script.ml" 145 4276 4348 "sysprep_operation_script.ml" 145 4276 4391
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_script.ml" 145 4276 4335 "sysprep_operation_script.ml" 145 4276 4391
+call(
+  stack
+)
+type(
+  Arg.doc
+)
+"sysprep_operation_script.ml" 145 4276 4300 "sysprep_operation_script.ml" 145 4276 4391
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"sysprep_operation_script.ml" 146 4393 4425 "sysprep_operation_script.ml" 146 4393 4433
+type(
+  string
+)
+"sysprep_operation_script.ml" 146 4393 4420 "sysprep_operation_script.ml" 146 4393 4433
+type(
+  string option
+)
+"sysprep_operation_script.ml" 147 4435 4467 "sysprep_operation_script.ml" 147 4435 4469
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_script.ml" 147 4435 4469 "sysprep_operation_script.ml" 153 4719 4757
+type(
+  string
+)
+"sysprep_operation_script.ml" 147 4435 4467 "sysprep_operation_script.ml" 153 4719 4757
+type(
+  string
+)
+"sysprep_operation_script.ml" 145 4276 4282 "sysprep_operation_script.ml" 154 4759 4766
+type(
+  Sysprep_operation.extra_arg
+)
+"sysprep_operation_script.ml" 131 3761 3778 "sysprep_operation_script.ml" 155 4767 4772
+type(
+  Sysprep_operation.extra_arg list
+)
+"sysprep_operation_script.ml" 156 4774 4808 "sysprep_operation_script.ml" 156 4774 4822
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref script_perform "sysprep_operation_script.ml" 38 1128 1136 "sysprep_operation_script.ml" 38 1128 1150
+)
+"sysprep_operation_script.ml" 156 4774 4803 "sysprep_operation_script.ml" 156 4774 4822
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_script.ml" 103 2608 2617 "sysprep_operation_script.ml" 157 4824 4825
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_script.ml" 159 4827 4831 "sysprep_operation_script.ml" 159 4827 4833
+type(
+  unit
+)
+"sysprep_operation_script.ml" 159 4827 4836 "sysprep_operation_script.ml" 159 4827 4854
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_script.ml" 159 4827 4855 "sysprep_operation_script.ml" 159 4827 4857
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_script.ml" 103 2608 2612 "sysprep_operation_script.ml" 103 2608 2614
+)
+"sysprep_operation_script.ml" 159 4827 4836 "sysprep_operation_script.ml" 159 4827 4857
+call(
+  stack
+)
+type(
+  unit
+)

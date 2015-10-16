@@ -1,0 +1,630 @@
+"cache.ml" 27 863 867 "cache.ml" 27 863 881
+type(
+  string -> unit
+)
+ident(
+  def clean_cachedir "cache.ml" 31 964 964 --
+)
+"cache.ml" 27 863 882 "cache.ml" 27 863 885
+type(
+  string
+)
+ident(
+  def dir "cache.ml" 28 888 890 "cache.ml" 29 935 962
+)
+"cache.ml" 28 888 894 "cache.ml" 28 888 897
+type(
+  string
+)
+"cache.ml" 28 888 900 "cache.ml" 28 888 907
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"cache.ml" 28 888 908 "cache.ml" 28 888 919
+type(
+  (string -> string, unit, string) format
+)
+"cache.ml" 28 888 921 "cache.ml" 28 888 926
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"cache.ml" 28 888 927 "cache.ml" 28 888 930
+type(
+  string
+)
+ident(
+  int_ref dir "cache.ml" 27 863 882 "cache.ml" 27 863 885
+)
+"cache.ml" 28 888 920 "cache.ml" 28 888 931
+call(
+  stack
+)
+type(
+  string
+)
+"cache.ml" 28 888 900 "cache.ml" 28 888 931
+call(
+  stack
+)
+type(
+  string
+)
+"cache.ml" 29 935 937 "cache.ml" 29 935 943
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"cache.ml" 29 935 945 "cache.ml" 29 935 956
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"cache.ml" 29 935 957 "cache.ml" 29 935 960
+type(
+  string
+)
+ident(
+  int_ref cmd "cache.ml" 28 888 894 "cache.ml" 28 888 897
+)
+"cache.ml" 29 935 944 "cache.ml" 29 935 961
+type(
+  int
+)
+"cache.ml" 29 935 937 "cache.ml" 29 935 962
+type(
+  unit
+)
+"cache.ml" 28 888 890 "cache.ml" 29 935 962
+type(
+  unit
+)
+"cache.ml" 35 1000 1004 "cache.ml" 35 1000 1010
+type(
+  directory:string -> t
+)
+ident(
+  def create "cache.ml" 42 1128 1128 --
+)
+"cache.ml" 35 1000 1012 "cache.ml" 35 1000 1021
+type(
+  string
+)
+ident(
+  def directory "cache.ml" 36 1024 1026 "cache.ml" 40 1123 1126
+)
+"cache.ml" 36 1024 1029 "cache.ml" 36 1024 1032
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"cache.ml" 36 1024 1034 "cache.ml" 36 1024 1046
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_directory
+)
+"cache.ml" 36 1024 1047 "cache.ml" 36 1024 1056
+type(
+  string
+)
+ident(
+  int_ref directory "cache.ml" 35 1000 1012 "cache.ml" 35 1000 1021
+)
+"cache.ml" 36 1024 1033 "cache.ml" 36 1024 1057
+call(
+  stack
+)
+type(
+  bool
+)
+"cache.ml" 36 1024 1029 "cache.ml" 36 1024 1057
+type(
+  bool
+)
+"cache.ml" 37 1063 1067 "cache.ml" 37 1063 1074
+type(
+  string -> int -> unit
+)
+ident(
+  ext_ref Common_utils.mkdir_p
+)
+"cache.ml" 37 1063 1075 "cache.ml" 37 1063 1084
+type(
+  string
+)
+ident(
+  int_ref directory "cache.ml" 35 1000 1012 "cache.ml" 35 1000 1021
+)
+"cache.ml" 37 1063 1085 "cache.ml" 37 1063 1090
+type(
+  int
+)
+"cache.ml" 37 1063 1067 "cache.ml" 37 1063 1090
+call(
+  stack
+)
+type(
+  unit
+)
+"cache.ml" 36 1024 1026 "cache.ml" 37 1063 1090
+type(
+  unit
+)
+"cache.ml" 39 1096 1112 "cache.ml" 39 1096 1121
+type(
+  string
+)
+ident(
+  int_ref directory "cache.ml" 35 1000 1012 "cache.ml" 35 1000 1021
+)
+"cache.ml" 38 1092 1094 "cache.ml" 40 1123 1126
+type(
+  t
+)
+"cache.ml" 36 1024 1026 "cache.ml" 40 1123 1126
+type(
+  t
+)
+"cache.ml" 42 1128 1132 "cache.ml" 42 1128 1145
+type(
+  t -> string -> string -> int -> string
+)
+ident(
+  def cache_of_name "cache.ml" 45 1225 1225 --
+)
+"cache.ml" 42 1128 1146 "cache.ml" 42 1128 1147
+type(
+  t
+)
+ident(
+  def t "cache.ml" 42 1128 1148 "cache.ml" 43 1169 1223
+)
+"cache.ml" 42 1128 1148 "cache.ml" 42 1128 1152
+type(
+  string
+)
+ident(
+  def name "cache.ml" 42 1128 1153 "cache.ml" 43 1169 1223
+)
+"cache.ml" 42 1128 1153 "cache.ml" 42 1128 1157
+type(
+  string
+)
+ident(
+  def arch "cache.ml" 42 1128 1158 "cache.ml" 43 1169 1223
+)
+"cache.ml" 42 1128 1158 "cache.ml" 42 1128 1166
+type(
+  int
+)
+ident(
+  def revision "cache.ml" 43 1169 1171 "cache.ml" 43 1169 1223
+)
+"cache.ml" 43 1169 1171 "cache.ml" 43 1169 1172
+type(
+  t
+)
+ident(
+  int_ref t "cache.ml" 42 1128 1146 "cache.ml" 42 1128 1147
+)
+"cache.ml" 43 1169 1171 "cache.ml" 43 1169 1182
+type(
+  string
+)
+"cache.ml" 43 1169 1183 "cache.ml" 43 1169 1185
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"cache.ml" 43 1169 1186 "cache.ml" 43 1169 1193
+type(
+  (string -> string -> int -> string, unit, string) format ->
+  string -> string -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"cache.ml" 43 1169 1194 "cache.ml" 43 1169 1204
+type(
+  (string -> string -> int -> string, unit, string) format
+)
+"cache.ml" 43 1169 1205 "cache.ml" 43 1169 1209
+type(
+  string
+)
+ident(
+  int_ref name "cache.ml" 42 1128 1148 "cache.ml" 42 1128 1152
+)
+"cache.ml" 43 1169 1210 "cache.ml" 43 1169 1214
+type(
+  string
+)
+ident(
+  int_ref arch "cache.ml" 42 1128 1153 "cache.ml" 42 1128 1157
+)
+"cache.ml" 43 1169 1215 "cache.ml" 43 1169 1223
+type(
+  int
+)
+ident(
+  int_ref revision "cache.ml" 42 1128 1158 "cache.ml" 42 1128 1166
+)
+"cache.ml" 43 1169 1186 "cache.ml" 43 1169 1223
+call(
+  stack
+)
+type(
+  string
+)
+"cache.ml" 43 1169 1171 "cache.ml" 43 1169 1223
+call(
+  tail
+)
+type(
+  string
+)
+"cache.ml" 45 1225 1229 "cache.ml" 45 1225 1238
+type(
+  t -> string -> string -> int -> bool
+)
+ident(
+  def is_cached "cache.ml" 49 1345 1345 --
+)
+"cache.ml" 45 1225 1239 "cache.ml" 45 1225 1240
+type(
+  t
+)
+ident(
+  def t "cache.ml" 45 1225 1241 "cache.ml" 47 1317 1343
+)
+"cache.ml" 45 1225 1241 "cache.ml" 45 1225 1245
+type(
+  string
+)
+ident(
+  def name "cache.ml" 45 1225 1246 "cache.ml" 47 1317 1343
+)
+"cache.ml" 45 1225 1246 "cache.ml" 45 1225 1250
+type(
+  string
+)
+ident(
+  def arch "cache.ml" 45 1225 1251 "cache.ml" 47 1317 1343
+)
+"cache.ml" 45 1225 1251 "cache.ml" 45 1225 1259
+type(
+  int
+)
+ident(
+  def revision "cache.ml" 46 1262 1264 "cache.ml" 47 1317 1343
+)
+"cache.ml" 46 1262 1268 "cache.ml" 46 1262 1276
+type(
+  string
+)
+"cache.ml" 46 1262 1279 "cache.ml" 46 1262 1292
+type(
+  t -> string -> string -> int -> string
+)
+ident(
+  int_ref cache_of_name "cache.ml" 42 1128 1132 "cache.ml" 42 1128 1145
+)
+"cache.ml" 46 1262 1293 "cache.ml" 46 1262 1294
+type(
+  t
+)
+ident(
+  int_ref t "cache.ml" 45 1225 1239 "cache.ml" 45 1225 1240
+)
+"cache.ml" 46 1262 1295 "cache.ml" 46 1262 1299
+type(
+  string
+)
+ident(
+  int_ref name "cache.ml" 45 1225 1241 "cache.ml" 45 1225 1245
+)
+"cache.ml" 46 1262 1300 "cache.ml" 46 1262 1304
+type(
+  string
+)
+ident(
+  int_ref arch "cache.ml" 45 1225 1246 "cache.ml" 45 1225 1250
+)
+"cache.ml" 46 1262 1305 "cache.ml" 46 1262 1313
+type(
+  int
+)
+ident(
+  int_ref revision "cache.ml" 45 1225 1251 "cache.ml" 45 1225 1259
+)
+"cache.ml" 46 1262 1279 "cache.ml" 46 1262 1313
+call(
+  stack
+)
+type(
+  string
+)
+"cache.ml" 47 1317 1319 "cache.ml" 47 1317 1334
+type(
+  string -> bool
+)
+ident(
+  ext_ref Sys.file_exists
+)
+"cache.ml" 47 1317 1335 "cache.ml" 47 1317 1343
+type(
+  string
+)
+ident(
+  int_ref filename "cache.ml" 46 1262 1268 "cache.ml" 46 1262 1276
+)
+"cache.ml" 47 1317 1319 "cache.ml" 47 1317 1343
+type(
+  bool
+)
+"cache.ml" 46 1262 1264 "cache.ml" 47 1317 1343
+type(
+  bool
+)
+"cache.ml" 49 1345 1349 "cache.ml" 49 1345 1366
+type(
+  t -> header:bool -> (string * string * int) list -> unit
+)
+ident(
+  def print_item_status "cache.ml" 58 1651 1656 --
+)
+"cache.ml" 49 1345 1367 "cache.ml" 49 1345 1368
+type(
+  t
+)
+ident(
+  def t "cache.ml" 49 1345 1369 "cache.ml" 58 1651 1656
+)
+"cache.ml" 49 1345 1370 "cache.ml" 49 1345 1376
+type(
+  bool
+)
+ident(
+  def header "cache.ml" 49 1345 1377 "cache.ml" 58 1651 1656
+)
+"cache.ml" 49 1345 1377 "cache.ml" 49 1345 1378
+type(
+  (string * string * int) list
+)
+ident(
+  def l "cache.ml" 50 1381 1383 "cache.ml" 58 1651 1656
+)
+"cache.ml" 50 1381 1386 "cache.ml" 50 1381 1392
+type(
+  bool
+)
+ident(
+  int_ref header "cache.ml" 49 1345 1370 "cache.ml" 49 1345 1376
+)
+"cache.ml" 51 1400 1404 "cache.ml" 51 1400 1410
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"cache.ml" 51 1400 1412 "cache.ml" 51 1400 1414
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"cache.ml" 51 1400 1414 "cache.ml" 51 1400 1437
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"cache.ml" 51 1400 1411 "cache.ml" 51 1400 1438
+type(
+  (string -> unit, out_channel, unit) format
+)
+"cache.ml" 51 1400 1439 "cache.ml" 51 1400 1440
+type(
+  t
+)
+ident(
+  int_ref t "cache.ml" 49 1345 1367 "cache.ml" 49 1345 1368
+)
+"cache.ml" 51 1400 1439 "cache.ml" 51 1400 1450
+type(
+  string
+)
+"cache.ml" 50 1381 1398 "cache.ml" 52 1451 1454
+call(
+  stack
+)
+type(
+  unit
+)
+"cache.ml" 50 1381 1383 "cache.ml" 52 1451 1454
+type(
+  unit
+)
+"cache.ml" 53 1456 1458 "cache.ml" 53 1456 1467
+type(
+  (string * string * int -> unit) -> (string * string * int) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"cache.ml" 54 1470 1479 "cache.ml" 54 1470 1483
+type(
+  string
+)
+ident(
+  def name "cache.ml" 55 1504 1510 "cache.ml" 57 1599 1650
+)
+"cache.ml" 54 1470 1485 "cache.ml" 54 1470 1489
+type(
+  string
+)
+ident(
+  def arch "cache.ml" 55 1504 1510 "cache.ml" 57 1599 1650
+)
+"cache.ml" 54 1470 1491 "cache.ml" 54 1470 1499
+type(
+  int
+)
+ident(
+  def revision "cache.ml" 55 1504 1510 "cache.ml" 57 1599 1650
+)
+"cache.ml" 54 1470 1478 "cache.ml" 54 1470 1500
+type(
+  string * string * int
+)
+"cache.ml" 55 1504 1514 "cache.ml" 55 1504 1520
+type(
+  bool
+)
+"cache.ml" 55 1504 1523 "cache.ml" 55 1504 1532
+type(
+  t -> string -> string -> int -> bool
+)
+ident(
+  int_ref is_cached "cache.ml" 45 1225 1229 "cache.ml" 45 1225 1238
+)
+"cache.ml" 55 1504 1533 "cache.ml" 55 1504 1534
+type(
+  t
+)
+ident(
+  int_ref t "cache.ml" 49 1345 1367 "cache.ml" 49 1345 1368
+)
+"cache.ml" 55 1504 1535 "cache.ml" 55 1504 1539
+type(
+  string
+)
+ident(
+  int_ref name "cache.ml" 54 1470 1479 "cache.ml" 54 1470 1483
+)
+"cache.ml" 55 1504 1540 "cache.ml" 55 1504 1544
+type(
+  string
+)
+ident(
+  int_ref arch "cache.ml" 54 1470 1485 "cache.ml" 54 1470 1489
+)
+"cache.ml" 55 1504 1545 "cache.ml" 55 1504 1553
+type(
+  int
+)
+ident(
+  int_ref revision "cache.ml" 54 1470 1491 "cache.ml" 54 1470 1499
+)
+"cache.ml" 55 1504 1523 "cache.ml" 55 1504 1553
+call(
+  stack
+)
+type(
+  bool
+)
+"cache.ml" 56 1557 1563 "cache.ml" 56 1557 1569
+type(
+  (string -> string -> string -> unit, out_channel, unit) format ->
+  string -> string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"cache.ml" 56 1557 1570 "cache.ml" 56 1557 1588
+type(
+  (string -> string -> string -> unit, out_channel, unit) format
+)
+"cache.ml" 56 1557 1589 "cache.ml" 56 1557 1593
+type(
+  string
+)
+ident(
+  int_ref name "cache.ml" 54 1470 1479 "cache.ml" 54 1470 1483
+)
+"cache.ml" 56 1557 1594 "cache.ml" 56 1557 1598
+type(
+  string
+)
+ident(
+  int_ref arch "cache.ml" 54 1470 1485 "cache.ml" 54 1470 1489
+)
+"cache.ml" 57 1599 1611 "cache.ml" 57 1599 1617
+type(
+  bool
+)
+ident(
+  int_ref cached "cache.ml" 55 1504 1514 "cache.ml" 55 1504 1520
+)
+"cache.ml" 57 1599 1623 "cache.ml" 57 1599 1625
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"cache.ml" 57 1599 1625 "cache.ml" 57 1599 1633
+type(
+  string
+)
+"cache.ml" 57 1599 1623 "cache.ml" 57 1599 1633
+type(
+  string
+)
+"cache.ml" 57 1599 1645 "cache.ml" 57 1599 1649
+type(
+  string
+)
+"cache.ml" 57 1599 1607 "cache.ml" 57 1599 1650
+type(
+  string
+)
+"cache.ml" 56 1557 1563 "cache.ml" 57 1599 1650
+call(
+  tail
+)
+type(
+  unit
+)
+"cache.ml" 55 1504 1510 "cache.ml" 57 1599 1650
+type(
+  unit
+)
+"cache.ml" 53 1456 1468 "cache.ml" 58 1651 1654
+type(
+  string * string * int -> unit
+)
+"cache.ml" 58 1651 1655 "cache.ml" 58 1651 1656
+type(
+  (string * string * int) list
+)
+ident(
+  int_ref l "cache.ml" 49 1345 1377 "cache.ml" 49 1345 1378
+)
+"cache.ml" 53 1456 1458 "cache.ml" 58 1651 1656
+call(
+  tail
+)
+type(
+  unit
+)
+"cache.ml" 50 1381 1383 "cache.ml" 58 1651 1656
+type(
+  unit
+)

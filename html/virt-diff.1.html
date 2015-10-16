@@ -1,0 +1,346 @@
+
+<html>
+<head>
+<title>virt-diff</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#note-about-csv-format">NOTE ABOUT CSV FORMAT</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-diff - Differences between files in two virtual machines</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-diff [--options] -d domain1 -D domain2
+
+ virt-diff [--options] -a disk1.img [-a ...] -A disk2.img [-A ...]</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><code>virt-diff</code> lists the differences between files in two virtual machines or disk images. The usual use case is to show the changes in a VM after it has been running for a while, by taking a snapshot, running the VM, and then using this tool to show what changed between the new VM state and the old snapshot.</p>
+
+<p>This tool will find differences in filenames, file sizes, checksums, extended attributes, file content and more from a virtual machine or disk image. However it <b>does not</b> look at the boot loader, unused space between partitions or within filesystems, &quot;hidden&quot; sectors and so on. In other words, it is not a security or forensics tool.</p>
+
+<p>To specify two guests, you have to use the <i>-a</i> or <i>-d</i> option(s) for the first guest, and the <i>-A</i> or <i>-D</i> option(s) for the second guest. The common case is:</p>
+
+<pre><code> virt-diff -a old.img -A new.img</code></pre>
+
+<p>or using names known to libvirt:</p>
+
+<pre><code> virt-diff -d oldguest -D newguest</code></pre>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display brief help.</p>
+
+</dd>
+<dt><b>-a</b> file</dt>
+<dd>
+
+</dd>
+<dt><b>--add</b> file</dt>
+<dd>
+
+<p>Add <i>file</i> which should be a disk image from the first virtual machine. If the virtual machine has multiple block devices, you must supply all of them with separate <i>-a</i> options.</p>
+
+<p>The format of the disk image is auto-detected. To override this and force a particular format use the <i>--format=..</i> option.</p>
+
+</dd>
+<dt><b>-a</b> URI</dt>
+<dd>
+
+</dd>
+<dt><b>--add</b> URI</dt>
+<dd>
+
+<p>Add a remote disk. See <a href="guestfish.1.html#adding-remote-storage">&quot;ADDING REMOTE STORAGE&quot; in guestfish(1)</a>.</p>
+
+</dd>
+<dt><b>--all</b></dt>
+<dd>
+
+<p>Same as <i>--extra-stats</i> <i>--times</i> <i>--uids</i> <i>--xattrs</i>.</p>
+
+</dd>
+<dt><b>--atime</b></dt>
+<dd>
+
+<p>The default is to ignore changes in file access times, since those are unlikely to be interesting. Using this flag shows atime differences as well.</p>
+
+</dd>
+<dt><b>-A</b> file</dt>
+<dd>
+
+</dd>
+<dt><b>-A</b> URI</dt>
+<dd>
+
+<p>Add a disk image from the second virtual machine.</p>
+
+</dd>
+<dt><b>--checksum</b></dt>
+<dd>
+
+</dd>
+<dt><b>--checksum=crc|md5|sha1|sha224|sha256|sha384|sha512</b></dt>
+<dd>
+
+<p>Use a checksum over file contents to detect when regular files have changed content.</p>
+
+<p>With no argument, this defaults to using <i>md5</i>. Using an argument, you can select the checksum type to use. If the flag is omitted then file times and size are used to determine if a file has changed.</p>
+
+</dd>
+<dt><b>-c</b> URI</dt>
+<dd>
+
+</dd>
+<dt><b>--connect</b> URI</dt>
+<dd>
+
+<p>If using libvirt, connect to the given <i>URI</i>. If omitted, then we connect to the default libvirt hypervisor.</p>
+
+<p>If you specify guest block devices directly (<i>-a</i>), then libvirt is not used at all.</p>
+
+</dd>
+<dt><b>--csv</b></dt>
+<dd>
+
+<p>Write out the results in CSV format (comma-separated values). This format can be imported easily into databases and spreadsheets, but read <a href="#note-about-csv-format">&quot;NOTE ABOUT CSV FORMAT&quot;</a> below.</p>
+
+</dd>
+<dt><b>--dir-links</b></dt>
+<dd>
+
+<p>The default is to ignore changed in the number of links in directory entries, since those are unlikely to be interesting. Using this flag shows changes to the nlink field of directories.</p>
+
+</dd>
+<dt><b>--dir-times</b></dt>
+<dd>
+
+<p>The default is to ignore changed times on directory entries, since those are unlikely to be interesting. Using this flag shows changes to the time fields of directories.</p>
+
+</dd>
+<dt><b>-d</b> guest</dt>
+<dd>
+
+</dd>
+<dt><b>--domain</b> guest</dt>
+<dd>
+
+<p>Add all the disks from the named libvirt guest, as the first guest. Domain UUIDs can be used instead of names.</p>
+
+</dd>
+<dt><b>-D</b> guest</dt>
+<dd>
+
+<p>Add all the disks from the named libvirt guest, as the second guest. Domain UUIDs can be used instead of names.</p>
+
+</dd>
+<dt><b>--echo-keys</b></dt>
+<dd>
+
+<p>When prompting for keys and passphrases, virt-diff normally turns echoing off so you cannot see what you are typing. If you are not worried about Tempest attacks and there is no one else in the room you can specify this flag to see what you are typing.</p>
+
+</dd>
+<dt><b>--extra-stats</b></dt>
+<dd>
+
+<p>Display extra stats.</p>
+
+</dd>
+<dt><b>--format=raw|qcow2|..</b></dt>
+<dd>
+
+</dd>
+<dt><b>--format</b></dt>
+<dd>
+
+<p>The default for the <i>-a</i>/<i>-A</i> option is to auto-detect the format of the disk image. Using this forces the disk format for <i>-a</i>/<i>-A</i> options which follow on the command line. Using <i>--format</i> with no argument switches back to auto-detection for subsequent <i>-a</i>/<i>-A</i> options.</p>
+
+<p>For example:</p>
+
+<pre><code> virt-diff --format=raw -a disk.img [...]</code></pre>
+
+<p>forces raw format (no auto-detection) for <i>disk.img</i>.</p>
+
+<pre><code> virt-diff --format=raw -a disk.img --format -a another.img [...]</code></pre>
+
+<p>forces raw format (no auto-detection) for <i>disk.img</i> and reverts to auto-detection for <i>another.img</i>.</p>
+
+<p>If you have untrusted raw-format guest disk images, you should use this option to specify the disk format. This avoids a possible security problem with malicious guests (CVE-2010-3851).</p>
+
+</dd>
+<dt><b>-h</b></dt>
+<dd>
+
+</dd>
+<dt><b>--human-readable</b></dt>
+<dd>
+
+<p>Display file sizes in human-readable format.</p>
+
+</dd>
+<dt><b>--keys-from-stdin</b></dt>
+<dd>
+
+<p>Read key or passphrase parameters from stdin. The default is to try to read passphrases from the user by opening <i>/dev/tty</i>.</p>
+
+</dd>
+<dt><b>--times</b></dt>
+<dd>
+
+<p>Display time fields.</p>
+
+</dd>
+<dt><b>--time-days</b></dt>
+<dd>
+
+<p>Display time fields as days before now (negative if in the future).</p>
+
+<p>Note that <code>0</code> in output means &quot;up to 1 day before now&quot;, or that the age of the file is between 0 and 86399 seconds.</p>
+
+</dd>
+<dt><b>--time-relative</b></dt>
+<dd>
+
+<p>Display time fields as seconds before now (negative if in the future).</p>
+
+</dd>
+<dt><b>--time-t</b></dt>
+<dd>
+
+<p>Display time fields as seconds since the Unix epoch.</p>
+
+</dd>
+<dt><b>--uids</b></dt>
+<dd>
+
+<p>Display UID and GID fields.</p>
+
+</dd>
+<dt><b>-v</b></dt>
+<dd>
+
+</dd>
+<dt><b>--verbose</b></dt>
+<dd>
+
+<p>Enable verbose messages for debugging.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+<dt><b>-x</b></dt>
+<dd>
+
+<p>Enable tracing of libguestfs API calls.</p>
+
+</dd>
+<dt><b>--xattrs</b></dt>
+<dd>
+
+<p>Display extended attributes.</p>
+
+</dd>
+</dl>
+
+<h1 id="note-about-csv-format">NOTE ABOUT CSV FORMAT</h1>
+
+<p>Comma-separated values (CSV) is a deceptive format. It <i>seems</i> like it should be easy to parse, but it is definitely not easy to parse.</p>
+
+<p>Myth: Just split fields at commas. Reality: This does <i>not</i> work reliably. This example has two columns:</p>
+
+<pre><code> &quot;foo,bar&quot;,baz</code></pre>
+
+<p>Myth: Read the file one line at a time. Reality: This does <i>not</i> work reliably. This example has one row:</p>
+
+<pre><code> &quot;foo
+ bar&quot;,baz</code></pre>
+
+<p>For shell scripts, use <code>csvtool</code> (<a href="http://merjis.com/developers/csv">http://merjis.com/developers/csv</a> also packaged in major Linux distributions).</p>
+
+<p>For other languages, use a CSV processing library (eg. <code>Text::CSV</code> for Perl or Python&#39;s built-in csv library).</p>
+
+<p>Most spreadsheets and databases can import CSV directly.</p>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>This program returns 0 if successful, or non-zero if there was an error.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="virt-cat.1.html">virt-cat(1)</a>, <a href="virt-copy-out.1.html">virt-copy-out(1)</a>, <a href="virt-ls.1.html">virt-ls(1)</a>, <a href="virt-tar-out.1.html">virt-tar-out(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2009-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

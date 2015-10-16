@@ -1,0 +1,110 @@
+
+<html>
+<head>
+<title>virt-copy-in</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#warning">WARNING</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#examples">EXAMPLES</a></li>
+  <li><a href="#just-a-shell-script-wrapper-around-guestfish">JUST A SHELL SCRIPT WRAPPER AROUND GUESTFISH</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-copy-in - Copy files and directories into a virtual machine disk image.</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-copy-in -a disk.img file|dir [file|dir ...] /destination
+
+ virt-copy-in -d domain file|dir [file|dir ...] /destination</code></pre>
+
+<h1 id="warning">WARNING</h1>
+
+<p>Using <code>virt-copy-in</code> on live virtual machines can be dangerous, potentially causing disk corruption. The virtual machine must be shut down before you use this command.</p>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><code>virt-copy-in</code> copies files and directories from the local disk into a virtual machine disk image or named libvirt domain.</p>
+
+<p>You can give one of more filenames and directories on the command line. Directories are copied in recursively. The final parameter must be the destination directory in the disk image which must be an absolute path starting with a <i>/</i> character.</p>
+
+<h1 id="examples">EXAMPLES</h1>
+
+<p>Update <i>/etc/resolv.conf</i> in a guest:</p>
+
+<pre><code> virt-copy-in -d MyGuest resolv.conf /etc</code></pre>
+
+<p>Upload a home directory to a guest:</p>
+
+<pre><code> virt-copy-in -d MyGuest skel /home</code></pre>
+
+<h1 id="just-a-shell-script-wrapper-around-guestfish">JUST A SHELL SCRIPT WRAPPER AROUND GUESTFISH</h1>
+
+<p>This command is just a simple shell script wrapper around the <a href="guestfish.1.html">guestfish(1)</a> <code>copy-in</code> command. For anything more complex than a trivial copy, you are probably better off using guestfish directly.</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<p>Since the shell script just passes options straight to guestfish, read <a href="guestfish.1.html">guestfish(1)</a> to see the full list of options.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfish.1.html">guestfish(1)</a>, <a href="virt-cat.1.html">virt-cat(1)</a>, <a href="virt-copy-out.1.html">virt-copy-out(1)</a>, <a href="virt-edit.1.html">virt-edit(1)</a>, <a href="virt-tar-in.1.html">virt-tar-in(1)</a>, <a href="virt-tar-out.1.html">virt-tar-out(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones (<code>rjones at redhat dot com</code>)</p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2011-2012 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

@@ -1,0 +1,4105 @@
+"elements.ml" 28 885 904 "elements.ml" 28 885 921
+call(
+  stack
+)
+"elements.ml" 39 1187 1191 "elements.ml" 39 1187 1217
+type(
+  'a list
+)
+ident(
+  def builtin_elements_blacklist "elements.ml" 46 1468 1468 --
+)
+"elements.ml" 39 1187 1220 "elements.ml" 40 1222 1223
+type(
+  'a list
+)
+"elements.ml" 46 1468 1472 "elements.ml" 46 1468 1497
+type(
+  string list
+)
+ident(
+  def builtin_scripts_blacklist "elements.ml" 51 1658 1658 --
+)
+"elements.ml" 47 1502 1504 "elements.ml" 47 1502 1523
+type(
+  string
+)
+"elements.ml" 46 1468 1500 "elements.ml" 49 1655 1656
+type(
+  string list
+)
+"elements.ml" 51 1658 1662 "elements.ml" 51 1658 1679
+type(
+  string -> bool
+)
+ident(
+  def valid_script_name "elements.ml" 58 1891 1891 --
+)
+"elements.ml" 51 1658 1680 "elements.ml" 51 1658 1681
+type(
+  string
+)
+ident(
+  def n "elements.ml" 52 1684 1686 "elements.ml" 56 1865 1889
+)
+"elements.ml" 52 1684 1690 "elements.ml" 52 1684 1703
+type(
+  char -> bool
+)
+"elements.ml" 53 1715 1721 "elements.ml" 53 1715 1729
+type(
+  char
+)
+"elements.ml" 53 1715 1732 "elements.ml" 53 1715 1740
+type(
+  char
+)
+"elements.ml" 53 1715 1721 "elements.ml" 53 1715 1740
+type(
+  char
+)
+"elements.ml" 53 1715 1743 "elements.ml" 53 1715 1751
+type(
+  char
+)
+"elements.ml" 53 1715 1721 "elements.ml" 53 1715 1751
+type(
+  char
+)
+"elements.ml" 53 1715 1754 "elements.ml" 53 1715 1757
+type(
+  char
+)
+"elements.ml" 53 1715 1721 "elements.ml" 53 1715 1757
+type(
+  char
+)
+"elements.ml" 53 1715 1760 "elements.ml" 53 1715 1763
+type(
+  char
+)
+"elements.ml" 53 1715 1721 "elements.ml" 53 1715 1763
+type(
+  char
+)
+"elements.ml" 53 1715 1767 "elements.ml" 53 1715 1771
+type(
+  bool
+)
+"elements.ml" 54 1772 1778 "elements.ml" 54 1772 1779
+type(
+  char
+)
+"elements.ml" 54 1772 1783 "elements.ml" 54 1772 1788
+type(
+  bool
+)
+"elements.ml" 52 1684 1706 "elements.ml" 54 1772 1788
+type(
+  char -> bool
+)
+"elements.ml" 55 1792 1798 "elements.ml" 55 1792 1804
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"elements.ml" 55 1792 1806 "elements.ml" 55 1792 1821
+type(
+  (char -> bool) -> string -> int
+)
+ident(
+  ext_ref Utils.string_index_fn
+)
+"elements.ml" 55 1792 1827 "elements.ml" 55 1792 1828
+type(
+  char
+)
+ident(
+  def c "elements.ml" 55 1792 1832 "elements.ml" 55 1792 1853
+)
+"elements.ml" 55 1792 1832 "elements.ml" 55 1792 1835
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"elements.ml" 55 1792 1837 "elements.ml" 55 1792 1850
+type(
+  char -> bool
+)
+ident(
+  int_ref is_char_valid "elements.ml" 52 1684 1690 "elements.ml" 52 1684 1703
+)
+"elements.ml" 55 1792 1851 "elements.ml" 55 1792 1852
+type(
+  char
+)
+ident(
+  int_ref c "elements.ml" 55 1792 1827 "elements.ml" 55 1792 1828
+)
+"elements.ml" 55 1792 1836 "elements.ml" 55 1792 1853
+call(
+  stack
+)
+type(
+  bool
+)
+"elements.ml" 55 1792 1832 "elements.ml" 55 1792 1853
+type(
+  bool
+)
+"elements.ml" 55 1792 1822 "elements.ml" 55 1792 1854
+type(
+  char -> bool
+)
+"elements.ml" 55 1792 1855 "elements.ml" 55 1792 1856
+type(
+  string
+)
+ident(
+  int_ref n "elements.ml" 51 1658 1680 "elements.ml" 51 1658 1681
+)
+"elements.ml" 55 1792 1805 "elements.ml" 55 1792 1857
+call(
+  stack
+)
+type(
+  int
+)
+"elements.ml" 55 1792 1798 "elements.ml" 55 1792 1857
+type(
+  unit
+)
+"elements.ml" 55 1792 1859 "elements.ml" 55 1792 1864
+type(
+  bool
+)
+"elements.ml" 55 1792 1798 "elements.ml" 55 1792 1864
+type(
+  bool
+)
+"elements.ml" 56 1865 1872 "elements.ml" 56 1865 1881
+type(
+  exn
+)
+"elements.ml" 56 1865 1885 "elements.ml" 56 1865 1889
+type(
+  bool
+)
+"elements.ml" 55 1792 1794 "elements.ml" 56 1865 1889
+type(
+  bool
+)
+"elements.ml" 52 1684 1686 "elements.ml" 56 1865 1889
+type(
+  bool
+)
+"elements.ml" 58 1891 1895 "elements.ml" 58 1891 1912
+type(
+  StringSet.elt list -> StringSet.t
+)
+ident(
+  def stringset_of_list "elements.ml" 61 1988 1988 --
+)
+"elements.ml" 58 1891 1913 "elements.ml" 58 1891 1914
+type(
+  StringSet.elt list
+)
+ident(
+  def l "elements.ml" 59 1917 1919 "elements.ml" 59 1917 1986
+)
+"elements.ml" 59 1917 1919 "elements.ml" 59 1917 1933
+type(
+  (StringSet.t -> StringSet.elt -> StringSet.t) ->
+  StringSet.t -> StringSet.elt list -> StringSet.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"elements.ml" 59 1917 1939 "elements.ml" 59 1917 1942
+type(
+  StringSet.t
+)
+ident(
+  def acc "elements.ml" 59 1917 1943 "elements.ml" 59 1917 1967
+)
+"elements.ml" 59 1917 1943 "elements.ml" 59 1917 1944
+type(
+  StringSet.elt
+)
+ident(
+  def x "elements.ml" 59 1917 1948 "elements.ml" 59 1917 1967
+)
+"elements.ml" 59 1917 1948 "elements.ml" 59 1917 1961
+type(
+  StringSet.elt -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.add
+)
+"elements.ml" 59 1917 1962 "elements.ml" 59 1917 1963
+type(
+  StringSet.elt
+)
+ident(
+  int_ref x "elements.ml" 59 1917 1943 "elements.ml" 59 1917 1944
+)
+"elements.ml" 59 1917 1964 "elements.ml" 59 1917 1967
+type(
+  StringSet.t
+)
+ident(
+  int_ref acc "elements.ml" 59 1917 1939 "elements.ml" 59 1917 1942
+)
+"elements.ml" 59 1917 1948 "elements.ml" 59 1917 1967
+call(
+  tail
+)
+type(
+  StringSet.t
+)
+"elements.ml" 59 1917 1934 "elements.ml" 59 1917 1968
+type(
+  StringSet.t -> StringSet.elt -> StringSet.t
+)
+"elements.ml" 59 1917 1969 "elements.ml" 59 1917 1984
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"elements.ml" 59 1917 1985 "elements.ml" 59 1917 1986
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref l "elements.ml" 58 1891 1913 "elements.ml" 58 1891 1914
+)
+"elements.ml" 59 1917 1919 "elements.ml" 59 1917 1986
+call(
+  tail
+)
+type(
+  StringSet.t
+)
+"elements.ml" 61 1988 1992 "elements.ml" 61 1988 2002
+type(
+  debug:'a -> string -> (string, string list) Hashtbl.t
+)
+ident(
+  def load_hooks "elements.ml" 83 2794 2794 --
+)
+"elements.ml" 61 1988 2004 "elements.ml" 61 1988 2009
+type(
+  'a
+)
+ident(
+  def debug "elements.ml" 61 1988 2010 "elements.ml" 81 2785 2792
+)
+"elements.ml" 61 1988 2010 "elements.ml" 61 1988 2014
+type(
+  string
+)
+ident(
+  def path "elements.ml" 62 2017 2019 "elements.ml" 81 2785 2792
+)
+"elements.ml" 62 2017 2023 "elements.ml" 62 2017 2028
+type(
+  (string, string list) Hashtbl.t
+)
+"elements.ml" 62 2017 2031 "elements.ml" 62 2017 2045
+type(
+  int -> (string, string list) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"elements.ml" 62 2017 2046 "elements.ml" 62 2017 2048
+type(
+  int
+)
+"elements.ml" 62 2017 2031 "elements.ml" 62 2017 2048
+call(
+  stack
+)
+type(
+  (string, string list) Hashtbl.t
+)
+"elements.ml" 63 2052 2058 "elements.ml" 63 2052 2065
+type(
+  string list
+)
+"elements.ml" 63 2052 2068 "elements.ml" 63 2052 2081
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"elements.ml" 63 2052 2083 "elements.ml" 63 2052 2094
+type(
+  string -> string array
+)
+ident(
+  ext_ref Sys.readdir
+)
+"elements.ml" 63 2052 2095 "elements.ml" 63 2052 2099
+type(
+  string
+)
+ident(
+  int_ref path "elements.ml" 61 1988 2010 "elements.ml" 61 1988 2014
+)
+"elements.ml" 63 2052 2082 "elements.ml" 63 2052 2100
+type(
+  string array
+)
+"elements.ml" 63 2052 2068 "elements.ml" 63 2052 2100
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 64 2104 2110 "elements.ml" 64 2104 2117
+type(
+  string list
+)
+"elements.ml" 64 2104 2120 "elements.ml" 64 2104 2131
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"elements.ml" 64 2104 2137 "elements.ml" 64 2104 2138
+type(
+  string
+)
+ident(
+  def x "elements.ml" 64 2104 2142 "elements.ml" 64 2104 2170
+)
+"elements.ml" 64 2104 2142 "elements.ml" 64 2104 2163
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"elements.ml" 64 2104 2164 "elements.ml" 64 2104 2165
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 64 2104 2137 "elements.ml" 64 2104 2138
+)
+"elements.ml" 64 2104 2166 "elements.ml" 64 2104 2170
+type(
+  string
+)
+"elements.ml" 64 2104 2142 "elements.ml" 64 2104 2170
+call(
+  tail
+)
+type(
+  bool
+)
+"elements.ml" 64 2104 2132 "elements.ml" 64 2104 2171
+type(
+  string -> bool
+)
+"elements.ml" 64 2104 2172 "elements.ml" 64 2104 2179
+type(
+  string list
+)
+ident(
+  int_ref entries "elements.ml" 63 2052 2058 "elements.ml" 63 2052 2065
+)
+"elements.ml" 64 2104 2120 "elements.ml" 64 2104 2179
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 65 2183 2189 "elements.ml" 65 2183 2196
+type(
+  (string * string) list
+)
+"elements.ml" 65 2183 2199 "elements.ml" 65 2183 2207
+type(
+  (string -> string * string) -> string list -> (string * string) list
+)
+ident(
+  ext_ref List.map
+)
+"elements.ml" 65 2183 2213 "elements.ml" 65 2183 2214
+type(
+  string
+)
+ident(
+  def x "elements.ml" 65 2183 2218 "elements.ml" 65 2183 2232
+)
+"elements.ml" 65 2183 2219 "elements.ml" 65 2183 2220
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 65 2183 2213 "elements.ml" 65 2183 2214
+)
+"elements.ml" 65 2183 2222 "elements.ml" 65 2183 2226
+type(
+  string
+)
+ident(
+  int_ref path "elements.ml" 61 1988 2010 "elements.ml" 61 1988 2014
+)
+"elements.ml" 65 2183 2227 "elements.ml" 65 2183 2229
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"elements.ml" 65 2183 2230 "elements.ml" 65 2183 2231
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 65 2183 2213 "elements.ml" 65 2183 2214
+)
+"elements.ml" 65 2183 2222 "elements.ml" 65 2183 2231
+call(
+  stack
+)
+type(
+  string
+)
+"elements.ml" 65 2183 2218 "elements.ml" 65 2183 2232
+type(
+  string * string
+)
+"elements.ml" 65 2183 2208 "elements.ml" 65 2183 2233
+type(
+  string -> string * string
+)
+"elements.ml" 65 2183 2234 "elements.ml" 65 2183 2241
+type(
+  string list
+)
+ident(
+  int_ref entries "elements.ml" 64 2104 2110 "elements.ml" 64 2104 2117
+)
+"elements.ml" 65 2183 2199 "elements.ml" 65 2183 2241
+call(
+  stack
+)
+type(
+  (string * string) list
+)
+"elements.ml" 66 2245 2251 "elements.ml" 66 2245 2258
+type(
+  (string * string) list
+)
+"elements.ml" 66 2245 2261 "elements.ml" 66 2245 2272
+type(
+  (string * string -> bool) ->
+  (string * string) list -> (string * string) list
+)
+ident(
+  ext_ref List.filter
+)
+"elements.ml" 66 2245 2279 "elements.ml" 66 2245 2280
+type(
+  string
+)
+"elements.ml" 66 2245 2282 "elements.ml" 66 2245 2283
+type(
+  string
+)
+ident(
+  def x "elements.ml" 66 2245 2288 "elements.ml" 66 2245 2302
+)
+"elements.ml" 66 2245 2278 "elements.ml" 66 2245 2284
+type(
+  string * string
+)
+"elements.ml" 66 2245 2288 "elements.ml" 66 2245 2300
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_directory
+)
+"elements.ml" 66 2245 2301 "elements.ml" 66 2245 2302
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 66 2245 2282 "elements.ml" 66 2245 2283
+)
+"elements.ml" 66 2245 2288 "elements.ml" 66 2245 2302
+call(
+  tail
+)
+type(
+  bool
+)
+"elements.ml" 66 2245 2273 "elements.ml" 66 2245 2303
+type(
+  string * string -> bool
+)
+"elements.ml" 66 2245 2304 "elements.ml" 66 2245 2311
+type(
+  (string * string) list
+)
+ident(
+  int_ref entries "elements.ml" 65 2183 2189 "elements.ml" 65 2183 2196
+)
+"elements.ml" 66 2245 2261 "elements.ml" 66 2245 2311
+call(
+  stack
+)
+type(
+  (string * string) list
+)
+"elements.ml" 67 2315 2317 "elements.ml" 67 2315 2326
+type(
+  (string * string -> unit) -> (string * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"elements.ml" 68 2329 2338 "elements.ml" 68 2329 2342
+type(
+  string
+)
+ident(
+  def hook "elements.ml" 69 2350 2356 "elements.ml" 79 2733 2771
+)
+"elements.ml" 68 2329 2344 "elements.ml" 68 2329 2345
+type(
+  string
+)
+ident(
+  def p "elements.ml" 69 2350 2356 "elements.ml" 79 2733 2771
+)
+"elements.ml" 68 2329 2337 "elements.ml" 68 2329 2346
+type(
+  string * string
+)
+"elements.ml" 69 2350 2360 "elements.ml" 69 2350 2367
+type(
+  string list
+)
+"elements.ml" 69 2350 2370 "elements.ml" 69 2350 2383
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"elements.ml" 69 2350 2385 "elements.ml" 69 2350 2396
+type(
+  string -> string array
+)
+ident(
+  ext_ref Sys.readdir
+)
+"elements.ml" 69 2350 2397 "elements.ml" 69 2350 2398
+type(
+  string
+)
+ident(
+  int_ref p "elements.ml" 68 2329 2344 "elements.ml" 68 2329 2345
+)
+"elements.ml" 69 2350 2384 "elements.ml" 69 2350 2399
+type(
+  string array
+)
+"elements.ml" 69 2350 2370 "elements.ml" 69 2350 2399
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 70 2403 2413 "elements.ml" 70 2403 2420
+type(
+  string list
+)
+"elements.ml" 70 2403 2423 "elements.ml" 70 2403 2434
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"elements.ml" 70 2403 2435 "elements.ml" 70 2403 2452
+type(
+  string -> bool
+)
+ident(
+  int_ref valid_script_name "elements.ml" 51 1658 1662 "elements.ml" 51 1658 1679
+)
+"elements.ml" 70 2403 2453 "elements.ml" 70 2403 2460
+type(
+  string list
+)
+ident(
+  int_ref listing "elements.ml" 69 2350 2360 "elements.ml" 69 2350 2367
+)
+"elements.ml" 70 2403 2423 "elements.ml" 70 2403 2460
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 71 2464 2474 "elements.ml" 71 2464 2481
+type(
+  string list
+)
+"elements.ml" 71 2464 2484 "elements.ml" 71 2464 2495
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"elements.ml" 72 2498 2510 "elements.ml" 72 2498 2511
+type(
+  string
+)
+ident(
+  def x "elements.ml" 73 2515 2525 "elements.ml" 76 2644 2685
+)
+"elements.ml" 74 2529 2545 "elements.ml" 74 2529 2546
+type(
+  Unix.stats
+)
+ident(
+  def s "elements.ml" 75 2571 2583 "elements.ml" 75 2571 2643
+)
+"elements.ml" 74 2529 2549 "elements.ml" 74 2529 2558
+type(
+  string -> Unix.stats
+)
+ident(
+  ext_ref Unix.stat
+)
+"elements.ml" 74 2529 2560 "elements.ml" 74 2529 2561
+type(
+  string
+)
+ident(
+  int_ref p "elements.ml" 68 2329 2344 "elements.ml" 68 2329 2345
+)
+"elements.ml" 74 2529 2562 "elements.ml" 74 2529 2564
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"elements.ml" 74 2529 2565 "elements.ml" 74 2529 2566
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 72 2498 2510 "elements.ml" 72 2498 2511
+)
+"elements.ml" 74 2529 2559 "elements.ml" 74 2529 2567
+call(
+  stack
+)
+type(
+  string
+)
+"elements.ml" 74 2529 2549 "elements.ml" 74 2529 2567
+call(
+  stack
+)
+type(
+  Unix.stats
+)
+"elements.ml" 75 2571 2583 "elements.ml" 75 2571 2584
+type(
+  Unix.stats
+)
+ident(
+  int_ref s "elements.ml" 74 2529 2545 "elements.ml" 74 2529 2546
+)
+"elements.ml" 75 2571 2583 "elements.ml" 75 2571 2597
+type(
+  Unix.file_kind
+)
+"elements.ml" 75 2571 2598 "elements.ml" 75 2571 2599
+type(
+  Unix.file_kind -> Unix.file_kind -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"elements.ml" 75 2571 2600 "elements.ml" 75 2571 2610
+type(
+  Unix.file_kind
+)
+"elements.ml" 75 2571 2583 "elements.ml" 75 2571 2610
+type(
+  bool
+)
+"elements.ml" 75 2571 2611 "elements.ml" 75 2571 2613
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"elements.ml" 75 2571 2614 "elements.ml" 75 2571 2615
+type(
+  Unix.stats
+)
+ident(
+  int_ref s "elements.ml" 74 2529 2545 "elements.ml" 74 2529 2546
+)
+"elements.ml" 75 2571 2614 "elements.ml" 75 2571 2628
+type(
+  Unix.file_perm
+)
+"elements.ml" 75 2571 2629 "elements.ml" 75 2571 2633
+type(
+  Unix.file_perm -> int -> int
+)
+ident(
+  ext_ref Pervasives.( land )
+)
+"elements.ml" 75 2571 2634 "elements.ml" 75 2571 2639
+type(
+  int
+)
+"elements.ml" 75 2571 2614 "elements.ml" 75 2571 2639
+type(
+  int
+)
+"elements.ml" 75 2571 2640 "elements.ml" 75 2571 2641
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"elements.ml" 75 2571 2642 "elements.ml" 75 2571 2643
+type(
+  int
+)
+"elements.ml" 75 2571 2614 "elements.ml" 75 2571 2643
+type(
+  bool
+)
+"elements.ml" 75 2571 2583 "elements.ml" 75 2571 2643
+type(
+  bool
+)
+"elements.ml" 74 2529 2541 "elements.ml" 75 2571 2643
+type(
+  bool
+)
+"elements.ml" 76 2644 2675 "elements.ml" 76 2644 2676
+type(
+  string
+)
+type(
+  string
+)
+type(
+  Unix.error
+)
+"elements.ml" 76 2644 2659 "elements.ml" 76 2644 2676
+type(
+  exn
+)
+"elements.ml" 76 2644 2680 "elements.ml" 76 2644 2685
+type(
+  bool
+)
+"elements.ml" 73 2515 2525 "elements.ml" 76 2644 2685
+type(
+  bool
+)
+"elements.ml" 71 2464 2496 "elements.ml" 77 2686 2693
+type(
+  string -> bool
+)
+"elements.ml" 77 2686 2694 "elements.ml" 77 2686 2701
+type(
+  string list
+)
+ident(
+  int_ref scripts "elements.ml" 70 2403 2413 "elements.ml" 70 2403 2420
+)
+"elements.ml" 71 2464 2484 "elements.ml" 77 2686 2701
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 78 2705 2714 "elements.ml" 78 2705 2721
+type(
+  string list
+)
+ident(
+  int_ref scripts "elements.ml" 71 2464 2474 "elements.ml" 71 2464 2481
+)
+"elements.ml" 78 2705 2722 "elements.ml" 78 2705 2724
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"elements.ml" 78 2705 2725 "elements.ml" 78 2705 2727
+type(
+  string list
+)
+"elements.ml" 78 2705 2714 "elements.ml" 78 2705 2727
+type(
+  bool
+)
+"elements.ml" 79 2733 2741 "elements.ml" 79 2733 2752
+type(
+  (string, string list) Hashtbl.t -> string -> string list -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"elements.ml" 79 2733 2753 "elements.ml" 79 2733 2758
+type(
+  (string, string list) Hashtbl.t
+)
+ident(
+  int_ref hooks "elements.ml" 62 2017 2023 "elements.ml" 62 2017 2028
+)
+"elements.ml" 79 2733 2759 "elements.ml" 79 2733 2763
+type(
+  string
+)
+ident(
+  int_ref hook "elements.ml" 68 2329 2338 "elements.ml" 68 2329 2342
+)
+"elements.ml" 79 2733 2764 "elements.ml" 79 2733 2771
+type(
+  string list
+)
+ident(
+  int_ref scripts "elements.ml" 71 2464 2474 "elements.ml" 71 2464 2481
+)
+"elements.ml" 79 2733 2741 "elements.ml" 79 2733 2771
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 78 2705 2711 "elements.ml" 79 2733 2771
+type(
+  unit
+)
+"elements.ml" 71 2464 2470 "elements.ml" 79 2733 2771
+type(
+  unit
+)
+"elements.ml" 70 2403 2409 "elements.ml" 79 2733 2771
+type(
+  unit
+)
+"elements.ml" 69 2350 2356 "elements.ml" 79 2733 2771
+type(
+  unit
+)
+"elements.ml" 67 2315 2327 "elements.ml" 80 2772 2775
+type(
+  string * string -> unit
+)
+"elements.ml" 80 2772 2776 "elements.ml" 80 2772 2783
+type(
+  (string * string) list
+)
+ident(
+  int_ref entries "elements.ml" 66 2245 2251 "elements.ml" 66 2245 2258
+)
+"elements.ml" 67 2315 2317 "elements.ml" 80 2772 2783
+call(
+  stack
+)
+type(
+  unit
+)
+"elements.ml" 81 2785 2787 "elements.ml" 81 2785 2792
+type(
+  (string, string list) Hashtbl.t
+)
+ident(
+  int_ref hooks "elements.ml" 62 2017 2023 "elements.ml" 62 2017 2028
+)
+"elements.ml" 67 2315 2317 "elements.ml" 81 2785 2792
+type(
+  (string, string list) Hashtbl.t
+)
+"elements.ml" 66 2245 2247 "elements.ml" 81 2785 2792
+type(
+  (string, string list) Hashtbl.t
+)
+"elements.ml" 65 2183 2185 "elements.ml" 81 2785 2792
+type(
+  (string, string list) Hashtbl.t
+)
+"elements.ml" 64 2104 2106 "elements.ml" 81 2785 2792
+type(
+  (string, string list) Hashtbl.t
+)
+"elements.ml" 63 2052 2054 "elements.ml" 81 2785 2792
+type(
+  (string, string list) Hashtbl.t
+)
+"elements.ml" 62 2017 2019 "elements.ml" 81 2785 2792
+type(
+  (string, string list) Hashtbl.t
+)
+"elements.ml" 83 2794 2798 "elements.ml" 83 2794 2811
+type(
+  debug:int -> string list -> (string, element) Hashtbl.t
+)
+ident(
+  def load_elements "elements.ml" 103 3528 3528 --
+)
+"elements.ml" 83 2794 2813 "elements.ml" 83 2794 2818
+type(
+  int
+)
+ident(
+  def debug "elements.ml" 83 2794 2819 "elements.ml" 101 3509 3526
+)
+"elements.ml" 83 2794 2819 "elements.ml" 83 2794 2824
+type(
+  string list
+)
+ident(
+  def paths "elements.ml" 84 2827 2829 "elements.ml" 101 3509 3526
+)
+"elements.ml" 84 2827 2833 "elements.ml" 84 2827 2848
+type(
+  (string, element) Hashtbl.t
+)
+"elements.ml" 84 2827 2851 "elements.ml" 84 2827 2865
+type(
+  int -> (string, element) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"elements.ml" 84 2827 2866 "elements.ml" 84 2827 2868
+type(
+  int
+)
+"elements.ml" 84 2827 2851 "elements.ml" 84 2827 2868
+call(
+  stack
+)
+type(
+  (string, element) Hashtbl.t
+)
+"elements.ml" 85 2872 2878 "elements.ml" 85 2872 2883
+type(
+  string list
+)
+"elements.ml" 85 2872 2886 "elements.ml" 85 2872 2897
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"elements.ml" 85 2872 2898 "elements.ml" 85 2872 2910
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_directory
+)
+"elements.ml" 85 2872 2911 "elements.ml" 85 2872 2916
+type(
+  string list
+)
+ident(
+  int_ref paths "elements.ml" 83 2794 2819 "elements.ml" 83 2794 2824
+)
+"elements.ml" 85 2872 2886 "elements.ml" 85 2872 2916
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 86 2920 2922 "elements.ml" 86 2920 2931
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"elements.ml" 87 2934 2942 "elements.ml" 87 2934 2946
+type(
+  string
+)
+ident(
+  def path "elements.ml" 88 2950 2956 "elements.ml" 99 3482 3497
+)
+"elements.ml" 88 2950 2960 "elements.ml" 88 2950 2967
+type(
+  string list
+)
+"elements.ml" 88 2950 2970 "elements.ml" 88 2950 2983
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"elements.ml" 88 2950 2985 "elements.ml" 88 2950 2996
+type(
+  string -> string array
+)
+ident(
+  ext_ref Sys.readdir
+)
+"elements.ml" 88 2950 2997 "elements.ml" 88 2950 3001
+type(
+  string
+)
+ident(
+  int_ref path "elements.ml" 87 2934 2942 "elements.ml" 87 2934 2946
+)
+"elements.ml" 88 2950 2984 "elements.ml" 88 2950 3002
+type(
+  string array
+)
+"elements.ml" 88 2950 2970 "elements.ml" 88 2950 3002
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 89 3006 3016 "elements.ml" 89 3006 3023
+type(
+  (string * string) list
+)
+"elements.ml" 89 3006 3026 "elements.ml" 89 3006 3034
+type(
+  (string -> string * string) -> string list -> (string * string) list
+)
+ident(
+  ext_ref List.map
+)
+"elements.ml" 89 3006 3040 "elements.ml" 89 3006 3041
+type(
+  string
+)
+ident(
+  def x "elements.ml" 89 3006 3045 "elements.ml" 89 3006 3059
+)
+"elements.ml" 89 3006 3046 "elements.ml" 89 3006 3047
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 89 3006 3040 "elements.ml" 89 3006 3041
+)
+"elements.ml" 89 3006 3049 "elements.ml" 89 3006 3053
+type(
+  string
+)
+ident(
+  int_ref path "elements.ml" 87 2934 2942 "elements.ml" 87 2934 2946
+)
+"elements.ml" 89 3006 3054 "elements.ml" 89 3006 3056
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"elements.ml" 89 3006 3057 "elements.ml" 89 3006 3058
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 89 3006 3040 "elements.ml" 89 3006 3041
+)
+"elements.ml" 89 3006 3049 "elements.ml" 89 3006 3058
+call(
+  stack
+)
+type(
+  string
+)
+"elements.ml" 89 3006 3045 "elements.ml" 89 3006 3059
+type(
+  string * string
+)
+"elements.ml" 89 3006 3035 "elements.ml" 89 3006 3060
+type(
+  string -> string * string
+)
+"elements.ml" 89 3006 3061 "elements.ml" 89 3006 3068
+type(
+  string list
+)
+ident(
+  int_ref listing "elements.ml" 88 2950 2960 "elements.ml" 88 2950 2967
+)
+"elements.ml" 89 3006 3026 "elements.ml" 89 3006 3068
+call(
+  stack
+)
+type(
+  (string * string) list
+)
+"elements.ml" 90 3072 3082 "elements.ml" 90 3072 3089
+type(
+  (string * string) list
+)
+"elements.ml" 90 3072 3092 "elements.ml" 90 3072 3103
+type(
+  (string * string -> bool) ->
+  (string * string) list -> (string * string) list
+)
+ident(
+  ext_ref List.filter
+)
+"elements.ml" 90 3072 3110 "elements.ml" 90 3072 3111
+type(
+  string
+)
+"elements.ml" 90 3072 3113 "elements.ml" 90 3072 3114
+type(
+  string
+)
+ident(
+  def x "elements.ml" 90 3072 3119 "elements.ml" 90 3072 3133
+)
+"elements.ml" 90 3072 3109 "elements.ml" 90 3072 3115
+type(
+  string * string
+)
+"elements.ml" 90 3072 3119 "elements.ml" 90 3072 3131
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_directory
+)
+"elements.ml" 90 3072 3132 "elements.ml" 90 3072 3133
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 90 3072 3113 "elements.ml" 90 3072 3114
+)
+"elements.ml" 90 3072 3119 "elements.ml" 90 3072 3133
+call(
+  tail
+)
+type(
+  bool
+)
+"elements.ml" 90 3072 3104 "elements.ml" 90 3072 3134
+type(
+  string * string -> bool
+)
+"elements.ml" 90 3072 3135 "elements.ml" 90 3072 3142
+type(
+  (string * string) list
+)
+ident(
+  int_ref listing "elements.ml" 89 3006 3016 "elements.ml" 89 3006 3023
+)
+"elements.ml" 90 3072 3092 "elements.ml" 90 3072 3142
+call(
+  stack
+)
+type(
+  (string * string) list
+)
+"elements.ml" 91 3146 3152 "elements.ml" 91 3146 3161
+type(
+  (string * string -> unit) -> (string * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"elements.ml" 92 3164 3177 "elements.ml" 92 3164 3178
+type(
+  string
+)
+ident(
+  def p "elements.ml" 93 3188 3198 "elements.ml" 98 3470 3481
+)
+"elements.ml" 92 3164 3180 "elements.ml" 92 3164 3183
+type(
+  string
+)
+ident(
+  def dir "elements.ml" 93 3188 3198 "elements.ml" 98 3470 3481
+)
+"elements.ml" 92 3164 3176 "elements.ml" 92 3164 3184
+type(
+  string * string
+)
+"elements.ml" 93 3188 3201 "elements.ml" 93 3188 3204
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"elements.ml" 93 3188 3206 "elements.ml" 93 3188 3217
+type(
+  (string, element) Hashtbl.t -> string -> bool
+)
+ident(
+  ext_ref Hashtbl.mem
+)
+"elements.ml" 93 3188 3218 "elements.ml" 93 3188 3233
+type(
+  (string, element) Hashtbl.t
+)
+ident(
+  int_ref loaded_elements "elements.ml" 84 2827 2833 "elements.ml" 84 2827 2848
+)
+"elements.ml" 93 3188 3234 "elements.ml" 93 3188 3235
+type(
+  string
+)
+ident(
+  int_ref p "elements.ml" 92 3164 3177 "elements.ml" 92 3164 3178
+)
+"elements.ml" 93 3188 3205 "elements.ml" 93 3188 3236
+call(
+  stack
+)
+type(
+  bool
+)
+"elements.ml" 93 3188 3201 "elements.ml" 93 3188 3236
+type(
+  bool
+)
+"elements.ml" 94 3244 3260 "elements.ml" 94 3244 3264
+type(
+  element
+)
+ident(
+  def elem "elements.ml" 95 3321 3333 "elements.ml" 95 3321 3367
+)
+"elements.ml" 94 3244 3281 "elements.ml" 94 3244 3284
+type(
+  string
+)
+ident(
+  int_ref dir "elements.ml" 92 3164 3180 "elements.ml" 92 3164 3183
+)
+"elements.ml" 94 3244 3294 "elements.ml" 94 3244 3304
+type(
+  debug:int -> string -> hooks_map
+)
+ident(
+  int_ref load_hooks "elements.ml" 61 1988 1992 "elements.ml" 61 1988 2002
+)
+"elements.ml" 94 3244 3306 "elements.ml" 94 3244 3311
+type(
+  int
+)
+ident(
+  int_ref debug "elements.ml" 83 2794 2813 "elements.ml" 83 2794 2818
+)
+"elements.ml" 94 3244 3312 "elements.ml" 94 3244 3315
+type(
+  string
+)
+ident(
+  int_ref dir "elements.ml" 92 3164 3180 "elements.ml" 92 3164 3183
+)
+"elements.ml" 94 3244 3294 "elements.ml" 94 3244 3315
+call(
+  stack
+)
+type(
+  hooks_map
+)
+"elements.ml" 94 3244 3267 "elements.ml" 94 3244 3317
+type(
+  element
+)
+"elements.ml" 95 3321 3333 "elements.ml" 95 3321 3344
+type(
+  (string, element) Hashtbl.t -> string -> element -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"elements.ml" 95 3321 3345 "elements.ml" 95 3321 3360
+type(
+  (string, element) Hashtbl.t
+)
+ident(
+  int_ref loaded_elements "elements.ml" 84 2827 2833 "elements.ml" 84 2827 2848
+)
+"elements.ml" 95 3321 3361 "elements.ml" 95 3321 3362
+type(
+  string
+)
+ident(
+  int_ref p "elements.ml" 92 3164 3177 "elements.ml" 92 3164 3178
+)
+"elements.ml" 95 3321 3363 "elements.ml" 95 3321 3367
+type(
+  element
+)
+ident(
+  int_ref elem "elements.ml" 94 3244 3260 "elements.ml" 94 3244 3264
+)
+"elements.ml" 95 3321 3333 "elements.ml" 95 3321 3367
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 93 3188 3242 "elements.ml" 96 3368 3379
+type(
+  unit
+)
+"elements.ml" 96 3368 3388 "elements.ml" 96 3368 3393
+type(
+  int
+)
+ident(
+  int_ref debug "elements.ml" 83 2794 2813 "elements.ml" 83 2794 2818
+)
+"elements.ml" 96 3368 3394 "elements.ml" 96 3368 3396
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"elements.ml" 96 3368 3397 "elements.ml" 96 3368 3398
+type(
+  int
+)
+"elements.ml" 96 3368 3388 "elements.ml" 96 3368 3398
+type(
+  bool
+)
+"elements.ml" 97 3406 3418 "elements.ml" 97 3406 3424
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"elements.ml" 97 3406 3425 "elements.ml" 97 3406 3461
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"elements.ml" 97 3406 3462 "elements.ml" 97 3406 3463
+type(
+  string
+)
+ident(
+  int_ref p "elements.ml" 92 3164 3177 "elements.ml" 92 3164 3178
+)
+"elements.ml" 97 3406 3464 "elements.ml" 97 3406 3468
+type(
+  string
+)
+ident(
+  int_ref path "elements.ml" 87 2934 2942 "elements.ml" 87 2934 2946
+)
+"elements.ml" 96 3368 3404 "elements.ml" 98 3470 3481
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 96 3368 3385 "elements.ml" 98 3470 3481
+type(
+  unit
+)
+"elements.ml" 93 3188 3198 "elements.ml" 98 3470 3481
+type(
+  unit
+)
+"elements.ml" 91 3146 3162 "elements.ml" 99 3482 3489
+type(
+  string * string -> unit
+)
+"elements.ml" 99 3482 3490 "elements.ml" 99 3482 3497
+type(
+  (string * string) list
+)
+ident(
+  int_ref listing "elements.ml" 90 3072 3082 "elements.ml" 90 3072 3089
+)
+"elements.ml" 91 3146 3152 "elements.ml" 99 3482 3497
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 90 3072 3078 "elements.ml" 99 3482 3497
+type(
+  unit
+)
+"elements.ml" 89 3006 3012 "elements.ml" 99 3482 3497
+type(
+  unit
+)
+"elements.ml" 88 2950 2956 "elements.ml" 99 3482 3497
+type(
+  unit
+)
+"elements.ml" 86 2920 2932 "elements.ml" 100 3498 3501
+type(
+  string -> unit
+)
+"elements.ml" 100 3498 3502 "elements.ml" 100 3498 3507
+type(
+  string list
+)
+ident(
+  int_ref paths "elements.ml" 85 2872 2878 "elements.ml" 85 2872 2883
+)
+"elements.ml" 86 2920 2922 "elements.ml" 100 3498 3507
+call(
+  stack
+)
+type(
+  unit
+)
+"elements.ml" 101 3509 3511 "elements.ml" 101 3509 3526
+type(
+  (string, element) Hashtbl.t
+)
+ident(
+  int_ref loaded_elements "elements.ml" 84 2827 2833 "elements.ml" 84 2827 2848
+)
+"elements.ml" 86 2920 2922 "elements.ml" 101 3509 3526
+type(
+  (string, element) Hashtbl.t
+)
+"elements.ml" 85 2872 2874 "elements.ml" 101 3509 3526
+type(
+  (string, element) Hashtbl.t
+)
+"elements.ml" 84 2827 2829 "elements.ml" 101 3509 3526
+type(
+  (string, element) Hashtbl.t
+)
+"elements.ml" 103 3528 3532 "elements.ml" 103 3528 3549
+type(
+  StringSet.elt list -> (StringSet.elt, element) Hashtbl.t -> StringSet.t
+)
+ident(
+  def load_dependencies "elements.ml" 143 5166 5166 --
+)
+"elements.ml" 103 3528 3550 "elements.ml" 103 3528 3558
+type(
+  StringSet.elt list
+)
+ident(
+  def elements "elements.ml" 103 3528 3559 "elements.ml" 141 5131 5164
+)
+"elements.ml" 103 3528 3559 "elements.ml" 103 3528 3574
+type(
+  (StringSet.elt, element) Hashtbl.t
+)
+ident(
+  def loaded_elements "elements.ml" 104 3577 3579 "elements.ml" 141 5131 5164
+)
+"elements.ml" 104 3577 3583 "elements.ml" 104 3577 3586
+type(
+  string -> StringSet.elt -> StringSet.t
+)
+"elements.ml" 104 3577 3587 "elements.ml" 104 3577 3595
+type(
+  string
+)
+ident(
+  def filename "elements.ml" 104 3577 3596 "elements.ml" 116 3991 4037
+)
+"elements.ml" 104 3577 3596 "elements.ml" 104 3577 3603
+type(
+  StringSet.elt
+)
+ident(
+  def element "elements.ml" 105 3606 3610 "elements.ml" 116 3991 4037
+)
+"elements.ml" 106 3614 3624 "elements.ml" 106 3614 3628
+type(
+  string
+)
+ident(
+  def path "elements.ml" 107 3683 3689 "elements.ml" 114 3945 3968
+)
+"elements.ml" 106 3614 3632 "elements.ml" 106 3614 3644
+type(
+  (StringSet.elt, element) Hashtbl.t -> StringSet.elt -> element
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"elements.ml" 106 3614 3645 "elements.ml" 106 3614 3660
+type(
+  (StringSet.elt, element) Hashtbl.t
+)
+ident(
+  int_ref loaded_elements "elements.ml" 103 3528 3559 "elements.ml" 103 3528 3574
+)
+"elements.ml" 106 3614 3661 "elements.ml" 106 3614 3668
+type(
+  StringSet.elt
+)
+ident(
+  int_ref element "elements.ml" 104 3577 3596 "elements.ml" 104 3577 3603
+)
+"elements.ml" 106 3614 3631 "elements.ml" 106 3614 3669
+call(
+  stack
+)
+type(
+  element
+)
+"elements.ml" 106 3614 3631 "elements.ml" 106 3614 3679
+type(
+  string
+)
+"elements.ml" 107 3683 3693 "elements.ml" 107 3683 3697
+type(
+  string
+)
+ident(
+  def path "elements.ml" 108 3720 3726 "elements.ml" 114 3945 3968
+)
+"elements.ml" 107 3683 3700 "elements.ml" 107 3683 3704
+type(
+  string
+)
+ident(
+  int_ref path "elements.ml" 106 3614 3624 "elements.ml" 106 3614 3628
+)
+"elements.ml" 107 3683 3705 "elements.ml" 107 3683 3707
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"elements.ml" 107 3683 3708 "elements.ml" 107 3683 3716
+type(
+  string
+)
+ident(
+  int_ref filename "elements.ml" 104 3577 3587 "elements.ml" 104 3577 3595
+)
+"elements.ml" 107 3683 3700 "elements.ml" 107 3683 3716
+call(
+  stack
+)
+type(
+  string
+)
+"elements.ml" 108 3720 3729 "elements.ml" 108 3720 3744
+type(
+  string -> bool
+)
+ident(
+  ext_ref Sys.file_exists
+)
+"elements.ml" 108 3720 3745 "elements.ml" 108 3720 3749
+type(
+  string
+)
+ident(
+  int_ref path "elements.ml" 107 3683 3693 "elements.ml" 107 3683 3697
+)
+"elements.ml" 108 3720 3729 "elements.ml" 108 3720 3749
+type(
+  bool
+)
+"elements.ml" 109 3757 3769 "elements.ml" 109 3757 3774
+type(
+  string
+)
+ident(
+  def lines "elements.ml" 110 3801 3809 "elements.ml" 112 3900 3931
+)
+"elements.ml" 109 3757 3777 "elements.ml" 109 3757 3792
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.read_whole_file
+)
+"elements.ml" 109 3757 3793 "elements.ml" 109 3757 3797
+type(
+  string
+)
+ident(
+  int_ref path "elements.ml" 107 3683 3693 "elements.ml" 107 3683 3697
+)
+"elements.ml" 109 3757 3777 "elements.ml" 109 3757 3797
+call(
+  stack
+)
+type(
+  string
+)
+"elements.ml" 110 3801 3813 "elements.ml" 110 3801 3818
+type(
+  string list
+)
+ident(
+  def lines "elements.ml" 111 3849 3857 "elements.ml" 112 3900 3931
+)
+"elements.ml" 110 3801 3821 "elements.ml" 110 3801 3834
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"elements.ml" 110 3801 3835 "elements.ml" 110 3801 3839
+type(
+  string
+)
+"elements.ml" 110 3801 3840 "elements.ml" 110 3801 3845
+type(
+  string
+)
+ident(
+  int_ref lines "elements.ml" 109 3757 3769 "elements.ml" 109 3757 3774
+)
+"elements.ml" 110 3801 3821 "elements.ml" 110 3801 3845
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 111 3849 3861 "elements.ml" 111 3849 3866
+type(
+  string list
+)
+ident(
+  def lines "elements.ml" 112 3900 3908 "elements.ml" 112 3900 3931
+)
+"elements.ml" 111 3849 3869 "elements.ml" 111 3849 3880
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"elements.ml" 111 3849 3882 "elements.ml" 111 3849 3886
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"elements.ml" 111 3849 3887 "elements.ml" 111 3849 3889
+type(
+  string
+)
+"elements.ml" 111 3849 3881 "elements.ml" 111 3849 3890
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"elements.ml" 111 3849 3891 "elements.ml" 111 3849 3896
+type(
+  string list
+)
+ident(
+  int_ref lines "elements.ml" 110 3801 3813 "elements.ml" 110 3801 3818
+)
+"elements.ml" 111 3849 3869 "elements.ml" 111 3849 3896
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 112 3900 3908 "elements.ml" 112 3900 3925
+type(
+  StringSet.elt list -> StringSet.t
+)
+ident(
+  int_ref stringset_of_list "elements.ml" 58 1891 1895 "elements.ml" 58 1891 1912
+)
+"elements.ml" 112 3900 3926 "elements.ml" 112 3900 3931
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref lines "elements.ml" 111 3849 3861 "elements.ml" 111 3849 3866
+)
+"elements.ml" 112 3900 3908 "elements.ml" 112 3900 3931
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"elements.ml" 111 3849 3857 "elements.ml" 112 3900 3931
+type(
+  StringSet.t
+)
+"elements.ml" 110 3801 3809 "elements.ml" 112 3900 3931
+type(
+  StringSet.t
+)
+"elements.ml" 108 3720 3755 "elements.ml" 113 3932 3939
+type(
+  StringSet.t
+)
+"elements.ml" 114 3945 3953 "elements.ml" 114 3945 3968
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"elements.ml" 108 3720 3726 "elements.ml" 114 3945 3968
+type(
+  StringSet.t
+)
+"elements.ml" 107 3683 3689 "elements.ml" 114 3945 3968
+type(
+  StringSet.t
+)
+"elements.ml" 106 3614 3620 "elements.ml" 114 3945 3968
+type(
+  StringSet.t
+)
+"elements.ml" 115 3969 3978 "elements.ml" 115 3969 3987
+type(
+  exn
+)
+"elements.ml" 116 3991 3997 "elements.ml" 116 3991 4002
+type(
+  ?exit_code:int ->
+  (StringSet.elt -> StringSet.t, unit, string, StringSet.t) format4 ->
+  StringSet.elt -> StringSet.t
+)
+ident(
+  ext_ref Common_utils.error
+)
+"elements.ml" 116 3991 4004 "elements.ml" 116 3991 4006
+type(
+  (StringSet.elt -> StringSet.t, unit, string, string, string, StringSet.t)
+  format6 ->
+  (StringSet.elt -> StringSet.t, unit, string, StringSet.t) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"elements.ml" 116 3991 4006 "elements.ml" 116 3991 4028
+type(
+  (StringSet.elt -> StringSet.t, unit, string, string, string, StringSet.t)
+  format6
+)
+"elements.ml" 116 3991 4003 "elements.ml" 116 3991 4029
+type(
+  (StringSet.elt -> StringSet.t, unit, string, StringSet.t) format4
+)
+"elements.ml" 116 3991 4030 "elements.ml" 116 3991 4037
+type(
+  StringSet.elt
+)
+ident(
+  int_ref element "elements.ml" 104 3577 3596 "elements.ml" 104 3577 3603
+)
+"elements.ml" 116 3991 3997 "elements.ml" 116 3991 4037
+call(
+  tail
+)
+type(
+  StringSet.t
+)
+"elements.ml" 105 3606 3610 "elements.ml" 116 3991 4037
+type(
+  StringSet.t
+)
+"elements.ml" 117 4041 4047 "elements.ml" 117 4041 4055
+type(
+  StringSet.elt -> StringSet.t
+)
+"elements.ml" 117 4041 4058 "elements.ml" 117 4041 4061
+type(
+  string -> StringSet.elt -> StringSet.t
+)
+ident(
+  int_ref get "elements.ml" 104 3577 3583 "elements.ml" 104 3577 3586
+)
+"elements.ml" 117 4041 4062 "elements.ml" 117 4041 4076
+type(
+  string
+)
+"elements.ml" 117 4041 4058 "elements.ml" 117 4041 4076
+call(
+  stack
+)
+type(
+  StringSet.elt -> StringSet.t
+)
+"elements.ml" 118 4080 4086 "elements.ml" 118 4080 4098
+type(
+  StringSet.elt -> StringSet.t
+)
+"elements.ml" 118 4080 4101 "elements.ml" 118 4080 4104
+type(
+  string -> StringSet.elt -> StringSet.t
+)
+ident(
+  int_ref get "elements.ml" 104 3577 3583 "elements.ml" 104 3577 3586
+)
+"elements.ml" 118 4080 4105 "elements.ml" 118 4080 4123
+type(
+  string
+)
+"elements.ml" 118 4080 4101 "elements.ml" 118 4080 4123
+call(
+  stack
+)
+type(
+  StringSet.elt -> StringSet.t
+)
+"elements.ml" 120 4128 4134 "elements.ml" 120 4128 4139
+type(
+  StringSet.elt Queue.t
+)
+"elements.ml" 120 4128 4142 "elements.ml" 120 4128 4154
+type(
+  unit -> StringSet.elt Queue.t
+)
+ident(
+  ext_ref Queue.create
+)
+"elements.ml" 120 4128 4155 "elements.ml" 120 4128 4157
+type(
+  unit
+)
+"elements.ml" 120 4128 4142 "elements.ml" 120 4128 4157
+call(
+  stack
+)
+type(
+  StringSet.elt Queue.t
+)
+"elements.ml" 121 4161 4167 "elements.ml" 121 4161 4172
+type(
+  StringSet.t ref
+)
+"elements.ml" 121 4161 4175 "elements.ml" 121 4161 4178
+type(
+  StringSet.t -> StringSet.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"elements.ml" 121 4161 4179 "elements.ml" 121 4161 4194
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"elements.ml" 121 4161 4175 "elements.ml" 121 4161 4194
+type(
+  StringSet.t ref
+)
+"elements.ml" 122 4198 4204 "elements.ml" 122 4198 4212
+type(
+  StringSet.t ref
+)
+"elements.ml" 122 4198 4215 "elements.ml" 122 4198 4218
+type(
+  StringSet.t -> StringSet.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"elements.ml" 122 4198 4219 "elements.ml" 122 4198 4234
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"elements.ml" 122 4198 4215 "elements.ml" 122 4198 4234
+type(
+  StringSet.t ref
+)
+"elements.ml" 123 4238 4240 "elements.ml" 123 4238 4249
+type(
+  (StringSet.elt -> unit) -> StringSet.elt list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"elements.ml" 123 4238 4255 "elements.ml" 123 4238 4256
+type(
+  StringSet.elt
+)
+ident(
+  def x "elements.ml" 123 4238 4260 "elements.ml" 123 4238 4278
+)
+"elements.ml" 123 4238 4260 "elements.ml" 123 4238 4270
+type(
+  StringSet.elt -> StringSet.elt Queue.t -> unit
+)
+ident(
+  ext_ref Queue.push
+)
+"elements.ml" 123 4238 4271 "elements.ml" 123 4238 4272
+type(
+  StringSet.elt
+)
+ident(
+  int_ref x "elements.ml" 123 4238 4255 "elements.ml" 123 4238 4256
+)
+"elements.ml" 123 4238 4273 "elements.ml" 123 4238 4278
+type(
+  StringSet.elt Queue.t
+)
+ident(
+  int_ref queue "elements.ml" 120 4128 4134 "elements.ml" 120 4128 4139
+)
+"elements.ml" 123 4238 4260 "elements.ml" 123 4238 4278
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 123 4238 4250 "elements.ml" 123 4238 4279
+type(
+  StringSet.elt -> unit
+)
+"elements.ml" 123 4238 4280 "elements.ml" 123 4238 4288
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref elements "elements.ml" 103 3528 3550 "elements.ml" 103 3528 3558
+)
+"elements.ml" 123 4238 4240 "elements.ml" 123 4238 4288
+call(
+  stack
+)
+type(
+  unit
+)
+"elements.ml" 124 4290 4292 "elements.ml" 124 4290 4297
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref final "elements.ml" 121 4161 4167 "elements.ml" 121 4161 4172
+)
+"elements.ml" 124 4290 4298 "elements.ml" 124 4290 4300
+type(
+  StringSet.t ref -> StringSet.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"elements.ml" 124 4290 4301 "elements.ml" 124 4290 4318
+type(
+  StringSet.elt list -> StringSet.t
+)
+ident(
+  int_ref stringset_of_list "elements.ml" 58 1891 1895 "elements.ml" 58 1891 1912
+)
+"elements.ml" 124 4290 4319 "elements.ml" 124 4290 4327
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref elements "elements.ml" 103 3528 3550 "elements.ml" 103 3528 3558
+)
+"elements.ml" 124 4290 4301 "elements.ml" 124 4290 4327
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"elements.ml" 124 4290 4292 "elements.ml" 124 4290 4327
+type(
+  unit
+)
+"elements.ml" 125 4329 4337 "elements.ml" 125 4329 4340
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"elements.ml" 125 4329 4342 "elements.ml" 125 4329 4356
+type(
+  StringSet.elt Queue.t -> bool
+)
+ident(
+  ext_ref Queue.is_empty
+)
+"elements.ml" 125 4329 4357 "elements.ml" 125 4329 4362
+type(
+  StringSet.elt Queue.t
+)
+ident(
+  int_ref queue "elements.ml" 120 4128 4134 "elements.ml" 120 4128 4139
+)
+"elements.ml" 125 4329 4341 "elements.ml" 125 4329 4363
+call(
+  stack
+)
+type(
+  bool
+)
+"elements.ml" 125 4329 4337 "elements.ml" 125 4329 4363
+type(
+  bool
+)
+"elements.ml" 126 4367 4375 "elements.ml" 126 4367 4379
+type(
+  StringSet.elt
+)
+ident(
+  def elem "elements.ml" 127 4401 4405 "elements.ml" 133 4711 4716
+)
+"elements.ml" 126 4367 4382 "elements.ml" 126 4367 4391
+type(
+  StringSet.elt Queue.t -> StringSet.elt
+)
+ident(
+  ext_ref Queue.pop
+)
+"elements.ml" 126 4367 4392 "elements.ml" 126 4367 4397
+type(
+  StringSet.elt Queue.t
+)
+ident(
+  int_ref queue "elements.ml" 120 4128 4134 "elements.ml" 120 4128 4139
+)
+"elements.ml" 126 4367 4382 "elements.ml" 126 4367 4397
+call(
+  stack
+)
+type(
+  StringSet.elt
+)
+"elements.ml" 127 4401 4408 "elements.ml" 127 4401 4421
+type(
+  StringSet.elt -> StringSet.t -> bool
+)
+ident(
+  ext_ref StringSet.mem
+)
+"elements.ml" 127 4401 4422 "elements.ml" 127 4401 4426
+type(
+  StringSet.elt
+)
+ident(
+  int_ref elem "elements.ml" 126 4367 4375 "elements.ml" 126 4367 4379
+)
+"elements.ml" 127 4401 4427 "elements.ml" 127 4401 4428
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"elements.ml" 127 4401 4428 "elements.ml" 127 4401 4436
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref provided "elements.ml" 122 4198 4204 "elements.ml" 122 4198 4212
+)
+"elements.ml" 127 4401 4427 "elements.ml" 127 4401 4436
+type(
+  StringSet.t
+)
+"elements.ml" 127 4401 4408 "elements.ml" 127 4401 4436
+call(
+  stack
+)
+type(
+  bool
+)
+"elements.ml" 127 4401 4437 "elements.ml" 127 4401 4439
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"elements.ml" 127 4401 4440 "elements.ml" 127 4401 4444
+type(
+  bool
+)
+"elements.ml" 127 4401 4408 "elements.ml" 127 4401 4444
+type(
+  bool
+)
+"elements.ml" 128 4452 4462 "elements.ml" 128 4452 4466
+type(
+  StringSet.t
+)
+"elements.ml" 128 4452 4469 "elements.ml" 128 4452 4477
+type(
+  StringSet.elt -> StringSet.t
+)
+ident(
+  int_ref get_deps "elements.ml" 117 4041 4047 "elements.ml" 117 4041 4055
+)
+"elements.ml" 128 4452 4478 "elements.ml" 128 4452 4482
+type(
+  StringSet.elt
+)
+ident(
+  int_ref elem "elements.ml" 126 4367 4375 "elements.ml" 126 4367 4379
+)
+"elements.ml" 128 4452 4469 "elements.ml" 128 4452 4482
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"elements.ml" 129 4486 4492 "elements.ml" 129 4486 4500
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref provided "elements.ml" 122 4198 4204 "elements.ml" 122 4198 4212
+)
+"elements.ml" 129 4486 4501 "elements.ml" 129 4486 4503
+type(
+  StringSet.t ref -> StringSet.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"elements.ml" 129 4486 4504 "elements.ml" 129 4486 4519
+type(
+  StringSet.t -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.union
+)
+"elements.ml" 129 4486 4520 "elements.ml" 129 4486 4521
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"elements.ml" 129 4486 4521 "elements.ml" 129 4486 4529
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref provided "elements.ml" 122 4198 4204 "elements.ml" 122 4198 4212
+)
+"elements.ml" 129 4486 4520 "elements.ml" 129 4486 4529
+type(
+  StringSet.t
+)
+"elements.ml" 129 4486 4531 "elements.ml" 129 4486 4543
+type(
+  StringSet.elt -> StringSet.t
+)
+ident(
+  int_ref get_provides "elements.ml" 118 4080 4086 "elements.ml" 118 4080 4098
+)
+"elements.ml" 129 4486 4544 "elements.ml" 129 4486 4548
+type(
+  StringSet.elt
+)
+ident(
+  int_ref elem "elements.ml" 126 4367 4375 "elements.ml" 126 4367 4379
+)
+"elements.ml" 129 4486 4530 "elements.ml" 129 4486 4549
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"elements.ml" 129 4486 4504 "elements.ml" 129 4486 4549
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"elements.ml" 129 4486 4492 "elements.ml" 129 4486 4549
+type(
+  unit
+)
+"elements.ml" 130 4551 4557 "elements.ml" 130 4551 4571
+type(
+  (StringSet.elt -> unit) -> StringSet.t -> unit
+)
+ident(
+  ext_ref StringSet.iter
+)
+"elements.ml" 130 4551 4577 "elements.ml" 130 4551 4578
+type(
+  StringSet.elt
+)
+ident(
+  def x "elements.ml" 130 4551 4582 "elements.ml" 130 4551 4600
+)
+"elements.ml" 130 4551 4582 "elements.ml" 130 4551 4592
+type(
+  StringSet.elt -> StringSet.elt Queue.t -> unit
+)
+ident(
+  ext_ref Queue.push
+)
+"elements.ml" 130 4551 4593 "elements.ml" 130 4551 4594
+type(
+  StringSet.elt
+)
+ident(
+  int_ref x "elements.ml" 130 4551 4577 "elements.ml" 130 4551 4578
+)
+"elements.ml" 130 4551 4595 "elements.ml" 130 4551 4600
+type(
+  StringSet.elt Queue.t
+)
+ident(
+  int_ref queue "elements.ml" 120 4128 4134 "elements.ml" 120 4128 4139
+)
+"elements.ml" 130 4551 4582 "elements.ml" 130 4551 4600
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 130 4551 4572 "elements.ml" 130 4551 4601
+type(
+  StringSet.elt -> unit
+)
+"elements.ml" 131 4602 4611 "elements.ml" 131 4602 4625
+type(
+  StringSet.t -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.diff
+)
+"elements.ml" 131 4602 4626 "elements.ml" 131 4602 4630
+type(
+  StringSet.t
+)
+ident(
+  int_ref deps "elements.ml" 128 4452 4462 "elements.ml" 128 4452 4466
+)
+"elements.ml" 131 4602 4632 "elements.ml" 131 4602 4647
+type(
+  StringSet.t -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.union
+)
+"elements.ml" 131 4602 4648 "elements.ml" 131 4602 4649
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"elements.ml" 131 4602 4649 "elements.ml" 131 4602 4654
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref final "elements.ml" 121 4161 4167 "elements.ml" 121 4161 4172
+)
+"elements.ml" 131 4602 4648 "elements.ml" 131 4602 4654
+type(
+  StringSet.t
+)
+"elements.ml" 131 4602 4655 "elements.ml" 131 4602 4656
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"elements.ml" 131 4602 4656 "elements.ml" 131 4602 4664
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref provided "elements.ml" 122 4198 4204 "elements.ml" 122 4198 4212
+)
+"elements.ml" 131 4602 4655 "elements.ml" 131 4602 4664
+type(
+  StringSet.t
+)
+"elements.ml" 131 4602 4631 "elements.ml" 131 4602 4665
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"elements.ml" 131 4602 4610 "elements.ml" 131 4602 4666
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"elements.ml" 130 4551 4557 "elements.ml" 131 4602 4666
+call(
+  stack
+)
+type(
+  unit
+)
+"elements.ml" 132 4668 4674 "elements.ml" 132 4668 4679
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref final "elements.ml" 121 4161 4167 "elements.ml" 121 4161 4172
+)
+"elements.ml" 132 4668 4680 "elements.ml" 132 4668 4682
+type(
+  StringSet.t ref -> StringSet.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"elements.ml" 132 4668 4683 "elements.ml" 132 4668 4698
+type(
+  StringSet.t -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.union
+)
+"elements.ml" 132 4668 4699 "elements.ml" 132 4668 4700
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"elements.ml" 132 4668 4700 "elements.ml" 132 4668 4705
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref final "elements.ml" 121 4161 4167 "elements.ml" 121 4161 4172
+)
+"elements.ml" 132 4668 4699 "elements.ml" 132 4668 4705
+type(
+  StringSet.t
+)
+"elements.ml" 132 4668 4706 "elements.ml" 132 4668 4710
+type(
+  StringSet.t
+)
+ident(
+  int_ref deps "elements.ml" 128 4452 4462 "elements.ml" 128 4452 4466
+)
+"elements.ml" 132 4668 4683 "elements.ml" 132 4668 4710
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"elements.ml" 132 4668 4674 "elements.ml" 132 4668 4710
+type(
+  unit
+)
+"elements.ml" 130 4551 4557 "elements.ml" 132 4668 4710
+type(
+  unit
+)
+"elements.ml" 129 4486 4492 "elements.ml" 132 4668 4710
+type(
+  unit
+)
+"elements.ml" 127 4401 4450 "elements.ml" 133 4711 4716
+type(
+  unit
+)
+"elements.ml" 127 4401 4405 "elements.ml" 133 4711 4716
+type(
+  unit
+)
+"elements.ml" 126 4367 4371 "elements.ml" 133 4711 4716
+type(
+  unit
+)
+"elements.ml" 125 4329 4331 "elements.ml" 134 4717 4723
+type(
+  unit
+)
+"elements.ml" 135 4725 4731 "elements.ml" 135 4725 4740
+type(
+  StringSet.t
+)
+"elements.ml" 135 4725 4743 "elements.ml" 135 4725 4758
+type(
+  StringSet.t -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.inter
+)
+"elements.ml" 135 4725 4760 "elements.ml" 135 4725 4777
+type(
+  StringSet.elt list -> StringSet.t
+)
+ident(
+  int_ref stringset_of_list "elements.ml" 58 1891 1895 "elements.ml" 58 1891 1912
+)
+"elements.ml" 135 4725 4778 "elements.ml" 135 4725 4786
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref elements "elements.ml" 103 3528 3550 "elements.ml" 103 3528 3558
+)
+"elements.ml" 135 4725 4759 "elements.ml" 135 4725 4787
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"elements.ml" 135 4725 4788 "elements.ml" 135 4725 4789
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"elements.ml" 135 4725 4789 "elements.ml" 135 4725 4797
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref provided "elements.ml" 122 4198 4204 "elements.ml" 122 4198 4212
+)
+"elements.ml" 135 4725 4788 "elements.ml" 135 4725 4797
+type(
+  StringSet.t
+)
+"elements.ml" 135 4725 4743 "elements.ml" 135 4725 4797
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"elements.ml" 136 4801 4806 "elements.ml" 136 4801 4809
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"elements.ml" 136 4801 4811 "elements.ml" 136 4801 4829
+type(
+  StringSet.t -> bool
+)
+ident(
+  ext_ref StringSet.is_empty
+)
+"elements.ml" 136 4801 4830 "elements.ml" 136 4801 4839
+type(
+  StringSet.t
+)
+ident(
+  int_ref conflicts "elements.ml" 135 4725 4731 "elements.ml" 135 4725 4740
+)
+"elements.ml" 136 4801 4810 "elements.ml" 136 4801 4840
+call(
+  stack
+)
+type(
+  bool
+)
+"elements.ml" 136 4801 4806 "elements.ml" 136 4801 4840
+type(
+  bool
+)
+"elements.ml" 137 4846 4850 "elements.ml" 137 4846 4855
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"elements.ml" 137 4846 4857 "elements.ml" 137 4846 4859
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"elements.ml" 137 4846 4859 "elements.ml" 137 4846 4952
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"elements.ml" 137 4846 4856 "elements.ml" 137 4846 4953
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"elements.ml" 138 4954 4961 "elements.ml" 138 4954 4974
+type(
+  string -> StringSet.elt list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"elements.ml" 138 4954 4975 "elements.ml" 138 4954 4978
+type(
+  string
+)
+"elements.ml" 138 4954 4980 "elements.ml" 138 4954 4998
+type(
+  StringSet.t -> StringSet.elt list
+)
+ident(
+  ext_ref StringSet.elements
+)
+"elements.ml" 138 4954 4999 "elements.ml" 138 4954 5008
+type(
+  StringSet.t
+)
+ident(
+  int_ref conflicts "elements.ml" 135 4725 4731 "elements.ml" 135 4725 4740
+)
+"elements.ml" 138 4954 4979 "elements.ml" 138 4954 5009
+call(
+  stack
+)
+type(
+  StringSet.elt list
+)
+"elements.ml" 138 4954 4960 "elements.ml" 138 4954 5010
+call(
+  stack
+)
+type(
+  string
+)
+"elements.ml" 137 4846 4850 "elements.ml" 138 4954 5010
+call(
+  stack
+)
+type(
+  unit
+)
+"elements.ml" 136 4801 4803 "elements.ml" 138 4954 5010
+type(
+  unit
+)
+"elements.ml" 139 5012 5017 "elements.ml" 139 5012 5020
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"elements.ml" 139 5012 5022 "elements.ml" 139 5012 5035
+type(
+  StringSet.elt -> StringSet.t -> bool
+)
+ident(
+  ext_ref StringSet.mem
+)
+"elements.ml" 139 5012 5036 "elements.ml" 139 5012 5054
+type(
+  StringSet.elt
+)
+"elements.ml" 139 5012 5055 "elements.ml" 139 5012 5056
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"elements.ml" 139 5012 5056 "elements.ml" 139 5012 5064
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref provided "elements.ml" 122 4198 4204 "elements.ml" 122 4198 4212
+)
+"elements.ml" 139 5012 5055 "elements.ml" 139 5012 5064
+type(
+  StringSet.t
+)
+"elements.ml" 139 5012 5021 "elements.ml" 139 5012 5065
+call(
+  stack
+)
+type(
+  bool
+)
+"elements.ml" 139 5012 5017 "elements.ml" 139 5012 5065
+type(
+  bool
+)
+"elements.ml" 140 5071 5075 "elements.ml" 140 5071 5080
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"elements.ml" 140 5071 5082 "elements.ml" 140 5071 5084
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"elements.ml" 140 5071 5084 "elements.ml" 140 5071 5128
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"elements.ml" 140 5071 5081 "elements.ml" 140 5071 5129
+type(
+  (unit, unit, string, unit) format4
+)
+"elements.ml" 140 5071 5075 "elements.ml" 140 5071 5129
+call(
+  stack
+)
+type(
+  unit
+)
+"elements.ml" 139 5012 5014 "elements.ml" 140 5071 5129
+type(
+  unit
+)
+"elements.ml" 141 5131 5133 "elements.ml" 141 5131 5147
+type(
+  StringSet.t -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.diff
+)
+"elements.ml" 141 5131 5148 "elements.ml" 141 5131 5149
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"elements.ml" 141 5131 5149 "elements.ml" 141 5131 5154
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref final "elements.ml" 121 4161 4167 "elements.ml" 121 4161 4172
+)
+"elements.ml" 141 5131 5148 "elements.ml" 141 5131 5154
+type(
+  StringSet.t
+)
+"elements.ml" 141 5131 5155 "elements.ml" 141 5131 5156
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"elements.ml" 141 5131 5156 "elements.ml" 141 5131 5164
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref provided "elements.ml" 122 4198 4204 "elements.ml" 122 4198 4212
+)
+"elements.ml" 141 5131 5155 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 141 5131 5133 "elements.ml" 141 5131 5164
+call(
+  tail
+)
+type(
+  StringSet.t
+)
+"elements.ml" 139 5012 5014 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 136 4801 4803 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 135 4725 4727 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 125 4329 4331 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 124 4290 4292 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 123 4238 4240 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 122 4198 4200 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 121 4161 4163 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 120 4128 4130 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 118 4080 4082 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 117 4041 4043 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 104 3577 3579 "elements.ml" 141 5131 5164
+type(
+  StringSet.t
+)
+"elements.ml" 143 5166 5170 "elements.ml" 143 5166 5182
+type(
+  element -> string -> string list -> unit
+)
+ident(
+  def copy_element "elements.ml" 171 6224 6224 --
+)
+"elements.ml" 143 5166 5183 "elements.ml" 143 5166 5190
+type(
+  element
+)
+ident(
+  def element "elements.ml" 143 5166 5191 "elements.ml" 169 6211 6222
+)
+"elements.ml" 143 5166 5191 "elements.ml" 143 5166 5198
+type(
+  string
+)
+ident(
+  def destdir "elements.ml" 143 5166 5199 "elements.ml" 169 6211 6222
+)
+"elements.ml" 143 5166 5199 "elements.ml" 143 5166 5208
+type(
+  string list
+)
+ident(
+  def blacklist "elements.ml" 144 5211 5213 "elements.ml" 169 6211 6222
+)
+"elements.ml" 144 5211 5217 "elements.ml" 144 5211 5224
+type(
+  string list
+)
+"elements.ml" 144 5211 5227 "elements.ml" 144 5211 5240
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"elements.ml" 144 5211 5242 "elements.ml" 144 5211 5253
+type(
+  string -> string array
+)
+ident(
+  ext_ref Sys.readdir
+)
+"elements.ml" 144 5211 5254 "elements.ml" 144 5211 5261
+type(
+  element
+)
+ident(
+  int_ref element "elements.ml" 143 5166 5183 "elements.ml" 143 5166 5190
+)
+"elements.ml" 144 5211 5254 "elements.ml" 144 5211 5271
+type(
+  string
+)
+"elements.ml" 144 5211 5241 "elements.ml" 144 5211 5272
+type(
+  string array
+)
+"elements.ml" 144 5211 5227 "elements.ml" 144 5211 5272
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 145 5276 5282 "elements.ml" 145 5276 5289
+type(
+  string list
+)
+"elements.ml" 145 5276 5292 "elements.ml" 145 5276 5303
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"elements.ml" 145 5276 5305 "elements.ml" 145 5276 5309
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"elements.ml" 145 5276 5310 "elements.ml" 145 5276 5317
+type(
+  string
+)
+"elements.ml" 145 5276 5304 "elements.ml" 145 5276 5318
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"elements.ml" 145 5276 5319 "elements.ml" 145 5276 5326
+type(
+  string list
+)
+ident(
+  int_ref entries "elements.ml" 144 5211 5217 "elements.ml" 144 5211 5224
+)
+"elements.ml" 145 5276 5292 "elements.ml" 145 5276 5326
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 146 5330 5336 "elements.ml" 146 5330 5343
+type(
+  string list
+)
+"elements.ml" 146 5330 5346 "elements.ml" 146 5330 5357
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"elements.ml" 146 5330 5359 "elements.ml" 146 5330 5363
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"elements.ml" 146 5330 5364 "elements.ml" 146 5330 5379
+type(
+  string
+)
+"elements.ml" 146 5330 5358 "elements.ml" 146 5330 5380
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"elements.ml" 146 5330 5381 "elements.ml" 146 5330 5388
+type(
+  string list
+)
+ident(
+  int_ref entries "elements.ml" 145 5276 5282 "elements.ml" 145 5276 5289
+)
+"elements.ml" 146 5330 5346 "elements.ml" 146 5330 5388
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 147 5392 5398 "elements.ml" 147 5392 5402
+type(
+  string list
+)
+"elements.ml" 147 5392 5404 "elements.ml" 147 5392 5411
+type(
+  string list
+)
+"elements.ml" 147 5392 5398 "elements.ml" 147 5392 5411
+type(
+  string list * string list
+)
+"elements.ml" 147 5392 5414 "elements.ml" 147 5392 5428
+type(
+  (string -> bool) -> string list -> string list * string list
+)
+ident(
+  ext_ref List.partition
+)
+"elements.ml" 147 5392 5429 "elements.ml" 147 5392 5441
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_directory
+)
+"elements.ml" 147 5392 5442 "elements.ml" 147 5392 5449
+type(
+  string list
+)
+ident(
+  int_ref entries "elements.ml" 146 5330 5336 "elements.ml" 146 5330 5343
+)
+"elements.ml" 147 5392 5414 "elements.ml" 147 5392 5449
+call(
+  stack
+)
+type(
+  string list * string list
+)
+"elements.ml" 148 5453 5459 "elements.ml" 148 5453 5463
+type(
+  (string * string * string) list
+)
+"elements.ml" 148 5453 5466 "elements.ml" 148 5453 5474
+type(
+  (string -> string * string * string) ->
+  string list -> (string * string * string) list
+)
+ident(
+  ext_ref List.map
+)
+"elements.ml" 148 5453 5480 "elements.ml" 148 5453 5481
+type(
+  string
+)
+ident(
+  def x "elements.ml" 148 5453 5485 "elements.ml" 148 5453 5526
+)
+"elements.ml" 148 5453 5486 "elements.ml" 148 5453 5487
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 148 5453 5480 "elements.ml" 148 5453 5481
+)
+"elements.ml" 148 5453 5489 "elements.ml" 148 5453 5496
+type(
+  element
+)
+ident(
+  int_ref element "elements.ml" 143 5166 5183 "elements.ml" 143 5166 5190
+)
+"elements.ml" 148 5453 5489 "elements.ml" 148 5453 5506
+type(
+  string
+)
+"elements.ml" 148 5453 5507 "elements.ml" 148 5453 5509
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"elements.ml" 148 5453 5510 "elements.ml" 148 5453 5511
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 148 5453 5480 "elements.ml" 148 5453 5481
+)
+"elements.ml" 148 5453 5489 "elements.ml" 148 5453 5511
+call(
+  stack
+)
+type(
+  string
+)
+"elements.ml" 148 5453 5513 "elements.ml" 148 5453 5520
+type(
+  string
+)
+ident(
+  int_ref destdir "elements.ml" 143 5166 5191 "elements.ml" 143 5166 5198
+)
+"elements.ml" 148 5453 5521 "elements.ml" 148 5453 5523
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"elements.ml" 148 5453 5524 "elements.ml" 148 5453 5525
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 148 5453 5480 "elements.ml" 148 5453 5481
+)
+"elements.ml" 148 5453 5513 "elements.ml" 148 5453 5525
+call(
+  stack
+)
+type(
+  string
+)
+"elements.ml" 148 5453 5485 "elements.ml" 148 5453 5526
+type(
+  string * string * string
+)
+"elements.ml" 148 5453 5475 "elements.ml" 148 5453 5527
+type(
+  string -> string * string * string
+)
+"elements.ml" 148 5453 5528 "elements.ml" 148 5453 5532
+type(
+  string list
+)
+ident(
+  int_ref dirs "elements.ml" 147 5392 5398 "elements.ml" 147 5392 5402
+)
+"elements.ml" 148 5453 5466 "elements.ml" 148 5453 5532
+call(
+  stack
+)
+type(
+  (string * string * string) list
+)
+"elements.ml" 149 5536 5542 "elements.ml" 149 5536 5549
+type(
+  string list
+)
+"elements.ml" 149 5536 5552 "elements.ml" 149 5536 5560
+type(
+  (string -> string) -> string list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"elements.ml" 149 5536 5566 "elements.ml" 149 5536 5567
+type(
+  string
+)
+ident(
+  def x "elements.ml" 149 5536 5571 "elements.ml" 149 5536 5593
+)
+"elements.ml" 149 5536 5571 "elements.ml" 149 5536 5578
+type(
+  element
+)
+ident(
+  int_ref element "elements.ml" 143 5166 5183 "elements.ml" 143 5166 5190
+)
+"elements.ml" 149 5536 5571 "elements.ml" 149 5536 5588
+type(
+  string
+)
+"elements.ml" 149 5536 5589 "elements.ml" 149 5536 5591
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"elements.ml" 149 5536 5592 "elements.ml" 149 5536 5593
+type(
+  string
+)
+ident(
+  int_ref x "elements.ml" 149 5536 5566 "elements.ml" 149 5536 5567
+)
+"elements.ml" 149 5536 5571 "elements.ml" 149 5536 5593
+call(
+  tail
+)
+type(
+  string
+)
+"elements.ml" 149 5536 5561 "elements.ml" 149 5536 5594
+type(
+  string -> string
+)
+"elements.ml" 149 5536 5595 "elements.ml" 149 5536 5602
+type(
+  string list
+)
+ident(
+  int_ref nondirs "elements.ml" 147 5392 5404 "elements.ml" 147 5392 5411
+)
+"elements.ml" 149 5536 5552 "elements.ml" 149 5536 5602
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 150 5606 5612 "elements.ml" 150 5606 5627
+type(
+  string -> bool
+)
+"elements.ml" 150 5606 5628 "elements.ml" 150 5606 5632
+type(
+  string
+)
+ident(
+  def file "elements.ml" 151 5635 5639 "elements.ml" 152 5686 5721
+)
+"elements.ml" 151 5635 5644 "elements.ml" 151 5635 5653
+type(
+  string -> Unix.stats
+)
+ident(
+  ext_ref Unix.stat
+)
+"elements.ml" 151 5635 5654 "elements.ml" 151 5635 5658
+type(
+  string
+)
+ident(
+  int_ref file "elements.ml" 150 5606 5628 "elements.ml" 150 5606 5632
+)
+"elements.ml" 151 5635 5643 "elements.ml" 151 5635 5659
+call(
+  stack
+)
+type(
+  Unix.stats
+)
+"elements.ml" 151 5635 5643 "elements.ml" 151 5635 5672
+type(
+  Unix.file_kind
+)
+"elements.ml" 151 5635 5673 "elements.ml" 151 5635 5674
+type(
+  Unix.file_kind -> Unix.file_kind -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"elements.ml" 151 5635 5675 "elements.ml" 151 5635 5685
+type(
+  Unix.file_kind
+)
+"elements.ml" 151 5635 5643 "elements.ml" 151 5635 5685
+type(
+  bool
+)
+"elements.ml" 152 5686 5711 "elements.ml" 152 5686 5712
+type(
+  string
+)
+type(
+  string
+)
+type(
+  Unix.error
+)
+"elements.ml" 152 5686 5695 "elements.ml" 152 5686 5712
+type(
+  exn
+)
+"elements.ml" 152 5686 5716 "elements.ml" 152 5686 5721
+type(
+  bool
+)
+"elements.ml" 151 5635 5639 "elements.ml" 152 5686 5721
+type(
+  bool
+)
+"elements.ml" 153 5725 5727 "elements.ml" 153 5725 5736
+type(
+  (string * string * string -> unit) ->
+  (string * string * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"elements.ml" 154 5739 5748 "elements.ml" 154 5739 5749
+type(
+  string
+)
+ident(
+  def e "elements.ml" 155 5770 5776 "elements.ml" 164 6126 6145
+)
+"elements.ml" 154 5739 5751 "elements.ml" 154 5739 5755
+type(
+  string
+)
+ident(
+  def path "elements.ml" 155 5770 5776 "elements.ml" 164 6126 6145
+)
+"elements.ml" 154 5739 5757 "elements.ml" 154 5739 5765
+type(
+  string
+)
+ident(
+  def destpath "elements.ml" 155 5770 5776 "elements.ml" 164 6126 6145
+)
+"elements.ml" 154 5739 5747 "elements.ml" 154 5739 5766
+type(
+  string * string * string
+)
+"elements.ml" 155 5770 5776 "elements.ml" 155 5770 5784
+type(
+  string -> unit
+)
+ident(
+  ext_ref Utils.do_mkdir
+)
+"elements.ml" 155 5770 5785 "elements.ml" 155 5770 5793
+type(
+  string
+)
+ident(
+  int_ref destpath "elements.ml" 154 5739 5757 "elements.ml" 154 5739 5765
+)
+"elements.ml" 155 5770 5776 "elements.ml" 155 5770 5793
+call(
+  stack
+)
+type(
+  unit
+)
+"elements.ml" 156 5795 5805 "elements.ml" 156 5795 5815
+type(
+  string list
+)
+"elements.ml" 156 5795 5818 "elements.ml" 156 5795 5831
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"elements.ml" 156 5795 5833 "elements.ml" 156 5795 5844
+type(
+  string -> string array
+)
+ident(
+  ext_ref Sys.readdir
+)
+"elements.ml" 156 5795 5845 "elements.ml" 156 5795 5849
+type(
+  string
+)
+ident(
+  int_ref path "elements.ml" 154 5739 5751 "elements.ml" 154 5739 5755
+)
+"elements.ml" 156 5795 5832 "elements.ml" 156 5795 5850
+type(
+  string array
+)
+"elements.ml" 156 5795 5818 "elements.ml" 156 5795 5850
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 157 5854 5864 "elements.ml" 157 5854 5874
+type(
+  string list
+)
+"elements.ml" 157 5854 5877 "elements.ml" 157 5854 5888
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"elements.ml" 157 5854 5890 "elements.ml" 157 5854 5901
+type(
+  string list -> string -> bool
+)
+ident(
+  ext_ref Utils.not_in_list
+)
+"elements.ml" 157 5854 5902 "elements.ml" 157 5854 5911
+type(
+  string list
+)
+ident(
+  int_ref blacklist "elements.ml" 143 5166 5199 "elements.ml" 143 5166 5208
+)
+"elements.ml" 157 5854 5889 "elements.ml" 157 5854 5912
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"elements.ml" 157 5854 5913 "elements.ml" 157 5854 5923
+type(
+  string list
+)
+ident(
+  int_ref subentries "elements.ml" 156 5795 5805 "elements.ml" 156 5795 5815
+)
+"elements.ml" 157 5854 5877 "elements.ml" 157 5854 5923
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 158 5927 5933 "elements.ml" 158 5927 5942
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"elements.ml" 159 5945 5957 "elements.ml" 159 5945 5961
+type(
+  string
+)
+ident(
+  def sube "elements.ml" 160 5965 5975 "elements.ml" 163 6084 6125
+)
+"elements.ml" 160 5965 5978 "elements.ml" 160 5965 5993
+type(
+  string -> bool
+)
+ident(
+  int_ref is_regular_file "elements.ml" 150 5606 5612 "elements.ml" 150 5606 5627
+)
+"elements.ml" 160 5965 5995 "elements.ml" 160 5965 6003
+type(
+  string
+)
+ident(
+  int_ref destpath "elements.ml" 154 5739 5757 "elements.ml" 154 5739 5765
+)
+"elements.ml" 160 5965 6004 "elements.ml" 160 5965 6006
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"elements.ml" 160 5965 6007 "elements.ml" 160 5965 6011
+type(
+  string
+)
+ident(
+  int_ref sube "elements.ml" 159 5945 5957 "elements.ml" 159 5945 5961
+)
+"elements.ml" 160 5965 5994 "elements.ml" 160 5965 6012
+call(
+  stack
+)
+type(
+  string
+)
+"elements.ml" 160 5965 5978 "elements.ml" 160 5965 6012
+call(
+  stack
+)
+type(
+  bool
+)
+"elements.ml" 161 6020 6032 "elements.ml" 161 6020 6037
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"elements.ml" 161 6020 6057 "elements.ml" 161 6020 6058
+type(
+  string
+)
+ident(
+  int_ref e "elements.ml" 154 5739 5748 "elements.ml" 154 5739 5749
+)
+"elements.ml" 161 6020 6060 "elements.ml" 161 6020 6064
+type(
+  string
+)
+ident(
+  int_ref sube "elements.ml" 159 5945 5957 "elements.ml" 159 5945 5961
+)
+"elements.ml" 161 6020 6038 "elements.ml" 161 6020 6066
+type(
+  exn
+)
+"elements.ml" 160 5965 6018 "elements.ml" 162 6067 6078
+type(
+  unit
+)
+"elements.ml" 163 6084 6096 "elements.ml" 163 6084 6101
+type(
+  string -> string -> unit
+)
+ident(
+  ext_ref Utils.do_cp
+)
+"elements.ml" 163 6084 6103 "elements.ml" 163 6084 6107
+type(
+  string
+)
+ident(
+  int_ref path "elements.ml" 154 5739 5751 "elements.ml" 154 5739 5755
+)
+"elements.ml" 163 6084 6108 "elements.ml" 163 6084 6110
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"elements.ml" 163 6084 6111 "elements.ml" 163 6084 6115
+type(
+  string
+)
+ident(
+  int_ref sube "elements.ml" 159 5945 5957 "elements.ml" 159 5945 5961
+)
+"elements.ml" 163 6084 6102 "elements.ml" 163 6084 6116
+call(
+  stack
+)
+type(
+  string
+)
+"elements.ml" 163 6084 6117 "elements.ml" 163 6084 6125
+type(
+  string
+)
+ident(
+  int_ref destpath "elements.ml" 154 5739 5757 "elements.ml" 154 5739 5765
+)
+"elements.ml" 163 6084 6096 "elements.ml" 163 6084 6125
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 160 5965 5975 "elements.ml" 163 6084 6125
+type(
+  unit
+)
+"elements.ml" 158 5927 5943 "elements.ml" 164 6126 6133
+type(
+  string -> unit
+)
+"elements.ml" 164 6126 6134 "elements.ml" 164 6126 6144
+type(
+  string list
+)
+ident(
+  int_ref subentries "elements.ml" 157 5854 5864 "elements.ml" 157 5854 5874
+)
+"elements.ml" 158 5927 5933 "elements.ml" 164 6126 6145
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 157 5854 5860 "elements.ml" 164 6126 6145
+type(
+  unit
+)
+"elements.ml" 156 5795 5801 "elements.ml" 164 6126 6145
+type(
+  unit
+)
+"elements.ml" 155 5770 5776 "elements.ml" 164 6126 6145
+type(
+  unit
+)
+"elements.ml" 153 5725 5737 "elements.ml" 165 6146 6149
+type(
+  string * string * string -> unit
+)
+"elements.ml" 165 6146 6150 "elements.ml" 165 6146 6154
+type(
+  (string * string * string) list
+)
+ident(
+  int_ref dirs "elements.ml" 148 5453 5459 "elements.ml" 148 5453 5463
+)
+"elements.ml" 153 5725 5727 "elements.ml" 165 6146 6154
+call(
+  stack
+)
+type(
+  unit
+)
+"elements.ml" 166 6156 6158 "elements.ml" 166 6156 6167
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"elements.ml" 167 6170 6178 "elements.ml" 167 6170 6182
+type(
+  string
+)
+ident(
+  def path "elements.ml" 168 6186 6192 "elements.ml" 168 6186 6210
+)
+"elements.ml" 168 6186 6192 "elements.ml" 168 6186 6197
+type(
+  string -> string -> unit
+)
+ident(
+  ext_ref Utils.do_cp
+)
+"elements.ml" 168 6186 6198 "elements.ml" 168 6186 6202
+type(
+  string
+)
+ident(
+  int_ref path "elements.ml" 167 6170 6178 "elements.ml" 167 6170 6182
+)
+"elements.ml" 168 6186 6203 "elements.ml" 168 6186 6210
+type(
+  string
+)
+ident(
+  int_ref destdir "elements.ml" 143 5166 5191 "elements.ml" 143 5166 5198
+)
+"elements.ml" 168 6186 6192 "elements.ml" 168 6186 6210
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 166 6156 6168 "elements.ml" 169 6211 6214
+type(
+  string -> unit
+)
+"elements.ml" 169 6211 6215 "elements.ml" 169 6211 6222
+type(
+  string list
+)
+ident(
+  int_ref nondirs "elements.ml" 149 5536 5542 "elements.ml" 149 5536 5549
+)
+"elements.ml" 166 6156 6158 "elements.ml" 169 6211 6222
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 153 5725 5727 "elements.ml" 169 6211 6222
+type(
+  unit
+)
+"elements.ml" 150 5606 5608 "elements.ml" 169 6211 6222
+type(
+  unit
+)
+"elements.ml" 149 5536 5538 "elements.ml" 169 6211 6222
+type(
+  unit
+)
+"elements.ml" 148 5453 5455 "elements.ml" 169 6211 6222
+type(
+  unit
+)
+"elements.ml" 147 5392 5394 "elements.ml" 169 6211 6222
+type(
+  unit
+)
+"elements.ml" 146 5330 5332 "elements.ml" 169 6211 6222
+type(
+  unit
+)
+"elements.ml" 145 5276 5278 "elements.ml" 169 6211 6222
+type(
+  unit
+)
+"elements.ml" 144 5211 5213 "elements.ml" 169 6211 6222
+type(
+  unit
+)
+"elements.ml" 171 6224 6228 "elements.ml" 171 6224 6241
+type(
+  StringSet.t ->
+  (StringSet.elt, element) Hashtbl.t -> string list -> string -> unit
+)
+ident(
+  def copy_elements "elements.ml" 187 6908 6920 --
+)
+"elements.ml" 171 6224 6242 "elements.ml" 171 6224 6250
+type(
+  StringSet.t
+)
+ident(
+  def elements "elements.ml" 171 6224 6251 "elements.ml" 187 6908 6920
+)
+"elements.ml" 171 6224 6251 "elements.ml" 171 6224 6266
+type(
+  (StringSet.elt, element) Hashtbl.t
+)
+ident(
+  def loaded_elements "elements.ml" 171 6224 6267 "elements.ml" 187 6908 6920
+)
+"elements.ml" 171 6224 6267 "elements.ml" 171 6224 6276
+type(
+  string list
+)
+ident(
+  def blacklist "elements.ml" 171 6224 6277 "elements.ml" 187 6908 6920
+)
+"elements.ml" 171 6224 6277 "elements.ml" 171 6224 6284
+type(
+  string
+)
+ident(
+  def destdir "elements.ml" 172 6287 6289 "elements.ml" 187 6908 6920
+)
+"elements.ml" 172 6287 6289 "elements.ml" 172 6287 6297
+type(
+  string -> unit
+)
+ident(
+  ext_ref Utils.do_mkdir
+)
+"elements.ml" 172 6287 6298 "elements.ml" 172 6287 6305
+type(
+  string
+)
+ident(
+  int_ref destdir "elements.ml" 171 6224 6277 "elements.ml" 171 6224 6284
+)
+"elements.ml" 172 6287 6289 "elements.ml" 172 6287 6305
+call(
+  stack
+)
+type(
+  unit
+)
+"elements.ml" 173 6307 6309 "elements.ml" 173 6307 6323
+type(
+  (StringSet.elt -> unit) -> StringSet.t -> unit
+)
+ident(
+  ext_ref StringSet.iter
+)
+"elements.ml" 174 6326 6334 "elements.ml" 174 6326 6341
+type(
+  StringSet.elt
+)
+ident(
+  def element "elements.ml" 175 6345 6351 "elements.ml" 186 6840 6907
+)
+"elements.ml" 176 6355 6363 "elements.ml" 176 6355 6375
+type(
+  element -> string -> string list -> unit
+)
+ident(
+  int_ref copy_element "elements.ml" 143 5166 5170 "elements.ml" 143 5166 5182
+)
+"elements.ml" 176 6355 6377 "elements.ml" 176 6355 6389
+type(
+  (StringSet.elt, element) Hashtbl.t -> StringSet.elt -> element
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"elements.ml" 176 6355 6390 "elements.ml" 176 6355 6405
+type(
+  (StringSet.elt, element) Hashtbl.t
+)
+ident(
+  int_ref loaded_elements "elements.ml" 171 6224 6251 "elements.ml" 171 6224 6266
+)
+"elements.ml" 176 6355 6406 "elements.ml" 176 6355 6413
+type(
+  StringSet.elt
+)
+ident(
+  int_ref element "elements.ml" 174 6326 6334 "elements.ml" 174 6326 6341
+)
+"elements.ml" 176 6355 6376 "elements.ml" 176 6355 6414
+call(
+  stack
+)
+type(
+  element
+)
+"elements.ml" 176 6355 6415 "elements.ml" 176 6355 6422
+type(
+  string
+)
+ident(
+  int_ref destdir "elements.ml" 171 6224 6277 "elements.ml" 171 6224 6284
+)
+"elements.ml" 176 6355 6423 "elements.ml" 176 6355 6432
+type(
+  string list
+)
+ident(
+  int_ref blacklist "elements.ml" 171 6224 6267 "elements.ml" 171 6224 6276
+)
+"elements.ml" 176 6355 6363 "elements.ml" 176 6355 6432
+call(
+  stack
+)
+type(
+  unit
+)
+"elements.ml" 178 6444 6470 "elements.ml" 178 6444 6474
+type(
+  string
+)
+ident(
+  def hook "elements.ml" 179 6487 6495 "elements.ml" 186 6840 6907
+)
+"elements.ml" 178 6444 6476 "elements.ml" 178 6444 6482
+type(
+  string
+)
+ident(
+  def script "elements.ml" 179 6487 6495 "elements.ml" 186 6840 6907
+)
+"elements.ml" 178 6444 6452 "elements.ml" 178 6444 6483
+type(
+  exn
+)
+"elements.ml" 179 6487 6499 "elements.ml" 179 6487 6517
+type(
+  StringSet.elt -> bool
+)
+"elements.ml" 179 6487 6518 "elements.ml" 179 6487 6519
+type(
+  StringSet.elt
+)
+ident(
+  def e "elements.ml" 180 6522 6532 "elements.ml" 183 6655 6688
+)
+"elements.ml" 181 6536 6552 "elements.ml" 181 6536 6553
+type(
+  string list
+)
+ident(
+  def s "elements.ml" 182 6616 6628 "elements.ml" 182 6616 6654
+)
+"elements.ml" 181 6536 6556 "elements.ml" 181 6536 6568
+type(
+  hooks_map -> string -> string list
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"elements.ml" 181 6536 6570 "elements.ml" 181 6536 6582
+type(
+  (StringSet.elt, element) Hashtbl.t -> StringSet.elt -> element
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"elements.ml" 181 6536 6583 "elements.ml" 181 6536 6598
+type(
+  (StringSet.elt, element) Hashtbl.t
+)
+ident(
+  int_ref loaded_elements "elements.ml" 171 6224 6251 "elements.ml" 171 6224 6266
+)
+"elements.ml" 181 6536 6599 "elements.ml" 181 6536 6600
+type(
+  StringSet.elt
+)
+ident(
+  int_ref e "elements.ml" 179 6487 6518 "elements.ml" 179 6487 6519
+)
+"elements.ml" 181 6536 6569 "elements.ml" 181 6536 6601
+call(
+  stack
+)
+type(
+  element
+)
+"elements.ml" 181 6536 6569 "elements.ml" 181 6536 6607
+type(
+  hooks_map
+)
+"elements.ml" 181 6536 6608 "elements.ml" 181 6536 6612
+type(
+  string
+)
+ident(
+  int_ref hook "elements.ml" 178 6444 6470 "elements.ml" 178 6444 6474
+)
+"elements.ml" 181 6536 6556 "elements.ml" 181 6536 6612
+call(
+  stack
+)
+type(
+  string list
+)
+"elements.ml" 182 6616 6628 "elements.ml" 182 6616 6639
+type(
+  (string -> bool) -> string list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"elements.ml" 182 6616 6641 "elements.ml" 182 6616 6644
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"elements.ml" 182 6616 6645 "elements.ml" 182 6616 6651
+type(
+  string
+)
+ident(
+  int_ref script "elements.ml" 178 6444 6476 "elements.ml" 178 6444 6482
+)
+"elements.ml" 182 6616 6640 "elements.ml" 182 6616 6652
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"elements.ml" 182 6616 6653 "elements.ml" 182 6616 6654
+type(
+  string list
+)
+ident(
+  int_ref s "elements.ml" 181 6536 6552 "elements.ml" 181 6536 6553
+)
+"elements.ml" 182 6616 6628 "elements.ml" 182 6616 6654
+call(
+  stack
+)
+type(
+  bool
+)
+"elements.ml" 181 6536 6548 "elements.ml" 182 6616 6654
+type(
+  bool
+)
+"elements.ml" 183 6655 6670 "elements.ml" 183 6655 6679
+type(
+  exn
+)
+"elements.ml" 183 6655 6683 "elements.ml" 183 6655 6688
+type(
+  bool
+)
+"elements.ml" 180 6522 6532 "elements.ml" 183 6655 6688
+type(
+  bool
+)
+"elements.ml" 184 6692 6704 "elements.ml" 184 6692 6708
+type(
+  StringSet.t
+)
+"elements.ml" 184 6692 6711 "elements.ml" 184 6692 6727
+type(
+  (StringSet.elt -> bool) -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.filter
+)
+"elements.ml" 184 6692 6728 "elements.ml" 184 6692 6746
+type(
+  StringSet.elt -> bool
+)
+ident(
+  int_ref element_has_script "elements.ml" 179 6487 6499 "elements.ml" 179 6487 6517
+)
+"elements.ml" 184 6692 6747 "elements.ml" 184 6692 6755
+type(
+  StringSet.t
+)
+ident(
+  int_ref elements "elements.ml" 171 6224 6242 "elements.ml" 171 6224 6250
+)
+"elements.ml" 184 6692 6711 "elements.ml" 184 6692 6755
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"elements.ml" 185 6759 6767 "elements.ml" 185 6759 6772
+type(
+  ?exit_code:int ->
+  (string -> string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"elements.ml" 185 6759 6774 "elements.ml" 185 6759 6776
+type(
+  (string -> string -> string -> unit, unit, string, string, string, unit)
+  format6 -> (string -> string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"elements.ml" 185 6759 6776 "elements.ml" 185 6759 6838
+type(
+  (string -> string -> string -> unit, unit, string, string, string, unit)
+  format6
+)
+"elements.ml" 185 6759 6773 "elements.ml" 185 6759 6839
+type(
+  (string -> string -> string -> unit, unit, string, unit) format4
+)
+"elements.ml" 186 6840 6850 "elements.ml" 186 6840 6854
+type(
+  string
+)
+ident(
+  int_ref hook "elements.ml" 178 6444 6470 "elements.ml" 178 6444 6474
+)
+"elements.ml" 186 6840 6855 "elements.ml" 186 6840 6861
+type(
+  string
+)
+ident(
+  int_ref script "elements.ml" 178 6444 6476 "elements.ml" 178 6444 6482
+)
+"elements.ml" 186 6840 6863 "elements.ml" 186 6840 6876
+type(
+  string -> StringSet.elt list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"elements.ml" 186 6840 6877 "elements.ml" 186 6840 6880
+type(
+  string
+)
+"elements.ml" 186 6840 6882 "elements.ml" 186 6840 6900
+type(
+  StringSet.t -> StringSet.elt list
+)
+ident(
+  ext_ref StringSet.elements
+)
+"elements.ml" 186 6840 6901 "elements.ml" 186 6840 6905
+type(
+  StringSet.t
+)
+ident(
+  int_ref dups "elements.ml" 184 6692 6704 "elements.ml" 184 6692 6708
+)
+"elements.ml" 186 6840 6881 "elements.ml" 186 6840 6906
+call(
+  stack
+)
+type(
+  StringSet.elt list
+)
+"elements.ml" 186 6840 6862 "elements.ml" 186 6840 6907
+call(
+  stack
+)
+type(
+  string
+)
+"elements.ml" 185 6759 6767 "elements.ml" 186 6840 6907
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 184 6692 6700 "elements.ml" 186 6840 6907
+type(
+  unit
+)
+"elements.ml" 179 6487 6495 "elements.ml" 186 6840 6907
+type(
+  unit
+)
+"elements.ml" 175 6345 6351 "elements.ml" 186 6840 6907
+type(
+  unit
+)
+"elements.ml" 173 6307 6324 "elements.ml" 187 6908 6911
+type(
+  StringSet.elt -> unit
+)
+"elements.ml" 187 6908 6912 "elements.ml" 187 6908 6920
+type(
+  StringSet.t
+)
+ident(
+  int_ref elements "elements.ml" 171 6224 6242 "elements.ml" 171 6224 6250
+)
+"elements.ml" 173 6307 6309 "elements.ml" 187 6908 6920
+call(
+  tail
+)
+type(
+  unit
+)
+"elements.ml" 172 6287 6289 "elements.ml" 187 6908 6920
+type(
+  unit
+)

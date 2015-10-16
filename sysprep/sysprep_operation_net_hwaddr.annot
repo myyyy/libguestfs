@@ -1,0 +1,564 @@
+"sysprep_operation_net_hwaddr.ml" 25 866 870 "sysprep_operation_net_hwaddr.ml" 25 866 888
+type(
+  < glob_expand : string -> 'a array; inspect_get_distro : 'b -> string;
+    inspect_get_type : 'b -> string; read_lines : 'a -> string array;
+    write : 'a -> string -> 'c; .. > ->
+  'b -> < created_file : unit -> unit; .. > -> unit
+)
+ident(
+  def net_hwaddr_perform "sysprep_operation_net_hwaddr.ml" 45 1576 1576 --
+)
+"sysprep_operation_net_hwaddr.ml" 25 866 889 "sysprep_operation_net_hwaddr.ml" 25 866 890
+type(
+  < glob_expand : string -> 'a array; inspect_get_distro : 'b -> string;
+    inspect_get_type : 'b -> string; read_lines : 'a -> string array;
+    write : 'a -> string -> 'c; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_net_hwaddr.ml" 25 866 891 "sysprep_operation_net_hwaddr.ml" 43 1563 1574
+)
+"sysprep_operation_net_hwaddr.ml" 25 866 891 "sysprep_operation_net_hwaddr.ml" 25 866 895
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_net_hwaddr.ml" 25 866 896 "sysprep_operation_net_hwaddr.ml" 43 1563 1574
+)
+"sysprep_operation_net_hwaddr.ml" 25 866 896 "sysprep_operation_net_hwaddr.ml" 25 866 908
+type(
+  < created_file : unit -> unit; .. > as 'e
+)
+ident(
+  def side_effects "sysprep_operation_net_hwaddr.ml" 26 911 913 "sysprep_operation_net_hwaddr.ml" 43 1563 1574
+)
+"sysprep_operation_net_hwaddr.ml" 26 911 917 "sysprep_operation_net_hwaddr.ml" 26 911 920
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 26 911 923 "sysprep_operation_net_hwaddr.ml" 26 911 924
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_net_hwaddr.ml" 25 866 889 "sysprep_operation_net_hwaddr.ml" 25 866 890
+)
+"sysprep_operation_net_hwaddr.ml" 26 911 923 "sysprep_operation_net_hwaddr.ml" 26 911 941
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_net_hwaddr.ml" 26 911 942 "sysprep_operation_net_hwaddr.ml" 26 911 946
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_net_hwaddr.ml" 25 866 891 "sysprep_operation_net_hwaddr.ml" 25 866 895
+)
+"sysprep_operation_net_hwaddr.ml" 26 911 923 "sysprep_operation_net_hwaddr.ml" 26 911 946
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 27 950 956 "sysprep_operation_net_hwaddr.ml" 27 950 962
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 27 950 965 "sysprep_operation_net_hwaddr.ml" 27 950 966
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_net_hwaddr.ml" 25 866 889 "sysprep_operation_net_hwaddr.ml" 25 866 890
+)
+"sysprep_operation_net_hwaddr.ml" 27 950 965 "sysprep_operation_net_hwaddr.ml" 27 950 985
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_net_hwaddr.ml" 27 950 986 "sysprep_operation_net_hwaddr.ml" 27 950 990
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_net_hwaddr.ml" 25 866 891 "sysprep_operation_net_hwaddr.ml" 25 866 895
+)
+"sysprep_operation_net_hwaddr.ml" 27 950 965 "sysprep_operation_net_hwaddr.ml" 27 950 990
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 28 994 1002 "sysprep_operation_net_hwaddr.ml" 28 994 1005
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_net_hwaddr.ml" 26 911 917 "sysprep_operation_net_hwaddr.ml" 26 911 920
+)
+"sysprep_operation_net_hwaddr.ml" 28 994 1007 "sysprep_operation_net_hwaddr.ml" 28 994 1013
+type(
+  string
+)
+ident(
+  int_ref distro "sysprep_operation_net_hwaddr.ml" 27 950 956 "sysprep_operation_net_hwaddr.ml" 27 950 962
+)
+"sysprep_operation_net_hwaddr.ml" 28 994 1002 "sysprep_operation_net_hwaddr.ml" 28 994 1013
+type(
+  string * string
+)
+"sysprep_operation_net_hwaddr.ml" 29 1019 1023 "sysprep_operation_net_hwaddr.ml" 29 1019 1030
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 29 1019 1033 "sysprep_operation_net_hwaddr.ml" 29 1019 1041
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 29 1019 1042 "sysprep_operation_net_hwaddr.ml" 29 1019 1048
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 29 1019 1033 "sysprep_operation_net_hwaddr.ml" 29 1019 1048
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 29 1019 1049 "sysprep_operation_net_hwaddr.ml" 29 1019 1057
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 29 1019 1033 "sysprep_operation_net_hwaddr.ml" 29 1019 1057
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 29 1019 1058 "sysprep_operation_net_hwaddr.ml" 29 1019 1075
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 29 1019 1033 "sysprep_operation_net_hwaddr.ml" 29 1019 1075
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 29 1019 1076 "sysprep_operation_net_hwaddr.ml" 29 1019 1090
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 29 1019 1032 "sysprep_operation_net_hwaddr.ml" 29 1019 1091
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 29 1019 1023 "sysprep_operation_net_hwaddr.ml" 29 1019 1091
+type(
+  string * string
+)
+"sysprep_operation_net_hwaddr.ml" 30 1095 1103 "sysprep_operation_net_hwaddr.ml" 30 1095 1112
+type(
+  'a array
+)
+"sysprep_operation_net_hwaddr.ml" 30 1095 1115 "sysprep_operation_net_hwaddr.ml" 30 1095 1116
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_net_hwaddr.ml" 25 866 889 "sysprep_operation_net_hwaddr.ml" 25 866 890
+)
+"sysprep_operation_net_hwaddr.ml" 30 1095 1115 "sysprep_operation_net_hwaddr.ml" 30 1095 1128
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_net_hwaddr.ml" 30 1095 1129 "sysprep_operation_net_hwaddr.ml" 30 1095 1169
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 30 1095 1115 "sysprep_operation_net_hwaddr.ml" 30 1095 1169
+type(
+  'a array
+)
+"sysprep_operation_net_hwaddr.ml" 31 1173 1177 "sysprep_operation_net_hwaddr.ml" 31 1173 1187
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_net_hwaddr.ml" 32 1190 1200 "sysprep_operation_net_hwaddr.ml" 32 1190 1208
+type(
+  'a
+)
+ident(
+  def filename "sysprep_operation_net_hwaddr.ml" 34 1252 1260 "sysprep_operation_net_hwaddr.ml" 40 1508 1544
+)
+"sysprep_operation_net_hwaddr.ml" 34 1252 1264 "sysprep_operation_net_hwaddr.ml" 34 1252 1269
+type(
+  string list
+)
+"sysprep_operation_net_hwaddr.ml" 34 1252 1272 "sysprep_operation_net_hwaddr.ml" 34 1252 1285
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"sysprep_operation_net_hwaddr.ml" 34 1252 1287 "sysprep_operation_net_hwaddr.ml" 34 1252 1288
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_net_hwaddr.ml" 25 866 889 "sysprep_operation_net_hwaddr.ml" 25 866 890
+)
+"sysprep_operation_net_hwaddr.ml" 34 1252 1287 "sysprep_operation_net_hwaddr.ml" 34 1252 1299
+call(
+  stack
+)
+type(
+  'a -> string array
+)
+"sysprep_operation_net_hwaddr.ml" 34 1252 1300 "sysprep_operation_net_hwaddr.ml" 34 1252 1308
+type(
+  'a
+)
+ident(
+  int_ref filename "sysprep_operation_net_hwaddr.ml" 32 1190 1200 "sysprep_operation_net_hwaddr.ml" 32 1190 1208
+)
+"sysprep_operation_net_hwaddr.ml" 34 1252 1286 "sysprep_operation_net_hwaddr.ml" 34 1252 1309
+type(
+  string array
+)
+"sysprep_operation_net_hwaddr.ml" 34 1252 1272 "sysprep_operation_net_hwaddr.ml" 34 1252 1309
+call(
+  stack
+)
+type(
+  string list
+)
+"sysprep_operation_net_hwaddr.ml" 35 1313 1325 "sysprep_operation_net_hwaddr.ml" 35 1313 1330
+type(
+  string list
+)
+"sysprep_operation_net_hwaddr.ml" 35 1313 1333 "sysprep_operation_net_hwaddr.ml" 35 1313 1344
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"sysprep_operation_net_hwaddr.ml" 36 1347 1361 "sysprep_operation_net_hwaddr.ml" 36 1347 1365
+type(
+  string
+)
+ident(
+  def line "sysprep_operation_net_hwaddr.ml" 36 1347 1369 "sysprep_operation_net_hwaddr.ml" 36 1347 1403
+)
+"sysprep_operation_net_hwaddr.ml" 36 1347 1369 "sysprep_operation_net_hwaddr.ml" 36 1347 1372
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"sysprep_operation_net_hwaddr.ml" 36 1347 1374 "sysprep_operation_net_hwaddr.ml" 36 1347 1387
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Common_utils.string_prefix
+)
+"sysprep_operation_net_hwaddr.ml" 36 1347 1388 "sysprep_operation_net_hwaddr.ml" 36 1347 1392
+type(
+  string
+)
+ident(
+  int_ref line "sysprep_operation_net_hwaddr.ml" 36 1347 1361 "sysprep_operation_net_hwaddr.ml" 36 1347 1365
+)
+"sysprep_operation_net_hwaddr.ml" 36 1347 1393 "sysprep_operation_net_hwaddr.ml" 36 1347 1402
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 36 1347 1373 "sysprep_operation_net_hwaddr.ml" 36 1347 1403
+call(
+  stack
+)
+type(
+  bool
+)
+"sysprep_operation_net_hwaddr.ml" 36 1347 1369 "sysprep_operation_net_hwaddr.ml" 36 1347 1403
+type(
+  bool
+)
+"sysprep_operation_net_hwaddr.ml" 35 1313 1345 "sysprep_operation_net_hwaddr.ml" 37 1404 1413
+type(
+  string -> bool
+)
+"sysprep_operation_net_hwaddr.ml" 37 1404 1414 "sysprep_operation_net_hwaddr.ml" 37 1404 1419
+type(
+  string list
+)
+ident(
+  int_ref lines "sysprep_operation_net_hwaddr.ml" 34 1252 1264 "sysprep_operation_net_hwaddr.ml" 34 1252 1269
+)
+"sysprep_operation_net_hwaddr.ml" 35 1313 1333 "sysprep_operation_net_hwaddr.ml" 37 1404 1419
+call(
+  stack
+)
+type(
+  string list
+)
+"sysprep_operation_net_hwaddr.ml" 38 1423 1435 "sysprep_operation_net_hwaddr.ml" 38 1423 1439
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 38 1423 1442 "sysprep_operation_net_hwaddr.ml" 38 1423 1455
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"sysprep_operation_net_hwaddr.ml" 38 1423 1456 "sysprep_operation_net_hwaddr.ml" 38 1423 1460
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 38 1423 1461 "sysprep_operation_net_hwaddr.ml" 38 1423 1466
+type(
+  string list
+)
+ident(
+  int_ref lines "sysprep_operation_net_hwaddr.ml" 35 1313 1325 "sysprep_operation_net_hwaddr.ml" 35 1313 1330
+)
+"sysprep_operation_net_hwaddr.ml" 38 1423 1442 "sysprep_operation_net_hwaddr.ml" 38 1423 1466
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 38 1423 1467 "sysprep_operation_net_hwaddr.ml" 38 1423 1468
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_net_hwaddr.ml" 38 1423 1469 "sysprep_operation_net_hwaddr.ml" 38 1423 1473
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 38 1423 1442 "sysprep_operation_net_hwaddr.ml" 38 1423 1473
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 39 1477 1485 "sysprep_operation_net_hwaddr.ml" 39 1477 1486
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_net_hwaddr.ml" 25 866 889 "sysprep_operation_net_hwaddr.ml" 25 866 890
+)
+"sysprep_operation_net_hwaddr.ml" 39 1477 1485 "sysprep_operation_net_hwaddr.ml" 39 1477 1492
+call(
+  stack
+)
+type(
+  'a -> string -> 'c
+)
+"sysprep_operation_net_hwaddr.ml" 39 1477 1493 "sysprep_operation_net_hwaddr.ml" 39 1477 1501
+type(
+  'a
+)
+ident(
+  int_ref filename "sysprep_operation_net_hwaddr.ml" 32 1190 1200 "sysprep_operation_net_hwaddr.ml" 32 1190 1208
+)
+"sysprep_operation_net_hwaddr.ml" 39 1477 1502 "sysprep_operation_net_hwaddr.ml" 39 1477 1506
+type(
+  string
+)
+ident(
+  int_ref file "sysprep_operation_net_hwaddr.ml" 38 1423 1435 "sysprep_operation_net_hwaddr.ml" 38 1423 1439
+)
+"sysprep_operation_net_hwaddr.ml" 39 1477 1485 "sysprep_operation_net_hwaddr.ml" 39 1477 1506
+type(
+  'c
+)
+"sysprep_operation_net_hwaddr.ml" 40 1508 1516 "sysprep_operation_net_hwaddr.ml" 40 1508 1528
+type(
+  'e
+)
+ident(
+  int_ref side_effects "sysprep_operation_net_hwaddr.ml" 25 866 896 "sysprep_operation_net_hwaddr.ml" 25 866 908
+)
+"sysprep_operation_net_hwaddr.ml" 40 1508 1516 "sysprep_operation_net_hwaddr.ml" 40 1508 1541
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"sysprep_operation_net_hwaddr.ml" 40 1508 1542 "sysprep_operation_net_hwaddr.ml" 40 1508 1544
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 40 1508 1516 "sysprep_operation_net_hwaddr.ml" 40 1508 1544
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 39 1477 1485 "sysprep_operation_net_hwaddr.ml" 40 1508 1544
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 38 1423 1431 "sysprep_operation_net_hwaddr.ml" 40 1508 1544
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 35 1313 1321 "sysprep_operation_net_hwaddr.ml" 40 1508 1544
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 34 1252 1260 "sysprep_operation_net_hwaddr.ml" 40 1508 1544
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 31 1173 1188 "sysprep_operation_net_hwaddr.ml" 41 1545 1550
+type(
+  'a -> unit
+)
+"sysprep_operation_net_hwaddr.ml" 41 1545 1551 "sysprep_operation_net_hwaddr.ml" 41 1545 1560
+type(
+  'a array
+)
+ident(
+  int_ref filenames "sysprep_operation_net_hwaddr.ml" 30 1095 1103 "sysprep_operation_net_hwaddr.ml" 30 1095 1112
+)
+"sysprep_operation_net_hwaddr.ml" 31 1173 1177 "sysprep_operation_net_hwaddr.ml" 41 1545 1561
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 30 1095 1099 "sysprep_operation_net_hwaddr.ml" 41 1545 1561
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 43 1563 1567 "sysprep_operation_net_hwaddr.ml" 43 1563 1568
+type(
+  string * string
+)
+"sysprep_operation_net_hwaddr.ml" 43 1563 1572 "sysprep_operation_net_hwaddr.ml" 43 1563 1574
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 28 994 996 "sysprep_operation_net_hwaddr.ml" 43 1563 1574
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 27 950 952 "sysprep_operation_net_hwaddr.ml" 43 1563 1574
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 26 911 913 "sysprep_operation_net_hwaddr.ml" 43 1563 1574
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 45 1576 1580 "sysprep_operation_net_hwaddr.ml" 45 1576 1582
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_net_hwaddr.ml" 56 1904 1904 --
+)
+"sysprep_operation_net_hwaddr.ml" 46 1587 1589 "sysprep_operation_net_hwaddr.ml" 46 1587 1597
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_net_hwaddr.ml" 47 1603 1614 "sysprep_operation_net_hwaddr.ml" 47 1603 1626
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 48 1628 1653 "sysprep_operation_net_hwaddr.ml" 48 1628 1657
+type(
+  bool
+)
+"sysprep_operation_net_hwaddr.ml" 49 1659 1673 "sysprep_operation_net_hwaddr.ml" 49 1659 1675
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_net_hwaddr.ml" 49 1659 1675 "sysprep_operation_net_hwaddr.ml" 49 1659 1729
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 49 1659 1673 "sysprep_operation_net_hwaddr.ml" 49 1659 1729
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 50 1731 1759 "sysprep_operation_net_hwaddr.ml" 50 1731 1761
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_net_hwaddr.ml" 50 1731 1761 "sysprep_operation_net_hwaddr.ml" 52 1805 1844
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 50 1731 1758 "sysprep_operation_net_hwaddr.ml" 52 1805 1845
+type(
+  string
+)
+"sysprep_operation_net_hwaddr.ml" 50 1731 1753 "sysprep_operation_net_hwaddr.ml" 52 1805 1845
+type(
+  string option
+)
+"sysprep_operation_net_hwaddr.ml" 53 1847 1881 "sysprep_operation_net_hwaddr.ml" 53 1847 1899
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref net_hwaddr_perform "sysprep_operation_net_hwaddr.ml" 25 866 870 "sysprep_operation_net_hwaddr.ml" 25 866 888
+)
+"sysprep_operation_net_hwaddr.ml" 53 1847 1876 "sysprep_operation_net_hwaddr.ml" 53 1847 1899
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_net_hwaddr.ml" 45 1576 1585 "sysprep_operation_net_hwaddr.ml" 54 1901 1902
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_net_hwaddr.ml" 56 1904 1908 "sysprep_operation_net_hwaddr.ml" 56 1904 1910
+type(
+  unit
+)
+"sysprep_operation_net_hwaddr.ml" 56 1904 1913 "sysprep_operation_net_hwaddr.ml" 56 1904 1931
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_net_hwaddr.ml" 56 1904 1932 "sysprep_operation_net_hwaddr.ml" 56 1904 1934
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_net_hwaddr.ml" 45 1576 1580 "sysprep_operation_net_hwaddr.ml" 45 1576 1582
+)
+"sysprep_operation_net_hwaddr.ml" 56 1904 1913 "sysprep_operation_net_hwaddr.ml" 56 1904 1934
+call(
+  stack
+)
+type(
+  unit
+)

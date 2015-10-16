@@ -7,6 +7,7 @@ bzip2
 coreutils
 cpio
 cryptsetup
+curl
 diffutils
 dosfstools
 e2fsprogs
@@ -40,6 +41,7 @@ openssh-client
 parted
 procps
 psmisc
+qemu-utils
 reiserfsprogs
 rsync
 scrub
@@ -49,6 +51,7 @@ syslinux
 tar
 udev
 util-linux
+uuid-runtime
 vim-tiny
 xfsprogs
 xz-utils

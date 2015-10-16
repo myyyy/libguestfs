@@ -1,0 +1,196 @@
+"sysprep_operation_mail_spool.ml" 24 848 852 "sysprep_operation_mail_spool.ml" 24 848 870
+type(
+  < glob_expand : string -> 'a array; rm_rf : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def mail_spool_perform "sysprep_operation_mail_spool.ml" 32 1018 1018 --
+)
+"sysprep_operation_mail_spool.ml" 24 848 871 "sysprep_operation_mail_spool.ml" 24 848 872
+type(
+  < glob_expand : string -> 'a array; rm_rf : 'a -> unit; .. > as 'd
+)
+ident(
+  def g "sysprep_operation_mail_spool.ml" 24 848 873 "sysprep_operation_mail_spool.ml" 30 1013 1016
+)
+"sysprep_operation_mail_spool.ml" 24 848 873 "sysprep_operation_mail_spool.ml" 24 848 877
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_mail_spool.ml" 24 848 878 "sysprep_operation_mail_spool.ml" 30 1013 1016
+)
+"sysprep_operation_mail_spool.ml" 24 848 878 "sysprep_operation_mail_spool.ml" 24 848 890
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_mail_spool.ml" 25 893 895 "sysprep_operation_mail_spool.ml" 30 1013 1016
+)
+"sysprep_operation_mail_spool.ml" 25 893 895 "sysprep_operation_mail_spool.ml" 25 893 904
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_mail_spool.ml" 26 907 915 "sysprep_operation_mail_spool.ml" 26 907 919
+type(
+  string
+)
+ident(
+  def glob "sysprep_operation_mail_spool.ml" 26 907 923 "sysprep_operation_mail_spool.ml" 26 907 962
+)
+"sysprep_operation_mail_spool.ml" 26 907 923 "sysprep_operation_mail_spool.ml" 26 907 933
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_mail_spool.ml" 26 907 934 "sysprep_operation_mail_spool.ml" 26 907 935
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_mail_spool.ml" 24 848 871 "sysprep_operation_mail_spool.ml" 24 848 872
+)
+"sysprep_operation_mail_spool.ml" 26 907 934 "sysprep_operation_mail_spool.ml" 26 907 941
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_mail_spool.ml" 26 907 943 "sysprep_operation_mail_spool.ml" 26 907 944
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_mail_spool.ml" 24 848 871 "sysprep_operation_mail_spool.ml" 24 848 872
+)
+"sysprep_operation_mail_spool.ml" 26 907 943 "sysprep_operation_mail_spool.ml" 26 907 956
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_mail_spool.ml" 26 907 957 "sysprep_operation_mail_spool.ml" 26 907 961
+type(
+  string
+)
+ident(
+  int_ref glob "sysprep_operation_mail_spool.ml" 26 907 915 "sysprep_operation_mail_spool.ml" 26 907 919
+)
+"sysprep_operation_mail_spool.ml" 26 907 942 "sysprep_operation_mail_spool.ml" 26 907 962
+type(
+  'a array
+)
+"sysprep_operation_mail_spool.ml" 26 907 923 "sysprep_operation_mail_spool.ml" 26 907 962
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_mail_spool.ml" 25 893 905 "sysprep_operation_mail_spool.ml" 27 963 966
+type(
+  string -> unit
+)
+"sysprep_operation_mail_spool.ml" 28 969 973 "sysprep_operation_mail_spool.ml" 28 969 992
+type(
+  string
+)
+"sysprep_operation_mail_spool.ml" 29 994 998 "sysprep_operation_mail_spool.ml" 29 994 1011
+type(
+  string
+)
+"sysprep_operation_mail_spool.ml" 27 963 967 "sysprep_operation_mail_spool.ml" 30 1013 1016
+type(
+  string list
+)
+"sysprep_operation_mail_spool.ml" 25 893 895 "sysprep_operation_mail_spool.ml" 30 1013 1016
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_mail_spool.ml" 32 1018 1022 "sysprep_operation_mail_spool.ml" 32 1018 1024
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_mail_spool.ml" 40 1226 1226 --
+)
+"sysprep_operation_mail_spool.ml" 33 1029 1031 "sysprep_operation_mail_spool.ml" 33 1029 1039
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_mail_spool.ml" 34 1045 1056 "sysprep_operation_mail_spool.ml" 34 1045 1068
+type(
+  string
+)
+"sysprep_operation_mail_spool.ml" 35 1070 1095 "sysprep_operation_mail_spool.ml" 35 1070 1099
+type(
+  bool
+)
+"sysprep_operation_mail_spool.ml" 36 1101 1115 "sysprep_operation_mail_spool.ml" 36 1101 1117
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_mail_spool.ml" 36 1101 1117 "sysprep_operation_mail_spool.ml" 36 1101 1167
+type(
+  string
+)
+"sysprep_operation_mail_spool.ml" 36 1101 1115 "sysprep_operation_mail_spool.ml" 36 1101 1167
+type(
+  string
+)
+"sysprep_operation_mail_spool.ml" 37 1169 1203 "sysprep_operation_mail_spool.ml" 37 1169 1221
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref mail_spool_perform "sysprep_operation_mail_spool.ml" 24 848 852 "sysprep_operation_mail_spool.ml" 24 848 870
+)
+"sysprep_operation_mail_spool.ml" 37 1169 1198 "sysprep_operation_mail_spool.ml" 37 1169 1221
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_mail_spool.ml" 32 1018 1027 "sysprep_operation_mail_spool.ml" 38 1223 1224
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_mail_spool.ml" 40 1226 1230 "sysprep_operation_mail_spool.ml" 40 1226 1232
+type(
+  unit
+)
+"sysprep_operation_mail_spool.ml" 40 1226 1235 "sysprep_operation_mail_spool.ml" 40 1226 1253
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_mail_spool.ml" 40 1226 1254 "sysprep_operation_mail_spool.ml" 40 1226 1256
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_mail_spool.ml" 32 1018 1022 "sysprep_operation_mail_spool.ml" 32 1018 1024
+)
+"sysprep_operation_mail_spool.ml" 40 1226 1235 "sysprep_operation_mail_spool.ml" 40 1226 1256
+call(
+  stack
+)
+type(
+  unit
+)

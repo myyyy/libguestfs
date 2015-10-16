@@ -1,0 +1,414 @@
+"subscription_manager.ml" 31 946 954 "subscription_manager.ml" 31 946 980
+type(
+  string -> sm_credentials
+)
+ident(
+  def parse_credentials_selector "subscription_manager.ml" 31 946 946 --
+)
+"subscription_manager.ml" 31 946 981 "subscription_manager.ml" 31 946 984
+type(
+  string
+)
+ident(
+  def arg "subscription_manager.ml" 32 987 989 "subscription_manager.ml" 32 987 1048
+)
+"subscription_manager.ml" 32 987 989 "subscription_manager.ml" 32 987 1020
+type(
+  string -> string list -> sm_credentials
+)
+ident(
+  int_ref parse_credentials_selector_list "subscription_manager.ml" 34 1050 1054 "subscription_manager.ml" 34 1050 1085
+)
+"subscription_manager.ml" 32 987 1021 "subscription_manager.ml" 32 987 1024
+type(
+  string
+)
+ident(
+  int_ref arg "subscription_manager.ml" 31 946 981 "subscription_manager.ml" 31 946 984
+)
+"subscription_manager.ml" 32 987 1026 "subscription_manager.ml" 32 987 1039
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"subscription_manager.ml" 32 987 1040 "subscription_manager.ml" 32 987 1043
+type(
+  string
+)
+"subscription_manager.ml" 32 987 1044 "subscription_manager.ml" 32 987 1047
+type(
+  string
+)
+ident(
+  int_ref arg "subscription_manager.ml" 31 946 981 "subscription_manager.ml" 31 946 984
+)
+"subscription_manager.ml" 32 987 1025 "subscription_manager.ml" 32 987 1048
+call(
+  stack
+)
+type(
+  string list
+)
+"subscription_manager.ml" 32 987 989 "subscription_manager.ml" 32 987 1048
+call(
+  tail
+)
+type(
+  sm_credentials
+)
+"subscription_manager.ml" 34 1050 1054 "subscription_manager.ml" 34 1050 1085
+type(
+  string -> string list -> sm_credentials
+)
+ident(
+  def parse_credentials_selector_list "subscription_manager.ml" 31 946 946 --
+)
+"subscription_manager.ml" 34 1050 1086 "subscription_manager.ml" 34 1050 1094
+type(
+  string
+)
+ident(
+  def orig_arg "subscription_manager.ml" 34 1050 1097 "subscription_manager.ml" 40 1331 1410
+)
+"subscription_manager.ml" 35 1106 1112 "subscription_manager.ml" 35 1106 1120
+type(
+  string
+)
+ident(
+  def username "subscription_manager.ml" 36 1148 1152 "subscription_manager.ml" 36 1148 1202
+)
+"subscription_manager.ml" 35 1106 1122 "subscription_manager.ml" 35 1106 1132
+type(
+  string
+)
+"subscription_manager.ml" 35 1106 1134 "subscription_manager.ml" 35 1106 1142
+type(
+  string
+)
+ident(
+  def password "subscription_manager.ml" 36 1148 1152 "subscription_manager.ml" 36 1148 1202
+)
+"subscription_manager.ml" 35 1106 1110 "subscription_manager.ml" 35 1106 1144
+type(
+  string list
+)
+"subscription_manager.ml" 36 1148 1168 "subscription_manager.ml" 36 1148 1176
+type(
+  string
+)
+ident(
+  int_ref username "subscription_manager.ml" 35 1106 1112 "subscription_manager.ml" 35 1106 1120
+)
+"subscription_manager.ml" 36 1148 1192 "subscription_manager.ml" 36 1148 1200
+type(
+  string
+)
+ident(
+  int_ref password "subscription_manager.ml" 35 1106 1134 "subscription_manager.ml" 35 1106 1142
+)
+"subscription_manager.ml" 36 1148 1152 "subscription_manager.ml" 36 1148 1202
+type(
+  sm_credentials
+)
+"subscription_manager.ml" 37 1203 1209 "subscription_manager.ml" 37 1203 1217
+type(
+  string
+)
+ident(
+  def username "subscription_manager.ml" 38 1241 1245 "subscription_manager.ml" 38 1241 1321
+)
+"subscription_manager.ml" 37 1203 1219 "subscription_manager.ml" 37 1203 1225
+type(
+  string
+)
+"subscription_manager.ml" 37 1203 1227 "subscription_manager.ml" 37 1203 1235
+type(
+  string
+)
+ident(
+  def filename "subscription_manager.ml" 38 1241 1245 "subscription_manager.ml" 38 1241 1321
+)
+"subscription_manager.ml" 37 1203 1207 "subscription_manager.ml" 37 1203 1237
+type(
+  string list
+)
+"subscription_manager.ml" 38 1241 1261 "subscription_manager.ml" 38 1241 1269
+type(
+  string
+)
+ident(
+  int_ref username "subscription_manager.ml" 37 1203 1209 "subscription_manager.ml" 37 1203 1217
+)
+"subscription_manager.ml" 38 1241 1285 "subscription_manager.ml" 38 1241 1310
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.read_first_line_from_file
+)
+"subscription_manager.ml" 38 1241 1311 "subscription_manager.ml" 38 1241 1319
+type(
+  string
+)
+ident(
+  int_ref filename "subscription_manager.ml" 37 1203 1227 "subscription_manager.ml" 37 1203 1235
+)
+"subscription_manager.ml" 38 1241 1285 "subscription_manager.ml" 38 1241 1319
+call(
+  stack
+)
+type(
+  string
+)
+"subscription_manager.ml" 38 1241 1245 "subscription_manager.ml" 38 1241 1321
+type(
+  sm_credentials
+)
+"subscription_manager.ml" 39 1322 1326 "subscription_manager.ml" 39 1322 1327
+type(
+  string list
+)
+"subscription_manager.ml" 40 1331 1335 "subscription_manager.ml" 40 1331 1340
+type(
+  ?exit_code:int ->
+  (string -> sm_credentials, unit, string, sm_credentials) format4 ->
+  string -> sm_credentials
+)
+ident(
+  ext_ref Common_utils.error
+)
+"subscription_manager.ml" 40 1331 1342 "subscription_manager.ml" 40 1331 1344
+type(
+  (string -> sm_credentials, unit, string, string, string, sm_credentials)
+  format6 -> (string -> sm_credentials, unit, string, sm_credentials) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"subscription_manager.ml" 40 1331 1344 "subscription_manager.ml" 40 1331 1400
+type(
+  (string -> sm_credentials, unit, string, string, string, sm_credentials)
+  format6
+)
+"subscription_manager.ml" 40 1331 1341 "subscription_manager.ml" 40 1331 1401
+type(
+  (string -> sm_credentials, unit, string, sm_credentials) format4
+)
+"subscription_manager.ml" 40 1331 1402 "subscription_manager.ml" 40 1331 1410
+type(
+  string
+)
+ident(
+  int_ref orig_arg "subscription_manager.ml" 34 1050 1086 "subscription_manager.ml" 34 1050 1094
+)
+"subscription_manager.ml" 40 1331 1335 "subscription_manager.ml" 40 1331 1410
+call(
+  tail
+)
+type(
+  sm_credentials
+)
+"subscription_manager.ml" 34 1050 1097 "subscription_manager.ml" 40 1331 1410
+type(
+  string list -> sm_credentials
+)
+"subscription_manager.ml" 42 1412 1420 "subscription_manager.ml" 42 1412 1439
+type(
+  string -> sm_pool
+)
+ident(
+  def parse_pool_selector "subscription_manager.ml" 42 1412 1412 --
+)
+"subscription_manager.ml" 42 1412 1440 "subscription_manager.ml" 42 1412 1443
+type(
+  string
+)
+ident(
+  def arg "subscription_manager.ml" 43 1446 1448 "subscription_manager.ml" 43 1446 1500
+)
+"subscription_manager.ml" 43 1446 1448 "subscription_manager.ml" 43 1446 1472
+type(
+  string -> string list -> sm_pool
+)
+ident(
+  int_ref parse_pool_selector_list "subscription_manager.ml" 45 1502 1506 "subscription_manager.ml" 45 1502 1530
+)
+"subscription_manager.ml" 43 1446 1473 "subscription_manager.ml" 43 1446 1476
+type(
+  string
+)
+ident(
+  int_ref arg "subscription_manager.ml" 42 1412 1440 "subscription_manager.ml" 42 1412 1443
+)
+"subscription_manager.ml" 43 1446 1478 "subscription_manager.ml" 43 1446 1491
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"subscription_manager.ml" 43 1446 1492 "subscription_manager.ml" 43 1446 1495
+type(
+  string
+)
+"subscription_manager.ml" 43 1446 1496 "subscription_manager.ml" 43 1446 1499
+type(
+  string
+)
+ident(
+  int_ref arg "subscription_manager.ml" 42 1412 1440 "subscription_manager.ml" 42 1412 1443
+)
+"subscription_manager.ml" 43 1446 1477 "subscription_manager.ml" 43 1446 1500
+call(
+  stack
+)
+type(
+  string list
+)
+"subscription_manager.ml" 43 1446 1448 "subscription_manager.ml" 43 1446 1500
+call(
+  tail
+)
+type(
+  sm_pool
+)
+"subscription_manager.ml" 45 1502 1506 "subscription_manager.ml" 45 1502 1530
+type(
+  string -> string list -> sm_pool
+)
+ident(
+  def parse_pool_selector_list "subscription_manager.ml" 42 1412 1412 --
+)
+"subscription_manager.ml" 45 1502 1531 "subscription_manager.ml" 45 1502 1539
+type(
+  string
+)
+ident(
+  def orig_arg "subscription_manager.ml" 45 1502 1542 "subscription_manager.ml" 53 1707 1781
+)
+"subscription_manager.ml" 46 1551 1557 "subscription_manager.ml" 46 1551 1563
+type(
+  string
+)
+"subscription_manager.ml" 46 1551 1555 "subscription_manager.ml" 46 1551 1565
+type(
+  string list
+)
+"subscription_manager.ml" 47 1569 1573 "subscription_manager.ml" 47 1569 1581
+type(
+  sm_pool
+)
+"subscription_manager.ml" 48 1582 1588 "subscription_manager.ml" 48 1582 1594
+type(
+  string
+)
+"subscription_manager.ml" 48 1582 1596 "subscription_manager.ml" 48 1582 1600
+type(
+  string
+)
+ident(
+  def pool "subscription_manager.ml" 49 1606 1610 "subscription_manager.ml" 49 1606 1621
+)
+"subscription_manager.ml" 48 1582 1586 "subscription_manager.ml" 48 1582 1602
+type(
+  string list
+)
+"subscription_manager.ml" 49 1606 1617 "subscription_manager.ml" 49 1606 1621
+type(
+  string
+)
+ident(
+  int_ref pool "subscription_manager.ml" 48 1582 1596 "subscription_manager.ml" 48 1582 1600
+)
+"subscription_manager.ml" 49 1606 1610 "subscription_manager.ml" 49 1606 1621
+type(
+  sm_pool
+)
+"subscription_manager.ml" 50 1622 1628 "subscription_manager.ml" 50 1622 1634
+type(
+  string
+)
+"subscription_manager.ml" 50 1622 1636 "subscription_manager.ml" 50 1622 1644
+type(
+  string
+)
+ident(
+  def filename "subscription_manager.ml" 51 1650 1654 "subscription_manager.ml" 51 1650 1697
+)
+"subscription_manager.ml" 50 1622 1626 "subscription_manager.ml" 50 1622 1646
+type(
+  string list
+)
+"subscription_manager.ml" 51 1650 1662 "subscription_manager.ml" 51 1650 1687
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.read_first_line_from_file
+)
+"subscription_manager.ml" 51 1650 1688 "subscription_manager.ml" 51 1650 1696
+type(
+  string
+)
+ident(
+  int_ref filename "subscription_manager.ml" 50 1622 1636 "subscription_manager.ml" 50 1622 1644
+)
+"subscription_manager.ml" 51 1650 1661 "subscription_manager.ml" 51 1650 1697
+call(
+  stack
+)
+type(
+  string
+)
+"subscription_manager.ml" 51 1650 1654 "subscription_manager.ml" 51 1650 1697
+type(
+  sm_pool
+)
+"subscription_manager.ml" 52 1698 1702 "subscription_manager.ml" 52 1698 1703
+type(
+  string list
+)
+"subscription_manager.ml" 53 1707 1711 "subscription_manager.ml" 53 1707 1716
+type(
+  ?exit_code:int ->
+  (string -> sm_pool, unit, string, sm_pool) format4 -> string -> sm_pool
+)
+ident(
+  ext_ref Common_utils.error
+)
+"subscription_manager.ml" 53 1707 1718 "subscription_manager.ml" 53 1707 1720
+type(
+  (string -> sm_pool, unit, string, string, string, sm_pool) format6 ->
+  (string -> sm_pool, unit, string, sm_pool) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"subscription_manager.ml" 53 1707 1720 "subscription_manager.ml" 53 1707 1771
+type(
+  (string -> sm_pool, unit, string, string, string, sm_pool) format6
+)
+"subscription_manager.ml" 53 1707 1717 "subscription_manager.ml" 53 1707 1772
+type(
+  (string -> sm_pool, unit, string, sm_pool) format4
+)
+"subscription_manager.ml" 53 1707 1773 "subscription_manager.ml" 53 1707 1781
+type(
+  string
+)
+ident(
+  int_ref orig_arg "subscription_manager.ml" 45 1502 1531 "subscription_manager.ml" 45 1502 1539
+)
+"subscription_manager.ml" 53 1707 1711 "subscription_manager.ml" 53 1707 1781
+call(
+  tail
+)
+type(
+  sm_pool
+)
+"subscription_manager.ml" 45 1502 1542 "subscription_manager.ml" 53 1707 1781
+type(
+  string list -> sm_pool
+)

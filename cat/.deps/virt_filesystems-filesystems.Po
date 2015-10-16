@@ -56,8 +56,7 @@ virt_filesystems-filesystems.o: filesystems.c ../config.h \
  ../gnulib/lib/human.h ../gnulib/lib/xstrtol.h ../src/guestfs.h \
  ../fish/options.h ../src/guestfs-internal-frontend.h \
  ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h
+ ../src/guestfs-internal-frontend-cleanups.h
 
 ../config.h:
 
@@ -236,5 +235,3 @@ virt_filesystems-filesystems.o: filesystems.c ../config.h \
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:

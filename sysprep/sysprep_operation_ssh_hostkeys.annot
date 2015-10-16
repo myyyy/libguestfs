@@ -1,0 +1,252 @@
+"sysprep_operation_ssh_hostkeys.ml" 24 848 852 "sysprep_operation_ssh_hostkeys.ml" 24 848 872
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def ssh_hostkeys_perform "sysprep_operation_ssh_hostkeys.ml" 31 1047 1047 --
+)
+"sysprep_operation_ssh_hostkeys.ml" 24 848 873 "sysprep_operation_ssh_hostkeys.ml" 24 848 874
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_ssh_hostkeys.ml" 24 848 875 "sysprep_operation_ssh_hostkeys.ml" 29 1042 1045
+)
+"sysprep_operation_ssh_hostkeys.ml" 24 848 875 "sysprep_operation_ssh_hostkeys.ml" 24 848 879
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_ssh_hostkeys.ml" 24 848 880 "sysprep_operation_ssh_hostkeys.ml" 29 1042 1045
+)
+"sysprep_operation_ssh_hostkeys.ml" 24 848 880 "sysprep_operation_ssh_hostkeys.ml" 24 848 892
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_ssh_hostkeys.ml" 25 895 897 "sysprep_operation_ssh_hostkeys.ml" 29 1042 1045
+)
+"sysprep_operation_ssh_hostkeys.ml" 25 895 901 "sysprep_operation_ssh_hostkeys.ml" 25 895 904
+type(
+  string
+)
+"sysprep_operation_ssh_hostkeys.ml" 25 895 907 "sysprep_operation_ssh_hostkeys.ml" 25 895 908
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_ssh_hostkeys.ml" 24 848 873 "sysprep_operation_ssh_hostkeys.ml" 24 848 874
+)
+"sysprep_operation_ssh_hostkeys.ml" 25 895 907 "sysprep_operation_ssh_hostkeys.ml" 25 895 925
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_ssh_hostkeys.ml" 25 895 926 "sysprep_operation_ssh_hostkeys.ml" 25 895 930
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_ssh_hostkeys.ml" 24 848 875 "sysprep_operation_ssh_hostkeys.ml" 24 848 879
+)
+"sysprep_operation_ssh_hostkeys.ml" 25 895 907 "sysprep_operation_ssh_hostkeys.ml" 25 895 930
+type(
+  string
+)
+"sysprep_operation_ssh_hostkeys.ml" 26 934 939 "sysprep_operation_ssh_hostkeys.ml" 26 934 942
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_ssh_hostkeys.ml" 25 895 901 "sysprep_operation_ssh_hostkeys.ml" 25 895 904
+)
+"sysprep_operation_ssh_hostkeys.ml" 26 934 943 "sysprep_operation_ssh_hostkeys.ml" 26 934 945
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_ssh_hostkeys.ml" 26 934 946 "sysprep_operation_ssh_hostkeys.ml" 26 934 955
+type(
+  string
+)
+"sysprep_operation_ssh_hostkeys.ml" 26 934 939 "sysprep_operation_ssh_hostkeys.ml" 26 934 955
+type(
+  bool
+)
+"sysprep_operation_ssh_hostkeys.ml" 27 963 971 "sysprep_operation_ssh_hostkeys.ml" 27 963 976
+type(
+  'a array
+)
+"sysprep_operation_ssh_hostkeys.ml" 27 963 979 "sysprep_operation_ssh_hostkeys.ml" 27 963 980
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_ssh_hostkeys.ml" 24 848 873 "sysprep_operation_ssh_hostkeys.ml" 24 848 874
+)
+"sysprep_operation_ssh_hostkeys.ml" 27 963 979 "sysprep_operation_ssh_hostkeys.ml" 27 963 992
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_ssh_hostkeys.ml" 27 963 993 "sysprep_operation_ssh_hostkeys.ml" 27 963 1012
+type(
+  string
+)
+"sysprep_operation_ssh_hostkeys.ml" 27 963 979 "sysprep_operation_ssh_hostkeys.ml" 27 963 1012
+type(
+  'a array
+)
+"sysprep_operation_ssh_hostkeys.ml" 28 1016 1020 "sysprep_operation_ssh_hostkeys.ml" 28 1016 1030
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_ssh_hostkeys.ml" 28 1016 1031 "sysprep_operation_ssh_hostkeys.ml" 28 1016 1032
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_ssh_hostkeys.ml" 24 848 873 "sysprep_operation_ssh_hostkeys.ml" 24 848 874
+)
+"sysprep_operation_ssh_hostkeys.ml" 28 1016 1031 "sysprep_operation_ssh_hostkeys.ml" 28 1016 1035
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_ssh_hostkeys.ml" 28 1016 1036 "sysprep_operation_ssh_hostkeys.ml" 28 1016 1041
+type(
+  'a array
+)
+ident(
+  int_ref files "sysprep_operation_ssh_hostkeys.ml" 27 963 971 "sysprep_operation_ssh_hostkeys.ml" 27 963 976
+)
+"sysprep_operation_ssh_hostkeys.ml" 28 1016 1020 "sysprep_operation_ssh_hostkeys.ml" 28 1016 1041
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_ssh_hostkeys.ml" 26 934 961 "sysprep_operation_ssh_hostkeys.ml" 29 1042 1045
+type(
+  unit
+)
+"sysprep_operation_ssh_hostkeys.ml" 26 934 936 "sysprep_operation_ssh_hostkeys.ml" 29 1042 1045
+type(
+  unit
+)
+"sysprep_operation_ssh_hostkeys.ml" 25 895 897 "sysprep_operation_ssh_hostkeys.ml" 29 1042 1045
+type(
+  unit
+)
+"sysprep_operation_ssh_hostkeys.ml" 31 1047 1051 "sysprep_operation_ssh_hostkeys.ml" 31 1047 1053
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_ssh_hostkeys.ml" 50 1721 1721 --
+)
+"sysprep_operation_ssh_hostkeys.ml" 32 1058 1060 "sysprep_operation_ssh_hostkeys.ml" 32 1058 1068
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_ssh_hostkeys.ml" 33 1074 1085 "sysprep_operation_ssh_hostkeys.ml" 33 1074 1099
+type(
+  string
+)
+"sysprep_operation_ssh_hostkeys.ml" 34 1101 1126 "sysprep_operation_ssh_hostkeys.ml" 34 1101 1130
+type(
+  bool
+)
+"sysprep_operation_ssh_hostkeys.ml" 35 1132 1146 "sysprep_operation_ssh_hostkeys.ml" 35 1132 1148
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_ssh_hostkeys.ml" 35 1132 1148 "sysprep_operation_ssh_hostkeys.ml" 35 1132 1187
+type(
+  string
+)
+"sysprep_operation_ssh_hostkeys.ml" 35 1132 1146 "sysprep_operation_ssh_hostkeys.ml" 35 1132 1187
+type(
+  string
+)
+"sysprep_operation_ssh_hostkeys.ml" 36 1189 1217 "sysprep_operation_ssh_hostkeys.ml" 36 1189 1219
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_ssh_hostkeys.ml" 36 1189 1219 "sysprep_operation_ssh_hostkeys.ml" 46 1604 1659
+type(
+  string
+)
+"sysprep_operation_ssh_hostkeys.ml" 36 1189 1216 "sysprep_operation_ssh_hostkeys.ml" 46 1604 1660
+type(
+  string
+)
+"sysprep_operation_ssh_hostkeys.ml" 36 1189 1211 "sysprep_operation_ssh_hostkeys.ml" 46 1604 1660
+type(
+  string option
+)
+"sysprep_operation_ssh_hostkeys.ml" 47 1662 1696 "sysprep_operation_ssh_hostkeys.ml" 47 1662 1716
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref ssh_hostkeys_perform "sysprep_operation_ssh_hostkeys.ml" 24 848 852 "sysprep_operation_ssh_hostkeys.ml" 24 848 872
+)
+"sysprep_operation_ssh_hostkeys.ml" 47 1662 1691 "sysprep_operation_ssh_hostkeys.ml" 47 1662 1716
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_ssh_hostkeys.ml" 31 1047 1056 "sysprep_operation_ssh_hostkeys.ml" 48 1718 1719
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_ssh_hostkeys.ml" 50 1721 1725 "sysprep_operation_ssh_hostkeys.ml" 50 1721 1727
+type(
+  unit
+)
+"sysprep_operation_ssh_hostkeys.ml" 50 1721 1730 "sysprep_operation_ssh_hostkeys.ml" 50 1721 1748
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_ssh_hostkeys.ml" 50 1721 1749 "sysprep_operation_ssh_hostkeys.ml" 50 1721 1751
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_ssh_hostkeys.ml" 31 1047 1051 "sysprep_operation_ssh_hostkeys.ml" 31 1047 1053
+)
+"sysprep_operation_ssh_hostkeys.ml" 50 1721 1730 "sysprep_operation_ssh_hostkeys.ml" 50 1721 1751
+call(
+  stack
+)
+type(
+  unit
+)

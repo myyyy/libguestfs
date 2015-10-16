@@ -1,0 +1,5051 @@
+"copying.ml" 40 1179 1183 "copying.ml" 40 1179 1186
+type(
+  string ->
+  string ->
+  [< `Continue | `Fail | `Ignore | `Warn ] ->
+  bool ->
+  string option ->
+  string option ->
+  string list ->
+  bool -> string option -> string option -> string list -> unit
+)
+ident(
+  def run "copying.ml" 344 11352 11460 --
+)
+"copying.ml" 40 1179 1187 "copying.ml" 40 1179 1193
+type(
+  string
+)
+ident(
+  def indisk "copying.ml" 40 1179 1194 "copying.ml" 344 11352 11460
+)
+"copying.ml" 40 1179 1194 "copying.ml" 40 1179 1201
+type(
+  string
+)
+ident(
+  def outdisk "copying.ml" 40 1179 1202 "copying.ml" 344 11352 11460
+)
+"copying.ml" 40 1179 1202 "copying.ml" 40 1179 1214
+type(
+  [< `Continue | `Fail | `Ignore | `Warn ] as 'a
+)
+ident(
+  def check_tmpdir "copying.ml" 40 1179 1215 "copying.ml" 344 11352 11460
+)
+"copying.ml" 40 1179 1215 "copying.ml" 40 1179 1223
+type(
+  bool
+)
+ident(
+  def compress "copying.ml" 40 1179 1224 "copying.ml" 344 11352 11460
+)
+"copying.ml" 40 1179 1224 "copying.ml" 40 1179 1231
+type(
+  string option
+)
+ident(
+  def convert "copying.ml" 41 1232 1236 "copying.ml" 344 11352 11460
+)
+"copying.ml" 41 1232 1236 "copying.ml" 41 1232 1242
+type(
+  string option
+)
+ident(
+  def format "copying.ml" 41 1232 1243 "copying.ml" 344 11352 11460
+)
+"copying.ml" 41 1232 1243 "copying.ml" 41 1232 1250
+type(
+  string list
+)
+ident(
+  def ignores "copying.ml" 41 1232 1251 "copying.ml" 344 11352 11460
+)
+"copying.ml" 41 1232 1251 "copying.ml" 41 1232 1267
+type(
+  bool
+)
+ident(
+  def machine_readable "copying.ml" 41 1232 1268 "copying.ml" 344 11352 11460
+)
+"copying.ml" 41 1232 1268 "copying.ml" 41 1232 1274
+type(
+  string option
+)
+ident(
+  def option "copying.ml" 41 1232 1275 "copying.ml" 344 11352 11460
+)
+"copying.ml" 41 1232 1275 "copying.ml" 41 1232 1284
+type(
+  string option
+)
+ident(
+  def tmp_param "copying.ml" 41 1232 1285 "copying.ml" 344 11352 11460
+)
+"copying.ml" 41 1232 1285 "copying.ml" 41 1232 1291
+type(
+  string list
+)
+ident(
+  def zeroes "copying.ml" 49 1592 1594 "copying.ml" 344 11352 11460
+)
+"copying.ml" 49 1592 1598 "copying.ml" 49 1592 1607
+type(
+  'b -> 'c
+)
+"copying.ml" 49 1592 1608 "copying.ml" 49 1592 1609
+type(
+  'b
+)
+"copying.ml" 49 1592 1612 "copying.ml" 49 1592 1616
+type(
+  int -> 'c
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"copying.ml" 49 1592 1617 "copying.ml" 49 1592 1618
+type(
+  int
+)
+"copying.ml" 49 1592 1612 "copying.ml" 49 1592 1618
+call(
+  tail
+)
+type(
+  'c
+)
+"copying.ml" 50 1622 1624 "copying.ml" 50 1622 1638
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"copying.ml" 50 1622 1639 "copying.ml" 50 1622 1649
+type(
+  int
+)
+ident(
+  ext_ref Sys.sigint
+)
+"copying.ml" 50 1622 1669 "copying.ml" 50 1622 1678
+type(
+  int -> unit
+)
+ident(
+  int_ref do_sigint "copying.ml" 49 1592 1598 "copying.ml" 49 1592 1607
+)
+"copying.ml" 50 1622 1650 "copying.ml" 50 1622 1679
+type(
+  Sys.signal_behavior
+)
+"copying.ml" 50 1622 1624 "copying.ml" 50 1622 1679
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 55 1820 1826 "copying.ml" 55 1820 1839
+type(
+  string
+)
+"copying.ml" 56 1842 1852 "copying.ml" 56 1842 1859
+type(
+  string option
+)
+ident(
+  int_ref convert "copying.ml" 40 1179 1224 "copying.ml" 40 1179 1231
+)
+"copying.ml" 57 1865 1876 "copying.ml" 57 1865 1879
+type(
+  string
+)
+ident(
+  def fmt "copying.ml" 57 1865 1883 "copying.ml" 57 1865 1886
+)
+"copying.ml" 57 1865 1871 "copying.ml" 57 1865 1879
+type(
+  string option
+)
+"copying.ml" 57 1865 1883 "copying.ml" 57 1865 1886
+type(
+  string
+)
+ident(
+  int_ref fmt "copying.ml" 57 1865 1876 "copying.ml" 57 1865 1879
+)
+"copying.ml" 58 1936 1942 "copying.ml" 58 1936 1946
+type(
+  string option
+)
+"copying.ml" 59 1950 1962 "copying.ml" 59 1950 1968
+type(
+  string option
+)
+ident(
+  int_ref format "copying.ml" 41 1232 1236 "copying.ml" 41 1232 1242
+)
+"copying.ml" 60 1974 1987 "copying.ml" 60 1974 1990
+type(
+  string
+)
+ident(
+  def fmt "copying.ml" 60 1974 1994 "copying.ml" 60 1974 1997
+)
+"copying.ml" 60 1974 1982 "copying.ml" 60 1974 1990
+type(
+  string option
+)
+"copying.ml" 60 1974 1994 "copying.ml" 60 1974 1997
+type(
+  string
+)
+ident(
+  int_ref fmt "copying.ml" 60 1974 1987 "copying.ml" 60 1974 1990
+)
+"copying.ml" 61 2045 2053 "copying.ml" 61 2045 2057
+type(
+  string option
+)
+"copying.ml" 63 2110 2125 "copying.ml" 63 2110 2138
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> G.guestfs
+)
+"copying.ml" 63 2110 2139 "copying.ml" 63 2110 2141
+type(
+  unit
+)
+"copying.ml" 63 2110 2124 "copying.ml" 63 2110 2142
+call(
+  stack
+)
+type(
+  G.guestfs
+)
+"copying.ml" 63 2110 2124 "copying.ml" 63 2110 2154
+call(
+  stack
+)
+type(
+  string -> string
+)
+"copying.ml" 63 2110 2155 "copying.ml" 63 2110 2161
+type(
+  string
+)
+ident(
+  int_ref indisk "copying.ml" 40 1179 1187 "copying.ml" 40 1179 1193
+)
+"copying.ml" 63 2110 2124 "copying.ml" 63 2110 2161
+type(
+  string
+)
+"copying.ml" 64 2168 2178 "copying.ml" 64 2168 2187
+type(
+  string
+)
+"copying.ml" 65 2191 2201 "copying.ml" 65 2191 2206
+type(
+  ?exit_code:int -> (string, unit, string, string) format4 -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"copying.ml" 65 2191 2208 "copying.ml" 65 2191 2210
+type(
+  (string, unit, string, string, string, string) format6 ->
+  (string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 65 2191 2210 "copying.ml" 65 2191 2271
+type(
+  (string, unit, string, string, string, string) format6
+)
+"copying.ml" 65 2191 2207 "copying.ml" 65 2191 2272
+type(
+  (string, unit, string, string) format4
+)
+"copying.ml" 65 2191 2201 "copying.ml" 65 2191 2272
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 66 2273 2283 "copying.ml" 66 2273 2286
+type(
+  string
+)
+ident(
+  def fmt "copying.ml" 66 2273 2290 "copying.ml" 66 2273 2293
+)
+"copying.ml" 66 2273 2290 "copying.ml" 66 2273 2293
+type(
+  string
+)
+ident(
+  int_ref fmt "copying.ml" 66 2273 2283 "copying.ml" 66 2273 2286
+)
+"copying.ml" 63 2110 2118 "copying.ml" 66 2273 2293
+type(
+  string
+)
+"copying.ml" 59 1950 1956 "copying.ml" 66 2273 2293
+type(
+  string
+)
+"copying.ml" 56 1842 1846 "copying.ml" 66 2273 2293
+type(
+  string
+)
+"copying.ml" 69 2364 2369 "copying.ml" 69 2364 2382
+type(
+  string
+)
+ident(
+  int_ref output_format "copying.ml" 55 1820 1826 "copying.ml" 55 1820 1839
+)
+"copying.ml" 69 2364 2383 "copying.ml" 69 2364 2384
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"copying.ml" 69 2364 2385 "copying.ml" 69 2364 2390
+type(
+  string
+)
+"copying.ml" 69 2364 2369 "copying.ml" 69 2364 2390
+type(
+  bool
+)
+"copying.ml" 69 2364 2391 "copying.ml" 69 2364 2393
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"copying.ml" 69 2364 2394 "copying.ml" 69 2364 2402
+type(
+  bool
+)
+ident(
+  int_ref compress "copying.ml" 40 1179 1215 "copying.ml" 40 1179 1223
+)
+"copying.ml" 69 2364 2369 "copying.ml" 69 2364 2402
+type(
+  bool
+)
+"copying.ml" 70 2408 2412 "copying.ml" 70 2408 2417
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"copying.ml" 70 2408 2419 "copying.ml" 70 2408 2421
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 70 2408 2421 "copying.ml" 70 2408 2508
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 70 2408 2418 "copying.ml" 70 2408 2509
+type(
+  (unit, unit, string, unit) format4
+)
+"copying.ml" 70 2408 2412 "copying.ml" 70 2408 2509
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 69 2364 2366 "copying.ml" 70 2408 2509
+type(
+  unit
+)
+"copying.ml" 73 2551 2557 "copying.ml" 73 2551 2566
+type(
+  tmp_place
+)
+"copying.ml" 74 2569 2579 "copying.ml" 74 2569 2588
+type(
+  string option
+)
+ident(
+  int_ref tmp_param "copying.ml" 41 1232 1275 "copying.ml" 41 1232 1284
+)
+"copying.ml" 75 2594 2600 "copying.ml" 75 2594 2604
+type(
+  string option
+)
+"copying.ml" 75 2594 2618 "copying.ml" 75 2594 2640
+type(
+  string
+)
+ident(
+  ext_ref Filename.temp_dir_name
+)
+"copying.ml" 75 2594 2608 "copying.ml" 75 2594 2640
+type(
+  tmp_place
+)
+"copying.ml" 76 2663 2674 "copying.ml" 76 2663 2677
+type(
+  string
+)
+ident(
+  def dir "copying.ml" 76 2663 2678 "copying.ml" 76 2663 2716
+)
+"copying.ml" 76 2663 2669 "copying.ml" 76 2663 2677
+type(
+  string option
+)
+"copying.ml" 76 2663 2683 "copying.ml" 76 2663 2695
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_directory
+)
+"copying.ml" 76 2663 2696 "copying.ml" 76 2663 2699
+type(
+  string
+)
+ident(
+  int_ref dir "copying.ml" 76 2663 2674 "copying.ml" 76 2663 2677
+)
+"copying.ml" 76 2663 2683 "copying.ml" 76 2663 2699
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 76 2663 2713 "copying.ml" 76 2663 2716
+type(
+  string
+)
+ident(
+  int_ref dir "copying.ml" 76 2663 2674 "copying.ml" 76 2663 2677
+)
+"copying.ml" 76 2663 2703 "copying.ml" 76 2663 2716
+type(
+  tmp_place
+)
+"copying.ml" 76 2663 2678 "copying.ml" 76 2663 2716
+type(
+  tmp_place
+)
+"copying.ml" 77 2717 2728 "copying.ml" 77 2717 2731
+type(
+  string
+)
+ident(
+  def dev "copying.ml" 77 2717 2732 "copying.ml" 77 2717 2776
+)
+"copying.ml" 77 2717 2723 "copying.ml" 77 2717 2731
+type(
+  string option
+)
+"copying.ml" 77 2717 2737 "copying.ml" 77 2717 2752
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_block_device
+)
+"copying.ml" 77 2717 2753 "copying.ml" 77 2717 2756
+type(
+  string
+)
+ident(
+  int_ref dev "copying.ml" 77 2717 2728 "copying.ml" 77 2717 2731
+)
+"copying.ml" 77 2717 2737 "copying.ml" 77 2717 2756
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 77 2717 2773 "copying.ml" 77 2717 2776
+type(
+  string
+)
+ident(
+  int_ref dev "copying.ml" 77 2717 2728 "copying.ml" 77 2717 2731
+)
+"copying.ml" 77 2717 2760 "copying.ml" 77 2717 2776
+type(
+  tmp_place
+)
+"copying.ml" 77 2717 2732 "copying.ml" 77 2717 2776
+type(
+  tmp_place
+)
+"copying.ml" 78 2777 2788 "copying.ml" 78 2777 2792
+type(
+  string
+)
+ident(
+  def file "copying.ml" 78 2777 2793 "copying.ml" 90 3389 3413
+)
+"copying.ml" 78 2777 2783 "copying.ml" 78 2777 2792
+type(
+  string option
+)
+"copying.ml" 78 2777 2798 "copying.ml" 78 2777 2811
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Common_utils.string_prefix
+)
+"copying.ml" 78 2777 2812 "copying.ml" 78 2777 2816
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 78 2777 2788 "copying.ml" 78 2777 2792
+)
+"copying.ml" 78 2777 2817 "copying.ml" 78 2777 2828
+type(
+  string
+)
+"copying.ml" 78 2777 2798 "copying.ml" 78 2777 2828
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 79 2832 2842 "copying.ml" 79 2832 2846
+type(
+  string
+)
+"copying.ml" 79 2832 2849 "copying.ml" 79 2832 2859
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"copying.ml" 79 2832 2860 "copying.ml" 79 2832 2864
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 78 2777 2788 "copying.ml" 78 2777 2792
+)
+"copying.ml" 79 2832 2865 "copying.ml" 79 2832 2866
+type(
+  int
+)
+"copying.ml" 79 2832 2868 "copying.ml" 79 2832 2881
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"copying.ml" 79 2832 2882 "copying.ml" 79 2832 2886
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 78 2777 2788 "copying.ml" 78 2777 2792
+)
+"copying.ml" 79 2832 2868 "copying.ml" 79 2832 2886
+type(
+  int
+)
+"copying.ml" 79 2832 2887 "copying.ml" 79 2832 2888
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"copying.ml" 79 2832 2889 "copying.ml" 79 2832 2890
+type(
+  int
+)
+"copying.ml" 79 2832 2867 "copying.ml" 79 2832 2891
+type(
+  int
+)
+"copying.ml" 79 2832 2849 "copying.ml" 79 2832 2891
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 80 2895 2904 "copying.ml" 80 2895 2907
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"copying.ml" 80 2895 2909 "copying.ml" 80 2895 2924
+type(
+  string -> bool
+)
+ident(
+  ext_ref Sys.file_exists
+)
+"copying.ml" 80 2895 2925 "copying.ml" 80 2895 2929
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 79 2832 2842 "copying.ml" 79 2832 2846
+)
+"copying.ml" 80 2895 2908 "copying.ml" 80 2895 2930
+type(
+  bool
+)
+"copying.ml" 80 2895 2904 "copying.ml" 80 2895 2930
+type(
+  bool
+)
+"copying.ml" 81 2936 2944 "copying.ml" 81 2936 2949
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"copying.ml" 81 2936 2951 "copying.ml" 81 2936 2953
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 81 2936 2953 "copying.ml" 81 2936 2999
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 81 2936 2950 "copying.ml" 81 2936 3000
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 81 2936 3001 "copying.ml" 81 2936 3005
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 79 2832 2842 "copying.ml" 79 2832 2846
+)
+"copying.ml" 81 2936 2944 "copying.ml" 81 2936 3005
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 80 2895 2901 "copying.ml" 81 2936 3005
+type(
+  unit
+)
+"copying.ml" 82 3007 3017 "copying.ml" 82 3007 3018
+type(
+  G.guestfs
+)
+"copying.ml" 82 3007 3021 "copying.ml" 82 3007 3034
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> G.guestfs
+)
+"copying.ml" 82 3007 3035 "copying.ml" 82 3007 3037
+type(
+  unit
+)
+"copying.ml" 82 3007 3021 "copying.ml" 82 3007 3037
+call(
+  stack
+)
+type(
+  G.guestfs
+)
+"copying.ml" 83 3041 3050 "copying.ml" 83 3041 3055
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.trace
+)
+"copying.ml" 83 3041 3056 "copying.ml" 83 3041 3058
+type(
+  unit
+)
+"copying.ml" 83 3041 3050 "copying.ml" 83 3041 3058
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 83 3041 3064 "copying.ml" 83 3041 3065
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 82 3007 3017 "copying.ml" 82 3007 3018
+)
+"copying.ml" 83 3041 3064 "copying.ml" 83 3041 3075
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"copying.ml" 83 3041 3076 "copying.ml" 83 3041 3080
+type(
+  bool
+)
+"copying.ml" 83 3041 3064 "copying.ml" 83 3041 3080
+type(
+  unit
+)
+"copying.ml" 83 3041 3047 "copying.ml" 83 3041 3080
+type(
+  unit
+)
+"copying.ml" 84 3082 3091 "copying.ml" 84 3082 3098
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"copying.ml" 84 3082 3099 "copying.ml" 84 3082 3101
+type(
+  unit
+)
+"copying.ml" 84 3082 3091 "copying.ml" 84 3082 3101
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 84 3082 3107 "copying.ml" 84 3082 3108
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 82 3007 3017 "copying.ml" 82 3007 3018
+)
+"copying.ml" 84 3082 3107 "copying.ml" 84 3082 3120
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"copying.ml" 84 3082 3121 "copying.ml" 84 3082 3125
+type(
+  bool
+)
+"copying.ml" 84 3082 3107 "copying.ml" 84 3082 3125
+type(
+  unit
+)
+"copying.ml" 84 3082 3088 "copying.ml" 84 3082 3125
+type(
+  unit
+)
+"copying.ml" 85 3127 3136 "copying.ml" 85 3127 3137
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 82 3007 3017 "copying.ml" 82 3007 3018
+)
+"copying.ml" 85 3127 3136 "copying.ml" 85 3127 3149
+call(
+  stack
+)
+type(
+  string -> string
+)
+"copying.ml" 85 3127 3150 "copying.ml" 85 3127 3154
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 79 2832 2842 "copying.ml" 79 2832 2846
+)
+"copying.ml" 85 3127 3136 "copying.ml" 85 3127 3154
+type(
+  string
+)
+"copying.ml" 85 3127 3155 "copying.ml" 85 3127 3157
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"copying.ml" 85 3127 3158 "copying.ml" 85 3127 3165
+type(
+  string
+)
+"copying.ml" 85 3127 3136 "copying.ml" 85 3127 3165
+type(
+  bool
+)
+"copying.ml" 86 3171 3179 "copying.ml" 86 3171 3184
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"copying.ml" 86 3171 3186 "copying.ml" 86 3171 3188
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 86 3171 3188 "copying.ml" 86 3171 3239
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 86 3171 3185 "copying.ml" 86 3171 3240
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 86 3171 3241 "copying.ml" 86 3171 3245
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 79 2832 2842 "copying.ml" 79 2832 2846
+)
+"copying.ml" 86 3171 3179 "copying.ml" 86 3171 3245
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 85 3127 3133 "copying.ml" 86 3171 3245
+type(
+  unit
+)
+"copying.ml" 87 3247 3256 "copying.ml" 87 3247 3259
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"copying.ml" 87 3247 3261 "copying.ml" 87 3247 3262
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 82 3007 3017 "copying.ml" 82 3007 3018
+)
+"copying.ml" 87 3247 3261 "copying.ml" 87 3247 3284
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"copying.ml" 87 3247 3285 "copying.ml" 87 3247 3289
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 79 2832 2842 "copying.ml" 79 2832 2846
+)
+"copying.ml" 87 3247 3260 "copying.ml" 87 3247 3290
+type(
+  bool
+)
+"copying.ml" 87 3247 3256 "copying.ml" 87 3247 3290
+type(
+  bool
+)
+"copying.ml" 88 3296 3304 "copying.ml" 88 3296 3309
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"copying.ml" 88 3296 3311 "copying.ml" 88 3296 3313
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 88 3296 3313 "copying.ml" 88 3296 3371
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 88 3296 3310 "copying.ml" 88 3296 3372
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 89 3373 3383 "copying.ml" 89 3373 3387
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 79 2832 2842 "copying.ml" 79 2832 2846
+)
+"copying.ml" 88 3296 3304 "copying.ml" 89 3373 3387
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 87 3247 3253 "copying.ml" 89 3373 3387
+type(
+  unit
+)
+"copying.ml" 90 3389 3409 "copying.ml" 90 3389 3413
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 79 2832 2842 "copying.ml" 79 2832 2846
+)
+"copying.ml" 90 3389 3395 "copying.ml" 90 3389 3413
+type(
+  tmp_place
+)
+"copying.ml" 87 3247 3253 "copying.ml" 90 3389 3413
+type(
+  tmp_place
+)
+"copying.ml" 85 3127 3133 "copying.ml" 90 3389 3413
+type(
+  tmp_place
+)
+"copying.ml" 84 3082 3088 "copying.ml" 90 3389 3413
+type(
+  tmp_place
+)
+"copying.ml" 83 3041 3047 "copying.ml" 90 3389 3413
+type(
+  tmp_place
+)
+"copying.ml" 82 3007 3013 "copying.ml" 90 3389 3413
+type(
+  tmp_place
+)
+"copying.ml" 80 2895 2901 "copying.ml" 90 3389 3413
+type(
+  tmp_place
+)
+"copying.ml" 79 2832 2838 "copying.ml" 90 3389 3413
+type(
+  tmp_place
+)
+"copying.ml" 78 2777 2793 "copying.ml" 90 3389 3413
+type(
+  tmp_place
+)
+"copying.ml" 91 3414 3425 "copying.ml" 91 3414 3429
+type(
+  string
+)
+ident(
+  def path "copying.ml" 92 3433 3439 "copying.ml" 92 3433 3523
+)
+"copying.ml" 91 3414 3420 "copying.ml" 91 3414 3429
+type(
+  string option
+)
+"copying.ml" 92 3433 3439 "copying.ml" 92 3433 3444
+type(
+  ?exit_code:int -> (tmp_place, unit, string, tmp_place) format4 -> tmp_place
+)
+ident(
+  ext_ref Common_utils.error
+)
+"copying.ml" 92 3433 3446 "copying.ml" 92 3433 3448
+type(
+  (tmp_place, unit, string, string, string, tmp_place) format6 ->
+  (tmp_place, unit, string, tmp_place) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 92 3433 3448 "copying.ml" 92 3433 3522
+type(
+  (tmp_place, unit, string, string, string, tmp_place) format6
+)
+"copying.ml" 92 3433 3445 "copying.ml" 92 3433 3523
+type(
+  (tmp_place, unit, string, tmp_place) format4
+)
+"copying.ml" 92 3433 3439 "copying.ml" 92 3433 3523
+call(
+  stack
+)
+type(
+  tmp_place
+)
+"copying.ml" 74 2569 2573 "copying.ml" 92 3433 3523
+type(
+  tmp_place
+)
+"copying.ml" 95 3588 3597 "copying.ml" 95 3588 3606
+type(
+  tmp_place
+)
+ident(
+  int_ref tmp_place "copying.ml" 73 2551 2557 "copying.ml" 73 2551 2566
+)
+"copying.ml" 96 3612 3629 "copying.ml" 96 3612 3630
+type(
+  string
+)
+"copying.ml" 96 3612 3616 "copying.ml" 96 3612 3630
+type(
+  tmp_place
+)
+"copying.ml" 97 3631 3649 "copying.ml" 97 3631 3650
+type(
+  string
+)
+"copying.ml" 97 3631 3635 "copying.ml" 97 3631 3650
+type(
+  tmp_place
+)
+"copying.ml" 96 3612 3616 "copying.ml" 97 3631 3650
+type(
+  tmp_place
+)
+"copying.ml" 97 3631 3654 "copying.ml" 97 3631 3656
+type(
+  unit
+)
+"copying.ml" 98 3657 3671 "copying.ml" 98 3657 3677
+type(
+  string
+)
+ident(
+  def tmpdir "copying.ml" 100 3727 3731 "copying.ml" 140 5071 5078
+)
+"copying.ml" 98 3657 3661 "copying.ml" 98 3657 3677
+type(
+  tmp_place
+)
+"copying.ml" 100 3727 3735 "copying.ml" 100 3727 3747
+type(
+  int64
+)
+"copying.ml" 100 3727 3751 "copying.ml" 100 3727 3764
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> G.guestfs
+)
+"copying.ml" 100 3727 3765 "copying.ml" 100 3727 3767
+type(
+  unit
+)
+"copying.ml" 100 3727 3750 "copying.ml" 100 3727 3768
+call(
+  stack
+)
+type(
+  G.guestfs
+)
+"copying.ml" 100 3727 3750 "copying.ml" 100 3727 3786
+call(
+  stack
+)
+type(
+  string -> int64
+)
+"copying.ml" 100 3727 3787 "copying.ml" 100 3727 3793
+type(
+  string
+)
+ident(
+  int_ref indisk "copying.ml" 40 1179 1187 "copying.ml" 40 1179 1193
+)
+"copying.ml" 100 3727 3750 "copying.ml" 100 3727 3793
+type(
+  int64
+)
+"copying.ml" 101 3797 3804 "copying.ml" 101 3797 3811
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"copying.ml" 101 3797 3812 "copying.ml" 101 3797 3814
+type(
+  unit
+)
+"copying.ml" 101 3797 3804 "copying.ml" 101 3797 3814
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 102 3820 3826 "copying.ml" 102 3820 3832
+type(
+  (int64 -> string -> unit, out_channel, unit) format ->
+  int64 -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"copying.ml" 102 3820 3833 "copying.ml" 102 3820 3880
+type(
+  (int64 -> string -> unit, out_channel, unit) format
+)
+"copying.ml" 103 3881 3894 "copying.ml" 103 3881 3906
+type(
+  int64
+)
+ident(
+  int_ref virtual_size "copying.ml" 100 3727 3735 "copying.ml" 100 3727 3747
+)
+"copying.ml" 103 3881 3908 "copying.ml" 103 3881 3918
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Common_utils.human_size
+)
+"copying.ml" 103 3881 3919 "copying.ml" 103 3881 3931
+type(
+  int64
+)
+ident(
+  int_ref virtual_size "copying.ml" 100 3727 3735 "copying.ml" 100 3727 3747
+)
+"copying.ml" 103 3881 3907 "copying.ml" 103 3881 3932
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 102 3820 3826 "copying.ml" 103 3881 3932
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 101 3797 3801 "copying.ml" 103 3881 3932
+type(
+  unit
+)
+"copying.ml" 105 3935 3943 "copying.ml" 105 3935 3956
+type(
+  unit -> bool
+)
+"copying.ml" 105 3935 3957 "copying.ml" 105 3935 3959
+type(
+  unit
+)
+"copying.ml" 106 3962 3972 "copying.ml" 106 3962 3982
+type(
+  int64
+)
+"copying.ml" 106 3962 3985 "copying.ml" 106 3962 4003
+type(
+  string -> int64
+)
+"copying.ml" 106 3962 4004 "copying.ml" 106 3962 4010
+type(
+  string
+)
+ident(
+  int_ref tmpdir "copying.ml" 98 3657 3671 "copying.ml" 98 3657 3677
+)
+"copying.ml" 106 3962 3985 "copying.ml" 106 3962 4010
+type(
+  int64
+)
+"copying.ml" 107 4014 4024 "copying.ml" 107 4014 4036
+type(
+  int64
+)
+"copying.ml" 107 4014 4039 "copying.ml" 107 4014 4051
+type(
+  int64
+)
+ident(
+  int_ref virtual_size "copying.ml" 100 3727 3735 "copying.ml" 100 3727 3747
+)
+"copying.ml" 107 4014 4052 "copying.ml" 107 4014 4054
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( -^ )
+)
+"copying.ml" 107 4014 4055 "copying.ml" 107 4014 4065
+type(
+  int64
+)
+ident(
+  int_ref free_space "copying.ml" 106 3962 3972 "copying.ml" 106 3962 3982
+)
+"copying.ml" 107 4014 4039 "copying.ml" 107 4014 4065
+call(
+  stack
+)
+type(
+  int64
+)
+"copying.ml" 108 4069 4078 "copying.ml" 108 4069 4090
+type(
+  int64
+)
+ident(
+  int_ref extra_needed "copying.ml" 107 4014 4024 "copying.ml" 107 4014 4036
+)
+"copying.ml" 108 4069 4091 "copying.ml" 108 4069 4092
+type(
+  int64 -> int64 -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"copying.ml" 108 4069 4093 "copying.ml" 108 4069 4095
+type(
+  int64
+)
+"copying.ml" 108 4069 4078 "copying.ml" 108 4069 4095
+type(
+  bool
+)
+"copying.ml" 109 4103 4111 "copying.ml" 109 4103 4118
+type(
+  (string -> string -> string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"copying.ml" 109 4103 4120 "copying.ml" 109 4103 4122
+type(
+  (string -> string -> string -> string -> unit, unit, string, string,
+   string, unit)
+  format6 ->
+  (string -> string -> string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 109 4103 4122 "copying.ml" 121 4548 4551
+type(
+  (string -> string -> string -> string -> unit, unit, string, string,
+   string, unit)
+  format6
+)
+"copying.ml" 109 4103 4119 "copying.ml" 121 4548 4552
+type(
+  (string -> string -> string -> string -> unit, unit, string, unit) format4
+)
+"copying.ml" 122 4553 4563 "copying.ml" 122 4553 4569
+type(
+  string
+)
+ident(
+  int_ref tmpdir "copying.ml" 98 3657 3671 "copying.ml" 98 3657 3677
+)
+"copying.ml" 122 4553 4571 "copying.ml" 122 4553 4581
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Common_utils.human_size
+)
+"copying.ml" 122 4553 4582 "copying.ml" 122 4553 4594
+type(
+  int64
+)
+ident(
+  int_ref virtual_size "copying.ml" 100 3727 3735 "copying.ml" 100 3727 3747
+)
+"copying.ml" 122 4553 4570 "copying.ml" 122 4553 4595
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 123 4596 4607 "copying.ml" 123 4596 4617
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Common_utils.human_size
+)
+"copying.ml" 123 4596 4618 "copying.ml" 123 4596 4628
+type(
+  int64
+)
+ident(
+  int_ref free_space "copying.ml" 106 3962 3972 "copying.ml" 106 3962 3982
+)
+"copying.ml" 123 4596 4606 "copying.ml" 123 4596 4629
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 123 4596 4631 "copying.ml" 123 4596 4641
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Common_utils.human_size
+)
+"copying.ml" 123 4596 4642 "copying.ml" 123 4596 4654
+type(
+  int64
+)
+ident(
+  int_ref extra_needed "copying.ml" 107 4014 4024 "copying.ml" 107 4014 4036
+)
+"copying.ml" 123 4596 4630 "copying.ml" 123 4596 4655
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 109 4103 4111 "copying.ml" 123 4596 4655
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 124 4657 4665 "copying.ml" 124 4657 4669
+type(
+  bool
+)
+"copying.ml" 108 4069 4101 "copying.ml" 125 4670 4677
+type(
+  bool
+)
+"copying.ml" 125 4670 4683 "copying.ml" 125 4670 4688
+type(
+  bool
+)
+"copying.ml" 108 4069 4075 "copying.ml" 125 4670 4688
+type(
+  bool
+)
+"copying.ml" 107 4014 4020 "copying.ml" 125 4670 4688
+type(
+  bool
+)
+"copying.ml" 106 3962 3968 "copying.ml" 125 4670 4688
+type(
+  bool
+)
+"copying.ml" 128 4697 4707 "copying.ml" 128 4697 4719
+type(
+  'a
+)
+ident(
+  int_ref check_tmpdir "copying.ml" 40 1179 1202 "copying.ml" 40 1179 1214
+)
+"copying.ml" 129 4725 4731 "copying.ml" 129 4725 4738
+type(
+  'a
+)
+"copying.ml" 129 4725 4742 "copying.ml" 129 4725 4744
+type(
+  unit
+)
+"copying.ml" 130 4745 4751 "copying.ml" 130 4745 4760
+type(
+  'a
+)
+"copying.ml" 130 4745 4764 "copying.ml" 130 4745 4770
+type(
+  bool -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"copying.ml" 130 4745 4772 "copying.ml" 130 4745 4785
+type(
+  unit -> bool
+)
+ident(
+  int_ref print_warning "copying.ml" 105 3935 3943 "copying.ml" 105 3935 3956
+)
+"copying.ml" 130 4745 4786 "copying.ml" 130 4745 4788
+type(
+  unit
+)
+"copying.ml" 130 4745 4771 "copying.ml" 130 4745 4789
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 130 4745 4764 "copying.ml" 130 4745 4789
+type(
+  unit
+)
+"copying.ml" 131 4790 4796 "copying.ml" 131 4790 4801
+type(
+  'a
+)
+"copying.ml" 132 4805 4814 "copying.ml" 132 4805 4827
+type(
+  unit -> bool
+)
+ident(
+  int_ref print_warning "copying.ml" 105 3935 3943 "copying.ml" 105 3935 3956
+)
+"copying.ml" 132 4805 4828 "copying.ml" 132 4805 4830
+type(
+  unit
+)
+"copying.ml" 132 4805 4814 "copying.ml" 132 4805 4830
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 133 4838 4846 "copying.ml" 133 4838 4853
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"copying.ml" 133 4838 4854 "copying.ml" 133 4838 4899
+type(
+  (unit, out_channel, unit) format
+)
+"copying.ml" 133 4838 4846 "copying.ml" 133 4838 4899
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 134 4901 4909 "copying.ml" 134 4901 4915
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"copying.ml" 134 4901 4917 "copying.ml" 134 4901 4926
+type(
+  unit -> string
+)
+ident(
+  ext_ref Pervasives.read_line
+)
+"copying.ml" 134 4901 4927 "copying.ml" 134 4901 4929
+type(
+  unit
+)
+"copying.ml" 134 4901 4916 "copying.ml" 134 4901 4930
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 134 4901 4909 "copying.ml" 134 4901 4930
+type(
+  unit
+)
+"copying.ml" 132 4805 4836 "copying.ml" 135 4931 4938
+type(
+  unit
+)
+"copying.ml" 132 4805 4811 "copying.ml" 135 4931 4939
+type(
+  unit
+)
+"copying.ml" 136 4940 4946 "copying.ml" 136 4940 4951
+type(
+  'a
+)
+"copying.ml" 137 4955 4964 "copying.ml" 137 4955 4977
+type(
+  unit -> bool
+)
+ident(
+  int_ref print_warning "copying.ml" 105 3935 3943 "copying.ml" 105 3935 3956
+)
+"copying.ml" 137 4955 4978 "copying.ml" 137 4955 4980
+type(
+  unit
+)
+"copying.ml" 137 4955 4964 "copying.ml" 137 4955 4980
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 138 4988 4996 "copying.ml" 138 4988 5003
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"copying.ml" 138 4988 5004 "copying.ml" 138 4988 5054
+type(
+  (unit, out_channel, unit) format
+)
+"copying.ml" 138 4988 4996 "copying.ml" 138 4988 5054
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 139 5056 5064 "copying.ml" 139 5056 5068
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"copying.ml" 139 5056 5069 "copying.ml" 139 5056 5070
+type(
+  int
+)
+"copying.ml" 139 5056 5064 "copying.ml" 139 5056 5070
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 137 4955 4986 "copying.ml" 140 5071 5078
+type(
+  unit
+)
+"copying.ml" 137 4955 4961 "copying.ml" 140 5071 5078
+type(
+  unit
+)
+"copying.ml" 128 4697 4701 "copying.ml" 140 5071 5078
+type(
+  unit
+)
+"copying.ml" 105 3935 3939 "copying.ml" 140 5071 5078
+type(
+  unit
+)
+"copying.ml" 101 3797 3801 "copying.ml" 140 5071 5078
+type(
+  unit
+)
+"copying.ml" 100 3727 3731 "copying.ml" 140 5071 5078
+type(
+  unit
+)
+"copying.ml" 95 3588 3590 "copying.ml" 141 5079 5082
+type(
+  unit
+)
+"copying.ml" 144 5128 5134 "copying.ml" 144 5128 5145
+type(
+  string
+)
+"copying.ml" 145 5148 5159 "copying.ml" 145 5148 5168
+type(
+  tmp_place
+)
+ident(
+  int_ref tmp_place "copying.ml" 73 2551 2557 "copying.ml" 73 2551 2566
+)
+"copying.ml" 146 5174 5190 "copying.ml" 146 5174 5196
+type(
+  string
+)
+ident(
+  def tmpdir "copying.ml" 147 5200 5207 "copying.ml" 147 5200 5276
+)
+"copying.ml" 146 5174 5180 "copying.ml" 146 5174 5196
+type(
+  tmp_place
+)
+"copying.ml" 147 5200 5207 "copying.ml" 147 5200 5214
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"copying.ml" 147 5200 5216 "copying.ml" 147 5200 5218
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 147 5200 5218 "copying.ml" 147 5200 5268
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 147 5200 5215 "copying.ml" 147 5200 5269
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 147 5200 5270 "copying.ml" 147 5200 5276
+type(
+  string
+)
+ident(
+  int_ref tmpdir "copying.ml" 146 5174 5190 "copying.ml" 146 5174 5196
+)
+"copying.ml" 147 5200 5207 "copying.ml" 147 5200 5276
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 148 5277 5296 "copying.ml" 148 5277 5302
+type(
+  string
+)
+ident(
+  def device "copying.ml" 149 5306 5313 "copying.ml" 149 5306 5381
+)
+"copying.ml" 148 5277 5283 "copying.ml" 148 5277 5302
+type(
+  tmp_place
+)
+"copying.ml" 149 5306 5313 "copying.ml" 149 5306 5320
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"copying.ml" 149 5306 5322 "copying.ml" 149 5306 5324
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 149 5306 5324 "copying.ml" 149 5306 5373
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 149 5306 5321 "copying.ml" 149 5306 5374
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 149 5306 5375 "copying.ml" 149 5306 5381
+type(
+  string
+)
+ident(
+  int_ref device "copying.ml" 148 5277 5296 "copying.ml" 148 5277 5302
+)
+"copying.ml" 149 5306 5313 "copying.ml" 149 5306 5381
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 150 5382 5402 "copying.ml" 150 5382 5406
+type(
+  string
+)
+ident(
+  def file "copying.ml" 151 5410 5417 "copying.ml" 151 5410 5469
+)
+"copying.ml" 150 5382 5388 "copying.ml" 150 5382 5406
+type(
+  tmp_place
+)
+"copying.ml" 151 5410 5417 "copying.ml" 151 5410 5424
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"copying.ml" 151 5410 5426 "copying.ml" 151 5410 5428
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 151 5410 5428 "copying.ml" 151 5410 5463
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 151 5410 5425 "copying.ml" 151 5410 5464
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 151 5410 5465 "copying.ml" 151 5410 5469
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 150 5382 5402 "copying.ml" 150 5382 5406
+)
+"copying.ml" 151 5410 5417 "copying.ml" 151 5410 5469
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 145 5148 5152 "copying.ml" 152 5470 5475
+type(
+  unit
+)
+"copying.ml" 155 5538 5546 "copying.ml" 155 5538 5552
+type(
+  string -> unit
+)
+"copying.ml" 155 5538 5553 "copying.ml" 155 5538 5556
+type(
+  string
+)
+ident(
+  def tmp "copying.ml" 156 5559 5565 "copying.ml" 161 5763 5798
+)
+"copying.ml" 156 5559 5569 "copying.ml" 156 5559 5570
+type(
+  G.guestfs
+)
+"copying.ml" 156 5559 5573 "copying.ml" 156 5559 5586
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> G.guestfs
+)
+"copying.ml" 156 5559 5587 "copying.ml" 156 5559 5589
+type(
+  unit
+)
+"copying.ml" 156 5559 5573 "copying.ml" 156 5559 5589
+call(
+  stack
+)
+type(
+  G.guestfs
+)
+"copying.ml" 157 5593 5602 "copying.ml" 157 5593 5607
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.trace
+)
+"copying.ml" 157 5593 5608 "copying.ml" 157 5593 5610
+type(
+  unit
+)
+"copying.ml" 157 5593 5602 "copying.ml" 157 5593 5610
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 157 5593 5616 "copying.ml" 157 5593 5617
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 156 5559 5569 "copying.ml" 156 5559 5570
+)
+"copying.ml" 157 5593 5616 "copying.ml" 157 5593 5627
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"copying.ml" 157 5593 5628 "copying.ml" 157 5593 5632
+type(
+  bool
+)
+"copying.ml" 157 5593 5616 "copying.ml" 157 5593 5632
+type(
+  unit
+)
+"copying.ml" 157 5593 5599 "copying.ml" 157 5593 5632
+type(
+  unit
+)
+"copying.ml" 158 5634 5643 "copying.ml" 158 5634 5650
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"copying.ml" 158 5634 5651 "copying.ml" 158 5634 5653
+type(
+  unit
+)
+"copying.ml" 158 5634 5643 "copying.ml" 158 5634 5653
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 158 5634 5659 "copying.ml" 158 5634 5660
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 156 5559 5569 "copying.ml" 156 5559 5570
+)
+"copying.ml" 158 5634 5659 "copying.ml" 158 5634 5672
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"copying.ml" 158 5634 5673 "copying.ml" 158 5634 5677
+type(
+  bool
+)
+"copying.ml" 158 5634 5659 "copying.ml" 158 5634 5677
+type(
+  unit
+)
+"copying.ml" 158 5634 5640 "copying.ml" 158 5634 5677
+type(
+  unit
+)
+"copying.ml" 159 5679 5685 "copying.ml" 159 5679 5686
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 156 5559 5569 "copying.ml" 156 5559 5570
+)
+"copying.ml" 159 5679 5685 "copying.ml" 159 5679 5698
+call(
+  stack
+)
+type(
+  ?backingfile:string ->
+  ?backingformat:string ->
+  ?preallocation:string ->
+  ?compat:string -> ?clustersize:int -> string -> string -> int64 -> unit
+)
+"copying.ml" 160 5699 5720 "copying.ml" 160 5699 5726
+type(
+  string
+)
+ident(
+  int_ref indisk "copying.ml" 40 1179 1187 "copying.ml" 40 1179 1193
+)
+"copying.ml" 160 5699 5742 "copying.ml" 160 5699 5748
+type(
+  string option
+)
+ident(
+  int_ref format "copying.ml" 41 1232 1236 "copying.ml" 41 1232 1242
+)
+"copying.ml" 160 5699 5757 "copying.ml" 160 5699 5762
+type(
+  string
+)
+"copying.ml" 161 5763 5771 "copying.ml" 161 5763 5774
+type(
+  string
+)
+ident(
+  int_ref tmp "copying.ml" 155 5538 5553 "copying.ml" 155 5538 5556
+)
+"copying.ml" 161 5763 5775 "copying.ml" 161 5763 5782
+type(
+  string
+)
+"copying.ml" 161 5763 5783 "copying.ml" 161 5763 5798
+type(
+  int64
+)
+ident(
+  ext_ref Int64.minus_one
+)
+"copying.ml" 159 5679 5685 "copying.ml" 161 5763 5798
+type(
+  unit
+)
+"copying.ml" 158 5634 5640 "copying.ml" 161 5763 5798
+type(
+  unit
+)
+"copying.ml" 157 5593 5599 "copying.ml" 161 5763 5798
+type(
+  unit
+)
+"copying.ml" 156 5559 5565 "copying.ml" 161 5763 5798
+type(
+  unit
+)
+"copying.ml" 164 5807 5817 "copying.ml" 164 5807 5826
+type(
+  tmp_place
+)
+ident(
+  int_ref tmp_place "copying.ml" 73 2551 2557 "copying.ml" 73 2551 2566
+)
+"copying.ml" 165 5832 5848 "copying.ml" 165 5832 5856
+type(
+  string
+)
+ident(
+  def temp_dir "copying.ml" 166 5860 5866 "copying.ml" 169 5972 5981
+)
+"copying.ml" 165 5832 5838 "copying.ml" 165 5832 5856
+type(
+  tmp_place
+)
+"copying.ml" 166 5860 5870 "copying.ml" 166 5860 5873
+type(
+  string
+)
+"copying.ml" 166 5860 5876 "copying.ml" 166 5860 5894
+type(
+  ?temp_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Filename.temp_file
+)
+"copying.ml" 166 5860 5896 "copying.ml" 166 5860 5904
+type(
+  string
+)
+ident(
+  int_ref temp_dir "copying.ml" 165 5832 5848 "copying.ml" 165 5832 5856
+)
+"copying.ml" 166 5860 5905 "copying.ml" 166 5860 5915
+type(
+  string
+)
+"copying.ml" 166 5860 5916 "copying.ml" 166 5860 5924
+type(
+  string
+)
+"copying.ml" 166 5860 5876 "copying.ml" 166 5860 5924
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 167 5928 5934 "copying.ml" 167 5928 5948
+type(
+  string -> unit
+)
+ident(
+  ext_ref Common_utils.unlink_on_exit
+)
+"copying.ml" 167 5928 5949 "copying.ml" 167 5928 5952
+type(
+  string
+)
+ident(
+  int_ref tmp "copying.ml" 166 5860 5870 "copying.ml" 166 5860 5873
+)
+"copying.ml" 167 5928 5934 "copying.ml" 167 5928 5952
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 168 5954 5960 "copying.ml" 168 5954 5966
+type(
+  string -> unit
+)
+ident(
+  int_ref create "copying.ml" 155 5538 5546 "copying.ml" 155 5538 5552
+)
+"copying.ml" 168 5954 5967 "copying.ml" 168 5954 5970
+type(
+  string
+)
+ident(
+  int_ref tmp "copying.ml" 166 5860 5870 "copying.ml" 166 5860 5873
+)
+"copying.ml" 168 5954 5960 "copying.ml" 168 5954 5970
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 169 5972 5978 "copying.ml" 169 5972 5981
+type(
+  string
+)
+ident(
+  int_ref tmp "copying.ml" 166 5860 5870 "copying.ml" 166 5860 5873
+)
+"copying.ml" 168 5954 5960 "copying.ml" 169 5972 5981
+type(
+  string
+)
+"copying.ml" 167 5928 5934 "copying.ml" 169 5972 5981
+type(
+  string
+)
+"copying.ml" 166 5860 5866 "copying.ml" 169 5972 5981
+type(
+  string
+)
+"copying.ml" 171 5983 6002 "copying.ml" 171 5983 6008
+type(
+  string
+)
+ident(
+  def device "copying.ml" 172 6012 6018 "copying.ml" 173 6033 6045
+)
+"copying.ml" 171 5983 5989 "copying.ml" 171 5983 6008
+type(
+  tmp_place
+)
+"copying.ml" 172 6012 6018 "copying.ml" 172 6012 6024
+type(
+  string -> unit
+)
+ident(
+  int_ref create "copying.ml" 155 5538 5546 "copying.ml" 155 5538 5552
+)
+"copying.ml" 172 6012 6025 "copying.ml" 172 6012 6031
+type(
+  string
+)
+ident(
+  int_ref device "copying.ml" 171 5983 6002 "copying.ml" 171 5983 6008
+)
+"copying.ml" 172 6012 6018 "copying.ml" 172 6012 6031
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 173 6033 6039 "copying.ml" 173 6033 6045
+type(
+  string
+)
+ident(
+  int_ref device "copying.ml" 171 5983 6002 "copying.ml" 171 5983 6008
+)
+"copying.ml" 172 6012 6018 "copying.ml" 173 6033 6045
+type(
+  string
+)
+"copying.ml" 175 6047 6067 "copying.ml" 175 6047 6071
+type(
+  string
+)
+ident(
+  def file "copying.ml" 177 6144 6150 "copying.ml" 177 6144 6154
+)
+"copying.ml" 175 6047 6053 "copying.ml" 175 6047 6071
+type(
+  tmp_place
+)
+"copying.ml" 177 6144 6150 "copying.ml" 177 6144 6154
+type(
+  string
+)
+ident(
+  int_ref file "copying.ml" 175 6047 6067 "copying.ml" 175 6047 6071
+)
+"copying.ml" 164 5807 5811 "copying.ml" 177 6144 6154
+type(
+  string
+)
+"copying.ml" 155 5538 5542 "copying.ml" 177 6144 6154
+type(
+  string
+)
+"copying.ml" 145 5148 5152 "copying.ml" 177 6144 6154
+type(
+  string
+)
+"copying.ml" 179 6159 6161 "copying.ml" 179 6159 6168
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"copying.ml" 179 6159 6170 "copying.ml" 179 6159 6172
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 179 6159 6172 "copying.ml" 179 6159 6193
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 179 6159 6169 "copying.ml" 179 6159 6194
+type(
+  (unit, unit, string, unit) format4
+)
+"copying.ml" 179 6159 6161 "copying.ml" 179 6159 6194
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+type(
+  G.guestfs
+)
+"copying.ml" 183 6238 6246 "copying.ml" 183 6238 6247
+type(
+  G.guestfs
+)
+"copying.ml" 183 6238 6250 "copying.ml" 183 6238 6263
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> G.guestfs
+)
+"copying.ml" 183 6238 6264 "copying.ml" 183 6238 6266
+type(
+  unit
+)
+"copying.ml" 183 6238 6250 "copying.ml" 183 6238 6266
+call(
+  stack
+)
+type(
+  G.guestfs
+)
+"copying.ml" 184 6270 6277 "copying.ml" 184 6270 6282
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.trace
+)
+"copying.ml" 184 6270 6283 "copying.ml" 184 6270 6285
+type(
+  unit
+)
+"copying.ml" 184 6270 6277 "copying.ml" 184 6270 6285
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 184 6270 6291 "copying.ml" 184 6270 6292
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 183 6238 6246 "copying.ml" 183 6238 6247
+)
+"copying.ml" 184 6270 6291 "copying.ml" 184 6270 6302
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"copying.ml" 184 6270 6303 "copying.ml" 184 6270 6307
+type(
+  bool
+)
+"copying.ml" 184 6270 6291 "copying.ml" 184 6270 6307
+type(
+  unit
+)
+"copying.ml" 184 6270 6274 "copying.ml" 184 6270 6307
+type(
+  unit
+)
+"copying.ml" 185 6309 6316 "copying.ml" 185 6309 6323
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"copying.ml" 185 6309 6324 "copying.ml" 185 6309 6326
+type(
+  unit
+)
+"copying.ml" 185 6309 6316 "copying.ml" 185 6309 6326
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 185 6309 6332 "copying.ml" 185 6309 6333
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 183 6238 6246 "copying.ml" 183 6238 6247
+)
+"copying.ml" 185 6309 6332 "copying.ml" 185 6309 6345
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"copying.ml" 185 6309 6346 "copying.ml" 185 6309 6350
+type(
+  bool
+)
+"copying.ml" 185 6309 6332 "copying.ml" 185 6309 6350
+type(
+  unit
+)
+"copying.ml" 185 6309 6313 "copying.ml" 185 6309 6350
+type(
+  unit
+)
+"copying.ml" 188 6424 6428 "copying.ml" 188 6424 6429
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 183 6238 6246 "copying.ml" 183 6238 6247
+)
+"copying.ml" 188 6424 6428 "copying.ml" 188 6424 6439
+call(
+  stack
+)
+type(
+  ?readonly:bool ->
+  ?format:string ->
+  ?iface:string ->
+  ?name:string ->
+  ?label:string ->
+  ?protocol:string ->
+  ?server:string array ->
+  ?username:string ->
+  ?secret:string ->
+  ?cachemode:string -> ?discard:string -> ?copyonread:bool -> string -> unit
+)
+"copying.ml" 188 6424 6448 "copying.ml" 188 6424 6455
+type(
+  string
+)
+"copying.ml" 188 6424 6466 "copying.ml" 188 6424 6471
+type(
+  bool
+)
+"copying.ml" 188 6424 6483 "copying.ml" 188 6424 6491
+type(
+  string
+)
+"copying.ml" 188 6424 6492 "copying.ml" 188 6424 6503
+type(
+  string
+)
+ident(
+  int_ref overlaydisk "copying.ml" 144 5128 5134 "copying.ml" 144 5128 5145
+)
+"copying.ml" 188 6424 6428 "copying.ml" 188 6424 6503
+type(
+  unit
+)
+"copying.ml" 190 6506 6513 "copying.ml" 190 6506 6516
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"copying.ml" 190 6506 6518 "copying.ml" 190 6506 6523
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.quiet
+)
+"copying.ml" 190 6506 6524 "copying.ml" 190 6506 6526
+type(
+  unit
+)
+"copying.ml" 190 6506 6517 "copying.ml" 190 6506 6527
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 190 6506 6513 "copying.ml" 190 6506 6527
+type(
+  bool
+)
+"copying.ml" 190 6506 6533 "copying.ml" 190 6506 6561
+type(
+  ?machine_readable:bool -> Guestfs.guestfs -> unit
+)
+ident(
+  ext_ref Progress.set_up_progress_bar
+)
+"copying.ml" 190 6506 6563 "copying.ml" 190 6506 6579
+type(
+  bool
+)
+ident(
+  int_ref machine_readable "copying.ml" 41 1232 1251 "copying.ml" 41 1232 1267
+)
+"copying.ml" 190 6506 6580 "copying.ml" 190 6506 6581
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 183 6238 6246 "copying.ml" 183 6238 6247
+)
+"copying.ml" 190 6506 6533 "copying.ml" 190 6506 6581
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 190 6506 6510 "copying.ml" 190 6506 6581
+type(
+  unit
+)
+"copying.ml" 191 6583 6587 "copying.ml" 191 6583 6588
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 183 6238 6246 "copying.ml" 183 6238 6247
+)
+"copying.ml" 191 6583 6587 "copying.ml" 191 6583 6595
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"copying.ml" 191 6583 6596 "copying.ml" 191 6583 6598
+type(
+  unit
+)
+"copying.ml" 191 6583 6587 "copying.ml" 191 6583 6598
+type(
+  unit
+)
+"copying.ml" 193 6601 6605 "copying.ml" 193 6601 6606
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 183 6238 6246 "copying.ml" 183 6238 6247
+)
+"copying.ml" 191 6583 6587 "copying.ml" 193 6601 6606
+type(
+  G.guestfs
+)
+"copying.ml" 190 6506 6510 "copying.ml" 193 6601 6606
+type(
+  G.guestfs
+)
+"copying.ml" 188 6424 6428 "copying.ml" 193 6601 6606
+type(
+  G.guestfs
+)
+"copying.ml" 185 6309 6313 "copying.ml" 193 6601 6606
+type(
+  G.guestfs
+)
+"copying.ml" 184 6270 6274 "copying.ml" 193 6601 6606
+type(
+  G.guestfs
+)
+"copying.ml" 183 6238 6242 "copying.ml" 193 6601 6606
+type(
+  G.guestfs
+)
+"copying.ml" 196 6681 6687 "copying.ml" 196 6681 6696
+type(
+  'd -> 'e
+)
+"copying.ml" 196 6681 6697 "copying.ml" 196 6681 6698
+type(
+  'd
+)
+"copying.ml" 197 6701 6705 "copying.ml" 197 6701 6706
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 197 6701 6705 "copying.ml" 197 6701 6718
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"copying.ml" 197 6701 6719 "copying.ml" 197 6701 6721
+type(
+  unit
+)
+"copying.ml" 197 6701 6705 "copying.ml" 197 6701 6721
+type(
+  unit
+)
+"copying.ml" 198 6723 6727 "copying.ml" 198 6723 6731
+type(
+  int -> 'e
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"copying.ml" 198 6723 6732 "copying.ml" 198 6723 6733
+type(
+  int
+)
+"copying.ml" 198 6723 6727 "copying.ml" 198 6723 6733
+call(
+  tail
+)
+type(
+  'e
+)
+"copying.ml" 197 6701 6705 "copying.ml" 198 6723 6733
+type(
+  'e
+)
+"copying.ml" 200 6739 6741 "copying.ml" 200 6739 6755
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"copying.ml" 200 6739 6756 "copying.ml" 200 6739 6766
+type(
+  int
+)
+ident(
+  ext_ref Sys.sigint
+)
+"copying.ml" 200 6739 6786 "copying.ml" 200 6739 6795
+type(
+  int -> unit
+)
+ident(
+  int_ref do_sigint "copying.ml" 196 6681 6687 "copying.ml" 196 6681 6696
+)
+"copying.ml" 200 6739 6767 "copying.ml" 200 6739 6796
+type(
+  Sys.signal_behavior
+)
+"copying.ml" 200 6739 6741 "copying.ml" 200 6739 6796
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 205 6913 6919 "copying.ml" 205 6913 6930
+type(
+  (string * string) list
+)
+"copying.ml" 205 6913 6933 "copying.ml" 205 6913 6934
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 205 6913 6933 "copying.ml" 205 6913 6951
+call(
+  stack
+)
+type(
+  unit -> (string * string) list
+)
+"copying.ml" 205 6913 6952 "copying.ml" 205 6913 6954
+type(
+  unit
+)
+"copying.ml" 205 6913 6933 "copying.ml" 205 6913 6954
+type(
+  (string * string) list
+)
+"copying.ml" 206 6958 6964 "copying.ml" 206 6958 6981
+type(
+  (string * string) list
+)
+"copying.ml" 206 6958 6984 "copying.ml" 206 6958 6995
+type(
+  (string * string -> bool) ->
+  (string * string) list -> (string * string) list
+)
+ident(
+  ext_ref List.filter
+)
+"copying.ml" 207 6998 7007 "copying.ml" 207 6998 7009
+type(
+  string
+)
+ident(
+  def fs "copying.ml" 208 7022 7028 "copying.ml" 208 7022 7044
+)
+"copying.ml" 207 6998 7011 "copying.ml" 207 6998 7017
+type(
+  string
+)
+ident(
+  def fstype "copying.ml" 208 7022 7028 "copying.ml" 208 7022 7044
+)
+"copying.ml" 207 6998 7006 "copying.ml" 207 6998 7018
+type(
+  string * string
+)
+"copying.ml" 208 7022 7028 "copying.ml" 208 7022 7034
+type(
+  string
+)
+ident(
+  int_ref fstype "copying.ml" 207 6998 7011 "copying.ml" 207 6998 7017
+)
+"copying.ml" 208 7022 7035 "copying.ml" 208 7022 7036
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"copying.ml" 208 7022 7037 "copying.ml" 208 7022 7044
+type(
+  string
+)
+"copying.ml" 208 7022 7028 "copying.ml" 208 7022 7044
+type(
+  bool
+)
+"copying.ml" 206 6958 6996 "copying.ml" 209 7045 7048
+type(
+  string * string -> bool
+)
+"copying.ml" 209 7045 7049 "copying.ml" 209 7045 7060
+type(
+  (string * string) list
+)
+ident(
+  int_ref filesystems "copying.ml" 205 6913 6919 "copying.ml" 205 6913 6930
+)
+"copying.ml" 206 6958 6984 "copying.ml" 209 7045 7060
+call(
+  stack
+)
+type(
+  (string * string) list
+)
+"copying.ml" 210 7064 7070 "copying.ml" 210 7064 7087
+type(
+  string list
+)
+"copying.ml" 210 7064 7090 "copying.ml" 210 7064 7098
+type(
+  (string * string -> string) -> (string * string) list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"copying.ml" 210 7064 7099 "copying.ml" 210 7064 7102
+type(
+  string * string -> string
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"copying.ml" 210 7064 7103 "copying.ml" 210 7064 7120
+type(
+  (string * string) list
+)
+ident(
+  int_ref btrfs_filesystems "copying.ml" 206 6958 6964 "copying.ml" 206 6958 6981
+)
+"copying.ml" 210 7064 7090 "copying.ml" 210 7064 7120
+call(
+  stack
+)
+type(
+  string list
+)
+"copying.ml" 211 7124 7130 "copying.ml" 211 7124 7141
+type(
+  string list
+)
+"copying.ml" 211 7124 7144 "copying.ml" 211 7124 7152
+type(
+  (string * string -> string) -> (string * string) list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"copying.ml" 211 7124 7153 "copying.ml" 211 7124 7156
+type(
+  string * string -> string
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"copying.ml" 211 7124 7157 "copying.ml" 211 7124 7168
+type(
+  (string * string) list
+)
+ident(
+  int_ref filesystems "copying.ml" 205 6913 6919 "copying.ml" 205 6913 6930
+)
+"copying.ml" 211 7124 7144 "copying.ml" 211 7124 7168
+call(
+  stack
+)
+type(
+  string list
+)
+"copying.ml" 212 7172 7178 "copying.ml" 212 7172 7189
+type(
+  string list
+)
+"copying.ml" 212 7172 7192 "copying.ml" 212 7172 7201
+type(
+  (string -> string -> int) -> string list -> string list
+)
+ident(
+  ext_ref List.sort
+)
+"copying.ml" 212 7172 7202 "copying.ml" 212 7172 7209
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"copying.ml" 212 7172 7210 "copying.ml" 212 7172 7221
+type(
+  string list
+)
+ident(
+  int_ref filesystems "copying.ml" 211 7124 7130 "copying.ml" 211 7124 7141
+)
+"copying.ml" 212 7172 7192 "copying.ml" 212 7172 7221
+call(
+  stack
+)
+type(
+  string list
+)
+"copying.ml" 214 7226 7232 "copying.ml" 214 7226 7242
+type(
+  string -> bool
+)
+"copying.ml" 214 7226 7243 "copying.ml" 214 7226 7245
+type(
+  string
+)
+ident(
+  def fs "copying.ml" 215 7248 7252 "copying.ml" 216 7291 7360
+)
+"copying.ml" 215 7248 7256 "copying.ml" 215 7248 7258
+type(
+  string
+)
+"copying.ml" 215 7248 7261 "copying.ml" 215 7248 7262
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 215 7248 7261 "copying.ml" 215 7248 7284
+call(
+  stack
+)
+type(
+  string -> string
+)
+"copying.ml" 215 7248 7285 "copying.ml" 215 7248 7287
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 214 7226 7243 "copying.ml" 214 7226 7245
+)
+"copying.ml" 215 7248 7261 "copying.ml" 215 7248 7287
+type(
+  string
+)
+"copying.ml" 216 7291 7295 "copying.ml" 216 7291 7306
+type(
+  (string -> bool) -> string list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"copying.ml" 216 7291 7312 "copying.ml" 216 7291 7315
+type(
+  string
+)
+ident(
+  def fs' "copying.ml" 216 7291 7319 "copying.ml" 216 7291 7351
+)
+"copying.ml" 216 7291 7319 "copying.ml" 216 7291 7321
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 215 7248 7256 "copying.ml" 215 7248 7258
+)
+"copying.ml" 216 7291 7322 "copying.ml" 216 7291 7323
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"copying.ml" 216 7291 7324 "copying.ml" 216 7291 7325
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 216 7291 7324 "copying.ml" 216 7291 7347
+call(
+  stack
+)
+type(
+  string -> string
+)
+"copying.ml" 216 7291 7348 "copying.ml" 216 7291 7351
+type(
+  string
+)
+ident(
+  int_ref fs' "copying.ml" 216 7291 7312 "copying.ml" 216 7291 7315
+)
+"copying.ml" 216 7291 7324 "copying.ml" 216 7291 7351
+type(
+  string
+)
+"copying.ml" 216 7291 7319 "copying.ml" 216 7291 7351
+type(
+  bool
+)
+"copying.ml" 216 7291 7307 "copying.ml" 216 7291 7352
+type(
+  string -> bool
+)
+"copying.ml" 216 7291 7353 "copying.ml" 216 7291 7360
+type(
+  string list
+)
+ident(
+  int_ref ignores "copying.ml" 41 1232 1243 "copying.ml" 41 1232 1250
+)
+"copying.ml" 216 7291 7295 "copying.ml" 216 7291 7360
+call(
+  tail
+)
+type(
+  bool
+)
+"copying.ml" 215 7248 7252 "copying.ml" 216 7291 7360
+type(
+  bool
+)
+"copying.ml" 219 7367 7373 "copying.ml" 219 7367 7388
+type(
+  string -> bool
+)
+"copying.ml" 219 7367 7391 "copying.ml" 219 7367 7406
+type(
+  Utils.G.guestfs -> string -> bool
+)
+ident(
+  ext_ref Utils.is_read_only_lv
+)
+"copying.ml" 219 7367 7407 "copying.ml" 219 7367 7408
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 219 7367 7391 "copying.ml" 219 7367 7408
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"copying.ml" 221 7413 7419 "copying.ml" 221 7413 7445
+type(
+  string -> string -> bool
+)
+"copying.ml" 221 7413 7446 "copying.ml" 221 7413 7448
+type(
+  string
+)
+ident(
+  def fs "copying.ml" 221 7413 7449 "copying.ml" 230 7727 7754
+)
+"copying.ml" 221 7413 7449 "copying.ml" 221 7413 7451
+type(
+  string
+)
+ident(
+  def mp "copying.ml" 222 7454 7458 "copying.ml" 230 7727 7754
+)
+"copying.ml" 223 7462 7472 "copying.ml" 223 7462 7480
+type(
+  bool
+)
+ident(
+  def is_btrfs "copying.ml" 224 7516 7522 "copying.ml" 229 7708 7726
+)
+"copying.ml" 223 7462 7483 "copying.ml" 223 7462 7491
+type(
+  string -> string list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"copying.ml" 223 7462 7492 "copying.ml" 223 7462 7494
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 221 7413 7446 "copying.ml" 221 7413 7448
+)
+"copying.ml" 223 7462 7495 "copying.ml" 223 7462 7512
+type(
+  string list
+)
+ident(
+  int_ref btrfs_filesystems "copying.ml" 210 7064 7070 "copying.ml" 210 7064 7087
+)
+"copying.ml" 223 7462 7483 "copying.ml" 223 7462 7512
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 224 7516 7525 "copying.ml" 224 7516 7533
+type(
+  bool
+)
+ident(
+  int_ref is_btrfs "copying.ml" 223 7462 7472 "copying.ml" 223 7462 7480
+)
+"copying.ml" 226 7553 7567 "copying.ml" 226 7553 7575
+type(
+  (string * string) list
+)
+ident(
+  def vol_info "copying.ml" 227 7607 7617 "copying.ml" 227 7607 7675
+)
+"copying.ml" 226 7553 7578 "copying.ml" 226 7553 7579
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 226 7553 7578 "copying.ml" 226 7553 7600
+call(
+  stack
+)
+type(
+  string -> (string * string) list
+)
+"copying.ml" 226 7553 7601 "copying.ml" 226 7553 7603
+type(
+  string
+)
+ident(
+  int_ref mp "copying.ml" 221 7413 7449 "copying.ml" 221 7413 7451
+)
+"copying.ml" 226 7553 7578 "copying.ml" 226 7553 7603
+type(
+  (string * string) list
+)
+"copying.ml" 227 7607 7617 "copying.ml" 227 7607 7628
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.string_find
+)
+"copying.ml" 227 7607 7630 "copying.ml" 227 7607 7640
+type(
+  string -> (string * string) list -> string
+)
+ident(
+  ext_ref List.assoc
+)
+"copying.ml" 227 7607 7641 "copying.ml" 227 7607 7648
+type(
+  string
+)
+"copying.ml" 227 7607 7649 "copying.ml" 227 7607 7657
+type(
+  (string * string) list
+)
+ident(
+  int_ref vol_info "copying.ml" 226 7553 7567 "copying.ml" 226 7553 7575
+)
+"copying.ml" 227 7607 7629 "copying.ml" 227 7607 7658
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 227 7607 7659 "copying.ml" 227 7607 7669
+type(
+  string
+)
+"copying.ml" 227 7607 7617 "copying.ml" 227 7607 7669
+call(
+  stack
+)
+type(
+  int
+)
+"copying.ml" 227 7607 7670 "copying.ml" 227 7607 7672
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"copying.ml" 227 7607 7673 "copying.ml" 227 7607 7675
+type(
+  int
+)
+"copying.ml" 227 7607 7617 "copying.ml" 227 7607 7675
+type(
+  bool
+)
+"copying.ml" 226 7553 7563 "copying.ml" 227 7607 7675
+type(
+  bool
+)
+"copying.ml" 228 7676 7697 "copying.ml" 228 7676 7698
+type(
+  string
+)
+"copying.ml" 228 7676 7689 "copying.ml" 228 7676 7698
+type(
+  exn
+)
+"copying.ml" 228 7676 7702 "copying.ml" 228 7676 7707
+type(
+  bool
+)
+"copying.ml" 224 7516 7539 "copying.ml" 229 7708 7715
+type(
+  bool
+)
+"copying.ml" 229 7708 7721 "copying.ml" 229 7708 7726
+type(
+  bool
+)
+"copying.ml" 224 7516 7522 "copying.ml" 229 7708 7726
+type(
+  bool
+)
+"copying.ml" 223 7462 7468 "copying.ml" 229 7708 7726
+type(
+  bool
+)
+"copying.ml" 230 7727 7736 "copying.ml" 230 7727 7745
+type(
+  exn
+)
+"copying.ml" 230 7727 7749 "copying.ml" 230 7727 7754
+type(
+  bool
+)
+"copying.ml" 222 7454 7458 "copying.ml" 230 7727 7754
+type(
+  bool
+)
+"copying.ml" 233 7761 7767 "copying.ml" 233 7761 7785
+type(
+  string -> bool
+)
+"copying.ml" 233 7761 7786 "copying.ml" 233 7761 7788
+type(
+  string
+)
+ident(
+  def mp "copying.ml" 234 7791 7795 "copying.ml" 237 7907 7951
+)
+"copying.ml" 234 7791 7799 "copying.ml" 234 7791 7806
+type(
+  G.statvfs
+)
+"copying.ml" 234 7791 7809 "copying.ml" 234 7791 7810
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 234 7791 7809 "copying.ml" 234 7791 7818
+call(
+  stack
+)
+type(
+  string -> G.statvfs
+)
+"copying.ml" 234 7791 7819 "copying.ml" 234 7791 7821
+type(
+  string
+)
+ident(
+  int_ref mp "copying.ml" 233 7761 7786 "copying.ml" 233 7761 7788
+)
+"copying.ml" 234 7791 7809 "copying.ml" 234 7791 7821
+type(
+  G.statvfs
+)
+"copying.ml" 235 7825 7833 "copying.ml" 235 7825 7838
+type(
+  int64
+)
+"copying.ml" 235 7825 7841 "copying.ml" 235 7825 7848
+type(
+  G.statvfs
+)
+ident(
+  int_ref statvfs "copying.ml" 234 7791 7799 "copying.ml" 234 7791 7806
+)
+"copying.ml" 235 7825 7841 "copying.ml" 235 7825 7855
+type(
+  int64
+)
+"copying.ml" 237 7907 7911 "copying.ml" 237 7907 7916
+type(
+  int64
+)
+ident(
+  int_ref flags "copying.ml" 235 7825 7833 "copying.ml" 235 7825 7838
+)
+"copying.ml" 237 7907 7917 "copying.ml" 237 7907 7919
+type(
+  int64 -> int64 -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"copying.ml" 237 7907 7920 "copying.ml" 237 7907 7924
+type(
+  int64
+)
+"copying.ml" 237 7907 7911 "copying.ml" 237 7907 7924
+type(
+  bool
+)
+"copying.ml" 237 7907 7925 "copying.ml" 237 7907 7927
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"copying.ml" 237 7907 7929 "copying.ml" 237 7907 7934
+type(
+  int64
+)
+ident(
+  int_ref flags "copying.ml" 235 7825 7833 "copying.ml" 235 7825 7838
+)
+"copying.ml" 237 7907 7935 "copying.ml" 237 7907 7937
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( &^ )
+)
+"copying.ml" 237 7907 7938 "copying.ml" 237 7907 7943
+type(
+  int64
+)
+"copying.ml" 237 7907 7928 "copying.ml" 237 7907 7944
+call(
+  stack
+)
+type(
+  int64
+)
+"copying.ml" 237 7907 7945 "copying.ml" 237 7907 7947
+type(
+  int64 -> int64 -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"copying.ml" 237 7907 7948 "copying.ml" 237 7907 7951
+type(
+  int64
+)
+"copying.ml" 237 7907 7928 "copying.ml" 237 7907 7951
+type(
+  bool
+)
+"copying.ml" 237 7907 7911 "copying.ml" 237 7907 7951
+type(
+  bool
+)
+"copying.ml" 235 7825 7829 "copying.ml" 237 7907 7951
+type(
+  bool
+)
+"copying.ml" 234 7791 7795 "copying.ml" 237 7907 7951
+type(
+  bool
+)
+"copying.ml" 240 7958 7960 "copying.ml" 240 7958 7969
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+type(
+  string
+)
+ident(
+  def fs "copying.ml" 242 7986 7992 "copying.ml" 288 9800 9807
+)
+"copying.ml" 242 7986 7995 "copying.ml" 242 7986 7998
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"copying.ml" 242 7986 8000 "copying.ml" 242 7986 8010
+type(
+  string -> bool
+)
+ident(
+  int_ref is_ignored "copying.ml" 214 7226 7232 "copying.ml" 214 7226 7242
+)
+"copying.ml" 242 7986 8011 "copying.ml" 242 7986 8013
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 242 7986 7999 "copying.ml" 242 7986 8014
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 242 7986 7995 "copying.ml" 242 7986 8014
+type(
+  bool
+)
+"copying.ml" 242 7986 8015 "copying.ml" 242 7986 8017
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"copying.ml" 242 7986 8018 "copying.ml" 242 7986 8021
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"copying.ml" 242 7986 8023 "copying.ml" 242 7986 8038
+type(
+  string -> bool
+)
+ident(
+  int_ref is_read_only_lv "copying.ml" 219 7367 7373 "copying.ml" 219 7367 7388
+)
+"copying.ml" 242 7986 8039 "copying.ml" 242 7986 8041
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 242 7986 8022 "copying.ml" 242 7986 8042
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 242 7986 8018 "copying.ml" 242 7986 8042
+type(
+  bool
+)
+"copying.ml" 242 7986 7995 "copying.ml" 242 7986 8042
+type(
+  bool
+)
+"copying.ml" 243 8050 8061 "copying.ml" 243 8050 8069
+type(
+  string -> string list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"copying.ml" 243 8050 8070 "copying.ml" 243 8050 8072
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 243 8050 8073 "copying.ml" 243 8050 8079
+type(
+  string list
+)
+ident(
+  int_ref zeroes "copying.ml" 41 1232 1285 "copying.ml" 41 1232 1291
+)
+"copying.ml" 243 8050 8061 "copying.ml" 243 8050 8079
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 244 8087 8097 "copying.ml" 244 8087 8104
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"copying.ml" 244 8087 8106 "copying.ml" 244 8087 8108
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 244 8087 8108 "copying.ml" 244 8087 8120
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 244 8087 8105 "copying.ml" 244 8087 8121
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 244 8087 8122 "copying.ml" 244 8087 8124
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 244 8087 8097 "copying.ml" 244 8087 8124
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 246 8127 8137 "copying.ml" 246 8127 8138
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 246 8127 8137 "copying.ml" 246 8127 8150
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"copying.ml" 246 8127 8151 "copying.ml" 246 8127 8153
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 246 8127 8137 "copying.ml" 246 8127 8153
+type(
+  unit
+)
+"copying.ml" 243 8050 8085 "copying.ml" 247 8154 8163
+type(
+  unit
+)
+"copying.ml" 248 8171 8185 "copying.ml" 248 8171 8192
+type(
+  bool
+)
+"copying.ml" 249 8195 8211 "copying.ml" 249 8195 8212
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 249 8195 8211 "copying.ml" 249 8195 8218
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"copying.ml" 249 8195 8219 "copying.ml" 249 8195 8221
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 249 8195 8222 "copying.ml" 249 8195 8225
+type(
+  string
+)
+"copying.ml" 249 8195 8211 "copying.ml" 249 8195 8225
+type(
+  unit
+)
+"copying.ml" 249 8195 8227 "copying.ml" 249 8195 8231
+type(
+  bool
+)
+"copying.ml" 249 8195 8211 "copying.ml" 249 8195 8231
+type(
+  bool
+)
+"copying.ml" 250 8232 8249 "copying.ml" 250 8232 8250
+type(
+  exn
+)
+"copying.ml" 250 8232 8254 "copying.ml" 250 8232 8259
+type(
+  bool
+)
+"copying.ml" 249 8195 8207 "copying.ml" 250 8232 8259
+type(
+  bool
+)
+"copying.ml" 252 8264 8277 "copying.ml" 252 8264 8284
+type(
+  bool
+)
+ident(
+  int_ref mounted "copying.ml" 248 8171 8185 "copying.ml" 248 8171 8192
+)
+"copying.ml" 253 8292 8307 "copying.ml" 253 8292 8333
+type(
+  string -> string -> bool
+)
+ident(
+  int_ref is_readonly_btrfs_snapshot "copying.ml" 221 7413 7419 "copying.ml" 221 7413 7445
+)
+"copying.ml" 253 8292 8334 "copying.ml" 253 8292 8336
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 253 8292 8337 "copying.ml" 253 8292 8340
+type(
+  string
+)
+"copying.ml" 253 8292 8307 "copying.ml" 253 8292 8340
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 254 8348 8362 "copying.ml" 254 8348 8366
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.info
+)
+"copying.ml" 254 8348 8368 "copying.ml" 254 8348 8370
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 254 8348 8370 "copying.ml" 254 8348 8421
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 254 8348 8367 "copying.ml" 254 8348 8422
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 254 8348 8423 "copying.ml" 254 8348 8425
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 253 8292 8346 "copying.ml" 255 8427 8440
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 255 8427 8449 "copying.ml" 255 8427 8467
+type(
+  string -> bool
+)
+ident(
+  int_ref is_readonly_device "copying.ml" 233 7761 7767 "copying.ml" 233 7761 7785
+)
+"copying.ml" 255 8427 8468 "copying.ml" 255 8427 8471
+type(
+  string
+)
+"copying.ml" 255 8427 8449 "copying.ml" 255 8427 8471
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 256 8479 8493 "copying.ml" 256 8479 8497
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.info
+)
+"copying.ml" 256 8479 8499 "copying.ml" 256 8479 8501
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 256 8479 8501 "copying.ml" 256 8479 8544
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 256 8479 8498 "copying.ml" 256 8479 8545
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 256 8479 8546 "copying.ml" 256 8479 8548
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 255 8427 8477 "copying.ml" 257 8550 8563
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 258 8571 8585 "copying.ml" 258 8571 8592
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"copying.ml" 258 8571 8594 "copying.ml" 258 8571 8596
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 258 8571 8596 "copying.ml" 258 8571 8629
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 258 8571 8593 "copying.ml" 258 8571 8630
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 258 8571 8631 "copying.ml" 258 8571 8633
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 258 8571 8585 "copying.ml" 258 8571 8633
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 259 8635 8649 "copying.ml" 259 8635 8650
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 259 8635 8649 "copying.ml" 259 8635 8666
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"copying.ml" 259 8635 8667 "copying.ml" 259 8635 8670
+type(
+  string
+)
+"copying.ml" 259 8635 8649 "copying.ml" 259 8635 8670
+type(
+  unit
+)
+"copying.ml" 257 8550 8569 "copying.ml" 260 8671 8684
+type(
+  unit
+)
+"copying.ml" 255 8427 8446 "copying.ml" 260 8671 8684
+type(
+  unit
+)
+"copying.ml" 252 8264 8290 "copying.ml" 261 8685 8696
+type(
+  unit
+)
+"copying.ml" 262 8704 8720 "copying.ml" 262 8704 8737
+type(
+  bool
+)
+"copying.ml" 269 9105 9123 "copying.ml" 269 9105 9124
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 269 9105 9123 "copying.ml" 269 9105 9137
+call(
+  stack
+)
+type(
+  string -> int -> int64 -> string
+)
+"copying.ml" 269 9105 9138 "copying.ml" 269 9105 9140
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 269 9105 9141 "copying.ml" 269 9105 9143
+type(
+  int
+)
+"copying.ml" 269 9105 9144 "copying.ml" 269 9105 9149
+type(
+  int64
+)
+"copying.ml" 269 9105 9123 "copying.ml" 269 9105 9149
+type(
+  string
+)
+"copying.ml" 269 9105 9150 "copying.ml" 269 9105 9151
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"copying.ml" 269 9105 9152 "copying.ml" 269 9105 9164
+type(
+  string
+)
+"copying.ml" 269 9105 9123 "copying.ml" 269 9105 9164
+type(
+  bool
+)
+"copying.ml" 270 9165 9184 "copying.ml" 270 9165 9185
+type(
+  exn
+)
+"copying.ml" 270 9165 9189 "copying.ml" 270 9165 9194
+type(
+  bool
+)
+"copying.ml" 269 9105 9119 "copying.ml" 270 9165 9194
+type(
+  bool
+)
+"copying.ml" 272 9199 9214 "copying.ml" 272 9199 9231
+type(
+  bool
+)
+ident(
+  int_ref is_linux_x86_swap "copying.ml" 262 8704 8720 "copying.ml" 262 8704 8737
+)
+"copying.ml" 273 9239 9253 "copying.ml" 273 9239 9260
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"copying.ml" 273 9239 9262 "copying.ml" 273 9239 9264
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 273 9239 9264 "copying.ml" 273 9239 9291
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 273 9239 9261 "copying.ml" 273 9239 9292
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 273 9239 9293 "copying.ml" 273 9239 9295
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 273 9239 9253 "copying.ml" 273 9239 9295
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 279 9511 9529 "copying.ml" 279 9511 9535
+type(
+  string
+)
+"copying.ml" 279 9511 9538 "copying.ml" 279 9511 9539
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 279 9511 9538 "copying.ml" 279 9511 9552
+call(
+  stack
+)
+type(
+  string -> int -> int64 -> string
+)
+"copying.ml" 279 9511 9553 "copying.ml" 279 9511 9555
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 279 9511 9556 "copying.ml" 279 9511 9560
+type(
+  int
+)
+"copying.ml" 279 9511 9561 "copying.ml" 279 9511 9563
+type(
+  int64
+)
+"copying.ml" 279 9511 9538 "copying.ml" 279 9511 9563
+type(
+  string
+)
+"copying.ml" 280 9567 9581 "copying.ml" 280 9567 9582
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 280 9567 9581 "copying.ml" 280 9567 9594
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"copying.ml" 280 9567 9595 "copying.ml" 280 9567 9597
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 280 9567 9581 "copying.ml" 280 9567 9597
+type(
+  unit
+)
+"copying.ml" 281 9599 9616 "copying.ml" 281 9599 9617
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 281 9599 9616 "copying.ml" 281 9599 9631
+call(
+  stack
+)
+type(
+  string -> string -> int64 -> int
+)
+"copying.ml" 281 9599 9632 "copying.ml" 281 9599 9634
+type(
+  string
+)
+ident(
+  int_ref fs "copying.ml" 241 7972 7980 "copying.ml" 241 7972 7982
+)
+"copying.ml" 281 9599 9635 "copying.ml" 281 9599 9641
+type(
+  string
+)
+ident(
+  int_ref header "copying.ml" 279 9511 9529 "copying.ml" 279 9511 9535
+)
+"copying.ml" 281 9599 9642 "copying.ml" 281 9599 9644
+type(
+  int64
+)
+"copying.ml" 281 9599 9616 "copying.ml" 281 9599 9644
+type(
+  int
+)
+"copying.ml" 281 9599 9645 "copying.ml" 281 9599 9647
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"copying.ml" 281 9599 9648 "copying.ml" 281 9599 9652
+type(
+  int
+)
+"copying.ml" 281 9599 9616 "copying.ml" 281 9599 9652
+type(
+  bool
+)
+"copying.ml" 282 9658 9674 "copying.ml" 282 9658 9679
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"copying.ml" 282 9658 9681 "copying.ml" 282 9658 9683
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 282 9658 9683 "copying.ml" 282 9658 9736
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 282 9658 9680 "copying.ml" 282 9658 9737
+type(
+  (unit, unit, string, unit) format4
+)
+"copying.ml" 282 9658 9674 "copying.ml" 282 9658 9737
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 281 9599 9613 "copying.ml" 282 9658 9737
+type(
+  unit
+)
+"copying.ml" 280 9567 9581 "copying.ml" 282 9658 9737
+type(
+  unit
+)
+"copying.ml" 279 9511 9525 "copying.ml" 282 9658 9737
+type(
+  unit
+)
+"copying.ml" 272 9199 9237 "copying.ml" 283 9738 9751
+type(
+  unit
+)
+"copying.ml" 272 9199 9211 "copying.ml" 283 9738 9751
+type(
+  unit
+)
+"copying.ml" 261 8685 8702 "copying.ml" 284 9752 9763
+type(
+  unit
+)
+"copying.ml" 252 8264 8274 "copying.ml" 284 9752 9763
+type(
+  unit
+)
+"copying.ml" 247 8154 8169 "copying.ml" 285 9764 9773
+type(
+  unit
+)
+"copying.ml" 243 8050 8058 "copying.ml" 285 9764 9773
+type(
+  unit
+)
+"copying.ml" 287 9776 9784 "copying.ml" 287 9776 9785
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 287 9776 9784 "copying.ml" 287 9776 9796
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"copying.ml" 287 9776 9797 "copying.ml" 287 9776 9799
+type(
+  unit
+)
+"copying.ml" 287 9776 9784 "copying.ml" 287 9776 9799
+type(
+  unit
+)
+"copying.ml" 242 7986 8048 "copying.ml" 288 9800 9807
+type(
+  unit
+)
+"copying.ml" 242 7986 7992 "copying.ml" 288 9800 9807
+type(
+  unit
+)
+"copying.ml" 240 7958 7970 "copying.ml" 289 9808 9811
+type(
+  string -> unit
+)
+"copying.ml" 289 9808 9812 "copying.ml" 289 9808 9823
+type(
+  string list
+)
+ident(
+  int_ref filesystems "copying.ml" 212 7172 7178 "copying.ml" 212 7172 7189
+)
+"copying.ml" 240 7958 7960 "copying.ml" 289 9808 9823
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 292 9870 9876 "copying.ml" 292 9870 9879
+type(
+  string array
+)
+"copying.ml" 292 9870 9882 "copying.ml" 292 9870 9883
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 292 9870 9882 "copying.ml" 292 9870 9887
+call(
+  stack
+)
+type(
+  unit -> string array
+)
+"copying.ml" 292 9870 9888 "copying.ml" 292 9870 9890
+type(
+  unit
+)
+"copying.ml" 292 9870 9882 "copying.ml" 292 9870 9890
+type(
+  string array
+)
+"copying.ml" 293 9894 9900 "copying.ml" 293 9894 9903
+type(
+  string list
+)
+"copying.ml" 293 9894 9906 "copying.ml" 293 9894 9919
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"copying.ml" 293 9894 9920 "copying.ml" 293 9894 9923
+type(
+  string array
+)
+ident(
+  int_ref vgs "copying.ml" 292 9870 9876 "copying.ml" 292 9870 9879
+)
+"copying.ml" 293 9894 9906 "copying.ml" 293 9894 9923
+call(
+  stack
+)
+type(
+  string list
+)
+"copying.ml" 294 9927 9933 "copying.ml" 294 9927 9936
+type(
+  string list
+)
+"copying.ml" 294 9927 9939 "copying.ml" 294 9927 9948
+type(
+  (string -> string -> int) -> string list -> string list
+)
+ident(
+  ext_ref List.sort
+)
+"copying.ml" 294 9927 9949 "copying.ml" 294 9927 9956
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"copying.ml" 294 9927 9957 "copying.ml" 294 9927 9960
+type(
+  string list
+)
+ident(
+  int_ref vgs "copying.ml" 293 9894 9900 "copying.ml" 293 9894 9903
+)
+"copying.ml" 294 9927 9939 "copying.ml" 294 9927 9960
+call(
+  stack
+)
+type(
+  string list
+)
+"copying.ml" 295 9964 9966 "copying.ml" 295 9964 9975
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"copying.ml" 296 9978 9986 "copying.ml" 296 9978 9988
+type(
+  string
+)
+ident(
+  def vg "copying.ml" 297 9992 9998 "copying.ml" 312 10415 10422
+)
+"copying.ml" 297 9992 10001 "copying.ml" 297 9992 10004
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"copying.ml" 297 9992 10006 "copying.ml" 297 9992 10014
+type(
+  string -> string list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"copying.ml" 297 9992 10015 "copying.ml" 297 9992 10017
+type(
+  string
+)
+ident(
+  int_ref vg "copying.ml" 296 9978 9986 "copying.ml" 296 9978 9988
+)
+"copying.ml" 297 9992 10018 "copying.ml" 297 9992 10025
+type(
+  string list
+)
+ident(
+  int_ref ignores "copying.ml" 41 1232 1243 "copying.ml" 41 1232 1250
+)
+"copying.ml" 297 9992 10005 "copying.ml" 297 9992 10026
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 297 9992 10001 "copying.ml" 297 9992 10026
+type(
+  bool
+)
+"copying.ml" 298 10034 10046 "copying.ml" 298 10034 10052
+type(
+  string
+)
+"copying.ml" 298 10034 10055 "copying.ml" 298 10034 10069
+type(
+  unit -> string
+)
+ident(
+  ext_ref Common_utils.string_random8
+)
+"copying.ml" 298 10034 10070 "copying.ml" 298 10034 10072
+type(
+  unit
+)
+"copying.ml" 298 10034 10055 "copying.ml" 298 10034 10072
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 299 10076 10088 "copying.ml" 299 10076 10093
+type(
+  string
+)
+"copying.ml" 299 10076 10096 "copying.ml" 299 10076 10103
+type(
+  string
+)
+"copying.ml" 299 10076 10104 "copying.ml" 299 10076 10105
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"copying.ml" 299 10076 10106 "copying.ml" 299 10076 10108
+type(
+  string
+)
+ident(
+  int_ref vg "copying.ml" 296 9978 9986 "copying.ml" 296 9978 9988
+)
+"copying.ml" 299 10076 10109 "copying.ml" 299 10076 10110
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"copying.ml" 299 10076 10111 "copying.ml" 299 10076 10114
+type(
+  string
+)
+"copying.ml" 299 10076 10115 "copying.ml" 299 10076 10116
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"copying.ml" 299 10076 10117 "copying.ml" 299 10076 10123
+type(
+  string
+)
+ident(
+  int_ref lvname "copying.ml" 298 10034 10046 "copying.ml" 298 10034 10052
+)
+"copying.ml" 299 10076 10111 "copying.ml" 299 10076 10123
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 299 10076 10106 "copying.ml" 299 10076 10123
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 299 10076 10096 "copying.ml" 299 10076 10123
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 301 10128 10140 "copying.ml" 301 10128 10147
+type(
+  bool
+)
+"copying.ml" 302 10150 10164 "copying.ml" 302 10150 10165
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 302 10150 10164 "copying.ml" 302 10150 10179
+call(
+  stack
+)
+type(
+  string -> string -> int -> unit
+)
+"copying.ml" 302 10150 10180 "copying.ml" 302 10150 10186
+type(
+  string
+)
+ident(
+  int_ref lvname "copying.ml" 298 10034 10046 "copying.ml" 298 10034 10052
+)
+"copying.ml" 302 10150 10187 "copying.ml" 302 10150 10189
+type(
+  string
+)
+ident(
+  int_ref vg "copying.ml" 296 9978 9986 "copying.ml" 296 9978 9988
+)
+"copying.ml" 302 10150 10190 "copying.ml" 302 10150 10193
+type(
+  int
+)
+"copying.ml" 302 10150 10164 "copying.ml" 302 10150 10193
+type(
+  unit
+)
+"copying.ml" 302 10150 10195 "copying.ml" 302 10150 10199
+type(
+  bool
+)
+"copying.ml" 302 10150 10164 "copying.ml" 302 10150 10199
+type(
+  bool
+)
+"copying.ml" 303 10200 10215 "copying.ml" 303 10200 10216
+type(
+  exn
+)
+"copying.ml" 303 10200 10220 "copying.ml" 303 10200 10225
+type(
+  bool
+)
+"copying.ml" 302 10150 10160 "copying.ml" 303 10200 10225
+type(
+  bool
+)
+"copying.ml" 305 10230 10241 "copying.ml" 305 10230 10248
+type(
+  bool
+)
+ident(
+  int_ref created "copying.ml" 301 10128 10140 "copying.ml" 301 10128 10147
+)
+"copying.ml" 306 10256 10266 "copying.ml" 306 10256 10273
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"copying.ml" 306 10256 10275 "copying.ml" 306 10256 10277
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 306 10256 10277 "copying.ml" 306 10256 10319
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 306 10256 10274 "copying.ml" 306 10256 10320
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 306 10256 10321 "copying.ml" 306 10256 10323
+type(
+  string
+)
+ident(
+  int_ref vg "copying.ml" 296 9978 9986 "copying.ml" 296 9978 9988
+)
+"copying.ml" 306 10256 10266 "copying.ml" 306 10256 10323
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 308 10326 10336 "copying.ml" 308 10326 10337
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 308 10326 10336 "copying.ml" 308 10326 10349
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"copying.ml" 308 10326 10350 "copying.ml" 308 10326 10355
+type(
+  string
+)
+ident(
+  int_ref lvdev "copying.ml" 299 10076 10088 "copying.ml" 299 10076 10093
+)
+"copying.ml" 308 10326 10336 "copying.ml" 308 10326 10355
+type(
+  unit
+)
+"copying.ml" 309 10357 10367 "copying.ml" 309 10357 10368
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 309 10357 10367 "copying.ml" 309 10357 10373
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"copying.ml" 309 10357 10374 "copying.ml" 309 10357 10376
+type(
+  unit
+)
+"copying.ml" 309 10357 10367 "copying.ml" 309 10357 10376
+type(
+  unit
+)
+"copying.ml" 310 10378 10388 "copying.ml" 310 10378 10389
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 310 10378 10388 "copying.ml" 310 10378 10398
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"copying.ml" 310 10378 10399 "copying.ml" 310 10378 10404
+type(
+  string
+)
+ident(
+  int_ref lvdev "copying.ml" 299 10076 10088 "copying.ml" 299 10076 10093
+)
+"copying.ml" 310 10378 10388 "copying.ml" 310 10378 10404
+type(
+  unit
+)
+"copying.ml" 309 10357 10367 "copying.ml" 310 10378 10404
+type(
+  unit
+)
+"copying.ml" 308 10326 10336 "copying.ml" 310 10378 10404
+type(
+  unit
+)
+"copying.ml" 305 10230 10254 "copying.ml" 311 10405 10414
+type(
+  unit
+)
+"copying.ml" 305 10230 10238 "copying.ml" 311 10405 10414
+type(
+  unit
+)
+"copying.ml" 301 10128 10136 "copying.ml" 311 10405 10414
+type(
+  unit
+)
+"copying.ml" 299 10076 10084 "copying.ml" 311 10405 10414
+type(
+  unit
+)
+"copying.ml" 297 9992 10032 "copying.ml" 312 10415 10422
+type(
+  unit
+)
+"copying.ml" 297 9992 9998 "copying.ml" 312 10415 10422
+type(
+  unit
+)
+"copying.ml" 295 9964 9976 "copying.ml" 313 10423 10426
+type(
+  string -> unit
+)
+"copying.ml" 313 10423 10427 "copying.ml" 313 10423 10430
+type(
+  string list
+)
+ident(
+  int_ref vgs "copying.ml" 294 9927 9933 "copying.ml" 294 9927 9936
+)
+"copying.ml" 295 9964 9966 "copying.ml" 313 10423 10430
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 316 10468 10470 "copying.ml" 316 10468 10471
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 316 10468 10470 "copying.ml" 316 10468 10480
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"copying.ml" 316 10468 10481 "copying.ml" 316 10468 10483
+type(
+  unit
+)
+"copying.ml" 316 10468 10470 "copying.ml" 316 10468 10483
+type(
+  unit
+)
+"copying.ml" 317 10485 10487 "copying.ml" 317 10485 10488
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "copying.ml" 182 6228 6234 "copying.ml" 182 6228 6235
+)
+"copying.ml" 317 10485 10487 "copying.ml" 317 10485 10494
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"copying.ml" 317 10485 10495 "copying.ml" 317 10485 10497
+type(
+  unit
+)
+"copying.ml" 317 10485 10487 "copying.ml" 317 10485 10497
+type(
+  unit
+)
+"copying.ml" 320 10562 10568 "copying.ml" 320 10562 10577
+type(
+  'f -> 'g
+)
+"copying.ml" 320 10562 10578 "copying.ml" 320 10562 10579
+type(
+  'f
+)
+"copying.ml" 320 10562 10582 "copying.ml" 320 10562 10586
+type(
+  int -> 'g
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"copying.ml" 320 10562 10587 "copying.ml" 320 10562 10588
+type(
+  int
+)
+"copying.ml" 320 10562 10582 "copying.ml" 320 10562 10588
+call(
+  tail
+)
+type(
+  'g
+)
+"copying.ml" 321 10592 10594 "copying.ml" 321 10592 10608
+type(
+  int -> Sys.signal_behavior -> unit
+)
+ident(
+  ext_ref Sys.set_signal
+)
+"copying.ml" 321 10592 10609 "copying.ml" 321 10592 10619
+type(
+  int
+)
+ident(
+  ext_ref Sys.sigint
+)
+"copying.ml" 321 10592 10639 "copying.ml" 321 10592 10648
+type(
+  int -> unit
+)
+ident(
+  int_ref do_sigint "copying.ml" 320 10562 10568 "copying.ml" 320 10562 10577
+)
+"copying.ml" 321 10592 10620 "copying.ml" 321 10592 10649
+type(
+  Sys.signal_behavior
+)
+"copying.ml" 321 10592 10594 "copying.ml" 321 10592 10649
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 326 10776 10778 "copying.ml" 326 10776 10785
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"copying.ml" 326 10776 10786 "copying.ml" 326 10776 10825
+type(
+  (unit, unit, string, unit) format4
+)
+"copying.ml" 326 10776 10778 "copying.ml" 326 10776 10825
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 328 10828 10834 "copying.ml" 328 10828 10837
+type(
+  string
+)
+"copying.ml" 329 10840 10844 "copying.ml" 329 10840 10851
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format -> string -> string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"copying.ml" 329 10840 10852 "copying.ml" 329 10840 10895
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format
+)
+"copying.ml" 330 10896 10903 "copying.ml" 330 10896 10908
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"copying.ml" 330 10896 10909 "copying.ml" 330 10896 10922
+type(
+  string
+)
+ident(
+  int_ref output_format "copying.ml" 55 1820 1826 "copying.ml" 55 1820 1839
+)
+"copying.ml" 330 10896 10902 "copying.ml" 330 10896 10923
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 331 10924 10934 "copying.ml" 331 10924 10942
+type(
+  bool
+)
+ident(
+  int_ref compress "copying.ml" 40 1179 1215 "copying.ml" 40 1179 1223
+)
+"copying.ml" 331 10924 10948 "copying.ml" 331 10924 10953
+type(
+  string
+)
+"copying.ml" 331 10924 10959 "copying.ml" 331 10924 10961
+type(
+  string
+)
+"copying.ml" 331 10924 10930 "copying.ml" 331 10924 10962
+type(
+  string
+)
+"copying.ml" 332 10963 10976 "copying.ml" 332 10963 10982
+type(
+  string option
+)
+ident(
+  int_ref option "copying.ml" 41 1232 1268 "copying.ml" 41 1232 1274
+)
+"copying.ml" 333 10988 10996 "copying.ml" 333 10988 11000
+type(
+  string option
+)
+"copying.ml" 333 10988 11004 "copying.ml" 333 10988 11006
+type(
+  string
+)
+"copying.ml" 334 11007 11020 "copying.ml" 334 11007 11026
+type(
+  string
+)
+ident(
+  def option "copying.ml" 334 11007 11030 "copying.ml" 334 11007 11051
+)
+"copying.ml" 334 11007 11015 "copying.ml" 334 11007 11026
+type(
+  string option
+)
+"copying.ml" 334 11007 11030 "copying.ml" 334 11007 11036
+type(
+  string
+)
+"copying.ml" 334 11007 11037 "copying.ml" 334 11007 11038
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"copying.ml" 334 11007 11039 "copying.ml" 334 11007 11044
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"copying.ml" 334 11007 11045 "copying.ml" 334 11007 11051
+type(
+  string
+)
+ident(
+  int_ref option "copying.ml" 334 11007 11020 "copying.ml" 334 11007 11026
+)
+"copying.ml" 334 11007 11039 "copying.ml" 334 11007 11051
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 334 11007 11030 "copying.ml" 334 11007 11051
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 332 10963 10969 "copying.ml" 334 11007 11052
+type(
+  string
+)
+"copying.ml" 335 11053 11060 "copying.ml" 335 11053 11065
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"copying.ml" 335 11053 11066 "copying.ml" 335 11053 11077
+type(
+  string
+)
+ident(
+  int_ref overlaydisk "copying.ml" 144 5128 5134 "copying.ml" 144 5128 5145
+)
+"copying.ml" 335 11053 11059 "copying.ml" 335 11053 11078
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 335 11053 11080 "copying.ml" 335 11053 11085
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"copying.ml" 335 11053 11087 "copying.ml" 335 11053 11106
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.qemu_input_filename
+)
+"copying.ml" 335 11053 11107 "copying.ml" 335 11053 11114
+type(
+  string
+)
+ident(
+  int_ref outdisk "copying.ml" 40 1179 1194 "copying.ml" 40 1179 1201
+)
+"copying.ml" 335 11053 11086 "copying.ml" 335 11053 11115
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 335 11053 11079 "copying.ml" 335 11053 11116
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 329 10840 10844 "copying.ml" 335 11053 11116
+call(
+  stack
+)
+type(
+  string
+)
+"copying.ml" 336 11120 11125 "copying.ml" 336 11120 11132
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"copying.ml" 336 11120 11133 "copying.ml" 336 11120 11135
+type(
+  unit
+)
+"copying.ml" 336 11120 11125 "copying.ml" 336 11120 11135
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 337 11141 11145 "copying.ml" 337 11141 11151
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"copying.ml" 337 11141 11152 "copying.ml" 337 11141 11160
+type(
+  (string -> unit, out_channel, unit) format
+)
+"copying.ml" 337 11141 11161 "copying.ml" 337 11141 11164
+type(
+  string
+)
+ident(
+  int_ref cmd "copying.ml" 328 10828 10834 "copying.ml" 328 10828 10837
+)
+"copying.ml" 337 11141 11145 "copying.ml" 337 11141 11164
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 336 11120 11122 "copying.ml" 337 11141 11164
+type(
+  unit
+)
+"copying.ml" 338 11166 11171 "copying.ml" 338 11166 11182
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"copying.ml" 338 11166 11183 "copying.ml" 338 11166 11186
+type(
+  string
+)
+ident(
+  int_ref cmd "copying.ml" 328 10828 10834 "copying.ml" 328 10828 10837
+)
+"copying.ml" 338 11166 11171 "copying.ml" 338 11166 11186
+type(
+  int
+)
+"copying.ml" 338 11166 11187 "copying.ml" 338 11166 11189
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"copying.ml" 338 11166 11190 "copying.ml" 338 11166 11191
+type(
+  int
+)
+"copying.ml" 338 11166 11171 "copying.ml" 338 11166 11191
+type(
+  bool
+)
+"copying.ml" 339 11197 11201 "copying.ml" 339 11197 11206
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"copying.ml" 339 11197 11208 "copying.ml" 339 11197 11210
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 339 11197 11210 "copying.ml" 339 11197 11239
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 339 11197 11207 "copying.ml" 339 11197 11240
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"copying.ml" 339 11197 11241 "copying.ml" 339 11197 11244
+type(
+  string
+)
+ident(
+  int_ref cmd "copying.ml" 328 10828 10834 "copying.ml" 328 10828 10837
+)
+"copying.ml" 339 11197 11201 "copying.ml" 339 11197 11244
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 338 11166 11168 "copying.ml" 339 11197 11244
+type(
+  unit
+)
+"copying.ml" 342 11265 11267 "copying.ml" 342 11265 11274
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"copying.ml" 342 11265 11276 "copying.ml" 342 11265 11278
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 342 11265 11278 "copying.ml" 342 11265 11324
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 342 11265 11275 "copying.ml" 342 11265 11325
+type(
+  (unit, unit, string, unit) format4
+)
+"copying.ml" 342 11265 11267 "copying.ml" 342 11265 11325
+call(
+  stack
+)
+type(
+  unit
+)
+"copying.ml" 343 11327 11332 "copying.ml" 343 11327 11335
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"copying.ml" 343 11327 11337 "copying.ml" 343 11327 11342
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.quiet
+)
+"copying.ml" 343 11327 11343 "copying.ml" 343 11327 11345
+type(
+  unit
+)
+"copying.ml" 343 11327 11336 "copying.ml" 343 11327 11346
+call(
+  stack
+)
+type(
+  bool
+)
+"copying.ml" 343 11327 11332 "copying.ml" 343 11327 11346
+type(
+  bool
+)
+"copying.ml" 344 11352 11356 "copying.ml" 344 11352 11360
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.info
+)
+"copying.ml" 344 11352 11362 "copying.ml" 344 11352 11364
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"copying.ml" 344 11352 11364 "copying.ml" 344 11352 11459
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"copying.ml" 344 11352 11361 "copying.ml" 344 11352 11460
+type(
+  (unit, unit, string, unit) format4
+)
+"copying.ml" 344 11352 11356 "copying.ml" 344 11352 11460
+call(
+  tail
+)
+type(
+  unit
+)
+"copying.ml" 343 11327 11329 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 342 11265 11267 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 338 11166 11168 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 336 11120 11122 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 328 10828 10830 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 326 10776 10778 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 321 10592 10594 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 320 10562 10564 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 317 10485 10487 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 316 10468 10470 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 295 9964 9966 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 294 9927 9929 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 293 9894 9896 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 292 9870 9872 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 240 7958 7960 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 233 7761 7763 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 221 7413 7415 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 219 7367 7369 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 214 7226 7228 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 212 7172 7174 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 211 7124 7126 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 210 7064 7066 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 206 6958 6960 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 205 6913 6915 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 200 6739 6741 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 196 6681 6683 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 182 6228 6230 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 179 6159 6161 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 144 5128 5130 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 95 3588 3590 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 73 2551 2553 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 69 2364 2366 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 55 1820 1822 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 50 1622 1624 "copying.ml" 344 11352 11460
+type(
+  unit
+)
+"copying.ml" 49 1592 1594 "copying.ml" 344 11352 11460
+type(
+  unit
+)

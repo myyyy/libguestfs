@@ -1,0 +1,3030 @@
+"output_qemu.ml" 27 860 878 "output_qemu.ml" 27 860 881
+type(
+  string
+)
+"output_qemu.ml" 27 860 882 "output_qemu.ml" 27 860 891
+type(
+  bool
+)
+"output_qemu.ml" 32 941 945 "output_qemu.ml" 32 941 952
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_qemu.ml" 32 941 953 "output_qemu.ml" 32 941 971
+type(
+  (string -> string -> string, unit, string) format
+)
+"output_qemu.ml" 32 941 972 "output_qemu.ml" 32 941 975
+type(
+  string
+)
+"output_qemu.ml" 32 941 980 "output_qemu.ml" 32 941 989
+type(
+  bool
+)
+"output_qemu.ml" 32 941 995 "output_qemu.ml" 32 941 1009
+type(
+  string
+)
+"output_qemu.ml" 32 941 1015 "output_qemu.ml" 32 941 1017
+type(
+  string
+)
+"output_qemu.ml" 32 941 976 "output_qemu.ml" 32 941 1018
+type(
+  string
+)
+"output_qemu.ml" 32 941 945 "output_qemu.ml" 32 941 1018
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"output_qemu.ml" 34 1020 1052 "output_qemu.ml" 34 1020 1062
+type(
+  Types.target_firmware
+)
+"output_qemu.ml" 34 1020 1064 "output_qemu.ml" 34 1020 1074
+type(
+  Types.target_firmware
+)
+"output_qemu.ml" 34 1020 1050 "output_qemu.ml" 34 1020 1076
+type(
+  Types.target_firmware list
+)
+type(
+  Types.target_firmware list
+)
+"output_qemu.ml" 36 1078 1103 "output_qemu.ml" 36 1078 1109
+type(
+  Types.source
+)
+ident(
+  def source "output_qemu.ml" 36 1078 1110 "output_qemu.ml" 41 1276 1289
+)
+"output_qemu.ml" 36 1078 1110 "output_qemu.ml" 36 1078 1117
+type(
+  Types.target list
+)
+ident(
+  def targets "output_qemu.ml" 37 1120 1124 "output_qemu.ml" 41 1276 1289
+)
+"output_qemu.ml" 37 1120 1124 "output_qemu.ml" 37 1120 1132
+type(
+  (Types.target -> Types.target) -> Types.target list -> Types.target list
+)
+ident(
+  ext_ref List.map
+)
+"output_qemu.ml" 38 1135 1145 "output_qemu.ml" 38 1135 1146
+type(
+  Types.target
+)
+ident(
+  def t "output_qemu.ml" 39 1150 1158 "output_qemu.ml" 40 1231 1275
+)
+"output_qemu.ml" 39 1150 1162 "output_qemu.ml" 39 1150 1173
+type(
+  string
+)
+"output_qemu.ml" 39 1150 1176 "output_qemu.ml" 39 1150 1179
+type(
+  string
+)
+"output_qemu.ml" 39 1150 1180 "output_qemu.ml" 39 1150 1182
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_qemu.ml" 39 1150 1183 "output_qemu.ml" 39 1150 1189
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_qemu.ml" 36 1078 1103 "output_qemu.ml" 36 1078 1109
+)
+"output_qemu.ml" 39 1150 1183 "output_qemu.ml" 39 1150 1196
+type(
+  string
+)
+"output_qemu.ml" 39 1150 1176 "output_qemu.ml" 39 1150 1196
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 39 1150 1197 "output_qemu.ml" 39 1150 1198
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_qemu.ml" 39 1150 1199 "output_qemu.ml" 39 1150 1202
+type(
+  string
+)
+"output_qemu.ml" 39 1150 1203 "output_qemu.ml" 39 1150 1204
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_qemu.ml" 39 1150 1205 "output_qemu.ml" 39 1150 1206
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_qemu.ml" 38 1135 1145 "output_qemu.ml" 38 1135 1146
+)
+"output_qemu.ml" 39 1150 1205 "output_qemu.ml" 39 1150 1221
+type(
+  Types.overlay
+)
+"output_qemu.ml" 39 1150 1205 "output_qemu.ml" 39 1150 1227
+type(
+  string
+)
+"output_qemu.ml" 39 1150 1199 "output_qemu.ml" 39 1150 1227
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 39 1150 1176 "output_qemu.ml" 39 1150 1227
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 40 1231 1241 "output_qemu.ml" 40 1231 1242
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_qemu.ml" 38 1135 1145 "output_qemu.ml" 38 1135 1146
+)
+"output_qemu.ml" 40 1231 1262 "output_qemu.ml" 40 1231 1273
+type(
+  string
+)
+ident(
+  int_ref target_file "output_qemu.ml" 39 1150 1162 "output_qemu.ml" 39 1150 1173
+)
+"output_qemu.ml" 40 1231 1239 "output_qemu.ml" 40 1231 1275
+type(
+  Types.target
+)
+"output_qemu.ml" 39 1150 1158 "output_qemu.ml" 40 1231 1275
+type(
+  Types.target
+)
+"output_qemu.ml" 37 1120 1133 "output_qemu.ml" 41 1276 1281
+type(
+  Types.target -> Types.target
+)
+"output_qemu.ml" 41 1276 1282 "output_qemu.ml" 41 1276 1289
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_qemu.ml" 36 1078 1110 "output_qemu.ml" 36 1078 1117
+)
+"output_qemu.ml" 37 1120 1124 "output_qemu.ml" 41 1276 1289
+call(
+  tail
+)
+type(
+  Types.target list
+)
+"output_qemu.ml" 43 1291 1322 "output_qemu.ml" 43 1291 1331
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "output_qemu.ml" 43 1291 1332 "output_qemu.ml" 50 1537 1592
+)
+"output_qemu.ml" 43 1291 1332 "output_qemu.ml" 43 1291 1347
+type(
+  Types.target_firmware
+)
+ident(
+  def target_firmware "output_qemu.ml" 44 1350 1354 "output_qemu.ml" 50 1537 1592
+)
+"output_qemu.ml" 44 1350 1360 "output_qemu.ml" 44 1350 1375
+type(
+  Types.target_firmware
+)
+ident(
+  int_ref target_firmware "output_qemu.ml" 43 1291 1332 "output_qemu.ml" 43 1291 1347
+)
+"output_qemu.ml" 45 1381 1387 "output_qemu.ml" 45 1381 1397
+type(
+  Types.target_firmware
+)
+"output_qemu.ml" 45 1381 1401 "output_qemu.ml" 45 1381 1403
+type(
+  unit
+)
+"output_qemu.ml" 46 1404 1410 "output_qemu.ml" 46 1404 1420
+type(
+  Types.target_firmware
+)
+"output_qemu.ml" 50 1537 1544 "output_qemu.ml" 50 1537 1550
+type(
+  string * string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"output_qemu.ml" 50 1537 1552 "output_qemu.ml" 50 1537 1570
+type(
+  string -> string * string
+)
+ident(
+  ext_ref Utils.find_uefi_firmware
+)
+"output_qemu.ml" 50 1537 1571 "output_qemu.ml" 50 1537 1580
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_qemu.ml" 43 1291 1322 "output_qemu.ml" 43 1291 1331
+)
+"output_qemu.ml" 50 1537 1571 "output_qemu.ml" 50 1537 1591
+type(
+  string
+)
+"output_qemu.ml" 50 1537 1551 "output_qemu.ml" 50 1537 1592
+call(
+  stack
+)
+type(
+  string * string
+)
+"output_qemu.ml" 50 1537 1544 "output_qemu.ml" 50 1537 1592
+type(
+  unit
+)
+"output_qemu.ml" 44 1350 1354 "output_qemu.ml" 50 1537 1592
+type(
+  unit
+)
+"output_qemu.ml" 52 1594 1619 "output_qemu.ml" 52 1594 1625
+type(
+  Types.source
+)
+ident(
+  def source "output_qemu.ml" 52 1594 1626 "output_qemu.ml" 199 6458 6463
+)
+"output_qemu.ml" 52 1594 1626 "output_qemu.ml" 52 1594 1627
+type(
+  Types.target list
+)
+"output_qemu.ml" 52 1594 1628 "output_qemu.ml" 52 1594 1640
+type(
+  Types.target_buses
+)
+ident(
+  def target_buses "output_qemu.ml" 52 1594 1641 "output_qemu.ml" 199 6458 6463
+)
+"output_qemu.ml" 52 1594 1641 "output_qemu.ml" 52 1594 1650
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "output_qemu.ml" 52 1594 1651 "output_qemu.ml" 199 6458 6463
+)
+"output_qemu.ml" 52 1594 1651 "output_qemu.ml" 52 1594 1658
+type(
+  Types.inspect
+)
+ident(
+  def inspect "output_qemu.ml" 53 1659 1684 "output_qemu.ml" 199 6458 6463
+)
+"output_qemu.ml" 53 1659 1684 "output_qemu.ml" 53 1659 1699
+type(
+  Types.target_firmware
+)
+ident(
+  def target_firmware "output_qemu.ml" 54 1702 1706 "output_qemu.ml" 199 6458 6463
+)
+"output_qemu.ml" 54 1702 1710 "output_qemu.ml" 54 1702 1714
+type(
+  string
+)
+"output_qemu.ml" 54 1702 1717 "output_qemu.ml" 54 1702 1723
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_qemu.ml" 52 1594 1619 "output_qemu.ml" 52 1594 1625
+)
+"output_qemu.ml" 54 1702 1717 "output_qemu.ml" 54 1702 1730
+type(
+  string
+)
+"output_qemu.ml" 55 1734 1742 "output_qemu.ml" 55 1734 1746
+type(
+  string
+)
+"output_qemu.ml" 55 1734 1749 "output_qemu.ml" 55 1734 1752
+type(
+  string
+)
+"output_qemu.ml" 55 1734 1753 "output_qemu.ml" 55 1734 1755
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_qemu.ml" 55 1734 1756 "output_qemu.ml" 55 1734 1760
+type(
+  string
+)
+ident(
+  int_ref name "output_qemu.ml" 54 1702 1710 "output_qemu.ml" 54 1702 1714
+)
+"output_qemu.ml" 55 1734 1749 "output_qemu.ml" 55 1734 1760
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 55 1734 1761 "output_qemu.ml" 55 1734 1762
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_qemu.ml" 55 1734 1763 "output_qemu.ml" 55 1734 1768
+type(
+  string
+)
+"output_qemu.ml" 55 1734 1749 "output_qemu.ml" 55 1734 1768
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 57 1773 1781 "output_qemu.ml" 57 1773 1794
+type(
+  (string * string) option
+)
+"output_qemu.ml" 58 1797 1809 "output_qemu.ml" 58 1797 1824
+type(
+  Types.target_firmware
+)
+ident(
+  int_ref target_firmware "output_qemu.ml" 53 1659 1684 "output_qemu.ml" 53 1659 1699
+)
+"output_qemu.ml" 59 1830 1838 "output_qemu.ml" 59 1830 1848
+type(
+  Types.target_firmware
+)
+"output_qemu.ml" 59 1830 1852 "output_qemu.ml" 59 1830 1856
+type(
+  (string * string) option
+)
+"output_qemu.ml" 60 1857 1865 "output_qemu.ml" 60 1857 1875
+type(
+  Types.target_firmware
+)
+"output_qemu.ml" 61 1879 1894 "output_qemu.ml" 61 1879 1912
+type(
+  string -> string * string
+)
+ident(
+  ext_ref Utils.find_uefi_firmware
+)
+"output_qemu.ml" 61 1879 1913 "output_qemu.ml" 61 1879 1922
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_qemu.ml" 52 1594 1641 "output_qemu.ml" 52 1594 1650
+)
+"output_qemu.ml" 61 1879 1913 "output_qemu.ml" 61 1879 1933
+type(
+  string
+)
+"output_qemu.ml" 61 1879 1893 "output_qemu.ml" 61 1879 1934
+call(
+  stack
+)
+type(
+  string * string
+)
+"output_qemu.ml" 61 1879 1888 "output_qemu.ml" 61 1879 1934
+type(
+  (string * string) option
+)
+"output_qemu.ml" 58 1797 1803 "output_qemu.ml" 61 1879 1934
+type(
+  (string * string) option
+)
+"output_qemu.ml" 63 1939 1947 "output_qemu.ml" 63 1939 1951
+type(
+  out_channel
+)
+"output_qemu.ml" 63 1939 1954 "output_qemu.ml" 63 1939 1962
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out
+)
+"output_qemu.ml" 63 1939 1963 "output_qemu.ml" 63 1939 1967
+type(
+  string
+)
+ident(
+  int_ref file "output_qemu.ml" 55 1734 1742 "output_qemu.ml" 55 1734 1746
+)
+"output_qemu.ml" 63 1939 1954 "output_qemu.ml" 63 1939 1967
+call(
+  stack
+)
+type(
+  out_channel
+)
+"output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+type(
+  ('a, out_channel, unit) format -> 'a
+)
+"output_qemu.ml" 65 1972 1984 "output_qemu.ml" 65 1972 1986
+type(
+  ('a, out_channel, unit) format
+)
+ident(
+  def fs "output_qemu.ml" 65 1972 1989 "output_qemu.ml" 65 1972 2004
+)
+"output_qemu.ml" 65 1972 1989 "output_qemu.ml" 65 1972 1996
+type(
+  out_channel -> ('a, out_channel, unit) format -> 'a
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"output_qemu.ml" 65 1972 1997 "output_qemu.ml" 65 1972 2001
+type(
+  out_channel
+)
+ident(
+  int_ref chan "output_qemu.ml" 63 1939 1947 "output_qemu.ml" 63 1939 1951
+)
+"output_qemu.ml" 65 1972 2002 "output_qemu.ml" 65 1972 2004
+type(
+  ('a, out_channel, unit) format
+)
+ident(
+  int_ref fs "output_qemu.ml" 65 1972 1984 "output_qemu.ml" 65 1972 1986
+)
+"output_qemu.ml" 65 1972 1989 "output_qemu.ml" 65 1972 2004
+call(
+  tail
+)
+type(
+  'a
+)
+"output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+type(
+  string
+)
+"output_qemu.ml" 66 2008 2021 "output_qemu.ml" 66 2008 2030
+type(
+  string
+)
+"output_qemu.ml" 67 2034 2038 "output_qemu.ml" 67 2034 2041
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 67 2034 2042 "output_qemu.ml" 67 2034 2057
+type(
+  (unit, out_channel, unit) format
+)
+"output_qemu.ml" 67 2034 2038 "output_qemu.ml" 67 2034 2057
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 68 2059 2063 "output_qemu.ml" 68 2059 2066
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 68 2059 2067 "output_qemu.ml" 68 2059 2071
+type(
+  (unit, out_channel, unit) format
+)
+"output_qemu.ml" 68 2059 2063 "output_qemu.ml" 68 2059 2071
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 70 2074 2085 "output_qemu.ml" 70 2074 2098
+type(
+  (string * string) option
+)
+ident(
+  int_ref uefi_firmware "output_qemu.ml" 57 1773 1781 "output_qemu.ml" 57 1773 1794
+)
+"output_qemu.ml" 71 2104 2111 "output_qemu.ml" 71 2104 2115
+type(
+  (string * string) option
+)
+"output_qemu.ml" 71 2104 2119 "output_qemu.ml" 71 2104 2121
+type(
+  unit
+)
+"output_qemu.ml" 72 2122 2135 "output_qemu.ml" 72 2122 2136
+type(
+  string
+)
+"output_qemu.ml" 72 2122 2138 "output_qemu.ml" 72 2122 2151
+type(
+  string
+)
+ident(
+  def vars_template "output_qemu.ml" 73 2156 2164 "output_qemu.ml" 76 2319 2335
+)
+"output_qemu.ml" 72 2122 2134 "output_qemu.ml" 72 2122 2152
+type(
+  string * string
+)
+"output_qemu.ml" 72 2122 2129 "output_qemu.ml" 72 2122 2152
+type(
+  (string * string) option
+)
+"output_qemu.ml" 73 2156 2164 "output_qemu.ml" 73 2156 2167
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 73 2156 2168 "output_qemu.ml" 73 2156 2216
+type(
+  (unit, out_channel, unit) format
+)
+"output_qemu.ml" 73 2156 2164 "output_qemu.ml" 73 2156 2216
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 74 2218 2226 "output_qemu.ml" 74 2218 2229
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 74 2218 2230 "output_qemu.ml" 74 2218 2257
+type(
+  (unit, out_channel, unit) format
+)
+"output_qemu.ml" 74 2218 2226 "output_qemu.ml" 74 2218 2257
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 75 2259 2267 "output_qemu.ml" 75 2259 2270
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 75 2259 2271 "output_qemu.ml" 75 2259 2295
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 75 2259 2297 "output_qemu.ml" 75 2259 2302
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_qemu.ml" 75 2259 2303 "output_qemu.ml" 75 2259 2316
+type(
+  string
+)
+ident(
+  int_ref vars_template "output_qemu.ml" 72 2122 2138 "output_qemu.ml" 72 2122 2151
+)
+"output_qemu.ml" 75 2259 2296 "output_qemu.ml" 75 2259 2317
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 75 2259 2267 "output_qemu.ml" 75 2259 2317
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 76 2319 2327 "output_qemu.ml" 76 2319 2330
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 76 2319 2331 "output_qemu.ml" 76 2319 2335
+type(
+  (unit, out_channel, unit) format
+)
+"output_qemu.ml" 76 2319 2327 "output_qemu.ml" 76 2319 2335
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 75 2259 2267 "output_qemu.ml" 76 2319 2335
+type(
+  unit
+)
+"output_qemu.ml" 74 2218 2226 "output_qemu.ml" 76 2319 2335
+type(
+  unit
+)
+"output_qemu.ml" 73 2156 2164 "output_qemu.ml" 76 2319 2335
+type(
+  unit
+)
+"output_qemu.ml" 70 2074 2078 "output_qemu.ml" 77 2336 2341
+type(
+  unit
+)
+"output_qemu.ml" 79 2344 2348 "output_qemu.ml" 79 2344 2351
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 79 2344 2352 "output_qemu.ml" 79 2344 2368
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 79 2344 2369 "output_qemu.ml" 79 2344 2378
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_qemu.ml" 52 1594 1641 "output_qemu.ml" 52 1594 1650
+)
+"output_qemu.ml" 79 2344 2369 "output_qemu.ml" 79 2344 2389
+type(
+  string
+)
+"output_qemu.ml" 79 2344 2348 "output_qemu.ml" 79 2344 2389
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 80 2391 2395 "output_qemu.ml" 80 2391 2398
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 80 2391 2399 "output_qemu.ml" 80 2391 2430
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 80 2391 2431 "output_qemu.ml" 80 2391 2433
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 80 2391 2395 "output_qemu.ml" 80 2391 2433
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 81 2435 2439 "output_qemu.ml" 81 2435 2442
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 81 2435 2443 "output_qemu.ml" 81 2435 2455
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 81 2435 2456 "output_qemu.ml" 81 2435 2458
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 81 2435 2460 "output_qemu.ml" 81 2435 2465
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_qemu.ml" 81 2435 2466 "output_qemu.ml" 81 2435 2472
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_qemu.ml" 52 1594 1619 "output_qemu.ml" 52 1594 1625
+)
+"output_qemu.ml" 81 2435 2466 "output_qemu.ml" 81 2435 2479
+type(
+  string
+)
+"output_qemu.ml" 81 2435 2459 "output_qemu.ml" 81 2435 2480
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 81 2435 2439 "output_qemu.ml" 81 2435 2480
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 82 2482 2486 "output_qemu.ml" 82 2482 2489
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 82 2482 2490 "output_qemu.ml" 82 2482 2516
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 82 2482 2517 "output_qemu.ml" 82 2482 2519
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 82 2482 2486 "output_qemu.ml" 82 2482 2519
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 84 2522 2533 "output_qemu.ml" 84 2522 2546
+type(
+  (string * string) option
+)
+ident(
+  int_ref uefi_firmware "output_qemu.ml" 57 1773 1781 "output_qemu.ml" 57 1773 1794
+)
+"output_qemu.ml" 85 2552 2559 "output_qemu.ml" 85 2552 2563
+type(
+  (string * string) option
+)
+"output_qemu.ml" 85 2552 2567 "output_qemu.ml" 85 2552 2569
+type(
+  unit
+)
+"output_qemu.ml" 86 2570 2583 "output_qemu.ml" 86 2570 2587
+type(
+  string
+)
+ident(
+  def code "output_qemu.ml" 87 2595 2603 "output_qemu.ml" 88 2673 2739
+)
+"output_qemu.ml" 86 2570 2589 "output_qemu.ml" 86 2570 2590
+type(
+  string
+)
+"output_qemu.ml" 86 2570 2582 "output_qemu.ml" 86 2570 2591
+type(
+  string * string
+)
+"output_qemu.ml" 86 2570 2577 "output_qemu.ml" 86 2570 2591
+type(
+  (string * string) option
+)
+"output_qemu.ml" 87 2595 2603 "output_qemu.ml" 87 2595 2606
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 87 2595 2607 "output_qemu.ml" 87 2595 2655
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 87 2595 2656 "output_qemu.ml" 87 2595 2658
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 87 2595 2660 "output_qemu.ml" 87 2595 2665
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_qemu.ml" 87 2595 2666 "output_qemu.ml" 87 2595 2670
+type(
+  string
+)
+ident(
+  int_ref code "output_qemu.ml" 86 2570 2583 "output_qemu.ml" 86 2570 2587
+)
+"output_qemu.ml" 87 2595 2659 "output_qemu.ml" 87 2595 2671
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 87 2595 2603 "output_qemu.ml" 87 2595 2671
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 88 2673 2681 "output_qemu.ml" 88 2673 2684
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 88 2673 2685 "output_qemu.ml" 88 2673 2736
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 88 2673 2737 "output_qemu.ml" 88 2673 2739
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 88 2673 2681 "output_qemu.ml" 88 2673 2739
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 87 2595 2603 "output_qemu.ml" 88 2673 2739
+type(
+  unit
+)
+"output_qemu.ml" 84 2522 2526 "output_qemu.ml" 89 2740 2745
+type(
+  unit
+)
+"output_qemu.ml" 91 2748 2752 "output_qemu.ml" 91 2748 2755
+type(
+  (string -> int64 -> unit, out_channel, unit) format ->
+  string -> int64 -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 91 2748 2756 "output_qemu.ml" 91 2748 2766
+type(
+  (string -> int64 -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 91 2748 2767 "output_qemu.ml" 91 2748 2769
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 91 2748 2771 "output_qemu.ml" 91 2748 2777
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_qemu.ml" 52 1594 1619 "output_qemu.ml" 52 1594 1625
+)
+"output_qemu.ml" 91 2748 2771 "output_qemu.ml" 91 2748 2786
+type(
+  int64
+)
+"output_qemu.ml" 91 2748 2787 "output_qemu.ml" 91 2748 2789
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( /^ )
+)
+"output_qemu.ml" 91 2748 2790 "output_qemu.ml" 91 2748 2795
+type(
+  int64
+)
+"output_qemu.ml" 91 2748 2771 "output_qemu.ml" 91 2748 2795
+call(
+  stack
+)
+type(
+  int64
+)
+"output_qemu.ml" 91 2748 2796 "output_qemu.ml" 91 2748 2798
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( /^ )
+)
+"output_qemu.ml" 91 2748 2799 "output_qemu.ml" 91 2748 2804
+type(
+  int64
+)
+"output_qemu.ml" 91 2748 2770 "output_qemu.ml" 91 2748 2805
+call(
+  stack
+)
+type(
+  int64
+)
+"output_qemu.ml" 91 2748 2752 "output_qemu.ml" 91 2748 2805
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 92 2807 2814 "output_qemu.ml" 92 2807 2820
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_qemu.ml" 52 1594 1619 "output_qemu.ml" 52 1594 1625
+)
+"output_qemu.ml" 92 2807 2814 "output_qemu.ml" 92 2807 2827
+type(
+  int
+)
+"output_qemu.ml" 92 2807 2828 "output_qemu.ml" 92 2807 2829
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"output_qemu.ml" 92 2807 2830 "output_qemu.ml" 92 2807 2831
+type(
+  int
+)
+"output_qemu.ml" 92 2807 2814 "output_qemu.ml" 92 2807 2831
+type(
+  bool
+)
+"output_qemu.ml" 93 2837 2843 "output_qemu.ml" 93 2837 2846
+type(
+  (string -> int -> unit, out_channel, unit) format -> string -> int -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 93 2837 2847 "output_qemu.ml" 93 2837 2858
+type(
+  (string -> int -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 93 2837 2859 "output_qemu.ml" 93 2837 2861
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 93 2837 2862 "output_qemu.ml" 93 2837 2868
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_qemu.ml" 52 1594 1619 "output_qemu.ml" 52 1594 1625
+)
+"output_qemu.ml" 93 2837 2862 "output_qemu.ml" 93 2837 2875
+type(
+  int
+)
+"output_qemu.ml" 93 2837 2843 "output_qemu.ml" 93 2837 2875
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 92 2807 2811 "output_qemu.ml" 93 2837 2875
+type(
+  unit
+)
+"output_qemu.ml" 95 2878 2886 "output_qemu.ml" 95 2878 2895
+type(
+  string -> int -> Types.target_bus_slot -> unit
+)
+"output_qemu.ml" 95 2878 2896 "output_qemu.ml" 95 2878 2903
+type(
+  string
+)
+ident(
+  def if_name "output_qemu.ml" 95 2878 2904 "output_qemu.ml" 113 3599 3646
+)
+"output_qemu.ml" 95 2878 2904 "output_qemu.ml" 95 2878 2905
+type(
+  int
+)
+ident(
+  def i "output_qemu.ml" 95 2878 2908 "output_qemu.ml" 113 3599 3646
+)
+"output_qemu.ml" 96 2917 2923 "output_qemu.ml" 96 2917 2935
+type(
+  Types.target_bus_slot
+)
+"output_qemu.ml" 96 2917 2939 "output_qemu.ml" 96 2917 2941
+type(
+  unit
+)
+"output_qemu.ml" 98 2943 2963 "output_qemu.ml" 98 2943 2964
+type(
+  Types.target
+)
+ident(
+  def t "output_qemu.ml" 99 2968 2975 "output_qemu.ml" 103 3197 3244
+)
+"output_qemu.ml" 98 2943 2949 "output_qemu.ml" 98 2943 2964
+type(
+  Types.target_bus_slot
+)
+"output_qemu.ml" 99 2968 2979 "output_qemu.ml" 99 2968 2999
+type(
+  string
+)
+"output_qemu.ml" 99 2968 3002 "output_qemu.ml" 99 2968 3013
+type(
+  string -> string -> string -> string
+)
+ident(
+  ext_ref Common_utils.replace_str
+)
+"output_qemu.ml" 99 2968 3014 "output_qemu.ml" 99 2968 3015
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_qemu.ml" 98 2943 2963 "output_qemu.ml" 98 2943 2964
+)
+"output_qemu.ml" 99 2968 3014 "output_qemu.ml" 99 2968 3027
+type(
+  string
+)
+"output_qemu.ml" 99 2968 3028 "output_qemu.ml" 99 2968 3031
+type(
+  string
+)
+"output_qemu.ml" 99 2968 3032 "output_qemu.ml" 99 2968 3036
+type(
+  string
+)
+"output_qemu.ml" 99 2968 3002 "output_qemu.ml" 99 2968 3036
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 100 3040 3051 "output_qemu.ml" 100 3040 3062
+type(
+  string
+)
+"output_qemu.ml" 101 3065 3075 "output_qemu.ml" 101 3065 3082
+type(
+  (string -> string -> string -> int -> string, unit, string) format ->
+  string -> string -> string -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_qemu.ml" 101 3065 3083 "output_qemu.ml" 101 3065 3128
+type(
+  (string -> string -> string -> int -> string, unit, string) format
+)
+"output_qemu.ml" 102 3129 3147 "output_qemu.ml" 102 3129 3167
+type(
+  string
+)
+ident(
+  int_ref qemu_quoted_filename "output_qemu.ml" 99 2968 2979 "output_qemu.ml" 99 2968 2999
+)
+"output_qemu.ml" 102 3129 3168 "output_qemu.ml" 102 3129 3169
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_qemu.ml" 98 2943 2963 "output_qemu.ml" 98 2943 2964
+)
+"output_qemu.ml" 102 3129 3168 "output_qemu.ml" 102 3129 3183
+type(
+  string
+)
+"output_qemu.ml" 102 3129 3184 "output_qemu.ml" 102 3129 3191
+type(
+  string
+)
+ident(
+  int_ref if_name "output_qemu.ml" 95 2878 2896 "output_qemu.ml" 95 2878 2903
+)
+"output_qemu.ml" 102 3129 3192 "output_qemu.ml" 102 3129 3193
+type(
+  int
+)
+ident(
+  int_ref i "output_qemu.ml" 95 2878 2904 "output_qemu.ml" 95 2878 2905
+)
+"output_qemu.ml" 101 3065 3075 "output_qemu.ml" 102 3129 3193
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 103 3197 3204 "output_qemu.ml" 103 3197 3207
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 103 3197 3208 "output_qemu.ml" 103 3197 3221
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 103 3197 3222 "output_qemu.ml" 103 3197 3224
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 103 3197 3226 "output_qemu.ml" 103 3197 3231
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_qemu.ml" 103 3197 3232 "output_qemu.ml" 103 3197 3243
+type(
+  string
+)
+ident(
+  int_ref drive_param "output_qemu.ml" 100 3040 3051 "output_qemu.ml" 100 3040 3062
+)
+"output_qemu.ml" 103 3197 3225 "output_qemu.ml" 103 3197 3244
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 103 3197 3204 "output_qemu.ml" 103 3197 3244
+call(
+  tail
+)
+type(
+  unit
+)
+"output_qemu.ml" 100 3040 3047 "output_qemu.ml" 103 3197 3244
+type(
+  unit
+)
+"output_qemu.ml" 99 2968 2975 "output_qemu.ml" 103 3197 3244
+type(
+  unit
+)
+"output_qemu.ml" 105 3246 3290 "output_qemu.ml" 105 3246 3295
+type(
+  Types.s_removable_type
+)
+"output_qemu.ml" 105 3246 3269 "output_qemu.ml" 105 3246 3297
+type(
+  Types.source_removable
+)
+"output_qemu.ml" 105 3246 3252 "output_qemu.ml" 105 3246 3297
+type(
+  Types.target_bus_slot
+)
+"output_qemu.ml" 106 3301 3312 "output_qemu.ml" 106 3301 3323
+type(
+  string
+)
+"output_qemu.ml" 107 3326 3336 "output_qemu.ml" 107 3326 3343
+type(
+  (string -> int -> string, unit, string) format -> string -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_qemu.ml" 107 3326 3344 "output_qemu.ml" 107 3326 3383
+type(
+  (string -> int -> string, unit, string) format
+)
+"output_qemu.ml" 107 3326 3384 "output_qemu.ml" 107 3326 3391
+type(
+  string
+)
+ident(
+  int_ref if_name "output_qemu.ml" 95 2878 2896 "output_qemu.ml" 95 2878 2903
+)
+"output_qemu.ml" 107 3326 3392 "output_qemu.ml" 107 3326 3393
+type(
+  int
+)
+ident(
+  int_ref i "output_qemu.ml" 95 2878 2904 "output_qemu.ml" 95 2878 2905
+)
+"output_qemu.ml" 107 3326 3336 "output_qemu.ml" 107 3326 3393
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 108 3397 3404 "output_qemu.ml" 108 3397 3407
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 108 3397 3408 "output_qemu.ml" 108 3397 3421
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 108 3397 3422 "output_qemu.ml" 108 3397 3424
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 108 3397 3426 "output_qemu.ml" 108 3397 3431
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_qemu.ml" 108 3397 3432 "output_qemu.ml" 108 3397 3443
+type(
+  string
+)
+ident(
+  int_ref drive_param "output_qemu.ml" 106 3301 3312 "output_qemu.ml" 106 3301 3323
+)
+"output_qemu.ml" 108 3397 3425 "output_qemu.ml" 108 3397 3444
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 108 3397 3404 "output_qemu.ml" 108 3397 3444
+call(
+  tail
+)
+type(
+  unit
+)
+"output_qemu.ml" 106 3301 3308 "output_qemu.ml" 108 3397 3444
+type(
+  unit
+)
+"output_qemu.ml" 110 3446 3490 "output_qemu.ml" 110 3446 3496
+type(
+  Types.s_removable_type
+)
+"output_qemu.ml" 110 3446 3469 "output_qemu.ml" 110 3446 3498
+type(
+  Types.source_removable
+)
+"output_qemu.ml" 110 3446 3452 "output_qemu.ml" 110 3446 3498
+type(
+  Types.target_bus_slot
+)
+"output_qemu.ml" 111 3502 3513 "output_qemu.ml" 111 3502 3524
+type(
+  string
+)
+"output_qemu.ml" 112 3527 3537 "output_qemu.ml" 112 3527 3544
+type(
+  (string -> int -> string, unit, string) format -> string -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_qemu.ml" 112 3527 3545 "output_qemu.ml" 112 3527 3585
+type(
+  (string -> int -> string, unit, string) format
+)
+"output_qemu.ml" 112 3527 3586 "output_qemu.ml" 112 3527 3593
+type(
+  string
+)
+ident(
+  int_ref if_name "output_qemu.ml" 95 2878 2896 "output_qemu.ml" 95 2878 2903
+)
+"output_qemu.ml" 112 3527 3594 "output_qemu.ml" 112 3527 3595
+type(
+  int
+)
+ident(
+  int_ref i "output_qemu.ml" 95 2878 2904 "output_qemu.ml" 95 2878 2905
+)
+"output_qemu.ml" 112 3527 3537 "output_qemu.ml" 112 3527 3595
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 113 3599 3606 "output_qemu.ml" 113 3599 3609
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 113 3599 3610 "output_qemu.ml" 113 3599 3623
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 113 3599 3624 "output_qemu.ml" 113 3599 3626
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 113 3599 3628 "output_qemu.ml" 113 3599 3633
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_qemu.ml" 113 3599 3634 "output_qemu.ml" 113 3599 3645
+type(
+  string
+)
+ident(
+  int_ref drive_param "output_qemu.ml" 111 3502 3513 "output_qemu.ml" 111 3502 3524
+)
+"output_qemu.ml" 113 3599 3627 "output_qemu.ml" 113 3599 3646
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 113 3599 3606 "output_qemu.ml" 113 3599 3646
+call(
+  tail
+)
+type(
+  unit
+)
+"output_qemu.ml" 111 3502 3509 "output_qemu.ml" 113 3599 3646
+type(
+  unit
+)
+"output_qemu.ml" 95 2878 2908 "output_qemu.ml" 113 3599 3646
+type(
+  Types.target_bus_slot -> unit
+)
+"output_qemu.ml" 115 3654 3658 "output_qemu.ml" 115 3654 3669
+type(
+  (int -> Types.target_bus_slot -> unit) ->
+  Types.target_bus_slot array -> unit
+)
+ident(
+  ext_ref Array.iteri
+)
+"output_qemu.ml" 115 3654 3671 "output_qemu.ml" 115 3654 3680
+type(
+  string -> int -> Types.target_bus_slot -> unit
+)
+ident(
+  int_ref make_disk "output_qemu.ml" 95 2878 2886 "output_qemu.ml" 95 2878 2895
+)
+"output_qemu.ml" 115 3654 3681 "output_qemu.ml" 115 3654 3689
+type(
+  string
+)
+"output_qemu.ml" 115 3654 3670 "output_qemu.ml" 115 3654 3690
+call(
+  stack
+)
+type(
+  int -> Types.target_bus_slot -> unit
+)
+"output_qemu.ml" 115 3654 3691 "output_qemu.ml" 115 3654 3703
+type(
+  Types.target_buses
+)
+ident(
+  int_ref target_buses "output_qemu.ml" 52 1594 1628 "output_qemu.ml" 52 1594 1640
+)
+"output_qemu.ml" 115 3654 3691 "output_qemu.ml" 115 3654 3725
+type(
+  Types.target_bus_slot array
+)
+"output_qemu.ml" 115 3654 3658 "output_qemu.ml" 115 3654 3725
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 116 3727 3731 "output_qemu.ml" 116 3727 3742
+type(
+  (int -> Types.target_bus_slot -> unit) ->
+  Types.target_bus_slot array -> unit
+)
+ident(
+  ext_ref Array.iteri
+)
+"output_qemu.ml" 116 3727 3744 "output_qemu.ml" 116 3727 3753
+type(
+  string -> int -> Types.target_bus_slot -> unit
+)
+ident(
+  int_ref make_disk "output_qemu.ml" 95 2878 2886 "output_qemu.ml" 95 2878 2895
+)
+"output_qemu.ml" 116 3727 3754 "output_qemu.ml" 116 3727 3759
+type(
+  string
+)
+"output_qemu.ml" 116 3727 3743 "output_qemu.ml" 116 3727 3760
+call(
+  stack
+)
+type(
+  int -> Types.target_bus_slot -> unit
+)
+"output_qemu.ml" 116 3727 3761 "output_qemu.ml" 116 3727 3773
+type(
+  Types.target_buses
+)
+ident(
+  int_ref target_buses "output_qemu.ml" 52 1594 1628 "output_qemu.ml" 52 1594 1640
+)
+"output_qemu.ml" 116 3727 3761 "output_qemu.ml" 116 3727 3788
+type(
+  Types.target_bus_slot array
+)
+"output_qemu.ml" 116 3727 3731 "output_qemu.ml" 116 3727 3788
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 118 3791 3799 "output_qemu.ml" 118 3791 3808
+type(
+  int -> Types.target_bus_slot -> unit
+)
+"output_qemu.ml" 118 3791 3809 "output_qemu.ml" 118 3791 3810
+type(
+  int
+)
+ident(
+  def i "output_qemu.ml" 118 3791 3813 "output_qemu.ml" 136 4501 4548
+)
+"output_qemu.ml" 119 3822 3828 "output_qemu.ml" 119 3822 3840
+type(
+  Types.target_bus_slot
+)
+"output_qemu.ml" 119 3822 3844 "output_qemu.ml" 119 3822 3846
+type(
+  unit
+)
+"output_qemu.ml" 121 3848 3868 "output_qemu.ml" 121 3848 3869
+type(
+  Types.target
+)
+ident(
+  def t "output_qemu.ml" 122 3873 3880 "output_qemu.ml" 126 4101 4148
+)
+"output_qemu.ml" 121 3848 3854 "output_qemu.ml" 121 3848 3869
+type(
+  Types.target_bus_slot
+)
+"output_qemu.ml" 122 3873 3884 "output_qemu.ml" 122 3873 3904
+type(
+  string
+)
+"output_qemu.ml" 122 3873 3907 "output_qemu.ml" 122 3873 3918
+type(
+  string -> string -> string -> string
+)
+ident(
+  ext_ref Common_utils.replace_str
+)
+"output_qemu.ml" 122 3873 3919 "output_qemu.ml" 122 3873 3920
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_qemu.ml" 121 3848 3868 "output_qemu.ml" 121 3848 3869
+)
+"output_qemu.ml" 122 3873 3919 "output_qemu.ml" 122 3873 3932
+type(
+  string
+)
+"output_qemu.ml" 122 3873 3933 "output_qemu.ml" 122 3873 3936
+type(
+  string
+)
+"output_qemu.ml" 122 3873 3937 "output_qemu.ml" 122 3873 3941
+type(
+  string
+)
+"output_qemu.ml" 122 3873 3907 "output_qemu.ml" 122 3873 3941
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 123 3945 3956 "output_qemu.ml" 123 3945 3967
+type(
+  string
+)
+"output_qemu.ml" 124 3970 3980 "output_qemu.ml" 124 3970 3987
+type(
+  (string -> string -> int -> string, unit, string) format ->
+  string -> string -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_qemu.ml" 124 3970 3988 "output_qemu.ml" 124 3970 4040
+type(
+  (string -> string -> int -> string, unit, string) format
+)
+"output_qemu.ml" 125 4041 4059 "output_qemu.ml" 125 4041 4079
+type(
+  string
+)
+ident(
+  int_ref qemu_quoted_filename "output_qemu.ml" 122 3873 3884 "output_qemu.ml" 122 3873 3904
+)
+"output_qemu.ml" 125 4041 4080 "output_qemu.ml" 125 4041 4081
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_qemu.ml" 121 3848 3868 "output_qemu.ml" 121 3848 3869
+)
+"output_qemu.ml" 125 4041 4080 "output_qemu.ml" 125 4041 4095
+type(
+  string
+)
+"output_qemu.ml" 125 4041 4096 "output_qemu.ml" 125 4041 4097
+type(
+  int
+)
+ident(
+  int_ref i "output_qemu.ml" 118 3791 3809 "output_qemu.ml" 118 3791 3810
+)
+"output_qemu.ml" 124 3970 3980 "output_qemu.ml" 125 4041 4097
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 126 4101 4108 "output_qemu.ml" 126 4101 4111
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 126 4101 4112 "output_qemu.ml" 126 4101 4125
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 126 4101 4126 "output_qemu.ml" 126 4101 4128
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 126 4101 4130 "output_qemu.ml" 126 4101 4135
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_qemu.ml" 126 4101 4136 "output_qemu.ml" 126 4101 4147
+type(
+  string
+)
+ident(
+  int_ref drive_param "output_qemu.ml" 123 3945 3956 "output_qemu.ml" 123 3945 3967
+)
+"output_qemu.ml" 126 4101 4129 "output_qemu.ml" 126 4101 4148
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 126 4101 4108 "output_qemu.ml" 126 4101 4148
+call(
+  tail
+)
+type(
+  unit
+)
+"output_qemu.ml" 123 3945 3952 "output_qemu.ml" 126 4101 4148
+type(
+  unit
+)
+"output_qemu.ml" 122 3873 3880 "output_qemu.ml" 126 4101 4148
+type(
+  unit
+)
+"output_qemu.ml" 128 4150 4194 "output_qemu.ml" 128 4150 4199
+type(
+  Types.s_removable_type
+)
+"output_qemu.ml" 128 4150 4173 "output_qemu.ml" 128 4150 4201
+type(
+  Types.source_removable
+)
+"output_qemu.ml" 128 4150 4156 "output_qemu.ml" 128 4150 4201
+type(
+  Types.target_bus_slot
+)
+"output_qemu.ml" 129 4205 4216 "output_qemu.ml" 129 4205 4227
+type(
+  string
+)
+"output_qemu.ml" 130 4230 4240 "output_qemu.ml" 130 4230 4247
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_qemu.ml" 130 4230 4248 "output_qemu.ml" 130 4230 4294
+type(
+  (int -> string, unit, string) format
+)
+"output_qemu.ml" 130 4230 4295 "output_qemu.ml" 130 4230 4296
+type(
+  int
+)
+ident(
+  int_ref i "output_qemu.ml" 118 3791 3809 "output_qemu.ml" 118 3791 3810
+)
+"output_qemu.ml" 130 4230 4240 "output_qemu.ml" 130 4230 4296
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 131 4300 4307 "output_qemu.ml" 131 4300 4310
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 131 4300 4311 "output_qemu.ml" 131 4300 4324
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 131 4300 4325 "output_qemu.ml" 131 4300 4327
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 131 4300 4329 "output_qemu.ml" 131 4300 4334
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_qemu.ml" 131 4300 4335 "output_qemu.ml" 131 4300 4346
+type(
+  string
+)
+ident(
+  int_ref drive_param "output_qemu.ml" 129 4205 4216 "output_qemu.ml" 129 4205 4227
+)
+"output_qemu.ml" 131 4300 4328 "output_qemu.ml" 131 4300 4347
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 131 4300 4307 "output_qemu.ml" 131 4300 4347
+call(
+  tail
+)
+type(
+  unit
+)
+"output_qemu.ml" 129 4205 4212 "output_qemu.ml" 131 4300 4347
+type(
+  unit
+)
+"output_qemu.ml" 133 4349 4393 "output_qemu.ml" 133 4349 4399
+type(
+  Types.s_removable_type
+)
+"output_qemu.ml" 133 4349 4372 "output_qemu.ml" 133 4349 4401
+type(
+  Types.source_removable
+)
+"output_qemu.ml" 133 4349 4355 "output_qemu.ml" 133 4349 4401
+type(
+  Types.target_bus_slot
+)
+"output_qemu.ml" 134 4405 4416 "output_qemu.ml" 134 4405 4427
+type(
+  string
+)
+"output_qemu.ml" 135 4430 4440 "output_qemu.ml" 135 4430 4447
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_qemu.ml" 135 4430 4448 "output_qemu.ml" 135 4430 4495
+type(
+  (int -> string, unit, string) format
+)
+"output_qemu.ml" 135 4430 4496 "output_qemu.ml" 135 4430 4497
+type(
+  int
+)
+ident(
+  int_ref i "output_qemu.ml" 118 3791 3809 "output_qemu.ml" 118 3791 3810
+)
+"output_qemu.ml" 135 4430 4440 "output_qemu.ml" 135 4430 4497
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 136 4501 4508 "output_qemu.ml" 136 4501 4511
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 136 4501 4512 "output_qemu.ml" 136 4501 4525
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 136 4501 4526 "output_qemu.ml" 136 4501 4528
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 136 4501 4530 "output_qemu.ml" 136 4501 4535
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_qemu.ml" 136 4501 4536 "output_qemu.ml" 136 4501 4547
+type(
+  string
+)
+ident(
+  int_ref drive_param "output_qemu.ml" 134 4405 4416 "output_qemu.ml" 134 4405 4427
+)
+"output_qemu.ml" 136 4501 4529 "output_qemu.ml" 136 4501 4548
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 136 4501 4508 "output_qemu.ml" 136 4501 4548
+call(
+  tail
+)
+type(
+  unit
+)
+"output_qemu.ml" 134 4405 4412 "output_qemu.ml" 136 4501 4548
+type(
+  unit
+)
+"output_qemu.ml" 118 3791 3813 "output_qemu.ml" 136 4501 4548
+type(
+  Types.target_bus_slot -> unit
+)
+"output_qemu.ml" 138 4556 4560 "output_qemu.ml" 138 4556 4571
+type(
+  (int -> Types.target_bus_slot -> unit) ->
+  Types.target_bus_slot array -> unit
+)
+ident(
+  ext_ref Array.iteri
+)
+"output_qemu.ml" 138 4556 4572 "output_qemu.ml" 138 4556 4581
+type(
+  int -> Types.target_bus_slot -> unit
+)
+ident(
+  int_ref make_scsi "output_qemu.ml" 118 3791 3799 "output_qemu.ml" 118 3791 3808
+)
+"output_qemu.ml" 138 4556 4582 "output_qemu.ml" 138 4556 4594
+type(
+  Types.target_buses
+)
+ident(
+  int_ref target_buses "output_qemu.ml" 52 1594 1628 "output_qemu.ml" 52 1594 1640
+)
+"output_qemu.ml" 138 4556 4582 "output_qemu.ml" 138 4556 4610
+type(
+  Types.target_bus_slot array
+)
+"output_qemu.ml" 138 4556 4560 "output_qemu.ml" 138 4556 4610
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 140 4613 4621 "output_qemu.ml" 140 4613 4628
+type(
+  string
+)
+"output_qemu.ml" 141 4631 4643 "output_qemu.ml" 141 4631 4652
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_qemu.ml" 52 1594 1641 "output_qemu.ml" 52 1594 1650
+)
+"output_qemu.ml" 141 4631 4643 "output_qemu.ml" 141 4631 4666
+type(
+  Types.guestcaps_net_type
+)
+"output_qemu.ml" 142 4672 4680 "output_qemu.ml" 142 4672 4690
+type(
+  Types.guestcaps_net_type
+)
+"output_qemu.ml" 142 4672 4694 "output_qemu.ml" 142 4672 4710
+type(
+  string
+)
+"output_qemu.ml" 143 4711 4719 "output_qemu.ml" 143 4711 4724
+type(
+  Types.guestcaps_net_type
+)
+"output_qemu.ml" 143 4711 4728 "output_qemu.ml" 143 4711 4735
+type(
+  string
+)
+"output_qemu.ml" 144 4736 4744 "output_qemu.ml" 144 4736 4751
+type(
+  Types.guestcaps_net_type
+)
+"output_qemu.ml" 144 4736 4755 "output_qemu.ml" 144 4736 4764
+type(
+  string
+)
+"output_qemu.ml" 141 4631 4637 "output_qemu.ml" 144 4736 4764
+type(
+  string
+)
+"output_qemu.ml" 145 4768 4772 "output_qemu.ml" 145 4768 4777
+type(
+  (int -> Types.source_nic -> unit) -> Types.source_nic list -> unit
+)
+ident(
+  ext_ref Common_utils.iteri
+)
+"output_qemu.ml" 146 4780 4790 "output_qemu.ml" 146 4780 4791
+type(
+  int
+)
+ident(
+  def i "output_qemu.ml" 146 4780 4792 "output_qemu.ml" 149 4888 4969
+)
+"output_qemu.ml" 146 4780 4792 "output_qemu.ml" 146 4780 4795
+type(
+  Types.source_nic
+)
+ident(
+  def nic "output_qemu.ml" 147 4799 4807 "output_qemu.ml" 149 4888 4969
+)
+"output_qemu.ml" 147 4799 4807 "output_qemu.ml" 147 4799 4810
+type(
+  (string -> int -> unit, out_channel, unit) format -> string -> int -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 147 4799 4811 "output_qemu.ml" 147 4799 4836
+type(
+  (string -> int -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 147 4799 4837 "output_qemu.ml" 147 4799 4839
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 147 4799 4840 "output_qemu.ml" 147 4799 4841
+type(
+  int
+)
+ident(
+  int_ref i "output_qemu.ml" 146 4780 4790 "output_qemu.ml" 146 4780 4791
+)
+"output_qemu.ml" 147 4799 4807 "output_qemu.ml" 147 4799 4841
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 148 4843 4851 "output_qemu.ml" 148 4843 4854
+type(
+  (string -> string -> int -> string -> unit, out_channel, unit) format ->
+  string -> string -> int -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 148 4843 4855 "output_qemu.ml" 148 4843 4884
+type(
+  (string -> string -> int -> string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 148 4843 4885 "output_qemu.ml" 148 4843 4887
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 149 4888 4898 "output_qemu.ml" 149 4888 4905
+type(
+  string
+)
+ident(
+  int_ref net_bus "output_qemu.ml" 140 4613 4621 "output_qemu.ml" 140 4613 4628
+)
+"output_qemu.ml" 149 4888 4906 "output_qemu.ml" 149 4888 4907
+type(
+  int
+)
+ident(
+  int_ref i "output_qemu.ml" 146 4780 4790 "output_qemu.ml" 146 4780 4791
+)
+"output_qemu.ml" 149 4888 4915 "output_qemu.ml" 149 4888 4918
+type(
+  Types.source_nic
+)
+ident(
+  int_ref nic "output_qemu.ml" 146 4780 4792 "output_qemu.ml" 146 4780 4795
+)
+"output_qemu.ml" 149 4888 4915 "output_qemu.ml" 149 4888 4924
+type(
+  string option
+)
+"output_qemu.ml" 149 4888 4930 "output_qemu.ml" 149 4888 4934
+type(
+  string option
+)
+"output_qemu.ml" 149 4888 4938 "output_qemu.ml" 149 4888 4940
+type(
+  string
+)
+"output_qemu.ml" 149 4888 4948 "output_qemu.ml" 149 4888 4951
+type(
+  string
+)
+ident(
+  def mac "output_qemu.ml" 149 4888 4955 "output_qemu.ml" 149 4888 4968
+)
+"output_qemu.ml" 149 4888 4943 "output_qemu.ml" 149 4888 4951
+type(
+  string option
+)
+"output_qemu.ml" 149 4888 4955 "output_qemu.ml" 149 4888 4962
+type(
+  string
+)
+"output_qemu.ml" 149 4888 4963 "output_qemu.ml" 149 4888 4964
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_qemu.ml" 149 4888 4965 "output_qemu.ml" 149 4888 4968
+type(
+  string
+)
+ident(
+  int_ref mac "output_qemu.ml" 149 4888 4948 "output_qemu.ml" 149 4888 4951
+)
+"output_qemu.ml" 149 4888 4955 "output_qemu.ml" 149 4888 4968
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 149 4888 4908 "output_qemu.ml" 149 4888 4969
+type(
+  string
+)
+"output_qemu.ml" 148 4843 4851 "output_qemu.ml" 149 4888 4969
+call(
+  tail
+)
+type(
+  unit
+)
+"output_qemu.ml" 147 4799 4807 "output_qemu.ml" 149 4888 4969
+type(
+  unit
+)
+"output_qemu.ml" 145 4768 4778 "output_qemu.ml" 150 4970 4975
+type(
+  int -> Types.source_nic -> unit
+)
+"output_qemu.ml" 150 4970 4976 "output_qemu.ml" 150 4970 4982
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_qemu.ml" 52 1594 1619 "output_qemu.ml" 52 1594 1625
+)
+"output_qemu.ml" 150 4970 4976 "output_qemu.ml" 150 4970 4989
+type(
+  Types.source_nic list
+)
+"output_qemu.ml" 145 4768 4772 "output_qemu.ml" 150 4970 4989
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 153 5017 5028 "output_qemu.ml" 153 5017 5034
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_qemu.ml" 52 1594 1619 "output_qemu.ml" 52 1594 1625
+)
+"output_qemu.ml" 153 5017 5028 "output_qemu.ml" 153 5017 5044
+type(
+  Types.source_display option
+)
+"output_qemu.ml" 154 5050 5056 "output_qemu.ml" 154 5050 5060
+type(
+  Types.source_display option
+)
+"output_qemu.ml" 154 5050 5064 "output_qemu.ml" 154 5050 5066
+type(
+  unit
+)
+"output_qemu.ml" 155 5067 5078 "output_qemu.ml" 155 5067 5085
+type(
+  Types.source_display
+)
+ident(
+  def display "output_qemu.ml" 156 5089 5095 "output_qemu.ml" 166 5393 5469
+)
+"output_qemu.ml" 155 5067 5073 "output_qemu.ml" 155 5067 5085
+type(
+  Types.source_display option
+)
+"output_qemu.ml" 156 5089 5102 "output_qemu.ml" 156 5089 5109
+type(
+  Types.source_display
+)
+ident(
+  int_ref display "output_qemu.ml" 155 5067 5078 "output_qemu.ml" 155 5067 5085
+)
+"output_qemu.ml" 156 5089 5102 "output_qemu.ml" 156 5089 5124
+type(
+  Types.s_display_type
+)
+"output_qemu.ml" 157 5130 5138 "output_qemu.ml" 157 5130 5144
+type(
+  Types.s_display_type
+)
+"output_qemu.ml" 158 5148 5156 "output_qemu.ml" 158 5148 5159
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 158 5148 5160 "output_qemu.ml" 158 5148 5176
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 158 5148 5177 "output_qemu.ml" 158 5148 5179
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 158 5148 5156 "output_qemu.ml" 158 5148 5179
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 159 5180 5188 "output_qemu.ml" 159 5180 5191
+type(
+  Types.s_display_type
+)
+"output_qemu.ml" 160 5195 5203 "output_qemu.ml" 160 5195 5206
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 160 5195 5207 "output_qemu.ml" 160 5195 5226
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 160 5195 5227 "output_qemu.ml" 160 5195 5229
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 160 5195 5203 "output_qemu.ml" 160 5195 5229
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 161 5230 5238 "output_qemu.ml" 161 5230 5243
+type(
+  Types.s_display_type
+)
+"output_qemu.ml" 162 5247 5255 "output_qemu.ml" 162 5247 5258
+type(
+  (string -> int -> unit, out_channel, unit) format -> string -> int -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 162 5247 5259 "output_qemu.ml" 162 5247 5292
+type(
+  (string -> int -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 162 5247 5293 "output_qemu.ml" 162 5247 5295
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 163 5296 5311 "output_qemu.ml" 163 5296 5318
+type(
+  Types.source_display
+)
+ident(
+  int_ref display "output_qemu.ml" 155 5067 5078 "output_qemu.ml" 155 5067 5085
+)
+"output_qemu.ml" 163 5296 5311 "output_qemu.ml" 163 5296 5325
+type(
+  int option
+)
+"output_qemu.ml" 163 5296 5331 "output_qemu.ml" 163 5296 5335
+type(
+  int option
+)
+"output_qemu.ml" 163 5296 5339 "output_qemu.ml" 163 5296 5343
+type(
+  int
+)
+"output_qemu.ml" 163 5296 5351 "output_qemu.ml" 163 5296 5352
+type(
+  int
+)
+ident(
+  def p "output_qemu.ml" 163 5296 5356 "output_qemu.ml" 163 5296 5357
+)
+"output_qemu.ml" 163 5296 5346 "output_qemu.ml" 163 5296 5352
+type(
+  int option
+)
+"output_qemu.ml" 163 5296 5356 "output_qemu.ml" 163 5296 5357
+type(
+  int
+)
+ident(
+  int_ref p "output_qemu.ml" 163 5296 5351 "output_qemu.ml" 163 5296 5352
+)
+"output_qemu.ml" 163 5296 5304 "output_qemu.ml" 163 5296 5358
+type(
+  int
+)
+"output_qemu.ml" 162 5247 5255 "output_qemu.ml" 163 5296 5358
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 156 5089 5095 "output_qemu.ml" 164 5359 5366
+type(
+  unit
+)
+"output_qemu.ml" 165 5368 5374 "output_qemu.ml" 165 5368 5377
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 165 5368 5378 "output_qemu.ml" 165 5368 5389
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 165 5368 5390 "output_qemu.ml" 165 5368 5392
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 166 5393 5408 "output_qemu.ml" 166 5393 5417
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_qemu.ml" 52 1594 1641 "output_qemu.ml" 52 1594 1650
+)
+"output_qemu.ml" 166 5393 5408 "output_qemu.ml" 166 5393 5429
+type(
+  Types.guestcaps_video_type
+)
+"output_qemu.ml" 166 5393 5435 "output_qemu.ml" 166 5393 5441
+type(
+  Types.guestcaps_video_type
+)
+"output_qemu.ml" 166 5393 5445 "output_qemu.ml" 166 5393 5453
+type(
+  string
+)
+"output_qemu.ml" 166 5393 5456 "output_qemu.ml" 166 5393 5459
+type(
+  Types.guestcaps_video_type
+)
+"output_qemu.ml" 166 5393 5463 "output_qemu.ml" 166 5393 5468
+type(
+  string
+)
+"output_qemu.ml" 166 5393 5401 "output_qemu.ml" 166 5393 5469
+type(
+  string
+)
+"output_qemu.ml" 165 5368 5374 "output_qemu.ml" 166 5393 5469
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 156 5089 5095 "output_qemu.ml" 166 5393 5469
+type(
+  unit
+)
+"output_qemu.ml" 153 5017 5021 "output_qemu.ml" 167 5470 5475
+type(
+  unit
+)
+"output_qemu.ml" 170 5506 5517 "output_qemu.ml" 170 5506 5523
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_qemu.ml" 52 1594 1619 "output_qemu.ml" 52 1594 1625
+)
+"output_qemu.ml" 170 5506 5517 "output_qemu.ml" 170 5506 5531
+type(
+  Types.source_sound option
+)
+"output_qemu.ml" 171 5537 5544 "output_qemu.ml" 171 5537 5548
+type(
+  Types.source_sound option
+)
+"output_qemu.ml" 171 5537 5552 "output_qemu.ml" 171 5537 5554
+type(
+  unit
+)
+"output_qemu.ml" 172 5555 5585 "output_qemu.ml" 172 5555 5590
+type(
+  Types.source_sound_model
+)
+ident(
+  def model "output_qemu.ml" 173 5596 5604 "output_qemu.ml" 182 6079 6088
+)
+"output_qemu.ml" 172 5555 5567 "output_qemu.ml" 172 5555 5592
+type(
+  Types.source_sound
+)
+"output_qemu.ml" 172 5555 5562 "output_qemu.ml" 172 5555 5592
+type(
+  Types.source_sound option
+)
+"output_qemu.ml" 173 5596 5607 "output_qemu.ml" 173 5596 5631
+type(
+  Types.source_sound_model -> bool
+)
+ident(
+  ext_ref Utils.qemu_supports_sound_card
+)
+"output_qemu.ml" 173 5596 5632 "output_qemu.ml" 173 5596 5637
+type(
+  Types.source_sound_model
+)
+ident(
+  int_ref model "output_qemu.ml" 172 5555 5585 "output_qemu.ml" 172 5555 5590
+)
+"output_qemu.ml" 173 5596 5607 "output_qemu.ml" 173 5596 5637
+call(
+  stack
+)
+type(
+  bool
+)
+"output_qemu.ml" 174 5645 5661 "output_qemu.ml" 174 5645 5666
+type(
+  Types.source_sound_model
+)
+ident(
+  int_ref model "output_qemu.ml" 172 5555 5585 "output_qemu.ml" 172 5555 5590
+)
+"output_qemu.ml" 175 5672 5684 "output_qemu.ml" 175 5672 5688
+type(
+  Types.source_sound_model
+)
+"output_qemu.ml" 175 5672 5697 "output_qemu.ml" 175 5672 5700
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 175 5672 5701 "output_qemu.ml" 175 5672 5717
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 175 5672 5718 "output_qemu.ml" 175 5672 5720
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 175 5672 5697 "output_qemu.ml" 175 5672 5720
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 176 5721 5733 "output_qemu.ml" 176 5721 5739
+type(
+  Types.source_sound_model
+)
+"output_qemu.ml" 176 5721 5746 "output_qemu.ml" 176 5721 5749
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 176 5721 5750 "output_qemu.ml" 176 5721 5768
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 176 5721 5769 "output_qemu.ml" 176 5721 5771
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 176 5721 5746 "output_qemu.ml" 176 5721 5771
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 177 5772 5784 "output_qemu.ml" 177 5772 5788
+type(
+  Types.source_sound_model
+)
+"output_qemu.ml" 177 5772 5797 "output_qemu.ml" 177 5772 5800
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 177 5772 5801 "output_qemu.ml" 177 5772 5841
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 177 5772 5842 "output_qemu.ml" 177 5772 5844
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 177 5772 5797 "output_qemu.ml" 177 5772 5844
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 178 5845 5857 "output_qemu.ml" 178 5845 5861
+type(
+  Types.source_sound_model
+)
+"output_qemu.ml" 178 5845 5870 "output_qemu.ml" 178 5845 5873
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 178 5845 5874 "output_qemu.ml" 178 5845 5900
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 178 5845 5901 "output_qemu.ml" 178 5845 5903
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 178 5845 5870 "output_qemu.ml" 178 5845 5903
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 179 5904 5916 "output_qemu.ml" 179 5904 5925
+type(
+  Types.source_sound_model
+)
+"output_qemu.ml" 179 5904 5929 "output_qemu.ml" 179 5904 5932
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 179 5904 5933 "output_qemu.ml" 179 5904 5951
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 179 5904 5952 "output_qemu.ml" 179 5904 5954
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 179 5904 5929 "output_qemu.ml" 179 5904 5954
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 180 5976 5988 "output_qemu.ml" 180 5976 5992
+type(
+  Types.source_sound_model
+)
+"output_qemu.ml" 180 5976 6001 "output_qemu.ml" 180 5976 6004
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 180 5976 6005 "output_qemu.ml" 180 5976 6021
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 180 5976 6022 "output_qemu.ml" 180 5976 6024
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 180 5976 6001 "output_qemu.ml" 180 5976 6024
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 181 6025 6037 "output_qemu.ml" 181 6025 6045
+type(
+  Types.source_sound_model
+)
+"output_qemu.ml" 181 6025 6050 "output_qemu.ml" 181 6025 6053
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 181 6025 6054 "output_qemu.ml" 181 6025 6075
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 181 6025 6076 "output_qemu.ml" 181 6025 6078
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 181 6025 6050 "output_qemu.ml" 181 6025 6078
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 173 5596 5643 "output_qemu.ml" 182 6079 6088
+type(
+  unit
+)
+"output_qemu.ml" 173 5596 5604 "output_qemu.ml" 182 6079 6088
+type(
+  unit
+)
+"output_qemu.ml" 170 5506 5510 "output_qemu.ml" 183 6089 6094
+type(
+  unit
+)
+"output_qemu.ml" 186 6145 6152 "output_qemu.ml" 186 6145 6159
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "output_qemu.ml" 52 1594 1651 "output_qemu.ml" 52 1594 1658
+)
+"output_qemu.ml" 186 6145 6152 "output_qemu.ml" 186 6145 6166
+type(
+  string
+)
+"output_qemu.ml" 186 6145 6167 "output_qemu.ml" 186 6145 6168
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_qemu.ml" 186 6145 6169 "output_qemu.ml" 186 6145 6176
+type(
+  string
+)
+"output_qemu.ml" 186 6145 6152 "output_qemu.ml" 186 6145 6176
+type(
+  bool
+)
+"output_qemu.ml" 187 6182 6188 "output_qemu.ml" 187 6182 6191
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 187 6182 6192 "output_qemu.ml" 187 6182 6209
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_qemu.ml" 187 6182 6210 "output_qemu.ml" 187 6182 6212
+type(
+  string
+)
+ident(
+  int_ref nl "output_qemu.ml" 66 2008 2016 "output_qemu.ml" 66 2008 2018
+)
+"output_qemu.ml" 187 6182 6188 "output_qemu.ml" 187 6182 6212
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 186 6145 6149 "output_qemu.ml" 187 6182 6212
+type(
+  unit
+)
+"output_qemu.ml" 189 6215 6219 "output_qemu.ml" 189 6215 6222
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  int_ref fpf "output_qemu.ml" 65 1972 1980 "output_qemu.ml" 65 1972 1983
+)
+"output_qemu.ml" 189 6215 6223 "output_qemu.ml" 189 6215 6227
+type(
+  (unit, out_channel, unit) format
+)
+"output_qemu.ml" 189 6215 6219 "output_qemu.ml" 189 6215 6227
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 191 6230 6234 "output_qemu.ml" 191 6230 6243
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"output_qemu.ml" 191 6230 6244 "output_qemu.ml" 191 6230 6248
+type(
+  out_channel
+)
+ident(
+  int_ref chan "output_qemu.ml" 63 1939 1947 "output_qemu.ml" 63 1939 1951
+)
+"output_qemu.ml" 191 6230 6234 "output_qemu.ml" 191 6230 6248
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 193 6251 6255 "output_qemu.ml" 193 6251 6265
+type(
+  string -> Unix.file_perm -> unit
+)
+ident(
+  ext_ref Unix.chmod
+)
+"output_qemu.ml" 193 6251 6266 "output_qemu.ml" 193 6251 6270
+type(
+  string
+)
+ident(
+  int_ref file "output_qemu.ml" 55 1734 1742 "output_qemu.ml" 55 1734 1746
+)
+"output_qemu.ml" 193 6251 6271 "output_qemu.ml" 193 6251 6276
+type(
+  Unix.file_perm
+)
+"output_qemu.ml" 193 6251 6255 "output_qemu.ml" 193 6251 6276
+call(
+  stack
+)
+type(
+  unit
+)
+"output_qemu.ml" 196 6356 6363 "output_qemu.ml" 196 6356 6372
+type(
+  bool
+)
+"output_qemu.ml" 197 6380 6390 "output_qemu.ml" 197 6380 6393
+type(
+  string
+)
+"output_qemu.ml" 197 6380 6396 "output_qemu.ml" 197 6380 6403
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_qemu.ml" 197 6380 6404 "output_qemu.ml" 197 6380 6410
+type(
+  (string -> string, unit, string) format
+)
+"output_qemu.ml" 197 6380 6412 "output_qemu.ml" 197 6380 6417
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_qemu.ml" 197 6380 6418 "output_qemu.ml" 197 6380 6422
+type(
+  string
+)
+ident(
+  int_ref file "output_qemu.ml" 55 1734 1742 "output_qemu.ml" 55 1734 1746
+)
+"output_qemu.ml" 197 6380 6411 "output_qemu.ml" 197 6380 6423
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 197 6380 6396 "output_qemu.ml" 197 6380 6423
+call(
+  stack
+)
+type(
+  string
+)
+"output_qemu.ml" 198 6427 6433 "output_qemu.ml" 198 6427 6439
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"output_qemu.ml" 198 6427 6441 "output_qemu.ml" 198 6427 6452
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"output_qemu.ml" 198 6427 6453 "output_qemu.ml" 198 6427 6456
+type(
+  string
+)
+ident(
+  int_ref cmd "output_qemu.ml" 197 6380 6390 "output_qemu.ml" 197 6380 6393
+)
+"output_qemu.ml" 198 6427 6440 "output_qemu.ml" 198 6427 6457
+type(
+  int
+)
+"output_qemu.ml" 198 6427 6433 "output_qemu.ml" 198 6427 6457
+type(
+  unit
+)
+"output_qemu.ml" 196 6356 6378 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 196 6356 6360 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 193 6251 6255 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 191 6230 6234 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 189 6215 6219 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 186 6145 6149 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 170 5506 5510 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 153 5017 5021 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 145 4768 4772 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 140 4613 4617 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 138 4556 4560 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 118 3791 3795 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 116 3727 3731 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 115 3654 3658 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 95 2878 2882 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 92 2807 2811 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 91 2748 2752 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 84 2522 2526 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 82 2482 2486 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 81 2435 2439 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 80 2391 2395 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 79 2344 2348 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 70 2074 2078 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 68 2059 2063 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 67 2034 2038 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 66 2008 2012 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 65 1972 1976 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 63 1939 1943 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 57 1773 1777 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 55 1734 1738 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 54 1702 1706 "output_qemu.ml" 199 6458 6463
+type(
+  unit
+)
+"output_qemu.ml" 202 6469 6473 "output_qemu.ml" 202 6469 6484
+type(
+  string -> bool -> output_qemu
+)
+ident(
+  def output_qemu "output_qemu.ml" 203 6503 6503 --
+)
+"output_qemu.ml" 202 6469 6487 "output_qemu.ml" 202 6469 6502
+type(
+  string -> bool -> output_qemu
+)
+"output_qemu.ml" 203 6503 6507 "output_qemu.ml" 203 6503 6509
+type(
+  unit
+)
+"output_qemu.ml" 203 6503 6512 "output_qemu.ml" 203 6503 6547
+type(
+  string -> unit
+)
+ident(
+  ext_ref Modules_list.register_output_module
+)
+"output_qemu.ml" 203 6503 6548 "output_qemu.ml" 203 6503 6554
+type(
+  string
+)
+"output_qemu.ml" 203 6503 6512 "output_qemu.ml" 203 6503 6554
+call(
+  stack
+)
+type(
+  unit
+)

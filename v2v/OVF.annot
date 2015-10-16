@@ -1,0 +1,8292 @@
+"OVF.ml" 35 1015 1019 "OVF.ml" 35 1015 1024
+type(
+  string
+)
+ident(
+  def title "OVF.ml" 40 1199 1199 --
+)
+"OVF.ml" 35 1015 1027 "OVF.ml" 35 1015 1034
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 35 1015 1035 "OVF.ml" 35 1015 1060
+type(
+  (string -> string, unit, string) format
+)
+"OVF.ml" 35 1015 1061 "OVF.ml" 35 1015 1083
+type(
+  string
+)
+ident(
+  ext_ref Config.package_version
+)
+"OVF.ml" 35 1015 1027 "OVF.ml" 35 1015 1083
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 40 1199 1203 "OVF.ml" 40 1199 1207
+type(
+  float
+)
+ident(
+  def time "OVF.ml" 41 1218 1218 --
+)
+"OVF.ml" 40 1199 1210 "OVF.ml" 40 1199 1214
+type(
+  unit -> float
+)
+ident(
+  ext_ref Unix.time
+)
+"OVF.ml" 40 1199 1215 "OVF.ml" 40 1199 1217
+type(
+  unit
+)
+"OVF.ml" 40 1199 1210 "OVF.ml" 40 1199 1217
+call(
+  stack
+)
+type(
+  float
+)
+"OVF.ml" 41 1218 1222 "OVF.ml" 41 1218 1230
+type(
+  string
+)
+ident(
+  def iso_time "OVF.ml" 50 1506 1506 --
+)
+"OVF.ml" 42 1233 1239 "OVF.ml" 42 1233 1241
+type(
+  Unix.tm
+)
+"OVF.ml" 42 1233 1244 "OVF.ml" 42 1233 1250
+type(
+  float -> Unix.tm
+)
+ident(
+  ext_ref Unix.gmtime
+)
+"OVF.ml" 42 1233 1251 "OVF.ml" 42 1233 1255
+type(
+  float
+)
+ident(
+  int_ref time "OVF.ml" 40 1199 1203 "OVF.ml" 40 1199 1207
+)
+"OVF.ml" 42 1233 1244 "OVF.ml" 42 1233 1255
+call(
+  stack
+)
+type(
+  Unix.tm
+)
+"OVF.ml" 43 1259 1261 "OVF.ml" 43 1259 1268
+type(
+  (int -> int -> int -> int -> int -> int -> string, unit, string) format ->
+  int -> int -> int -> int -> int -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 43 1259 1269 "OVF.ml" 43 1259 1300
+type(
+  (int -> int -> int -> int -> int -> int -> string, unit, string) format
+)
+"OVF.ml" 44 1301 1306 "OVF.ml" 44 1301 1308
+type(
+  Unix.tm
+)
+ident(
+  int_ref tm "OVF.ml" 42 1233 1239 "OVF.ml" 42 1233 1241
+)
+"OVF.ml" 44 1301 1306 "OVF.ml" 44 1301 1316
+type(
+  int
+)
+"OVF.ml" 44 1301 1317 "OVF.ml" 44 1301 1318
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"OVF.ml" 44 1301 1319 "OVF.ml" 44 1301 1323
+type(
+  int
+)
+"OVF.ml" 44 1301 1305 "OVF.ml" 44 1301 1324
+type(
+  int
+)
+"OVF.ml" 44 1301 1326 "OVF.ml" 44 1301 1328
+type(
+  Unix.tm
+)
+ident(
+  int_ref tm "OVF.ml" 42 1233 1239 "OVF.ml" 42 1233 1241
+)
+"OVF.ml" 44 1301 1326 "OVF.ml" 44 1301 1335
+type(
+  int
+)
+"OVF.ml" 44 1301 1336 "OVF.ml" 44 1301 1337
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"OVF.ml" 44 1301 1338 "OVF.ml" 44 1301 1339
+type(
+  int
+)
+"OVF.ml" 44 1301 1325 "OVF.ml" 44 1301 1340
+type(
+  int
+)
+"OVF.ml" 44 1301 1341 "OVF.ml" 44 1301 1343
+type(
+  Unix.tm
+)
+ident(
+  int_ref tm "OVF.ml" 42 1233 1239 "OVF.ml" 42 1233 1241
+)
+"OVF.ml" 44 1301 1341 "OVF.ml" 44 1301 1351
+type(
+  int
+)
+"OVF.ml" 45 1352 1356 "OVF.ml" 45 1352 1358
+type(
+  Unix.tm
+)
+ident(
+  int_ref tm "OVF.ml" 42 1233 1239 "OVF.ml" 42 1233 1241
+)
+"OVF.ml" 45 1352 1356 "OVF.ml" 45 1352 1366
+type(
+  int
+)
+"OVF.ml" 45 1352 1367 "OVF.ml" 45 1352 1369
+type(
+  Unix.tm
+)
+ident(
+  int_ref tm "OVF.ml" 42 1233 1239 "OVF.ml" 42 1233 1241
+)
+"OVF.ml" 45 1352 1367 "OVF.ml" 45 1352 1376
+type(
+  int
+)
+"OVF.ml" 45 1352 1377 "OVF.ml" 45 1352 1379
+type(
+  Unix.tm
+)
+ident(
+  int_ref tm "OVF.ml" 42 1233 1239 "OVF.ml" 42 1233 1241
+)
+"OVF.ml" 45 1352 1377 "OVF.ml" 45 1352 1386
+type(
+  int
+)
+"OVF.ml" 43 1259 1261 "OVF.ml" 45 1352 1386
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 42 1233 1235 "OVF.ml" 45 1352 1386
+type(
+  string
+)
+"OVF.ml" 50 1506 1510 "OVF.ml" 50 1506 1520
+type(
+  Types.inspect -> Types.vmtype
+)
+ident(
+  def get_vmtype "OVF.ml" 194 6521 6521 --
+)
+"OVF.ml" 51 1532 1547 "OVF.ml" 51 1532 1554
+type(
+  string
+)
+"OVF.ml" 51 1532 1567 "OVF.ml" 51 1532 1573
+type(
+  string
+)
+"OVF.ml" 51 1532 1593 "OVF.ml" 51 1532 1598
+type(
+  int
+)
+ident(
+  def major "OVF.ml" 53 1633 1639 "OVF.ml" 54 1695 1705
+)
+"OVF.ml" 52 1600 1623 "OVF.ml" 52 1600 1630
+type(
+  string
+)
+ident(
+  def product "OVF.ml" 53 1633 1639 "OVF.ml" 54 1695 1705
+)
+"OVF.ml" 51 1532 1536 "OVF.ml" 52 1600 1632
+type(
+  Types.inspect
+)
+"OVF.ml" 53 1633 1644 "OVF.ml" 53 1633 1649
+type(
+  int
+)
+ident(
+  int_ref major "OVF.ml" 51 1532 1593 "OVF.ml" 51 1532 1598
+)
+"OVF.ml" 53 1633 1650 "OVF.ml" 53 1633 1652
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 53 1633 1653 "OVF.ml" 53 1633 1654
+type(
+  int
+)
+"OVF.ml" 53 1633 1644 "OVF.ml" 53 1633 1654
+type(
+  bool
+)
+"OVF.ml" 53 1633 1655 "OVF.ml" 53 1633 1657
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"OVF.ml" 53 1633 1658 "OVF.ml" 53 1633 1669
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.string_find
+)
+"OVF.ml" 53 1633 1670 "OVF.ml" 53 1633 1677
+type(
+  string
+)
+ident(
+  int_ref product "OVF.ml" 52 1600 1623 "OVF.ml" 52 1600 1630
+)
+"OVF.ml" 53 1633 1678 "OVF.ml" 53 1633 1686
+type(
+  string
+)
+"OVF.ml" 53 1633 1658 "OVF.ml" 53 1633 1686
+call(
+  stack
+)
+type(
+  int
+)
+"OVF.ml" 53 1633 1687 "OVF.ml" 53 1633 1689
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 53 1633 1690 "OVF.ml" 53 1633 1691
+type(
+  int
+)
+"OVF.ml" 53 1633 1658 "OVF.ml" 53 1633 1691
+type(
+  bool
+)
+"OVF.ml" 53 1633 1644 "OVF.ml" 53 1633 1691
+type(
+  bool
+)
+"OVF.ml" 54 1695 1699 "OVF.ml" 54 1695 1705
+type(
+  Types.vmtype
+)
+"OVF.ml" 53 1633 1639 "OVF.ml" 54 1695 1705
+type(
+  Types.vmtype
+)
+"OVF.ml" 56 1707 1722 "OVF.ml" 56 1707 1729
+type(
+  string
+)
+"OVF.ml" 56 1707 1742 "OVF.ml" 56 1707 1748
+type(
+  string
+)
+"OVF.ml" 56 1707 1768 "OVF.ml" 56 1707 1773
+type(
+  int
+)
+ident(
+  def major "OVF.ml" 57 1776 1782 "OVF.ml" 58 1801 1812
+)
+"OVF.ml" 56 1707 1711 "OVF.ml" 56 1707 1775
+type(
+  Types.inspect
+)
+"OVF.ml" 57 1776 1787 "OVF.ml" 57 1776 1792
+type(
+  int
+)
+ident(
+  int_ref major "OVF.ml" 56 1707 1768 "OVF.ml" 56 1707 1773
+)
+"OVF.ml" 57 1776 1793 "OVF.ml" 57 1776 1795
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 57 1776 1796 "OVF.ml" 57 1776 1797
+type(
+  int
+)
+"OVF.ml" 57 1776 1787 "OVF.ml" 57 1776 1797
+type(
+  bool
+)
+"OVF.ml" 58 1801 1805 "OVF.ml" 58 1801 1812
+type(
+  Types.vmtype
+)
+"OVF.ml" 57 1776 1782 "OVF.ml" 58 1801 1812
+type(
+  Types.vmtype
+)
+"OVF.ml" 60 1814 1829 "OVF.ml" 60 1814 1836
+type(
+  string
+)
+"OVF.ml" 60 1814 1849 "OVF.ml" 60 1814 1855
+type(
+  string
+)
+"OVF.ml" 60 1814 1875 "OVF.ml" 60 1814 1880
+type(
+  int
+)
+ident(
+  def major "OVF.ml" 62 1915 1921 "OVF.ml" 63 1973 1983
+)
+"OVF.ml" 61 1882 1905 "OVF.ml" 61 1882 1912
+type(
+  string
+)
+ident(
+  def product "OVF.ml" 62 1915 1921 "OVF.ml" 63 1973 1983
+)
+"OVF.ml" 60 1814 1818 "OVF.ml" 61 1882 1914
+type(
+  Types.inspect
+)
+"OVF.ml" 62 1915 1926 "OVF.ml" 62 1915 1931
+type(
+  int
+)
+ident(
+  int_ref major "OVF.ml" 60 1814 1875 "OVF.ml" 60 1814 1880
+)
+"OVF.ml" 62 1915 1932 "OVF.ml" 62 1915 1934
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 62 1915 1935 "OVF.ml" 62 1915 1936
+type(
+  int
+)
+"OVF.ml" 62 1915 1926 "OVF.ml" 62 1915 1936
+type(
+  bool
+)
+"OVF.ml" 62 1915 1937 "OVF.ml" 62 1915 1939
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"OVF.ml" 62 1915 1940 "OVF.ml" 62 1915 1951
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.string_find
+)
+"OVF.ml" 62 1915 1952 "OVF.ml" 62 1915 1959
+type(
+  string
+)
+ident(
+  int_ref product "OVF.ml" 61 1882 1905 "OVF.ml" 61 1882 1912
+)
+"OVF.ml" 62 1915 1960 "OVF.ml" 62 1915 1964
+type(
+  string
+)
+"OVF.ml" 62 1915 1940 "OVF.ml" 62 1915 1964
+call(
+  stack
+)
+type(
+  int
+)
+"OVF.ml" 62 1915 1965 "OVF.ml" 62 1915 1967
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 62 1915 1968 "OVF.ml" 62 1915 1969
+type(
+  int
+)
+"OVF.ml" 62 1915 1940 "OVF.ml" 62 1915 1969
+type(
+  bool
+)
+"OVF.ml" 62 1915 1926 "OVF.ml" 62 1915 1969
+type(
+  bool
+)
+"OVF.ml" 63 1973 1977 "OVF.ml" 63 1973 1983
+type(
+  Types.vmtype
+)
+"OVF.ml" 62 1915 1921 "OVF.ml" 63 1973 1983
+type(
+  Types.vmtype
+)
+"OVF.ml" 65 1985 2000 "OVF.ml" 65 1985 2007
+type(
+  string
+)
+"OVF.ml" 65 1985 2020 "OVF.ml" 65 1985 2026
+type(
+  string
+)
+"OVF.ml" 65 1985 2046 "OVF.ml" 65 1985 2051
+type(
+  int
+)
+ident(
+  def major "OVF.ml" 67 2086 2092 "OVF.ml" 68 2144 2154
+)
+"OVF.ml" 66 2053 2076 "OVF.ml" 66 2053 2083
+type(
+  string
+)
+ident(
+  def product "OVF.ml" 67 2086 2092 "OVF.ml" 68 2144 2154
+)
+"OVF.ml" 65 1985 1989 "OVF.ml" 66 2053 2085
+type(
+  Types.inspect
+)
+"OVF.ml" 67 2086 2097 "OVF.ml" 67 2086 2102
+type(
+  int
+)
+ident(
+  int_ref major "OVF.ml" 65 1985 2046 "OVF.ml" 65 1985 2051
+)
+"OVF.ml" 67 2086 2103 "OVF.ml" 67 2086 2105
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 67 2086 2106 "OVF.ml" 67 2086 2107
+type(
+  int
+)
+"OVF.ml" 67 2086 2097 "OVF.ml" 67 2086 2107
+type(
+  bool
+)
+"OVF.ml" 67 2086 2108 "OVF.ml" 67 2086 2110
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"OVF.ml" 67 2086 2111 "OVF.ml" 67 2086 2122
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.string_find
+)
+"OVF.ml" 67 2086 2123 "OVF.ml" 67 2086 2130
+type(
+  string
+)
+ident(
+  int_ref product "OVF.ml" 66 2053 2076 "OVF.ml" 66 2053 2083
+)
+"OVF.ml" 67 2086 2131 "OVF.ml" 67 2086 2135
+type(
+  string
+)
+"OVF.ml" 67 2086 2111 "OVF.ml" 67 2086 2135
+call(
+  stack
+)
+type(
+  int
+)
+"OVF.ml" 67 2086 2136 "OVF.ml" 67 2086 2138
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 67 2086 2139 "OVF.ml" 67 2086 2140
+type(
+  int
+)
+"OVF.ml" 67 2086 2111 "OVF.ml" 67 2086 2140
+type(
+  bool
+)
+"OVF.ml" 67 2086 2097 "OVF.ml" 67 2086 2140
+type(
+  bool
+)
+"OVF.ml" 68 2144 2148 "OVF.ml" 68 2144 2154
+type(
+  Types.vmtype
+)
+"OVF.ml" 67 2086 2092 "OVF.ml" 68 2144 2154
+type(
+  Types.vmtype
+)
+"OVF.ml" 70 2156 2171 "OVF.ml" 70 2156 2178
+type(
+  string
+)
+"OVF.ml" 70 2156 2191 "OVF.ml" 70 2156 2197
+type(
+  string
+)
+"OVF.ml" 70 2156 2217 "OVF.ml" 70 2156 2222
+type(
+  int
+)
+ident(
+  def major "OVF.ml" 71 2225 2231 "OVF.ml" 72 2250 2261
+)
+"OVF.ml" 70 2156 2160 "OVF.ml" 70 2156 2224
+type(
+  Types.inspect
+)
+"OVF.ml" 71 2225 2236 "OVF.ml" 71 2225 2241
+type(
+  int
+)
+ident(
+  int_ref major "OVF.ml" 70 2156 2217 "OVF.ml" 70 2156 2222
+)
+"OVF.ml" 71 2225 2242 "OVF.ml" 71 2225 2244
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 71 2225 2245 "OVF.ml" 71 2225 2246
+type(
+  int
+)
+"OVF.ml" 71 2225 2236 "OVF.ml" 71 2225 2246
+type(
+  bool
+)
+"OVF.ml" 72 2250 2254 "OVF.ml" 72 2250 2261
+type(
+  Types.vmtype
+)
+"OVF.ml" 71 2225 2231 "OVF.ml" 72 2250 2261
+type(
+  Types.vmtype
+)
+"OVF.ml" 74 2263 2278 "OVF.ml" 74 2263 2285
+type(
+  string
+)
+"OVF.ml" 74 2263 2298 "OVF.ml" 74 2263 2306
+type(
+  string
+)
+"OVF.ml" 74 2263 2267 "OVF.ml" 74 2263 2308
+type(
+  Types.inspect
+)
+"OVF.ml" 74 2263 2312 "OVF.ml" 74 2263 2319
+type(
+  Types.vmtype
+)
+"OVF.ml" 76 2321 2336 "OVF.ml" 76 2321 2345
+type(
+  string
+)
+"OVF.ml" 76 2321 2365 "OVF.ml" 76 2321 2366
+type(
+  int
+)
+"OVF.ml" 76 2321 2386 "OVF.ml" 76 2321 2387
+type(
+  int
+)
+"OVF.ml" 76 2321 2325 "OVF.ml" 76 2321 2389
+type(
+  Types.inspect
+)
+"OVF.ml" 77 2393 2397 "OVF.ml" 77 2393 2404
+type(
+  Types.vmtype
+)
+"OVF.ml" 79 2450 2465 "OVF.ml" 79 2450 2474
+type(
+  string
+)
+"OVF.ml" 79 2450 2494 "OVF.ml" 79 2450 2495
+type(
+  int
+)
+"OVF.ml" 79 2450 2515 "OVF.ml" 79 2450 2516
+type(
+  int
+)
+"OVF.ml" 80 2518 2541 "OVF.ml" 80 2518 2548
+type(
+  string
+)
+ident(
+  def product "OVF.ml" 80 2518 2551 "OVF.ml" 81 2589 2600
+)
+"OVF.ml" 79 2450 2454 "OVF.ml" 80 2518 2550
+type(
+  Types.inspect
+)
+"OVF.ml" 80 2518 2556 "OVF.ml" 80 2518 2567
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.string_find
+)
+"OVF.ml" 80 2518 2568 "OVF.ml" 80 2518 2575
+type(
+  string
+)
+ident(
+  int_ref product "OVF.ml" 80 2518 2541 "OVF.ml" 80 2518 2548
+)
+"OVF.ml" 80 2518 2576 "OVF.ml" 80 2518 2580
+type(
+  string
+)
+"OVF.ml" 80 2518 2556 "OVF.ml" 80 2518 2580
+call(
+  stack
+)
+type(
+  int
+)
+"OVF.ml" 80 2518 2581 "OVF.ml" 80 2518 2583
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 80 2518 2584 "OVF.ml" 80 2518 2585
+type(
+  int
+)
+"OVF.ml" 80 2518 2556 "OVF.ml" 80 2518 2585
+type(
+  bool
+)
+"OVF.ml" 81 2589 2593 "OVF.ml" 81 2589 2600
+type(
+  Types.vmtype
+)
+"OVF.ml" 80 2518 2551 "OVF.ml" 81 2589 2600
+type(
+  Types.vmtype
+)
+"OVF.ml" 83 2646 2661 "OVF.ml" 83 2646 2670
+type(
+  string
+)
+"OVF.ml" 83 2646 2690 "OVF.ml" 83 2646 2691
+type(
+  int
+)
+"OVF.ml" 83 2646 2711 "OVF.ml" 83 2646 2712
+type(
+  int
+)
+"OVF.ml" 83 2646 2650 "OVF.ml" 83 2646 2714
+type(
+  Types.inspect
+)
+"OVF.ml" 84 2718 2722 "OVF.ml" 84 2718 2728
+type(
+  Types.vmtype
+)
+"OVF.ml" 86 2777 2792 "OVF.ml" 86 2777 2801
+type(
+  string
+)
+"OVF.ml" 86 2777 2821 "OVF.ml" 86 2777 2822
+type(
+  int
+)
+"OVF.ml" 86 2777 2842 "OVF.ml" 86 2777 2843
+type(
+  int
+)
+"OVF.ml" 87 2845 2868 "OVF.ml" 87 2845 2875
+type(
+  string
+)
+ident(
+  def product "OVF.ml" 87 2845 2878 "OVF.ml" 88 2920 2930
+)
+"OVF.ml" 86 2777 2781 "OVF.ml" 87 2845 2877
+type(
+  Types.inspect
+)
+"OVF.ml" 87 2845 2883 "OVF.ml" 87 2845 2894
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.string_find
+)
+"OVF.ml" 87 2845 2895 "OVF.ml" 87 2845 2902
+type(
+  string
+)
+ident(
+  int_ref product "OVF.ml" 87 2845 2868 "OVF.ml" 87 2845 2875
+)
+"OVF.ml" 87 2845 2903 "OVF.ml" 87 2845 2911
+type(
+  string
+)
+"OVF.ml" 87 2845 2883 "OVF.ml" 87 2845 2911
+call(
+  stack
+)
+type(
+  int
+)
+"OVF.ml" 87 2845 2912 "OVF.ml" 87 2845 2914
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 87 2845 2915 "OVF.ml" 87 2845 2916
+type(
+  int
+)
+"OVF.ml" 87 2845 2883 "OVF.ml" 87 2845 2916
+type(
+  bool
+)
+"OVF.ml" 88 2920 2924 "OVF.ml" 88 2920 2930
+type(
+  Types.vmtype
+)
+"OVF.ml" 87 2845 2878 "OVF.ml" 88 2920 2930
+type(
+  Types.vmtype
+)
+"OVF.ml" 90 2979 2994 "OVF.ml" 90 2979 3003
+type(
+  string
+)
+"OVF.ml" 90 2979 3023 "OVF.ml" 90 2979 3024
+type(
+  int
+)
+"OVF.ml" 90 2979 3044 "OVF.ml" 90 2979 3045
+type(
+  int
+)
+"OVF.ml" 90 2979 2983 "OVF.ml" 90 2979 3047
+type(
+  Types.inspect
+)
+"OVF.ml" 91 3051 3055 "OVF.ml" 91 3051 3062
+type(
+  Types.vmtype
+)
+"OVF.ml" 93 3103 3118 "OVF.ml" 93 3103 3127
+type(
+  string
+)
+"OVF.ml" 93 3103 3147 "OVF.ml" 93 3103 3148
+type(
+  int
+)
+"OVF.ml" 93 3103 3168 "OVF.ml" 93 3103 3169
+type(
+  int
+)
+"OVF.ml" 94 3171 3194 "OVF.ml" 94 3171 3201
+type(
+  string
+)
+ident(
+  def product "OVF.ml" 94 3171 3204 "OVF.ml" 95 3246 3256
+)
+"OVF.ml" 93 3103 3107 "OVF.ml" 94 3171 3203
+type(
+  Types.inspect
+)
+"OVF.ml" 94 3171 3209 "OVF.ml" 94 3171 3220
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.string_find
+)
+"OVF.ml" 94 3171 3221 "OVF.ml" 94 3171 3228
+type(
+  string
+)
+ident(
+  int_ref product "OVF.ml" 94 3171 3194 "OVF.ml" 94 3171 3201
+)
+"OVF.ml" 94 3171 3229 "OVF.ml" 94 3171 3237
+type(
+  string
+)
+"OVF.ml" 94 3171 3209 "OVF.ml" 94 3171 3237
+call(
+  stack
+)
+type(
+  int
+)
+"OVF.ml" 94 3171 3238 "OVF.ml" 94 3171 3240
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 94 3171 3241 "OVF.ml" 94 3171 3242
+type(
+  int
+)
+"OVF.ml" 94 3171 3209 "OVF.ml" 94 3171 3242
+type(
+  bool
+)
+"OVF.ml" 95 3246 3250 "OVF.ml" 95 3246 3256
+type(
+  Types.vmtype
+)
+"OVF.ml" 94 3171 3204 "OVF.ml" 95 3246 3256
+type(
+  Types.vmtype
+)
+"OVF.ml" 97 3307 3322 "OVF.ml" 97 3307 3331
+type(
+  string
+)
+"OVF.ml" 97 3307 3351 "OVF.ml" 97 3307 3352
+type(
+  int
+)
+"OVF.ml" 97 3307 3372 "OVF.ml" 97 3307 3373
+type(
+  int
+)
+"OVF.ml" 97 3307 3311 "OVF.ml" 97 3307 3375
+type(
+  Types.inspect
+)
+"OVF.ml" 98 3379 3383 "OVF.ml" 98 3379 3389
+type(
+  Types.vmtype
+)
+"OVF.ml" 100 3435 3439 "OVF.ml" 100 3435 3440
+type(
+  Types.inspect
+)
+"OVF.ml" 100 3435 3444 "OVF.ml" 100 3435 3450
+type(
+  Types.vmtype
+)
+"OVF.ml" 50 1506 1523 "OVF.ml" 100 3435 3450
+type(
+  Types.inspect -> Types.vmtype
+)
+"OVF.ml" 108 3689 3693 "OVF.ml" 108 3689 3703
+type(
+  Types.inspect -> string
+)
+ident(
+  def get_ostype "OVF.ml" 194 6521 6521 --
+)
+"OVF.ml" 109 3715 3730 "OVF.ml" 109 3715 3737
+type(
+  string
+)
+"OVF.ml" 109 3715 3750 "OVF.ml" 109 3715 3756
+type(
+  string
+)
+"OVF.ml" 109 3715 3776 "OVF.ml" 109 3715 3777
+type(
+  int
+)
+ident(
+  def v "OVF.ml" 110 3779 3803 "OVF.ml" 111 3818 3840
+)
+"OVF.ml" 110 3779 3794 "OVF.ml" 110 3779 3800
+type(
+  string
+)
+"OVF.ml" 109 3715 3719 "OVF.ml" 110 3779 3802
+type(
+  Types.inspect
+)
+"OVF.ml" 110 3779 3808 "OVF.ml" 110 3779 3809
+type(
+  int
+)
+ident(
+  int_ref v "OVF.ml" 109 3715 3776 "OVF.ml" 109 3715 3777
+)
+"OVF.ml" 110 3779 3810 "OVF.ml" 110 3779 3812
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"OVF.ml" 110 3779 3813 "OVF.ml" 110 3779 3814
+type(
+  int
+)
+"OVF.ml" 110 3779 3808 "OVF.ml" 110 3779 3814
+type(
+  bool
+)
+"OVF.ml" 111 3818 3822 "OVF.ml" 111 3818 3829
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 111 3818 3830 "OVF.ml" 111 3818 3838
+type(
+  (int -> string, unit, string) format
+)
+"OVF.ml" 111 3818 3839 "OVF.ml" 111 3818 3840
+type(
+  int
+)
+ident(
+  int_ref v "OVF.ml" 109 3715 3776 "OVF.ml" 109 3715 3777
+)
+"OVF.ml" 111 3818 3822 "OVF.ml" 111 3818 3840
+call(
+  tail
+)
+type(
+  string
+)
+"OVF.ml" 110 3779 3803 "OVF.ml" 111 3818 3840
+type(
+  string
+)
+"OVF.ml" 113 3842 3857 "OVF.ml" 113 3842 3864
+type(
+  string
+)
+"OVF.ml" 113 3842 3877 "OVF.ml" 113 3842 3883
+type(
+  string
+)
+"OVF.ml" 113 3842 3903 "OVF.ml" 113 3842 3904
+type(
+  int
+)
+ident(
+  def v "OVF.ml" 114 3906 3932 "OVF.ml" 115 3947 3972
+)
+"OVF.ml" 114 3906 3921 "OVF.ml" 114 3906 3929
+type(
+  string
+)
+"OVF.ml" 113 3842 3846 "OVF.ml" 114 3906 3931
+type(
+  Types.inspect
+)
+"OVF.ml" 114 3906 3937 "OVF.ml" 114 3906 3938
+type(
+  int
+)
+ident(
+  int_ref v "OVF.ml" 113 3842 3903 "OVF.ml" 113 3842 3904
+)
+"OVF.ml" 114 3906 3939 "OVF.ml" 114 3906 3941
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <= )
+)
+"OVF.ml" 114 3906 3942 "OVF.ml" 114 3906 3943
+type(
+  int
+)
+"OVF.ml" 114 3906 3937 "OVF.ml" 114 3906 3943
+type(
+  bool
+)
+"OVF.ml" 115 3947 3951 "OVF.ml" 115 3947 3958
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 115 3947 3959 "OVF.ml" 115 3947 3970
+type(
+  (int -> string, unit, string) format
+)
+"OVF.ml" 115 3947 3971 "OVF.ml" 115 3947 3972
+type(
+  int
+)
+ident(
+  int_ref v "OVF.ml" 113 3842 3903 "OVF.ml" 113 3842 3904
+)
+"OVF.ml" 115 3947 3951 "OVF.ml" 115 3947 3972
+call(
+  tail
+)
+type(
+  string
+)
+"OVF.ml" 114 3906 3932 "OVF.ml" 115 3947 3972
+type(
+  string
+)
+"OVF.ml" 117 3974 3989 "OVF.ml" 117 3974 3996
+type(
+  string
+)
+"OVF.ml" 117 3974 4009 "OVF.ml" 117 3974 4015
+type(
+  string
+)
+"OVF.ml" 117 3974 4035 "OVF.ml" 117 3974 4036
+type(
+  int
+)
+ident(
+  def v "OVF.ml" 119 4085 4089 "OVF.ml" 119 4085 4111
+)
+"OVF.ml" 118 4038 4053 "OVF.ml" 118 4038 4061
+type(
+  string
+)
+"OVF.ml" 117 3974 3978 "OVF.ml" 118 4038 4063
+type(
+  Types.inspect
+)
+"OVF.ml" 119 4085 4089 "OVF.ml" 119 4085 4096
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 119 4085 4097 "OVF.ml" 119 4085 4109
+type(
+  (int -> string, unit, string) format
+)
+"OVF.ml" 119 4085 4110 "OVF.ml" 119 4085 4111
+type(
+  int
+)
+ident(
+  int_ref v "OVF.ml" 117 3974 4035 "OVF.ml" 117 3974 4036
+)
+"OVF.ml" 119 4085 4089 "OVF.ml" 119 4085 4111
+call(
+  tail
+)
+type(
+  string
+)
+"OVF.ml" 121 4113 4128 "OVF.ml" 121 4113 4135
+type(
+  string
+)
+"OVF.ml" 121 4113 4148 "OVF.ml" 121 4113 4154
+type(
+  string
+)
+"OVF.ml" 121 4113 4174 "OVF.ml" 121 4113 4175
+type(
+  int
+)
+"OVF.ml" 122 4177 4192 "OVF.ml" 122 4177 4199
+type(
+  string
+)
+"OVF.ml" 122 4177 4202 "OVF.ml" 122 4177 4211
+type(
+  string
+)
+"OVF.ml" 122 4177 4192 "OVF.ml" 122 4177 4211
+type(
+  string
+)
+"OVF.ml" 121 4113 4117 "OVF.ml" 122 4177 4213
+type(
+  Types.inspect
+)
+"OVF.ml" 123 4217 4221 "OVF.ml" 123 4217 4235
+type(
+  string
+)
+"OVF.ml" 125 4237 4252 "OVF.ml" 125 4237 4259
+type(
+  string
+)
+"OVF.ml" 125 4237 4272 "OVF.ml" 125 4237 4278
+type(
+  string
+)
+"OVF.ml" 125 4237 4298 "OVF.ml" 125 4237 4300
+type(
+  int
+)
+"OVF.ml" 126 4302 4317 "OVF.ml" 126 4302 4325
+type(
+  string
+)
+"OVF.ml" 125 4237 4241 "OVF.ml" 126 4302 4327
+type(
+  Types.inspect
+)
+"OVF.ml" 127 4331 4335 "OVF.ml" 127 4331 4344
+type(
+  string
+)
+"OVF.ml" 129 4346 4361 "OVF.ml" 129 4346 4368
+type(
+  string
+)
+"OVF.ml" 129 4346 4381 "OVF.ml" 129 4346 4387
+type(
+  string
+)
+"OVF.ml" 129 4346 4407 "OVF.ml" 129 4346 4409
+type(
+  int
+)
+"OVF.ml" 130 4411 4426 "OVF.ml" 130 4411 4433
+type(
+  string
+)
+"OVF.ml" 130 4411 4436 "OVF.ml" 130 4411 4445
+type(
+  string
+)
+"OVF.ml" 130 4411 4426 "OVF.ml" 130 4411 4445
+type(
+  string
+)
+"OVF.ml" 129 4346 4350 "OVF.ml" 130 4411 4447
+type(
+  Types.inspect
+)
+"OVF.ml" 131 4451 4455 "OVF.ml" 131 4451 4470
+type(
+  string
+)
+"OVF.ml" 133 4472 4487 "OVF.ml" 133 4472 4494
+type(
+  string
+)
+"OVF.ml" 133 4472 4476 "OVF.ml" 133 4472 4496
+type(
+  Types.inspect
+)
+"OVF.ml" 133 4472 4500 "OVF.ml" 133 4472 4512
+type(
+  string
+)
+"OVF.ml" 135 4514 4529 "OVF.ml" 135 4514 4538
+type(
+  string
+)
+"OVF.ml" 135 4514 4558 "OVF.ml" 135 4514 4559
+type(
+  int
+)
+"OVF.ml" 135 4514 4579 "OVF.ml" 135 4514 4580
+type(
+  int
+)
+"OVF.ml" 135 4514 4518 "OVF.ml" 135 4514 4582
+type(
+  Types.inspect
+)
+"OVF.ml" 136 4586 4590 "OVF.ml" 136 4586 4601
+type(
+  string
+)
+"OVF.ml" 138 4655 4670 "OVF.ml" 138 4655 4679
+type(
+  string
+)
+"OVF.ml" 138 4655 4699 "OVF.ml" 138 4655 4700
+type(
+  int
+)
+"OVF.ml" 138 4655 4720 "OVF.ml" 138 4655 4721
+type(
+  int
+)
+"OVF.ml" 139 4723 4746 "OVF.ml" 139 4723 4753
+type(
+  string
+)
+ident(
+  def product "OVF.ml" 139 4723 4756 "OVF.ml" 140 4794 4809
+)
+"OVF.ml" 138 4655 4659 "OVF.ml" 139 4723 4755
+type(
+  Types.inspect
+)
+"OVF.ml" 139 4723 4761 "OVF.ml" 139 4723 4772
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.string_find
+)
+"OVF.ml" 139 4723 4773 "OVF.ml" 139 4723 4780
+type(
+  string
+)
+ident(
+  int_ref product "OVF.ml" 139 4723 4746 "OVF.ml" 139 4723 4753
+)
+"OVF.ml" 139 4723 4781 "OVF.ml" 139 4723 4785
+type(
+  string
+)
+"OVF.ml" 139 4723 4761 "OVF.ml" 139 4723 4785
+call(
+  stack
+)
+type(
+  int
+)
+"OVF.ml" 139 4723 4786 "OVF.ml" 139 4723 4788
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"OVF.ml" 139 4723 4789 "OVF.ml" 139 4723 4790
+type(
+  int
+)
+"OVF.ml" 139 4723 4761 "OVF.ml" 139 4723 4790
+type(
+  bool
+)
+"OVF.ml" 140 4794 4798 "OVF.ml" 140 4794 4809
+type(
+  string
+)
+"OVF.ml" 139 4723 4756 "OVF.ml" 140 4794 4809
+type(
+  string
+)
+"OVF.ml" 142 4863 4878 "OVF.ml" 142 4863 4887
+type(
+  string
+)
+"OVF.ml" 142 4863 4907 "OVF.ml" 142 4863 4908
+type(
+  int
+)
+"OVF.ml" 142 4863 4928 "OVF.ml" 142 4863 4929
+type(
+  int
+)
+"OVF.ml" 143 4931 4946 "OVF.ml" 143 4931 4952
+type(
+  string
+)
+"OVF.ml" 142 4863 4867 "OVF.ml" 143 4931 4954
+type(
+  Types.inspect
+)
+"OVF.ml" 144 4958 4962 "OVF.ml" 144 4958 4975
+type(
+  string
+)
+"OVF.ml" 146 4977 4992 "OVF.ml" 146 4977 5001
+type(
+  string
+)
+"OVF.ml" 146 4977 5021 "OVF.ml" 146 4977 5022
+type(
+  int
+)
+"OVF.ml" 146 4977 5042 "OVF.ml" 146 4977 5043
+type(
+  int
+)
+"OVF.ml" 147 5045 5060 "OVF.ml" 147 5045 5068
+type(
+  string
+)
+"OVF.ml" 146 4977 4981 "OVF.ml" 147 5045 5070
+type(
+  Types.inspect
+)
+"OVF.ml" 148 5074 5078 "OVF.ml" 148 5074 5094
+type(
+  string
+)
+"OVF.ml" 150 5096 5111 "OVF.ml" 150 5096 5120
+type(
+  string
+)
+"OVF.ml" 150 5096 5140 "OVF.ml" 150 5096 5141
+type(
+  int
+)
+"OVF.ml" 150 5096 5161 "OVF.ml" 150 5096 5162
+type(
+  int
+)
+"OVF.ml" 151 5164 5179 "OVF.ml" 151 5164 5185
+type(
+  string
+)
+"OVF.ml" 150 5096 5100 "OVF.ml" 151 5164 5187
+type(
+  Types.inspect
+)
+"OVF.ml" 152 5191 5195 "OVF.ml" 152 5191 5208
+type(
+  string
+)
+"OVF.ml" 154 5210 5225 "OVF.ml" 154 5210 5234
+type(
+  string
+)
+"OVF.ml" 154 5210 5254 "OVF.ml" 154 5210 5255
+type(
+  int
+)
+"OVF.ml" 154 5210 5275 "OVF.ml" 154 5210 5276
+type(
+  int
+)
+"OVF.ml" 155 5278 5293 "OVF.ml" 155 5278 5301
+type(
+  string
+)
+"OVF.ml" 154 5210 5214 "OVF.ml" 155 5278 5303
+type(
+  Types.inspect
+)
+"OVF.ml" 156 5307 5311 "OVF.ml" 156 5307 5327
+type(
+  string
+)
+"OVF.ml" 158 5329 5344 "OVF.ml" 158 5329 5353
+type(
+  string
+)
+"OVF.ml" 158 5329 5373 "OVF.ml" 158 5329 5374
+type(
+  int
+)
+"OVF.ml" 158 5329 5394 "OVF.ml" 158 5329 5395
+type(
+  int
+)
+"OVF.ml" 159 5397 5412 "OVF.ml" 159 5397 5418
+type(
+  string
+)
+"OVF.ml" 158 5329 5333 "OVF.ml" 159 5397 5420
+type(
+  Types.inspect
+)
+"OVF.ml" 160 5424 5428 "OVF.ml" 160 5424 5438
+type(
+  string
+)
+"OVF.ml" 162 5440 5455 "OVF.ml" 162 5440 5464
+type(
+  string
+)
+"OVF.ml" 162 5440 5484 "OVF.ml" 162 5440 5485
+type(
+  int
+)
+"OVF.ml" 162 5440 5505 "OVF.ml" 162 5440 5506
+type(
+  int
+)
+"OVF.ml" 163 5508 5523 "OVF.ml" 163 5508 5531
+type(
+  string
+)
+"OVF.ml" 163 5508 5553 "OVF.ml" 163 5508 5561
+type(
+  string
+)
+"OVF.ml" 162 5440 5444 "OVF.ml" 163 5508 5563
+type(
+  Types.inspect
+)
+"OVF.ml" 164 5567 5571 "OVF.ml" 164 5567 5584
+type(
+  string
+)
+"OVF.ml" 166 5586 5601 "OVF.ml" 166 5586 5610
+type(
+  string
+)
+"OVF.ml" 166 5586 5630 "OVF.ml" 166 5586 5631
+type(
+  int
+)
+"OVF.ml" 166 5586 5651 "OVF.ml" 166 5586 5652
+type(
+  int
+)
+"OVF.ml" 167 5654 5669 "OVF.ml" 167 5654 5677
+type(
+  string
+)
+"OVF.ml" 166 5586 5590 "OVF.ml" 167 5654 5679
+type(
+  Types.inspect
+)
+"OVF.ml" 168 5683 5687 "OVF.ml" 168 5683 5705
+type(
+  string
+)
+"OVF.ml" 170 5707 5722 "OVF.ml" 170 5707 5731
+type(
+  string
+)
+"OVF.ml" 170 5707 5751 "OVF.ml" 170 5707 5752
+type(
+  int
+)
+"OVF.ml" 170 5707 5772 "OVF.ml" 170 5707 5773
+type(
+  int
+)
+"OVF.ml" 171 5775 5790 "OVF.ml" 171 5775 5796
+type(
+  string
+)
+"OVF.ml" 170 5707 5711 "OVF.ml" 171 5775 5798
+type(
+  Types.inspect
+)
+"OVF.ml" 172 5802 5806 "OVF.ml" 172 5802 5817
+type(
+  string
+)
+"OVF.ml" 174 5819 5834 "OVF.ml" 174 5819 5843
+type(
+  string
+)
+"OVF.ml" 174 5819 5863 "OVF.ml" 174 5819 5864
+type(
+  int
+)
+"OVF.ml" 174 5819 5884 "OVF.ml" 174 5819 5885
+type(
+  int
+)
+"OVF.ml" 175 5887 5902 "OVF.ml" 175 5887 5910
+type(
+  string
+)
+"OVF.ml" 175 5887 5932 "OVF.ml" 175 5887 5940
+type(
+  string
+)
+"OVF.ml" 174 5819 5823 "OVF.ml" 175 5887 5942
+type(
+  Types.inspect
+)
+"OVF.ml" 176 5946 5950 "OVF.ml" 176 5946 5964
+type(
+  string
+)
+"OVF.ml" 178 5966 5981 "OVF.ml" 178 5966 5990
+type(
+  string
+)
+"OVF.ml" 178 5966 6010 "OVF.ml" 178 5966 6011
+type(
+  int
+)
+"OVF.ml" 178 5966 6031 "OVF.ml" 178 5966 6032
+type(
+  int
+)
+"OVF.ml" 179 6034 6049 "OVF.ml" 179 6034 6057
+type(
+  string
+)
+"OVF.ml" 178 5966 5970 "OVF.ml" 179 6034 6059
+type(
+  Types.inspect
+)
+"OVF.ml" 180 6063 6067 "OVF.ml" 180 6063 6084
+type(
+  string
+)
+"OVF.ml" 182 6086 6101 "OVF.ml" 182 6086 6110
+type(
+  string
+)
+"OVF.ml" 182 6086 6130 "OVF.ml" 182 6086 6131
+type(
+  int
+)
+"OVF.ml" 182 6086 6151 "OVF.ml" 182 6086 6152
+type(
+  int
+)
+"OVF.ml" 183 6154 6169 "OVF.ml" 183 6154 6177
+type(
+  string
+)
+"OVF.ml" 182 6086 6090 "OVF.ml" 183 6154 6179
+type(
+  Types.inspect
+)
+"OVF.ml" 184 6183 6187 "OVF.ml" 184 6183 6206
+type(
+  string
+)
+"OVF.ml" 186 6208 6223 "OVF.ml" 186 6208 6226
+type(
+  string
+)
+ident(
+  def typ "OVF.ml" 189 6339 6343 "OVF.ml" 191 6444 6460
+)
+"OVF.ml" 186 6208 6239 "OVF.ml" 186 6208 6245
+type(
+  string
+)
+ident(
+  def distro "OVF.ml" 189 6339 6343 "OVF.ml" 191 6444 6460
+)
+"OVF.ml" 187 6247 6271 "OVF.ml" 187 6247 6276
+type(
+  int
+)
+ident(
+  def major "OVF.ml" 189 6339 6343 "OVF.ml" 191 6444 6460
+)
+"OVF.ml" 187 6247 6296 "OVF.ml" 187 6247 6301
+type(
+  int
+)
+ident(
+  def minor "OVF.ml" 189 6339 6343 "OVF.ml" 191 6444 6460
+)
+"OVF.ml" 188 6303 6326 "OVF.ml" 188 6303 6333
+type(
+  string
+)
+ident(
+  def product "OVF.ml" 189 6339 6343 "OVF.ml" 191 6444 6460
+)
+"OVF.ml" 186 6208 6212 "OVF.ml" 188 6303 6335
+type(
+  Types.inspect
+)
+"OVF.ml" 189 6339 6343 "OVF.ml" 189 6339 6350
+type(
+  (string -> string -> int -> int -> string -> unit, unit, string, unit)
+  format4 -> string -> string -> int -> int -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"OVF.ml" 189 6339 6352 "OVF.ml" 189 6339 6354
+type(
+  (string -> string -> int -> int -> string -> unit, unit, string, string,
+   string, unit)
+  format6 ->
+  (string -> string -> int -> int -> string -> unit, unit, string, unit)
+  format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"OVF.ml" 189 6339 6354 "OVF.ml" 189 6339 6404
+type(
+  (string -> string -> int -> int -> string -> unit, unit, string, string,
+   string, unit)
+  format6
+)
+"OVF.ml" 189 6339 6351 "OVF.ml" 189 6339 6405
+type(
+  (string -> string -> int -> int -> string -> unit, unit, string, unit)
+  format4
+)
+"OVF.ml" 190 6406 6412 "OVF.ml" 190 6406 6415
+type(
+  string
+)
+ident(
+  int_ref typ "OVF.ml" 186 6208 6223 "OVF.ml" 186 6208 6226
+)
+"OVF.ml" 190 6406 6416 "OVF.ml" 190 6406 6422
+type(
+  string
+)
+ident(
+  int_ref distro "OVF.ml" 186 6208 6239 "OVF.ml" 186 6208 6245
+)
+"OVF.ml" 190 6406 6423 "OVF.ml" 190 6406 6428
+type(
+  int
+)
+ident(
+  int_ref major "OVF.ml" 187 6247 6271 "OVF.ml" 187 6247 6276
+)
+"OVF.ml" 190 6406 6429 "OVF.ml" 190 6406 6434
+type(
+  int
+)
+ident(
+  int_ref minor "OVF.ml" 187 6247 6296 "OVF.ml" 187 6247 6301
+)
+"OVF.ml" 190 6406 6435 "OVF.ml" 190 6406 6442
+type(
+  string
+)
+ident(
+  int_ref product "OVF.ml" 188 6303 6326 "OVF.ml" 188 6303 6333
+)
+"OVF.ml" 189 6339 6343 "OVF.ml" 190 6406 6442
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 191 6444 6448 "OVF.ml" 191 6444 6460
+type(
+  string
+)
+"OVF.ml" 189 6339 6343 "OVF.ml" 191 6444 6460
+type(
+  string
+)
+"OVF.ml" 108 3689 3706 "OVF.ml" 191 6444 6460
+type(
+  Types.inspect -> string
+)
+"OVF.ml" 194 6521 6525 "OVF.ml" 194 6521 6542
+type(
+  Types.output_allocation ->
+  string -> string list -> Types.target list -> string list
+)
+ident(
+  def create_meta_files "OVF.ml" 237 8163 8163 --
+)
+"OVF.ml" 194 6521 6543 "OVF.ml" 194 6521 6555
+type(
+  Types.output_allocation
+)
+ident(
+  def output_alloc "OVF.ml" 194 6521 6556 "OVF.ml" 234 8096 8134
+)
+"OVF.ml" 194 6521 6556 "OVF.ml" 194 6521 6563
+type(
+  string
+)
+ident(
+  def sd_uuid "OVF.ml" 194 6521 6564 "OVF.ml" 234 8096 8134
+)
+"OVF.ml" 194 6521 6564 "OVF.ml" 194 6521 6575
+type(
+  string list
+)
+ident(
+  def image_uuids "OVF.ml" 194 6521 6576 "OVF.ml" 234 8096 8134
+)
+"OVF.ml" 194 6521 6576 "OVF.ml" 194 6521 6583
+type(
+  Types.target list
+)
+ident(
+  def targets "OVF.ml" 196 6648 6650 "OVF.ml" 234 8096 8134
+)
+"OVF.ml" 196 6648 6654 "OVF.ml" 196 6648 6675
+type(
+  string
+)
+"OVF.ml" 197 6678 6688 "OVF.ml" 197 6678 6700
+type(
+  Types.output_allocation
+)
+ident(
+  int_ref output_alloc "OVF.ml" 194 6521 6543 "OVF.ml" 194 6521 6555
+)
+"OVF.ml" 198 6706 6712 "OVF.ml" 198 6706 6718
+type(
+  Types.output_allocation
+)
+"OVF.ml" 198 6706 6722 "OVF.ml" 198 6706 6730
+type(
+  string
+)
+"OVF.ml" 199 6731 6737 "OVF.ml" 199 6731 6749
+type(
+  Types.output_allocation
+)
+"OVF.ml" 199 6731 6753 "OVF.ml" 199 6731 6767
+type(
+  string
+)
+"OVF.ml" 197 6678 6682 "OVF.ml" 199 6731 6767
+type(
+  string
+)
+"OVF.ml" 201 6772 6774 "OVF.ml" 201 6772 6782
+type(
+  (Types.target * string -> string) ->
+  (Types.target * string) list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"OVF.ml" 202 6785 6813 "OVF.ml" 202 6785 6815
+type(
+  Types.overlay
+)
+ident(
+  def ov "OVF.ml" 203 6839 6845 "OVF.ml" 233 8070 8095
+)
+"OVF.ml" 202 6785 6794 "OVF.ml" 202 6785 6817
+type(
+  Types.target
+)
+"OVF.ml" 202 6785 6794 "OVF.ml" 202 6785 6822
+type(
+  Types.target
+)
+ident(
+  def t "OVF.ml" 203 6839 6845 "OVF.ml" 233 8070 8095
+)
+"OVF.ml" 202 6785 6824 "OVF.ml" 202 6785 6834
+type(
+  string
+)
+ident(
+  def image_uuid "OVF.ml" 203 6839 6845 "OVF.ml" 233 8070 8095
+)
+"OVF.ml" 202 6785 6793 "OVF.ml" 202 6785 6835
+type(
+  Types.target * string
+)
+"OVF.ml" 203 6839 6849 "OVF.ml" 203 6839 6864
+type(
+  int64
+)
+"OVF.ml" 204 6867 6878 "OVF.ml" 204 6867 6880
+type(
+  Types.overlay
+)
+ident(
+  int_ref ov "OVF.ml" 202 6785 6813 "OVF.ml" 202 6785 6815
+)
+"OVF.ml" 204 6867 6878 "OVF.ml" 204 6867 6896
+type(
+  int64
+)
+"OVF.ml" 204 6867 6897 "OVF.ml" 204 6867 6899
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( &^ )
+)
+"OVF.ml" 204 6867 6900 "OVF.ml" 204 6867 6904
+type(
+  int64
+)
+"OVF.ml" 204 6867 6878 "OVF.ml" 204 6867 6904
+call(
+  stack
+)
+type(
+  int64
+)
+"OVF.ml" 204 6867 6905 "OVF.ml" 204 6867 6907
+type(
+  int64 -> int64 -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"OVF.ml" 204 6867 6908 "OVF.ml" 204 6867 6910
+type(
+  int64
+)
+"OVF.ml" 204 6867 6878 "OVF.ml" 204 6867 6910
+type(
+  bool
+)
+"OVF.ml" 205 6916 6926 "OVF.ml" 205 6916 6931
+type(
+  ?exit_code:int ->
+  (string -> int64 -> unit, unit, string, unit) format4 ->
+  string -> int64 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"OVF.ml" 205 6916 6933 "OVF.ml" 205 6916 6935
+type(
+  (string -> int64 -> unit, unit, string, string, string, unit) format6 ->
+  (string -> int64 -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"OVF.ml" 205 6916 6935 "OVF.ml" 205 6916 7136
+type(
+  (string -> int64 -> unit, unit, string, string, string, unit) format6
+)
+"OVF.ml" 205 6916 6932 "OVF.ml" 205 6916 7137
+type(
+  (string -> int64 -> unit, unit, string, unit) format4
+)
+"OVF.ml" 206 7138 7150 "OVF.ml" 206 7138 7152
+type(
+  Types.overlay
+)
+ident(
+  int_ref ov "OVF.ml" 202 6785 6813 "OVF.ml" 202 6785 6815
+)
+"OVF.ml" 206 7138 7150 "OVF.ml" 206 7138 7162
+type(
+  Types.source_disk
+)
+"OVF.ml" 206 7138 7150 "OVF.ml" 206 7138 7173
+type(
+  string
+)
+"OVF.ml" 207 7174 7186 "OVF.ml" 207 7174 7188
+type(
+  Types.overlay
+)
+ident(
+  int_ref ov "OVF.ml" 202 6785 6813 "OVF.ml" 202 6785 6815
+)
+"OVF.ml" 207 7174 7186 "OVF.ml" 207 7174 7204
+type(
+  int64
+)
+"OVF.ml" 205 6916 6926 "OVF.ml" 207 7174 7204
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 204 6867 6875 "OVF.ml" 207 7174 7204
+type(
+  unit
+)
+"OVF.ml" 208 7206 7214 "OVF.ml" 208 7206 7216
+type(
+  Types.overlay
+)
+ident(
+  int_ref ov "OVF.ml" 202 6785 6813 "OVF.ml" 202 6785 6815
+)
+"OVF.ml" 208 7206 7214 "OVF.ml" 208 7206 7232
+type(
+  int64
+)
+"OVF.ml" 208 7206 7233 "OVF.ml" 208 7206 7235
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( /^ )
+)
+"OVF.ml" 208 7206 7236 "OVF.ml" 208 7206 7240
+type(
+  int64
+)
+"OVF.ml" 208 7206 7214 "OVF.ml" 208 7206 7240
+call(
+  stack
+)
+type(
+  int64
+)
+"OVF.ml" 204 6867 6875 "OVF.ml" 208 7206 7240
+type(
+  int64
+)
+"OVF.ml" 210 7245 7255 "OVF.ml" 210 7245 7270
+type(
+  string
+)
+"OVF.ml" 211 7273 7287 "OVF.ml" 211 7273 7288
+type(
+  Types.target
+)
+ident(
+  int_ref t "OVF.ml" 202 6785 6794 "OVF.ml" 202 6785 6822
+)
+"OVF.ml" 211 7273 7287 "OVF.ml" 211 7273 7302
+type(
+  string
+)
+"OVF.ml" 212 7308 7318 "OVF.ml" 212 7308 7323
+type(
+  string
+)
+"OVF.ml" 212 7308 7327 "OVF.ml" 212 7308 7332
+type(
+  string
+)
+"OVF.ml" 213 7333 7343 "OVF.ml" 213 7333 7350
+type(
+  string
+)
+"OVF.ml" 213 7333 7354 "OVF.ml" 213 7333 7359
+type(
+  string
+)
+"OVF.ml" 214 7360 7370 "OVF.ml" 214 7360 7371
+type(
+  string
+)
+"OVF.ml" 215 7375 7385 "OVF.ml" 215 7375 7390
+type(
+  ?exit_code:int ->
+  (string -> string, unit, string, string) format4 -> string -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"OVF.ml" 215 7375 7392 "OVF.ml" 215 7375 7394
+type(
+  (string -> string, unit, string, string, string, string) format6 ->
+  (string -> string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"OVF.ml" 215 7375 7394 "OVF.ml" 215 7375 7459
+type(
+  (string -> string, unit, string, string, string, string) format6
+)
+"OVF.ml" 215 7375 7391 "OVF.ml" 215 7375 7460
+type(
+  (string -> string, unit, string, string) format4
+)
+"OVF.ml" 215 7375 7461 "OVF.ml" 215 7375 7462
+type(
+  Types.target
+)
+ident(
+  int_ref t "OVF.ml" 202 6785 6794 "OVF.ml" 202 6785 6822
+)
+"OVF.ml" 215 7375 7461 "OVF.ml" 215 7375 7476
+type(
+  string
+)
+"OVF.ml" 215 7375 7385 "OVF.ml" 215 7375 7476
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 211 7273 7281 "OVF.ml" 215 7375 7476
+type(
+  string
+)
+"OVF.ml" 217 7481 7491 "OVF.ml" 217 7481 7494
+type(
+  Buffer.t
+)
+"OVF.ml" 217 7481 7497 "OVF.ml" 217 7481 7510
+type(
+  int -> Buffer.t
+)
+ident(
+  ext_ref Buffer.create
+)
+"OVF.ml" 217 7481 7511 "OVF.ml" 217 7481 7514
+type(
+  int
+)
+"OVF.ml" 217 7481 7497 "OVF.ml" 217 7481 7514
+call(
+  stack
+)
+type(
+  Buffer.t
+)
+"OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+type(
+  ('a, Buffer.t, unit) format -> 'a
+)
+"OVF.ml" 218 7518 7532 "OVF.ml" 218 7518 7534
+type(
+  ('a, Buffer.t, unit) format
+)
+ident(
+  def fs "OVF.ml" 218 7518 7537 "OVF.ml" 218 7518 7551
+)
+"OVF.ml" 218 7518 7537 "OVF.ml" 218 7518 7544
+type(
+  Buffer.t -> ('a, Buffer.t, unit) format -> 'a
+)
+ident(
+  ext_ref Printf.bprintf
+)
+"OVF.ml" 218 7518 7545 "OVF.ml" 218 7518 7548
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "OVF.ml" 217 7481 7491 "OVF.ml" 217 7481 7494
+)
+"OVF.ml" 218 7518 7549 "OVF.ml" 218 7518 7551
+type(
+  ('a, Buffer.t, unit) format
+)
+ident(
+  int_ref fs "OVF.ml" 218 7518 7532 "OVF.ml" 218 7518 7534
+)
+"OVF.ml" 218 7518 7537 "OVF.ml" 218 7518 7551
+call(
+  tail
+)
+type(
+  'a
+)
+"OVF.ml" 219 7555 7561 "OVF.ml" 219 7555 7564
+type(
+  (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 219 7555 7565 "OVF.ml" 219 7555 7578
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"OVF.ml" 219 7555 7579 "OVF.ml" 219 7555 7586
+type(
+  string
+)
+ident(
+  int_ref sd_uuid "OVF.ml" 194 6521 6556 "OVF.ml" 194 6521 6563
+)
+"OVF.ml" 219 7555 7561 "OVF.ml" 219 7555 7586
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 220 7624 7630 "OVF.ml" 220 7624 7633
+type(
+  (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 220 7624 7634 "OVF.ml" 220 7624 7650
+type(
+  (unit, Buffer.t, unit) format
+)
+"OVF.ml" 220 7624 7630 "OVF.ml" 220 7624 7650
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 221 7652 7658 "OVF.ml" 221 7652 7661
+type(
+  (float -> unit, Buffer.t, unit) format -> float -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 221 7652 7662 "OVF.ml" 221 7652 7676
+type(
+  (float -> unit, Buffer.t, unit) format
+)
+"OVF.ml" 221 7652 7677 "OVF.ml" 221 7652 7681
+type(
+  float
+)
+ident(
+  int_ref time "OVF.ml" 40 1199 1203 "OVF.ml" 40 1199 1207
+)
+"OVF.ml" 221 7652 7658 "OVF.ml" 221 7652 7681
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 222 7683 7689 "OVF.ml" 222 7683 7692
+type(
+  (float -> unit, Buffer.t, unit) format -> float -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 222 7683 7693 "OVF.ml" 222 7683 7707
+type(
+  (float -> unit, Buffer.t, unit) format
+)
+"OVF.ml" 222 7683 7708 "OVF.ml" 222 7683 7712
+type(
+  float
+)
+ident(
+  int_ref time "OVF.ml" 40 1199 1203 "OVF.ml" 40 1199 1207
+)
+"OVF.ml" 222 7683 7689 "OVF.ml" 222 7683 7712
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 223 7714 7720 "OVF.ml" 223 7714 7723
+type(
+  (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 223 7714 7724 "OVF.ml" 223 7714 7736
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"OVF.ml" 223 7714 7737 "OVF.ml" 223 7714 7747
+type(
+  string
+)
+ident(
+  int_ref image_uuid "OVF.ml" 202 6785 6824 "OVF.ml" 202 6785 6834
+)
+"OVF.ml" 223 7714 7720 "OVF.ml" 223 7714 7747
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 224 7749 7755 "OVF.ml" 224 7749 7758
+type(
+  (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 224 7749 7759 "OVF.ml" 224 7749 7773
+type(
+  (unit, Buffer.t, unit) format
+)
+"OVF.ml" 224 7749 7755 "OVF.ml" 224 7749 7773
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 225 7775 7781 "OVF.ml" 225 7775 7784
+type(
+  (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 225 7775 7785 "OVF.ml" 225 7775 7831
+type(
+  (unit, Buffer.t, unit) format
+)
+"OVF.ml" 225 7775 7781 "OVF.ml" 225 7775 7831
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 226 7833 7839 "OVF.ml" 226 7833 7842
+type(
+  (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 226 7833 7843 "OVF.ml" 226 7833 7861
+type(
+  (unit, Buffer.t, unit) format
+)
+"OVF.ml" 226 7833 7839 "OVF.ml" 226 7833 7861
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 227 7863 7869 "OVF.ml" 227 7863 7872
+type(
+  (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 227 7863 7873 "OVF.ml" 227 7863 7887
+type(
+  (unit, Buffer.t, unit) format
+)
+"OVF.ml" 227 7863 7869 "OVF.ml" 227 7863 7887
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 228 7889 7895 "OVF.ml" 228 7889 7898
+type(
+  (int64 -> unit, Buffer.t, unit) format -> int64 -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 228 7889 7899 "OVF.ml" 228 7889 7911
+type(
+  (int64 -> unit, Buffer.t, unit) format
+)
+"OVF.ml" 228 7889 7912 "OVF.ml" 228 7889 7927
+type(
+  int64
+)
+ident(
+  int_ref size_in_sectors "OVF.ml" 203 6839 6849 "OVF.ml" 203 6839 6864
+)
+"OVF.ml" 228 7889 7895 "OVF.ml" 228 7889 7927
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 229 7929 7935 "OVF.ml" 229 7929 7938
+type(
+  (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 229 7929 7939 "OVF.ml" 229 7929 7952
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"OVF.ml" 229 7929 7953 "OVF.ml" 229 7929 7968
+type(
+  string
+)
+ident(
+  int_ref format_for_rhev "OVF.ml" 210 7245 7255 "OVF.ml" 210 7245 7270
+)
+"OVF.ml" 229 7929 7935 "OVF.ml" 229 7929 7968
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 230 7970 7976 "OVF.ml" 230 7970 7979
+type(
+  (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 230 7970 7980 "OVF.ml" 230 7970 7991
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"OVF.ml" 230 7970 7992 "OVF.ml" 230 7970 8013
+type(
+  string
+)
+ident(
+  int_ref output_alloc_for_rhev "OVF.ml" 196 6648 6654 "OVF.ml" 196 6648 6675
+)
+"OVF.ml" 230 7970 7976 "OVF.ml" 230 7970 8013
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 231 8015 8021 "OVF.ml" 231 8015 8024
+type(
+  (string -> unit, Buffer.t, unit) format -> string -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 231 8015 8025 "OVF.ml" 231 8015 8043
+type(
+  (string -> unit, Buffer.t, unit) format
+)
+"OVF.ml" 231 8015 8044 "OVF.ml" 231 8015 8049
+type(
+  string
+)
+ident(
+  int_ref title "OVF.ml" 35 1015 1019 "OVF.ml" 35 1015 1024
+)
+"OVF.ml" 231 8015 8021 "OVF.ml" 231 8015 8049
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 232 8051 8057 "OVF.ml" 232 8051 8060
+type(
+  (unit, Buffer.t, unit) format -> unit
+)
+ident(
+  int_ref bpf "OVF.ml" 218 7518 7528 "OVF.ml" 218 7518 7531
+)
+"OVF.ml" 232 8051 8061 "OVF.ml" 232 8051 8068
+type(
+  (unit, Buffer.t, unit) format
+)
+"OVF.ml" 232 8051 8057 "OVF.ml" 232 8051 8068
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 233 8070 8076 "OVF.ml" 233 8070 8091
+type(
+  Buffer.t -> string
+)
+ident(
+  ext_ref Buffer.contents
+)
+"OVF.ml" 233 8070 8092 "OVF.ml" 233 8070 8095
+type(
+  Buffer.t
+)
+ident(
+  int_ref buf "OVF.ml" 217 7481 7491 "OVF.ml" 217 7481 7494
+)
+"OVF.ml" 233 8070 8076 "OVF.ml" 233 8070 8095
+call(
+  tail
+)
+type(
+  string
+)
+"OVF.ml" 232 8051 8057 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 231 8015 8021 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 230 7970 7976 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 229 7929 7935 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 228 7889 7895 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 227 7863 7869 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 226 7833 7839 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 225 7775 7781 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 224 7749 7755 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 223 7714 7720 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 222 7683 7689 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 221 7652 7658 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 220 7624 7630 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 219 7555 7561 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 218 7518 7524 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 217 7481 7487 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 210 7245 7251 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 203 6839 6845 "OVF.ml" 233 8070 8095
+type(
+  string
+)
+"OVF.ml" 201 6772 6783 "OVF.ml" 234 8096 8099
+type(
+  Types.target * string -> string
+)
+"OVF.ml" 234 8096 8101 "OVF.ml" 234 8096 8113
+type(
+  Types.target list -> string list -> (Types.target * string) list
+)
+ident(
+  ext_ref List.combine
+)
+"OVF.ml" 234 8096 8114 "OVF.ml" 234 8096 8121
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "OVF.ml" 194 6521 6576 "OVF.ml" 194 6521 6583
+)
+"OVF.ml" 234 8096 8122 "OVF.ml" 234 8096 8133
+type(
+  string list
+)
+ident(
+  int_ref image_uuids "OVF.ml" 194 6521 6564 "OVF.ml" 194 6521 6575
+)
+"OVF.ml" 234 8096 8100 "OVF.ml" 234 8096 8134
+call(
+  stack
+)
+type(
+  (Types.target * string) list
+)
+"OVF.ml" 201 6772 6774 "OVF.ml" 234 8096 8134
+call(
+  tail
+)
+type(
+  string list
+)
+"OVF.ml" 196 6648 6650 "OVF.ml" 234 8096 8134
+type(
+  string list
+)
+"OVF.ml" 237 8163 8171 "OVF.ml" 237 8163 8181
+type(
+  Types.source ->
+  Types.target list ->
+  Types.guestcaps ->
+  Types.inspect ->
+  Types.output_allocation ->
+  Types.vmtype option ->
+  string -> string list -> string list -> string -> DOM.doc
+)
+ident(
+  def create_ovf "OVF.ml" 237 8163 8163 --
+)
+"OVF.ml" 237 8163 8182 "OVF.ml" 237 8163 8188
+type(
+  Types.source
+)
+ident(
+  def source "OVF.ml" 237 8163 8189 "OVF.ml" 361 13219 13224
+)
+"OVF.ml" 237 8163 8189 "OVF.ml" 237 8163 8196
+type(
+  Types.target list
+)
+ident(
+  def targets "OVF.ml" 237 8163 8197 "OVF.ml" 361 13219 13224
+)
+"OVF.ml" 237 8163 8197 "OVF.ml" 237 8163 8206
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "OVF.ml" 237 8163 8207 "OVF.ml" 361 13219 13224
+)
+"OVF.ml" 237 8163 8207 "OVF.ml" 237 8163 8214
+type(
+  Types.inspect
+)
+ident(
+  def inspect "OVF.ml" 238 8215 8219 "OVF.ml" 361 13219 13224
+)
+"OVF.ml" 238 8215 8219 "OVF.ml" 238 8215 8231
+type(
+  Types.output_allocation
+)
+ident(
+  def output_alloc "OVF.ml" 238 8215 8232 "OVF.ml" 361 13219 13224
+)
+"OVF.ml" 238 8215 8232 "OVF.ml" 238 8215 8238
+type(
+  Types.vmtype option
+)
+ident(
+  def vmtype "OVF.ml" 238 8215 8239 "OVF.ml" 361 13219 13224
+)
+"OVF.ml" 238 8215 8239 "OVF.ml" 238 8215 8246
+type(
+  string
+)
+ident(
+  def sd_uuid "OVF.ml" 238 8215 8247 "OVF.ml" 361 13219 13224
+)
+"OVF.ml" 238 8215 8247 "OVF.ml" 238 8215 8258
+type(
+  string list
+)
+ident(
+  def image_uuids "OVF.ml" 238 8215 8259 "OVF.ml" 361 13219 13224
+)
+"OVF.ml" 238 8215 8259 "OVF.ml" 238 8215 8268
+type(
+  string list
+)
+ident(
+  def vol_uuids "OVF.ml" 238 8215 8269 "OVF.ml" 361 13219 13224
+)
+"OVF.ml" 238 8215 8269 "OVF.ml" 238 8215 8276
+type(
+  string
+)
+ident(
+  def vm_uuid "OVF.ml" 239 8279 8281 "OVF.ml" 361 13219 13224
+)
+"OVF.ml" 239 8279 8289 "OVF.ml" 239 8279 8300
+type(
+  Types.target list -> int
+)
+ident(
+  ext_ref List.length
+)
+"OVF.ml" 239 8279 8301 "OVF.ml" 239 8279 8308
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "OVF.ml" 237 8163 8189 "OVF.ml" 237 8163 8196
+)
+"OVF.ml" 239 8279 8289 "OVF.ml" 239 8279 8308
+call(
+  stack
+)
+type(
+  int
+)
+"OVF.ml" 239 8279 8309 "OVF.ml" 239 8279 8310
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"OVF.ml" 239 8279 8311 "OVF.ml" 239 8279 8322
+type(
+  string list -> int
+)
+ident(
+  ext_ref List.length
+)
+"OVF.ml" 239 8279 8323 "OVF.ml" 239 8279 8332
+type(
+  string list
+)
+ident(
+  int_ref vol_uuids "OVF.ml" 238 8215 8259 "OVF.ml" 238 8215 8268
+)
+"OVF.ml" 239 8279 8311 "OVF.ml" 239 8279 8332
+call(
+  stack
+)
+type(
+  int
+)
+"OVF.ml" 239 8279 8288 "OVF.ml" 239 8279 8333
+type(
+  bool
+)
+"OVF.ml" 239 8279 8281 "OVF.ml" 239 8279 8333
+type(
+  unit
+)
+"OVF.ml" 241 8336 8342 "OVF.ml" 241 8336 8352
+type(
+  int64
+)
+"OVF.ml" 241 8336 8355 "OVF.ml" 241 8336 8361
+type(
+  Types.source
+)
+ident(
+  int_ref source "OVF.ml" 237 8163 8182 "OVF.ml" 237 8163 8188
+)
+"OVF.ml" 241 8336 8355 "OVF.ml" 241 8336 8370
+type(
+  int64
+)
+"OVF.ml" 241 8336 8371 "OVF.ml" 241 8336 8373
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( /^ )
+)
+"OVF.ml" 241 8336 8374 "OVF.ml" 241 8336 8379
+type(
+  int64
+)
+"OVF.ml" 241 8336 8355 "OVF.ml" 241 8336 8379
+call(
+  stack
+)
+type(
+  int64
+)
+"OVF.ml" 241 8336 8380 "OVF.ml" 241 8336 8382
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( /^ )
+)
+"OVF.ml" 241 8336 8383 "OVF.ml" 241 8336 8388
+type(
+  int64
+)
+"OVF.ml" 241 8336 8355 "OVF.ml" 241 8336 8388
+call(
+  stack
+)
+type(
+  int64
+)
+"OVF.ml" 243 8393 8399 "OVF.ml" 243 8393 8405
+type(
+  Types.vmtype
+)
+"OVF.ml" 244 8408 8418 "OVF.ml" 244 8408 8424
+type(
+  Types.vmtype option
+)
+ident(
+  int_ref vmtype "OVF.ml" 238 8215 8232 "OVF.ml" 238 8215 8238
+)
+"OVF.ml" 245 8430 8443 "OVF.ml" 245 8430 8449
+type(
+  Types.vmtype
+)
+ident(
+  def vmtype "OVF.ml" 245 8430 8453 "OVF.ml" 245 8430 8459
+)
+"OVF.ml" 245 8430 8438 "OVF.ml" 245 8430 8449
+type(
+  Types.vmtype option
+)
+"OVF.ml" 245 8430 8453 "OVF.ml" 245 8430 8459
+type(
+  Types.vmtype
+)
+ident(
+  int_ref vmtype "OVF.ml" 245 8430 8443 "OVF.ml" 245 8430 8449
+)
+"OVF.ml" 246 8460 8468 "OVF.ml" 246 8460 8472
+type(
+  Types.vmtype option
+)
+"OVF.ml" 246 8460 8476 "OVF.ml" 246 8460 8486
+type(
+  Types.inspect -> Types.vmtype
+)
+ident(
+  int_ref get_vmtype "OVF.ml" 50 1506 1510 "OVF.ml" 50 1506 1520
+)
+"OVF.ml" 246 8460 8487 "OVF.ml" 246 8460 8494
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "OVF.ml" 237 8163 8207 "OVF.ml" 237 8163 8214
+)
+"OVF.ml" 246 8460 8476 "OVF.ml" 246 8460 8494
+call(
+  stack
+)
+type(
+  Types.vmtype
+)
+"OVF.ml" 244 8408 8412 "OVF.ml" 246 8460 8494
+type(
+  Types.vmtype
+)
+"OVF.ml" 247 8498 8504 "OVF.ml" 247 8498 8510
+type(
+  string
+)
+"OVF.ml" 247 8498 8519 "OVF.ml" 247 8498 8525
+type(
+  Types.vmtype
+)
+ident(
+  int_ref vmtype "OVF.ml" 243 8393 8399 "OVF.ml" 243 8393 8405
+)
+"OVF.ml" 247 8498 8531 "OVF.ml" 247 8498 8538
+type(
+  Types.vmtype
+)
+"OVF.ml" 247 8498 8542 "OVF.ml" 247 8498 8545
+type(
+  string
+)
+"OVF.ml" 247 8498 8548 "OVF.ml" 247 8498 8554
+type(
+  Types.vmtype
+)
+"OVF.ml" 247 8498 8558 "OVF.ml" 247 8498 8561
+type(
+  string
+)
+"OVF.ml" 247 8498 8513 "OVF.ml" 247 8498 8561
+type(
+  string
+)
+"OVF.ml" 248 8565 8571 "OVF.ml" 248 8565 8577
+type(
+  string
+)
+"OVF.ml" 248 8565 8580 "OVF.ml" 248 8565 8590
+type(
+  Types.inspect -> string
+)
+ident(
+  int_ref get_ostype "OVF.ml" 108 3689 3693 "OVF.ml" 108 3689 3703
+)
+"OVF.ml" 248 8565 8591 "OVF.ml" 248 8565 8598
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "OVF.ml" 237 8163 8207 "OVF.ml" 237 8163 8214
+)
+"OVF.ml" 248 8565 8580 "OVF.ml" 248 8565 8598
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 250 8603 8609 "OVF.ml" 250 8603 8615
+type(
+  int
+)
+"OVF.ml" 251 8618 8628 "OVF.ml" 251 8618 8634
+type(
+  Types.source
+)
+ident(
+  int_ref source "OVF.ml" 237 8163 8182 "OVF.ml" 237 8163 8188
+)
+"OVF.ml" 251 8618 8628 "OVF.ml" 251 8618 8647
+type(
+  Types.source_hypervisor
+)
+"OVF.ml" 252 8653 8659 "OVF.ml" 252 8653 8665
+type(
+  Types.source_hypervisor
+)
+"OVF.ml" 252 8653 8669 "OVF.ml" 252 8653 8670
+type(
+  int
+)
+"OVF.ml" 253 8671 8677 "OVF.ml" 253 8671 8680
+type(
+  Types.source_hypervisor
+)
+"OVF.ml" 253 8671 8684 "OVF.ml" 253 8671 8685
+type(
+  int
+)
+"OVF.ml" 254 8686 8692 "OVF.ml" 254 8686 8693
+type(
+  Types.source_hypervisor
+)
+"OVF.ml" 254 8686 8697 "OVF.ml" 254 8686 8698
+type(
+  int
+)
+"OVF.ml" 251 8618 8622 "OVF.ml" 254 8686 8698
+type(
+  int
+)
+"OVF.ml" 256 8703 8709 "OVF.ml" 256 8703 8712
+type(
+  DOM.doc
+)
+"OVF.ml" 257 8721 8725 "OVF.ml" 257 8721 8728
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.doc
+)
+ident(
+  ext_ref DOM.doc
+)
+"OVF.ml" 257 8721 8729 "OVF.ml" 257 8721 8743
+type(
+  string
+)
+"OVF.ml" 258 8746 8752 "OVF.ml" 258 8746 8764
+type(
+  string
+)
+"OVF.ml" 258 8746 8766 "OVF.ml" 258 8746 8851
+type(
+  string
+)
+"OVF.ml" 258 8746 8752 "OVF.ml" 258 8746 8851
+type(
+  DOM.attr
+)
+"OVF.ml" 259 8853 8859 "OVF.ml" 259 8853 8871
+type(
+  string
+)
+"OVF.ml" 259 8853 8873 "OVF.ml" 259 8853 8953
+type(
+  string
+)
+"OVF.ml" 259 8853 8859 "OVF.ml" 259 8853 8953
+type(
+  DOM.attr
+)
+"OVF.ml" 260 8955 8961 "OVF.ml" 260 8955 8972
+type(
+  string
+)
+"OVF.ml" 260 8955 8974 "OVF.ml" 260 8955 9017
+type(
+  string
+)
+"OVF.ml" 260 8955 8961 "OVF.ml" 260 8955 9017
+type(
+  DOM.attr
+)
+"OVF.ml" 261 9019 9025 "OVF.ml" 261 9019 9036
+type(
+  string
+)
+"OVF.ml" 261 9019 9038 "OVF.ml" 261 9019 9079
+type(
+  string
+)
+"OVF.ml" 261 9019 9025 "OVF.ml" 261 9019 9079
+type(
+  DOM.attr
+)
+"OVF.ml" 262 9081 9087 "OVF.ml" 262 9081 9100
+type(
+  string
+)
+"OVF.ml" 262 9081 9102 "OVF.ml" 262 9081 9107
+type(
+  string
+)
+"OVF.ml" 262 9081 9087 "OVF.ml" 262 9081 9107
+type(
+  DOM.attr
+)
+"OVF.ml" 257 8721 8744 "OVF.ml" 263 9108 9113
+type(
+  DOM.attr list
+)
+"OVF.ml" 264 9116 9130 "OVF.ml" 264 9116 9142
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.generated_by
+)
+"OVF.ml" 264 9116 9122 "OVF.ml" 264 9116 9142
+type(
+  DOM.node
+)
+"OVF.ml" 265 9144 9150 "OVF.ml" 265 9144 9151
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 265 9144 9152 "OVF.ml" 265 9144 9164
+type(
+  string
+)
+"OVF.ml" 265 9144 9165 "OVF.ml" 265 9144 9167
+type(
+  DOM.attr list
+)
+"OVF.ml" 265 9144 9168 "OVF.ml" 265 9144 9170
+type(
+  DOM.node list
+)
+"OVF.ml" 265 9144 9150 "OVF.ml" 265 9144 9170
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 266 9172 9178 "OVF.ml" 266 9172 9179
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 266 9172 9180 "OVF.ml" 266 9172 9189
+type(
+  string
+)
+"OVF.ml" 266 9172 9191 "OVF.ml" 266 9172 9201
+type(
+  string
+)
+"OVF.ml" 266 9172 9203 "OVF.ml" 266 9172 9228
+type(
+  string
+)
+"OVF.ml" 266 9172 9191 "OVF.ml" 266 9172 9228
+type(
+  DOM.attr
+)
+"OVF.ml" 266 9172 9190 "OVF.ml" 266 9172 9229
+type(
+  DOM.attr list
+)
+"OVF.ml" 267 9232 9240 "OVF.ml" 267 9232 9241
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 267 9232 9242 "OVF.ml" 267 9232 9248
+type(
+  string
+)
+"OVF.ml" 267 9232 9249 "OVF.ml" 267 9232 9251
+type(
+  DOM.attr list
+)
+"OVF.ml" 267 9232 9260 "OVF.ml" 267 9232 9278
+type(
+  string
+)
+"OVF.ml" 267 9232 9253 "OVF.ml" 267 9232 9278
+type(
+  DOM.node
+)
+"OVF.ml" 267 9232 9252 "OVF.ml" 267 9232 9279
+type(
+  DOM.node list
+)
+"OVF.ml" 267 9232 9240 "OVF.ml" 267 9232 9279
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 266 9172 9230 "OVF.ml" 268 9280 9287
+type(
+  DOM.node list
+)
+"OVF.ml" 266 9172 9178 "OVF.ml" 268 9280 9287
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 269 9289 9295 "OVF.ml" 269 9289 9296
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 269 9289 9297 "OVF.ml" 269 9289 9306
+type(
+  string
+)
+"OVF.ml" 269 9289 9308 "OVF.ml" 269 9289 9318
+type(
+  string
+)
+"OVF.ml" 269 9289 9320 "OVF.ml" 269 9289 9342
+type(
+  string
+)
+"OVF.ml" 269 9289 9308 "OVF.ml" 269 9289 9342
+type(
+  DOM.attr
+)
+"OVF.ml" 269 9289 9307 "OVF.ml" 269 9289 9343
+type(
+  DOM.attr list
+)
+"OVF.ml" 270 9346 9354 "OVF.ml" 270 9346 9355
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 270 9346 9356 "OVF.ml" 270 9346 9362
+type(
+  string
+)
+"OVF.ml" 270 9346 9363 "OVF.ml" 270 9346 9365
+type(
+  DOM.attr list
+)
+"OVF.ml" 270 9346 9374 "OVF.ml" 270 9346 9397
+type(
+  string
+)
+"OVF.ml" 270 9346 9367 "OVF.ml" 270 9346 9397
+type(
+  DOM.node
+)
+"OVF.ml" 270 9346 9366 "OVF.ml" 270 9346 9398
+type(
+  DOM.node list
+)
+"OVF.ml" 270 9346 9354 "OVF.ml" 270 9346 9398
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 269 9289 9344 "OVF.ml" 271 9399 9406
+type(
+  DOM.node list
+)
+"OVF.ml" 269 9289 9295 "OVF.ml" 271 9399 9406
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 272 9408 9414 "OVF.ml" 272 9408 9415
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 272 9408 9416 "OVF.ml" 272 9408 9425
+type(
+  string
+)
+"OVF.ml" 272 9408 9427 "OVF.ml" 272 9408 9435
+type(
+  string
+)
+"OVF.ml" 272 9408 9437 "OVF.ml" 272 9408 9442
+type(
+  string
+)
+"OVF.ml" 272 9408 9427 "OVF.ml" 272 9408 9442
+type(
+  DOM.attr
+)
+"OVF.ml" 272 9408 9444 "OVF.ml" 272 9408 9454
+type(
+  string
+)
+"OVF.ml" 272 9408 9456 "OVF.ml" 272 9408 9480
+type(
+  string
+)
+"OVF.ml" 272 9408 9444 "OVF.ml" 272 9408 9480
+type(
+  DOM.attr
+)
+"OVF.ml" 272 9408 9426 "OVF.ml" 272 9408 9481
+type(
+  DOM.attr list
+)
+"OVF.ml" 273 9484 9492 "OVF.ml" 273 9484 9493
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 273 9484 9494 "OVF.ml" 273 9484 9500
+type(
+  string
+)
+"OVF.ml" 273 9484 9501 "OVF.ml" 273 9484 9503
+type(
+  DOM.attr list
+)
+"OVF.ml" 273 9484 9512 "OVF.ml" 273 9484 9518
+type(
+  Types.source
+)
+ident(
+  int_ref source "OVF.ml" 237 8163 8182 "OVF.ml" 237 8163 8188
+)
+"OVF.ml" 273 9484 9512 "OVF.ml" 273 9484 9525
+type(
+  string
+)
+"OVF.ml" 273 9484 9505 "OVF.ml" 273 9484 9525
+type(
+  DOM.node
+)
+"OVF.ml" 273 9484 9504 "OVF.ml" 273 9484 9526
+type(
+  DOM.node list
+)
+"OVF.ml" 273 9484 9492 "OVF.ml" 273 9484 9526
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 274 9528 9536 "OVF.ml" 274 9528 9537
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 274 9528 9538 "OVF.ml" 274 9528 9550
+type(
+  string
+)
+"OVF.ml" 274 9528 9551 "OVF.ml" 274 9528 9553
+type(
+  DOM.attr list
+)
+"OVF.ml" 274 9528 9562 "OVF.ml" 274 9528 9600
+type(
+  string
+)
+"OVF.ml" 274 9528 9555 "OVF.ml" 274 9528 9600
+type(
+  DOM.node
+)
+"OVF.ml" 274 9528 9554 "OVF.ml" 274 9528 9601
+type(
+  DOM.node list
+)
+"OVF.ml" 274 9528 9536 "OVF.ml" 274 9528 9601
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 275 9603 9611 "OVF.ml" 275 9603 9612
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 275 9603 9613 "OVF.ml" 275 9603 9627
+type(
+  string
+)
+"OVF.ml" 275 9603 9628 "OVF.ml" 275 9603 9630
+type(
+  DOM.attr list
+)
+"OVF.ml" 275 9603 9639 "OVF.ml" 275 9603 9646
+type(
+  string
+)
+"OVF.ml" 275 9603 9632 "OVF.ml" 275 9603 9646
+type(
+  DOM.node
+)
+"OVF.ml" 275 9603 9631 "OVF.ml" 275 9603 9647
+type(
+  DOM.node list
+)
+"OVF.ml" 275 9603 9611 "OVF.ml" 275 9603 9647
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 276 9649 9657 "OVF.ml" 276 9649 9658
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 276 9649 9659 "OVF.ml" 276 9649 9672
+type(
+  string
+)
+"OVF.ml" 276 9649 9673 "OVF.ml" 276 9649 9675
+type(
+  DOM.attr list
+)
+"OVF.ml" 276 9649 9684 "OVF.ml" 276 9649 9689
+type(
+  string
+)
+ident(
+  int_ref title "OVF.ml" 35 1015 1019 "OVF.ml" 35 1015 1024
+)
+"OVF.ml" 276 9649 9677 "OVF.ml" 276 9649 9689
+type(
+  DOM.node
+)
+"OVF.ml" 276 9649 9676 "OVF.ml" 276 9649 9690
+type(
+  DOM.node list
+)
+"OVF.ml" 276 9649 9657 "OVF.ml" 276 9649 9690
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 277 9692 9700 "OVF.ml" 277 9692 9701
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 277 9692 9702 "OVF.ml" 277 9692 9710
+type(
+  string
+)
+"OVF.ml" 277 9692 9711 "OVF.ml" 277 9692 9713
+type(
+  DOM.attr list
+)
+"OVF.ml" 277 9692 9714 "OVF.ml" 277 9692 9716
+type(
+  DOM.node list
+)
+"OVF.ml" 277 9692 9700 "OVF.ml" 277 9692 9716
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 278 9718 9726 "OVF.ml" 278 9718 9727
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 278 9718 9728 "OVF.ml" 278 9718 9742
+type(
+  string
+)
+"OVF.ml" 278 9718 9743 "OVF.ml" 278 9718 9745
+type(
+  DOM.attr list
+)
+"OVF.ml" 278 9718 9754 "OVF.ml" 278 9718 9762
+type(
+  string
+)
+ident(
+  int_ref iso_time "OVF.ml" 41 1218 1222 "OVF.ml" 41 1218 1230
+)
+"OVF.ml" 278 9718 9747 "OVF.ml" 278 9718 9762
+type(
+  DOM.node
+)
+"OVF.ml" 278 9718 9746 "OVF.ml" 278 9718 9763
+type(
+  DOM.node list
+)
+"OVF.ml" 278 9718 9726 "OVF.ml" 278 9718 9763
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 279 9765 9773 "OVF.ml" 279 9765 9774
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 279 9765 9775 "OVF.ml" 279 9765 9789
+type(
+  string
+)
+"OVF.ml" 279 9765 9800 "OVF.ml" 279 9765 9802
+type(
+  DOM.attr list
+)
+"OVF.ml" 279 9765 9811 "OVF.ml" 279 9765 9817
+type(
+  string
+)
+"OVF.ml" 279 9765 9804 "OVF.ml" 279 9765 9817
+type(
+  DOM.node
+)
+"OVF.ml" 279 9765 9803 "OVF.ml" 279 9765 9818
+type(
+  DOM.node list
+)
+"OVF.ml" 279 9765 9773 "OVF.ml" 279 9765 9818
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 280 9820 9828 "OVF.ml" 280 9820 9829
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 280 9820 9830 "OVF.ml" 280 9820 9845
+type(
+  string
+)
+"OVF.ml" 280 9820 9846 "OVF.ml" 280 9820 9848
+type(
+  DOM.attr list
+)
+"OVF.ml" 280 9820 9857 "OVF.ml" 280 9820 9864
+type(
+  string
+)
+"OVF.ml" 280 9820 9850 "OVF.ml" 280 9820 9864
+type(
+  DOM.node
+)
+"OVF.ml" 280 9820 9849 "OVF.ml" 280 9820 9865
+type(
+  DOM.node list
+)
+"OVF.ml" 280 9820 9828 "OVF.ml" 280 9820 9865
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 281 9867 9875 "OVF.ml" 281 9867 9876
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 281 9867 9877 "OVF.ml" 281 9867 9887
+type(
+  string
+)
+"OVF.ml" 281 9867 9888 "OVF.ml" 281 9867 9890
+type(
+  DOM.attr list
+)
+"OVF.ml" 281 9867 9891 "OVF.ml" 281 9867 9893
+type(
+  DOM.node list
+)
+"OVF.ml" 281 9867 9875 "OVF.ml" 281 9867 9893
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 282 9895 9903 "OVF.ml" 282 9895 9904
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 282 9895 9905 "OVF.ml" 282 9895 9918
+type(
+  string
+)
+"OVF.ml" 282 9895 9919 "OVF.ml" 282 9895 9921
+type(
+  DOM.attr list
+)
+"OVF.ml" 282 9895 9930 "OVF.ml" 282 9895 9937
+type(
+  string
+)
+"OVF.ml" 282 9895 9923 "OVF.ml" 282 9895 9937
+type(
+  DOM.node
+)
+"OVF.ml" 282 9895 9922 "OVF.ml" 282 9895 9938
+type(
+  DOM.node list
+)
+"OVF.ml" 282 9895 9903 "OVF.ml" 282 9895 9938
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 283 9940 9948 "OVF.ml" 283 9940 9949
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 283 9940 9950 "OVF.ml" 283 9940 9958
+type(
+  string
+)
+"OVF.ml" 283 9940 9959 "OVF.ml" 283 9940 9961
+type(
+  DOM.attr list
+)
+"OVF.ml" 283 9940 9971 "OVF.ml" 283 9940 9984
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"OVF.ml" 283 9940 9985 "OVF.ml" 283 9940 9991
+type(
+  int
+)
+ident(
+  int_ref origin "OVF.ml" 250 8603 8609 "OVF.ml" 250 8603 8615
+)
+"OVF.ml" 283 9940 9970 "OVF.ml" 283 9940 9992
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 283 9940 9963 "OVF.ml" 283 9940 9992
+type(
+  DOM.node
+)
+"OVF.ml" 283 9940 9962 "OVF.ml" 283 9940 9993
+type(
+  DOM.node list
+)
+"OVF.ml" 283 9940 9948 "OVF.ml" 283 9940 9993
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 284 9995 10003 "OVF.ml" 284 9995 10004
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 284 9995 10005 "OVF.ml" 284 9995 10013
+type(
+  string
+)
+"OVF.ml" 284 9995 10014 "OVF.ml" 284 9995 10016
+type(
+  DOM.attr list
+)
+"OVF.ml" 284 9995 10025 "OVF.ml" 284 9995 10031
+type(
+  string
+)
+ident(
+  int_ref vmtype "OVF.ml" 247 8498 8504 "OVF.ml" 247 8498 8510
+)
+"OVF.ml" 284 9995 10018 "OVF.ml" 284 9995 10031
+type(
+  DOM.node
+)
+"OVF.ml" 284 9995 10017 "OVF.ml" 284 9995 10032
+type(
+  DOM.node list
+)
+"OVF.ml" 284 9995 10003 "OVF.ml" 284 9995 10032
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 289 10215 10223 "OVF.ml" 289 10215 10224
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 289 10215 10225 "OVF.ml" 289 10215 10245
+type(
+  string
+)
+"OVF.ml" 289 10215 10246 "OVF.ml" 289 10215 10248
+type(
+  DOM.attr list
+)
+"OVF.ml" 289 10215 10257 "OVF.ml" 289 10215 10260
+type(
+  string
+)
+"OVF.ml" 289 10215 10250 "OVF.ml" 289 10215 10260
+type(
+  DOM.node
+)
+"OVF.ml" 289 10215 10249 "OVF.ml" 289 10215 10271
+type(
+  DOM.node list
+)
+"OVF.ml" 289 10215 10223 "OVF.ml" 289 10215 10271
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 291 10274 10282 "OVF.ml" 291 10274 10283
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 291 10274 10284 "OVF.ml" 291 10274 10293
+type(
+  string
+)
+"OVF.ml" 291 10274 10295 "OVF.ml" 291 10274 10303
+type(
+  string
+)
+"OVF.ml" 291 10274 10305 "OVF.ml" 291 10274 10312
+type(
+  string
+)
+ident(
+  int_ref vm_uuid "OVF.ml" 238 8215 8269 "OVF.ml" 238 8215 8276
+)
+"OVF.ml" 291 10274 10295 "OVF.ml" 291 10274 10312
+type(
+  DOM.attr
+)
+"OVF.ml" 291 10274 10314 "OVF.ml" 291 10274 10328
+type(
+  string
+)
+"OVF.ml" 291 10274 10330 "OVF.ml" 291 10274 10337
+type(
+  string
+)
+"OVF.ml" 291 10274 10314 "OVF.ml" 291 10274 10337
+type(
+  DOM.attr
+)
+"OVF.ml" 292 10339 10360 "OVF.ml" 292 10339 10370
+type(
+  string
+)
+"OVF.ml" 292 10339 10372 "OVF.ml" 292 10339 10405
+type(
+  string
+)
+"OVF.ml" 292 10339 10360 "OVF.ml" 292 10339 10405
+type(
+  DOM.attr
+)
+"OVF.ml" 291 10274 10294 "OVF.ml" 292 10339 10406
+type(
+  DOM.attr list
+)
+"OVF.ml" 293 10409 10419 "OVF.ml" 293 10409 10420
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 293 10409 10421 "OVF.ml" 293 10409 10427
+type(
+  string
+)
+"OVF.ml" 293 10409 10428 "OVF.ml" 293 10409 10430
+type(
+  DOM.attr list
+)
+"OVF.ml" 293 10409 10439 "OVF.ml" 293 10409 10446
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "OVF.ml" 237 8163 8207 "OVF.ml" 237 8163 8214
+)
+"OVF.ml" 293 10409 10439 "OVF.ml" 293 10409 10461
+type(
+  string
+)
+"OVF.ml" 293 10409 10432 "OVF.ml" 293 10409 10461
+type(
+  DOM.node
+)
+"OVF.ml" 293 10409 10431 "OVF.ml" 293 10409 10462
+type(
+  DOM.node list
+)
+"OVF.ml" 293 10409 10419 "OVF.ml" 293 10409 10462
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 294 10464 10474 "OVF.ml" 294 10464 10475
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 294 10464 10476 "OVF.ml" 294 10464 10489
+type(
+  string
+)
+"OVF.ml" 294 10464 10490 "OVF.ml" 294 10464 10492
+type(
+  DOM.attr list
+)
+"OVF.ml" 294 10464 10501 "OVF.ml" 294 10464 10507
+type(
+  string
+)
+ident(
+  int_ref ostype "OVF.ml" 248 8565 8571 "OVF.ml" 248 8565 8577
+)
+"OVF.ml" 294 10464 10494 "OVF.ml" 294 10464 10507
+type(
+  DOM.node
+)
+"OVF.ml" 294 10464 10493 "OVF.ml" 294 10464 10508
+type(
+  DOM.node list
+)
+"OVF.ml" 294 10464 10474 "OVF.ml" 294 10464 10508
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 292 10339 10407 "OVF.ml" 295 10510 10519
+type(
+  DOM.node list
+)
+"OVF.ml" 291 10274 10282 "OVF.ml" 295 10510 10519
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 297 10522 10530 "OVF.ml" 297 10522 10531
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 297 10522 10532 "OVF.ml" 297 10522 10541
+type(
+  string
+)
+"OVF.ml" 297 10522 10543 "OVF.ml" 297 10522 10553
+type(
+  string
+)
+"OVF.ml" 297 10522 10555 "OVF.ml" 297 10522 10588
+type(
+  string
+)
+"OVF.ml" 297 10522 10543 "OVF.ml" 297 10522 10588
+type(
+  DOM.attr
+)
+"OVF.ml" 297 10522 10542 "OVF.ml" 297 10522 10589
+type(
+  DOM.attr list
+)
+"OVF.ml" 298 10592 10602 "OVF.ml" 298 10592 10603
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 298 10592 10604 "OVF.ml" 298 10592 10610
+type(
+  string
+)
+"OVF.ml" 298 10592 10611 "OVF.ml" 298 10592 10613
+type(
+  DOM.attr list
+)
+"OVF.ml" 298 10592 10623 "OVF.ml" 298 10592 10630
+type(
+  (int -> int64 -> string, unit, string) format -> int -> int64 -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 298 10592 10631 "OVF.ml" 298 10592 10651
+type(
+  (int -> int64 -> string, unit, string) format
+)
+"OVF.ml" 298 10592 10652 "OVF.ml" 298 10592 10658
+type(
+  Types.source
+)
+ident(
+  int_ref source "OVF.ml" 237 8163 8182 "OVF.ml" 237 8163 8188
+)
+"OVF.ml" 298 10592 10652 "OVF.ml" 298 10592 10665
+type(
+  int
+)
+"OVF.ml" 298 10592 10666 "OVF.ml" 298 10592 10676
+type(
+  int64
+)
+ident(
+  int_ref memsize_mb "OVF.ml" 241 8336 8342 "OVF.ml" 241 8336 8352
+)
+"OVF.ml" 298 10592 10622 "OVF.ml" 298 10592 10677
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 298 10592 10615 "OVF.ml" 298 10592 10677
+type(
+  DOM.node
+)
+"OVF.ml" 298 10592 10614 "OVF.ml" 298 10592 10678
+type(
+  DOM.node list
+)
+"OVF.ml" 298 10592 10602 "OVF.ml" 298 10592 10678
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 299 10680 10690 "OVF.ml" 299 10680 10691
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 299 10680 10692 "OVF.ml" 299 10680 10698
+type(
+  string
+)
+"OVF.ml" 299 10680 10699 "OVF.ml" 299 10680 10701
+type(
+  DOM.attr list
+)
+"OVF.ml" 300 10704 10716 "OVF.ml" 300 10704 10717
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 300 10704 10718 "OVF.ml" 300 10704 10732
+type(
+  string
+)
+"OVF.ml" 300 10704 10733 "OVF.ml" 300 10704 10735
+type(
+  DOM.attr list
+)
+"OVF.ml" 300 10704 10745 "OVF.ml" 300 10704 10752
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 300 10704 10753 "OVF.ml" 300 10704 10769
+type(
+  (int -> string, unit, string) format
+)
+"OVF.ml" 300 10704 10770 "OVF.ml" 300 10704 10776
+type(
+  Types.source
+)
+ident(
+  int_ref source "OVF.ml" 237 8163 8182 "OVF.ml" 237 8163 8188
+)
+"OVF.ml" 300 10704 10770 "OVF.ml" 300 10704 10783
+type(
+  int
+)
+"OVF.ml" 300 10704 10744 "OVF.ml" 300 10704 10784
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 300 10704 10737 "OVF.ml" 300 10704 10784
+type(
+  DOM.node
+)
+"OVF.ml" 300 10704 10736 "OVF.ml" 300 10704 10785
+type(
+  DOM.node list
+)
+"OVF.ml" 300 10704 10716 "OVF.ml" 300 10704 10785
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 301 10787 10799 "OVF.ml" 301 10787 10800
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 301 10787 10801 "OVF.ml" 301 10787 10819
+type(
+  string
+)
+"OVF.ml" 301 10787 10820 "OVF.ml" 301 10787 10822
+type(
+  DOM.attr list
+)
+"OVF.ml" 301 10787 10831 "OVF.ml" 301 10787 10854
+type(
+  string
+)
+"OVF.ml" 301 10787 10824 "OVF.ml" 301 10787 10854
+type(
+  DOM.node
+)
+"OVF.ml" 301 10787 10823 "OVF.ml" 301 10787 10855
+type(
+  DOM.node list
+)
+"OVF.ml" 301 10787 10799 "OVF.ml" 301 10787 10855
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 302 10857 10869 "OVF.ml" 302 10857 10870
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 302 10857 10871 "OVF.ml" 302 10857 10888
+type(
+  string
+)
+"OVF.ml" 302 10857 10889 "OVF.ml" 302 10857 10891
+type(
+  DOM.attr list
+)
+"OVF.ml" 302 10857 10900 "OVF.ml" 302 10857 10903
+type(
+  string
+)
+"OVF.ml" 302 10857 10893 "OVF.ml" 302 10857 10903
+type(
+  DOM.node
+)
+"OVF.ml" 302 10857 10892 "OVF.ml" 302 10857 10904
+type(
+  DOM.node list
+)
+"OVF.ml" 302 10857 10869 "OVF.ml" 302 10857 10904
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 303 10906 10918 "OVF.ml" 303 10906 10919
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 303 10906 10920 "OVF.ml" 303 10906 10939
+type(
+  string
+)
+"OVF.ml" 303 10906 10940 "OVF.ml" 303 10906 10942
+type(
+  DOM.attr list
+)
+"OVF.ml" 303 10906 10951 "OVF.ml" 303 10906 10954
+type(
+  string
+)
+"OVF.ml" 303 10906 10944 "OVF.ml" 303 10906 10954
+type(
+  DOM.node
+)
+"OVF.ml" 303 10906 10943 "OVF.ml" 303 10906 10955
+type(
+  DOM.node list
+)
+"OVF.ml" 303 10906 10918 "OVF.ml" 303 10906 10955
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 304 10957 10969 "OVF.ml" 304 10957 10970
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 304 10957 10971 "OVF.ml" 304 10957 10992
+type(
+  string
+)
+"OVF.ml" 304 10957 10993 "OVF.ml" 304 10957 10995
+type(
+  DOM.attr list
+)
+"OVF.ml" 304 10957 11005 "OVF.ml" 304 10957 11018
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"OVF.ml" 304 10957 11019 "OVF.ml" 304 10957 11025
+type(
+  Types.source
+)
+ident(
+  int_ref source "OVF.ml" 237 8163 8182 "OVF.ml" 237 8163 8188
+)
+"OVF.ml" 304 10957 11019 "OVF.ml" 304 10957 11032
+type(
+  int
+)
+"OVF.ml" 304 10957 11004 "OVF.ml" 304 10957 11033
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 304 10957 10997 "OVF.ml" 304 10957 11033
+type(
+  DOM.node
+)
+"OVF.ml" 304 10957 10996 "OVF.ml" 304 10957 11034
+type(
+  DOM.node list
+)
+"OVF.ml" 304 10957 10969 "OVF.ml" 304 10957 11034
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 305 11036 11048 "OVF.ml" 305 11036 11049
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 305 11036 11050 "OVF.ml" 305 11036 11071
+type(
+  string
+)
+"OVF.ml" 305 11036 11071 "OVF.ml" 305 11036 11073
+type(
+  DOM.attr list
+)
+"OVF.ml" 305 11036 11082 "OVF.ml" 305 11036 11085
+type(
+  string
+)
+"OVF.ml" 305 11036 11075 "OVF.ml" 305 11036 11085
+type(
+  DOM.node
+)
+"OVF.ml" 305 11036 11074 "OVF.ml" 305 11036 11086
+type(
+  DOM.node list
+)
+"OVF.ml" 305 11036 11048 "OVF.ml" 305 11036 11086
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 299 10680 10702 "OVF.ml" 306 11088 11099
+type(
+  DOM.node list
+)
+"OVF.ml" 299 10680 10690 "OVF.ml" 306 11088 11099
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 307 11101 11111 "OVF.ml" 307 11101 11112
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 307 11101 11113 "OVF.ml" 307 11101 11119
+type(
+  string
+)
+"OVF.ml" 307 11101 11120 "OVF.ml" 307 11101 11122
+type(
+  DOM.attr list
+)
+"OVF.ml" 308 11125 11137 "OVF.ml" 308 11125 11138
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 308 11125 11139 "OVF.ml" 308 11125 11153
+type(
+  string
+)
+"OVF.ml" 308 11125 11154 "OVF.ml" 308 11125 11156
+type(
+  DOM.attr list
+)
+"OVF.ml" 308 11125 11166 "OVF.ml" 308 11125 11173
+type(
+  (int64 -> string, unit, string) format -> int64 -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 308 11125 11174 "OVF.ml" 308 11125 11192
+type(
+  (int64 -> string, unit, string) format
+)
+"OVF.ml" 308 11125 11193 "OVF.ml" 308 11125 11203
+type(
+  int64
+)
+ident(
+  int_ref memsize_mb "OVF.ml" 241 8336 8342 "OVF.ml" 241 8336 8352
+)
+"OVF.ml" 308 11125 11165 "OVF.ml" 308 11125 11204
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 308 11125 11158 "OVF.ml" 308 11125 11204
+type(
+  DOM.node
+)
+"OVF.ml" 308 11125 11157 "OVF.ml" 308 11125 11205
+type(
+  DOM.node list
+)
+"OVF.ml" 308 11125 11137 "OVF.ml" 308 11125 11205
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 309 11207 11219 "OVF.ml" 309 11207 11220
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 309 11207 11221 "OVF.ml" 309 11207 11239
+type(
+  string
+)
+"OVF.ml" 309 11207 11240 "OVF.ml" 309 11207 11242
+type(
+  DOM.attr list
+)
+"OVF.ml" 309 11207 11251 "OVF.ml" 309 11207 11264
+type(
+  string
+)
+"OVF.ml" 309 11207 11244 "OVF.ml" 309 11207 11264
+type(
+  DOM.node
+)
+"OVF.ml" 309 11207 11243 "OVF.ml" 309 11207 11265
+type(
+  DOM.node list
+)
+"OVF.ml" 309 11207 11219 "OVF.ml" 309 11207 11265
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 310 11267 11279 "OVF.ml" 310 11267 11280
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 310 11267 11281 "OVF.ml" 310 11267 11298
+type(
+  string
+)
+"OVF.ml" 310 11267 11299 "OVF.ml" 310 11267 11301
+type(
+  DOM.attr list
+)
+"OVF.ml" 310 11267 11310 "OVF.ml" 310 11267 11313
+type(
+  string
+)
+"OVF.ml" 310 11267 11303 "OVF.ml" 310 11267 11313
+type(
+  DOM.node
+)
+"OVF.ml" 310 11267 11302 "OVF.ml" 310 11267 11314
+type(
+  DOM.node list
+)
+"OVF.ml" 310 11267 11279 "OVF.ml" 310 11267 11314
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 311 11316 11328 "OVF.ml" 311 11316 11329
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 311 11316 11330 "OVF.ml" 311 11316 11349
+type(
+  string
+)
+"OVF.ml" 311 11316 11350 "OVF.ml" 311 11316 11352
+type(
+  DOM.attr list
+)
+"OVF.ml" 311 11316 11361 "OVF.ml" 311 11316 11364
+type(
+  string
+)
+"OVF.ml" 311 11316 11354 "OVF.ml" 311 11316 11364
+type(
+  DOM.node
+)
+"OVF.ml" 311 11316 11353 "OVF.ml" 311 11316 11365
+type(
+  DOM.node list
+)
+"OVF.ml" 311 11316 11328 "OVF.ml" 311 11316 11365
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 312 11367 11379 "OVF.ml" 312 11367 11380
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 312 11367 11381 "OVF.ml" 312 11367 11403
+type(
+  string
+)
+"OVF.ml" 312 11367 11404 "OVF.ml" 312 11367 11406
+type(
+  DOM.attr list
+)
+"OVF.ml" 312 11367 11415 "OVF.ml" 312 11367 11426
+type(
+  string
+)
+"OVF.ml" 312 11367 11408 "OVF.ml" 312 11367 11426
+type(
+  DOM.node
+)
+"OVF.ml" 312 11367 11407 "OVF.ml" 312 11367 11427
+type(
+  DOM.node list
+)
+"OVF.ml" 312 11367 11379 "OVF.ml" 312 11367 11427
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 313 11429 11441 "OVF.ml" 313 11429 11442
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 313 11429 11443 "OVF.ml" 313 11429 11465
+type(
+  string
+)
+"OVF.ml" 313 11429 11466 "OVF.ml" 313 11429 11468
+type(
+  DOM.attr list
+)
+"OVF.ml" 313 11429 11478 "OVF.ml" 313 11429 11493
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Int64.to_string
+)
+"OVF.ml" 313 11429 11494 "OVF.ml" 313 11429 11504
+type(
+  int64
+)
+ident(
+  int_ref memsize_mb "OVF.ml" 241 8336 8342 "OVF.ml" 241 8336 8352
+)
+"OVF.ml" 313 11429 11477 "OVF.ml" 313 11429 11505
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 313 11429 11470 "OVF.ml" 313 11429 11505
+type(
+  DOM.node
+)
+"OVF.ml" 313 11429 11469 "OVF.ml" 313 11429 11506
+type(
+  DOM.node list
+)
+"OVF.ml" 313 11429 11441 "OVF.ml" 313 11429 11506
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 307 11101 11123 "OVF.ml" 314 11508 11519
+type(
+  DOM.node list
+)
+"OVF.ml" 307 11101 11111 "OVF.ml" 314 11508 11519
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 315 11521 11531 "OVF.ml" 315 11521 11532
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 315 11521 11533 "OVF.ml" 315 11521 11539
+type(
+  string
+)
+"OVF.ml" 315 11521 11540 "OVF.ml" 315 11521 11542
+type(
+  DOM.attr list
+)
+"OVF.ml" 316 11545 11557 "OVF.ml" 316 11545 11558
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 316 11545 11559 "OVF.ml" 316 11545 11573
+type(
+  string
+)
+"OVF.ml" 316 11545 11574 "OVF.ml" 316 11545 11576
+type(
+  DOM.attr list
+)
+"OVF.ml" 316 11545 11585 "OVF.ml" 316 11545 11601
+type(
+  string
+)
+"OVF.ml" 316 11545 11578 "OVF.ml" 316 11545 11601
+type(
+  DOM.node
+)
+"OVF.ml" 316 11545 11577 "OVF.ml" 316 11545 11602
+type(
+  DOM.node list
+)
+"OVF.ml" 316 11545 11557 "OVF.ml" 316 11545 11602
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 317 11604 11616 "OVF.ml" 317 11604 11617
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 317 11604 11618 "OVF.ml" 317 11604 11635
+type(
+  string
+)
+"OVF.ml" 317 11604 11636 "OVF.ml" 317 11604 11638
+type(
+  DOM.attr list
+)
+"OVF.ml" 317 11604 11647 "OVF.ml" 317 11604 11650
+type(
+  string
+)
+"OVF.ml" 317 11604 11640 "OVF.ml" 317 11604 11650
+type(
+  DOM.node
+)
+"OVF.ml" 317 11604 11639 "OVF.ml" 317 11604 11651
+type(
+  DOM.node list
+)
+"OVF.ml" 317 11604 11616 "OVF.ml" 317 11604 11651
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 318 11653 11665 "OVF.ml" 318 11653 11666
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 318 11653 11667 "OVF.ml" 318 11653 11686
+type(
+  string
+)
+"OVF.ml" 318 11653 11687 "OVF.ml" 318 11653 11689
+type(
+  DOM.attr list
+)
+"OVF.ml" 318 11653 11698 "OVF.ml" 318 11653 11702
+type(
+  string
+)
+"OVF.ml" 318 11653 11691 "OVF.ml" 318 11653 11702
+type(
+  DOM.node
+)
+"OVF.ml" 318 11653 11690 "OVF.ml" 318 11653 11703
+type(
+  DOM.node list
+)
+"OVF.ml" 318 11653 11665 "OVF.ml" 318 11653 11703
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 319 11705 11717 "OVF.ml" 319 11705 11718
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 319 11705 11719 "OVF.ml" 319 11705 11735
+type(
+  string
+)
+"OVF.ml" 319 11705 11736 "OVF.ml" 319 11705 11738
+type(
+  DOM.attr list
+)
+"OVF.ml" 319 11705 11747 "OVF.ml" 319 11705 11757
+type(
+  string
+)
+"OVF.ml" 319 11705 11740 "OVF.ml" 319 11705 11757
+type(
+  DOM.node
+)
+"OVF.ml" 319 11705 11739 "OVF.ml" 319 11705 11758
+type(
+  DOM.node list
+)
+"OVF.ml" 319 11705 11717 "OVF.ml" 319 11705 11758
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 315 11521 11543 "OVF.ml" 320 11760 11771
+type(
+  DOM.node list
+)
+"OVF.ml" 315 11521 11531 "OVF.ml" 320 11760 11771
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 325 11943 11953 "OVF.ml" 325 11943 11954
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 325 11943 11955 "OVF.ml" 325 11943 11961
+type(
+  string
+)
+"OVF.ml" 325 11943 11962 "OVF.ml" 325 11943 11964
+type(
+  DOM.attr list
+)
+"OVF.ml" 326 11967 11979 "OVF.ml" 326 11967 11980
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 326 11967 11981 "OVF.ml" 326 11967 11995
+type(
+  string
+)
+"OVF.ml" 326 11967 11996 "OVF.ml" 326 11967 11998
+type(
+  DOM.attr list
+)
+"OVF.ml" 326 11967 12007 "OVF.ml" 326 11967 12029
+type(
+  string
+)
+"OVF.ml" 326 11967 12000 "OVF.ml" 326 11967 12029
+type(
+  DOM.node
+)
+"OVF.ml" 326 11967 11999 "OVF.ml" 326 11967 12030
+type(
+  DOM.node list
+)
+"OVF.ml" 326 11967 11979 "OVF.ml" 326 11967 12030
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 327 12032 12044 "OVF.ml" 327 12032 12045
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 327 12032 12046 "OVF.ml" 327 12032 12063
+type(
+  string
+)
+"OVF.ml" 327 12032 12064 "OVF.ml" 327 12032 12066
+type(
+  DOM.attr list
+)
+"OVF.ml" 327 12032 12076 "OVF.ml" 327 12032 12083
+type(
+  unit -> string
+)
+ident(
+  ext_ref Common_utils.uuidgen
+)
+"OVF.ml" 327 12032 12084 "OVF.ml" 327 12032 12086
+type(
+  unit
+)
+"OVF.ml" 327 12032 12075 "OVF.ml" 327 12032 12087
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 327 12032 12068 "OVF.ml" 327 12032 12087
+type(
+  DOM.node
+)
+"OVF.ml" 327 12032 12067 "OVF.ml" 327 12032 12088
+type(
+  DOM.node list
+)
+"OVF.ml" 327 12032 12044 "OVF.ml" 327 12032 12088
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 328 12090 12102 "OVF.ml" 328 12090 12103
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 328 12090 12104 "OVF.ml" 328 12090 12123
+type(
+  string
+)
+"OVF.ml" 328 12090 12124 "OVF.ml" 328 12090 12126
+type(
+  DOM.attr list
+)
+"OVF.ml" 328 12090 12135 "OVF.ml" 328 12090 12139
+type(
+  string
+)
+"OVF.ml" 328 12090 12128 "OVF.ml" 328 12090 12139
+type(
+  DOM.node
+)
+"OVF.ml" 328 12090 12127 "OVF.ml" 328 12090 12140
+type(
+  DOM.node list
+)
+"OVF.ml" 328 12090 12102 "OVF.ml" 328 12090 12140
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 329 12142 12154 "OVF.ml" 329 12142 12155
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 329 12142 12156 "OVF.ml" 329 12142 12162
+type(
+  string
+)
+"OVF.ml" 329 12142 12163 "OVF.ml" 329 12142 12165
+type(
+  DOM.attr list
+)
+"OVF.ml" 329 12142 12174 "OVF.ml" 329 12142 12181
+type(
+  string
+)
+"OVF.ml" 329 12142 12167 "OVF.ml" 329 12142 12181
+type(
+  DOM.node
+)
+"OVF.ml" 329 12142 12166 "OVF.ml" 329 12142 12182
+type(
+  DOM.node list
+)
+"OVF.ml" 329 12142 12154 "OVF.ml" 329 12142 12182
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 330 12184 12196 "OVF.ml" 330 12184 12197
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 330 12184 12198 "OVF.ml" 330 12184 12220
+type(
+  string
+)
+"OVF.ml" 330 12184 12221 "OVF.ml" 330 12184 12223
+type(
+  DOM.attr list
+)
+"OVF.ml" 330 12184 12232 "OVF.ml" 330 12184 12235
+type(
+  string
+)
+"OVF.ml" 330 12184 12225 "OVF.ml" 330 12184 12235
+type(
+  DOM.node
+)
+"OVF.ml" 330 12184 12224 "OVF.ml" 330 12184 12236
+type(
+  DOM.node list
+)
+"OVF.ml" 330 12184 12196 "OVF.ml" 330 12184 12236
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 331 12238 12250 "OVF.ml" 331 12238 12251
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 331 12238 12252 "OVF.ml" 331 12238 12265
+type(
+  string
+)
+"OVF.ml" 331 12238 12266 "OVF.ml" 331 12238 12268
+type(
+  DOM.attr list
+)
+"OVF.ml" 331 12238 12277 "OVF.ml" 331 12238 12282
+type(
+  string
+)
+"OVF.ml" 331 12238 12270 "OVF.ml" 331 12238 12282
+type(
+  DOM.node
+)
+"OVF.ml" 331 12238 12269 "OVF.ml" 331 12238 12283
+type(
+  DOM.node list
+)
+"OVF.ml" 331 12238 12250 "OVF.ml" 331 12238 12283
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 325 11943 11965 "OVF.ml" 332 12285 12296
+type(
+  DOM.node list
+)
+"OVF.ml" 325 11943 11953 "OVF.ml" 332 12285 12296
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 297 10522 10590 "OVF.ml" 333 12297 12306
+type(
+  DOM.node list
+)
+"OVF.ml" 297 10522 10530 "OVF.ml" 333 12297 12306
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 272 9408 9482 "OVF.ml" 334 12307 12314
+type(
+  DOM.node list
+)
+"OVF.ml" 272 9408 9414 "OVF.ml" 334 12307 12314
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 263 9108 9114 "OVF.ml" 335 12315 12320
+type(
+  DOM.node list
+)
+"OVF.ml" 257 8721 8725 "OVF.ml" 335 12315 12320
+call(
+  stack
+)
+type(
+  DOM.doc
+)
+type(
+  DOM.doc
+)
+"OVF.ml" 338 12359 12361 "OVF.ml" 338 12359 12370
+type(
+  Types.target list ->
+  Types.guestcaps ->
+  Types.output_allocation ->
+  string -> string list -> string list -> DOM.doc -> unit
+)
+ident(
+  int_ref add_disks "OVF.ml" 364 13291 13295 "OVF.ml" 364 13291 13304
+)
+"OVF.ml" 338 12359 12371 "OVF.ml" 338 12359 12378
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "OVF.ml" 237 8163 8189 "OVF.ml" 237 8163 8196
+)
+"OVF.ml" 338 12359 12379 "OVF.ml" 338 12359 12388
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "OVF.ml" 237 8163 8197 "OVF.ml" 237 8163 8206
+)
+"OVF.ml" 338 12359 12389 "OVF.ml" 338 12359 12401
+type(
+  Types.output_allocation
+)
+ident(
+  int_ref output_alloc "OVF.ml" 238 8215 8219 "OVF.ml" 238 8215 8231
+)
+"OVF.ml" 338 12359 12402 "OVF.ml" 338 12359 12409
+type(
+  string
+)
+ident(
+  int_ref sd_uuid "OVF.ml" 238 8215 8239 "OVF.ml" 238 8215 8246
+)
+"OVF.ml" 338 12359 12410 "OVF.ml" 338 12359 12421
+type(
+  string list
+)
+ident(
+  int_ref image_uuids "OVF.ml" 238 8215 8247 "OVF.ml" 238 8215 8258
+)
+"OVF.ml" 338 12359 12422 "OVF.ml" 338 12359 12431
+type(
+  string list
+)
+ident(
+  int_ref vol_uuids "OVF.ml" 238 8215 8259 "OVF.ml" 238 8215 8268
+)
+"OVF.ml" 338 12359 12432 "OVF.ml" 338 12359 12435
+type(
+  DOM.doc
+)
+ident(
+  int_ref ovf "OVF.ml" 256 8703 8709 "OVF.ml" 256 8703 8712
+)
+"OVF.ml" 338 12359 12361 "OVF.ml" 338 12359 12435
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 343 12526 12528 "OVF.ml" 343 12526 12540
+type(
+  Types.source_nic list -> Types.guestcaps -> DOM.doc -> unit
+)
+ident(
+  int_ref add_networks "OVF.ml" 481 18037 18041 "OVF.ml" 481 18037 18053
+)
+"OVF.ml" 343 12526 12541 "OVF.ml" 343 12526 12547
+type(
+  Types.source
+)
+ident(
+  int_ref source "OVF.ml" 237 8163 8182 "OVF.ml" 237 8163 8188
+)
+"OVF.ml" 343 12526 12541 "OVF.ml" 343 12526 12554
+type(
+  Types.source_nic list
+)
+"OVF.ml" 343 12526 12555 "OVF.ml" 343 12526 12564
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "OVF.ml" 237 8163 8197 "OVF.ml" 237 8163 8206
+)
+"OVF.ml" 343 12526 12565 "OVF.ml" 343 12526 12568
+type(
+  DOM.doc
+)
+ident(
+  int_ref ovf "OVF.ml" 256 8703 8709 "OVF.ml" 256 8703 8712
+)
+"OVF.ml" 343 12526 12528 "OVF.ml" 343 12526 12568
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 350 12801 12810 "OVF.ml" 350 12801 12816
+type(
+  Types.source
+)
+ident(
+  int_ref source "OVF.ml" 237 8163 8182 "OVF.ml" 237 8163 8188
+)
+"OVF.ml" 351 12822 12865 "OVF.ml" 351 12822 12866
+type(
+  string
+)
+"OVF.ml" 351 12822 12860 "OVF.ml" 351 12822 12866
+type(
+  string option
+)
+"OVF.ml" 351 12822 12845 "OVF.ml" 351 12822 12868
+type(
+  Types.source_display
+)
+"OVF.ml" 351 12822 12840 "OVF.ml" 351 12822 12868
+type(
+  Types.source_display option
+)
+"OVF.ml" 351 12822 12826 "OVF.ml" 351 12822 12870
+type(
+  Types.source
+)
+"OVF.ml" 352 12874 12878 "OVF.ml" 352 12874 12885
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"OVF.ml" 352 12874 12887 "OVF.ml" 352 12874 12889
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"OVF.ml" 352 12874 12889 "OVF.ml" 352 12874 13077
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"OVF.ml" 352 12874 12886 "OVF.ml" 352 12874 13078
+type(
+  (unit, unit, string, unit) format4
+)
+"OVF.ml" 352 12874 12878 "OVF.ml" 352 12874 13079
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 353 13080 13086 "OVF.ml" 353 13080 13087
+type(
+  Types.source
+)
+"OVF.ml" 353 13080 13091 "OVF.ml" 353 13080 13093
+type(
+  unit
+)
+"OVF.ml" 350 12801 12803 "OVF.ml" 353 13080 13094
+type(
+  unit
+)
+"OVF.ml" 355 13097 13102 "OVF.ml" 355 13097 13109
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"OVF.ml" 355 13097 13110 "OVF.ml" 355 13097 13112
+type(
+  unit
+)
+"OVF.ml" 355 13097 13102 "OVF.ml" 355 13097 13112
+call(
+  stack
+)
+type(
+  bool
+)
+"OVF.ml" 356 13120 13124 "OVF.ml" 356 13120 13131
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"OVF.ml" 356 13120 13132 "OVF.ml" 356 13120 13140
+type(
+  (unit, out_channel, unit) format
+)
+"OVF.ml" 356 13120 13124 "OVF.ml" 356 13120 13140
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 357 13142 13146 "OVF.ml" 357 13142 13157
+type(
+  out_channel -> DOM.doc -> unit
+)
+ident(
+  ext_ref DOM.doc_to_chan
+)
+"OVF.ml" 357 13142 13158 "OVF.ml" 357 13142 13175
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"OVF.ml" 357 13142 13176 "OVF.ml" 357 13142 13179
+type(
+  DOM.doc
+)
+ident(
+  int_ref ovf "OVF.ml" 256 8703 8709 "OVF.ml" 256 8703 8712
+)
+"OVF.ml" 357 13142 13146 "OVF.ml" 357 13142 13179
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 355 13097 13118 "OVF.ml" 358 13180 13183
+type(
+  unit
+)
+"OVF.ml" 355 13097 13099 "OVF.ml" 358 13180 13183
+type(
+  unit
+)
+"OVF.ml" 361 13219 13221 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+ident(
+  int_ref ovf "OVF.ml" 256 8703 8709 "OVF.ml" 256 8703 8712
+)
+"OVF.ml" 355 13097 13099 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+"OVF.ml" 350 12801 12803 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+"OVF.ml" 343 12526 12528 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+"OVF.ml" 338 12359 12361 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+"OVF.ml" 256 8703 8705 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+"OVF.ml" 250 8603 8605 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+"OVF.ml" 248 8565 8567 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+"OVF.ml" 247 8498 8500 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+"OVF.ml" 243 8393 8395 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+"OVF.ml" 241 8336 8338 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+"OVF.ml" 239 8279 8281 "OVF.ml" 361 13219 13224
+type(
+  DOM.doc
+)
+"OVF.ml" 364 13291 13295 "OVF.ml" 364 13291 13304
+type(
+  Types.target list ->
+  Types.guestcaps ->
+  Types.output_allocation ->
+  string -> string list -> string list -> DOM.doc -> unit
+)
+ident(
+  def add_disks "OVF.ml" 237 8163 8163 --
+)
+"OVF.ml" 364 13291 13305 "OVF.ml" 364 13291 13312
+type(
+  Types.target list
+)
+ident(
+  def targets "OVF.ml" 364 13291 13313 "OVF.ml" 478 17927 17971
+)
+"OVF.ml" 364 13291 13313 "OVF.ml" 364 13291 13322
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "OVF.ml" 364 13291 13323 "OVF.ml" 478 17927 17971
+)
+"OVF.ml" 364 13291 13323 "OVF.ml" 364 13291 13335
+type(
+  Types.output_allocation
+)
+ident(
+  def output_alloc "OVF.ml" 364 13291 13336 "OVF.ml" 478 17927 17971
+)
+"OVF.ml" 364 13291 13336 "OVF.ml" 364 13291 13343
+type(
+  string
+)
+ident(
+  def sd_uuid "OVF.ml" 364 13291 13344 "OVF.ml" 478 17927 17971
+)
+"OVF.ml" 364 13291 13344 "OVF.ml" 364 13291 13355
+type(
+  string list
+)
+ident(
+  def image_uuids "OVF.ml" 364 13291 13356 "OVF.ml" 478 17927 17971
+)
+"OVF.ml" 364 13291 13356 "OVF.ml" 364 13291 13365
+type(
+  string list
+)
+ident(
+  def vol_uuids "OVF.ml" 364 13291 13366 "OVF.ml" 478 17927 17971
+)
+"OVF.ml" 364 13291 13366 "OVF.ml" 364 13291 13369
+type(
+  DOM.doc
+)
+ident(
+  def ovf "OVF.ml" 365 13372 13374 "OVF.ml" 478 17927 17971
+)
+"OVF.ml" 365 13372 13378 "OVF.ml" 365 13372 13388
+type(
+  DOM.node
+)
+"OVF.ml" 366 13391 13399 "OVF.ml" 366 13391 13404
+type(
+  DOM.node list
+)
+"OVF.ml" 366 13391 13407 "OVF.ml" 366 13391 13420
+type(
+  DOM.doc -> string list -> DOM.node list
+)
+ident(
+  ext_ref DOM.path_to_nodes
+)
+"OVF.ml" 366 13391 13421 "OVF.ml" 366 13391 13424
+type(
+  DOM.doc
+)
+ident(
+  int_ref ovf "OVF.ml" 364 13291 13366 "OVF.ml" 364 13291 13369
+)
+"OVF.ml" 366 13391 13426 "OVF.ml" 366 13391 13440
+type(
+  string
+)
+"OVF.ml" 366 13391 13442 "OVF.ml" 366 13391 13454
+type(
+  string
+)
+"OVF.ml" 366 13391 13425 "OVF.ml" 366 13391 13455
+type(
+  string list
+)
+"OVF.ml" 366 13391 13407 "OVF.ml" 366 13391 13455
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"OVF.ml" 367 13459 13469 "OVF.ml" 367 13459 13474
+type(
+  DOM.node list
+)
+ident(
+  int_ref nodes "OVF.ml" 366 13391 13399 "OVF.ml" 366 13391 13404
+)
+"OVF.ml" 368 13480 13486 "OVF.ml" 368 13480 13488
+type(
+  DOM.node list
+)
+"OVF.ml" 368 13480 13491 "OVF.ml" 368 13480 13492
+type(
+  DOM.node
+)
+"OVF.ml" 368 13480 13494 "OVF.ml" 368 13480 13495
+type(
+  DOM.node
+)
+"OVF.ml" 368 13480 13497 "OVF.ml" 368 13480 13498
+type(
+  DOM.node list
+)
+"OVF.ml" 368 13480 13494 "OVF.ml" 368 13480 13498
+type(
+  DOM.node list
+)
+"OVF.ml" 368 13480 13491 "OVF.ml" 368 13480 13498
+type(
+  DOM.node list
+)
+"OVF.ml" 368 13480 13486 "OVF.ml" 368 13480 13498
+type(
+  DOM.node list
+)
+"OVF.ml" 368 13480 13502 "OVF.ml" 368 13480 13514
+type(
+  DOM.node
+)
+"OVF.ml" 369 13515 13522 "OVF.ml" 369 13515 13526
+type(
+  DOM.node
+)
+ident(
+  def node "OVF.ml" 369 13515 13531 "OVF.ml" 369 13515 13535
+)
+"OVF.ml" 369 13515 13521 "OVF.ml" 369 13515 13527
+type(
+  DOM.node list
+)
+"OVF.ml" 369 13515 13531 "OVF.ml" 369 13515 13535
+type(
+  DOM.node
+)
+ident(
+  int_ref node "OVF.ml" 369 13515 13522 "OVF.ml" 369 13515 13526
+)
+"OVF.ml" 367 13459 13463 "OVF.ml" 369 13515 13535
+type(
+  DOM.node
+)
+"OVF.ml" 366 13391 13395 "OVF.ml" 369 13515 13535
+type(
+  DOM.node
+)
+"OVF.ml" 370 13539 13545 "OVF.ml" 370 13539 13557
+type(
+  DOM.node
+)
+"OVF.ml" 371 13560 13568 "OVF.ml" 371 13560 13576
+type(
+  DOM.node list
+)
+"OVF.ml" 371 13560 13579 "OVF.ml" 371 13560 13592
+type(
+  DOM.doc -> string list -> DOM.node list
+)
+ident(
+  ext_ref DOM.path_to_nodes
+)
+"OVF.ml" 371 13560 13593 "OVF.ml" 371 13560 13596
+type(
+  DOM.doc
+)
+ident(
+  int_ref ovf "OVF.ml" 364 13291 13366 "OVF.ml" 364 13291 13369
+)
+"OVF.ml" 371 13560 13598 "OVF.ml" 371 13560 13612
+type(
+  string
+)
+"OVF.ml" 371 13560 13614 "OVF.ml" 371 13560 13623
+type(
+  string
+)
+"OVF.ml" 371 13560 13597 "OVF.ml" 371 13560 13624
+type(
+  string list
+)
+"OVF.ml" 371 13560 13579 "OVF.ml" 371 13560 13624
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"OVF.ml" 372 13628 13636 "OVF.ml" 372 13628 13653
+type(
+  DOM.node list -> DOM.attr -> DOM.node
+)
+ident(
+  ext_ref DOM.find_node_by_attr
+)
+"OVF.ml" 372 13628 13654 "OVF.ml" 372 13628 13662
+type(
+  DOM.node list
+)
+ident(
+  int_ref sections "OVF.ml" 371 13560 13568 "OVF.ml" 371 13560 13576
+)
+"OVF.ml" 372 13628 13664 "OVF.ml" 372 13628 13674
+type(
+  string
+)
+"OVF.ml" 372 13628 13676 "OVF.ml" 372 13628 13698
+type(
+  string
+)
+"OVF.ml" 372 13628 13663 "OVF.ml" 372 13628 13699
+type(
+  DOM.attr
+)
+"OVF.ml" 372 13628 13636 "OVF.ml" 372 13628 13699
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 373 13700 13709 "OVF.ml" 373 13700 13718
+type(
+  exn
+)
+"OVF.ml" 373 13700 13722 "OVF.ml" 373 13700 13734
+type(
+  DOM.node
+)
+"OVF.ml" 372 13628 13632 "OVF.ml" 373 13700 13734
+type(
+  DOM.node
+)
+"OVF.ml" 371 13560 13564 "OVF.ml" 373 13700 13734
+type(
+  DOM.node
+)
+"OVF.ml" 374 13738 13744 "OVF.ml" 374 13738 13767
+type(
+  DOM.node
+)
+"OVF.ml" 375 13770 13778 "OVF.ml" 375 13770 13786
+type(
+  DOM.node list
+)
+"OVF.ml" 375 13770 13789 "OVF.ml" 375 13770 13802
+type(
+  DOM.doc -> string list -> DOM.node list
+)
+ident(
+  ext_ref DOM.path_to_nodes
+)
+"OVF.ml" 375 13770 13803 "OVF.ml" 375 13770 13806
+type(
+  DOM.doc
+)
+ident(
+  int_ref ovf "OVF.ml" 364 13291 13366 "OVF.ml" 364 13291 13369
+)
+"OVF.ml" 375 13770 13808 "OVF.ml" 375 13770 13822
+type(
+  string
+)
+"OVF.ml" 375 13770 13824 "OVF.ml" 375 13770 13833
+type(
+  string
+)
+"OVF.ml" 375 13770 13835 "OVF.ml" 375 13770 13844
+type(
+  string
+)
+"OVF.ml" 375 13770 13807 "OVF.ml" 375 13770 13845
+type(
+  string list
+)
+"OVF.ml" 375 13770 13789 "OVF.ml" 375 13770 13845
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"OVF.ml" 376 13849 13857 "OVF.ml" 376 13849 13874
+type(
+  DOM.node list -> DOM.attr -> DOM.node
+)
+ident(
+  ext_ref DOM.find_node_by_attr
+)
+"OVF.ml" 376 13849 13875 "OVF.ml" 376 13849 13883
+type(
+  DOM.node list
+)
+ident(
+  int_ref sections "OVF.ml" 375 13770 13778 "OVF.ml" 375 13770 13786
+)
+"OVF.ml" 376 13849 13885 "OVF.ml" 376 13849 13895
+type(
+  string
+)
+"OVF.ml" 376 13849 13897 "OVF.ml" 376 13849 13930
+type(
+  string
+)
+"OVF.ml" 376 13849 13884 "OVF.ml" 376 13849 13931
+type(
+  DOM.attr
+)
+"OVF.ml" 376 13849 13857 "OVF.ml" 376 13849 13931
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 377 13932 13941 "OVF.ml" 377 13932 13950
+type(
+  exn
+)
+"OVF.ml" 377 13932 13954 "OVF.ml" 377 13932 13966
+type(
+  DOM.node
+)
+"OVF.ml" 376 13849 13853 "OVF.ml" 377 13932 13966
+type(
+  DOM.node
+)
+"OVF.ml" 375 13770 13774 "OVF.ml" 377 13932 13966
+type(
+  DOM.node
+)
+"OVF.ml" 380 14036 14038 "OVF.ml" 380 14036 14043
+type(
+  (int -> Types.target * string * string -> unit) ->
+  (Types.target * string * string) list -> unit
+)
+ident(
+  ext_ref Common_utils.iteri
+)
+"OVF.ml" 381 14046 14054 "OVF.ml" 381 14046 14055
+type(
+  int
+)
+ident(
+  def i "OVF.ml" 381 14046 14056 "OVF.ml" 477 17878 17926
+)
+"OVF.ml" 381 14046 14076 "OVF.ml" 381 14046 14078
+type(
+  Types.overlay
+)
+ident(
+  def ov "OVF.ml" 382 14112 14118 "OVF.ml" 477 17878 17926
+)
+"OVF.ml" 381 14046 14057 "OVF.ml" 381 14046 14080
+type(
+  Types.target
+)
+"OVF.ml" 381 14046 14057 "OVF.ml" 381 14046 14085
+type(
+  Types.target
+)
+ident(
+  def t "OVF.ml" 382 14112 14118 "OVF.ml" 477 17878 17926
+)
+"OVF.ml" 381 14046 14087 "OVF.ml" 381 14046 14097
+type(
+  string
+)
+ident(
+  def image_uuid "OVF.ml" 382 14112 14118 "OVF.ml" 477 17878 17926
+)
+"OVF.ml" 381 14046 14099 "OVF.ml" 381 14046 14107
+type(
+  string
+)
+ident(
+  def vol_uuid "OVF.ml" 382 14112 14118 "OVF.ml" 477 17878 17926
+)
+"OVF.ml" 381 14046 14056 "OVF.ml" 381 14046 14108
+type(
+  Types.target * string * string
+)
+"OVF.ml" 382 14112 14122 "OVF.ml" 382 14112 14135
+type(
+  bool
+)
+"OVF.ml" 382 14112 14138 "OVF.ml" 382 14112 14139
+type(
+  int
+)
+ident(
+  int_ref i "OVF.ml" 381 14046 14054 "OVF.ml" 381 14046 14055
+)
+"OVF.ml" 382 14112 14140 "OVF.ml" 382 14112 14142
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( == )
+)
+"OVF.ml" 382 14112 14143 "OVF.ml" 382 14112 14144
+type(
+  int
+)
+"OVF.ml" 382 14112 14138 "OVF.ml" 382 14112 14144
+type(
+  bool
+)
+"OVF.ml" 384 14149 14159 "OVF.ml" 384 14149 14166
+type(
+  string
+)
+"OVF.ml" 384 14149 14169 "OVF.ml" 384 14149 14176
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 384 14149 14177 "OVF.ml" 384 14149 14184
+type(
+  (string -> string -> string, unit, string) format
+)
+"OVF.ml" 384 14149 14185 "OVF.ml" 384 14149 14195
+type(
+  string
+)
+ident(
+  int_ref image_uuid "OVF.ml" 381 14046 14087 "OVF.ml" 381 14046 14097
+)
+"OVF.ml" 384 14149 14196 "OVF.ml" 384 14149 14204
+type(
+  string
+)
+ident(
+  int_ref vol_uuid "OVF.ml" 381 14046 14099 "OVF.ml" 381 14046 14107
+)
+"OVF.ml" 384 14149 14169 "OVF.ml" 384 14149 14204
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 390 14431 14441 "OVF.ml" 390 14431 14452
+type(
+  int64 -> int64
+)
+"OVF.ml" 390 14431 14453 "OVF.ml" 390 14431 14454
+type(
+  int64
+)
+ident(
+  def b "OVF.ml" 391 14457 14465 "OVF.ml" 392 14500 14524
+)
+"OVF.ml" 391 14457 14469 "OVF.ml" 391 14457 14470
+type(
+  int64
+)
+"OVF.ml" 391 14457 14473 "OVF.ml" 391 14457 14482
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.roundup64
+)
+"OVF.ml" 391 14457 14483 "OVF.ml" 391 14457 14484
+type(
+  int64
+)
+ident(
+  int_ref b "OVF.ml" 390 14431 14453 "OVF.ml" 390 14431 14454
+)
+"OVF.ml" 391 14457 14485 "OVF.ml" 391 14457 14496
+type(
+  int64
+)
+"OVF.ml" 391 14457 14473 "OVF.ml" 391 14457 14496
+call(
+  stack
+)
+type(
+  int64
+)
+"OVF.ml" 392 14500 14508 "OVF.ml" 392 14500 14509
+type(
+  int64
+)
+ident(
+  int_ref b "OVF.ml" 391 14457 14469 "OVF.ml" 391 14457 14470
+)
+"OVF.ml" 392 14500 14510 "OVF.ml" 392 14500 14512
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( /^ )
+)
+"OVF.ml" 392 14500 14513 "OVF.ml" 392 14500 14524
+type(
+  int64
+)
+"OVF.ml" 392 14500 14508 "OVF.ml" 392 14500 14524
+call(
+  tail
+)
+type(
+  int64
+)
+"OVF.ml" 391 14457 14465 "OVF.ml" 392 14500 14524
+type(
+  int64
+)
+"OVF.ml" 394 14534 14544 "OVF.ml" 394 14534 14551
+type(
+  int64
+)
+"OVF.ml" 394 14534 14554 "OVF.ml" 394 14534 14565
+type(
+  int64 -> int64
+)
+ident(
+  int_ref bytes_to_gb "OVF.ml" 390 14431 14441 "OVF.ml" 390 14431 14452
+)
+"OVF.ml" 394 14534 14566 "OVF.ml" 394 14534 14568
+type(
+  Types.overlay
+)
+ident(
+  int_ref ov "OVF.ml" 381 14046 14076 "OVF.ml" 381 14046 14078
+)
+"OVF.ml" 394 14534 14566 "OVF.ml" 394 14534 14584
+type(
+  int64
+)
+"OVF.ml" 394 14534 14554 "OVF.ml" 394 14534 14584
+call(
+  stack
+)
+type(
+  int64
+)
+"OVF.ml" 395 14588 14598 "OVF.ml" 395 14588 14612
+type(
+  int64 option
+)
+"OVF.ml" 395 14588 14614 "OVF.ml" 395 14588 14625
+type(
+  bool
+)
+"OVF.ml" 395 14588 14598 "OVF.ml" 395 14588 14625
+type(
+  int64 option * bool
+)
+"OVF.ml" 396 14628 14642 "OVF.ml" 396 14628 14643
+type(
+  Types.target
+)
+ident(
+  int_ref t "OVF.ml" 381 14046 14057 "OVF.ml" 381 14046 14085
+)
+"OVF.ml" 396 14628 14642 "OVF.ml" 396 14628 14662
+type(
+  int64 option
+)
+"OVF.ml" 396 14628 14664 "OVF.ml" 396 14628 14665
+type(
+  Types.target
+)
+ident(
+  int_ref t "OVF.ml" 381 14046 14057 "OVF.ml" 381 14046 14085
+)
+"OVF.ml" 396 14628 14664 "OVF.ml" 396 14628 14687
+type(
+  int64 option
+)
+"OVF.ml" 396 14628 14642 "OVF.ml" 396 14628 14687
+type(
+  int64 option * int64 option
+)
+"OVF.ml" 397 14693 14708 "OVF.ml" 397 14693 14719
+type(
+  int64
+)
+ident(
+  def actual_size "OVF.ml" 397 14693 14726 "OVF.ml" 397 14693 14763
+)
+"OVF.ml" 397 14693 14703 "OVF.ml" 397 14693 14719
+type(
+  int64 option
+)
+"OVF.ml" 397 14693 14721 "OVF.ml" 397 14693 14722
+type(
+  int64 option
+)
+"OVF.ml" 397 14693 14703 "OVF.ml" 397 14693 14722
+type(
+  int64 option * int64 option
+)
+"OVF.ml" 397 14693 14732 "OVF.ml" 397 14693 14743
+type(
+  int64 -> int64
+)
+ident(
+  int_ref bytes_to_gb "OVF.ml" 390 14431 14441 "OVF.ml" 390 14431 14452
+)
+"OVF.ml" 397 14693 14744 "OVF.ml" 397 14693 14755
+type(
+  int64
+)
+ident(
+  int_ref actual_size "OVF.ml" 397 14693 14708 "OVF.ml" 397 14693 14719
+)
+"OVF.ml" 397 14693 14731 "OVF.ml" 397 14693 14756
+call(
+  stack
+)
+type(
+  int64
+)
+"OVF.ml" 397 14693 14726 "OVF.ml" 397 14693 14756
+type(
+  int64 option
+)
+"OVF.ml" 397 14693 14758 "OVF.ml" 397 14693 14763
+type(
+  bool
+)
+"OVF.ml" 397 14693 14726 "OVF.ml" 397 14693 14763
+type(
+  int64 option * bool
+)
+"OVF.ml" 401 14899 14909 "OVF.ml" 401 14899 14913
+type(
+  int64 option
+)
+"OVF.ml" 401 14899 14920 "OVF.ml" 401 14899 14934
+type(
+  int64
+)
+ident(
+  def estimated_size "OVF.ml" 401 14899 14938 "OVF.ml" 401 14899 14977
+)
+"OVF.ml" 401 14899 14915 "OVF.ml" 401 14899 14934
+type(
+  int64 option
+)
+"OVF.ml" 401 14899 14909 "OVF.ml" 401 14899 14934
+type(
+  int64 option * int64 option
+)
+"OVF.ml" 401 14899 14944 "OVF.ml" 401 14899 14955
+type(
+  int64 -> int64
+)
+ident(
+  int_ref bytes_to_gb "OVF.ml" 390 14431 14441 "OVF.ml" 390 14431 14452
+)
+"OVF.ml" 401 14899 14956 "OVF.ml" 401 14899 14970
+type(
+  int64
+)
+ident(
+  int_ref estimated_size "OVF.ml" 401 14899 14920 "OVF.ml" 401 14899 14934
+)
+"OVF.ml" 401 14899 14943 "OVF.ml" 401 14899 14971
+call(
+  stack
+)
+type(
+  int64
+)
+"OVF.ml" 401 14899 14938 "OVF.ml" 401 14899 14971
+type(
+  int64 option
+)
+"OVF.ml" 401 14899 14973 "OVF.ml" 401 14899 14977
+type(
+  bool
+)
+"OVF.ml" 401 14899 14938 "OVF.ml" 401 14899 14977
+type(
+  int64 option * bool
+)
+"OVF.ml" 402 14978 14988 "OVF.ml" 402 14978 14992
+type(
+  int64 option
+)
+"OVF.ml" 402 14978 14994 "OVF.ml" 402 14978 14998
+type(
+  int64 option
+)
+"OVF.ml" 402 14978 14988 "OVF.ml" 402 14978 14998
+type(
+  int64 option * int64 option
+)
+"OVF.ml" 402 14978 15002 "OVF.ml" 402 14978 15006
+type(
+  int64 option
+)
+"OVF.ml" 402 14978 15008 "OVF.ml" 402 14978 15013
+type(
+  bool
+)
+"OVF.ml" 402 14978 15002 "OVF.ml" 402 14978 15013
+type(
+  int64 option * bool
+)
+"OVF.ml" 396 14628 14636 "OVF.ml" 402 14978 15013
+type(
+  int64 option * bool
+)
+"OVF.ml" 404 15018 15028 "OVF.ml" 404 15018 15043
+type(
+  string
+)
+"OVF.ml" 405 15046 15060 "OVF.ml" 405 15046 15061
+type(
+  Types.target
+)
+ident(
+  int_ref t "OVF.ml" 381 14046 14057 "OVF.ml" 381 14046 14085
+)
+"OVF.ml" 405 15046 15060 "OVF.ml" 405 15046 15075
+type(
+  string
+)
+"OVF.ml" 406 15081 15091 "OVF.ml" 406 15081 15096
+type(
+  string
+)
+"OVF.ml" 406 15081 15100 "OVF.ml" 406 15081 15105
+type(
+  string
+)
+"OVF.ml" 407 15106 15116 "OVF.ml" 407 15106 15123
+type(
+  string
+)
+"OVF.ml" 407 15106 15127 "OVF.ml" 407 15106 15132
+type(
+  string
+)
+"OVF.ml" 408 15133 15143 "OVF.ml" 408 15133 15144
+type(
+  string
+)
+"OVF.ml" 409 15148 15158 "OVF.ml" 409 15148 15163
+type(
+  ?exit_code:int ->
+  (string -> string, unit, string, string) format4 -> string -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"OVF.ml" 409 15148 15165 "OVF.ml" 409 15148 15167
+type(
+  (string -> string, unit, string, string, string, string) format6 ->
+  (string -> string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"OVF.ml" 409 15148 15167 "OVF.ml" 409 15148 15232
+type(
+  (string -> string, unit, string, string, string, string) format6
+)
+"OVF.ml" 409 15148 15164 "OVF.ml" 409 15148 15233
+type(
+  (string -> string, unit, string, string) format4
+)
+"OVF.ml" 409 15148 15234 "OVF.ml" 409 15148 15235
+type(
+  Types.target
+)
+ident(
+  int_ref t "OVF.ml" 381 14046 14057 "OVF.ml" 381 14046 14085
+)
+"OVF.ml" 409 15148 15234 "OVF.ml" 409 15148 15249
+type(
+  string
+)
+"OVF.ml" 409 15148 15158 "OVF.ml" 409 15148 15249
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 405 15046 15054 "OVF.ml" 409 15148 15249
+type(
+  string
+)
+"OVF.ml" 412 15320 15330 "OVF.ml" 412 15320 15351
+type(
+  string
+)
+"OVF.ml" 413 15354 15368 "OVF.ml" 413 15354 15380
+type(
+  Types.output_allocation
+)
+ident(
+  int_ref output_alloc "OVF.ml" 364 13291 13323 "OVF.ml" 364 13291 13335
+)
+"OVF.ml" 414 15386 15396 "OVF.ml" 414 15386 15402
+type(
+  Types.output_allocation
+)
+"OVF.ml" 414 15386 15406 "OVF.ml" 414 15386 15414
+type(
+  string
+)
+"OVF.ml" 415 15415 15425 "OVF.ml" 415 15415 15437
+type(
+  Types.output_allocation
+)
+"OVF.ml" 415 15415 15441 "OVF.ml" 415 15415 15455
+type(
+  string
+)
+"OVF.ml" 413 15354 15362 "OVF.ml" 415 15415 15455
+type(
+  string
+)
+"OVF.ml" 418 15504 15514 "OVF.ml" 418 15504 15518
+type(
+  DOM.node
+)
+"OVF.ml" 419 15521 15529 "OVF.ml" 419 15521 15530
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 419 15521 15531 "OVF.ml" 419 15521 15537
+type(
+  string
+)
+"OVF.ml" 420 15540 15550 "OVF.ml" 420 15540 15560
+type(
+  string
+)
+"OVF.ml" 420 15540 15562 "OVF.ml" 420 15540 15569
+type(
+  string
+)
+ident(
+  int_ref fileref "OVF.ml" 384 14149 14159 "OVF.ml" 384 14149 14166
+)
+"OVF.ml" 420 15540 15550 "OVF.ml" 420 15540 15569
+type(
+  DOM.attr
+)
+"OVF.ml" 421 15571 15581 "OVF.ml" 421 15571 15589
+type(
+  string
+)
+"OVF.ml" 421 15571 15591 "OVF.ml" 421 15571 15599
+type(
+  string
+)
+ident(
+  int_ref vol_uuid "OVF.ml" 381 14046 14099 "OVF.ml" 381 14046 14107
+)
+"OVF.ml" 421 15571 15581 "OVF.ml" 421 15571 15599
+type(
+  DOM.attr
+)
+"OVF.ml" 422 15601 15611 "OVF.ml" 422 15601 15621
+type(
+  string
+)
+"OVF.ml" 422 15601 15623 "OVF.ml" 422 15601 15638
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Int64.to_string
+)
+"OVF.ml" 422 15601 15639 "OVF.ml" 422 15601 15641
+type(
+  Types.overlay
+)
+ident(
+  int_ref ov "OVF.ml" 381 14046 14076 "OVF.ml" 381 14046 14078
+)
+"OVF.ml" 422 15601 15639 "OVF.ml" 422 15601 15657
+type(
+  int64
+)
+"OVF.ml" 422 15601 15623 "OVF.ml" 422 15601 15657
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 422 15601 15611 "OVF.ml" 422 15601 15657
+type(
+  DOM.attr
+)
+"OVF.ml" 423 15678 15688 "OVF.ml" 423 15678 15705
+type(
+  string
+)
+"OVF.ml" 423 15678 15707 "OVF.ml" 423 15678 15712
+type(
+  string
+)
+ident(
+  int_ref title "OVF.ml" 35 1015 1019 "OVF.ml" 35 1015 1024
+)
+"OVF.ml" 423 15678 15688 "OVF.ml" 423 15678 15712
+type(
+  DOM.attr
+)
+"OVF.ml" 419 15521 15538 "OVF.ml" 424 15714 15723
+type(
+  DOM.attr list
+)
+"OVF.ml" 424 15714 15724 "OVF.ml" 424 15714 15726
+type(
+  DOM.node list
+)
+"OVF.ml" 419 15521 15529 "OVF.ml" 424 15714 15726
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 425 15730 15736 "OVF.ml" 425 15730 15748
+type(
+  DOM.node -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_child
+)
+"OVF.ml" 425 15730 15749 "OVF.ml" 425 15730 15753
+type(
+  DOM.node
+)
+ident(
+  int_ref disk "OVF.ml" 418 15504 15514 "OVF.ml" 418 15504 15518
+)
+"OVF.ml" 425 15730 15754 "OVF.ml" 425 15730 15764
+type(
+  DOM.node
+)
+ident(
+  int_ref references "OVF.ml" 365 13372 13378 "OVF.ml" 365 13372 13388
+)
+"OVF.ml" 425 15730 15736 "OVF.ml" 425 15730 15764
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 428 15804 15814 "OVF.ml" 428 15804 15818
+type(
+  DOM.node
+)
+"OVF.ml" 429 15821 15833 "OVF.ml" 429 15821 15838
+type(
+  (string * string) list
+)
+"OVF.ml" 430 15843 15853 "OVF.ml" 430 15843 15865
+type(
+  string
+)
+"OVF.ml" 430 15843 15867 "OVF.ml" 430 15843 15875
+type(
+  string
+)
+ident(
+  int_ref vol_uuid "OVF.ml" 381 14046 14099 "OVF.ml" 381 14046 14107
+)
+"OVF.ml" 430 15843 15853 "OVF.ml" 430 15843 15875
+type(
+  string * string
+)
+"OVF.ml" 431 15877 15887 "OVF.ml" 431 15877 15897
+type(
+  string
+)
+"OVF.ml" 431 15877 15899 "OVF.ml" 431 15877 15914
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Int64.to_string
+)
+"OVF.ml" 431 15877 15915 "OVF.ml" 431 15877 15922
+type(
+  int64
+)
+ident(
+  int_ref size_gb "OVF.ml" 394 14534 14544 "OVF.ml" 394 14534 14551
+)
+"OVF.ml" 431 15877 15899 "OVF.ml" 431 15877 15922
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 431 15877 15887 "OVF.ml" 431 15877 15922
+type(
+  string * string
+)
+"OVF.ml" 432 15924 15934 "OVF.ml" 432 15924 15947
+type(
+  string
+)
+"OVF.ml" 432 15924 15949 "OVF.ml" 432 15924 15956
+type(
+  string
+)
+ident(
+  int_ref fileref "OVF.ml" 384 14149 14159 "OVF.ml" 384 14149 14166
+)
+"OVF.ml" 432 15924 15934 "OVF.ml" 432 15924 15956
+type(
+  string * string
+)
+"OVF.ml" 433 15958 15968 "OVF.ml" 433 15958 15983
+type(
+  string
+)
+"OVF.ml" 433 15958 15985 "OVF.ml" 433 15958 15987
+type(
+  string
+)
+"OVF.ml" 433 15958 15968 "OVF.ml" 433 15958 15987
+type(
+  string * string
+)
+"OVF.ml" 434 15989 15999 "OVF.ml" 434 15989 16019
+type(
+  string
+)
+"OVF.ml" 434 15989 16021 "OVF.ml" 434 15989 16028
+type(
+  unit -> string
+)
+ident(
+  ext_ref Common_utils.uuidgen
+)
+"OVF.ml" 434 15989 16029 "OVF.ml" 434 15989 16031
+type(
+  unit
+)
+"OVF.ml" 434 15989 16021 "OVF.ml" 434 15989 16031
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 434 15989 15999 "OVF.ml" 434 15989 16031
+type(
+  string * string
+)
+"OVF.ml" 435 16033 16043 "OVF.ml" 435 16033 16062
+type(
+  string
+)
+"OVF.ml" 435 16033 16064 "OVF.ml" 435 16033 16079
+type(
+  string
+)
+ident(
+  int_ref format_for_rhev "OVF.ml" 404 15018 15028 "OVF.ml" 404 15018 15043
+)
+"OVF.ml" 435 16033 16043 "OVF.ml" 435 16033 16079
+type(
+  string * string
+)
+"OVF.ml" 436 16081 16091 "OVF.ml" 436 16081 16108
+type(
+  string
+)
+"OVF.ml" 436 16081 16110 "OVF.ml" 436 16081 16131
+type(
+  string
+)
+ident(
+  int_ref output_alloc_for_rhev "OVF.ml" 412 15320 15330 "OVF.ml" 412 15320 15351
+)
+"OVF.ml" 436 16081 16091 "OVF.ml" 436 16081 16131
+type(
+  string * string
+)
+"OVF.ml" 437 16133 16143 "OVF.ml" 437 16133 16155
+type(
+  string
+)
+"OVF.ml" 437 16133 16157 "OVF.ml" 437 16133 16192
+type(
+  string
+)
+"OVF.ml" 437 16133 16143 "OVF.ml" 437 16133 16192
+type(
+  string * string
+)
+"OVF.ml" 438 16205 16215 "OVF.ml" 438 16205 16235
+type(
+  string
+)
+"OVF.ml" 439 16237 16254 "OVF.ml" 439 16237 16263
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "OVF.ml" 364 13291 13313 "OVF.ml" 364 13291 13322
+)
+"OVF.ml" 439 16237 16254 "OVF.ml" 439 16237 16279
+type(
+  Types.guestcaps_block_type
+)
+"OVF.ml" 440 16285 16297 "OVF.ml" 440 16285 16307
+type(
+  Types.guestcaps_block_type
+)
+"OVF.ml" 440 16285 16311 "OVF.ml" 440 16285 16319
+type(
+  string
+)
+"OVF.ml" 440 16285 16322 "OVF.ml" 440 16285 16325
+type(
+  Types.guestcaps_block_type
+)
+"OVF.ml" 440 16285 16329 "OVF.ml" 440 16285 16334
+type(
+  string
+)
+"OVF.ml" 439 16237 16247 "OVF.ml" 440 16285 16335
+type(
+  string
+)
+"OVF.ml" 438 16205 16215 "OVF.ml" 440 16285 16335
+type(
+  string * string
+)
+"OVF.ml" 441 16337 16347 "OVF.ml" 441 16337 16362
+type(
+  string
+)
+"OVF.ml" 441 16337 16364 "OVF.ml" 441 16337 16372
+type(
+  string
+)
+"OVF.ml" 441 16337 16347 "OVF.ml" 441 16337 16372
+type(
+  string * string
+)
+"OVF.ml" 442 16392 16402 "OVF.ml" 442 16392 16412
+type(
+  string
+)
+"OVF.ml" 442 16392 16417 "OVF.ml" 442 16392 16430
+type(
+  bool
+)
+ident(
+  int_ref is_boot_drive "OVF.ml" 382 14112 14122 "OVF.ml" 382 14112 14135
+)
+"OVF.ml" 442 16392 16436 "OVF.ml" 442 16392 16442
+type(
+  string
+)
+"OVF.ml" 442 16392 16448 "OVF.ml" 442 16392 16455
+type(
+  string
+)
+"OVF.ml" 442 16392 16414 "OVF.ml" 442 16392 16455
+type(
+  string
+)
+"OVF.ml" 442 16392 16402 "OVF.ml" 442 16392 16455
+type(
+  string * string
+)
+"OVF.ml" 429 15821 15841 "OVF.ml" 443 16457 16466
+type(
+  (string * string) list
+)
+"OVF.ml" 444 16470 16482 "OVF.ml" 444 16470 16487
+type(
+  (string * string) list
+)
+"OVF.ml" 445 16490 16506 "OVF.ml" 445 16490 16520
+type(
+  int64 option
+)
+ident(
+  int_ref actual_size_gb "OVF.ml" 395 14588 14598 "OVF.ml" 395 14588 14612
+)
+"OVF.ml" 446 16526 16538 "OVF.ml" 446 16526 16542
+type(
+  int64 option
+)
+"OVF.ml" 446 16526 16546 "OVF.ml" 446 16526 16551
+type(
+  (string * string) list
+)
+ident(
+  int_ref attrs "OVF.ml" 429 15821 15833 "OVF.ml" 429 15821 15838
+)
+"OVF.ml" 447 16552 16569 "OVF.ml" 447 16552 16583
+type(
+  int64
+)
+ident(
+  def actual_size_gb "OVF.ml" 448 16587 16599 "OVF.ml" 448 16587 16659
+)
+"OVF.ml" 447 16552 16564 "OVF.ml" 447 16552 16583
+type(
+  int64 option
+)
+"OVF.ml" 448 16587 16600 "OVF.ml" 448 16587 16617
+type(
+  string
+)
+"OVF.ml" 448 16587 16619 "OVF.ml" 448 16587 16634
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Int64.to_string
+)
+"OVF.ml" 448 16587 16635 "OVF.ml" 448 16587 16649
+type(
+  int64
+)
+ident(
+  int_ref actual_size_gb "OVF.ml" 447 16552 16569 "OVF.ml" 447 16552 16583
+)
+"OVF.ml" 448 16587 16619 "OVF.ml" 448 16587 16649
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 448 16587 16599 "OVF.ml" 448 16587 16650
+type(
+  string * string
+)
+"OVF.ml" 448 16587 16654 "OVF.ml" 448 16587 16659
+type(
+  (string * string) list
+)
+ident(
+  int_ref attrs "OVF.ml" 429 15821 15833 "OVF.ml" 429 15821 15838
+)
+"OVF.ml" 448 16587 16599 "OVF.ml" 448 16587 16659
+type(
+  (string * string) list
+)
+"OVF.ml" 445 16490 16500 "OVF.ml" 448 16587 16659
+type(
+  (string * string) list
+)
+"OVF.ml" 449 16663 16671 "OVF.ml" 449 16663 16672
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 449 16663 16673 "OVF.ml" 449 16663 16679
+type(
+  string
+)
+"OVF.ml" 449 16663 16680 "OVF.ml" 449 16663 16685
+type(
+  DOM.attr list
+)
+ident(
+  int_ref attrs "OVF.ml" 444 16470 16482 "OVF.ml" 444 16470 16487
+)
+"OVF.ml" 449 16663 16686 "OVF.ml" 449 16663 16688
+type(
+  DOM.node list
+)
+"OVF.ml" 449 16663 16671 "OVF.ml" 449 16663 16688
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 444 16470 16478 "OVF.ml" 449 16663 16688
+type(
+  DOM.node
+)
+"OVF.ml" 429 15821 15829 "OVF.ml" 449 16663 16688
+type(
+  DOM.node
+)
+"OVF.ml" 450 16692 16701 "OVF.ml" 450 16692 16712
+type(
+  bool
+)
+ident(
+  int_ref is_estimate "OVF.ml" 395 14588 14614 "OVF.ml" 395 14588 14625
+)
+"OVF.ml" 451 16720 16732 "OVF.ml" 451 16720 16739
+type(
+  DOM.node
+)
+"OVF.ml" 451 16720 16750 "OVF.ml" 451 16720 16788
+type(
+  string
+)
+"OVF.ml" 451 16720 16742 "OVF.ml" 451 16720 16788
+type(
+  DOM.node
+)
+"OVF.ml" 452 16792 16800 "OVF.ml" 452 16792 16812
+type(
+  DOM.node -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_child
+)
+"OVF.ml" 452 16792 16813 "OVF.ml" 452 16792 16820
+type(
+  DOM.node
+)
+ident(
+  int_ref comment "OVF.ml" 451 16720 16732 "OVF.ml" 451 16720 16739
+)
+"OVF.ml" 452 16792 16821 "OVF.ml" 452 16792 16833
+type(
+  DOM.node
+)
+ident(
+  int_ref disk_section "OVF.ml" 370 13539 13545 "OVF.ml" 370 13539 13557
+)
+"OVF.ml" 452 16792 16800 "OVF.ml" 452 16792 16833
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 450 16692 16718 "OVF.ml" 453 16834 16841
+type(
+  unit
+)
+"OVF.ml" 450 16692 16698 "OVF.ml" 453 16834 16841
+type(
+  unit
+)
+"OVF.ml" 454 16843 16849 "OVF.ml" 454 16843 16861
+type(
+  DOM.node -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_child
+)
+"OVF.ml" 454 16843 16862 "OVF.ml" 454 16843 16866
+type(
+  DOM.node
+)
+ident(
+  int_ref disk "OVF.ml" 428 15804 15814 "OVF.ml" 428 15804 15818
+)
+"OVF.ml" 454 16843 16867 "OVF.ml" 454 16843 16879
+type(
+  DOM.node
+)
+ident(
+  int_ref disk_section "OVF.ml" 370 13539 13545 "OVF.ml" 370 13539 13557
+)
+"OVF.ml" 454 16843 16849 "OVF.ml" 454 16843 16879
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 457 16923 16933 "OVF.ml" 457 16923 16937
+type(
+  DOM.node
+)
+"OVF.ml" 461 17048 17060 "OVF.ml" 461 17048 17067
+type(
+  string
+)
+"OVF.ml" 461 17048 17070 "OVF.ml" 461 17048 17077
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 461 17048 17078 "OVF.ml" 461 17048 17088
+type(
+  (int -> string, unit, string) format
+)
+"OVF.ml" 461 17048 17090 "OVF.ml" 461 17048 17091
+type(
+  int
+)
+ident(
+  int_ref i "OVF.ml" 381 14046 14054 "OVF.ml" 381 14046 14055
+)
+"OVF.ml" 461 17048 17091 "OVF.ml" 461 17048 17092
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"OVF.ml" 461 17048 17092 "OVF.ml" 461 17048 17093
+type(
+  int
+)
+"OVF.ml" 461 17048 17089 "OVF.ml" 461 17048 17094
+type(
+  int
+)
+"OVF.ml" 461 17048 17070 "OVF.ml" 461 17048 17094
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 462 17098 17106 "OVF.ml" 462 17098 17107
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 462 17098 17108 "OVF.ml" 462 17098 17114
+type(
+  string
+)
+"OVF.ml" 462 17098 17115 "OVF.ml" 462 17098 17117
+type(
+  DOM.attr list
+)
+"OVF.ml" 463 17120 17130 "OVF.ml" 463 17120 17131
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 463 17120 17132 "OVF.ml" 463 17120 17146
+type(
+  string
+)
+"OVF.ml" 463 17120 17147 "OVF.ml" 463 17120 17149
+type(
+  DOM.attr list
+)
+"OVF.ml" 463 17120 17158 "OVF.ml" 463 17120 17165
+type(
+  string
+)
+ident(
+  int_ref caption "OVF.ml" 461 17048 17060 "OVF.ml" 461 17048 17067
+)
+"OVF.ml" 463 17120 17151 "OVF.ml" 463 17120 17165
+type(
+  DOM.node
+)
+"OVF.ml" 463 17120 17150 "OVF.ml" 463 17120 17166
+type(
+  DOM.node list
+)
+"OVF.ml" 463 17120 17130 "OVF.ml" 463 17120 17166
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 464 17168 17178 "OVF.ml" 464 17168 17179
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 464 17168 17180 "OVF.ml" 464 17168 17197
+type(
+  string
+)
+"OVF.ml" 464 17168 17198 "OVF.ml" 464 17168 17200
+type(
+  DOM.attr list
+)
+"OVF.ml" 464 17168 17209 "OVF.ml" 464 17168 17217
+type(
+  string
+)
+ident(
+  int_ref vol_uuid "OVF.ml" 381 14046 14099 "OVF.ml" 381 14046 14107
+)
+"OVF.ml" 464 17168 17202 "OVF.ml" 464 17168 17217
+type(
+  DOM.node
+)
+"OVF.ml" 464 17168 17201 "OVF.ml" 464 17168 17218
+type(
+  DOM.node list
+)
+"OVF.ml" 464 17168 17178 "OVF.ml" 464 17168 17218
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 465 17220 17230 "OVF.ml" 465 17220 17231
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 465 17220 17232 "OVF.ml" 465 17220 17251
+type(
+  string
+)
+"OVF.ml" 465 17220 17252 "OVF.ml" 465 17220 17254
+type(
+  DOM.attr list
+)
+"OVF.ml" 465 17220 17263 "OVF.ml" 465 17220 17267
+type(
+  string
+)
+"OVF.ml" 465 17220 17256 "OVF.ml" 465 17220 17267
+type(
+  DOM.node
+)
+"OVF.ml" 465 17220 17255 "OVF.ml" 465 17220 17268
+type(
+  DOM.node list
+)
+"OVF.ml" 465 17220 17230 "OVF.ml" 465 17220 17268
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 466 17270 17280 "OVF.ml" 466 17270 17281
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 466 17270 17282 "OVF.ml" 466 17270 17288
+type(
+  string
+)
+"OVF.ml" 466 17270 17289 "OVF.ml" 466 17270 17291
+type(
+  DOM.attr list
+)
+"OVF.ml" 466 17270 17300 "OVF.ml" 466 17270 17306
+type(
+  string
+)
+"OVF.ml" 466 17270 17293 "OVF.ml" 466 17270 17306
+type(
+  DOM.node
+)
+"OVF.ml" 466 17270 17292 "OVF.ml" 466 17270 17307
+type(
+  DOM.node list
+)
+"OVF.ml" 466 17270 17280 "OVF.ml" 466 17270 17307
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 467 17309 17319 "OVF.ml" 467 17309 17320
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 467 17309 17321 "OVF.ml" 467 17309 17340
+type(
+  string
+)
+"OVF.ml" 467 17309 17341 "OVF.ml" 467 17309 17343
+type(
+  DOM.attr list
+)
+"OVF.ml" 467 17309 17352 "OVF.ml" 467 17309 17359
+type(
+  string
+)
+ident(
+  int_ref fileref "OVF.ml" 384 14149 14159 "OVF.ml" 384 14149 14166
+)
+"OVF.ml" 467 17309 17345 "OVF.ml" 467 17309 17359
+type(
+  DOM.node
+)
+"OVF.ml" 467 17309 17344 "OVF.ml" 467 17309 17360
+type(
+  DOM.node list
+)
+"OVF.ml" 467 17309 17319 "OVF.ml" 467 17309 17360
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 468 17362 17372 "OVF.ml" 468 17362 17373
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 468 17362 17374 "OVF.ml" 468 17362 17387
+type(
+  string
+)
+"OVF.ml" 468 17362 17388 "OVF.ml" 468 17362 17390
+type(
+  DOM.attr list
+)
+"OVF.ml" 468 17362 17399 "OVF.ml" 468 17362 17437
+type(
+  string
+)
+"OVF.ml" 468 17362 17392 "OVF.ml" 468 17362 17437
+type(
+  DOM.node
+)
+"OVF.ml" 468 17362 17391 "OVF.ml" 468 17362 17438
+type(
+  DOM.node list
+)
+"OVF.ml" 468 17362 17372 "OVF.ml" 468 17362 17438
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 469 17440 17450 "OVF.ml" 469 17440 17451
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 469 17440 17452 "OVF.ml" 469 17440 17467
+type(
+  string
+)
+"OVF.ml" 469 17440 17468 "OVF.ml" 469 17440 17470
+type(
+  DOM.attr list
+)
+"OVF.ml" 469 17440 17479 "OVF.ml" 469 17440 17517
+type(
+  string
+)
+"OVF.ml" 469 17440 17472 "OVF.ml" 469 17440 17517
+type(
+  DOM.node
+)
+"OVF.ml" 469 17440 17471 "OVF.ml" 469 17440 17518
+type(
+  DOM.node list
+)
+"OVF.ml" 469 17440 17450 "OVF.ml" 469 17440 17518
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 470 17520 17530 "OVF.ml" 470 17520 17531
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 470 17520 17532 "OVF.ml" 470 17520 17554
+type(
+  string
+)
+"OVF.ml" 470 17520 17555 "OVF.ml" 470 17520 17557
+type(
+  DOM.attr list
+)
+"OVF.ml" 470 17520 17558 "OVF.ml" 470 17520 17560
+type(
+  DOM.node list
+)
+"OVF.ml" 470 17520 17530 "OVF.ml" 470 17520 17560
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 471 17562 17572 "OVF.ml" 471 17562 17573
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 471 17562 17574 "OVF.ml" 471 17562 17590
+type(
+  string
+)
+"OVF.ml" 471 17562 17591 "OVF.ml" 471 17562 17593
+type(
+  DOM.attr list
+)
+"OVF.ml" 471 17562 17602 "OVF.ml" 471 17562 17609
+type(
+  string
+)
+ident(
+  int_ref sd_uuid "OVF.ml" 364 13291 13336 "OVF.ml" 364 13291 13343
+)
+"OVF.ml" 471 17562 17595 "OVF.ml" 471 17562 17609
+type(
+  DOM.node
+)
+"OVF.ml" 471 17562 17594 "OVF.ml" 471 17562 17610
+type(
+  DOM.node list
+)
+"OVF.ml" 471 17562 17572 "OVF.ml" 471 17562 17610
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 472 17612 17622 "OVF.ml" 472 17612 17623
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 472 17612 17624 "OVF.ml" 472 17612 17644
+type(
+  string
+)
+"OVF.ml" 472 17612 17645 "OVF.ml" 472 17612 17647
+type(
+  DOM.attr list
+)
+"OVF.ml" 472 17612 17656 "OVF.ml" 472 17612 17694
+type(
+  string
+)
+"OVF.ml" 472 17612 17649 "OVF.ml" 472 17612 17694
+type(
+  DOM.node
+)
+"OVF.ml" 472 17612 17648 "OVF.ml" 472 17612 17695
+type(
+  DOM.node list
+)
+"OVF.ml" 472 17612 17622 "OVF.ml" 472 17612 17695
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 473 17697 17707 "OVF.ml" 473 17697 17708
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 473 17697 17709 "OVF.ml" 473 17697 17728
+type(
+  string
+)
+"OVF.ml" 473 17697 17729 "OVF.ml" 473 17697 17731
+type(
+  DOM.attr list
+)
+"OVF.ml" 473 17697 17740 "OVF.ml" 473 17697 17748
+type(
+  string
+)
+ident(
+  int_ref iso_time "OVF.ml" 41 1218 1222 "OVF.ml" 41 1218 1230
+)
+"OVF.ml" 473 17697 17733 "OVF.ml" 473 17697 17748
+type(
+  DOM.node
+)
+"OVF.ml" 473 17697 17732 "OVF.ml" 473 17697 17749
+type(
+  DOM.node list
+)
+"OVF.ml" 473 17697 17707 "OVF.ml" 473 17697 17749
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 474 17751 17761 "OVF.ml" 474 17751 17762
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 474 17751 17763 "OVF.ml" 474 17751 17782
+type(
+  string
+)
+"OVF.ml" 474 17751 17783 "OVF.ml" 474 17751 17785
+type(
+  DOM.attr list
+)
+"OVF.ml" 474 17751 17794 "OVF.ml" 474 17751 17802
+type(
+  string
+)
+ident(
+  int_ref iso_time "OVF.ml" 41 1218 1222 "OVF.ml" 41 1218 1230
+)
+"OVF.ml" 474 17751 17787 "OVF.ml" 474 17751 17802
+type(
+  DOM.node
+)
+"OVF.ml" 474 17751 17786 "OVF.ml" 474 17751 17803
+type(
+  DOM.node list
+)
+"OVF.ml" 474 17751 17761 "OVF.ml" 474 17751 17803
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 475 17805 17815 "OVF.ml" 475 17805 17816
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 475 17805 17817 "OVF.ml" 475 17805 17842
+type(
+  string
+)
+"OVF.ml" 475 17805 17843 "OVF.ml" 475 17805 17845
+type(
+  DOM.attr list
+)
+"OVF.ml" 475 17805 17854 "OVF.ml" 475 17805 17862
+type(
+  string
+)
+ident(
+  int_ref iso_time "OVF.ml" 41 1218 1222 "OVF.ml" 41 1218 1230
+)
+"OVF.ml" 475 17805 17847 "OVF.ml" 475 17805 17862
+type(
+  DOM.node
+)
+"OVF.ml" 475 17805 17846 "OVF.ml" 475 17805 17863
+type(
+  DOM.node list
+)
+"OVF.ml" 475 17805 17815 "OVF.ml" 475 17805 17863
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 462 17098 17118 "OVF.ml" 476 17865 17874
+type(
+  DOM.node list
+)
+"OVF.ml" 462 17098 17106 "OVF.ml" 476 17865 17874
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 461 17048 17056 "OVF.ml" 476 17865 17874
+type(
+  DOM.node
+)
+"OVF.ml" 477 17878 17884 "OVF.ml" 477 17878 17896
+type(
+  DOM.node -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_child
+)
+"OVF.ml" 477 17878 17897 "OVF.ml" 477 17878 17901
+type(
+  DOM.node
+)
+ident(
+  int_ref item "OVF.ml" 457 16923 16933 "OVF.ml" 457 16923 16937
+)
+"OVF.ml" 477 17878 17902 "OVF.ml" 477 17878 17925
+type(
+  DOM.node
+)
+ident(
+  int_ref virtualhardware_section "OVF.ml" 374 13738 13744 "OVF.ml" 374 13738 13767
+)
+"OVF.ml" 477 17878 17884 "OVF.ml" 477 17878 17926
+call(
+  tail
+)
+type(
+  unit
+)
+"OVF.ml" 457 16923 16929 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 454 16843 16849 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 450 16692 16698 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 428 15804 15810 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 425 15730 15736 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 418 15504 15510 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 412 15320 15326 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 404 15018 15024 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 395 14588 14594 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 394 14534 14540 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 390 14431 14437 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 384 14149 14155 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 382 14112 14118 "OVF.ml" 477 17878 17926
+type(
+  unit
+)
+"OVF.ml" 380 14036 14044 "OVF.ml" 478 17927 17930
+type(
+  int -> Types.target * string * string -> unit
+)
+"OVF.ml" 478 17927 17932 "OVF.ml" 478 17927 17940
+type(
+  Types.target list ->
+  string list -> string list -> (Types.target * string * string) list
+)
+ident(
+  ext_ref Common_utils.combine3
+)
+"OVF.ml" 478 17927 17941 "OVF.ml" 478 17927 17948
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "OVF.ml" 364 13291 13305 "OVF.ml" 364 13291 13312
+)
+"OVF.ml" 478 17927 17949 "OVF.ml" 478 17927 17960
+type(
+  string list
+)
+ident(
+  int_ref image_uuids "OVF.ml" 364 13291 13344 "OVF.ml" 364 13291 13355
+)
+"OVF.ml" 478 17927 17961 "OVF.ml" 478 17927 17970
+type(
+  string list
+)
+ident(
+  int_ref vol_uuids "OVF.ml" 364 13291 13356 "OVF.ml" 364 13291 13365
+)
+"OVF.ml" 478 17927 17931 "OVF.ml" 478 17927 17971
+call(
+  stack
+)
+type(
+  (Types.target * string * string) list
+)
+"OVF.ml" 380 14036 14038 "OVF.ml" 478 17927 17971
+call(
+  tail
+)
+type(
+  unit
+)
+"OVF.ml" 374 13738 13740 "OVF.ml" 478 17927 17971
+type(
+  unit
+)
+"OVF.ml" 370 13539 13541 "OVF.ml" 478 17927 17971
+type(
+  unit
+)
+"OVF.ml" 365 13372 13374 "OVF.ml" 478 17927 17971
+type(
+  unit
+)
+"OVF.ml" 481 18037 18041 "OVF.ml" 481 18037 18053
+type(
+  Types.source_nic list -> Types.guestcaps -> DOM.doc -> unit
+)
+ident(
+  def add_networks "OVF.ml" 237 8163 8163 --
+)
+"OVF.ml" 481 18037 18054 "OVF.ml" 481 18037 18058
+type(
+  Types.source_nic list
+)
+ident(
+  def nics "OVF.ml" 481 18037 18059 "OVF.ml" 532 19975 19983
+)
+"OVF.ml" 481 18037 18059 "OVF.ml" 481 18037 18068
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "OVF.ml" 481 18037 18069 "OVF.ml" 532 19975 19983
+)
+"OVF.ml" 481 18037 18069 "OVF.ml" 481 18037 18072
+type(
+  DOM.doc
+)
+ident(
+  def ovf "OVF.ml" 482 18075 18077 "OVF.ml" 532 19975 19983
+)
+"OVF.ml" 482 18075 18081 "OVF.ml" 482 18075 18096
+type(
+  DOM.node
+)
+"OVF.ml" 483 18099 18107 "OVF.ml" 483 18099 18115
+type(
+  DOM.node list
+)
+"OVF.ml" 483 18099 18118 "OVF.ml" 483 18099 18131
+type(
+  DOM.doc -> string list -> DOM.node list
+)
+ident(
+  ext_ref DOM.path_to_nodes
+)
+"OVF.ml" 483 18099 18132 "OVF.ml" 483 18099 18135
+type(
+  DOM.doc
+)
+ident(
+  int_ref ovf "OVF.ml" 481 18037 18069 "OVF.ml" 481 18037 18072
+)
+"OVF.ml" 483 18099 18137 "OVF.ml" 483 18099 18151
+type(
+  string
+)
+"OVF.ml" 483 18099 18153 "OVF.ml" 483 18099 18162
+type(
+  string
+)
+"OVF.ml" 483 18099 18136 "OVF.ml" 483 18099 18163
+type(
+  string list
+)
+"OVF.ml" 483 18099 18118 "OVF.ml" 483 18099 18163
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"OVF.ml" 484 18167 18175 "OVF.ml" 484 18167 18192
+type(
+  DOM.node list -> DOM.attr -> DOM.node
+)
+ident(
+  ext_ref DOM.find_node_by_attr
+)
+"OVF.ml" 484 18167 18193 "OVF.ml" 484 18167 18201
+type(
+  DOM.node list
+)
+ident(
+  int_ref sections "OVF.ml" 483 18099 18107 "OVF.ml" 483 18099 18115
+)
+"OVF.ml" 484 18167 18203 "OVF.ml" 484 18167 18213
+type(
+  string
+)
+"OVF.ml" 484 18167 18215 "OVF.ml" 484 18167 18240
+type(
+  string
+)
+"OVF.ml" 484 18167 18202 "OVF.ml" 484 18167 18241
+type(
+  DOM.attr
+)
+"OVF.ml" 484 18167 18175 "OVF.ml" 484 18167 18241
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 485 18242 18251 "OVF.ml" 485 18242 18260
+type(
+  exn
+)
+"OVF.ml" 485 18242 18264 "OVF.ml" 485 18242 18276
+type(
+  DOM.node
+)
+"OVF.ml" 484 18167 18171 "OVF.ml" 485 18242 18276
+type(
+  DOM.node
+)
+"OVF.ml" 483 18099 18103 "OVF.ml" 485 18242 18276
+type(
+  DOM.node
+)
+"OVF.ml" 486 18280 18286 "OVF.ml" 486 18280 18309
+type(
+  DOM.node
+)
+"OVF.ml" 487 18312 18320 "OVF.ml" 487 18312 18328
+type(
+  DOM.node list
+)
+"OVF.ml" 487 18312 18331 "OVF.ml" 487 18312 18344
+type(
+  DOM.doc -> string list -> DOM.node list
+)
+ident(
+  ext_ref DOM.path_to_nodes
+)
+"OVF.ml" 487 18312 18345 "OVF.ml" 487 18312 18348
+type(
+  DOM.doc
+)
+ident(
+  int_ref ovf "OVF.ml" 481 18037 18069 "OVF.ml" 481 18037 18072
+)
+"OVF.ml" 487 18312 18350 "OVF.ml" 487 18312 18364
+type(
+  string
+)
+"OVF.ml" 487 18312 18366 "OVF.ml" 487 18312 18375
+type(
+  string
+)
+"OVF.ml" 487 18312 18377 "OVF.ml" 487 18312 18386
+type(
+  string
+)
+"OVF.ml" 487 18312 18349 "OVF.ml" 487 18312 18387
+type(
+  string list
+)
+"OVF.ml" 487 18312 18331 "OVF.ml" 487 18312 18387
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"OVF.ml" 488 18391 18399 "OVF.ml" 488 18391 18416
+type(
+  DOM.node list -> DOM.attr -> DOM.node
+)
+ident(
+  ext_ref DOM.find_node_by_attr
+)
+"OVF.ml" 488 18391 18417 "OVF.ml" 488 18391 18425
+type(
+  DOM.node list
+)
+ident(
+  int_ref sections "OVF.ml" 487 18312 18320 "OVF.ml" 487 18312 18328
+)
+"OVF.ml" 488 18391 18427 "OVF.ml" 488 18391 18437
+type(
+  string
+)
+"OVF.ml" 488 18391 18439 "OVF.ml" 488 18391 18472
+type(
+  string
+)
+"OVF.ml" 488 18391 18426 "OVF.ml" 488 18391 18473
+type(
+  DOM.attr
+)
+"OVF.ml" 488 18391 18399 "OVF.ml" 488 18391 18473
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 489 18474 18483 "OVF.ml" 489 18474 18492
+type(
+  exn
+)
+"OVF.ml" 489 18474 18496 "OVF.ml" 489 18474 18508
+type(
+  DOM.node
+)
+"OVF.ml" 488 18391 18395 "OVF.ml" 489 18474 18508
+type(
+  DOM.node
+)
+"OVF.ml" 487 18312 18316 "OVF.ml" 489 18474 18508
+type(
+  DOM.node
+)
+"OVF.ml" 492 18577 18579 "OVF.ml" 492 18577 18584
+type(
+  (int -> Types.source_nic -> unit) -> Types.source_nic list -> unit
+)
+ident(
+  ext_ref Common_utils.iteri
+)
+"OVF.ml" 493 18587 18595 "OVF.ml" 493 18587 18596
+type(
+  int
+)
+ident(
+  def i "OVF.ml" 493 18587 18597 "OVF.ml" 531 19926 19974
+)
+"OVF.ml" 493 18587 18607 "OVF.ml" 493 18587 18610
+type(
+  string option
+)
+ident(
+  def mac "OVF.ml" 495 18693 18699 "OVF.ml" 531 19926 19974
+)
+"OVF.ml" 493 18587 18626 "OVF.ml" 493 18587 18635
+type(
+  Types.vnet_type
+)
+ident(
+  def vnet_type "OVF.ml" 495 18693 18699 "OVF.ml" 531 19926 19974
+)
+"OVF.ml" 494 18637 18658 "OVF.ml" 494 18637 18662
+type(
+  string
+)
+ident(
+  def vnet "OVF.ml" 495 18693 18699 "OVF.ml" 531 19926 19974
+)
+"OVF.ml" 494 18637 18678 "OVF.ml" 494 18637 18687
+type(
+  string
+)
+ident(
+  def vnet_orig "OVF.ml" 495 18693 18699 "OVF.ml" 531 19926 19974
+)
+"OVF.ml" 493 18587 18597 "OVF.ml" 494 18637 18689
+type(
+  Types.source_nic
+)
+"OVF.ml" 495 18693 18703 "OVF.ml" 495 18693 18706
+type(
+  string
+)
+"OVF.ml" 495 18693 18709 "OVF.ml" 495 18693 18716
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 495 18693 18717 "OVF.ml" 495 18693 18724
+type(
+  (int -> string, unit, string) format
+)
+"OVF.ml" 495 18693 18725 "OVF.ml" 495 18693 18726
+type(
+  int
+)
+ident(
+  int_ref i "OVF.ml" 493 18587 18595 "OVF.ml" 493 18587 18596
+)
+"OVF.ml" 495 18693 18709 "OVF.ml" 495 18693 18726
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 497 18731 18741 "OVF.ml" 497 18731 18746
+type(
+  string
+)
+"OVF.ml" 498 18749 18763 "OVF.ml" 498 18749 18772
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "OVF.ml" 481 18037 18059 "OVF.ml" 481 18037 18068
+)
+"OVF.ml" 498 18749 18763 "OVF.ml" 498 18749 18786
+type(
+  Types.guestcaps_net_type
+)
+"OVF.ml" 499 18792 18802 "OVF.ml" 499 18792 18809
+type(
+  Types.guestcaps_net_type
+)
+"OVF.ml" 499 18792 18813 "OVF.ml" 499 18792 18816
+type(
+  string
+)
+"OVF.ml" 500 18817 18827 "OVF.ml" 500 18817 18832
+type(
+  Types.guestcaps_net_type
+)
+"OVF.ml" 500 18817 18836 "OVF.ml" 500 18817 18839
+type(
+  string
+)
+"OVF.ml" 501 18840 18850 "OVF.ml" 501 18840 18860
+type(
+  Types.guestcaps_net_type
+)
+"OVF.ml" 501 18840 18864 "OVF.ml" 501 18840 18867
+type(
+  string
+)
+"OVF.ml" 498 18749 18757 "OVF.ml" 501 18840 18867
+type(
+  string
+)
+"OVF.ml" 507 19035 19044 "OVF.ml" 507 19035 19053
+type(
+  string
+)
+ident(
+  int_ref vnet_orig "OVF.ml" 494 18637 18678 "OVF.ml" 494 18637 18687
+)
+"OVF.ml" 507 19035 19054 "OVF.ml" 507 19035 19056
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"OVF.ml" 507 19035 19057 "OVF.ml" 507 19035 19061
+type(
+  string
+)
+ident(
+  int_ref vnet "OVF.ml" 494 18637 18658 "OVF.ml" 494 18637 18662
+)
+"OVF.ml" 507 19035 19044 "OVF.ml" 507 19035 19061
+type(
+  bool
+)
+"OVF.ml" 508 19069 19081 "OVF.ml" 508 19069 19082
+type(
+  DOM.node
+)
+"OVF.ml" 509 19085 19104 "OVF.ml" 509 19085 19111
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 509 19085 19112 "OVF.ml" 509 19085 19142
+type(
+  (string -> string -> string, unit, string) format
+)
+"OVF.ml" 509 19085 19143 "OVF.ml" 509 19085 19152
+type(
+  string
+)
+ident(
+  int_ref vnet_orig "OVF.ml" 494 18637 18678 "OVF.ml" 494 18637 18687
+)
+"OVF.ml" 509 19085 19153 "OVF.ml" 509 19085 19157
+type(
+  string
+)
+ident(
+  int_ref vnet "OVF.ml" 494 18637 18658 "OVF.ml" 494 18637 18662
+)
+"OVF.ml" 509 19085 19103 "OVF.ml" 509 19085 19158
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 509 19085 19095 "OVF.ml" 509 19085 19158
+type(
+  DOM.node
+)
+"OVF.ml" 510 19162 19170 "OVF.ml" 510 19162 19182
+type(
+  DOM.node -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_child
+)
+"OVF.ml" 510 19162 19183 "OVF.ml" 510 19162 19184
+type(
+  DOM.node
+)
+ident(
+  int_ref c "OVF.ml" 508 19069 19081 "OVF.ml" 508 19069 19082
+)
+"OVF.ml" 510 19162 19185 "OVF.ml" 510 19162 19200
+type(
+  DOM.node
+)
+ident(
+  int_ref network_section "OVF.ml" 482 18075 18081 "OVF.ml" 482 18075 18096
+)
+"OVF.ml" 510 19162 19170 "OVF.ml" 510 19162 19200
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 507 19035 19067 "OVF.ml" 511 19201 19208
+type(
+  unit
+)
+"OVF.ml" 507 19035 19041 "OVF.ml" 511 19201 19208
+type(
+  unit
+)
+"OVF.ml" 513 19211 19221 "OVF.ml" 513 19211 19228
+type(
+  DOM.node
+)
+"OVF.ml" 513 19211 19231 "OVF.ml" 513 19211 19232
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 513 19211 19233 "OVF.ml" 513 19211 19242
+type(
+  string
+)
+"OVF.ml" 513 19211 19244 "OVF.ml" 513 19211 19254
+type(
+  string
+)
+"OVF.ml" 513 19211 19256 "OVF.ml" 513 19211 19260
+type(
+  string
+)
+ident(
+  int_ref vnet "OVF.ml" 494 18637 18658 "OVF.ml" 494 18637 18662
+)
+"OVF.ml" 513 19211 19244 "OVF.ml" 513 19211 19260
+type(
+  DOM.attr
+)
+"OVF.ml" 513 19211 19243 "OVF.ml" 513 19211 19261
+type(
+  DOM.attr list
+)
+"OVF.ml" 513 19211 19262 "OVF.ml" 513 19211 19264
+type(
+  DOM.node list
+)
+"OVF.ml" 513 19211 19231 "OVF.ml" 513 19211 19264
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 514 19268 19274 "OVF.ml" 514 19268 19286
+type(
+  DOM.node -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_child
+)
+"OVF.ml" 514 19268 19287 "OVF.ml" 514 19268 19294
+type(
+  DOM.node
+)
+ident(
+  int_ref network "OVF.ml" 513 19211 19221 "OVF.ml" 513 19211 19228
+)
+"OVF.ml" 514 19268 19295 "OVF.ml" 514 19268 19310
+type(
+  DOM.node
+)
+ident(
+  int_ref network_section "OVF.ml" 482 18075 18081 "OVF.ml" 482 18075 18096
+)
+"OVF.ml" 514 19268 19274 "OVF.ml" 514 19268 19310
+call(
+  stack
+)
+type(
+  unit
+)
+"OVF.ml" 516 19313 19323 "OVF.ml" 516 19313 19327
+type(
+  DOM.node
+)
+"OVF.ml" 517 19330 19342 "OVF.ml" 517 19330 19350
+type(
+  DOM.node list
+)
+"OVF.ml" 518 19355 19365 "OVF.ml" 518 19355 19366
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 518 19355 19367 "OVF.ml" 518 19355 19384
+type(
+  string
+)
+"OVF.ml" 518 19355 19385 "OVF.ml" 518 19355 19387
+type(
+  DOM.attr list
+)
+"OVF.ml" 518 19355 19397 "OVF.ml" 518 19355 19404
+type(
+  unit -> string
+)
+ident(
+  ext_ref Common_utils.uuidgen
+)
+"OVF.ml" 518 19355 19405 "OVF.ml" 518 19355 19407
+type(
+  unit
+)
+"OVF.ml" 518 19355 19396 "OVF.ml" 518 19355 19408
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 518 19355 19389 "OVF.ml" 518 19355 19408
+type(
+  DOM.node
+)
+"OVF.ml" 518 19355 19388 "OVF.ml" 518 19355 19409
+type(
+  DOM.node list
+)
+"OVF.ml" 518 19355 19365 "OVF.ml" 518 19355 19409
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 519 19411 19421 "OVF.ml" 519 19411 19422
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 519 19411 19423 "OVF.ml" 519 19411 19437
+type(
+  string
+)
+"OVF.ml" 519 19411 19438 "OVF.ml" 519 19411 19440
+type(
+  DOM.attr list
+)
+"OVF.ml" 519 19411 19450 "OVF.ml" 519 19411 19457
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"OVF.ml" 519 19411 19458 "OVF.ml" 519 19411 19482
+type(
+  (string -> string, unit, string) format
+)
+"OVF.ml" 519 19411 19483 "OVF.ml" 519 19411 19487
+type(
+  string
+)
+ident(
+  int_ref vnet "OVF.ml" 494 18637 18658 "OVF.ml" 494 18637 18662
+)
+"OVF.ml" 519 19411 19449 "OVF.ml" 519 19411 19488
+call(
+  stack
+)
+type(
+  string
+)
+"OVF.ml" 519 19411 19442 "OVF.ml" 519 19411 19488
+type(
+  DOM.node
+)
+"OVF.ml" 519 19411 19441 "OVF.ml" 519 19411 19489
+type(
+  DOM.node list
+)
+"OVF.ml" 519 19411 19421 "OVF.ml" 519 19411 19489
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 520 19491 19501 "OVF.ml" 520 19491 19502
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 520 19491 19503 "OVF.ml" 520 19491 19522
+type(
+  string
+)
+"OVF.ml" 520 19491 19523 "OVF.ml" 520 19491 19525
+type(
+  DOM.attr list
+)
+"OVF.ml" 520 19491 19534 "OVF.ml" 520 19491 19538
+type(
+  string
+)
+"OVF.ml" 520 19491 19527 "OVF.ml" 520 19491 19538
+type(
+  DOM.node
+)
+"OVF.ml" 520 19491 19526 "OVF.ml" 520 19491 19539
+type(
+  DOM.node list
+)
+"OVF.ml" 520 19491 19501 "OVF.ml" 520 19491 19539
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 521 19541 19551 "OVF.ml" 521 19541 19552
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 521 19541 19553 "OVF.ml" 521 19541 19575
+type(
+  string
+)
+"OVF.ml" 521 19541 19576 "OVF.ml" 521 19541 19578
+type(
+  DOM.attr list
+)
+"OVF.ml" 521 19541 19587 "OVF.ml" 521 19541 19592
+type(
+  string
+)
+ident(
+  int_ref model "OVF.ml" 497 18731 18741 "OVF.ml" 497 18731 18746
+)
+"OVF.ml" 521 19541 19580 "OVF.ml" 521 19541 19592
+type(
+  DOM.node
+)
+"OVF.ml" 521 19541 19579 "OVF.ml" 521 19541 19593
+type(
+  DOM.node list
+)
+"OVF.ml" 521 19541 19551 "OVF.ml" 521 19541 19593
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 522 19595 19605 "OVF.ml" 522 19595 19606
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 522 19595 19607 "OVF.ml" 522 19595 19613
+type(
+  string
+)
+"OVF.ml" 522 19595 19614 "OVF.ml" 522 19595 19616
+type(
+  DOM.attr list
+)
+"OVF.ml" 522 19595 19625 "OVF.ml" 522 19595 19636
+type(
+  string
+)
+"OVF.ml" 522 19595 19618 "OVF.ml" 522 19595 19636
+type(
+  DOM.node
+)
+"OVF.ml" 522 19595 19617 "OVF.ml" 522 19595 19637
+type(
+  DOM.node list
+)
+"OVF.ml" 522 19595 19605 "OVF.ml" 522 19595 19637
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 523 19639 19649 "OVF.ml" 523 19639 19650
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 523 19639 19651 "OVF.ml" 523 19639 19668
+type(
+  string
+)
+"OVF.ml" 523 19639 19669 "OVF.ml" 523 19639 19671
+type(
+  DOM.attr list
+)
+"OVF.ml" 523 19639 19680 "OVF.ml" 523 19639 19684
+type(
+  string
+)
+ident(
+  int_ref vnet "OVF.ml" 494 18637 18658 "OVF.ml" 494 18637 18662
+)
+"OVF.ml" 523 19639 19673 "OVF.ml" 523 19639 19684
+type(
+  DOM.node
+)
+"OVF.ml" 523 19639 19672 "OVF.ml" 523 19639 19685
+type(
+  DOM.node list
+)
+"OVF.ml" 523 19639 19649 "OVF.ml" 523 19639 19685
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 524 19687 19697 "OVF.ml" 524 19687 19698
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 524 19687 19699 "OVF.ml" 524 19687 19710
+type(
+  string
+)
+"OVF.ml" 524 19687 19711 "OVF.ml" 524 19687 19713
+type(
+  DOM.attr list
+)
+"OVF.ml" 524 19687 19722 "OVF.ml" 524 19687 19725
+type(
+  string
+)
+ident(
+  int_ref dev "OVF.ml" 495 18693 18703 "OVF.ml" 495 18693 18706
+)
+"OVF.ml" 524 19687 19715 "OVF.ml" 524 19687 19725
+type(
+  DOM.node
+)
+"OVF.ml" 524 19687 19714 "OVF.ml" 524 19687 19726
+type(
+  DOM.node list
+)
+"OVF.ml" 524 19687 19697 "OVF.ml" 524 19687 19726
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 517 19330 19353 "OVF.ml" 525 19728 19737
+type(
+  DOM.node list
+)
+"OVF.ml" 526 19741 19753 "OVF.ml" 526 19741 19761
+type(
+  DOM.node list
+)
+"OVF.ml" 527 19764 19780 "OVF.ml" 527 19764 19783
+type(
+  string option
+)
+ident(
+  int_ref mac "OVF.ml" 493 18587 18607 "OVF.ml" 493 18587 18610
+)
+"OVF.ml" 528 19789 19801 "OVF.ml" 528 19789 19805
+type(
+  string option
+)
+"OVF.ml" 528 19789 19809 "OVF.ml" 528 19789 19817
+type(
+  DOM.node list
+)
+ident(
+  int_ref children "OVF.ml" 517 19330 19342 "OVF.ml" 517 19330 19350
+)
+"OVF.ml" 529 19818 19835 "OVF.ml" 529 19818 19838
+type(
+  string
+)
+ident(
+  def mac "OVF.ml" 529 19818 19842 "OVF.ml" 529 19818 19890
+)
+"OVF.ml" 529 19818 19830 "OVF.ml" 529 19818 19838
+type(
+  string option
+)
+"OVF.ml" 529 19818 19842 "OVF.ml" 529 19818 19850
+type(
+  DOM.node list
+)
+ident(
+  int_ref children "OVF.ml" 517 19330 19342 "OVF.ml" 517 19330 19350
+)
+"OVF.ml" 529 19818 19851 "OVF.ml" 529 19818 19852
+type(
+  DOM.node list -> DOM.node list -> DOM.node list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"OVF.ml" 529 19818 19854 "OVF.ml" 529 19818 19855
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 529 19818 19856 "OVF.ml" 529 19818 19873
+type(
+  string
+)
+"OVF.ml" 529 19818 19874 "OVF.ml" 529 19818 19876
+type(
+  DOM.attr list
+)
+"OVF.ml" 529 19818 19885 "OVF.ml" 529 19818 19888
+type(
+  string
+)
+ident(
+  int_ref mac "OVF.ml" 529 19818 19835 "OVF.ml" 529 19818 19838
+)
+"OVF.ml" 529 19818 19878 "OVF.ml" 529 19818 19888
+type(
+  DOM.node
+)
+"OVF.ml" 529 19818 19877 "OVF.ml" 529 19818 19889
+type(
+  DOM.node list
+)
+"OVF.ml" 529 19818 19854 "OVF.ml" 529 19818 19889
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 529 19818 19853 "OVF.ml" 529 19818 19890
+type(
+  DOM.node list
+)
+"OVF.ml" 529 19818 19842 "OVF.ml" 529 19818 19890
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"OVF.ml" 527 19764 19774 "OVF.ml" 529 19818 19890
+type(
+  DOM.node list
+)
+"OVF.ml" 530 19894 19902 "OVF.ml" 530 19894 19903
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"OVF.ml" 530 19894 19904 "OVF.ml" 530 19894 19910
+type(
+  string
+)
+"OVF.ml" 530 19894 19911 "OVF.ml" 530 19894 19913
+type(
+  DOM.attr list
+)
+"OVF.ml" 530 19894 19914 "OVF.ml" 530 19894 19922
+type(
+  DOM.node list
+)
+ident(
+  int_ref children "OVF.ml" 526 19741 19753 "OVF.ml" 526 19741 19761
+)
+"OVF.ml" 530 19894 19902 "OVF.ml" 530 19894 19922
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"OVF.ml" 526 19741 19749 "OVF.ml" 530 19894 19922
+type(
+  DOM.node
+)
+"OVF.ml" 517 19330 19338 "OVF.ml" 530 19894 19922
+type(
+  DOM.node
+)
+"OVF.ml" 531 19926 19932 "OVF.ml" 531 19926 19944
+type(
+  DOM.node -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_child
+)
+"OVF.ml" 531 19926 19945 "OVF.ml" 531 19926 19949
+type(
+  DOM.node
+)
+ident(
+  int_ref item "OVF.ml" 516 19313 19323 "OVF.ml" 516 19313 19327
+)
+"OVF.ml" 531 19926 19950 "OVF.ml" 531 19926 19973
+type(
+  DOM.node
+)
+ident(
+  int_ref virtualhardware_section "OVF.ml" 486 18280 18286 "OVF.ml" 486 18280 18309
+)
+"OVF.ml" 531 19926 19932 "OVF.ml" 531 19926 19974
+call(
+  tail
+)
+type(
+  unit
+)
+"OVF.ml" 516 19313 19319 "OVF.ml" 531 19926 19974
+type(
+  unit
+)
+"OVF.ml" 514 19268 19274 "OVF.ml" 531 19926 19974
+type(
+  unit
+)
+"OVF.ml" 513 19211 19217 "OVF.ml" 531 19926 19974
+type(
+  unit
+)
+"OVF.ml" 507 19035 19041 "OVF.ml" 531 19926 19974
+type(
+  unit
+)
+"OVF.ml" 497 18731 18737 "OVF.ml" 531 19926 19974
+type(
+  unit
+)
+"OVF.ml" 495 18693 18699 "OVF.ml" 531 19926 19974
+type(
+  unit
+)
+"OVF.ml" 492 18577 18585 "OVF.ml" 532 19975 19978
+type(
+  int -> Types.source_nic -> unit
+)
+"OVF.ml" 532 19975 19979 "OVF.ml" 532 19975 19983
+type(
+  Types.source_nic list
+)
+ident(
+  int_ref nics "OVF.ml" 481 18037 18054 "OVF.ml" 481 18037 18058
+)
+"OVF.ml" 492 18577 18579 "OVF.ml" 532 19975 19983
+call(
+  tail
+)
+type(
+  unit
+)
+"OVF.ml" 486 18280 18282 "OVF.ml" 532 19975 19983
+type(
+  unit
+)
+"OVF.ml" 482 18075 18077 "OVF.ml" 532 19975 19983
+type(
+  unit
+)

@@ -1,0 +1,424 @@
+
+<html>
+<head>
+<title>virt-edit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#warning">WARNING</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#examples">EXAMPLES</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#old-style-command-line-arguments">OLD-STYLE COMMAND LINE ARGUMENTS</a></li>
+  <li><a href="#non-interactive-editing">NON-INTERACTIVE EDITING</a></li>
+  <li><a href="#windows-paths">WINDOWS PATHS</a></li>
+  <li><a href="#using-guestfish">USING GUESTFISH</a></li>
+  <li><a href="#environment-variables">ENVIRONMENT VARIABLES</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-edit - Edit a file in a virtual machine</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-edit [--options] -d domname file [file ...]
+
+ virt-edit [--options] -a disk.img [-a disk.img ...] file [file ...]
+
+ virt-edit [-d domname|-a disk.img] file -e &#39;expr&#39;</code></pre>
+
+<p>Old-style:</p>
+
+<pre><code> virt-edit domname file
+
+ virt-edit disk.img [disk.img ...] file</code></pre>
+
+<h1 id="warning">WARNING</h1>
+
+<p>You must <i>not</i> use <code>virt-edit</code> on live virtual machines. If you do this, you risk disk corruption in the VM. <code>virt-edit</code> tries to stop you from doing this, but doesn&#39;t catch all cases.</p>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><code>virt-edit</code> is a command line tool to edit <code>file</code> where each <code>file</code> exists in the named virtual machine (or disk image).</p>
+
+<p>Multiple filenames can be given, in which case they are each edited in turn. Each filename must be a full path, starting at the root directory (starting with &#39;/&#39;).</p>
+
+<p>If you want to just view a file, use <a href="virt-cat.1.html">virt-cat(1)</a>.</p>
+
+<p>For more complex cases you should look at the <a href="guestfish.1.html">guestfish(1)</a> tool (see <a href="#using-guestfish">&quot;USING GUESTFISH&quot;</a> below).</p>
+
+<p><code>virt-edit</code> cannot be used to create a new file. <a href="guestfish.1.html">guestfish(1)</a> can do that and much more.</p>
+
+<h1 id="examples">EXAMPLES</h1>
+
+<p>Edit the named files interactively:</p>
+
+<pre><code> virt-edit -d mydomain /boot/grub/grub.conf
+
+ virt-edit -d mydomain /etc/passwd</code></pre>
+
+<p>For Windows guests, some Windows paths are understood:</p>
+
+<pre><code> virt-edit -d mywindomain &#39;c:\autoexec.bat&#39;</code></pre>
+
+<p>If Perl is installed, you can also edit files non-interactively (see <a href="#non-interactive-editing">&quot;NON-INTERACTIVE EDITING&quot;</a> below). To change the init default level to 5:</p>
+
+<pre><code> virt-edit -d mydomain /etc/inittab -e &#39;s/^id:.*/id:5:initdefault:/&#39;</code></pre>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display brief help.</p>
+
+</dd>
+<dt><b>-a</b> file</dt>
+<dd>
+
+</dd>
+<dt><b>--add</b> file</dt>
+<dd>
+
+<p>Add <i>file</i> which should be a disk image from a virtual machine. If the virtual machine has multiple block devices, you must supply all of them with separate <i>-a</i> options.</p>
+
+<p>The format of the disk image is auto-detected. To override this and force a particular format use the <i>--format=..</i> option.</p>
+
+</dd>
+<dt><b>-a URI</b></dt>
+<dd>
+
+</dd>
+<dt><b>--add URI</b></dt>
+<dd>
+
+<p>Add a remote disk. See <a href="guestfish.1.html#adding-remote-storage">&quot;ADDING REMOTE STORAGE&quot; in guestfish(1)</a>.</p>
+
+</dd>
+<dt><b>-b</b> extension</dt>
+<dd>
+
+</dd>
+<dt><b>--backup</b> extension</dt>
+<dd>
+
+<p>Create a backup of the original file <i>in the guest disk image</i>. The backup has the original filename with <code>extension</code> added.</p>
+
+<p>Usually the first character of <code>extension</code> would be a dot <code>.</code> so you would write:</p>
+
+<pre><code> virt-edit -b .orig [etc]</code></pre>
+
+<p>By default, no backup file is made.</p>
+
+</dd>
+<dt><b>-c URI</b></dt>
+<dd>
+
+</dd>
+<dt><b>--connect URI</b></dt>
+<dd>
+
+<p>If using libvirt, connect to the given <i>URI</i>. If omitted, then we connect to the default libvirt hypervisor.</p>
+
+<p>If you specify guest block devices directly, then libvirt is not used at all.</p>
+
+</dd>
+<dt><b>-d</b> guest</dt>
+<dd>
+
+</dd>
+<dt><b>--domain</b> guest</dt>
+<dd>
+
+<p>Add all the disks from the named libvirt guest. Domain UUIDs can be used instead of names.</p>
+
+</dd>
+<dt><b>--echo-keys</b></dt>
+<dd>
+
+<p>When prompting for keys and passphrases, virt-edit normally turns echoing off so you cannot see what you are typing. If you are not worried about Tempest attacks and there is no one else in the room you can specify this flag to see what you are typing.</p>
+
+</dd>
+<dt><b>-e</b> EXPR</dt>
+<dd>
+
+</dd>
+<dt><b>--edit</b> EXPR</dt>
+<dd>
+
+</dd>
+<dt><b>--expr</b> EXPR</dt>
+<dd>
+
+<p>Instead of launching the external editor, non-interactively apply the Perl expression <code>EXPR</code> to each line in the file. See <a href="#non-interactive-editing">&quot;NON-INTERACTIVE EDITING&quot;</a> below.</p>
+
+<p>Be careful to properly quote the expression to prevent it from being altered by the shell.</p>
+
+<p>Note that this option is only available when Perl 5 is installed.</p>
+
+</dd>
+<dt><b>--format=raw|qcow2|..</b></dt>
+<dd>
+
+</dd>
+<dt><b>--format</b></dt>
+<dd>
+
+<p>The default for the <i>-a</i> option is to auto-detect the format of the disk image. Using this forces the disk format for <i>-a</i> options which follow on the command line. Using <i>--format</i> with no argument switches back to auto-detection for subsequent <i>-a</i> options.</p>
+
+<p>For example:</p>
+
+<pre><code> virt-edit --format=raw -a disk.img file</code></pre>
+
+<p>forces raw format (no auto-detection) for <i>disk.img</i>.</p>
+
+<pre><code> virt-edit --format=raw -a disk.img --format -a another.img file</code></pre>
+
+<p>forces raw format (no auto-detection) for <i>disk.img</i> and reverts to auto-detection for <i>another.img</i>.</p>
+
+<p>If you have untrusted raw-format guest disk images, you should use this option to specify the disk format. This avoids a possible security problem with malicious guests (CVE-2010-3851).</p>
+
+</dd>
+<dt><b>--keys-from-stdin</b></dt>
+<dd>
+
+<p>Read key or passphrase parameters from stdin. The default is to try to read passphrases from the user by opening <i>/dev/tty</i>.</p>
+
+</dd>
+<dt><b>-m dev[:mountpoint[:options[:fstype]]]</b></dt>
+<dd>
+
+</dd>
+<dt><b>--mount dev[:mountpoint[:options[:fstype]]]</b></dt>
+<dd>
+
+<p>Mount the named partition or logical volume on the given mountpoint.</p>
+
+<p>If the mountpoint is omitted, it defaults to <i>/</i>.</p>
+
+<p>Specifying any mountpoint disables the inspection of the guest and the mount of its root and all of its mountpoints, so make sure to mount all the mountpoints needed to work with the filenames given as arguments.</p>
+
+<p>If you don&#39;t know what filesystems a disk image contains, you can either run guestfish without this option, then list the partitions, filesystems and LVs available (see <a href="#list-partitions">&quot;list-partitions&quot;</a>, <a href="#list-filesystems">&quot;list-filesystems&quot;</a> and <a href="#lvs">&quot;lvs&quot;</a> commands), or you can use the <a href="virt-filesystems.1.html">virt-filesystems(1)</a> program.</p>
+
+<p>The third (and rarely used) part of the mount parameter is the list of mount options used to mount the underlying filesystem. If this is not given, then the mount options are either the empty string or <code>ro</code> (the latter if the <i>--ro</i> flag is used). By specifying the mount options, you override this default choice. Probably the only time you would use this is to enable ACLs and/or extended attributes if the filesystem can support them:</p>
+
+<pre><code> -m /dev/sda1:/:acl,user_xattr</code></pre>
+
+<p>Using this flag is equivalent to using the <code>mount-options</code> command.</p>
+
+<p>The fourth part of the parameter is the filesystem driver to use, such as <code>ext3</code> or <code>ntfs</code>. This is rarely needed, but can be useful if multiple drivers are valid for a filesystem (eg: <code>ext2</code> and <code>ext3</code>), or if libguestfs misidentifies a filesystem.</p>
+
+</dd>
+<dt><b>-v</b></dt>
+<dd>
+
+</dd>
+<dt><b>--verbose</b></dt>
+<dd>
+
+<p>Enable verbose messages for debugging.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+<dt><b>-x</b></dt>
+<dd>
+
+<p>Enable tracing of libguestfs API calls.</p>
+
+</dd>
+</dl>
+
+<h1 id="old-style-command-line-arguments">OLD-STYLE COMMAND LINE ARGUMENTS</h1>
+
+<p>Previous versions of virt-edit allowed you to write either:</p>
+
+<pre><code> virt-edit disk.img [disk.img ...] file</code></pre>
+
+<p>or</p>
+
+<pre><code> virt-edit guestname file</code></pre>
+
+<p>whereas in this version you should use <i>-a</i> or <i>-d</i> respectively to avoid the confusing case where a disk image might have the same name as a guest.</p>
+
+<p>For compatibility the old style is still supported.</p>
+
+<h1 id="non-interactive-editing">NON-INTERACTIVE EDITING</h1>
+
+<p><code>virt-edit</code> normally calls out to <code>$EDITOR</code> (or vi) so the system administrator can interactively edit the file.</p>
+
+<p>There are two ways also to use <code>virt-edit</code> from scripts in order to make automated edits to files. (Note that although you <i>can</i> use <code>virt-edit</code> like this, it&#39;s less error-prone to write scripts directly using the libguestfs API and Augeas for configuration file editing.)</p>
+
+<p>The first method is to temporarily set <code>$EDITOR</code> to any script or program you want to run. The script is invoked as <code>$EDITOR tmpfile</code> and it should update <code>tmpfile</code> in place however it likes.</p>
+
+<p>The second method is to use the <i>-e</i> parameter of <code>virt-edit</code> to run a short Perl snippet in the style of <a href="http://man.he.net/man1/sed">sed(1)</a>. For example to replace all instances of <code>foo</code> with <code>bar</code> in a file:</p>
+
+<pre><code> virt-edit -d domname filename -e &#39;s/foo/bar/&#39;</code></pre>
+
+<p>The full power of Perl regular expressions can be used (see <a href="http://man.he.net/man1/perlre">perlre(1)</a>). For example to delete root&#39;s password you could do:</p>
+
+<pre><code> virt-edit -d domname /etc/passwd -e &#39;s/^root:.*?:/root::/&#39;</code></pre>
+
+<p>What really happens is that the snippet is evaluated as a Perl expression for each line of the file. The line, including the final <code>\n</code>, is passed in <code>$_</code> and the expression should update <code>$_</code> or leave it unchanged.</p>
+
+<p>To delete a line, set <code>$_</code> to the empty string. For example, to delete the <code>apache</code> user account from the password file you can do:</p>
+
+<pre><code> virt-edit -d mydomain /etc/passwd -e &#39;$_ = &quot;&quot; if /^apache:/&#39;</code></pre>
+
+<p>To insert a line, prepend or append it to <code>$_</code>. However appending lines to the end of the file is rather difficult this way since there is no concept of &quot;last line of the file&quot; - your expression just doesn&#39;t get called again. You might want to use the first method (setting <code>$EDITOR</code>) if you want to do this.</p>
+
+<p>The variable <code>$lineno</code> contains the current line number. As is traditional, the first line in the file is number <code>1</code>.</p>
+
+<p>The return value from the expression is ignored, but the expression may call <code>die</code> in order to abort the whole program, leaving the original file untouched.</p>
+
+<p>Remember when matching the end of a line that <code>$_</code> may contain the final <code>\n</code>, or (for DOS files) <code>\r\n</code>, or if the file does not end with a newline then neither of these. Thus to match or substitute some text at the end of a line, use this regular expression:</p>
+
+<pre><code> /some text(\r?\n)?$/</code></pre>
+
+<p>Alternately, use the perl <code>chomp</code> function, being careful not to chomp <code>$_</code> itself (since that would remove all newlines from the file):</p>
+
+<pre><code> my $m = $_; chomp $m; $m =~ /some text$/</code></pre>
+
+<h1 id="windows-paths">WINDOWS PATHS</h1>
+
+<p><code>virt-edit</code> has a limited ability to understand Windows drive letters and paths (eg. <i>E:\foo\bar.txt</i>).</p>
+
+<p>If and only if the guest is running Windows then:</p>
+
+<ul>
+
+<li><p>Drive letter prefixes like <code>C:</code> are resolved against the Windows Registry to the correct filesystem.</p>
+
+</li>
+<li><p>Any backslash (<code>\</code>) characters in the path are replaced with forward slashes so that libguestfs can process it.</p>
+
+</li>
+<li><p>The path is resolved case insensitively to locate the file that should be edited.</p>
+
+</li>
+</ul>
+
+<p>There are some known shortcomings:</p>
+
+<ul>
+
+<li><p>Some NTFS symbolic links may not be followed correctly.</p>
+
+</li>
+<li><p>NTFS junction points that cross filesystems are not followed.</p>
+
+</li>
+</ul>
+
+<h1 id="using-guestfish">USING GUESTFISH</h1>
+
+<p><a href="guestfish.1.html">guestfish(1)</a> is a more powerful, lower level tool which you can use when <code>virt-edit</code> doesn&#39;t work.</p>
+
+<p>Using <code>virt-edit</code> is approximately equivalent to doing:</p>
+
+<pre><code> guestfish --rw -i -d domname edit /file</code></pre>
+
+<p>where <code>domname</code> is the name of the libvirt guest, and <i>/file</i> is the full path to the file.</p>
+
+<p>The command above uses libguestfs&#39;s guest inspection feature and so does not work on guests that libguestfs cannot inspect, or on things like arbitrary disk images that don&#39;t contain guests. To edit a file on a disk image directly, use:</p>
+
+<pre><code> guestfish --rw -a disk.img -m /dev/sda1 edit /file</code></pre>
+
+<p>where <i>disk.img</i> is the disk image, <i>/dev/sda1</i> is the filesystem within the disk image to edit, and <i>/file</i> is the full path to the file.</p>
+
+<p><code>virt-edit</code> cannot create new files. Use the guestfish commands <code>touch</code>, <code>write</code> or <code>upload</code> instead:</p>
+
+<pre><code> guestfish --rw -i -d domname touch /newfile
+
+ guestfish --rw -i -d domname write /newfile &quot;new content&quot;
+
+ guestfish --rw -i -d domname upload localfile /newfile</code></pre>
+
+<h1 id="environment-variables">ENVIRONMENT VARIABLES</h1>
+
+<dl>
+
+<dt><code>EDITOR</code></dt>
+<dd>
+
+<p>If set, this string is used as the editor. It may contain arguments, eg. <code>&quot;emacs -nw&quot;</code></p>
+
+<p>If not set, <code>vi</code> is used.</p>
+
+</dd>
+</dl>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>This program returns 0 if successful, or non-zero if there was an error.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="virt-cat.1.html">virt-cat(1)</a>, <a href="virt-copy-in.1.html">virt-copy-in(1)</a>, <a href="virt-tar-in.1.html">virt-tar-in(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>, <a href="http://man.he.net/man1/perl">perl(1)</a>, <a href="http://man.he.net/man1/perlre">perlre(1)</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2009-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

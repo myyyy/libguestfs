@@ -53,8 +53,7 @@ virt_p2v-config.o: config.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/libintl.h p2v.h \
  miniexpect.h /usr/include/pcre.h ../src/guestfs.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h
+ ../src/guestfs-internal-frontend-cleanups.h
 
 ../config.h:
 
@@ -227,5 +226,3 @@ miniexpect.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:

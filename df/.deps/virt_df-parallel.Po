@@ -45,10 +45,21 @@ virt_df-parallel.o: parallel.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
- /usr/include/libvirt/libvirt.h /usr/include/libvirt/virterror.h \
- ../gnulib/lib/ignore-value.h ../src/guestfs.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/local/include/libvirt/libvirt.h \
+ /usr/local/include/libvirt/libvirt-host.h \
+ /usr/local/include/libvirt/libvirt-domain.h \
+ /usr/local/include/libvirt/libvirt-domain-snapshot.h \
+ /usr/local/include/libvirt/libvirt-event.h \
+ /usr/local/include/libvirt/libvirt-interface.h \
+ /usr/local/include/libvirt/libvirt-network.h \
+ /usr/local/include/libvirt/libvirt-nodedev.h \
+ /usr/local/include/libvirt/libvirt-nwfilter.h \
+ /usr/local/include/libvirt/libvirt-secret.h \
+ /usr/local/include/libvirt/libvirt-storage.h \
+ /usr/local/include/libvirt/libvirt-stream.h \
+ /usr/local/include/libvirt/virterror.h ../gnulib/lib/ignore-value.h \
+ ../src/guestfs.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h \
+ /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
  ../src/guestfs-internal-frontend-cleanups.h ../fish/options.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h domains.h \
@@ -198,9 +209,31 @@ virt_df-parallel.o: parallel.c ../config.h ../gnulib/lib/stdio.h \
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 
-/usr/include/libvirt/libvirt.h:
+/usr/local/include/libvirt/libvirt.h:
 
-/usr/include/libvirt/virterror.h:
+/usr/local/include/libvirt/libvirt-host.h:
+
+/usr/local/include/libvirt/libvirt-domain.h:
+
+/usr/local/include/libvirt/libvirt-domain-snapshot.h:
+
+/usr/local/include/libvirt/libvirt-event.h:
+
+/usr/local/include/libvirt/libvirt-interface.h:
+
+/usr/local/include/libvirt/libvirt-network.h:
+
+/usr/local/include/libvirt/libvirt-nodedev.h:
+
+/usr/local/include/libvirt/libvirt-nwfilter.h:
+
+/usr/local/include/libvirt/libvirt-secret.h:
+
+/usr/local/include/libvirt/libvirt-storage.h:
+
+/usr/local/include/libvirt/libvirt-stream.h:
+
+/usr/local/include/libvirt/virterror.h:
 
 ../gnulib/lib/ignore-value.h:
 

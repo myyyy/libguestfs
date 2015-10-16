@@ -1,0 +1,1933 @@
+"JSON.ml" 36 1038 1042 "JSON.ml" 36 1038 1059
+type(
+  int -> string
+)
+ident(
+  def spaces_for_indent "JSON.ml" 42 1156 1156 --
+)
+"JSON.ml" 36 1038 1060 "JSON.ml" 36 1038 1065
+type(
+  int
+)
+ident(
+  def level "JSON.ml" 37 1068 1070 "JSON.ml" 40 1151 1154
+)
+"JSON.ml" 37 1068 1074 "JSON.ml" 37 1068 1077
+type(
+  int
+)
+"JSON.ml" 37 1068 1080 "JSON.ml" 37 1068 1085
+type(
+  int
+)
+ident(
+  int_ref level "JSON.ml" 36 1038 1060 "JSON.ml" 36 1038 1065
+)
+"JSON.ml" 37 1068 1086 "JSON.ml" 37 1068 1087
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"JSON.ml" 37 1068 1088 "JSON.ml" 37 1068 1089
+type(
+  int
+)
+"JSON.ml" 37 1068 1080 "JSON.ml" 37 1068 1089
+type(
+  int
+)
+"JSON.ml" 38 1093 1099 "JSON.ml" 38 1093 1100
+type(
+  string
+)
+"JSON.ml" 38 1093 1103 "JSON.ml" 38 1093 1116
+type(
+  int -> string
+)
+ident(
+  ext_ref String.create
+)
+"JSON.ml" 38 1093 1117 "JSON.ml" 38 1093 1120
+type(
+  int
+)
+ident(
+  int_ref len "JSON.ml" 37 1068 1074 "JSON.ml" 37 1068 1077
+)
+"JSON.ml" 38 1093 1103 "JSON.ml" 38 1093 1120
+type(
+  string
+)
+"JSON.ml" 39 1124 1126 "JSON.ml" 39 1124 1137
+type(
+  string -> int -> int -> char -> unit
+)
+ident(
+  ext_ref String.fill
+)
+"JSON.ml" 39 1124 1138 "JSON.ml" 39 1124 1139
+type(
+  string
+)
+ident(
+  int_ref s "JSON.ml" 38 1093 1099 "JSON.ml" 38 1093 1100
+)
+"JSON.ml" 39 1124 1140 "JSON.ml" 39 1124 1141
+type(
+  int
+)
+"JSON.ml" 39 1124 1142 "JSON.ml" 39 1124 1145
+type(
+  int
+)
+ident(
+  int_ref len "JSON.ml" 37 1068 1074 "JSON.ml" 37 1068 1077
+)
+"JSON.ml" 39 1124 1146 "JSON.ml" 39 1124 1149
+type(
+  char
+)
+"JSON.ml" 39 1124 1126 "JSON.ml" 39 1124 1149
+call(
+  stack
+)
+type(
+  unit
+)
+"JSON.ml" 40 1151 1153 "JSON.ml" 40 1151 1154
+type(
+  string
+)
+ident(
+  int_ref s "JSON.ml" 38 1093 1099 "JSON.ml" 38 1093 1100
+)
+"JSON.ml" 39 1124 1126 "JSON.ml" 40 1151 1154
+type(
+  string
+)
+"JSON.ml" 38 1093 1095 "JSON.ml" 40 1151 1154
+type(
+  string
+)
+"JSON.ml" 37 1068 1070 "JSON.ml" 40 1151 1154
+type(
+  string
+)
+"JSON.ml" 42 1156 1160 "JSON.ml" 42 1156 1182
+type(
+  fmt:output_format -> indent:'a -> size:int -> string
+)
+ident(
+  def print_dict_after_start "JSON.ml" 48 1301 1301 --
+)
+"JSON.ml" 42 1156 1184 "JSON.ml" 42 1156 1187
+type(
+  output_format
+)
+ident(
+  def fmt "JSON.ml" 42 1156 1188 "JSON.ml" 46 1274 1299
+)
+"JSON.ml" 42 1156 1189 "JSON.ml" 42 1156 1195
+type(
+  'a
+)
+ident(
+  def indent "JSON.ml" 42 1156 1196 "JSON.ml" 46 1274 1299
+)
+"JSON.ml" 42 1156 1197 "JSON.ml" 42 1156 1201
+type(
+  int
+)
+ident(
+  def size "JSON.ml" 43 1204 1206 "JSON.ml" 46 1274 1299
+)
+"JSON.ml" 43 1204 1212 "JSON.ml" 43 1204 1216
+type(
+  int
+)
+ident(
+  int_ref size "JSON.ml" 42 1156 1197 "JSON.ml" 42 1156 1201
+)
+"JSON.ml" 43 1204 1218 "JSON.ml" 43 1204 1221
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 42 1156 1184 "JSON.ml" 42 1156 1187
+)
+"JSON.ml" 43 1204 1212 "JSON.ml" 43 1204 1221
+type(
+  int * output_format
+)
+"JSON.ml" 44 1227 1233 "JSON.ml" 44 1227 1234
+type(
+  int
+)
+"JSON.ml" 44 1227 1236 "JSON.ml" 44 1227 1243
+type(
+  output_format
+)
+"JSON.ml" 44 1227 1233 "JSON.ml" 44 1227 1243
+type(
+  int * output_format
+)
+"JSON.ml" 44 1227 1247 "JSON.ml" 44 1227 1249
+type(
+  string
+)
+"JSON.ml" 45 1250 1256 "JSON.ml" 45 1250 1257
+type(
+  int
+)
+"JSON.ml" 45 1250 1259 "JSON.ml" 45 1250 1266
+type(
+  output_format
+)
+"JSON.ml" 45 1250 1256 "JSON.ml" 45 1250 1266
+type(
+  int * output_format
+)
+"JSON.ml" 45 1250 1270 "JSON.ml" 45 1250 1273
+type(
+  string
+)
+"JSON.ml" 46 1274 1280 "JSON.ml" 46 1274 1281
+type(
+  int
+)
+"JSON.ml" 46 1274 1283 "JSON.ml" 46 1274 1291
+type(
+  output_format
+)
+"JSON.ml" 46 1274 1280 "JSON.ml" 46 1274 1291
+type(
+  int * output_format
+)
+"JSON.ml" 46 1274 1295 "JSON.ml" 46 1274 1299
+type(
+  string
+)
+"JSON.ml" 43 1204 1206 "JSON.ml" 46 1274 1299
+type(
+  string
+)
+"JSON.ml" 48 1301 1305 "JSON.ml" 48 1301 1326
+type(
+  fmt:output_format -> indent:'a -> size:int -> string
+)
+ident(
+  def print_dict_before_end "JSON.ml" 54 1439 1439 --
+)
+"JSON.ml" 48 1301 1328 "JSON.ml" 48 1301 1331
+type(
+  output_format
+)
+ident(
+  def fmt "JSON.ml" 48 1301 1332 "JSON.ml" 52 1412 1437
+)
+"JSON.ml" 48 1301 1333 "JSON.ml" 48 1301 1339
+type(
+  'a
+)
+ident(
+  def indent "JSON.ml" 48 1301 1340 "JSON.ml" 52 1412 1437
+)
+"JSON.ml" 48 1301 1341 "JSON.ml" 48 1301 1345
+type(
+  int
+)
+ident(
+  def size "JSON.ml" 49 1348 1350 "JSON.ml" 52 1412 1437
+)
+"JSON.ml" 49 1348 1356 "JSON.ml" 49 1348 1360
+type(
+  int
+)
+ident(
+  int_ref size "JSON.ml" 48 1301 1341 "JSON.ml" 48 1301 1345
+)
+"JSON.ml" 49 1348 1362 "JSON.ml" 49 1348 1365
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 48 1301 1328 "JSON.ml" 48 1301 1331
+)
+"JSON.ml" 49 1348 1356 "JSON.ml" 49 1348 1365
+type(
+  int * output_format
+)
+"JSON.ml" 50 1371 1377 "JSON.ml" 50 1371 1378
+type(
+  int
+)
+"JSON.ml" 50 1371 1380 "JSON.ml" 50 1371 1381
+type(
+  output_format
+)
+"JSON.ml" 50 1371 1377 "JSON.ml" 50 1371 1381
+type(
+  int * output_format
+)
+"JSON.ml" 50 1371 1385 "JSON.ml" 50 1371 1387
+type(
+  string
+)
+"JSON.ml" 51 1388 1394 "JSON.ml" 51 1388 1395
+type(
+  int
+)
+"JSON.ml" 51 1388 1397 "JSON.ml" 51 1388 1404
+type(
+  output_format
+)
+"JSON.ml" 51 1388 1394 "JSON.ml" 51 1388 1404
+type(
+  int * output_format
+)
+"JSON.ml" 51 1388 1408 "JSON.ml" 51 1388 1411
+type(
+  string
+)
+"JSON.ml" 52 1412 1418 "JSON.ml" 52 1412 1419
+type(
+  int
+)
+"JSON.ml" 52 1412 1421 "JSON.ml" 52 1412 1429
+type(
+  output_format
+)
+"JSON.ml" 52 1412 1418 "JSON.ml" 52 1412 1429
+type(
+  int * output_format
+)
+"JSON.ml" 52 1412 1433 "JSON.ml" 52 1412 1437
+type(
+  string
+)
+"JSON.ml" 49 1348 1350 "JSON.ml" 52 1412 1437
+type(
+  string
+)
+"JSON.ml" 54 1439 1443 "JSON.ml" 54 1439 1455
+type(
+  fmt:output_format -> indent:int -> string
+)
+ident(
+  def print_indent "JSON.ml" 60 1568 1568 --
+)
+"JSON.ml" 54 1439 1457 "JSON.ml" 54 1439 1460
+type(
+  output_format
+)
+ident(
+  def fmt "JSON.ml" 54 1439 1461 "JSON.ml" 57 1506 1546
+)
+"JSON.ml" 54 1439 1462 "JSON.ml" 54 1439 1468
+type(
+  int
+)
+ident(
+  def indent "JSON.ml" 55 1471 1473 "JSON.ml" 57 1506 1546
+)
+"JSON.ml" 55 1471 1479 "JSON.ml" 55 1471 1482
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 54 1439 1457 "JSON.ml" 54 1439 1460
+)
+"JSON.ml" 56 1488 1492 "JSON.ml" 56 1488 1499
+type(
+  output_format
+)
+"JSON.ml" 56 1488 1503 "JSON.ml" 56 1488 1505
+type(
+  string
+)
+"JSON.ml" 57 1506 1510 "JSON.ml" 57 1506 1518
+type(
+  output_format
+)
+"JSON.ml" 57 1506 1522 "JSON.ml" 57 1506 1539
+type(
+  int -> string
+)
+ident(
+  int_ref spaces_for_indent "JSON.ml" 36 1038 1042 "JSON.ml" 36 1038 1059
+)
+"JSON.ml" 57 1506 1540 "JSON.ml" 57 1506 1546
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 54 1439 1462 "JSON.ml" 54 1439 1468
+)
+"JSON.ml" 57 1506 1522 "JSON.ml" 57 1506 1546
+call(
+  tail
+)
+type(
+  string
+)
+"JSON.ml" 55 1471 1473 "JSON.ml" 57 1506 1546
+type(
+  string
+)
+"JSON.ml" 60 1568 1572 "JSON.ml" 60 1568 1590
+type(
+  string -> string
+)
+ident(
+  def json_escape_string "JSON.ml" 74 1876 1876 --
+)
+"JSON.ml" 60 1568 1591 "JSON.ml" 60 1568 1594
+type(
+  string
+)
+ident(
+  def str "JSON.ml" 61 1597 1599 "JSON.ml" 72 1868 1874
+)
+"JSON.ml" 61 1597 1603 "JSON.ml" 61 1597 1606
+type(
+  string ref
+)
+"JSON.ml" 61 1597 1609 "JSON.ml" 61 1597 1612
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"JSON.ml" 61 1597 1613 "JSON.ml" 61 1597 1615
+type(
+  string
+)
+"JSON.ml" 61 1597 1609 "JSON.ml" 61 1597 1615
+type(
+  string ref
+)
+"JSON.ml" 62 1619 1629 "JSON.ml" 62 1619 1630
+type(
+  int
+)
+"JSON.ml" 62 1619 1634 "JSON.ml" 62 1619 1647
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"JSON.ml" 62 1619 1648 "JSON.ml" 62 1619 1651
+type(
+  string
+)
+ident(
+  int_ref str "JSON.ml" 60 1568 1591 "JSON.ml" 60 1568 1594
+)
+"JSON.ml" 62 1619 1634 "JSON.ml" 62 1619 1651
+type(
+  int
+)
+"JSON.ml" 62 1619 1652 "JSON.ml" 62 1619 1653
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"JSON.ml" 62 1619 1654 "JSON.ml" 62 1619 1655
+type(
+  int
+)
+"JSON.ml" 62 1619 1634 "JSON.ml" 62 1619 1655
+type(
+  int
+)
+"JSON.ml" 63 1659 1663 "JSON.ml" 63 1659 1666
+type(
+  string ref
+)
+ident(
+  int_ref res "JSON.ml" 61 1597 1603 "JSON.ml" 61 1597 1606
+)
+"JSON.ml" 63 1659 1667 "JSON.ml" 63 1659 1669
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"JSON.ml" 63 1659 1670 "JSON.ml" 63 1659 1671
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"JSON.ml" 63 1659 1671 "JSON.ml" 63 1659 1674
+type(
+  string ref
+)
+ident(
+  int_ref res "JSON.ml" 61 1597 1603 "JSON.ml" 61 1597 1606
+)
+"JSON.ml" 63 1659 1670 "JSON.ml" 63 1659 1674
+type(
+  string
+)
+"JSON.ml" 63 1659 1675 "JSON.ml" 63 1659 1676
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 63 1659 1684 "JSON.ml" 63 1659 1687
+type(
+  string
+)
+ident(
+  int_ref str "JSON.ml" 60 1568 1591 "JSON.ml" 60 1568 1594
+)
+"JSON.ml" 63 1659 1689 "JSON.ml" 63 1659 1690
+type(
+  int
+)
+"JSON.ml" 63 1659 1684 "JSON.ml" 63 1659 1691
+type(
+  char
+)
+"JSON.ml" 64 1697 1705 "JSON.ml" 64 1697 1708
+type(
+  char
+)
+"JSON.ml" 64 1697 1712 "JSON.ml" 64 1697 1718
+type(
+  string
+)
+"JSON.ml" 65 1719 1727 "JSON.ml" 65 1719 1731
+type(
+  char
+)
+"JSON.ml" 65 1719 1735 "JSON.ml" 65 1719 1741
+type(
+  string
+)
+"JSON.ml" 66 1742 1750 "JSON.ml" 66 1742 1754
+type(
+  char
+)
+"JSON.ml" 66 1742 1758 "JSON.ml" 66 1742 1763
+type(
+  string
+)
+"JSON.ml" 67 1764 1772 "JSON.ml" 67 1764 1776
+type(
+  char
+)
+"JSON.ml" 67 1764 1780 "JSON.ml" 67 1764 1785
+type(
+  string
+)
+"JSON.ml" 68 1786 1794 "JSON.ml" 68 1786 1798
+type(
+  char
+)
+"JSON.ml" 68 1786 1802 "JSON.ml" 68 1786 1807
+type(
+  string
+)
+"JSON.ml" 69 1808 1816 "JSON.ml" 69 1808 1820
+type(
+  char
+)
+"JSON.ml" 69 1808 1824 "JSON.ml" 69 1808 1829
+type(
+  string
+)
+"JSON.ml" 70 1830 1838 "JSON.ml" 70 1830 1839
+type(
+  char
+)
+ident(
+  def c "JSON.ml" 70 1830 1843 "JSON.ml" 70 1830 1858
+)
+"JSON.ml" 70 1830 1843 "JSON.ml" 70 1830 1854
+type(
+  int -> char -> string
+)
+ident(
+  ext_ref String.make
+)
+"JSON.ml" 70 1830 1855 "JSON.ml" 70 1830 1856
+type(
+  int
+)
+"JSON.ml" 70 1830 1857 "JSON.ml" 70 1830 1858
+type(
+  char
+)
+ident(
+  int_ref c "JSON.ml" 70 1830 1838 "JSON.ml" 70 1830 1839
+)
+"JSON.ml" 70 1830 1843 "JSON.ml" 70 1830 1858
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 63 1659 1677 "JSON.ml" 70 1830 1859
+type(
+  string
+)
+"JSON.ml" 63 1659 1670 "JSON.ml" 70 1830 1859
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 63 1659 1663 "JSON.ml" 70 1830 1859
+type(
+  unit
+)
+"JSON.ml" 62 1619 1621 "JSON.ml" 71 1860 1866
+type(
+  unit
+)
+"JSON.ml" 72 1868 1870 "JSON.ml" 72 1868 1871
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"JSON.ml" 72 1868 1871 "JSON.ml" 72 1868 1874
+type(
+  string ref
+)
+ident(
+  int_ref res "JSON.ml" 61 1597 1603 "JSON.ml" 61 1597 1606
+)
+"JSON.ml" 72 1868 1870 "JSON.ml" 72 1868 1874
+type(
+  string
+)
+"JSON.ml" 62 1619 1621 "JSON.ml" 72 1868 1874
+type(
+  string
+)
+"JSON.ml" 61 1597 1599 "JSON.ml" 72 1868 1874
+type(
+  string
+)
+"JSON.ml" 74 1876 1880 "JSON.ml" 74 1876 1897
+type(
+  string -> string
+)
+ident(
+  def json_quote_string "JSON.ml" 77 1946 1946 --
+)
+"JSON.ml" 74 1876 1898 "JSON.ml" 74 1876 1901
+type(
+  string
+)
+ident(
+  def str "JSON.ml" 75 1904 1906 "JSON.ml" 75 1904 1944
+)
+"JSON.ml" 75 1904 1906 "JSON.ml" 75 1904 1910
+type(
+  string
+)
+"JSON.ml" 75 1904 1911 "JSON.ml" 75 1904 1912
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 75 1904 1914 "JSON.ml" 75 1904 1932
+type(
+  string -> string
+)
+ident(
+  int_ref json_escape_string "JSON.ml" 60 1568 1572 "JSON.ml" 60 1568 1590
+)
+"JSON.ml" 75 1904 1933 "JSON.ml" 75 1904 1936
+type(
+  string
+)
+ident(
+  int_ref str "JSON.ml" 74 1876 1898 "JSON.ml" 74 1876 1901
+)
+"JSON.ml" 75 1904 1913 "JSON.ml" 75 1904 1937
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 75 1904 1938 "JSON.ml" 75 1904 1939
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 75 1904 1940 "JSON.ml" 75 1904 1944
+type(
+  string
+)
+"JSON.ml" 75 1904 1913 "JSON.ml" 75 1904 1944
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 75 1904 1906 "JSON.ml" 75 1904 1944
+call(
+  tail
+)
+type(
+  string
+)
+"JSON.ml" 77 1946 1954 "JSON.ml" 77 1946 1965
+type(
+  field list -> fmt:output_format -> indent:int -> string
+)
+ident(
+  def output_dict "JSON.ml" 77 1946 1946 --
+)
+"JSON.ml" 77 1946 1966 "JSON.ml" 77 1946 1972
+type(
+  field list
+)
+ident(
+  def fields "JSON.ml" 77 1946 1973 "JSON.ml" 91 2379 2461
+)
+"JSON.ml" 77 1946 1974 "JSON.ml" 77 1946 1977
+type(
+  output_format
+)
+ident(
+  def fmt "JSON.ml" 77 1946 1978 "JSON.ml" 91 2379 2461
+)
+"JSON.ml" 77 1946 1979 "JSON.ml" 77 1946 1985
+type(
+  int
+)
+ident(
+  def indent "JSON.ml" 78 1988 1990 "JSON.ml" 91 2379 2461
+)
+"JSON.ml" 78 1988 1994 "JSON.ml" 78 1988 1998
+type(
+  int
+)
+"JSON.ml" 78 1988 2001 "JSON.ml" 78 1988 2012
+type(
+  field list -> int
+)
+ident(
+  ext_ref List.length
+)
+"JSON.ml" 78 1988 2013 "JSON.ml" 78 1988 2019
+type(
+  field list
+)
+ident(
+  int_ref fields "JSON.ml" 77 1946 1966 "JSON.ml" 77 1946 1972
+)
+"JSON.ml" 78 1988 2001 "JSON.ml" 78 1988 2019
+call(
+  stack
+)
+type(
+  int
+)
+"JSON.ml" 79 2023 2029 "JSON.ml" 79 2023 2039
+type(
+  string
+)
+"JSON.ml" 80 2042 2052 "JSON.ml" 80 2042 2055
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 77 1946 1974 "JSON.ml" 77 1946 1977
+)
+"JSON.ml" 81 2061 2067 "JSON.ml" 81 2061 2074
+type(
+  output_format
+)
+"JSON.ml" 81 2061 2078 "JSON.ml" 81 2061 2082
+type(
+  string
+)
+"JSON.ml" 82 2083 2089 "JSON.ml" 82 2083 2097
+type(
+  output_format
+)
+"JSON.ml" 82 2083 2101 "JSON.ml" 82 2083 2106
+type(
+  string
+)
+"JSON.ml" 80 2042 2046 "JSON.ml" 82 2083 2106
+type(
+  string
+)
+"JSON.ml" 83 2110 2112 "JSON.ml" 83 2110 2115
+type(
+  string
+)
+"JSON.ml" 83 2110 2116 "JSON.ml" 83 2110 2117
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 83 2110 2119 "JSON.ml" 83 2110 2141
+type(
+  fmt:output_format -> indent:int -> size:int -> string
+)
+ident(
+  int_ref print_dict_after_start "JSON.ml" 42 1156 1160 "JSON.ml" 42 1156 1182
+)
+"JSON.ml" 83 2110 2143 "JSON.ml" 83 2110 2146
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 77 1946 1974 "JSON.ml" 77 1946 1977
+)
+"JSON.ml" 83 2110 2148 "JSON.ml" 83 2110 2154
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 77 1946 1979 "JSON.ml" 77 1946 1985
+)
+"JSON.ml" 83 2110 2156 "JSON.ml" 83 2110 2160
+type(
+  int
+)
+ident(
+  int_ref size "JSON.ml" 78 1988 1994 "JSON.ml" 78 1988 1998
+)
+"JSON.ml" 83 2110 2118 "JSON.ml" 83 2110 2161
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 83 2110 2162 "JSON.ml" 83 2110 2163
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 84 2164 2168 "JSON.ml" 84 2164 2181
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"JSON.ml" 84 2164 2182 "JSON.ml" 84 2164 2192
+type(
+  string
+)
+ident(
+  int_ref newlinesep "JSON.ml" 79 2023 2029 "JSON.ml" 79 2023 2039
+)
+"JSON.ml" 85 2195 2201 "JSON.ml" 85 2195 2209
+type(
+  (field -> string) -> field list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"JSON.ml" 86 2212 2225 "JSON.ml" 86 2212 2226
+type(
+  string
+)
+ident(
+  def n "JSON.ml" 87 2234 2244 "JSON.ml" 88 2309 2357
+)
+"JSON.ml" 86 2212 2228 "JSON.ml" 86 2212 2229
+type(
+  json_t
+)
+ident(
+  def f "JSON.ml" 87 2234 2244 "JSON.ml" 88 2309 2357
+)
+"JSON.ml" 86 2212 2224 "JSON.ml" 86 2212 2230
+type(
+  field
+)
+"JSON.ml" 87 2234 2245 "JSON.ml" 87 2234 2257
+type(
+  fmt:output_format -> indent:int -> string
+)
+ident(
+  int_ref print_indent "JSON.ml" 54 1439 1443 "JSON.ml" 54 1439 1455
+)
+"JSON.ml" 87 2234 2259 "JSON.ml" 87 2234 2262
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 77 1946 1974 "JSON.ml" 77 1946 1977
+)
+"JSON.ml" 87 2234 2272 "JSON.ml" 87 2234 2278
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 77 1946 1979 "JSON.ml" 77 1946 1985
+)
+"JSON.ml" 87 2234 2279 "JSON.ml" 87 2234 2280
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"JSON.ml" 87 2234 2281 "JSON.ml" 87 2234 2282
+type(
+  int
+)
+"JSON.ml" 87 2234 2271 "JSON.ml" 87 2234 2283
+type(
+  int
+)
+"JSON.ml" 87 2234 2244 "JSON.ml" 87 2234 2284
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 87 2234 2285 "JSON.ml" 87 2234 2286
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 87 2234 2288 "JSON.ml" 87 2234 2305
+type(
+  string -> string
+)
+ident(
+  int_ref json_quote_string "JSON.ml" 74 1876 1880 "JSON.ml" 74 1876 1897
+)
+"JSON.ml" 87 2234 2306 "JSON.ml" 87 2234 2307
+type(
+  string
+)
+ident(
+  int_ref n "JSON.ml" 86 2212 2225 "JSON.ml" 86 2212 2226
+)
+"JSON.ml" 87 2234 2287 "JSON.ml" 87 2234 2308
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 88 2309 2319 "JSON.ml" 88 2309 2320
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 88 2309 2321 "JSON.ml" 88 2309 2325
+type(
+  string
+)
+"JSON.ml" 88 2309 2326 "JSON.ml" 88 2309 2327
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 88 2309 2329 "JSON.ml" 88 2309 2341
+type(
+  indent:int -> fmt:output_format -> json_t -> string
+)
+ident(
+  int_ref output_field "JSON.ml" 108 2930 2934 "JSON.ml" 108 2930 2946
+)
+"JSON.ml" 88 2309 2343 "JSON.ml" 88 2309 2346
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 77 1946 1974 "JSON.ml" 77 1946 1977
+)
+"JSON.ml" 88 2309 2348 "JSON.ml" 88 2309 2354
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 77 1946 1979 "JSON.ml" 77 1946 1985
+)
+"JSON.ml" 88 2309 2355 "JSON.ml" 88 2309 2356
+type(
+  json_t
+)
+ident(
+  int_ref f "JSON.ml" 86 2212 2228 "JSON.ml" 86 2212 2229
+)
+"JSON.ml" 88 2309 2328 "JSON.ml" 88 2309 2357
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 88 2309 2321 "JSON.ml" 88 2309 2357
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 87 2234 2287 "JSON.ml" 88 2309 2357
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 87 2234 2244 "JSON.ml" 88 2309 2357
+call(
+  tail
+)
+type(
+  string
+)
+"JSON.ml" 85 2195 2210 "JSON.ml" 89 2358 2365
+type(
+  field -> string
+)
+"JSON.ml" 89 2358 2366 "JSON.ml" 89 2358 2372
+type(
+  field list
+)
+ident(
+  int_ref fields "JSON.ml" 77 1946 1966 "JSON.ml" 77 1946 1972
+)
+"JSON.ml" 84 2164 2193 "JSON.ml" 90 2373 2378
+call(
+  stack
+)
+type(
+  string list
+)
+"JSON.ml" 84 2164 2168 "JSON.ml" 90 2373 2378
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 91 2379 2381 "JSON.ml" 91 2379 2382
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 91 2379 2384 "JSON.ml" 91 2379 2405
+type(
+  fmt:output_format -> indent:int -> size:int -> string
+)
+ident(
+  int_ref print_dict_before_end "JSON.ml" 48 1301 1305 "JSON.ml" 48 1301 1326
+)
+"JSON.ml" 91 2379 2407 "JSON.ml" 91 2379 2410
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 77 1946 1974 "JSON.ml" 77 1946 1977
+)
+"JSON.ml" 91 2379 2412 "JSON.ml" 91 2379 2418
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 77 1946 1979 "JSON.ml" 77 1946 1985
+)
+"JSON.ml" 91 2379 2420 "JSON.ml" 91 2379 2424
+type(
+  int
+)
+ident(
+  int_ref size "JSON.ml" 78 1988 1994 "JSON.ml" 78 1988 1998
+)
+"JSON.ml" 91 2379 2383 "JSON.ml" 91 2379 2425
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 91 2379 2426 "JSON.ml" 91 2379 2427
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 91 2379 2429 "JSON.ml" 91 2379 2441
+type(
+  fmt:output_format -> indent:int -> string
+)
+ident(
+  int_ref print_indent "JSON.ml" 54 1439 1443 "JSON.ml" 54 1439 1455
+)
+"JSON.ml" 91 2379 2443 "JSON.ml" 91 2379 2446
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 77 1946 1974 "JSON.ml" 77 1946 1977
+)
+"JSON.ml" 91 2379 2448 "JSON.ml" 91 2379 2454
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 77 1946 1979 "JSON.ml" 77 1946 1985
+)
+"JSON.ml" 91 2379 2428 "JSON.ml" 91 2379 2455
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 91 2379 2456 "JSON.ml" 91 2379 2457
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 91 2379 2458 "JSON.ml" 91 2379 2461
+type(
+  string
+)
+"JSON.ml" 91 2379 2428 "JSON.ml" 91 2379 2461
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 91 2379 2383 "JSON.ml" 91 2379 2461
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 84 2164 2168 "JSON.ml" 91 2379 2461
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 83 2110 2118 "JSON.ml" 91 2379 2461
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 83 2110 2112 "JSON.ml" 91 2379 2461
+call(
+  tail
+)
+type(
+  string
+)
+"JSON.ml" 79 2023 2025 "JSON.ml" 91 2379 2461
+type(
+  string
+)
+"JSON.ml" 78 1988 1990 "JSON.ml" 91 2379 2461
+type(
+  string
+)
+"JSON.ml" 93 2463 2467 "JSON.ml" 93 2463 2478
+type(
+  json_t list -> fmt:output_format -> indent:int -> string
+)
+ident(
+  def output_list "JSON.ml" 77 1946 1946 --
+)
+"JSON.ml" 93 2463 2479 "JSON.ml" 93 2463 2485
+type(
+  json_t list
+)
+ident(
+  def fields "JSON.ml" 93 2463 2486 "JSON.ml" 106 2846 2928
+)
+"JSON.ml" 93 2463 2487 "JSON.ml" 93 2463 2490
+type(
+  output_format
+)
+ident(
+  def fmt "JSON.ml" 93 2463 2491 "JSON.ml" 106 2846 2928
+)
+"JSON.ml" 93 2463 2492 "JSON.ml" 93 2463 2498
+type(
+  int
+)
+ident(
+  def indent "JSON.ml" 94 2501 2503 "JSON.ml" 106 2846 2928
+)
+"JSON.ml" 94 2501 2507 "JSON.ml" 94 2501 2511
+type(
+  int
+)
+"JSON.ml" 94 2501 2514 "JSON.ml" 94 2501 2525
+type(
+  json_t list -> int
+)
+ident(
+  ext_ref List.length
+)
+"JSON.ml" 94 2501 2526 "JSON.ml" 94 2501 2532
+type(
+  json_t list
+)
+ident(
+  int_ref fields "JSON.ml" 93 2463 2479 "JSON.ml" 93 2463 2485
+)
+"JSON.ml" 94 2501 2514 "JSON.ml" 94 2501 2532
+call(
+  stack
+)
+type(
+  int
+)
+"JSON.ml" 95 2536 2542 "JSON.ml" 95 2536 2552
+type(
+  string
+)
+"JSON.ml" 96 2555 2565 "JSON.ml" 96 2555 2568
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 93 2463 2487 "JSON.ml" 93 2463 2490
+)
+"JSON.ml" 97 2574 2580 "JSON.ml" 97 2574 2587
+type(
+  output_format
+)
+"JSON.ml" 97 2574 2591 "JSON.ml" 97 2574 2595
+type(
+  string
+)
+"JSON.ml" 98 2596 2602 "JSON.ml" 98 2596 2610
+type(
+  output_format
+)
+"JSON.ml" 98 2596 2614 "JSON.ml" 98 2596 2619
+type(
+  string
+)
+"JSON.ml" 96 2555 2559 "JSON.ml" 98 2596 2619
+type(
+  string
+)
+"JSON.ml" 99 2623 2625 "JSON.ml" 99 2623 2628
+type(
+  string
+)
+"JSON.ml" 99 2623 2629 "JSON.ml" 99 2623 2630
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 99 2623 2632 "JSON.ml" 99 2623 2654
+type(
+  fmt:output_format -> indent:int -> size:int -> string
+)
+ident(
+  int_ref print_dict_after_start "JSON.ml" 42 1156 1160 "JSON.ml" 42 1156 1182
+)
+"JSON.ml" 99 2623 2656 "JSON.ml" 99 2623 2659
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 93 2463 2487 "JSON.ml" 93 2463 2490
+)
+"JSON.ml" 99 2623 2661 "JSON.ml" 99 2623 2667
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 93 2463 2492 "JSON.ml" 93 2463 2498
+)
+"JSON.ml" 99 2623 2669 "JSON.ml" 99 2623 2673
+type(
+  int
+)
+ident(
+  int_ref size "JSON.ml" 94 2501 2507 "JSON.ml" 94 2501 2511
+)
+"JSON.ml" 99 2623 2631 "JSON.ml" 99 2623 2674
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 99 2623 2675 "JSON.ml" 99 2623 2676
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 100 2677 2681 "JSON.ml" 100 2677 2694
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"JSON.ml" 100 2677 2695 "JSON.ml" 100 2677 2705
+type(
+  string
+)
+ident(
+  int_ref newlinesep "JSON.ml" 95 2536 2542 "JSON.ml" 95 2536 2552
+)
+"JSON.ml" 101 2708 2714 "JSON.ml" 101 2708 2722
+type(
+  (json_t -> string) -> json_t list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"JSON.ml" 102 2725 2737 "JSON.ml" 102 2725 2738
+type(
+  json_t
+)
+ident(
+  def f "JSON.ml" 103 2742 2752 "JSON.ml" 103 2742 2824
+)
+"JSON.ml" 103 2742 2753 "JSON.ml" 103 2742 2765
+type(
+  fmt:output_format -> indent:int -> string
+)
+ident(
+  int_ref print_indent "JSON.ml" 54 1439 1443 "JSON.ml" 54 1439 1455
+)
+"JSON.ml" 103 2742 2767 "JSON.ml" 103 2742 2770
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 93 2463 2487 "JSON.ml" 93 2463 2490
+)
+"JSON.ml" 103 2742 2780 "JSON.ml" 103 2742 2786
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 93 2463 2492 "JSON.ml" 93 2463 2498
+)
+"JSON.ml" 103 2742 2787 "JSON.ml" 103 2742 2788
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"JSON.ml" 103 2742 2789 "JSON.ml" 103 2742 2790
+type(
+  int
+)
+"JSON.ml" 103 2742 2779 "JSON.ml" 103 2742 2791
+type(
+  int
+)
+"JSON.ml" 103 2742 2752 "JSON.ml" 103 2742 2792
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 103 2742 2793 "JSON.ml" 103 2742 2794
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 103 2742 2796 "JSON.ml" 103 2742 2808
+type(
+  indent:int -> fmt:output_format -> json_t -> string
+)
+ident(
+  int_ref output_field "JSON.ml" 108 2930 2934 "JSON.ml" 108 2930 2946
+)
+"JSON.ml" 103 2742 2810 "JSON.ml" 103 2742 2813
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 93 2463 2487 "JSON.ml" 93 2463 2490
+)
+"JSON.ml" 103 2742 2815 "JSON.ml" 103 2742 2821
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 93 2463 2492 "JSON.ml" 93 2463 2498
+)
+"JSON.ml" 103 2742 2822 "JSON.ml" 103 2742 2823
+type(
+  json_t
+)
+ident(
+  int_ref f "JSON.ml" 102 2725 2737 "JSON.ml" 102 2725 2738
+)
+"JSON.ml" 103 2742 2795 "JSON.ml" 103 2742 2824
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 103 2742 2752 "JSON.ml" 103 2742 2824
+call(
+  tail
+)
+type(
+  string
+)
+"JSON.ml" 101 2708 2723 "JSON.ml" 104 2825 2832
+type(
+  json_t -> string
+)
+"JSON.ml" 104 2825 2833 "JSON.ml" 104 2825 2839
+type(
+  json_t list
+)
+ident(
+  int_ref fields "JSON.ml" 93 2463 2479 "JSON.ml" 93 2463 2485
+)
+"JSON.ml" 100 2677 2706 "JSON.ml" 105 2840 2845
+call(
+  stack
+)
+type(
+  string list
+)
+"JSON.ml" 100 2677 2681 "JSON.ml" 105 2840 2845
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 106 2846 2848 "JSON.ml" 106 2846 2849
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 106 2846 2851 "JSON.ml" 106 2846 2872
+type(
+  fmt:output_format -> indent:int -> size:int -> string
+)
+ident(
+  int_ref print_dict_before_end "JSON.ml" 48 1301 1305 "JSON.ml" 48 1301 1326
+)
+"JSON.ml" 106 2846 2874 "JSON.ml" 106 2846 2877
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 93 2463 2487 "JSON.ml" 93 2463 2490
+)
+"JSON.ml" 106 2846 2879 "JSON.ml" 106 2846 2885
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 93 2463 2492 "JSON.ml" 93 2463 2498
+)
+"JSON.ml" 106 2846 2887 "JSON.ml" 106 2846 2891
+type(
+  int
+)
+ident(
+  int_ref size "JSON.ml" 94 2501 2507 "JSON.ml" 94 2501 2511
+)
+"JSON.ml" 106 2846 2850 "JSON.ml" 106 2846 2892
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 106 2846 2893 "JSON.ml" 106 2846 2894
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 106 2846 2896 "JSON.ml" 106 2846 2908
+type(
+  fmt:output_format -> indent:int -> string
+)
+ident(
+  int_ref print_indent "JSON.ml" 54 1439 1443 "JSON.ml" 54 1439 1455
+)
+"JSON.ml" 106 2846 2910 "JSON.ml" 106 2846 2913
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 93 2463 2487 "JSON.ml" 93 2463 2490
+)
+"JSON.ml" 106 2846 2915 "JSON.ml" 106 2846 2921
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 93 2463 2492 "JSON.ml" 93 2463 2498
+)
+"JSON.ml" 106 2846 2895 "JSON.ml" 106 2846 2922
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 106 2846 2923 "JSON.ml" 106 2846 2924
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"JSON.ml" 106 2846 2925 "JSON.ml" 106 2846 2928
+type(
+  string
+)
+"JSON.ml" 106 2846 2895 "JSON.ml" 106 2846 2928
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 106 2846 2850 "JSON.ml" 106 2846 2928
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 100 2677 2681 "JSON.ml" 106 2846 2928
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 99 2623 2631 "JSON.ml" 106 2846 2928
+call(
+  stack
+)
+type(
+  string
+)
+"JSON.ml" 99 2623 2625 "JSON.ml" 106 2846 2928
+call(
+  tail
+)
+type(
+  string
+)
+"JSON.ml" 95 2536 2538 "JSON.ml" 106 2846 2928
+type(
+  string
+)
+"JSON.ml" 94 2501 2503 "JSON.ml" 106 2846 2928
+type(
+  string
+)
+"JSON.ml" 108 2930 2934 "JSON.ml" 108 2930 2946
+type(
+  indent:int -> fmt:output_format -> json_t -> string
+)
+ident(
+  def output_field "JSON.ml" 77 1946 1946 --
+)
+"JSON.ml" 108 2930 2948 "JSON.ml" 108 2930 2954
+type(
+  int
+)
+ident(
+  def indent "JSON.ml" 108 2930 2955 "JSON.ml" 114 3167 3220
+)
+"JSON.ml" 108 2930 2956 "JSON.ml" 108 2930 2959
+type(
+  output_format
+)
+ident(
+  def fmt "JSON.ml" 108 2930 2962 "JSON.ml" 114 3167 3220
+)
+"JSON.ml" 109 2971 2982 "JSON.ml" 109 2971 2983
+type(
+  string
+)
+ident(
+  def s "JSON.ml" 109 2971 2987 "JSON.ml" 109 2971 3006
+)
+"JSON.ml" 109 2971 2975 "JSON.ml" 109 2971 2983
+type(
+  json_t
+)
+"JSON.ml" 109 2971 2987 "JSON.ml" 109 2971 3004
+type(
+  string -> string
+)
+ident(
+  int_ref json_quote_string "JSON.ml" 74 1876 1880 "JSON.ml" 74 1876 1897
+)
+"JSON.ml" 109 2971 3005 "JSON.ml" 109 2971 3006
+type(
+  string
+)
+ident(
+  int_ref s "JSON.ml" 109 2971 2982 "JSON.ml" 109 2971 2983
+)
+"JSON.ml" 109 2971 2987 "JSON.ml" 109 2971 3006
+call(
+  tail
+)
+type(
+  string
+)
+"JSON.ml" 110 3007 3015 "JSON.ml" 110 3007 3016
+type(
+  int
+)
+ident(
+  def i "JSON.ml" 110 3007 3020 "JSON.ml" 110 3007 3035
+)
+"JSON.ml" 110 3007 3011 "JSON.ml" 110 3007 3016
+type(
+  json_t
+)
+"JSON.ml" 110 3007 3020 "JSON.ml" 110 3007 3033
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"JSON.ml" 110 3007 3034 "JSON.ml" 110 3007 3035
+type(
+  int
+)
+ident(
+  int_ref i "JSON.ml" 110 3007 3015 "JSON.ml" 110 3007 3016
+)
+"JSON.ml" 110 3007 3020 "JSON.ml" 110 3007 3035
+call(
+  tail
+)
+type(
+  string
+)
+"JSON.ml" 111 3036 3045 "JSON.ml" 111 3036 3046
+type(
+  bool
+)
+ident(
+  def b "JSON.ml" 111 3036 3050 "JSON.ml" 111 3036 3079
+)
+"JSON.ml" 111 3036 3040 "JSON.ml" 111 3036 3046
+type(
+  json_t
+)
+"JSON.ml" 111 3036 3053 "JSON.ml" 111 3036 3054
+type(
+  bool
+)
+ident(
+  int_ref b "JSON.ml" 111 3036 3045 "JSON.ml" 111 3036 3046
+)
+"JSON.ml" 111 3036 3060 "JSON.ml" 111 3036 3066
+type(
+  string
+)
+"JSON.ml" 111 3036 3072 "JSON.ml" 111 3036 3079
+type(
+  string
+)
+"JSON.ml" 111 3036 3050 "JSON.ml" 111 3036 3079
+type(
+  string
+)
+"JSON.ml" 112 3080 3090 "JSON.ml" 112 3080 3091
+type(
+  int64
+)
+ident(
+  def i "JSON.ml" 112 3080 3095 "JSON.ml" 112 3080 3112
+)
+"JSON.ml" 112 3080 3084 "JSON.ml" 112 3080 3091
+type(
+  json_t
+)
+"JSON.ml" 112 3080 3095 "JSON.ml" 112 3080 3110
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Int64.to_string
+)
+"JSON.ml" 112 3080 3111 "JSON.ml" 112 3080 3112
+type(
+  int64
+)
+ident(
+  int_ref i "JSON.ml" 112 3080 3090 "JSON.ml" 112 3080 3091
+)
+"JSON.ml" 112 3080 3095 "JSON.ml" 112 3080 3112
+call(
+  tail
+)
+type(
+  string
+)
+"JSON.ml" 113 3113 3122 "JSON.ml" 113 3113 3123
+type(
+  json_t list
+)
+ident(
+  def l "JSON.ml" 113 3113 3127 "JSON.ml" 113 3113 3166
+)
+"JSON.ml" 113 3113 3117 "JSON.ml" 113 3113 3123
+type(
+  json_t
+)
+"JSON.ml" 113 3113 3127 "JSON.ml" 113 3113 3138
+type(
+  json_t list -> fmt:output_format -> indent:int -> string
+)
+ident(
+  int_ref output_list "JSON.ml" 93 2463 2467 "JSON.ml" 93 2463 2478
+)
+"JSON.ml" 113 3113 3148 "JSON.ml" 113 3113 3154
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 108 2930 2948 "JSON.ml" 108 2930 2954
+)
+"JSON.ml" 113 3113 3155 "JSON.ml" 113 3113 3156
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"JSON.ml" 113 3113 3157 "JSON.ml" 113 3113 3158
+type(
+  int
+)
+"JSON.ml" 113 3113 3147 "JSON.ml" 113 3113 3159
+type(
+  int
+)
+"JSON.ml" 113 3113 3161 "JSON.ml" 113 3113 3164
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 108 2930 2956 "JSON.ml" 108 2930 2959
+)
+"JSON.ml" 113 3113 3165 "JSON.ml" 113 3113 3166
+type(
+  json_t list
+)
+ident(
+  int_ref l "JSON.ml" 113 3113 3122 "JSON.ml" 113 3113 3123
+)
+"JSON.ml" 113 3113 3127 "JSON.ml" 113 3113 3166
+call(
+  tail
+)
+type(
+  string
+)
+"JSON.ml" 114 3167 3176 "JSON.ml" 114 3167 3177
+type(
+  field list
+)
+ident(
+  def d "JSON.ml" 114 3167 3181 "JSON.ml" 114 3167 3220
+)
+"JSON.ml" 114 3167 3171 "JSON.ml" 114 3167 3177
+type(
+  json_t
+)
+"JSON.ml" 114 3167 3181 "JSON.ml" 114 3167 3192
+type(
+  field list -> fmt:output_format -> indent:int -> string
+)
+ident(
+  int_ref output_dict "JSON.ml" 77 1946 1954 "JSON.ml" 77 1946 1965
+)
+"JSON.ml" 114 3167 3202 "JSON.ml" 114 3167 3208
+type(
+  int
+)
+ident(
+  int_ref indent "JSON.ml" 108 2930 2948 "JSON.ml" 108 2930 2954
+)
+"JSON.ml" 114 3167 3209 "JSON.ml" 114 3167 3210
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"JSON.ml" 114 3167 3211 "JSON.ml" 114 3167 3212
+type(
+  int
+)
+"JSON.ml" 114 3167 3201 "JSON.ml" 114 3167 3213
+type(
+  int
+)
+"JSON.ml" 114 3167 3215 "JSON.ml" 114 3167 3218
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 108 2930 2956 "JSON.ml" 108 2930 2959
+)
+"JSON.ml" 114 3167 3219 "JSON.ml" 114 3167 3220
+type(
+  field list
+)
+ident(
+  int_ref d "JSON.ml" 114 3167 3176 "JSON.ml" 114 3167 3177
+)
+"JSON.ml" 114 3167 3181 "JSON.ml" 114 3167 3220
+call(
+  tail
+)
+type(
+  string
+)
+"JSON.ml" 108 2930 2962 "JSON.ml" 114 3167 3220
+type(
+  json_t -> string
+)
+"JSON.ml" 116 3222 3226 "JSON.ml" 116 3222 3239
+type(
+  ?fmt:output_format -> field list -> string
+)
+ident(
+  def string_of_doc "JSON.ml" 117 3266 3301 --
+)
+"JSON.ml" 116 3222 3242 "JSON.ml" 116 3222 3245
+type(
+  output_format
+)
+"JSON.ml" 116 3222 3248 "JSON.ml" 116 3222 3255
+type(
+  output_format
+)
+type(
+  output_format
+)
+ident(
+  int_ref *sth* "JSON.ml" 116 3222 3248 "JSON.ml" 116 3222 3255
+)
+type(
+  output_format option
+)
+type(
+  output_format option
+)
+type(
+  output_format
+)
+ident(
+  def *sth* "JSON.ml" 116 3222 3248 "JSON.ml" 116 3222 3255
+)
+"JSON.ml" 116 3222 3257 "JSON.ml" 116 3222 3263
+type(
+  field list
+)
+ident(
+  def fields "JSON.ml" 117 3266 3268 "JSON.ml" 117 3266 3301
+)
+"JSON.ml" 117 3266 3268 "JSON.ml" 117 3266 3279
+type(
+  field list -> fmt:output_format -> indent:int -> string
+)
+ident(
+  int_ref output_dict "JSON.ml" 77 1946 1954 "JSON.ml" 77 1946 1965
+)
+"JSON.ml" 117 3266 3280 "JSON.ml" 117 3266 3286
+type(
+  field list
+)
+ident(
+  int_ref fields "JSON.ml" 116 3222 3257 "JSON.ml" 116 3222 3263
+)
+"JSON.ml" 117 3266 3288 "JSON.ml" 117 3266 3291
+type(
+  output_format
+)
+ident(
+  int_ref fmt "JSON.ml" 116 3222 3242 "JSON.ml" 116 3222 3245
+)
+"JSON.ml" 117 3266 3300 "JSON.ml" 117 3266 3301
+type(
+  int
+)
+"JSON.ml" 117 3266 3268 "JSON.ml" 117 3266 3301
+call(
+  tail
+)
+type(
+  string
+)

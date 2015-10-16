@@ -1,0 +1,3852 @@
+"firstboot.ml" 27 878 882 "firstboot.ml" 27 878 890
+type(
+  string -> string
+)
+ident(
+  def unix2dos "firstboot.ml" 30 964 964 --
+)
+"firstboot.ml" 27 878 891 "firstboot.ml" 27 878 892
+type(
+  string
+)
+ident(
+  def s "firstboot.ml" 28 895 897 "firstboot.ml" 28 895 962
+)
+"firstboot.ml" 28 895 897 "firstboot.ml" 28 895 910
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"firstboot.ml" 28 895 911 "firstboot.ml" 28 895 917
+type(
+  string
+)
+"firstboot.ml" 28 895 919 "firstboot.ml" 28 895 934
+type(
+  Str.regexp -> string -> string list
+)
+ident(
+  ext_ref Str.split_delim
+)
+"firstboot.ml" 28 895 936 "firstboot.ml" 28 895 953
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp_string
+)
+"firstboot.ml" 28 895 954 "firstboot.ml" 28 895 958
+type(
+  string
+)
+"firstboot.ml" 28 895 935 "firstboot.ml" 28 895 959
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"firstboot.ml" 28 895 960 "firstboot.ml" 28 895 961
+type(
+  string
+)
+ident(
+  int_ref s "firstboot.ml" 27 878 891 "firstboot.ml" 27 878 892
+)
+"firstboot.ml" 28 895 918 "firstboot.ml" 28 895 962
+call(
+  stack
+)
+type(
+  string list
+)
+"firstboot.ml" 28 895 897 "firstboot.ml" 28 895 962
+call(
+  tail
+)
+type(
+  string
+)
+"firstboot.ml" 30 964 968 "firstboot.ml" 30 964 981
+type(
+  string -> string
+)
+ident(
+  def sanitize_name "firstboot.ml" 38 1201 1201 --
+)
+"firstboot.ml" 31 984 990 "firstboot.ml" 31 984 993
+type(
+  Str.regexp
+)
+"firstboot.ml" 31 984 996 "firstboot.ml" 31 984 1006
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"firstboot.ml" 31 984 1007 "firstboot.ml" 31 984 1022
+type(
+  string
+)
+"firstboot.ml" 31 984 996 "firstboot.ml" 31 984 1022
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"firstboot.ml" 32 1026 1032 "firstboot.ml" 32 1026 1033
+type(
+  string
+)
+ident(
+  def n "firstboot.ml" 33 1037 1041 "firstboot.ml" 35 1127 1175
+)
+"firstboot.ml" 33 1037 1045 "firstboot.ml" 33 1037 1046
+type(
+  string
+)
+"firstboot.ml" 33 1037 1049 "firstboot.ml" 33 1037 1067
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.global_replace
+)
+"firstboot.ml" 33 1037 1068 "firstboot.ml" 33 1037 1071
+type(
+  Str.regexp
+)
+ident(
+  int_ref rex "firstboot.ml" 31 984 990 "firstboot.ml" 31 984 993
+)
+"firstboot.ml" 33 1037 1072 "firstboot.ml" 33 1037 1075
+type(
+  string
+)
+"firstboot.ml" 33 1037 1076 "firstboot.ml" 33 1037 1077
+type(
+  string
+)
+ident(
+  int_ref n "firstboot.ml" 32 1026 1032 "firstboot.ml" 32 1026 1033
+)
+"firstboot.ml" 33 1037 1049 "firstboot.ml" 33 1037 1077
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 34 1081 1089 "firstboot.ml" 34 1081 1092
+type(
+  int
+)
+"firstboot.ml" 34 1081 1095 "firstboot.ml" 34 1081 1108
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"firstboot.ml" 34 1081 1109 "firstboot.ml" 34 1081 1110
+type(
+  string
+)
+ident(
+  int_ref n "firstboot.ml" 33 1037 1045 "firstboot.ml" 33 1037 1046
+)
+"firstboot.ml" 34 1081 1095 "firstboot.ml" 34 1081 1110
+type(
+  int
+)
+"firstboot.ml" 34 1081 1115 "firstboot.ml" 34 1081 1118
+type(
+  int
+)
+"firstboot.ml" 34 1081 1121 "firstboot.ml" 34 1081 1123
+type(
+  int
+)
+"firstboot.ml" 35 1127 1134 "firstboot.ml" 35 1127 1137
+type(
+  int
+)
+ident(
+  int_ref len "firstboot.ml" 34 1081 1089 "firstboot.ml" 34 1081 1092
+)
+"firstboot.ml" 35 1127 1138 "firstboot.ml" 35 1127 1140
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"firstboot.ml" 35 1127 1141 "firstboot.ml" 35 1127 1144
+type(
+  int
+)
+ident(
+  int_ref max "firstboot.ml" 34 1081 1115 "firstboot.ml" 34 1081 1118
+)
+"firstboot.ml" 35 1127 1134 "firstboot.ml" 35 1127 1144
+type(
+  bool
+)
+"firstboot.ml" 35 1127 1150 "firstboot.ml" 35 1127 1160
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"firstboot.ml" 35 1127 1161 "firstboot.ml" 35 1127 1162
+type(
+  string
+)
+ident(
+  int_ref n "firstboot.ml" 33 1037 1045 "firstboot.ml" 33 1037 1046
+)
+"firstboot.ml" 35 1127 1163 "firstboot.ml" 35 1127 1164
+type(
+  int
+)
+"firstboot.ml" 35 1127 1165 "firstboot.ml" 35 1127 1168
+type(
+  int
+)
+ident(
+  int_ref max "firstboot.ml" 34 1081 1115 "firstboot.ml" 34 1081 1118
+)
+"firstboot.ml" 35 1127 1150 "firstboot.ml" 35 1127 1168
+call(
+  tail
+)
+type(
+  string
+)
+"firstboot.ml" 35 1127 1174 "firstboot.ml" 35 1127 1175
+type(
+  string
+)
+ident(
+  int_ref n "firstboot.ml" 33 1037 1045 "firstboot.ml" 33 1037 1046
+)
+"firstboot.ml" 35 1127 1131 "firstboot.ml" 35 1127 1175
+type(
+  string
+)
+"firstboot.ml" 34 1081 1085 "firstboot.ml" 35 1127 1175
+type(
+  string
+)
+"firstboot.ml" 33 1037 1041 "firstboot.ml" 35 1127 1175
+type(
+  string
+)
+"firstboot.ml" 32 1026 1028 "firstboot.ml" 35 1127 1175
+type(
+  string -> string
+)
+"firstboot.ml" 31 984 986 "firstboot.ml" 35 1127 1175
+type(
+  string -> string
+)
+"firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+type(
+  string
+)
+ident(
+  def firstboot_dir "firstboot.ml" 41 1270 1272 "firstboot.ml" 178 5973 5976
+)
+"firstboot.ml" 39 1223 1245 "firstboot.ml" 39 1223 1268
+type(
+  string
+)
+"firstboot.ml" 41 1270 1276 "firstboot.ml" 41 1270 1288
+type(
+  string
+)
+ident(
+  def firstboot_sh "firstboot.ml" 83 2406 2408 "firstboot.ml" 178 5973 5976
+)
+"firstboot.ml" 41 1270 1291 "firstboot.ml" 41 1270 1298
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 41 1270 1299 "firstboot.ml" 81 2375 2376
+type(
+  (string -> string -> string, unit, string) format
+)
+"firstboot.ml" 81 2375 2377 "firstboot.ml" 81 2375 2390
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 81 2375 2391 "firstboot.ml" 81 2375 2404
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 41 1270 1291 "firstboot.ml" 81 2375 2404
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 83 2406 2412 "firstboot.ml" 83 2406 2429
+type(
+  string
+)
+ident(
+  def firstboot_service "firstboot.ml" 100 2717 2719 "firstboot.ml" 178 5973 5976
+)
+"firstboot.ml" 83 2406 2432 "firstboot.ml" 83 2406 2439
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 83 2406 2440 "firstboot.ml" 98 2700 2701
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 98 2700 2702 "firstboot.ml" 98 2700 2715
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 83 2406 2432 "firstboot.ml" 98 2700 2715
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 100 2717 2727 "firstboot.ml" 100 2717 2742
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  def install_service "firstboot.ml" 100 2717 2719 "firstboot.ml" 178 5973 5976
+)
+"firstboot.ml" 100 2717 2744 "firstboot.ml" 100 2717 2745
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "firstboot.ml" 100 2717 2765 "firstboot.ml" 116 3503 3542
+)
+"firstboot.ml" 100 2717 2765 "firstboot.ml" 100 2717 2771
+type(
+  string
+)
+ident(
+  def distro "firstboot.ml" 101 2774 2778 "firstboot.ml" 116 3503 3542
+)
+"firstboot.ml" 101 2774 2778 "firstboot.ml" 101 2774 2779
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 100 2717 2744 "firstboot.ml" 100 2717 2745
+)
+"firstboot.ml" 101 2774 2778 "firstboot.ml" 101 2774 2787
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 101 2774 2788 "firstboot.ml" 101 2774 2801
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 101 2774 2778 "firstboot.ml" 101 2774 2801
+type(
+  unit
+)
+"firstboot.ml" 102 2803 2807 "firstboot.ml" 102 2803 2808
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 100 2717 2744 "firstboot.ml" 100 2717 2745
+)
+"firstboot.ml" 102 2803 2807 "firstboot.ml" 102 2803 2816
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 102 2803 2818 "firstboot.ml" 102 2803 2825
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 102 2803 2826 "firstboot.ml" 102 2803 2838
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 102 2803 2839 "firstboot.ml" 102 2803 2852
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 102 2803 2817 "firstboot.ml" 102 2803 2853
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 102 2803 2807 "firstboot.ml" 102 2803 2853
+type(
+  unit
+)
+"firstboot.ml" 103 2855 2859 "firstboot.ml" 103 2855 2860
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 100 2717 2744 "firstboot.ml" 100 2717 2745
+)
+"firstboot.ml" 103 2855 2859 "firstboot.ml" 103 2855 2866
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 103 2855 2868 "firstboot.ml" 103 2855 2875
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 103 2855 2876 "firstboot.ml" 103 2855 2893
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 103 2855 2894 "firstboot.ml" 103 2855 2907
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 103 2855 2867 "firstboot.ml" 103 2855 2908
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 103 2855 2909 "firstboot.ml" 103 2855 2921
+type(
+  string
+)
+ident(
+  int_ref firstboot_sh "firstboot.ml" 41 1270 1276 "firstboot.ml" 41 1270 1288
+)
+"firstboot.ml" 103 2855 2859 "firstboot.ml" 103 2855 2921
+type(
+  unit
+)
+"firstboot.ml" 104 2923 2927 "firstboot.ml" 104 2923 2928
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 100 2717 2744 "firstboot.ml" 100 2717 2745
+)
+"firstboot.ml" 104 2923 2927 "firstboot.ml" 104 2923 2934
+call(
+  stack
+)
+type(
+  int -> string -> unit
+)
+"firstboot.ml" 104 2923 2935 "firstboot.ml" 104 2923 2940
+type(
+  int
+)
+"firstboot.ml" 104 2923 2942 "firstboot.ml" 104 2923 2949
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 104 2923 2950 "firstboot.ml" 104 2923 2967
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 104 2923 2968 "firstboot.ml" 104 2923 2981
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 104 2923 2941 "firstboot.ml" 104 2923 2982
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 104 2923 2927 "firstboot.ml" 104 2923 2982
+type(
+  unit
+)
+"firstboot.ml" 113 3368 3375 "firstboot.ml" 113 3368 3376
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 100 2717 2744 "firstboot.ml" 100 2717 2745
+)
+"firstboot.ml" 113 3368 3375 "firstboot.ml" 113 3368 3383
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"firstboot.ml" 113 3368 3384 "firstboot.ml" 113 3368 3405
+type(
+  string
+)
+"firstboot.ml" 113 3368 3375 "firstboot.ml" 113 3368 3405
+type(
+  bool
+)
+"firstboot.ml" 114 3411 3417 "firstboot.ml" 114 3411 3440
+type(
+  Guestfs.guestfs -> unit
+)
+ident(
+  int_ref install_systemd_service "firstboot.ml" 119 3617 3623 "firstboot.ml" 119 3617 3646
+)
+"firstboot.ml" 114 3411 3441 "firstboot.ml" 114 3411 3442
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 100 2717 2744 "firstboot.ml" 100 2717 2745
+)
+"firstboot.ml" 114 3411 3417 "firstboot.ml" 114 3411 3442
+call(
+  stack
+)
+type(
+  unit
+)
+"firstboot.ml" 113 3368 3372 "firstboot.ml" 114 3411 3442
+type(
+  unit
+)
+"firstboot.ml" 115 3444 3451 "firstboot.ml" 115 3444 3452
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 100 2717 2744 "firstboot.ml" 100 2717 2745
+)
+"firstboot.ml" 115 3444 3451 "firstboot.ml" 115 3444 3459
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"firstboot.ml" 115 3444 3460 "firstboot.ml" 115 3444 3471
+type(
+  string
+)
+"firstboot.ml" 115 3444 3451 "firstboot.ml" 115 3444 3471
+type(
+  bool
+)
+"firstboot.ml" 115 3444 3472 "firstboot.ml" 115 3444 3474
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"firstboot.ml" 115 3444 3475 "firstboot.ml" 115 3444 3476
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 100 2717 2744 "firstboot.ml" 100 2717 2745
+)
+"firstboot.ml" 115 3444 3475 "firstboot.ml" 115 3444 3483
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"firstboot.ml" 115 3444 3484 "firstboot.ml" 115 3444 3497
+type(
+  string
+)
+"firstboot.ml" 115 3444 3475 "firstboot.ml" 115 3444 3497
+type(
+  bool
+)
+"firstboot.ml" 115 3444 3451 "firstboot.ml" 115 3444 3497
+type(
+  bool
+)
+"firstboot.ml" 116 3503 3509 "firstboot.ml" 116 3503 3533
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  int_ref install_sysvinit_service "firstboot.ml" 130 4056 4062 "firstboot.ml" 130 4056 4086
+)
+"firstboot.ml" 116 3503 3534 "firstboot.ml" 116 3503 3535
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 100 2717 2744 "firstboot.ml" 100 2717 2745
+)
+"firstboot.ml" 116 3503 3536 "firstboot.ml" 116 3503 3542
+type(
+  string
+)
+ident(
+  int_ref distro "firstboot.ml" 100 2717 2765 "firstboot.ml" 100 2717 2771
+)
+"firstboot.ml" 116 3503 3509 "firstboot.ml" 116 3503 3542
+call(
+  tail
+)
+type(
+  unit
+)
+"firstboot.ml" 115 3444 3448 "firstboot.ml" 116 3503 3542
+type(
+  unit
+)
+"firstboot.ml" 113 3368 3372 "firstboot.ml" 116 3503 3542
+type(
+  unit
+)
+"firstboot.ml" 104 2923 2927 "firstboot.ml" 116 3503 3542
+type(
+  unit
+)
+"firstboot.ml" 103 2855 2859 "firstboot.ml" 116 3503 3542
+type(
+  unit
+)
+"firstboot.ml" 102 2803 2807 "firstboot.ml" 116 3503 3542
+type(
+  unit
+)
+"firstboot.ml" 101 2774 2778 "firstboot.ml" 116 3503 3542
+type(
+  unit
+)
+"firstboot.ml" 119 3617 3623 "firstboot.ml" 119 3617 3646
+type(
+  Guestfs.guestfs -> unit
+)
+ident(
+  def install_systemd_service "firstboot.ml" 100 2717 2719 "firstboot.ml" 178 5973 5976
+)
+"firstboot.ml" 119 3617 3647 "firstboot.ml" 119 3617 3648
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "firstboot.ml" 123 3762 3766 "firstboot.ml" 128 3991 4054
+)
+"firstboot.ml" 123 3762 3770 "firstboot.ml" 123 3762 3777
+type(
+  string
+)
+"firstboot.ml" 123 3762 3780 "firstboot.ml" 123 3762 3805
+type(
+  string
+)
+"firstboot.ml" 124 3809 3813 "firstboot.ml" 124 3809 3814
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 119 3617 3647 "firstboot.ml" 119 3617 3648
+)
+"firstboot.ml" 124 3809 3813 "firstboot.ml" 124 3809 3822
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 124 3809 3823 "firstboot.ml" 124 3809 3830
+type(
+  string
+)
+ident(
+  int_ref unitdir "firstboot.ml" 123 3762 3770 "firstboot.ml" 123 3762 3777
+)
+"firstboot.ml" 124 3809 3813 "firstboot.ml" 124 3809 3830
+type(
+  unit
+)
+"firstboot.ml" 125 3832 3840 "firstboot.ml" 125 3832 3848
+type(
+  string
+)
+"firstboot.ml" 125 3832 3851 "firstboot.ml" 125 3832 3858
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 125 3832 3859 "firstboot.ml" 125 3832 3881
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 125 3832 3882 "firstboot.ml" 125 3832 3889
+type(
+  string
+)
+ident(
+  int_ref unitdir "firstboot.ml" 123 3762 3770 "firstboot.ml" 123 3762 3777
+)
+"firstboot.ml" 125 3832 3851 "firstboot.ml" 125 3832 3889
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 126 3893 3897 "firstboot.ml" 126 3893 3898
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 119 3617 3647 "firstboot.ml" 119 3617 3648
+)
+"firstboot.ml" 126 3893 3897 "firstboot.ml" 126 3893 3904
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 126 3893 3905 "firstboot.ml" 126 3893 3913
+type(
+  string
+)
+ident(
+  int_ref unitfile "firstboot.ml" 125 3832 3840 "firstboot.ml" 125 3832 3848
+)
+"firstboot.ml" 126 3893 3914 "firstboot.ml" 126 3893 3931
+type(
+  string
+)
+ident(
+  int_ref firstboot_service "firstboot.ml" 83 2406 2412 "firstboot.ml" 83 2406 2429
+)
+"firstboot.ml" 126 3893 3897 "firstboot.ml" 126 3893 3931
+type(
+  unit
+)
+"firstboot.ml" 127 3933 3937 "firstboot.ml" 127 3933 3938
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 119 3617 3647 "firstboot.ml" 119 3617 3648
+)
+"firstboot.ml" 127 3933 3937 "firstboot.ml" 127 3933 3946
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 127 3933 3947 "firstboot.ml" 127 3933 3989
+type(
+  string
+)
+"firstboot.ml" 127 3933 3937 "firstboot.ml" 127 3933 3989
+type(
+  unit
+)
+"firstboot.ml" 128 3991 3995 "firstboot.ml" 128 3991 3996
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 119 3617 3647 "firstboot.ml" 119 3617 3648
+)
+"firstboot.ml" 128 3991 3995 "firstboot.ml" 128 3991 4002
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 128 3991 4003 "firstboot.ml" 128 3991 4011
+type(
+  string
+)
+ident(
+  int_ref unitfile "firstboot.ml" 125 3832 3840 "firstboot.ml" 125 3832 3848
+)
+"firstboot.ml" 128 3991 4012 "firstboot.ml" 128 3991 4054
+type(
+  string
+)
+"firstboot.ml" 128 3991 3995 "firstboot.ml" 128 3991 4054
+type(
+  unit
+)
+"firstboot.ml" 127 3933 3937 "firstboot.ml" 128 3991 4054
+type(
+  unit
+)
+"firstboot.ml" 126 3893 3897 "firstboot.ml" 128 3991 4054
+type(
+  unit
+)
+"firstboot.ml" 125 3832 3836 "firstboot.ml" 128 3991 4054
+type(
+  unit
+)
+"firstboot.ml" 124 3809 3813 "firstboot.ml" 128 3991 4054
+type(
+  unit
+)
+"firstboot.ml" 123 3762 3766 "firstboot.ml" 128 3991 4054
+type(
+  unit
+)
+"firstboot.ml" 130 4056 4062 "firstboot.ml" 130 4056 4086
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  def install_sysvinit_service "firstboot.ml" 100 2717 2719 "firstboot.ml" 178 5973 5976
+)
+"firstboot.ml" 130 4056 4087 "firstboot.ml" 130 4056 4088
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "firstboot.ml" 130 4056 4091 "firstboot.ml" 138 4344 4399
+)
+"firstboot.ml" 131 4100 4106 "firstboot.ml" 131 4100 4114
+type(
+  string
+)
+"firstboot.ml" 131 4100 4115 "firstboot.ml" 131 4100 4121
+type(
+  string
+)
+"firstboot.ml" 131 4100 4106 "firstboot.ml" 131 4100 4121
+type(
+  string
+)
+"firstboot.ml" 131 4100 4122 "firstboot.ml" 131 4100 4130
+type(
+  string
+)
+"firstboot.ml" 131 4100 4106 "firstboot.ml" 131 4100 4130
+type(
+  string
+)
+"firstboot.ml" 131 4100 4131 "firstboot.ml" 131 4100 4148
+type(
+  string
+)
+"firstboot.ml" 131 4100 4106 "firstboot.ml" 131 4100 4148
+type(
+  string
+)
+"firstboot.ml" 131 4100 4149 "firstboot.ml" 131 4100 4163
+type(
+  string
+)
+"firstboot.ml" 131 4100 4106 "firstboot.ml" 131 4100 4163
+type(
+  string
+)
+"firstboot.ml" 132 4167 4173 "firstboot.ml" 132 4167 4196
+type(
+  Guestfs.guestfs -> unit
+)
+ident(
+  int_ref install_sysvinit_redhat "firstboot.ml" 140 4401 4407 "firstboot.ml" 140 4401 4430
+)
+"firstboot.ml" 132 4167 4197 "firstboot.ml" 132 4167 4198
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 130 4056 4087 "firstboot.ml" 130 4056 4088
+)
+"firstboot.ml" 132 4167 4173 "firstboot.ml" 132 4167 4198
+call(
+  tail
+)
+type(
+  unit
+)
+"firstboot.ml" 133 4199 4205 "firstboot.ml" 133 4199 4215
+type(
+  string
+)
+"firstboot.ml" 133 4199 4216 "firstboot.ml" 133 4199 4222
+type(
+  string
+)
+"firstboot.ml" 133 4199 4205 "firstboot.ml" 133 4199 4222
+type(
+  string
+)
+"firstboot.ml" 133 4199 4223 "firstboot.ml" 133 4199 4235
+type(
+  string
+)
+"firstboot.ml" 133 4199 4205 "firstboot.ml" 133 4199 4235
+type(
+  string
+)
+"firstboot.ml" 134 4239 4245 "firstboot.ml" 134 4239 4266
+type(
+  Guestfs.guestfs -> unit
+)
+ident(
+  int_ref install_sysvinit_suse "firstboot.ml" 152 4930 4936 "firstboot.ml" 152 4930 4957
+)
+"firstboot.ml" 134 4239 4267 "firstboot.ml" 134 4239 4268
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 130 4056 4087 "firstboot.ml" 130 4056 4088
+)
+"firstboot.ml" 134 4239 4245 "firstboot.ml" 134 4239 4268
+call(
+  tail
+)
+type(
+  unit
+)
+"firstboot.ml" 135 4269 4275 "firstboot.ml" 135 4269 4283
+type(
+  string
+)
+"firstboot.ml" 135 4269 4284 "firstboot.ml" 135 4269 4292
+type(
+  string
+)
+"firstboot.ml" 135 4269 4275 "firstboot.ml" 135 4269 4292
+type(
+  string
+)
+"firstboot.ml" 136 4296 4302 "firstboot.ml" 136 4296 4325
+type(
+  Guestfs.guestfs -> unit
+)
+ident(
+  int_ref install_sysvinit_debian "firstboot.ml" 165 5444 5450 "firstboot.ml" 165 5444 5473
+)
+"firstboot.ml" 136 4296 4326 "firstboot.ml" 136 4296 4327
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 130 4056 4087 "firstboot.ml" 130 4056 4088
+)
+"firstboot.ml" 136 4296 4302 "firstboot.ml" 136 4296 4327
+call(
+  tail
+)
+type(
+  unit
+)
+"firstboot.ml" 137 4328 4334 "firstboot.ml" 137 4328 4340
+type(
+  string
+)
+ident(
+  def distro "firstboot.ml" 138 4344 4350 "firstboot.ml" 138 4344 4399
+)
+"firstboot.ml" 138 4344 4350 "firstboot.ml" 138 4344 4355
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"firstboot.ml" 138 4344 4357 "firstboot.ml" 138 4344 4359
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"firstboot.ml" 138 4344 4359 "firstboot.ml" 138 4344 4391
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"firstboot.ml" 138 4344 4356 "firstboot.ml" 138 4344 4392
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"firstboot.ml" 138 4344 4393 "firstboot.ml" 138 4344 4399
+type(
+  string
+)
+ident(
+  int_ref distro "firstboot.ml" 137 4328 4334 "firstboot.ml" 137 4328 4340
+)
+"firstboot.ml" 138 4344 4350 "firstboot.ml" 138 4344 4399
+call(
+  tail
+)
+type(
+  unit
+)
+"firstboot.ml" 130 4056 4091 "firstboot.ml" 138 4344 4399
+type(
+  string -> unit
+)
+"firstboot.ml" 140 4401 4407 "firstboot.ml" 140 4401 4430
+type(
+  Guestfs.guestfs -> unit
+)
+ident(
+  def install_sysvinit_redhat "firstboot.ml" 100 2717 2719 "firstboot.ml" 178 5973 5976
+)
+"firstboot.ml" 140 4401 4431 "firstboot.ml" 140 4401 4432
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "firstboot.ml" 141 4435 4439 "firstboot.ml" 149 4798 4847
+)
+"firstboot.ml" 141 4435 4439 "firstboot.ml" 141 4435 4440
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 140 4401 4431 "firstboot.ml" 140 4401 4432
+)
+"firstboot.ml" 141 4435 4439 "firstboot.ml" 141 4435 4448
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 141 4435 4449 "firstboot.ml" 141 4435 4466
+type(
+  string
+)
+"firstboot.ml" 141 4435 4439 "firstboot.ml" 141 4435 4466
+type(
+  unit
+)
+"firstboot.ml" 142 4468 4472 "firstboot.ml" 142 4468 4473
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 140 4401 4431 "firstboot.ml" 140 4401 4432
+)
+"firstboot.ml" 142 4468 4472 "firstboot.ml" 142 4468 4481
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 142 4468 4482 "firstboot.ml" 142 4468 4499
+type(
+  string
+)
+"firstboot.ml" 142 4468 4472 "firstboot.ml" 142 4468 4499
+type(
+  unit
+)
+"firstboot.ml" 143 4501 4505 "firstboot.ml" 143 4501 4506
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 140 4401 4431 "firstboot.ml" 140 4401 4432
+)
+"firstboot.ml" 143 4501 4505 "firstboot.ml" 143 4501 4514
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 143 4501 4515 "firstboot.ml" 143 4501 4532
+type(
+  string
+)
+"firstboot.ml" 143 4501 4505 "firstboot.ml" 143 4501 4532
+type(
+  unit
+)
+"firstboot.ml" 144 4534 4538 "firstboot.ml" 144 4534 4539
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 140 4401 4431 "firstboot.ml" 140 4401 4432
+)
+"firstboot.ml" 144 4534 4538 "firstboot.ml" 144 4534 4545
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 144 4534 4547 "firstboot.ml" 144 4534 4554
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 144 4534 4555 "firstboot.ml" 144 4534 4572
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 144 4534 4573 "firstboot.ml" 144 4534 4586
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 144 4534 4546 "firstboot.ml" 144 4534 4587
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 145 4588 4594 "firstboot.ml" 145 4588 4637
+type(
+  string
+)
+"firstboot.ml" 144 4534 4538 "firstboot.ml" 145 4588 4637
+type(
+  unit
+)
+"firstboot.ml" 146 4639 4643 "firstboot.ml" 146 4639 4644
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 140 4401 4431 "firstboot.ml" 140 4401 4432
+)
+"firstboot.ml" 146 4639 4643 "firstboot.ml" 146 4639 4650
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 146 4639 4652 "firstboot.ml" 146 4639 4659
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 146 4639 4660 "firstboot.ml" 146 4639 4677
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 146 4639 4678 "firstboot.ml" 146 4639 4691
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 146 4639 4651 "firstboot.ml" 146 4639 4692
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 147 4693 4699 "firstboot.ml" 147 4693 4742
+type(
+  string
+)
+"firstboot.ml" 146 4639 4643 "firstboot.ml" 147 4693 4742
+type(
+  unit
+)
+"firstboot.ml" 148 4744 4748 "firstboot.ml" 148 4744 4749
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 140 4401 4431 "firstboot.ml" 140 4401 4432
+)
+"firstboot.ml" 148 4744 4748 "firstboot.ml" 148 4744 4755
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 148 4744 4757 "firstboot.ml" 148 4744 4764
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 148 4744 4765 "firstboot.ml" 148 4744 4782
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 148 4744 4783 "firstboot.ml" 148 4744 4796
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 148 4744 4756 "firstboot.ml" 148 4744 4797
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 149 4798 4804 "firstboot.ml" 149 4798 4847
+type(
+  string
+)
+"firstboot.ml" 148 4744 4748 "firstboot.ml" 149 4798 4847
+type(
+  unit
+)
+"firstboot.ml" 146 4639 4643 "firstboot.ml" 149 4798 4847
+type(
+  unit
+)
+"firstboot.ml" 144 4534 4538 "firstboot.ml" 149 4798 4847
+type(
+  unit
+)
+"firstboot.ml" 143 4501 4505 "firstboot.ml" 149 4798 4847
+type(
+  unit
+)
+"firstboot.ml" 142 4468 4472 "firstboot.ml" 149 4798 4847
+type(
+  unit
+)
+"firstboot.ml" 141 4435 4439 "firstboot.ml" 149 4798 4847
+type(
+  unit
+)
+"firstboot.ml" 152 4930 4936 "firstboot.ml" 152 4930 4957
+type(
+  Guestfs.guestfs -> unit
+)
+ident(
+  def install_sysvinit_suse "firstboot.ml" 100 2717 2719 "firstboot.ml" 178 5973 5976
+)
+"firstboot.ml" 152 4930 4958 "firstboot.ml" 152 4930 4959
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "firstboot.ml" 153 4962 4966 "firstboot.ml" 163 5391 5442
+)
+"firstboot.ml" 153 4962 4966 "firstboot.ml" 153 4962 4967
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 152 4930 4958 "firstboot.ml" 152 4930 4959
+)
+"firstboot.ml" 153 4962 4966 "firstboot.ml" 153 4962 4975
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 153 4962 4976 "firstboot.ml" 153 4962 4995
+type(
+  string
+)
+"firstboot.ml" 153 4962 4966 "firstboot.ml" 153 4962 4995
+type(
+  unit
+)
+"firstboot.ml" 154 4997 5001 "firstboot.ml" 154 4997 5002
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 152 4930 4958 "firstboot.ml" 152 4930 4959
+)
+"firstboot.ml" 154 4997 5001 "firstboot.ml" 154 4997 5010
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 154 4997 5011 "firstboot.ml" 154 4997 5030
+type(
+  string
+)
+"firstboot.ml" 154 4997 5001 "firstboot.ml" 154 4997 5030
+type(
+  unit
+)
+"firstboot.ml" 155 5032 5036 "firstboot.ml" 155 5032 5037
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 152 4930 4958 "firstboot.ml" 152 4930 4959
+)
+"firstboot.ml" 155 5032 5036 "firstboot.ml" 155 5032 5045
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 155 5032 5046 "firstboot.ml" 155 5032 5065
+type(
+  string
+)
+"firstboot.ml" 155 5032 5036 "firstboot.ml" 155 5032 5065
+type(
+  unit
+)
+"firstboot.ml" 156 5067 5071 "firstboot.ml" 156 5067 5072
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 152 4930 4958 "firstboot.ml" 152 4930 4959
+)
+"firstboot.ml" 156 5067 5071 "firstboot.ml" 156 5067 5078
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 156 5067 5080 "firstboot.ml" 156 5067 5087
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 156 5067 5088 "firstboot.ml" 156 5067 5105
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 156 5067 5106 "firstboot.ml" 156 5067 5119
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 156 5067 5079 "firstboot.ml" 156 5067 5120
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 157 5121 5127 "firstboot.ml" 157 5121 5163
+type(
+  string
+)
+"firstboot.ml" 156 5067 5071 "firstboot.ml" 157 5121 5163
+type(
+  unit
+)
+"firstboot.ml" 158 5165 5169 "firstboot.ml" 158 5165 5170
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 152 4930 4958 "firstboot.ml" 152 4930 4959
+)
+"firstboot.ml" 158 5165 5169 "firstboot.ml" 158 5165 5176
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 158 5165 5177 "firstboot.ml" 158 5165 5204
+type(
+  string
+)
+"firstboot.ml" 159 5205 5211 "firstboot.ml" 159 5205 5256
+type(
+  string
+)
+"firstboot.ml" 158 5165 5169 "firstboot.ml" 159 5205 5256
+type(
+  unit
+)
+"firstboot.ml" 160 5258 5262 "firstboot.ml" 160 5258 5263
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 152 4930 4958 "firstboot.ml" 152 4930 4959
+)
+"firstboot.ml" 160 5258 5262 "firstboot.ml" 160 5258 5269
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 160 5258 5270 "firstboot.ml" 160 5258 5297
+type(
+  string
+)
+"firstboot.ml" 161 5298 5304 "firstboot.ml" 161 5298 5349
+type(
+  string
+)
+"firstboot.ml" 160 5258 5262 "firstboot.ml" 161 5298 5349
+type(
+  unit
+)
+"firstboot.ml" 162 5351 5355 "firstboot.ml" 162 5351 5356
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 152 4930 4958 "firstboot.ml" 152 4930 4959
+)
+"firstboot.ml" 162 5351 5355 "firstboot.ml" 162 5351 5362
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 162 5351 5363 "firstboot.ml" 162 5351 5390
+type(
+  string
+)
+"firstboot.ml" 163 5391 5397 "firstboot.ml" 163 5391 5442
+type(
+  string
+)
+"firstboot.ml" 162 5351 5355 "firstboot.ml" 163 5391 5442
+type(
+  unit
+)
+"firstboot.ml" 160 5258 5262 "firstboot.ml" 163 5391 5442
+type(
+  unit
+)
+"firstboot.ml" 158 5165 5169 "firstboot.ml" 163 5391 5442
+type(
+  unit
+)
+"firstboot.ml" 156 5067 5071 "firstboot.ml" 163 5391 5442
+type(
+  unit
+)
+"firstboot.ml" 155 5032 5036 "firstboot.ml" 163 5391 5442
+type(
+  unit
+)
+"firstboot.ml" 154 4997 5001 "firstboot.ml" 163 5391 5442
+type(
+  unit
+)
+"firstboot.ml" 153 4962 4966 "firstboot.ml" 163 5391 5442
+type(
+  unit
+)
+"firstboot.ml" 165 5444 5450 "firstboot.ml" 165 5444 5473
+type(
+  Guestfs.guestfs -> unit
+)
+ident(
+  def install_sysvinit_debian "firstboot.ml" 100 2717 2719 "firstboot.ml" 178 5973 5976
+)
+"firstboot.ml" 165 5444 5474 "firstboot.ml" 165 5444 5475
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "firstboot.ml" 166 5478 5482 "firstboot.ml" 177 5928 5972
+)
+"firstboot.ml" 166 5478 5482 "firstboot.ml" 166 5478 5483
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 165 5444 5474 "firstboot.ml" 165 5444 5475
+)
+"firstboot.ml" 166 5478 5482 "firstboot.ml" 166 5478 5491
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 166 5478 5492 "firstboot.ml" 166 5478 5505
+type(
+  string
+)
+"firstboot.ml" 166 5478 5482 "firstboot.ml" 166 5478 5505
+type(
+  unit
+)
+"firstboot.ml" 167 5507 5511 "firstboot.ml" 167 5507 5512
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 165 5444 5474 "firstboot.ml" 165 5444 5475
+)
+"firstboot.ml" 167 5507 5511 "firstboot.ml" 167 5507 5520
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 167 5507 5521 "firstboot.ml" 167 5507 5533
+type(
+  string
+)
+"firstboot.ml" 167 5507 5511 "firstboot.ml" 167 5507 5533
+type(
+  unit
+)
+"firstboot.ml" 168 5535 5539 "firstboot.ml" 168 5535 5540
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 165 5444 5474 "firstboot.ml" 165 5444 5475
+)
+"firstboot.ml" 168 5535 5539 "firstboot.ml" 168 5535 5548
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 168 5535 5549 "firstboot.ml" 168 5535 5561
+type(
+  string
+)
+"firstboot.ml" 168 5535 5539 "firstboot.ml" 168 5535 5561
+type(
+  unit
+)
+"firstboot.ml" 169 5563 5567 "firstboot.ml" 169 5563 5568
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 165 5444 5474 "firstboot.ml" 165 5444 5475
+)
+"firstboot.ml" 169 5563 5567 "firstboot.ml" 169 5563 5576
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 169 5563 5577 "firstboot.ml" 169 5563 5589
+type(
+  string
+)
+"firstboot.ml" 169 5563 5567 "firstboot.ml" 169 5563 5589
+type(
+  unit
+)
+"firstboot.ml" 170 5591 5595 "firstboot.ml" 170 5591 5596
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 165 5444 5474 "firstboot.ml" 165 5444 5475
+)
+"firstboot.ml" 170 5591 5595 "firstboot.ml" 170 5591 5602
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 170 5591 5604 "firstboot.ml" 170 5591 5611
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 170 5591 5612 "firstboot.ml" 170 5591 5629
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 170 5591 5630 "firstboot.ml" 170 5591 5643
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 39 1223 1229 "firstboot.ml" 39 1223 1242
+)
+"firstboot.ml" 170 5591 5603 "firstboot.ml" 170 5591 5644
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 171 5645 5651 "firstboot.ml" 171 5645 5687
+type(
+  string
+)
+"firstboot.ml" 170 5591 5595 "firstboot.ml" 171 5645 5687
+type(
+  unit
+)
+"firstboot.ml" 172 5689 5693 "firstboot.ml" 172 5689 5694
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 165 5444 5474 "firstboot.ml" 165 5444 5475
+)
+"firstboot.ml" 172 5689 5693 "firstboot.ml" 172 5689 5700
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 172 5689 5701 "firstboot.ml" 172 5689 5737
+type(
+  string
+)
+"firstboot.ml" 173 5738 5744 "firstboot.ml" 173 5738 5782
+type(
+  string
+)
+"firstboot.ml" 172 5689 5693 "firstboot.ml" 173 5738 5782
+type(
+  unit
+)
+"firstboot.ml" 174 5784 5788 "firstboot.ml" 174 5784 5789
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 165 5444 5474 "firstboot.ml" 165 5444 5475
+)
+"firstboot.ml" 174 5784 5788 "firstboot.ml" 174 5784 5795
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 174 5784 5796 "firstboot.ml" 174 5784 5832
+type(
+  string
+)
+"firstboot.ml" 175 5833 5839 "firstboot.ml" 175 5833 5877
+type(
+  string
+)
+"firstboot.ml" 174 5784 5788 "firstboot.ml" 175 5833 5877
+type(
+  unit
+)
+"firstboot.ml" 176 5879 5883 "firstboot.ml" 176 5879 5884
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 165 5444 5474 "firstboot.ml" 165 5444 5475
+)
+"firstboot.ml" 176 5879 5883 "firstboot.ml" 176 5879 5890
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 176 5879 5891 "firstboot.ml" 176 5879 5927
+type(
+  string
+)
+"firstboot.ml" 177 5928 5934 "firstboot.ml" 177 5928 5972
+type(
+  string
+)
+"firstboot.ml" 176 5879 5883 "firstboot.ml" 177 5928 5972
+type(
+  unit
+)
+"firstboot.ml" 174 5784 5788 "firstboot.ml" 177 5928 5972
+type(
+  unit
+)
+"firstboot.ml" 172 5689 5693 "firstboot.ml" 177 5928 5972
+type(
+  unit
+)
+"firstboot.ml" 170 5591 5595 "firstboot.ml" 177 5928 5972
+type(
+  unit
+)
+"firstboot.ml" 169 5563 5567 "firstboot.ml" 177 5928 5972
+type(
+  unit
+)
+"firstboot.ml" 168 5535 5539 "firstboot.ml" 177 5928 5972
+type(
+  unit
+)
+"firstboot.ml" 167 5507 5511 "firstboot.ml" 177 5928 5972
+type(
+  unit
+)
+"firstboot.ml" 166 5478 5482 "firstboot.ml" 177 5928 5972
+type(
+  unit
+)
+"firstboot.ml" 182 6003 6013 "firstboot.ml" 182 6003 6028
+type(
+  Guestfs.guestfs -> string -> string
+)
+ident(
+  def install_service "firstboot.ml" 182 6003 6005 "firstboot.ml" 302 9920 9923
+)
+"firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "firstboot.ml" 182 6003 6051 "firstboot.ml" 300 9901 9918
+)
+"firstboot.ml" 182 6003 6051 "firstboot.ml" 182 6003 6055
+type(
+  string
+)
+ident(
+  def root "firstboot.ml" 184 6092 6096 "firstboot.ml" 300 9901 9918
+)
+"firstboot.ml" 184 6092 6100 "firstboot.ml" 184 6092 6119
+type(
+  string
+)
+"firstboot.ml" 185 6122 6132 "firstboot.ml" 185 6122 6142
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"firstboot.ml" 185 6122 6143 "firstboot.ml" 185 6122 6164
+type(
+  string
+)
+"firstboot.ml" 185 6122 6132 "firstboot.ml" 185 6122 6164
+type(
+  string
+)
+"firstboot.ml" 186 6165 6176 "firstboot.ml" 186 6165 6185
+type(
+  exn
+)
+"firstboot.ml" 186 6165 6189 "firstboot.ml" 186 6165 6203
+type(
+  string
+)
+ident(
+  ext_ref Config.datadir
+)
+"firstboot.ml" 186 6165 6204 "firstboot.ml" 186 6165 6206
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"firstboot.ml" 186 6165 6207 "firstboot.ml" 186 6165 6219
+type(
+  string
+)
+"firstboot.ml" 186 6165 6189 "firstboot.ml" 186 6165 6219
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 185 6122 6128 "firstboot.ml" 186 6165 6219
+type(
+  string
+)
+"firstboot.ml" 192 6341 6349 "firstboot.ml" 192 6341 6361
+type(
+  string
+)
+"firstboot.ml" 192 6341 6364 "firstboot.ml" 192 6341 6383
+type(
+  string
+)
+ident(
+  int_ref virt_tools_data_dir "firstboot.ml" 184 6092 6100 "firstboot.ml" 184 6092 6119
+)
+"firstboot.ml" 192 6341 6384 "firstboot.ml" 192 6341 6386
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"firstboot.ml" 192 6341 6387 "firstboot.ml" 192 6341 6401
+type(
+  string
+)
+"firstboot.ml" 192 6341 6364 "firstboot.ml" 192 6341 6401
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 194 6414 6425 "firstboot.ml" 194 6414 6429
+type(
+  in_channel
+)
+ident(
+  def chan "firstboot.ml" 195 6456 6463 "firstboot.ml" 195 6456 6476
+)
+"firstboot.ml" 194 6414 6432 "firstboot.ml" 194 6414 6439
+type(
+  string -> in_channel
+)
+ident(
+  ext_ref Pervasives.open_in
+)
+"firstboot.ml" 194 6414 6440 "firstboot.ml" 194 6414 6452
+type(
+  string
+)
+ident(
+  int_ref rhsrvany_exe "firstboot.ml" 192 6341 6349 "firstboot.ml" 192 6341 6361
+)
+"firstboot.ml" 194 6414 6432 "firstboot.ml" 194 6414 6452
+call(
+  stack
+)
+type(
+  in_channel
+)
+"firstboot.ml" 195 6456 6463 "firstboot.ml" 195 6456 6471
+type(
+  in_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_in
+)
+"firstboot.ml" 195 6456 6472 "firstboot.ml" 195 6456 6476
+type(
+  in_channel
+)
+ident(
+  int_ref chan "firstboot.ml" 194 6414 6425 "firstboot.ml" 194 6414 6429
+)
+"firstboot.ml" 195 6456 6463 "firstboot.ml" 195 6456 6476
+call(
+  stack
+)
+type(
+  unit
+)
+"firstboot.ml" 194 6414 6421 "firstboot.ml" 195 6456 6476
+type(
+  unit
+)
+"firstboot.ml" 197 6487 6504 "firstboot.ml" 197 6487 6507
+type(
+  string
+)
+ident(
+  def msg "firstboot.ml" 198 6511 6520 "firstboot.ml" 199 6716 6743
+)
+"firstboot.ml" 197 6487 6494 "firstboot.ml" 197 6487 6507
+type(
+  exn
+)
+"firstboot.ml" 198 6511 6520 "firstboot.ml" 198 6511 6525
+type(
+  ?exit_code:int ->
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"firstboot.ml" 198 6511 6527 "firstboot.ml" 198 6511 6529
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"firstboot.ml" 198 6511 6529 "firstboot.ml" 198 6511 6714
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"firstboot.ml" 198 6511 6526 "firstboot.ml" 198 6511 6715
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"firstboot.ml" 199 6716 6727 "firstboot.ml" 199 6716 6739
+type(
+  string
+)
+ident(
+  int_ref rhsrvany_exe "firstboot.ml" 192 6341 6349 "firstboot.ml" 192 6341 6361
+)
+"firstboot.ml" 199 6716 6740 "firstboot.ml" 199 6716 6743
+type(
+  string
+)
+ident(
+  int_ref msg "firstboot.ml" 197 6487 6504 "firstboot.ml" 197 6487 6507
+)
+"firstboot.ml" 198 6511 6520 "firstboot.ml" 199 6716 6743
+call(
+  stack
+)
+type(
+  unit
+)
+"firstboot.ml" 193 6405 6409 "firstboot.ml" 200 6744 6749
+type(
+  unit
+)
+"firstboot.ml" 203 6815 6823 "firstboot.ml" 203 6815 6836
+type(
+  string
+)
+"firstboot.ml" 203 6815 6838 "firstboot.ml" 203 6815 6855
+type(
+  string
+)
+"firstboot.ml" 203 6815 6823 "firstboot.ml" 203 6815 6855
+type(
+  string * string
+)
+"firstboot.ml" 204 6858 6872 "firstboot.ml" 204 6858 6876
+type(
+  string -> string -> string list -> string * string
+)
+"firstboot.ml" 204 6858 6877 "firstboot.ml" 204 6858 6890
+type(
+  string
+)
+ident(
+  def firstboot_dir "firstboot.ml" 204 6858 6891 "firstboot.ml" 212 7274 7325
+)
+"firstboot.ml" 204 6858 6891 "firstboot.ml" 204 6858 6908
+type(
+  string
+)
+ident(
+  def firstboot_dir_win "firstboot.ml" 204 6858 6911 "firstboot.ml" 212 7274 7325
+)
+"firstboot.ml" 205 6920 6930 "firstboot.ml" 205 6920 6932
+type(
+  string list
+)
+"firstboot.ml" 205 6920 6936 "firstboot.ml" 205 6920 6949
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 204 6858 6877 "firstboot.ml" 204 6858 6890
+)
+"firstboot.ml" 205 6920 6951 "firstboot.ml" 205 6920 6968
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir_win "firstboot.ml" 204 6858 6891 "firstboot.ml" 204 6858 6908
+)
+"firstboot.ml" 205 6920 6936 "firstboot.ml" 205 6920 6968
+type(
+  string * string
+)
+"firstboot.ml" 206 6969 6979 "firstboot.ml" 206 6969 6982
+type(
+  string
+)
+ident(
+  def dir "firstboot.ml" 207 6994 7004 "firstboot.ml" 212 7274 7325
+)
+"firstboot.ml" 206 6969 6986 "firstboot.ml" 206 6969 6990
+type(
+  string list
+)
+ident(
+  def path "firstboot.ml" 207 6994 7004 "firstboot.ml" 212 7274 7325
+)
+"firstboot.ml" 206 6969 6979 "firstboot.ml" 206 6969 6990
+type(
+  string list
+)
+"firstboot.ml" 207 6994 7008 "firstboot.ml" 207 6994 7021
+type(
+  string
+)
+"firstboot.ml" 208 7024 7039 "firstboot.ml" 208 7024 7052
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 204 6858 6877 "firstboot.ml" 204 6858 6890
+)
+"firstboot.ml" 208 7024 7053 "firstboot.ml" 208 7024 7054
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"firstboot.ml" 208 7024 7055 "firstboot.ml" 208 7024 7057
+type(
+  string
+)
+"firstboot.ml" 208 7024 7039 "firstboot.ml" 208 7024 7057
+type(
+  bool
+)
+"firstboot.ml" 208 7024 7063 "firstboot.ml" 208 7024 7066
+type(
+  string
+)
+"firstboot.ml" 208 7024 7067 "firstboot.ml" 208 7024 7068
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"firstboot.ml" 208 7024 7069 "firstboot.ml" 208 7024 7072
+type(
+  string
+)
+ident(
+  int_ref dir "firstboot.ml" 206 6969 6979 "firstboot.ml" 206 6969 6982
+)
+"firstboot.ml" 208 7024 7063 "firstboot.ml" 208 7024 7072
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 208 7024 7078 "firstboot.ml" 208 7024 7091
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 204 6858 6877 "firstboot.ml" 204 6858 6890
+)
+"firstboot.ml" 208 7024 7092 "firstboot.ml" 208 7024 7094
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"firstboot.ml" 208 7024 7095 "firstboot.ml" 208 7024 7098
+type(
+  string
+)
+ident(
+  int_ref dir "firstboot.ml" 206 6969 6979 "firstboot.ml" 206 6969 6982
+)
+"firstboot.ml" 208 7024 7078 "firstboot.ml" 208 7024 7098
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 208 7024 7036 "firstboot.ml" 208 7024 7098
+type(
+  string
+)
+"firstboot.ml" 209 7102 7116 "firstboot.ml" 209 7102 7133
+type(
+  string
+)
+"firstboot.ml" 209 7102 7136 "firstboot.ml" 209 7102 7153
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir_win "firstboot.ml" 204 6858 6891 "firstboot.ml" 204 6858 6908
+)
+"firstboot.ml" 209 7102 7154 "firstboot.ml" 209 7102 7155
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"firstboot.ml" 209 7102 7156 "firstboot.ml" 209 7102 7160
+type(
+  string
+)
+"firstboot.ml" 209 7102 7161 "firstboot.ml" 209 7102 7162
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"firstboot.ml" 209 7102 7163 "firstboot.ml" 209 7102 7166
+type(
+  string
+)
+ident(
+  int_ref dir "firstboot.ml" 206 6969 6979 "firstboot.ml" 206 6969 6982
+)
+"firstboot.ml" 209 7102 7156 "firstboot.ml" 209 7102 7166
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 209 7102 7136 "firstboot.ml" 209 7102 7166
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 210 7170 7184 "firstboot.ml" 210 7170 7197
+type(
+  string
+)
+"firstboot.ml" 210 7170 7200 "firstboot.ml" 210 7170 7201
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 210 7170 7200 "firstboot.ml" 210 7170 7221
+call(
+  stack
+)
+type(
+  string -> string
+)
+"firstboot.ml" 210 7170 7222 "firstboot.ml" 210 7170 7235
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 207 6994 7008 "firstboot.ml" 207 6994 7021
+)
+"firstboot.ml" 210 7170 7200 "firstboot.ml" 210 7170 7235
+type(
+  string
+)
+"firstboot.ml" 211 7239 7249 "firstboot.ml" 211 7239 7250
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 211 7239 7249 "firstboot.ml" 211 7239 7258
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 211 7239 7259 "firstboot.ml" 211 7239 7272
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 210 7170 7184 "firstboot.ml" 210 7170 7197
+)
+"firstboot.ml" 211 7239 7249 "firstboot.ml" 211 7239 7272
+type(
+  unit
+)
+"firstboot.ml" 212 7274 7284 "firstboot.ml" 212 7274 7288
+type(
+  string -> string -> string list -> string * string
+)
+ident(
+  int_ref loop "firstboot.ml" 204 6858 6872 "firstboot.ml" 204 6858 6876
+)
+"firstboot.ml" 212 7274 7289 "firstboot.ml" 212 7274 7302
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 210 7170 7184 "firstboot.ml" 210 7170 7197
+)
+"firstboot.ml" 212 7274 7303 "firstboot.ml" 212 7274 7320
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir_win "firstboot.ml" 209 7102 7116 "firstboot.ml" 209 7102 7133
+)
+"firstboot.ml" 212 7274 7321 "firstboot.ml" 212 7274 7325
+type(
+  string list
+)
+ident(
+  int_ref path "firstboot.ml" 206 6969 6986 "firstboot.ml" 206 6969 6990
+)
+"firstboot.ml" 212 7274 7284 "firstboot.ml" 212 7274 7325
+call(
+  tail
+)
+type(
+  string * string
+)
+"firstboot.ml" 211 7239 7249 "firstboot.ml" 212 7274 7325
+type(
+  string * string
+)
+"firstboot.ml" 210 7170 7180 "firstboot.ml" 212 7274 7325
+type(
+  string * string
+)
+"firstboot.ml" 209 7102 7112 "firstboot.ml" 212 7274 7325
+type(
+  string * string
+)
+"firstboot.ml" 207 6994 7004 "firstboot.ml" 212 7274 7325
+type(
+  string * string
+)
+"firstboot.ml" 204 6858 6911 "firstboot.ml" 212 7274 7325
+type(
+  string list -> string * string
+)
+"firstboot.ml" 214 7335 7341 "firstboot.ml" 214 7335 7345
+type(
+  string -> string -> string list -> string * string
+)
+ident(
+  int_ref loop "firstboot.ml" 204 6858 6872 "firstboot.ml" 204 6858 6876
+)
+"firstboot.ml" 214 7335 7346 "firstboot.ml" 214 7335 7348
+type(
+  string
+)
+"firstboot.ml" 214 7335 7349 "firstboot.ml" 214 7335 7353
+type(
+  string
+)
+"firstboot.ml" 214 7335 7355 "firstboot.ml" 214 7335 7370
+type(
+  string
+)
+"firstboot.ml" 214 7335 7372 "firstboot.ml" 214 7335 7381
+type(
+  string
+)
+"firstboot.ml" 214 7335 7383 "firstboot.ml" 214 7335 7394
+type(
+  string
+)
+"firstboot.ml" 214 7335 7354 "firstboot.ml" 214 7335 7395
+type(
+  string list
+)
+"firstboot.ml" 214 7335 7341 "firstboot.ml" 214 7335 7395
+call(
+  stack
+)
+type(
+  string * string
+)
+"firstboot.ml" 204 6858 6864 "firstboot.ml" 214 7335 7395
+type(
+  string * string
+)
+"firstboot.ml" 216 7400 7404 "firstboot.ml" 216 7400 7405
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 216 7400 7404 "firstboot.ml" 216 7400 7413
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"firstboot.ml" 216 7400 7415 "firstboot.ml" 216 7400 7428
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 203 6815 6823 "firstboot.ml" 203 6815 6836
+)
+"firstboot.ml" 216 7400 7429 "firstboot.ml" 216 7400 7431
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"firstboot.ml" 216 7400 7432 "firstboot.ml" 216 7400 7441
+type(
+  string
+)
+"firstboot.ml" 216 7400 7414 "firstboot.ml" 216 7400 7442
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 216 7400 7404 "firstboot.ml" 216 7400 7442
+type(
+  unit
+)
+"firstboot.ml" 219 7483 7487 "firstboot.ml" 219 7483 7488
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 219 7483 7487 "firstboot.ml" 219 7483 7495
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 219 7483 7496 "firstboot.ml" 219 7483 7508
+type(
+  string
+)
+ident(
+  int_ref rhsrvany_exe "firstboot.ml" 192 6341 6349 "firstboot.ml" 192 6341 6361
+)
+"firstboot.ml" 219 7483 7510 "firstboot.ml" 219 7483 7523
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 203 6815 6823 "firstboot.ml" 203 6815 6836
+)
+"firstboot.ml" 219 7483 7524 "firstboot.ml" 219 7483 7526
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"firstboot.ml" 219 7483 7527 "firstboot.ml" 219 7483 7541
+type(
+  string
+)
+"firstboot.ml" 219 7483 7509 "firstboot.ml" 219 7483 7542
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 219 7483 7487 "firstboot.ml" 219 7483 7542
+type(
+  unit
+)
+"firstboot.ml" 225 7718 7726 "firstboot.ml" 225 7718 7742
+type(
+  string
+)
+"firstboot.ml" 225 7718 7745 "firstboot.ml" 225 7718 7752
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 225 7718 7753 "firstboot.ml" 257 8352 8353
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 257 8352 8354 "firstboot.ml" 257 8352 8371
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir_win "firstboot.ml" 203 6815 6838 "firstboot.ml" 203 6815 6855
+)
+"firstboot.ml" 225 7718 7745 "firstboot.ml" 257 8352 8371
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 259 8376 8380 "firstboot.ml" 259 8376 8381
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 259 8376 8380 "firstboot.ml" 259 8376 8387
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 259 8376 8389 "firstboot.ml" 259 8376 8402
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 203 6815 6823 "firstboot.ml" 203 6815 6836
+)
+"firstboot.ml" 259 8376 8403 "firstboot.ml" 259 8376 8405
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"firstboot.ml" 259 8376 8406 "firstboot.ml" 259 8376 8421
+type(
+  string
+)
+"firstboot.ml" 259 8376 8388 "firstboot.ml" 259 8376 8422
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 259 8376 8424 "firstboot.ml" 259 8376 8432
+type(
+  string -> string
+)
+ident(
+  int_ref unix2dos "firstboot.ml" 27 878 882 "firstboot.ml" 27 878 890
+)
+"firstboot.ml" 259 8376 8433 "firstboot.ml" 259 8376 8449
+type(
+  string
+)
+ident(
+  int_ref firstboot_script "firstboot.ml" 225 7718 7726 "firstboot.ml" 225 7718 7742
+)
+"firstboot.ml" 259 8376 8423 "firstboot.ml" 259 8376 8450
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 259 8376 8380 "firstboot.ml" 259 8376 8450
+type(
+  unit
+)
+"firstboot.ml" 262 8485 8493 "firstboot.ml" 262 8485 8503
+type(
+  string
+)
+"firstboot.ml" 262 8485 8506 "firstboot.ml" 262 8485 8507
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 262 8485 8506 "firstboot.ml" 262 8485 8538
+call(
+  stack
+)
+type(
+  string -> string
+)
+"firstboot.ml" 262 8485 8539 "firstboot.ml" 262 8485 8543
+type(
+  string
+)
+ident(
+  int_ref root "firstboot.ml" 182 6003 6051 "firstboot.ml" 182 6003 6055
+)
+"firstboot.ml" 262 8485 8506 "firstboot.ml" 262 8485 8543
+type(
+  string
+)
+"firstboot.ml" 263 8547 8555 "firstboot.ml" 263 8547 8563
+type(
+  string
+)
+"firstboot.ml" 263 8547 8566 "firstboot.ml" 263 8547 8573
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 263 8547 8574 "firstboot.ml" 263 8547 8601
+type(
+  (string -> string, unit, string) format
+)
+"firstboot.ml" 263 8547 8602 "firstboot.ml" 263 8547 8612
+type(
+  string
+)
+ident(
+  int_ref systemroot "firstboot.ml" 262 8485 8493 "firstboot.ml" 262 8485 8503
+)
+"firstboot.ml" 263 8547 8566 "firstboot.ml" 263 8547 8612
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 264 8616 8624 "firstboot.ml" 264 8616 8632
+type(
+  string
+)
+"firstboot.ml" 264 8616 8635 "firstboot.ml" 264 8616 8636
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 264 8616 8635 "firstboot.ml" 264 8616 8656
+call(
+  stack
+)
+type(
+  string -> string
+)
+"firstboot.ml" 264 8616 8657 "firstboot.ml" 264 8616 8665
+type(
+  string
+)
+ident(
+  int_ref filename "firstboot.ml" 263 8547 8555 "firstboot.ml" 263 8547 8563
+)
+"firstboot.ml" 264 8616 8635 "firstboot.ml" 264 8616 8665
+type(
+  string
+)
+"firstboot.ml" 265 8669 8673 "firstboot.ml" 265 8669 8674
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 265 8669 8673 "firstboot.ml" 265 8669 8685
+call(
+  stack
+)
+type(
+  ?verbose:bool -> ?debug:bool -> ?write:bool -> string -> unit
+)
+"firstboot.ml" 265 8669 8693 "firstboot.ml" 265 8669 8697
+type(
+  bool
+)
+"firstboot.ml" 265 8669 8698 "firstboot.ml" 265 8669 8706
+type(
+  string
+)
+ident(
+  int_ref filename "firstboot.ml" 264 8616 8624 "firstboot.ml" 264 8616 8632
+)
+"firstboot.ml" 265 8669 8673 "firstboot.ml" 265 8669 8706
+type(
+  unit
+)
+"firstboot.ml" 267 8709 8717 "firstboot.ml" 267 8709 8726
+type(
+  int64
+)
+"firstboot.ml" 267 8709 8729 "firstboot.ml" 267 8709 8730
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 267 8709 8729 "firstboot.ml" 267 8709 8741
+call(
+  stack
+)
+type(
+  unit -> int64
+)
+"firstboot.ml" 267 8709 8742 "firstboot.ml" 267 8709 8744
+type(
+  unit
+)
+"firstboot.ml" 267 8709 8729 "firstboot.ml" 267 8709 8744
+type(
+  int64
+)
+"firstboot.ml" 270 8790 8798 "firstboot.ml" 270 8790 8808
+type(
+  string
+)
+"firstboot.ml" 271 8811 8821 "firstboot.ml" 271 8811 8827
+type(
+  int64
+)
+"firstboot.ml" 271 8811 8830 "firstboot.ml" 271 8811 8831
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 271 8811 8830 "firstboot.ml" 271 8811 8852
+call(
+  stack
+)
+type(
+  int64 -> string -> int64
+)
+"firstboot.ml" 271 8811 8853 "firstboot.ml" 271 8811 8862
+type(
+  int64
+)
+ident(
+  int_ref root_node "firstboot.ml" 267 8709 8717 "firstboot.ml" 267 8709 8726
+)
+"firstboot.ml" 271 8811 8863 "firstboot.ml" 271 8811 8871
+type(
+  string
+)
+"firstboot.ml" 271 8811 8830 "firstboot.ml" 271 8811 8871
+type(
+  int64
+)
+"firstboot.ml" 272 8875 8885 "firstboot.ml" 272 8875 8891
+type(
+  int64
+)
+"firstboot.ml" 272 8875 8894 "firstboot.ml" 272 8875 8895
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 272 8875 8894 "firstboot.ml" 272 8875 8916
+call(
+  stack
+)
+type(
+  int64 -> string -> int64
+)
+"firstboot.ml" 272 8875 8917 "firstboot.ml" 272 8875 8923
+type(
+  int64
+)
+ident(
+  int_ref select "firstboot.ml" 271 8811 8821 "firstboot.ml" 271 8811 8827
+)
+"firstboot.ml" 272 8875 8924 "firstboot.ml" 272 8875 8933
+type(
+  string
+)
+"firstboot.ml" 272 8875 8894 "firstboot.ml" 272 8875 8933
+type(
+  int64
+)
+"firstboot.ml" 273 8937 8947 "firstboot.ml" 273 8937 8952
+type(
+  int64
+)
+"firstboot.ml" 273 8937 8955 "firstboot.ml" 273 8937 8966
+type(
+  string -> int64
+)
+ident(
+  ext_ref Common_utils.int_of_le32
+)
+"firstboot.ml" 273 8937 8968 "firstboot.ml" 273 8937 8969
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 273 8937 8968 "firstboot.ml" 273 8937 8987
+call(
+  stack
+)
+type(
+  int64 -> string
+)
+"firstboot.ml" 273 8937 8988 "firstboot.ml" 273 8937 8994
+type(
+  int64
+)
+ident(
+  int_ref valueh "firstboot.ml" 272 8875 8885 "firstboot.ml" 272 8875 8891
+)
+"firstboot.ml" 273 8937 8967 "firstboot.ml" 273 8937 8995
+type(
+  string
+)
+"firstboot.ml" 273 8937 8955 "firstboot.ml" 273 8937 8995
+call(
+  stack
+)
+type(
+  int64
+)
+"firstboot.ml" 274 8999 9005 "firstboot.ml" 274 8999 9012
+type(
+  (int64 -> string, unit, string) format -> int64 -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 274 8999 9013 "firstboot.ml" 274 8999 9030
+type(
+  (int64 -> string, unit, string) format
+)
+"firstboot.ml" 274 8999 9031 "firstboot.ml" 274 8999 9036
+type(
+  int64
+)
+ident(
+  int_ref value "firstboot.ml" 273 8937 8947 "firstboot.ml" 273 8937 8952
+)
+"firstboot.ml" 274 8999 9005 "firstboot.ml" 274 8999 9036
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 273 8937 8943 "firstboot.ml" 274 8999 9036
+type(
+  string
+)
+"firstboot.ml" 272 8875 8881 "firstboot.ml" 274 8999 9036
+type(
+  string
+)
+"firstboot.ml" 271 8811 8817 "firstboot.ml" 274 8999 9036
+type(
+  string
+)
+"firstboot.ml" 280 9228 9236 "firstboot.ml" 280 9228 9244
+type(
+  (string list * (string * Regedit.regtype) list) list
+)
+"firstboot.ml" 281 9249 9257 "firstboot.ml" 281 9249 9267
+type(
+  string
+)
+ident(
+  int_ref current_cs "firstboot.ml" 270 8790 8798 "firstboot.ml" 270 8790 8808
+)
+"firstboot.ml" 281 9249 9269 "firstboot.ml" 281 9249 9279
+type(
+  string
+)
+"firstboot.ml" 281 9249 9281 "firstboot.ml" 281 9249 9292
+type(
+  string
+)
+"firstboot.ml" 281 9249 9255 "firstboot.ml" 281 9249 9294
+type(
+  string list
+)
+"firstboot.ml" 282 9296 9304 "firstboot.ml" 282 9296 9310
+type(
+  string
+)
+"firstboot.ml" 282 9296 9322 "firstboot.ml" 282 9296 9328
+type(
+  int32
+)
+"firstboot.ml" 282 9296 9312 "firstboot.ml" 282 9296 9328
+type(
+  Regedit.regtype
+)
+"firstboot.ml" 282 9296 9304 "firstboot.ml" 282 9296 9328
+type(
+  string * Regedit.regtype
+)
+"firstboot.ml" 283 9330 9338 "firstboot.ml" 283 9330 9345
+type(
+  string
+)
+"firstboot.ml" 283 9330 9357 "firstboot.ml" 283 9330 9362
+type(
+  int32
+)
+"firstboot.ml" 283 9330 9347 "firstboot.ml" 283 9330 9362
+type(
+  Regedit.regtype
+)
+"firstboot.ml" 283 9330 9338 "firstboot.ml" 283 9330 9362
+type(
+  string * Regedit.regtype
+)
+"firstboot.ml" 284 9364 9372 "firstboot.ml" 284 9364 9386
+type(
+  string
+)
+"firstboot.ml" 284 9364 9398 "firstboot.ml" 284 9364 9403
+type(
+  int32
+)
+"firstboot.ml" 284 9364 9388 "firstboot.ml" 284 9364 9403
+type(
+  Regedit.regtype
+)
+"firstboot.ml" 284 9364 9372 "firstboot.ml" 284 9364 9403
+type(
+  string * Regedit.regtype
+)
+"firstboot.ml" 285 9405 9413 "firstboot.ml" 285 9405 9424
+type(
+  string
+)
+"firstboot.ml" 286 9426 9444 "firstboot.ml" 286 9426 9461
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir_win "firstboot.ml" 203 6815 6838 "firstboot.ml" 203 6815 6855
+)
+"firstboot.ml" 286 9426 9462 "firstboot.ml" 286 9426 9463
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"firstboot.ml" 286 9426 9464 "firstboot.ml" 286 9426 9493
+type(
+  string
+)
+"firstboot.ml" 286 9426 9443 "firstboot.ml" 286 9426 9494
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 286 9426 9436 "firstboot.ml" 286 9426 9494
+type(
+  Regedit.regtype
+)
+"firstboot.ml" 285 9405 9413 "firstboot.ml" 286 9426 9494
+type(
+  string * Regedit.regtype
+)
+"firstboot.ml" 287 9496 9504 "firstboot.ml" 287 9496 9517
+type(
+  string
+)
+"firstboot.ml" 287 9496 9526 "firstboot.ml" 287 9496 9556
+type(
+  string
+)
+"firstboot.ml" 287 9496 9519 "firstboot.ml" 287 9496 9556
+type(
+  Regedit.regtype
+)
+"firstboot.ml" 287 9496 9504 "firstboot.ml" 287 9496 9556
+type(
+  string * Regedit.regtype
+)
+"firstboot.ml" 288 9558 9566 "firstboot.ml" 288 9558 9578
+type(
+  string
+)
+"firstboot.ml" 288 9558 9587 "firstboot.ml" 288 9558 9600
+type(
+  string
+)
+"firstboot.ml" 288 9558 9580 "firstboot.ml" 288 9558 9600
+type(
+  Regedit.regtype
+)
+"firstboot.ml" 288 9558 9566 "firstboot.ml" 288 9558 9600
+type(
+  string * Regedit.regtype
+)
+"firstboot.ml" 282 9296 9302 "firstboot.ml" 288 9558 9602
+type(
+  (string * Regedit.regtype) list
+)
+"firstboot.ml" 281 9249 9255 "firstboot.ml" 288 9558 9602
+type(
+  string list * (string * Regedit.regtype) list
+)
+"firstboot.ml" 290 9605 9613 "firstboot.ml" 290 9605 9623
+type(
+  string
+)
+ident(
+  int_ref current_cs "firstboot.ml" 270 8790 8798 "firstboot.ml" 270 8790 8808
+)
+"firstboot.ml" 290 9605 9625 "firstboot.ml" 290 9605 9635
+type(
+  string
+)
+"firstboot.ml" 290 9605 9637 "firstboot.ml" 290 9605 9648
+type(
+  string
+)
+"firstboot.ml" 290 9605 9650 "firstboot.ml" 290 9605 9662
+type(
+  string
+)
+"firstboot.ml" 290 9605 9611 "firstboot.ml" 290 9605 9664
+type(
+  string list
+)
+"firstboot.ml" 291 9666 9674 "firstboot.ml" 291 9666 9687
+type(
+  string
+)
+"firstboot.ml" 292 9689 9707 "firstboot.ml" 292 9689 9718
+type(
+  string
+)
+"firstboot.ml" 292 9689 9719 "firstboot.ml" 292 9689 9720
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"firstboot.ml" 292 9689 9721 "firstboot.ml" 292 9689 9738
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir_win "firstboot.ml" 203 6815 6838 "firstboot.ml" 203 6815 6855
+)
+"firstboot.ml" 292 9689 9739 "firstboot.ml" 292 9689 9740
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"firstboot.ml" 292 9689 9741 "firstboot.ml" 292 9689 9760
+type(
+  string
+)
+"firstboot.ml" 292 9689 9721 "firstboot.ml" 292 9689 9760
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 292 9689 9706 "firstboot.ml" 292 9689 9761
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 292 9689 9699 "firstboot.ml" 292 9689 9761
+type(
+  Regedit.regtype
+)
+"firstboot.ml" 291 9666 9674 "firstboot.ml" 292 9689 9761
+type(
+  string * Regedit.regtype
+)
+"firstboot.ml" 293 9763 9771 "firstboot.ml" 293 9763 9776
+type(
+  string
+)
+"firstboot.ml" 293 9763 9785 "firstboot.ml" 293 9763 9802
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir_win "firstboot.ml" 203 6815 6838 "firstboot.ml" 203 6815 6855
+)
+"firstboot.ml" 293 9763 9778 "firstboot.ml" 293 9763 9802
+type(
+  Regedit.regtype
+)
+"firstboot.ml" 293 9763 9771 "firstboot.ml" 293 9763 9802
+type(
+  string * Regedit.regtype
+)
+"firstboot.ml" 291 9666 9672 "firstboot.ml" 293 9763 9804
+type(
+  (string * Regedit.regtype) list
+)
+"firstboot.ml" 290 9605 9611 "firstboot.ml" 293 9763 9804
+type(
+  string list * (string * Regedit.regtype) list
+)
+"firstboot.ml" 280 9228 9247 "firstboot.ml" 294 9806 9811
+type(
+  (string list * (string * Regedit.regtype) list) list
+)
+"firstboot.ml" 295 9815 9819 "firstboot.ml" 295 9815 9829
+type(
+  Guestfs.guestfs -> int64 -> Regedit.regedits -> unit
+)
+ident(
+  ext_ref Regedit.reg_import
+)
+"firstboot.ml" 295 9815 9830 "firstboot.ml" 295 9815 9831
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 295 9815 9832 "firstboot.ml" 295 9815 9841
+type(
+  int64
+)
+ident(
+  int_ref root_node "firstboot.ml" 267 8709 8717 "firstboot.ml" 267 8709 8726
+)
+"firstboot.ml" 295 9815 9842 "firstboot.ml" 295 9815 9850
+type(
+  Regedit.regedits
+)
+ident(
+  int_ref regedits "firstboot.ml" 280 9228 9236 "firstboot.ml" 280 9228 9244
+)
+"firstboot.ml" 295 9815 9819 "firstboot.ml" 295 9815 9850
+call(
+  stack
+)
+type(
+  unit
+)
+"firstboot.ml" 297 9853 9857 "firstboot.ml" 297 9853 9858
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 297 9853 9857 "firstboot.ml" 297 9853 9871
+call(
+  stack
+)
+type(
+  string option -> unit
+)
+"firstboot.ml" 297 9853 9872 "firstboot.ml" 297 9853 9876
+type(
+  string option
+)
+"firstboot.ml" 297 9853 9857 "firstboot.ml" 297 9853 9876
+type(
+  unit
+)
+"firstboot.ml" 298 9878 9882 "firstboot.ml" 298 9878 9883
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 182 6003 6030 "firstboot.ml" 182 6003 6031
+)
+"firstboot.ml" 298 9878 9882 "firstboot.ml" 298 9878 9895
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"firstboot.ml" 298 9878 9896 "firstboot.ml" 298 9878 9898
+type(
+  unit
+)
+"firstboot.ml" 298 9878 9882 "firstboot.ml" 298 9878 9898
+type(
+  unit
+)
+"firstboot.ml" 300 9901 9905 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 203 6815 6823 "firstboot.ml" 203 6815 6836
+)
+"firstboot.ml" 298 9878 9882 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 297 9853 9857 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 295 9815 9819 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 280 9228 9232 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 270 8790 8794 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 267 8709 8713 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 265 8669 8673 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 264 8616 8620 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 263 8547 8551 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 262 8485 8489 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 259 8376 8380 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 225 7718 7722 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 219 7483 7487 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 216 7400 7404 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 203 6815 6819 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 193 6405 6409 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 192 6341 6345 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 184 6092 6096 "firstboot.ml" 300 9901 9918
+type(
+  string
+)
+"firstboot.ml" 304 9925 9929 "firstboot.ml" 304 9925 9941
+type(
+  int ref
+)
+ident(
+  def script_count "firstboot.ml" 306 9951 9951 --
+)
+"firstboot.ml" 304 9925 9944 "firstboot.ml" 304 9925 9947
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"firstboot.ml" 304 9925 9948 "firstboot.ml" 304 9925 9949
+type(
+  int
+)
+"firstboot.ml" 304 9925 9944 "firstboot.ml" 304 9925 9949
+type(
+  int ref
+)
+"firstboot.ml" 306 9951 9955 "firstboot.ml" 306 9951 9975
+type(
+  Guestfs.guestfs -> string -> string -> string -> unit
+)
+ident(
+  def add_firstboot_script "firstboot.ml" 324 10597 10657 --
+)
+"firstboot.ml" 306 9951 9977 "firstboot.ml" 306 9951 9978
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "firstboot.ml" 306 9951 9998 "firstboot.ml" 324 10597 10657
+)
+"firstboot.ml" 306 9951 9998 "firstboot.ml" 306 9951 10002
+type(
+  string
+)
+ident(
+  def root "firstboot.ml" 306 9951 10003 "firstboot.ml" 324 10597 10657
+)
+"firstboot.ml" 306 9951 10003 "firstboot.ml" 306 9951 10007
+type(
+  string
+)
+ident(
+  def name "firstboot.ml" 306 9951 10008 "firstboot.ml" 324 10597 10657
+)
+"firstboot.ml" 306 9951 10008 "firstboot.ml" 306 9951 10015
+type(
+  string
+)
+ident(
+  def content "firstboot.ml" 307 10018 10020 "firstboot.ml" 324 10597 10657
+)
+"firstboot.ml" 307 10018 10024 "firstboot.ml" 307 10018 10027
+type(
+  string
+)
+"firstboot.ml" 307 10018 10030 "firstboot.ml" 307 10018 10031
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 306 9951 9977 "firstboot.ml" 306 9951 9978
+)
+"firstboot.ml" 307 10018 10030 "firstboot.ml" 307 10018 10048
+call(
+  stack
+)
+type(
+  string -> string
+)
+"firstboot.ml" 307 10018 10049 "firstboot.ml" 307 10018 10053
+type(
+  string
+)
+ident(
+  int_ref root "firstboot.ml" 306 9951 9998 "firstboot.ml" 306 9951 10002
+)
+"firstboot.ml" 307 10018 10030 "firstboot.ml" 307 10018 10053
+type(
+  string
+)
+"firstboot.ml" 308 10057 10063 "firstboot.ml" 308 10057 10069
+type(
+  string
+)
+"firstboot.ml" 308 10057 10072 "firstboot.ml" 308 10057 10073
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 306 9951 9977 "firstboot.ml" 306 9951 9978
+)
+"firstboot.ml" 308 10057 10072 "firstboot.ml" 308 10057 10092
+call(
+  stack
+)
+type(
+  string -> string
+)
+"firstboot.ml" 308 10057 10093 "firstboot.ml" 308 10057 10097
+type(
+  string
+)
+ident(
+  int_ref root "firstboot.ml" 306 9951 9998 "firstboot.ml" 306 9951 10002
+)
+"firstboot.ml" 308 10057 10072 "firstboot.ml" 308 10057 10097
+type(
+  string
+)
+"firstboot.ml" 309 10101 10103 "firstboot.ml" 309 10101 10107
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"firstboot.ml" 309 10101 10108 "firstboot.ml" 309 10101 10120
+type(
+  int ref
+)
+ident(
+  int_ref script_count "firstboot.ml" 304 9925 9929 "firstboot.ml" 304 9925 9941
+)
+"firstboot.ml" 309 10101 10103 "firstboot.ml" 309 10101 10120
+type(
+  unit
+)
+"firstboot.ml" 310 10122 10128 "firstboot.ml" 310 10122 10136
+type(
+  string
+)
+"firstboot.ml" 310 10122 10139 "firstboot.ml" 310 10122 10146
+type(
+  (int -> string -> string, unit, string) format -> int -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"firstboot.ml" 310 10122 10147 "firstboot.ml" 310 10122 10156
+type(
+  (int -> string -> string, unit, string) format
+)
+"firstboot.ml" 310 10122 10157 "firstboot.ml" 310 10122 10158
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"firstboot.ml" 310 10122 10158 "firstboot.ml" 310 10122 10170
+type(
+  int ref
+)
+ident(
+  int_ref script_count "firstboot.ml" 304 9925 9929 "firstboot.ml" 304 9925 9941
+)
+"firstboot.ml" 310 10122 10157 "firstboot.ml" 310 10122 10170
+type(
+  int
+)
+"firstboot.ml" 310 10122 10172 "firstboot.ml" 310 10122 10185
+type(
+  string -> string
+)
+ident(
+  int_ref sanitize_name "firstboot.ml" 30 964 968 "firstboot.ml" 30 964 981
+)
+"firstboot.ml" 310 10122 10186 "firstboot.ml" 310 10122 10190
+type(
+  string
+)
+ident(
+  int_ref name "firstboot.ml" 306 9951 10003 "firstboot.ml" 306 9951 10007
+)
+"firstboot.ml" 310 10122 10171 "firstboot.ml" 310 10122 10191
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 310 10122 10139 "firstboot.ml" 310 10122 10191
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 311 10195 10203 "firstboot.ml" 311 10195 10206
+type(
+  string
+)
+ident(
+  int_ref typ "firstboot.ml" 307 10018 10024 "firstboot.ml" 307 10018 10027
+)
+"firstboot.ml" 311 10195 10208 "firstboot.ml" 311 10195 10214
+type(
+  string
+)
+ident(
+  int_ref distro "firstboot.ml" 308 10057 10063 "firstboot.ml" 308 10057 10069
+)
+"firstboot.ml" 311 10195 10203 "firstboot.ml" 311 10195 10214
+type(
+  string * string
+)
+"firstboot.ml" 312 10220 10224 "firstboot.ml" 312 10220 10231
+type(
+  string
+)
+"firstboot.ml" 312 10220 10233 "firstboot.ml" 312 10220 10234
+type(
+  string
+)
+"firstboot.ml" 312 10220 10224 "firstboot.ml" 312 10220 10234
+type(
+  string * string
+)
+"firstboot.ml" 313 10238 10242 "firstboot.ml" 313 10238 10263
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  ext_ref Linux.install_service
+)
+"firstboot.ml" 313 10238 10264 "firstboot.ml" 313 10238 10265
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 306 9951 9977 "firstboot.ml" 306 9951 9978
+)
+"firstboot.ml" 313 10238 10266 "firstboot.ml" 313 10238 10272
+type(
+  string
+)
+ident(
+  int_ref distro "firstboot.ml" 308 10057 10063 "firstboot.ml" 308 10057 10069
+)
+"firstboot.ml" 313 10238 10242 "firstboot.ml" 313 10238 10272
+call(
+  stack
+)
+type(
+  unit
+)
+"firstboot.ml" 314 10274 10282 "firstboot.ml" 314 10274 10290
+type(
+  string
+)
+"firstboot.ml" 314 10274 10293 "firstboot.ml" 314 10274 10312
+type(
+  string
+)
+ident(
+  ext_ref Linux.firstboot_dir
+)
+"firstboot.ml" 314 10274 10313 "firstboot.ml" 314 10274 10315
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"firstboot.ml" 314 10274 10316 "firstboot.ml" 314 10274 10325
+type(
+  string
+)
+"firstboot.ml" 314 10274 10293 "firstboot.ml" 314 10274 10325
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 314 10274 10326 "firstboot.ml" 314 10274 10328
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"firstboot.ml" 314 10274 10329 "firstboot.ml" 314 10274 10337
+type(
+  string
+)
+ident(
+  int_ref filename "firstboot.ml" 310 10122 10128 "firstboot.ml" 310 10122 10136
+)
+"firstboot.ml" 314 10274 10293 "firstboot.ml" 314 10274 10337
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 315 10341 10345 "firstboot.ml" 315 10341 10346
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 306 9951 9977 "firstboot.ml" 306 9951 9978
+)
+"firstboot.ml" 315 10341 10345 "firstboot.ml" 315 10341 10352
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 315 10341 10353 "firstboot.ml" 315 10341 10361
+type(
+  string
+)
+ident(
+  int_ref filename "firstboot.ml" 314 10274 10282 "firstboot.ml" 314 10274 10290
+)
+"firstboot.ml" 315 10341 10362 "firstboot.ml" 315 10341 10369
+type(
+  string
+)
+ident(
+  int_ref content "firstboot.ml" 306 9951 10008 "firstboot.ml" 306 9951 10015
+)
+"firstboot.ml" 315 10341 10345 "firstboot.ml" 315 10341 10369
+type(
+  unit
+)
+"firstboot.ml" 316 10371 10375 "firstboot.ml" 316 10371 10376
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 306 9951 9977 "firstboot.ml" 306 9951 9978
+)
+"firstboot.ml" 316 10371 10375 "firstboot.ml" 316 10371 10382
+call(
+  tail
+)
+type(
+  int -> string -> unit
+)
+"firstboot.ml" 316 10371 10383 "firstboot.ml" 316 10371 10388
+type(
+  int
+)
+"firstboot.ml" 316 10371 10389 "firstboot.ml" 316 10371 10397
+type(
+  string
+)
+ident(
+  int_ref filename "firstboot.ml" 314 10274 10282 "firstboot.ml" 314 10274 10290
+)
+"firstboot.ml" 316 10371 10375 "firstboot.ml" 316 10371 10397
+type(
+  unit
+)
+"firstboot.ml" 315 10341 10345 "firstboot.ml" 316 10371 10397
+type(
+  unit
+)
+"firstboot.ml" 314 10274 10278 "firstboot.ml" 316 10371 10397
+type(
+  unit
+)
+"firstboot.ml" 313 10238 10242 "firstboot.ml" 316 10371 10397
+type(
+  unit
+)
+"firstboot.ml" 318 10399 10403 "firstboot.ml" 318 10399 10412
+type(
+  string
+)
+"firstboot.ml" 318 10399 10414 "firstboot.ml" 318 10399 10415
+type(
+  string
+)
+"firstboot.ml" 318 10399 10403 "firstboot.ml" 318 10399 10415
+type(
+  string * string
+)
+"firstboot.ml" 319 10419 10427 "firstboot.ml" 319 10419 10440
+type(
+  string
+)
+"firstboot.ml" 319 10419 10443 "firstboot.ml" 319 10419 10466
+type(
+  Guestfs.guestfs -> string -> string
+)
+ident(
+  ext_ref Windows.install_service
+)
+"firstboot.ml" 319 10419 10467 "firstboot.ml" 319 10419 10468
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 306 9951 9977 "firstboot.ml" 306 9951 9978
+)
+"firstboot.ml" 319 10419 10469 "firstboot.ml" 319 10419 10473
+type(
+  string
+)
+ident(
+  int_ref root "firstboot.ml" 306 9951 9998 "firstboot.ml" 306 9951 10002
+)
+"firstboot.ml" 319 10419 10443 "firstboot.ml" 319 10419 10473
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 320 10477 10485 "firstboot.ml" 320 10477 10493
+type(
+  string
+)
+"firstboot.ml" 320 10477 10496 "firstboot.ml" 320 10477 10509
+type(
+  string
+)
+ident(
+  int_ref firstboot_dir "firstboot.ml" 319 10419 10427 "firstboot.ml" 319 10419 10440
+)
+"firstboot.ml" 320 10477 10510 "firstboot.ml" 320 10477 10512
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"firstboot.ml" 320 10477 10513 "firstboot.ml" 320 10477 10522
+type(
+  string
+)
+"firstboot.ml" 320 10477 10496 "firstboot.ml" 320 10477 10522
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 320 10477 10523 "firstboot.ml" 320 10477 10525
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"firstboot.ml" 320 10477 10526 "firstboot.ml" 320 10477 10534
+type(
+  string
+)
+ident(
+  int_ref filename "firstboot.ml" 310 10122 10128 "firstboot.ml" 310 10122 10136
+)
+"firstboot.ml" 320 10477 10496 "firstboot.ml" 320 10477 10534
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 320 10477 10535 "firstboot.ml" 320 10477 10536
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"firstboot.ml" 320 10477 10537 "firstboot.ml" 320 10477 10543
+type(
+  string
+)
+"firstboot.ml" 320 10477 10496 "firstboot.ml" 320 10477 10543
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 321 10547 10551 "firstboot.ml" 321 10547 10552
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "firstboot.ml" 306 9951 9977 "firstboot.ml" 306 9951 9978
+)
+"firstboot.ml" 321 10547 10551 "firstboot.ml" 321 10547 10558
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"firstboot.ml" 321 10547 10559 "firstboot.ml" 321 10547 10567
+type(
+  string
+)
+ident(
+  int_ref filename "firstboot.ml" 320 10477 10485 "firstboot.ml" 320 10477 10493
+)
+"firstboot.ml" 321 10547 10569 "firstboot.ml" 321 10547 10577
+type(
+  string -> string
+)
+ident(
+  int_ref unix2dos "firstboot.ml" 27 878 882 "firstboot.ml" 27 878 890
+)
+"firstboot.ml" 321 10547 10578 "firstboot.ml" 321 10547 10585
+type(
+  string
+)
+ident(
+  int_ref content "firstboot.ml" 306 9951 10008 "firstboot.ml" 306 9951 10015
+)
+"firstboot.ml" 321 10547 10568 "firstboot.ml" 321 10547 10586
+call(
+  stack
+)
+type(
+  string
+)
+"firstboot.ml" 321 10547 10551 "firstboot.ml" 321 10547 10586
+type(
+  unit
+)
+"firstboot.ml" 320 10477 10481 "firstboot.ml" 321 10547 10586
+type(
+  unit
+)
+"firstboot.ml" 319 10419 10423 "firstboot.ml" 321 10547 10586
+type(
+  unit
+)
+"firstboot.ml" 323 10588 10592 "firstboot.ml" 323 10588 10593
+type(
+  string * string
+)
+"firstboot.ml" 324 10597 10601 "firstboot.ml" 324 10597 10606
+type(
+  ?exit_code:int ->
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"firstboot.ml" 324 10597 10608 "firstboot.ml" 324 10597 10610
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"firstboot.ml" 324 10597 10610 "firstboot.ml" 324 10597 10645
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"firstboot.ml" 324 10597 10607 "firstboot.ml" 324 10597 10646
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"firstboot.ml" 324 10597 10647 "firstboot.ml" 324 10597 10650
+type(
+  string
+)
+ident(
+  int_ref typ "firstboot.ml" 307 10018 10024 "firstboot.ml" 307 10018 10027
+)
+"firstboot.ml" 324 10597 10651 "firstboot.ml" 324 10597 10657
+type(
+  string
+)
+ident(
+  int_ref distro "firstboot.ml" 308 10057 10063 "firstboot.ml" 308 10057 10069
+)
+"firstboot.ml" 324 10597 10601 "firstboot.ml" 324 10597 10657
+call(
+  tail
+)
+type(
+  unit
+)
+"firstboot.ml" 311 10195 10197 "firstboot.ml" 324 10597 10657
+type(
+  unit
+)
+"firstboot.ml" 310 10122 10124 "firstboot.ml" 324 10597 10657
+type(
+  unit
+)
+"firstboot.ml" 309 10101 10103 "firstboot.ml" 324 10597 10657
+type(
+  unit
+)
+"firstboot.ml" 308 10057 10059 "firstboot.ml" 324 10597 10657
+type(
+  unit
+)
+"firstboot.ml" 307 10018 10020 "firstboot.ml" 324 10597 10657
+type(
+  unit
+)

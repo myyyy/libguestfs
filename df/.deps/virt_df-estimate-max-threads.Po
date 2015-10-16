@@ -40,8 +40,7 @@ virt_df-estimate-max-threads.o: estimate-max-threads.c ../config.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h estimate-max-threads.h
+ ../src/guestfs-internal-frontend-cleanups.h estimate-max-threads.h
 
 ../config.h:
 
@@ -176,7 +175,5 @@ virt_df-estimate-max-threads.o: estimate-max-threads.c ../config.h \
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 estimate-max-threads.h:

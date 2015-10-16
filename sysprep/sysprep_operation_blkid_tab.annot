@@ -1,0 +1,325 @@
+"sysprep_operation_blkid_tab.ml" 24 851 855 "sysprep_operation_blkid_tab.ml" 24 851 872
+type(
+  < inspect_get_type : 'a -> string; is_symlink : string -> bool;
+    rm : string -> unit; .. > ->
+  'a -> 'b -> unit
+)
+ident(
+  def blkid_tab_perform "sysprep_operation_blkid_tab.ml" 43 1442 1442 --
+)
+"sysprep_operation_blkid_tab.ml" 24 851 873 "sysprep_operation_blkid_tab.ml" 24 851 874
+type(
+  < inspect_get_type : 'a -> string; is_symlink : string -> bool;
+    rm : string -> unit; .. >
+  as 'c
+)
+ident(
+  def g "sysprep_operation_blkid_tab.ml" 24 851 875 "sysprep_operation_blkid_tab.ml" 41 1437 1440
+)
+"sysprep_operation_blkid_tab.ml" 24 851 875 "sysprep_operation_blkid_tab.ml" 24 851 879
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_blkid_tab.ml" 24 851 880 "sysprep_operation_blkid_tab.ml" 41 1437 1440
+)
+"sysprep_operation_blkid_tab.ml" 24 851 880 "sysprep_operation_blkid_tab.ml" 24 851 892
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_blkid_tab.ml" 25 895 897 "sysprep_operation_blkid_tab.ml" 41 1437 1440
+)
+"sysprep_operation_blkid_tab.ml" 25 895 901 "sysprep_operation_blkid_tab.ml" 25 895 904
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 25 895 907 "sysprep_operation_blkid_tab.ml" 25 895 908
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_blkid_tab.ml" 24 851 873 "sysprep_operation_blkid_tab.ml" 24 851 874
+)
+"sysprep_operation_blkid_tab.ml" 25 895 907 "sysprep_operation_blkid_tab.ml" 25 895 925
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_blkid_tab.ml" 25 895 926 "sysprep_operation_blkid_tab.ml" 25 895 930
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_blkid_tab.ml" 24 851 875 "sysprep_operation_blkid_tab.ml" 24 851 879
+)
+"sysprep_operation_blkid_tab.ml" 25 895 907 "sysprep_operation_blkid_tab.ml" 25 895 930
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 26 934 939 "sysprep_operation_blkid_tab.ml" 26 934 942
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_blkid_tab.ml" 25 895 901 "sysprep_operation_blkid_tab.ml" 25 895 904
+)
+"sysprep_operation_blkid_tab.ml" 26 934 943 "sysprep_operation_blkid_tab.ml" 26 934 945
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_blkid_tab.ml" 26 934 946 "sysprep_operation_blkid_tab.ml" 26 934 955
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 26 934 939 "sysprep_operation_blkid_tab.ml" 26 934 955
+type(
+  bool
+)
+"sysprep_operation_blkid_tab.ml" 27 963 971 "sysprep_operation_blkid_tab.ml" 27 963 976
+type(
+  string list
+)
+"sysprep_operation_blkid_tab.ml" 27 963 981 "sysprep_operation_blkid_tab.ml" 27 963 1001
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 28 1003 1021 "sysprep_operation_blkid_tab.ml" 28 1003 1045
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 29 1047 1065 "sysprep_operation_blkid_tab.ml" 29 1047 1087
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 30 1089 1107 "sysprep_operation_blkid_tab.ml" 30 1089 1133
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 31 1135 1153 "sysprep_operation_blkid_tab.ml" 31 1135 1169
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 32 1171 1189 "sysprep_operation_blkid_tab.ml" 32 1171 1209
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 33 1211 1229 "sysprep_operation_blkid_tab.ml" 33 1211 1246
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 34 1248 1266 "sysprep_operation_blkid_tab.ml" 34 1248 1287
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 27 963 979 "sysprep_operation_blkid_tab.ml" 34 1248 1290
+type(
+  string list
+)
+"sysprep_operation_blkid_tab.ml" 35 1294 1298 "sysprep_operation_blkid_tab.ml" 35 1294 1307
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_blkid_tab.ml" 36 1310 1320 "sysprep_operation_blkid_tab.ml" 36 1310 1324
+type(
+  string
+)
+ident(
+  def file "sysprep_operation_blkid_tab.ml" 37 1328 1336 "sysprep_operation_blkid_tab.ml" 39 1415 1424
+)
+"sysprep_operation_blkid_tab.ml" 37 1328 1339 "sysprep_operation_blkid_tab.ml" 37 1328 1342
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"sysprep_operation_blkid_tab.ml" 37 1328 1344 "sysprep_operation_blkid_tab.ml" 37 1328 1345
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_blkid_tab.ml" 24 851 873 "sysprep_operation_blkid_tab.ml" 24 851 874
+)
+"sysprep_operation_blkid_tab.ml" 37 1328 1344 "sysprep_operation_blkid_tab.ml" 37 1328 1356
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"sysprep_operation_blkid_tab.ml" 37 1328 1357 "sysprep_operation_blkid_tab.ml" 37 1328 1361
+type(
+  string
+)
+ident(
+  int_ref file "sysprep_operation_blkid_tab.ml" 36 1310 1320 "sysprep_operation_blkid_tab.ml" 36 1310 1324
+)
+"sysprep_operation_blkid_tab.ml" 37 1328 1343 "sysprep_operation_blkid_tab.ml" 37 1328 1362
+type(
+  bool
+)
+"sysprep_operation_blkid_tab.ml" 37 1328 1339 "sysprep_operation_blkid_tab.ml" 37 1328 1362
+type(
+  bool
+)
+"sysprep_operation_blkid_tab.ml" 38 1370 1384 "sysprep_operation_blkid_tab.ml" 38 1370 1385
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_blkid_tab.ml" 24 851 873 "sysprep_operation_blkid_tab.ml" 24 851 874
+)
+"sysprep_operation_blkid_tab.ml" 38 1370 1384 "sysprep_operation_blkid_tab.ml" 38 1370 1388
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_blkid_tab.ml" 38 1370 1389 "sysprep_operation_blkid_tab.ml" 38 1370 1393
+type(
+  string
+)
+ident(
+  int_ref file "sysprep_operation_blkid_tab.ml" 36 1310 1320 "sysprep_operation_blkid_tab.ml" 36 1310 1324
+)
+"sysprep_operation_blkid_tab.ml" 38 1370 1384 "sysprep_operation_blkid_tab.ml" 38 1370 1393
+type(
+  unit
+)
+"sysprep_operation_blkid_tab.ml" 38 1370 1407 "sysprep_operation_blkid_tab.ml" 38 1370 1408
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 38 1370 1399 "sysprep_operation_blkid_tab.ml" 38 1370 1408
+type(
+  exn
+)
+"sysprep_operation_blkid_tab.ml" 38 1370 1412 "sysprep_operation_blkid_tab.ml" 38 1370 1414
+type(
+  unit
+)
+"sysprep_operation_blkid_tab.ml" 37 1328 1368 "sysprep_operation_blkid_tab.ml" 39 1415 1424
+type(
+  unit
+)
+"sysprep_operation_blkid_tab.ml" 37 1328 1336 "sysprep_operation_blkid_tab.ml" 39 1415 1424
+type(
+  unit
+)
+"sysprep_operation_blkid_tab.ml" 35 1294 1308 "sysprep_operation_blkid_tab.ml" 40 1425 1430
+type(
+  string -> unit
+)
+"sysprep_operation_blkid_tab.ml" 40 1425 1431 "sysprep_operation_blkid_tab.ml" 40 1425 1436
+type(
+  string list
+)
+ident(
+  int_ref files "sysprep_operation_blkid_tab.ml" 27 963 971 "sysprep_operation_blkid_tab.ml" 27 963 976
+)
+"sysprep_operation_blkid_tab.ml" 35 1294 1298 "sysprep_operation_blkid_tab.ml" 40 1425 1436
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_blkid_tab.ml" 26 934 961 "sysprep_operation_blkid_tab.ml" 41 1437 1440
+type(
+  unit
+)
+"sysprep_operation_blkid_tab.ml" 26 934 936 "sysprep_operation_blkid_tab.ml" 41 1437 1440
+type(
+  unit
+)
+"sysprep_operation_blkid_tab.ml" 25 895 897 "sysprep_operation_blkid_tab.ml" 41 1437 1440
+type(
+  unit
+)
+"sysprep_operation_blkid_tab.ml" 43 1442 1446 "sysprep_operation_blkid_tab.ml" 43 1442 1448
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_blkid_tab.ml" 51 1629 1629 --
+)
+"sysprep_operation_blkid_tab.ml" 44 1453 1455 "sysprep_operation_blkid_tab.ml" 44 1453 1463
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_blkid_tab.ml" 45 1469 1480 "sysprep_operation_blkid_tab.ml" 45 1469 1491
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 46 1493 1518 "sysprep_operation_blkid_tab.ml" 46 1493 1522
+type(
+  bool
+)
+"sysprep_operation_blkid_tab.ml" 47 1524 1538 "sysprep_operation_blkid_tab.ml" 47 1524 1540
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_blkid_tab.ml" 47 1524 1540 "sysprep_operation_blkid_tab.ml" 47 1524 1571
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 47 1524 1538 "sysprep_operation_blkid_tab.ml" 47 1524 1571
+type(
+  string
+)
+"sysprep_operation_blkid_tab.ml" 48 1573 1607 "sysprep_operation_blkid_tab.ml" 48 1573 1624
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref blkid_tab_perform "sysprep_operation_blkid_tab.ml" 24 851 855 "sysprep_operation_blkid_tab.ml" 24 851 872
+)
+"sysprep_operation_blkid_tab.ml" 48 1573 1602 "sysprep_operation_blkid_tab.ml" 48 1573 1624
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_blkid_tab.ml" 43 1442 1451 "sysprep_operation_blkid_tab.ml" 49 1626 1627
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_blkid_tab.ml" 51 1629 1633 "sysprep_operation_blkid_tab.ml" 51 1629 1635
+type(
+  unit
+)
+"sysprep_operation_blkid_tab.ml" 51 1629 1638 "sysprep_operation_blkid_tab.ml" 51 1629 1656
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_blkid_tab.ml" 51 1629 1657 "sysprep_operation_blkid_tab.ml" 51 1629 1659
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_blkid_tab.ml" 43 1442 1446 "sysprep_operation_blkid_tab.ml" 43 1442 1448
+)
+"sysprep_operation_blkid_tab.ml" 51 1629 1638 "sysprep_operation_blkid_tab.ml" 51 1629 1659
+call(
+  stack
+)
+type(
+  unit
+)

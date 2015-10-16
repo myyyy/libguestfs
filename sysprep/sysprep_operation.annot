@@ -1,0 +1,4889 @@
+"sysprep_operation.ml" 27 876 907 "sysprep_operation.ml" 27 876 912
+type(
+  bool
+)
+"sysprep_operation.ml" 28 913 944 "sysprep_operation.ml" 28 913 949
+type(
+  bool
+)
+"sysprep_operation.ml" 29 950 972 "sysprep_operation.ml" 29 950 974
+type(
+  unit
+)
+"sysprep_operation.ml" 29 950 995 "sysprep_operation.ml" 29 950 999
+type(
+  bool
+)
+"sysprep_operation.ml" 29 950 977 "sysprep_operation.ml" 29 950 999
+type(
+  unit
+)
+"sysprep_operation.ml" 30 1000 1028 "sysprep_operation.ml" 30 1000 1042
+type(
+  bool
+)
+type(
+  bool
+)
+"sysprep_operation.ml" 31 1043 1065 "sysprep_operation.ml" 31 1043 1067
+type(
+  unit
+)
+"sysprep_operation.ml" 31 1043 1088 "sysprep_operation.ml" 31 1043 1092
+type(
+  bool
+)
+"sysprep_operation.ml" 31 1043 1070 "sysprep_operation.ml" 31 1043 1092
+type(
+  unit
+)
+"sysprep_operation.ml" 32 1093 1121 "sysprep_operation.ml" 32 1093 1135
+type(
+  bool
+)
+type(
+  bool
+)
+"sysprep_operation.ml" 57 1746 1750 "sysprep_operation.ml" 57 1746 1758
+type(
+  operation
+)
+ident(
+  def defaults "sysprep_operation.ml" 70 2008 2008 --
+)
+"sysprep_operation.ml" 58 1763 1773 "sysprep_operation.ml" 58 1763 1774
+type(
+  int
+)
+"sysprep_operation.ml" 59 1776 1785 "sysprep_operation.ml" 59 1776 1787
+type(
+  string
+)
+"sysprep_operation.ml" 60 1789 1812 "sysprep_operation.ml" 60 1789 1817
+type(
+  bool
+)
+"sysprep_operation.ml" 61 1819 1831 "sysprep_operation.ml" 61 1819 1833
+type(
+  string
+)
+"sysprep_operation.ml" 62 1835 1855 "sysprep_operation.ml" 62 1835 1859
+type(
+  string option
+)
+"sysprep_operation.ml" 63 1861 1875 "sysprep_operation.ml" 63 1861 1879
+type(
+  string option
+)
+"sysprep_operation.ml" 64 1881 1896 "sysprep_operation.ml" 64 1881 1898
+type(
+  extra_arg list
+)
+"sysprep_operation.ml" 65 1900 1932 "sysprep_operation.ml" 65 1900 1934
+type(
+  unit
+)
+"sysprep_operation.ml" 65 1900 1938 "sysprep_operation.ml" 65 1900 1940
+type(
+  unit
+)
+"sysprep_operation.ml" 65 1900 1927 "sysprep_operation.ml" 65 1900 1941
+type(
+  unit -> unit
+)
+"sysprep_operation.ml" 66 1943 1970 "sysprep_operation.ml" 66 1943 1974
+type(
+  filesystem_side_effects callback option
+)
+"sysprep_operation.ml" 67 1976 1999 "sysprep_operation.ml" 67 1976 2003
+type(
+  device_side_effects callback option
+)
+"sysprep_operation.ml" 57 1746 1761 "sysprep_operation.ml" 68 2005 2006
+type(
+  operation
+)
+"sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+type(
+  operation list ref
+)
+ident(
+  def all_operations "sysprep_operation.ml" 71 2036 2036 --
+)
+"sysprep_operation.ml" 70 2008 2029 "sysprep_operation.ml" 70 2008 2032
+type(
+  operation list -> operation list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sysprep_operation.ml" 70 2008 2033 "sysprep_operation.ml" 70 2008 2035
+type(
+  operation list
+)
+"sysprep_operation.ml" 70 2008 2029 "sysprep_operation.ml" 70 2008 2035
+type(
+  operation list ref
+)
+"sysprep_operation.ml" 71 2036 2040 "sysprep_operation.ml" 71 2036 2069
+type(
+  operation list ref
+)
+ident(
+  def enabled_by_default_operations "sysprep_operation.ml" 73 2080 2080 --
+)
+"sysprep_operation.ml" 71 2036 2072 "sysprep_operation.ml" 71 2036 2075
+type(
+  operation list -> operation list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sysprep_operation.ml" 71 2036 2076 "sysprep_operation.ml" 71 2036 2078
+type(
+  operation list
+)
+"sysprep_operation.ml" 71 2036 2072 "sysprep_operation.ml" 71 2036 2078
+type(
+  operation list ref
+)
+"sysprep_operation.ml" 76 2145 2153 "sysprep_operation.ml" 76 2145 2160
+type(
+  operation -> operation -> int
+)
+ident(
+  def compare "sysprep_operation.ml" 76 2145 2188 "sysprep_operation.ml" 77 2189 2194
+)
+"sysprep_operation.ml" 76 2145 2161 "sysprep_operation.ml" 76 2145 2162
+type(
+  operation
+)
+ident(
+  def a "sysprep_operation.ml" 76 2145 2163 "sysprep_operation.ml" 76 2145 2188
+)
+"sysprep_operation.ml" 76 2145 2163 "sysprep_operation.ml" 76 2145 2164
+type(
+  operation
+)
+ident(
+  def b "sysprep_operation.ml" 76 2145 2167 "sysprep_operation.ml" 76 2145 2188
+)
+"sysprep_operation.ml" 76 2145 2167 "sysprep_operation.ml" 76 2145 2174
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"sysprep_operation.ml" 76 2145 2175 "sysprep_operation.ml" 76 2145 2176
+type(
+  operation
+)
+ident(
+  int_ref a "sysprep_operation.ml" 76 2145 2161 "sysprep_operation.ml" 76 2145 2162
+)
+"sysprep_operation.ml" 76 2145 2175 "sysprep_operation.ml" 76 2145 2181
+type(
+  string
+)
+"sysprep_operation.ml" 76 2145 2182 "sysprep_operation.ml" 76 2145 2183
+type(
+  operation
+)
+ident(
+  int_ref b "sysprep_operation.ml" 76 2145 2163 "sysprep_operation.ml" 76 2145 2164
+)
+"sysprep_operation.ml" 76 2145 2182 "sysprep_operation.ml" 76 2145 2188
+type(
+  string
+)
+"sysprep_operation.ml" 76 2145 2167 "sysprep_operation.ml" 76 2145 2188
+type(
+  int
+)
+"sysprep_operation.ml" 73 2080 2102 "sysprep_operation.ml" 78 2195 2196
+call(
+  stack
+)
+"sysprep_operation.ml" 81 2224 2228 "sysprep_operation.ml" 81 2224 2237
+type(
+  OperationSet.t
+)
+ident(
+  def empty_set "sysprep_operation.ml" 83 2260 2260 --
+)
+"sysprep_operation.ml" 81 2224 2240 "sysprep_operation.ml" 81 2224 2258
+type(
+  OperationSet.t
+)
+ident(
+  ext_ref OperationSet.empty
+)
+"sysprep_operation.ml" 83 2260 2264 "sysprep_operation.ml" 83 2260 2279
+type(
+  OperationSet.elt list -> OperationSet.t
+)
+ident(
+  def opset_of_oplist "sysprep_operation.ml" 89 2374 2374 --
+)
+"sysprep_operation.ml" 83 2260 2280 "sysprep_operation.ml" 83 2260 2282
+type(
+  OperationSet.elt list
+)
+ident(
+  def li "sysprep_operation.ml" 84 2285 2287 "sysprep_operation.ml" 87 2356 2372
+)
+"sysprep_operation.ml" 84 2285 2287 "sysprep_operation.ml" 84 2285 2301
+type(
+  (OperationSet.t -> OperationSet.elt -> OperationSet.t) ->
+  OperationSet.t -> OperationSet.elt list -> OperationSet.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"sysprep_operation.ml" 85 2304 2312 "sysprep_operation.ml" 85 2304 2315
+type(
+  OperationSet.t
+)
+ident(
+  def acc "sysprep_operation.ml" 85 2304 2316 "sysprep_operation.ml" 86 2324 2355
+)
+"sysprep_operation.ml" 85 2304 2316 "sysprep_operation.ml" 85 2304 2320
+type(
+  OperationSet.elt
+)
+ident(
+  def elem "sysprep_operation.ml" 86 2324 2330 "sysprep_operation.ml" 86 2324 2355
+)
+"sysprep_operation.ml" 86 2324 2330 "sysprep_operation.ml" 86 2324 2346
+type(
+  OperationSet.elt -> OperationSet.t -> OperationSet.t
+)
+ident(
+  ext_ref OperationSet.add
+)
+"sysprep_operation.ml" 86 2324 2347 "sysprep_operation.ml" 86 2324 2351
+type(
+  OperationSet.elt
+)
+ident(
+  int_ref elem "sysprep_operation.ml" 85 2304 2316 "sysprep_operation.ml" 85 2304 2320
+)
+"sysprep_operation.ml" 86 2324 2352 "sysprep_operation.ml" 86 2324 2355
+type(
+  OperationSet.t
+)
+ident(
+  int_ref acc "sysprep_operation.ml" 85 2304 2312 "sysprep_operation.ml" 85 2304 2315
+)
+"sysprep_operation.ml" 86 2324 2330 "sysprep_operation.ml" 86 2324 2355
+call(
+  tail
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 84 2285 2302 "sysprep_operation.ml" 87 2356 2359
+type(
+  OperationSet.t -> OperationSet.elt -> OperationSet.t
+)
+"sysprep_operation.ml" 87 2356 2360 "sysprep_operation.ml" 87 2356 2369
+type(
+  OperationSet.t
+)
+ident(
+  int_ref empty_set "sysprep_operation.ml" 81 2224 2228 "sysprep_operation.ml" 81 2224 2237
+)
+"sysprep_operation.ml" 87 2356 2370 "sysprep_operation.ml" 87 2356 2372
+type(
+  OperationSet.elt list
+)
+ident(
+  int_ref li "sysprep_operation.ml" 83 2260 2280 "sysprep_operation.ml" 83 2260 2282
+)
+"sysprep_operation.ml" 84 2285 2287 "sysprep_operation.ml" 87 2356 2372
+call(
+  tail
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 89 2374 2378 "sysprep_operation.ml" 89 2374 2388
+type(
+  string -> OperationSet.t -> OperationSet.t
+)
+ident(
+  def add_to_set "sysprep_operation.ml" 93 2498 2498 --
+)
+"sysprep_operation.ml" 89 2374 2389 "sysprep_operation.ml" 89 2374 2393
+type(
+  string
+)
+ident(
+  def name "sysprep_operation.ml" 89 2374 2394 "sysprep_operation.ml" 91 2471 2496
+)
+"sysprep_operation.ml" 89 2374 2394 "sysprep_operation.ml" 89 2374 2397
+type(
+  OperationSet.t
+)
+ident(
+  def set "sysprep_operation.ml" 90 2400 2402 "sysprep_operation.ml" 91 2471 2496
+)
+"sysprep_operation.ml" 90 2400 2406 "sysprep_operation.ml" 90 2400 2408
+type(
+  operation
+)
+"sysprep_operation.ml" 90 2400 2411 "sysprep_operation.ml" 90 2400 2420
+type(
+  (operation -> bool) -> operation list -> operation
+)
+ident(
+  ext_ref List.find
+)
+"sysprep_operation.ml" 90 2400 2435 "sysprep_operation.ml" 90 2400 2436
+type(
+  string
+)
+ident(
+  def n "sysprep_operation.ml" 90 2400 2442 "sysprep_operation.ml" 90 2400 2450
+)
+"sysprep_operation.ml" 90 2400 2426 "sysprep_operation.ml" 90 2400 2438
+type(
+  operation
+)
+"sysprep_operation.ml" 90 2400 2442 "sysprep_operation.ml" 90 2400 2446
+type(
+  string
+)
+ident(
+  int_ref name "sysprep_operation.ml" 89 2374 2389 "sysprep_operation.ml" 89 2374 2393
+)
+"sysprep_operation.ml" 90 2400 2447 "sysprep_operation.ml" 90 2400 2448
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation.ml" 90 2400 2449 "sysprep_operation.ml" 90 2400 2450
+type(
+  string
+)
+ident(
+  int_ref n "sysprep_operation.ml" 90 2400 2435 "sysprep_operation.ml" 90 2400 2436
+)
+"sysprep_operation.ml" 90 2400 2442 "sysprep_operation.ml" 90 2400 2450
+type(
+  bool
+)
+"sysprep_operation.ml" 90 2400 2421 "sysprep_operation.ml" 90 2400 2451
+type(
+  operation -> bool
+)
+"sysprep_operation.ml" 90 2400 2452 "sysprep_operation.ml" 90 2400 2453
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 90 2400 2453 "sysprep_operation.ml" 90 2400 2467
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 90 2400 2452 "sysprep_operation.ml" 90 2400 2467
+type(
+  operation list
+)
+"sysprep_operation.ml" 90 2400 2411 "sysprep_operation.ml" 90 2400 2467
+call(
+  stack
+)
+type(
+  operation
+)
+"sysprep_operation.ml" 91 2471 2473 "sysprep_operation.ml" 91 2471 2489
+type(
+  operation -> OperationSet.t -> OperationSet.t
+)
+ident(
+  ext_ref OperationSet.add
+)
+"sysprep_operation.ml" 91 2471 2490 "sysprep_operation.ml" 91 2471 2492
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 90 2400 2406 "sysprep_operation.ml" 90 2400 2408
+)
+"sysprep_operation.ml" 91 2471 2493 "sysprep_operation.ml" 91 2471 2496
+type(
+  OperationSet.t
+)
+ident(
+  int_ref set "sysprep_operation.ml" 89 2374 2394 "sysprep_operation.ml" 89 2374 2397
+)
+"sysprep_operation.ml" 91 2471 2473 "sysprep_operation.ml" 91 2471 2496
+call(
+  tail
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 90 2400 2402 "sysprep_operation.ml" 91 2471 2496
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 93 2498 2502 "sysprep_operation.ml" 93 2498 2521
+type(
+  OperationSet.t -> OperationSet.t
+)
+ident(
+  def add_defaults_to_set "sysprep_operation.ml" 96 2603 2603 --
+)
+"sysprep_operation.ml" 93 2498 2522 "sysprep_operation.ml" 93 2498 2525
+type(
+  OperationSet.t
+)
+ident(
+  def set "sysprep_operation.ml" 94 2528 2530 "sysprep_operation.ml" 94 2528 2601
+)
+"sysprep_operation.ml" 94 2528 2530 "sysprep_operation.ml" 94 2528 2548
+type(
+  OperationSet.t -> OperationSet.t -> OperationSet.t
+)
+ident(
+  ext_ref OperationSet.union
+)
+"sysprep_operation.ml" 94 2528 2549 "sysprep_operation.ml" 94 2528 2552
+type(
+  OperationSet.t
+)
+ident(
+  int_ref set "sysprep_operation.ml" 93 2498 2522 "sysprep_operation.ml" 93 2498 2525
+)
+"sysprep_operation.ml" 94 2528 2554 "sysprep_operation.ml" 94 2528 2569
+type(
+  operation list -> OperationSet.t
+)
+ident(
+  int_ref opset_of_oplist "sysprep_operation.ml" 83 2260 2264 "sysprep_operation.ml" 83 2260 2279
+)
+"sysprep_operation.ml" 94 2528 2570 "sysprep_operation.ml" 94 2528 2571
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 94 2528 2571 "sysprep_operation.ml" 94 2528 2600
+type(
+  operation list ref
+)
+ident(
+  int_ref enabled_by_default_operations "sysprep_operation.ml" 71 2036 2040 "sysprep_operation.ml" 71 2036 2069
+)
+"sysprep_operation.ml" 94 2528 2570 "sysprep_operation.ml" 94 2528 2600
+type(
+  operation list
+)
+"sysprep_operation.ml" 94 2528 2553 "sysprep_operation.ml" 94 2528 2601
+call(
+  stack
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 94 2528 2530 "sysprep_operation.ml" 94 2528 2601
+call(
+  tail
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 96 2603 2607 "sysprep_operation.ml" 96 2603 2621
+type(
+  'a -> OperationSet.t
+)
+ident(
+  def add_all_to_set "sysprep_operation.ml" 99 2663 2663 --
+)
+"sysprep_operation.ml" 96 2603 2622 "sysprep_operation.ml" 96 2603 2625
+type(
+  'a
+)
+ident(
+  def set "sysprep_operation.ml" 97 2628 2630 "sysprep_operation.ml" 97 2628 2661
+)
+"sysprep_operation.ml" 97 2628 2630 "sysprep_operation.ml" 97 2628 2645
+type(
+  operation list -> OperationSet.t
+)
+ident(
+  int_ref opset_of_oplist "sysprep_operation.ml" 83 2260 2264 "sysprep_operation.ml" 83 2260 2279
+)
+"sysprep_operation.ml" 97 2628 2646 "sysprep_operation.ml" 97 2628 2647
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 97 2628 2647 "sysprep_operation.ml" 97 2628 2661
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 97 2628 2646 "sysprep_operation.ml" 97 2628 2661
+type(
+  operation list
+)
+"sysprep_operation.ml" 97 2628 2630 "sysprep_operation.ml" 97 2628 2661
+call(
+  tail
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 99 2663 2667 "sysprep_operation.ml" 99 2663 2682
+type(
+  string -> OperationSet.t -> OperationSet.t
+)
+ident(
+  def remove_from_set "sysprep_operation.ml" 105 2888 2888 --
+)
+"sysprep_operation.ml" 99 2663 2683 "sysprep_operation.ml" 99 2663 2687
+type(
+  string
+)
+ident(
+  def name "sysprep_operation.ml" 99 2663 2688 "sysprep_operation.ml" 103 2825 2886
+)
+"sysprep_operation.ml" 99 2663 2688 "sysprep_operation.ml" 99 2663 2691
+type(
+  OperationSet.t
+)
+ident(
+  def set "sysprep_operation.ml" 100 2694 2696 "sysprep_operation.ml" 103 2825 2886
+)
+"sysprep_operation.ml" 100 2694 2700 "sysprep_operation.ml" 100 2694 2711
+type(
+  operation -> bool
+)
+"sysprep_operation.ml" 100 2694 2727 "sysprep_operation.ml" 100 2694 2728
+type(
+  string
+)
+ident(
+  def n "sysprep_operation.ml" 100 2694 2734 "sysprep_operation.ml" 100 2694 2742
+)
+"sysprep_operation.ml" 100 2694 2718 "sysprep_operation.ml" 100 2694 2730
+type(
+  operation
+)
+"sysprep_operation.ml" 100 2694 2734 "sysprep_operation.ml" 100 2694 2738
+type(
+  string
+)
+ident(
+  int_ref name "sysprep_operation.ml" 99 2663 2683 "sysprep_operation.ml" 99 2663 2687
+)
+"sysprep_operation.ml" 100 2694 2739 "sysprep_operation.ml" 100 2694 2740
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation.ml" 100 2694 2741 "sysprep_operation.ml" 100 2694 2742
+type(
+  string
+)
+ident(
+  int_ref n "sysprep_operation.ml" 100 2694 2727 "sysprep_operation.ml" 100 2694 2728
+)
+"sysprep_operation.ml" 100 2694 2734 "sysprep_operation.ml" 100 2694 2742
+type(
+  bool
+)
+"sysprep_operation.ml" 100 2694 2714 "sysprep_operation.ml" 100 2694 2742
+type(
+  operation -> bool
+)
+"sysprep_operation.ml" 101 2746 2751 "sysprep_operation.ml" 101 2746 2762
+type(
+  (operation -> bool) -> operation list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"sysprep_operation.ml" 101 2746 2763 "sysprep_operation.ml" 101 2746 2774
+type(
+  operation -> bool
+)
+ident(
+  int_ref name_filter "sysprep_operation.ml" 100 2694 2700 "sysprep_operation.ml" 100 2694 2711
+)
+"sysprep_operation.ml" 101 2746 2775 "sysprep_operation.ml" 101 2746 2776
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 101 2746 2776 "sysprep_operation.ml" 101 2746 2790
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 101 2746 2775 "sysprep_operation.ml" 101 2746 2790
+type(
+  operation list
+)
+"sysprep_operation.ml" 101 2746 2751 "sysprep_operation.ml" 101 2746 2790
+call(
+  stack
+)
+type(
+  bool
+)
+"sysprep_operation.ml" 101 2746 2791 "sysprep_operation.ml" 101 2746 2793
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation.ml" 101 2746 2794 "sysprep_operation.ml" 101 2746 2798
+type(
+  bool
+)
+"sysprep_operation.ml" 101 2746 2751 "sysprep_operation.ml" 101 2746 2798
+type(
+  bool
+)
+"sysprep_operation.ml" 102 2804 2808 "sysprep_operation.ml" 102 2804 2813
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"sysprep_operation.ml" 102 2804 2814 "sysprep_operation.ml" 102 2804 2823
+type(
+  exn
+)
+"sysprep_operation.ml" 102 2804 2808 "sysprep_operation.ml" 102 2804 2823
+type(
+  unit
+)
+"sysprep_operation.ml" 101 2746 2748 "sysprep_operation.ml" 102 2804 2823
+type(
+  unit
+)
+"sysprep_operation.ml" 103 2825 2827 "sysprep_operation.ml" 103 2825 2844
+type(
+  OperationSet.t -> OperationSet.t -> OperationSet.t
+)
+ident(
+  ext_ref OperationSet.diff
+)
+"sysprep_operation.ml" 103 2825 2845 "sysprep_operation.ml" 103 2825 2848
+type(
+  OperationSet.t
+)
+ident(
+  int_ref set "sysprep_operation.ml" 99 2663 2688 "sysprep_operation.ml" 99 2663 2691
+)
+"sysprep_operation.ml" 103 2825 2850 "sysprep_operation.ml" 103 2825 2869
+type(
+  (OperationSet.elt -> bool) -> OperationSet.t -> OperationSet.t
+)
+ident(
+  ext_ref OperationSet.filter
+)
+"sysprep_operation.ml" 103 2825 2870 "sysprep_operation.ml" 103 2825 2881
+type(
+  OperationSet.elt -> bool
+)
+ident(
+  int_ref name_filter "sysprep_operation.ml" 100 2694 2700 "sysprep_operation.ml" 100 2694 2711
+)
+"sysprep_operation.ml" 103 2825 2882 "sysprep_operation.ml" 103 2825 2885
+type(
+  OperationSet.t
+)
+ident(
+  int_ref set "sysprep_operation.ml" 99 2663 2688 "sysprep_operation.ml" 99 2663 2691
+)
+"sysprep_operation.ml" 103 2825 2849 "sysprep_operation.ml" 103 2825 2886
+call(
+  stack
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 103 2825 2827 "sysprep_operation.ml" 103 2825 2886
+call(
+  tail
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 101 2746 2748 "sysprep_operation.ml" 103 2825 2886
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 100 2694 2696 "sysprep_operation.ml" 103 2825 2886
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 105 2888 2892 "sysprep_operation.ml" 105 2888 2916
+type(
+  OperationSet.t -> OperationSet.t
+)
+ident(
+  def remove_defaults_from_set "sysprep_operation.ml" 108 2997 2997 --
+)
+"sysprep_operation.ml" 105 2888 2917 "sysprep_operation.ml" 105 2888 2920
+type(
+  OperationSet.t
+)
+ident(
+  def set "sysprep_operation.ml" 106 2923 2925 "sysprep_operation.ml" 106 2923 2995
+)
+"sysprep_operation.ml" 106 2923 2925 "sysprep_operation.ml" 106 2923 2942
+type(
+  OperationSet.t -> OperationSet.t -> OperationSet.t
+)
+ident(
+  ext_ref OperationSet.diff
+)
+"sysprep_operation.ml" 106 2923 2943 "sysprep_operation.ml" 106 2923 2946
+type(
+  OperationSet.t
+)
+ident(
+  int_ref set "sysprep_operation.ml" 105 2888 2917 "sysprep_operation.ml" 105 2888 2920
+)
+"sysprep_operation.ml" 106 2923 2948 "sysprep_operation.ml" 106 2923 2963
+type(
+  operation list -> OperationSet.t
+)
+ident(
+  int_ref opset_of_oplist "sysprep_operation.ml" 83 2260 2264 "sysprep_operation.ml" 83 2260 2279
+)
+"sysprep_operation.ml" 106 2923 2964 "sysprep_operation.ml" 106 2923 2965
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 106 2923 2965 "sysprep_operation.ml" 106 2923 2994
+type(
+  operation list ref
+)
+ident(
+  int_ref enabled_by_default_operations "sysprep_operation.ml" 71 2036 2040 "sysprep_operation.ml" 71 2036 2069
+)
+"sysprep_operation.ml" 106 2923 2964 "sysprep_operation.ml" 106 2923 2994
+type(
+  operation list
+)
+"sysprep_operation.ml" 106 2923 2947 "sysprep_operation.ml" 106 2923 2995
+call(
+  stack
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 106 2923 2925 "sysprep_operation.ml" 106 2923 2995
+call(
+  tail
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 108 2997 3001 "sysprep_operation.ml" 108 2997 3020
+type(
+  'a -> OperationSet.t
+)
+ident(
+  def remove_all_from_set "sysprep_operation.ml" 111 3040 3040 --
+)
+"sysprep_operation.ml" 108 2997 3021 "sysprep_operation.ml" 108 2997 3024
+type(
+  'a
+)
+ident(
+  def set "sysprep_operation.ml" 109 3027 3029 "sysprep_operation.ml" 109 3027 3038
+)
+"sysprep_operation.ml" 109 3027 3029 "sysprep_operation.ml" 109 3027 3038
+type(
+  OperationSet.t
+)
+ident(
+  int_ref empty_set "sysprep_operation.ml" 81 2224 2228 "sysprep_operation.ml" 81 2224 2237
+)
+"sysprep_operation.ml" 111 3040 3044 "sysprep_operation.ml" 111 3040 3062
+type(
+  operation -> unit
+)
+ident(
+  def register_operation "sysprep_operation.ml" 116 3218 3218 --
+)
+"sysprep_operation.ml" 111 3040 3063 "sysprep_operation.ml" 111 3040 3065
+type(
+  operation
+)
+ident(
+  def op "sysprep_operation.ml" 112 3068 3070 "sysprep_operation.ml" 114 3143 3216
+)
+"sysprep_operation.ml" 112 3068 3070 "sysprep_operation.ml" 112 3068 3084
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 112 3068 3085 "sysprep_operation.ml" 112 3068 3087
+type(
+  operation list ref -> operation list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sysprep_operation.ml" 112 3068 3088 "sysprep_operation.ml" 112 3068 3090
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 111 3040 3063 "sysprep_operation.ml" 111 3040 3065
+)
+"sysprep_operation.ml" 112 3068 3094 "sysprep_operation.ml" 112 3068 3095
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 112 3068 3095 "sysprep_operation.ml" 112 3068 3109
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 112 3068 3094 "sysprep_operation.ml" 112 3068 3109
+type(
+  operation list
+)
+"sysprep_operation.ml" 112 3068 3088 "sysprep_operation.ml" 112 3068 3109
+type(
+  operation list
+)
+"sysprep_operation.ml" 112 3068 3070 "sysprep_operation.ml" 112 3068 3109
+type(
+  unit
+)
+"sysprep_operation.ml" 113 3111 3116 "sysprep_operation.ml" 113 3111 3118
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 111 3040 3063 "sysprep_operation.ml" 111 3040 3065
+)
+"sysprep_operation.ml" 113 3111 3116 "sysprep_operation.ml" 113 3111 3137
+type(
+  bool
+)
+"sysprep_operation.ml" 114 3143 3147 "sysprep_operation.ml" 114 3143 3176
+type(
+  operation list ref
+)
+ident(
+  int_ref enabled_by_default_operations "sysprep_operation.ml" 71 2036 2040 "sysprep_operation.ml" 71 2036 2069
+)
+"sysprep_operation.ml" 114 3143 3177 "sysprep_operation.ml" 114 3143 3179
+type(
+  operation list ref -> operation list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sysprep_operation.ml" 114 3143 3180 "sysprep_operation.ml" 114 3143 3182
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 111 3040 3063 "sysprep_operation.ml" 111 3040 3065
+)
+"sysprep_operation.ml" 114 3143 3186 "sysprep_operation.ml" 114 3143 3187
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 114 3143 3187 "sysprep_operation.ml" 114 3143 3216
+type(
+  operation list ref
+)
+ident(
+  int_ref enabled_by_default_operations "sysprep_operation.ml" 71 2036 2040 "sysprep_operation.ml" 71 2036 2069
+)
+"sysprep_operation.ml" 114 3143 3186 "sysprep_operation.ml" 114 3143 3216
+type(
+  operation list
+)
+"sysprep_operation.ml" 114 3143 3180 "sysprep_operation.ml" 114 3143 3216
+type(
+  operation list
+)
+"sysprep_operation.ml" 114 3143 3147 "sysprep_operation.ml" 114 3143 3216
+type(
+  unit
+)
+"sysprep_operation.ml" 113 3111 3113 "sysprep_operation.ml" 114 3143 3216
+type(
+  unit
+)
+"sysprep_operation.ml" 112 3068 3070 "sysprep_operation.ml" 114 3143 3216
+type(
+  unit
+)
+"sysprep_operation.ml" 116 3218 3222 "sysprep_operation.ml" 116 3218 3227
+type(
+  bool ref
+)
+ident(
+  def baked "sysprep_operation.ml" 117 3240 3240 --
+)
+"sysprep_operation.ml" 116 3218 3230 "sysprep_operation.ml" 116 3218 3233
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sysprep_operation.ml" 116 3218 3234 "sysprep_operation.ml" 116 3218 3239
+type(
+  bool
+)
+"sysprep_operation.ml" 116 3218 3230 "sysprep_operation.ml" 116 3218 3239
+type(
+  bool ref
+)
+"sysprep_operation.ml" 117 3240 3248 "sysprep_operation.ml" 117 3240 3252
+type(
+  unit -> unit
+)
+ident(
+  def bake "sysprep_operation.ml" 117 3240 3240 --
+)
+"sysprep_operation.ml" 117 3240 3253 "sysprep_operation.ml" 117 3240 3255
+type(
+  unit
+)
+"sysprep_operation.ml" 121 3359 3365 "sysprep_operation.ml" 121 3359 3368
+type(
+  operation list
+)
+"sysprep_operation.ml" 122 3371 3375 "sysprep_operation.ml" 122 3371 3384
+type(
+  (operation -> operation -> int) -> operation list -> operation list
+)
+ident(
+  ext_ref List.sort
+)
+"sysprep_operation.ml" 122 3371 3399 "sysprep_operation.ml" 122 3371 3400
+type(
+  string
+)
+ident(
+  def a "sysprep_operation.ml" 122 3371 3403 "sysprep_operation.ml" 122 3371 3430
+)
+"sysprep_operation.ml" 122 3371 3390 "sysprep_operation.ml" 122 3371 3402
+type(
+  operation
+)
+"sysprep_operation.ml" 122 3371 3412 "sysprep_operation.ml" 122 3371 3413
+type(
+  string
+)
+ident(
+  def b "sysprep_operation.ml" 122 3371 3419 "sysprep_operation.ml" 122 3371 3430
+)
+"sysprep_operation.ml" 122 3371 3403 "sysprep_operation.ml" 122 3371 3415
+type(
+  operation
+)
+"sysprep_operation.ml" 122 3371 3419 "sysprep_operation.ml" 122 3371 3426
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"sysprep_operation.ml" 122 3371 3427 "sysprep_operation.ml" 122 3371 3428
+type(
+  string
+)
+ident(
+  int_ref a "sysprep_operation.ml" 122 3371 3399 "sysprep_operation.ml" 122 3371 3400
+)
+"sysprep_operation.ml" 122 3371 3429 "sysprep_operation.ml" 122 3371 3430
+type(
+  string
+)
+ident(
+  int_ref b "sysprep_operation.ml" 122 3371 3412 "sysprep_operation.ml" 122 3371 3413
+)
+"sysprep_operation.ml" 122 3371 3419 "sysprep_operation.ml" 122 3371 3430
+type(
+  int
+)
+"sysprep_operation.ml" 122 3371 3385 "sysprep_operation.ml" 122 3371 3431
+type(
+  operation -> operation -> int
+)
+"sysprep_operation.ml" 122 3371 3432 "sysprep_operation.ml" 122 3371 3433
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 122 3371 3433 "sysprep_operation.ml" 122 3371 3447
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 122 3371 3432 "sysprep_operation.ml" 122 3371 3447
+type(
+  operation list
+)
+"sysprep_operation.ml" 122 3371 3375 "sysprep_operation.ml" 122 3371 3447
+call(
+  stack
+)
+type(
+  operation list
+)
+"sysprep_operation.ml" 123 3451 3453 "sysprep_operation.ml" 123 3451 3467
+type(
+  operation list -> unit
+)
+ident(
+  int_ref check_no_dupes "sysprep_operation.ml" 127 3537 3541 "sysprep_operation.ml" 127 3537 3555
+)
+"sysprep_operation.ml" 123 3451 3468 "sysprep_operation.ml" 123 3451 3471
+type(
+  operation list
+)
+ident(
+  int_ref ops "sysprep_operation.ml" 121 3359 3365 "sysprep_operation.ml" 121 3359 3368
+)
+"sysprep_operation.ml" 123 3451 3453 "sysprep_operation.ml" 123 3451 3471
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 124 3473 3475 "sysprep_operation.ml" 124 3473 3484
+type(
+  (operation -> unit) -> operation list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation.ml" 124 3473 3485 "sysprep_operation.ml" 124 3473 3490
+type(
+  operation -> unit
+)
+ident(
+  int_ref check "sysprep_operation.ml" 136 3776 3780 "sysprep_operation.ml" 136 3776 3785
+)
+"sysprep_operation.ml" 124 3473 3491 "sysprep_operation.ml" 124 3473 3494
+type(
+  operation list
+)
+ident(
+  int_ref ops "sysprep_operation.ml" 121 3359 3365 "sysprep_operation.ml" 121 3359 3368
+)
+"sysprep_operation.ml" 124 3473 3475 "sysprep_operation.ml" 124 3473 3494
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 125 3496 3498 "sysprep_operation.ml" 125 3496 3512
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 125 3496 3513 "sysprep_operation.ml" 125 3496 3515
+type(
+  operation list ref -> operation list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sysprep_operation.ml" 125 3496 3516 "sysprep_operation.ml" 125 3496 3519
+type(
+  operation list
+)
+ident(
+  int_ref ops "sysprep_operation.ml" 121 3359 3365 "sysprep_operation.ml" 121 3359 3368
+)
+"sysprep_operation.ml" 125 3496 3498 "sysprep_operation.ml" 125 3496 3519
+type(
+  unit
+)
+"sysprep_operation.ml" 126 3521 3523 "sysprep_operation.ml" 126 3521 3528
+type(
+  bool ref
+)
+ident(
+  int_ref baked "sysprep_operation.ml" 116 3218 3222 "sysprep_operation.ml" 116 3218 3227
+)
+"sysprep_operation.ml" 126 3521 3529 "sysprep_operation.ml" 126 3521 3531
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sysprep_operation.ml" 126 3521 3532 "sysprep_operation.ml" 126 3521 3536
+type(
+  bool
+)
+"sysprep_operation.ml" 126 3521 3523 "sysprep_operation.ml" 126 3521 3536
+type(
+  unit
+)
+"sysprep_operation.ml" 125 3496 3498 "sysprep_operation.ml" 126 3521 3536
+type(
+  unit
+)
+"sysprep_operation.ml" 124 3473 3475 "sysprep_operation.ml" 126 3521 3536
+type(
+  unit
+)
+"sysprep_operation.ml" 123 3451 3453 "sysprep_operation.ml" 126 3521 3536
+type(
+  unit
+)
+"sysprep_operation.ml" 121 3359 3361 "sysprep_operation.ml" 126 3521 3536
+type(
+  unit
+)
+"sysprep_operation.ml" 127 3537 3541 "sysprep_operation.ml" 127 3537 3555
+type(
+  operation list -> unit
+)
+ident(
+  def check_no_dupes "sysprep_operation.ml" 117 3240 3240 --
+)
+"sysprep_operation.ml" 127 3537 3556 "sysprep_operation.ml" 127 3537 3559
+type(
+  operation list
+)
+ident(
+  def ops "sysprep_operation.ml" 128 3562 3564 "sysprep_operation.ml" 135 3772 3775
+)
+"sysprep_operation.ml" 128 3562 3564 "sysprep_operation.ml" 128 3562 3570
+type(
+  OperationSet.t -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"sysprep_operation.ml" 129 3573 3577 "sysprep_operation.ml" 129 3573 3591
+type(
+  (OperationSet.t -> operation -> OperationSet.t) ->
+  OperationSet.t -> operation list -> OperationSet.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"sysprep_operation.ml" 130 3594 3604 "sysprep_operation.ml" 130 3594 3609
+type(
+  OperationSet.t
+)
+ident(
+  def opset "sysprep_operation.ml" 130 3594 3610 "sysprep_operation.ml" 133 3719 3751
+)
+"sysprep_operation.ml" 130 3594 3610 "sysprep_operation.ml" 130 3594 3612
+type(
+  operation
+)
+ident(
+  def op "sysprep_operation.ml" 131 3616 3624 "sysprep_operation.ml" 133 3719 3751
+)
+"sysprep_operation.ml" 131 3616 3627 "sysprep_operation.ml" 131 3616 3643
+type(
+  operation -> OperationSet.t -> bool
+)
+ident(
+  ext_ref OperationSet.mem
+)
+"sysprep_operation.ml" 131 3616 3644 "sysprep_operation.ml" 131 3616 3646
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 130 3594 3610 "sysprep_operation.ml" 130 3594 3612
+)
+"sysprep_operation.ml" 131 3616 3647 "sysprep_operation.ml" 131 3616 3652
+type(
+  OperationSet.t
+)
+ident(
+  int_ref opset "sysprep_operation.ml" 130 3594 3604 "sysprep_operation.ml" 130 3594 3609
+)
+"sysprep_operation.ml" 131 3616 3627 "sysprep_operation.ml" 131 3616 3652
+call(
+  stack
+)
+type(
+  bool
+)
+"sysprep_operation.ml" 132 3658 3668 "sysprep_operation.ml" 132 3658 3673
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation.ml" 132 3658 3675 "sysprep_operation.ml" 132 3658 3677
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 132 3658 3677 "sysprep_operation.ml" 132 3658 3708
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation.ml" 132 3658 3674 "sysprep_operation.ml" 132 3658 3709
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"sysprep_operation.ml" 132 3658 3710 "sysprep_operation.ml" 132 3658 3712
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 130 3594 3610 "sysprep_operation.ml" 130 3594 3612
+)
+"sysprep_operation.ml" 132 3658 3710 "sysprep_operation.ml" 132 3658 3717
+type(
+  string
+)
+"sysprep_operation.ml" 132 3658 3668 "sysprep_operation.ml" 132 3658 3717
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 131 3616 3624 "sysprep_operation.ml" 132 3658 3717
+type(
+  unit
+)
+"sysprep_operation.ml" 133 3719 3727 "sysprep_operation.ml" 133 3719 3737
+type(
+  string -> OperationSet.t -> OperationSet.t
+)
+ident(
+  int_ref add_to_set "sysprep_operation.ml" 89 2374 2378 "sysprep_operation.ml" 89 2374 2388
+)
+"sysprep_operation.ml" 133 3719 3738 "sysprep_operation.ml" 133 3719 3740
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 130 3594 3610 "sysprep_operation.ml" 130 3594 3612
+)
+"sysprep_operation.ml" 133 3719 3738 "sysprep_operation.ml" 133 3719 3745
+type(
+  string
+)
+"sysprep_operation.ml" 133 3719 3746 "sysprep_operation.ml" 133 3719 3751
+type(
+  OperationSet.t
+)
+ident(
+  int_ref opset "sysprep_operation.ml" 130 3594 3604 "sysprep_operation.ml" 130 3594 3609
+)
+"sysprep_operation.ml" 133 3719 3727 "sysprep_operation.ml" 133 3719 3751
+call(
+  tail
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 131 3616 3624 "sysprep_operation.ml" 133 3719 3751
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 129 3573 3592 "sysprep_operation.ml" 134 3752 3757
+type(
+  OperationSet.t -> operation -> OperationSet.t
+)
+"sysprep_operation.ml" 134 3752 3758 "sysprep_operation.ml" 134 3752 3767
+type(
+  OperationSet.t
+)
+ident(
+  int_ref empty_set "sysprep_operation.ml" 81 2224 2228 "sysprep_operation.ml" 81 2224 2237
+)
+"sysprep_operation.ml" 134 3752 3768 "sysprep_operation.ml" 134 3752 3771
+type(
+  operation list
+)
+ident(
+  int_ref ops "sysprep_operation.ml" 127 3537 3556 "sysprep_operation.ml" 127 3537 3559
+)
+"sysprep_operation.ml" 128 3562 3571 "sysprep_operation.ml" 135 3772 3775
+call(
+  stack
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 128 3562 3564 "sysprep_operation.ml" 135 3772 3775
+type(
+  unit
+)
+"sysprep_operation.ml" 136 3776 3780 "sysprep_operation.ml" 136 3776 3785
+type(
+  operation -> unit
+)
+ident(
+  def check "sysprep_operation.ml" 117 3240 3240 --
+)
+"sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+type(
+  operation
+)
+ident(
+  def op "sysprep_operation.ml" 137 3791 3793 "sysprep_operation.ml" 168 4892 4895
+)
+"sysprep_operation.ml" 137 3791 3797 "sysprep_operation.ml" 137 3791 3798
+type(
+  int
+)
+"sysprep_operation.ml" 137 3791 3801 "sysprep_operation.ml" 137 3791 3814
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"sysprep_operation.ml" 137 3791 3815 "sysprep_operation.ml" 137 3791 3817
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 137 3791 3815 "sysprep_operation.ml" 137 3791 3822
+type(
+  string
+)
+"sysprep_operation.ml" 137 3791 3801 "sysprep_operation.ml" 137 3791 3822
+type(
+  int
+)
+"sysprep_operation.ml" 138 3826 3831 "sysprep_operation.ml" 138 3826 3832
+type(
+  int
+)
+ident(
+  int_ref n "sysprep_operation.ml" 137 3791 3797 "sysprep_operation.ml" 137 3791 3798
+)
+"sysprep_operation.ml" 138 3826 3833 "sysprep_operation.ml" 138 3826 3834
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation.ml" 138 3826 3835 "sysprep_operation.ml" 138 3826 3836
+type(
+  int
+)
+"sysprep_operation.ml" 138 3826 3831 "sysprep_operation.ml" 138 3826 3836
+type(
+  bool
+)
+"sysprep_operation.ml" 139 3842 3846 "sysprep_operation.ml" 139 3842 3851
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation.ml" 139 3842 3853 "sysprep_operation.ml" 139 3842 3855
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 139 3842 3855 "sysprep_operation.ml" 139 3842 3890
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation.ml" 139 3842 3852 "sysprep_operation.ml" 139 3842 3891
+type(
+  (unit, unit, string, unit) format4
+)
+"sysprep_operation.ml" 139 3842 3846 "sysprep_operation.ml" 139 3842 3891
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 138 3826 3828 "sysprep_operation.ml" 139 3842 3891
+type(
+  unit
+)
+"sysprep_operation.ml" 140 3893 3903 "sysprep_operation.ml" 140 3893 3904
+type(
+  int
+)
+"sysprep_operation.ml" 140 3893 3908 "sysprep_operation.ml" 140 3893 3909
+type(
+  int
+)
+ident(
+  int_ref n "sysprep_operation.ml" 137 3791 3797 "sysprep_operation.ml" 137 3791 3798
+)
+"sysprep_operation.ml" 140 3893 3909 "sysprep_operation.ml" 140 3893 3910
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"sysprep_operation.ml" 140 3893 3910 "sysprep_operation.ml" 140 3893 3911
+type(
+  int
+)
+"sysprep_operation.ml" 140 3893 3908 "sysprep_operation.ml" 140 3893 3911
+type(
+  int
+)
+"sysprep_operation.ml" 141 3915 3925 "sysprep_operation.ml" 141 3915 3942
+type(
+  string -> int -> char
+)
+ident(
+  ext_ref String.unsafe_get
+)
+"sysprep_operation.ml" 141 3915 3943 "sysprep_operation.ml" 141 3915 3945
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 141 3915 3943 "sysprep_operation.ml" 141 3915 3950
+type(
+  string
+)
+"sysprep_operation.ml" 141 3915 3951 "sysprep_operation.ml" 141 3915 3952
+type(
+  int
+)
+"sysprep_operation.ml" 141 3915 3925 "sysprep_operation.ml" 141 3915 3952
+type(
+  char
+)
+"sysprep_operation.ml" 142 3958 3964 "sysprep_operation.ml" 142 3958 3972
+type(
+  char
+)
+"sysprep_operation.ml" 142 3958 3975 "sysprep_operation.ml" 142 3958 3983
+type(
+  char
+)
+"sysprep_operation.ml" 142 3958 3964 "sysprep_operation.ml" 142 3958 3983
+type(
+  char
+)
+"sysprep_operation.ml" 142 3958 3986 "sysprep_operation.ml" 142 3958 3994
+type(
+  char
+)
+"sysprep_operation.ml" 142 3958 3964 "sysprep_operation.ml" 142 3958 3994
+type(
+  char
+)
+"sysprep_operation.ml" 142 3958 3997 "sysprep_operation.ml" 142 3958 4000
+type(
+  char
+)
+"sysprep_operation.ml" 142 3958 3964 "sysprep_operation.ml" 142 3958 4000
+type(
+  char
+)
+"sysprep_operation.ml" 142 3958 4004 "sysprep_operation.ml" 142 3958 4006
+type(
+  unit
+)
+"sysprep_operation.ml" 143 4007 4013 "sysprep_operation.ml" 143 4007 4014
+type(
+  char
+)
+ident(
+  def c "sysprep_operation.ml" 144 4018 4024 "sysprep_operation.ml" 144 4018 4081
+)
+"sysprep_operation.ml" 144 4018 4024 "sysprep_operation.ml" 144 4018 4029
+type(
+  ?exit_code:int ->
+  (char -> unit, unit, string, unit) format4 -> char -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation.ml" 144 4018 4031 "sysprep_operation.ml" 144 4018 4033
+type(
+  (char -> unit, unit, string, string, string, unit) format6 ->
+  (char -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 144 4018 4033 "sysprep_operation.ml" 144 4018 4078
+type(
+  (char -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation.ml" 144 4018 4030 "sysprep_operation.ml" 144 4018 4079
+type(
+  (char -> unit, unit, string, unit) format4
+)
+"sysprep_operation.ml" 144 4018 4080 "sysprep_operation.ml" 144 4018 4081
+type(
+  char
+)
+ident(
+  int_ref c "sysprep_operation.ml" 143 4007 4013 "sysprep_operation.ml" 143 4007 4014
+)
+"sysprep_operation.ml" 144 4018 4024 "sysprep_operation.ml" 144 4018 4081
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 141 3915 3919 "sysprep_operation.ml" 144 4018 4081
+type(
+  unit
+)
+"sysprep_operation.ml" 140 3893 3895 "sysprep_operation.ml" 145 4082 4088
+type(
+  unit
+)
+"sysprep_operation.ml" 146 4090 4096 "sysprep_operation.ml" 146 4090 4097
+type(
+  int
+)
+"sysprep_operation.ml" 146 4090 4100 "sysprep_operation.ml" 146 4090 4113
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"sysprep_operation.ml" 146 4090 4114 "sysprep_operation.ml" 146 4090 4116
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 146 4090 4114 "sysprep_operation.ml" 146 4090 4124
+type(
+  string
+)
+"sysprep_operation.ml" 146 4090 4100 "sysprep_operation.ml" 146 4090 4124
+type(
+  int
+)
+"sysprep_operation.ml" 147 4128 4133 "sysprep_operation.ml" 147 4128 4134
+type(
+  int
+)
+ident(
+  int_ref n "sysprep_operation.ml" 146 4090 4096 "sysprep_operation.ml" 146 4090 4097
+)
+"sysprep_operation.ml" 147 4128 4135 "sysprep_operation.ml" 147 4128 4136
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation.ml" 147 4128 4137 "sysprep_operation.ml" 147 4128 4138
+type(
+  int
+)
+"sysprep_operation.ml" 147 4128 4133 "sysprep_operation.ml" 147 4128 4138
+type(
+  bool
+)
+"sysprep_operation.ml" 148 4144 4148 "sysprep_operation.ml" 148 4144 4153
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation.ml" 148 4144 4155 "sysprep_operation.ml" 148 4144 4157
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 148 4144 4157 "sysprep_operation.ml" 148 4144 4186
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation.ml" 148 4144 4154 "sysprep_operation.ml" 148 4144 4187
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"sysprep_operation.ml" 148 4144 4188 "sysprep_operation.ml" 148 4144 4190
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 148 4144 4188 "sysprep_operation.ml" 148 4144 4195
+type(
+  string
+)
+"sysprep_operation.ml" 148 4144 4148 "sysprep_operation.ml" 148 4144 4195
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 147 4128 4130 "sysprep_operation.ml" 148 4144 4195
+type(
+  unit
+)
+"sysprep_operation.ml" 149 4197 4202 "sysprep_operation.ml" 149 4197 4204
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 149 4197 4202 "sysprep_operation.ml" 149 4197 4212
+type(
+  string
+)
+"sysprep_operation.ml" 149 4197 4214 "sysprep_operation.ml" 149 4197 4215
+type(
+  int
+)
+ident(
+  int_ref n "sysprep_operation.ml" 146 4090 4096 "sysprep_operation.ml" 146 4090 4097
+)
+"sysprep_operation.ml" 149 4197 4215 "sysprep_operation.ml" 149 4197 4216
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"sysprep_operation.ml" 149 4197 4216 "sysprep_operation.ml" 149 4197 4217
+type(
+  int
+)
+"sysprep_operation.ml" 149 4197 4214 "sysprep_operation.ml" 149 4197 4217
+type(
+  int
+)
+"sysprep_operation.ml" 149 4197 4202 "sysprep_operation.ml" 149 4197 4218
+type(
+  char
+)
+"sysprep_operation.ml" 149 4197 4219 "sysprep_operation.ml" 149 4197 4220
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation.ml" 149 4197 4221 "sysprep_operation.ml" 149 4197 4225
+type(
+  char
+)
+"sysprep_operation.ml" 149 4197 4202 "sysprep_operation.ml" 149 4197 4225
+type(
+  bool
+)
+"sysprep_operation.ml" 149 4197 4226 "sysprep_operation.ml" 149 4197 4228
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"sysprep_operation.ml" 149 4197 4229 "sysprep_operation.ml" 149 4197 4231
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 149 4197 4229 "sysprep_operation.ml" 149 4197 4239
+type(
+  string
+)
+"sysprep_operation.ml" 149 4197 4241 "sysprep_operation.ml" 149 4197 4242
+type(
+  int
+)
+ident(
+  int_ref n "sysprep_operation.ml" 146 4090 4096 "sysprep_operation.ml" 146 4090 4097
+)
+"sysprep_operation.ml" 149 4197 4242 "sysprep_operation.ml" 149 4197 4243
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"sysprep_operation.ml" 149 4197 4243 "sysprep_operation.ml" 149 4197 4244
+type(
+  int
+)
+"sysprep_operation.ml" 149 4197 4241 "sysprep_operation.ml" 149 4197 4244
+type(
+  int
+)
+"sysprep_operation.ml" 149 4197 4229 "sysprep_operation.ml" 149 4197 4245
+type(
+  char
+)
+"sysprep_operation.ml" 149 4197 4246 "sysprep_operation.ml" 149 4197 4247
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation.ml" 149 4197 4248 "sysprep_operation.ml" 149 4197 4251
+type(
+  char
+)
+"sysprep_operation.ml" 149 4197 4229 "sysprep_operation.ml" 149 4197 4251
+type(
+  bool
+)
+"sysprep_operation.ml" 149 4197 4202 "sysprep_operation.ml" 149 4197 4251
+type(
+  bool
+)
+"sysprep_operation.ml" 150 4257 4261 "sysprep_operation.ml" 150 4257 4266
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation.ml" 150 4257 4268 "sysprep_operation.ml" 150 4257 4270
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 150 4257 4270 "sysprep_operation.ml" 150 4257 4322
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation.ml" 150 4257 4267 "sysprep_operation.ml" 150 4257 4323
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"sysprep_operation.ml" 150 4257 4324 "sysprep_operation.ml" 150 4257 4326
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 150 4257 4324 "sysprep_operation.ml" 150 4257 4331
+type(
+  string
+)
+"sysprep_operation.ml" 150 4257 4261 "sysprep_operation.ml" 150 4257 4331
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 149 4197 4199 "sysprep_operation.ml" 150 4257 4331
+type(
+  unit
+)
+"sysprep_operation.ml" 151 4333 4342 "sysprep_operation.ml" 151 4333 4344
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 151 4333 4342 "sysprep_operation.ml" 151 4333 4360
+type(
+  string option
+)
+"sysprep_operation.ml" 152 4366 4370 "sysprep_operation.ml" 152 4366 4374
+type(
+  string option
+)
+"sysprep_operation.ml" 152 4366 4378 "sysprep_operation.ml" 152 4366 4380
+type(
+  unit
+)
+"sysprep_operation.ml" 153 4381 4390 "sysprep_operation.ml" 153 4381 4401
+type(
+  string
+)
+ident(
+  def description "sysprep_operation.ml" 154 4405 4409 "sysprep_operation.ml" 158 4552 4615
+)
+"sysprep_operation.ml" 153 4381 4385 "sysprep_operation.ml" 153 4381 4401
+type(
+  string option
+)
+"sysprep_operation.ml" 154 4405 4413 "sysprep_operation.ml" 154 4405 4414
+type(
+  int
+)
+"sysprep_operation.ml" 154 4405 4417 "sysprep_operation.ml" 154 4405 4430
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"sysprep_operation.ml" 154 4405 4431 "sysprep_operation.ml" 154 4405 4442
+type(
+  string
+)
+ident(
+  int_ref description "sysprep_operation.ml" 153 4381 4390 "sysprep_operation.ml" 153 4381 4401
+)
+"sysprep_operation.ml" 154 4405 4417 "sysprep_operation.ml" 154 4405 4442
+type(
+  int
+)
+"sysprep_operation.ml" 155 4446 4453 "sysprep_operation.ml" 155 4446 4454
+type(
+  int
+)
+ident(
+  int_ref n "sysprep_operation.ml" 154 4405 4413 "sysprep_operation.ml" 154 4405 4414
+)
+"sysprep_operation.ml" 155 4446 4455 "sysprep_operation.ml" 155 4446 4456
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation.ml" 155 4446 4457 "sysprep_operation.ml" 155 4446 4458
+type(
+  int
+)
+"sysprep_operation.ml" 155 4446 4453 "sysprep_operation.ml" 155 4446 4458
+type(
+  bool
+)
+"sysprep_operation.ml" 156 4464 4470 "sysprep_operation.ml" 156 4464 4475
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation.ml" 156 4464 4477 "sysprep_operation.ml" 156 4464 4479
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 156 4464 4479 "sysprep_operation.ml" 156 4464 4504
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation.ml" 156 4464 4476 "sysprep_operation.ml" 156 4464 4505
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"sysprep_operation.ml" 156 4464 4506 "sysprep_operation.ml" 156 4464 4508
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 156 4464 4506 "sysprep_operation.ml" 156 4464 4513
+type(
+  string
+)
+"sysprep_operation.ml" 156 4464 4470 "sysprep_operation.ml" 156 4464 4513
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 155 4446 4450 "sysprep_operation.ml" 156 4464 4513
+type(
+  unit
+)
+"sysprep_operation.ml" 157 4515 4522 "sysprep_operation.ml" 157 4515 4533
+type(
+  string
+)
+ident(
+  int_ref description "sysprep_operation.ml" 153 4381 4390 "sysprep_operation.ml" 153 4381 4401
+)
+"sysprep_operation.ml" 157 4515 4535 "sysprep_operation.ml" 157 4515 4536
+type(
+  int
+)
+ident(
+  int_ref n "sysprep_operation.ml" 154 4405 4413 "sysprep_operation.ml" 154 4405 4414
+)
+"sysprep_operation.ml" 157 4515 4536 "sysprep_operation.ml" 157 4515 4537
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"sysprep_operation.ml" 157 4515 4537 "sysprep_operation.ml" 157 4515 4538
+type(
+  int
+)
+"sysprep_operation.ml" 157 4515 4535 "sysprep_operation.ml" 157 4515 4538
+type(
+  int
+)
+"sysprep_operation.ml" 157 4515 4522 "sysprep_operation.ml" 157 4515 4539
+type(
+  char
+)
+"sysprep_operation.ml" 157 4515 4540 "sysprep_operation.ml" 157 4515 4541
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation.ml" 157 4515 4542 "sysprep_operation.ml" 157 4515 4546
+type(
+  char
+)
+"sysprep_operation.ml" 157 4515 4522 "sysprep_operation.ml" 157 4515 4546
+type(
+  bool
+)
+"sysprep_operation.ml" 158 4552 4558 "sysprep_operation.ml" 158 4552 4563
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation.ml" 158 4552 4565 "sysprep_operation.ml" 158 4552 4567
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 158 4552 4567 "sysprep_operation.ml" 158 4552 4605
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation.ml" 158 4552 4564 "sysprep_operation.ml" 158 4552 4606
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"sysprep_operation.ml" 158 4552 4607 "sysprep_operation.ml" 158 4552 4609
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 158 4552 4607 "sysprep_operation.ml" 158 4552 4614
+type(
+  string
+)
+"sysprep_operation.ml" 158 4552 4558 "sysprep_operation.ml" 158 4552 4614
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 157 4515 4519 "sysprep_operation.ml" 158 4552 4615
+type(
+  unit
+)
+"sysprep_operation.ml" 155 4446 4450 "sysprep_operation.ml" 158 4552 4615
+type(
+  unit
+)
+"sysprep_operation.ml" 154 4405 4409 "sysprep_operation.ml" 158 4552 4615
+type(
+  unit
+)
+"sysprep_operation.ml" 151 4333 4335 "sysprep_operation.ml" 159 4616 4619
+type(
+  unit
+)
+"sysprep_operation.ml" 160 4621 4630 "sysprep_operation.ml" 160 4621 4632
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 160 4621 4630 "sysprep_operation.ml" 160 4621 4642
+type(
+  string option
+)
+"sysprep_operation.ml" 161 4648 4652 "sysprep_operation.ml" 161 4648 4656
+type(
+  string option
+)
+"sysprep_operation.ml" 161 4648 4660 "sysprep_operation.ml" 161 4648 4662
+type(
+  unit
+)
+"sysprep_operation.ml" 162 4663 4672 "sysprep_operation.ml" 162 4663 4677
+type(
+  string
+)
+ident(
+  def notes "sysprep_operation.ml" 163 4681 4685 "sysprep_operation.ml" 167 4822 4891
+)
+"sysprep_operation.ml" 162 4663 4667 "sysprep_operation.ml" 162 4663 4677
+type(
+  string option
+)
+"sysprep_operation.ml" 163 4681 4689 "sysprep_operation.ml" 163 4681 4690
+type(
+  int
+)
+"sysprep_operation.ml" 163 4681 4693 "sysprep_operation.ml" 163 4681 4706
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"sysprep_operation.ml" 163 4681 4707 "sysprep_operation.ml" 163 4681 4712
+type(
+  string
+)
+ident(
+  int_ref notes "sysprep_operation.ml" 162 4663 4672 "sysprep_operation.ml" 162 4663 4677
+)
+"sysprep_operation.ml" 163 4681 4693 "sysprep_operation.ml" 163 4681 4712
+type(
+  int
+)
+"sysprep_operation.ml" 164 4716 4723 "sysprep_operation.ml" 164 4716 4724
+type(
+  int
+)
+ident(
+  int_ref n "sysprep_operation.ml" 163 4681 4689 "sysprep_operation.ml" 163 4681 4690
+)
+"sysprep_operation.ml" 164 4716 4725 "sysprep_operation.ml" 164 4716 4726
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation.ml" 164 4716 4727 "sysprep_operation.ml" 164 4716 4728
+type(
+  int
+)
+"sysprep_operation.ml" 164 4716 4723 "sysprep_operation.ml" 164 4716 4728
+type(
+  bool
+)
+"sysprep_operation.ml" 165 4734 4740 "sysprep_operation.ml" 165 4734 4745
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation.ml" 165 4734 4747 "sysprep_operation.ml" 165 4734 4749
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 165 4734 4749 "sysprep_operation.ml" 165 4734 4780
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation.ml" 165 4734 4746 "sysprep_operation.ml" 165 4734 4781
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"sysprep_operation.ml" 165 4734 4782 "sysprep_operation.ml" 165 4734 4784
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 165 4734 4782 "sysprep_operation.ml" 165 4734 4789
+type(
+  string
+)
+"sysprep_operation.ml" 165 4734 4740 "sysprep_operation.ml" 165 4734 4789
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 164 4716 4720 "sysprep_operation.ml" 165 4734 4789
+type(
+  unit
+)
+"sysprep_operation.ml" 166 4791 4798 "sysprep_operation.ml" 166 4791 4803
+type(
+  string
+)
+ident(
+  int_ref notes "sysprep_operation.ml" 162 4663 4672 "sysprep_operation.ml" 162 4663 4677
+)
+"sysprep_operation.ml" 166 4791 4805 "sysprep_operation.ml" 166 4791 4806
+type(
+  int
+)
+ident(
+  int_ref n "sysprep_operation.ml" 163 4681 4689 "sysprep_operation.ml" 163 4681 4690
+)
+"sysprep_operation.ml" 166 4791 4806 "sysprep_operation.ml" 166 4791 4807
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"sysprep_operation.ml" 166 4791 4807 "sysprep_operation.ml" 166 4791 4808
+type(
+  int
+)
+"sysprep_operation.ml" 166 4791 4805 "sysprep_operation.ml" 166 4791 4808
+type(
+  int
+)
+"sysprep_operation.ml" 166 4791 4798 "sysprep_operation.ml" 166 4791 4809
+type(
+  char
+)
+"sysprep_operation.ml" 166 4791 4810 "sysprep_operation.ml" 166 4791 4811
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation.ml" 166 4791 4812 "sysprep_operation.ml" 166 4791 4816
+type(
+  char
+)
+"sysprep_operation.ml" 166 4791 4798 "sysprep_operation.ml" 166 4791 4816
+type(
+  bool
+)
+"sysprep_operation.ml" 167 4822 4828 "sysprep_operation.ml" 167 4822 4833
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sysprep_operation.ml" 167 4822 4835 "sysprep_operation.ml" 167 4822 4837
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 167 4822 4837 "sysprep_operation.ml" 167 4822 4881
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation.ml" 167 4822 4834 "sysprep_operation.ml" 167 4822 4882
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"sysprep_operation.ml" 167 4822 4883 "sysprep_operation.ml" 167 4822 4885
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 136 3776 3786 "sysprep_operation.ml" 136 3776 3788
+)
+"sysprep_operation.ml" 167 4822 4883 "sysprep_operation.ml" 167 4822 4890
+type(
+  string
+)
+"sysprep_operation.ml" 167 4822 4828 "sysprep_operation.ml" 167 4822 4890
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 166 4791 4795 "sysprep_operation.ml" 167 4822 4891
+type(
+  unit
+)
+"sysprep_operation.ml" 164 4716 4720 "sysprep_operation.ml" 167 4822 4891
+type(
+  unit
+)
+"sysprep_operation.ml" 163 4681 4685 "sysprep_operation.ml" 167 4822 4891
+type(
+  unit
+)
+"sysprep_operation.ml" 160 4621 4623 "sysprep_operation.ml" 168 4892 4895
+type(
+  unit
+)
+"sysprep_operation.ml" 151 4333 4335 "sysprep_operation.ml" 168 4892 4895
+type(
+  unit
+)
+"sysprep_operation.ml" 149 4197 4199 "sysprep_operation.ml" 168 4892 4895
+type(
+  unit
+)
+"sysprep_operation.ml" 147 4128 4130 "sysprep_operation.ml" 168 4892 4895
+type(
+  unit
+)
+"sysprep_operation.ml" 146 4090 4092 "sysprep_operation.ml" 168 4892 4895
+type(
+  unit
+)
+"sysprep_operation.ml" 140 3893 3895 "sysprep_operation.ml" 168 4892 4895
+type(
+  unit
+)
+"sysprep_operation.ml" 138 3826 3828 "sysprep_operation.ml" 168 4892 4895
+type(
+  unit
+)
+"sysprep_operation.ml" 137 3791 3793 "sysprep_operation.ml" 168 4892 4895
+type(
+  unit
+)
+"sysprep_operation.ml" 170 4897 4901 "sysprep_operation.ml" 170 4897 4911
+type(
+  unit -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  def extra_args "sysprep_operation.ml" 180 5165 5165 --
+)
+"sysprep_operation.ml" 170 4897 4912 "sysprep_operation.ml" 170 4897 4914
+type(
+  unit
+)
+"sysprep_operation.ml" 171 4917 4926 "sysprep_operation.ml" 171 4917 4927
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 171 4917 4927 "sysprep_operation.ml" 171 4917 4932
+type(
+  bool ref
+)
+ident(
+  int_ref baked "sysprep_operation.ml" 116 3218 3222 "sysprep_operation.ml" 116 3218 3227
+)
+"sysprep_operation.ml" 171 4917 4926 "sysprep_operation.ml" 171 4917 4932
+type(
+  bool
+)
+"sysprep_operation.ml" 171 4917 4919 "sysprep_operation.ml" 171 4917 4932
+type(
+  unit
+)
+"sysprep_operation.ml" 173 4935 4937 "sysprep_operation.ml" 173 4935 4949
+type(
+  (Arg.key * Arg.spec * Arg.doc) list list ->
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref List.flatten
+)
+"sysprep_operation.ml" 174 4952 4956 "sysprep_operation.ml" 174 4952 4964
+type(
+  (operation -> (Arg.key * Arg.spec * Arg.doc) list) ->
+  operation list -> (Arg.key * Arg.spec * Arg.doc) list list
+)
+ident(
+  ext_ref List.map
+)
+"sysprep_operation.ml" 174 4952 4985 "sysprep_operation.ml" 174 4952 4995
+type(
+  extra_arg list
+)
+ident(
+  def extra_args "sysprep_operation.ml" 175 5001 5007 "sysprep_operation.ml" 175 5001 5071
+)
+"sysprep_operation.ml" 174 4952 4970 "sysprep_operation.ml" 174 4952 4997
+type(
+  operation
+)
+"sysprep_operation.ml" 175 5001 5007 "sysprep_operation.ml" 175 5001 5015
+type(
+  (extra_arg -> Arg.key * Arg.spec * Arg.doc) ->
+  extra_arg list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref List.map
+)
+"sysprep_operation.ml" 175 5001 5039 "sysprep_operation.ml" 175 5001 5046
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+ident(
+  def argspec "sysprep_operation.ml" 175 5001 5052 "sysprep_operation.ml" 175 5001 5059
+)
+"sysprep_operation.ml" 175 5001 5021 "sysprep_operation.ml" 175 5001 5048
+type(
+  extra_arg
+)
+"sysprep_operation.ml" 175 5001 5052 "sysprep_operation.ml" 175 5001 5059
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+ident(
+  int_ref argspec "sysprep_operation.ml" 175 5001 5039 "sysprep_operation.ml" 175 5001 5046
+)
+"sysprep_operation.ml" 175 5001 5016 "sysprep_operation.ml" 175 5001 5060
+type(
+  extra_arg -> Arg.key * Arg.spec * Arg.doc
+)
+"sysprep_operation.ml" 175 5001 5061 "sysprep_operation.ml" 175 5001 5071
+type(
+  extra_arg list
+)
+ident(
+  int_ref extra_args "sysprep_operation.ml" 174 4952 4985 "sysprep_operation.ml" 174 4952 4995
+)
+"sysprep_operation.ml" 175 5001 5007 "sysprep_operation.ml" 175 5001 5071
+call(
+  tail
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"sysprep_operation.ml" 174 4952 4965 "sysprep_operation.ml" 176 5072 5077
+type(
+  operation -> (Arg.key * Arg.spec * Arg.doc) list
+)
+"sysprep_operation.ml" 176 5072 5078 "sysprep_operation.ml" 176 5072 5079
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 176 5072 5079 "sysprep_operation.ml" 176 5072 5093
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 176 5072 5078 "sysprep_operation.ml" 176 5072 5093
+type(
+  operation list
+)
+"sysprep_operation.ml" 173 4935 4950 "sysprep_operation.ml" 177 5094 5097
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list list
+)
+"sysprep_operation.ml" 173 4935 4937 "sysprep_operation.ml" 177 5094 5097
+call(
+  tail
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"sysprep_operation.ml" 171 4917 4919 "sysprep_operation.ml" 177 5094 5097
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"sysprep_operation.ml" 180 5165 5169 "sysprep_operation.ml" 180 5165 5177
+type(
+  unit -> unit
+)
+ident(
+  def dump_pod "sysprep_operation.ml" 203 5715 5715 --
+)
+"sysprep_operation.ml" 180 5165 5178 "sysprep_operation.ml" 180 5165 5180
+type(
+  unit
+)
+"sysprep_operation.ml" 181 5183 5192 "sysprep_operation.ml" 181 5183 5193
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 181 5183 5193 "sysprep_operation.ml" 181 5183 5198
+type(
+  bool ref
+)
+ident(
+  int_ref baked "sysprep_operation.ml" 116 3218 3222 "sysprep_operation.ml" 116 3218 3227
+)
+"sysprep_operation.ml" 181 5183 5192 "sysprep_operation.ml" 181 5183 5198
+type(
+  bool
+)
+"sysprep_operation.ml" 181 5183 5185 "sysprep_operation.ml" 181 5183 5198
+type(
+  unit
+)
+"sysprep_operation.ml" 183 5201 5203 "sysprep_operation.ml" 183 5201 5212
+type(
+  (operation -> unit) -> operation list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation.ml" 184 5215 5223 "sysprep_operation.ml" 184 5215 5225
+type(
+  operation
+)
+ident(
+  def op "sysprep_operation.ml" 185 5229 5235 "sysprep_operation.ml" 200 5686 5693
+)
+"sysprep_operation.ml" 185 5229 5235 "sysprep_operation.ml" 185 5229 5241
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 185 5229 5242 "sysprep_operation.ml" 185 5229 5258
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 185 5229 5259 "sysprep_operation.ml" 185 5229 5261
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 184 5215 5223 "sysprep_operation.ml" 184 5215 5225
+)
+"sysprep_operation.ml" 185 5229 5259 "sysprep_operation.ml" 185 5229 5266
+type(
+  string
+)
+"sysprep_operation.ml" 185 5229 5235 "sysprep_operation.ml" 185 5229 5266
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 186 5268 5277 "sysprep_operation.ml" 186 5268 5279
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 184 5215 5223 "sysprep_operation.ml" 184 5215 5225
+)
+"sysprep_operation.ml" 186 5268 5277 "sysprep_operation.ml" 186 5268 5298
+type(
+  bool
+)
+"sysprep_operation.ml" 186 5268 5304 "sysprep_operation.ml" 186 5268 5310
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 186 5268 5311 "sysprep_operation.ml" 186 5268 5316
+type(
+  (unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 186 5268 5304 "sysprep_operation.ml" 186 5268 5316
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 186 5268 5274 "sysprep_operation.ml" 186 5268 5316
+type(
+  unit
+)
+"sysprep_operation.ml" 187 5318 5324 "sysprep_operation.ml" 187 5318 5330
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 187 5318 5331 "sysprep_operation.ml" 187 5318 5335
+type(
+  (unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 187 5318 5324 "sysprep_operation.ml" 187 5318 5335
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 188 5337 5343 "sysprep_operation.ml" 188 5337 5349
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 188 5337 5350 "sysprep_operation.ml" 188 5337 5359
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 188 5337 5360 "sysprep_operation.ml" 188 5337 5362
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 184 5215 5223 "sysprep_operation.ml" 184 5215 5225
+)
+"sysprep_operation.ml" 188 5337 5360 "sysprep_operation.ml" 188 5337 5370
+type(
+  string
+)
+"sysprep_operation.ml" 188 5337 5343 "sysprep_operation.ml" 188 5337 5370
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 189 5372 5385 "sysprep_operation.ml" 189 5372 5387
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 184 5215 5223 "sysprep_operation.ml" 184 5215 5225
+)
+"sysprep_operation.ml" 189 5372 5385 "sysprep_operation.ml" 189 5372 5403
+type(
+  string option
+)
+"sysprep_operation.ml" 190 5409 5417 "sysprep_operation.ml" 190 5409 5421
+type(
+  string option
+)
+"sysprep_operation.ml" 190 5409 5425 "sysprep_operation.ml" 190 5409 5427
+type(
+  unit
+)
+"sysprep_operation.ml" 191 5428 5441 "sysprep_operation.ml" 191 5428 5452
+type(
+  string
+)
+ident(
+  def description "sysprep_operation.ml" 191 5428 5456 "sysprep_operation.ml" 191 5428 5483
+)
+"sysprep_operation.ml" 191 5428 5436 "sysprep_operation.ml" 191 5428 5452
+type(
+  string option
+)
+"sysprep_operation.ml" 191 5428 5456 "sysprep_operation.ml" 191 5428 5462
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 191 5428 5463 "sysprep_operation.ml" 191 5428 5471
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 191 5428 5472 "sysprep_operation.ml" 191 5428 5483
+type(
+  string
+)
+ident(
+  int_ref description "sysprep_operation.ml" 191 5428 5441 "sysprep_operation.ml" 191 5428 5452
+)
+"sysprep_operation.ml" 191 5428 5456 "sysprep_operation.ml" 191 5428 5483
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 189 5372 5378 "sysprep_operation.ml" 192 5484 5491
+type(
+  unit
+)
+"sysprep_operation.ml" 193 5493 5506 "sysprep_operation.ml" 193 5493 5508
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 184 5215 5223 "sysprep_operation.ml" 184 5215 5225
+)
+"sysprep_operation.ml" 193 5493 5506 "sysprep_operation.ml" 193 5493 5518
+type(
+  string option
+)
+"sysprep_operation.ml" 194 5524 5532 "sysprep_operation.ml" 194 5524 5536
+type(
+  string option
+)
+"sysprep_operation.ml" 194 5524 5540 "sysprep_operation.ml" 194 5524 5542
+type(
+  unit
+)
+"sysprep_operation.ml" 195 5543 5556 "sysprep_operation.ml" 195 5543 5561
+type(
+  string
+)
+ident(
+  def notes "sysprep_operation.ml" 196 5565 5573 "sysprep_operation.ml" 199 5656 5685
+)
+"sysprep_operation.ml" 195 5543 5551 "sysprep_operation.ml" 195 5543 5561
+type(
+  string option
+)
+"sysprep_operation.ml" 196 5565 5573 "sysprep_operation.ml" 196 5565 5579
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 196 5565 5580 "sysprep_operation.ml" 196 5565 5589
+type(
+  (unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 196 5565 5573 "sysprep_operation.ml" 196 5565 5589
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 197 5591 5599 "sysprep_operation.ml" 197 5591 5605
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 197 5591 5607 "sysprep_operation.ml" 197 5591 5609
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 197 5591 5609 "sysprep_operation.ml" 197 5591 5622
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"sysprep_operation.ml" 197 5591 5606 "sysprep_operation.ml" 197 5591 5623
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 197 5591 5624 "sysprep_operation.ml" 197 5591 5626
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 184 5215 5223 "sysprep_operation.ml" 184 5215 5225
+)
+"sysprep_operation.ml" 197 5591 5624 "sysprep_operation.ml" 197 5591 5631
+type(
+  string
+)
+"sysprep_operation.ml" 197 5591 5599 "sysprep_operation.ml" 197 5591 5631
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 198 5633 5641 "sysprep_operation.ml" 198 5633 5647
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 198 5633 5648 "sysprep_operation.ml" 198 5633 5654
+type(
+  (unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 198 5633 5641 "sysprep_operation.ml" 198 5633 5654
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 199 5656 5664 "sysprep_operation.ml" 199 5656 5670
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 199 5656 5671 "sysprep_operation.ml" 199 5656 5679
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 199 5656 5680 "sysprep_operation.ml" 199 5656 5685
+type(
+  string
+)
+ident(
+  int_ref notes "sysprep_operation.ml" 195 5543 5556 "sysprep_operation.ml" 195 5543 5561
+)
+"sysprep_operation.ml" 199 5656 5664 "sysprep_operation.ml" 199 5656 5685
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 198 5633 5641 "sysprep_operation.ml" 199 5656 5685
+type(
+  unit
+)
+"sysprep_operation.ml" 197 5591 5599 "sysprep_operation.ml" 199 5656 5685
+type(
+  unit
+)
+"sysprep_operation.ml" 196 5565 5573 "sysprep_operation.ml" 199 5656 5685
+type(
+  unit
+)
+"sysprep_operation.ml" 193 5493 5499 "sysprep_operation.ml" 200 5686 5693
+type(
+  unit
+)
+"sysprep_operation.ml" 189 5372 5378 "sysprep_operation.ml" 200 5686 5693
+type(
+  unit
+)
+"sysprep_operation.ml" 188 5337 5343 "sysprep_operation.ml" 200 5686 5693
+type(
+  unit
+)
+"sysprep_operation.ml" 187 5318 5324 "sysprep_operation.ml" 200 5686 5693
+type(
+  unit
+)
+"sysprep_operation.ml" 186 5268 5274 "sysprep_operation.ml" 200 5686 5693
+type(
+  unit
+)
+"sysprep_operation.ml" 185 5229 5235 "sysprep_operation.ml" 200 5686 5693
+type(
+  unit
+)
+"sysprep_operation.ml" 183 5201 5213 "sysprep_operation.ml" 201 5694 5697
+type(
+  operation -> unit
+)
+"sysprep_operation.ml" 201 5694 5698 "sysprep_operation.ml" 201 5694 5699
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 201 5694 5699 "sysprep_operation.ml" 201 5694 5713
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 201 5694 5698 "sysprep_operation.ml" 201 5694 5713
+type(
+  operation list
+)
+"sysprep_operation.ml" 183 5201 5203 "sysprep_operation.ml" 201 5694 5713
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 181 5183 5185 "sysprep_operation.ml" 201 5694 5713
+type(
+  unit
+)
+"sysprep_operation.ml" 203 5715 5719 "sysprep_operation.ml" 203 5715 5735
+type(
+  unit -> unit
+)
+ident(
+  def dump_pod_options "sysprep_operation.ml" 247 7101 7101 --
+)
+"sysprep_operation.ml" 203 5715 5736 "sysprep_operation.ml" 203 5715 5738
+type(
+  unit
+)
+"sysprep_operation.ml" 204 5741 5750 "sysprep_operation.ml" 204 5741 5751
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 204 5741 5751 "sysprep_operation.ml" 204 5741 5756
+type(
+  bool ref
+)
+ident(
+  int_ref baked "sysprep_operation.ml" 116 3218 3222 "sysprep_operation.ml" 116 3218 3227
+)
+"sysprep_operation.ml" 204 5741 5750 "sysprep_operation.ml" 204 5741 5756
+type(
+  bool
+)
+"sysprep_operation.ml" 204 5741 5743 "sysprep_operation.ml" 204 5741 5756
+type(
+  unit
+)
+"sysprep_operation.ml" 206 5759 5765 "sysprep_operation.ml" 206 5759 5769
+type(
+  (string * extra_arg) list list
+)
+"sysprep_operation.ml" 206 5759 5772 "sysprep_operation.ml" 206 5759 5780
+type(
+  (operation -> (string * extra_arg) list) ->
+  operation list -> (string * extra_arg) list list
+)
+ident(
+  ext_ref List.map
+)
+"sysprep_operation.ml" 207 5783 5800 "sysprep_operation.ml" 207 5783 5807
+type(
+  string
+)
+ident(
+  def op_name "sysprep_operation.ml" 208 5838 5844 "sysprep_operation.ml" 208 5838 5887
+)
+"sysprep_operation.ml" 207 5783 5822 "sysprep_operation.ml" 207 5783 5832
+type(
+  extra_arg list
+)
+ident(
+  def extra_args "sysprep_operation.ml" 208 5838 5844 "sysprep_operation.ml" 208 5838 5887
+)
+"sysprep_operation.ml" 207 5783 5791 "sysprep_operation.ml" 207 5783 5834
+type(
+  operation
+)
+"sysprep_operation.ml" 208 5838 5844 "sysprep_operation.ml" 208 5838 5852
+type(
+  (extra_arg -> string * extra_arg) ->
+  extra_arg list -> (string * extra_arg) list
+)
+ident(
+  ext_ref List.map
+)
+"sysprep_operation.ml" 208 5838 5858 "sysprep_operation.ml" 208 5838 5860
+type(
+  extra_arg
+)
+ident(
+  def ea "sysprep_operation.ml" 208 5838 5864 "sysprep_operation.ml" 208 5838 5875
+)
+"sysprep_operation.ml" 208 5838 5864 "sysprep_operation.ml" 208 5838 5871
+type(
+  string
+)
+ident(
+  int_ref op_name "sysprep_operation.ml" 207 5783 5800 "sysprep_operation.ml" 207 5783 5807
+)
+"sysprep_operation.ml" 208 5838 5873 "sysprep_operation.ml" 208 5838 5875
+type(
+  extra_arg
+)
+ident(
+  int_ref ea "sysprep_operation.ml" 208 5838 5858 "sysprep_operation.ml" 208 5838 5860
+)
+"sysprep_operation.ml" 208 5838 5864 "sysprep_operation.ml" 208 5838 5875
+type(
+  string * extra_arg
+)
+"sysprep_operation.ml" 208 5838 5853 "sysprep_operation.ml" 208 5838 5876
+type(
+  extra_arg -> string * extra_arg
+)
+"sysprep_operation.ml" 208 5838 5877 "sysprep_operation.ml" 208 5838 5887
+type(
+  extra_arg list
+)
+ident(
+  int_ref extra_args "sysprep_operation.ml" 207 5783 5822 "sysprep_operation.ml" 207 5783 5832
+)
+"sysprep_operation.ml" 208 5838 5844 "sysprep_operation.ml" 208 5838 5887
+call(
+  tail
+)
+type(
+  (string * extra_arg) list
+)
+"sysprep_operation.ml" 206 5759 5781 "sysprep_operation.ml" 209 5888 5891
+type(
+  operation -> (string * extra_arg) list
+)
+"sysprep_operation.ml" 209 5888 5892 "sysprep_operation.ml" 209 5888 5893
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 209 5888 5893 "sysprep_operation.ml" 209 5888 5907
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 209 5888 5892 "sysprep_operation.ml" 209 5888 5907
+type(
+  operation list
+)
+"sysprep_operation.ml" 206 5759 5772 "sysprep_operation.ml" 209 5888 5907
+call(
+  stack
+)
+type(
+  (string * extra_arg) list list
+)
+"sysprep_operation.ml" 210 5911 5917 "sysprep_operation.ml" 210 5911 5921
+type(
+  (string * extra_arg) list
+)
+"sysprep_operation.ml" 210 5911 5924 "sysprep_operation.ml" 210 5911 5936
+type(
+  (string * extra_arg) list list -> (string * extra_arg) list
+)
+ident(
+  ext_ref List.flatten
+)
+"sysprep_operation.ml" 210 5911 5937 "sysprep_operation.ml" 210 5911 5941
+type(
+  (string * extra_arg) list list
+)
+ident(
+  int_ref args "sysprep_operation.ml" 206 5759 5765 "sysprep_operation.ml" 206 5759 5769
+)
+"sysprep_operation.ml" 210 5911 5924 "sysprep_operation.ml" 210 5911 5941
+call(
+  stack
+)
+type(
+  (string * extra_arg) list
+)
+"sysprep_operation.ml" 211 5945 5951 "sysprep_operation.ml" 211 5945 5955
+type(
+  (Arg.key * (string * string * string)) list
+)
+"sysprep_operation.ml" 211 5945 5958 "sysprep_operation.ml" 211 5945 5966
+type(
+  (string * extra_arg -> Arg.key * (string * string * string)) ->
+  (string * extra_arg) list -> (Arg.key * (string * string * string)) list
+)
+ident(
+  ext_ref List.map
+)
+"sysprep_operation.ml" 213 5982 5989 "sysprep_operation.ml" 213 5982 5996
+type(
+  string
+)
+ident(
+  def op_name "sysprep_operation.ml" 219 6220 6226 "sysprep_operation.ml" 220 6268 6307
+)
+"sysprep_operation.ml" 214 5998 6024 "sysprep_operation.ml" 214 5998 6032
+type(
+  Arg.key
+)
+ident(
+  def arg_name "sysprep_operation.ml" 219 6220 6226 "sysprep_operation.ml" 220 6268 6307
+)
+"sysprep_operation.ml" 215 6034 6070 "sysprep_operation.ml" 215 6034 6071
+type(
+  unit -> unit
+)
+"sysprep_operation.ml" 215 6034 6061 "sysprep_operation.ml" 215 6034 6071
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 215 6034 6083 "sysprep_operation.ml" 215 6034 6084
+type(
+  bool -> unit
+)
+"sysprep_operation.ml" 215 6034 6074 "sysprep_operation.ml" 215 6034 6084
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 215 6034 6061 "sysprep_operation.ml" 215 6034 6084
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 215 6034 6095 "sysprep_operation.ml" 215 6034 6096
+type(
+  bool ref
+)
+"sysprep_operation.ml" 215 6034 6087 "sysprep_operation.ml" 215 6034 6096
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 215 6034 6061 "sysprep_operation.ml" 215 6034 6096
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 215 6034 6109 "sysprep_operation.ml" 215 6034 6110
+type(
+  bool ref
+)
+"sysprep_operation.ml" 215 6034 6099 "sysprep_operation.ml" 215 6034 6110
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 215 6034 6060 "sysprep_operation.ml" 215 6034 6111
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 216 6113 6139 "sysprep_operation.ml" 216 6113 6140
+type(
+  Arg.doc
+)
+"sysprep_operation.ml" 214 5998 6023 "sysprep_operation.ml" 216 6113 6141
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"sysprep_operation.ml" 217 6143 6171 "sysprep_operation.ml" 217 6143 6175
+type(
+  string option
+)
+"sysprep_operation.ml" 218 6177 6210 "sysprep_operation.ml" 218 6177 6213
+type(
+  string
+)
+ident(
+  def pod "sysprep_operation.ml" 219 6220 6226 "sysprep_operation.ml" 220 6268 6307
+)
+"sysprep_operation.ml" 214 5998 6005 "sysprep_operation.ml" 218 6177 6215
+type(
+  extra_arg
+)
+"sysprep_operation.ml" 213 5982 5988 "sysprep_operation.ml" 218 6177 6216
+type(
+  string * extra_arg
+)
+"sysprep_operation.ml" 219 6220 6230 "sysprep_operation.ml" 219 6220 6237
+type(
+  string
+)
+"sysprep_operation.ml" 219 6220 6240 "sysprep_operation.ml" 219 6220 6247
+type(
+  (Arg.key -> string, unit, string) format -> Arg.key -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sysprep_operation.ml" 219 6220 6248 "sysprep_operation.ml" 219 6220 6255
+type(
+  (Arg.key -> string, unit, string) format
+)
+"sysprep_operation.ml" 219 6220 6256 "sysprep_operation.ml" 219 6220 6264
+type(
+  Arg.key
+)
+ident(
+  int_ref arg_name "sysprep_operation.ml" 214 5998 6024 "sysprep_operation.ml" 214 5998 6032
+)
+"sysprep_operation.ml" 219 6220 6240 "sysprep_operation.ml" 219 6220 6264
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation.ml" 220 6268 6274 "sysprep_operation.ml" 220 6268 6282
+type(
+  Arg.key
+)
+ident(
+  int_ref arg_name "sysprep_operation.ml" 214 5998 6024 "sysprep_operation.ml" 214 5998 6032
+)
+"sysprep_operation.ml" 220 6268 6285 "sysprep_operation.ml" 220 6268 6292
+type(
+  string
+)
+ident(
+  int_ref op_name "sysprep_operation.ml" 213 5982 5989 "sysprep_operation.ml" 213 5982 5996
+)
+"sysprep_operation.ml" 220 6268 6294 "sysprep_operation.ml" 220 6268 6301
+type(
+  string
+)
+ident(
+  int_ref heading "sysprep_operation.ml" 219 6220 6230 "sysprep_operation.ml" 219 6220 6237
+)
+"sysprep_operation.ml" 220 6268 6303 "sysprep_operation.ml" 220 6268 6306
+type(
+  string
+)
+ident(
+  int_ref pod "sysprep_operation.ml" 218 6177 6210 "sysprep_operation.ml" 218 6177 6213
+)
+"sysprep_operation.ml" 220 6268 6284 "sysprep_operation.ml" 220 6268 6307
+type(
+  string * string * string
+)
+"sysprep_operation.ml" 220 6268 6274 "sysprep_operation.ml" 220 6268 6307
+type(
+  Arg.key * (string * string * string)
+)
+"sysprep_operation.ml" 219 6220 6226 "sysprep_operation.ml" 220 6268 6307
+type(
+  Arg.key * (string * string * string)
+)
+"sysprep_operation.ml" 222 6309 6316 "sysprep_operation.ml" 222 6309 6323
+type(
+  string
+)
+ident(
+  def op_name "sysprep_operation.ml" 229 6624 6630 "sysprep_operation.ml" 230 6683 6722
+)
+"sysprep_operation.ml" 223 6325 6351 "sysprep_operation.ml" 223 6325 6359
+type(
+  Arg.key
+)
+ident(
+  def arg_name "sysprep_operation.ml" 229 6624 6630 "sysprep_operation.ml" 230 6683 6722
+)
+"sysprep_operation.ml" 224 6361 6399 "sysprep_operation.ml" 224 6361 6400
+type(
+  string -> unit
+)
+"sysprep_operation.ml" 224 6361 6388 "sysprep_operation.ml" 224 6361 6400
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 224 6361 6418 "sysprep_operation.ml" 224 6361 6419
+type(
+  string ref
+)
+"sysprep_operation.ml" 224 6361 6403 "sysprep_operation.ml" 224 6361 6419
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 224 6361 6388 "sysprep_operation.ml" 224 6361 6419
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 224 6361 6430 "sysprep_operation.ml" 224 6361 6431
+type(
+  int -> unit
+)
+"sysprep_operation.ml" 224 6361 6422 "sysprep_operation.ml" 224 6361 6431
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 224 6361 6388 "sysprep_operation.ml" 224 6361 6431
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 225 6434 6473 "sysprep_operation.ml" 225 6434 6474
+type(
+  int ref
+)
+"sysprep_operation.ml" 225 6434 6461 "sysprep_operation.ml" 225 6434 6474
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 224 6361 6388 "sysprep_operation.ml" 225 6434 6474
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 225 6434 6487 "sysprep_operation.ml" 225 6434 6488
+type(
+  float -> unit
+)
+"sysprep_operation.ml" 225 6434 6477 "sysprep_operation.ml" 225 6434 6488
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 224 6361 6388 "sysprep_operation.ml" 225 6434 6488
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 225 6434 6505 "sysprep_operation.ml" 225 6434 6506
+type(
+  float ref
+)
+"sysprep_operation.ml" 225 6434 6491 "sysprep_operation.ml" 225 6434 6506
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 224 6361 6387 "sysprep_operation.ml" 225 6434 6507
+type(
+  Arg.spec
+)
+"sysprep_operation.ml" 226 6509 6535 "sysprep_operation.ml" 226 6509 6536
+type(
+  Arg.doc
+)
+"sysprep_operation.ml" 223 6325 6350 "sysprep_operation.ml" 226 6509 6537
+type(
+  Arg.key * Arg.spec * Arg.doc
+)
+"sysprep_operation.ml" 227 6539 6572 "sysprep_operation.ml" 227 6539 6579
+type(
+  string
+)
+ident(
+  def arg_val "sysprep_operation.ml" 229 6624 6630 "sysprep_operation.ml" 230 6683 6722
+)
+"sysprep_operation.ml" 227 6539 6567 "sysprep_operation.ml" 227 6539 6579
+type(
+  string option
+)
+"sysprep_operation.ml" 228 6581 6614 "sysprep_operation.ml" 228 6581 6617
+type(
+  string
+)
+ident(
+  def pod "sysprep_operation.ml" 229 6624 6630 "sysprep_operation.ml" 230 6683 6722
+)
+"sysprep_operation.ml" 223 6325 6332 "sysprep_operation.ml" 228 6581 6619
+type(
+  extra_arg
+)
+"sysprep_operation.ml" 222 6309 6315 "sysprep_operation.ml" 228 6581 6620
+type(
+  string * extra_arg
+)
+"sysprep_operation.ml" 229 6624 6634 "sysprep_operation.ml" 229 6624 6641
+type(
+  string
+)
+"sysprep_operation.ml" 229 6624 6644 "sysprep_operation.ml" 229 6624 6651
+type(
+  (Arg.key -> string -> string, unit, string) format ->
+  Arg.key -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sysprep_operation.ml" 229 6624 6652 "sysprep_operation.ml" 229 6624 6662
+type(
+  (Arg.key -> string -> string, unit, string) format
+)
+"sysprep_operation.ml" 229 6624 6663 "sysprep_operation.ml" 229 6624 6671
+type(
+  Arg.key
+)
+ident(
+  int_ref arg_name "sysprep_operation.ml" 223 6325 6351 "sysprep_operation.ml" 223 6325 6359
+)
+"sysprep_operation.ml" 229 6624 6672 "sysprep_operation.ml" 229 6624 6679
+type(
+  string
+)
+ident(
+  int_ref arg_val "sysprep_operation.ml" 227 6539 6572 "sysprep_operation.ml" 227 6539 6579
+)
+"sysprep_operation.ml" 229 6624 6644 "sysprep_operation.ml" 229 6624 6679
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation.ml" 230 6683 6689 "sysprep_operation.ml" 230 6683 6697
+type(
+  Arg.key
+)
+ident(
+  int_ref arg_name "sysprep_operation.ml" 223 6325 6351 "sysprep_operation.ml" 223 6325 6359
+)
+"sysprep_operation.ml" 230 6683 6700 "sysprep_operation.ml" 230 6683 6707
+type(
+  string
+)
+ident(
+  int_ref op_name "sysprep_operation.ml" 222 6309 6316 "sysprep_operation.ml" 222 6309 6323
+)
+"sysprep_operation.ml" 230 6683 6709 "sysprep_operation.ml" 230 6683 6716
+type(
+  string
+)
+ident(
+  int_ref heading "sysprep_operation.ml" 229 6624 6634 "sysprep_operation.ml" 229 6624 6641
+)
+"sysprep_operation.ml" 230 6683 6718 "sysprep_operation.ml" 230 6683 6721
+type(
+  string
+)
+ident(
+  int_ref pod "sysprep_operation.ml" 228 6581 6614 "sysprep_operation.ml" 228 6581 6617
+)
+"sysprep_operation.ml" 230 6683 6699 "sysprep_operation.ml" 230 6683 6722
+type(
+  string * string * string
+)
+"sysprep_operation.ml" 230 6683 6689 "sysprep_operation.ml" 230 6683 6722
+type(
+  Arg.key * (string * string * string)
+)
+"sysprep_operation.ml" 229 6624 6630 "sysprep_operation.ml" 230 6683 6722
+type(
+  Arg.key * (string * string * string)
+)
+"sysprep_operation.ml" 232 6724 6730 "sysprep_operation.ml" 232 6724 6731
+type(
+  string * extra_arg
+)
+"sysprep_operation.ml" 233 6735 6741 "sysprep_operation.ml" 233 6735 6749
+type(
+  string -> Arg.key * (string * string * string)
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"sysprep_operation.ml" 233 6735 6750 "sysprep_operation.ml" 233 6735 6803
+type(
+  string
+)
+"sysprep_operation.ml" 233 6735 6741 "sysprep_operation.ml" 233 6735 6803
+call(
+  tail
+)
+type(
+  Arg.key * (string * string * string)
+)
+"sysprep_operation.ml" 211 5945 5967 "sysprep_operation.ml" 234 6804 6807
+type(
+  string * extra_arg -> Arg.key * (string * string * string)
+)
+"sysprep_operation.ml" 234 6804 6808 "sysprep_operation.ml" 234 6804 6812
+type(
+  (string * extra_arg) list
+)
+ident(
+  int_ref args "sysprep_operation.ml" 210 5911 5917 "sysprep_operation.ml" 210 5911 5921
+)
+"sysprep_operation.ml" 211 5945 5958 "sysprep_operation.ml" 234 6804 6812
+call(
+  stack
+)
+type(
+  (Arg.key * (string * string * string)) list
+)
+"sysprep_operation.ml" 236 6817 6823 "sysprep_operation.ml" 236 6817 6827
+type(
+  (Arg.key * (string * string * string)) list
+)
+"sysprep_operation.ml" 237 6830 6834 "sysprep_operation.ml" 237 6830 6843
+type(
+  (Arg.key * (string * string * string) ->
+   Arg.key * (string * string * string) -> int) ->
+  (Arg.key * (string * string * string)) list ->
+  (Arg.key * (string * string * string)) list
+)
+ident(
+  ext_ref List.sort
+)
+"sysprep_operation.ml" 237 6830 6850 "sysprep_operation.ml" 237 6830 6851
+type(
+  Arg.key
+)
+ident(
+  def a "sysprep_operation.ml" 237 6830 6856 "sysprep_operation.ml" 237 6830 6895
+)
+"sysprep_operation.ml" 237 6830 6853 "sysprep_operation.ml" 237 6830 6854
+type(
+  string * string * string
+)
+"sysprep_operation.ml" 237 6830 6849 "sysprep_operation.ml" 237 6830 6855
+type(
+  Arg.key * (string * string * string)
+)
+"sysprep_operation.ml" 237 6830 6857 "sysprep_operation.ml" 237 6830 6858
+type(
+  Arg.key
+)
+ident(
+  def b "sysprep_operation.ml" 237 6830 6866 "sysprep_operation.ml" 237 6830 6895
+)
+"sysprep_operation.ml" 237 6830 6860 "sysprep_operation.ml" 237 6830 6861
+type(
+  string * string * string
+)
+"sysprep_operation.ml" 237 6830 6856 "sysprep_operation.ml" 237 6830 6862
+type(
+  Arg.key * (string * string * string)
+)
+"sysprep_operation.ml" 237 6830 6866 "sysprep_operation.ml" 237 6830 6891
+type(
+  Arg.key -> Arg.key -> int
+)
+ident(
+  ext_ref Common_utils.compare_command_line_args
+)
+"sysprep_operation.ml" 237 6830 6892 "sysprep_operation.ml" 237 6830 6893
+type(
+  Arg.key
+)
+ident(
+  int_ref a "sysprep_operation.ml" 237 6830 6850 "sysprep_operation.ml" 237 6830 6851
+)
+"sysprep_operation.ml" 237 6830 6894 "sysprep_operation.ml" 237 6830 6895
+type(
+  Arg.key
+)
+ident(
+  int_ref b "sysprep_operation.ml" 237 6830 6857 "sysprep_operation.ml" 237 6830 6858
+)
+"sysprep_operation.ml" 237 6830 6866 "sysprep_operation.ml" 237 6830 6895
+call(
+  tail
+)
+type(
+  int
+)
+"sysprep_operation.ml" 237 6830 6844 "sysprep_operation.ml" 237 6830 6896
+type(
+  Arg.key * (string * string * string) ->
+  Arg.key * (string * string * string) -> int
+)
+"sysprep_operation.ml" 237 6830 6897 "sysprep_operation.ml" 237 6830 6901
+type(
+  (Arg.key * (string * string * string)) list
+)
+ident(
+  int_ref args "sysprep_operation.ml" 211 5945 5951 "sysprep_operation.ml" 211 5945 5955
+)
+"sysprep_operation.ml" 237 6830 6834 "sysprep_operation.ml" 237 6830 6901
+call(
+  stack
+)
+type(
+  (Arg.key * (string * string * string)) list
+)
+"sysprep_operation.ml" 239 6906 6908 "sysprep_operation.ml" 239 6906 6917
+type(
+  (Arg.key * (string * string * string) -> unit) ->
+  (Arg.key * (string * string * string)) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation.ml" 240 6920 6929 "sysprep_operation.ml" 240 6920 6937
+type(
+  Arg.key
+)
+ident(
+  def arg_name "sysprep_operation.ml" 241 6967 6973 "sysprep_operation.ml" 244 7065 7090
+)
+"sysprep_operation.ml" 240 6920 6940 "sysprep_operation.ml" 240 6920 6947
+type(
+  string
+)
+ident(
+  def op_name "sysprep_operation.ml" 241 6967 6973 "sysprep_operation.ml" 244 7065 7090
+)
+"sysprep_operation.ml" 240 6920 6949 "sysprep_operation.ml" 240 6920 6956
+type(
+  string
+)
+ident(
+  def heading "sysprep_operation.ml" 241 6967 6973 "sysprep_operation.ml" 244 7065 7090
+)
+"sysprep_operation.ml" 240 6920 6958 "sysprep_operation.ml" 240 6920 6961
+type(
+  string
+)
+ident(
+  def pod "sysprep_operation.ml" 241 6967 6973 "sysprep_operation.ml" 244 7065 7090
+)
+"sysprep_operation.ml" 240 6920 6939 "sysprep_operation.ml" 240 6920 6962
+type(
+  string * string * string
+)
+"sysprep_operation.ml" 240 6920 6928 "sysprep_operation.ml" 240 6920 6963
+type(
+  Arg.key * (string * string * string)
+)
+"sysprep_operation.ml" 241 6967 6973 "sysprep_operation.ml" 241 6967 6979
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 241 6967 6980 "sysprep_operation.ml" 241 6967 6992
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 241 6967 6993 "sysprep_operation.ml" 241 6967 7000
+type(
+  string
+)
+ident(
+  int_ref heading "sysprep_operation.ml" 240 6920 6949 "sysprep_operation.ml" 240 6920 6956
+)
+"sysprep_operation.ml" 241 6967 6973 "sysprep_operation.ml" 241 6967 7000
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 242 7002 7008 "sysprep_operation.ml" 242 7002 7014
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 242 7002 7015 "sysprep_operation.ml" 242 7002 7036
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 242 7002 7037 "sysprep_operation.ml" 242 7002 7044
+type(
+  string
+)
+ident(
+  int_ref op_name "sysprep_operation.ml" 240 6920 6940 "sysprep_operation.ml" 240 6920 6947
+)
+"sysprep_operation.ml" 242 7002 7008 "sysprep_operation.ml" 242 7002 7044
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 243 7046 7052 "sysprep_operation.ml" 243 7046 7058
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 243 7046 7059 "sysprep_operation.ml" 243 7046 7063
+type(
+  (unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 243 7046 7052 "sysprep_operation.ml" 243 7046 7063
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 244 7065 7071 "sysprep_operation.ml" 244 7065 7077
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 244 7065 7078 "sysprep_operation.ml" 244 7065 7086
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 244 7065 7087 "sysprep_operation.ml" 244 7065 7090
+type(
+  string
+)
+ident(
+  int_ref pod "sysprep_operation.ml" 240 6920 6958 "sysprep_operation.ml" 240 6920 6961
+)
+"sysprep_operation.ml" 244 7065 7071 "sysprep_operation.ml" 244 7065 7090
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 243 7046 7052 "sysprep_operation.ml" 244 7065 7090
+type(
+  unit
+)
+"sysprep_operation.ml" 242 7002 7008 "sysprep_operation.ml" 244 7065 7090
+type(
+  unit
+)
+"sysprep_operation.ml" 241 6967 6973 "sysprep_operation.ml" 244 7065 7090
+type(
+  unit
+)
+"sysprep_operation.ml" 239 6906 6918 "sysprep_operation.ml" 245 7091 7094
+type(
+  Arg.key * (string * string * string) -> unit
+)
+"sysprep_operation.ml" 245 7091 7095 "sysprep_operation.ml" 245 7091 7099
+type(
+  (Arg.key * (string * string * string)) list
+)
+ident(
+  int_ref args "sysprep_operation.ml" 236 6817 6823 "sysprep_operation.ml" 236 6817 6827
+)
+"sysprep_operation.ml" 239 6906 6908 "sysprep_operation.ml" 245 7091 7099
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 236 6817 6819 "sysprep_operation.ml" 245 7091 7099
+type(
+  unit
+)
+"sysprep_operation.ml" 211 5945 5947 "sysprep_operation.ml" 245 7091 7099
+type(
+  unit
+)
+"sysprep_operation.ml" 210 5911 5913 "sysprep_operation.ml" 245 7091 7099
+type(
+  unit
+)
+"sysprep_operation.ml" 206 5759 5761 "sysprep_operation.ml" 245 7091 7099
+type(
+  unit
+)
+"sysprep_operation.ml" 204 5741 5743 "sysprep_operation.ml" 245 7091 7099
+type(
+  unit
+)
+"sysprep_operation.ml" 247 7101 7105 "sysprep_operation.ml" 247 7101 7120
+type(
+  unit -> unit
+)
+ident(
+  def list_operations "sysprep_operation.ml" 257 7299 7299 --
+)
+"sysprep_operation.ml" 247 7101 7121 "sysprep_operation.ml" 247 7101 7123
+type(
+  unit
+)
+"sysprep_operation.ml" 248 7126 7135 "sysprep_operation.ml" 248 7126 7136
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 248 7126 7136 "sysprep_operation.ml" 248 7126 7141
+type(
+  bool ref
+)
+ident(
+  int_ref baked "sysprep_operation.ml" 116 3218 3222 "sysprep_operation.ml" 116 3218 3227
+)
+"sysprep_operation.ml" 248 7126 7135 "sysprep_operation.ml" 248 7126 7141
+type(
+  bool
+)
+"sysprep_operation.ml" 248 7126 7128 "sysprep_operation.ml" 248 7126 7141
+type(
+  unit
+)
+"sysprep_operation.ml" 250 7144 7146 "sysprep_operation.ml" 250 7144 7155
+type(
+  (operation -> unit) -> operation list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation.ml" 251 7158 7166 "sysprep_operation.ml" 251 7158 7168
+type(
+  operation
+)
+ident(
+  def op "sysprep_operation.ml" 252 7172 7178 "sysprep_operation.ml" 254 7259 7277
+)
+"sysprep_operation.ml" 252 7172 7178 "sysprep_operation.ml" 252 7172 7184
+type(
+  (string -> string -> string -> unit, out_channel, unit) format ->
+  string -> string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sysprep_operation.ml" 252 7172 7185 "sysprep_operation.ml" 252 7172 7197
+type(
+  (string -> string -> string -> unit, out_channel, unit) format
+)
+"sysprep_operation.ml" 252 7172 7198 "sysprep_operation.ml" 252 7172 7200
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 251 7158 7166 "sysprep_operation.ml" 251 7158 7168
+)
+"sysprep_operation.ml" 252 7172 7198 "sysprep_operation.ml" 252 7172 7205
+type(
+  string
+)
+"sysprep_operation.ml" 253 7206 7218 "sysprep_operation.ml" 253 7206 7220
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 251 7158 7166 "sysprep_operation.ml" 251 7158 7168
+)
+"sysprep_operation.ml" 253 7206 7218 "sysprep_operation.ml" 253 7206 7239
+type(
+  bool
+)
+"sysprep_operation.ml" 253 7206 7245 "sysprep_operation.ml" 253 7206 7248
+type(
+  string
+)
+"sysprep_operation.ml" 253 7206 7254 "sysprep_operation.ml" 253 7206 7257
+type(
+  string
+)
+"sysprep_operation.ml" 253 7206 7214 "sysprep_operation.ml" 253 7206 7258
+type(
+  string
+)
+"sysprep_operation.ml" 254 7259 7267 "sysprep_operation.ml" 254 7259 7269
+type(
+  operation
+)
+ident(
+  int_ref op "sysprep_operation.ml" 251 7158 7166 "sysprep_operation.ml" 251 7158 7168
+)
+"sysprep_operation.ml" 254 7259 7267 "sysprep_operation.ml" 254 7259 7277
+type(
+  string
+)
+"sysprep_operation.ml" 252 7172 7178 "sysprep_operation.ml" 254 7259 7277
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 250 7144 7156 "sysprep_operation.ml" 255 7278 7281
+type(
+  operation -> unit
+)
+"sysprep_operation.ml" 255 7278 7282 "sysprep_operation.ml" 255 7278 7283
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 255 7278 7283 "sysprep_operation.ml" 255 7278 7297
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 255 7278 7282 "sysprep_operation.ml" 255 7278 7297
+type(
+  operation list
+)
+"sysprep_operation.ml" 250 7144 7146 "sysprep_operation.ml" 255 7278 7297
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 248 7126 7128 "sysprep_operation.ml" 255 7278 7297
+type(
+  unit
+)
+"sysprep_operation.ml" 257 7299 7303 "sysprep_operation.ml" 257 7299 7325
+type(
+  ?operations:OperationSet.t -> unit -> unit
+)
+ident(
+  def not_enabled_check_args "sysprep_operation.ml" 268 7768 7768 --
+)
+"sysprep_operation.ml" 257 7299 7327 "sysprep_operation.ml" 257 7299 7337
+type(
+  OperationSet.t option
+)
+ident(
+  def operations "sysprep_operation.ml" 257 7299 7338 "sysprep_operation.ml" 266 7693 7766
+)
+"sysprep_operation.ml" 257 7299 7338 "sysprep_operation.ml" 257 7299 7340
+type(
+  unit
+)
+"sysprep_operation.ml" 258 7343 7349 "sysprep_operation.ml" 258 7343 7360
+type(
+  operation list
+)
+"sysprep_operation.ml" 259 7363 7373 "sysprep_operation.ml" 259 7363 7383
+type(
+  OperationSet.t option
+)
+ident(
+  int_ref operations "sysprep_operation.ml" 257 7299 7327 "sysprep_operation.ml" 257 7299 7337
+)
+"sysprep_operation.ml" 260 7389 7395 "sysprep_operation.ml" 260 7389 7399
+type(
+  OperationSet.t option
+)
+"sysprep_operation.ml" 260 7389 7403 "sysprep_operation.ml" 260 7389 7404
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 260 7389 7404 "sysprep_operation.ml" 260 7389 7433
+type(
+  operation list ref
+)
+ident(
+  int_ref enabled_by_default_operations "sysprep_operation.ml" 71 2036 2040 "sysprep_operation.ml" 71 2036 2069
+)
+"sysprep_operation.ml" 260 7389 7403 "sysprep_operation.ml" 260 7389 7433
+type(
+  operation list
+)
+"sysprep_operation.ml" 261 7434 7445 "sysprep_operation.ml" 261 7434 7450
+type(
+  OperationSet.t
+)
+ident(
+  def opset "sysprep_operation.ml" 262 7492 7498 "sysprep_operation.ml" 262 7492 7525
+)
+"sysprep_operation.ml" 261 7434 7440 "sysprep_operation.ml" 261 7434 7450
+type(
+  OperationSet.t option
+)
+"sysprep_operation.ml" 262 7492 7498 "sysprep_operation.ml" 262 7492 7519
+type(
+  OperationSet.t -> operation list
+)
+ident(
+  ext_ref OperationSet.elements
+)
+"sysprep_operation.ml" 262 7492 7520 "sysprep_operation.ml" 262 7492 7525
+type(
+  OperationSet.t
+)
+ident(
+  int_ref opset "sysprep_operation.ml" 261 7434 7445 "sysprep_operation.ml" 261 7434 7450
+)
+"sysprep_operation.ml" 262 7492 7498 "sysprep_operation.ml" 262 7492 7525
+call(
+  stack
+)
+type(
+  operation list
+)
+"sysprep_operation.ml" 259 7363 7367 "sysprep_operation.ml" 262 7492 7525
+type(
+  operation list
+)
+"sysprep_operation.ml" 263 7529 7535 "sysprep_operation.ml" 263 7529 7542
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 263 7529 7545 "sysprep_operation.ml" 263 7529 7560
+type(
+  operation list -> OperationSet.t
+)
+ident(
+  int_ref opset_of_oplist "sysprep_operation.ml" 83 2260 2264 "sysprep_operation.ml" 83 2260 2279
+)
+"sysprep_operation.ml" 263 7529 7561 "sysprep_operation.ml" 263 7529 7562
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 263 7529 7562 "sysprep_operation.ml" 263 7529 7576
+type(
+  operation list ref
+)
+ident(
+  int_ref all_operations "sysprep_operation.ml" 70 2008 2012 "sysprep_operation.ml" 70 2008 2026
+)
+"sysprep_operation.ml" 263 7529 7561 "sysprep_operation.ml" 263 7529 7576
+type(
+  operation list
+)
+"sysprep_operation.ml" 263 7529 7545 "sysprep_operation.ml" 263 7529 7576
+call(
+  stack
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 264 7580 7586 "sysprep_operation.ml" 264 7580 7597
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 264 7580 7600 "sysprep_operation.ml" 264 7580 7615
+type(
+  operation list -> OperationSet.t
+)
+ident(
+  int_ref opset_of_oplist "sysprep_operation.ml" 83 2260 2264 "sysprep_operation.ml" 83 2260 2279
+)
+"sysprep_operation.ml" 264 7580 7616 "sysprep_operation.ml" 264 7580 7627
+type(
+  operation list
+)
+ident(
+  int_ref enabled_ops "sysprep_operation.ml" 258 7343 7349 "sysprep_operation.ml" 258 7343 7360
+)
+"sysprep_operation.ml" 264 7580 7600 "sysprep_operation.ml" 264 7580 7627
+call(
+  stack
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 265 7631 7637 "sysprep_operation.ml" 265 7631 7649
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 265 7631 7652 "sysprep_operation.ml" 265 7631 7669
+type(
+  OperationSet.t -> OperationSet.t -> OperationSet.t
+)
+ident(
+  ext_ref OperationSet.diff
+)
+"sysprep_operation.ml" 265 7631 7670 "sysprep_operation.ml" 265 7631 7677
+type(
+  OperationSet.t
+)
+ident(
+  int_ref all_ops "sysprep_operation.ml" 263 7529 7535 "sysprep_operation.ml" 263 7529 7542
+)
+"sysprep_operation.ml" 265 7631 7678 "sysprep_operation.ml" 265 7631 7689
+type(
+  OperationSet.t
+)
+ident(
+  int_ref enabled_ops "sysprep_operation.ml" 264 7580 7586 "sysprep_operation.ml" 264 7580 7597
+)
+"sysprep_operation.ml" 265 7631 7652 "sysprep_operation.ml" 265 7631 7689
+call(
+  stack
+)
+type(
+  OperationSet.t
+)
+"sysprep_operation.ml" 266 7693 7695 "sysprep_operation.ml" 266 7693 7712
+type(
+  (OperationSet.elt -> unit) -> OperationSet.t -> unit
+)
+ident(
+  ext_ref OperationSet.iter
+)
+"sysprep_operation.ml" 266 7693 7718 "sysprep_operation.ml" 266 7693 7720
+type(
+  OperationSet.elt
+)
+ident(
+  def op "sysprep_operation.ml" 266 7693 7724 "sysprep_operation.ml" 266 7693 7752
+)
+"sysprep_operation.ml" 266 7693 7724 "sysprep_operation.ml" 266 7693 7726
+type(
+  OperationSet.elt
+)
+ident(
+  int_ref op "sysprep_operation.ml" 266 7693 7718 "sysprep_operation.ml" 266 7693 7720
+)
+"sysprep_operation.ml" 266 7693 7724 "sysprep_operation.ml" 266 7693 7749
+type(
+  unit -> unit
+)
+"sysprep_operation.ml" 266 7693 7750 "sysprep_operation.ml" 266 7693 7752
+type(
+  unit
+)
+"sysprep_operation.ml" 266 7693 7724 "sysprep_operation.ml" 266 7693 7752
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 266 7693 7713 "sysprep_operation.ml" 266 7693 7753
+type(
+  OperationSet.elt -> unit
+)
+"sysprep_operation.ml" 266 7693 7754 "sysprep_operation.ml" 266 7693 7766
+type(
+  OperationSet.t
+)
+ident(
+  int_ref disabled_ops "sysprep_operation.ml" 265 7631 7637 "sysprep_operation.ml" 265 7631 7649
+)
+"sysprep_operation.ml" 266 7693 7695 "sysprep_operation.ml" 266 7693 7766
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 265 7631 7633 "sysprep_operation.ml" 266 7693 7766
+type(
+  unit
+)
+"sysprep_operation.ml" 264 7580 7582 "sysprep_operation.ml" 266 7693 7766
+type(
+  unit
+)
+"sysprep_operation.ml" 263 7529 7531 "sysprep_operation.ml" 266 7693 7766
+type(
+  unit
+)
+"sysprep_operation.ml" 258 7343 7345 "sysprep_operation.ml" 266 7693 7766
+type(
+  unit
+)
+"sysprep_operation.ml" 268 7768 7772 "sysprep_operation.ml" 268 7768 7790
+type(
+  operation -> operation -> int
+)
+ident(
+  def compare_operations "sysprep_operation.ml" 272 7911 7911 --
+)
+"sysprep_operation.ml" 268 7768 7801 "sysprep_operation.ml" 268 7768 7803
+type(
+  int
+)
+ident(
+  def o1 "sysprep_operation.ml" 268 7768 7817 "sysprep_operation.ml" 270 7872 7909
+)
+"sysprep_operation.ml" 268 7768 7812 "sysprep_operation.ml" 268 7768 7814
+type(
+  string
+)
+ident(
+  def n1 "sysprep_operation.ml" 268 7768 7817 "sysprep_operation.ml" 270 7872 7909
+)
+"sysprep_operation.ml" 268 7768 7791 "sysprep_operation.ml" 268 7768 7816
+type(
+  operation
+)
+"sysprep_operation.ml" 268 7768 7827 "sysprep_operation.ml" 268 7768 7829
+type(
+  int
+)
+ident(
+  def o2 "sysprep_operation.ml" 269 7845 7847 "sysprep_operation.ml" 270 7872 7909
+)
+"sysprep_operation.ml" 268 7768 7838 "sysprep_operation.ml" 268 7768 7840
+type(
+  string
+)
+ident(
+  def n2 "sysprep_operation.ml" 269 7845 7847 "sysprep_operation.ml" 270 7872 7909
+)
+"sysprep_operation.ml" 268 7768 7817 "sysprep_operation.ml" 268 7768 7842
+type(
+  operation
+)
+"sysprep_operation.ml" 269 7845 7851 "sysprep_operation.ml" 269 7845 7852
+type(
+  int
+)
+"sysprep_operation.ml" 269 7845 7855 "sysprep_operation.ml" 269 7845 7862
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"sysprep_operation.ml" 269 7845 7863 "sysprep_operation.ml" 269 7845 7865
+type(
+  int
+)
+ident(
+  int_ref o1 "sysprep_operation.ml" 268 7768 7801 "sysprep_operation.ml" 268 7768 7803
+)
+"sysprep_operation.ml" 269 7845 7866 "sysprep_operation.ml" 269 7845 7868
+type(
+  int
+)
+ident(
+  int_ref o2 "sysprep_operation.ml" 268 7768 7827 "sysprep_operation.ml" 268 7768 7829
+)
+"sysprep_operation.ml" 269 7845 7855 "sysprep_operation.ml" 269 7845 7868
+type(
+  int
+)
+"sysprep_operation.ml" 270 7872 7877 "sysprep_operation.ml" 270 7872 7878
+type(
+  int
+)
+ident(
+  int_ref i "sysprep_operation.ml" 269 7845 7851 "sysprep_operation.ml" 269 7845 7852
+)
+"sysprep_operation.ml" 270 7872 7879 "sysprep_operation.ml" 270 7872 7881
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation.ml" 270 7872 7882 "sysprep_operation.ml" 270 7872 7883
+type(
+  int
+)
+"sysprep_operation.ml" 270 7872 7877 "sysprep_operation.ml" 270 7872 7883
+type(
+  bool
+)
+"sysprep_operation.ml" 270 7872 7889 "sysprep_operation.ml" 270 7872 7890
+type(
+  int
+)
+ident(
+  int_ref i "sysprep_operation.ml" 269 7845 7851 "sysprep_operation.ml" 269 7845 7852
+)
+"sysprep_operation.ml" 270 7872 7896 "sysprep_operation.ml" 270 7872 7903
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"sysprep_operation.ml" 270 7872 7904 "sysprep_operation.ml" 270 7872 7906
+type(
+  string
+)
+ident(
+  int_ref n1 "sysprep_operation.ml" 268 7768 7812 "sysprep_operation.ml" 268 7768 7814
+)
+"sysprep_operation.ml" 270 7872 7907 "sysprep_operation.ml" 270 7872 7909
+type(
+  string
+)
+ident(
+  int_ref n2 "sysprep_operation.ml" 268 7768 7838 "sysprep_operation.ml" 268 7768 7840
+)
+"sysprep_operation.ml" 270 7872 7896 "sysprep_operation.ml" 270 7872 7909
+type(
+  int
+)
+"sysprep_operation.ml" 270 7872 7874 "sysprep_operation.ml" 270 7872 7909
+type(
+  int
+)
+"sysprep_operation.ml" 269 7845 7847 "sysprep_operation.ml" 270 7872 7909
+type(
+  int
+)
+"sysprep_operation.ml" 272 7911 7915 "sysprep_operation.ml" 272 7911 7948
+type(
+  ?operations:OperationSet.t ->
+  Guestfs.guestfs -> string -> filesystem_side_effects -> unit
+)
+ident(
+  def perform_operations_on_filesystems "sysprep_operation.ml" 293 8521 8521 --
+)
+"sysprep_operation.ml" 272 7911 7950 "sysprep_operation.ml" 272 7911 7960
+type(
+  OperationSet.t option
+)
+ident(
+  def operations "sysprep_operation.ml" 272 7911 7961 "sysprep_operation.ml" 291 8512 8519
+)
+"sysprep_operation.ml" 272 7911 7961 "sysprep_operation.ml" 272 7911 7962
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "sysprep_operation.ml" 272 7911 7963 "sysprep_operation.ml" 291 8512 8519
+)
+"sysprep_operation.ml" 272 7911 7963 "sysprep_operation.ml" 272 7911 7967
+type(
+  string
+)
+ident(
+  def root "sysprep_operation.ml" 273 7968 7972 "sysprep_operation.ml" 291 8512 8519
+)
+"sysprep_operation.ml" 273 7968 7972 "sysprep_operation.ml" 273 7968 7984
+type(
+  filesystem_side_effects
+)
+ident(
+  def side_effects "sysprep_operation.ml" 274 7987 7989 "sysprep_operation.ml" 291 8512 8519
+)
+"sysprep_operation.ml" 274 7987 7996 "sysprep_operation.ml" 274 7987 7997
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 274 7987 7997 "sysprep_operation.ml" 274 7987 8002
+type(
+  bool ref
+)
+ident(
+  int_ref baked "sysprep_operation.ml" 116 3218 3222 "sysprep_operation.ml" 116 3218 3227
+)
+"sysprep_operation.ml" 274 7987 7996 "sysprep_operation.ml" 274 7987 8002
+type(
+  bool
+)
+"sysprep_operation.ml" 274 7987 7989 "sysprep_operation.ml" 274 7987 8002
+type(
+  unit
+)
+"sysprep_operation.ml" 276 8005 8011 "sysprep_operation.ml" 276 8005 8014
+type(
+  operation list
+)
+"sysprep_operation.ml" 277 8017 8027 "sysprep_operation.ml" 277 8017 8037
+type(
+  OperationSet.t option
+)
+ident(
+  int_ref operations "sysprep_operation.ml" 272 7911 7950 "sysprep_operation.ml" 272 7911 7960
+)
+"sysprep_operation.ml" 278 8043 8049 "sysprep_operation.ml" 278 8043 8053
+type(
+  OperationSet.t option
+)
+"sysprep_operation.ml" 278 8043 8057 "sysprep_operation.ml" 278 8043 8058
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 278 8043 8058 "sysprep_operation.ml" 278 8043 8087
+type(
+  operation list ref
+)
+ident(
+  int_ref enabled_by_default_operations "sysprep_operation.ml" 71 2036 2040 "sysprep_operation.ml" 71 2036 2069
+)
+"sysprep_operation.ml" 278 8043 8057 "sysprep_operation.ml" 278 8043 8087
+type(
+  operation list
+)
+"sysprep_operation.ml" 279 8088 8099 "sysprep_operation.ml" 279 8088 8104
+type(
+  OperationSet.t
+)
+ident(
+  def opset "sysprep_operation.ml" 280 8146 8152 "sysprep_operation.ml" 280 8146 8179
+)
+"sysprep_operation.ml" 279 8088 8094 "sysprep_operation.ml" 279 8088 8104
+type(
+  OperationSet.t option
+)
+"sysprep_operation.ml" 280 8146 8152 "sysprep_operation.ml" 280 8146 8173
+type(
+  OperationSet.t -> operation list
+)
+ident(
+  ext_ref OperationSet.elements
+)
+"sysprep_operation.ml" 280 8146 8174 "sysprep_operation.ml" 280 8146 8179
+type(
+  OperationSet.t
+)
+ident(
+  int_ref opset "sysprep_operation.ml" 279 8088 8099 "sysprep_operation.ml" 279 8088 8104
+)
+"sysprep_operation.ml" 280 8146 8152 "sysprep_operation.ml" 280 8146 8179
+call(
+  stack
+)
+type(
+  operation list
+)
+"sysprep_operation.ml" 277 8017 8021 "sysprep_operation.ml" 280 8146 8179
+type(
+  operation list
+)
+"sysprep_operation.ml" 283 8258 8264 "sysprep_operation.ml" 283 8258 8267
+type(
+  operation list
+)
+"sysprep_operation.ml" 283 8258 8270 "sysprep_operation.ml" 283 8258 8279
+type(
+  (operation -> operation -> int) -> operation list -> operation list
+)
+ident(
+  ext_ref List.sort
+)
+"sysprep_operation.ml" 283 8258 8280 "sysprep_operation.ml" 283 8258 8298
+type(
+  operation -> operation -> int
+)
+ident(
+  int_ref compare_operations "sysprep_operation.ml" 268 7768 7772 "sysprep_operation.ml" 268 7768 7790
+)
+"sysprep_operation.ml" 283 8258 8299 "sysprep_operation.ml" 283 8258 8302
+type(
+  operation list
+)
+ident(
+  int_ref ops "sysprep_operation.ml" 276 8005 8011 "sysprep_operation.ml" 276 8005 8014
+)
+"sysprep_operation.ml" 283 8258 8270 "sysprep_operation.ml" 283 8258 8302
+call(
+  stack
+)
+type(
+  operation list
+)
+"sysprep_operation.ml" 285 8307 8309 "sysprep_operation.ml" 285 8307 8318
+type(
+  (operation -> unit) -> operation list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation.ml" 287 8334 8349 "sysprep_operation.ml" 287 8334 8353
+type(
+  string
+)
+ident(
+  def name "sysprep_operation.ml" 288 8393 8399 "sysprep_operation.ml" 289 8437 8465
+)
+"sysprep_operation.ml" 287 8334 8385 "sysprep_operation.ml" 287 8334 8387
+type(
+  filesystem_side_effects callback
+)
+ident(
+  def fn "sysprep_operation.ml" 288 8393 8399 "sysprep_operation.ml" 289 8437 8465
+)
+"sysprep_operation.ml" 287 8334 8380 "sysprep_operation.ml" 287 8334 8387
+type(
+  filesystem_side_effects callback option
+)
+"sysprep_operation.ml" 287 8334 8340 "sysprep_operation.ml" 287 8334 8389
+type(
+  operation
+)
+"sysprep_operation.ml" 288 8393 8399 "sysprep_operation.ml" 288 8393 8406
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"sysprep_operation.ml" 288 8393 8408 "sysprep_operation.ml" 288 8393 8410
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 288 8393 8410 "sysprep_operation.ml" 288 8393 8429
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation.ml" 288 8393 8407 "sysprep_operation.ml" 288 8393 8430
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"sysprep_operation.ml" 288 8393 8431 "sysprep_operation.ml" 288 8393 8435
+type(
+  string
+)
+ident(
+  int_ref name "sysprep_operation.ml" 287 8334 8349 "sysprep_operation.ml" 287 8334 8353
+)
+"sysprep_operation.ml" 288 8393 8399 "sysprep_operation.ml" 288 8393 8435
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 289 8437 8443 "sysprep_operation.ml" 289 8437 8445
+type(
+  filesystem_side_effects callback
+)
+ident(
+  int_ref fn "sysprep_operation.ml" 287 8334 8385 "sysprep_operation.ml" 287 8334 8387
+)
+"sysprep_operation.ml" 289 8437 8446 "sysprep_operation.ml" 289 8437 8447
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation.ml" 272 7911 7961 "sysprep_operation.ml" 272 7911 7962
+)
+"sysprep_operation.ml" 289 8437 8448 "sysprep_operation.ml" 289 8437 8452
+type(
+  string
+)
+ident(
+  int_ref root "sysprep_operation.ml" 272 7911 7963 "sysprep_operation.ml" 272 7911 7967
+)
+"sysprep_operation.ml" 289 8437 8453 "sysprep_operation.ml" 289 8437 8465
+type(
+  filesystem_side_effects
+)
+ident(
+  int_ref side_effects "sysprep_operation.ml" 273 7968 7972 "sysprep_operation.ml" 273 7968 7984
+)
+"sysprep_operation.ml" 289 8437 8443 "sysprep_operation.ml" 289 8437 8465
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 288 8393 8399 "sysprep_operation.ml" 289 8437 8465
+type(
+  unit
+)
+"sysprep_operation.ml" 290 8466 8499 "sysprep_operation.ml" 290 8466 8503
+type(
+  filesystem_side_effects callback option
+)
+"sysprep_operation.ml" 290 8466 8472 "sysprep_operation.ml" 290 8466 8505
+type(
+  operation
+)
+"sysprep_operation.ml" 290 8466 8509 "sysprep_operation.ml" 290 8466 8511
+type(
+  unit
+)
+"sysprep_operation.ml" 285 8307 8319 "sysprep_operation.ml" 291 8512 8515
+type(
+  operation -> unit
+)
+"sysprep_operation.ml" 291 8512 8516 "sysprep_operation.ml" 291 8512 8519
+type(
+  operation list
+)
+ident(
+  int_ref ops "sysprep_operation.ml" 283 8258 8264 "sysprep_operation.ml" 283 8258 8267
+)
+"sysprep_operation.ml" 285 8307 8309 "sysprep_operation.ml" 291 8512 8519
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 283 8258 8260 "sysprep_operation.ml" 291 8512 8519
+type(
+  unit
+)
+"sysprep_operation.ml" 276 8005 8007 "sysprep_operation.ml" 291 8512 8519
+type(
+  unit
+)
+"sysprep_operation.ml" 274 7987 7989 "sysprep_operation.ml" 291 8512 8519
+type(
+  unit
+)
+"sysprep_operation.ml" 293 8521 8525 "sysprep_operation.ml" 293 8521 8554
+type(
+  ?operations:OperationSet.t ->
+  Guestfs.guestfs -> string -> device_side_effects -> unit
+)
+ident(
+  def perform_operations_on_devices "sysprep_operation.ml" 312 9110 9117 --
+)
+"sysprep_operation.ml" 293 8521 8556 "sysprep_operation.ml" 293 8521 8566
+type(
+  OperationSet.t option
+)
+ident(
+  def operations "sysprep_operation.ml" 293 8521 8567 "sysprep_operation.ml" 312 9110 9117
+)
+"sysprep_operation.ml" 293 8521 8567 "sysprep_operation.ml" 293 8521 8568
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "sysprep_operation.ml" 293 8521 8569 "sysprep_operation.ml" 312 9110 9117
+)
+"sysprep_operation.ml" 293 8521 8569 "sysprep_operation.ml" 293 8521 8573
+type(
+  string
+)
+ident(
+  def root "sysprep_operation.ml" 294 8574 8578 "sysprep_operation.ml" 312 9110 9117
+)
+"sysprep_operation.ml" 294 8574 8578 "sysprep_operation.ml" 294 8574 8590
+type(
+  device_side_effects
+)
+ident(
+  def side_effects "sysprep_operation.ml" 295 8593 8595 "sysprep_operation.ml" 312 9110 9117
+)
+"sysprep_operation.ml" 295 8593 8602 "sysprep_operation.ml" 295 8593 8603
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 295 8593 8603 "sysprep_operation.ml" 295 8593 8608
+type(
+  bool ref
+)
+ident(
+  int_ref baked "sysprep_operation.ml" 116 3218 3222 "sysprep_operation.ml" 116 3218 3227
+)
+"sysprep_operation.ml" 295 8593 8602 "sysprep_operation.ml" 295 8593 8608
+type(
+  bool
+)
+"sysprep_operation.ml" 295 8593 8595 "sysprep_operation.ml" 295 8593 8608
+type(
+  unit
+)
+"sysprep_operation.ml" 297 8611 8617 "sysprep_operation.ml" 297 8611 8620
+type(
+  operation list
+)
+"sysprep_operation.ml" 298 8623 8633 "sysprep_operation.ml" 298 8623 8643
+type(
+  OperationSet.t option
+)
+ident(
+  int_ref operations "sysprep_operation.ml" 293 8521 8556 "sysprep_operation.ml" 293 8521 8566
+)
+"sysprep_operation.ml" 299 8649 8655 "sysprep_operation.ml" 299 8649 8659
+type(
+  OperationSet.t option
+)
+"sysprep_operation.ml" 299 8649 8663 "sysprep_operation.ml" 299 8649 8664
+type(
+  operation list ref -> operation list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sysprep_operation.ml" 299 8649 8664 "sysprep_operation.ml" 299 8649 8693
+type(
+  operation list ref
+)
+ident(
+  int_ref enabled_by_default_operations "sysprep_operation.ml" 71 2036 2040 "sysprep_operation.ml" 71 2036 2069
+)
+"sysprep_operation.ml" 299 8649 8663 "sysprep_operation.ml" 299 8649 8693
+type(
+  operation list
+)
+"sysprep_operation.ml" 300 8694 8705 "sysprep_operation.ml" 300 8694 8710
+type(
+  OperationSet.t
+)
+ident(
+  def opset "sysprep_operation.ml" 301 8752 8758 "sysprep_operation.ml" 301 8752 8785
+)
+"sysprep_operation.ml" 300 8694 8700 "sysprep_operation.ml" 300 8694 8710
+type(
+  OperationSet.t option
+)
+"sysprep_operation.ml" 301 8752 8758 "sysprep_operation.ml" 301 8752 8779
+type(
+  OperationSet.t -> operation list
+)
+ident(
+  ext_ref OperationSet.elements
+)
+"sysprep_operation.ml" 301 8752 8780 "sysprep_operation.ml" 301 8752 8785
+type(
+  OperationSet.t
+)
+ident(
+  int_ref opset "sysprep_operation.ml" 300 8694 8705 "sysprep_operation.ml" 300 8694 8710
+)
+"sysprep_operation.ml" 301 8752 8758 "sysprep_operation.ml" 301 8752 8785
+call(
+  stack
+)
+type(
+  operation list
+)
+"sysprep_operation.ml" 298 8623 8627 "sysprep_operation.ml" 301 8752 8785
+type(
+  operation list
+)
+"sysprep_operation.ml" 304 8864 8870 "sysprep_operation.ml" 304 8864 8873
+type(
+  operation list
+)
+"sysprep_operation.ml" 304 8864 8876 "sysprep_operation.ml" 304 8864 8885
+type(
+  (operation -> operation -> int) -> operation list -> operation list
+)
+ident(
+  ext_ref List.sort
+)
+"sysprep_operation.ml" 304 8864 8886 "sysprep_operation.ml" 304 8864 8904
+type(
+  operation -> operation -> int
+)
+ident(
+  int_ref compare_operations "sysprep_operation.ml" 268 7768 7772 "sysprep_operation.ml" 268 7768 7790
+)
+"sysprep_operation.ml" 304 8864 8905 "sysprep_operation.ml" 304 8864 8908
+type(
+  operation list
+)
+ident(
+  int_ref ops "sysprep_operation.ml" 297 8611 8617 "sysprep_operation.ml" 297 8611 8620
+)
+"sysprep_operation.ml" 304 8864 8876 "sysprep_operation.ml" 304 8864 8908
+call(
+  stack
+)
+type(
+  operation list
+)
+"sysprep_operation.ml" 306 8913 8915 "sysprep_operation.ml" 306 8913 8924
+type(
+  (operation -> unit) -> operation list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation.ml" 308 8940 8955 "sysprep_operation.ml" 308 8940 8959
+type(
+  string
+)
+ident(
+  def name "sysprep_operation.ml" 309 8995 9001 "sysprep_operation.ml" 310 9039 9067
+)
+"sysprep_operation.ml" 308 8940 8987 "sysprep_operation.ml" 308 8940 8989
+type(
+  device_side_effects callback
+)
+ident(
+  def fn "sysprep_operation.ml" 309 8995 9001 "sysprep_operation.ml" 310 9039 9067
+)
+"sysprep_operation.ml" 308 8940 8982 "sysprep_operation.ml" 308 8940 8989
+type(
+  device_side_effects callback option
+)
+"sysprep_operation.ml" 308 8940 8946 "sysprep_operation.ml" 308 8940 8991
+type(
+  operation
+)
+"sysprep_operation.ml" 309 8995 9001 "sysprep_operation.ml" 309 8995 9008
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"sysprep_operation.ml" 309 8995 9010 "sysprep_operation.ml" 309 8995 9012
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation.ml" 309 8995 9012 "sysprep_operation.ml" 309 8995 9031
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"sysprep_operation.ml" 309 8995 9009 "sysprep_operation.ml" 309 8995 9032
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"sysprep_operation.ml" 309 8995 9033 "sysprep_operation.ml" 309 8995 9037
+type(
+  string
+)
+ident(
+  int_ref name "sysprep_operation.ml" 308 8940 8955 "sysprep_operation.ml" 308 8940 8959
+)
+"sysprep_operation.ml" 309 8995 9001 "sysprep_operation.ml" 309 8995 9037
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 310 9039 9045 "sysprep_operation.ml" 310 9039 9047
+type(
+  device_side_effects callback
+)
+ident(
+  int_ref fn "sysprep_operation.ml" 308 8940 8987 "sysprep_operation.ml" 308 8940 8989
+)
+"sysprep_operation.ml" 310 9039 9048 "sysprep_operation.ml" 310 9039 9049
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation.ml" 293 8521 8567 "sysprep_operation.ml" 293 8521 8568
+)
+"sysprep_operation.ml" 310 9039 9050 "sysprep_operation.ml" 310 9039 9054
+type(
+  string
+)
+ident(
+  int_ref root "sysprep_operation.ml" 293 8521 8569 "sysprep_operation.ml" 293 8521 8573
+)
+"sysprep_operation.ml" 310 9039 9055 "sysprep_operation.ml" 310 9039 9067
+type(
+  device_side_effects
+)
+ident(
+  int_ref side_effects "sysprep_operation.ml" 294 8574 8578 "sysprep_operation.ml" 294 8574 8590
+)
+"sysprep_operation.ml" 310 9039 9045 "sysprep_operation.ml" 310 9039 9067
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 309 8995 9001 "sysprep_operation.ml" 310 9039 9067
+type(
+  unit
+)
+"sysprep_operation.ml" 311 9068 9097 "sysprep_operation.ml" 311 9068 9101
+type(
+  device_side_effects callback option
+)
+"sysprep_operation.ml" 311 9068 9074 "sysprep_operation.ml" 311 9068 9103
+type(
+  operation
+)
+"sysprep_operation.ml" 311 9068 9107 "sysprep_operation.ml" 311 9068 9109
+type(
+  unit
+)
+"sysprep_operation.ml" 306 8913 8925 "sysprep_operation.ml" 312 9110 9113
+type(
+  operation -> unit
+)
+"sysprep_operation.ml" 312 9110 9114 "sysprep_operation.ml" 312 9110 9117
+type(
+  operation list
+)
+ident(
+  int_ref ops "sysprep_operation.ml" 304 8864 8870 "sysprep_operation.ml" 304 8864 8873
+)
+"sysprep_operation.ml" 306 8913 8915 "sysprep_operation.ml" 312 9110 9117
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation.ml" 304 8864 8866 "sysprep_operation.ml" 312 9110 9117
+type(
+  unit
+)
+"sysprep_operation.ml" 297 8611 8613 "sysprep_operation.ml" 312 9110 9117
+type(
+  unit
+)
+"sysprep_operation.ml" 295 8593 8595 "sysprep_operation.ml" 312 9110 9117
+type(
+  unit
+)

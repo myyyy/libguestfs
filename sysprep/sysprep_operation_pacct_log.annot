@@ -1,0 +1,632 @@
+"sysprep_operation_pacct_log.ml" 24 852 856 "sysprep_operation_pacct_log.ml" 24 852 873
+type(
+  < glob_expand : string -> 'a array; inspect_get_distro : 'b -> string;
+    inspect_get_type : 'b -> string; rm : 'a -> unit; touch : string -> 'c;
+    .. > ->
+  'b -> < created_file : unit -> unit; .. > -> unit
+)
+ident(
+  def pacct_log_perform "sysprep_operation_pacct_log.ml" 52 1653 1653 --
+)
+"sysprep_operation_pacct_log.ml" 24 852 874 "sysprep_operation_pacct_log.ml" 24 852 875
+type(
+  < glob_expand : string -> 'a array; inspect_get_distro : 'b -> string;
+    inspect_get_type : 'b -> string; rm : 'a -> unit; touch : string -> 'c;
+    .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_pacct_log.ml" 24 852 876 "sysprep_operation_pacct_log.ml" 50 1640 1651
+)
+"sysprep_operation_pacct_log.ml" 24 852 876 "sysprep_operation_pacct_log.ml" 24 852 880
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_pacct_log.ml" 24 852 881 "sysprep_operation_pacct_log.ml" 50 1640 1651
+)
+"sysprep_operation_pacct_log.ml" 24 852 881 "sysprep_operation_pacct_log.ml" 24 852 893
+type(
+  < created_file : unit -> unit; .. > as 'e
+)
+ident(
+  def side_effects "sysprep_operation_pacct_log.ml" 25 896 898 "sysprep_operation_pacct_log.ml" 50 1640 1651
+)
+"sysprep_operation_pacct_log.ml" 25 896 902 "sysprep_operation_pacct_log.ml" 25 896 905
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 25 896 908 "sysprep_operation_pacct_log.ml" 25 896 909
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_pacct_log.ml" 24 852 874 "sysprep_operation_pacct_log.ml" 24 852 875
+)
+"sysprep_operation_pacct_log.ml" 25 896 908 "sysprep_operation_pacct_log.ml" 25 896 926
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_pacct_log.ml" 25 896 927 "sysprep_operation_pacct_log.ml" 25 896 931
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_pacct_log.ml" 24 852 876 "sysprep_operation_pacct_log.ml" 24 852 880
+)
+"sysprep_operation_pacct_log.ml" 25 896 908 "sysprep_operation_pacct_log.ml" 25 896 931
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 26 935 941 "sysprep_operation_pacct_log.ml" 26 935 947
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 26 935 950 "sysprep_operation_pacct_log.ml" 26 935 951
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_pacct_log.ml" 24 852 874 "sysprep_operation_pacct_log.ml" 24 852 875
+)
+"sysprep_operation_pacct_log.ml" 26 935 950 "sysprep_operation_pacct_log.ml" 26 935 970
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_pacct_log.ml" 26 935 971 "sysprep_operation_pacct_log.ml" 26 935 975
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_pacct_log.ml" 24 852 876 "sysprep_operation_pacct_log.ml" 24 852 880
+)
+"sysprep_operation_pacct_log.ml" 26 935 950 "sysprep_operation_pacct_log.ml" 26 935 975
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 27 979 987 "sysprep_operation_pacct_log.ml" 27 979 990
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_pacct_log.ml" 25 896 902 "sysprep_operation_pacct_log.ml" 25 896 905
+)
+"sysprep_operation_pacct_log.ml" 27 979 992 "sysprep_operation_pacct_log.ml" 27 979 998
+type(
+  string
+)
+ident(
+  int_ref distro "sysprep_operation_pacct_log.ml" 26 935 941 "sysprep_operation_pacct_log.ml" 26 935 947
+)
+"sysprep_operation_pacct_log.ml" 27 979 987 "sysprep_operation_pacct_log.ml" 27 979 998
+type(
+  string * string
+)
+"sysprep_operation_pacct_log.ml" 28 1004 1008 "sysprep_operation_pacct_log.ml" 28 1004 1015
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 28 1004 1018 "sysprep_operation_pacct_log.ml" 28 1004 1026
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 28 1004 1027 "sysprep_operation_pacct_log.ml" 28 1004 1033
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 28 1004 1018 "sysprep_operation_pacct_log.ml" 28 1004 1033
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 28 1004 1034 "sysprep_operation_pacct_log.ml" 28 1004 1042
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 28 1004 1018 "sysprep_operation_pacct_log.ml" 28 1004 1042
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 28 1004 1043 "sysprep_operation_pacct_log.ml" 28 1004 1060
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 28 1004 1018 "sysprep_operation_pacct_log.ml" 28 1004 1060
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 28 1004 1061 "sysprep_operation_pacct_log.ml" 28 1004 1075
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 28 1004 1017 "sysprep_operation_pacct_log.ml" 28 1004 1076
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 28 1004 1008 "sysprep_operation_pacct_log.ml" 28 1004 1076
+type(
+  string * string
+)
+"sysprep_operation_pacct_log.ml" 29 1080 1088 "sysprep_operation_pacct_log.ml" 29 1080 1093
+type(
+  'a array
+)
+"sysprep_operation_pacct_log.ml" 29 1080 1096 "sysprep_operation_pacct_log.ml" 29 1080 1097
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_pacct_log.ml" 24 852 874 "sysprep_operation_pacct_log.ml" 24 852 875
+)
+"sysprep_operation_pacct_log.ml" 29 1080 1096 "sysprep_operation_pacct_log.ml" 29 1080 1109
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_pacct_log.ml" 29 1080 1110 "sysprep_operation_pacct_log.ml" 29 1080 1131
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 29 1080 1096 "sysprep_operation_pacct_log.ml" 29 1080 1131
+type(
+  'a array
+)
+"sysprep_operation_pacct_log.ml" 30 1135 1139 "sysprep_operation_pacct_log.ml" 30 1135 1149
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_pacct_log.ml" 31 1152 1162 "sysprep_operation_pacct_log.ml" 31 1152 1166
+type(
+  'a
+)
+ident(
+  def file "sysprep_operation_pacct_log.ml" 32 1170 1178 "sysprep_operation_pacct_log.ml" 32 1170 1212
+)
+"sysprep_operation_pacct_log.ml" 32 1170 1182 "sysprep_operation_pacct_log.ml" 32 1170 1183
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_pacct_log.ml" 24 852 874 "sysprep_operation_pacct_log.ml" 24 852 875
+)
+"sysprep_operation_pacct_log.ml" 32 1170 1182 "sysprep_operation_pacct_log.ml" 32 1170 1186
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_pacct_log.ml" 32 1170 1187 "sysprep_operation_pacct_log.ml" 32 1170 1191
+type(
+  'a
+)
+ident(
+  int_ref file "sysprep_operation_pacct_log.ml" 31 1152 1162 "sysprep_operation_pacct_log.ml" 31 1152 1166
+)
+"sysprep_operation_pacct_log.ml" 32 1170 1182 "sysprep_operation_pacct_log.ml" 32 1170 1191
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 32 1170 1205 "sysprep_operation_pacct_log.ml" 32 1170 1206
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 32 1170 1197 "sysprep_operation_pacct_log.ml" 32 1170 1206
+type(
+  exn
+)
+"sysprep_operation_pacct_log.ml" 32 1170 1210 "sysprep_operation_pacct_log.ml" 32 1170 1212
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 32 1170 1178 "sysprep_operation_pacct_log.ml" 32 1170 1212
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 30 1135 1150 "sysprep_operation_pacct_log.ml" 33 1213 1220
+type(
+  'a -> unit
+)
+"sysprep_operation_pacct_log.ml" 33 1213 1221 "sysprep_operation_pacct_log.ml" 33 1213 1226
+type(
+  'a array
+)
+ident(
+  int_ref files "sysprep_operation_pacct_log.ml" 29 1080 1088 "sysprep_operation_pacct_log.ml" 29 1080 1093
+)
+"sysprep_operation_pacct_log.ml" 30 1135 1139 "sysprep_operation_pacct_log.ml" 33 1213 1226
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 35 1237 1244 "sysprep_operation_pacct_log.ml" 35 1237 1245
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_pacct_log.ml" 24 852 874 "sysprep_operation_pacct_log.ml" 24 852 875
+)
+"sysprep_operation_pacct_log.ml" 35 1237 1244 "sysprep_operation_pacct_log.ml" 35 1237 1251
+call(
+  stack
+)
+type(
+  string -> 'c
+)
+"sysprep_operation_pacct_log.ml" 35 1237 1252 "sysprep_operation_pacct_log.ml" 35 1237 1272
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 35 1237 1244 "sysprep_operation_pacct_log.ml" 35 1237 1272
+type(
+  'c
+)
+"sysprep_operation_pacct_log.ml" 36 1274 1281 "sysprep_operation_pacct_log.ml" 36 1274 1293
+type(
+  'e
+)
+ident(
+  int_ref side_effects "sysprep_operation_pacct_log.ml" 24 852 881 "sysprep_operation_pacct_log.ml" 24 852 893
+)
+"sysprep_operation_pacct_log.ml" 36 1274 1281 "sysprep_operation_pacct_log.ml" 36 1274 1306
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"sysprep_operation_pacct_log.ml" 36 1274 1307 "sysprep_operation_pacct_log.ml" 36 1274 1309
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 36 1274 1281 "sysprep_operation_pacct_log.ml" 36 1274 1309
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 35 1237 1244 "sysprep_operation_pacct_log.ml" 36 1274 1309
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 37 1310 1328 "sysprep_operation_pacct_log.ml" 37 1310 1329
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 37 1310 1320 "sysprep_operation_pacct_log.ml" 37 1310 1329
+type(
+  exn
+)
+"sysprep_operation_pacct_log.ml" 37 1310 1333 "sysprep_operation_pacct_log.ml" 37 1310 1335
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 34 1228 1232 "sysprep_operation_pacct_log.ml" 37 1310 1336
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 30 1135 1139 "sysprep_operation_pacct_log.ml" 37 1310 1336
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 29 1080 1084 "sysprep_operation_pacct_log.ml" 37 1310 1336
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 39 1338 1342 "sysprep_operation_pacct_log.ml" 39 1338 1349
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 39 1338 1352 "sysprep_operation_pacct_log.ml" 39 1338 1360
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 39 1338 1361 "sysprep_operation_pacct_log.ml" 39 1338 1369
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 39 1338 1351 "sysprep_operation_pacct_log.ml" 39 1338 1370
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 39 1338 1342 "sysprep_operation_pacct_log.ml" 39 1338 1370
+type(
+  string * string
+)
+"sysprep_operation_pacct_log.ml" 40 1374 1382 "sysprep_operation_pacct_log.ml" 40 1374 1387
+type(
+  'a array
+)
+"sysprep_operation_pacct_log.ml" 40 1374 1390 "sysprep_operation_pacct_log.ml" 40 1374 1391
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_pacct_log.ml" 24 852 874 "sysprep_operation_pacct_log.ml" 24 852 875
+)
+"sysprep_operation_pacct_log.ml" 40 1374 1390 "sysprep_operation_pacct_log.ml" 40 1374 1403
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_pacct_log.ml" 40 1374 1404 "sysprep_operation_pacct_log.ml" 40 1374 1429
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 40 1374 1390 "sysprep_operation_pacct_log.ml" 40 1374 1429
+type(
+  'a array
+)
+"sysprep_operation_pacct_log.ml" 41 1433 1437 "sysprep_operation_pacct_log.ml" 41 1433 1447
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_pacct_log.ml" 42 1450 1460 "sysprep_operation_pacct_log.ml" 42 1450 1464
+type(
+  'a
+)
+ident(
+  def file "sysprep_operation_pacct_log.ml" 43 1468 1476 "sysprep_operation_pacct_log.ml" 43 1468 1510
+)
+"sysprep_operation_pacct_log.ml" 43 1468 1480 "sysprep_operation_pacct_log.ml" 43 1468 1481
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_pacct_log.ml" 24 852 874 "sysprep_operation_pacct_log.ml" 24 852 875
+)
+"sysprep_operation_pacct_log.ml" 43 1468 1480 "sysprep_operation_pacct_log.ml" 43 1468 1484
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_pacct_log.ml" 43 1468 1485 "sysprep_operation_pacct_log.ml" 43 1468 1489
+type(
+  'a
+)
+ident(
+  int_ref file "sysprep_operation_pacct_log.ml" 42 1450 1460 "sysprep_operation_pacct_log.ml" 42 1450 1464
+)
+"sysprep_operation_pacct_log.ml" 43 1468 1480 "sysprep_operation_pacct_log.ml" 43 1468 1489
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 43 1468 1503 "sysprep_operation_pacct_log.ml" 43 1468 1504
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 43 1468 1495 "sysprep_operation_pacct_log.ml" 43 1468 1504
+type(
+  exn
+)
+"sysprep_operation_pacct_log.ml" 43 1468 1508 "sysprep_operation_pacct_log.ml" 43 1468 1510
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 43 1468 1476 "sysprep_operation_pacct_log.ml" 43 1468 1510
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 41 1433 1448 "sysprep_operation_pacct_log.ml" 44 1511 1518
+type(
+  'a -> unit
+)
+"sysprep_operation_pacct_log.ml" 44 1511 1519 "sysprep_operation_pacct_log.ml" 44 1511 1524
+type(
+  'a array
+)
+ident(
+  int_ref files "sysprep_operation_pacct_log.ml" 40 1374 1382 "sysprep_operation_pacct_log.ml" 40 1374 1387
+)
+"sysprep_operation_pacct_log.ml" 41 1433 1437 "sysprep_operation_pacct_log.ml" 44 1511 1524
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 46 1535 1542 "sysprep_operation_pacct_log.ml" 46 1535 1543
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_pacct_log.ml" 24 852 874 "sysprep_operation_pacct_log.ml" 24 852 875
+)
+"sysprep_operation_pacct_log.ml" 46 1535 1542 "sysprep_operation_pacct_log.ml" 46 1535 1549
+call(
+  stack
+)
+type(
+  string -> 'c
+)
+"sysprep_operation_pacct_log.ml" 46 1535 1550 "sysprep_operation_pacct_log.ml" 46 1535 1574
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 46 1535 1542 "sysprep_operation_pacct_log.ml" 46 1535 1574
+type(
+  'c
+)
+"sysprep_operation_pacct_log.ml" 47 1576 1583 "sysprep_operation_pacct_log.ml" 47 1576 1595
+type(
+  'e
+)
+ident(
+  int_ref side_effects "sysprep_operation_pacct_log.ml" 24 852 881 "sysprep_operation_pacct_log.ml" 24 852 893
+)
+"sysprep_operation_pacct_log.ml" 47 1576 1583 "sysprep_operation_pacct_log.ml" 47 1576 1608
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"sysprep_operation_pacct_log.ml" 47 1576 1609 "sysprep_operation_pacct_log.ml" 47 1576 1611
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 47 1576 1583 "sysprep_operation_pacct_log.ml" 47 1576 1611
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 46 1535 1542 "sysprep_operation_pacct_log.ml" 47 1576 1611
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 48 1612 1630 "sysprep_operation_pacct_log.ml" 48 1612 1631
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 48 1612 1622 "sysprep_operation_pacct_log.ml" 48 1612 1631
+type(
+  exn
+)
+"sysprep_operation_pacct_log.ml" 48 1612 1635 "sysprep_operation_pacct_log.ml" 48 1612 1637
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 45 1526 1530 "sysprep_operation_pacct_log.ml" 48 1612 1638
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 41 1433 1437 "sysprep_operation_pacct_log.ml" 48 1612 1638
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 40 1374 1378 "sysprep_operation_pacct_log.ml" 48 1612 1638
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 50 1640 1644 "sysprep_operation_pacct_log.ml" 50 1640 1645
+type(
+  string * string
+)
+"sysprep_operation_pacct_log.ml" 50 1640 1649 "sysprep_operation_pacct_log.ml" 50 1640 1651
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 27 979 981 "sysprep_operation_pacct_log.ml" 50 1640 1651
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 26 935 937 "sysprep_operation_pacct_log.ml" 50 1640 1651
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 25 896 898 "sysprep_operation_pacct_log.ml" 50 1640 1651
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 52 1653 1657 "sysprep_operation_pacct_log.ml" 52 1653 1659
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_pacct_log.ml" 63 1988 1988 --
+)
+"sysprep_operation_pacct_log.ml" 53 1664 1666 "sysprep_operation_pacct_log.ml" 53 1664 1674
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_pacct_log.ml" 54 1680 1691 "sysprep_operation_pacct_log.ml" 54 1680 1702
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 55 1704 1729 "sysprep_operation_pacct_log.ml" 55 1704 1733
+type(
+  bool
+)
+"sysprep_operation_pacct_log.ml" 56 1735 1749 "sysprep_operation_pacct_log.ml" 56 1735 1751
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_pacct_log.ml" 56 1735 1751 "sysprep_operation_pacct_log.ml" 56 1735 1792
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 56 1735 1749 "sysprep_operation_pacct_log.ml" 56 1735 1792
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 57 1794 1822 "sysprep_operation_pacct_log.ml" 57 1794 1824
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_pacct_log.ml" 57 1794 1824 "sysprep_operation_pacct_log.ml" 59 1886 1929
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 57 1794 1821 "sysprep_operation_pacct_log.ml" 59 1886 1930
+type(
+  string
+)
+"sysprep_operation_pacct_log.ml" 57 1794 1816 "sysprep_operation_pacct_log.ml" 59 1886 1930
+type(
+  string option
+)
+"sysprep_operation_pacct_log.ml" 60 1932 1966 "sysprep_operation_pacct_log.ml" 60 1932 1983
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref pacct_log_perform "sysprep_operation_pacct_log.ml" 24 852 856 "sysprep_operation_pacct_log.ml" 24 852 873
+)
+"sysprep_operation_pacct_log.ml" 60 1932 1961 "sysprep_operation_pacct_log.ml" 60 1932 1983
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_pacct_log.ml" 52 1653 1662 "sysprep_operation_pacct_log.ml" 61 1985 1986
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_pacct_log.ml" 63 1988 1992 "sysprep_operation_pacct_log.ml" 63 1988 1994
+type(
+  unit
+)
+"sysprep_operation_pacct_log.ml" 63 1988 1997 "sysprep_operation_pacct_log.ml" 63 1988 2015
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_pacct_log.ml" 63 1988 2016 "sysprep_operation_pacct_log.ml" 63 1988 2018
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_pacct_log.ml" 52 1653 1657 "sysprep_operation_pacct_log.ml" 52 1653 1659
+)
+"sysprep_operation_pacct_log.ml" 63 1988 1997 "sysprep_operation_pacct_log.ml" 63 1988 2018
+call(
+  stack
+)
+type(
+  unit
+)

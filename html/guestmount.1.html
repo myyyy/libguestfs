@@ -1,0 +1,505 @@
+
+<html>
+<head>
+<title>guestmount</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#warning">WARNING</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#examples">EXAMPLES</a></li>
+  <li><a href="#notes">NOTES</a>
+    <ul>
+      <li><a href="#other-users-cannot-see-the-filesystem-by-default">Other users cannot see the filesystem by default</a></li>
+      <li><a href="#enabling-fuse">Enabling FUSE</a></li>
+      <li><a href="#fusermount-error:-device-or-resource-busy">fusermount error: &quot;Device or resource busy&quot;</a></li>
+      <li><a href="#race-conditions-possible-when-shutting-down-the-connection">Race conditions possible when shutting down the connection</a></li>
+    </ul>
+  </li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#files">FILES</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>guestmount - Mount a guest filesystem on the host using FUSE and libguestfs</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> guestmount [--options] -a disk.img -m device [--ro] mountpoint
+
+ guestmount [--options] -a disk.img -i [--ro] mountpoint
+
+ guestmount [--options] -d Guest -i [--ro] mountpoint</code></pre>
+
+<h1 id="warning">WARNING</h1>
+
+<p>You must <i>not</i> use <code>guestmount</code> in read-write mode on live virtual machines. If you do this, you risk disk corruption in the VM.</p>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>The guestmount program can be used to mount virtual machine filesystems and other disk images on the host. It uses libguestfs for access to the guest filesystem, and FUSE (the &quot;filesystem in userspace&quot;) to make it appear as a mountable device.</p>
+
+<p>Along with other options, you have to give at least one device (<i>-a</i> option) or libvirt domain (<i>-d</i> option), and at least one mountpoint (<i>-m</i> option) or use the <i>-i</i> inspection option or the <i>--live</i> option. How this works is better explained in the <a href="guestfish.1.html">guestfish(1)</a> manual page, or by looking at the examples below.</p>
+
+<p>FUSE lets you mount filesystems as non-root. The mountpoint must be owned by you, and the filesystem will not be visible to any other users unless you make certain global configuration changes to <i>/etc/fuse.conf</i>. To unmount the filesystem, use the <a href="guestunmount.1.html">guestunmount(1)</a> command.</p>
+
+<h1 id="examples">EXAMPLES</h1>
+
+<p>For a typical Windows guest which has its main filesystem on the first partition:</p>
+
+<pre><code> guestmount -a windows.img -m /dev/sda1 --ro /mnt</code></pre>
+
+<p>For a typical Linux guest which has a /boot filesystem on the first partition, and the root filesystem on a logical volume:</p>
+
+<pre><code> guestmount -a linux.img -m /dev/VG/LV -m /dev/sda1:/boot --ro /mnt</code></pre>
+
+<p>To get libguestfs to detect guest mountpoints for you:</p>
+
+<pre><code> guestmount -a guest.img -i --ro /mnt</code></pre>
+
+<p>For a libvirt guest called &quot;Guest&quot; you could do:</p>
+
+<pre><code> guestmount -d Guest -i --ro /mnt</code></pre>
+
+<p>If you don&#39;t know what filesystems are contained in a guest or disk image, use <a href="virt-filesystems.1.html">virt-filesystems(1)</a> first:</p>
+
+<pre><code> virt-filesystems -d MyGuest</code></pre>
+
+<p>If you want to trace the libguestfs calls but without excessive debugging information, we recommend:</p>
+
+<pre><code> guestmount [...] --trace /mnt</code></pre>
+
+<p>If you want to debug the program, we recommend:</p>
+
+<pre><code> guestmount [...] --trace --verbose /mnt</code></pre>
+
+<p>To unmount the filesystem after using it:</p>
+
+<pre><code> guestunmount /mnt</code></pre>
+
+<h1 id="notes">NOTES</h1>
+
+<h2 id="other-users-cannot-see-the-filesystem-by-default">Other users cannot see the filesystem by default</h2>
+
+<p>If you mount a filesystem as one user (eg. root), then other users will not be able to see it by default. The fix is to add the FUSE <code>allow_other</code> option when mounting:</p>
+
+<pre><code> sudo guestmount [...] -o allow_other /mnt</code></pre>
+
+<h2 id="enabling-fuse">Enabling FUSE</h2>
+
+<p>On some distros, you may need to add yourself to a special group (eg. <code>fuse</code>) before you can use any FUSE filesystem. This is necessary on Debian and derivatives.</p>
+
+<p>On other distros, no special group is required. It is not necessary on Fedora or Red Hat Enterprise Linux.</p>
+
+<h2 id="fusermount-error:-device-or-resource-busy">fusermount error: &quot;Device or resource busy&quot;</h2>
+
+<p>You can see this error when another process on the system jumps into the mountpoint you have just created, holding it open and preventing you from unmounting it. The usual culprits are various GUI &quot;indexing&quot; programs.</p>
+
+<p>The popular workaround for this problem is to retry the <code>fusermount -u</code> command a few times until it works (<a href="guestunmount.1.html">guestunmount(1)</a> does this for you). Unfortunately this isn&#39;t a reliable fix if (for example) the mounted filesystem is particularly large and the intruding program particularly persistent.</p>
+
+<p>A proper fix is to use a private mountpoint by creating a new mount namespace using the Linux-specific <a href="http://man.he.net/man2/clone">clone(2)</a>/<a href="http://man.he.net/man2/unshare">unshare(2)</a> flag <code>CLONE_NEWNS</code>. Unfortunately at the moment this requires root and we would also probably need to add it as a feature to guestmount.</p>
+
+<h2 id="race-conditions-possible-when-shutting-down-the-connection">Race conditions possible when shutting down the connection</h2>
+
+<p>When <a href="guestunmount.1.html">guestunmount(1)</a>/<a href="http://man.he.net/man1/fusermount">fusermount(1)</a> exits, guestmount may still be running and cleaning up the mountpoint. The disk image will not be fully finalized.</p>
+
+<p>This means that scripts like the following have a nasty race condition:</p>
+
+<pre><code> guestmount -a disk.img -i /mnt
+ # copy things into /mnt
+ guestunmount /mnt
+ # immediately try to use &#39;disk.img&#39; ** UNSAFE **</code></pre>
+
+<p>The solution is to use the <i>--pid-file</i> option to write the guestmount PID to a file, then after guestunmount spin waiting for this PID to exit.</p>
+
+<pre><code> guestmount -a disk.img -i --pid-file guestmount.pid /mnt
+ 
+ # ...
+ # ...
+ 
+ # Save the PID of guestmount *before* calling guestunmount.
+ pid=&quot;$(cat guestmount.pid)&quot;
+ 
+ # Unmount the filesystem.
+ guestunmount /mnt
+ 
+ timeout=10
+ 
+ count=$timeout
+ while kill -0 &quot;$pid&quot; 2&gt;/dev/null &amp;&amp; [ $count -gt 0 ]; do
+     sleep 1
+     ((count--))
+ done
+ if [ $count -eq 0 ]; then
+     echo &quot;$0: wait for guestmount to exit failed after $timeout seconds&quot;
+     exit 1
+ fi
+ 
+ # Now it is safe to use the disk image.</code></pre>
+
+<p>Note that if you use the <code>guestfs_mount_local</code> API directly (see <a href="guestfs.3.html#mount-local">&quot;MOUNT LOCAL&quot; in guestfs(3)</a>) then it is much easier to write a safe, race-free program.</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>-a image</b></dt>
+<dd>
+
+</dd>
+<dt><b>--add image</b></dt>
+<dd>
+
+<p>Add a block device or virtual machine image.</p>
+
+<p>The format of the disk image is auto-detected. To override this and force a particular format use the <i>--format=..</i> option.</p>
+
+</dd>
+<dt><b>-a URI</b></dt>
+<dd>
+
+</dd>
+<dt><b>--add URI</b></dt>
+<dd>
+
+<p>Add a remote disk. See <a href="guestfish.1.html#adding-remote-storage">&quot;ADDING REMOTE STORAGE&quot; in guestfish(1)</a>.</p>
+
+</dd>
+<dt><b>-c URI</b></dt>
+<dd>
+
+</dd>
+<dt><b>--connect URI</b></dt>
+<dd>
+
+<p>When used in conjunction with the <i>-d</i> option, this specifies the libvirt URI to use. The default is to use the default libvirt connection.</p>
+
+</dd>
+<dt><b>-d libvirt-domain</b></dt>
+<dd>
+
+</dd>
+<dt><b>--domain libvirt-domain</b></dt>
+<dd>
+
+<p>Add disks from the named libvirt domain. If the <i>--ro</i> option is also used, then any libvirt domain can be used. However in write mode, only libvirt domains which are shut down can be named here.</p>
+
+<p>Domain UUIDs can be used instead of names.</p>
+
+</dd>
+<dt><b>--dir-cache-timeout N</b></dt>
+<dd>
+
+<p>Set the readdir cache timeout to <i>N</i> seconds, the default being 60 seconds. The readdir cache [actually, there are several semi-independent caches] is populated after a readdir(2) call with the stat and extended attributes of the files in the directory, in anticipation that they will be requested soon after.</p>
+
+<p>There is also a different attribute cache implemented by FUSE (see the FUSE option <i>-o attr_timeout</i>), but the FUSE cache does not anticipate future requests, only cache existing ones.</p>
+
+</dd>
+<dt><b>--echo-keys</b></dt>
+<dd>
+
+<p>When prompting for keys and passphrases, guestfish normally turns echoing off so you cannot see what you are typing. If you are not worried about Tempest attacks and there is no one else in the room you can specify this flag to see what you are typing.</p>
+
+</dd>
+<dt><b>--fd=FD</b></dt>
+<dd>
+
+<p>Specify a pipe or eventfd file descriptor. When the mountpoint is ready to be used, guestmount writes a single byte to this file descriptor. This can be used in conjunction with <i>--no-fork</i> in order to run guestmount captive under another process.</p>
+
+</dd>
+<dt><b>--format=raw|qcow2|..</b></dt>
+<dd>
+
+</dd>
+<dt><b>--format</b></dt>
+<dd>
+
+<p>The default for the <i>-a</i> option is to auto-detect the format of the disk image. Using this forces the disk format for <i>-a</i> options which follow on the command line. Using <i>--format</i> with no argument switches back to auto-detection for subsequent <i>-a</i> options.</p>
+
+<p>If you have untrusted raw-format guest disk images, you should use this option to specify the disk format. This avoids a possible security problem with malicious guests (CVE-2010-3851). See also <a href="guestfs.3.html#guestfs_add_drive_opts">&quot;guestfs_add_drive_opts&quot; in guestfs(3)</a>.</p>
+
+</dd>
+<dt><b>--fuse-help</b></dt>
+<dd>
+
+<p>Display help on special FUSE options (see <i>-o</i> below).</p>
+
+</dd>
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display brief help and exit.</p>
+
+</dd>
+<dt><b>-i</b></dt>
+<dd>
+
+</dd>
+<dt><b>--inspector</b></dt>
+<dd>
+
+<p>Using <a href="virt-inspector.1.html">virt-inspector(1)</a> code, inspect the disks looking for an operating system and mount filesystems as they would be mounted on the real virtual machine.</p>
+
+</dd>
+<dt><b>--keys-from-stdin</b></dt>
+<dd>
+
+<p>Read key or passphrase parameters from stdin. The default is to try to read passphrases from the user by opening <i>/dev/tty</i>.</p>
+
+</dd>
+<dt><b>--live</b></dt>
+<dd>
+
+<p>Connect to a live virtual machine. (Experimental, see <a href="guestfs.3.html#attaching-to-running-daemons">&quot;ATTACHING TO RUNNING DAEMONS&quot; in guestfs(3)</a>).</p>
+
+</dd>
+<dt><b>-m dev[:mountpoint[:options[:fstype]]</b></dt>
+<dd>
+
+</dd>
+<dt><b>--mount dev[:mountpoint[:options[:fstype]]]</b></dt>
+<dd>
+
+<p>Mount the named partition or logical volume on the given mountpoint <b>in the guest</b> (this has nothing to do with mountpoints in the host).</p>
+
+<p>If the mountpoint is omitted, it defaults to <i>/</i>. You have to mount something on <i>/</i>.</p>
+
+<p>The third (and rarely used) part of the mount parameter is the list of mount options used to mount the underlying filesystem. If this is not given, then the mount options are either the empty string or <code>ro</code> (the latter if the <i>--ro</i> flag is used). By specifying the mount options, you override this default choice. Probably the only time you would use this is to enable ACLs and/or extended attributes if the filesystem can support them:</p>
+
+<pre><code> -m /dev/sda1:/:acl,user_xattr</code></pre>
+
+<p>The fourth part of the parameter is the filesystem driver to use, such as <code>ext3</code> or <code>ntfs</code>. This is rarely needed, but can be useful if multiple drivers are valid for a filesystem (eg: <code>ext2</code> and <code>ext3</code>), or if libguestfs misidentifies a filesystem.</p>
+
+</dd>
+<dt><b>--no-fork</b></dt>
+<dd>
+
+<p>Don&#39;t daemonize (or fork into the background).</p>
+
+</dd>
+<dt><b>-n</b></dt>
+<dd>
+
+</dd>
+<dt><b>--no-sync</b></dt>
+<dd>
+
+<p>By default, we attempt to sync the guest disk when the FUSE mountpoint is unmounted. If you specify this option, then we don&#39;t attempt to sync the disk. See the discussion of autosync in the <a href="guestfs.3.html">guestfs(3)</a> manpage.</p>
+
+</dd>
+<dt><b>-o option</b></dt>
+<dd>
+
+</dd>
+<dt><b>--option option</b></dt>
+<dd>
+
+<p>Pass extra options to FUSE.</p>
+
+<p>To get a list of all the extra options supported by FUSE, use the command below. Note that only the FUSE <i>-o</i> options can be passed, and only some of them are a good idea.</p>
+
+<pre><code> guestmount --fuse-help</code></pre>
+
+<p>Some potentially useful FUSE options:</p>
+
+<dl>
+
+<dt><b>-o allow_other</b></dt>
+<dd>
+
+<p>Allow other users to see the filesystem.</p>
+
+</dd>
+<dt><b>-o attr_timeout=N</b></dt>
+<dd>
+
+<p>Enable attribute caching by FUSE, and set the timeout to <i>N</i> seconds.</p>
+
+</dd>
+<dt><b>-o kernel_cache</b></dt>
+<dd>
+
+<p>Allow the kernel to cache files (reduces the number of reads that have to go through the <a href="guestfs.3.html">guestfs(3)</a> API). This is generally a good idea if you can afford the extra memory usage.</p>
+
+</dd>
+<dt><b>-o uid=N</b> <b>-o gid=N</b></dt>
+<dd>
+
+<p>Use these options to map all UIDs and GIDs inside the guest filesystem to the chosen values.</p>
+
+</dd>
+<dt><b>-o use_ino</b></dt>
+<dd>
+
+<p>Preserve inode numbers from the underlying filesystem.</p>
+
+<p>Without this option, FUSE makes up its own inode numbers. The inode numbers you see in <a href="http://man.he.net/man2/stat">stat(2)</a>, <code>ls -i</code> etc aren&#39;t the inode numbers of the underlying filesystem.</p>
+
+<p><b>Note</b> this option is potentially dangerous if the underlying filesystem consists of multiple mountpoints, as you may see duplicate inode numbers appearing through FUSE. Use of this option can confuse some software.</p>
+
+</dd>
+</dl>
+
+</dd>
+<dt><b>--pid-file filename</b></dt>
+<dd>
+
+<p>Write the PID of the guestmount worker process to <code>filename</code>.</p>
+
+</dd>
+<dt><b>-r</b></dt>
+<dd>
+
+</dd>
+<dt><b>--ro</b></dt>
+<dd>
+
+<p>Add devices and mount everything read-only. Also disallow writes and make the disk appear read-only to FUSE.</p>
+
+<p>This is highly recommended if you are not going to edit the guest disk. If the guest is running and this option is <i>not</i> supplied, then there is a strong risk of disk corruption in the guest. We try to prevent this from happening, but it is not always possible.</p>
+
+<p>See also <a href="guestfish.1.html#opening-disks-for-read-and-write">&quot;OPENING DISKS FOR READ AND WRITE&quot; in guestfish(1)</a>.</p>
+
+</dd>
+<dt><b>--selinux</b></dt>
+<dd>
+
+<p>Enable SELinux support for the guest.</p>
+
+</dd>
+<dt><b>-v</b></dt>
+<dd>
+
+</dd>
+<dt><b>--verbose</b></dt>
+<dd>
+
+<p>Enable verbose messages from underlying libguestfs.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display the program version and exit.</p>
+
+</dd>
+<dt><b>-w</b></dt>
+<dd>
+
+</dd>
+<dt><b>--rw</b></dt>
+<dd>
+
+<p>This changes the <i>-a</i>, <i>-d</i> and <i>-m</i> options so that disks are added and mounts are done read-write.</p>
+
+<p>See <a href="guestfish.1.html#opening-disks-for-read-and-write">&quot;OPENING DISKS FOR READ AND WRITE&quot; in guestfish(1)</a>.</p>
+
+</dd>
+<dt><b>-x</b></dt>
+<dd>
+
+</dd>
+<dt><b>--trace</b></dt>
+<dd>
+
+<p>Trace libguestfs calls and entry into each FUSE function.</p>
+
+<p>This also stops the daemon from forking into the background (see <i>--no-fork</i>).</p>
+
+</dd>
+</dl>
+
+<h1 id="files">FILES</h1>
+
+<dl>
+
+<dt>$XDG_CONFIG_HOME/libguestfs/libguestfs-tools.conf</dt>
+<dd>
+
+</dd>
+<dt>$HOME/.libguestfs-tools.rc</dt>
+<dd>
+
+</dd>
+<dt>$XDG_CONFIG_DIRS/libguestfs/libguestfs-tools.conf</dt>
+<dd>
+
+</dd>
+<dt>/etc/libguestfs-tools.conf</dt>
+<dd>
+
+<p>This configuration file controls the default read-only or read-write mode (<i>--ro</i> or <i>--rw</i>).</p>
+
+<p>See <a href="libguestfs-tools.conf(5).3.html">libguestfs-tools.conf(5)</a>.</p>
+
+</dd>
+</dl>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>This program returns 0 if successful, or non-zero if there was an error.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestunmount.1.html">guestunmount(1)</a>, <a href="http://man.he.net/man1/fusermount">fusermount(1)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="virt-inspector.1.html">virt-inspector(1)</a>, <a href="virt-cat.1.html">virt-cat(1)</a>, <a href="virt-edit.1.html">virt-edit(1)</a>, <a href="virt-tar.1.html">virt-tar(1)</a>, <a href="libguestfs-tools.conf(5).3.html">libguestfs-tools.conf(5)</a>, <a href="guestfs.3.html#mount-local">&quot;MOUNT LOCAL&quot; in guestfs(3)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>, <a href="http://fuse.sf.net/">http://fuse.sf.net/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones (<code>rjones at redhat dot com</code>)</p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2009-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

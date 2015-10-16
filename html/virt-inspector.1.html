@@ -1,0 +1,507 @@
+
+<html>
+<head>
+<title>virt-inspector</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#old-style-command-line-arguments">OLD-STYLE COMMAND LINE ARGUMENTS</a></li>
+  <li><a href="#xml-format">XML FORMAT</a>
+    <ul>
+      <li><a href="#operatingsystem">&lt;operatingsystem&gt;</a></li>
+      <li><a href="#mountpoints">&lt;mountpoints&gt;</a></li>
+      <li><a href="#filesystems">&lt;filesystems&gt;</a></li>
+      <li><a href="#applications">&lt;applications&gt;</a></li>
+      <li><a href="#drive_mappings">&lt;drive_mappings&gt;</a></li>
+      <li><a href="#icon">&lt;icon&gt;</a></li>
+      <li><a href="#inspecting-install-disks-live-cds">INSPECTING INSTALL DISKS, LIVE CDs</a></li>
+    </ul>
+  </li>
+  <li><a href="#xpath-queries">XPATH QUERIES</a></li>
+  <li><a href="#getting-inspection-data-from-the-libguestfs-api">GETTING INSPECTION DATA FROM THE LIBGUESTFS API</a>
+    <ul>
+      <li><a href="#getting-inspection-data-from-guestfish">GETTING INSPECTION DATA FROM GUESTFISH</a></li>
+    </ul>
+  </li>
+  <li><a href="#old-versions-of-virt-inspector">OLD VERSIONS OF VIRT-INSPECTOR</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-inspector - Display operating system version and other information about a virtual machine</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-inspector [--options] -d domname
+
+ virt-inspector [--options] -a disk.img [-a disk.img ...]</code></pre>
+
+<p>Old-style:</p>
+
+<pre><code> virt-inspector domname
+
+ virt-inspector disk.img [disk.img ...]</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><b>virt-inspector</b> examines a virtual machine or disk image and tries to determine the version of the operating system and other information about the virtual machine.</p>
+
+<p>Virt-inspector produces XML output for feeding into other programs.</p>
+
+<p>In the normal usage, use <code>virt-inspector -d domname</code> where <code>domname</code> is the libvirt domain (see: <code>virsh list --all</code>).</p>
+
+<p>You can also run virt-inspector directly on disk images from a single virtual machine. Use <code>virt-inspector -a disk.img</code>. In rare cases a domain has several block devices, in which case you should list several <i>-a</i> options one after another, with the first corresponding to the guest&#39;s <i>/dev/sda</i>, the second to the guest&#39;s <i>/dev/sdb</i> and so on.</p>
+
+<p>You can also run virt-inspector on install disks, live CDs, bootable USB keys and similar.</p>
+
+<p>Virt-inspector can only inspect and report upon <i>one domain at a time</i>. To inspect several virtual machines, you have to run virt-inspector several times (for example, from a shell script for-loop).</p>
+
+<p>Because virt-inspector needs direct access to guest images, it won&#39;t normally work over remote libvirt connections.</p>
+
+<p>All of the information available from virt-inspector is also available through the core libguestfs inspection API (see <a href="guestfs.3.html#inspection">&quot;INSPECTION&quot; in guestfs(3)</a>). The same information can also be fetched using guestfish or via libguestfs bindings in many programming languages (see <a href="#getting-inspection-data-from-the-libguestfs-api">&quot;GETTING INSPECTION DATA FROM THE LIBGUESTFS API&quot;</a>).</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display brief help.</p>
+
+</dd>
+<dt><b>-a</b> file</dt>
+<dd>
+
+</dd>
+<dt><b>--add</b> file</dt>
+<dd>
+
+<p>Add <i>file</i> which should be a disk image from a virtual machine. If the virtual machine has multiple block devices, you must supply all of them with separate <i>-a</i> options.</p>
+
+<p>The format of the disk image is auto-detected. To override this and force a particular format use the <i>--format=..</i> option.</p>
+
+</dd>
+<dt><b>-a</b> URI</dt>
+<dd>
+
+</dd>
+<dt><b>--add</b> URI</dt>
+<dd>
+
+<p>Add a remote disk. See <a href="guestfish.1.html#adding-remote-storage">&quot;ADDING REMOTE STORAGE&quot; in guestfish(1)</a>.</p>
+
+</dd>
+<dt><b>-c URI</b></dt>
+<dd>
+
+</dd>
+<dt><b>--connect URI</b></dt>
+<dd>
+
+<p>If using libvirt, connect to the given <i>URI</i>. If omitted, then we connect to the default libvirt hypervisor.</p>
+
+<p>Libvirt is only used if you specify a <code>domname</code> on the command line. If you specify guest block devices directly (<i>-a</i>), then libvirt is not used at all.</p>
+
+</dd>
+<dt><b>-d</b> guest</dt>
+<dd>
+
+</dd>
+<dt><b>--domain</b> guest</dt>
+<dd>
+
+<p>Add all the disks from the named libvirt guest. Domain UUIDs can be used instead of names.</p>
+
+</dd>
+<dt><b>--echo-keys</b></dt>
+<dd>
+
+<p>When prompting for keys and passphrases, virt-inspector normally turns echoing off so you cannot see what you are typing. If you are not worried about Tempest attacks and there is no one else in the room you can specify this flag to see what you are typing.</p>
+
+</dd>
+<dt><b>--format=raw|qcow2|..</b></dt>
+<dd>
+
+</dd>
+<dt><b>--format</b></dt>
+<dd>
+
+<p>Specify the format of disk images given on the command line. If this is omitted then the format is autodetected from the content of the disk image.</p>
+
+<p>If disk images are requested from libvirt, then this program asks libvirt for this information. In this case, the value of the format parameter is ignored.</p>
+
+<p>If working with untrusted raw-format guest disk images, you should ensure the format is always specified.</p>
+
+</dd>
+<dt><b>--keys-from-stdin</b></dt>
+<dd>
+
+<p>Read key or passphrase parameters from stdin. The default is to try to read passphrases from the user by opening <i>/dev/tty</i>.</p>
+
+</dd>
+<dt><b>-v</b></dt>
+<dd>
+
+</dd>
+<dt><b>--verbose</b></dt>
+<dd>
+
+<p>Enable verbose messages for debugging.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+<dt><b>-x</b></dt>
+<dd>
+
+<p>Enable tracing of libguestfs API calls.</p>
+
+</dd>
+<dt><b>--xpath</b> query</dt>
+<dd>
+
+<p>Perform an XPath query on the XML on stdin, and print the result on stdout. In this mode virt-inspector simply runs an XPath query; all other inspection functions are disabled. See <a href="#xpath-queries">&quot;XPATH QUERIES&quot;</a> below for some examples.</p>
+
+</dd>
+</dl>
+
+<h1 id="old-style-command-line-arguments">OLD-STYLE COMMAND LINE ARGUMENTS</h1>
+
+<p>Previous versions of virt-inspector allowed you to write either:</p>
+
+<pre><code> virt-inspector disk.img [disk.img ...]</code></pre>
+
+<p>or</p>
+
+<pre><code> virt-inspector guestname</code></pre>
+
+<p>whereas in this version you should use <i>-a</i> or <i>-d</i> respectively to avoid the confusing case where a disk image might have the same name as a guest.</p>
+
+<p>For compatibility the old style is still supported.</p>
+
+<h1 id="xml-format">XML FORMAT</h1>
+
+<p>The virt-inspector XML is described precisely in a RELAX NG schema file <i>virt-inspector.rng</i> which is supplied with libguestfs. This section is just an overview.</p>
+
+<p>The top-level element is &lt;operatingsystems&gt;, and it contains one or more &lt;operatingsystem&gt; elements. You would only see more than one &lt;operatingsystem&gt; element if the virtual machine is multi-boot, which is vanishingly rare in real world VMs.</p>
+
+<h2 id="operatingsystem">&lt;operatingsystem&gt;</h2>
+
+<p>In the &lt;operatingsystem&gt; tag are various optional fields that describe the operating system, its architecture, the descriptive &quot;product name&quot; string, the type of OS and so on, as in this example:</p>
+
+<pre><code> &lt;operatingsystems&gt;
+   &lt;operatingsystem&gt;
+     &lt;root&gt;/dev/sda2&lt;/root&gt;
+     &lt;name&gt;windows&lt;/name&gt;
+     &lt;arch&gt;i386&lt;/arch&gt;
+     &lt;distro&gt;windows&lt;/distro&gt;
+     &lt;product_name&gt;Windows 7 Enterprise&lt;/product_name&gt;
+     &lt;product_variant&gt;Client&lt;/product_variant&gt;
+     &lt;major_version&gt;6&lt;/major_version&gt;
+     &lt;minor_version&gt;1&lt;/minor_version&gt;
+     &lt;windows_systemroot&gt;/Windows&lt;/windows_systemroot&gt;
+     &lt;format&gt;installed&lt;/format&gt;</code></pre>
+
+<p>In brief, &lt;name&gt; is the class of operating system (something like <code>linux</code> or <code>windows</code>), &lt;distro&gt; is the distribution (eg. <code>fedora</code> but many other distros are recognized) and &lt;arch&gt; is the guest architecture. The other fields are fairly self-explanatory, but because these fields are taken directly from the libguestfs inspection API you can find precise information from <a href="guestfs.3.html#inspection">&quot;INSPECTION&quot; in guestfs(3)</a>.</p>
+
+<p>The &lt;root&gt; element is the root filesystem device, but from the point of view of libguestfs (block devices may have completely different names inside the VM itself).</p>
+
+<h2 id="mountpoints">&lt;mountpoints&gt;</h2>
+
+<p>Un*x-like guests typically have multiple filesystems which are mounted at various mountpoints, and these are described in the &lt;mountpoints&gt; element which looks like this:</p>
+
+<pre><code> &lt;operatingsystems&gt;
+   &lt;operatingsystem&gt;
+     ...
+     &lt;mountpoints&gt;
+       &lt;mountpoint dev=&quot;/dev/vg_f13x64/lv_root&quot;&gt;/&lt;/mountpoint&gt;
+       &lt;mountpoint dev=&quot;/dev/sda1&quot;&gt;/boot&lt;/mountpoint&gt;
+     &lt;/mountpoints&gt;</code></pre>
+
+<p>As with &lt;root&gt;, devices are from the point of view of libguestfs, and may have completely different names inside the guest. Only mountable filesystems appear in this list, not things like swap devices.</p>
+
+<h2 id="filesystems">&lt;filesystems&gt;</h2>
+
+<p>&lt;filesystems&gt; is like &lt;mountpoints&gt; but covers <i>all</i> filesystems belonging to the guest, including swap and empty partitions. (In the rare case of a multi-boot guest, it covers filesystems belonging to this OS or shared with this OS and other OSes).</p>
+
+<p>You might see something like this:</p>
+
+<pre><code> &lt;operatingsystems&gt;
+   &lt;operatingsystem&gt;
+     ...
+     &lt;filesystems&gt;
+       &lt;filesystem dev=&quot;/dev/vg_f13x64/lv_root&quot;&gt;
+         &lt;type&gt;ext4&lt;/type&gt;
+         &lt;label&gt;Fedora-13-x86_64&lt;/label&gt;
+         &lt;uuid&gt;e6a4db1e-15c2-477b-ac2a-699181c396aa&lt;/uuid&gt;
+       &lt;/filesystem&gt;</code></pre>
+
+<p>The optional elements within &lt;filesystem&gt; are the filesystem type, the label, and the UUID.</p>
+
+<h2 id="applications">&lt;applications&gt;</h2>
+
+<p>The related elements &lt;package_format&gt;, &lt;package_management&gt; and &lt;applications&gt; describe applications installed in the virtual machine.</p>
+
+<p>&lt;package_format&gt;, if present, describes the packaging system used. Typical values would be <code>rpm</code> and <code>deb</code>.</p>
+
+<p>&lt;package_management&gt;, if present, describes the package manager. Typical values include <code>yum</code>, <code>up2date</code> and <code>apt</code></p>
+
+<p>&lt;applications&gt; lists the packages or applications installed.</p>
+
+<pre><code> &lt;operatingsystems&gt;
+   &lt;operatingsystem&gt;
+     ...
+     &lt;applications&gt;
+       &lt;application&gt;
+         &lt;name&gt;coreutils&lt;/name&gt;
+         &lt;version&gt;8.5&lt;/version&gt;
+         &lt;release&gt;1&lt;/release&gt;
+       &lt;/application&gt;</code></pre>
+
+<p>The version and release fields may not be available for some types guests. Other fields are possible, see <a href="guestfs.3.html#guestfs_inspect_list_applications">&quot;guestfs_inspect_list_applications&quot; in guestfs(3)</a>.</p>
+
+<h2 id="drive_mappings">&lt;drive_mappings&gt;</h2>
+
+<p>For operating systems like Windows which use drive letters, virt-inspector is able to find out how drive letters map to filesystems.</p>
+
+<pre><code> &lt;operatingsystems&gt;
+   &lt;operatingsystem&gt;
+     ...
+     &lt;drive_mappings&gt;
+       &lt;drive_mapping name=&quot;C&quot;&gt;/dev/sda2&lt;/drive_mapping&gt;
+       &lt;drive_mapping name=&quot;E&quot;&gt;/dev/sdb1&lt;/drive_mapping&gt;
+     &lt;/drive_mappings&gt;</code></pre>
+
+<p>In the example above, drive C maps to the filesystem on the second partition on the first disk, and drive E maps to the filesystem on the first partition on the second disk.</p>
+
+<p>Note that this only covers permanent local filesystem mappings, not things like network shares. Furthermore NTFS volume mount points may not be listed here.</p>
+
+<h2 id="icon">&lt;icon&gt;</h2>
+
+<p>Virt-inspector is sometimes able to extract an icon or logo for the guest. The icon is returned as base64-encoded PNG data. Note that the icon can be very large and high quality.</p>
+
+<pre><code> &lt;operatingsystems&gt;
+   &lt;operatingsystem&gt;
+     ...
+     &lt;icon&gt;
+       iVBORw0KGgoAAAANSUhEUgAAAGAAAABg[.......]
+       [... many lines of base64 data ...]
+     &lt;/icon&gt;</code></pre>
+
+<p>To display the icon, you have to extract it and convert the base64 data back to a binary file. Use an XPath query or simply an editor to extract the data, then use the coreutils <a href="http://man.he.net/man1/base64">base64(1)</a> program to do the conversion back to a PNG file:</p>
+
+<pre><code> base64 -i -d &lt; icon.data &gt; icon.png</code></pre>
+
+<h2 id="inspecting-install-disks-live-cds">INSPECTING INSTALL DISKS, LIVE CDs</h2>
+
+<p>Virt-inspector can detect some operating system installers on install disks, live CDs, bootable USB keys and more.</p>
+
+<p>In this case the &lt;format&gt; tag will contain <code>installer</code> and other fields may be present to indicate a live CD, network installer, or one part of a multipart CD. For example:</p>
+
+<pre><code> &lt;operatingsystems&gt;
+   &lt;operatingsystem&gt;
+     &lt;root&gt;/dev/sda&lt;/root&gt;
+     &lt;name&gt;linux&lt;/name&gt;
+     &lt;arch&gt;i386&lt;/arch&gt;
+     &lt;distro&gt;ubuntu&lt;/distro&gt;
+     &lt;product_name&gt;Ubuntu 10.10 &amp;quot;Maverick Meerkat&amp;quot;&lt;/product_name&gt;
+     &lt;major_version&gt;10&lt;/major_version&gt;
+     &lt;minor_version&gt;10&lt;/minor_version&gt;
+     &lt;format&gt;installer&lt;/format&gt;
+     &lt;live/&gt;</code></pre>
+
+<h1 id="xpath-queries">XPATH QUERIES</h1>
+
+<p>Virt-inspector includes built in support for running XPath queries. The reason for including XPath support directly in virt-inspector is simply that there are no good and widely available command line programs that can do XPath queries. The only good one is <a href="http://man.he.net/man1/xmlstarlet">xmlstarlet(1)</a> and that is not available on Red Hat Enterprise Linux.</p>
+
+<p>To perform an XPath query, use the <i>--xpath</i> option. Note that in this mode, virt-inspector simply reads XML from stdin and outputs the query result on stdout. All other inspection features are disabled in this mode.</p>
+
+<p>For example:</p>
+
+<pre><code> $ virt-inspector -d Guest | virt-inspector --xpath &#39;//filesystems&#39;
+ &lt;filesystems&gt;
+      &lt;filesystem dev=&quot;/dev/vg_f13x64/lv_root&quot;&gt;
+        &lt;type&gt;ext4&lt;/type&gt;
+ [...]
+
+ $ virt-inspector -d Guest | \
+     virt-inspector --xpath &quot;string(//filesystem[@dev=&#39;/dev/sda1&#39;]/type)&quot;
+ ext4
+
+ $ virt-inspector -d Guest | \
+     virt-inspector --xpath &#39;string(//icon)&#39; | base64 -i -d | display -
+ [displays the guest icon, if there is one]</code></pre>
+
+<h1 id="getting-inspection-data-from-the-libguestfs-api">GETTING INSPECTION DATA FROM THE LIBGUESTFS API</h1>
+
+<p>In early versions of libguestfs, virt-inspector was a large Perl script that contained many heuristics for inspecting guests. This had several problems: in order to do inspection from other tools (like guestfish) we had to call out to this Perl script; and it privileged Perl over other languages that libguestfs supports.</p>
+
+<p>By libguestfs 1.8 we had rewritten the Perl code in C, and incorporated it all into the core libguestfs API (<a href="guestfs.3.html">guestfs(3)</a>). Now virt-inspector is simply a thin C program over the core C API. All of the inspection information is available from all programming languages that libguestfs supports, and from guestfish.</p>
+
+<p>For a description of the C inspection API, read <a href="guestfs.3.html#inspection">&quot;INSPECTION&quot; in guestfs(3)</a>.</p>
+
+<p>For example code using the C inspection API, look for <i>inspect-vm.c</i> which ships with libguestfs.</p>
+
+<p><i>inspect-vm.c</i> has also been translated into other languages. For example, <i>inspect_vm.pl</i> is the Perl translation, and there are other translations for OCaml, Python, etc. See <a href="guestfs.3.html#using-libguestfs-with-other-programming-languages">&quot;USING LIBGUESTFS WITH OTHER PROGRAMMING LANGUAGES&quot; in guestfs(3)</a> for a list of man pages which contain this example code.</p>
+
+<h2 id="getting-inspection-data-from-guestfish">GETTING INSPECTION DATA FROM GUESTFISH</h2>
+
+<p>If you use the guestfish <i>-i</i> option, then the main C inspection API <a href="guestfs.3.html#guestfs_inspect_os">&quot;guestfs_inspect_os&quot; in guestfs(3)</a> is called. This is equivalent to the guestfish command <code>inspect-os</code>. You can also call this guestfish command by hand.</p>
+
+<p><code>inspect-os</code> performs inspection on the current disk image, returning the list of operating systems found. Each OS is represented by its root filesystem device. In the majority of cases, this command prints nothing (no OSes found), or a single root device, but beware that it can print multiple lines if there are multiple OSes or if there is an install CD attached to the guest.</p>
+
+<pre><code> $ guestfish --ro -a F15x32.img
+ &gt;&lt;fs&gt; run
+ &gt;&lt;fs&gt; inspect-os
+ /dev/vg_f15x32/lv_root</code></pre>
+
+<p>Using the root device, you can fetch further information about the guest:</p>
+
+<pre><code> &gt;&lt;fs&gt; inspect-get-type /dev/vg_f15x32/lv_root
+ linux
+ &gt;&lt;fs&gt; inspect-get-distro /dev/vg_f15x32/lv_root
+ fedora
+ &gt;&lt;fs&gt; inspect-get-major-version /dev/vg_f15x32/lv_root
+ 15
+ &gt;&lt;fs&gt; inspect-get-product-name /dev/vg_f15x32/lv_root
+ Fedora release 15 (Lovelock)</code></pre>
+
+<p>Limitations of guestfish make it hard to assign the root device to a variable (since guestfish doesn&#39;t have variables), so if you want to do this reproducibly you are better off writing a script using one of the other languages that the libguestfs API supports.</p>
+
+<p>To list applications, you have to first mount up the disks:</p>
+
+<pre><code> &gt;&lt;fs&gt; inspect-get-mountpoints /dev/vg_f15x32/lv_root
+ /: /dev/vg_f15x32/lv_root
+ /boot: /dev/vda1
+ &gt;&lt;fs&gt; mount-ro /dev/vg_f15x32/lv_root /
+ &gt;&lt;fs&gt; mount-ro /dev/vda1 /boot</code></pre>
+
+<p>and then call the inspect-list-applications API:</p>
+
+<pre><code> &gt;&lt;fs&gt; inspect-list-applications /dev/vg_f15x32/lv_root | head -28
+ [0] = {
+   app_name: ConsoleKit
+   app_display_name:
+   app_epoch: 0
+   app_version: 0.4.5
+   app_release: 1.fc15
+   app_install_path:
+   app_trans_path:
+   app_publisher:
+   app_url:
+   app_source_package:
+   app_summary:
+   app_description:
+ }
+ [1] = {
+   app_name: ConsoleKit-libs
+   app_display_name:
+   app_epoch: 0
+   app_version: 0.4.5
+   app_release: 1.fc15
+   app_install_path:
+   app_trans_path:
+   app_publisher:
+   app_url:
+   app_source_package:
+   app_summary:
+   app_description:
+ }</code></pre>
+
+<p>To display an icon for the guest, note that filesystems must also be mounted as above. You can then do:</p>
+
+<pre><code> &gt;&lt;fs&gt; inspect-get-icon /dev/vg_f15x32/lv_root | display -</code></pre>
+
+<h1 id="old-versions-of-virt-inspector">OLD VERSIONS OF VIRT-INSPECTOR</h1>
+
+<p>As described above, early versions of libguestfs shipped with a different virt-inspector program written in Perl (the current version is written in C). The XML output of the Perl virt-inspector was different and it could also output in other formats like text.</p>
+
+<p>The old virt-inspector is no longer supported or shipped with libguestfs.</p>
+
+<p>To confuse matters further, in Red Hat Enterprise Linux 6 we ship two versions of virt-inspector with different names:</p>
+
+<pre><code> virt-inspector     Old Perl version.
+ virt-inspector2    New C version.</code></pre>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>This program returns 0 if successful, or non-zero if there was an error.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="http://www.w3.org/TR/xpath/">http://www.w3.org/TR/xpath/</a>, <a href="http://man.he.net/man1/base64">base64(1)</a>, <a href="http://man.he.net/man1/xmlstarlet">xmlstarlet(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<ul>
+
+<li><p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+</li>
+<li><p>Matthew Booth <a href="http://search.cpan.org/perldoc?mbooth@redhat.com">mbooth@redhat.com</a></p>
+
+</li>
+</ul>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2010-2012 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

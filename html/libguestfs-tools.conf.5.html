@@ -1,0 +1,134 @@
+
+<html>
+<head>
+<title>libguestfs-tools.conf</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#file-location">FILE LOCATION</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>libguestfs-tools.conf - configuration file for guestfish, guestmount, virt-rescue</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> /etc/libguestfs-tools.conf
+
+ $XDG_CONFIG_DIRS/libguestfs/libguestfs-tools.conf
+
+ $HOME/.libguestfs-tools.rc
+
+ $XDG_CONFIG_HOME/libguestfs/libguestfs-tools.conf</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><i>libguestfs-tools.conf</i> (or <i>$HOME/.libguestfs-tools.rc</i>) changes the defaults for the following programs only:</p>
+
+<ul>
+
+<li><p><a href="guestfish.1.html">guestfish(1)</a></p>
+
+</li>
+<li><p><a href="guestmount.1.html">guestmount(1)</a></p>
+
+</li>
+<li><p><a href="virt-rescue.1.html">virt-rescue(1)</a></p>
+
+</li>
+</ul>
+
+<p>There is currently only one setting which is controlled by this file. Adding (or uncommenting):</p>
+
+<pre><code> read_only = true;</code></pre>
+
+<p>changes these programs so they act as if the <i>--ro</i> flag was given on the command line. You can use this to make the programs safe against accidental modification of a live guest (users would have to explicitly add the <i>--rw</i> flag to modify guests). This is not the default because it is not backwards compatible. See also <a href="guestfish.1.html#opening-disks-for-read-and-write">&quot;OPENING DISKS FOR READ AND WRITE&quot; in guestfish(1)</a>.</p>
+
+<p>Note that <b>the semicolon is required</b>.</p>
+
+<p>This file is parsed by the libconfig library. For more information about the format, see: <a href="http://www.hyperrealm.com/libconfig/libconfig_manual.html">http://www.hyperrealm.com/libconfig/libconfig_manual.html</a></p>
+
+<h1 id="file-location">FILE LOCATION</h1>
+
+<p>The order of the configuration files being read is, by importance:</p>
+
+<ul>
+
+<li><p>$XDG_CONFIG_HOME/libguestfs/libguestfs-tools.conf (<code>$XDG_CONFIG_HOME</code> is <i>$HOME/.config</i> if not set).</p>
+
+</li>
+<li><p>$HOME/.libguestfs-tools.rc</p>
+
+</li>
+<li><p>$XDG_CONFIG_DIRS/libguestfs/libguestfs-tools.conf (where <code>$XDG_CONFIG_DIRS</code> means any of the directories in that environment variable, or just <i>/etc/xdg</i> if not set)</p>
+
+</li>
+<li><p>/etc/libguestfs-tools.conf</p>
+
+</li>
+</ul>
+
+<p>This means local users can override the system configuration by copying the configuration file (or creating it anew) into <i>$XDG_CONFIG_HOME/libguestfs/libguestfs-tools.conf</i>.</p>
+
+<p><i>/etc/libguestfs-tools.conf</i> and <i>$HOME/.libguestfs-tools.rc</i> are the old non-XDG paths which are read for compatibility.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfish.1.html#opening-disks-for-read-and-write">&quot;OPENING DISKS FOR READ AND WRITE&quot; in guestfish(1)</a>, <a href="guestmount.1.html">guestmount(1)</a>, <a href="virt-rescue.1.html">virt-rescue(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>, <a href="http://standards.freedesktop.org/basedir-spec/latest/">http://standards.freedesktop.org/basedir-spec/latest/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones (<code>rjones at redhat dot com</code>)</p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2011-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

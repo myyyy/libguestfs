@@ -1,0 +1,1970 @@
+"downloader.ml" 40 1073 1077 "downloader.ml" 40 1073 1083
+type(
+  curl:string -> cache:Cache.t option -> t
+)
+ident(
+  def create "downloader.ml" 45 1136 1136 --
+)
+"downloader.ml" 40 1073 1085 "downloader.ml" 40 1073 1089
+type(
+  string
+)
+ident(
+  def curl "downloader.ml" 40 1073 1090 "downloader.ml" 43 1133 1134
+)
+"downloader.ml" 40 1073 1091 "downloader.ml" 40 1073 1096
+type(
+  Cache.t option
+)
+ident(
+  def cache "downloader.ml" 40 1073 1099 "downloader.ml" 43 1133 1134
+)
+"downloader.ml" 41 1101 1110 "downloader.ml" 41 1101 1114
+type(
+  string
+)
+ident(
+  int_ref curl "downloader.ml" 40 1073 1085 "downloader.ml" 40 1073 1089
+)
+"downloader.ml" 42 1116 1126 "downloader.ml" 42 1116 1131
+type(
+  Cache.t option
+)
+ident(
+  int_ref cache "downloader.ml" 40 1073 1091 "downloader.ml" 40 1073 1096
+)
+"downloader.ml" 40 1073 1099 "downloader.ml" 43 1133 1134
+type(
+  t
+)
+"downloader.ml" 45 1136 1144 "downloader.ml" 45 1136 1152
+type(
+  t ->
+  ?template:string * string * int ->
+  ?progress_bar:bool -> ?proxy:proxy_mode -> string -> string * bool
+)
+ident(
+  def download "downloader.ml" 45 1136 1136 --
+)
+"downloader.ml" 45 1136 1153 "downloader.ml" 45 1136 1154
+type(
+  t
+)
+ident(
+  def t "downloader.ml" 45 1136 1155 "downloader.ml" 68 1922 1945
+)
+"downloader.ml" 45 1136 1156 "downloader.ml" 45 1136 1164
+type(
+  (string * string * int) option
+)
+ident(
+  def template "downloader.ml" 45 1136 1165 "downloader.ml" 68 1922 1945
+)
+"downloader.ml" 45 1136 1166 "downloader.ml" 45 1136 1178
+type(
+  bool option
+)
+ident(
+  def progress_bar "downloader.ml" 45 1136 1179 "downloader.ml" 68 1922 1945
+)
+"downloader.ml" 45 1136 1181 "downloader.ml" 45 1136 1186
+type(
+  proxy_mode
+)
+"downloader.ml" 45 1136 1189 "downloader.ml" 45 1136 1200
+type(
+  proxy_mode
+)
+type(
+  proxy_mode
+)
+ident(
+  int_ref *sth* "downloader.ml" 45 1136 1189 "downloader.ml" 45 1136 1200
+)
+type(
+  proxy_mode option
+)
+type(
+  proxy_mode option
+)
+type(
+  proxy_mode
+)
+ident(
+  def *sth* "downloader.ml" 45 1136 1189 "downloader.ml" 45 1136 1200
+)
+"downloader.ml" 45 1136 1202 "downloader.ml" 45 1136 1205
+type(
+  string
+)
+ident(
+  def uri "downloader.ml" 46 1208 1210 "downloader.ml" 68 1922 1945
+)
+"downloader.ml" 46 1208 1216 "downloader.ml" 46 1208 1224
+type(
+  (string * string * int) option
+)
+ident(
+  int_ref template "downloader.ml" 45 1136 1156 "downloader.ml" 45 1136 1164
+)
+"downloader.ml" 47 1230 1234 "downloader.ml" 47 1230 1238
+type(
+  (string * string * int) option
+)
+"downloader.ml" 49 1331 1339 "downloader.ml" 49 1331 1346
+type(
+  string
+)
+"downloader.ml" 49 1331 1349 "downloader.ml" 49 1331 1367
+type(
+  ?temp_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Filename.temp_file
+)
+"downloader.ml" 49 1331 1368 "downloader.ml" 49 1331 1377
+type(
+  string
+)
+"downloader.ml" 49 1331 1378 "downloader.ml" 49 1331 1384
+type(
+  string
+)
+"downloader.ml" 49 1331 1349 "downloader.ml" 49 1331 1384
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 50 1388 1392 "downloader.ml" 50 1388 1403
+type(
+  t -> ?progress_bar:bool -> proxy:proxy_mode -> string -> string -> unit
+)
+ident(
+  int_ref download_to "downloader.ml" 70 1947 1951 "downloader.ml" 70 1947 1962
+)
+"downloader.ml" 50 1388 1404 "downloader.ml" 50 1388 1405
+type(
+  t
+)
+ident(
+  int_ref t "downloader.ml" 45 1136 1153 "downloader.ml" 45 1136 1154
+)
+"downloader.ml" 50 1388 1407 "downloader.ml" 50 1388 1419
+type(
+  bool option
+)
+ident(
+  int_ref progress_bar "downloader.ml" 45 1136 1166 "downloader.ml" 45 1136 1178
+)
+"downloader.ml" 50 1388 1421 "downloader.ml" 50 1388 1426
+type(
+  proxy_mode
+)
+ident(
+  int_ref proxy "downloader.ml" 45 1136 1181 "downloader.ml" 45 1136 1186
+)
+"downloader.ml" 50 1388 1427 "downloader.ml" 50 1388 1430
+type(
+  string
+)
+ident(
+  int_ref uri "downloader.ml" 45 1136 1202 "downloader.ml" 45 1136 1205
+)
+"downloader.ml" 50 1388 1431 "downloader.ml" 50 1388 1438
+type(
+  string
+)
+ident(
+  int_ref tmpfile "downloader.ml" 49 1331 1339 "downloader.ml" 49 1331 1346
+)
+"downloader.ml" 50 1388 1392 "downloader.ml" 50 1388 1438
+call(
+  stack
+)
+type(
+  unit
+)
+"downloader.ml" 51 1440 1445 "downloader.ml" 51 1440 1452
+type(
+  string
+)
+ident(
+  int_ref tmpfile "downloader.ml" 49 1331 1339 "downloader.ml" 49 1331 1346
+)
+"downloader.ml" 51 1440 1454 "downloader.ml" 51 1440 1458
+type(
+  bool
+)
+"downloader.ml" 51 1440 1444 "downloader.ml" 51 1440 1459
+type(
+  string * bool
+)
+"downloader.ml" 50 1388 1392 "downloader.ml" 51 1440 1459
+type(
+  string * bool
+)
+"downloader.ml" 49 1331 1335 "downloader.ml" 51 1440 1459
+type(
+  string * bool
+)
+"downloader.ml" 53 1461 1471 "downloader.ml" 53 1461 1475
+type(
+  string
+)
+ident(
+  def name "downloader.ml" 54 1496 1500 "downloader.ml" 68 1922 1945
+)
+"downloader.ml" 53 1461 1477 "downloader.ml" 53 1461 1481
+type(
+  string
+)
+ident(
+  def arch "downloader.ml" 54 1496 1500 "downloader.ml" 68 1922 1945
+)
+"downloader.ml" 53 1461 1483 "downloader.ml" 53 1461 1491
+type(
+  int
+)
+ident(
+  def revision "downloader.ml" 54 1496 1500 "downloader.ml" 68 1922 1945
+)
+"downloader.ml" 53 1461 1470 "downloader.ml" 53 1461 1492
+type(
+  string * string * int
+)
+"downloader.ml" 53 1461 1465 "downloader.ml" 53 1461 1492
+type(
+  (string * string * int) option
+)
+"downloader.ml" 54 1496 1506 "downloader.ml" 54 1496 1507
+type(
+  t
+)
+ident(
+  int_ref t "downloader.ml" 45 1136 1153 "downloader.ml" 45 1136 1154
+)
+"downloader.ml" 54 1496 1506 "downloader.ml" 54 1496 1513
+type(
+  Cache.t option
+)
+"downloader.ml" 55 1519 1525 "downloader.ml" 55 1519 1529
+type(
+  Cache.t option
+)
+"downloader.ml" 57 1573 1579 "downloader.ml" 57 1573 1587
+type(
+  t ->
+  ?template:string * string * int ->
+  ?progress_bar:bool -> ?proxy:proxy_mode -> string -> string * bool
+)
+ident(
+  int_ref download "downloader.ml" 45 1136 1144 "downloader.ml" 45 1136 1152
+)
+"downloader.ml" 57 1573 1588 "downloader.ml" 57 1573 1589
+type(
+  t
+)
+ident(
+  int_ref t "downloader.ml" 45 1136 1153 "downloader.ml" 45 1136 1154
+)
+"downloader.ml" 57 1573 1591 "downloader.ml" 57 1573 1603
+type(
+  bool option
+)
+ident(
+  int_ref progress_bar "downloader.ml" 45 1136 1166 "downloader.ml" 45 1136 1178
+)
+"downloader.ml" 57 1573 1605 "downloader.ml" 57 1573 1610
+type(
+  proxy_mode
+)
+ident(
+  int_ref proxy "downloader.ml" 45 1136 1181 "downloader.ml" 45 1136 1186
+)
+"downloader.ml" 57 1573 1611 "downloader.ml" 57 1573 1614
+type(
+  string
+)
+ident(
+  int_ref uri "downloader.ml" 45 1136 1202 "downloader.ml" 45 1136 1205
+)
+"downloader.ml" 57 1573 1579 "downloader.ml" 57 1573 1614
+call(
+  tail
+)
+type(
+  string * bool
+)
+"downloader.ml" 59 1616 1627 "downloader.ml" 59 1616 1632
+type(
+  Cache.t
+)
+ident(
+  def cache "downloader.ml" 60 1636 1642 "downloader.ml" 68 1922 1945
+)
+"downloader.ml" 59 1616 1622 "downloader.ml" 59 1616 1632
+type(
+  Cache.t option
+)
+"downloader.ml" 60 1636 1646 "downloader.ml" 60 1636 1654
+type(
+  string
+)
+"downloader.ml" 60 1636 1657 "downloader.ml" 60 1636 1676
+type(
+  Cache.t -> string -> string -> int -> string
+)
+ident(
+  ext_ref Cache.cache_of_name
+)
+"downloader.ml" 60 1636 1677 "downloader.ml" 60 1636 1682
+type(
+  Cache.t
+)
+ident(
+  int_ref cache "downloader.ml" 59 1616 1627 "downloader.ml" 59 1616 1632
+)
+"downloader.ml" 60 1636 1683 "downloader.ml" 60 1636 1687
+type(
+  string
+)
+ident(
+  int_ref name "downloader.ml" 53 1461 1471 "downloader.ml" 53 1461 1475
+)
+"downloader.ml" 60 1636 1688 "downloader.ml" 60 1636 1692
+type(
+  string
+)
+ident(
+  int_ref arch "downloader.ml" 53 1461 1477 "downloader.ml" 53 1461 1481
+)
+"downloader.ml" 60 1636 1693 "downloader.ml" 60 1636 1701
+type(
+  int
+)
+ident(
+  int_ref revision "downloader.ml" 53 1461 1483 "downloader.ml" 53 1461 1491
+)
+"downloader.ml" 60 1636 1657 "downloader.ml" 60 1636 1701
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 65 1819 1828 "downloader.ml" 65 1819 1831
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"downloader.ml" 65 1819 1833 "downloader.ml" 65 1819 1848
+type(
+  string -> bool
+)
+ident(
+  ext_ref Sys.file_exists
+)
+"downloader.ml" 65 1819 1849 "downloader.ml" 65 1819 1857
+type(
+  string
+)
+ident(
+  int_ref filename "downloader.ml" 60 1636 1646 "downloader.ml" 60 1636 1654
+)
+"downloader.ml" 65 1819 1832 "downloader.ml" 65 1819 1858
+type(
+  bool
+)
+"downloader.ml" 65 1819 1828 "downloader.ml" 65 1819 1858
+type(
+  bool
+)
+"downloader.ml" 66 1864 1872 "downloader.ml" 66 1864 1883
+type(
+  t -> ?progress_bar:bool -> proxy:proxy_mode -> string -> string -> unit
+)
+ident(
+  int_ref download_to "downloader.ml" 70 1947 1951 "downloader.ml" 70 1947 1962
+)
+"downloader.ml" 66 1864 1884 "downloader.ml" 66 1864 1885
+type(
+  t
+)
+ident(
+  int_ref t "downloader.ml" 45 1136 1153 "downloader.ml" 45 1136 1154
+)
+"downloader.ml" 66 1864 1887 "downloader.ml" 66 1864 1899
+type(
+  bool option
+)
+ident(
+  int_ref progress_bar "downloader.ml" 45 1136 1166 "downloader.ml" 45 1136 1178
+)
+"downloader.ml" 66 1864 1901 "downloader.ml" 66 1864 1906
+type(
+  proxy_mode
+)
+ident(
+  int_ref proxy "downloader.ml" 45 1136 1181 "downloader.ml" 45 1136 1186
+)
+"downloader.ml" 66 1864 1907 "downloader.ml" 66 1864 1910
+type(
+  string
+)
+ident(
+  int_ref uri "downloader.ml" 45 1136 1202 "downloader.ml" 45 1136 1205
+)
+"downloader.ml" 66 1864 1911 "downloader.ml" 66 1864 1919
+type(
+  string
+)
+ident(
+  int_ref filename "downloader.ml" 60 1636 1646 "downloader.ml" 60 1636 1654
+)
+"downloader.ml" 66 1864 1872 "downloader.ml" 66 1864 1919
+call(
+  stack
+)
+type(
+  unit
+)
+"downloader.ml" 65 1819 1825 "downloader.ml" 66 1864 1919
+type(
+  unit
+)
+"downloader.ml" 68 1922 1929 "downloader.ml" 68 1922 1937
+type(
+  string
+)
+ident(
+  int_ref filename "downloader.ml" 60 1636 1646 "downloader.ml" 60 1636 1654
+)
+"downloader.ml" 68 1922 1939 "downloader.ml" 68 1922 1944
+type(
+  bool
+)
+"downloader.ml" 68 1922 1928 "downloader.ml" 68 1922 1945
+type(
+  string * bool
+)
+"downloader.ml" 65 1819 1825 "downloader.ml" 68 1922 1945
+type(
+  string * bool
+)
+"downloader.ml" 60 1636 1642 "downloader.ml" 68 1922 1945
+type(
+  string * bool
+)
+"downloader.ml" 54 1496 1500 "downloader.ml" 68 1922 1945
+type(
+  string * bool
+)
+"downloader.ml" 46 1208 1210 "downloader.ml" 68 1922 1945
+type(
+  string * bool
+)
+"downloader.ml" 70 1947 1951 "downloader.ml" 70 1947 1962
+type(
+  t -> ?progress_bar:bool -> proxy:proxy_mode -> string -> string -> unit
+)
+ident(
+  def download_to "downloader.ml" 45 1136 1136 --
+)
+"downloader.ml" 70 1947 1963 "downloader.ml" 70 1947 1964
+type(
+  t
+)
+ident(
+  def t "downloader.ml" 70 1947 1965 "downloader.ml" 129 4182 4212
+)
+"downloader.ml" 70 1947 1967 "downloader.ml" 70 1947 1979
+type(
+  bool
+)
+"downloader.ml" 70 1947 1982 "downloader.ml" 70 1947 1987
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "downloader.ml" 70 1947 1982 "downloader.ml" 70 1947 1987
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+ident(
+  def *sth* "downloader.ml" 70 1947 1982 "downloader.ml" 70 1947 1987
+)
+"downloader.ml" 70 1947 1990 "downloader.ml" 70 1947 1995
+type(
+  proxy_mode
+)
+ident(
+  def proxy "downloader.ml" 70 1947 1996 "downloader.ml" 129 4182 4212
+)
+"downloader.ml" 70 1947 1996 "downloader.ml" 70 1947 1999
+type(
+  string
+)
+ident(
+  def uri "downloader.ml" 70 1947 2000 "downloader.ml" 129 4182 4212
+)
+"downloader.ml" 70 1947 2000 "downloader.ml" 70 1947 2008
+type(
+  string
+)
+ident(
+  def filename "downloader.ml" 71 2011 2013 "downloader.ml" 129 4182 4212
+)
+"downloader.ml" 71 2011 2017 "downloader.ml" 71 2011 2026
+type(
+  URI.uri
+)
+"downloader.ml" 72 2029 2037 "downloader.ml" 72 2029 2050
+type(
+  string -> URI.uri
+)
+ident(
+  ext_ref URI.parse_uri
+)
+"downloader.ml" 72 2029 2051 "downloader.ml" 72 2029 2054
+type(
+  string
+)
+ident(
+  int_ref uri "downloader.ml" 70 1947 1996 "downloader.ml" 70 1947 1999
+)
+"downloader.ml" 72 2029 2037 "downloader.ml" 72 2029 2054
+call(
+  stack
+)
+type(
+  URI.uri
+)
+"downloader.ml" 73 2055 2081 "downloader.ml" 73 2055 2096
+type(
+  string
+)
+"downloader.ml" 73 2055 2064 "downloader.ml" 73 2055 2096
+type(
+  exn
+)
+"downloader.ml" 74 2100 2106 "downloader.ml" 74 2100 2111
+type(
+  ?exit_code:int ->
+  (string -> URI.uri, unit, string, URI.uri) format4 -> string -> URI.uri
+)
+ident(
+  ext_ref Common_utils.error
+)
+"downloader.ml" 74 2100 2113 "downloader.ml" 74 2100 2115
+type(
+  (string -> URI.uri, unit, string, string, string, URI.uri) format6 ->
+  (string -> URI.uri, unit, string, URI.uri) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"downloader.ml" 74 2100 2115 "downloader.ml" 74 2100 2179
+type(
+  (string -> URI.uri, unit, string, string, string, URI.uri) format6
+)
+"downloader.ml" 74 2100 2112 "downloader.ml" 74 2100 2180
+type(
+  (string -> URI.uri, unit, string, URI.uri) format4
+)
+"downloader.ml" 75 2181 2189 "downloader.ml" 75 2181 2192
+type(
+  string
+)
+ident(
+  int_ref uri "downloader.ml" 70 1947 1996 "downloader.ml" 70 1947 1999
+)
+"downloader.ml" 74 2100 2106 "downloader.ml" 75 2181 2192
+call(
+  stack
+)
+type(
+  URI.uri
+)
+"downloader.ml" 72 2029 2033 "downloader.ml" 75 2181 2192
+type(
+  URI.uri
+)
+"downloader.ml" 82 2455 2461 "downloader.ml" 82 2455 2473
+type(
+  string
+)
+"downloader.ml" 82 2455 2476 "downloader.ml" 82 2455 2484
+type(
+  string
+)
+ident(
+  int_ref filename "downloader.ml" 70 1947 2000 "downloader.ml" 70 1947 2008
+)
+"downloader.ml" 82 2455 2485 "downloader.ml" 82 2455 2486
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"downloader.ml" 82 2455 2487 "downloader.ml" 82 2455 2490
+type(
+  string
+)
+"downloader.ml" 82 2455 2491 "downloader.ml" 82 2455 2492
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"downloader.ml" 82 2455 2493 "downloader.ml" 82 2455 2507
+type(
+  unit -> string
+)
+ident(
+  ext_ref Common_utils.string_random8
+)
+"downloader.ml" 82 2455 2508 "downloader.ml" 82 2455 2510
+type(
+  unit
+)
+"downloader.ml" 82 2455 2493 "downloader.ml" 82 2455 2510
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 82 2455 2487 "downloader.ml" 82 2455 2510
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 82 2455 2476 "downloader.ml" 82 2455 2510
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 83 2514 2516 "downloader.ml" 83 2514 2530
+type(
+  string -> unit
+)
+ident(
+  ext_ref Common_utils.unlink_on_exit
+)
+"downloader.ml" 83 2514 2531 "downloader.ml" 83 2514 2543
+type(
+  string
+)
+ident(
+  int_ref filename_new "downloader.ml" 82 2455 2461 "downloader.ml" 82 2455 2473
+)
+"downloader.ml" 83 2514 2516 "downloader.ml" 83 2514 2543
+call(
+  stack
+)
+type(
+  unit
+)
+"downloader.ml" 85 2546 2555 "downloader.ml" 85 2546 2564
+type(
+  URI.uri
+)
+ident(
+  int_ref parseduri "downloader.ml" 71 2011 2017 "downloader.ml" 71 2011 2026
+)
+"downloader.ml" 85 2546 2555 "downloader.ml" 85 2546 2577
+type(
+  string
+)
+"downloader.ml" 86 2583 2587 "downloader.ml" 86 2583 2593
+type(
+  string
+)
+"downloader.ml" 87 2597 2605 "downloader.ml" 87 2597 2609
+type(
+  string
+)
+"downloader.ml" 87 2597 2612 "downloader.ml" 87 2597 2621
+type(
+  URI.uri
+)
+ident(
+  int_ref parseduri "downloader.ml" 71 2011 2017 "downloader.ml" 71 2011 2026
+)
+"downloader.ml" 87 2597 2612 "downloader.ml" 87 2597 2630
+type(
+  string
+)
+"downloader.ml" 88 2634 2642 "downloader.ml" 88 2634 2645
+type(
+  string
+)
+"downloader.ml" 88 2634 2648 "downloader.ml" 88 2634 2655
+type(
+  (string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"downloader.ml" 88 2634 2656 "downloader.ml" 88 2634 2668
+type(
+  (string -> string -> string -> string, unit, string) format
+)
+"downloader.ml" 89 2669 2679 "downloader.ml" 89 2669 2686
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"downloader.ml" 89 2669 2687 "downloader.ml" 89 2669 2689
+type(
+  unit
+)
+"downloader.ml" 89 2669 2679 "downloader.ml" 89 2669 2689
+call(
+  stack
+)
+type(
+  bool
+)
+"downloader.ml" 89 2669 2695 "downloader.ml" 89 2669 2700
+type(
+  string
+)
+"downloader.ml" 89 2669 2706 "downloader.ml" 89 2669 2708
+type(
+  string
+)
+"downloader.ml" 89 2669 2675 "downloader.ml" 89 2669 2709
+type(
+  string
+)
+"downloader.ml" 90 2710 2717 "downloader.ml" 90 2710 2722
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"downloader.ml" 90 2710 2723 "downloader.ml" 90 2710 2727
+type(
+  string
+)
+ident(
+  int_ref path "downloader.ml" 87 2597 2605 "downloader.ml" 87 2597 2609
+)
+"downloader.ml" 90 2710 2716 "downloader.ml" 90 2710 2728
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 90 2710 2730 "downloader.ml" 90 2710 2735
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"downloader.ml" 90 2710 2736 "downloader.ml" 90 2710 2748
+type(
+  string
+)
+ident(
+  int_ref filename_new "downloader.ml" 82 2455 2461 "downloader.ml" 82 2455 2473
+)
+"downloader.ml" 90 2710 2729 "downloader.ml" 90 2710 2749
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 88 2634 2648 "downloader.ml" 90 2710 2749
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 91 2753 2761 "downloader.ml" 91 2753 2762
+type(
+  int
+)
+"downloader.ml" 91 2753 2765 "downloader.ml" 91 2753 2776
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"downloader.ml" 91 2753 2777 "downloader.ml" 91 2753 2780
+type(
+  string
+)
+ident(
+  int_ref cmd "downloader.ml" 88 2634 2642 "downloader.ml" 88 2634 2645
+)
+"downloader.ml" 91 2753 2765 "downloader.ml" 91 2753 2780
+type(
+  int
+)
+"downloader.ml" 92 2784 2791 "downloader.ml" 92 2784 2792
+type(
+  int
+)
+ident(
+  int_ref r "downloader.ml" 91 2753 2761 "downloader.ml" 91 2753 2762
+)
+"downloader.ml" 92 2784 2793 "downloader.ml" 92 2784 2795
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"downloader.ml" 92 2784 2796 "downloader.ml" 92 2784 2797
+type(
+  int
+)
+"downloader.ml" 92 2784 2791 "downloader.ml" 92 2784 2797
+type(
+  bool
+)
+"downloader.ml" 93 2803 2809 "downloader.ml" 93 2803 2814
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"downloader.ml" 93 2803 2816 "downloader.ml" 93 2803 2818
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"downloader.ml" 93 2803 2818 "downloader.ml" 93 2803 2861
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"downloader.ml" 93 2803 2815 "downloader.ml" 93 2803 2862
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"downloader.ml" 93 2803 2863 "downloader.ml" 93 2803 2867
+type(
+  string
+)
+ident(
+  int_ref path "downloader.ml" 87 2597 2605 "downloader.ml" 87 2597 2609
+)
+"downloader.ml" 93 2803 2809 "downloader.ml" 93 2803 2867
+call(
+  stack
+)
+type(
+  unit
+)
+"downloader.ml" 92 2784 2788 "downloader.ml" 93 2803 2868
+type(
+  unit
+)
+"downloader.ml" 91 2753 2757 "downloader.ml" 93 2803 2868
+type(
+  unit
+)
+"downloader.ml" 88 2634 2638 "downloader.ml" 93 2803 2868
+type(
+  unit
+)
+"downloader.ml" 87 2597 2601 "downloader.ml" 93 2803 2868
+type(
+  unit
+)
+"downloader.ml" 94 2869 2873 "downloader.ml" 94 2869 2874
+type(
+  string
+)
+"downloader.ml" 94 2869 2873 "downloader.ml" 94 2869 2886
+type(
+  string
+)
+ident(
+  def protocol "downloader.ml" 95 2916 2920 "downloader.ml" 125 4049 4119
+)
+"downloader.ml" 95 2916 2924 "downloader.ml" 95 2916 2930
+type(
+  string
+)
+"downloader.ml" 95 2916 2933 "downloader.ml" 95 2916 2945
+type(
+  string -> proxy_mode -> string
+)
+ident(
+  int_ref proxy_envvar "downloader.ml" 131 4214 4218 "downloader.ml" 131 4214 4230
+)
+"downloader.ml" 95 2916 2946 "downloader.ml" 95 2916 2954
+type(
+  string
+)
+ident(
+  int_ref protocol "downloader.ml" 94 2869 2873 "downloader.ml" 94 2869 2886
+)
+"downloader.ml" 95 2916 2955 "downloader.ml" 95 2916 2960
+type(
+  proxy_mode
+)
+ident(
+  int_ref proxy "downloader.ml" 70 1947 1990 "downloader.ml" 70 1947 1995
+)
+"downloader.ml" 95 2916 2933 "downloader.ml" 95 2916 2960
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 97 3027 3035 "downloader.ml" 97 3027 3038
+type(
+  string
+)
+"downloader.ml" 97 3027 3041 "downloader.ml" 97 3027 3048
+type(
+  (string -> string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"downloader.ml" 97 3027 3049 "downloader.ml" 97 3027 3098
+type(
+  (string -> string -> string -> string -> string, unit, string) format
+)
+"downloader.ml" 98 3099 3105 "downloader.ml" 98 3099 3111
+type(
+  string
+)
+ident(
+  int_ref outenv "downloader.ml" 95 2916 2924 "downloader.ml" 95 2916 2930
+)
+"downloader.ml" 99 3112 3118 "downloader.ml" 99 3112 3119
+type(
+  t
+)
+ident(
+  int_ref t "downloader.ml" 70 1947 1963 "downloader.ml" 70 1947 1964
+)
+"downloader.ml" 99 3112 3118 "downloader.ml" 99 3112 3124
+type(
+  string
+)
+"downloader.ml" 100 3125 3135 "downloader.ml" 100 3125 3142
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"downloader.ml" 100 3125 3143 "downloader.ml" 100 3125 3145
+type(
+  unit
+)
+"downloader.ml" 100 3125 3135 "downloader.ml" 100 3125 3145
+call(
+  stack
+)
+type(
+  bool
+)
+"downloader.ml" 100 3125 3151 "downloader.ml" 100 3125 3153
+type(
+  string
+)
+"downloader.ml" 100 3125 3159 "downloader.ml" 100 3125 3167
+type(
+  string
+)
+"downloader.ml" 100 3125 3131 "downloader.ml" 100 3125 3168
+type(
+  string
+)
+"downloader.ml" 101 3169 3176 "downloader.ml" 101 3169 3181
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"downloader.ml" 101 3169 3182 "downloader.ml" 101 3169 3185
+type(
+  string
+)
+ident(
+  int_ref uri "downloader.ml" 70 1947 1996 "downloader.ml" 70 1947 1999
+)
+"downloader.ml" 101 3169 3175 "downloader.ml" 101 3169 3186
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 97 3027 3041 "downloader.ml" 101 3169 3186
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 102 3190 3197 "downloader.ml" 102 3190 3204
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"downloader.ml" 102 3190 3205 "downloader.ml" 102 3190 3207
+type(
+  unit
+)
+"downloader.ml" 102 3190 3197 "downloader.ml" 102 3190 3207
+call(
+  stack
+)
+type(
+  bool
+)
+"downloader.ml" 102 3190 3213 "downloader.ml" 102 3190 3219
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"downloader.ml" 102 3190 3220 "downloader.ml" 102 3190 3228
+type(
+  (string -> unit, out_channel, unit) format
+)
+"downloader.ml" 102 3190 3229 "downloader.ml" 102 3190 3232
+type(
+  string
+)
+ident(
+  int_ref cmd "downloader.ml" 97 3027 3035 "downloader.ml" 97 3027 3038
+)
+"downloader.ml" 102 3190 3213 "downloader.ml" 102 3190 3232
+call(
+  stack
+)
+type(
+  unit
+)
+"downloader.ml" 102 3190 3194 "downloader.ml" 102 3190 3232
+type(
+  unit
+)
+"downloader.ml" 103 3234 3242 "downloader.ml" 103 3234 3247
+type(
+  string list
+)
+"downloader.ml" 103 3234 3250 "downloader.ml" 103 3234 3266
+type(
+  string -> string list
+)
+ident(
+  ext_ref Common_utils.external_command
+)
+"downloader.ml" 103 3234 3267 "downloader.ml" 103 3234 3270
+type(
+  string
+)
+ident(
+  int_ref cmd "downloader.ml" 97 3027 3035 "downloader.ml" 97 3027 3038
+)
+"downloader.ml" 103 3234 3250 "downloader.ml" 103 3234 3270
+call(
+  stack
+)
+type(
+  string list
+)
+"downloader.ml" 104 3274 3281 "downloader.ml" 104 3274 3292
+type(
+  string list -> int
+)
+ident(
+  ext_ref List.length
+)
+"downloader.ml" 104 3274 3293 "downloader.ml" 104 3274 3298
+type(
+  string list
+)
+ident(
+  int_ref lines "downloader.ml" 103 3234 3242 "downloader.ml" 103 3234 3247
+)
+"downloader.ml" 104 3274 3281 "downloader.ml" 104 3274 3298
+call(
+  stack
+)
+type(
+  int
+)
+"downloader.ml" 104 3274 3299 "downloader.ml" 104 3274 3300
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"downloader.ml" 104 3274 3301 "downloader.ml" 104 3274 3302
+type(
+  int
+)
+"downloader.ml" 104 3274 3281 "downloader.ml" 104 3274 3302
+type(
+  bool
+)
+"downloader.ml" 105 3308 3314 "downloader.ml" 105 3308 3319
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"downloader.ml" 105 3308 3321 "downloader.ml" 105 3308 3323
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"downloader.ml" 105 3308 3323 "downloader.ml" 105 3308 3404
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"downloader.ml" 105 3308 3320 "downloader.ml" 105 3308 3405
+type(
+  (unit, unit, string, unit) format4
+)
+"downloader.ml" 105 3308 3314 "downloader.ml" 105 3308 3405
+call(
+  stack
+)
+type(
+  unit
+)
+"downloader.ml" 104 3274 3278 "downloader.ml" 105 3308 3405
+type(
+  unit
+)
+"downloader.ml" 106 3407 3415 "downloader.ml" 106 3407 3426
+type(
+  string
+)
+"downloader.ml" 106 3407 3429 "downloader.ml" 106 3407 3436
+type(
+  string list -> string
+)
+ident(
+  ext_ref List.hd
+)
+"downloader.ml" 106 3407 3437 "downloader.ml" 106 3407 3442
+type(
+  string list
+)
+ident(
+  int_ref lines "downloader.ml" 103 3234 3242 "downloader.ml" 103 3234 3247
+)
+"downloader.ml" 106 3407 3429 "downloader.ml" 106 3407 3442
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 107 3446 3454 "downloader.ml" 107 3446 3469
+type(
+  string -> bool
+)
+"downloader.ml" 108 3481 3489 "downloader.ml" 108 3481 3491
+type(
+  string
+)
+"downloader.ml" 108 3481 3495 "downloader.ml" 108 3481 3499
+type(
+  bool
+)
+"downloader.ml" 109 3500 3508 "downloader.ml" 109 3500 3509
+type(
+  string
+)
+ident(
+  def s "downloader.ml" 109 3500 3510 "downloader.ml" 109 3500 3534
+)
+"downloader.ml" 109 3500 3515 "downloader.ml" 109 3500 3516
+type(
+  string
+)
+ident(
+  int_ref s "downloader.ml" 109 3500 3508 "downloader.ml" 109 3500 3509
+)
+"downloader.ml" 109 3500 3518 "downloader.ml" 109 3500 3519
+type(
+  int
+)
+"downloader.ml" 109 3500 3515 "downloader.ml" 109 3500 3520
+type(
+  char
+)
+"downloader.ml" 109 3500 3521 "downloader.ml" 109 3500 3522
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"downloader.ml" 109 3500 3523 "downloader.ml" 109 3500 3526
+type(
+  char
+)
+"downloader.ml" 109 3500 3515 "downloader.ml" 109 3500 3526
+type(
+  bool
+)
+"downloader.ml" 109 3500 3530 "downloader.ml" 109 3500 3534
+type(
+  bool
+)
+"downloader.ml" 109 3500 3510 "downloader.ml" 109 3500 3534
+type(
+  bool
+)
+"downloader.ml" 110 3545 3553 "downloader.ml" 110 3545 3554
+type(
+  string
+)
+ident(
+  def s "downloader.ml" 110 3545 3555 "downloader.ml" 110 3545 3579
+)
+"downloader.ml" 110 3545 3560 "downloader.ml" 110 3545 3561
+type(
+  string
+)
+ident(
+  int_ref s "downloader.ml" 110 3545 3553 "downloader.ml" 110 3545 3554
+)
+"downloader.ml" 110 3545 3563 "downloader.ml" 110 3545 3564
+type(
+  int
+)
+"downloader.ml" 110 3545 3560 "downloader.ml" 110 3545 3565
+type(
+  char
+)
+"downloader.ml" 110 3545 3566 "downloader.ml" 110 3545 3567
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"downloader.ml" 110 3545 3568 "downloader.ml" 110 3545 3571
+type(
+  char
+)
+"downloader.ml" 110 3545 3560 "downloader.ml" 110 3545 3571
+type(
+  bool
+)
+"downloader.ml" 110 3545 3575 "downloader.ml" 110 3545 3579
+type(
+  bool
+)
+"downloader.ml" 110 3545 3555 "downloader.ml" 110 3545 3579
+type(
+  bool
+)
+"downloader.ml" 111 3590 3598 "downloader.ml" 111 3590 3599
+type(
+  string
+)
+"downloader.ml" 111 3590 3603 "downloader.ml" 111 3590 3608
+type(
+  bool
+)
+"downloader.ml" 107 3446 3472 "downloader.ml" 111 3590 3608
+type(
+  string -> bool
+)
+"downloader.ml" 113 3616 3623 "downloader.ml" 113 3616 3638
+type(
+  string -> bool
+)
+ident(
+  int_ref bad_status_code "downloader.ml" 107 3446 3454 "downloader.ml" 107 3446 3469
+)
+"downloader.ml" 113 3616 3639 "downloader.ml" 113 3616 3650
+type(
+  string
+)
+ident(
+  int_ref status_code "downloader.ml" 106 3407 3415 "downloader.ml" 106 3407 3426
+)
+"downloader.ml" 113 3616 3623 "downloader.ml" 113 3616 3650
+call(
+  stack
+)
+type(
+  bool
+)
+"downloader.ml" 114 3656 3662 "downloader.ml" 114 3656 3667
+type(
+  ?exit_code:int ->
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"downloader.ml" 114 3656 3669 "downloader.ml" 114 3656 3671
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"downloader.ml" 114 3656 3671 "downloader.ml" 114 3656 3715
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"downloader.ml" 114 3656 3668 "downloader.ml" 114 3656 3716
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"downloader.ml" 114 3656 3717 "downloader.ml" 114 3656 3720
+type(
+  string
+)
+ident(
+  int_ref uri "downloader.ml" 70 1947 1996 "downloader.ml" 70 1947 1999
+)
+"downloader.ml" 114 3656 3721 "downloader.ml" 114 3656 3732
+type(
+  string
+)
+ident(
+  int_ref status_code "downloader.ml" 106 3407 3415 "downloader.ml" 106 3407 3426
+)
+"downloader.ml" 114 3656 3662 "downloader.ml" 114 3656 3732
+call(
+  stack
+)
+type(
+  unit
+)
+"downloader.ml" 113 3616 3620 "downloader.ml" 114 3656 3732
+type(
+  unit
+)
+"downloader.ml" 117 3768 3776 "downloader.ml" 117 3768 3779
+type(
+  string
+)
+"downloader.ml" 117 3768 3782 "downloader.ml" 117 3768 3789
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format -> string -> string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"downloader.ml" 117 3768 3790 "downloader.ml" 117 3768 3810
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format
+)
+"downloader.ml" 118 3811 3817 "downloader.ml" 118 3811 3823
+type(
+  string
+)
+ident(
+  int_ref outenv "downloader.ml" 95 2916 2924 "downloader.ml" 95 2916 2930
+)
+"downloader.ml" 119 3824 3830 "downloader.ml" 119 3824 3831
+type(
+  t
+)
+ident(
+  int_ref t "downloader.ml" 70 1947 1963 "downloader.ml" 70 1947 1964
+)
+"downloader.ml" 119 3824 3830 "downloader.ml" 119 3824 3836
+type(
+  string
+)
+"downloader.ml" 120 3837 3847 "downloader.ml" 120 3837 3854
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"downloader.ml" 120 3837 3855 "downloader.ml" 120 3837 3857
+type(
+  unit
+)
+"downloader.ml" 120 3837 3847 "downloader.ml" 120 3837 3857
+call(
+  stack
+)
+type(
+  bool
+)
+"downloader.ml" 120 3837 3863 "downloader.ml" 120 3837 3865
+type(
+  string
+)
+"downloader.ml" 120 3837 3874 "downloader.ml" 120 3837 3886
+type(
+  bool
+)
+ident(
+  int_ref progress_bar "downloader.ml" 70 1947 1967 "downloader.ml" 70 1947 1979
+)
+"downloader.ml" 120 3837 3892 "downloader.ml" 120 3837 3897
+type(
+  string
+)
+"downloader.ml" 120 3837 3903 "downloader.ml" 120 3837 3911
+type(
+  string
+)
+"downloader.ml" 120 3837 3871 "downloader.ml" 120 3837 3911
+type(
+  string
+)
+"downloader.ml" 120 3837 3843 "downloader.ml" 120 3837 3912
+type(
+  string
+)
+"downloader.ml" 121 3913 3920 "downloader.ml" 121 3913 3925
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"downloader.ml" 121 3913 3926 "downloader.ml" 121 3913 3938
+type(
+  string
+)
+ident(
+  int_ref filename_new "downloader.ml" 82 2455 2461 "downloader.ml" 82 2455 2473
+)
+"downloader.ml" 121 3913 3919 "downloader.ml" 121 3913 3939
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 121 3913 3941 "downloader.ml" 121 3913 3946
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"downloader.ml" 121 3913 3947 "downloader.ml" 121 3913 3950
+type(
+  string
+)
+ident(
+  int_ref uri "downloader.ml" 70 1947 1996 "downloader.ml" 70 1947 1999
+)
+"downloader.ml" 121 3913 3940 "downloader.ml" 121 3913 3951
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 117 3768 3782 "downloader.ml" 121 3913 3951
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 122 3955 3962 "downloader.ml" 122 3955 3969
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"downloader.ml" 122 3955 3970 "downloader.ml" 122 3955 3972
+type(
+  unit
+)
+"downloader.ml" 122 3955 3962 "downloader.ml" 122 3955 3972
+call(
+  stack
+)
+type(
+  bool
+)
+"downloader.ml" 122 3955 3978 "downloader.ml" 122 3955 3984
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"downloader.ml" 122 3955 3985 "downloader.ml" 122 3955 3993
+type(
+  (string -> unit, out_channel, unit) format
+)
+"downloader.ml" 122 3955 3994 "downloader.ml" 122 3955 3997
+type(
+  string
+)
+ident(
+  int_ref cmd "downloader.ml" 117 3768 3776 "downloader.ml" 117 3768 3779
+)
+"downloader.ml" 122 3955 3978 "downloader.ml" 122 3955 3997
+call(
+  stack
+)
+type(
+  unit
+)
+"downloader.ml" 122 3955 3959 "downloader.ml" 122 3955 3997
+type(
+  unit
+)
+"downloader.ml" 123 3999 4007 "downloader.ml" 123 3999 4008
+type(
+  int
+)
+"downloader.ml" 123 3999 4011 "downloader.ml" 123 3999 4022
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"downloader.ml" 123 3999 4023 "downloader.ml" 123 3999 4026
+type(
+  string
+)
+ident(
+  int_ref cmd "downloader.ml" 117 3768 3776 "downloader.ml" 117 3768 3779
+)
+"downloader.ml" 123 3999 4011 "downloader.ml" 123 3999 4026
+type(
+  int
+)
+"downloader.ml" 124 4030 4037 "downloader.ml" 124 4030 4038
+type(
+  int
+)
+ident(
+  int_ref r "downloader.ml" 123 3999 4007 "downloader.ml" 123 3999 4008
+)
+"downloader.ml" 124 4030 4039 "downloader.ml" 124 4030 4041
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"downloader.ml" 124 4030 4042 "downloader.ml" 124 4030 4043
+type(
+  int
+)
+"downloader.ml" 124 4030 4037 "downloader.ml" 124 4030 4043
+type(
+  bool
+)
+"downloader.ml" 125 4049 4055 "downloader.ml" 125 4049 4060
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"downloader.ml" 125 4049 4062 "downloader.ml" 125 4049 4064
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"downloader.ml" 125 4049 4064 "downloader.ml" 125 4049 4113
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"downloader.ml" 125 4049 4061 "downloader.ml" 125 4049 4114
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"downloader.ml" 125 4049 4115 "downloader.ml" 125 4049 4118
+type(
+  string
+)
+ident(
+  int_ref uri "downloader.ml" 70 1947 1996 "downloader.ml" 70 1947 1999
+)
+"downloader.ml" 125 4049 4055 "downloader.ml" 125 4049 4118
+call(
+  stack
+)
+type(
+  unit
+)
+"downloader.ml" 124 4030 4034 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 123 3999 4003 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 122 3955 3959 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 117 3768 3772 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 113 3616 3620 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 107 3446 3450 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 106 3407 3411 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 104 3274 3278 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 103 3234 3238 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 102 3190 3194 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 97 3027 3031 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 95 2916 2920 "downloader.ml" 125 4049 4119
+type(
+  unit
+)
+"downloader.ml" 85 2546 2548 "downloader.ml" 126 4120 4123
+type(
+  unit
+)
+"downloader.ml" 129 4182 4184 "downloader.ml" 129 4182 4190
+type(
+  string -> string -> unit
+)
+ident(
+  ext_ref Unix.rename
+)
+"downloader.ml" 129 4182 4191 "downloader.ml" 129 4182 4203
+type(
+  string
+)
+ident(
+  int_ref filename_new "downloader.ml" 82 2455 2461 "downloader.ml" 82 2455 2473
+)
+"downloader.ml" 129 4182 4204 "downloader.ml" 129 4182 4212
+type(
+  string
+)
+ident(
+  int_ref filename "downloader.ml" 70 1947 2000 "downloader.ml" 70 1947 2008
+)
+"downloader.ml" 129 4182 4184 "downloader.ml" 129 4182 4212
+call(
+  tail
+)
+type(
+  unit
+)
+"downloader.ml" 85 2546 2548 "downloader.ml" 129 4182 4212
+type(
+  unit
+)
+"downloader.ml" 83 2514 2516 "downloader.ml" 129 4182 4212
+type(
+  unit
+)
+"downloader.ml" 82 2455 2457 "downloader.ml" 129 4182 4212
+type(
+  unit
+)
+"downloader.ml" 71 2011 2013 "downloader.ml" 129 4182 4212
+type(
+  unit
+)
+"downloader.ml" 131 4214 4218 "downloader.ml" 131 4214 4230
+type(
+  string -> proxy_mode -> string
+)
+ident(
+  def proxy_envvar "downloader.ml" 45 1136 1136 --
+)
+"downloader.ml" 131 4214 4231 "downloader.ml" 131 4214 4239
+type(
+  string
+)
+ident(
+  def protocol "downloader.ml" 131 4214 4242 "downloader.ml" 149 4802 4807
+)
+"downloader.ml" 132 4251 4255 "downloader.ml" 132 4251 4265
+type(
+  proxy_mode
+)
+"downloader.ml" 133 4269 4280 "downloader.ml" 133 4269 4288
+type(
+  string
+)
+ident(
+  int_ref protocol "downloader.ml" 131 4214 4231 "downloader.ml" 131 4214 4239
+)
+"downloader.ml" 134 4294 4300 "downloader.ml" 134 4294 4306
+type(
+  string
+)
+"downloader.ml" 134 4294 4310 "downloader.ml" 134 4294 4339
+type(
+  string
+)
+"downloader.ml" 135 4340 4346 "downloader.ml" 135 4340 4353
+type(
+  string
+)
+"downloader.ml" 135 4340 4357 "downloader.ml" 135 4340 4387
+type(
+  string
+)
+"downloader.ml" 136 4388 4394 "downloader.ml" 136 4388 4399
+type(
+  string
+)
+"downloader.ml" 136 4388 4403 "downloader.ml" 136 4388 4431
+type(
+  string
+)
+"downloader.ml" 137 4432 4438 "downloader.ml" 137 4432 4439
+type(
+  string
+)
+"downloader.ml" 137 4432 4443 "downloader.ml" 137 4432 4460
+type(
+  string
+)
+"downloader.ml" 133 4269 4273 "downloader.ml" 138 4461 4466
+type(
+  string
+)
+"downloader.ml" 139 4467 4471 "downloader.ml" 139 4467 4482
+type(
+  proxy_mode
+)
+"downloader.ml" 141 4517 4521 "downloader.ml" 141 4517 4523
+type(
+  string
+)
+"downloader.ml" 142 4524 4540 "downloader.ml" 142 4524 4545
+type(
+  string
+)
+ident(
+  def proxy "downloader.ml" 143 4549 4553 "downloader.ml" 149 4802 4807
+)
+"downloader.ml" 142 4524 4528 "downloader.ml" 142 4524 4545
+type(
+  proxy_mode
+)
+"downloader.ml" 143 4549 4557 "downloader.ml" 143 4549 4562
+type(
+  string
+)
+"downloader.ml" 143 4549 4565 "downloader.ml" 143 4549 4570
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"downloader.ml" 143 4549 4571 "downloader.ml" 143 4549 4576
+type(
+  string
+)
+ident(
+  int_ref proxy "downloader.ml" 142 4524 4540 "downloader.ml" 142 4524 4545
+)
+"downloader.ml" 143 4549 4565 "downloader.ml" 143 4549 4576
+call(
+  stack
+)
+type(
+  string
+)
+"downloader.ml" 144 4580 4591 "downloader.ml" 144 4580 4599
+type(
+  string
+)
+ident(
+  int_ref protocol "downloader.ml" 131 4214 4231 "downloader.ml" 131 4214 4239
+)
+"downloader.ml" 145 4605 4611 "downloader.ml" 145 4605 4617
+type(
+  string
+)
+"downloader.ml" 145 4605 4621 "downloader.ml" 145 4605 4628
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"downloader.ml" 145 4605 4629 "downloader.ml" 145 4605 4659
+type(
+  (string -> string, unit, string) format
+)
+"downloader.ml" 145 4605 4660 "downloader.ml" 145 4605 4665
+type(
+  string
+)
+ident(
+  int_ref proxy "downloader.ml" 143 4549 4557 "downloader.ml" 143 4549 4562
+)
+"downloader.ml" 145 4605 4621 "downloader.ml" 145 4605 4665
+call(
+  tail
+)
+type(
+  string
+)
+"downloader.ml" 146 4666 4672 "downloader.ml" 146 4666 4679
+type(
+  string
+)
+"downloader.ml" 146 4666 4683 "downloader.ml" 146 4666 4690
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"downloader.ml" 146 4666 4691 "downloader.ml" 146 4666 4722
+type(
+  (string -> string, unit, string) format
+)
+"downloader.ml" 146 4666 4723 "downloader.ml" 146 4666 4728
+type(
+  string
+)
+ident(
+  int_ref proxy "downloader.ml" 143 4549 4557 "downloader.ml" 143 4549 4562
+)
+"downloader.ml" 146 4666 4683 "downloader.ml" 146 4666 4728
+call(
+  tail
+)
+type(
+  string
+)
+"downloader.ml" 147 4729 4735 "downloader.ml" 147 4729 4740
+type(
+  string
+)
+"downloader.ml" 147 4729 4744 "downloader.ml" 147 4729 4751
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"downloader.ml" 147 4729 4752 "downloader.ml" 147 4729 4781
+type(
+  (string -> string, unit, string) format
+)
+"downloader.ml" 147 4729 4782 "downloader.ml" 147 4729 4787
+type(
+  string
+)
+ident(
+  int_ref proxy "downloader.ml" 143 4549 4557 "downloader.ml" 143 4549 4562
+)
+"downloader.ml" 147 4729 4744 "downloader.ml" 147 4729 4787
+call(
+  tail
+)
+type(
+  string
+)
+"downloader.ml" 148 4788 4794 "downloader.ml" 148 4788 4795
+type(
+  string
+)
+"downloader.ml" 148 4788 4799 "downloader.ml" 148 4788 4801
+type(
+  string
+)
+"downloader.ml" 144 4580 4584 "downloader.ml" 149 4802 4807
+type(
+  string
+)
+"downloader.ml" 143 4549 4553 "downloader.ml" 149 4802 4807
+type(
+  string
+)
+"downloader.ml" 131 4214 4242 "downloader.ml" 149 4802 4807
+type(
+  proxy_mode -> string
+)

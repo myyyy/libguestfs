@@ -37,9 +37,21 @@ virt_df-domains.o: domains.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/libintl.h ../gnulib/lib/locale.h /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h \
- /usr/include/libvirt/libvirt.h /usr/include/libvirt/virterror.h \
- ../src/guestfs.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h \
- /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/local/include/libvirt/libvirt.h \
+ /usr/local/include/libvirt/libvirt-host.h \
+ /usr/local/include/libvirt/libvirt-domain.h \
+ /usr/local/include/libvirt/libvirt-domain-snapshot.h \
+ /usr/local/include/libvirt/libvirt-event.h \
+ /usr/local/include/libvirt/libvirt-interface.h \
+ /usr/local/include/libvirt/libvirt-network.h \
+ /usr/local/include/libvirt/libvirt-nodedev.h \
+ /usr/local/include/libvirt/libvirt-nwfilter.h \
+ /usr/local/include/libvirt/libvirt-secret.h \
+ /usr/local/include/libvirt/libvirt-storage.h \
+ /usr/local/include/libvirt/libvirt-stream.h \
+ /usr/local/include/libvirt/virterror.h ../src/guestfs.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
  ../src/guestfs-internal-frontend-cleanups.h domains.h
 
@@ -161,9 +173,31 @@ virt_df-domains.o: domains.c ../config.h ../gnulib/lib/stdio.h \
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
-/usr/include/libvirt/libvirt.h:
+/usr/local/include/libvirt/libvirt.h:
 
-/usr/include/libvirt/virterror.h:
+/usr/local/include/libvirt/libvirt-host.h:
+
+/usr/local/include/libvirt/libvirt-domain.h:
+
+/usr/local/include/libvirt/libvirt-domain-snapshot.h:
+
+/usr/local/include/libvirt/libvirt-event.h:
+
+/usr/local/include/libvirt/libvirt-interface.h:
+
+/usr/local/include/libvirt/libvirt-network.h:
+
+/usr/local/include/libvirt/libvirt-nodedev.h:
+
+/usr/local/include/libvirt/libvirt-nwfilter.h:
+
+/usr/local/include/libvirt/libvirt-secret.h:
+
+/usr/local/include/libvirt/libvirt-storage.h:
+
+/usr/local/include/libvirt/libvirt-stream.h:
+
+/usr/local/include/libvirt/virterror.h:
 
 ../src/guestfs.h:
 

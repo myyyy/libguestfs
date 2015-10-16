@@ -1,0 +1,814 @@
+"languages.ml" 21 800 804 "languages.ml" 21 800 816
+type(
+  string -> string list
+)
+ident(
+  def split_locale "languages.ml" 39 1342 1342 --
+)
+"languages.ml" 21 800 817 "languages.ml" 21 800 820
+type(
+  string
+)
+ident(
+  def loc "languages.ml" 22 823 825 "languages.ml" 37 1327 1340
+)
+"languages.ml" 22 823 829 "languages.ml" 22 823 834
+type(
+  Str.regexp
+)
+"languages.ml" 22 823 837 "languages.ml" 22 823 847
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"languages.ml" 22 823 848 "languages.ml" 22 823 942
+type(
+  string
+)
+"languages.ml" 22 823 837 "languages.ml" 22 823 942
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"languages.ml" 23 946 952 "languages.ml" 23 946 953
+type(
+  string list ref
+)
+"languages.ml" 23 946 956 "languages.ml" 23 946 959
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"languages.ml" 23 946 960 "languages.ml" 23 946 962
+type(
+  string list
+)
+"languages.ml" 23 946 956 "languages.ml" 23 946 962
+type(
+  string list ref
+)
+"languages.ml" 24 966 971 "languages.ml" 24 966 987
+type(
+  Str.regexp -> string -> int -> bool
+)
+ident(
+  ext_ref Str.string_match
+)
+"languages.ml" 24 966 988 "languages.ml" 24 966 993
+type(
+  Str.regexp
+)
+ident(
+  int_ref regex "languages.ml" 22 823 829 "languages.ml" 22 823 834
+)
+"languages.ml" 24 966 994 "languages.ml" 24 966 997
+type(
+  string
+)
+ident(
+  int_ref loc "languages.ml" 21 800 817 "languages.ml" 21 800 820
+)
+"languages.ml" 24 966 998 "languages.ml" 24 966 999
+type(
+  int
+)
+"languages.ml" 24 966 971 "languages.ml" 24 966 999
+call(
+  stack
+)
+type(
+  bool
+)
+"languages.ml" 25 1007 1015 "languages.ml" 25 1007 1029
+type(
+  int -> string
+)
+"languages.ml" 25 1007 1030 "languages.ml" 25 1007 1031
+type(
+  int
+)
+ident(
+  def n "languages.ml" 26 1034 1040 "languages.ml" 27 1073 1096
+)
+"languages.ml" 26 1034 1044 "languages.ml" 26 1034 1061
+type(
+  int -> string -> string
+)
+ident(
+  ext_ref Str.matched_group
+)
+"languages.ml" 26 1034 1062 "languages.ml" 26 1034 1063
+type(
+  int
+)
+ident(
+  int_ref n "languages.ml" 25 1007 1030 "languages.ml" 25 1007 1031
+)
+"languages.ml" 26 1034 1064 "languages.ml" 26 1034 1067
+type(
+  string
+)
+ident(
+  int_ref loc "languages.ml" 21 800 817 "languages.ml" 21 800 820
+)
+"languages.ml" 26 1034 1044 "languages.ml" 26 1034 1067
+call(
+  stack
+)
+type(
+  string
+)
+"languages.ml" 27 1073 1081 "languages.ml" 27 1073 1090
+type(
+  exn
+)
+"languages.ml" 27 1073 1094 "languages.ml" 27 1073 1096
+type(
+  string
+)
+"languages.ml" 26 1034 1040 "languages.ml" 27 1073 1096
+type(
+  string
+)
+"languages.ml" 29 1104 1112 "languages.ml" 29 1104 1116
+type(
+  string
+)
+"languages.ml" 29 1104 1119 "languages.ml" 29 1104 1136
+type(
+  int -> string -> string
+)
+ident(
+  ext_ref Str.matched_group
+)
+"languages.ml" 29 1104 1137 "languages.ml" 29 1104 1138
+type(
+  int
+)
+"languages.ml" 29 1104 1139 "languages.ml" 29 1104 1142
+type(
+  string
+)
+ident(
+  int_ref loc "languages.ml" 21 800 817 "languages.ml" 21 800 820
+)
+"languages.ml" 29 1104 1119 "languages.ml" 29 1104 1142
+call(
+  stack
+)
+type(
+  string
+)
+"languages.ml" 30 1146 1154 "languages.ml" 30 1146 1163
+type(
+  string
+)
+"languages.ml" 30 1146 1166 "languages.ml" 30 1146 1180
+type(
+  int -> string
+)
+ident(
+  int_ref match_or_empty "languages.ml" 25 1007 1015 "languages.ml" 25 1007 1029
+)
+"languages.ml" 30 1146 1181 "languages.ml" 30 1146 1182
+type(
+  int
+)
+"languages.ml" 30 1146 1166 "languages.ml" 30 1146 1182
+call(
+  stack
+)
+type(
+  string
+)
+"languages.ml" 31 1186 1197 "languages.ml" 31 1186 1206
+type(
+  string
+)
+ident(
+  int_ref territory "languages.ml" 30 1146 1154 "languages.ml" 30 1146 1163
+)
+"languages.ml" 32 1212 1218 "languages.ml" 32 1212 1220
+type(
+  string
+)
+"languages.ml" 32 1212 1224 "languages.ml" 32 1212 1226
+type(
+  unit
+)
+"languages.ml" 33 1227 1233 "languages.ml" 33 1227 1242
+type(
+  string
+)
+ident(
+  def territory "languages.ml" 33 1227 1246 "languages.ml" 33 1227 1281
+)
+"languages.ml" 33 1227 1246 "languages.ml" 33 1227 1247
+type(
+  string list ref
+)
+ident(
+  int_ref l "languages.ml" 23 946 952 "languages.ml" 23 946 953
+)
+"languages.ml" 33 1227 1248 "languages.ml" 33 1227 1250
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"languages.ml" 33 1227 1252 "languages.ml" 33 1227 1256
+type(
+  string
+)
+ident(
+  int_ref lang "languages.ml" 29 1104 1112 "languages.ml" 29 1104 1116
+)
+"languages.ml" 33 1227 1257 "languages.ml" 33 1227 1258
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"languages.ml" 33 1227 1259 "languages.ml" 33 1227 1262
+type(
+  string
+)
+"languages.ml" 33 1227 1263 "languages.ml" 33 1227 1264
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"languages.ml" 33 1227 1265 "languages.ml" 33 1227 1274
+type(
+  string
+)
+ident(
+  int_ref territory "languages.ml" 33 1227 1233 "languages.ml" 33 1227 1242
+)
+"languages.ml" 33 1227 1259 "languages.ml" 33 1227 1274
+call(
+  stack
+)
+type(
+  string
+)
+"languages.ml" 33 1227 1251 "languages.ml" 33 1227 1275
+call(
+  stack
+)
+type(
+  string
+)
+"languages.ml" 33 1227 1279 "languages.ml" 33 1227 1280
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"languages.ml" 33 1227 1280 "languages.ml" 33 1227 1281
+type(
+  string list ref
+)
+ident(
+  int_ref l "languages.ml" 23 946 952 "languages.ml" 23 946 953
+)
+"languages.ml" 33 1227 1279 "languages.ml" 33 1227 1281
+type(
+  string list
+)
+"languages.ml" 33 1227 1251 "languages.ml" 33 1227 1281
+type(
+  string list
+)
+"languages.ml" 33 1227 1246 "languages.ml" 33 1227 1281
+type(
+  unit
+)
+"languages.ml" 31 1186 1190 "languages.ml" 33 1227 1282
+type(
+  unit
+)
+"languages.ml" 34 1284 1288 "languages.ml" 34 1284 1289
+type(
+  string list ref
+)
+ident(
+  int_ref l "languages.ml" 23 946 952 "languages.ml" 23 946 953
+)
+"languages.ml" 34 1284 1290 "languages.ml" 34 1284 1292
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"languages.ml" 34 1284 1293 "languages.ml" 34 1284 1297
+type(
+  string
+)
+ident(
+  int_ref lang "languages.ml" 29 1104 1112 "languages.ml" 29 1104 1116
+)
+"languages.ml" 34 1284 1301 "languages.ml" 34 1284 1302
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"languages.ml" 34 1284 1302 "languages.ml" 34 1284 1303
+type(
+  string list ref
+)
+ident(
+  int_ref l "languages.ml" 23 946 952 "languages.ml" 23 946 953
+)
+"languages.ml" 34 1284 1301 "languages.ml" 34 1284 1303
+type(
+  string list
+)
+"languages.ml" 34 1284 1293 "languages.ml" 34 1284 1303
+type(
+  string list
+)
+"languages.ml" 34 1284 1288 "languages.ml" 34 1284 1304
+type(
+  unit
+)
+"languages.ml" 31 1186 1190 "languages.ml" 34 1284 1304
+type(
+  unit
+)
+"languages.ml" 30 1146 1150 "languages.ml" 34 1284 1304
+type(
+  unit
+)
+"languages.ml" 29 1104 1108 "languages.ml" 34 1284 1304
+type(
+  unit
+)
+"languages.ml" 24 966 1005 "languages.ml" 35 1305 1308
+type(
+  unit
+)
+"languages.ml" 24 966 968 "languages.ml" 35 1305 1308
+type(
+  unit
+)
+"languages.ml" 36 1310 1312 "languages.ml" 36 1310 1313
+type(
+  string list ref
+)
+ident(
+  int_ref l "languages.ml" 23 946 952 "languages.ml" 23 946 953
+)
+"languages.ml" 36 1310 1314 "languages.ml" 36 1310 1316
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"languages.ml" 36 1310 1317 "languages.ml" 36 1310 1319
+type(
+  string
+)
+"languages.ml" 36 1310 1323 "languages.ml" 36 1310 1324
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"languages.ml" 36 1310 1324 "languages.ml" 36 1310 1325
+type(
+  string list ref
+)
+ident(
+  int_ref l "languages.ml" 23 946 952 "languages.ml" 23 946 953
+)
+"languages.ml" 36 1310 1323 "languages.ml" 36 1310 1325
+type(
+  string list
+)
+"languages.ml" 36 1310 1317 "languages.ml" 36 1310 1325
+type(
+  string list
+)
+"languages.ml" 36 1310 1312 "languages.ml" 36 1310 1325
+type(
+  unit
+)
+"languages.ml" 37 1327 1329 "languages.ml" 37 1327 1337
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"languages.ml" 37 1327 1338 "languages.ml" 37 1327 1339
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"languages.ml" 37 1327 1339 "languages.ml" 37 1327 1340
+type(
+  string list ref
+)
+ident(
+  int_ref l "languages.ml" 23 946 952 "languages.ml" 23 946 953
+)
+"languages.ml" 37 1327 1338 "languages.ml" 37 1327 1340
+type(
+  string list
+)
+"languages.ml" 37 1327 1329 "languages.ml" 37 1327 1340
+call(
+  tail
+)
+type(
+  string list
+)
+"languages.ml" 36 1310 1312 "languages.ml" 37 1327 1340
+type(
+  string list
+)
+"languages.ml" 24 966 968 "languages.ml" 37 1327 1340
+type(
+  string list
+)
+"languages.ml" 23 946 948 "languages.ml" 37 1327 1340
+type(
+  string list
+)
+"languages.ml" 22 823 825 "languages.ml" 37 1327 1340
+type(
+  string list
+)
+"languages.ml" 39 1342 1346 "languages.ml" 39 1342 1355
+type(
+  unit -> string list
+)
+ident(
+  def languages "languages.ml" 44 1478 1478 --
+)
+"languages.ml" 39 1342 1356 "languages.ml" 39 1342 1358
+type(
+  unit
+)
+"languages.ml" 40 1361 1369 "languages.ml" 40 1361 1388
+type(
+  Setlocale.localecategory -> string option -> string option
+)
+ident(
+  ext_ref Setlocale.setlocale
+)
+"languages.ml" 40 1361 1389 "languages.ml" 40 1361 1410
+type(
+  Setlocale.localecategory
+)
+"languages.ml" 40 1361 1411 "languages.ml" 40 1361 1415
+type(
+  string option
+)
+"languages.ml" 40 1361 1369 "languages.ml" 40 1361 1415
+call(
+  stack
+)
+type(
+  string option
+)
+"languages.ml" 41 1421 1425 "languages.ml" 41 1421 1429
+type(
+  string option
+)
+"languages.ml" 41 1421 1434 "languages.ml" 41 1421 1436
+type(
+  string
+)
+"languages.ml" 41 1421 1433 "languages.ml" 41 1421 1437
+type(
+  string list
+)
+"languages.ml" 42 1438 1447 "languages.ml" 42 1438 1453
+type(
+  string
+)
+ident(
+  def locale "languages.ml" 42 1438 1457 "languages.ml" 42 1438 1476
+)
+"languages.ml" 42 1438 1442 "languages.ml" 42 1438 1453
+type(
+  string option
+)
+"languages.ml" 42 1438 1457 "languages.ml" 42 1438 1469
+type(
+  string -> string list
+)
+ident(
+  int_ref split_locale "languages.ml" 21 800 804 "languages.ml" 21 800 816
+)
+"languages.ml" 42 1438 1470 "languages.ml" 42 1438 1476
+type(
+  string
+)
+ident(
+  int_ref locale "languages.ml" 42 1438 1447 "languages.ml" 42 1438 1453
+)
+"languages.ml" 42 1438 1457 "languages.ml" 42 1438 1476
+call(
+  tail
+)
+type(
+  string list
+)
+"languages.ml" 40 1361 1363 "languages.ml" 42 1438 1476
+type(
+  string list
+)
+"languages.ml" 44 1478 1482 "languages.ml" 44 1478 1492
+type(
+  string list -> (string * 'a) list -> 'a list
+)
+ident(
+  def find_notes "languages.ml" 57 1838 1854 --
+)
+"languages.ml" 44 1478 1493 "languages.ml" 44 1478 1502
+type(
+  string list
+)
+ident(
+  def languages "languages.ml" 44 1478 1503 "languages.ml" 57 1838 1854
+)
+"languages.ml" 44 1478 1503 "languages.ml" 44 1478 1508
+type(
+  (string * 'a) list
+)
+ident(
+  def notes "languages.ml" 45 1511 1513 "languages.ml" 57 1838 1854
+)
+"languages.ml" 45 1511 1517 "languages.ml" 45 1511 1522
+type(
+  'a list
+)
+"languages.ml" 45 1511 1525 "languages.ml" 45 1511 1539
+type(
+  ('a list -> string -> 'a list) -> 'a list -> string list -> 'a list
+)
+ident(
+  ext_ref List.fold_left
+)
+"languages.ml" 46 1542 1550 "languages.ml" 46 1542 1553
+type(
+  'a list
+)
+ident(
+  def acc "languages.ml" 46 1542 1554 "languages.ml" 55 1800 1817
+)
+"languages.ml" 46 1542 1554 "languages.ml" 46 1542 1558
+type(
+  string
+)
+ident(
+  def lang "languages.ml" 47 1562 1568 "languages.ml" 55 1800 1817
+)
+"languages.ml" 47 1562 1572 "languages.ml" 47 1562 1575
+type(
+  (string * 'a) list
+)
+"languages.ml" 47 1562 1578 "languages.ml" 47 1562 1589
+type(
+  (string * 'a -> bool) -> (string * 'a) list -> (string * 'a) list
+)
+ident(
+  ext_ref List.filter
+)
+"languages.ml" 48 1592 1605 "languages.ml" 48 1592 1612
+type(
+  string
+)
+ident(
+  def langkey "languages.ml" 49 1620 1630 "languages.ml" 51 1678 1715
+)
+"languages.ml" 48 1592 1614 "languages.ml" 48 1592 1615
+type(
+  'a
+)
+"languages.ml" 48 1592 1604 "languages.ml" 48 1592 1616
+type(
+  string * 'a
+)
+"languages.ml" 49 1620 1636 "languages.ml" 49 1620 1643
+type(
+  string
+)
+ident(
+  int_ref langkey "languages.ml" 48 1592 1605 "languages.ml" 48 1592 1612
+)
+"languages.ml" 50 1649 1661 "languages.ml" 50 1649 1664
+type(
+  string
+)
+"languages.ml" 50 1649 1668 "languages.ml" 50 1649 1672
+type(
+  string
+)
+ident(
+  int_ref lang "languages.ml" 46 1542 1554 "languages.ml" 46 1542 1558
+)
+"languages.ml" 50 1649 1673 "languages.ml" 50 1649 1674
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"languages.ml" 50 1649 1675 "languages.ml" 50 1649 1677
+type(
+  string
+)
+"languages.ml" 50 1649 1668 "languages.ml" 50 1649 1677
+type(
+  bool
+)
+"languages.ml" 51 1678 1690 "languages.ml" 51 1678 1697
+type(
+  string
+)
+ident(
+  def langkey "languages.ml" 51 1678 1701 "languages.ml" 51 1678 1715
+)
+"languages.ml" 51 1678 1701 "languages.ml" 51 1678 1708
+type(
+  string
+)
+ident(
+  int_ref langkey "languages.ml" 51 1678 1690 "languages.ml" 51 1678 1697
+)
+"languages.ml" 51 1678 1709 "languages.ml" 51 1678 1710
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"languages.ml" 51 1678 1711 "languages.ml" 51 1678 1715
+type(
+  string
+)
+ident(
+  int_ref lang "languages.ml" 46 1542 1554 "languages.ml" 46 1542 1558
+)
+"languages.ml" 51 1678 1701 "languages.ml" 51 1678 1715
+type(
+  bool
+)
+"languages.ml" 49 1620 1630 "languages.ml" 51 1678 1715
+type(
+  bool
+)
+"languages.ml" 47 1562 1590 "languages.ml" 52 1716 1723
+type(
+  string * 'a -> bool
+)
+"languages.ml" 52 1716 1724 "languages.ml" 52 1716 1729
+type(
+  (string * 'a) list
+)
+ident(
+  int_ref notes "languages.ml" 44 1478 1503 "languages.ml" 44 1478 1508
+)
+"languages.ml" 47 1562 1578 "languages.ml" 52 1716 1729
+call(
+  stack
+)
+type(
+  (string * 'a) list
+)
+"languages.ml" 53 1733 1745 "languages.ml" 53 1733 1748
+type(
+  (string * 'a) list
+)
+ident(
+  int_ref res "languages.ml" 47 1562 1572 "languages.ml" 47 1562 1575
+)
+"languages.ml" 54 1754 1763 "languages.ml" 54 1754 1764
+type(
+  string
+)
+"languages.ml" 54 1754 1766 "languages.ml" 54 1754 1774
+type(
+  'a
+)
+ident(
+  def noteskey "languages.ml" 54 1754 1784 "languages.ml" 54 1754 1799
+)
+"languages.ml" 54 1754 1762 "languages.ml" 54 1754 1775
+type(
+  string * 'a
+)
+"languages.ml" 54 1754 1779 "languages.ml" 54 1754 1780
+type(
+  (string * 'a) list
+)
+"languages.ml" 54 1754 1762 "languages.ml" 54 1754 1780
+type(
+  (string * 'a) list
+)
+"languages.ml" 54 1754 1784 "languages.ml" 54 1754 1792
+type(
+  'a
+)
+ident(
+  int_ref noteskey "languages.ml" 54 1754 1766 "languages.ml" 54 1754 1774
+)
+"languages.ml" 54 1754 1796 "languages.ml" 54 1754 1799
+type(
+  'a list
+)
+ident(
+  int_ref acc "languages.ml" 46 1542 1550 "languages.ml" 46 1542 1553
+)
+"languages.ml" 54 1754 1784 "languages.ml" 54 1754 1799
+type(
+  'a list
+)
+"languages.ml" 55 1800 1808 "languages.ml" 55 1800 1810
+type(
+  (string * 'a) list
+)
+"languages.ml" 55 1800 1814 "languages.ml" 55 1800 1817
+type(
+  'a list
+)
+ident(
+  int_ref acc "languages.ml" 46 1542 1550 "languages.ml" 46 1542 1553
+)
+"languages.ml" 53 1733 1739 "languages.ml" 55 1800 1817
+type(
+  'a list
+)
+"languages.ml" 47 1562 1568 "languages.ml" 55 1800 1817
+type(
+  'a list
+)
+"languages.ml" 45 1511 1540 "languages.ml" 56 1818 1821
+type(
+  'a list -> string -> 'a list
+)
+"languages.ml" 56 1818 1822 "languages.ml" 56 1818 1824
+type(
+  'a list
+)
+"languages.ml" 56 1818 1825 "languages.ml" 56 1818 1834
+type(
+  string list
+)
+ident(
+  int_ref languages "languages.ml" 44 1478 1493 "languages.ml" 44 1478 1502
+)
+"languages.ml" 45 1511 1525 "languages.ml" 56 1818 1834
+call(
+  stack
+)
+type(
+  'a list
+)
+"languages.ml" 57 1838 1840 "languages.ml" 57 1838 1848
+type(
+  'a list -> 'a list
+)
+ident(
+  ext_ref List.rev
+)
+"languages.ml" 57 1838 1849 "languages.ml" 57 1838 1854
+type(
+  'a list
+)
+ident(
+  int_ref notes "languages.ml" 45 1511 1517 "languages.ml" 45 1511 1522
+)
+"languages.ml" 57 1838 1840 "languages.ml" 57 1838 1854
+call(
+  tail
+)
+type(
+  'a list
+)
+"languages.ml" 45 1511 1513 "languages.ml" 57 1838 1854
+type(
+  'a list
+)

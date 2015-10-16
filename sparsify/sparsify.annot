@@ -1,0 +1,317 @@
+"sparsify.ml" 30 897 901 "sparsify.ml" 30 897 903
+type(
+  unit
+)
+"sparsify.ml" 30 897 906 "sparsify.ml" 30 897 922
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Random.self_init
+)
+"sparsify.ml" 30 897 923 "sparsify.ml" 30 897 925
+type(
+  unit
+)
+"sparsify.ml" 30 897 906 "sparsify.ml" 30 897 925
+call(
+  stack
+)
+type(
+  unit
+)
+"sparsify.ml" 32 927 935 "sparsify.ml" 32 927 939
+type(
+  unit -> unit
+)
+ident(
+  def main "sparsify.ml" 32 927 927 --
+)
+"sparsify.ml" 32 927 940 "sparsify.ml" 32 927 942
+type(
+  unit
+)
+"sparsify.ml" 33 945 951 "sparsify.ml" 33 945 957
+type(
+  string
+)
+"sparsify.ml" 33 945 959 "sparsify.ml" 33 945 965
+type(
+  string option
+)
+"sparsify.ml" 33 945 967 "sparsify.ml" 33 945 974
+type(
+  string list
+)
+"sparsify.ml" 33 945 976 "sparsify.ml" 33 945 992
+type(
+  bool
+)
+"sparsify.ml" 33 945 994 "sparsify.ml" 33 945 1000
+type(
+  string list
+)
+"sparsify.ml" 33 945 1002 "sparsify.ml" 33 945 1006
+type(
+  Cmdline.mode_t
+)
+"sparsify.ml" 33 945 951 "sparsify.ml" 33 945 1006
+type(
+  string * string option * string list * bool * string list * Cmdline.mode_t
+)
+"sparsify.ml" 34 1009 1013 "sparsify.ml" 34 1009 1026
+type(
+  unit ->
+  string * string option * string list * bool * string list * Cmdline.mode_t
+)
+ident(
+  ext_ref Cmdline.parse_cmdline
+)
+"sparsify.ml" 34 1009 1027 "sparsify.ml" 34 1009 1029
+type(
+  unit
+)
+"sparsify.ml" 34 1009 1013 "sparsify.ml" 34 1009 1029
+call(
+  stack
+)
+type(
+  string * string option * string list * bool * string list * Cmdline.mode_t
+)
+"sparsify.ml" 36 1034 1043 "sparsify.ml" 36 1034 1047
+type(
+  Cmdline.mode_t
+)
+ident(
+  int_ref mode "sparsify.ml" 33 945 1002 "sparsify.ml" 33 945 1006
+)
+"sparsify.ml" 37 1053 1071 "sparsify.ml" 37 1053 1078
+type(
+  string
+)
+ident(
+  def outdisk "sparsify.ml" 38 1129 1133 "sparsify.ml" 39 1190 1245
+)
+"sparsify.ml" 37 1053 1080 "sparsify.ml" 37 1053 1092
+type(
+  Cmdline.check_t
+)
+ident(
+  def check_tmpdir "sparsify.ml" 38 1129 1133 "sparsify.ml" 39 1190 1245
+)
+"sparsify.ml" 37 1053 1094 "sparsify.ml" 37 1053 1102
+type(
+  bool
+)
+ident(
+  def compress "sparsify.ml" 38 1129 1133 "sparsify.ml" 39 1190 1245
+)
+"sparsify.ml" 37 1053 1104 "sparsify.ml" 37 1053 1111
+type(
+  string option
+)
+ident(
+  def convert "sparsify.ml" 38 1129 1133 "sparsify.ml" 39 1190 1245
+)
+"sparsify.ml" 37 1053 1113 "sparsify.ml" 37 1053 1119
+type(
+  string option
+)
+ident(
+  def option "sparsify.ml" 38 1129 1133 "sparsify.ml" 39 1190 1245
+)
+"sparsify.ml" 37 1053 1121 "sparsify.ml" 37 1053 1124
+type(
+  string option
+)
+ident(
+  def tmp "sparsify.ml" 38 1129 1133 "sparsify.ml" 39 1190 1245
+)
+"sparsify.ml" 37 1053 1057 "sparsify.ml" 37 1053 1125
+type(
+  Cmdline.mode_t
+)
+"sparsify.ml" 38 1129 1133 "sparsify.ml" 38 1129 1144
+type(
+  string ->
+  string ->
+  Cmdline.check_t ->
+  bool ->
+  string option ->
+  string option ->
+  string list ->
+  bool -> string option -> string option -> string list -> unit
+)
+ident(
+  ext_ref Copying.run
+)
+"sparsify.ml" 38 1129 1145 "sparsify.ml" 38 1129 1151
+type(
+  string
+)
+ident(
+  int_ref indisk "sparsify.ml" 33 945 951 "sparsify.ml" 33 945 957
+)
+"sparsify.ml" 38 1129 1152 "sparsify.ml" 38 1129 1159
+type(
+  string
+)
+ident(
+  int_ref outdisk "sparsify.ml" 37 1053 1071 "sparsify.ml" 37 1053 1078
+)
+"sparsify.ml" 38 1129 1160 "sparsify.ml" 38 1129 1172
+type(
+  Cmdline.check_t
+)
+ident(
+  int_ref check_tmpdir "sparsify.ml" 37 1053 1080 "sparsify.ml" 37 1053 1092
+)
+"sparsify.ml" 38 1129 1173 "sparsify.ml" 38 1129 1181
+type(
+  bool
+)
+ident(
+  int_ref compress "sparsify.ml" 37 1053 1094 "sparsify.ml" 37 1053 1102
+)
+"sparsify.ml" 38 1129 1182 "sparsify.ml" 38 1129 1189
+type(
+  string option
+)
+ident(
+  int_ref convert "sparsify.ml" 37 1053 1104 "sparsify.ml" 37 1053 1111
+)
+"sparsify.ml" 39 1190 1196 "sparsify.ml" 39 1190 1202
+type(
+  string option
+)
+ident(
+  int_ref format "sparsify.ml" 33 945 959 "sparsify.ml" 33 945 965
+)
+"sparsify.ml" 39 1190 1203 "sparsify.ml" 39 1190 1210
+type(
+  string list
+)
+ident(
+  int_ref ignores "sparsify.ml" 33 945 967 "sparsify.ml" 33 945 974
+)
+"sparsify.ml" 39 1190 1211 "sparsify.ml" 39 1190 1227
+type(
+  bool
+)
+ident(
+  int_ref machine_readable "sparsify.ml" 33 945 976 "sparsify.ml" 33 945 992
+)
+"sparsify.ml" 39 1190 1228 "sparsify.ml" 39 1190 1234
+type(
+  string option
+)
+ident(
+  int_ref option "sparsify.ml" 37 1053 1113 "sparsify.ml" 37 1053 1119
+)
+"sparsify.ml" 39 1190 1235 "sparsify.ml" 39 1190 1238
+type(
+  string option
+)
+ident(
+  int_ref tmp "sparsify.ml" 37 1053 1121 "sparsify.ml" 37 1053 1124
+)
+"sparsify.ml" 39 1190 1239 "sparsify.ml" 39 1190 1245
+type(
+  string list
+)
+ident(
+  int_ref zeroes "sparsify.ml" 33 945 994 "sparsify.ml" 33 945 1000
+)
+"sparsify.ml" 38 1129 1133 "sparsify.ml" 39 1190 1245
+call(
+  stack
+)
+type(
+  unit
+)
+"sparsify.ml" 40 1246 1250 "sparsify.ml" 40 1246 1263
+type(
+  Cmdline.mode_t
+)
+"sparsify.ml" 41 1267 1271 "sparsify.ml" 41 1267 1283
+type(
+  string -> string option -> string list -> bool -> string list -> unit
+)
+ident(
+  ext_ref In_place.run
+)
+"sparsify.ml" 41 1267 1284 "sparsify.ml" 41 1267 1290
+type(
+  string
+)
+ident(
+  int_ref indisk "sparsify.ml" 33 945 951 "sparsify.ml" 33 945 957
+)
+"sparsify.ml" 41 1267 1291 "sparsify.ml" 41 1267 1297
+type(
+  string option
+)
+ident(
+  int_ref format "sparsify.ml" 33 945 959 "sparsify.ml" 33 945 965
+)
+"sparsify.ml" 41 1267 1298 "sparsify.ml" 41 1267 1305
+type(
+  string list
+)
+ident(
+  int_ref ignores "sparsify.ml" 33 945 967 "sparsify.ml" 33 945 974
+)
+"sparsify.ml" 41 1267 1306 "sparsify.ml" 41 1267 1322
+type(
+  bool
+)
+ident(
+  int_ref machine_readable "sparsify.ml" 33 945 976 "sparsify.ml" 33 945 992
+)
+"sparsify.ml" 41 1267 1323 "sparsify.ml" 41 1267 1329
+type(
+  string list
+)
+ident(
+  int_ref zeroes "sparsify.ml" 33 945 994 "sparsify.ml" 33 945 1000
+)
+"sparsify.ml" 41 1267 1271 "sparsify.ml" 41 1267 1329
+call(
+  tail
+)
+type(
+  unit
+)
+"sparsify.ml" 36 1034 1036 "sparsify.ml" 42 1330 1333
+type(
+  unit
+)
+"sparsify.ml" 33 945 947 "sparsify.ml" 42 1330 1333
+type(
+  unit
+)
+"sparsify.ml" 44 1335 1339 "sparsify.ml" 44 1335 1341
+type(
+  unit
+)
+"sparsify.ml" 44 1335 1344 "sparsify.ml" 44 1335 1370
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  ext_ref Common_utils.run_main_and_handle_errors
+)
+"sparsify.ml" 44 1335 1371 "sparsify.ml" 44 1335 1375
+type(
+  unit -> unit
+)
+ident(
+  int_ref main "sparsify.ml" 32 927 935 "sparsify.ml" 32 927 939
+)
+"sparsify.ml" 44 1335 1344 "sparsify.ml" 44 1335 1375
+call(
+  stack
+)
+type(
+  unit
+)

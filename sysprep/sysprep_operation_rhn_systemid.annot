@@ -1,0 +1,297 @@
+"sysprep_operation_rhn_systemid.ml" 24 848 852 "sysprep_operation_rhn_systemid.ml" 24 848 872
+type(
+  < inspect_get_distro : 'a -> string; inspect_get_type : 'a -> string;
+    rm : string -> unit; .. > ->
+  'a -> 'b -> unit
+)
+ident(
+  def rhn_systemid_perform "sysprep_operation_rhn_systemid.ml" 34 1179 1179 --
+)
+"sysprep_operation_rhn_systemid.ml" 24 848 873 "sysprep_operation_rhn_systemid.ml" 24 848 874
+type(
+  < inspect_get_distro : 'a -> string; inspect_get_type : 'a -> string;
+    rm : string -> unit; .. >
+  as 'c
+)
+ident(
+  def g "sysprep_operation_rhn_systemid.ml" 24 848 875 "sysprep_operation_rhn_systemid.ml" 32 1166 1177
+)
+"sysprep_operation_rhn_systemid.ml" 24 848 875 "sysprep_operation_rhn_systemid.ml" 24 848 879
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_rhn_systemid.ml" 24 848 880 "sysprep_operation_rhn_systemid.ml" 32 1166 1177
+)
+"sysprep_operation_rhn_systemid.ml" 24 848 880 "sysprep_operation_rhn_systemid.ml" 24 848 892
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_rhn_systemid.ml" 25 895 897 "sysprep_operation_rhn_systemid.ml" 32 1166 1177
+)
+"sysprep_operation_rhn_systemid.ml" 25 895 901 "sysprep_operation_rhn_systemid.ml" 25 895 904
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 25 895 907 "sysprep_operation_rhn_systemid.ml" 25 895 908
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_rhn_systemid.ml" 24 848 873 "sysprep_operation_rhn_systemid.ml" 24 848 874
+)
+"sysprep_operation_rhn_systemid.ml" 25 895 907 "sysprep_operation_rhn_systemid.ml" 25 895 925
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_rhn_systemid.ml" 25 895 926 "sysprep_operation_rhn_systemid.ml" 25 895 930
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_rhn_systemid.ml" 24 848 875 "sysprep_operation_rhn_systemid.ml" 24 848 879
+)
+"sysprep_operation_rhn_systemid.ml" 25 895 907 "sysprep_operation_rhn_systemid.ml" 25 895 930
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 26 934 940 "sysprep_operation_rhn_systemid.ml" 26 934 946
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 26 934 949 "sysprep_operation_rhn_systemid.ml" 26 934 950
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_rhn_systemid.ml" 24 848 873 "sysprep_operation_rhn_systemid.ml" 24 848 874
+)
+"sysprep_operation_rhn_systemid.ml" 26 934 949 "sysprep_operation_rhn_systemid.ml" 26 934 969
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_rhn_systemid.ml" 26 934 970 "sysprep_operation_rhn_systemid.ml" 26 934 974
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_rhn_systemid.ml" 24 848 875 "sysprep_operation_rhn_systemid.ml" 24 848 879
+)
+"sysprep_operation_rhn_systemid.ml" 26 934 949 "sysprep_operation_rhn_systemid.ml" 26 934 974
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 28 979 987 "sysprep_operation_rhn_systemid.ml" 28 979 990
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_rhn_systemid.ml" 25 895 901 "sysprep_operation_rhn_systemid.ml" 25 895 904
+)
+"sysprep_operation_rhn_systemid.ml" 28 979 992 "sysprep_operation_rhn_systemid.ml" 28 979 998
+type(
+  string
+)
+ident(
+  int_ref distro "sysprep_operation_rhn_systemid.ml" 26 934 940 "sysprep_operation_rhn_systemid.ml" 26 934 946
+)
+"sysprep_operation_rhn_systemid.ml" 28 979 987 "sysprep_operation_rhn_systemid.ml" 28 979 998
+type(
+  string * string
+)
+"sysprep_operation_rhn_systemid.ml" 29 1004 1008 "sysprep_operation_rhn_systemid.ml" 29 1004 1015
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 29 1004 1017 "sysprep_operation_rhn_systemid.ml" 29 1004 1023
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 29 1004 1008 "sysprep_operation_rhn_systemid.ml" 29 1004 1023
+type(
+  string * string
+)
+"sysprep_operation_rhn_systemid.ml" 30 1027 1036 "sysprep_operation_rhn_systemid.ml" 30 1027 1037
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_rhn_systemid.ml" 24 848 873 "sysprep_operation_rhn_systemid.ml" 24 848 874
+)
+"sysprep_operation_rhn_systemid.ml" 30 1027 1036 "sysprep_operation_rhn_systemid.ml" 30 1027 1040
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_rhn_systemid.ml" 30 1027 1041 "sysprep_operation_rhn_systemid.ml" 30 1027 1070
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 30 1027 1036 "sysprep_operation_rhn_systemid.ml" 30 1027 1070
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 30 1027 1084 "sysprep_operation_rhn_systemid.ml" 30 1027 1085
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 30 1027 1076 "sysprep_operation_rhn_systemid.ml" 30 1027 1085
+type(
+  exn
+)
+"sysprep_operation_rhn_systemid.ml" 30 1027 1089 "sysprep_operation_rhn_systemid.ml" 30 1027 1091
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 30 1027 1031 "sysprep_operation_rhn_systemid.ml" 30 1027 1092
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 31 1094 1103 "sysprep_operation_rhn_systemid.ml" 31 1094 1104
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_rhn_systemid.ml" 24 848 873 "sysprep_operation_rhn_systemid.ml" 24 848 874
+)
+"sysprep_operation_rhn_systemid.ml" 31 1094 1103 "sysprep_operation_rhn_systemid.ml" 31 1094 1107
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_rhn_systemid.ml" 31 1094 1108 "sysprep_operation_rhn_systemid.ml" 31 1094 1143
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 31 1094 1103 "sysprep_operation_rhn_systemid.ml" 31 1094 1143
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 31 1094 1157 "sysprep_operation_rhn_systemid.ml" 31 1094 1158
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 31 1094 1149 "sysprep_operation_rhn_systemid.ml" 31 1094 1158
+type(
+  exn
+)
+"sysprep_operation_rhn_systemid.ml" 31 1094 1162 "sysprep_operation_rhn_systemid.ml" 31 1094 1164
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 31 1094 1098 "sysprep_operation_rhn_systemid.ml" 31 1094 1165
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 30 1027 1031 "sysprep_operation_rhn_systemid.ml" 31 1094 1165
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 32 1166 1170 "sysprep_operation_rhn_systemid.ml" 32 1166 1171
+type(
+  string * string
+)
+"sysprep_operation_rhn_systemid.ml" 32 1166 1175 "sysprep_operation_rhn_systemid.ml" 32 1166 1177
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 28 979 981 "sysprep_operation_rhn_systemid.ml" 32 1166 1177
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 26 934 936 "sysprep_operation_rhn_systemid.ml" 32 1166 1177
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 25 895 897 "sysprep_operation_rhn_systemid.ml" 32 1166 1177
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 34 1179 1183 "sysprep_operation_rhn_systemid.ml" 34 1179 1185
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_rhn_systemid.ml" 42 1367 1367 --
+)
+"sysprep_operation_rhn_systemid.ml" 35 1190 1192 "sysprep_operation_rhn_systemid.ml" 35 1190 1200
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_rhn_systemid.ml" 36 1206 1217 "sysprep_operation_rhn_systemid.ml" 36 1206 1231
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 37 1233 1258 "sysprep_operation_rhn_systemid.ml" 37 1233 1262
+type(
+  bool
+)
+"sysprep_operation_rhn_systemid.ml" 38 1264 1278 "sysprep_operation_rhn_systemid.ml" 38 1264 1280
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_rhn_systemid.ml" 38 1264 1280 "sysprep_operation_rhn_systemid.ml" 38 1264 1306
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 38 1264 1278 "sysprep_operation_rhn_systemid.ml" 38 1264 1306
+type(
+  string
+)
+"sysprep_operation_rhn_systemid.ml" 39 1308 1342 "sysprep_operation_rhn_systemid.ml" 39 1308 1362
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref rhn_systemid_perform "sysprep_operation_rhn_systemid.ml" 24 848 852 "sysprep_operation_rhn_systemid.ml" 24 848 872
+)
+"sysprep_operation_rhn_systemid.ml" 39 1308 1337 "sysprep_operation_rhn_systemid.ml" 39 1308 1362
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_rhn_systemid.ml" 34 1179 1188 "sysprep_operation_rhn_systemid.ml" 40 1364 1365
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_rhn_systemid.ml" 42 1367 1371 "sysprep_operation_rhn_systemid.ml" 42 1367 1373
+type(
+  unit
+)
+"sysprep_operation_rhn_systemid.ml" 42 1367 1376 "sysprep_operation_rhn_systemid.ml" 42 1367 1394
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_rhn_systemid.ml" 42 1367 1395 "sysprep_operation_rhn_systemid.ml" 42 1367 1397
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_rhn_systemid.ml" 34 1179 1183 "sysprep_operation_rhn_systemid.ml" 34 1179 1185
+)
+"sysprep_operation_rhn_systemid.ml" 42 1367 1376 "sysprep_operation_rhn_systemid.ml" 42 1367 1397
+call(
+  stack
+)
+type(
+  unit
+)

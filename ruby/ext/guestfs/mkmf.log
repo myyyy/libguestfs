@@ -1,0 +1,78 @@
+have_header: checking for guestfs.h... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I/home/franklin/temp/libguestfs/ruby/ext/guestfs -I/home/franklin/temp/libguestfs/ruby/../src -I/home/franklin/temp/libguestfs/ruby/..    -fno-strict-aliasing -g -g -O2 -fPIC conftest.c  -L. -L/usr/lib -L/home/franklin/temp/libguestfs/ruby/../src/.libs -L.  -rdynamic -Wl,-export-dynamic     -lruby-1.9.1  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -E -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I/home/franklin/temp/libguestfs/ruby/ext/guestfs -I/home/franklin/temp/libguestfs/ruby/../src -I/home/franklin/temp/libguestfs/ruby/..    -fno-strict-aliasing -g -g -O2 -fPIC  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <guestfs.h>
+/* end */
+
+--------------------
+
+have_library: checking for guestfs_create() in -lguestfs... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I/home/franklin/temp/libguestfs/ruby/ext/guestfs -I/home/franklin/temp/libguestfs/ruby/../src -I/home/franklin/temp/libguestfs/ruby/..    -fno-strict-aliasing -g -g -O2 -fPIC conftest.c  -L. -L/usr/lib -L/home/franklin/temp/libguestfs/ruby/../src/.libs -L.  -rdynamic -Wl,-export-dynamic     -lruby-1.9.1 -lguestfs  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <guestfs.h>
+4: 
+5: /*top*/
+6: int main() {return 0;}
+7: int t() { void ((*volatile p)()); p = (void ((*)()))guestfs_create; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_hash_lookup()... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I/home/franklin/temp/libguestfs/ruby/ext/guestfs -I/home/franklin/temp/libguestfs/ruby/../src -I/home/franklin/temp/libguestfs/ruby/..    -fno-strict-aliasing -g -g -O2 -fPIC conftest.c  -L. -L/usr/lib -L/home/franklin/temp/libguestfs/ruby/../src/.libs -L.  -rdynamic -Wl,-export-dynamic    -lguestfs  -lruby-1.9.1 -lguestfs  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_hash_lookup; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_define_alloc_func()... -------------------- yes
+
+"gcc -o conftest -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I/home/franklin/temp/libguestfs/ruby/ext/guestfs -I/home/franklin/temp/libguestfs/ruby/../src -I/home/franklin/temp/libguestfs/ruby/..    -fno-strict-aliasing -g -g -O2 -fPIC conftest.c  -L. -L/usr/lib -L/home/franklin/temp/libguestfs/ruby/../src/.libs -L.  -rdynamic -Wl,-export-dynamic    -lguestfs  -lruby-1.9.1 -lguestfs  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_define_alloc_func; return 0; }
+/* end */
+
+--------------------
+
+have_type: checking for rb_alloc_func_t... -------------------- yes
+
+"gcc -I/usr/include/ruby-1.9.1/x86_64-linux -I/usr/include/ruby-1.9.1/ruby/backward -I/usr/include/ruby-1.9.1 -I/home/franklin/temp/libguestfs/ruby/ext/guestfs -I/home/franklin/temp/libguestfs/ruby/../src -I/home/franklin/temp/libguestfs/ruby/..    -fno-strict-aliasing -g -g -O2 -fPIC   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: typedef rb_alloc_func_t conftest_type;
+5: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+

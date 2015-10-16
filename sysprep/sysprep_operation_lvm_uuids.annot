@@ -1,0 +1,534 @@
+"sysprep_operation_lvm_uuids.ml" 26 861 869 "sysprep_operation_lvm_uuids.ml" 26 861 886
+type(
+  < available : string array -> 'a; inspect_get_type : 'b -> string;
+    pvchange_uuid_all : unit -> unit; pvs : unit -> 'c array;
+    vg_activate_all : bool -> unit; vgchange_uuid_all : unit -> unit;
+    vgs : unit -> 'd array; .. > ->
+  'b -> 'e -> unit
+)
+ident(
+  def lvm_uuids_perform "sysprep_operation_lvm_uuids.ml" 26 861 861 --
+)
+"sysprep_operation_lvm_uuids.ml" 26 861 887 "sysprep_operation_lvm_uuids.ml" 26 861 888
+type(
+  < available : string array -> 'a; inspect_get_type : 'b -> string;
+    pvchange_uuid_all : unit -> unit; pvs : unit -> 'c array;
+    vg_activate_all : bool -> unit; vgchange_uuid_all : unit -> unit;
+    vgs : unit -> 'd array; .. >
+  as 'f
+)
+ident(
+  def g "sysprep_operation_lvm_uuids.ml" 26 861 889 "sysprep_operation_lvm_uuids.ml" 38 1377 1380
+)
+"sysprep_operation_lvm_uuids.ml" 26 861 889 "sysprep_operation_lvm_uuids.ml" 26 861 893
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_lvm_uuids.ml" 26 861 894 "sysprep_operation_lvm_uuids.ml" 38 1377 1380
+)
+"sysprep_operation_lvm_uuids.ml" 26 861 894 "sysprep_operation_lvm_uuids.ml" 26 861 906
+type(
+  'e
+)
+ident(
+  def side_effects "sysprep_operation_lvm_uuids.ml" 27 909 911 "sysprep_operation_lvm_uuids.ml" 38 1377 1380
+)
+"sysprep_operation_lvm_uuids.ml" 27 909 915 "sysprep_operation_lvm_uuids.ml" 27 909 918
+type(
+  string
+)
+"sysprep_operation_lvm_uuids.ml" 27 909 921 "sysprep_operation_lvm_uuids.ml" 27 909 922
+type(
+  'f
+)
+ident(
+  int_ref g "sysprep_operation_lvm_uuids.ml" 26 861 887 "sysprep_operation_lvm_uuids.ml" 26 861 888
+)
+"sysprep_operation_lvm_uuids.ml" 27 909 921 "sysprep_operation_lvm_uuids.ml" 27 909 939
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_lvm_uuids.ml" 27 909 940 "sysprep_operation_lvm_uuids.ml" 27 909 944
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_lvm_uuids.ml" 26 861 889 "sysprep_operation_lvm_uuids.ml" 26 861 893
+)
+"sysprep_operation_lvm_uuids.ml" 27 909 921 "sysprep_operation_lvm_uuids.ml" 27 909 944
+type(
+  string
+)
+"sysprep_operation_lvm_uuids.ml" 28 948 953 "sysprep_operation_lvm_uuids.ml" 28 948 956
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_lvm_uuids.ml" 27 909 915 "sysprep_operation_lvm_uuids.ml" 27 909 918
+)
+"sysprep_operation_lvm_uuids.ml" 28 948 957 "sysprep_operation_lvm_uuids.ml" 28 948 958
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation_lvm_uuids.ml" 28 948 959 "sysprep_operation_lvm_uuids.ml" 28 948 966
+type(
+  string
+)
+"sysprep_operation_lvm_uuids.ml" 28 948 953 "sysprep_operation_lvm_uuids.ml" 28 948 966
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 29 974 982 "sysprep_operation_lvm_uuids.ml" 29 974 998
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 30 1001 1011 "sysprep_operation_lvm_uuids.ml" 30 1001 1012
+type(
+  'f
+)
+ident(
+  int_ref g "sysprep_operation_lvm_uuids.ml" 26 861 887 "sysprep_operation_lvm_uuids.ml" 26 861 888
+)
+"sysprep_operation_lvm_uuids.ml" 30 1001 1011 "sysprep_operation_lvm_uuids.ml" 30 1001 1022
+call(
+  stack
+)
+type(
+  string array -> 'a
+)
+"sysprep_operation_lvm_uuids.ml" 30 1001 1025 "sysprep_operation_lvm_uuids.ml" 30 1001 1031
+type(
+  string
+)
+"sysprep_operation_lvm_uuids.ml" 30 1001 1023 "sysprep_operation_lvm_uuids.ml" 30 1001 1033
+type(
+  string array
+)
+"sysprep_operation_lvm_uuids.ml" 30 1001 1011 "sysprep_operation_lvm_uuids.ml" 30 1001 1033
+type(
+  'a
+)
+"sysprep_operation_lvm_uuids.ml" 30 1001 1035 "sysprep_operation_lvm_uuids.ml" 30 1001 1039
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 30 1001 1011 "sysprep_operation_lvm_uuids.ml" 30 1001 1039
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 30 1001 1053 "sysprep_operation_lvm_uuids.ml" 30 1001 1054
+type(
+  string
+)
+"sysprep_operation_lvm_uuids.ml" 30 1001 1045 "sysprep_operation_lvm_uuids.ml" 30 1001 1054
+type(
+  exn
+)
+"sysprep_operation_lvm_uuids.ml" 30 1001 1058 "sysprep_operation_lvm_uuids.ml" 30 1001 1063
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 30 1001 1007 "sysprep_operation_lvm_uuids.ml" 30 1001 1063
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 31 1067 1074 "sysprep_operation_lvm_uuids.ml" 31 1067 1090
+type(
+  bool
+)
+ident(
+  int_ref has_lvm2_feature "sysprep_operation_lvm_uuids.ml" 29 974 982 "sysprep_operation_lvm_uuids.ml" 29 974 998
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1108 "sysprep_operation_lvm_uuids.ml" 32 1098 1115
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1117 "sysprep_operation_lvm_uuids.ml" 32 1098 1124
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1108 "sysprep_operation_lvm_uuids.ml" 32 1098 1124
+type(
+  bool * bool
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1127 "sysprep_operation_lvm_uuids.ml" 32 1098 1128
+type(
+  'f
+)
+ident(
+  int_ref g "sysprep_operation_lvm_uuids.ml" 26 861 887 "sysprep_operation_lvm_uuids.ml" 26 861 888
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1127 "sysprep_operation_lvm_uuids.ml" 32 1098 1132
+call(
+  stack
+)
+type(
+  unit -> 'c array
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1133 "sysprep_operation_lvm_uuids.ml" 32 1098 1135
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1127 "sysprep_operation_lvm_uuids.ml" 32 1098 1135
+type(
+  'c array
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1136 "sysprep_operation_lvm_uuids.ml" 32 1098 1138
+type(
+  'c array -> 'c array -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1139 "sysprep_operation_lvm_uuids.ml" 32 1098 1143
+type(
+  'c array
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1127 "sysprep_operation_lvm_uuids.ml" 32 1098 1143
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1145 "sysprep_operation_lvm_uuids.ml" 32 1098 1146
+type(
+  'f
+)
+ident(
+  int_ref g "sysprep_operation_lvm_uuids.ml" 26 861 887 "sysprep_operation_lvm_uuids.ml" 26 861 888
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1145 "sysprep_operation_lvm_uuids.ml" 32 1098 1150
+call(
+  stack
+)
+type(
+  unit -> 'd array
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1151 "sysprep_operation_lvm_uuids.ml" 32 1098 1153
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1145 "sysprep_operation_lvm_uuids.ml" 32 1098 1153
+type(
+  'd array
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1154 "sysprep_operation_lvm_uuids.ml" 32 1098 1156
+type(
+  'd array -> 'd array -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1157 "sysprep_operation_lvm_uuids.ml" 32 1098 1161
+type(
+  'd array
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1145 "sysprep_operation_lvm_uuids.ml" 32 1098 1161
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 32 1098 1127 "sysprep_operation_lvm_uuids.ml" 32 1098 1161
+type(
+  bool * bool
+)
+"sysprep_operation_lvm_uuids.ml" 33 1165 1174 "sysprep_operation_lvm_uuids.ml" 33 1165 1181
+type(
+  bool
+)
+ident(
+  int_ref has_pvs "sysprep_operation_lvm_uuids.ml" 32 1098 1108 "sysprep_operation_lvm_uuids.ml" 32 1098 1115
+)
+"sysprep_operation_lvm_uuids.ml" 33 1165 1182 "sysprep_operation_lvm_uuids.ml" 33 1165 1184
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"sysprep_operation_lvm_uuids.ml" 33 1165 1185 "sysprep_operation_lvm_uuids.ml" 33 1165 1192
+type(
+  bool
+)
+ident(
+  int_ref has_vgs "sysprep_operation_lvm_uuids.ml" 32 1098 1117 "sysprep_operation_lvm_uuids.ml" 32 1098 1124
+)
+"sysprep_operation_lvm_uuids.ml" 33 1165 1174 "sysprep_operation_lvm_uuids.ml" 33 1165 1192
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 33 1165 1198 "sysprep_operation_lvm_uuids.ml" 33 1165 1199
+type(
+  'f
+)
+ident(
+  int_ref g "sysprep_operation_lvm_uuids.ml" 26 861 887 "sysprep_operation_lvm_uuids.ml" 26 861 888
+)
+"sysprep_operation_lvm_uuids.ml" 33 1165 1198 "sysprep_operation_lvm_uuids.ml" 33 1165 1215
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"sysprep_operation_lvm_uuids.ml" 33 1165 1216 "sysprep_operation_lvm_uuids.ml" 33 1165 1221
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 33 1165 1198 "sysprep_operation_lvm_uuids.ml" 33 1165 1221
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 33 1165 1171 "sysprep_operation_lvm_uuids.ml" 33 1165 1221
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 34 1223 1232 "sysprep_operation_lvm_uuids.ml" 34 1223 1239
+type(
+  bool
+)
+ident(
+  int_ref has_pvs "sysprep_operation_lvm_uuids.ml" 32 1098 1108 "sysprep_operation_lvm_uuids.ml" 32 1098 1115
+)
+"sysprep_operation_lvm_uuids.ml" 34 1223 1245 "sysprep_operation_lvm_uuids.ml" 34 1223 1246
+type(
+  'f
+)
+ident(
+  int_ref g "sysprep_operation_lvm_uuids.ml" 26 861 887 "sysprep_operation_lvm_uuids.ml" 26 861 888
+)
+"sysprep_operation_lvm_uuids.ml" 34 1223 1245 "sysprep_operation_lvm_uuids.ml" 34 1223 1264
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"sysprep_operation_lvm_uuids.ml" 34 1223 1265 "sysprep_operation_lvm_uuids.ml" 34 1223 1267
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 34 1223 1245 "sysprep_operation_lvm_uuids.ml" 34 1223 1267
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 34 1223 1229 "sysprep_operation_lvm_uuids.ml" 34 1223 1267
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 35 1269 1278 "sysprep_operation_lvm_uuids.ml" 35 1269 1285
+type(
+  bool
+)
+ident(
+  int_ref has_vgs "sysprep_operation_lvm_uuids.ml" 32 1098 1117 "sysprep_operation_lvm_uuids.ml" 32 1098 1124
+)
+"sysprep_operation_lvm_uuids.ml" 35 1269 1291 "sysprep_operation_lvm_uuids.ml" 35 1269 1292
+type(
+  'f
+)
+ident(
+  int_ref g "sysprep_operation_lvm_uuids.ml" 26 861 887 "sysprep_operation_lvm_uuids.ml" 26 861 888
+)
+"sysprep_operation_lvm_uuids.ml" 35 1269 1291 "sysprep_operation_lvm_uuids.ml" 35 1269 1310
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"sysprep_operation_lvm_uuids.ml" 35 1269 1311 "sysprep_operation_lvm_uuids.ml" 35 1269 1313
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 35 1269 1291 "sysprep_operation_lvm_uuids.ml" 35 1269 1313
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 35 1269 1275 "sysprep_operation_lvm_uuids.ml" 35 1269 1313
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 36 1315 1324 "sysprep_operation_lvm_uuids.ml" 36 1315 1331
+type(
+  bool
+)
+ident(
+  int_ref has_pvs "sysprep_operation_lvm_uuids.ml" 32 1098 1108 "sysprep_operation_lvm_uuids.ml" 32 1098 1115
+)
+"sysprep_operation_lvm_uuids.ml" 36 1315 1332 "sysprep_operation_lvm_uuids.ml" 36 1315 1334
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"sysprep_operation_lvm_uuids.ml" 36 1315 1335 "sysprep_operation_lvm_uuids.ml" 36 1315 1342
+type(
+  bool
+)
+ident(
+  int_ref has_vgs "sysprep_operation_lvm_uuids.ml" 32 1098 1117 "sysprep_operation_lvm_uuids.ml" 32 1098 1124
+)
+"sysprep_operation_lvm_uuids.ml" 36 1315 1324 "sysprep_operation_lvm_uuids.ml" 36 1315 1342
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 36 1315 1348 "sysprep_operation_lvm_uuids.ml" 36 1315 1349
+type(
+  'f
+)
+ident(
+  int_ref g "sysprep_operation_lvm_uuids.ml" 26 861 887 "sysprep_operation_lvm_uuids.ml" 26 861 888
+)
+"sysprep_operation_lvm_uuids.ml" 36 1315 1348 "sysprep_operation_lvm_uuids.ml" 36 1315 1365
+call(
+  tail
+)
+type(
+  bool -> unit
+)
+"sysprep_operation_lvm_uuids.ml" 36 1315 1366 "sysprep_operation_lvm_uuids.ml" 36 1315 1370
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 36 1315 1348 "sysprep_operation_lvm_uuids.ml" 36 1315 1370
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 36 1315 1321 "sysprep_operation_lvm_uuids.ml" 36 1315 1370
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 35 1269 1275 "sysprep_operation_lvm_uuids.ml" 36 1315 1370
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 34 1223 1229 "sysprep_operation_lvm_uuids.ml" 36 1315 1370
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 33 1165 1171 "sysprep_operation_lvm_uuids.ml" 36 1315 1370
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 31 1067 1096 "sysprep_operation_lvm_uuids.ml" 37 1371 1376
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 31 1067 1071 "sysprep_operation_lvm_uuids.ml" 37 1371 1376
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 28 948 972 "sysprep_operation_lvm_uuids.ml" 38 1377 1380
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 28 948 950 "sysprep_operation_lvm_uuids.ml" 38 1377 1380
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 27 909 911 "sysprep_operation_lvm_uuids.ml" 38 1377 1380
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 40 1382 1386 "sysprep_operation_lvm_uuids.ml" 40 1382 1388
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_lvm_uuids.ml" 51 1743 1743 --
+)
+"sysprep_operation_lvm_uuids.ml" 41 1393 1395 "sysprep_operation_lvm_uuids.ml" 41 1393 1403
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_lvm_uuids.ml" 42 1409 1420 "sysprep_operation_lvm_uuids.ml" 42 1409 1431
+type(
+  string
+)
+"sysprep_operation_lvm_uuids.ml" 43 1433 1458 "sysprep_operation_lvm_uuids.ml" 43 1433 1462
+type(
+  bool
+)
+"sysprep_operation_lvm_uuids.ml" 44 1464 1478 "sysprep_operation_lvm_uuids.ml" 44 1464 1480
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_lvm_uuids.ml" 44 1464 1480 "sysprep_operation_lvm_uuids.ml" 44 1464 1509
+type(
+  string
+)
+"sysprep_operation_lvm_uuids.ml" 44 1464 1478 "sysprep_operation_lvm_uuids.ml" 44 1464 1509
+type(
+  string
+)
+"sysprep_operation_lvm_uuids.ml" 45 1511 1539 "sysprep_operation_lvm_uuids.ml" 45 1511 1541
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_lvm_uuids.ml" 45 1511 1541 "sysprep_operation_lvm_uuids.ml" 47 1622 1688
+type(
+  string
+)
+"sysprep_operation_lvm_uuids.ml" 45 1511 1538 "sysprep_operation_lvm_uuids.ml" 47 1622 1689
+type(
+  string
+)
+"sysprep_operation_lvm_uuids.ml" 45 1511 1533 "sysprep_operation_lvm_uuids.ml" 47 1622 1689
+type(
+  string option
+)
+"sysprep_operation_lvm_uuids.ml" 48 1691 1721 "sysprep_operation_lvm_uuids.ml" 48 1691 1738
+type(
+  Sysprep_operation.device_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref lvm_uuids_perform "sysprep_operation_lvm_uuids.ml" 26 861 869 "sysprep_operation_lvm_uuids.ml" 26 861 886
+)
+"sysprep_operation_lvm_uuids.ml" 48 1691 1716 "sysprep_operation_lvm_uuids.ml" 48 1691 1738
+type(
+  Sysprep_operation.device_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_lvm_uuids.ml" 40 1382 1391 "sysprep_operation_lvm_uuids.ml" 49 1740 1741
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_lvm_uuids.ml" 51 1743 1747 "sysprep_operation_lvm_uuids.ml" 51 1743 1749
+type(
+  unit
+)
+"sysprep_operation_lvm_uuids.ml" 51 1743 1752 "sysprep_operation_lvm_uuids.ml" 51 1743 1770
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_lvm_uuids.ml" 51 1743 1771 "sysprep_operation_lvm_uuids.ml" 51 1743 1773
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_lvm_uuids.ml" 40 1382 1386 "sysprep_operation_lvm_uuids.ml" 40 1382 1388
+)
+"sysprep_operation_lvm_uuids.ml" 51 1743 1752 "sysprep_operation_lvm_uuids.ml" 51 1743 1773
+call(
+  stack
+)
+type(
+  unit
+)

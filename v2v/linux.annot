@@ -1,0 +1,2688 @@
+"linux.ml" 32 1001 1009 "linux.ml" 32 1001 1020
+type(
+  < aug_get : string -> string; aug_init : string -> int -> 'a;
+    aug_load : unit -> 'b; aug_match : string -> string array; .. > ->
+  unit
+)
+ident(
+  def augeas_init "linux.ml" 32 1001 1001 --
+)
+"linux.ml" 32 1001 1021 "linux.ml" 32 1001 1022
+type(
+  < aug_get : string -> string; aug_init : string -> int -> 'a;
+    aug_load : unit -> 'b; aug_match : string -> string array; .. >
+  as 'c
+)
+ident(
+  def g "linux.ml" 33 1025 1027 "linux.ml" 34 1045 1087
+)
+"linux.ml" 33 1025 1027 "linux.ml" 33 1025 1028
+type(
+  'c
+)
+ident(
+  int_ref g "linux.ml" 32 1001 1021 "linux.ml" 32 1001 1022
+)
+"linux.ml" 33 1025 1027 "linux.ml" 33 1025 1037
+call(
+  stack
+)
+type(
+  string -> int -> 'a
+)
+"linux.ml" 33 1025 1038 "linux.ml" 33 1025 1041
+type(
+  string
+)
+"linux.ml" 33 1025 1042 "linux.ml" 33 1025 1043
+type(
+  int
+)
+"linux.ml" 33 1025 1027 "linux.ml" 33 1025 1043
+type(
+  'a
+)
+"linux.ml" 34 1045 1050 "linux.ml" 34 1045 1057
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"linux.ml" 34 1045 1058 "linux.ml" 34 1045 1060
+type(
+  unit
+)
+"linux.ml" 34 1045 1050 "linux.ml" 34 1045 1060
+call(
+  stack
+)
+type(
+  bool
+)
+"linux.ml" 34 1045 1066 "linux.ml" 34 1045 1085
+type(
+  'c -> unit
+)
+ident(
+  int_ref augeas_debug_errors "linux.ml" 40 1172 1176 "linux.ml" 40 1172 1195
+)
+"linux.ml" 34 1045 1086 "linux.ml" 34 1045 1087
+type(
+  'c
+)
+ident(
+  int_ref g "linux.ml" 32 1001 1021 "linux.ml" 32 1001 1022
+)
+"linux.ml" 34 1045 1066 "linux.ml" 34 1045 1087
+call(
+  tail
+)
+type(
+  unit
+)
+"linux.ml" 34 1045 1047 "linux.ml" 34 1045 1087
+type(
+  unit
+)
+"linux.ml" 33 1025 1027 "linux.ml" 34 1045 1087
+type(
+  unit
+)
+"linux.ml" 36 1089 1093 "linux.ml" 36 1089 1106
+type(
+  'c -> unit
+)
+ident(
+  def augeas_reload "linux.ml" 32 1001 1001 --
+)
+"linux.ml" 36 1089 1107 "linux.ml" 36 1089 1108
+type(
+  'c
+)
+ident(
+  def g "linux.ml" 37 1111 1113 "linux.ml" 38 1128 1170
+)
+"linux.ml" 37 1111 1113 "linux.ml" 37 1111 1114
+type(
+  'c
+)
+ident(
+  int_ref g "linux.ml" 36 1089 1107 "linux.ml" 36 1089 1108
+)
+"linux.ml" 37 1111 1113 "linux.ml" 37 1111 1123
+call(
+  stack
+)
+type(
+  unit -> 'b
+)
+"linux.ml" 37 1111 1124 "linux.ml" 37 1111 1126
+type(
+  unit
+)
+"linux.ml" 37 1111 1113 "linux.ml" 37 1111 1126
+type(
+  'b
+)
+"linux.ml" 38 1128 1133 "linux.ml" 38 1128 1140
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"linux.ml" 38 1128 1141 "linux.ml" 38 1128 1143
+type(
+  unit
+)
+"linux.ml" 38 1128 1133 "linux.ml" 38 1128 1143
+call(
+  stack
+)
+type(
+  bool
+)
+"linux.ml" 38 1128 1149 "linux.ml" 38 1128 1168
+type(
+  'c -> unit
+)
+ident(
+  int_ref augeas_debug_errors "linux.ml" 40 1172 1176 "linux.ml" 40 1172 1195
+)
+"linux.ml" 38 1128 1169 "linux.ml" 38 1128 1170
+type(
+  'c
+)
+ident(
+  int_ref g "linux.ml" 36 1089 1107 "linux.ml" 36 1089 1108
+)
+"linux.ml" 38 1128 1149 "linux.ml" 38 1128 1170
+call(
+  tail
+)
+type(
+  unit
+)
+"linux.ml" 38 1128 1130 "linux.ml" 38 1128 1170
+type(
+  unit
+)
+"linux.ml" 37 1111 1113 "linux.ml" 38 1128 1170
+type(
+  unit
+)
+"linux.ml" 40 1172 1176 "linux.ml" 40 1172 1195
+type(
+  'c -> unit
+)
+ident(
+  def augeas_debug_errors "linux.ml" 32 1001 1001 --
+)
+"linux.ml" 40 1172 1196 "linux.ml" 40 1172 1197
+type(
+  'c
+)
+ident(
+  def g "linux.ml" 41 1200 1202 "linux.ml" 98 3108 3178
+)
+"linux.ml" 42 1206 1214 "linux.ml" 42 1206 1220
+type(
+  string array
+)
+ident(
+  def errors "linux.ml" 43 1261 1265 "linux.ml" 96 3084 3100
+)
+"linux.ml" 42 1206 1223 "linux.ml" 42 1206 1224
+type(
+  'c
+)
+ident(
+  int_ref g "linux.ml" 40 1172 1196 "linux.ml" 40 1172 1197
+)
+"linux.ml" 42 1206 1223 "linux.ml" 42 1206 1234
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"linux.ml" 42 1206 1235 "linux.ml" 42 1206 1257
+type(
+  string
+)
+"linux.ml" 42 1206 1223 "linux.ml" 42 1206 1257
+type(
+  string array
+)
+"linux.ml" 43 1261 1269 "linux.ml" 43 1261 1275
+type(
+  string list
+)
+ident(
+  def errors "linux.ml" 44 1302 1306 "linux.ml" 96 3084 3100
+)
+"linux.ml" 43 1261 1278 "linux.ml" 43 1261 1291
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"linux.ml" 43 1261 1292 "linux.ml" 43 1261 1298
+type(
+  string array
+)
+ident(
+  int_ref errors "linux.ml" 42 1206 1214 "linux.ml" 42 1206 1220
+)
+"linux.ml" 43 1261 1278 "linux.ml" 43 1261 1298
+call(
+  stack
+)
+type(
+  string list
+)
+"linux.ml" 44 1302 1310 "linux.ml" 44 1302 1313
+type(
+  string StringMap.t StringMap.t
+)
+ident(
+  def map "linux.ml" 70 2314 2318 "linux.ml" 96 3084 3100
+)
+"linux.ml" 45 1316 1322 "linux.ml" 45 1316 1336
+type(
+  (string StringMap.t StringMap.t -> string -> string StringMap.t StringMap.t) ->
+  string StringMap.t StringMap.t ->
+  string list -> string StringMap.t StringMap.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"linux.ml" 46 1339 1351 "linux.ml" 46 1339 1354
+type(
+  string StringMap.t StringMap.t
+)
+ident(
+  def map "linux.ml" 46 1339 1355 "linux.ml" 67 2250 2278
+)
+"linux.ml" 46 1339 1355 "linux.ml" 46 1339 1360
+type(
+  string
+)
+ident(
+  def error "linux.ml" 47 1364 1374 "linux.ml" 67 2250 2278
+)
+"linux.ml" 47 1364 1378 "linux.ml" 47 1364 1390
+type(
+  string array
+)
+"linux.ml" 47 1364 1393 "linux.ml" 47 1364 1394
+type(
+  'c
+)
+ident(
+  int_ref g "linux.ml" 40 1172 1196 "linux.ml" 40 1172 1197
+)
+"linux.ml" 47 1364 1393 "linux.ml" 47 1364 1404
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"linux.ml" 47 1364 1406 "linux.ml" 47 1364 1411
+type(
+  string
+)
+ident(
+  int_ref error "linux.ml" 46 1339 1355 "linux.ml" 46 1339 1360
+)
+"linux.ml" 47 1364 1412 "linux.ml" 47 1364 1413
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"linux.ml" 47 1364 1414 "linux.ml" 47 1364 1419
+type(
+  string
+)
+"linux.ml" 47 1364 1405 "linux.ml" 47 1364 1420
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 47 1364 1393 "linux.ml" 47 1364 1420
+type(
+  string array
+)
+"linux.ml" 48 1424 1438 "linux.ml" 48 1424 1450
+type(
+  string list
+)
+"linux.ml" 48 1424 1453 "linux.ml" 48 1424 1466
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"linux.ml" 48 1424 1467 "linux.ml" 48 1424 1479
+type(
+  string array
+)
+ident(
+  int_ref detail_paths "linux.ml" 47 1364 1378 "linux.ml" 47 1364 1390
+)
+"linux.ml" 48 1424 1453 "linux.ml" 48 1424 1479
+call(
+  stack
+)
+type(
+  string list
+)
+"linux.ml" 49 1483 1493 "linux.ml" 49 1483 1507
+type(
+  (string StringMap.t StringMap.t -> string -> string StringMap.t StringMap.t) ->
+  string StringMap.t StringMap.t ->
+  string list -> string StringMap.t StringMap.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"linux.ml" 50 1510 1526 "linux.ml" 50 1510 1529
+type(
+  string StringMap.t StringMap.t
+)
+ident(
+  def map "linux.ml" 50 1510 1530 "linux.ml" 66 2204 2249
+)
+"linux.ml" 50 1510 1530 "linux.ml" 50 1510 1534
+type(
+  string
+)
+ident(
+  def path "linux.ml" 55 1729 1743 "linux.ml" 66 2204 2249
+)
+"linux.ml" 55 1729 1747 "linux.ml" 55 1729 1748
+type(
+  int
+)
+"linux.ml" 55 1729 1751 "linux.ml" 55 1729 1762
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.string_find
+)
+"linux.ml" 55 1729 1763 "linux.ml" 55 1729 1767
+type(
+  string
+)
+ident(
+  int_ref path "linux.ml" 50 1510 1530 "linux.ml" 50 1510 1534
+)
+"linux.ml" 55 1729 1768 "linux.ml" 55 1729 1777
+type(
+  string
+)
+"linux.ml" 55 1729 1751 "linux.ml" 55 1729 1777
+call(
+  stack
+)
+type(
+  int
+)
+"linux.ml" 56 1781 1803 "linux.ml" 56 1781 1804
+type(
+  int
+)
+ident(
+  int_ref i "linux.ml" 55 1729 1747 "linux.ml" 55 1729 1748
+)
+"linux.ml" 56 1781 1805 "linux.ml" 56 1781 1807
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"linux.ml" 56 1781 1808 "linux.ml" 56 1781 1809
+type(
+  int
+)
+"linux.ml" 56 1781 1802 "linux.ml" 56 1781 1810
+type(
+  bool
+)
+"linux.ml" 56 1781 1795 "linux.ml" 56 1781 1810
+type(
+  unit
+)
+"linux.ml" 57 1812 1830 "linux.ml" 57 1812 1838
+type(
+  string
+)
+"linux.ml" 57 1812 1841 "linux.ml" 57 1812 1851
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"linux.ml" 57 1812 1852 "linux.ml" 57 1812 1856
+type(
+  string
+)
+ident(
+  int_ref path "linux.ml" 50 1510 1530 "linux.ml" 50 1510 1534
+)
+"linux.ml" 57 1812 1857 "linux.ml" 57 1812 1859
+type(
+  int
+)
+"linux.ml" 57 1812 1861 "linux.ml" 57 1812 1862
+type(
+  int
+)
+ident(
+  int_ref i "linux.ml" 55 1729 1747 "linux.ml" 55 1729 1748
+)
+"linux.ml" 57 1812 1862 "linux.ml" 57 1812 1863
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"linux.ml" 57 1812 1863 "linux.ml" 57 1812 1865
+type(
+  int
+)
+"linux.ml" 57 1812 1860 "linux.ml" 57 1812 1866
+type(
+  int
+)
+"linux.ml" 57 1812 1841 "linux.ml" 57 1812 1866
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 58 1870 1888 "linux.ml" 58 1870 1893
+type(
+  string
+)
+"linux.ml" 58 1870 1896 "linux.ml" 58 1870 1906
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"linux.ml" 58 1870 1907 "linux.ml" 58 1870 1911
+type(
+  string
+)
+ident(
+  int_ref path "linux.ml" 50 1510 1530 "linux.ml" 50 1510 1534
+)
+"linux.ml" 58 1870 1913 "linux.ml" 58 1870 1914
+type(
+  int
+)
+ident(
+  int_ref i "linux.ml" 55 1729 1747 "linux.ml" 55 1729 1748
+)
+"linux.ml" 58 1870 1914 "linux.ml" 58 1870 1915
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"linux.ml" 58 1870 1915 "linux.ml" 58 1870 1916
+type(
+  int
+)
+"linux.ml" 58 1870 1912 "linux.ml" 58 1870 1917
+type(
+  int
+)
+"linux.ml" 58 1870 1919 "linux.ml" 58 1870 1932
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"linux.ml" 58 1870 1933 "linux.ml" 58 1870 1937
+type(
+  string
+)
+ident(
+  int_ref path "linux.ml" 50 1510 1530 "linux.ml" 50 1510 1534
+)
+"linux.ml" 58 1870 1919 "linux.ml" 58 1870 1937
+type(
+  int
+)
+"linux.ml" 58 1870 1938 "linux.ml" 58 1870 1939
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"linux.ml" 58 1870 1941 "linux.ml" 58 1870 1942
+type(
+  int
+)
+ident(
+  int_ref i "linux.ml" 55 1729 1747 "linux.ml" 55 1729 1748
+)
+"linux.ml" 58 1870 1942 "linux.ml" 58 1870 1943
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"linux.ml" 58 1870 1943 "linux.ml" 58 1870 1944
+type(
+  int
+)
+"linux.ml" 58 1870 1940 "linux.ml" 58 1870 1945
+type(
+  int
+)
+"linux.ml" 58 1870 1918 "linux.ml" 58 1870 1946
+type(
+  int
+)
+"linux.ml" 58 1870 1896 "linux.ml" 58 1870 1946
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 60 1951 1969 "linux.ml" 60 1951 1975
+type(
+  string
+)
+"linux.ml" 60 1951 1978 "linux.ml" 60 1951 1979
+type(
+  'c
+)
+ident(
+  int_ref g "linux.ml" 40 1172 1196 "linux.ml" 40 1172 1197
+)
+"linux.ml" 60 1951 1978 "linux.ml" 60 1951 1987
+call(
+  stack
+)
+type(
+  string -> string
+)
+"linux.ml" 60 1951 1988 "linux.ml" 60 1951 1992
+type(
+  string
+)
+ident(
+  int_ref path "linux.ml" 50 1510 1530 "linux.ml" 50 1510 1534
+)
+"linux.ml" 60 1951 1978 "linux.ml" 60 1951 1992
+type(
+  string
+)
+"linux.ml" 62 1997 2015 "linux.ml" 62 1997 2019
+type(
+  string StringMap.t
+)
+"linux.ml" 63 2043 2063 "linux.ml" 63 2043 2077
+type(
+  StringMap.key -> string StringMap.t StringMap.t -> string StringMap.t
+)
+ident(
+  ext_ref StringMap.find
+)
+"linux.ml" 63 2043 2078 "linux.ml" 63 2043 2086
+type(
+  StringMap.key
+)
+ident(
+  int_ref filename "linux.ml" 57 1812 1830 "linux.ml" 57 1812 1838
+)
+"linux.ml" 63 2043 2087 "linux.ml" 63 2043 2090
+type(
+  string StringMap.t StringMap.t
+)
+ident(
+  int_ref map "linux.ml" 50 1510 1526 "linux.ml" 50 1510 1529
+)
+"linux.ml" 63 2043 2063 "linux.ml" 63 2043 2090
+call(
+  stack
+)
+type(
+  string StringMap.t
+)
+"linux.ml" 64 2091 2112 "linux.ml" 64 2091 2121
+type(
+  exn
+)
+"linux.ml" 64 2091 2125 "linux.ml" 64 2091 2140
+type(
+  string StringMap.t
+)
+ident(
+  ext_ref StringMap.empty
+)
+"linux.ml" 63 2043 2059 "linux.ml" 64 2091 2140
+type(
+  string StringMap.t
+)
+type(
+  string StringMap.t
+)
+"linux.ml" 65 2144 2162 "linux.ml" 65 2144 2166
+type(
+  string StringMap.t
+)
+"linux.ml" 65 2144 2169 "linux.ml" 65 2144 2182
+type(
+  StringMap.key -> string -> string StringMap.t -> string StringMap.t
+)
+ident(
+  ext_ref StringMap.add
+)
+"linux.ml" 65 2144 2183 "linux.ml" 65 2144 2188
+type(
+  StringMap.key
+)
+ident(
+  int_ref field "linux.ml" 58 1870 1888 "linux.ml" 58 1870 1893
+)
+"linux.ml" 65 2144 2189 "linux.ml" 65 2144 2195
+type(
+  string
+)
+ident(
+  int_ref detail "linux.ml" 60 1951 1969 "linux.ml" 60 1951 1975
+)
+"linux.ml" 65 2144 2196 "linux.ml" 65 2144 2200
+type(
+  string StringMap.t
+)
+ident(
+  int_ref fmap "linux.ml" 62 1997 2015 "linux.ml" 62 1997 2019
+)
+"linux.ml" 65 2144 2169 "linux.ml" 65 2144 2200
+call(
+  stack
+)
+type(
+  string StringMap.t
+)
+"linux.ml" 66 2204 2218 "linux.ml" 66 2204 2231
+type(
+  StringMap.key ->
+  string StringMap.t ->
+  string StringMap.t StringMap.t -> string StringMap.t StringMap.t
+)
+ident(
+  ext_ref StringMap.add
+)
+"linux.ml" 66 2204 2232 "linux.ml" 66 2204 2240
+type(
+  StringMap.key
+)
+ident(
+  int_ref filename "linux.ml" 57 1812 1830 "linux.ml" 57 1812 1838
+)
+"linux.ml" 66 2204 2241 "linux.ml" 66 2204 2245
+type(
+  string StringMap.t
+)
+ident(
+  int_ref fmap "linux.ml" 65 2144 2162 "linux.ml" 65 2144 2166
+)
+"linux.ml" 66 2204 2246 "linux.ml" 66 2204 2249
+type(
+  string StringMap.t StringMap.t
+)
+ident(
+  int_ref map "linux.ml" 50 1510 1526 "linux.ml" 50 1510 1529
+)
+"linux.ml" 66 2204 2218 "linux.ml" 66 2204 2249
+call(
+  tail
+)
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 65 2144 2158 "linux.ml" 66 2204 2249
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 62 1997 2011 "linux.ml" 66 2204 2249
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 60 1951 1965 "linux.ml" 66 2204 2249
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 58 1870 1884 "linux.ml" 66 2204 2249
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 57 1812 1826 "linux.ml" 66 2204 2249
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 56 1781 1795 "linux.ml" 66 2204 2249
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 55 1729 1743 "linux.ml" 66 2204 2249
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 49 1483 1508 "linux.ml" 67 2250 2261
+type(
+  string StringMap.t StringMap.t -> string -> string StringMap.t StringMap.t
+)
+"linux.ml" 67 2250 2262 "linux.ml" 67 2250 2265
+type(
+  string StringMap.t StringMap.t
+)
+ident(
+  int_ref map "linux.ml" 46 1339 1351 "linux.ml" 46 1339 1354
+)
+"linux.ml" 67 2250 2266 "linux.ml" 67 2250 2278
+type(
+  string list
+)
+ident(
+  int_ref detail_paths "linux.ml" 48 1424 1438 "linux.ml" 48 1424 1450
+)
+"linux.ml" 49 1483 1493 "linux.ml" 67 2250 2278
+call(
+  tail
+)
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 48 1424 1434 "linux.ml" 67 2250 2278
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 47 1364 1374 "linux.ml" 67 2250 2278
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 45 1316 1337 "linux.ml" 68 2279 2286
+type(
+  string StringMap.t StringMap.t -> string -> string StringMap.t StringMap.t
+)
+"linux.ml" 68 2279 2287 "linux.ml" 68 2279 2302
+type(
+  string StringMap.t StringMap.t
+)
+ident(
+  ext_ref StringMap.empty
+)
+"linux.ml" 68 2279 2303 "linux.ml" 68 2279 2309
+type(
+  string list
+)
+ident(
+  int_ref errors "linux.ml" 43 1261 1269 "linux.ml" 43 1261 1275
+)
+"linux.ml" 45 1316 1322 "linux.ml" 68 2279 2309
+call(
+  stack
+)
+type(
+  string StringMap.t StringMap.t
+)
+"linux.ml" 70 2314 2322 "linux.ml" 70 2314 2331
+type(
+  StringMap.key list
+)
+ident(
+  def filenames "linux.ml" 71 2356 2360 "linux.ml" 96 3084 3100
+)
+"linux.ml" 70 2314 2334 "linux.ml" 70 2314 2348
+type(
+  string StringMap.t StringMap.t -> StringMap.key list
+)
+ident(
+  ext_ref StringMap.keys
+)
+"linux.ml" 70 2314 2349 "linux.ml" 70 2314 2352
+type(
+  string StringMap.t StringMap.t
+)
+ident(
+  int_ref map "linux.ml" 44 1302 1310 "linux.ml" 44 1302 1313
+)
+"linux.ml" 70 2314 2334 "linux.ml" 70 2314 2352
+call(
+  stack
+)
+type(
+  StringMap.key list
+)
+"linux.ml" 71 2356 2364 "linux.ml" 71 2356 2373
+type(
+  StringMap.key list
+)
+ident(
+  def filenames "linux.ml" 73 2408 2412 "linux.ml" 96 3084 3100
+)
+"linux.ml" 71 2356 2376 "linux.ml" 71 2356 2385
+type(
+  (StringMap.key -> StringMap.key -> int) ->
+  StringMap.key list -> StringMap.key list
+)
+ident(
+  ext_ref List.sort
+)
+"linux.ml" 71 2356 2386 "linux.ml" 71 2356 2393
+type(
+  StringMap.key -> StringMap.key -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"linux.ml" 71 2356 2394 "linux.ml" 71 2356 2403
+type(
+  StringMap.key list
+)
+ident(
+  int_ref filenames "linux.ml" 70 2314 2322 "linux.ml" 70 2314 2331
+)
+"linux.ml" 71 2356 2376 "linux.ml" 71 2356 2403
+call(
+  stack
+)
+type(
+  StringMap.key list
+)
+"linux.ml" 73 2408 2412 "linux.ml" 73 2408 2421
+type(
+  (StringMap.key -> unit) -> StringMap.key list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"linux.ml" 74 2424 2434 "linux.ml" 74 2424 2442
+type(
+  StringMap.key
+)
+ident(
+  def filename "linux.ml" 75 2446 2454 "linux.ml" 93 3046 3065
+)
+"linux.ml" 75 2446 2454 "linux.ml" 75 2446 2460
+type(
+  (StringMap.key -> unit, out_channel, unit) format -> StringMap.key -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"linux.ml" 75 2446 2461 "linux.ml" 75 2446 2491
+type(
+  (StringMap.key -> unit, out_channel, unit) format
+)
+"linux.ml" 75 2446 2492 "linux.ml" 75 2446 2500
+type(
+  StringMap.key
+)
+ident(
+  int_ref filename "linux.ml" 74 2424 2434 "linux.ml" 74 2424 2442
+)
+"linux.ml" 75 2446 2454 "linux.ml" 75 2446 2500
+call(
+  stack
+)
+type(
+  unit
+)
+"linux.ml" 76 2502 2514 "linux.ml" 76 2502 2518
+type(
+  string StringMap.t
+)
+"linux.ml" 76 2502 2521 "linux.ml" 76 2502 2535
+type(
+  StringMap.key -> string StringMap.t StringMap.t -> string StringMap.t
+)
+ident(
+  ext_ref StringMap.find
+)
+"linux.ml" 76 2502 2536 "linux.ml" 76 2502 2544
+type(
+  StringMap.key
+)
+ident(
+  int_ref filename "linux.ml" 74 2424 2434 "linux.ml" 74 2424 2442
+)
+"linux.ml" 76 2502 2545 "linux.ml" 76 2502 2548
+type(
+  string StringMap.t StringMap.t
+)
+ident(
+  int_ref map "linux.ml" 44 1302 1310 "linux.ml" 44 1302 1313
+)
+"linux.ml" 76 2502 2521 "linux.ml" 76 2502 2548
+call(
+  stack
+)
+type(
+  string StringMap.t
+)
+"linux.ml" 78 2565 2580 "linux.ml" 78 2565 2583
+type(
+  string
+)
+ident(
+  def msg "linux.ml" 79 2619 2630 "linux.ml" 79 2619 2656
+)
+"linux.ml" 78 2565 2586 "linux.ml" 78 2565 2600
+type(
+  StringMap.key -> string StringMap.t -> string
+)
+ident(
+  ext_ref StringMap.find
+)
+"linux.ml" 78 2565 2601 "linux.ml" 78 2565 2610
+type(
+  StringMap.key
+)
+"linux.ml" 78 2565 2611 "linux.ml" 78 2565 2615
+type(
+  string StringMap.t
+)
+ident(
+  int_ref fmap "linux.ml" 76 2502 2514 "linux.ml" 76 2502 2518
+)
+"linux.ml" 78 2565 2586 "linux.ml" 78 2565 2615
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 79 2619 2630 "linux.ml" 79 2619 2636
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"linux.ml" 79 2619 2637 "linux.ml" 79 2619 2652
+type(
+  (string -> unit, out_channel, unit) format
+)
+"linux.ml" 79 2619 2653 "linux.ml" 79 2619 2656
+type(
+  string
+)
+ident(
+  int_ref msg "linux.ml" 78 2565 2580 "linux.ml" 78 2565 2583
+)
+"linux.ml" 79 2619 2630 "linux.ml" 79 2619 2656
+call(
+  stack
+)
+type(
+  unit
+)
+"linux.ml" 78 2565 2576 "linux.ml" 79 2619 2656
+type(
+  unit
+)
+"linux.ml" 80 2657 2671 "linux.ml" 80 2657 2680
+type(
+  exn
+)
+"linux.ml" 80 2657 2684 "linux.ml" 80 2657 2686
+type(
+  unit
+)
+"linux.ml" 77 2552 2560 "linux.ml" 81 2687 2696
+type(
+  unit
+)
+"linux.ml" 83 2711 2726 "linux.ml" 83 2711 2730
+type(
+  string
+)
+ident(
+  def line "linux.ml" 85 2812 2823 "linux.ml" 85 2812 2861
+)
+"linux.ml" 83 2711 2733 "linux.ml" 83 2711 2747
+type(
+  StringMap.key -> string StringMap.t -> string
+)
+ident(
+  ext_ref StringMap.find
+)
+"linux.ml" 83 2711 2748 "linux.ml" 83 2711 2754
+type(
+  StringMap.key
+)
+"linux.ml" 83 2711 2755 "linux.ml" 83 2711 2759
+type(
+  string StringMap.t
+)
+ident(
+  int_ref fmap "linux.ml" 76 2502 2514 "linux.ml" 76 2502 2518
+)
+"linux.ml" 83 2711 2733 "linux.ml" 83 2711 2759
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 84 2760 2775 "linux.ml" 84 2760 2779
+type(
+  string
+)
+ident(
+  def char "linux.ml" 85 2812 2823 "linux.ml" 85 2812 2861
+)
+"linux.ml" 84 2760 2782 "linux.ml" 84 2760 2796
+type(
+  StringMap.key -> string StringMap.t -> string
+)
+ident(
+  ext_ref StringMap.find
+)
+"linux.ml" 84 2760 2797 "linux.ml" 84 2760 2803
+type(
+  StringMap.key
+)
+"linux.ml" 84 2760 2804 "linux.ml" 84 2760 2808
+type(
+  string StringMap.t
+)
+ident(
+  int_ref fmap "linux.ml" 76 2502 2514 "linux.ml" 76 2502 2518
+)
+"linux.ml" 84 2760 2782 "linux.ml" 84 2760 2808
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 85 2812 2823 "linux.ml" 85 2812 2829
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"linux.ml" 85 2812 2830 "linux.ml" 85 2812 2851
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"linux.ml" 85 2812 2852 "linux.ml" 85 2812 2856
+type(
+  string
+)
+ident(
+  int_ref line "linux.ml" 83 2711 2726 "linux.ml" 83 2711 2730
+)
+"linux.ml" 85 2812 2857 "linux.ml" 85 2812 2861
+type(
+  string
+)
+ident(
+  int_ref char "linux.ml" 84 2760 2775 "linux.ml" 84 2760 2779
+)
+"linux.ml" 85 2812 2823 "linux.ml" 85 2812 2861
+call(
+  stack
+)
+type(
+  unit
+)
+"linux.ml" 83 2711 2722 "linux.ml" 85 2812 2861
+type(
+  unit
+)
+"linux.ml" 86 2862 2876 "linux.ml" 86 2862 2885
+type(
+  exn
+)
+"linux.ml" 86 2862 2889 "linux.ml" 86 2862 2891
+type(
+  unit
+)
+"linux.ml" 82 2698 2706 "linux.ml" 87 2892 2901
+type(
+  unit
+)
+"linux.ml" 89 2916 2931 "linux.ml" 89 2916 2935
+type(
+  string
+)
+ident(
+  def lens "linux.ml" 90 2968 2979 "linux.ml" 90 2968 3004
+)
+"linux.ml" 89 2916 2938 "linux.ml" 89 2916 2952
+type(
+  StringMap.key -> string StringMap.t -> string
+)
+ident(
+  ext_ref StringMap.find
+)
+"linux.ml" 89 2916 2953 "linux.ml" 89 2916 2959
+type(
+  StringMap.key
+)
+"linux.ml" 89 2916 2960 "linux.ml" 89 2916 2964
+type(
+  string StringMap.t
+)
+ident(
+  int_ref fmap "linux.ml" 76 2502 2514 "linux.ml" 76 2502 2518
+)
+"linux.ml" 89 2916 2938 "linux.ml" 89 2916 2964
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 90 2968 2979 "linux.ml" 90 2968 2985
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"linux.ml" 90 2968 2986 "linux.ml" 90 2968 2999
+type(
+  (string -> unit, out_channel, unit) format
+)
+"linux.ml" 90 2968 3000 "linux.ml" 90 2968 3004
+type(
+  string
+)
+ident(
+  int_ref lens "linux.ml" 89 2916 2931 "linux.ml" 89 2916 2935
+)
+"linux.ml" 90 2968 2979 "linux.ml" 90 2968 3004
+call(
+  stack
+)
+type(
+  unit
+)
+"linux.ml" 89 2916 2927 "linux.ml" 90 2968 3004
+type(
+  unit
+)
+"linux.ml" 91 3005 3019 "linux.ml" 91 3005 3028
+type(
+  exn
+)
+"linux.ml" 91 3005 3032 "linux.ml" 91 3005 3034
+type(
+  unit
+)
+"linux.ml" 88 2903 2911 "linux.ml" 92 3035 3044
+type(
+  unit
+)
+"linux.ml" 93 3046 3054 "linux.ml" 93 3046 3060
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"linux.ml" 93 3046 3061 "linux.ml" 93 3046 3065
+type(
+  (unit, out_channel, unit) format
+)
+"linux.ml" 93 3046 3054 "linux.ml" 93 3046 3065
+call(
+  tail
+)
+type(
+  unit
+)
+"linux.ml" 88 2903 2911 "linux.ml" 93 3046 3065
+type(
+  unit
+)
+"linux.ml" 82 2698 2706 "linux.ml" 93 3046 3065
+type(
+  unit
+)
+"linux.ml" 77 2552 2560 "linux.ml" 93 3046 3065
+type(
+  unit
+)
+"linux.ml" 76 2502 2510 "linux.ml" 93 3046 3065
+type(
+  unit
+)
+"linux.ml" 75 2446 2454 "linux.ml" 93 3046 3065
+type(
+  unit
+)
+"linux.ml" 73 2408 2422 "linux.ml" 94 3066 3071
+type(
+  StringMap.key -> unit
+)
+"linux.ml" 94 3066 3072 "linux.ml" 94 3066 3081
+type(
+  StringMap.key list
+)
+ident(
+  int_ref filenames "linux.ml" 71 2356 2364 "linux.ml" 71 2356 2373
+)
+"linux.ml" 73 2408 2412 "linux.ml" 94 3066 3081
+call(
+  stack
+)
+type(
+  unit
+)
+"linux.ml" 96 3084 3088 "linux.ml" 96 3084 3093
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"linux.ml" 96 3084 3094 "linux.ml" 96 3084 3100
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stdout
+)
+"linux.ml" 96 3084 3088 "linux.ml" 96 3084 3100
+call(
+  stack
+)
+type(
+  unit
+)
+"linux.ml" 73 2408 2412 "linux.ml" 96 3084 3100
+type(
+  unit
+)
+"linux.ml" 71 2356 2360 "linux.ml" 96 3084 3100
+type(
+  unit
+)
+"linux.ml" 70 2314 2318 "linux.ml" 96 3084 3100
+type(
+  unit
+)
+"linux.ml" 44 1302 1306 "linux.ml" 96 3084 3100
+type(
+  unit
+)
+"linux.ml" 43 1261 1265 "linux.ml" 96 3084 3100
+type(
+  unit
+)
+"linux.ml" 42 1206 1210 "linux.ml" 96 3084 3100
+type(
+  unit
+)
+"linux.ml" 98 3108 3126 "linux.ml" 98 3108 3129
+type(
+  string
+)
+ident(
+  def msg "linux.ml" 98 3108 3133 "linux.ml" 98 3108 3178
+)
+"linux.ml" 98 3108 3112 "linux.ml" 98 3108 3129
+type(
+  exn
+)
+"linux.ml" 98 3108 3133 "linux.ml" 98 3108 3140
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"linux.ml" 98 3108 3141 "linux.ml" 98 3108 3169
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"linux.ml" 98 3108 3170 "linux.ml" 98 3108 3174
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"linux.ml" 98 3108 3175 "linux.ml" 98 3108 3178
+type(
+  string
+)
+ident(
+  int_ref msg "linux.ml" 98 3108 3126 "linux.ml" 98 3108 3129
+)
+"linux.ml" 98 3108 3133 "linux.ml" 98 3108 3178
+call(
+  tail
+)
+type(
+  unit
+)
+"linux.ml" 41 1200 1202 "linux.ml" 98 3108 3178
+type(
+  unit
+)
+"linux.ml" 100 3180 3184 "linux.ml" 100 3180 3191
+type(
+  'a -> 'b -> 'c -> 'd
+)
+ident(
+  def install "linux.ml" 103 3229 3229 --
+)
+"linux.ml" 100 3180 3192 "linux.ml" 100 3180 3193
+type(
+  'a
+)
+ident(
+  def g "linux.ml" 100 3180 3194 "linux.ml" 101 3213 3227
+)
+"linux.ml" 100 3180 3194 "linux.ml" 100 3180 3201
+type(
+  'b
+)
+ident(
+  def inspect "linux.ml" 100 3180 3202 "linux.ml" 101 3213 3227
+)
+"linux.ml" 100 3180 3202 "linux.ml" 100 3180 3210
+type(
+  'c
+)
+ident(
+  def packages "linux.ml" 101 3213 3215 "linux.ml" 101 3213 3227
+)
+"linux.ml" 101 3213 3215 "linux.ml" 101 3213 3227
+type(
+  'd
+)
+"linux.ml" 103 3229 3233 "linux.ml" 103 3229 3239
+type(
+  < aug_get : string -> string; aug_init : string -> int -> 'a;
+    aug_load : unit -> 'b; aug_match : string -> string array;
+    command : string array -> 'c; .. > ->
+  Types.inspect -> string list -> unit
+)
+ident(
+  def remove "linux.ml" 120 3715 3715 --
+)
+"linux.ml" 103 3229 3240 "linux.ml" 103 3229 3241
+type(
+  < aug_get : string -> string; aug_init : string -> int -> 'a;
+    aug_load : unit -> 'b; aug_match : string -> string array;
+    command : string array -> 'c; .. >
+  as 'd
+)
+ident(
+  def g "linux.ml" 103 3229 3242 "linux.ml" 118 3710 3713
+)
+"linux.ml" 103 3229 3242 "linux.ml" 103 3229 3249
+type(
+  Types.inspect
+)
+ident(
+  def inspect "linux.ml" 103 3229 3250 "linux.ml" 118 3710 3713
+)
+"linux.ml" 103 3229 3250 "linux.ml" 103 3229 3258
+type(
+  string list
+)
+ident(
+  def packages "linux.ml" 104 3261 3263 "linux.ml" 118 3710 3713
+)
+"linux.ml" 104 3261 3266 "linux.ml" 104 3261 3274
+type(
+  string list
+)
+ident(
+  int_ref packages "linux.ml" 103 3229 3250 "linux.ml" 103 3229 3258
+)
+"linux.ml" 104 3261 3275 "linux.ml" 104 3261 3277
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"linux.ml" 104 3261 3278 "linux.ml" 104 3261 3280
+type(
+  string list
+)
+"linux.ml" 104 3261 3266 "linux.ml" 104 3261 3280
+type(
+  bool
+)
+"linux.ml" 105 3288 3296 "linux.ml" 105 3288 3310
+type(
+  string
+)
+"linux.ml" 105 3288 3313 "linux.ml" 105 3288 3320
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "linux.ml" 103 3229 3242 "linux.ml" 103 3229 3249
+)
+"linux.ml" 105 3288 3313 "linux.ml" 105 3288 3337
+type(
+  string
+)
+"linux.ml" 106 3341 3351 "linux.ml" 106 3341 3365
+type(
+  string
+)
+ident(
+  int_ref package_format "linux.ml" 105 3288 3296 "linux.ml" 105 3288 3310
+)
+"linux.ml" 107 3371 3377 "linux.ml" 107 3371 3382
+type(
+  string
+)
+"linux.ml" 108 3386 3396 "linux.ml" 108 3386 3399
+type(
+  string list
+)
+"linux.ml" 108 3386 3404 "linux.ml" 108 3386 3409
+type(
+  string
+)
+"linux.ml" 108 3386 3411 "linux.ml" 108 3386 3415
+type(
+  string
+)
+"linux.ml" 108 3386 3402 "linux.ml" 108 3386 3417
+type(
+  string list
+)
+"linux.ml" 108 3386 3418 "linux.ml" 108 3386 3419
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"linux.ml" 108 3386 3420 "linux.ml" 108 3386 3428
+type(
+  string list
+)
+ident(
+  int_ref packages "linux.ml" 103 3229 3250 "linux.ml" 103 3229 3258
+)
+"linux.ml" 108 3386 3402 "linux.ml" 108 3386 3428
+call(
+  stack
+)
+type(
+  string list
+)
+"linux.ml" 109 3432 3442 "linux.ml" 109 3432 3445
+type(
+  string array
+)
+"linux.ml" 109 3432 3448 "linux.ml" 109 3432 3461
+type(
+  string list -> string array
+)
+ident(
+  ext_ref Array.of_list
+)
+"linux.ml" 109 3432 3462 "linux.ml" 109 3432 3465
+type(
+  string list
+)
+ident(
+  int_ref cmd "linux.ml" 108 3386 3396 "linux.ml" 108 3386 3399
+)
+"linux.ml" 109 3432 3448 "linux.ml" 109 3432 3465
+call(
+  stack
+)
+type(
+  string array
+)
+"linux.ml" 110 3469 3475 "linux.ml" 110 3469 3481
+type(
+  'c -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"linux.ml" 110 3469 3483 "linux.ml" 110 3469 3484
+type(
+  'd
+)
+ident(
+  int_ref g "linux.ml" 103 3229 3240 "linux.ml" 103 3229 3241
+)
+"linux.ml" 110 3469 3483 "linux.ml" 110 3469 3492
+call(
+  stack
+)
+type(
+  string array -> 'c
+)
+"linux.ml" 110 3469 3493 "linux.ml" 110 3469 3496
+type(
+  string array
+)
+ident(
+  int_ref cmd "linux.ml" 109 3432 3442 "linux.ml" 109 3432 3445
+)
+"linux.ml" 110 3469 3482 "linux.ml" 110 3469 3497
+type(
+  'c
+)
+"linux.ml" 110 3469 3475 "linux.ml" 110 3469 3497
+type(
+  unit
+)
+"linux.ml" 113 3552 3558 "linux.ml" 113 3552 3571
+type(
+  'd -> unit
+)
+ident(
+  int_ref augeas_reload "linux.ml" 36 1089 1093 "linux.ml" 36 1089 1106
+)
+"linux.ml" 113 3552 3572 "linux.ml" 113 3552 3573
+type(
+  'd
+)
+ident(
+  int_ref g "linux.ml" 103 3229 3240 "linux.ml" 103 3229 3241
+)
+"linux.ml" 113 3552 3558 "linux.ml" 113 3552 3573
+call(
+  tail
+)
+type(
+  unit
+)
+"linux.ml" 110 3469 3475 "linux.ml" 113 3552 3573
+type(
+  unit
+)
+"linux.ml" 109 3432 3438 "linux.ml" 113 3552 3573
+type(
+  unit
+)
+"linux.ml" 108 3386 3392 "linux.ml" 113 3552 3573
+type(
+  unit
+)
+"linux.ml" 115 3575 3581 "linux.ml" 115 3575 3587
+type(
+  string
+)
+ident(
+  def format "linux.ml" 116 3591 3597 "linux.ml" 117 3666 3709
+)
+"linux.ml" 116 3591 3597 "linux.ml" 116 3591 3602
+type(
+  ?exit_code:int ->
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"linux.ml" 116 3591 3604 "linux.ml" 116 3591 3606
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"linux.ml" 116 3591 3606 "linux.ml" 116 3591 3664
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"linux.ml" 116 3591 3603 "linux.ml" 116 3591 3665
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"linux.ml" 117 3666 3674 "linux.ml" 117 3666 3680
+type(
+  string
+)
+ident(
+  int_ref format "linux.ml" 115 3575 3581 "linux.ml" 115 3575 3587
+)
+"linux.ml" 117 3666 3682 "linux.ml" 117 3666 3695
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"linux.ml" 117 3666 3696 "linux.ml" 117 3666 3699
+type(
+  string
+)
+"linux.ml" 117 3666 3700 "linux.ml" 117 3666 3708
+type(
+  string list
+)
+ident(
+  int_ref packages "linux.ml" 103 3229 3250 "linux.ml" 103 3229 3258
+)
+"linux.ml" 117 3666 3681 "linux.ml" 117 3666 3709
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 116 3591 3597 "linux.ml" 117 3666 3709
+call(
+  tail
+)
+type(
+  unit
+)
+"linux.ml" 106 3341 3345 "linux.ml" 117 3666 3709
+type(
+  unit
+)
+"linux.ml" 104 3261 3286 "linux.ml" 118 3710 3713
+type(
+  unit
+)
+"linux.ml" 104 3261 3263 "linux.ml" 118 3710 3713
+type(
+  unit
+)
+"linux.ml" 120 3715 3719 "linux.ml" 120 3715 3739
+type(
+  Guestfs.guestfs -> Types.inspect -> G.application2 -> string list
+)
+ident(
+  def file_list_of_package "linux.ml" 158 5027 5027 --
+)
+"linux.ml" 120 3715 3741 "linux.ml" 120 3715 3742
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "linux.ml" 120 3715 3762 "linux.ml" 156 5013 5025
+)
+"linux.ml" 120 3715 3762 "linux.ml" 120 3715 3769
+type(
+  Types.inspect
+)
+ident(
+  def inspect "linux.ml" 120 3715 3770 "linux.ml" 156 5013 5025
+)
+"linux.ml" 120 3715 3770 "linux.ml" 120 3715 3773
+type(
+  G.application2
+)
+ident(
+  def app "linux.ml" 121 3776 3778 "linux.ml" 156 5013 5025
+)
+"linux.ml" 121 3776 3782 "linux.ml" 121 3776 3796
+type(
+  string
+)
+"linux.ml" 121 3776 3799 "linux.ml" 121 3776 3806
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "linux.ml" 120 3715 3762 "linux.ml" 120 3715 3769
+)
+"linux.ml" 121 3776 3799 "linux.ml" 121 3776 3823
+type(
+  string
+)
+"linux.ml" 123 3828 3836 "linux.ml" 123 3828 3850
+type(
+  string
+)
+ident(
+  int_ref package_format "linux.ml" 121 3776 3782 "linux.ml" 121 3776 3796
+)
+"linux.ml" 124 3856 3860 "linux.ml" 124 3856 3865
+type(
+  string
+)
+"linux.ml" 128 4004 4012 "linux.ml" 128 4004 4020
+type(
+  string
+)
+"linux.ml" 129 4023 4029 "linux.ml" 129 4023 4036
+type(
+  (string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"linux.ml" 129 4023 4037 "linux.ml" 129 4023 4047
+type(
+  (string -> string -> string -> string, unit, string) format
+)
+"linux.ml" 129 4023 4048 "linux.ml" 129 4023 4051
+type(
+  G.application2
+)
+ident(
+  int_ref app "linux.ml" 120 3715 3770 "linux.ml" 120 3715 3773
+)
+"linux.ml" 129 4023 4048 "linux.ml" 129 4023 4063
+type(
+  string
+)
+"linux.ml" 130 4064 4072 "linux.ml" 130 4064 4075
+type(
+  G.application2
+)
+ident(
+  int_ref app "linux.ml" 120 3715 3770 "linux.ml" 120 3715 3773
+)
+"linux.ml" 130 4064 4072 "linux.ml" 130 4064 4090
+type(
+  string
+)
+"linux.ml" 130 4064 4091 "linux.ml" 130 4064 4094
+type(
+  G.application2
+)
+ident(
+  int_ref app "linux.ml" 120 3715 3770 "linux.ml" 120 3715 3773
+)
+"linux.ml" 130 4064 4091 "linux.ml" 130 4064 4109
+type(
+  string
+)
+"linux.ml" 129 4023 4029 "linux.ml" 130 4064 4109
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 131 4113 4121 "linux.ml" 131 4113 4129
+type(
+  string
+)
+"linux.ml" 132 4132 4141 "linux.ml" 132 4132 4144
+type(
+  G.application2
+)
+ident(
+  int_ref app "linux.ml" 120 3715 3770 "linux.ml" 120 3715 3773
+)
+"linux.ml" 132 4132 4141 "linux.ml" 132 4132 4157
+type(
+  int32
+)
+"linux.ml" 132 4132 4158 "linux.ml" 132 4132 4159
+type(
+  int32 -> int32 -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"linux.ml" 132 4132 4160 "linux.ml" 132 4132 4163
+type(
+  int32
+)
+"linux.ml" 132 4132 4141 "linux.ml" 132 4132 4163
+type(
+  bool
+)
+"linux.ml" 136 4277 4289 "linux.ml" 136 4277 4301
+type(
+  bool
+)
+ident(
+  def is_rhel_lt_5 "linux.ml" 143 4545 4553 "linux.ml" 146 4606 4658
+)
+"linux.ml" 137 4304 4320 "linux.ml" 137 4304 4327
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "linux.ml" 120 3715 3762 "linux.ml" 120 3715 3769
+)
+"linux.ml" 138 4333 4356 "linux.ml" 138 4333 4363
+type(
+  string
+)
+"linux.ml" 139 4365 4390 "linux.ml" 139 4365 4396
+type(
+  string
+)
+"linux.ml" 139 4365 4399 "linux.ml" 139 4365 4407
+type(
+  string
+)
+"linux.ml" 139 4365 4390 "linux.ml" 139 4365 4407
+type(
+  string
+)
+"linux.ml" 139 4365 4410 "linux.ml" 139 4365 4427
+type(
+  string
+)
+"linux.ml" 139 4365 4390 "linux.ml" 139 4365 4427
+type(
+  string
+)
+"linux.ml" 140 4430 4448 "linux.ml" 140 4430 4462
+type(
+  string
+)
+"linux.ml" 139 4365 4390 "linux.ml" 140 4430 4462
+type(
+  string
+)
+"linux.ml" 141 4464 4496 "linux.ml" 141 4464 4497
+type(
+  int
+)
+ident(
+  def v "linux.ml" 141 4464 4500 "linux.ml" 141 4464 4518
+)
+"linux.ml" 138 4333 4345 "linux.ml" 141 4464 4499
+type(
+  Types.inspect
+)
+"linux.ml" 141 4464 4505 "linux.ml" 141 4464 4506
+type(
+  int
+)
+ident(
+  int_ref v "linux.ml" 141 4464 4496 "linux.ml" 141 4464 4497
+)
+"linux.ml" 141 4464 4507 "linux.ml" 141 4464 4508
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"linux.ml" 141 4464 4509 "linux.ml" 141 4464 4510
+type(
+  int
+)
+"linux.ml" 141 4464 4505 "linux.ml" 141 4464 4510
+type(
+  bool
+)
+"linux.ml" 141 4464 4514 "linux.ml" 141 4464 4518
+type(
+  bool
+)
+"linux.ml" 141 4464 4500 "linux.ml" 141 4464 4518
+type(
+  bool
+)
+"linux.ml" 142 4519 4531 "linux.ml" 142 4519 4532
+type(
+  Types.inspect
+)
+"linux.ml" 142 4519 4536 "linux.ml" 142 4519 4541
+type(
+  bool
+)
+"linux.ml" 137 4304 4314 "linux.ml" 142 4519 4541
+type(
+  bool
+)
+"linux.ml" 143 4545 4556 "linux.ml" 143 4545 4568
+type(
+  bool
+)
+ident(
+  int_ref is_rhel_lt_5 "linux.ml" 136 4277 4289 "linux.ml" 136 4277 4301
+)
+"linux.ml" 144 4574 4584 "linux.ml" 144 4574 4592
+type(
+  string
+)
+ident(
+  int_ref pkg_name "linux.ml" 128 4004 4012 "linux.ml" 128 4004 4020
+)
+"linux.ml" 146 4606 4616 "linux.ml" 146 4606 4623
+type(
+  (int32 -> string -> string, unit, string) format ->
+  int32 -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"linux.ml" 146 4606 4624 "linux.ml" 146 4606 4632
+type(
+  (int32 -> string -> string, unit, string) format
+)
+"linux.ml" 146 4606 4633 "linux.ml" 146 4606 4636
+type(
+  G.application2
+)
+ident(
+  int_ref app "linux.ml" 120 3715 3770 "linux.ml" 120 3715 3773
+)
+"linux.ml" 146 4606 4633 "linux.ml" 146 4606 4649
+type(
+  int32
+)
+"linux.ml" 146 4606 4650 "linux.ml" 146 4606 4658
+type(
+  string
+)
+ident(
+  int_ref pkg_name "linux.ml" 128 4004 4012 "linux.ml" 128 4004 4020
+)
+"linux.ml" 146 4606 4616 "linux.ml" 146 4606 4658
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 143 4545 4553 "linux.ml" 146 4606 4658
+type(
+  string
+)
+"linux.ml" 132 4132 4169 "linux.ml" 147 4659 4666
+type(
+  string
+)
+"linux.ml" 148 4672 4680 "linux.ml" 148 4672 4688
+type(
+  string
+)
+ident(
+  int_ref pkg_name "linux.ml" 128 4004 4012 "linux.ml" 128 4004 4020
+)
+"linux.ml" 132 4132 4138 "linux.ml" 148 4672 4688
+type(
+  string
+)
+"linux.ml" 149 4692 4700 "linux.ml" 149 4692 4703
+type(
+  string array
+)
+"linux.ml" 149 4692 4709 "linux.ml" 149 4692 4714
+type(
+  string
+)
+"linux.ml" 149 4692 4716 "linux.ml" 149 4692 4721
+type(
+  string
+)
+"linux.ml" 149 4692 4723 "linux.ml" 149 4692 4731
+type(
+  string
+)
+ident(
+  int_ref pkg_name "linux.ml" 131 4113 4121 "linux.ml" 131 4113 4129
+)
+"linux.ml" 149 4692 4706 "linux.ml" 149 4692 4734
+type(
+  string array
+)
+"linux.ml" 150 4738 4745 "linux.ml" 150 4738 4752
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"linux.ml" 150 4738 4753 "linux.ml" 150 4738 4755
+type(
+  unit
+)
+"linux.ml" 150 4738 4745 "linux.ml" 150 4738 4755
+call(
+  stack
+)
+type(
+  bool
+)
+"linux.ml" 150 4738 4761 "linux.ml" 150 4738 4768
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"linux.ml" 150 4738 4769 "linux.ml" 150 4738 4777
+type(
+  (string -> unit, out_channel, unit) format
+)
+"linux.ml" 150 4738 4779 "linux.ml" 150 4738 4792
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"linux.ml" 150 4738 4793 "linux.ml" 150 4738 4796
+type(
+  string
+)
+"linux.ml" 150 4738 4798 "linux.ml" 150 4738 4811
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"linux.ml" 150 4738 4812 "linux.ml" 150 4738 4815
+type(
+  string array
+)
+ident(
+  int_ref cmd "linux.ml" 149 4692 4700 "linux.ml" 149 4692 4703
+)
+"linux.ml" 150 4738 4797 "linux.ml" 150 4738 4816
+call(
+  stack
+)
+type(
+  string list
+)
+"linux.ml" 150 4738 4778 "linux.ml" 150 4738 4817
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 150 4738 4761 "linux.ml" 150 4738 4817
+call(
+  stack
+)
+type(
+  unit
+)
+"linux.ml" 150 4738 4742 "linux.ml" 150 4738 4817
+type(
+  unit
+)
+"linux.ml" 151 4819 4827 "linux.ml" 151 4819 4832
+type(
+  string array
+)
+"linux.ml" 151 4819 4835 "linux.ml" 151 4819 4836
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "linux.ml" 120 3715 3741 "linux.ml" 120 3715 3742
+)
+"linux.ml" 151 4819 4835 "linux.ml" 151 4819 4850
+call(
+  stack
+)
+type(
+  string array -> string array
+)
+"linux.ml" 151 4819 4851 "linux.ml" 151 4819 4854
+type(
+  string array
+)
+ident(
+  int_ref cmd "linux.ml" 149 4692 4700 "linux.ml" 149 4692 4703
+)
+"linux.ml" 151 4819 4835 "linux.ml" 151 4819 4854
+type(
+  string array
+)
+"linux.ml" 152 4858 4866 "linux.ml" 152 4858 4871
+type(
+  string list
+)
+"linux.ml" 152 4858 4874 "linux.ml" 152 4858 4887
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"linux.ml" 152 4858 4888 "linux.ml" 152 4858 4893
+type(
+  string array
+)
+ident(
+  int_ref files "linux.ml" 151 4819 4827 "linux.ml" 151 4819 4832
+)
+"linux.ml" 152 4858 4874 "linux.ml" 152 4858 4893
+call(
+  stack
+)
+type(
+  string list
+)
+"linux.ml" 153 4897 4901 "linux.ml" 153 4897 4910
+type(
+  (string -> string -> int) -> string list -> string list
+)
+ident(
+  ext_ref List.sort
+)
+"linux.ml" 153 4897 4911 "linux.ml" 153 4897 4918
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"linux.ml" 153 4897 4919 "linux.ml" 153 4897 4924
+type(
+  string list
+)
+ident(
+  int_ref files "linux.ml" 152 4858 4866 "linux.ml" 152 4858 4871
+)
+"linux.ml" 153 4897 4901 "linux.ml" 153 4897 4924
+call(
+  tail
+)
+type(
+  string list
+)
+"linux.ml" 152 4858 4862 "linux.ml" 153 4897 4924
+type(
+  string list
+)
+"linux.ml" 151 4819 4823 "linux.ml" 153 4897 4924
+type(
+  string list
+)
+"linux.ml" 150 4738 4742 "linux.ml" 153 4897 4924
+type(
+  string list
+)
+"linux.ml" 149 4692 4696 "linux.ml" 153 4897 4924
+type(
+  string list
+)
+"linux.ml" 131 4113 4117 "linux.ml" 153 4897 4924
+type(
+  string list
+)
+"linux.ml" 128 4004 4008 "linux.ml" 153 4897 4924
+type(
+  string list
+)
+"linux.ml" 154 4925 4929 "linux.ml" 154 4925 4935
+type(
+  string
+)
+ident(
+  def format "linux.ml" 155 4939 4943 "linux.ml" 156 5013 5025
+)
+"linux.ml" 155 4939 4943 "linux.ml" 155 4939 4948
+type(
+  ?exit_code:int ->
+  (string -> string list, unit, string, string list) format4 ->
+  string -> string list
+)
+ident(
+  ext_ref Common_utils.error
+)
+"linux.ml" 155 4939 4950 "linux.ml" 155 4939 4952
+type(
+  (string -> string list, unit, string, string, string, string list) format6 ->
+  (string -> string list, unit, string, string list) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"linux.ml" 155 4939 4952 "linux.ml" 155 4939 5011
+type(
+  (string -> string list, unit, string, string, string, string list) format6
+)
+"linux.ml" 155 4939 4949 "linux.ml" 155 4939 5012
+type(
+  (string -> string list, unit, string, string list) format4
+)
+"linux.ml" 156 5013 5019 "linux.ml" 156 5013 5025
+type(
+  string
+)
+ident(
+  int_ref format "linux.ml" 154 4925 4929 "linux.ml" 154 4925 4935
+)
+"linux.ml" 155 4939 4943 "linux.ml" 156 5013 5025
+call(
+  tail
+)
+type(
+  string list
+)
+"linux.ml" 123 3828 3830 "linux.ml" 156 5013 5025
+type(
+  string list
+)
+"linux.ml" 121 3776 3778 "linux.ml" 156 5013 5025
+type(
+  string list
+)
+"linux.ml" 158 5027 5035 "linux.ml" 158 5027 5045
+type(
+  < command : string array -> 'a; .. > -> Types.inspect -> string -> 'a
+)
+ident(
+  def file_owner "linux.ml" 158 5027 5027 --
+)
+"linux.ml" 158 5027 5046 "linux.ml" 158 5027 5047
+type(
+  < command : string array -> 'a; .. > as 'b
+)
+ident(
+  def g "linux.ml" 158 5027 5048 "linux.ml" 176 5644 5709
+)
+"linux.ml" 158 5027 5048 "linux.ml" 158 5027 5055
+type(
+  Types.inspect
+)
+ident(
+  def inspect "linux.ml" 158 5027 5056 "linux.ml" 176 5644 5709
+)
+"linux.ml" 158 5027 5056 "linux.ml" 158 5027 5060
+type(
+  string
+)
+ident(
+  def path "linux.ml" 159 5063 5065 "linux.ml" 176 5644 5709
+)
+"linux.ml" 159 5063 5069 "linux.ml" 159 5063 5083
+type(
+  string
+)
+"linux.ml" 159 5063 5086 "linux.ml" 159 5063 5093
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "linux.ml" 158 5027 5048 "linux.ml" 158 5027 5055
+)
+"linux.ml" 159 5063 5086 "linux.ml" 159 5063 5110
+type(
+  string
+)
+"linux.ml" 160 5114 5122 "linux.ml" 160 5114 5136
+type(
+  string
+)
+ident(
+  int_ref package_format "linux.ml" 159 5063 5069 "linux.ml" 159 5063 5083
+)
+"linux.ml" 161 5142 5146 "linux.ml" 161 5142 5151
+type(
+  string
+)
+"linux.ml" 165 5295 5305 "linux.ml" 165 5295 5308
+type(
+  string array
+)
+"linux.ml" 165 5295 5314 "linux.ml" 165 5295 5319
+type(
+  string
+)
+"linux.ml" 165 5295 5321 "linux.ml" 165 5295 5326
+type(
+  string
+)
+"linux.ml" 165 5295 5328 "linux.ml" 165 5295 5334
+type(
+  string
+)
+"linux.ml" 165 5295 5336 "linux.ml" 165 5295 5345
+type(
+  string
+)
+"linux.ml" 165 5295 5347 "linux.ml" 165 5295 5351
+type(
+  string
+)
+ident(
+  int_ref path "linux.ml" 158 5027 5056 "linux.ml" 158 5027 5060
+)
+"linux.ml" 165 5295 5311 "linux.ml" 165 5295 5354
+type(
+  string array
+)
+"linux.ml" 166 5358 5367 "linux.ml" 166 5358 5374
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"linux.ml" 166 5358 5375 "linux.ml" 166 5358 5377
+type(
+  unit
+)
+"linux.ml" 166 5358 5367 "linux.ml" 166 5358 5377
+call(
+  stack
+)
+type(
+  bool
+)
+"linux.ml" 166 5358 5383 "linux.ml" 166 5358 5390
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"linux.ml" 166 5358 5391 "linux.ml" 166 5358 5399
+type(
+  (string -> unit, out_channel, unit) format
+)
+"linux.ml" 166 5358 5401 "linux.ml" 166 5358 5414
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"linux.ml" 166 5358 5415 "linux.ml" 166 5358 5418
+type(
+  string
+)
+"linux.ml" 166 5358 5420 "linux.ml" 166 5358 5433
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"linux.ml" 166 5358 5434 "linux.ml" 166 5358 5437
+type(
+  string array
+)
+ident(
+  int_ref cmd "linux.ml" 165 5295 5305 "linux.ml" 165 5295 5308
+)
+"linux.ml" 166 5358 5419 "linux.ml" 166 5358 5438
+call(
+  stack
+)
+type(
+  string list
+)
+"linux.ml" 166 5358 5400 "linux.ml" 166 5358 5439
+call(
+  stack
+)
+type(
+  string
+)
+"linux.ml" 166 5358 5383 "linux.ml" 166 5358 5439
+call(
+  stack
+)
+type(
+  unit
+)
+"linux.ml" 166 5358 5364 "linux.ml" 166 5358 5439
+type(
+  unit
+)
+"linux.ml" 167 5441 5452 "linux.ml" 167 5441 5453
+type(
+  'b
+)
+ident(
+  int_ref g "linux.ml" 158 5027 5046 "linux.ml" 158 5027 5047
+)
+"linux.ml" 167 5441 5452 "linux.ml" 167 5441 5461
+call(
+  stack
+)
+type(
+  string array -> 'a
+)
+"linux.ml" 167 5441 5462 "linux.ml" 167 5441 5465
+type(
+  string array
+)
+ident(
+  int_ref cmd "linux.ml" 165 5295 5305 "linux.ml" 165 5295 5308
+)
+"linux.ml" 167 5441 5452 "linux.ml" 167 5441 5465
+type(
+  'a
+)
+"linux.ml" 168 5466 5492 "linux.ml" 168 5466 5495
+type(
+  string
+)
+ident(
+  def msg "linux.ml" 169 5506 5515 "linux.ml" 172 5600 5620
+)
+"linux.ml" 168 5466 5478 "linux.ml" 168 5466 5495
+type(
+  exn
+)
+"linux.ml" 168 5466 5478 "linux.ml" 168 5466 5502
+type(
+  exn
+)
+ident(
+  def exn "linux.ml" 169 5506 5515 "linux.ml" 172 5600 5620
+)
+"linux.ml" 169 5506 5518 "linux.ml" 169 5506 5529
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.string_find
+)
+"linux.ml" 169 5506 5530 "linux.ml" 169 5506 5533
+type(
+  string
+)
+ident(
+  int_ref msg "linux.ml" 168 5466 5492 "linux.ml" 168 5466 5495
+)
+"linux.ml" 169 5506 5534 "linux.ml" 169 5506 5548
+type(
+  string
+)
+"linux.ml" 169 5506 5518 "linux.ml" 169 5506 5548
+call(
+  stack
+)
+type(
+  int
+)
+"linux.ml" 169 5506 5549 "linux.ml" 169 5506 5551
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"linux.ml" 169 5506 5552 "linux.ml" 169 5506 5553
+type(
+  int
+)
+"linux.ml" 169 5506 5518 "linux.ml" 169 5506 5553
+type(
+  bool
+)
+"linux.ml" 170 5559 5570 "linux.ml" 170 5559 5575
+type(
+  exn -> 'a
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"linux.ml" 170 5559 5576 "linux.ml" 170 5559 5585
+type(
+  exn
+)
+"linux.ml" 170 5559 5570 "linux.ml" 170 5559 5585
+type(
+  'a
+)
+"linux.ml" 172 5600 5611 "linux.ml" 172 5600 5616
+type(
+  exn -> 'a
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"linux.ml" 172 5600 5617 "linux.ml" 172 5600 5620
+type(
+  exn
+)
+ident(
+  int_ref exn "linux.ml" 168 5466 5478 "linux.ml" 168 5466 5502
+)
+"linux.ml" 172 5600 5611 "linux.ml" 172 5600 5620
+type(
+  'a
+)
+"linux.ml" 169 5506 5515 "linux.ml" 172 5600 5620
+type(
+  'a
+)
+"linux.ml" 167 5441 5447 "linux.ml" 173 5621 5628
+type(
+  'a
+)
+"linux.ml" 166 5358 5364 "linux.ml" 173 5621 5628
+type(
+  'a
+)
+"linux.ml" 165 5295 5301 "linux.ml" 173 5621 5628
+type(
+  'a
+)
+"linux.ml" 175 5630 5634 "linux.ml" 175 5630 5640
+type(
+  string
+)
+ident(
+  def format "linux.ml" 176 5644 5648 "linux.ml" 176 5644 5709
+)
+"linux.ml" 176 5644 5648 "linux.ml" 176 5644 5653
+type(
+  ?exit_code:int -> (string -> 'a, unit, string, 'a) format4 -> string -> 'a
+)
+ident(
+  ext_ref Common_utils.error
+)
+"linux.ml" 176 5644 5655 "linux.ml" 176 5644 5657
+type(
+  (string -> 'a, unit, string, string, string, 'a) format6 ->
+  (string -> 'a, unit, string, 'a) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"linux.ml" 176 5644 5657 "linux.ml" 176 5644 5701
+type(
+  (string -> 'a, unit, string, string, string, 'a) format6
+)
+"linux.ml" 176 5644 5654 "linux.ml" 176 5644 5702
+type(
+  (string -> 'a, unit, string, 'a) format4
+)
+"linux.ml" 176 5644 5703 "linux.ml" 176 5644 5709
+type(
+  string
+)
+ident(
+  int_ref format "linux.ml" 175 5630 5634 "linux.ml" 175 5630 5640
+)
+"linux.ml" 176 5644 5648 "linux.ml" 176 5644 5709
+call(
+  tail
+)
+type(
+  'a
+)
+"linux.ml" 160 5114 5116 "linux.ml" 176 5644 5709
+type(
+  'a
+)
+"linux.ml" 159 5063 5065 "linux.ml" 176 5644 5709
+type(
+  'a
+)
+"linux.ml" 178 5711 5715 "linux.ml" 178 5711 5728
+type(
+  'b -> Types.inspect -> string -> bool
+)
+ident(
+  def is_file_owned "linux.ml" 158 5027 5027 --
+)
+"linux.ml" 178 5711 5729 "linux.ml" 178 5711 5730
+type(
+  'b
+)
+ident(
+  def g "linux.ml" 178 5711 5731 "linux.ml" 180 5784 5809
+)
+"linux.ml" 178 5711 5731 "linux.ml" 178 5711 5738
+type(
+  Types.inspect
+)
+ident(
+  def inspect "linux.ml" 178 5711 5739 "linux.ml" 180 5784 5809
+)
+"linux.ml" 178 5711 5739 "linux.ml" 178 5711 5743
+type(
+  string
+)
+ident(
+  def path "linux.ml" 179 5746 5748 "linux.ml" 180 5784 5809
+)
+"linux.ml" 179 5746 5752 "linux.ml" 179 5746 5762
+type(
+  'b -> Types.inspect -> string -> 'a
+)
+ident(
+  int_ref file_owner "linux.ml" 158 5027 5035 "linux.ml" 158 5027 5045
+)
+"linux.ml" 179 5746 5763 "linux.ml" 179 5746 5764
+type(
+  'b
+)
+ident(
+  int_ref g "linux.ml" 178 5711 5729 "linux.ml" 178 5711 5730
+)
+"linux.ml" 179 5746 5765 "linux.ml" 179 5746 5772
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "linux.ml" 178 5711 5731 "linux.ml" 178 5711 5738
+)
+"linux.ml" 179 5746 5773 "linux.ml" 179 5746 5777
+type(
+  string
+)
+ident(
+  int_ref path "linux.ml" 178 5711 5739 "linux.ml" 178 5711 5743
+)
+"linux.ml" 179 5746 5752 "linux.ml" 179 5746 5777
+call(
+  stack
+)
+type(
+  'a
+)
+"linux.ml" 179 5746 5779 "linux.ml" 179 5746 5783
+type(
+  bool
+)
+"linux.ml" 179 5746 5752 "linux.ml" 179 5746 5783
+type(
+  bool
+)
+"linux.ml" 180 5784 5791 "linux.ml" 180 5784 5800
+type(
+  exn
+)
+"linux.ml" 180 5784 5804 "linux.ml" 180 5784 5809
+type(
+  bool
+)
+"linux.ml" 179 5746 5748 "linux.ml" 180 5784 5809
+type(
+  bool
+)

@@ -1,0 +1,222 @@
+
+<html>
+<head>
+<title>guestfs-ruby</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a>
+    <ul>
+      <li><a href="#exceptions">EXCEPTIONS</a></li>
+    </ul>
+  </li>
+  <li><a href="#example-1:-create-a-disk-image">EXAMPLE 1: CREATE A DISK IMAGE</a></li>
+  <li><a href="#example-2:-inspect-a-virtual-machine-disk-image">EXAMPLE 2: INSPECT A VIRTUAL MACHINE DISK IMAGE</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>guestfs-ruby - How to use libguestfs from Ruby</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> require &#39;guestfs&#39;
+ g = Guestfs::Guestfs.new()
+ g.add_drive_opts(&quot;disk.img&quot;,
+                  :readonly =&gt; 1, :format =&gt; &quot;raw&quot;)
+ g.launch()</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>This manual page documents how to call libguestfs from the Ruby programming language. This page just documents the differences from the C API and gives some examples. If you are not familiar with using libguestfs, you also need to read <a href="guestfs.3.html">guestfs(3)</a>.</p>
+
+<h2 id="exceptions">EXCEPTIONS</h2>
+
+<p>Errors from libguestfs functions are mapped into the <code>Error</code> exception. This has a single parameter which is the error message (a string).</p>
+
+<h1 id="example-1:-create-a-disk-image">EXAMPLE 1: CREATE A DISK IMAGE</h1>
+
+<pre><code> # Example showing how to create a disk image.
+ 
+ require &#39;guestfs&#39;
+ 
+ output = &quot;disk.img&quot;
+ 
+ g = Guestfs::Guestfs.new()
+ 
+ # Create a raw-format sparse disk image, 512 MB in size.
+ g.disk_create (output, &quot;raw&quot;, 512 * 1024 * 1024)
+ 
+ # Set the trace flag so that we can see each libguestfs call.
+ g.set_trace(1)
+ 
+ # Attach the disk image to libguestfs.
+ g.add_drive_opts(output, :format =&gt; &quot;raw&quot;)
+ 
+ # Run the libguestfs back-end.
+ g.launch();
+ 
+ # Get the list of devices.  Because we only added one drive
+ # above, we expect that this list should contain a single
+ # element.
+ devices = g.list_devices()
+ if devices.length != 1 then
+   raise &quot;error: expected a single device from list-devices&quot;
+ end
+ 
+ # Partition the disk as one single MBR partition.
+ g.part_disk(devices[0], &quot;mbr&quot;)
+ 
+ # Get the list of partitions.  We expect a single element, which
+ # is the partition we have just created.
+ partitions = g.list_partitions()
+ if partitions.length != 1 then
+   raise &quot;error: expected a single partition from list-partitions&quot;
+ end
+ 
+ # Create a filesystem on the partition.
+ g.mkfs(&quot;ext4&quot;, partitions[0])
+ 
+ # Now mount the filesystem so that we can add files.
+ g.mount(partitions[0], &quot;/&quot;)
+ 
+ # Create some files and directories.
+ g.touch(&quot;/empty&quot;)
+ message = &quot;Hello, world\n&quot;
+ g.write(&quot;/hello&quot;, message)
+ g.mkdir(&quot;/foo&quot;)
+ 
+ # This one uploads the local file /etc/resolv.conf into
+ # the disk image.
+ g.upload(&quot;/etc/resolv.conf&quot;, &quot;/foo/resolv.conf&quot;)
+ 
+ # Because we wrote to the disk and we want to detect write
+ # errors, call g.shutdown.  You don&#39;t need to do this:
+ # g.close will do it implicitly.
+ g.shutdown()
+ 
+ # Note also that handles are automatically closed if they are
+ # reaped by the garbage collector.  You only need to call close
+ # if you want to close the handle right away.
+ g.close()</code></pre>
+
+<h1 id="example-2:-inspect-a-virtual-machine-disk-image">EXAMPLE 2: INSPECT A VIRTUAL MACHINE DISK IMAGE</h1>
+
+<pre><code> # Example showing how to inspect a virtual machine disk.
+ 
+ require &#39;guestfs&#39;
+ 
+ if ARGV.length == 0
+   puts &quot;usage: inspect_vm disk.img&quot;
+   exit 1
+ end
+ disk = ARGV[0]
+ 
+ g = Guestfs::Guestfs.new()
+ 
+ # Attach the disk image read-only to libguestfs.
+ g.add_drive_opts(disk, :readonly =&gt; 1)
+ 
+ # Run the libguestfs back-end.
+ g.launch()
+ 
+ # Ask libguestfs to inspect for operating systems.
+ roots = g.inspect_os()
+ if roots.length == 0
+   puts &quot;inspect_vm: no operating systems found&quot;
+   exit 1
+ end
+ 
+ for root in roots do
+   printf(&quot;Root device: %s\n&quot;, root)
+ 
+   # Print basic information about the operating system.
+   printf(&quot;  Product name: %s\n&quot;, g.inspect_get_product_name(root))
+   printf(&quot;  Version:      %d.%d\n&quot;,
+          g.inspect_get_major_version(root),
+          g.inspect_get_minor_version(root))
+   printf(&quot;  Type:         %s\n&quot;, g.inspect_get_type(root))
+   printf(&quot;  Distro:       %s\n&quot;, g.inspect_get_distro(root))
+ 
+   # Mount up the disks, like guestfish -i.
+   #
+   # Sort keys by length, shortest first, so that we end up
+   # mounting the filesystems in the correct order.
+   mps = g.inspect_get_mountpoints(root)
+   mps = mps.sort {|a,b| a[0].length &lt;=&gt; b[0].length}
+   for mp in mps do
+     begin
+       g.mount_ro(mp[1], mp[0])
+     rescue Guestfs::Error =&gt; msg
+       printf(&quot;%s (ignored)\n&quot;, msg)
+     end
+   end
+ 
+   # If /etc/issue.net file exists, print up to 3 lines.
+   filename = &quot;/etc/issue.net&quot;
+   if g.is_file filename then
+     printf(&quot;--- %s ---\n&quot;, filename)
+     lines = g.head_n(3, filename)
+     for line in lines do
+       puts line
+     end
+   end
+ 
+   # Unmount everything.
+   g.umount_all()
+ end</code></pre>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfs-examples.3.html">guestfs-examples(3)</a>, <a href="guestfs-erlang.3.html">guestfs-erlang(3)</a>, <a href="guestfs-golang.3.html">guestfs-golang(3)</a>, <a href="guestfs-java.3.html">guestfs-java(3)</a>, <a href="guestfs-lua.3.html">guestfs-lua(3)</a>, <a href="guestfs-ocaml.3.html">guestfs-ocaml(3)</a>, <a href="guestfs-perl.3.html">guestfs-perl(3)</a>, <a href="guestfs-python.3.html">guestfs-python(3)</a>, <a href="guestfs-recipes.1.html">guestfs-recipes(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones (<code>rjones at redhat dot com</code>)</p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2010-2012 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This manual page contains examples which we hope you will use in your programs. The examples may be freely copied, modified and distributed for any purpose without any restrictions.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

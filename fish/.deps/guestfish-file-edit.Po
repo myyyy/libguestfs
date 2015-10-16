@@ -60,8 +60,7 @@ guestfish-file-edit.o: file-edit.c ../config.h file-edit.h \
  /usr/include/x86_64-linux-gnu/sys/resource.h \
  /usr/include/x86_64-linux-gnu/bits/resource.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h
+ ../src/guestfs-internal-frontend-cleanups.h
 
 ../config.h:
 
@@ -252,5 +251,3 @@ file-edit.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:

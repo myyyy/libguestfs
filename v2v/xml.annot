@@ -1,0 +1,954 @@
+"xml.ml" 41 1518 1522 "xml.ml" 41 1518 1534
+type(
+  string -> doc_ptr
+)
+ident(
+  def parse_memory "xml.ml" 46 1625 1625 --
+)
+"xml.ml" 41 1518 1535 "xml.ml" 41 1518 1538
+type(
+  string
+)
+ident(
+  def xml "xml.ml" 42 1541 1543 "xml.ml" 44 1614 1623
+)
+"xml.ml" 42 1541 1547 "xml.ml" 42 1541 1554
+type(
+  doc_ptr
+)
+"xml.ml" 42 1541 1557 "xml.ml" 42 1541 1570
+type(
+  string -> doc_ptr
+)
+"xml.ml" 42 1541 1571 "xml.ml" 42 1541 1574
+type(
+  string
+)
+ident(
+  int_ref xml "xml.ml" 41 1518 1535 "xml.ml" 41 1518 1538
+)
+"xml.ml" 42 1541 1557 "xml.ml" 42 1541 1574
+type(
+  doc_ptr
+)
+"xml.ml" 43 1578 1580 "xml.ml" 43 1578 1591
+type(
+  (doc_ptr -> unit) -> doc_ptr -> unit
+)
+ident(
+  ext_ref Gc.finalise
+)
+"xml.ml" 43 1578 1592 "xml.ml" 43 1578 1604
+type(
+  doc_ptr -> unit
+)
+"xml.ml" 43 1578 1605 "xml.ml" 43 1578 1612
+type(
+  doc_ptr
+)
+ident(
+  int_ref doc_ptr "xml.ml" 42 1541 1547 "xml.ml" 42 1541 1554
+)
+"xml.ml" 43 1578 1580 "xml.ml" 43 1578 1612
+call(
+  stack
+)
+type(
+  unit
+)
+"xml.ml" 44 1614 1616 "xml.ml" 44 1614 1623
+type(
+  doc_ptr
+)
+ident(
+  int_ref doc_ptr "xml.ml" 42 1541 1547 "xml.ml" 42 1541 1554
+)
+"xml.ml" 43 1578 1580 "xml.ml" 44 1614 1623
+type(
+  doc_ptr
+)
+"xml.ml" 42 1541 1543 "xml.ml" 44 1614 1623
+type(
+  doc_ptr
+)
+"xml.ml" 47 1704 1708 "xml.ml" 47 1704 1716
+type(
+  doc_ptr -> recursive:bool -> doc_ptr
+)
+ident(
+  def copy_doc "xml.ml" 52 1824 1824 --
+)
+"xml.ml" 47 1704 1717 "xml.ml" 47 1704 1724
+type(
+  doc_ptr
+)
+ident(
+  def doc_ptr "xml.ml" 47 1704 1725 "xml.ml" 50 1816 1822
+)
+"xml.ml" 47 1704 1726 "xml.ml" 47 1704 1735
+type(
+  bool
+)
+ident(
+  def recursive "xml.ml" 48 1738 1740 "xml.ml" 50 1816 1822
+)
+"xml.ml" 48 1738 1744 "xml.ml" 48 1738 1748
+type(
+  doc_ptr
+)
+"xml.ml" 48 1738 1751 "xml.ml" 48 1738 1760
+type(
+  doc_ptr -> recursive:bool -> doc_ptr
+)
+"xml.ml" 48 1738 1761 "xml.ml" 48 1738 1768
+type(
+  doc_ptr
+)
+ident(
+  int_ref doc_ptr "xml.ml" 47 1704 1717 "xml.ml" 47 1704 1724
+)
+"xml.ml" 48 1738 1770 "xml.ml" 48 1738 1779
+type(
+  bool
+)
+ident(
+  int_ref recursive "xml.ml" 47 1704 1726 "xml.ml" 47 1704 1735
+)
+"xml.ml" 48 1738 1751 "xml.ml" 48 1738 1779
+type(
+  doc_ptr
+)
+"xml.ml" 49 1783 1785 "xml.ml" 49 1783 1796
+type(
+  (doc_ptr -> unit) -> doc_ptr -> unit
+)
+ident(
+  ext_ref Gc.finalise
+)
+"xml.ml" 49 1783 1797 "xml.ml" 49 1783 1809
+type(
+  doc_ptr -> unit
+)
+"xml.ml" 49 1783 1810 "xml.ml" 49 1783 1814
+type(
+  doc_ptr
+)
+ident(
+  int_ref copy "xml.ml" 48 1738 1744 "xml.ml" 48 1738 1748
+)
+"xml.ml" 49 1783 1785 "xml.ml" 49 1783 1814
+call(
+  stack
+)
+type(
+  unit
+)
+"xml.ml" 50 1816 1818 "xml.ml" 50 1816 1822
+type(
+  doc_ptr
+)
+ident(
+  int_ref copy "xml.ml" 48 1738 1744 "xml.ml" 48 1738 1748
+)
+"xml.ml" 49 1783 1785 "xml.ml" 50 1816 1822
+type(
+  doc_ptr
+)
+"xml.ml" 48 1738 1740 "xml.ml" 50 1816 1822
+type(
+  doc_ptr
+)
+"xml.ml" 55 1992 1996 "xml.ml" 55 1992 2013
+type(
+  doc_ptr -> doc_ptr * xpathctx_ptr
+)
+ident(
+  def xpath_new_context "xml.ml" 60 2149 2149 --
+)
+"xml.ml" 55 1992 2014 "xml.ml" 55 1992 2021
+type(
+  doc_ptr
+)
+ident(
+  def doc_ptr "xml.ml" 56 2024 2026 "xml.ml" 58 2124 2147
+)
+"xml.ml" 56 2024 2030 "xml.ml" 56 2024 2042
+type(
+  xpathctx_ptr
+)
+"xml.ml" 56 2024 2045 "xml.ml" 56 2024 2066
+type(
+  doc_ptr -> xpathctx_ptr
+)
+"xml.ml" 56 2024 2067 "xml.ml" 56 2024 2074
+type(
+  doc_ptr
+)
+ident(
+  int_ref doc_ptr "xml.ml" 55 1992 2014 "xml.ml" 55 1992 2021
+)
+"xml.ml" 56 2024 2045 "xml.ml" 56 2024 2074
+type(
+  xpathctx_ptr
+)
+"xml.ml" 57 2078 2080 "xml.ml" 57 2078 2091
+type(
+  (xpathctx_ptr -> unit) -> xpathctx_ptr -> unit
+)
+ident(
+  ext_ref Gc.finalise
+)
+"xml.ml" 57 2078 2092 "xml.ml" 57 2078 2109
+type(
+  xpathctx_ptr -> unit
+)
+"xml.ml" 57 2078 2110 "xml.ml" 57 2078 2122
+type(
+  xpathctx_ptr
+)
+ident(
+  int_ref xpathctx_ptr "xml.ml" 56 2024 2030 "xml.ml" 56 2024 2042
+)
+"xml.ml" 57 2078 2080 "xml.ml" 57 2078 2122
+call(
+  stack
+)
+type(
+  unit
+)
+"xml.ml" 58 2124 2126 "xml.ml" 58 2124 2133
+type(
+  doc_ptr
+)
+ident(
+  int_ref doc_ptr "xml.ml" 55 1992 2014 "xml.ml" 55 1992 2021
+)
+"xml.ml" 58 2124 2135 "xml.ml" 58 2124 2147
+type(
+  xpathctx_ptr
+)
+ident(
+  int_ref xpathctx_ptr "xml.ml" 56 2024 2030 "xml.ml" 56 2024 2042
+)
+"xml.ml" 58 2124 2126 "xml.ml" 58 2124 2147
+type(
+  doc_ptr * xpathctx_ptr
+)
+"xml.ml" 57 2078 2080 "xml.ml" 58 2124 2147
+type(
+  doc_ptr * xpathctx_ptr
+)
+"xml.ml" 56 2024 2026 "xml.ml" 58 2124 2147
+type(
+  doc_ptr * xpathctx_ptr
+)
+"xml.ml" 61 2263 2267 "xml.ml" 61 2263 2284
+type(
+  'a * xpathctx_ptr -> string -> string -> unit
+)
+ident(
+  def xpath_register_ns "xml.ml" 64 2368 2368 --
+)
+"xml.ml" 61 2263 2286 "xml.ml" 61 2263 2287
+type(
+  'a
+)
+"xml.ml" 61 2263 2289 "xml.ml" 61 2263 2301
+type(
+  xpathctx_ptr
+)
+ident(
+  def xpathctx_ptr "xml.ml" 61 2263 2303 "xml.ml" 62 2316 2366
+)
+"xml.ml" 61 2263 2285 "xml.ml" 61 2263 2302
+type(
+  'a * xpathctx_ptr
+)
+"xml.ml" 61 2263 2303 "xml.ml" 61 2263 2309
+type(
+  string
+)
+ident(
+  def prefix "xml.ml" 61 2263 2310 "xml.ml" 62 2316 2366
+)
+"xml.ml" 61 2263 2310 "xml.ml" 61 2263 2313
+type(
+  string
+)
+ident(
+  def uri "xml.ml" 62 2316 2318 "xml.ml" 62 2316 2366
+)
+"xml.ml" 62 2316 2318 "xml.ml" 62 2316 2342
+type(
+  xpathctx_ptr -> string -> string -> unit
+)
+"xml.ml" 62 2316 2343 "xml.ml" 62 2316 2355
+type(
+  xpathctx_ptr
+)
+ident(
+  int_ref xpathctx_ptr "xml.ml" 61 2263 2289 "xml.ml" 61 2263 2301
+)
+"xml.ml" 62 2316 2356 "xml.ml" 62 2316 2362
+type(
+  string
+)
+ident(
+  int_ref prefix "xml.ml" 61 2263 2303 "xml.ml" 61 2263 2309
+)
+"xml.ml" 62 2316 2363 "xml.ml" 62 2316 2366
+type(
+  string
+)
+ident(
+  int_ref uri "xml.ml" 61 2263 2310 "xml.ml" 61 2263 2313
+)
+"xml.ml" 62 2316 2318 "xml.ml" 62 2316 2366
+type(
+  unit
+)
+"xml.ml" 65 2488 2492 "xml.ml" 65 2488 2513
+type(
+  'a * xpathctx_ptr -> string -> ('a * xpathctx_ptr) * xpathobj_ptr
+)
+ident(
+  def xpath_eval_expression "xml.ml" 70 2696 2696 --
+)
+"xml.ml" 65 2488 2516 "xml.ml" 65 2488 2517
+type(
+  'a
+)
+"xml.ml" 65 2488 2519 "xml.ml" 65 2488 2531
+type(
+  xpathctx_ptr
+)
+ident(
+  def xpathctx_ptr "xml.ml" 65 2488 2546 "xml.ml" 68 2670 2694
+)
+"xml.ml" 65 2488 2515 "xml.ml" 65 2488 2532
+type(
+  'a * xpathctx_ptr
+)
+"xml.ml" 65 2488 2514 "xml.ml" 65 2488 2545
+type(
+  'a * xpathctx_ptr
+)
+ident(
+  def xpathctx "xml.ml" 65 2488 2546 "xml.ml" 68 2670 2694
+)
+"xml.ml" 65 2488 2546 "xml.ml" 65 2488 2550
+type(
+  string
+)
+ident(
+  def expr "xml.ml" 66 2553 2555 "xml.ml" 68 2670 2694
+)
+"xml.ml" 66 2553 2559 "xml.ml" 66 2553 2571
+type(
+  xpathobj_ptr
+)
+"xml.ml" 66 2553 2574 "xml.ml" 66 2553 2602
+type(
+  xpathctx_ptr -> string -> xpathobj_ptr
+)
+"xml.ml" 66 2553 2603 "xml.ml" 66 2553 2615
+type(
+  xpathctx_ptr
+)
+ident(
+  int_ref xpathctx_ptr "xml.ml" 65 2488 2519 "xml.ml" 65 2488 2531
+)
+"xml.ml" 66 2553 2616 "xml.ml" 66 2553 2620
+type(
+  string
+)
+ident(
+  int_ref expr "xml.ml" 65 2488 2546 "xml.ml" 65 2488 2550
+)
+"xml.ml" 66 2553 2574 "xml.ml" 66 2553 2620
+type(
+  xpathobj_ptr
+)
+"xml.ml" 67 2624 2626 "xml.ml" 67 2624 2637
+type(
+  (xpathobj_ptr -> unit) -> xpathobj_ptr -> unit
+)
+ident(
+  ext_ref Gc.finalise
+)
+"xml.ml" 67 2624 2638 "xml.ml" 67 2624 2655
+type(
+  xpathobj_ptr -> unit
+)
+"xml.ml" 67 2624 2656 "xml.ml" 67 2624 2668
+type(
+  xpathobj_ptr
+)
+ident(
+  int_ref xpathobj_ptr "xml.ml" 66 2553 2559 "xml.ml" 66 2553 2571
+)
+"xml.ml" 67 2624 2626 "xml.ml" 67 2624 2668
+call(
+  stack
+)
+type(
+  unit
+)
+"xml.ml" 68 2670 2672 "xml.ml" 68 2670 2680
+type(
+  'a * xpathctx_ptr
+)
+ident(
+  int_ref xpathctx "xml.ml" 65 2488 2514 "xml.ml" 65 2488 2545
+)
+"xml.ml" 68 2670 2682 "xml.ml" 68 2670 2694
+type(
+  xpathobj_ptr
+)
+ident(
+  int_ref xpathobj_ptr "xml.ml" 66 2553 2559 "xml.ml" 66 2553 2571
+)
+"xml.ml" 68 2670 2672 "xml.ml" 68 2670 2694
+type(
+  ('a * xpathctx_ptr) * xpathobj_ptr
+)
+"xml.ml" 67 2624 2626 "xml.ml" 68 2670 2694
+type(
+  ('a * xpathctx_ptr) * xpathobj_ptr
+)
+"xml.ml" 66 2553 2555 "xml.ml" 68 2670 2694
+type(
+  ('a * xpathctx_ptr) * xpathobj_ptr
+)
+"xml.ml" 71 2783 2787 "xml.ml" 71 2783 2804
+type(
+  'a * xpathobj_ptr -> int
+)
+ident(
+  def xpathobj_nr_nodes "xml.ml" 74 2863 2863 --
+)
+"xml.ml" 71 2783 2806 "xml.ml" 71 2783 2807
+type(
+  'a
+)
+"xml.ml" 71 2783 2809 "xml.ml" 71 2783 2821
+type(
+  xpathobj_ptr
+)
+ident(
+  def xpathobj_ptr "xml.ml" 72 2825 2827 "xml.ml" 72 2825 2861
+)
+"xml.ml" 71 2783 2805 "xml.ml" 71 2783 2822
+type(
+  'a * xpathobj_ptr
+)
+"xml.ml" 72 2825 2827 "xml.ml" 72 2825 2848
+type(
+  xpathobj_ptr -> int
+)
+"xml.ml" 72 2825 2849 "xml.ml" 72 2825 2861
+type(
+  xpathobj_ptr
+)
+ident(
+  int_ref xpathobj_ptr "xml.ml" 71 2783 2809 "xml.ml" 71 2783 2821
+)
+"xml.ml" 72 2825 2827 "xml.ml" 72 2825 2861
+type(
+  int
+)
+"xml.ml" 75 2970 2974 "xml.ml" 75 2970 2987
+type(
+  ('a * 'b) * xpathobj_ptr -> int -> 'a * node_ptr
+)
+ident(
+  def xpathobj_node "xml.ml" 78 3074 3074 --
+)
+"xml.ml" 75 2970 2990 "xml.ml" 75 2970 2997
+type(
+  'a
+)
+ident(
+  def doc_ptr "xml.ml" 75 2970 3017 "xml.ml" 76 3021 3072
+)
+"xml.ml" 75 2970 2999 "xml.ml" 75 2970 3000
+type(
+  'b
+)
+"xml.ml" 75 2970 2989 "xml.ml" 75 2970 3001
+type(
+  'a * 'b
+)
+"xml.ml" 75 2970 3003 "xml.ml" 75 2970 3015
+type(
+  xpathobj_ptr
+)
+ident(
+  def xpathobj_ptr "xml.ml" 75 2970 3017 "xml.ml" 76 3021 3072
+)
+"xml.ml" 75 2970 2988 "xml.ml" 75 2970 3016
+type(
+  ('a * 'b) * xpathobj_ptr
+)
+"xml.ml" 75 2970 3017 "xml.ml" 75 2970 3018
+type(
+  int
+)
+ident(
+  def i "xml.ml" 76 3021 3023 "xml.ml" 76 3021 3072
+)
+"xml.ml" 76 3021 3023 "xml.ml" 76 3021 3030
+type(
+  'a
+)
+ident(
+  int_ref doc_ptr "xml.ml" 75 2970 2990 "xml.ml" 75 2970 2997
+)
+"xml.ml" 76 3021 3032 "xml.ml" 76 3021 3057
+type(
+  xpathobj_ptr -> int -> node_ptr
+)
+"xml.ml" 76 3021 3058 "xml.ml" 76 3021 3070
+type(
+  xpathobj_ptr
+)
+ident(
+  int_ref xpathobj_ptr "xml.ml" 75 2970 3003 "xml.ml" 75 2970 3015
+)
+"xml.ml" 76 3021 3071 "xml.ml" 76 3021 3072
+type(
+  int
+)
+ident(
+  int_ref i "xml.ml" 75 2970 3017 "xml.ml" 75 2970 3018
+)
+"xml.ml" 76 3021 3032 "xml.ml" 76 3021 3072
+type(
+  node_ptr
+)
+"xml.ml" 76 3021 3023 "xml.ml" 76 3021 3072
+type(
+  'a * node_ptr
+)
+"xml.ml" 79 3178 3182 "xml.ml" 79 3178 3210
+type(
+  'a * xpathctx_ptr -> 'b * node_ptr -> unit
+)
+ident(
+  def xpathctx_set_current_context "xml.ml" 82 3296 3296 --
+)
+"xml.ml" 79 3178 3212 "xml.ml" 79 3178 3213
+type(
+  'a
+)
+"xml.ml" 79 3178 3215 "xml.ml" 79 3178 3227
+type(
+  xpathctx_ptr
+)
+ident(
+  def xpathctx_ptr "xml.ml" 79 3178 3229 "xml.ml" 80 3245 3294
+)
+"xml.ml" 79 3178 3211 "xml.ml" 79 3178 3228
+type(
+  'a * xpathctx_ptr
+)
+"xml.ml" 79 3178 3230 "xml.ml" 79 3178 3231
+type(
+  'b
+)
+"xml.ml" 79 3178 3233 "xml.ml" 79 3178 3241
+type(
+  node_ptr
+)
+ident(
+  def node_ptr "xml.ml" 80 3245 3247 "xml.ml" 80 3245 3294
+)
+"xml.ml" 79 3178 3229 "xml.ml" 79 3178 3242
+type(
+  'b * node_ptr
+)
+"xml.ml" 80 3245 3247 "xml.ml" 80 3245 3272
+type(
+  xpathctx_ptr -> node_ptr -> unit
+)
+"xml.ml" 80 3245 3273 "xml.ml" 80 3245 3285
+type(
+  xpathctx_ptr
+)
+ident(
+  int_ref xpathctx_ptr "xml.ml" 79 3178 3215 "xml.ml" 79 3178 3227
+)
+"xml.ml" 80 3245 3286 "xml.ml" 80 3245 3294
+type(
+  node_ptr
+)
+ident(
+  int_ref node_ptr "xml.ml" 79 3178 3233 "xml.ml" 79 3178 3241
+)
+"xml.ml" 80 3245 3247 "xml.ml" 80 3245 3294
+type(
+  unit
+)
+"xml.ml" 83 3366 3370 "xml.ml" 83 3366 3379
+type(
+  'a * node_ptr -> string
+)
+ident(
+  def node_name "xml.ml" 85 3420 3420 --
+)
+"xml.ml" 83 3366 3381 "xml.ml" 83 3366 3382
+type(
+  'a
+)
+"xml.ml" 83 3366 3384 "xml.ml" 83 3366 3392
+type(
+  node_ptr
+)
+ident(
+  def node_ptr "xml.ml" 83 3366 3396 "xml.ml" 83 3366 3418
+)
+"xml.ml" 83 3366 3380 "xml.ml" 83 3366 3393
+type(
+  'a * node_ptr
+)
+"xml.ml" 83 3366 3396 "xml.ml" 83 3366 3409
+type(
+  node_ptr -> string
+)
+"xml.ml" 83 3366 3410 "xml.ml" 83 3366 3418
+type(
+  node_ptr
+)
+ident(
+  int_ref node_ptr "xml.ml" 83 3366 3384 "xml.ml" 83 3366 3392
+)
+"xml.ml" 83 3366 3396 "xml.ml" 83 3366 3418
+type(
+  string
+)
+"xml.ml" 86 3511 3515 "xml.ml" 86 3511 3529
+type(
+  doc_ptr * node_ptr -> string
+)
+ident(
+  def node_as_string "xml.ml" 88 3589 3589 --
+)
+"xml.ml" 86 3511 3531 "xml.ml" 86 3511 3538
+type(
+  doc_ptr
+)
+ident(
+  def doc_ptr "xml.ml" 86 3511 3552 "xml.ml" 86 3511 3587
+)
+"xml.ml" 86 3511 3540 "xml.ml" 86 3511 3548
+type(
+  node_ptr
+)
+ident(
+  def node_ptr "xml.ml" 86 3511 3552 "xml.ml" 86 3511 3587
+)
+"xml.ml" 86 3511 3530 "xml.ml" 86 3511 3549
+type(
+  doc_ptr * node_ptr
+)
+"xml.ml" 86 3511 3552 "xml.ml" 86 3511 3570
+type(
+  doc_ptr -> node_ptr -> string
+)
+"xml.ml" 86 3511 3571 "xml.ml" 86 3511 3578
+type(
+  doc_ptr
+)
+ident(
+  int_ref doc_ptr "xml.ml" 86 3511 3531 "xml.ml" 86 3511 3538
+)
+"xml.ml" 86 3511 3579 "xml.ml" 86 3511 3587
+type(
+  node_ptr
+)
+ident(
+  int_ref node_ptr "xml.ml" 86 3511 3540 "xml.ml" 86 3511 3548
+)
+"xml.ml" 86 3511 3552 "xml.ml" 86 3511 3587
+type(
+  string
+)
+"xml.ml" 89 3681 3685 "xml.ml" 89 3681 3701
+type(
+  'a * node_ptr -> string -> unit
+)
+ident(
+  def node_set_content "xml.ml" 91 3755 3755 --
+)
+"xml.ml" 89 3681 3703 "xml.ml" 89 3681 3710
+type(
+  'a
+)
+ident(
+  def doc_ptr "xml.ml" 89 3681 3724 "xml.ml" 89 3681 3753
+)
+"xml.ml" 89 3681 3712 "xml.ml" 89 3681 3720
+type(
+  node_ptr
+)
+ident(
+  def node_ptr "xml.ml" 89 3681 3724 "xml.ml" 89 3681 3753
+)
+"xml.ml" 89 3681 3702 "xml.ml" 89 3681 3721
+type(
+  'a * node_ptr
+)
+"xml.ml" 89 3681 3724 "xml.ml" 89 3681 3744
+type(
+  node_ptr -> string -> unit
+)
+"xml.ml" 89 3681 3745 "xml.ml" 89 3681 3753
+type(
+  node_ptr
+)
+ident(
+  int_ref node_ptr "xml.ml" 89 3681 3712 "xml.ml" 89 3681 3720
+)
+"xml.ml" 89 3681 3724 "xml.ml" 89 3681 3753
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"xml.ml" 92 3867 3871 "xml.ml" 92 3867 3885
+type(
+  'a * node_ptr -> string -> string -> 'a * node_ptr
+)
+ident(
+  def new_text_child "xml.ml" 95 3979 3979 --
+)
+"xml.ml" 92 3867 3887 "xml.ml" 92 3867 3894
+type(
+  'a
+)
+ident(
+  def doc_ptr "xml.ml" 92 3867 3906 "xml.ml" 93 3921 3977
+)
+"xml.ml" 92 3867 3896 "xml.ml" 92 3867 3904
+type(
+  node_ptr
+)
+ident(
+  def node_ptr "xml.ml" 92 3867 3906 "xml.ml" 93 3921 3977
+)
+"xml.ml" 92 3867 3886 "xml.ml" 92 3867 3905
+type(
+  'a * node_ptr
+)
+"xml.ml" 92 3867 3906 "xml.ml" 92 3867 3910
+type(
+  string
+)
+ident(
+  def name "xml.ml" 92 3867 3911 "xml.ml" 93 3921 3977
+)
+"xml.ml" 92 3867 3911 "xml.ml" 92 3867 3918
+type(
+  string
+)
+ident(
+  def content "xml.ml" 93 3921 3923 "xml.ml" 93 3921 3977
+)
+"xml.ml" 93 3921 3923 "xml.ml" 93 3921 3930
+type(
+  'a
+)
+ident(
+  int_ref doc_ptr "xml.ml" 92 3867 3887 "xml.ml" 92 3867 3894
+)
+"xml.ml" 93 3921 3932 "xml.ml" 93 3921 3955
+type(
+  node_ptr -> string -> string -> node_ptr
+)
+"xml.ml" 93 3921 3956 "xml.ml" 93 3921 3964
+type(
+  node_ptr
+)
+ident(
+  int_ref node_ptr "xml.ml" 92 3867 3896 "xml.ml" 92 3867 3904
+)
+"xml.ml" 93 3921 3965 "xml.ml" 93 3921 3969
+type(
+  string
+)
+ident(
+  int_ref name "xml.ml" 92 3867 3906 "xml.ml" 92 3867 3910
+)
+"xml.ml" 93 3921 3970 "xml.ml" 93 3921 3977
+type(
+  string
+)
+ident(
+  int_ref content "xml.ml" 92 3867 3911 "xml.ml" 92 3867 3918
+)
+"xml.ml" 93 3921 3932 "xml.ml" 93 3921 3977
+type(
+  node_ptr
+)
+"xml.ml" 93 3921 3923 "xml.ml" 93 3921 3977
+type(
+  'a * node_ptr
+)
+"xml.ml" 96 4075 4079 "xml.ml" 96 4075 4087
+type(
+  'a * node_ptr -> string -> string -> unit
+)
+ident(
+  def set_prop "xml.ml" 98 4138 4138 --
+)
+"xml.ml" 96 4075 4089 "xml.ml" 96 4075 4096
+type(
+  'a
+)
+ident(
+  def doc_ptr "xml.ml" 96 4075 4110 "xml.ml" 96 4075 4136
+)
+"xml.ml" 96 4075 4098 "xml.ml" 96 4075 4106
+type(
+  node_ptr
+)
+ident(
+  def node_ptr "xml.ml" 96 4075 4110 "xml.ml" 96 4075 4136
+)
+"xml.ml" 96 4075 4088 "xml.ml" 96 4075 4107
+type(
+  'a * node_ptr
+)
+"xml.ml" 96 4075 4110 "xml.ml" 96 4075 4127
+type(
+  node_ptr -> string -> string -> unit
+)
+"xml.ml" 96 4075 4128 "xml.ml" 96 4075 4136
+type(
+  node_ptr
+)
+ident(
+  int_ref node_ptr "xml.ml" 96 4075 4098 "xml.ml" 96 4075 4106
+)
+"xml.ml" 96 4075 4110 "xml.ml" 96 4075 4136
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"xml.ml" 99 4220 4224 "xml.ml" 99 4220 4235
+type(
+  'a * node_ptr -> unit
+)
+ident(
+  def unlink_node "xml.ml" 101 4289 4289 --
+)
+"xml.ml" 99 4220 4237 "xml.ml" 99 4220 4244
+type(
+  'a
+)
+ident(
+  def doc_ptr "xml.ml" 99 4220 4258 "xml.ml" 99 4220 4287
+)
+"xml.ml" 99 4220 4246 "xml.ml" 99 4220 4254
+type(
+  node_ptr
+)
+ident(
+  def node_ptr "xml.ml" 99 4220 4258 "xml.ml" 99 4220 4287
+)
+"xml.ml" 99 4220 4236 "xml.ml" 99 4220 4255
+type(
+  'a * node_ptr
+)
+"xml.ml" 99 4220 4258 "xml.ml" 99 4220 4278
+type(
+  node_ptr -> unit
+)
+"xml.ml" 99 4220 4279 "xml.ml" 99 4220 4287
+type(
+  node_ptr
+)
+ident(
+  int_ref node_ptr "xml.ml" 99 4220 4246 "xml.ml" 99 4220 4254
+)
+"xml.ml" 99 4220 4258 "xml.ml" 99 4220 4287
+type(
+  unit
+)
+"xml.ml" 102 4382 4386 "xml.ml" 102 4382 4406
+type(
+  doc_ptr -> (doc_ptr * node_ptr) option
+)
+ident(
+  def doc_get_root_element "xml.ml" 107 4524 4524 --
+)
+"xml.ml" 102 4382 4407 "xml.ml" 102 4382 4414
+type(
+  doc_ptr
+)
+ident(
+  def doc_ptr "xml.ml" 103 4417 4419 "xml.ml" 105 4477 4522
+)
+"xml.ml" 103 4417 4425 "xml.ml" 103 4417 4446
+type(
+  doc_ptr -> node_ptr option
+)
+"xml.ml" 103 4417 4447 "xml.ml" 103 4417 4454
+type(
+  doc_ptr
+)
+ident(
+  int_ref doc_ptr "xml.ml" 102 4382 4407 "xml.ml" 102 4382 4414
+)
+"xml.ml" 103 4417 4425 "xml.ml" 103 4417 4454
+type(
+  node_ptr option
+)
+"xml.ml" 104 4460 4464 "xml.ml" 104 4460 4468
+type(
+  node_ptr option
+)
+"xml.ml" 104 4460 4472 "xml.ml" 104 4460 4476
+type(
+  (doc_ptr * node_ptr) option
+)
+"xml.ml" 105 4477 4486 "xml.ml" 105 4477 4494
+type(
+  node_ptr
+)
+ident(
+  def node_ptr "xml.ml" 105 4477 4498 "xml.ml" 105 4477 4522
+)
+"xml.ml" 105 4477 4481 "xml.ml" 105 4477 4494
+type(
+  node_ptr option
+)
+"xml.ml" 105 4477 4504 "xml.ml" 105 4477 4511
+type(
+  doc_ptr
+)
+ident(
+  int_ref doc_ptr "xml.ml" 102 4382 4407 "xml.ml" 102 4382 4414
+)
+"xml.ml" 105 4477 4513 "xml.ml" 105 4477 4521
+type(
+  node_ptr
+)
+ident(
+  int_ref node_ptr "xml.ml" 105 4477 4486 "xml.ml" 105 4477 4494
+)
+"xml.ml" 105 4477 4503 "xml.ml" 105 4477 4522
+type(
+  doc_ptr * node_ptr
+)
+"xml.ml" 105 4477 4498 "xml.ml" 105 4477 4522
+type(
+  (doc_ptr * node_ptr) option
+)
+"xml.ml" 103 4417 4419 "xml.ml" 105 4477 4522
+type(
+  (doc_ptr * node_ptr) option
+)

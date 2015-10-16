@@ -65,8 +65,7 @@ virt_p2v-ssh.o: ssh.c ../config.h ../gnulib/lib/stdio.h \
  ../gnulib/lib/ignore-value.h miniexpect.h /usr/include/pcre.h p2v.h \
  ../src/guestfs.h ../src/guestfs-internal-frontend.h \
  ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h
+ ../src/guestfs-internal-frontend-cleanups.h
 
 ../config.h:
 
@@ -269,5 +268,3 @@ p2v.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:

@@ -50,9 +50,20 @@ virt_df-main.o: main.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  ../gnulib/lib/locale.h /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/assert.h \
- /usr/include/libintl.h /usr/include/libvirt/libvirt.h \
- /usr/include/libvirt/virterror.h ../src/guestfs.h ../fish/options.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h \
+ /usr/include/libintl.h /usr/local/include/libvirt/libvirt.h \
+ /usr/local/include/libvirt/libvirt-host.h \
+ /usr/local/include/libvirt/libvirt-domain.h \
+ /usr/local/include/libvirt/libvirt-domain-snapshot.h \
+ /usr/local/include/libvirt/libvirt-event.h \
+ /usr/local/include/libvirt/libvirt-interface.h \
+ /usr/local/include/libvirt/libvirt-network.h \
+ /usr/local/include/libvirt/libvirt-nodedev.h \
+ /usr/local/include/libvirt/libvirt-nwfilter.h \
+ /usr/local/include/libvirt/libvirt-secret.h \
+ /usr/local/include/libvirt/libvirt-storage.h \
+ /usr/local/include/libvirt/libvirt-stream.h \
+ /usr/local/include/libvirt/virterror.h ../src/guestfs.h \
+ ../fish/options.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
  ../src/guestfs-internal-frontend-cleanups.h domains.h parallel.h \
  virt-df.h
@@ -217,9 +228,31 @@ virt_df-main.o: main.c ../config.h ../gnulib/lib/stdio.h \
 
 /usr/include/libintl.h:
 
-/usr/include/libvirt/libvirt.h:
+/usr/local/include/libvirt/libvirt.h:
 
-/usr/include/libvirt/virterror.h:
+/usr/local/include/libvirt/libvirt-host.h:
+
+/usr/local/include/libvirt/libvirt-domain.h:
+
+/usr/local/include/libvirt/libvirt-domain-snapshot.h:
+
+/usr/local/include/libvirt/libvirt-event.h:
+
+/usr/local/include/libvirt/libvirt-interface.h:
+
+/usr/local/include/libvirt/libvirt-network.h:
+
+/usr/local/include/libvirt/libvirt-nodedev.h:
+
+/usr/local/include/libvirt/libvirt-nwfilter.h:
+
+/usr/local/include/libvirt/libvirt-secret.h:
+
+/usr/local/include/libvirt/libvirt-storage.h:
+
+/usr/local/include/libvirt/libvirt-stream.h:
+
+/usr/local/include/libvirt/virterror.h:
 
 ../src/guestfs.h:
 

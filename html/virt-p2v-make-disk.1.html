@@ -1,0 +1,182 @@
+
+<html>
+<head>
+<title>virt-p2v-make-disk</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a>
+    <ul>
+      <li><a href="#examples">EXAMPLES</a></li>
+    </ul>
+  </li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#files">FILES</a></li>
+  <li><a href="#environment-variables">ENVIRONMENT VARIABLES</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-p2v-make-disk - Build the virt-p2v disk using virt-builder</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-p2v-make-disk -o /dev/sdX os-version</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><a href="virt-p2v.1.html">virt-p2v(1)</a> converts a physical machine to run virtualized on KVM, managed by libvirt, OpenStack, oVirt, Red Hat Enterprise Virtualisation (RHEV), or one of the other targets supported by <a href="virt-v2v.1.html">virt-v2v(1)</a>.</p>
+
+<p>virt-p2v-make-disk is a script which creates a bootable disk image or USB key containing virt-p2v. It uses <a href="virt-builder.1.html">virt-builder(1)</a> to do this, and is just a small shell script around virt-builder.</p>
+
+<p>virt-p2v-make-disk has two required parameters:</p>
+
+<p>The <i>-o</i> parameter specifies where the output should go, for example to a USB key (eg. <code>-o /dev/sdX</code>) or to a file. If you pass a device name, then <b>the existing contents of the device will be erased</b>.</p>
+
+<p>The <code>os-version</code> parameter is the base Linux distro to use for the operating system on the ISO. To list possible <code>os-version</code> combinations, do:</p>
+
+<pre><code> virt-builder -l</code></pre>
+
+<h2 id="examples">EXAMPLES</h2>
+
+<p>Write a virt-p2v bootable USB key on <i>/dev/sdX</i> (and existing content is erased), using Fedora 20 as the base distribution:</p>
+
+<pre><code> virt-p2v-make-disk -o /dev/sdX fedora-20</code></pre>
+
+<p>Write a virt-p2v bootable virtual disk image, and boot it under qemu:</p>
+
+<pre><code> virt-p2v-make-disk -o /var/tmp/p2v.img fedora-20
+ qemu-kvm -m 1024 -boot c \
+   -drive file=/var/tmp/p2v.img,if=virtio,index=0 \
+   -drive file=/var/tmp/guest.img,if=virtio,index=1</code></pre>
+
+<p>where <i>/var/tmp/guest.img</i> would be the disk image of some guest that you want to convert (for testing only).</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display help.</p>
+
+</dd>
+<dt><b>-o</b> OUTPUT</dt>
+<dd>
+
+</dd>
+<dt><b>--output</b> OUTPUT</dt>
+<dd>
+
+<p>Write output to <code>OUTPUT</code>, which can be a local file or block device. <b>The existing contents of the device will be erased</b>.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+</dl>
+
+<h1 id="files">FILES</h1>
+
+<dl>
+
+<dt><i>$libexecdir/virt-p2v</i></dt>
+<dd>
+
+<p>The <a href="virt-p2v.1.html">virt-p2v(1)</a> binary which is copied into the bootable disk image. The location of the binary can be changed by setting the <code>VIRT_P2V_DATA_DIR</code> environment variable.</p>
+
+</dd>
+<dt><i>$datadir/issue</i></dt>
+<dd>
+
+</dd>
+<dt><i>$datadir/launch-virt-p2v.in</i></dt>
+<dd>
+
+</dd>
+<dt><i>$datadir/p2v.service</i></dt>
+<dd>
+
+<p>Various data files that are copied into the bootable disk image.</p>
+
+</dd>
+</dl>
+
+<h1 id="environment-variables">ENVIRONMENT VARIABLES</h1>
+
+<dl>
+
+<dt><code>VIRT_P2V_DATA_DIR</code></dt>
+<dd>
+
+<p>The directory where virt-p2v-make-disk looks for data files (see <a href="#files">&quot;FILES&quot;</a> above). If not set, a compiled-in location is used.</p>
+
+</dd>
+</dl>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="virt-p2v.1.html">virt-p2v(1)</a>, <a href="virt-p2v-make-kickstart.1.html">virt-p2v-make-kickstart(1)</a>, <a href="virt-v2v.1.html">virt-v2v(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2009-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

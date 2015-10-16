@@ -1,0 +1,466 @@
+"progress.ml" 32 1155 1159 "progress.ml" 32 1155 1178
+type(
+  ?machine_readable:bool -> Guestfs.guestfs -> unit
+)
+ident(
+  def set_up_progress_bar "progress.ml" 58 2107 2110 --
+)
+"progress.ml" 32 1155 1181 "progress.ml" 32 1155 1197
+type(
+  bool
+)
+"progress.ml" 32 1155 1200 "progress.ml" 32 1155 1205
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "progress.ml" 32 1155 1200 "progress.ml" 32 1155 1205
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+ident(
+  def *sth* "progress.ml" 32 1155 1200 "progress.ml" 32 1155 1205
+)
+"progress.ml" 32 1155 1208 "progress.ml" 32 1155 1209
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "progress.ml" 36 1334 1336 "progress.ml" 58 2107 2110
+)
+"progress.ml" 36 1334 1339 "progress.ml" 36 1334 1355
+type(
+  bool
+)
+ident(
+  int_ref machine_readable "progress.ml" 32 1155 1181 "progress.ml" 32 1155 1197
+)
+"progress.ml" 36 1334 1356 "progress.ml" 36 1334 1358
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"progress.ml" 36 1334 1359 "progress.ml" 36 1334 1370
+type(
+  Unix.file_descr -> bool
+)
+ident(
+  ext_ref Unix.isatty
+)
+"progress.ml" 36 1334 1371 "progress.ml" 36 1334 1382
+type(
+  Unix.file_descr
+)
+ident(
+  ext_ref Unix.stdout
+)
+"progress.ml" 36 1334 1359 "progress.ml" 36 1334 1382
+call(
+  stack
+)
+type(
+  bool
+)
+"progress.ml" 36 1334 1339 "progress.ml" 36 1334 1382
+type(
+  bool
+)
+"progress.ml" 38 1431 1439 "progress.ml" 38 1431 1442
+type(
+  progress_bar
+)
+"progress.ml" 38 1431 1445 "progress.ml" 38 1431 1462
+type(
+  machine_readable:bool -> progress_bar
+)
+"progress.ml" 38 1431 1464 "progress.ml" 38 1431 1480
+type(
+  bool
+)
+ident(
+  int_ref machine_readable "progress.ml" 32 1155 1181 "progress.ml" 32 1155 1197
+)
+"progress.ml" 38 1431 1445 "progress.ml" 38 1431 1480
+type(
+  progress_bar
+)
+"progress.ml" 41 1552 1560 "progress.ml" 41 1552 1574
+type(
+  'a -> G.event -> 'b -> 'c -> 'd -> unit
+)
+"progress.ml" 41 1552 1575 "progress.ml" 41 1552 1576
+type(
+  'a
+)
+ident(
+  def g "progress.ml" 41 1552 1577 "progress.ml" 43 1635 1665
+)
+"progress.ml" 41 1552 1577 "progress.ml" 41 1552 1582
+type(
+  G.event
+)
+ident(
+  def event "progress.ml" 41 1552 1583 "progress.ml" 43 1635 1665
+)
+"progress.ml" 41 1552 1583 "progress.ml" 41 1552 1586
+type(
+  'b
+)
+ident(
+  def evh "progress.ml" 41 1552 1587 "progress.ml" 43 1635 1665
+)
+"progress.ml" 41 1552 1587 "progress.ml" 41 1552 1590
+type(
+  'c
+)
+ident(
+  def buf "progress.ml" 41 1552 1591 "progress.ml" 43 1635 1665
+)
+"progress.ml" 41 1552 1591 "progress.ml" 41 1552 1596
+type(
+  'd
+)
+ident(
+  def array "progress.ml" 42 1599 1605 "progress.ml" 43 1635 1665
+)
+"progress.ml" 42 1599 1608 "progress.ml" 42 1599 1613
+type(
+  G.event
+)
+ident(
+  int_ref event "progress.ml" 41 1552 1577 "progress.ml" 41 1552 1582
+)
+"progress.ml" 42 1599 1614 "progress.ml" 42 1599 1615
+type(
+  G.event -> G.event -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"progress.ml" 42 1599 1616 "progress.ml" 42 1599 1629
+type(
+  G.event
+)
+"progress.ml" 42 1599 1608 "progress.ml" 42 1599 1629
+type(
+  bool
+)
+"progress.ml" 43 1635 1643 "progress.ml" 43 1635 1661
+type(
+  progress_bar -> unit
+)
+"progress.ml" 43 1635 1662 "progress.ml" 43 1635 1665
+type(
+  progress_bar
+)
+ident(
+  int_ref bar "progress.ml" 38 1431 1439 "progress.ml" 38 1431 1442
+)
+"progress.ml" 43 1635 1643 "progress.ml" 43 1635 1665
+type(
+  unit
+)
+"progress.ml" 42 1599 1605 "progress.ml" 43 1635 1665
+type(
+  unit
+)
+"progress.ml" 47 1725 1733 "progress.ml" 47 1725 1750
+type(
+  'e -> G.event -> 'f -> 'g -> int64 array -> unit
+)
+"progress.ml" 47 1725 1751 "progress.ml" 47 1725 1752
+type(
+  'e
+)
+ident(
+  def g "progress.ml" 47 1725 1753 "progress.ml" 53 1954 1961
+)
+"progress.ml" 47 1725 1753 "progress.ml" 47 1725 1758
+type(
+  G.event
+)
+ident(
+  def event "progress.ml" 47 1725 1759 "progress.ml" 53 1954 1961
+)
+"progress.ml" 47 1725 1759 "progress.ml" 47 1725 1762
+type(
+  'f
+)
+ident(
+  def evh "progress.ml" 47 1725 1763 "progress.ml" 53 1954 1961
+)
+"progress.ml" 47 1725 1763 "progress.ml" 47 1725 1766
+type(
+  'g
+)
+ident(
+  def buf "progress.ml" 47 1725 1767 "progress.ml" 53 1954 1961
+)
+"progress.ml" 47 1725 1767 "progress.ml" 47 1725 1772
+type(
+  int64 array
+)
+ident(
+  def array "progress.ml" 48 1775 1781 "progress.ml" 53 1954 1961
+)
+"progress.ml" 48 1775 1784 "progress.ml" 48 1775 1789
+type(
+  G.event
+)
+ident(
+  int_ref event "progress.ml" 47 1725 1753 "progress.ml" 47 1725 1758
+)
+"progress.ml" 48 1775 1790 "progress.ml" 48 1775 1791
+type(
+  G.event -> G.event -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"progress.ml" 48 1775 1792 "progress.ml" 48 1775 1808
+type(
+  G.event
+)
+"progress.ml" 48 1775 1784 "progress.ml" 48 1775 1808
+type(
+  bool
+)
+"progress.ml" 48 1775 1809 "progress.ml" 48 1775 1811
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"progress.ml" 48 1775 1812 "progress.ml" 48 1775 1824
+type(
+  int64 array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"progress.ml" 48 1775 1825 "progress.ml" 48 1775 1830
+type(
+  int64 array
+)
+ident(
+  int_ref array "progress.ml" 47 1725 1767 "progress.ml" 47 1725 1772
+)
+"progress.ml" 48 1775 1812 "progress.ml" 48 1775 1830
+type(
+  int
+)
+"progress.ml" 48 1775 1831 "progress.ml" 48 1775 1833
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"progress.ml" 48 1775 1834 "progress.ml" 48 1775 1835
+type(
+  int
+)
+"progress.ml" 48 1775 1812 "progress.ml" 48 1775 1835
+type(
+  bool
+)
+"progress.ml" 48 1775 1784 "progress.ml" 48 1775 1835
+type(
+  bool
+)
+"progress.ml" 49 1843 1855 "progress.ml" 49 1843 1863
+type(
+  int64
+)
+"progress.ml" 49 1843 1866 "progress.ml" 49 1843 1871
+type(
+  int64 array
+)
+ident(
+  int_ref array "progress.ml" 47 1725 1767 "progress.ml" 47 1725 1772
+)
+"progress.ml" 49 1843 1873 "progress.ml" 49 1843 1874
+type(
+  int
+)
+"progress.ml" 49 1843 1866 "progress.ml" 49 1843 1875
+type(
+  int64
+)
+"progress.ml" 50 1876 1888 "progress.ml" 50 1876 1893
+type(
+  int64
+)
+"progress.ml" 50 1876 1896 "progress.ml" 50 1876 1901
+type(
+  int64 array
+)
+ident(
+  int_ref array "progress.ml" 47 1725 1767 "progress.ml" 47 1725 1772
+)
+"progress.ml" 50 1876 1903 "progress.ml" 50 1876 1904
+type(
+  int
+)
+"progress.ml" 50 1876 1896 "progress.ml" 50 1876 1905
+type(
+  int64
+)
+"progress.ml" 52 1910 1918 "progress.ml" 52 1910 1934
+type(
+  progress_bar -> int64 -> int64 -> unit
+)
+"progress.ml" 52 1910 1935 "progress.ml" 52 1910 1938
+type(
+  progress_bar
+)
+ident(
+  int_ref bar "progress.ml" 38 1431 1439 "progress.ml" 38 1431 1442
+)
+"progress.ml" 52 1910 1939 "progress.ml" 52 1910 1947
+type(
+  int64
+)
+ident(
+  int_ref position "progress.ml" 49 1843 1855 "progress.ml" 49 1843 1863
+)
+"progress.ml" 52 1910 1948 "progress.ml" 52 1910 1953
+type(
+  int64
+)
+ident(
+  int_ref total "progress.ml" 50 1876 1888 "progress.ml" 50 1876 1893
+)
+"progress.ml" 52 1910 1918 "progress.ml" 52 1910 1953
+type(
+  unit
+)
+"progress.ml" 48 1775 1841 "progress.ml" 53 1954 1961
+type(
+  unit
+)
+"progress.ml" 48 1775 1781 "progress.ml" 53 1954 1961
+type(
+  unit
+)
+"progress.ml" 56 1970 1974 "progress.ml" 56 1970 1980
+type(
+  Guestfs.event_handle -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"progress.ml" 56 1970 1982 "progress.ml" 56 1970 1983
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "progress.ml" 32 1155 1208 "progress.ml" 32 1155 1209
+)
+"progress.ml" 56 1970 1982 "progress.ml" 56 1970 2002
+call(
+  stack
+)
+type(
+  Guestfs.event_callback -> G.event list -> Guestfs.event_handle
+)
+"progress.ml" 56 1970 2003 "progress.ml" 56 1970 2017
+type(
+  Guestfs.event_callback
+)
+ident(
+  int_ref enter_callback "progress.ml" 41 1552 1560 "progress.ml" 41 1552 1574
+)
+"progress.ml" 56 1970 2019 "progress.ml" 56 1970 2032
+type(
+  G.event
+)
+"progress.ml" 56 1970 2018 "progress.ml" 56 1970 2033
+type(
+  G.event list
+)
+"progress.ml" 56 1970 1981 "progress.ml" 56 1970 2034
+type(
+  Guestfs.event_handle
+)
+"progress.ml" 56 1970 1974 "progress.ml" 56 1970 2034
+type(
+  unit
+)
+"progress.ml" 57 2036 2040 "progress.ml" 57 2036 2046
+type(
+  Guestfs.event_handle -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"progress.ml" 57 2036 2048 "progress.ml" 57 2036 2049
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "progress.ml" 32 1155 1208 "progress.ml" 32 1155 1209
+)
+"progress.ml" 57 2036 2048 "progress.ml" 57 2036 2068
+call(
+  stack
+)
+type(
+  Guestfs.event_callback -> G.event list -> Guestfs.event_handle
+)
+"progress.ml" 57 2036 2069 "progress.ml" 57 2036 2086
+type(
+  Guestfs.event_callback
+)
+ident(
+  int_ref progress_callback "progress.ml" 47 1725 1733 "progress.ml" 47 1725 1750
+)
+"progress.ml" 57 2036 2088 "progress.ml" 57 2036 2104
+type(
+  G.event
+)
+"progress.ml" 57 2036 2087 "progress.ml" 57 2036 2105
+type(
+  G.event list
+)
+"progress.ml" 57 2036 2047 "progress.ml" 57 2036 2106
+type(
+  Guestfs.event_handle
+)
+"progress.ml" 57 2036 2040 "progress.ml" 57 2036 2106
+type(
+  unit
+)
+"progress.ml" 56 1970 1974 "progress.ml" 57 2036 2106
+type(
+  unit
+)
+"progress.ml" 47 1725 1729 "progress.ml" 57 2036 2106
+type(
+  unit
+)
+"progress.ml" 41 1552 1556 "progress.ml" 57 2036 2106
+type(
+  unit
+)
+"progress.ml" 36 1334 1388 "progress.ml" 58 2107 2110
+type(
+  unit
+)
+"progress.ml" 36 1334 1336 "progress.ml" 58 2107 2110
+type(
+  unit
+)

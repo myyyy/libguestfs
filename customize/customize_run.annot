@@ -1,0 +1,6491 @@
+"customize_run.ml" 29 907 911 "customize_run.ml" 29 907 914
+type(
+  Guestfs.guestfs -> string -> Customize_cmdline.ops -> unit
+)
+ident(
+  def run "customize_run.ml" 410 13368 13386 --
+)
+"customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "customize_run.ml" 29 907 937 "customize_run.ml" 410 13368 13386
+)
+"customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+type(
+  string
+)
+ident(
+  def root "customize_run.ml" 29 907 942 "customize_run.ml" 410 13368 13386
+)
+"customize_run.ml" 29 907 943 "customize_run.ml" 29 907 946
+type(
+  Customize_cmdline.ops
+)
+ident(
+  def ops "customize_run.ml" 33 1060 1062 "customize_run.ml" 410 13368 13386
+)
+"customize_run.ml" 33 1060 1066 "customize_run.ml" 33 1060 1076
+type(
+  string
+)
+"customize_run.ml" 33 1060 1079 "customize_run.ml" 33 1060 1080
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 33 1060 1079 "customize_run.ml" 33 1060 1097
+call(
+  stack
+)
+type(
+  string -> string
+)
+"customize_run.ml" 33 1060 1098 "customize_run.ml" 33 1060 1102
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 33 1060 1079 "customize_run.ml" 33 1060 1102
+type(
+  string
+)
+"customize_run.ml" 34 1106 1112 "customize_run.ml" 34 1106 1133
+type(
+  bool
+)
+"customize_run.ml" 34 1106 1136 "customize_run.ml" 34 1106 1157
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.guest_arch_compatible
+)
+"customize_run.ml" 34 1106 1158 "customize_run.ml" 34 1106 1168
+type(
+  string
+)
+ident(
+  int_ref guest_arch "customize_run.ml" 33 1060 1066 "customize_run.ml" 33 1060 1076
+)
+"customize_run.ml" 34 1106 1136 "customize_run.ml" 34 1106 1168
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_run.ml" 37 1234 1240 "customize_run.ml" 37 1234 1247
+type(
+  string
+)
+"customize_run.ml" 38 1250 1260 "customize_run.ml" 38 1250 1261
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 38 1250 1260 "customize_run.ml" 38 1250 1278
+call(
+  stack
+)
+type(
+  string -> string
+)
+"customize_run.ml" 38 1250 1279 "customize_run.ml" 38 1250 1283
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 38 1250 1260 "customize_run.ml" 38 1250 1283
+type(
+  string
+)
+"customize_run.ml" 39 1289 1295 "customize_run.ml" 39 1289 1304
+type(
+  string
+)
+"customize_run.ml" 39 1289 1307 "customize_run.ml" 39 1289 1312
+type(
+  string
+)
+"customize_run.ml" 39 1289 1295 "customize_run.ml" 39 1289 1312
+type(
+  string
+)
+"customize_run.ml" 40 1316 1325 "customize_run.ml" 40 1316 1326
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 40 1316 1325 "customize_run.ml" 40 1316 1333
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"customize_run.ml" 40 1316 1350 "customize_run.ml" 40 1316 1354
+type(
+  bool
+)
+"customize_run.ml" 40 1316 1355 "customize_run.ml" 40 1316 1362
+type(
+  string
+)
+"customize_run.ml" 40 1316 1325 "customize_run.ml" 40 1316 1362
+type(
+  bool
+)
+"customize_run.ml" 40 1316 1368 "customize_run.ml" 40 1316 1387
+type(
+  string
+)
+"customize_run.ml" 41 1388 1399 "customize_run.ml" 41 1388 1413
+type(
+  string
+)
+"customize_run.ml" 40 1316 1322 "customize_run.ml" 41 1388 1413
+type(
+  string
+)
+"customize_run.ml" 42 1414 1420 "customize_run.ml" 42 1414 1421
+type(
+  string
+)
+"customize_run.ml" 43 1425 1434 "customize_run.ml" 43 1425 1435
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 43 1425 1434 "customize_run.ml" 43 1425 1442
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"customize_run.ml" 43 1425 1459 "customize_run.ml" 43 1425 1463
+type(
+  bool
+)
+"customize_run.ml" 43 1425 1464 "customize_run.ml" 43 1425 1470
+type(
+  string
+)
+"customize_run.ml" 43 1425 1434 "customize_run.ml" 43 1425 1470
+type(
+  bool
+)
+"customize_run.ml" 43 1425 1476 "customize_run.ml" 43 1425 1494
+type(
+  string
+)
+"customize_run.ml" 44 1495 1506 "customize_run.ml" 44 1495 1520
+type(
+  string
+)
+"customize_run.ml" 43 1425 1431 "customize_run.ml" 44 1495 1520
+type(
+  string
+)
+"customize_run.ml" 38 1250 1254 "customize_run.ml" 44 1495 1520
+type(
+  string
+)
+"customize_run.ml" 47 1597 1603 "customize_run.ml" 47 1597 1616
+type(
+  unit -> unit
+)
+"customize_run.ml" 47 1597 1617 "customize_run.ml" 47 1597 1619
+type(
+  unit
+)
+"customize_run.ml" 48 1622 1630 "customize_run.ml" 48 1622 1631
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 48 1622 1630 "customize_run.ml" 48 1622 1640
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"customize_run.ml" 48 1622 1641 "customize_run.ml" 48 1622 1648
+type(
+  string
+)
+ident(
+  int_ref logfile "customize_run.ml" 37 1234 1240 "customize_run.ml" 37 1234 1247
+)
+"customize_run.ml" 48 1622 1649 "customize_run.ml" 48 1622 1662
+type(
+  string
+)
+"customize_run.ml" 48 1622 1630 "customize_run.ml" 48 1622 1662
+type(
+  unit
+)
+"customize_run.ml" 49 1663 1672 "customize_run.ml" 49 1663 1675
+type(
+  exn
+)
+ident(
+  def exn "customize_run.ml" 50 1679 1685 "customize_run.ml" 50 1679 1757
+)
+"customize_run.ml" 50 1679 1685 "customize_run.ml" 50 1679 1692
+type(
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"customize_run.ml" 50 1679 1694 "customize_run.ml" 50 1679 1696
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 50 1679 1696 "customize_run.ml" 50 1679 1723
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 50 1679 1693 "customize_run.ml" 50 1679 1724
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 50 1679 1725 "customize_run.ml" 50 1679 1732
+type(
+  string
+)
+ident(
+  int_ref logfile "customize_run.ml" 37 1234 1240 "customize_run.ml" 37 1234 1247
+)
+"customize_run.ml" 50 1679 1734 "customize_run.ml" 50 1679 1752
+type(
+  exn -> string
+)
+ident(
+  ext_ref Printexc.to_string
+)
+"customize_run.ml" 50 1679 1753 "customize_run.ml" 50 1679 1756
+type(
+  exn
+)
+ident(
+  int_ref exn "customize_run.ml" 49 1663 1672 "customize_run.ml" 49 1663 1675
+)
+"customize_run.ml" 50 1679 1733 "customize_run.ml" 50 1679 1757
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 50 1679 1685 "customize_run.ml" 50 1679 1757
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 48 1622 1626 "customize_run.ml" 50 1679 1757
+type(
+  unit
+)
+"customize_run.ml" 53 1798 1804 "customize_run.ml" 53 1798 1810
+type(
+  display:string -> string -> unit
+)
+"customize_run.ml" 53 1798 1812 "customize_run.ml" 53 1798 1819
+type(
+  string
+)
+ident(
+  def display "customize_run.ml" 53 1798 1820 "customize_run.ml" 93 3141 3201
+)
+"customize_run.ml" 53 1798 1820 "customize_run.ml" 53 1798 1823
+type(
+  string
+)
+ident(
+  def cmd "customize_run.ml" 54 1826 1830 "customize_run.ml" 93 3141 3201
+)
+"customize_run.ml" 54 1826 1833 "customize_run.ml" 54 1826 1836
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"customize_run.ml" 54 1826 1837 "customize_run.ml" 54 1826 1858
+type(
+  bool
+)
+ident(
+  int_ref guest_arch_compatible "customize_run.ml" 34 1106 1112 "customize_run.ml" 34 1106 1133
+)
+"customize_run.ml" 54 1826 1833 "customize_run.ml" 54 1826 1858
+type(
+  bool
+)
+"customize_run.ml" 55 1864 1870 "customize_run.ml" 55 1864 1875
+type(
+  ?exit_code:int ->
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_run.ml" 55 1864 1877 "customize_run.ml" 55 1864 1879
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 55 1864 1879 "customize_run.ml" 55 1864 2051
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 55 1864 1876 "customize_run.ml" 55 1864 2052
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 56 2053 2065 "customize_run.ml" 56 2053 2080
+type(
+  string
+)
+ident(
+  ext_ref Config.host_cpu
+)
+"customize_run.ml" 56 2053 2081 "customize_run.ml" 56 2053 2091
+type(
+  string
+)
+ident(
+  int_ref guest_arch "customize_run.ml" 33 1060 1066 "customize_run.ml" 33 1060 1076
+)
+"customize_run.ml" 55 1864 1870 "customize_run.ml" 56 2053 2091
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 54 1826 1830 "customize_run.ml" 56 2053 2091
+type(
+  unit
+)
+"customize_run.ml" 65 2426 2434 "customize_run.ml" 65 2426 2442
+type(
+  string list
+)
+"customize_run.ml" 66 2445 2451 "customize_run.ml" 66 2445 2461
+type(
+  (string -> string option) -> string list -> string list
+)
+ident(
+  ext_ref Common_utils.filter_map
+)
+"customize_run.ml" 67 2464 2476 "customize_run.ml" 67 2464 2480
+type(
+  string
+)
+ident(
+  def name "customize_run.ml" 68 2484 2494 "customize_run.ml" 69 2559 2591
+)
+"customize_run.ml" 68 2484 2504 "customize_run.ml" 68 2484 2511
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 68 2484 2512 "customize_run.ml" 68 2484 2526
+type(
+  (string -> string -> string, unit, string) format
+)
+"customize_run.ml" 68 2484 2527 "customize_run.ml" 68 2484 2531
+type(
+  string
+)
+ident(
+  int_ref name "customize_run.ml" 67 2464 2476 "customize_run.ml" 67 2464 2480
+)
+"customize_run.ml" 68 2484 2533 "customize_run.ml" 68 2484 2538
+type(
+  string -> string
+)
+ident(
+  ext_ref Customize_utils.quote
+)
+"customize_run.ml" 68 2484 2540 "customize_run.ml" 68 2484 2550
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"customize_run.ml" 68 2484 2551 "customize_run.ml" 68 2484 2555
+type(
+  string
+)
+ident(
+  int_ref name "customize_run.ml" 67 2464 2476 "customize_run.ml" 67 2464 2480
+)
+"customize_run.ml" 68 2484 2539 "customize_run.ml" 68 2484 2556
+type(
+  string
+)
+"customize_run.ml" 68 2484 2532 "customize_run.ml" 68 2484 2557
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 68 2484 2503 "customize_run.ml" 68 2484 2558
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 68 2484 2498 "customize_run.ml" 68 2484 2558
+type(
+  string option
+)
+"customize_run.ml" 69 2559 2574 "customize_run.ml" 69 2559 2583
+type(
+  exn
+)
+"customize_run.ml" 69 2559 2587 "customize_run.ml" 69 2559 2591
+type(
+  string option
+)
+"customize_run.ml" 68 2484 2494 "customize_run.ml" 69 2559 2591
+type(
+  string option
+)
+"customize_run.ml" 66 2445 2462 "customize_run.ml" 70 2592 2599
+type(
+  string -> string option
+)
+"customize_run.ml" 70 2592 2602 "customize_run.ml" 70 2592 2614
+type(
+  string
+)
+"customize_run.ml" 70 2592 2616 "customize_run.ml" 70 2592 2629
+type(
+  string
+)
+"customize_run.ml" 70 2592 2631 "customize_run.ml" 70 2592 2642
+type(
+  string
+)
+"customize_run.ml" 70 2592 2644 "customize_run.ml" 70 2592 2654
+type(
+  string
+)
+"customize_run.ml" 70 2592 2600 "customize_run.ml" 70 2592 2656
+type(
+  string list
+)
+"customize_run.ml" 66 2445 2451 "customize_run.ml" 70 2592 2656
+call(
+  stack
+)
+type(
+  string list
+)
+"customize_run.ml" 71 2660 2668 "customize_run.ml" 71 2660 2676
+type(
+  string
+)
+"customize_run.ml" 71 2660 2679 "customize_run.ml" 71 2660 2692
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"customize_run.ml" 71 2660 2693 "customize_run.ml" 71 2660 2697
+type(
+  string
+)
+"customize_run.ml" 71 2660 2698 "customize_run.ml" 71 2660 2706
+type(
+  string list
+)
+ident(
+  int_ref env_vars "customize_run.ml" 65 2426 2434 "customize_run.ml" 65 2426 2442
+)
+"customize_run.ml" 71 2660 2679 "customize_run.ml" 71 2660 2706
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 71 2660 2707 "customize_run.ml" 71 2660 2708
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_run.ml" 71 2660 2709 "customize_run.ml" 71 2660 2713
+type(
+  string
+)
+"customize_run.ml" 71 2660 2679 "customize_run.ml" 71 2660 2713
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 73 2718 2726 "customize_run.ml" 73 2718 2729
+type(
+  string
+)
+"customize_run.ml" 74 2732 2744 "customize_run.ml" 74 2732 2759
+type(
+  string
+)
+ident(
+  ext_ref Config.host_cpu
+)
+"customize_run.ml" 74 2732 2761 "customize_run.ml" 74 2732 2771
+type(
+  string
+)
+ident(
+  int_ref guest_arch "customize_run.ml" 33 1060 1066 "customize_run.ml" 33 1060 1076
+)
+"customize_run.ml" 74 2732 2744 "customize_run.ml" 74 2732 2771
+type(
+  string * string
+)
+"customize_run.ml" 75 2777 2785 "customize_run.ml" 75 2777 2793
+type(
+  string
+)
+"customize_run.ml" 75 2777 2796 "customize_run.ml" 75 2777 2802
+type(
+  string
+)
+"customize_run.ml" 75 2777 2803 "customize_run.ml" 75 2777 2809
+type(
+  string
+)
+"customize_run.ml" 75 2777 2796 "customize_run.ml" 75 2777 2809
+type(
+  string
+)
+"customize_run.ml" 75 2777 2810 "customize_run.ml" 75 2777 2816
+type(
+  string
+)
+"customize_run.ml" 75 2777 2796 "customize_run.ml" 75 2777 2816
+type(
+  string
+)
+"customize_run.ml" 75 2777 2817 "customize_run.ml" 75 2777 2823
+type(
+  string
+)
+"customize_run.ml" 75 2777 2795 "customize_run.ml" 75 2777 2824
+type(
+  string
+)
+"customize_run.ml" 75 2777 2785 "customize_run.ml" 75 2777 2824
+type(
+  string * string
+)
+"customize_run.ml" 76 2828 2836 "customize_run.ml" 76 2828 2843
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 76 2828 2844 "customize_run.ml" 79 2883 2884
+type(
+  (string -> string, unit, string) format
+)
+"customize_run.ml" 79 2883 2885 "customize_run.ml" 79 2883 2888
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 53 1798 1820 "customize_run.ml" 53 1798 1823
+)
+"customize_run.ml" 76 2828 2836 "customize_run.ml" 79 2883 2888
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 80 2889 2897 "customize_run.ml" 80 2889 2898
+type(
+  string * string
+)
+"customize_run.ml" 80 2889 2902 "customize_run.ml" 80 2889 2905
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 53 1798 1820 "customize_run.ml" 53 1798 1823
+)
+"customize_run.ml" 74 2732 2738 "customize_run.ml" 80 2889 2905
+type(
+  string
+)
+"customize_run.ml" 82 2910 2918 "customize_run.ml" 82 2910 2921
+type(
+  string
+)
+"customize_run.ml" 82 2910 2924 "customize_run.ml" 82 2910 2931
+type(
+  (string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 82 2910 2932 "customize_run.ml" 86 2956 2957
+type(
+  (string -> string -> string -> string, unit, string) format
+)
+"customize_run.ml" 86 2956 2959 "customize_run.ml" 86 2956 2964
+type(
+  string -> string
+)
+ident(
+  ext_ref Customize_utils.quote
+)
+"customize_run.ml" 86 2956 2965 "customize_run.ml" 86 2956 2972
+type(
+  string
+)
+ident(
+  int_ref logfile "customize_run.ml" 37 1234 1240 "customize_run.ml" 37 1234 1247
+)
+"customize_run.ml" 86 2956 2958 "customize_run.ml" 86 2956 2973
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 86 2956 2974 "customize_run.ml" 86 2956 2982
+type(
+  string
+)
+ident(
+  int_ref env_vars "customize_run.ml" 71 2660 2668 "customize_run.ml" 71 2660 2676
+)
+"customize_run.ml" 86 2956 2983 "customize_run.ml" 86 2956 2986
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 73 2718 2726 "customize_run.ml" 73 2718 2729
+)
+"customize_run.ml" 82 2910 2924 "customize_run.ml" 86 2956 2986
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 88 2991 2998 "customize_run.ml" 88 2991 3005
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"customize_run.ml" 88 2991 3006 "customize_run.ml" 88 2991 3008
+type(
+  unit
+)
+"customize_run.ml" 88 2991 2998 "customize_run.ml" 88 2991 3008
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_run.ml" 88 2991 3014 "customize_run.ml" 88 2991 3020
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"customize_run.ml" 88 2991 3021 "customize_run.ml" 88 2991 3047
+type(
+  (string -> unit, out_channel, unit) format
+)
+"customize_run.ml" 88 2991 3048 "customize_run.ml" 88 2991 3051
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 82 2910 2918 "customize_run.ml" 82 2910 2921
+)
+"customize_run.ml" 88 2991 3014 "customize_run.ml" 88 2991 3051
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 88 2991 2995 "customize_run.ml" 88 2991 3051
+type(
+  unit
+)
+"customize_run.ml" 89 3053 3061 "customize_run.ml" 89 3053 3067
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"customize_run.ml" 89 3053 3069 "customize_run.ml" 89 3053 3070
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 89 3053 3069 "customize_run.ml" 89 3053 3073
+call(
+  stack
+)
+type(
+  string -> string
+)
+"customize_run.ml" 89 3053 3074 "customize_run.ml" 89 3053 3077
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 82 2910 2918 "customize_run.ml" 82 2910 2921
+)
+"customize_run.ml" 89 3053 3068 "customize_run.ml" 89 3053 3078
+type(
+  string
+)
+"customize_run.ml" 89 3053 3061 "customize_run.ml" 89 3053 3078
+type(
+  unit
+)
+"customize_run.ml" 91 3088 3108 "customize_run.ml" 91 3088 3111
+type(
+  string
+)
+ident(
+  def msg "customize_run.ml" 92 3115 3123 "customize_run.ml" 93 3141 3201
+)
+"customize_run.ml" 91 3088 3094 "customize_run.ml" 91 3088 3111
+type(
+  exn
+)
+"customize_run.ml" 92 3115 3123 "customize_run.ml" 92 3115 3136
+type(
+  unit -> unit
+)
+ident(
+  int_ref debug_logfile "customize_run.ml" 47 1597 1603 "customize_run.ml" 47 1597 1616
+)
+"customize_run.ml" 92 3115 3137 "customize_run.ml" 92 3115 3139
+type(
+  unit
+)
+"customize_run.ml" 92 3115 3123 "customize_run.ml" 92 3115 3139
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 93 3141 3149 "customize_run.ml" 93 3141 3154
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_run.ml" 93 3141 3156 "customize_run.ml" 93 3141 3158
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 93 3141 3158 "customize_run.ml" 93 3141 3192
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 93 3141 3155 "customize_run.ml" 93 3141 3193
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 93 3141 3194 "customize_run.ml" 93 3141 3201
+type(
+  string
+)
+ident(
+  int_ref display "customize_run.ml" 53 1798 1812 "customize_run.ml" 53 1798 1819
+)
+"customize_run.ml" 93 3141 3149 "customize_run.ml" 93 3141 3201
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 92 3115 3123 "customize_run.ml" 93 3141 3201
+type(
+  unit
+)
+"customize_run.ml" 89 3053 3057 "customize_run.ml" 93 3141 3201
+type(
+  unit
+)
+"customize_run.ml" 88 2991 2995 "customize_run.ml" 93 3141 3201
+type(
+  unit
+)
+"customize_run.ml" 82 2910 2914 "customize_run.ml" 93 3141 3201
+type(
+  unit
+)
+"customize_run.ml" 73 2718 2722 "customize_run.ml" 93 3141 3201
+type(
+  unit
+)
+"customize_run.ml" 71 2660 2664 "customize_run.ml" 93 3141 3201
+type(
+  unit
+)
+"customize_run.ml" 65 2426 2430 "customize_run.ml" 93 3141 3201
+type(
+  unit
+)
+"customize_run.ml" 54 1826 1830 "customize_run.ml" 93 3141 3201
+type(
+  unit
+)
+"customize_run.ml" 97 3277 3283 "customize_run.ml" 97 3277 3304
+type(
+  string list -> string
+)
+"customize_run.ml" 97 3277 3305 "customize_run.ml" 97 3277 3313
+type(
+  string list
+)
+ident(
+  def packages "customize_run.ml" 98 3316 3320 "customize_run.ml" 123 4186 4275
+)
+"customize_run.ml" 98 3316 3324 "customize_run.ml" 98 3316 3335
+type(
+  string
+)
+"customize_run.ml" 98 3316 3338 "customize_run.ml" 98 3316 3351
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"customize_run.ml" 98 3316 3352 "customize_run.ml" 98 3316 3355
+type(
+  string
+)
+"customize_run.ml" 98 3316 3357 "customize_run.ml" 98 3316 3365
+type(
+  (string -> string) -> string list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"customize_run.ml" 98 3316 3366 "customize_run.ml" 98 3316 3371
+type(
+  string -> string
+)
+ident(
+  ext_ref Customize_utils.quote
+)
+"customize_run.ml" 98 3316 3372 "customize_run.ml" 98 3316 3380
+type(
+  string list
+)
+ident(
+  int_ref packages "customize_run.ml" 97 3277 3305 "customize_run.ml" 97 3277 3313
+)
+"customize_run.ml" 98 3316 3356 "customize_run.ml" 98 3316 3381
+call(
+  stack
+)
+type(
+  string list
+)
+"customize_run.ml" 98 3316 3338 "customize_run.ml" 98 3316 3381
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 99 3385 3395 "customize_run.ml" 99 3385 3396
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 99 3385 3395 "customize_run.ml" 99 3385 3427
+call(
+  stack
+)
+type(
+  string -> string
+)
+"customize_run.ml" 99 3385 3428 "customize_run.ml" 99 3385 3432
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 99 3385 3395 "customize_run.ml" 99 3385 3432
+type(
+  string
+)
+"customize_run.ml" 100 3438 3444 "customize_run.ml" 100 3438 3449
+type(
+  string
+)
+"customize_run.ml" 102 3511 3517 "customize_run.ml" 102 3511 3524
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 102 3511 3525 "customize_run.ml" 107 3703 3710
+type(
+  (string -> string, unit, string) format
+)
+"customize_run.ml" 107 3703 3711 "customize_run.ml" 107 3703 3722
+type(
+  string
+)
+ident(
+  int_ref quoted_args "customize_run.ml" 98 3316 3324 "customize_run.ml" 98 3316 3335
+)
+"customize_run.ml" 102 3511 3517 "customize_run.ml" 107 3703 3722
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 108 3723 3729 "customize_run.ml" 108 3723 3734
+type(
+  string
+)
+"customize_run.ml" 109 3738 3744 "customize_run.ml" 109 3738 3751
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 109 3738 3752 "customize_run.ml" 109 3738 3771
+type(
+  (string -> string, unit, string) format
+)
+"customize_run.ml" 109 3738 3772 "customize_run.ml" 109 3738 3783
+type(
+  string
+)
+ident(
+  int_ref quoted_args "customize_run.ml" 98 3316 3324 "customize_run.ml" 98 3316 3335
+)
+"customize_run.ml" 109 3738 3744 "customize_run.ml" 109 3738 3783
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 110 3784 3790 "customize_run.ml" 110 3784 3796
+type(
+  string
+)
+"customize_run.ml" 111 3800 3806 "customize_run.ml" 111 3800 3813
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 111 3800 3814 "customize_run.ml" 111 3800 3826
+type(
+  (string -> string, unit, string) format
+)
+"customize_run.ml" 111 3800 3827 "customize_run.ml" 111 3800 3838
+type(
+  string
+)
+ident(
+  int_ref quoted_args "customize_run.ml" 98 3316 3324 "customize_run.ml" 98 3316 3335
+)
+"customize_run.ml" 111 3800 3806 "customize_run.ml" 111 3800 3838
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 112 3839 3845 "customize_run.ml" 112 3839 3853
+type(
+  string
+)
+"customize_run.ml" 113 3857 3863 "customize_run.ml" 113 3857 3870
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 113 3857 3871 "customize_run.ml" 113 3857 3885
+type(
+  (string -> string, unit, string) format
+)
+"customize_run.ml" 113 3857 3886 "customize_run.ml" 113 3857 3897
+type(
+  string
+)
+ident(
+  int_ref quoted_args "customize_run.ml" 98 3316 3324 "customize_run.ml" 98 3316 3335
+)
+"customize_run.ml" 113 3857 3863 "customize_run.ml" 113 3857 3897
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 114 3898 3904 "customize_run.ml" 114 3898 3911
+type(
+  string
+)
+"customize_run.ml" 115 3915 3921 "customize_run.ml" 115 3915 3928
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 115 3915 3929 "customize_run.ml" 115 3915 3939
+type(
+  (string -> string, unit, string) format
+)
+"customize_run.ml" 115 3915 3940 "customize_run.ml" 115 3915 3951
+type(
+  string
+)
+ident(
+  int_ref quoted_args "customize_run.ml" 98 3316 3324 "customize_run.ml" 98 3316 3335
+)
+"customize_run.ml" 115 3915 3921 "customize_run.ml" 115 3915 3951
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 116 3952 3958 "customize_run.ml" 116 3952 3963
+type(
+  string
+)
+"customize_run.ml" 117 3967 3973 "customize_run.ml" 117 3967 3980
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 117 3967 3981 "customize_run.ml" 117 3967 4000
+type(
+  (string -> string, unit, string) format
+)
+"customize_run.ml" 117 3967 4001 "customize_run.ml" 117 3967 4012
+type(
+  string
+)
+ident(
+  int_ref quoted_args "customize_run.ml" 98 3316 3324 "customize_run.ml" 98 3316 3335
+)
+"customize_run.ml" 117 3967 3973 "customize_run.ml" 117 3967 4012
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 118 4013 4019 "customize_run.ml" 118 4013 4027
+type(
+  string
+)
+"customize_run.ml" 119 4031 4037 "customize_run.ml" 119 4031 4044
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 119 4031 4045 "customize_run.ml" 119 4031 4065
+type(
+  (string -> string, unit, string) format
+)
+"customize_run.ml" 119 4031 4066 "customize_run.ml" 119 4031 4077
+type(
+  string
+)
+ident(
+  int_ref quoted_args "customize_run.ml" 98 3316 3324 "customize_run.ml" 98 3316 3335
+)
+"customize_run.ml" 119 4031 4037 "customize_run.ml" 119 4031 4077
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 120 4078 4084 "customize_run.ml" 120 4078 4093
+type(
+  string
+)
+"customize_run.ml" 121 4097 4103 "customize_run.ml" 121 4097 4108
+type(
+  ?exit_code:int -> (string, unit, string, string) format4 -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_run.ml" 121 4097 4110 "customize_run.ml" 121 4097 4112
+type(
+  (string, unit, string, string, string, string) format6 ->
+  (string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 121 4097 4112 "customize_run.ml" 121 4097 4172
+type(
+  (string, unit, string, string, string, string) format6
+)
+"customize_run.ml" 121 4097 4109 "customize_run.ml" 121 4097 4173
+type(
+  (string, unit, string, string) format4
+)
+"customize_run.ml" 121 4097 4103 "customize_run.ml" 121 4097 4173
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 122 4174 4180 "customize_run.ml" 122 4174 4182
+type(
+  string
+)
+ident(
+  def pm "customize_run.ml" 123 4186 4192 "customize_run.ml" 123 4186 4275
+)
+"customize_run.ml" 123 4186 4192 "customize_run.ml" 123 4186 4197
+type(
+  ?exit_code:int ->
+  (string -> string, unit, string, string) format4 -> string -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_run.ml" 123 4186 4199 "customize_run.ml" 123 4186 4201
+type(
+  (string -> string, unit, string, string, string, string) format6 ->
+  (string -> string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 123 4186 4201 "customize_run.ml" 123 4186 4271
+type(
+  (string -> string, unit, string, string, string, string) format6
+)
+"customize_run.ml" 123 4186 4198 "customize_run.ml" 123 4186 4272
+type(
+  (string -> string, unit, string, string) format4
+)
+"customize_run.ml" 123 4186 4273 "customize_run.ml" 123 4186 4275
+type(
+  string
+)
+ident(
+  int_ref pm "customize_run.ml" 122 4174 4180 "customize_run.ml" 122 4174 4182
+)
+"customize_run.ml" 123 4186 4192 "customize_run.ml" 123 4186 4275
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 99 3385 3389 "customize_run.ml" 123 4186 4275
+type(
+  string
+)
+"customize_run.ml" 98 3316 3320 "customize_run.ml" 123 4186 4275
+type(
+  string
+)
+"customize_run.ml" 125 4277 4283 "customize_run.ml" 125 4277 4303
+type(
+  unit -> string
+)
+"customize_run.ml" 125 4277 4304 "customize_run.ml" 125 4277 4306
+type(
+  unit
+)
+"customize_run.ml" 126 4309 4319 "customize_run.ml" 126 4309 4320
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 126 4309 4319 "customize_run.ml" 126 4309 4351
+call(
+  stack
+)
+type(
+  string -> string
+)
+"customize_run.ml" 126 4309 4352 "customize_run.ml" 126 4309 4356
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 126 4309 4319 "customize_run.ml" 126 4309 4356
+type(
+  string
+)
+"customize_run.ml" 127 4362 4368 "customize_run.ml" 127 4362 4373
+type(
+  string
+)
+"customize_run.ml" 129 4435 4441 "customize_run.ml" 129 4435 4448
+type(
+  (string, unit, string) format -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 129 4435 4449 "customize_run.ml" 134 4624 4631
+type(
+  (string, unit, string) format
+)
+"customize_run.ml" 129 4435 4441 "customize_run.ml" 134 4624 4631
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 135 4632 4638 "customize_run.ml" 135 4632 4643
+type(
+  string
+)
+"customize_run.ml" 136 4647 4653 "customize_run.ml" 136 4647 4660
+type(
+  (string, unit, string) format -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 136 4647 4661 "customize_run.ml" 136 4647 4676
+type(
+  (string, unit, string) format
+)
+"customize_run.ml" 136 4647 4653 "customize_run.ml" 136 4647 4676
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 137 4677 4683 "customize_run.ml" 137 4677 4689
+type(
+  string
+)
+"customize_run.ml" 138 4693 4699 "customize_run.ml" 138 4693 4706
+type(
+  (string, unit, string) format -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 138 4693 4707 "customize_run.ml" 138 4693 4721
+type(
+  (string, unit, string) format
+)
+"customize_run.ml" 138 4693 4699 "customize_run.ml" 138 4693 4721
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 139 4722 4728 "customize_run.ml" 139 4722 4736
+type(
+  string
+)
+"customize_run.ml" 140 4740 4746 "customize_run.ml" 140 4740 4753
+type(
+  (string, unit, string) format -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 140 4740 4754 "customize_run.ml" 140 4740 4766
+type(
+  (string, unit, string) format
+)
+"customize_run.ml" 140 4740 4746 "customize_run.ml" 140 4740 4766
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 141 4767 4773 "customize_run.ml" 141 4767 4780
+type(
+  string
+)
+"customize_run.ml" 142 4784 4790 "customize_run.ml" 142 4784 4797
+type(
+  (string, unit, string) format -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 142 4784 4798 "customize_run.ml" 142 4784 4819
+type(
+  (string, unit, string) format
+)
+"customize_run.ml" 142 4784 4790 "customize_run.ml" 142 4784 4819
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 143 4820 4826 "customize_run.ml" 143 4820 4831
+type(
+  string
+)
+"customize_run.ml" 144 4835 4841 "customize_run.ml" 144 4835 4848
+type(
+  (string, unit, string) format -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 144 4835 4849 "customize_run.ml" 144 4835 4864
+type(
+  (string, unit, string) format
+)
+"customize_run.ml" 144 4835 4841 "customize_run.ml" 144 4835 4864
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 145 4865 4871 "customize_run.ml" 145 4865 4879
+type(
+  string
+)
+"customize_run.ml" 146 4883 4889 "customize_run.ml" 146 4883 4896
+type(
+  (string, unit, string) format -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 146 4883 4897 "customize_run.ml" 146 4883 4918
+type(
+  (string, unit, string) format
+)
+"customize_run.ml" 146 4883 4889 "customize_run.ml" 146 4883 4918
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 147 4919 4925 "customize_run.ml" 147 4919 4934
+type(
+  string
+)
+"customize_run.ml" 148 4938 4944 "customize_run.ml" 148 4938 4949
+type(
+  ?exit_code:int -> (string, unit, string, string) format4 -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_run.ml" 148 4938 4951 "customize_run.ml" 148 4938 4953
+type(
+  (string, unit, string, string, string, string) format6 ->
+  (string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 148 4938 4953 "customize_run.ml" 148 4938 5012
+type(
+  (string, unit, string, string, string, string) format6
+)
+"customize_run.ml" 148 4938 4950 "customize_run.ml" 148 4938 5013
+type(
+  (string, unit, string, string) format4
+)
+"customize_run.ml" 148 4938 4944 "customize_run.ml" 148 4938 5013
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 149 5014 5020 "customize_run.ml" 149 5014 5022
+type(
+  string
+)
+ident(
+  def pm "customize_run.ml" 150 5026 5032 "customize_run.ml" 150 5026 5114
+)
+"customize_run.ml" 150 5026 5032 "customize_run.ml" 150 5026 5037
+type(
+  ?exit_code:int ->
+  (string -> string, unit, string, string) format4 -> string -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_run.ml" 150 5026 5039 "customize_run.ml" 150 5026 5041
+type(
+  (string -> string, unit, string, string, string, string) format6 ->
+  (string -> string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 150 5026 5041 "customize_run.ml" 150 5026 5110
+type(
+  (string -> string, unit, string, string, string, string) format6
+)
+"customize_run.ml" 150 5026 5038 "customize_run.ml" 150 5026 5111
+type(
+  (string -> string, unit, string, string) format4
+)
+"customize_run.ml" 150 5026 5112 "customize_run.ml" 150 5026 5114
+type(
+  string
+)
+ident(
+  int_ref pm "customize_run.ml" 149 5014 5020 "customize_run.ml" 149 5014 5022
+)
+"customize_run.ml" 150 5026 5032 "customize_run.ml" 150 5026 5114
+call(
+  tail
+)
+type(
+  string
+)
+"customize_run.ml" 126 4309 4313 "customize_run.ml" 150 5026 5114
+type(
+  string
+)
+"customize_run.ml" 154 5150 5152 "customize_run.ml" 154 5150 5159
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 154 5150 5161 "customize_run.ml" 154 5150 5163
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 154 5150 5163 "customize_run.ml" 154 5150 5186
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 154 5150 5160 "customize_run.ml" 154 5150 5187
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 154 5150 5152 "customize_run.ml" 154 5150 5187
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 155 5189 5194 "customize_run.ml" 155 5189 5197
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"customize_run.ml" 155 5189 5199 "customize_run.ml" 155 5189 5226
+type(
+  Guestfs.guestfs -> string -> bool
+)
+ident(
+  ext_ref Random_seed.set_random_seed
+)
+"customize_run.ml" 155 5189 5227 "customize_run.ml" 155 5189 5228
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 155 5189 5229 "customize_run.ml" 155 5189 5233
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 155 5189 5198 "customize_run.ml" 155 5189 5234
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_run.ml" 155 5189 5194 "customize_run.ml" 155 5189 5234
+type(
+  bool
+)
+"customize_run.ml" 156 5240 5244 "customize_run.ml" 156 5240 5251
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"customize_run.ml" 156 5240 5253 "customize_run.ml" 156 5240 5255
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 156 5240 5255 "customize_run.ml" 156 5240 5308
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 156 5240 5252 "customize_run.ml" 156 5240 5309
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 156 5240 5244 "customize_run.ml" 156 5240 5309
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 155 5189 5191 "customize_run.ml" 156 5240 5309
+type(
+  unit
+)
+"customize_run.ml" 159 5369 5375 "customize_run.ml" 159 5369 5384
+type(
+  (string, Password.password_selector) Hashtbl.t
+)
+"customize_run.ml" 159 5369 5387 "customize_run.ml" 159 5369 5401
+type(
+  int -> (string, Password.password_selector) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"customize_run.ml" 159 5369 5402 "customize_run.ml" 159 5369 5404
+type(
+  int
+)
+"customize_run.ml" 159 5369 5387 "customize_run.ml" 159 5369 5404
+call(
+  stack
+)
+type(
+  (string, Password.password_selector) Hashtbl.t
+)
+"customize_run.ml" 160 5408 5414 "customize_run.ml" 160 5408 5426
+type(
+  string -> Password.password_selector -> unit
+)
+"customize_run.ml" 160 5408 5427 "customize_run.ml" 160 5408 5431
+type(
+  string
+)
+ident(
+  def user "customize_run.ml" 160 5408 5432 "customize_run.ml" 163 5581 5618
+)
+"customize_run.ml" 160 5408 5432 "customize_run.ml" 160 5408 5434
+type(
+  Password.password_selector
+)
+ident(
+  def pw "customize_run.ml" 161 5437 5441 "customize_run.ml" 163 5581 5618
+)
+"customize_run.ml" 161 5437 5444 "customize_run.ml" 161 5437 5455
+type(
+  (string, Password.password_selector) Hashtbl.t -> string -> bool
+)
+ident(
+  ext_ref Hashtbl.mem
+)
+"customize_run.ml" 161 5437 5456 "customize_run.ml" 161 5437 5465
+type(
+  (string, Password.password_selector) Hashtbl.t
+)
+ident(
+  int_ref passwords "customize_run.ml" 159 5369 5375 "customize_run.ml" 159 5369 5384
+)
+"customize_run.ml" 161 5437 5466 "customize_run.ml" 161 5437 5470
+type(
+  string
+)
+ident(
+  int_ref user "customize_run.ml" 160 5408 5427 "customize_run.ml" 160 5408 5431
+)
+"customize_run.ml" 161 5437 5444 "customize_run.ml" 161 5437 5470
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_run.ml" 162 5476 5482 "customize_run.ml" 162 5476 5487
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_run.ml" 162 5476 5489 "customize_run.ml" 162 5476 5491
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 162 5476 5491 "customize_run.ml" 162 5476 5573
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 162 5476 5488 "customize_run.ml" 162 5476 5574
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 162 5476 5575 "customize_run.ml" 162 5476 5579
+type(
+  string
+)
+ident(
+  int_ref user "customize_run.ml" 160 5408 5427 "customize_run.ml" 160 5408 5431
+)
+"customize_run.ml" 162 5476 5482 "customize_run.ml" 162 5476 5579
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 161 5437 5441 "customize_run.ml" 162 5476 5579
+type(
+  unit
+)
+"customize_run.ml" 163 5581 5585 "customize_run.ml" 163 5581 5600
+type(
+  (string, Password.password_selector) Hashtbl.t ->
+  string -> Password.password_selector -> unit
+)
+ident(
+  ext_ref Hashtbl.replace
+)
+"customize_run.ml" 163 5581 5601 "customize_run.ml" 163 5581 5610
+type(
+  (string, Password.password_selector) Hashtbl.t
+)
+ident(
+  int_ref passwords "customize_run.ml" 159 5369 5375 "customize_run.ml" 159 5369 5384
+)
+"customize_run.ml" 163 5581 5611 "customize_run.ml" 163 5581 5615
+type(
+  string
+)
+ident(
+  int_ref user "customize_run.ml" 160 5408 5427 "customize_run.ml" 160 5408 5431
+)
+"customize_run.ml" 163 5581 5616 "customize_run.ml" 163 5581 5618
+type(
+  Password.password_selector
+)
+ident(
+  int_ref pw "customize_run.ml" 160 5408 5432 "customize_run.ml" 160 5408 5434
+)
+"customize_run.ml" 163 5581 5585 "customize_run.ml" 163 5581 5618
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 161 5437 5441 "customize_run.ml" 163 5581 5618
+type(
+  unit
+)
+"customize_run.ml" 167 5693 5695 "customize_run.ml" 167 5693 5704
+type(
+  (Customize_cmdline.op -> unit) -> Customize_cmdline.op list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"customize_run.ml" 169 5720 5734 "customize_run.ml" 169 5720 5738
+type(
+  string
+)
+ident(
+  def mode "customize_run.ml" 170 5749 5755 "customize_run.ml" 175 6027 6066
+)
+"customize_run.ml" 169 5720 5740 "customize_run.ml" 169 5720 5744
+type(
+  string
+)
+ident(
+  def path "customize_run.ml" 170 5749 5755 "customize_run.ml" 175 6027 6066
+)
+"customize_run.ml" 169 5720 5733 "customize_run.ml" 169 5720 5745
+type(
+  string * string
+)
+"customize_run.ml" 169 5720 5726 "customize_run.ml" 169 5720 5745
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 170 5749 5755 "customize_run.ml" 170 5749 5762
+type(
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 170 5749 5764 "customize_run.ml" 170 5749 5766
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 170 5749 5766 "customize_run.ml" 170 5749 5800
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 170 5749 5763 "customize_run.ml" 170 5749 5801
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 170 5749 5802 "customize_run.ml" 170 5749 5806
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 169 5720 5740 "customize_run.ml" 169 5720 5744
+)
+"customize_run.ml" 170 5749 5807 "customize_run.ml" 170 5749 5811
+type(
+  string
+)
+ident(
+  int_ref mode "customize_run.ml" 169 5720 5734 "customize_run.ml" 169 5720 5738
+)
+"customize_run.ml" 170 5749 5755 "customize_run.ml" 170 5749 5811
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 174 5954 5964 "customize_run.ml" 174 5954 5968
+type(
+  string
+)
+"customize_run.ml" 174 5954 5974 "customize_run.ml" 174 5954 5987
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Common_utils.string_prefix
+)
+"customize_run.ml" 174 5954 5988 "customize_run.ml" 174 5954 5992
+type(
+  string
+)
+ident(
+  int_ref mode "customize_run.ml" 169 5720 5734 "customize_run.ml" 169 5720 5738
+)
+"customize_run.ml" 174 5954 5993 "customize_run.ml" 174 5954 5996
+type(
+  string
+)
+"customize_run.ml" 174 5954 5974 "customize_run.ml" 174 5954 5996
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_run.ml" 174 5954 6002 "customize_run.ml" 174 5954 6006
+type(
+  string
+)
+"customize_run.ml" 174 5954 6007 "customize_run.ml" 174 5954 6008
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_run.ml" 174 5954 6009 "customize_run.ml" 174 5954 6013
+type(
+  string
+)
+ident(
+  int_ref mode "customize_run.ml" 169 5720 5734 "customize_run.ml" 169 5720 5738
+)
+"customize_run.ml" 174 5954 6002 "customize_run.ml" 174 5954 6013
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 174 5954 6019 "customize_run.ml" 174 5954 6023
+type(
+  string
+)
+ident(
+  int_ref mode "customize_run.ml" 169 5720 5734 "customize_run.ml" 169 5720 5738
+)
+"customize_run.ml" 174 5954 5971 "customize_run.ml" 174 5954 6023
+type(
+  string
+)
+"customize_run.ml" 175 6027 6033 "customize_run.ml" 175 6027 6034
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 175 6027 6033 "customize_run.ml" 175 6027 6040
+call(
+  tail
+)
+type(
+  int -> string -> unit
+)
+"customize_run.ml" 175 6027 6042 "customize_run.ml" 175 6027 6055
+type(
+  string -> int
+)
+ident(
+  ext_ref Pervasives.int_of_string
+)
+"customize_run.ml" 175 6027 6056 "customize_run.ml" 175 6027 6060
+type(
+  string
+)
+ident(
+  int_ref mode "customize_run.ml" 174 5954 5964 "customize_run.ml" 174 5954 5968
+)
+"customize_run.ml" 175 6027 6041 "customize_run.ml" 175 6027 6061
+type(
+  int
+)
+"customize_run.ml" 175 6027 6062 "customize_run.ml" 175 6027 6066
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 169 5720 5740 "customize_run.ml" 169 5720 5744
+)
+"customize_run.ml" 175 6027 6033 "customize_run.ml" 175 6027 6066
+type(
+  unit
+)
+"customize_run.ml" 174 5954 5960 "customize_run.ml" 175 6027 6066
+type(
+  unit
+)
+"customize_run.ml" 170 5749 5755 "customize_run.ml" 175 6027 6066
+type(
+  unit
+)
+"customize_run.ml" 177 6068 6083 "customize_run.ml" 177 6068 6086
+type(
+  string
+)
+ident(
+  def cmd "customize_run.ml" 178 6090 6096 "customize_run.ml" 179 6127 6156
+)
+"customize_run.ml" 177 6068 6074 "customize_run.ml" 177 6068 6086
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 178 6090 6096 "customize_run.ml" 178 6090 6103
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 178 6090 6105 "customize_run.ml" 178 6090 6107
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 178 6090 6107 "customize_run.ml" 178 6090 6120
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 178 6090 6104 "customize_run.ml" 178 6090 6121
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 178 6090 6122 "customize_run.ml" 178 6090 6125
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 177 6068 6083 "customize_run.ml" 177 6068 6086
+)
+"customize_run.ml" 178 6090 6096 "customize_run.ml" 178 6090 6125
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 179 6127 6133 "customize_run.ml" 179 6127 6139
+type(
+  display:string -> string -> unit
+)
+ident(
+  int_ref do_run "customize_run.ml" 53 1798 1804 "customize_run.ml" 53 1798 1810
+)
+"customize_run.ml" 179 6127 6149 "customize_run.ml" 179 6127 6152
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 177 6068 6083 "customize_run.ml" 177 6068 6086
+)
+"customize_run.ml" 179 6127 6153 "customize_run.ml" 179 6127 6156
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 177 6068 6083 "customize_run.ml" 177 6068 6086
+)
+"customize_run.ml" 179 6127 6133 "customize_run.ml" 179 6127 6156
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 178 6090 6096 "customize_run.ml" 179 6127 6156
+type(
+  unit
+)
+"customize_run.ml" 181 6158 6182 "customize_run.ml" 181 6158 6183
+type(
+  string
+)
+"customize_run.ml" 181 6158 6164 "customize_run.ml" 181 6158 6183
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 184 6304 6310 "customize_run.ml" 184 6304 6312
+type(
+  unit
+)
+"customize_run.ml" 186 6314 6327 "customize_run.ml" 186 6314 6330
+type(
+  string
+)
+ident(
+  def src "customize_run.ml" 187 6341 6347 "customize_run.ml" 188 6400 6421
+)
+"customize_run.ml" 186 6314 6332 "customize_run.ml" 186 6314 6336
+type(
+  string
+)
+ident(
+  def dest "customize_run.ml" 187 6341 6347 "customize_run.ml" 188 6400 6421
+)
+"customize_run.ml" 186 6314 6326 "customize_run.ml" 186 6314 6337
+type(
+  string * string
+)
+"customize_run.ml" 186 6314 6320 "customize_run.ml" 186 6314 6337
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 187 6341 6347 "customize_run.ml" 187 6341 6354
+type(
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 187 6341 6356 "customize_run.ml" 187 6341 6358
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 187 6341 6358 "customize_run.ml" 187 6341 6388
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 187 6341 6355 "customize_run.ml" 187 6341 6389
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 187 6341 6390 "customize_run.ml" 187 6341 6393
+type(
+  string
+)
+ident(
+  int_ref src "customize_run.ml" 186 6314 6327 "customize_run.ml" 186 6314 6330
+)
+"customize_run.ml" 187 6341 6394 "customize_run.ml" 187 6341 6398
+type(
+  string
+)
+ident(
+  int_ref dest "customize_run.ml" 186 6314 6332 "customize_run.ml" 186 6314 6336
+)
+"customize_run.ml" 187 6341 6347 "customize_run.ml" 187 6341 6398
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 188 6400 6406 "customize_run.ml" 188 6400 6407
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 188 6400 6406 "customize_run.ml" 188 6400 6412
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"customize_run.ml" 188 6400 6413 "customize_run.ml" 188 6400 6416
+type(
+  string
+)
+ident(
+  int_ref src "customize_run.ml" 186 6314 6327 "customize_run.ml" 186 6314 6330
+)
+"customize_run.ml" 188 6400 6417 "customize_run.ml" 188 6400 6421
+type(
+  string
+)
+ident(
+  int_ref dest "customize_run.ml" 186 6314 6332 "customize_run.ml" 186 6314 6336
+)
+"customize_run.ml" 188 6400 6406 "customize_run.ml" 188 6400 6421
+type(
+  unit
+)
+"customize_run.ml" 187 6341 6347 "customize_run.ml" 188 6400 6421
+type(
+  unit
+)
+"customize_run.ml" 190 6423 6438 "customize_run.ml" 190 6423 6447
+type(
+  string
+)
+ident(
+  def localpath "customize_run.ml" 191 6463 6469 "customize_run.ml" 192 6522 6557
+)
+"customize_run.ml" 190 6423 6449 "customize_run.ml" 190 6423 6458
+type(
+  string
+)
+ident(
+  def remotedir "customize_run.ml" 191 6463 6469 "customize_run.ml" 192 6522 6557
+)
+"customize_run.ml" 190 6423 6437 "customize_run.ml" 190 6423 6459
+type(
+  string * string
+)
+"customize_run.ml" 190 6423 6429 "customize_run.ml" 190 6423 6459
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 191 6463 6469 "customize_run.ml" 191 6463 6476
+type(
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 191 6463 6478 "customize_run.ml" 191 6463 6480
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 191 6463 6480 "customize_run.ml" 191 6463 6499
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 191 6463 6477 "customize_run.ml" 191 6463 6500
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 191 6463 6501 "customize_run.ml" 191 6463 6510
+type(
+  string
+)
+ident(
+  int_ref localpath "customize_run.ml" 190 6423 6438 "customize_run.ml" 190 6423 6447
+)
+"customize_run.ml" 191 6463 6511 "customize_run.ml" 191 6463 6520
+type(
+  string
+)
+ident(
+  int_ref remotedir "customize_run.ml" 190 6423 6449 "customize_run.ml" 190 6423 6458
+)
+"customize_run.ml" 191 6463 6469 "customize_run.ml" 191 6463 6520
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 192 6522 6528 "customize_run.ml" 192 6522 6529
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 192 6522 6528 "customize_run.ml" 192 6522 6537
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"customize_run.ml" 192 6522 6538 "customize_run.ml" 192 6522 6547
+type(
+  string
+)
+ident(
+  int_ref localpath "customize_run.ml" 190 6423 6438 "customize_run.ml" 190 6423 6447
+)
+"customize_run.ml" 192 6522 6548 "customize_run.ml" 192 6522 6557
+type(
+  string
+)
+ident(
+  int_ref remotedir "customize_run.ml" 190 6423 6449 "customize_run.ml" 190 6423 6458
+)
+"customize_run.ml" 192 6522 6528 "customize_run.ml" 192 6522 6557
+type(
+  unit
+)
+"customize_run.ml" 191 6463 6469 "customize_run.ml" 192 6522 6557
+type(
+  unit
+)
+"customize_run.ml" 194 6559 6573 "customize_run.ml" 194 6559 6577
+type(
+  string
+)
+ident(
+  def path "customize_run.ml" 195 6581 6587 "customize_run.ml" 196 6620 6638
+)
+"customize_run.ml" 194 6559 6565 "customize_run.ml" 194 6559 6577
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 195 6581 6587 "customize_run.ml" 195 6581 6594
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 195 6581 6596 "customize_run.ml" 195 6581 6598
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 195 6581 6598 "customize_run.ml" 195 6581 6612
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 195 6581 6595 "customize_run.ml" 195 6581 6613
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 195 6581 6614 "customize_run.ml" 195 6581 6618
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 194 6559 6573 "customize_run.ml" 194 6559 6577
+)
+"customize_run.ml" 195 6581 6587 "customize_run.ml" 195 6581 6618
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 196 6620 6626 "customize_run.ml" 196 6620 6627
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 196 6620 6626 "customize_run.ml" 196 6620 6633
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"customize_run.ml" 196 6620 6634 "customize_run.ml" 196 6620 6638
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 194 6559 6573 "customize_run.ml" 194 6559 6577
+)
+"customize_run.ml" 196 6620 6626 "customize_run.ml" 196 6620 6638
+type(
+  unit
+)
+"customize_run.ml" 195 6581 6587 "customize_run.ml" 196 6620 6638
+type(
+  unit
+)
+"customize_run.ml" 198 6640 6653 "customize_run.ml" 198 6640 6657
+type(
+  string
+)
+ident(
+  def path "customize_run.ml" 199 6668 6674 "customize_run.ml" 204 6807 6857
+)
+"customize_run.ml" 198 6640 6659 "customize_run.ml" 198 6640 6663
+type(
+  string
+)
+ident(
+  def expr "customize_run.ml" 199 6668 6674 "customize_run.ml" 204 6807 6857
+)
+"customize_run.ml" 198 6640 6652 "customize_run.ml" 198 6640 6664
+type(
+  string * string
+)
+"customize_run.ml" 198 6640 6646 "customize_run.ml" 198 6640 6664
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 199 6668 6674 "customize_run.ml" 199 6668 6681
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 199 6668 6683 "customize_run.ml" 199 6668 6685
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 199 6668 6685 "customize_run.ml" 199 6668 6698
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 199 6668 6682 "customize_run.ml" 199 6668 6699
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 199 6668 6700 "customize_run.ml" 199 6668 6704
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 198 6640 6653 "customize_run.ml" 198 6640 6657
+)
+"customize_run.ml" 199 6668 6674 "customize_run.ml" 199 6668 6704
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 201 6707 6716 "customize_run.ml" 201 6707 6719
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"customize_run.ml" 201 6707 6721 "customize_run.ml" 201 6707 6722
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 201 6707 6721 "customize_run.ml" 201 6707 6730
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"customize_run.ml" 201 6707 6731 "customize_run.ml" 201 6707 6735
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 198 6640 6653 "customize_run.ml" 198 6640 6657
+)
+"customize_run.ml" 201 6707 6720 "customize_run.ml" 201 6707 6736
+type(
+  bool
+)
+"customize_run.ml" 201 6707 6716 "customize_run.ml" 201 6707 6736
+type(
+  bool
+)
+"customize_run.ml" 202 6742 6750 "customize_run.ml" 202 6742 6755
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_run.ml" 202 6742 6757 "customize_run.ml" 202 6742 6759
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 202 6742 6759 "customize_run.ml" 202 6742 6798
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 202 6742 6756 "customize_run.ml" 202 6742 6799
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 202 6742 6800 "customize_run.ml" 202 6742 6804
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 198 6640 6653 "customize_run.ml" 198 6640 6657
+)
+"customize_run.ml" 202 6742 6750 "customize_run.ml" 202 6742 6804
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 201 6707 6713 "customize_run.ml" 202 6742 6804
+type(
+  unit
+)
+"customize_run.ml" 204 6807 6813 "customize_run.ml" 204 6807 6832
+type(
+  Guestfs.t -> string -> string -> unit
+)
+ident(
+  ext_ref Perl_edit.edit_file
+)
+"customize_run.ml" 204 6807 6833 "customize_run.ml" 204 6807 6834
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 204 6807 6833 "customize_run.ml" 204 6807 6847
+call(
+  stack
+)
+type(
+  Guestfs.t
+)
+"customize_run.ml" 204 6807 6848 "customize_run.ml" 204 6807 6852
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 198 6640 6653 "customize_run.ml" 198 6640 6657
+)
+"customize_run.ml" 204 6807 6853 "customize_run.ml" 204 6807 6857
+type(
+  string
+)
+ident(
+  int_ref expr "customize_run.ml" 198 6640 6659 "customize_run.ml" 198 6640 6663
+)
+"customize_run.ml" 204 6807 6813 "customize_run.ml" 204 6807 6857
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 201 6707 6713 "customize_run.ml" 204 6807 6857
+type(
+  unit
+)
+"customize_run.ml" 199 6668 6674 "customize_run.ml" 204 6807 6857
+type(
+  unit
+)
+"customize_run.ml" 206 6859 6883 "customize_run.ml" 206 6859 6886
+type(
+  string
+)
+ident(
+  def cmd "customize_run.ml" 207 6890 6896 "customize_run.ml" 208 6948 6999
+)
+"customize_run.ml" 206 6859 6865 "customize_run.ml" 206 6859 6886
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 207 6890 6896 "customize_run.ml" 207 6890 6903
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 207 6890 6905 "customize_run.ml" 207 6890 6907
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 207 6890 6907 "customize_run.ml" 207 6890 6941
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 207 6890 6904 "customize_run.ml" 207 6890 6942
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 207 6890 6943 "customize_run.ml" 207 6890 6946
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 206 6859 6883 "customize_run.ml" 206 6859 6886
+)
+"customize_run.ml" 207 6890 6896 "customize_run.ml" 207 6890 6946
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 208 6948 6954 "customize_run.ml" 208 6948 6984
+type(
+  Guestfs.guestfs -> string -> string -> string -> unit
+)
+ident(
+  ext_ref Firstboot.add_firstboot_script
+)
+"customize_run.ml" 208 6948 6985 "customize_run.ml" 208 6948 6986
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 208 6948 6987 "customize_run.ml" 208 6948 6991
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 208 6948 6992 "customize_run.ml" 208 6948 6995
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 206 6859 6883 "customize_run.ml" 206 6859 6886
+)
+"customize_run.ml" 208 6948 6996 "customize_run.ml" 208 6948 6999
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 206 6859 6883 "customize_run.ml" 206 6859 6886
+)
+"customize_run.ml" 208 6948 6954 "customize_run.ml" 208 6948 6999
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 207 6890 6896 "customize_run.ml" 208 6948 6999
+type(
+  unit
+)
+"customize_run.ml" 210 7001 7026 "customize_run.ml" 210 7001 7030
+type(
+  string list
+)
+ident(
+  def pkgs "customize_run.ml" 211 7034 7040 "customize_run.ml" 215 7226 7278
+)
+"customize_run.ml" 210 7001 7007 "customize_run.ml" 210 7001 7030
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 211 7034 7040 "customize_run.ml" 211 7034 7047
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 211 7034 7049 "customize_run.ml" 211 7034 7051
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 211 7034 7051 "customize_run.ml" 211 7034 7086
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 211 7034 7048 "customize_run.ml" 211 7034 7087
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 212 7088 7097 "customize_run.ml" 212 7088 7110
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"customize_run.ml" 212 7088 7111 "customize_run.ml" 212 7088 7114
+type(
+  string
+)
+"customize_run.ml" 212 7088 7115 "customize_run.ml" 212 7088 7119
+type(
+  string list
+)
+ident(
+  int_ref pkgs "customize_run.ml" 210 7001 7026 "customize_run.ml" 210 7001 7030
+)
+"customize_run.ml" 212 7088 7096 "customize_run.ml" 212 7088 7120
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 211 7034 7040 "customize_run.ml" 212 7088 7120
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 213 7122 7132 "customize_run.ml" 213 7122 7135
+type(
+  string
+)
+"customize_run.ml" 213 7122 7138 "customize_run.ml" 213 7122 7159
+type(
+  string list -> string
+)
+ident(
+  int_ref guest_install_command "customize_run.ml" 97 3277 3283 "customize_run.ml" 97 3277 3304
+)
+"customize_run.ml" 213 7122 7160 "customize_run.ml" 213 7122 7164
+type(
+  string list
+)
+ident(
+  int_ref pkgs "customize_run.ml" 210 7001 7026 "customize_run.ml" 210 7001 7030
+)
+"customize_run.ml" 213 7122 7138 "customize_run.ml" 213 7122 7164
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 214 7168 7178 "customize_run.ml" 214 7168 7182
+type(
+  string
+)
+"customize_run.ml" 214 7168 7185 "customize_run.ml" 214 7168 7198
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"customize_run.ml" 214 7168 7199 "customize_run.ml" 214 7168 7202
+type(
+  string
+)
+"customize_run.ml" 214 7168 7204 "customize_run.ml" 214 7168 7213
+type(
+  string
+)
+"customize_run.ml" 214 7168 7217 "customize_run.ml" 214 7168 7221
+type(
+  string list
+)
+ident(
+  int_ref pkgs "customize_run.ml" 210 7001 7026 "customize_run.ml" 210 7001 7030
+)
+"customize_run.ml" 214 7168 7203 "customize_run.ml" 214 7168 7222
+type(
+  string list
+)
+"customize_run.ml" 214 7168 7185 "customize_run.ml" 214 7168 7222
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 215 7226 7232 "customize_run.ml" 215 7226 7262
+type(
+  Guestfs.guestfs -> string -> string -> string -> unit
+)
+ident(
+  ext_ref Firstboot.add_firstboot_script
+)
+"customize_run.ml" 215 7226 7263 "customize_run.ml" 215 7226 7264
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 215 7226 7265 "customize_run.ml" 215 7226 7269
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 215 7226 7270 "customize_run.ml" 215 7226 7274
+type(
+  string
+)
+ident(
+  int_ref name "customize_run.ml" 214 7168 7178 "customize_run.ml" 214 7168 7182
+)
+"customize_run.ml" 215 7226 7275 "customize_run.ml" 215 7226 7278
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 213 7122 7132 "customize_run.ml" 213 7122 7135
+)
+"customize_run.ml" 215 7226 7232 "customize_run.ml" 215 7226 7278
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 214 7168 7174 "customize_run.ml" 215 7226 7278
+type(
+  unit
+)
+"customize_run.ml" 213 7122 7128 "customize_run.ml" 215 7226 7278
+type(
+  unit
+)
+"customize_run.ml" 211 7034 7040 "customize_run.ml" 215 7226 7278
+type(
+  unit
+)
+"customize_run.ml" 217 7280 7303 "customize_run.ml" 217 7280 7309
+type(
+  string
+)
+ident(
+  def script "customize_run.ml" 218 7313 7319 "customize_run.ml" 220 7415 7469
+)
+"customize_run.ml" 217 7280 7286 "customize_run.ml" 217 7280 7309
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 218 7313 7319 "customize_run.ml" 218 7313 7326
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 218 7313 7328 "customize_run.ml" 218 7313 7330
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 218 7313 7330 "customize_run.ml" 218 7313 7363
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 218 7313 7327 "customize_run.ml" 218 7313 7364
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 218 7313 7365 "customize_run.ml" 218 7313 7371
+type(
+  string
+)
+ident(
+  int_ref script "customize_run.ml" 217 7280 7303 "customize_run.ml" 217 7280 7309
+)
+"customize_run.ml" 218 7313 7319 "customize_run.ml" 218 7313 7371
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 219 7373 7383 "customize_run.ml" 219 7373 7386
+type(
+  string
+)
+"customize_run.ml" 219 7373 7389 "customize_run.ml" 219 7373 7404
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.read_whole_file
+)
+"customize_run.ml" 219 7373 7405 "customize_run.ml" 219 7373 7411
+type(
+  string
+)
+ident(
+  int_ref script "customize_run.ml" 217 7280 7303 "customize_run.ml" 217 7280 7309
+)
+"customize_run.ml" 219 7373 7389 "customize_run.ml" 219 7373 7411
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 220 7415 7421 "customize_run.ml" 220 7415 7451
+type(
+  Guestfs.guestfs -> string -> string -> string -> unit
+)
+ident(
+  ext_ref Firstboot.add_firstboot_script
+)
+"customize_run.ml" 220 7415 7452 "customize_run.ml" 220 7415 7453
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 220 7415 7454 "customize_run.ml" 220 7415 7458
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 220 7415 7459 "customize_run.ml" 220 7415 7465
+type(
+  string
+)
+ident(
+  int_ref script "customize_run.ml" 217 7280 7303 "customize_run.ml" 217 7280 7309
+)
+"customize_run.ml" 220 7415 7466 "customize_run.ml" 220 7415 7469
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 219 7373 7383 "customize_run.ml" 219 7373 7386
+)
+"customize_run.ml" 220 7415 7421 "customize_run.ml" 220 7415 7469
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 219 7373 7379 "customize_run.ml" 220 7415 7469
+type(
+  unit
+)
+"customize_run.ml" 218 7313 7319 "customize_run.ml" 220 7415 7469
+type(
+  unit
+)
+"customize_run.ml" 222 7471 7487 "customize_run.ml" 222 7471 7495
+type(
+  string
+)
+ident(
+  def hostname "customize_run.ml" 223 7499 7505 "customize_run.ml" 225 7612 7682
+)
+"customize_run.ml" 222 7471 7477 "customize_run.ml" 222 7471 7495
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 223 7499 7505 "customize_run.ml" 223 7499 7512
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 223 7499 7514 "customize_run.ml" 223 7499 7516
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 223 7499 7516 "customize_run.ml" 223 7499 7542
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 223 7499 7513 "customize_run.ml" 223 7499 7543
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 223 7499 7544 "customize_run.ml" 223 7499 7552
+type(
+  string
+)
+ident(
+  int_ref hostname "customize_run.ml" 222 7471 7487 "customize_run.ml" 222 7471 7495
+)
+"customize_run.ml" 223 7499 7505 "customize_run.ml" 223 7499 7552
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 224 7554 7563 "customize_run.ml" 224 7554 7566
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"customize_run.ml" 224 7554 7568 "customize_run.ml" 224 7554 7589
+type(
+  Guestfs.guestfs -> string -> string -> bool
+)
+ident(
+  ext_ref Hostname.set_hostname
+)
+"customize_run.ml" 224 7554 7590 "customize_run.ml" 224 7554 7591
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 224 7554 7592 "customize_run.ml" 224 7554 7596
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 224 7554 7597 "customize_run.ml" 224 7554 7605
+type(
+  string
+)
+ident(
+  int_ref hostname "customize_run.ml" 222 7471 7487 "customize_run.ml" 222 7471 7495
+)
+"customize_run.ml" 224 7554 7567 "customize_run.ml" 224 7554 7606
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_run.ml" 224 7554 7563 "customize_run.ml" 224 7554 7606
+type(
+  bool
+)
+"customize_run.ml" 225 7612 7620 "customize_run.ml" 225 7612 7627
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"customize_run.ml" 225 7612 7629 "customize_run.ml" 225 7612 7631
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 225 7612 7631 "customize_run.ml" 225 7612 7681
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 225 7612 7628 "customize_run.ml" 225 7612 7682
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 225 7612 7620 "customize_run.ml" 225 7612 7682
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 224 7554 7560 "customize_run.ml" 225 7612 7682
+type(
+  unit
+)
+"customize_run.ml" 223 7499 7505 "customize_run.ml" 225 7612 7682
+type(
+  unit
+)
+"customize_run.ml" 227 7684 7707 "customize_run.ml" 227 7684 7711
+type(
+  string list
+)
+ident(
+  def pkgs "customize_run.ml" 228 7715 7721 "customize_run.ml" 230 7831 7860
+)
+"customize_run.ml" 227 7684 7690 "customize_run.ml" 227 7684 7711
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 228 7715 7721 "customize_run.ml" 228 7715 7728
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 228 7715 7730 "customize_run.ml" 228 7715 7732
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 228 7715 7732 "customize_run.ml" 228 7715 7757
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 228 7715 7729 "customize_run.ml" 228 7715 7758
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 228 7715 7760 "customize_run.ml" 228 7715 7773
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"customize_run.ml" 228 7715 7774 "customize_run.ml" 228 7715 7777
+type(
+  string
+)
+"customize_run.ml" 228 7715 7778 "customize_run.ml" 228 7715 7782
+type(
+  string list
+)
+ident(
+  int_ref pkgs "customize_run.ml" 227 7684 7707 "customize_run.ml" 227 7684 7711
+)
+"customize_run.ml" 228 7715 7759 "customize_run.ml" 228 7715 7783
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 228 7715 7721 "customize_run.ml" 228 7715 7783
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 229 7785 7795 "customize_run.ml" 229 7785 7798
+type(
+  string
+)
+"customize_run.ml" 229 7785 7801 "customize_run.ml" 229 7785 7822
+type(
+  string list -> string
+)
+ident(
+  int_ref guest_install_command "customize_run.ml" 97 3277 3283 "customize_run.ml" 97 3277 3304
+)
+"customize_run.ml" 229 7785 7823 "customize_run.ml" 229 7785 7827
+type(
+  string list
+)
+ident(
+  int_ref pkgs "customize_run.ml" 227 7684 7707 "customize_run.ml" 227 7684 7711
+)
+"customize_run.ml" 229 7785 7801 "customize_run.ml" 229 7785 7827
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 230 7831 7837 "customize_run.ml" 230 7831 7843
+type(
+  display:string -> string -> unit
+)
+ident(
+  int_ref do_run "customize_run.ml" 53 1798 1804 "customize_run.ml" 53 1798 1810
+)
+"customize_run.ml" 230 7831 7853 "customize_run.ml" 230 7831 7856
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 229 7785 7795 "customize_run.ml" 229 7785 7798
+)
+"customize_run.ml" 230 7831 7857 "customize_run.ml" 230 7831 7860
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 229 7785 7795 "customize_run.ml" 229 7785 7798
+)
+"customize_run.ml" 230 7831 7837 "customize_run.ml" 230 7831 7860
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 229 7785 7791 "customize_run.ml" 230 7831 7860
+type(
+  unit
+)
+"customize_run.ml" 228 7715 7721 "customize_run.ml" 230 7831 7860
+type(
+  unit
+)
+"customize_run.ml" 232 7862 7875 "customize_run.ml" 232 7862 7881
+type(
+  string
+)
+ident(
+  def target "customize_run.ml" 233 7893 7899 "customize_run.ml" 237 8016 8029
+)
+"customize_run.ml" 232 7862 7883 "customize_run.ml" 232 7862 7888
+type(
+  string list
+)
+ident(
+  def links "customize_run.ml" 233 7893 7899 "customize_run.ml" 237 8016 8029
+)
+"customize_run.ml" 232 7862 7874 "customize_run.ml" 232 7862 7889
+type(
+  string * string list
+)
+"customize_run.ml" 232 7862 7868 "customize_run.ml" 232 7862 7889
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 233 7893 7899 "customize_run.ml" 233 7893 7908
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"customize_run.ml" 234 7911 7923 "customize_run.ml" 234 7911 7927
+type(
+  string
+)
+ident(
+  def link "customize_run.ml" 235 7931 7941 "customize_run.ml" 236 7986 8015
+)
+"customize_run.ml" 235 7931 7941 "customize_run.ml" 235 7931 7948
+type(
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 235 7931 7950 "customize_run.ml" 235 7931 7952
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 235 7931 7952 "customize_run.ml" 235 7931 7971
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 235 7931 7949 "customize_run.ml" 235 7931 7972
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 235 7931 7973 "customize_run.ml" 235 7931 7977
+type(
+  string
+)
+ident(
+  int_ref link "customize_run.ml" 234 7911 7923 "customize_run.ml" 234 7911 7927
+)
+"customize_run.ml" 235 7931 7978 "customize_run.ml" 235 7931 7984
+type(
+  string
+)
+ident(
+  int_ref target "customize_run.ml" 232 7862 7875 "customize_run.ml" 232 7862 7881
+)
+"customize_run.ml" 235 7931 7941 "customize_run.ml" 235 7931 7984
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 236 7986 7996 "customize_run.ml" 236 7986 7997
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 236 7986 7996 "customize_run.ml" 236 7986 8003
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"customize_run.ml" 236 7986 8004 "customize_run.ml" 236 7986 8010
+type(
+  string
+)
+ident(
+  int_ref target "customize_run.ml" 232 7862 7875 "customize_run.ml" 232 7862 7881
+)
+"customize_run.ml" 236 7986 8011 "customize_run.ml" 236 7986 8015
+type(
+  string
+)
+ident(
+  int_ref link "customize_run.ml" 234 7911 7923 "customize_run.ml" 234 7911 7927
+)
+"customize_run.ml" 236 7986 7996 "customize_run.ml" 236 7986 8015
+type(
+  unit
+)
+"customize_run.ml" 235 7931 7941 "customize_run.ml" 236 7986 8015
+type(
+  unit
+)
+"customize_run.ml" 233 7893 7909 "customize_run.ml" 237 8016 8023
+type(
+  string -> unit
+)
+"customize_run.ml" 237 8016 8024 "customize_run.ml" 237 8016 8029
+type(
+  string list
+)
+ident(
+  int_ref links "customize_run.ml" 232 7862 7883 "customize_run.ml" 232 7862 7888
+)
+"customize_run.ml" 233 7893 7899 "customize_run.ml" 237 8016 8029
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 239 8031 8044 "customize_run.ml" 239 8031 8047
+type(
+  string
+)
+ident(
+  def dir "customize_run.ml" 240 8051 8057 "customize_run.ml" 241 8097 8116
+)
+"customize_run.ml" 239 8031 8037 "customize_run.ml" 239 8031 8047
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 240 8051 8057 "customize_run.ml" 240 8051 8064
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 240 8051 8066 "customize_run.ml" 240 8051 8068
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 240 8051 8068 "customize_run.ml" 240 8051 8090
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 240 8051 8065 "customize_run.ml" 240 8051 8091
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 240 8051 8092 "customize_run.ml" 240 8051 8095
+type(
+  string
+)
+ident(
+  int_ref dir "customize_run.ml" 239 8031 8044 "customize_run.ml" 239 8031 8047
+)
+"customize_run.ml" 240 8051 8057 "customize_run.ml" 240 8051 8095
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 241 8097 8103 "customize_run.ml" 241 8097 8104
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 241 8097 8103 "customize_run.ml" 241 8097 8112
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"customize_run.ml" 241 8097 8113 "customize_run.ml" 241 8097 8116
+type(
+  string
+)
+ident(
+  int_ref dir "customize_run.ml" 239 8031 8044 "customize_run.ml" 239 8031 8047
+)
+"customize_run.ml" 241 8097 8103 "customize_run.ml" 241 8097 8116
+type(
+  unit
+)
+"customize_run.ml" 240 8051 8057 "customize_run.ml" 241 8097 8116
+type(
+  unit
+)
+"customize_run.ml" 243 8118 8131 "customize_run.ml" 243 8118 8134
+type(
+  string
+)
+ident(
+  def src "customize_run.ml" 244 8145 8151 "customize_run.ml" 245 8192 8211
+)
+"customize_run.ml" 243 8118 8136 "customize_run.ml" 243 8118 8140
+type(
+  string
+)
+ident(
+  def dest "customize_run.ml" 244 8145 8151 "customize_run.ml" 245 8192 8211
+)
+"customize_run.ml" 243 8118 8130 "customize_run.ml" 243 8118 8141
+type(
+  string * string
+)
+"customize_run.ml" 243 8118 8124 "customize_run.ml" 243 8118 8141
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 244 8145 8151 "customize_run.ml" 244 8145 8158
+type(
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 244 8145 8160 "customize_run.ml" 244 8145 8162
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 244 8145 8162 "customize_run.ml" 244 8145 8180
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 244 8145 8159 "customize_run.ml" 244 8145 8181
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 244 8145 8182 "customize_run.ml" 244 8145 8185
+type(
+  string
+)
+ident(
+  int_ref src "customize_run.ml" 243 8118 8131 "customize_run.ml" 243 8118 8134
+)
+"customize_run.ml" 244 8145 8186 "customize_run.ml" 244 8145 8190
+type(
+  string
+)
+ident(
+  int_ref dest "customize_run.ml" 243 8118 8136 "customize_run.ml" 243 8118 8140
+)
+"customize_run.ml" 244 8145 8151 "customize_run.ml" 244 8145 8190
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 245 8192 8198 "customize_run.ml" 245 8192 8199
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 245 8192 8198 "customize_run.ml" 245 8192 8202
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"customize_run.ml" 245 8192 8203 "customize_run.ml" 245 8192 8206
+type(
+  string
+)
+ident(
+  int_ref src "customize_run.ml" 243 8118 8131 "customize_run.ml" 243 8118 8134
+)
+"customize_run.ml" 245 8192 8207 "customize_run.ml" 245 8192 8211
+type(
+  string
+)
+ident(
+  int_ref dest "customize_run.ml" 243 8118 8136 "customize_run.ml" 243 8118 8140
+)
+"customize_run.ml" 245 8192 8198 "customize_run.ml" 245 8192 8211
+type(
+  unit
+)
+"customize_run.ml" 244 8145 8151 "customize_run.ml" 245 8192 8211
+type(
+  unit
+)
+"customize_run.ml" 247 8213 8230 "customize_run.ml" 247 8213 8234
+type(
+  string
+)
+ident(
+  def user "customize_run.ml" 248 8243 8249 "customize_run.ml" 248 8243 8269
+)
+"customize_run.ml" 247 8213 8236 "customize_run.ml" 247 8213 8238
+type(
+  Password.password_selector
+)
+ident(
+  def pw "customize_run.ml" 248 8243 8249 "customize_run.ml" 248 8243 8269
+)
+"customize_run.ml" 247 8213 8229 "customize_run.ml" 247 8213 8239
+type(
+  string * Password.password_selector
+)
+"customize_run.ml" 247 8213 8219 "customize_run.ml" 247 8213 8239
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 248 8243 8249 "customize_run.ml" 248 8243 8261
+type(
+  string -> Password.password_selector -> unit
+)
+ident(
+  int_ref set_password "customize_run.ml" 160 5408 5414 "customize_run.ml" 160 5408 5426
+)
+"customize_run.ml" 248 8243 8262 "customize_run.ml" 248 8243 8266
+type(
+  string
+)
+ident(
+  int_ref user "customize_run.ml" 247 8213 8230 "customize_run.ml" 247 8213 8234
+)
+"customize_run.ml" 248 8243 8267 "customize_run.ml" 248 8243 8269
+type(
+  Password.password_selector
+)
+ident(
+  int_ref pw "customize_run.ml" 247 8213 8236 "customize_run.ml" 247 8213 8238
+)
+"customize_run.ml" 248 8243 8249 "customize_run.ml" 248 8243 8269
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 250 8271 8291 "customize_run.ml" 250 8271 8293
+type(
+  Password.password_selector
+)
+ident(
+  def pw "customize_run.ml" 251 8297 8303 "customize_run.ml" 251 8297 8325
+)
+"customize_run.ml" 250 8271 8277 "customize_run.ml" 250 8271 8293
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 251 8297 8303 "customize_run.ml" 251 8297 8315
+type(
+  string -> Password.password_selector -> unit
+)
+ident(
+  int_ref set_password "customize_run.ml" 160 5408 5414 "customize_run.ml" 160 5408 5426
+)
+"customize_run.ml" 251 8297 8316 "customize_run.ml" 251 8297 8322
+type(
+  string
+)
+"customize_run.ml" 251 8297 8323 "customize_run.ml" 251 8297 8325
+type(
+  Password.password_selector
+)
+ident(
+  int_ref pw "customize_run.ml" 250 8271 8291 "customize_run.ml" 250 8271 8293
+)
+"customize_run.ml" 251 8297 8303 "customize_run.ml" 251 8297 8325
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 253 8327 8341 "customize_run.ml" 253 8327 8347
+type(
+  string
+)
+ident(
+  def script "customize_run.ml" 254 8351 8357 "customize_run.ml" 256 8433 8465
+)
+"customize_run.ml" 253 8327 8333 "customize_run.ml" 253 8327 8347
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 254 8351 8357 "customize_run.ml" 254 8351 8364
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 254 8351 8366 "customize_run.ml" 254 8351 8368
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 254 8351 8368 "customize_run.ml" 254 8351 8381
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 254 8351 8365 "customize_run.ml" 254 8351 8382
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 254 8351 8383 "customize_run.ml" 254 8351 8389
+type(
+  string
+)
+ident(
+  int_ref script "customize_run.ml" 253 8327 8341 "customize_run.ml" 253 8327 8347
+)
+"customize_run.ml" 254 8351 8357 "customize_run.ml" 254 8351 8389
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 255 8391 8401 "customize_run.ml" 255 8391 8404
+type(
+  string
+)
+"customize_run.ml" 255 8391 8407 "customize_run.ml" 255 8391 8422
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.read_whole_file
+)
+"customize_run.ml" 255 8391 8423 "customize_run.ml" 255 8391 8429
+type(
+  string
+)
+ident(
+  int_ref script "customize_run.ml" 253 8327 8341 "customize_run.ml" 253 8327 8347
+)
+"customize_run.ml" 255 8391 8407 "customize_run.ml" 255 8391 8429
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 256 8433 8439 "customize_run.ml" 256 8433 8445
+type(
+  display:string -> string -> unit
+)
+ident(
+  int_ref do_run "customize_run.ml" 53 1798 1804 "customize_run.ml" 53 1798 1810
+)
+"customize_run.ml" 256 8433 8455 "customize_run.ml" 256 8433 8461
+type(
+  string
+)
+ident(
+  int_ref script "customize_run.ml" 253 8327 8341 "customize_run.ml" 253 8327 8347
+)
+"customize_run.ml" 256 8433 8462 "customize_run.ml" 256 8433 8465
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 255 8391 8401 "customize_run.ml" 255 8391 8404
+)
+"customize_run.ml" 256 8433 8439 "customize_run.ml" 256 8433 8465
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 255 8391 8397 "customize_run.ml" 256 8433 8465
+type(
+  unit
+)
+"customize_run.ml" 254 8351 8357 "customize_run.ml" 256 8433 8465
+type(
+  unit
+)
+"customize_run.ml" 258 8467 8480 "customize_run.ml" 258 8467 8484
+type(
+  string
+)
+ident(
+  def path "customize_run.ml" 259 8488 8494 "customize_run.ml" 260 8528 8551
+)
+"customize_run.ml" 258 8467 8473 "customize_run.ml" 258 8467 8484
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 259 8488 8494 "customize_run.ml" 259 8488 8501
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 259 8488 8503 "customize_run.ml" 259 8488 8505
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 259 8488 8505 "customize_run.ml" 259 8488 8520
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 259 8488 8502 "customize_run.ml" 259 8488 8521
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 259 8488 8522 "customize_run.ml" 259 8488 8526
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 258 8467 8480 "customize_run.ml" 258 8467 8484
+)
+"customize_run.ml" 259 8488 8494 "customize_run.ml" 259 8488 8526
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 260 8528 8534 "customize_run.ml" 260 8528 8535
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 260 8528 8534 "customize_run.ml" 260 8528 8546
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"customize_run.ml" 260 8528 8547 "customize_run.ml" 260 8528 8551
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 258 8467 8480 "customize_run.ml" 258 8467 8484
+)
+"customize_run.ml" 260 8528 8534 "customize_run.ml" 260 8528 8551
+type(
+  unit
+)
+"customize_run.ml" 259 8488 8494 "customize_run.ml" 260 8528 8551
+type(
+  unit
+)
+"customize_run.ml" 262 8553 8569 "customize_run.ml" 262 8553 8573
+type(
+  Subscription_manager.sm_pool
+)
+ident(
+  def pool "customize_run.ml" 263 8577 8583 "customize_run.ml" 272 8997 9004
+)
+"customize_run.ml" 262 8553 8559 "customize_run.ml" 262 8553 8573
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 263 8577 8590 "customize_run.ml" 263 8577 8594
+type(
+  Subscription_manager.sm_pool
+)
+ident(
+  int_ref pool "customize_run.ml" 262 8553 8569 "customize_run.ml" 262 8553 8573
+)
+"customize_run.ml" 264 8600 8608 "customize_run.ml" 264 8600 8637
+type(
+  Subscription_manager.sm_pool
+)
+"customize_run.ml" 265 8641 8649 "customize_run.ml" 265 8641 8656
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 265 8641 8658 "customize_run.ml" 265 8641 8660
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 265 8641 8660 "customize_run.ml" 265 8641 8699
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 265 8641 8657 "customize_run.ml" 265 8641 8700
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 265 8641 8649 "customize_run.ml" 265 8641 8700
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 266 8702 8714 "customize_run.ml" 266 8702 8717
+type(
+  string
+)
+"customize_run.ml" 266 8702 8720 "customize_run.ml" 266 8702 8756
+type(
+  string
+)
+"customize_run.ml" 267 8760 8768 "customize_run.ml" 267 8760 8774
+type(
+  display:string -> string -> unit
+)
+ident(
+  int_ref do_run "customize_run.ml" 53 1798 1804 "customize_run.ml" 53 1798 1810
+)
+"customize_run.ml" 267 8760 8784 "customize_run.ml" 267 8760 8787
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 266 8702 8714 "customize_run.ml" 266 8702 8717
+)
+"customize_run.ml" 267 8760 8788 "customize_run.ml" 267 8760 8791
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 266 8702 8714 "customize_run.ml" 266 8702 8717
+)
+"customize_run.ml" 267 8760 8768 "customize_run.ml" 267 8760 8791
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 266 8702 8710 "customize_run.ml" 267 8760 8791
+type(
+  unit
+)
+"customize_run.ml" 265 8641 8649 "customize_run.ml" 267 8760 8791
+type(
+  unit
+)
+"customize_run.ml" 268 8792 8828 "customize_run.ml" 268 8792 8830
+type(
+  string
+)
+ident(
+  def id "customize_run.ml" 269 8834 8842 "customize_run.ml" 271 8965 8996
+)
+"customize_run.ml" 268 8792 8800 "customize_run.ml" 268 8792 8830
+type(
+  Subscription_manager.sm_pool
+)
+"customize_run.ml" 269 8834 8842 "customize_run.ml" 269 8834 8849
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 269 8834 8851 "customize_run.ml" 269 8834 8853
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 269 8834 8853 "customize_run.ml" 269 8834 8879
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 269 8834 8850 "customize_run.ml" 269 8834 8880
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 269 8834 8881 "customize_run.ml" 269 8834 8883
+type(
+  string
+)
+ident(
+  int_ref id "customize_run.ml" 268 8792 8828 "customize_run.ml" 268 8792 8830
+)
+"customize_run.ml" 269 8834 8842 "customize_run.ml" 269 8834 8883
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 270 8885 8897 "customize_run.ml" 270 8885 8900
+type(
+  string
+)
+"customize_run.ml" 270 8885 8903 "customize_run.ml" 270 8885 8910
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 270 8885 8911 "customize_run.ml" 270 8885 8950
+type(
+  (string -> string, unit, string) format
+)
+"customize_run.ml" 270 8885 8952 "customize_run.ml" 270 8885 8957
+type(
+  string -> string
+)
+ident(
+  ext_ref Customize_utils.quote
+)
+"customize_run.ml" 270 8885 8958 "customize_run.ml" 270 8885 8960
+type(
+  string
+)
+ident(
+  int_ref id "customize_run.ml" 268 8792 8828 "customize_run.ml" 268 8792 8830
+)
+"customize_run.ml" 270 8885 8951 "customize_run.ml" 270 8885 8961
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 270 8885 8903 "customize_run.ml" 270 8885 8961
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 271 8965 8973 "customize_run.ml" 271 8965 8979
+type(
+  display:string -> string -> unit
+)
+ident(
+  int_ref do_run "customize_run.ml" 53 1798 1804 "customize_run.ml" 53 1798 1810
+)
+"customize_run.ml" 271 8965 8989 "customize_run.ml" 271 8965 8992
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 270 8885 8897 "customize_run.ml" 270 8885 8900
+)
+"customize_run.ml" 271 8965 8993 "customize_run.ml" 271 8965 8996
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 270 8885 8897 "customize_run.ml" 270 8885 8900
+)
+"customize_run.ml" 271 8965 8973 "customize_run.ml" 271 8965 8996
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 270 8885 8893 "customize_run.ml" 271 8965 8996
+type(
+  unit
+)
+"customize_run.ml" 269 8834 8842 "customize_run.ml" 271 8965 8996
+type(
+  unit
+)
+"customize_run.ml" 263 8577 8583 "customize_run.ml" 272 8997 9004
+type(
+  unit
+)
+"customize_run.ml" 274 9006 9012 "customize_run.ml" 274 9006 9023
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 275 9027 9033 "customize_run.ml" 275 9027 9040
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 275 9027 9042 "customize_run.ml" 275 9027 9044
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 275 9027 9044 "customize_run.ml" 275 9027 9083
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 275 9027 9041 "customize_run.ml" 275 9027 9084
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 275 9027 9033 "customize_run.ml" 275 9027 9084
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 276 9086 9096 "customize_run.ml" 276 9086 9101
+type(
+  Subscription_manager.sm_credentials
+)
+"customize_run.ml" 277 9104 9118 "customize_run.ml" 277 9104 9121
+type(
+  Customize_cmdline.ops
+)
+ident(
+  int_ref ops "customize_run.ml" 29 907 943 "customize_run.ml" 29 907 946
+)
+"customize_run.ml" 277 9104 9118 "customize_run.ml" 277 9104 9127
+type(
+  Customize_cmdline.flags
+)
+"customize_run.ml" 277 9104 9118 "customize_run.ml" 277 9104 9142
+type(
+  Subscription_manager.sm_credentials option
+)
+"customize_run.ml" 278 9148 9158 "customize_run.ml" 278 9148 9162
+type(
+  Subscription_manager.sm_credentials option
+)
+"customize_run.ml" 279 9166 9176 "customize_run.ml" 279 9166 9181
+type(
+  ?exit_code:int ->
+  (Subscription_manager.sm_credentials, unit, string,
+   Subscription_manager.sm_credentials)
+  format4 -> Subscription_manager.sm_credentials
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_run.ml" 279 9166 9183 "customize_run.ml" 279 9166 9185
+type(
+  (Subscription_manager.sm_credentials, unit, string, string, string,
+   Subscription_manager.sm_credentials)
+  format6 ->
+  (Subscription_manager.sm_credentials, unit, string,
+   Subscription_manager.sm_credentials)
+  format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 279 9166 9185 "customize_run.ml" 279 9166 9246
+type(
+  (Subscription_manager.sm_credentials, unit, string, string, string,
+   Subscription_manager.sm_credentials)
+  format6
+)
+"customize_run.ml" 279 9166 9182 "customize_run.ml" 279 9166 9247
+type(
+  (Subscription_manager.sm_credentials, unit, string,
+   Subscription_manager.sm_credentials)
+  format4
+)
+"customize_run.ml" 279 9166 9176 "customize_run.ml" 279 9166 9247
+call(
+  stack
+)
+type(
+  Subscription_manager.sm_credentials
+)
+"customize_run.ml" 280 9248 9263 "customize_run.ml" 280 9248 9264
+type(
+  Subscription_manager.sm_credentials
+)
+ident(
+  def c "customize_run.ml" 280 9248 9268 "customize_run.ml" 280 9248 9269
+)
+"customize_run.ml" 280 9248 9258 "customize_run.ml" 280 9248 9264
+type(
+  Subscription_manager.sm_credentials option
+)
+"customize_run.ml" 280 9248 9268 "customize_run.ml" 280 9248 9269
+type(
+  Subscription_manager.sm_credentials
+)
+ident(
+  int_ref c "customize_run.ml" 280 9248 9263 "customize_run.ml" 280 9248 9264
+)
+"customize_run.ml" 277 9104 9112 "customize_run.ml" 280 9248 9269
+type(
+  Subscription_manager.sm_credentials
+)
+"customize_run.ml" 281 9273 9283 "customize_run.ml" 281 9273 9286
+type(
+  string
+)
+"customize_run.ml" 281 9273 9289 "customize_run.ml" 281 9273 9296
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 281 9273 9297 "customize_run.ml" 281 9273 9356
+type(
+  (string -> string -> string, unit, string) format
+)
+"customize_run.ml" 282 9357 9376 "customize_run.ml" 282 9357 9381
+type(
+  string -> string
+)
+ident(
+  ext_ref Customize_utils.quote
+)
+"customize_run.ml" 282 9357 9382 "customize_run.ml" 282 9357 9387
+type(
+  Subscription_manager.sm_credentials
+)
+ident(
+  int_ref creds "customize_run.ml" 276 9086 9096 "customize_run.ml" 276 9086 9101
+)
+"customize_run.ml" 282 9357 9382 "customize_run.ml" 282 9357 9420
+type(
+  string
+)
+"customize_run.ml" 282 9357 9375 "customize_run.ml" 282 9357 9421
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 283 9422 9441 "customize_run.ml" 283 9422 9446
+type(
+  string -> string
+)
+ident(
+  ext_ref Customize_utils.quote
+)
+"customize_run.ml" 283 9422 9447 "customize_run.ml" 283 9422 9452
+type(
+  Subscription_manager.sm_credentials
+)
+ident(
+  int_ref creds "customize_run.ml" 276 9086 9096 "customize_run.ml" 276 9086 9101
+)
+"customize_run.ml" 283 9422 9447 "customize_run.ml" 283 9422 9485
+type(
+  string
+)
+"customize_run.ml" 283 9422 9440 "customize_run.ml" 283 9422 9486
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 281 9273 9289 "customize_run.ml" 283 9422 9486
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 284 9490 9496 "customize_run.ml" 284 9490 9502
+type(
+  display:string -> string -> unit
+)
+ident(
+  int_ref do_run "customize_run.ml" 53 1798 1804 "customize_run.ml" 53 1798 1810
+)
+"customize_run.ml" 284 9490 9512 "customize_run.ml" 284 9490 9543
+type(
+  string
+)
+"customize_run.ml" 284 9490 9544 "customize_run.ml" 284 9490 9547
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 281 9273 9283 "customize_run.ml" 281 9273 9286
+)
+"customize_run.ml" 284 9490 9496 "customize_run.ml" 284 9490 9547
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 281 9273 9279 "customize_run.ml" 284 9490 9547
+type(
+  unit
+)
+"customize_run.ml" 276 9086 9092 "customize_run.ml" 284 9490 9547
+type(
+  unit
+)
+"customize_run.ml" 275 9027 9033 "customize_run.ml" 284 9490 9547
+type(
+  unit
+)
+"customize_run.ml" 286 9549 9555 "customize_run.ml" 286 9549 9564
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 287 9568 9574 "customize_run.ml" 287 9568 9581
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 287 9568 9583 "customize_run.ml" 287 9568 9585
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 287 9568 9585 "customize_run.ml" 287 9568 9617
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 287 9568 9582 "customize_run.ml" 287 9568 9618
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 287 9568 9574 "customize_run.ml" 287 9568 9618
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 288 9620 9630 "customize_run.ml" 288 9620 9633
+type(
+  string
+)
+"customize_run.ml" 288 9620 9636 "customize_run.ml" 288 9620 9671
+type(
+  string
+)
+"customize_run.ml" 289 9675 9681 "customize_run.ml" 289 9675 9687
+type(
+  display:string -> string -> unit
+)
+ident(
+  int_ref do_run "customize_run.ml" 53 1798 1804 "customize_run.ml" 53 1798 1810
+)
+"customize_run.ml" 289 9675 9697 "customize_run.ml" 289 9675 9700
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 288 9620 9630 "customize_run.ml" 288 9620 9633
+)
+"customize_run.ml" 289 9675 9701 "customize_run.ml" 289 9675 9704
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 288 9620 9630 "customize_run.ml" 288 9620 9633
+)
+"customize_run.ml" 289 9675 9681 "customize_run.ml" 289 9675 9704
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 288 9620 9626 "customize_run.ml" 289 9675 9704
+type(
+  unit
+)
+"customize_run.ml" 287 9568 9574 "customize_run.ml" 289 9675 9704
+type(
+  unit
+)
+"customize_run.ml" 291 9706 9712 "customize_run.ml" 291 9706 9725
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 292 9729 9735 "customize_run.ml" 292 9729 9742
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 292 9729 9744 "customize_run.ml" 292 9729 9746
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 292 9729 9746 "customize_run.ml" 292 9729 9787
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 292 9729 9743 "customize_run.ml" 292 9729 9788
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 292 9729 9735 "customize_run.ml" 292 9729 9788
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 293 9790 9800 "customize_run.ml" 293 9790 9803
+type(
+  string
+)
+"customize_run.ml" 293 9790 9806 "customize_run.ml" 293 9790 9839
+type(
+  string
+)
+"customize_run.ml" 294 9843 9849 "customize_run.ml" 294 9843 9855
+type(
+  display:string -> string -> unit
+)
+ident(
+  int_ref do_run "customize_run.ml" 53 1798 1804 "customize_run.ml" 53 1798 1810
+)
+"customize_run.ml" 294 9843 9865 "customize_run.ml" 294 9843 9868
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 293 9790 9800 "customize_run.ml" 293 9790 9803
+)
+"customize_run.ml" 294 9843 9869 "customize_run.ml" 294 9843 9872
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 293 9790 9800 "customize_run.ml" 293 9790 9803
+)
+"customize_run.ml" 294 9843 9849 "customize_run.ml" 294 9843 9872
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 293 9790 9796 "customize_run.ml" 294 9843 9872
+type(
+  unit
+)
+"customize_run.ml" 292 9729 9735 "customize_run.ml" 294 9843 9872
+type(
+  unit
+)
+"customize_run.ml" 296 9874 9892 "customize_run.ml" 296 9874 9896
+type(
+  string
+)
+ident(
+  def user "customize_run.ml" 297 9911 9917 "customize_run.ml" 302 10127 10198
+)
+"customize_run.ml" 296 9874 9898 "customize_run.ml" 296 9874 9906
+type(
+  Ssh_key.ssh_key_selector
+)
+ident(
+  def selector "customize_run.ml" 297 9911 9917 "customize_run.ml" 302 10127 10198
+)
+"customize_run.ml" 296 9874 9891 "customize_run.ml" 296 9874 9907
+type(
+  string * Ssh_key.ssh_key_selector
+)
+"customize_run.ml" 296 9874 9880 "customize_run.ml" 296 9874 9907
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 297 9911 9924 "customize_run.ml" 297 9911 9925
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 297 9911 9924 "customize_run.ml" 297 9911 9942
+call(
+  stack
+)
+type(
+  string -> string
+)
+"customize_run.ml" 297 9911 9943 "customize_run.ml" 297 9911 9947
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 297 9911 9924 "customize_run.ml" 297 9911 9947
+type(
+  string
+)
+"customize_run.ml" 298 9953 9961 "customize_run.ml" 298 9953 9968
+type(
+  string
+)
+"customize_run.ml" 298 9953 9971 "customize_run.ml" 298 9953 9980
+type(
+  string
+)
+"customize_run.ml" 298 9953 9961 "customize_run.ml" 298 9953 9980
+type(
+  string
+)
+"customize_run.ml" 298 9953 9983 "customize_run.ml" 298 9953 9991
+type(
+  string
+)
+"customize_run.ml" 298 9953 9961 "customize_run.ml" 298 9953 9991
+type(
+  string
+)
+"customize_run.ml" 298 9953 9994 "customize_run.ml" 298 9953 10003
+type(
+  string
+)
+"customize_run.ml" 298 9953 9961 "customize_run.ml" 298 9953 10003
+type(
+  string
+)
+"customize_run.ml" 298 9953 10006 "customize_run.ml" 298 9953 10012
+type(
+  string
+)
+"customize_run.ml" 298 9953 9961 "customize_run.ml" 298 9953 10012
+type(
+  string
+)
+"customize_run.ml" 299 10016 10024 "customize_run.ml" 299 10016 10031
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 299 10016 10033 "customize_run.ml" 299 10016 10035
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 299 10016 10035 "customize_run.ml" 299 10016 10055
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 299 10016 10032 "customize_run.ml" 299 10016 10056
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 299 10016 10057 "customize_run.ml" 299 10016 10061
+type(
+  string
+)
+ident(
+  int_ref user "customize_run.ml" 296 9874 9892 "customize_run.ml" 296 9874 9896
+)
+"customize_run.ml" 299 10016 10024 "customize_run.ml" 299 10016 10061
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 300 10063 10071 "customize_run.ml" 300 10063 10097
+type(
+  Guestfs.guestfs -> string -> Ssh_key.ssh_key_selector -> unit
+)
+ident(
+  ext_ref Ssh_key.do_ssh_inject_unix
+)
+"customize_run.ml" 300 10063 10098 "customize_run.ml" 300 10063 10099
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 300 10063 10100 "customize_run.ml" 300 10063 10104
+type(
+  string
+)
+ident(
+  int_ref user "customize_run.ml" 296 9874 9892 "customize_run.ml" 296 9874 9896
+)
+"customize_run.ml" 300 10063 10105 "customize_run.ml" 300 10063 10113
+type(
+  Ssh_key.ssh_key_selector
+)
+ident(
+  int_ref selector "customize_run.ml" 296 9874 9898 "customize_run.ml" 296 9874 9906
+)
+"customize_run.ml" 300 10063 10071 "customize_run.ml" 300 10063 10113
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 299 10016 10024 "customize_run.ml" 300 10063 10113
+type(
+  unit
+)
+"customize_run.ml" 301 10114 10122 "customize_run.ml" 301 10114 10123
+type(
+  string
+)
+"customize_run.ml" 302 10127 10135 "customize_run.ml" 302 10127 10142
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"customize_run.ml" 302 10127 10144 "customize_run.ml" 302 10127 10146
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 302 10127 10146 "customize_run.ml" 302 10127 10196
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 302 10127 10143 "customize_run.ml" 302 10127 10197
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 302 10127 10135 "customize_run.ml" 302 10127 10197
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 297 9911 9917 "customize_run.ml" 302 10127 10198
+type(
+  unit
+)
+"customize_run.ml" 304 10200 10216 "customize_run.ml" 304 10200 10220
+type(
+  string
+)
+ident(
+  def path "customize_run.ml" 305 10224 10230 "customize_run.ml" 306 10265 10286
+)
+"customize_run.ml" 304 10200 10206 "customize_run.ml" 304 10200 10220
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 305 10224 10230 "customize_run.ml" 305 10224 10237
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 305 10224 10239 "customize_run.ml" 305 10224 10241
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 305 10224 10241 "customize_run.ml" 305 10224 10257
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 305 10224 10238 "customize_run.ml" 305 10224 10258
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 305 10224 10259 "customize_run.ml" 305 10224 10263
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 304 10200 10216 "customize_run.ml" 304 10200 10220
+)
+"customize_run.ml" 305 10224 10230 "customize_run.ml" 305 10224 10263
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 306 10265 10271 "customize_run.ml" 306 10265 10272
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 306 10265 10271 "customize_run.ml" 306 10265 10281
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"customize_run.ml" 306 10265 10282 "customize_run.ml" 306 10265 10286
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 304 10200 10216 "customize_run.ml" 304 10200 10220
+)
+"customize_run.ml" 306 10265 10271 "customize_run.ml" 306 10265 10286
+type(
+  unit
+)
+"customize_run.ml" 305 10224 10230 "customize_run.ml" 306 10265 10286
+type(
+  unit
+)
+"customize_run.ml" 308 10288 10313 "customize_run.ml" 308 10288 10317
+type(
+  string
+)
+ident(
+  def path "customize_run.ml" 309 10321 10327 "customize_run.ml" 310 10374 10405
+)
+"customize_run.ml" 308 10288 10294 "customize_run.ml" 308 10288 10317
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 309 10321 10327 "customize_run.ml" 309 10321 10334
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 309 10321 10336 "customize_run.ml" 309 10321 10338
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 309 10321 10338 "customize_run.ml" 309 10321 10366
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 309 10321 10335 "customize_run.ml" 309 10321 10367
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 309 10321 10368 "customize_run.ml" 309 10321 10372
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 308 10288 10313 "customize_run.ml" 308 10288 10317
+)
+"customize_run.ml" 309 10321 10327 "customize_run.ml" 309 10321 10372
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 310 10374 10380 "customize_run.ml" 310 10374 10398
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  ext_ref Common_utils.truncate_recursive
+)
+"customize_run.ml" 310 10374 10399 "customize_run.ml" 310 10374 10400
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 310 10374 10401 "customize_run.ml" 310 10374 10405
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 308 10288 10313 "customize_run.ml" 308 10288 10317
+)
+"customize_run.ml" 310 10374 10380 "customize_run.ml" 310 10374 10405
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 309 10321 10327 "customize_run.ml" 310 10374 10405
+type(
+  unit
+)
+"customize_run.ml" 312 10407 10423 "customize_run.ml" 312 10407 10425
+type(
+  string
+)
+ident(
+  def tz "customize_run.ml" 313 10429 10435 "customize_run.ml" 315 10530 10600
+)
+"customize_run.ml" 312 10407 10413 "customize_run.ml" 312 10407 10425
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 313 10429 10435 "customize_run.ml" 313 10429 10442
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 313 10429 10444 "customize_run.ml" 313 10429 10446
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 313 10429 10446 "customize_run.ml" 313 10429 10472
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 313 10429 10443 "customize_run.ml" 313 10429 10473
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 313 10429 10474 "customize_run.ml" 313 10429 10476
+type(
+  string
+)
+ident(
+  int_ref tz "customize_run.ml" 312 10407 10423 "customize_run.ml" 312 10407 10425
+)
+"customize_run.ml" 313 10429 10435 "customize_run.ml" 313 10429 10476
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 314 10478 10487 "customize_run.ml" 314 10478 10490
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"customize_run.ml" 314 10478 10492 "customize_run.ml" 314 10478 10513
+type(
+  Guestfs.guestfs -> string -> string -> bool
+)
+ident(
+  ext_ref Timezone.set_timezone
+)
+"customize_run.ml" 314 10478 10514 "customize_run.ml" 314 10478 10515
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 314 10478 10516 "customize_run.ml" 314 10478 10520
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 314 10478 10521 "customize_run.ml" 314 10478 10523
+type(
+  string
+)
+ident(
+  int_ref tz "customize_run.ml" 312 10407 10423 "customize_run.ml" 312 10407 10425
+)
+"customize_run.ml" 314 10478 10491 "customize_run.ml" 314 10478 10524
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_run.ml" 314 10478 10487 "customize_run.ml" 314 10478 10524
+type(
+  bool
+)
+"customize_run.ml" 315 10530 10538 "customize_run.ml" 315 10530 10545
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"customize_run.ml" 315 10530 10547 "customize_run.ml" 315 10530 10549
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 315 10530 10549 "customize_run.ml" 315 10530 10599
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 315 10530 10546 "customize_run.ml" 315 10530 10600
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 315 10530 10538 "customize_run.ml" 315 10530 10600
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 314 10478 10484 "customize_run.ml" 315 10530 10600
+type(
+  unit
+)
+"customize_run.ml" 313 10429 10435 "customize_run.ml" 315 10530 10600
+type(
+  unit
+)
+"customize_run.ml" 317 10602 10615 "customize_run.ml" 317 10602 10619
+type(
+  string
+)
+ident(
+  def path "customize_run.ml" 318 10623 10629 "customize_run.ml" 319 10667 10685
+)
+"customize_run.ml" 317 10602 10608 "customize_run.ml" 317 10602 10619
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 318 10623 10629 "customize_run.ml" 318 10623 10636
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 318 10623 10638 "customize_run.ml" 318 10623 10640
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 318 10623 10640 "customize_run.ml" 318 10623 10659
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 318 10623 10637 "customize_run.ml" 318 10623 10660
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 318 10623 10661 "customize_run.ml" 318 10623 10665
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 317 10602 10615 "customize_run.ml" 317 10602 10619
+)
+"customize_run.ml" 318 10623 10629 "customize_run.ml" 318 10623 10665
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 319 10667 10673 "customize_run.ml" 319 10667 10674
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 319 10667 10673 "customize_run.ml" 319 10667 10680
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"customize_run.ml" 319 10667 10681 "customize_run.ml" 319 10667 10685
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 317 10602 10615 "customize_run.ml" 317 10602 10619
+)
+"customize_run.ml" 319 10667 10673 "customize_run.ml" 319 10667 10685
+type(
+  unit
+)
+"customize_run.ml" 318 10623 10629 "customize_run.ml" 319 10667 10685
+type(
+  unit
+)
+"customize_run.ml" 321 10687 10693 "customize_run.ml" 321 10687 10700
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 322 10704 10710 "customize_run.ml" 322 10704 10717
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 322 10704 10719 "customize_run.ml" 322 10704 10721
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 322 10704 10721 "customize_run.ml" 322 10704 10745
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 322 10704 10718 "customize_run.ml" 322 10704 10746
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 322 10704 10710 "customize_run.ml" 322 10704 10746
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 323 10748 10758 "customize_run.ml" 323 10748 10761
+type(
+  string
+)
+"customize_run.ml" 323 10748 10764 "customize_run.ml" 323 10748 10784
+type(
+  unit -> string
+)
+ident(
+  int_ref guest_update_command "customize_run.ml" 125 4277 4283 "customize_run.ml" 125 4277 4303
+)
+"customize_run.ml" 323 10748 10785 "customize_run.ml" 323 10748 10787
+type(
+  unit
+)
+"customize_run.ml" 323 10748 10764 "customize_run.ml" 323 10748 10787
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 324 10791 10797 "customize_run.ml" 324 10791 10803
+type(
+  display:string -> string -> unit
+)
+ident(
+  int_ref do_run "customize_run.ml" 53 1798 1804 "customize_run.ml" 53 1798 1810
+)
+"customize_run.ml" 324 10791 10813 "customize_run.ml" 324 10791 10816
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 323 10748 10758 "customize_run.ml" 323 10748 10761
+)
+"customize_run.ml" 324 10791 10817 "customize_run.ml" 324 10791 10820
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 323 10748 10758 "customize_run.ml" 323 10748 10761
+)
+"customize_run.ml" 324 10791 10797 "customize_run.ml" 324 10791 10820
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 323 10748 10754 "customize_run.ml" 324 10791 10820
+type(
+  unit
+)
+"customize_run.ml" 322 10704 10710 "customize_run.ml" 324 10791 10820
+type(
+  unit
+)
+"customize_run.ml" 326 10822 10837 "customize_run.ml" 326 10822 10841
+type(
+  string
+)
+ident(
+  def path "customize_run.ml" 327 10852 10858 "customize_run.ml" 349 11597 11611
+)
+"customize_run.ml" 326 10822 10843 "customize_run.ml" 326 10822 10847
+type(
+  string
+)
+ident(
+  def dest "customize_run.ml" 327 10852 10858 "customize_run.ml" 349 11597 11611
+)
+"customize_run.ml" 326 10822 10836 "customize_run.ml" 326 10822 10848
+type(
+  string * string
+)
+"customize_run.ml" 326 10822 10828 "customize_run.ml" 326 10822 10848
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 327 10852 10858 "customize_run.ml" 327 10852 10865
+type(
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 327 10852 10867 "customize_run.ml" 327 10852 10869
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 327 10852 10869 "customize_run.ml" 327 10852 10890
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 327 10852 10866 "customize_run.ml" 327 10852 10891
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 327 10852 10892 "customize_run.ml" 327 10852 10896
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 326 10822 10837 "customize_run.ml" 326 10822 10841
+)
+"customize_run.ml" 327 10852 10897 "customize_run.ml" 327 10852 10901
+type(
+  string
+)
+ident(
+  int_ref dest "customize_run.ml" 326 10822 10843 "customize_run.ml" 326 10822 10847
+)
+"customize_run.ml" 327 10852 10858 "customize_run.ml" 327 10852 10901
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 328 10903 10913 "customize_run.ml" 328 10903 10917
+type(
+  string
+)
+"customize_run.ml" 329 10920 10931 "customize_run.ml" 329 10920 10932
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 329 10920 10931 "customize_run.ml" 329 10920 10939
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"customize_run.ml" 329 10920 10956 "customize_run.ml" 329 10920 10960
+type(
+  bool
+)
+"customize_run.ml" 329 10920 10961 "customize_run.ml" 329 10920 10965
+type(
+  string
+)
+ident(
+  int_ref dest "customize_run.ml" 326 10822 10843 "customize_run.ml" 326 10822 10847
+)
+"customize_run.ml" 329 10920 10931 "customize_run.ml" 329 10920 10965
+type(
+  bool
+)
+"customize_run.ml" 330 10971 10981 "customize_run.ml" 330 10971 10985
+type(
+  string
+)
+ident(
+  int_ref dest "customize_run.ml" 326 10822 10843 "customize_run.ml" 326 10822 10847
+)
+"customize_run.ml" 330 10971 10986 "customize_run.ml" 330 10971 10987
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_run.ml" 330 10971 10988 "customize_run.ml" 330 10971 10991
+type(
+  string
+)
+"customize_run.ml" 330 10971 10992 "customize_run.ml" 330 10971 10993
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_run.ml" 330 10971 10994 "customize_run.ml" 330 10971 11011
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.basename
+)
+"customize_run.ml" 330 10971 11012 "customize_run.ml" 330 10971 11016
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 326 10822 10837 "customize_run.ml" 326 10822 10841
+)
+"customize_run.ml" 330 10971 10994 "customize_run.ml" 330 10971 11016
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 330 10971 10988 "customize_run.ml" 330 10971 11016
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 330 10971 10981 "customize_run.ml" 330 10971 11016
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 332 11030 11040 "customize_run.ml" 332 11030 11044
+type(
+  string
+)
+ident(
+  int_ref dest "customize_run.ml" 326 10822 10843 "customize_run.ml" 326 10822 10847
+)
+"customize_run.ml" 329 10920 10928 "customize_run.ml" 332 11030 11044
+type(
+  string
+)
+"customize_run.ml" 334 11080 11086 "customize_run.ml" 334 11080 11087
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 334 11080 11086 "customize_run.ml" 334 11080 11094
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"customize_run.ml" 334 11080 11095 "customize_run.ml" 334 11080 11099
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 326 10822 10837 "customize_run.ml" 326 10822 10841
+)
+"customize_run.ml" 334 11080 11100 "customize_run.ml" 334 11080 11104
+type(
+  string
+)
+ident(
+  int_ref dest "customize_run.ml" 328 10903 10913 "customize_run.ml" 328 10903 10917
+)
+"customize_run.ml" 334 11080 11086 "customize_run.ml" 334 11080 11104
+type(
+  unit
+)
+"customize_run.ml" 339 11208 11218 "customize_run.ml" 339 11208 11225
+type(
+  Unix.stats
+)
+"customize_run.ml" 339 11208 11228 "customize_run.ml" 339 11208 11232
+type(
+  string -> Unix.stats
+)
+ident(
+  ext_ref Unix.stat
+)
+"customize_run.ml" 339 11208 11233 "customize_run.ml" 339 11208 11237
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 326 10822 10837 "customize_run.ml" 326 10822 10841
+)
+"customize_run.ml" 339 11208 11228 "customize_run.ml" 339 11208 11237
+call(
+  stack
+)
+type(
+  Unix.stats
+)
+"customize_run.ml" 340 11241 11251 "customize_run.ml" 340 11241 11256
+type(
+  int
+)
+"customize_run.ml" 340 11241 11259 "customize_run.ml" 340 11241 11266
+type(
+  Unix.stats
+)
+ident(
+  int_ref statbuf "customize_run.ml" 339 11208 11218 "customize_run.ml" 339 11208 11225
+)
+"customize_run.ml" 340 11241 11259 "customize_run.ml" 340 11241 11274
+type(
+  Unix.file_perm
+)
+"customize_run.ml" 340 11241 11275 "customize_run.ml" 340 11241 11279
+type(
+  Unix.file_perm -> int -> int
+)
+ident(
+  ext_ref Pervasives.( land )
+)
+"customize_run.ml" 340 11241 11280 "customize_run.ml" 340 11241 11286
+type(
+  int
+)
+"customize_run.ml" 340 11241 11259 "customize_run.ml" 340 11241 11286
+type(
+  int
+)
+"customize_run.ml" 341 11312 11318 "customize_run.ml" 341 11312 11319
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 341 11312 11318 "customize_run.ml" 341 11312 11325
+call(
+  stack
+)
+type(
+  int -> string -> unit
+)
+"customize_run.ml" 341 11312 11326 "customize_run.ml" 341 11312 11331
+type(
+  int
+)
+ident(
+  int_ref perms "customize_run.ml" 340 11241 11251 "customize_run.ml" 340 11241 11256
+)
+"customize_run.ml" 341 11312 11332 "customize_run.ml" 341 11312 11336
+type(
+  string
+)
+ident(
+  int_ref dest "customize_run.ml" 328 10903 10913 "customize_run.ml" 328 10903 10917
+)
+"customize_run.ml" 341 11312 11318 "customize_run.ml" 341 11312 11336
+type(
+  unit
+)
+"customize_run.ml" 342 11338 11348 "customize_run.ml" 342 11338 11351
+type(
+  int
+)
+"customize_run.ml" 342 11338 11353 "customize_run.ml" 342 11338 11356
+type(
+  int
+)
+"customize_run.ml" 342 11338 11348 "customize_run.ml" 342 11338 11356
+type(
+  int * int
+)
+"customize_run.ml" 342 11338 11359 "customize_run.ml" 342 11338 11366
+type(
+  Unix.stats
+)
+ident(
+  int_ref statbuf "customize_run.ml" 339 11208 11218 "customize_run.ml" 339 11208 11225
+)
+"customize_run.ml" 342 11338 11359 "customize_run.ml" 342 11338 11373
+type(
+  int
+)
+"customize_run.ml" 342 11338 11375 "customize_run.ml" 342 11338 11382
+type(
+  Unix.stats
+)
+ident(
+  int_ref statbuf "customize_run.ml" 339 11208 11218 "customize_run.ml" 339 11208 11225
+)
+"customize_run.ml" 342 11338 11375 "customize_run.ml" 342 11338 11389
+type(
+  int
+)
+"customize_run.ml" 342 11338 11359 "customize_run.ml" 342 11338 11389
+type(
+  int * int
+)
+"customize_run.ml" 343 11393 11403 "customize_run.ml" 343 11393 11408
+type(
+  unit -> unit
+)
+"customize_run.ml" 343 11393 11409 "customize_run.ml" 343 11393 11411
+type(
+  unit
+)
+"customize_run.ml" 344 11414 11426 "customize_run.ml" 344 11414 11427
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 344 11414 11426 "customize_run.ml" 344 11414 11433
+call(
+  stack
+)
+type(
+  int -> int -> string -> unit
+)
+"customize_run.ml" 344 11414 11434 "customize_run.ml" 344 11414 11437
+type(
+  int
+)
+ident(
+  int_ref uid "customize_run.ml" 342 11338 11348 "customize_run.ml" 342 11338 11351
+)
+"customize_run.ml" 344 11414 11438 "customize_run.ml" 344 11414 11441
+type(
+  int
+)
+ident(
+  int_ref gid "customize_run.ml" 342 11338 11353 "customize_run.ml" 342 11338 11356
+)
+"customize_run.ml" 344 11414 11442 "customize_run.ml" 344 11414 11446
+type(
+  string
+)
+ident(
+  int_ref dest "customize_run.ml" 328 10903 10913 "customize_run.ml" 328 10903 10917
+)
+"customize_run.ml" 344 11414 11426 "customize_run.ml" 344 11414 11446
+type(
+  unit
+)
+"customize_run.ml" 345 11447 11474 "customize_run.ml" 345 11447 11475
+type(
+  string
+)
+ident(
+  def m "customize_run.ml" 346 11484 11494 "customize_run.ml" 348 11571 11593
+)
+"customize_run.ml" 345 11447 11460 "customize_run.ml" 345 11447 11475
+type(
+  exn
+)
+"customize_run.ml" 345 11447 11460 "customize_run.ml" 345 11447 11480
+type(
+  exn
+)
+ident(
+  def e "customize_run.ml" 346 11484 11494 "customize_run.ml" 348 11571 11593
+)
+"customize_run.ml" 346 11484 11497 "customize_run.ml" 346 11484 11498
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 346 11484 11497 "customize_run.ml" 346 11484 11509
+call(
+  stack
+)
+type(
+  unit -> int
+)
+"customize_run.ml" 346 11484 11510 "customize_run.ml" 346 11484 11512
+type(
+  unit
+)
+"customize_run.ml" 346 11484 11497 "customize_run.ml" 346 11484 11512
+type(
+  int
+)
+"customize_run.ml" 346 11484 11513 "customize_run.ml" 346 11484 11514
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"customize_run.ml" 346 11484 11515 "customize_run.ml" 346 11484 11540
+type(
+  int
+)
+ident(
+  ext_ref Guestfs.Errno.errno_EPERM
+)
+"customize_run.ml" 346 11484 11497 "customize_run.ml" 346 11484 11540
+type(
+  bool
+)
+"customize_run.ml" 347 11541 11556 "customize_run.ml" 347 11541 11563
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"customize_run.ml" 347 11541 11564 "customize_run.ml" 347 11541 11568
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 347 11541 11569 "customize_run.ml" 347 11541 11570
+type(
+  string
+)
+ident(
+  int_ref m "customize_run.ml" 345 11447 11474 "customize_run.ml" 345 11447 11475
+)
+"customize_run.ml" 347 11541 11556 "customize_run.ml" 347 11541 11570
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 348 11571 11586 "customize_run.ml" 348 11571 11591
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"customize_run.ml" 348 11571 11592 "customize_run.ml" 348 11571 11593
+type(
+  exn
+)
+ident(
+  int_ref e "customize_run.ml" 345 11447 11460 "customize_run.ml" 345 11447 11480
+)
+"customize_run.ml" 348 11571 11586 "customize_run.ml" 348 11571 11593
+type(
+  unit
+)
+"customize_run.ml" 346 11484 11494 "customize_run.ml" 348 11571 11593
+type(
+  unit
+)
+"customize_run.ml" 344 11414 11422 "customize_run.ml" 348 11571 11593
+type(
+  unit
+)
+"customize_run.ml" 349 11597 11603 "customize_run.ml" 349 11597 11608
+type(
+  unit -> unit
+)
+ident(
+  int_ref chown "customize_run.ml" 343 11393 11403 "customize_run.ml" 343 11393 11408
+)
+"customize_run.ml" 349 11597 11609 "customize_run.ml" 349 11597 11611
+type(
+  unit
+)
+"customize_run.ml" 349 11597 11603 "customize_run.ml" 349 11597 11611
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_run.ml" 343 11393 11399 "customize_run.ml" 349 11597 11611
+type(
+  unit
+)
+"customize_run.ml" 342 11338 11344 "customize_run.ml" 349 11597 11611
+type(
+  unit
+)
+"customize_run.ml" 341 11312 11318 "customize_run.ml" 349 11597 11611
+type(
+  unit
+)
+"customize_run.ml" 340 11241 11247 "customize_run.ml" 349 11597 11611
+type(
+  unit
+)
+"customize_run.ml" 339 11208 11214 "customize_run.ml" 349 11597 11611
+type(
+  unit
+)
+"customize_run.ml" 334 11080 11086 "customize_run.ml" 349 11597 11611
+type(
+  unit
+)
+"customize_run.ml" 328 10903 10909 "customize_run.ml" 349 11597 11611
+type(
+  unit
+)
+"customize_run.ml" 327 10852 10858 "customize_run.ml" 349 11597 11611
+type(
+  unit
+)
+"customize_run.ml" 351 11613 11627 "customize_run.ml" 351 11613 11631
+type(
+  string
+)
+ident(
+  def path "customize_run.ml" 352 11645 11651 "customize_run.ml" 353 11683 11709
+)
+"customize_run.ml" 351 11613 11633 "customize_run.ml" 351 11613 11640
+type(
+  string
+)
+ident(
+  def content "customize_run.ml" 352 11645 11651 "customize_run.ml" 353 11683 11709
+)
+"customize_run.ml" 351 11613 11626 "customize_run.ml" 351 11613 11641
+type(
+  string * string
+)
+"customize_run.ml" 351 11613 11619 "customize_run.ml" 351 11613 11641
+type(
+  Customize_cmdline.op
+)
+"customize_run.ml" 352 11645 11651 "customize_run.ml" 352 11645 11658
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 352 11645 11660 "customize_run.ml" 352 11645 11662
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 352 11645 11662 "customize_run.ml" 352 11645 11675
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 352 11645 11659 "customize_run.ml" 352 11645 11676
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_run.ml" 352 11645 11677 "customize_run.ml" 352 11645 11681
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 351 11613 11627 "customize_run.ml" 351 11613 11631
+)
+"customize_run.ml" 352 11645 11651 "customize_run.ml" 352 11645 11681
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 353 11683 11689 "customize_run.ml" 353 11683 11690
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 353 11683 11689 "customize_run.ml" 353 11683 11696
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"customize_run.ml" 353 11683 11697 "customize_run.ml" 353 11683 11701
+type(
+  string
+)
+ident(
+  int_ref path "customize_run.ml" 351 11613 11627 "customize_run.ml" 351 11613 11631
+)
+"customize_run.ml" 353 11683 11702 "customize_run.ml" 353 11683 11709
+type(
+  string
+)
+ident(
+  int_ref content "customize_run.ml" 351 11613 11633 "customize_run.ml" 351 11613 11640
+)
+"customize_run.ml" 353 11683 11689 "customize_run.ml" 353 11683 11709
+type(
+  unit
+)
+"customize_run.ml" 352 11645 11651 "customize_run.ml" 353 11683 11709
+type(
+  unit
+)
+"customize_run.ml" 167 5693 5705 "customize_run.ml" 354 11710 11713
+type(
+  Customize_cmdline.op -> unit
+)
+"customize_run.ml" 354 11710 11714 "customize_run.ml" 354 11710 11717
+type(
+  Customize_cmdline.ops
+)
+ident(
+  int_ref ops "customize_run.ml" 29 907 943 "customize_run.ml" 29 907 946
+)
+"customize_run.ml" 354 11710 11714 "customize_run.ml" 354 11710 11721
+type(
+  Customize_cmdline.op list
+)
+"customize_run.ml" 167 5693 5695 "customize_run.ml" 354 11710 11721
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 357 11766 11771 "customize_run.ml" 357 11766 11785
+type(
+  (string, Password.password_selector) Hashtbl.t -> int
+)
+ident(
+  ext_ref Hashtbl.length
+)
+"customize_run.ml" 357 11766 11786 "customize_run.ml" 357 11766 11795
+type(
+  (string, Password.password_selector) Hashtbl.t
+)
+ident(
+  int_ref passwords "customize_run.ml" 159 5369 5375 "customize_run.ml" 159 5369 5384
+)
+"customize_run.ml" 357 11766 11771 "customize_run.ml" 357 11766 11795
+call(
+  stack
+)
+type(
+  int
+)
+"customize_run.ml" 357 11766 11796 "customize_run.ml" 357 11766 11797
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"customize_run.ml" 357 11766 11798 "customize_run.ml" 357 11766 11799
+type(
+  int
+)
+"customize_run.ml" 357 11766 11771 "customize_run.ml" 357 11766 11799
+type(
+  bool
+)
+"customize_run.ml" 358 11807 11817 "customize_run.ml" 358 11807 11818
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 358 11807 11817 "customize_run.ml" 358 11807 11835
+call(
+  stack
+)
+type(
+  string -> string
+)
+"customize_run.ml" 358 11807 11836 "customize_run.ml" 358 11807 11840
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 358 11807 11817 "customize_run.ml" 358 11807 11840
+type(
+  string
+)
+"customize_run.ml" 359 11846 11852 "customize_run.ml" 359 11846 11859
+type(
+  string
+)
+"customize_run.ml" 360 11863 11869 "customize_run.ml" 360 11863 11876
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 360 11863 11878 "customize_run.ml" 360 11863 11880
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 360 11863 11880 "customize_run.ml" 360 11863 11899
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 360 11863 11877 "customize_run.ml" 360 11863 11900
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 360 11863 11869 "customize_run.ml" 360 11863 11900
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 361 11902 11912 "customize_run.ml" 361 11902 11927
+type(
+  Password.password_crypto option
+)
+"customize_run.ml" 361 11902 11930 "customize_run.ml" 361 11902 11933
+type(
+  Customize_cmdline.ops
+)
+ident(
+  int_ref ops "customize_run.ml" 29 907 943 "customize_run.ml" 29 907 946
+)
+"customize_run.ml" 361 11902 11930 "customize_run.ml" 361 11902 11939
+type(
+  Customize_cmdline.flags
+)
+"customize_run.ml" 361 11902 11930 "customize_run.ml" 361 11902 11955
+type(
+  Password.password_crypto option
+)
+"customize_run.ml" 362 11959 11965 "customize_run.ml" 362 11959 11984
+type(
+  ?password_crypto:Password.password_crypto ->
+  Guestfs.guestfs -> string -> Password.password_map -> unit
+)
+ident(
+  ext_ref Password.set_linux_passwords
+)
+"customize_run.ml" 362 11959 11986 "customize_run.ml" 362 11959 12001
+type(
+  Password.password_crypto option
+)
+ident(
+  int_ref password_crypto "customize_run.ml" 361 11902 11912 "customize_run.ml" 361 11902 11927
+)
+"customize_run.ml" 362 11959 12002 "customize_run.ml" 362 11959 12003
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 362 11959 12004 "customize_run.ml" 362 11959 12008
+type(
+  string
+)
+ident(
+  int_ref root "customize_run.ml" 29 907 937 "customize_run.ml" 29 907 941
+)
+"customize_run.ml" 362 11959 12009 "customize_run.ml" 362 11959 12018
+type(
+  Password.password_map
+)
+ident(
+  int_ref passwords "customize_run.ml" 159 5369 5375 "customize_run.ml" 159 5369 5384
+)
+"customize_run.ml" 362 11959 11965 "customize_run.ml" 362 11959 12018
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 361 11902 11908 "customize_run.ml" 362 11959 12018
+type(
+  unit
+)
+"customize_run.ml" 360 11863 11869 "customize_run.ml" 362 11959 12018
+type(
+  unit
+)
+"customize_run.ml" 364 12020 12026 "customize_run.ml" 364 12020 12027
+type(
+  string
+)
+"customize_run.ml" 365 12031 12037 "customize_run.ml" 365 12031 12044
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"customize_run.ml" 365 12031 12046 "customize_run.ml" 365 12031 12048
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 365 12031 12048 "customize_run.ml" 365 12031 12099
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 365 12031 12045 "customize_run.ml" 365 12031 12100
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 365 12031 12037 "customize_run.ml" 365 12031 12100
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 357 11766 11805 "customize_run.ml" 366 12101 12104
+type(
+  unit
+)
+"customize_run.ml" 357 11766 11768 "customize_run.ml" 366 12101 12104
+type(
+  unit
+)
+"customize_run.ml" 368 12107 12112 "customize_run.ml" 368 12107 12115
+type(
+  Customize_cmdline.ops
+)
+ident(
+  int_ref ops "customize_run.ml" 29 907 943 "customize_run.ml" 29 907 946
+)
+"customize_run.ml" 368 12107 12112 "customize_run.ml" 368 12107 12121
+type(
+  Customize_cmdline.flags
+)
+"customize_run.ml" 368 12107 12112 "customize_run.ml" 368 12107 12137
+type(
+  bool
+)
+"customize_run.ml" 369 12145 12149 "customize_run.ml" 369 12145 12156
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 369 12145 12158 "customize_run.ml" 369 12145 12160
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 369 12145 12160 "customize_run.ml" 369 12145 12181
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 369 12145 12157 "customize_run.ml" 369 12145 12182
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 369 12145 12149 "customize_run.ml" 369 12145 12182
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 370 12184 12191 "customize_run.ml" 370 12184 12212
+type(
+  bool
+)
+ident(
+  int_ref guest_arch_compatible "customize_run.ml" 34 1106 1112 "customize_run.ml" 34 1106 1133
+)
+"customize_run.ml" 371 12220 12230 "customize_run.ml" 371 12220 12233
+type(
+  string
+)
+ident(
+  def cmd "customize_run.ml" 379 12474 12480 "customize_run.ml" 379 12474 12533
+)
+"customize_run.ml" 371 12220 12236 "customize_run.ml" 371 12220 12243
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_run.ml" 371 12220 12244 "customize_run.ml" 378 12458 12465
+type(
+  (string -> string, unit, string) format
+)
+"customize_run.ml" 378 12458 12466 "customize_run.ml" 378 12458 12470
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"customize_run.ml" 371 12220 12236 "customize_run.ml" 378 12458 12470
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 379 12474 12480 "customize_run.ml" 379 12474 12486
+type(
+  display:string -> string -> unit
+)
+ident(
+  int_ref do_run "customize_run.ml" 53 1798 1804 "customize_run.ml" 53 1798 1810
+)
+"customize_run.ml" 379 12474 12496 "customize_run.ml" 379 12474 12529
+type(
+  string
+)
+"customize_run.ml" 379 12474 12530 "customize_run.ml" 379 12474 12533
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_run.ml" 371 12220 12230 "customize_run.ml" 371 12220 12233
+)
+"customize_run.ml" 379 12474 12480 "customize_run.ml" 379 12474 12533
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 370 12184 12218 "customize_run.ml" 380 12534 12539
+type(
+  unit
+)
+"customize_run.ml" 381 12547 12553 "customize_run.ml" 381 12547 12554
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 381 12547 12553 "customize_run.ml" 381 12547 12560
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"customize_run.ml" 381 12547 12561 "customize_run.ml" 381 12547 12576
+type(
+  string
+)
+"customize_run.ml" 380 12534 12545 "customize_run.ml" 382 12577 12582
+type(
+  unit
+)
+"customize_run.ml" 370 12184 12188 "customize_run.ml" 382 12577 12582
+type(
+  unit
+)
+"customize_run.ml" 368 12107 12143 "customize_run.ml" 383 12583 12586
+type(
+  unit
+)
+"customize_run.ml" 368 12107 12109 "customize_run.ml" 383 12583 12586
+type(
+  unit
+)
+"customize_run.ml" 390 12710 12715 "customize_run.ml" 390 12710 12722
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"customize_run.ml" 390 12710 12723 "customize_run.ml" 390 12710 12725
+type(
+  unit
+)
+"customize_run.ml" 390 12710 12715 "customize_run.ml" 390 12710 12725
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_run.ml" 390 12710 12731 "customize_run.ml" 390 12710 12744
+type(
+  unit -> unit
+)
+ident(
+  int_ref debug_logfile "customize_run.ml" 47 1597 1603 "customize_run.ml" 47 1597 1616
+)
+"customize_run.ml" 390 12710 12745 "customize_run.ml" 390 12710 12747
+type(
+  unit
+)
+"customize_run.ml" 390 12710 12731 "customize_run.ml" 390 12710 12747
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 390 12710 12712 "customize_run.ml" 390 12710 12747
+type(
+  unit
+)
+"customize_run.ml" 391 12749 12754 "customize_run.ml" 391 12749 12757
+type(
+  Customize_cmdline.ops
+)
+ident(
+  int_ref ops "customize_run.ml" 29 907 943 "customize_run.ml" 29 907 946
+)
+"customize_run.ml" 391 12749 12754 "customize_run.ml" 391 12749 12763
+type(
+  Customize_cmdline.flags
+)
+"customize_run.ml" 391 12749 12754 "customize_run.ml" 391 12749 12777
+type(
+  bool
+)
+"customize_run.ml" 391 12749 12778 "customize_run.ml" 391 12749 12780
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"customize_run.ml" 391 12749 12781 "customize_run.ml" 391 12749 12782
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 391 12749 12781 "customize_run.ml" 391 12749 12789
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"customize_run.ml" 391 12749 12790 "customize_run.ml" 391 12749 12797
+type(
+  string
+)
+ident(
+  int_ref logfile "customize_run.ml" 37 1234 1240 "customize_run.ml" 37 1234 1247
+)
+"customize_run.ml" 391 12749 12781 "customize_run.ml" 391 12749 12797
+type(
+  bool
+)
+"customize_run.ml" 391 12749 12754 "customize_run.ml" 391 12749 12797
+type(
+  bool
+)
+"customize_run.ml" 392 12805 12809 "customize_run.ml" 392 12805 12816
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_run.ml" 392 12805 12818 "customize_run.ml" 392 12805 12820
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 392 12805 12820 "customize_run.ml" 392 12805 12844
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_run.ml" 392 12805 12817 "customize_run.ml" 392 12805 12845
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_run.ml" 392 12805 12809 "customize_run.ml" 392 12805 12845
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 395 12906 12914 "customize_run.ml" 395 12906 12915
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 395 12906 12914 "customize_run.ml" 395 12906 12926
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"customize_run.ml" 395 12906 12927 "customize_run.ml" 395 12906 12934
+type(
+  string
+)
+ident(
+  int_ref logfile "customize_run.ml" 37 1234 1240 "customize_run.ml" 37 1234 1247
+)
+"customize_run.ml" 395 12906 12914 "customize_run.ml" 395 12906 12934
+type(
+  unit
+)
+"customize_run.ml" 396 12935 12944 "customize_run.ml" 396 12935 12945
+type(
+  exn
+)
+"customize_run.ml" 396 12935 12949 "customize_run.ml" 396 12935 12950
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 396 12935 12949 "customize_run.ml" 396 12935 12955
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"customize_run.ml" 396 12935 12956 "customize_run.ml" 396 12935 12963
+type(
+  string
+)
+ident(
+  int_ref logfile "customize_run.ml" 37 1234 1240 "customize_run.ml" 37 1234 1247
+)
+"customize_run.ml" 396 12935 12949 "customize_run.ml" 396 12935 12963
+type(
+  unit
+)
+"customize_run.ml" 395 12906 12910 "customize_run.ml" 396 12935 12963
+type(
+  unit
+)
+"customize_run.ml" 391 12749 12803 "customize_run.ml" 397 12964 12967
+type(
+  unit
+)
+"customize_run.ml" 391 12749 12751 "customize_run.ml" 397 12964 12967
+type(
+  unit
+)
+"customize_run.ml" 405 13194 13201 "customize_run.ml" 405 13194 13207
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"customize_run.ml" 405 13194 13209 "customize_run.ml" 405 13194 13210
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 405 13194 13209 "customize_run.ml" 405 13194 13216
+call(
+  stack
+)
+type(
+  string -> string array -> string
+)
+"customize_run.ml" 405 13194 13217 "customize_run.ml" 405 13194 13221
+type(
+  string
+)
+"customize_run.ml" 405 13194 13225 "customize_run.ml" 405 13194 13232
+type(
+  string
+)
+"customize_run.ml" 405 13194 13234 "customize_run.ml" 405 13194 13238
+type(
+  string
+)
+"customize_run.ml" 405 13194 13240 "customize_run.ml" 405 13194 13250
+type(
+  string
+)
+"customize_run.ml" 405 13194 13222 "customize_run.ml" 405 13194 13253
+type(
+  string array
+)
+"customize_run.ml" 405 13194 13208 "customize_run.ml" 405 13194 13254
+type(
+  string
+)
+"customize_run.ml" 405 13194 13201 "customize_run.ml" 405 13194 13254
+type(
+  unit
+)
+"customize_run.ml" 406 13255 13263 "customize_run.ml" 406 13255 13266
+type(
+  exn
+)
+ident(
+  def exn "customize_run.ml" 407 13270 13275 "customize_run.ml" 408 13294 13362
+)
+"customize_run.ml" 407 13270 13278 "customize_run.ml" 407 13270 13285
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"customize_run.ml" 407 13270 13286 "customize_run.ml" 407 13270 13288
+type(
+  unit
+)
+"customize_run.ml" 407 13270 13278 "customize_run.ml" 407 13270 13288
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_run.ml" 408 13294 13301 "customize_run.ml" 408 13294 13307
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"customize_run.ml" 408 13294 13309 "customize_run.ml" 408 13294 13311
+type(
+  (string -> string -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_run.ml" 408 13294 13311 "customize_run.ml" 408 13294 13331
+type(
+  (string -> string -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"customize_run.ml" 408 13294 13308 "customize_run.ml" 408 13294 13332
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"customize_run.ml" 408 13294 13333 "customize_run.ml" 408 13294 13337
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"customize_run.ml" 408 13294 13339 "customize_run.ml" 408 13294 13357
+type(
+  exn -> string
+)
+ident(
+  ext_ref Printexc.to_string
+)
+"customize_run.ml" 408 13294 13358 "customize_run.ml" 408 13294 13361
+type(
+  exn
+)
+ident(
+  int_ref exn "customize_run.ml" 406 13255 13263 "customize_run.ml" 406 13255 13266
+)
+"customize_run.ml" 408 13294 13338 "customize_run.ml" 408 13294 13362
+call(
+  stack
+)
+type(
+  string
+)
+"customize_run.ml" 408 13294 13301 "customize_run.ml" 408 13294 13362
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_run.ml" 407 13270 13275 "customize_run.ml" 408 13294 13362
+type(
+  unit
+)
+"customize_run.ml" 405 13194 13196 "customize_run.ml" 409 13363 13366
+type(
+  unit
+)
+"customize_run.ml" 410 13368 13370 "customize_run.ml" 410 13368 13371
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_run.ml" 29 907 916 "customize_run.ml" 29 907 917
+)
+"customize_run.ml" 410 13368 13370 "customize_run.ml" 410 13368 13383
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"customize_run.ml" 410 13368 13384 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 410 13368 13370 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 405 13194 13196 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 391 12749 12751 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 390 12710 12712 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 368 12107 12109 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 357 11766 11768 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 167 5693 5695 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 160 5408 5410 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 159 5369 5371 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 155 5189 5191 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 154 5150 5152 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 97 3277 3279 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 53 1798 1800 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 47 1597 1599 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 37 1234 1236 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 34 1106 1108 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)
+"customize_run.ml" 33 1060 1062 "customize_run.ml" 410 13368 13386
+type(
+  unit
+)

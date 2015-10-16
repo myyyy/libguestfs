@@ -1,0 +1,330 @@
+"sysprep_operation_pam_data.ml" 24 851 855 "sysprep_operation_pam_data.ml" 24 851 871
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def pam_data_perform "sysprep_operation_pam_data.ml" 40 1289 1289 --
+)
+"sysprep_operation_pam_data.ml" 24 851 872 "sysprep_operation_pam_data.ml" 24 851 873
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_pam_data.ml" 24 851 874 "sysprep_operation_pam_data.ml" 38 1284 1287
+)
+"sysprep_operation_pam_data.ml" 24 851 874 "sysprep_operation_pam_data.ml" 24 851 878
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_pam_data.ml" 24 851 879 "sysprep_operation_pam_data.ml" 38 1284 1287
+)
+"sysprep_operation_pam_data.ml" 24 851 879 "sysprep_operation_pam_data.ml" 24 851 891
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_pam_data.ml" 25 894 896 "sysprep_operation_pam_data.ml" 38 1284 1287
+)
+"sysprep_operation_pam_data.ml" 25 894 900 "sysprep_operation_pam_data.ml" 25 894 903
+type(
+  string
+)
+"sysprep_operation_pam_data.ml" 25 894 906 "sysprep_operation_pam_data.ml" 25 894 907
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_pam_data.ml" 24 851 872 "sysprep_operation_pam_data.ml" 24 851 873
+)
+"sysprep_operation_pam_data.ml" 25 894 906 "sysprep_operation_pam_data.ml" 25 894 924
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_pam_data.ml" 25 894 925 "sysprep_operation_pam_data.ml" 25 894 929
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_pam_data.ml" 24 851 874 "sysprep_operation_pam_data.ml" 24 851 878
+)
+"sysprep_operation_pam_data.ml" 25 894 906 "sysprep_operation_pam_data.ml" 25 894 929
+type(
+  string
+)
+"sysprep_operation_pam_data.ml" 26 933 938 "sysprep_operation_pam_data.ml" 26 933 941
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_pam_data.ml" 25 894 900 "sysprep_operation_pam_data.ml" 25 894 903
+)
+"sysprep_operation_pam_data.ml" 26 933 942 "sysprep_operation_pam_data.ml" 26 933 944
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_pam_data.ml" 26 933 945 "sysprep_operation_pam_data.ml" 26 933 954
+type(
+  string
+)
+"sysprep_operation_pam_data.ml" 26 933 938 "sysprep_operation_pam_data.ml" 26 933 954
+type(
+  bool
+)
+"sysprep_operation_pam_data.ml" 27 962 970 "sysprep_operation_pam_data.ml" 27 962 975
+type(
+  string list
+)
+"sysprep_operation_pam_data.ml" 27 962 980 "sysprep_operation_pam_data.ml" 27 962 1000
+type(
+  string
+)
+"sysprep_operation_pam_data.ml" 28 1002 1020 "sysprep_operation_pam_data.ml" 28 1002 1041
+type(
+  string
+)
+"sysprep_operation_pam_data.ml" 29 1043 1061 "sysprep_operation_pam_data.ml" 29 1043 1082
+type(
+  string
+)
+"sysprep_operation_pam_data.ml" 27 962 978 "sysprep_operation_pam_data.ml" 29 1043 1085
+type(
+  string list
+)
+"sysprep_operation_pam_data.ml" 30 1089 1093 "sysprep_operation_pam_data.ml" 30 1089 1102
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_pam_data.ml" 31 1105 1115 "sysprep_operation_pam_data.ml" 31 1105 1119
+type(
+  string
+)
+ident(
+  def path "sysprep_operation_pam_data.ml" 32 1123 1131 "sysprep_operation_pam_data.ml" 36 1255 1271
+)
+"sysprep_operation_pam_data.ml" 32 1123 1135 "sysprep_operation_pam_data.ml" 32 1123 1140
+type(
+  'a array
+)
+"sysprep_operation_pam_data.ml" 32 1123 1143 "sysprep_operation_pam_data.ml" 32 1123 1144
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_pam_data.ml" 24 851 872 "sysprep_operation_pam_data.ml" 24 851 873
+)
+"sysprep_operation_pam_data.ml" 32 1123 1143 "sysprep_operation_pam_data.ml" 32 1123 1156
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_pam_data.ml" 32 1123 1157 "sysprep_operation_pam_data.ml" 32 1123 1161
+type(
+  string
+)
+ident(
+  int_ref path "sysprep_operation_pam_data.ml" 31 1105 1115 "sysprep_operation_pam_data.ml" 31 1105 1119
+)
+"sysprep_operation_pam_data.ml" 32 1123 1143 "sysprep_operation_pam_data.ml" 32 1123 1161
+type(
+  'a array
+)
+"sysprep_operation_pam_data.ml" 33 1165 1173 "sysprep_operation_pam_data.ml" 33 1165 1183
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_pam_data.ml" 34 1186 1200 "sysprep_operation_pam_data.ml" 34 1186 1204
+type(
+  'a
+)
+ident(
+  def file "sysprep_operation_pam_data.ml" 35 1208 1220 "sysprep_operation_pam_data.ml" 35 1208 1254
+)
+"sysprep_operation_pam_data.ml" 35 1208 1224 "sysprep_operation_pam_data.ml" 35 1208 1225
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_pam_data.ml" 24 851 872 "sysprep_operation_pam_data.ml" 24 851 873
+)
+"sysprep_operation_pam_data.ml" 35 1208 1224 "sysprep_operation_pam_data.ml" 35 1208 1228
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_pam_data.ml" 35 1208 1229 "sysprep_operation_pam_data.ml" 35 1208 1233
+type(
+  'a
+)
+ident(
+  int_ref file "sysprep_operation_pam_data.ml" 34 1186 1200 "sysprep_operation_pam_data.ml" 34 1186 1204
+)
+"sysprep_operation_pam_data.ml" 35 1208 1224 "sysprep_operation_pam_data.ml" 35 1208 1233
+type(
+  unit
+)
+"sysprep_operation_pam_data.ml" 35 1208 1247 "sysprep_operation_pam_data.ml" 35 1208 1248
+type(
+  string
+)
+"sysprep_operation_pam_data.ml" 35 1208 1239 "sysprep_operation_pam_data.ml" 35 1208 1248
+type(
+  exn
+)
+"sysprep_operation_pam_data.ml" 35 1208 1252 "sysprep_operation_pam_data.ml" 35 1208 1254
+type(
+  unit
+)
+"sysprep_operation_pam_data.ml" 35 1208 1220 "sysprep_operation_pam_data.ml" 35 1208 1254
+type(
+  unit
+)
+"sysprep_operation_pam_data.ml" 33 1165 1184 "sysprep_operation_pam_data.ml" 36 1255 1264
+type(
+  'a -> unit
+)
+"sysprep_operation_pam_data.ml" 36 1255 1265 "sysprep_operation_pam_data.ml" 36 1255 1270
+type(
+  'a array
+)
+ident(
+  int_ref files "sysprep_operation_pam_data.ml" 32 1123 1135 "sysprep_operation_pam_data.ml" 32 1123 1140
+)
+"sysprep_operation_pam_data.ml" 33 1165 1173 "sysprep_operation_pam_data.ml" 36 1255 1271
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_pam_data.ml" 32 1123 1131 "sysprep_operation_pam_data.ml" 36 1255 1271
+type(
+  unit
+)
+"sysprep_operation_pam_data.ml" 30 1089 1103 "sysprep_operation_pam_data.ml" 37 1272 1277
+type(
+  string -> unit
+)
+"sysprep_operation_pam_data.ml" 37 1272 1278 "sysprep_operation_pam_data.ml" 37 1272 1283
+type(
+  string list
+)
+ident(
+  int_ref paths "sysprep_operation_pam_data.ml" 27 962 970 "sysprep_operation_pam_data.ml" 27 962 975
+)
+"sysprep_operation_pam_data.ml" 30 1089 1093 "sysprep_operation_pam_data.ml" 37 1272 1283
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_pam_data.ml" 26 933 960 "sysprep_operation_pam_data.ml" 38 1284 1287
+type(
+  unit
+)
+"sysprep_operation_pam_data.ml" 26 933 935 "sysprep_operation_pam_data.ml" 38 1284 1287
+type(
+  unit
+)
+"sysprep_operation_pam_data.ml" 25 894 896 "sysprep_operation_pam_data.ml" 38 1284 1287
+type(
+  unit
+)
+"sysprep_operation_pam_data.ml" 40 1289 1293 "sysprep_operation_pam_data.ml" 40 1289 1295
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_pam_data.ml" 48 1477 1477 --
+)
+"sysprep_operation_pam_data.ml" 41 1300 1302 "sysprep_operation_pam_data.ml" 41 1300 1310
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_pam_data.ml" 42 1316 1327 "sysprep_operation_pam_data.ml" 42 1316 1337
+type(
+  string
+)
+"sysprep_operation_pam_data.ml" 43 1339 1364 "sysprep_operation_pam_data.ml" 43 1339 1368
+type(
+  bool
+)
+"sysprep_operation_pam_data.ml" 44 1370 1384 "sysprep_operation_pam_data.ml" 44 1370 1386
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_pam_data.ml" 44 1370 1386 "sysprep_operation_pam_data.ml" 44 1370 1420
+type(
+  string
+)
+"sysprep_operation_pam_data.ml" 44 1370 1384 "sysprep_operation_pam_data.ml" 44 1370 1420
+type(
+  string
+)
+"sysprep_operation_pam_data.ml" 45 1422 1456 "sysprep_operation_pam_data.ml" 45 1422 1472
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref pam_data_perform "sysprep_operation_pam_data.ml" 24 851 855 "sysprep_operation_pam_data.ml" 24 851 871
+)
+"sysprep_operation_pam_data.ml" 45 1422 1451 "sysprep_operation_pam_data.ml" 45 1422 1472
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_pam_data.ml" 40 1289 1298 "sysprep_operation_pam_data.ml" 46 1474 1475
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_pam_data.ml" 48 1477 1481 "sysprep_operation_pam_data.ml" 48 1477 1483
+type(
+  unit
+)
+"sysprep_operation_pam_data.ml" 48 1477 1486 "sysprep_operation_pam_data.ml" 48 1477 1504
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_pam_data.ml" 48 1477 1505 "sysprep_operation_pam_data.ml" 48 1477 1507
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_pam_data.ml" 40 1289 1293 "sysprep_operation_pam_data.ml" 40 1289 1295
+)
+"sysprep_operation_pam_data.ml" 48 1477 1486 "sysprep_operation_pam_data.ml" 48 1477 1507
+call(
+  stack
+)
+type(
+  unit
+)

@@ -1,0 +1,6204 @@
+"input_libvirtxml.ml" 39 1166 1170 "input_libvirtxml.ml" 39 1166 1184
+type(
+  string -> int -> int option
+)
+ident(
+  def get_drive_slot "input_libvirtxml.ml" 49 1579 1579 --
+)
+"input_libvirtxml.ml" 39 1166 1185 "input_libvirtxml.ml" 39 1166 1188
+type(
+  string
+)
+ident(
+  def str "input_libvirtxml.ml" 39 1166 1189 "input_libvirtxml.ml" 47 1566 1577
+)
+"input_libvirtxml.ml" 39 1166 1189 "input_libvirtxml.ml" 39 1166 1195
+type(
+  int
+)
+ident(
+  def offset "input_libvirtxml.ml" 40 1198 1200 "input_libvirtxml.ml" 47 1566 1577
+)
+"input_libvirtxml.ml" 40 1198 1204 "input_libvirtxml.ml" 40 1198 1207
+type(
+  int
+)
+"input_libvirtxml.ml" 40 1198 1210 "input_libvirtxml.ml" 40 1198 1223
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"input_libvirtxml.ml" 40 1198 1224 "input_libvirtxml.ml" 40 1198 1227
+type(
+  string
+)
+ident(
+  int_ref str "input_libvirtxml.ml" 39 1166 1185 "input_libvirtxml.ml" 39 1166 1188
+)
+"input_libvirtxml.ml" 40 1198 1210 "input_libvirtxml.ml" 40 1198 1227
+type(
+  int
+)
+"input_libvirtxml.ml" 41 1231 1236 "input_libvirtxml.ml" 41 1231 1239
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirtxml.ml" 40 1198 1204 "input_libvirtxml.ml" 40 1198 1207
+)
+"input_libvirtxml.ml" 41 1231 1239 "input_libvirtxml.ml" 41 1231 1240
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"input_libvirtxml.ml" 41 1231 1240 "input_libvirtxml.ml" 41 1231 1246
+type(
+  int
+)
+ident(
+  int_ref offset "input_libvirtxml.ml" 39 1166 1189 "input_libvirtxml.ml" 39 1166 1195
+)
+"input_libvirtxml.ml" 41 1231 1236 "input_libvirtxml.ml" 41 1231 1246
+type(
+  int
+)
+"input_libvirtxml.ml" 41 1231 1247 "input_libvirtxml.ml" 41 1231 1248
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"input_libvirtxml.ml" 41 1231 1249 "input_libvirtxml.ml" 41 1231 1250
+type(
+  int
+)
+"input_libvirtxml.ml" 41 1231 1236 "input_libvirtxml.ml" 41 1231 1250
+type(
+  bool
+)
+"input_libvirtxml.ml" 42 1256 1260 "input_libvirtxml.ml" 42 1256 1268
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"input_libvirtxml.ml" 42 1256 1270 "input_libvirtxml.ml" 42 1256 1277
+type(
+  (int -> string -> string, unit, string) format -> int -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"input_libvirtxml.ml" 42 1256 1278 "input_libvirtxml.ml" 42 1256 1355
+type(
+  (int -> string -> string, unit, string) format
+)
+"input_libvirtxml.ml" 42 1256 1356 "input_libvirtxml.ml" 42 1256 1362
+type(
+  int
+)
+ident(
+  int_ref offset "input_libvirtxml.ml" 39 1166 1189 "input_libvirtxml.ml" 39 1166 1195
+)
+"input_libvirtxml.ml" 42 1256 1363 "input_libvirtxml.ml" 42 1256 1366
+type(
+  string
+)
+ident(
+  int_ref str "input_libvirtxml.ml" 39 1166 1185 "input_libvirtxml.ml" 39 1166 1188
+)
+"input_libvirtxml.ml" 42 1256 1269 "input_libvirtxml.ml" 42 1256 1367
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 42 1256 1260 "input_libvirtxml.ml" 42 1256 1367
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 41 1231 1233 "input_libvirtxml.ml" 42 1256 1367
+type(
+  unit
+)
+"input_libvirtxml.ml" 43 1369 1375 "input_libvirtxml.ml" 43 1369 1379
+type(
+  string
+)
+"input_libvirtxml.ml" 43 1369 1382 "input_libvirtxml.ml" 43 1369 1392
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"input_libvirtxml.ml" 43 1369 1393 "input_libvirtxml.ml" 43 1369 1396
+type(
+  string
+)
+ident(
+  int_ref str "input_libvirtxml.ml" 39 1166 1185 "input_libvirtxml.ml" 39 1166 1188
+)
+"input_libvirtxml.ml" 43 1369 1397 "input_libvirtxml.ml" 43 1369 1403
+type(
+  int
+)
+ident(
+  int_ref offset "input_libvirtxml.ml" 39 1166 1189 "input_libvirtxml.ml" 39 1166 1195
+)
+"input_libvirtxml.ml" 43 1369 1405 "input_libvirtxml.ml" 43 1369 1408
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirtxml.ml" 40 1198 1204 "input_libvirtxml.ml" 40 1198 1207
+)
+"input_libvirtxml.ml" 43 1369 1408 "input_libvirtxml.ml" 43 1369 1409
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"input_libvirtxml.ml" 43 1369 1409 "input_libvirtxml.ml" 43 1369 1415
+type(
+  int
+)
+ident(
+  int_ref offset "input_libvirtxml.ml" 39 1166 1189 "input_libvirtxml.ml" 39 1166 1195
+)
+"input_libvirtxml.ml" 43 1369 1404 "input_libvirtxml.ml" 43 1369 1416
+type(
+  int
+)
+"input_libvirtxml.ml" 43 1369 1382 "input_libvirtxml.ml" 43 1369 1416
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 44 1420 1432 "input_libvirtxml.ml" 44 1420 1443
+type(
+  string -> int
+)
+ident(
+  ext_ref Utils.drive_index
+)
+"input_libvirtxml.ml" 44 1420 1444 "input_libvirtxml.ml" 44 1420 1448
+type(
+  string
+)
+ident(
+  int_ref name "input_libvirtxml.ml" 43 1369 1375 "input_libvirtxml.ml" 43 1369 1379
+)
+"input_libvirtxml.ml" 44 1420 1431 "input_libvirtxml.ml" 44 1420 1449
+type(
+  int
+)
+"input_libvirtxml.ml" 44 1420 1426 "input_libvirtxml.ml" 44 1420 1449
+type(
+  int option
+)
+"input_libvirtxml.ml" 45 1450 1474 "input_libvirtxml.ml" 45 1450 1475
+type(
+  string
+)
+"input_libvirtxml.ml" 45 1450 1457 "input_libvirtxml.ml" 45 1450 1475
+type(
+  exn
+)
+"input_libvirtxml.ml" 46 1479 1486 "input_libvirtxml.ml" 46 1479 1493
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirtxml.ml" 46 1479 1495 "input_libvirtxml.ml" 46 1479 1497
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 46 1479 1497 "input_libvirtxml.ml" 46 1479 1559
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 46 1479 1494 "input_libvirtxml.ml" 46 1479 1560
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 46 1479 1561 "input_libvirtxml.ml" 46 1479 1564
+type(
+  string
+)
+ident(
+  int_ref str "input_libvirtxml.ml" 39 1166 1185 "input_libvirtxml.ml" 39 1166 1188
+)
+"input_libvirtxml.ml" 46 1479 1486 "input_libvirtxml.ml" 46 1479 1564
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 47 1566 1573 "input_libvirtxml.ml" 47 1566 1577
+type(
+  int option
+)
+"input_libvirtxml.ml" 46 1479 1486 "input_libvirtxml.ml" 47 1566 1577
+type(
+  int option
+)
+"input_libvirtxml.ml" 44 1420 1422 "input_libvirtxml.ml" 47 1566 1577
+type(
+  int option
+)
+"input_libvirtxml.ml" 43 1369 1371 "input_libvirtxml.ml" 47 1566 1577
+type(
+  int option
+)
+"input_libvirtxml.ml" 41 1231 1233 "input_libvirtxml.ml" 47 1566 1577
+type(
+  int option
+)
+"input_libvirtxml.ml" 40 1198 1200 "input_libvirtxml.ml" 47 1566 1577
+type(
+  int option
+)
+"input_libvirtxml.ml" 49 1579 1583 "input_libvirtxml.ml" 49 1579 1600
+type(
+  ?conn:string -> string -> Types.source * parsed_disk list
+)
+ident(
+  def parse_libvirt_xml "input_libvirtxml.ml" 375 13179 13179 --
+)
+"input_libvirtxml.ml" 49 1579 1602 "input_libvirtxml.ml" 49 1579 1606
+type(
+  string option
+)
+ident(
+  def conn "input_libvirtxml.ml" 49 1579 1607 "input_libvirtxml.ml" 373 13168 13177
+)
+"input_libvirtxml.ml" 49 1579 1607 "input_libvirtxml.ml" 49 1579 1610
+type(
+  string
+)
+ident(
+  def xml "input_libvirtxml.ml" 50 1613 1615 "input_libvirtxml.ml" 373 13168 13177
+)
+"input_libvirtxml.ml" 50 1613 1618 "input_libvirtxml.ml" 50 1613 1625
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"input_libvirtxml.ml" 50 1613 1626 "input_libvirtxml.ml" 50 1613 1628
+type(
+  unit
+)
+"input_libvirtxml.ml" 50 1613 1618 "input_libvirtxml.ml" 50 1613 1628
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirtxml.ml" 51 1634 1638 "input_libvirtxml.ml" 51 1634 1644
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"input_libvirtxml.ml" 51 1634 1645 "input_libvirtxml.ml" 51 1634 1668
+type(
+  (string -> unit, out_channel, unit) format
+)
+"input_libvirtxml.ml" 51 1634 1669 "input_libvirtxml.ml" 51 1634 1672
+type(
+  string
+)
+ident(
+  int_ref xml "input_libvirtxml.ml" 49 1579 1607 "input_libvirtxml.ml" 49 1579 1610
+)
+"input_libvirtxml.ml" 51 1634 1638 "input_libvirtxml.ml" 51 1634 1672
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 50 1613 1615 "input_libvirtxml.ml" 51 1634 1672
+type(
+  unit
+)
+"input_libvirtxml.ml" 53 1675 1681 "input_libvirtxml.ml" 53 1675 1684
+type(
+  Xml.doc
+)
+"input_libvirtxml.ml" 53 1675 1687 "input_libvirtxml.ml" 53 1675 1703
+type(
+  string -> Xml.doc
+)
+ident(
+  ext_ref Xml.parse_memory
+)
+"input_libvirtxml.ml" 53 1675 1704 "input_libvirtxml.ml" 53 1675 1707
+type(
+  string
+)
+ident(
+  int_ref xml "input_libvirtxml.ml" 49 1579 1607 "input_libvirtxml.ml" 49 1579 1610
+)
+"input_libvirtxml.ml" 53 1675 1687 "input_libvirtxml.ml" 53 1675 1707
+call(
+  stack
+)
+type(
+  Xml.doc
+)
+"input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+type(
+  Xml.xpathctx
+)
+"input_libvirtxml.ml" 54 1711 1728 "input_libvirtxml.ml" 54 1711 1749
+type(
+  Xml.doc -> Xml.xpathctx
+)
+ident(
+  ext_ref Xml.xpath_new_context
+)
+"input_libvirtxml.ml" 54 1711 1750 "input_libvirtxml.ml" 54 1711 1753
+type(
+  Xml.doc
+)
+ident(
+  int_ref doc "input_libvirtxml.ml" 53 1675 1681 "input_libvirtxml.ml" 53 1675 1684
+)
+"input_libvirtxml.ml" 54 1711 1728 "input_libvirtxml.ml" 54 1711 1753
+call(
+  stack
+)
+type(
+  Xml.xpathctx
+)
+"input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+type(
+  string -> string option
+)
+"input_libvirtxml.ml" 55 1757 1778 "input_libvirtxml.ml" 55 1757 1790
+type(
+  Xml.xpathctx -> string -> string option
+)
+ident(
+  ext_ref Utils.xpath_string
+)
+"input_libvirtxml.ml" 55 1757 1791 "input_libvirtxml.ml" 55 1757 1799
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 55 1757 1778 "input_libvirtxml.ml" 55 1757 1799
+call(
+  stack
+)
+type(
+  string -> string option
+)
+"input_libvirtxml.ml" 56 1800 1806 "input_libvirtxml.ml" 56 1800 1815
+type(
+  string -> int option
+)
+"input_libvirtxml.ml" 56 1800 1818 "input_libvirtxml.ml" 56 1800 1827
+type(
+  Xml.xpathctx -> string -> int option
+)
+ident(
+  ext_ref Utils.xpath_int
+)
+"input_libvirtxml.ml" 56 1800 1828 "input_libvirtxml.ml" 56 1800 1836
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 56 1800 1818 "input_libvirtxml.ml" 56 1800 1836
+call(
+  stack
+)
+type(
+  string -> int option
+)
+"input_libvirtxml.ml" 57 1837 1843 "input_libvirtxml.ml" 57 1837 1860
+type(
+  string -> int -> int
+)
+"input_libvirtxml.ml" 57 1837 1863 "input_libvirtxml.ml" 57 1837 1880
+type(
+  Xml.xpathctx -> string -> int -> int
+)
+ident(
+  ext_ref Utils.xpath_int_default
+)
+"input_libvirtxml.ml" 57 1837 1881 "input_libvirtxml.ml" 57 1837 1889
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 57 1837 1863 "input_libvirtxml.ml" 57 1837 1889
+call(
+  stack
+)
+type(
+  string -> int -> int
+)
+"input_libvirtxml.ml" 59 1894 1900 "input_libvirtxml.ml" 59 1894 1910
+type(
+  Types.source_hypervisor
+)
+"input_libvirtxml.ml" 60 1913 1923 "input_libvirtxml.ml" 60 1913 1935
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 60 1913 1936 "input_libvirtxml.ml" 60 1913 1951
+type(
+  string
+)
+"input_libvirtxml.ml" 60 1913 1923 "input_libvirtxml.ml" 60 1913 1951
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 61 1957 1963 "input_libvirtxml.ml" 61 1957 1967
+type(
+  string option
+)
+"input_libvirtxml.ml" 61 1957 1975 "input_libvirtxml.ml" 61 1957 1977
+type(
+  string
+)
+"input_libvirtxml.ml" 61 1957 1970 "input_libvirtxml.ml" 61 1957 1977
+type(
+  string option
+)
+"input_libvirtxml.ml" 61 1957 1963 "input_libvirtxml.ml" 61 1957 1977
+type(
+  string option
+)
+"input_libvirtxml.ml" 62 1981 1988 "input_libvirtxml.ml" 62 1981 1993
+type(
+  ?exit_code:int ->
+  (Types.source_hypervisor, unit, string, Types.source_hypervisor) format4 ->
+  Types.source_hypervisor
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_libvirtxml.ml" 62 1981 1995 "input_libvirtxml.ml" 62 1981 1997
+type(
+  (Types.source_hypervisor, unit, string, string, string,
+   Types.source_hypervisor)
+  format6 ->
+  (Types.source_hypervisor, unit, string, Types.source_hypervisor) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 62 1981 1997 "input_libvirtxml.ml" 62 1981 2067
+type(
+  (Types.source_hypervisor, unit, string, string, string,
+   Types.source_hypervisor)
+  format6
+)
+"input_libvirtxml.ml" 62 1981 1994 "input_libvirtxml.ml" 62 1981 2068
+type(
+  (Types.source_hypervisor, unit, string, Types.source_hypervisor) format4
+)
+"input_libvirtxml.ml" 62 1981 1988 "input_libvirtxml.ml" 62 1981 2068
+call(
+  stack
+)
+type(
+  Types.source_hypervisor
+)
+"input_libvirtxml.ml" 63 2069 2080 "input_libvirtxml.ml" 63 2069 2081
+type(
+  string
+)
+ident(
+  def s "input_libvirtxml.ml" 63 2069 2085 "input_libvirtxml.ml" 63 2069 2114
+)
+"input_libvirtxml.ml" 63 2069 2075 "input_libvirtxml.ml" 63 2069 2081
+type(
+  string option
+)
+"input_libvirtxml.ml" 63 2069 2085 "input_libvirtxml.ml" 63 2069 2112
+type(
+  string -> Types.source_hypervisor
+)
+ident(
+  ext_ref Types.source_hypervisor_of_string
+)
+"input_libvirtxml.ml" 63 2069 2113 "input_libvirtxml.ml" 63 2069 2114
+type(
+  string
+)
+ident(
+  int_ref s "input_libvirtxml.ml" 63 2069 2080 "input_libvirtxml.ml" 63 2069 2081
+)
+"input_libvirtxml.ml" 63 2069 2085 "input_libvirtxml.ml" 63 2069 2114
+call(
+  stack
+)
+type(
+  Types.source_hypervisor
+)
+"input_libvirtxml.ml" 60 1913 1917 "input_libvirtxml.ml" 63 2069 2114
+type(
+  Types.source_hypervisor
+)
+"input_libvirtxml.ml" 64 2118 2124 "input_libvirtxml.ml" 64 2118 2128
+type(
+  string
+)
+"input_libvirtxml.ml" 65 2131 2141 "input_libvirtxml.ml" 65 2131 2153
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 65 2131 2154 "input_libvirtxml.ml" 65 2131 2175
+type(
+  string
+)
+"input_libvirtxml.ml" 65 2131 2141 "input_libvirtxml.ml" 65 2131 2175
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 66 2181 2187 "input_libvirtxml.ml" 66 2181 2191
+type(
+  string option
+)
+"input_libvirtxml.ml" 66 2181 2199 "input_libvirtxml.ml" 66 2181 2201
+type(
+  string
+)
+"input_libvirtxml.ml" 66 2181 2194 "input_libvirtxml.ml" 66 2181 2201
+type(
+  string option
+)
+"input_libvirtxml.ml" 66 2181 2187 "input_libvirtxml.ml" 66 2181 2201
+type(
+  string option
+)
+"input_libvirtxml.ml" 67 2205 2212 "input_libvirtxml.ml" 67 2205 2217
+type(
+  ?exit_code:int -> (string, unit, string, string) format4 -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_libvirtxml.ml" 67 2205 2219 "input_libvirtxml.ml" 67 2205 2221
+type(
+  (string, unit, string, string, string, string) format6 ->
+  (string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 67 2205 2221 "input_libvirtxml.ml" 67 2205 2278
+type(
+  (string, unit, string, string, string, string) format6
+)
+"input_libvirtxml.ml" 67 2205 2218 "input_libvirtxml.ml" 67 2205 2279
+type(
+  (string, unit, string, string) format4
+)
+"input_libvirtxml.ml" 67 2205 2212 "input_libvirtxml.ml" 67 2205 2279
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 68 2280 2291 "input_libvirtxml.ml" 68 2280 2292
+type(
+  string
+)
+ident(
+  def s "input_libvirtxml.ml" 68 2280 2296 "input_libvirtxml.ml" 68 2280 2297
+)
+"input_libvirtxml.ml" 68 2280 2286 "input_libvirtxml.ml" 68 2280 2292
+type(
+  string option
+)
+"input_libvirtxml.ml" 68 2280 2296 "input_libvirtxml.ml" 68 2280 2297
+type(
+  string
+)
+ident(
+  int_ref s "input_libvirtxml.ml" 68 2280 2291 "input_libvirtxml.ml" 68 2280 2292
+)
+"input_libvirtxml.ml" 65 2131 2135 "input_libvirtxml.ml" 68 2280 2297
+type(
+  string
+)
+"input_libvirtxml.ml" 69 2301 2307 "input_libvirtxml.ml" 69 2301 2313
+type(
+  int
+)
+"input_libvirtxml.ml" 69 2301 2316 "input_libvirtxml.ml" 69 2301 2333
+type(
+  string -> int -> int
+)
+ident(
+  int_ref xpath_int_default "input_libvirtxml.ml" 57 1837 1843 "input_libvirtxml.ml" 57 1837 1860
+)
+"input_libvirtxml.ml" 69 2301 2334 "input_libvirtxml.ml" 69 2301 2357
+type(
+  string
+)
+"input_libvirtxml.ml" 69 2301 2359 "input_libvirtxml.ml" 69 2301 2363
+type(
+  int
+)
+"input_libvirtxml.ml" 69 2301 2364 "input_libvirtxml.ml" 69 2301 2365
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"input_libvirtxml.ml" 69 2301 2366 "input_libvirtxml.ml" 69 2301 2370
+type(
+  int
+)
+"input_libvirtxml.ml" 69 2301 2358 "input_libvirtxml.ml" 69 2301 2371
+type(
+  int
+)
+"input_libvirtxml.ml" 69 2301 2316 "input_libvirtxml.ml" 69 2301 2371
+call(
+  stack
+)
+type(
+  int
+)
+"input_libvirtxml.ml" 70 2375 2381 "input_libvirtxml.ml" 70 2375 2387
+type(
+  int64
+)
+"input_libvirtxml.ml" 70 2375 2390 "input_libvirtxml.ml" 70 2375 2402
+type(
+  int -> int64
+)
+ident(
+  ext_ref Int64.of_int
+)
+"input_libvirtxml.ml" 70 2375 2403 "input_libvirtxml.ml" 70 2375 2409
+type(
+  int
+)
+ident(
+  int_ref memory "input_libvirtxml.ml" 69 2301 2307 "input_libvirtxml.ml" 69 2301 2313
+)
+"input_libvirtxml.ml" 70 2375 2390 "input_libvirtxml.ml" 70 2375 2409
+type(
+  int64
+)
+"input_libvirtxml.ml" 70 2375 2410 "input_libvirtxml.ml" 70 2375 2412
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( *^ )
+)
+"input_libvirtxml.ml" 70 2375 2413 "input_libvirtxml.ml" 70 2375 2418
+type(
+  int64
+)
+"input_libvirtxml.ml" 70 2375 2390 "input_libvirtxml.ml" 70 2375 2418
+call(
+  stack
+)
+type(
+  int64
+)
+"input_libvirtxml.ml" 71 2422 2428 "input_libvirtxml.ml" 71 2422 2432
+type(
+  int
+)
+"input_libvirtxml.ml" 71 2422 2435 "input_libvirtxml.ml" 71 2422 2452
+type(
+  string -> int -> int
+)
+ident(
+  int_ref xpath_int_default "input_libvirtxml.ml" 57 1837 1843 "input_libvirtxml.ml" 57 1837 1860
+)
+"input_libvirtxml.ml" 71 2422 2453 "input_libvirtxml.ml" 71 2422 2474
+type(
+  string
+)
+"input_libvirtxml.ml" 71 2422 2475 "input_libvirtxml.ml" 71 2422 2476
+type(
+  int
+)
+"input_libvirtxml.ml" 71 2422 2435 "input_libvirtxml.ml" 71 2422 2476
+call(
+  stack
+)
+type(
+  int
+)
+"input_libvirtxml.ml" 73 2481 2487 "input_libvirtxml.ml" 73 2481 2495
+type(
+  string list
+)
+"input_libvirtxml.ml" 74 2498 2506 "input_libvirtxml.ml" 74 2498 2514
+type(
+  string list ref
+)
+"input_libvirtxml.ml" 74 2498 2517 "input_libvirtxml.ml" 74 2498 2520
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"input_libvirtxml.ml" 74 2498 2521 "input_libvirtxml.ml" 74 2498 2523
+type(
+  string list
+)
+"input_libvirtxml.ml" 74 2498 2517 "input_libvirtxml.ml" 74 2498 2523
+type(
+  string list ref
+)
+"input_libvirtxml.ml" 75 2527 2535 "input_libvirtxml.ml" 75 2527 2538
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 75 2527 2541 "input_libvirtxml.ml" 75 2527 2566
+type(
+  Xml.xpathctx -> string -> Xml.xpathobj
+)
+ident(
+  ext_ref Xml.xpath_eval_expression
+)
+"input_libvirtxml.ml" 75 2527 2567 "input_libvirtxml.ml" 75 2527 2575
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 75 2527 2576 "input_libvirtxml.ml" 75 2527 2596
+type(
+  string
+)
+"input_libvirtxml.ml" 75 2527 2541 "input_libvirtxml.ml" 75 2527 2596
+call(
+  stack
+)
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 76 2600 2608 "input_libvirtxml.ml" 76 2600 2616
+type(
+  int
+)
+"input_libvirtxml.ml" 76 2600 2619 "input_libvirtxml.ml" 76 2600 2640
+type(
+  Xml.xpathobj -> int
+)
+ident(
+  ext_ref Xml.xpathobj_nr_nodes
+)
+"input_libvirtxml.ml" 76 2600 2641 "input_libvirtxml.ml" 76 2600 2644
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 75 2527 2535 "input_libvirtxml.ml" 75 2527 2538
+)
+"input_libvirtxml.ml" 76 2600 2619 "input_libvirtxml.ml" 76 2600 2644
+call(
+  stack
+)
+type(
+  int
+)
+"input_libvirtxml.ml" 77 2648 2660 "input_libvirtxml.ml" 77 2648 2661
+type(
+  int
+)
+"input_libvirtxml.ml" 77 2648 2665 "input_libvirtxml.ml" 77 2648 2673
+type(
+  int
+)
+ident(
+  int_ref nr_nodes "input_libvirtxml.ml" 76 2600 2608 "input_libvirtxml.ml" 76 2600 2616
+)
+"input_libvirtxml.ml" 77 2648 2673 "input_libvirtxml.ml" 77 2648 2674
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"input_libvirtxml.ml" 77 2648 2674 "input_libvirtxml.ml" 77 2648 2675
+type(
+  int
+)
+"input_libvirtxml.ml" 77 2648 2665 "input_libvirtxml.ml" 77 2648 2675
+type(
+  int
+)
+"input_libvirtxml.ml" 78 2679 2689 "input_libvirtxml.ml" 78 2679 2693
+type(
+  Xml.node
+)
+ident(
+  def node "input_libvirtxml.ml" 79 2723 2729 "input_libvirtxml.ml" 79 2723 2772
+)
+"input_libvirtxml.ml" 78 2679 2696 "input_libvirtxml.ml" 78 2679 2713
+type(
+  Xml.xpathobj -> int -> Xml.node
+)
+ident(
+  ext_ref Xml.xpathobj_node
+)
+"input_libvirtxml.ml" 78 2679 2714 "input_libvirtxml.ml" 78 2679 2717
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 75 2527 2535 "input_libvirtxml.ml" 75 2527 2538
+)
+"input_libvirtxml.ml" 78 2679 2718 "input_libvirtxml.ml" 78 2679 2719
+type(
+  int
+)
+"input_libvirtxml.ml" 78 2679 2696 "input_libvirtxml.ml" 78 2679 2719
+call(
+  stack
+)
+type(
+  Xml.node
+)
+"input_libvirtxml.ml" 79 2723 2729 "input_libvirtxml.ml" 79 2723 2737
+type(
+  string list ref
+)
+ident(
+  int_ref features "input_libvirtxml.ml" 74 2498 2506 "input_libvirtxml.ml" 74 2498 2514
+)
+"input_libvirtxml.ml" 79 2723 2738 "input_libvirtxml.ml" 79 2723 2740
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"input_libvirtxml.ml" 79 2723 2741 "input_libvirtxml.ml" 79 2723 2754
+type(
+  Xml.node -> string
+)
+ident(
+  ext_ref Xml.node_name
+)
+"input_libvirtxml.ml" 79 2723 2755 "input_libvirtxml.ml" 79 2723 2759
+type(
+  Xml.node
+)
+ident(
+  int_ref node "input_libvirtxml.ml" 78 2679 2689 "input_libvirtxml.ml" 78 2679 2693
+)
+"input_libvirtxml.ml" 79 2723 2741 "input_libvirtxml.ml" 79 2723 2759
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 79 2723 2763 "input_libvirtxml.ml" 79 2723 2764
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirtxml.ml" 79 2723 2764 "input_libvirtxml.ml" 79 2723 2772
+type(
+  string list ref
+)
+ident(
+  int_ref features "input_libvirtxml.ml" 74 2498 2506 "input_libvirtxml.ml" 74 2498 2514
+)
+"input_libvirtxml.ml" 79 2723 2763 "input_libvirtxml.ml" 79 2723 2772
+type(
+  string list
+)
+"input_libvirtxml.ml" 79 2723 2741 "input_libvirtxml.ml" 79 2723 2772
+type(
+  string list
+)
+"input_libvirtxml.ml" 79 2723 2729 "input_libvirtxml.ml" 79 2723 2772
+type(
+  unit
+)
+"input_libvirtxml.ml" 78 2679 2685 "input_libvirtxml.ml" 79 2723 2772
+type(
+  unit
+)
+"input_libvirtxml.ml" 77 2648 2652 "input_libvirtxml.ml" 80 2773 2781
+type(
+  unit
+)
+"input_libvirtxml.ml" 81 2783 2787 "input_libvirtxml.ml" 81 2783 2788
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirtxml.ml" 81 2783 2788 "input_libvirtxml.ml" 81 2783 2796
+type(
+  string list ref
+)
+ident(
+  int_ref features "input_libvirtxml.ml" 74 2498 2506 "input_libvirtxml.ml" 74 2498 2514
+)
+"input_libvirtxml.ml" 81 2783 2787 "input_libvirtxml.ml" 81 2783 2796
+type(
+  string list
+)
+"input_libvirtxml.ml" 77 2648 2652 "input_libvirtxml.ml" 81 2783 2796
+type(
+  string list
+)
+"input_libvirtxml.ml" 76 2600 2604 "input_libvirtxml.ml" 81 2783 2796
+type(
+  string list
+)
+"input_libvirtxml.ml" 75 2527 2531 "input_libvirtxml.ml" 81 2783 2796
+type(
+  string list
+)
+"input_libvirtxml.ml" 74 2498 2502 "input_libvirtxml.ml" 81 2783 2796
+type(
+  string list
+)
+"input_libvirtxml.ml" 83 2801 2807 "input_libvirtxml.ml" 83 2801 2814
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 84 2817 2825 "input_libvirtxml.ml" 84 2817 2828
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 84 2817 2831 "input_libvirtxml.ml" 84 2817 2856
+type(
+  Xml.xpathctx -> string -> Xml.xpathobj
+)
+ident(
+  ext_ref Xml.xpath_eval_expression
+)
+"input_libvirtxml.ml" 84 2817 2857 "input_libvirtxml.ml" 84 2817 2865
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 84 2817 2866 "input_libvirtxml.ml" 84 2817 2892
+type(
+  string
+)
+"input_libvirtxml.ml" 84 2817 2831 "input_libvirtxml.ml" 84 2817 2892
+call(
+  stack
+)
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 85 2896 2904 "input_libvirtxml.ml" 85 2896 2912
+type(
+  int
+)
+"input_libvirtxml.ml" 85 2896 2915 "input_libvirtxml.ml" 85 2896 2936
+type(
+  Xml.xpathobj -> int
+)
+ident(
+  ext_ref Xml.xpathobj_nr_nodes
+)
+"input_libvirtxml.ml" 85 2896 2937 "input_libvirtxml.ml" 85 2896 2940
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 84 2817 2825 "input_libvirtxml.ml" 84 2817 2828
+)
+"input_libvirtxml.ml" 85 2896 2915 "input_libvirtxml.ml" 85 2896 2940
+call(
+  stack
+)
+type(
+  int
+)
+"input_libvirtxml.ml" 86 2944 2951 "input_libvirtxml.ml" 86 2944 2959
+type(
+  int
+)
+ident(
+  int_ref nr_nodes "input_libvirtxml.ml" 85 2896 2904 "input_libvirtxml.ml" 85 2896 2912
+)
+"input_libvirtxml.ml" 86 2944 2960 "input_libvirtxml.ml" 86 2944 2961
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"input_libvirtxml.ml" 86 2944 2962 "input_libvirtxml.ml" 86 2944 2963
+type(
+  int
+)
+"input_libvirtxml.ml" 86 2944 2951 "input_libvirtxml.ml" 86 2944 2963
+type(
+  bool
+)
+"input_libvirtxml.ml" 86 2944 2969 "input_libvirtxml.ml" 86 2944 2973
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 89 3051 3061 "input_libvirtxml.ml" 89 3051 3065
+type(
+  Xml.node
+)
+"input_libvirtxml.ml" 89 3051 3068 "input_libvirtxml.ml" 89 3051 3085
+type(
+  Xml.xpathobj -> int -> Xml.node
+)
+ident(
+  ext_ref Xml.xpathobj_node
+)
+"input_libvirtxml.ml" 89 3051 3086 "input_libvirtxml.ml" 89 3051 3089
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 84 2817 2825 "input_libvirtxml.ml" 84 2817 2828
+)
+"input_libvirtxml.ml" 89 3051 3090 "input_libvirtxml.ml" 89 3051 3091
+type(
+  int
+)
+"input_libvirtxml.ml" 89 3051 3068 "input_libvirtxml.ml" 89 3051 3091
+call(
+  stack
+)
+type(
+  Xml.node
+)
+"input_libvirtxml.ml" 90 3095 3101 "input_libvirtxml.ml" 90 3095 3133
+type(
+  Xml.xpathctx -> Xml.node -> unit
+)
+ident(
+  ext_ref Xml.xpathctx_set_current_context
+)
+"input_libvirtxml.ml" 90 3095 3134 "input_libvirtxml.ml" 90 3095 3142
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 90 3095 3143 "input_libvirtxml.ml" 90 3095 3147
+type(
+  Xml.node
+)
+ident(
+  int_ref node "input_libvirtxml.ml" 89 3051 3061 "input_libvirtxml.ml" 89 3051 3065
+)
+"input_libvirtxml.ml" 90 3095 3101 "input_libvirtxml.ml" 90 3095 3147
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 91 3149 3159 "input_libvirtxml.ml" 91 3149 3165
+type(
+  string option
+)
+"input_libvirtxml.ml" 91 3149 3168 "input_libvirtxml.ml" 91 3149 3180
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 91 3149 3181 "input_libvirtxml.ml" 91 3149 3190
+type(
+  string
+)
+"input_libvirtxml.ml" 91 3149 3168 "input_libvirtxml.ml" 91 3149 3190
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 92 3194 3204 "input_libvirtxml.ml" 92 3194 3212
+type(
+  string option
+)
+"input_libvirtxml.ml" 92 3194 3215 "input_libvirtxml.ml" 92 3194 3227
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 92 3194 3228 "input_libvirtxml.ml" 92 3194 3237
+type(
+  string
+)
+"input_libvirtxml.ml" 92 3194 3215 "input_libvirtxml.ml" 92 3194 3237
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 93 3241 3251 "input_libvirtxml.ml" 93 3241 3257
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 94 3260 3272 "input_libvirtxml.ml" 94 3260 3275
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 94 3260 3278 "input_libvirtxml.ml" 94 3260 3303
+type(
+  Xml.xpathctx -> string -> Xml.xpathobj
+)
+ident(
+  ext_ref Xml.xpath_eval_expression
+)
+"input_libvirtxml.ml" 94 3260 3304 "input_libvirtxml.ml" 94 3260 3312
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 94 3260 3313 "input_libvirtxml.ml" 94 3260 3321
+type(
+  string
+)
+"input_libvirtxml.ml" 94 3260 3278 "input_libvirtxml.ml" 94 3260 3321
+call(
+  stack
+)
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 95 3325 3337 "input_libvirtxml.ml" 95 3325 3345
+type(
+  int
+)
+"input_libvirtxml.ml" 95 3325 3348 "input_libvirtxml.ml" 95 3325 3369
+type(
+  Xml.xpathobj -> int
+)
+ident(
+  ext_ref Xml.xpathobj_nr_nodes
+)
+"input_libvirtxml.ml" 95 3325 3370 "input_libvirtxml.ml" 95 3325 3373
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 94 3260 3272 "input_libvirtxml.ml" 94 3260 3275
+)
+"input_libvirtxml.ml" 95 3325 3348 "input_libvirtxml.ml" 95 3325 3373
+call(
+  stack
+)
+type(
+  int
+)
+"input_libvirtxml.ml" 96 3377 3388 "input_libvirtxml.ml" 96 3377 3396
+type(
+  int
+)
+ident(
+  int_ref nr_nodes "input_libvirtxml.ml" 95 3325 3337 "input_libvirtxml.ml" 95 3325 3345
+)
+"input_libvirtxml.ml" 96 3377 3397 "input_libvirtxml.ml" 96 3377 3398
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"input_libvirtxml.ml" 96 3377 3399 "input_libvirtxml.ml" 96 3377 3400
+type(
+  int
+)
+"input_libvirtxml.ml" 96 3377 3388 "input_libvirtxml.ml" 96 3377 3400
+type(
+  bool
+)
+"input_libvirtxml.ml" 97 3408 3424 "input_libvirtxml.ml" 97 3408 3436
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 97 3408 3437 "input_libvirtxml.ml" 97 3408 3446
+type(
+  string
+)
+"input_libvirtxml.ml" 97 3408 3424 "input_libvirtxml.ml" 97 3408 3446
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 98 3452 3464 "input_libvirtxml.ml" 98 3452 3468
+type(
+  string option
+)
+"input_libvirtxml.ml" 98 3452 3472 "input_libvirtxml.ml" 98 3452 3477
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 98 3452 3485 "input_libvirtxml.ml" 98 3452 3486
+type(
+  string
+)
+ident(
+  def a "input_libvirtxml.ml" 98 3452 3490 "input_libvirtxml.ml" 98 3452 3500
+)
+"input_libvirtxml.ml" 98 3452 3480 "input_libvirtxml.ml" 98 3452 3486
+type(
+  string option
+)
+"input_libvirtxml.ml" 98 3452 3499 "input_libvirtxml.ml" 98 3452 3500
+type(
+  string
+)
+ident(
+  int_ref a "input_libvirtxml.ml" 98 3452 3485 "input_libvirtxml.ml" 98 3452 3486
+)
+"input_libvirtxml.ml" 98 3452 3490 "input_libvirtxml.ml" 98 3452 3500
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 96 3377 3406 "input_libvirtxml.ml" 99 3501 3510
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 101 3577 3593 "input_libvirtxml.ml" 101 3577 3605
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 101 3577 3606 "input_libvirtxml.ml" 101 3577 3623
+type(
+  string
+)
+"input_libvirtxml.ml" 101 3577 3593 "input_libvirtxml.ml" 101 3577 3623
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 102 3629 3641 "input_libvirtxml.ml" 102 3629 3645
+type(
+  string option
+)
+"input_libvirtxml.ml" 102 3629 3649 "input_libvirtxml.ml" 102 3629 3654
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 103 3655 3672 "input_libvirtxml.ml" 103 3655 3681
+type(
+  string
+)
+"input_libvirtxml.ml" 103 3655 3667 "input_libvirtxml.ml" 103 3655 3681
+type(
+  string option
+)
+"input_libvirtxml.ml" 104 3685 3704 "input_libvirtxml.ml" 104 3685 3716
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 104 3685 3717 "input_libvirtxml.ml" 104 3685 3737
+type(
+  string
+)
+"input_libvirtxml.ml" 104 3685 3704 "input_libvirtxml.ml" 104 3685 3737
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 105 3743 3757 "input_libvirtxml.ml" 105 3743 3761
+type(
+  string option
+)
+"input_libvirtxml.ml" 105 3743 3765 "input_libvirtxml.ml" 105 3743 3770
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 106 3771 3790 "input_libvirtxml.ml" 106 3771 3791
+type(
+  string
+)
+ident(
+  def a "input_libvirtxml.ml" 106 3771 3795 "input_libvirtxml.ml" 106 3771 3805
+)
+"input_libvirtxml.ml" 106 3771 3785 "input_libvirtxml.ml" 106 3771 3791
+type(
+  string option
+)
+"input_libvirtxml.ml" 106 3771 3804 "input_libvirtxml.ml" 106 3771 3805
+type(
+  string
+)
+ident(
+  int_ref a "input_libvirtxml.ml" 106 3771 3790 "input_libvirtxml.ml" 106 3771 3791
+)
+"input_libvirtxml.ml" 106 3771 3795 "input_libvirtxml.ml" 106 3771 3805
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 104 3685 3697 "input_libvirtxml.ml" 107 3806 3819
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 108 3820 3837 "input_libvirtxml.ml" 108 3820 3846
+type(
+  string
+)
+"input_libvirtxml.ml" 108 3820 3832 "input_libvirtxml.ml" 108 3820 3846
+type(
+  string option
+)
+"input_libvirtxml.ml" 109 3850 3869 "input_libvirtxml.ml" 109 3850 3881
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 109 3850 3882 "input_libvirtxml.ml" 109 3850 3902
+type(
+  string
+)
+"input_libvirtxml.ml" 109 3850 3869 "input_libvirtxml.ml" 109 3850 3902
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 110 3908 3922 "input_libvirtxml.ml" 110 3908 3926
+type(
+  string option
+)
+"input_libvirtxml.ml" 110 3908 3930 "input_libvirtxml.ml" 110 3908 3935
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 111 3936 3955 "input_libvirtxml.ml" 111 3936 3956
+type(
+  string
+)
+ident(
+  def n "input_libvirtxml.ml" 111 3936 3960 "input_libvirtxml.ml" 111 3936 3970
+)
+"input_libvirtxml.ml" 111 3936 3950 "input_libvirtxml.ml" 111 3936 3956
+type(
+  string option
+)
+"input_libvirtxml.ml" 111 3936 3969 "input_libvirtxml.ml" 111 3936 3970
+type(
+  string
+)
+ident(
+  int_ref n "input_libvirtxml.ml" 111 3936 3955 "input_libvirtxml.ml" 111 3936 3956
+)
+"input_libvirtxml.ml" 111 3936 3960 "input_libvirtxml.ml" 111 3936 3970
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 109 3850 3862 "input_libvirtxml.ml" 112 3971 3984
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 113 3985 4002 "input_libvirtxml.ml" 113 3985 4003
+type(
+  string
+)
+ident(
+  def t "input_libvirtxml.ml" 114 4007 4019 "input_libvirtxml.ml" 115 4092 4109
+)
+"input_libvirtxml.ml" 113 3985 3997 "input_libvirtxml.ml" 113 3985 4003
+type(
+  string option
+)
+"input_libvirtxml.ml" 114 4007 4019 "input_libvirtxml.ml" 114 4007 4026
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirtxml.ml" 114 4007 4028 "input_libvirtxml.ml" 114 4007 4030
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 114 4007 4030 "input_libvirtxml.ml" 114 4007 4087
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 114 4007 4027 "input_libvirtxml.ml" 114 4007 4088
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 114 4007 4089 "input_libvirtxml.ml" 114 4007 4090
+type(
+  string
+)
+ident(
+  int_ref t "input_libvirtxml.ml" 113 3985 4002 "input_libvirtxml.ml" 113 3985 4003
+)
+"input_libvirtxml.ml" 114 4007 4019 "input_libvirtxml.ml" 114 4007 4090
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 115 4092 4104 "input_libvirtxml.ml" 115 4092 4109
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 114 4007 4019 "input_libvirtxml.ml" 115 4092 4109
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 99 3501 3516 "input_libvirtxml.ml" 116 4110 4119
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 96 3377 3385 "input_libvirtxml.ml" 116 4110 4119
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 95 3325 3333 "input_libvirtxml.ml" 116 4110 4119
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 94 3260 3268 "input_libvirtxml.ml" 116 4110 4119
+type(
+  Types.s_display_listen
+)
+"input_libvirtxml.ml" 117 4123 4133 "input_libvirtxml.ml" 117 4123 4137
+type(
+  int option
+)
+"input_libvirtxml.ml" 118 4140 4154 "input_libvirtxml.ml" 118 4140 4166
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 118 4140 4167 "input_libvirtxml.ml" 118 4140 4178
+type(
+  string
+)
+"input_libvirtxml.ml" 118 4140 4154 "input_libvirtxml.ml" 118 4140 4178
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 119 4184 4199 "input_libvirtxml.ml" 119 4184 4203
+type(
+  string
+)
+"input_libvirtxml.ml" 119 4184 4194 "input_libvirtxml.ml" 119 4184 4203
+type(
+  string option
+)
+"input_libvirtxml.ml" 120 4207 4224 "input_libvirtxml.ml" 120 4207 4233
+type(
+  string -> int option
+)
+ident(
+  int_ref xpath_int "input_libvirtxml.ml" 56 1800 1806 "input_libvirtxml.ml" 56 1800 1815
+)
+"input_libvirtxml.ml" 120 4207 4234 "input_libvirtxml.ml" 120 4207 4241
+type(
+  string
+)
+"input_libvirtxml.ml" 120 4207 4224 "input_libvirtxml.ml" 120 4207 4241
+call(
+  stack
+)
+type(
+  int option
+)
+"input_libvirtxml.ml" 121 4247 4265 "input_libvirtxml.ml" 121 4247 4269
+type(
+  int
+)
+ident(
+  def port "input_libvirtxml.ml" 121 4247 4270 "input_libvirtxml.ml" 121 4247 4296
+)
+"input_libvirtxml.ml" 121 4247 4260 "input_libvirtxml.ml" 121 4247 4269
+type(
+  int option
+)
+"input_libvirtxml.ml" 121 4247 4275 "input_libvirtxml.ml" 121 4247 4279
+type(
+  int
+)
+ident(
+  int_ref port "input_libvirtxml.ml" 121 4247 4265 "input_libvirtxml.ml" 121 4247 4269
+)
+"input_libvirtxml.ml" 121 4247 4280 "input_libvirtxml.ml" 121 4247 4281
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"input_libvirtxml.ml" 121 4247 4282 "input_libvirtxml.ml" 121 4247 4283
+type(
+  int
+)
+"input_libvirtxml.ml" 121 4247 4275 "input_libvirtxml.ml" 121 4247 4283
+type(
+  bool
+)
+"input_libvirtxml.ml" 121 4247 4292 "input_libvirtxml.ml" 121 4247 4296
+type(
+  int
+)
+ident(
+  int_ref port "input_libvirtxml.ml" 121 4247 4265 "input_libvirtxml.ml" 121 4247 4269
+)
+"input_libvirtxml.ml" 121 4247 4287 "input_libvirtxml.ml" 121 4247 4296
+type(
+  int option
+)
+"input_libvirtxml.ml" 121 4247 4270 "input_libvirtxml.ml" 121 4247 4296
+type(
+  int option
+)
+"input_libvirtxml.ml" 122 4297 4315 "input_libvirtxml.ml" 122 4297 4316
+type(
+  int
+)
+"input_libvirtxml.ml" 122 4297 4310 "input_libvirtxml.ml" 122 4297 4316
+type(
+  int option
+)
+"input_libvirtxml.ml" 122 4297 4319 "input_libvirtxml.ml" 122 4297 4323
+type(
+  int option
+)
+"input_libvirtxml.ml" 122 4297 4310 "input_libvirtxml.ml" 122 4297 4323
+type(
+  int option
+)
+"input_libvirtxml.ml" 122 4297 4327 "input_libvirtxml.ml" 122 4297 4331
+type(
+  int option
+)
+"input_libvirtxml.ml" 120 4207 4217 "input_libvirtxml.ml" 122 4297 4332
+type(
+  int option
+)
+"input_libvirtxml.ml" 123 4333 4343 "input_libvirtxml.ml" 123 4333 4344
+type(
+  string option
+)
+"input_libvirtxml.ml" 123 4333 4348 "input_libvirtxml.ml" 123 4333 4352
+type(
+  int option
+)
+"input_libvirtxml.ml" 118 4140 4148 "input_libvirtxml.ml" 123 4333 4352
+type(
+  int option
+)
+"input_libvirtxml.ml" 124 4356 4368 "input_libvirtxml.ml" 124 4356 4380
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 124 4356 4381 "input_libvirtxml.ml" 124 4356 4388
+type(
+  string
+)
+"input_libvirtxml.ml" 124 4356 4368 "input_libvirtxml.ml" 124 4356 4388
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 125 4394 4402 "input_libvirtxml.ml" 125 4394 4406
+type(
+  string option
+)
+"input_libvirtxml.ml" 125 4394 4410 "input_libvirtxml.ml" 125 4394 4414
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 126 4415 4428 "input_libvirtxml.ml" 126 4415 4433
+type(
+  string
+)
+"input_libvirtxml.ml" 126 4415 4423 "input_libvirtxml.ml" 126 4415 4433
+type(
+  string option
+)
+"input_libvirtxml.ml" 127 4437 4469 "input_libvirtxml.ml" 127 4437 4472
+type(
+  Types.s_display_type
+)
+"input_libvirtxml.ml" 128 4474 4500 "input_libvirtxml.ml" 128 4474 4506
+type(
+  string option
+)
+ident(
+  int_ref keymap "input_libvirtxml.ml" 91 3149 3159 "input_libvirtxml.ml" 91 3149 3165
+)
+"input_libvirtxml.ml" 128 4474 4521 "input_libvirtxml.ml" 128 4474 4529
+type(
+  string option
+)
+ident(
+  int_ref password "input_libvirtxml.ml" 92 3194 3204 "input_libvirtxml.ml" 92 3194 3212
+)
+"input_libvirtxml.ml" 128 4474 4542 "input_libvirtxml.ml" 128 4474 4548
+type(
+  Types.s_display_listen
+)
+ident(
+  int_ref listen "input_libvirtxml.ml" 93 3241 3251 "input_libvirtxml.ml" 93 3241 3257
+)
+"input_libvirtxml.ml" 129 4550 4574 "input_libvirtxml.ml" 129 4550 4578
+type(
+  int option
+)
+ident(
+  int_ref port "input_libvirtxml.ml" 117 4123 4133 "input_libvirtxml.ml" 117 4123 4137
+)
+"input_libvirtxml.ml" 127 4437 4450 "input_libvirtxml.ml" 129 4550 4580
+type(
+  Types.source_display
+)
+"input_libvirtxml.ml" 127 4437 4445 "input_libvirtxml.ml" 129 4550 4580
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 130 4581 4594 "input_libvirtxml.ml" 130 4581 4601
+type(
+  string
+)
+"input_libvirtxml.ml" 130 4581 4589 "input_libvirtxml.ml" 130 4581 4601
+type(
+  string option
+)
+"input_libvirtxml.ml" 131 4605 4637 "input_libvirtxml.ml" 131 4605 4642
+type(
+  Types.s_display_type
+)
+"input_libvirtxml.ml" 132 4644 4670 "input_libvirtxml.ml" 132 4644 4676
+type(
+  string option
+)
+ident(
+  int_ref keymap "input_libvirtxml.ml" 91 3149 3159 "input_libvirtxml.ml" 91 3149 3165
+)
+"input_libvirtxml.ml" 132 4644 4691 "input_libvirtxml.ml" 132 4644 4699
+type(
+  string option
+)
+ident(
+  int_ref password "input_libvirtxml.ml" 92 3194 3204 "input_libvirtxml.ml" 92 3194 3212
+)
+"input_libvirtxml.ml" 132 4644 4712 "input_libvirtxml.ml" 132 4644 4718
+type(
+  Types.s_display_listen
+)
+ident(
+  int_ref listen "input_libvirtxml.ml" 93 3241 3251 "input_libvirtxml.ml" 93 3241 3257
+)
+"input_libvirtxml.ml" 133 4720 4744 "input_libvirtxml.ml" 133 4720 4748
+type(
+  int option
+)
+ident(
+  int_ref port "input_libvirtxml.ml" 117 4123 4133 "input_libvirtxml.ml" 117 4123 4137
+)
+"input_libvirtxml.ml" 131 4605 4618 "input_libvirtxml.ml" 133 4720 4750
+type(
+  Types.source_display
+)
+"input_libvirtxml.ml" 131 4605 4613 "input_libvirtxml.ml" 133 4720 4750
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 134 4751 4765 "input_libvirtxml.ml" 134 4751 4770
+type(
+  string
+)
+"input_libvirtxml.ml" 134 4751 4771 "input_libvirtxml.ml" 134 4751 4780
+type(
+  string
+)
+"input_libvirtxml.ml" 134 4751 4765 "input_libvirtxml.ml" 134 4751 4780
+type(
+  string
+)
+"input_libvirtxml.ml" 134 4751 4764 "input_libvirtxml.ml" 134 4751 4786
+type(
+  string
+)
+ident(
+  def t "input_libvirtxml.ml" 135 4790 4798 "input_libvirtxml.ml" 136 4918 4930
+)
+"input_libvirtxml.ml" 134 4751 4759 "input_libvirtxml.ml" 134 4751 4786
+type(
+  string option
+)
+"input_libvirtxml.ml" 135 4790 4798 "input_libvirtxml.ml" 135 4790 4805
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirtxml.ml" 135 4790 4807 "input_libvirtxml.ml" 135 4790 4809
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 135 4790 4809 "input_libvirtxml.ml" 135 4790 4913
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 135 4790 4806 "input_libvirtxml.ml" 135 4790 4914
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 135 4790 4915 "input_libvirtxml.ml" 135 4790 4916
+type(
+  string
+)
+ident(
+  int_ref t "input_libvirtxml.ml" 134 4751 4764 "input_libvirtxml.ml" 134 4751 4786
+)
+"input_libvirtxml.ml" 135 4790 4798 "input_libvirtxml.ml" 135 4790 4916
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 136 4918 4926 "input_libvirtxml.ml" 136 4918 4930
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 135 4790 4798 "input_libvirtxml.ml" 136 4918 4930
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 137 4931 4944 "input_libvirtxml.ml" 137 4931 4945
+type(
+  string
+)
+ident(
+  def t "input_libvirtxml.ml" 138 4949 4957 "input_libvirtxml.ml" 139 5040 5052
+)
+"input_libvirtxml.ml" 137 4931 4939 "input_libvirtxml.ml" 137 4931 4945
+type(
+  string option
+)
+"input_libvirtxml.ml" 138 4949 4957 "input_libvirtxml.ml" 138 4949 4964
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirtxml.ml" 138 4949 4966 "input_libvirtxml.ml" 138 4949 4968
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 138 4949 4968 "input_libvirtxml.ml" 138 4949 5035
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 138 4949 4965 "input_libvirtxml.ml" 138 4949 5036
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 138 4949 5037 "input_libvirtxml.ml" 138 4949 5038
+type(
+  string
+)
+ident(
+  int_ref t "input_libvirtxml.ml" 137 4931 4944 "input_libvirtxml.ml" 137 4931 4945
+)
+"input_libvirtxml.ml" 138 4949 4957 "input_libvirtxml.ml" 138 4949 5038
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 139 5040 5048 "input_libvirtxml.ml" 139 5040 5052
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 138 4949 4957 "input_libvirtxml.ml" 139 5040 5052
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 124 4356 4362 "input_libvirtxml.ml" 139 5040 5052
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 117 4123 4129 "input_libvirtxml.ml" 139 5040 5052
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 93 3241 3247 "input_libvirtxml.ml" 139 5040 5052
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 92 3194 3200 "input_libvirtxml.ml" 139 5040 5052
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 91 3149 3155 "input_libvirtxml.ml" 139 5040 5052
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 90 3095 3101 "input_libvirtxml.ml" 139 5040 5052
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 87 2974 2983 "input_libvirtxml.ml" 140 5053 5058
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 86 2944 2948 "input_libvirtxml.ml" 140 5053 5058
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 85 2896 2900 "input_libvirtxml.ml" 140 5053 5058
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 84 2817 2821 "input_libvirtxml.ml" 140 5053 5058
+type(
+  Types.source_display option
+)
+"input_libvirtxml.ml" 143 5083 5089 "input_libvirtxml.ml" 143 5083 5094
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 144 5097 5105 "input_libvirtxml.ml" 144 5097 5108
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 144 5097 5111 "input_libvirtxml.ml" 144 5097 5136
+type(
+  Xml.xpathctx -> string -> Xml.xpathobj
+)
+ident(
+  ext_ref Xml.xpath_eval_expression
+)
+"input_libvirtxml.ml" 144 5097 5137 "input_libvirtxml.ml" 144 5097 5145
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 144 5097 5146 "input_libvirtxml.ml" 144 5097 5169
+type(
+  string
+)
+"input_libvirtxml.ml" 144 5097 5111 "input_libvirtxml.ml" 144 5097 5169
+call(
+  stack
+)
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 145 5173 5181 "input_libvirtxml.ml" 145 5173 5189
+type(
+  int
+)
+"input_libvirtxml.ml" 145 5173 5192 "input_libvirtxml.ml" 145 5173 5213
+type(
+  Xml.xpathobj -> int
+)
+ident(
+  ext_ref Xml.xpathobj_nr_nodes
+)
+"input_libvirtxml.ml" 145 5173 5214 "input_libvirtxml.ml" 145 5173 5217
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 144 5097 5105 "input_libvirtxml.ml" 144 5097 5108
+)
+"input_libvirtxml.ml" 145 5173 5192 "input_libvirtxml.ml" 145 5173 5217
+call(
+  stack
+)
+type(
+  int
+)
+"input_libvirtxml.ml" 146 5221 5228 "input_libvirtxml.ml" 146 5221 5236
+type(
+  int
+)
+ident(
+  int_ref nr_nodes "input_libvirtxml.ml" 145 5173 5181 "input_libvirtxml.ml" 145 5173 5189
+)
+"input_libvirtxml.ml" 146 5221 5237 "input_libvirtxml.ml" 146 5221 5238
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"input_libvirtxml.ml" 146 5221 5239 "input_libvirtxml.ml" 146 5221 5240
+type(
+  int
+)
+"input_libvirtxml.ml" 146 5221 5228 "input_libvirtxml.ml" 146 5221 5240
+type(
+  bool
+)
+"input_libvirtxml.ml" 146 5221 5246 "input_libvirtxml.ml" 146 5221 5250
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 149 5325 5335 "input_libvirtxml.ml" 149 5325 5339
+type(
+  Xml.node
+)
+"input_libvirtxml.ml" 149 5325 5342 "input_libvirtxml.ml" 149 5325 5359
+type(
+  Xml.xpathobj -> int -> Xml.node
+)
+ident(
+  ext_ref Xml.xpathobj_node
+)
+"input_libvirtxml.ml" 149 5325 5360 "input_libvirtxml.ml" 149 5325 5363
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 144 5097 5105 "input_libvirtxml.ml" 144 5097 5108
+)
+"input_libvirtxml.ml" 149 5325 5364 "input_libvirtxml.ml" 149 5325 5365
+type(
+  int
+)
+"input_libvirtxml.ml" 149 5325 5342 "input_libvirtxml.ml" 149 5325 5365
+call(
+  stack
+)
+type(
+  Xml.node
+)
+"input_libvirtxml.ml" 151 5370 5376 "input_libvirtxml.ml" 151 5370 5408
+type(
+  Xml.xpathctx -> Xml.node -> unit
+)
+ident(
+  ext_ref Xml.xpathctx_set_current_context
+)
+"input_libvirtxml.ml" 151 5370 5409 "input_libvirtxml.ml" 151 5370 5417
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 151 5370 5418 "input_libvirtxml.ml" 151 5370 5422
+type(
+  Xml.node
+)
+ident(
+  int_ref node "input_libvirtxml.ml" 149 5325 5335 "input_libvirtxml.ml" 149 5325 5339
+)
+"input_libvirtxml.ml" 151 5370 5376 "input_libvirtxml.ml" 151 5370 5422
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 152 5424 5436 "input_libvirtxml.ml" 152 5424 5448
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 152 5424 5449 "input_libvirtxml.ml" 152 5424 5457
+type(
+  string
+)
+"input_libvirtxml.ml" 152 5424 5436 "input_libvirtxml.ml" 152 5424 5457
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 153 5463 5471 "input_libvirtxml.ml" 153 5463 5475
+type(
+  string option
+)
+"input_libvirtxml.ml" 153 5463 5479 "input_libvirtxml.ml" 153 5463 5483
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 154 5484 5497 "input_libvirtxml.ml" 154 5484 5503
+type(
+  string
+)
+"input_libvirtxml.ml" 154 5484 5492 "input_libvirtxml.ml" 154 5484 5503
+type(
+  string option
+)
+"input_libvirtxml.ml" 154 5484 5532 "input_libvirtxml.ml" 154 5484 5536
+type(
+  Types.source_sound_model
+)
+"input_libvirtxml.ml" 154 5484 5514 "input_libvirtxml.ml" 154 5484 5538
+type(
+  Types.source_sound
+)
+"input_libvirtxml.ml" 154 5484 5509 "input_libvirtxml.ml" 154 5484 5538
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 155 5539 5552 "input_libvirtxml.ml" 155 5539 5560
+type(
+  string
+)
+"input_libvirtxml.ml" 155 5539 5547 "input_libvirtxml.ml" 155 5539 5560
+type(
+  string option
+)
+"input_libvirtxml.ml" 155 5539 5587 "input_libvirtxml.ml" 155 5539 5593
+type(
+  Types.source_sound_model
+)
+"input_libvirtxml.ml" 155 5539 5569 "input_libvirtxml.ml" 155 5539 5595
+type(
+  Types.source_sound
+)
+"input_libvirtxml.ml" 155 5539 5564 "input_libvirtxml.ml" 155 5539 5595
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 156 5596 5609 "input_libvirtxml.ml" 156 5596 5615
+type(
+  string
+)
+"input_libvirtxml.ml" 156 5596 5604 "input_libvirtxml.ml" 156 5596 5615
+type(
+  string option
+)
+"input_libvirtxml.ml" 156 5596 5644 "input_libvirtxml.ml" 156 5596 5648
+type(
+  Types.source_sound_model
+)
+"input_libvirtxml.ml" 156 5596 5626 "input_libvirtxml.ml" 156 5596 5650
+type(
+  Types.source_sound
+)
+"input_libvirtxml.ml" 156 5596 5621 "input_libvirtxml.ml" 156 5596 5650
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 157 5651 5664 "input_libvirtxml.ml" 157 5651 5670
+type(
+  string
+)
+"input_libvirtxml.ml" 157 5651 5659 "input_libvirtxml.ml" 157 5651 5670
+type(
+  string option
+)
+"input_libvirtxml.ml" 157 5651 5699 "input_libvirtxml.ml" 157 5651 5703
+type(
+  Types.source_sound_model
+)
+"input_libvirtxml.ml" 157 5651 5681 "input_libvirtxml.ml" 157 5651 5705
+type(
+  Types.source_sound
+)
+"input_libvirtxml.ml" 157 5651 5676 "input_libvirtxml.ml" 157 5651 5705
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 158 5706 5719 "input_libvirtxml.ml" 158 5706 5726
+type(
+  string
+)
+"input_libvirtxml.ml" 158 5706 5714 "input_libvirtxml.ml" 158 5706 5726
+type(
+  string option
+)
+"input_libvirtxml.ml" 158 5706 5754 "input_libvirtxml.ml" 158 5706 5763
+type(
+  Types.source_sound_model
+)
+"input_libvirtxml.ml" 158 5706 5736 "input_libvirtxml.ml" 158 5706 5765
+type(
+  Types.source_sound
+)
+"input_libvirtxml.ml" 158 5706 5731 "input_libvirtxml.ml" 158 5706 5765
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 159 5766 5779 "input_libvirtxml.ml" 159 5766 5785
+type(
+  string
+)
+"input_libvirtxml.ml" 159 5766 5774 "input_libvirtxml.ml" 159 5766 5785
+type(
+  string option
+)
+"input_libvirtxml.ml" 159 5766 5814 "input_libvirtxml.ml" 159 5766 5818
+type(
+  Types.source_sound_model
+)
+"input_libvirtxml.ml" 159 5766 5796 "input_libvirtxml.ml" 159 5766 5820
+type(
+  Types.source_sound
+)
+"input_libvirtxml.ml" 159 5766 5791 "input_libvirtxml.ml" 159 5766 5820
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 160 5821 5834 "input_libvirtxml.ml" 160 5821 5839
+type(
+  string
+)
+"input_libvirtxml.ml" 160 5821 5829 "input_libvirtxml.ml" 160 5821 5839
+type(
+  string option
+)
+"input_libvirtxml.ml" 160 5821 5869 "input_libvirtxml.ml" 160 5821 5877
+type(
+  Types.source_sound_model
+)
+"input_libvirtxml.ml" 160 5821 5851 "input_libvirtxml.ml" 160 5821 5879
+type(
+  Types.source_sound
+)
+"input_libvirtxml.ml" 160 5821 5846 "input_libvirtxml.ml" 160 5821 5879
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 161 5880 5893 "input_libvirtxml.ml" 161 5880 5898
+type(
+  string
+)
+ident(
+  def model "input_libvirtxml.ml" 162 5902 5911 "input_libvirtxml.ml" 163 5963 5976
+)
+"input_libvirtxml.ml" 161 5880 5888 "input_libvirtxml.ml" 161 5880 5898
+type(
+  string option
+)
+"input_libvirtxml.ml" 162 5902 5911 "input_libvirtxml.ml" 162 5902 5918
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirtxml.ml" 162 5902 5920 "input_libvirtxml.ml" 162 5902 5922
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 162 5902 5922 "input_libvirtxml.ml" 162 5902 5954
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 162 5902 5919 "input_libvirtxml.ml" 162 5902 5955
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 162 5902 5956 "input_libvirtxml.ml" 162 5902 5961
+type(
+  string
+)
+ident(
+  int_ref model "input_libvirtxml.ml" 161 5880 5893 "input_libvirtxml.ml" 161 5880 5898
+)
+"input_libvirtxml.ml" 162 5902 5911 "input_libvirtxml.ml" 162 5902 5961
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 163 5963 5972 "input_libvirtxml.ml" 163 5963 5976
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 162 5902 5911 "input_libvirtxml.ml" 163 5963 5976
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 152 5424 5430 "input_libvirtxml.ml" 163 5963 5976
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 151 5370 5376 "input_libvirtxml.ml" 163 5963 5976
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 147 5251 5260 "input_libvirtxml.ml" 164 5977 5982
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 146 5221 5225 "input_libvirtxml.ml" 164 5977 5982
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 145 5173 5177 "input_libvirtxml.ml" 164 5977 5982
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 144 5097 5101 "input_libvirtxml.ml" 164 5977 5982
+type(
+  Types.source_sound option
+)
+"input_libvirtxml.ml" 167 6023 6029 "input_libvirtxml.ml" 167 6023 6034
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 168 6037 6045 "input_libvirtxml.ml" 168 6037 6054
+type(
+  unit -> parsed_disk list
+)
+"input_libvirtxml.ml" 168 6037 6056 "input_libvirtxml.ml" 168 6037 6064
+type(
+  string ->
+  string option -> Types.s_controller option -> parsed_source -> unit
+)
+"input_libvirtxml.ml" 168 6037 6045 "input_libvirtxml.ml" 168 6037 6064
+type(
+  (unit -> parsed_disk list) *
+  (string ->
+   string option -> Types.s_controller option -> parsed_source -> unit)
+)
+"input_libvirtxml.ml" 169 6067 6077 "input_libvirtxml.ml" 169 6067 6082
+type(
+  parsed_disk list ref
+)
+"input_libvirtxml.ml" 169 6067 6085 "input_libvirtxml.ml" 169 6067 6088
+type(
+  parsed_disk list -> parsed_disk list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"input_libvirtxml.ml" 169 6067 6089 "input_libvirtxml.ml" 169 6067 6091
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 169 6067 6085 "input_libvirtxml.ml" 169 6067 6091
+type(
+  parsed_disk list ref
+)
+"input_libvirtxml.ml" 169 6067 6096 "input_libvirtxml.ml" 169 6067 6097
+type(
+  int ref
+)
+"input_libvirtxml.ml" 169 6067 6100 "input_libvirtxml.ml" 169 6067 6103
+type(
+  int -> int ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"input_libvirtxml.ml" 169 6067 6104 "input_libvirtxml.ml" 169 6067 6105
+type(
+  int
+)
+"input_libvirtxml.ml" 169 6067 6100 "input_libvirtxml.ml" 169 6067 6105
+type(
+  int ref
+)
+"input_libvirtxml.ml" 170 6109 6119 "input_libvirtxml.ml" 170 6109 6128
+type(
+  unit -> parsed_disk list
+)
+"input_libvirtxml.ml" 170 6109 6129 "input_libvirtxml.ml" 170 6109 6131
+type(
+  unit
+)
+"input_libvirtxml.ml" 170 6109 6134 "input_libvirtxml.ml" 170 6109 6142
+type(
+  parsed_disk list -> parsed_disk list
+)
+ident(
+  ext_ref List.rev
+)
+"input_libvirtxml.ml" 170 6109 6143 "input_libvirtxml.ml" 170 6109 6144
+type(
+  parsed_disk list ref -> parsed_disk list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirtxml.ml" 170 6109 6144 "input_libvirtxml.ml" 170 6109 6149
+type(
+  parsed_disk list ref
+)
+ident(
+  int_ref disks "input_libvirtxml.ml" 169 6067 6077 "input_libvirtxml.ml" 169 6067 6082
+)
+"input_libvirtxml.ml" 170 6109 6143 "input_libvirtxml.ml" 170 6109 6149
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 170 6109 6134 "input_libvirtxml.ml" 170 6109 6149
+call(
+  tail
+)
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 171 6153 6163 "input_libvirtxml.ml" 171 6153 6171
+type(
+  string ->
+  string option -> Types.s_controller option -> parsed_source -> unit
+)
+"input_libvirtxml.ml" 171 6153 6172 "input_libvirtxml.ml" 171 6153 6180
+type(
+  string
+)
+ident(
+  def qemu_uri "input_libvirtxml.ml" 171 6153 6181 "input_libvirtxml.ml" 177 6420 6463
+)
+"input_libvirtxml.ml" 171 6153 6181 "input_libvirtxml.ml" 171 6153 6187
+type(
+  string option
+)
+ident(
+  def format "input_libvirtxml.ml" 171 6153 6188 "input_libvirtxml.ml" 177 6420 6463
+)
+"input_libvirtxml.ml" 171 6153 6188 "input_libvirtxml.ml" 171 6153 6198
+type(
+  Types.s_controller option
+)
+ident(
+  def controller "input_libvirtxml.ml" 171 6153 6199 "input_libvirtxml.ml" 177 6420 6463
+)
+"input_libvirtxml.ml" 171 6153 6199 "input_libvirtxml.ml" 171 6153 6207
+type(
+  parsed_source
+)
+ident(
+  def p_source "input_libvirtxml.ml" 172 6210 6218 "input_libvirtxml.ml" 177 6420 6463
+)
+"input_libvirtxml.ml" 172 6210 6218 "input_libvirtxml.ml" 172 6210 6222
+type(
+  int ref -> unit
+)
+ident(
+  ext_ref Pervasives.incr
+)
+"input_libvirtxml.ml" 172 6210 6223 "input_libvirtxml.ml" 172 6210 6224
+type(
+  int ref
+)
+ident(
+  int_ref i "input_libvirtxml.ml" 169 6067 6096 "input_libvirtxml.ml" 169 6067 6097
+)
+"input_libvirtxml.ml" 172 6210 6218 "input_libvirtxml.ml" 172 6210 6224
+type(
+  unit
+)
+"input_libvirtxml.ml" 173 6226 6234 "input_libvirtxml.ml" 173 6226 6239
+type(
+  parsed_disk list ref
+)
+ident(
+  int_ref disks "input_libvirtxml.ml" 169 6067 6077 "input_libvirtxml.ml" 169 6067 6082
+)
+"input_libvirtxml.ml" 173 6226 6240 "input_libvirtxml.ml" 173 6226 6242
+type(
+  parsed_disk list ref -> parsed_disk list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"input_libvirtxml.ml" 174 6243 6285 "input_libvirtxml.ml" 174 6243 6286
+type(
+  int ref -> int
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirtxml.ml" 174 6243 6286 "input_libvirtxml.ml" 174 6243 6287
+type(
+  int ref
+)
+ident(
+  int_ref i "input_libvirtxml.ml" 169 6067 6096 "input_libvirtxml.ml" 169 6067 6097
+)
+"input_libvirtxml.ml" 174 6243 6285 "input_libvirtxml.ml" 174 6243 6287
+type(
+  int
+)
+"input_libvirtxml.ml" 175 6289 6332 "input_libvirtxml.ml" 175 6289 6340
+type(
+  string
+)
+ident(
+  int_ref qemu_uri "input_libvirtxml.ml" 171 6153 6172 "input_libvirtxml.ml" 171 6153 6180
+)
+"input_libvirtxml.ml" 175 6289 6353 "input_libvirtxml.ml" 175 6289 6359
+type(
+  string option
+)
+ident(
+  int_ref format "input_libvirtxml.ml" 171 6153 6181 "input_libvirtxml.ml" 171 6153 6187
+)
+"input_libvirtxml.ml" 176 6361 6406 "input_libvirtxml.ml" 176 6361 6416
+type(
+  Types.s_controller option
+)
+ident(
+  int_ref controller "input_libvirtxml.ml" 171 6153 6188 "input_libvirtxml.ml" 171 6153 6198
+)
+"input_libvirtxml.ml" 174 6243 6271 "input_libvirtxml.ml" 176 6361 6418
+type(
+  Types.source_disk
+)
+"input_libvirtxml.ml" 177 6420 6443 "input_libvirtxml.ml" 177 6420 6451
+type(
+  parsed_source
+)
+ident(
+  int_ref p_source "input_libvirtxml.ml" 171 6153 6199 "input_libvirtxml.ml" 171 6153 6207
+)
+"input_libvirtxml.ml" 174 6243 6253 "input_libvirtxml.ml" 177 6420 6453
+type(
+  parsed_disk
+)
+"input_libvirtxml.ml" 177 6420 6457 "input_libvirtxml.ml" 177 6420 6458
+type(
+  parsed_disk list ref -> parsed_disk list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirtxml.ml" 177 6420 6458 "input_libvirtxml.ml" 177 6420 6463
+type(
+  parsed_disk list ref
+)
+ident(
+  int_ref disks "input_libvirtxml.ml" 169 6067 6077 "input_libvirtxml.ml" 169 6067 6082
+)
+"input_libvirtxml.ml" 177 6420 6457 "input_libvirtxml.ml" 177 6420 6463
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 174 6243 6253 "input_libvirtxml.ml" 177 6420 6463
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 173 6226 6234 "input_libvirtxml.ml" 177 6420 6463
+type(
+  unit
+)
+"input_libvirtxml.ml" 172 6210 6218 "input_libvirtxml.ml" 177 6420 6463
+type(
+  unit
+)
+"input_libvirtxml.ml" 179 6473 6479 "input_libvirtxml.ml" 179 6473 6488
+type(
+  unit -> parsed_disk list
+)
+ident(
+  int_ref get_disks "input_libvirtxml.ml" 170 6109 6119 "input_libvirtxml.ml" 170 6109 6128
+)
+"input_libvirtxml.ml" 179 6473 6490 "input_libvirtxml.ml" 179 6473 6498
+type(
+  string ->
+  string option -> Types.s_controller option -> parsed_source -> unit
+)
+ident(
+  int_ref add_disk "input_libvirtxml.ml" 171 6153 6163 "input_libvirtxml.ml" 171 6153 6171
+)
+"input_libvirtxml.ml" 179 6473 6479 "input_libvirtxml.ml" 179 6473 6498
+type(
+  (unit -> parsed_disk list) *
+  (string ->
+   string option -> Types.s_controller option -> parsed_source -> unit)
+)
+"input_libvirtxml.ml" 171 6153 6159 "input_libvirtxml.ml" 179 6473 6498
+type(
+  (unit -> parsed_disk list) *
+  (string ->
+   string option -> Types.s_controller option -> parsed_source -> unit)
+)
+"input_libvirtxml.ml" 170 6109 6115 "input_libvirtxml.ml" 179 6473 6498
+type(
+  (unit -> parsed_disk list) *
+  (string ->
+   string option -> Types.s_controller option -> parsed_source -> unit)
+)
+"input_libvirtxml.ml" 169 6067 6073 "input_libvirtxml.ml" 179 6473 6498
+type(
+  (unit -> parsed_disk list) *
+  (string ->
+   string option -> Types.s_controller option -> parsed_source -> unit)
+)
+"input_libvirtxml.ml" 181 6506 6514 "input_libvirtxml.ml" 181 6506 6517
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 182 6520 6526 "input_libvirtxml.ml" 182 6520 6551
+type(
+  Xml.xpathctx -> string -> Xml.xpathobj
+)
+ident(
+  ext_ref Xml.xpath_eval_expression
+)
+"input_libvirtxml.ml" 182 6520 6552 "input_libvirtxml.ml" 182 6520 6560
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 183 6561 6569 "input_libvirtxml.ml" 183 6561 6607
+type(
+  string
+)
+"input_libvirtxml.ml" 182 6520 6526 "input_libvirtxml.ml" 183 6561 6607
+call(
+  stack
+)
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 184 6611 6619 "input_libvirtxml.ml" 184 6611 6627
+type(
+  int
+)
+"input_libvirtxml.ml" 184 6611 6630 "input_libvirtxml.ml" 184 6611 6651
+type(
+  Xml.xpathobj -> int
+)
+ident(
+  ext_ref Xml.xpathobj_nr_nodes
+)
+"input_libvirtxml.ml" 184 6611 6652 "input_libvirtxml.ml" 184 6611 6655
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 181 6506 6514 "input_libvirtxml.ml" 181 6506 6517
+)
+"input_libvirtxml.ml" 184 6611 6630 "input_libvirtxml.ml" 184 6611 6655
+call(
+  stack
+)
+type(
+  int
+)
+"input_libvirtxml.ml" 185 6659 6666 "input_libvirtxml.ml" 185 6659 6674
+type(
+  int
+)
+ident(
+  int_ref nr_nodes "input_libvirtxml.ml" 184 6611 6619 "input_libvirtxml.ml" 184 6611 6627
+)
+"input_libvirtxml.ml" 185 6659 6675 "input_libvirtxml.ml" 185 6659 6676
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"input_libvirtxml.ml" 185 6659 6677 "input_libvirtxml.ml" 185 6659 6678
+type(
+  int
+)
+"input_libvirtxml.ml" 185 6659 6666 "input_libvirtxml.ml" 185 6659 6678
+type(
+  bool
+)
+"input_libvirtxml.ml" 186 6684 6690 "input_libvirtxml.ml" 186 6684 6695
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_libvirtxml.ml" 186 6684 6697 "input_libvirtxml.ml" 186 6684 6699
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 186 6684 6699 "input_libvirtxml.ml" 186 6684 6738
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 186 6684 6696 "input_libvirtxml.ml" 186 6684 6739
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 186 6684 6690 "input_libvirtxml.ml" 186 6684 6739
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 185 6659 6663 "input_libvirtxml.ml" 186 6684 6739
+type(
+  unit
+)
+"input_libvirtxml.ml" 187 6741 6753 "input_libvirtxml.ml" 187 6741 6754
+type(
+  int
+)
+"input_libvirtxml.ml" 187 6741 6758 "input_libvirtxml.ml" 187 6741 6766
+type(
+  int
+)
+ident(
+  int_ref nr_nodes "input_libvirtxml.ml" 184 6611 6619 "input_libvirtxml.ml" 184 6611 6627
+)
+"input_libvirtxml.ml" 187 6741 6766 "input_libvirtxml.ml" 187 6741 6767
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"input_libvirtxml.ml" 187 6741 6767 "input_libvirtxml.ml" 187 6741 6768
+type(
+  int
+)
+"input_libvirtxml.ml" 187 6741 6758 "input_libvirtxml.ml" 187 6741 6768
+type(
+  int
+)
+"input_libvirtxml.ml" 188 6772 6782 "input_libvirtxml.ml" 188 6772 6786
+type(
+  Xml.node
+)
+ident(
+  def node "input_libvirtxml.ml" 189 6816 6822 "input_libvirtxml.ml" 265 9760 9820
+)
+"input_libvirtxml.ml" 188 6772 6789 "input_libvirtxml.ml" 188 6772 6806
+type(
+  Xml.xpathobj -> int -> Xml.node
+)
+ident(
+  ext_ref Xml.xpathobj_node
+)
+"input_libvirtxml.ml" 188 6772 6807 "input_libvirtxml.ml" 188 6772 6810
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 181 6506 6514 "input_libvirtxml.ml" 181 6506 6517
+)
+"input_libvirtxml.ml" 188 6772 6811 "input_libvirtxml.ml" 188 6772 6812
+type(
+  int
+)
+"input_libvirtxml.ml" 188 6772 6789 "input_libvirtxml.ml" 188 6772 6812
+call(
+  stack
+)
+type(
+  Xml.node
+)
+"input_libvirtxml.ml" 189 6816 6822 "input_libvirtxml.ml" 189 6816 6854
+type(
+  Xml.xpathctx -> Xml.node -> unit
+)
+ident(
+  ext_ref Xml.xpathctx_set_current_context
+)
+"input_libvirtxml.ml" 189 6816 6855 "input_libvirtxml.ml" 189 6816 6863
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 189 6816 6864 "input_libvirtxml.ml" 189 6816 6868
+type(
+  Xml.node
+)
+ident(
+  int_ref node "input_libvirtxml.ml" 188 6772 6782 "input_libvirtxml.ml" 188 6772 6786
+)
+"input_libvirtxml.ml" 189 6816 6822 "input_libvirtxml.ml" 189 6816 6868
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 191 6871 6881 "input_libvirtxml.ml" 191 6871 6891
+type(
+  Types.s_controller option
+)
+ident(
+  def controller "input_libvirtxml.ml" 200 7163 7169 "input_libvirtxml.ml" 265 9760 9820
+)
+"input_libvirtxml.ml" 192 6894 6906 "input_libvirtxml.ml" 192 6894 6916
+type(
+  string option
+)
+"input_libvirtxml.ml" 192 6894 6919 "input_libvirtxml.ml" 192 6894 6931
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 192 6894 6932 "input_libvirtxml.ml" 192 6894 6945
+type(
+  string
+)
+"input_libvirtxml.ml" 192 6894 6919 "input_libvirtxml.ml" 192 6894 6945
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 193 6949 6963 "input_libvirtxml.ml" 193 6949 6973
+type(
+  string option
+)
+ident(
+  int_ref target_bus "input_libvirtxml.ml" 192 6894 6906 "input_libvirtxml.ml" 192 6894 6916
+)
+"input_libvirtxml.ml" 194 6979 6989 "input_libvirtxml.ml" 194 6979 6993
+type(
+  string option
+)
+"input_libvirtxml.ml" 194 6979 6997 "input_libvirtxml.ml" 194 6979 7001
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 195 7002 7017 "input_libvirtxml.ml" 195 7002 7022
+type(
+  string
+)
+"input_libvirtxml.ml" 195 7002 7012 "input_libvirtxml.ml" 195 7002 7022
+type(
+  string option
+)
+"input_libvirtxml.ml" 195 7002 7031 "input_libvirtxml.ml" 195 7002 7041
+type(
+  Types.s_controller
+)
+"input_libvirtxml.ml" 195 7002 7026 "input_libvirtxml.ml" 195 7002 7041
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 196 7042 7057 "input_libvirtxml.ml" 196 7042 7063
+type(
+  string
+)
+"input_libvirtxml.ml" 196 7042 7052 "input_libvirtxml.ml" 196 7042 7063
+type(
+  string option
+)
+"input_libvirtxml.ml" 196 7042 7072 "input_libvirtxml.ml" 196 7042 7083
+type(
+  Types.s_controller
+)
+"input_libvirtxml.ml" 196 7042 7067 "input_libvirtxml.ml" 196 7042 7083
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 197 7084 7099 "input_libvirtxml.ml" 197 7084 7107
+type(
+  string
+)
+"input_libvirtxml.ml" 197 7084 7094 "input_libvirtxml.ml" 197 7084 7107
+type(
+  string option
+)
+"input_libvirtxml.ml" 197 7084 7116 "input_libvirtxml.ml" 197 7084 7133
+type(
+  Types.s_controller
+)
+"input_libvirtxml.ml" 197 7084 7111 "input_libvirtxml.ml" 197 7084 7133
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 198 7134 7149 "input_libvirtxml.ml" 198 7134 7150
+type(
+  string
+)
+"input_libvirtxml.ml" 198 7134 7144 "input_libvirtxml.ml" 198 7134 7150
+type(
+  string option
+)
+"input_libvirtxml.ml" 198 7134 7154 "input_libvirtxml.ml" 198 7134 7158
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 193 6949 6957 "input_libvirtxml.ml" 198 7134 7158
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 192 6894 6902 "input_libvirtxml.ml" 198 7134 7158
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 200 7163 7173 "input_libvirtxml.ml" 200 7163 7179
+type(
+  string option
+)
+ident(
+  def format "input_libvirtxml.ml" 209 7483 7489 "input_libvirtxml.ml" 265 9760 9820
+)
+"input_libvirtxml.ml" 201 7182 7196 "input_libvirtxml.ml" 201 7182 7208
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 201 7182 7209 "input_libvirtxml.ml" 201 7182 7223
+type(
+  string
+)
+"input_libvirtxml.ml" 201 7182 7196 "input_libvirtxml.ml" 201 7182 7223
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 202 7229 7244 "input_libvirtxml.ml" 202 7229 7249
+type(
+  string
+)
+"input_libvirtxml.ml" 202 7229 7239 "input_libvirtxml.ml" 202 7229 7249
+type(
+  string option
+)
+"input_libvirtxml.ml" 202 7229 7258 "input_libvirtxml.ml" 202 7229 7263
+type(
+  string
+)
+"input_libvirtxml.ml" 202 7229 7253 "input_libvirtxml.ml" 202 7229 7263
+type(
+  string option
+)
+"input_libvirtxml.ml" 203 7284 7294 "input_libvirtxml.ml" 203 7284 7298
+type(
+  string option
+)
+"input_libvirtxml.ml" 203 7284 7302 "input_libvirtxml.ml" 203 7284 7306
+type(
+  string option
+)
+"input_libvirtxml.ml" 204 7307 7322 "input_libvirtxml.ml" 204 7307 7328
+type(
+  string
+)
+ident(
+  def format "input_libvirtxml.ml" 204 7307 7332 "input_libvirtxml.ml" 204 7307 7343
+)
+"input_libvirtxml.ml" 204 7307 7317 "input_libvirtxml.ml" 204 7307 7328
+type(
+  string option
+)
+"input_libvirtxml.ml" 204 7307 7337 "input_libvirtxml.ml" 204 7307 7343
+type(
+  string
+)
+ident(
+  int_ref format "input_libvirtxml.ml" 204 7307 7322 "input_libvirtxml.ml" 204 7307 7328
+)
+"input_libvirtxml.ml" 204 7307 7332 "input_libvirtxml.ml" 204 7307 7343
+type(
+  string option
+)
+"input_libvirtxml.ml" 201 7182 7190 "input_libvirtxml.ml" 204 7307 7343
+type(
+  string option
+)
+"input_libvirtxml.ml" 209 7483 7495 "input_libvirtxml.ml" 209 7483 7507
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 209 7483 7508 "input_libvirtxml.ml" 209 7483 7515
+type(
+  string
+)
+"input_libvirtxml.ml" 209 7483 7495 "input_libvirtxml.ml" 209 7483 7515
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 210 7521 7529 "input_libvirtxml.ml" 210 7521 7533
+type(
+  string option
+)
+"input_libvirtxml.ml" 211 7537 7546 "input_libvirtxml.ml" 211 7537 7553
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirtxml.ml" 211 7537 7555 "input_libvirtxml.ml" 211 7537 7557
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 211 7537 7557 "input_libvirtxml.ml" 211 7537 7604
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 211 7537 7554 "input_libvirtxml.ml" 211 7537 7605
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 211 7537 7546 "input_libvirtxml.ml" 211 7537 7605
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 212 7606 7619 "input_libvirtxml.ml" 212 7606 7626
+type(
+  string
+)
+"input_libvirtxml.ml" 212 7606 7614 "input_libvirtxml.ml" 212 7606 7626
+type(
+  string option
+)
+"input_libvirtxml.ml" 213 7630 7645 "input_libvirtxml.ml" 213 7630 7657
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 213 7630 7658 "input_libvirtxml.ml" 213 7630 7671
+type(
+  string
+)
+"input_libvirtxml.ml" 213 7630 7645 "input_libvirtxml.ml" 213 7630 7671
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 214 7677 7693 "input_libvirtxml.ml" 214 7677 7697
+type(
+  string
+)
+ident(
+  def path "input_libvirtxml.ml" 215 7701 7713 "input_libvirtxml.ml" 215 7701 7764
+)
+"input_libvirtxml.ml" 214 7677 7688 "input_libvirtxml.ml" 214 7677 7697
+type(
+  string option
+)
+"input_libvirtxml.ml" 215 7701 7713 "input_libvirtxml.ml" 215 7701 7721
+type(
+  string ->
+  string option -> Types.s_controller option -> parsed_source -> unit
+)
+ident(
+  int_ref add_disk "input_libvirtxml.ml" 168 6037 6056 "input_libvirtxml.ml" 168 6037 6064
+)
+"input_libvirtxml.ml" 215 7701 7722 "input_libvirtxml.ml" 215 7701 7726
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirtxml.ml" 214 7677 7693 "input_libvirtxml.ml" 214 7677 7697
+)
+"input_libvirtxml.ml" 215 7701 7727 "input_libvirtxml.ml" 215 7701 7733
+type(
+  string option
+)
+ident(
+  int_ref format "input_libvirtxml.ml" 200 7163 7173 "input_libvirtxml.ml" 200 7163 7179
+)
+"input_libvirtxml.ml" 215 7701 7734 "input_libvirtxml.ml" 215 7701 7744
+type(
+  Types.s_controller option
+)
+ident(
+  int_ref controller "input_libvirtxml.ml" 191 6871 6881 "input_libvirtxml.ml" 191 6871 6891
+)
+"input_libvirtxml.ml" 215 7701 7759 "input_libvirtxml.ml" 215 7701 7763
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirtxml.ml" 214 7677 7693 "input_libvirtxml.ml" 214 7677 7697
+)
+"input_libvirtxml.ml" 215 7701 7745 "input_libvirtxml.ml" 215 7701 7764
+type(
+  parsed_source
+)
+"input_libvirtxml.ml" 215 7701 7713 "input_libvirtxml.ml" 215 7701 7764
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 216 7765 7776 "input_libvirtxml.ml" 216 7765 7780
+type(
+  string option
+)
+"input_libvirtxml.ml" 216 7765 7784 "input_libvirtxml.ml" 216 7765 7786
+type(
+  unit
+)
+"input_libvirtxml.ml" 213 7630 7638 "input_libvirtxml.ml" 217 7787 7797
+type(
+  unit
+)
+"input_libvirtxml.ml" 218 7798 7811 "input_libvirtxml.ml" 218 7798 7817
+type(
+  string
+)
+"input_libvirtxml.ml" 218 7798 7806 "input_libvirtxml.ml" 218 7798 7817
+type(
+  string option
+)
+"input_libvirtxml.ml" 219 7821 7836 "input_libvirtxml.ml" 219 7821 7848
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 219 7821 7849 "input_libvirtxml.ml" 219 7821 7863
+type(
+  string
+)
+"input_libvirtxml.ml" 219 7821 7836 "input_libvirtxml.ml" 219 7821 7863
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 220 7869 7885 "input_libvirtxml.ml" 220 7869 7889
+type(
+  string
+)
+ident(
+  def path "input_libvirtxml.ml" 221 7893 7905 "input_libvirtxml.ml" 221 7893 7957
+)
+"input_libvirtxml.ml" 220 7869 7880 "input_libvirtxml.ml" 220 7869 7889
+type(
+  string option
+)
+"input_libvirtxml.ml" 221 7893 7905 "input_libvirtxml.ml" 221 7893 7913
+type(
+  string ->
+  string option -> Types.s_controller option -> parsed_source -> unit
+)
+ident(
+  int_ref add_disk "input_libvirtxml.ml" 168 6037 6056 "input_libvirtxml.ml" 168 6037 6064
+)
+"input_libvirtxml.ml" 221 7893 7914 "input_libvirtxml.ml" 221 7893 7918
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirtxml.ml" 220 7869 7885 "input_libvirtxml.ml" 220 7869 7889
+)
+"input_libvirtxml.ml" 221 7893 7919 "input_libvirtxml.ml" 221 7893 7925
+type(
+  string option
+)
+ident(
+  int_ref format "input_libvirtxml.ml" 200 7163 7173 "input_libvirtxml.ml" 200 7163 7179
+)
+"input_libvirtxml.ml" 221 7893 7926 "input_libvirtxml.ml" 221 7893 7936
+type(
+  Types.s_controller option
+)
+ident(
+  int_ref controller "input_libvirtxml.ml" 191 6871 6881 "input_libvirtxml.ml" 191 6871 6891
+)
+"input_libvirtxml.ml" 221 7893 7952 "input_libvirtxml.ml" 221 7893 7956
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirtxml.ml" 220 7869 7885 "input_libvirtxml.ml" 220 7869 7889
+)
+"input_libvirtxml.ml" 221 7893 7937 "input_libvirtxml.ml" 221 7893 7957
+type(
+  parsed_source
+)
+"input_libvirtxml.ml" 221 7893 7905 "input_libvirtxml.ml" 221 7893 7957
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 222 7958 7969 "input_libvirtxml.ml" 222 7958 7973
+type(
+  string option
+)
+"input_libvirtxml.ml" 222 7958 7977 "input_libvirtxml.ml" 222 7958 7979
+type(
+  unit
+)
+"input_libvirtxml.ml" 219 7821 7829 "input_libvirtxml.ml" 223 7980 7990
+type(
+  unit
+)
+"input_libvirtxml.ml" 224 7991 8004 "input_libvirtxml.ml" 224 7991 8013
+type(
+  string
+)
+"input_libvirtxml.ml" 224 7991 7999 "input_libvirtxml.ml" 224 7991 8013
+type(
+  string option
+)
+"input_libvirtxml.ml" 228 8136 8152 "input_libvirtxml.ml" 228 8136 8164
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 228 8136 8165 "input_libvirtxml.ml" 228 8136 8183
+type(
+  string
+)
+"input_libvirtxml.ml" 228 8136 8152 "input_libvirtxml.ml" 228 8136 8183
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 229 8185 8201 "input_libvirtxml.ml" 229 8185 8213
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 229 8185 8214 "input_libvirtxml.ml" 229 8185 8233
+type(
+  string
+)
+"input_libvirtxml.ml" 229 8185 8201 "input_libvirtxml.ml" 229 8185 8233
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 230 8235 8251 "input_libvirtxml.ml" 230 8235 8260
+type(
+  string -> int option
+)
+ident(
+  int_ref xpath_int "input_libvirtxml.ml" 56 1800 1806 "input_libvirtxml.ml" 56 1800 1815
+)
+"input_libvirtxml.ml" 230 8235 8261 "input_libvirtxml.ml" 230 8235 8280
+type(
+  string
+)
+"input_libvirtxml.ml" 230 8235 8251 "input_libvirtxml.ml" 230 8235 8280
+call(
+  stack
+)
+type(
+  int option
+)
+"input_libvirtxml.ml" 228 8136 8151 "input_libvirtxml.ml" 230 8235 8281
+type(
+  string option * string option * int option
+)
+"input_libvirtxml.ml" 231 8287 8297 "input_libvirtxml.ml" 231 8287 8301
+type(
+  string option
+)
+"input_libvirtxml.ml" 231 8287 8303 "input_libvirtxml.ml" 231 8287 8304
+type(
+  string option
+)
+"input_libvirtxml.ml" 231 8287 8306 "input_libvirtxml.ml" 231 8287 8307
+type(
+  int option
+)
+"input_libvirtxml.ml" 231 8287 8297 "input_libvirtxml.ml" 231 8287 8307
+type(
+  string option * string option * int option
+)
+"input_libvirtxml.ml" 232 8311 8321 "input_libvirtxml.ml" 232 8311 8328
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirtxml.ml" 232 8311 8330 "input_libvirtxml.ml" 232 8311 8332
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 232 8311 8332 "input_libvirtxml.ml" 232 8311 8365
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 232 8311 8329 "input_libvirtxml.ml" 232 8311 8366
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 232 8311 8321 "input_libvirtxml.ml" 232 8311 8366
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 233 8367 8382 "input_libvirtxml.ml" 233 8367 8387
+type(
+  string
+)
+"input_libvirtxml.ml" 233 8367 8377 "input_libvirtxml.ml" 233 8367 8387
+type(
+  string option
+)
+"input_libvirtxml.ml" 233 8367 8395 "input_libvirtxml.ml" 233 8367 8406
+type(
+  string
+)
+"input_libvirtxml.ml" 233 8367 8394 "input_libvirtxml.ml" 233 8367 8415
+type(
+  string
+)
+ident(
+  def host "input_libvirtxml.ml" 233 8367 8427 "input_libvirtxml.ml" 236 8549 8605
+)
+"input_libvirtxml.ml" 233 8367 8389 "input_libvirtxml.ml" 233 8367 8415
+type(
+  string option
+)
+"input_libvirtxml.ml" 233 8367 8422 "input_libvirtxml.ml" 233 8367 8426
+type(
+  int
+)
+ident(
+  def port "input_libvirtxml.ml" 233 8367 8427 "input_libvirtxml.ml" 236 8549 8605
+)
+"input_libvirtxml.ml" 233 8367 8417 "input_libvirtxml.ml" 233 8367 8426
+type(
+  int option
+)
+"input_libvirtxml.ml" 233 8367 8377 "input_libvirtxml.ml" 233 8367 8426
+type(
+  string option * string option * int option
+)
+"input_libvirtxml.ml" 233 8367 8432 "input_libvirtxml.ml" 233 8367 8436
+type(
+  int
+)
+ident(
+  int_ref port "input_libvirtxml.ml" 233 8367 8422 "input_libvirtxml.ml" 233 8367 8426
+)
+"input_libvirtxml.ml" 233 8367 8437 "input_libvirtxml.ml" 233 8367 8438
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"input_libvirtxml.ml" 233 8367 8439 "input_libvirtxml.ml" 233 8367 8440
+type(
+  int
+)
+"input_libvirtxml.ml" 233 8367 8432 "input_libvirtxml.ml" 233 8367 8440
+type(
+  bool
+)
+"input_libvirtxml.ml" 235 8495 8509 "input_libvirtxml.ml" 235 8495 8513
+type(
+  string
+)
+"input_libvirtxml.ml" 235 8495 8516 "input_libvirtxml.ml" 235 8495 8523
+type(
+  (string -> int -> string, unit, string) format -> string -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"input_libvirtxml.ml" 235 8495 8524 "input_libvirtxml.ml" 235 8495 8535
+type(
+  (string -> int -> string, unit, string) format
+)
+"input_libvirtxml.ml" 235 8495 8536 "input_libvirtxml.ml" 235 8495 8540
+type(
+  string
+)
+ident(
+  int_ref host "input_libvirtxml.ml" 233 8367 8394 "input_libvirtxml.ml" 233 8367 8415
+)
+"input_libvirtxml.ml" 235 8495 8541 "input_libvirtxml.ml" 235 8495 8545
+type(
+  int
+)
+ident(
+  int_ref port "input_libvirtxml.ml" 233 8367 8422 "input_libvirtxml.ml" 233 8367 8426
+)
+"input_libvirtxml.ml" 235 8495 8516 "input_libvirtxml.ml" 235 8495 8545
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 236 8549 8559 "input_libvirtxml.ml" 236 8549 8567
+type(
+  string ->
+  string option -> Types.s_controller option -> parsed_source -> unit
+)
+ident(
+  int_ref add_disk "input_libvirtxml.ml" 168 6037 6056 "input_libvirtxml.ml" 168 6037 6064
+)
+"input_libvirtxml.ml" 236 8549 8568 "input_libvirtxml.ml" 236 8549 8572
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirtxml.ml" 235 8495 8509 "input_libvirtxml.ml" 235 8495 8513
+)
+"input_libvirtxml.ml" 236 8549 8573 "input_libvirtxml.ml" 236 8549 8579
+type(
+  string option
+)
+ident(
+  int_ref format "input_libvirtxml.ml" 200 7163 7173 "input_libvirtxml.ml" 200 7163 7179
+)
+"input_libvirtxml.ml" 236 8549 8580 "input_libvirtxml.ml" 236 8549 8590
+type(
+  Types.s_controller option
+)
+ident(
+  int_ref controller "input_libvirtxml.ml" 191 6871 6881 "input_libvirtxml.ml" 191 6871 6891
+)
+"input_libvirtxml.ml" 236 8549 8591 "input_libvirtxml.ml" 236 8549 8605
+type(
+  parsed_source
+)
+"input_libvirtxml.ml" 236 8549 8559 "input_libvirtxml.ml" 236 8549 8605
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 235 8495 8505 "input_libvirtxml.ml" 236 8549 8605
+type(
+  unit
+)
+"input_libvirtxml.ml" 233 8367 8427 "input_libvirtxml.ml" 236 8549 8605
+type(
+  unit
+)
+"input_libvirtxml.ml" 237 8606 8621 "input_libvirtxml.ml" 237 8606 8629
+type(
+  string
+)
+ident(
+  def protocol "input_libvirtxml.ml" 238 8639 8649 "input_libvirtxml.ml" 239 8725 8745
+)
+"input_libvirtxml.ml" 237 8606 8616 "input_libvirtxml.ml" 237 8606 8629
+type(
+  string option
+)
+"input_libvirtxml.ml" 237 8606 8631 "input_libvirtxml.ml" 237 8606 8632
+type(
+  string option
+)
+"input_libvirtxml.ml" 237 8606 8634 "input_libvirtxml.ml" 237 8606 8635
+type(
+  int option
+)
+"input_libvirtxml.ml" 237 8606 8616 "input_libvirtxml.ml" 237 8606 8635
+type(
+  string option * string option * int option
+)
+"input_libvirtxml.ml" 238 8639 8649 "input_libvirtxml.ml" 238 8639 8656
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirtxml.ml" 238 8639 8658 "input_libvirtxml.ml" 238 8639 8660
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 238 8639 8660 "input_libvirtxml.ml" 238 8639 8723
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 238 8639 8657 "input_libvirtxml.ml" 238 8639 8724
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 239 8725 8737 "input_libvirtxml.ml" 239 8725 8745
+type(
+  string
+)
+ident(
+  int_ref protocol "input_libvirtxml.ml" 237 8606 8621 "input_libvirtxml.ml" 237 8606 8629
+)
+"input_libvirtxml.ml" 238 8639 8649 "input_libvirtxml.ml" 239 8725 8745
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 228 8136 8144 "input_libvirtxml.ml" 240 8746 8755
+type(
+  unit
+)
+"input_libvirtxml.ml" 241 8756 8769 "input_libvirtxml.ml" 241 8756 8777
+type(
+  string
+)
+"input_libvirtxml.ml" 241 8756 8764 "input_libvirtxml.ml" 241 8756 8777
+type(
+  string option
+)
+"input_libvirtxml.ml" 242 8781 8796 "input_libvirtxml.ml" 242 8781 8808
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 242 8781 8809 "input_libvirtxml.ml" 242 8781 8823
+type(
+  string
+)
+"input_libvirtxml.ml" 242 8781 8796 "input_libvirtxml.ml" 242 8781 8823
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 242 8781 8825 "input_libvirtxml.ml" 242 8781 8837
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 242 8781 8838 "input_libvirtxml.ml" 242 8781 8854
+type(
+  string
+)
+"input_libvirtxml.ml" 242 8781 8825 "input_libvirtxml.ml" 242 8781 8854
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 242 8781 8796 "input_libvirtxml.ml" 242 8781 8854
+type(
+  string option * string option
+)
+"input_libvirtxml.ml" 243 8860 8870 "input_libvirtxml.ml" 243 8860 8874
+type(
+  string option
+)
+"input_libvirtxml.ml" 243 8860 8876 "input_libvirtxml.ml" 243 8860 8880
+type(
+  string option
+)
+"input_libvirtxml.ml" 243 8860 8870 "input_libvirtxml.ml" 243 8860 8880
+type(
+  string option * string option
+)
+"input_libvirtxml.ml" 243 8860 8888 "input_libvirtxml.ml" 243 8860 8889
+type(
+  string
+)
+"input_libvirtxml.ml" 243 8860 8883 "input_libvirtxml.ml" 243 8860 8889
+type(
+  string option
+)
+"input_libvirtxml.ml" 243 8860 8891 "input_libvirtxml.ml" 243 8860 8895
+type(
+  string option
+)
+"input_libvirtxml.ml" 243 8860 8883 "input_libvirtxml.ml" 243 8860 8895
+type(
+  string option * string option
+)
+"input_libvirtxml.ml" 243 8860 8870 "input_libvirtxml.ml" 243 8860 8895
+type(
+  string option * string option
+)
+"input_libvirtxml.ml" 243 8860 8898 "input_libvirtxml.ml" 243 8860 8902
+type(
+  string option
+)
+"input_libvirtxml.ml" 243 8860 8909 "input_libvirtxml.ml" 243 8860 8910
+type(
+  string
+)
+"input_libvirtxml.ml" 243 8860 8904 "input_libvirtxml.ml" 243 8860 8910
+type(
+  string option
+)
+"input_libvirtxml.ml" 243 8860 8898 "input_libvirtxml.ml" 243 8860 8910
+type(
+  string option * string option
+)
+"input_libvirtxml.ml" 243 8860 8870 "input_libvirtxml.ml" 243 8860 8910
+type(
+  string option * string option
+)
+"input_libvirtxml.ml" 243 8860 8914 "input_libvirtxml.ml" 243 8860 8916
+type(
+  unit
+)
+"input_libvirtxml.ml" 244 8917 8932 "input_libvirtxml.ml" 244 8917 8936
+type(
+  string
+)
+ident(
+  def pool "input_libvirtxml.ml" 245 8950 8960 "input_libvirtxml.ml" 262 9712 9723
+)
+"input_libvirtxml.ml" 244 8917 8927 "input_libvirtxml.ml" 244 8917 8936
+type(
+  string option
+)
+"input_libvirtxml.ml" 244 8917 8943 "input_libvirtxml.ml" 244 8917 8946
+type(
+  string
+)
+ident(
+  def vol "input_libvirtxml.ml" 245 8950 8960 "input_libvirtxml.ml" 262 9712 9723
+)
+"input_libvirtxml.ml" 244 8917 8938 "input_libvirtxml.ml" 244 8917 8946
+type(
+  string option
+)
+"input_libvirtxml.ml" 244 8917 8927 "input_libvirtxml.ml" 244 8917 8946
+type(
+  string option * string option
+)
+"input_libvirtxml.ml" 245 8950 8964 "input_libvirtxml.ml" 245 8950 8967
+type(
+  string
+)
+"input_libvirtxml.ml" 245 8950 8970 "input_libvirtxml.ml" 245 8950 8991
+type(
+  ?conn:string -> string -> string -> string
+)
+ident(
+  ext_ref Domainxml.vol_dumpxml
+)
+"input_libvirtxml.ml" 245 8950 8993 "input_libvirtxml.ml" 245 8950 8997
+type(
+  string option
+)
+ident(
+  int_ref conn "input_libvirtxml.ml" 49 1579 1602 "input_libvirtxml.ml" 49 1579 1606
+)
+"input_libvirtxml.ml" 245 8950 8998 "input_libvirtxml.ml" 245 8950 9002
+type(
+  string
+)
+ident(
+  int_ref pool "input_libvirtxml.ml" 244 8917 8932 "input_libvirtxml.ml" 244 8917 8936
+)
+"input_libvirtxml.ml" 245 8950 9003 "input_libvirtxml.ml" 245 8950 9006
+type(
+  string
+)
+ident(
+  int_ref vol "input_libvirtxml.ml" 244 8917 8943 "input_libvirtxml.ml" 244 8917 8946
+)
+"input_libvirtxml.ml" 245 8950 8970 "input_libvirtxml.ml" 245 8950 9006
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 246 9010 9024 "input_libvirtxml.ml" 246 9010 9027
+type(
+  Xml.doc
+)
+"input_libvirtxml.ml" 246 9010 9030 "input_libvirtxml.ml" 246 9010 9046
+type(
+  string -> Xml.doc
+)
+ident(
+  ext_ref Xml.parse_memory
+)
+"input_libvirtxml.ml" 246 9010 9047 "input_libvirtxml.ml" 246 9010 9050
+type(
+  string
+)
+ident(
+  int_ref xml "input_libvirtxml.ml" 245 8950 8964 "input_libvirtxml.ml" 245 8950 8967
+)
+"input_libvirtxml.ml" 246 9010 9030 "input_libvirtxml.ml" 246 9010 9050
+call(
+  stack
+)
+type(
+  Xml.doc
+)
+"input_libvirtxml.ml" 247 9054 9068 "input_libvirtxml.ml" 247 9054 9076
+type(
+  Xml.xpathctx
+)
+"input_libvirtxml.ml" 247 9054 9079 "input_libvirtxml.ml" 247 9054 9100
+type(
+  Xml.doc -> Xml.xpathctx
+)
+ident(
+  ext_ref Xml.xpath_new_context
+)
+"input_libvirtxml.ml" 247 9054 9101 "input_libvirtxml.ml" 247 9054 9104
+type(
+  Xml.doc
+)
+ident(
+  int_ref doc "input_libvirtxml.ml" 246 9010 9024 "input_libvirtxml.ml" 246 9010 9027
+)
+"input_libvirtxml.ml" 247 9054 9079 "input_libvirtxml.ml" 247 9054 9104
+call(
+  stack
+)
+type(
+  Xml.xpathctx
+)
+"input_libvirtxml.ml" 248 9108 9122 "input_libvirtxml.ml" 248 9108 9134
+type(
+  string -> string option
+)
+"input_libvirtxml.ml" 248 9108 9137 "input_libvirtxml.ml" 248 9108 9155
+type(
+  Xml.xpathctx -> string -> string option
+)
+ident(
+  ext_ref Utils.xpath_string
+)
+"input_libvirtxml.ml" 248 9108 9156 "input_libvirtxml.ml" 248 9108 9164
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 247 9054 9068 "input_libvirtxml.ml" 247 9054 9076
+)
+"input_libvirtxml.ml" 248 9108 9137 "input_libvirtxml.ml" 248 9108 9164
+call(
+  stack
+)
+type(
+  string -> string option
+)
+"input_libvirtxml.ml" 251 9232 9246 "input_libvirtxml.ml" 251 9232 9252
+type(
+  string option
+)
+"input_libvirtxml.ml" 251 9232 9255 "input_libvirtxml.ml" 251 9232 9267
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 248 9108 9122 "input_libvirtxml.ml" 248 9108 9134
+)
+"input_libvirtxml.ml" 251 9232 9268 "input_libvirtxml.ml" 251 9232 9297
+type(
+  string
+)
+"input_libvirtxml.ml" 251 9232 9255 "input_libvirtxml.ml" 251 9232 9297
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 253 9302 9319 "input_libvirtxml.ml" 253 9302 9331
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 248 9108 9122 "input_libvirtxml.ml" 248 9108 9134
+)
+"input_libvirtxml.ml" 253 9302 9332 "input_libvirtxml.ml" 253 9302 9347
+type(
+  string
+)
+"input_libvirtxml.ml" 253 9302 9319 "input_libvirtxml.ml" 253 9302 9347
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 254 9353 9365 "input_libvirtxml.ml" 254 9353 9369
+type(
+  string option
+)
+"input_libvirtxml.ml" 254 9353 9377 "input_libvirtxml.ml" 254 9353 9383
+type(
+  string
+)
+"input_libvirtxml.ml" 254 9353 9372 "input_libvirtxml.ml" 254 9353 9383
+type(
+  string option
+)
+"input_libvirtxml.ml" 254 9353 9365 "input_libvirtxml.ml" 254 9353 9383
+type(
+  string option
+)
+"input_libvirtxml.ml" 255 9387 9406 "input_libvirtxml.ml" 255 9387 9418
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 248 9108 9122 "input_libvirtxml.ml" 248 9108 9134
+)
+"input_libvirtxml.ml" 255 9387 9419 "input_libvirtxml.ml" 255 9387 9447
+type(
+  string
+)
+"input_libvirtxml.ml" 255 9387 9406 "input_libvirtxml.ml" 255 9387 9447
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 256 9453 9473 "input_libvirtxml.ml" 256 9453 9477
+type(
+  string
+)
+ident(
+  def path "input_libvirtxml.ml" 257 9481 9497 "input_libvirtxml.ml" 257 9481 9549
+)
+"input_libvirtxml.ml" 256 9453 9468 "input_libvirtxml.ml" 256 9453 9477
+type(
+  string option
+)
+"input_libvirtxml.ml" 257 9481 9497 "input_libvirtxml.ml" 257 9481 9505
+type(
+  string ->
+  string option -> Types.s_controller option -> parsed_source -> unit
+)
+ident(
+  int_ref add_disk "input_libvirtxml.ml" 168 6037 6056 "input_libvirtxml.ml" 168 6037 6064
+)
+"input_libvirtxml.ml" 257 9481 9506 "input_libvirtxml.ml" 257 9481 9510
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirtxml.ml" 256 9453 9473 "input_libvirtxml.ml" 256 9453 9477
+)
+"input_libvirtxml.ml" 257 9481 9511 "input_libvirtxml.ml" 257 9481 9517
+type(
+  string option
+)
+ident(
+  int_ref format "input_libvirtxml.ml" 251 9232 9246 "input_libvirtxml.ml" 251 9232 9252
+)
+"input_libvirtxml.ml" 257 9481 9518 "input_libvirtxml.ml" 257 9481 9528
+type(
+  Types.s_controller option
+)
+ident(
+  int_ref controller "input_libvirtxml.ml" 191 6871 6881 "input_libvirtxml.ml" 191 6871 6891
+)
+"input_libvirtxml.ml" 257 9481 9544 "input_libvirtxml.ml" 257 9481 9548
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirtxml.ml" 256 9453 9473 "input_libvirtxml.ml" 256 9453 9477
+)
+"input_libvirtxml.ml" 257 9481 9529 "input_libvirtxml.ml" 257 9481 9549
+type(
+  parsed_source
+)
+"input_libvirtxml.ml" 257 9481 9497 "input_libvirtxml.ml" 257 9481 9549
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 258 9550 9565 "input_libvirtxml.ml" 258 9550 9569
+type(
+  string option
+)
+"input_libvirtxml.ml" 258 9550 9573 "input_libvirtxml.ml" 258 9550 9575
+type(
+  unit
+)
+"input_libvirtxml.ml" 255 9387 9399 "input_libvirtxml.ml" 259 9576 9590
+type(
+  unit
+)
+"input_libvirtxml.ml" 260 9591 9608 "input_libvirtxml.ml" 260 9591 9616
+type(
+  string
+)
+ident(
+  def vol_type "input_libvirtxml.ml" 261 9620 9632 "input_libvirtxml.ml" 261 9620 9711
+)
+"input_libvirtxml.ml" 260 9591 9603 "input_libvirtxml.ml" 260 9591 9616
+type(
+  string option
+)
+"input_libvirtxml.ml" 261 9620 9632 "input_libvirtxml.ml" 261 9620 9639
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirtxml.ml" 261 9620 9641 "input_libvirtxml.ml" 261 9620 9643
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 261 9620 9643 "input_libvirtxml.ml" 261 9620 9701
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 261 9620 9640 "input_libvirtxml.ml" 261 9620 9702
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 261 9620 9703 "input_libvirtxml.ml" 261 9620 9711
+type(
+  string
+)
+ident(
+  int_ref vol_type "input_libvirtxml.ml" 260 9591 9608 "input_libvirtxml.ml" 260 9591 9616
+)
+"input_libvirtxml.ml" 261 9620 9632 "input_libvirtxml.ml" 261 9620 9711
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 253 9302 9312 "input_libvirtxml.ml" 262 9712 9723
+type(
+  unit
+)
+"input_libvirtxml.ml" 251 9232 9242 "input_libvirtxml.ml" 262 9712 9723
+type(
+  unit
+)
+"input_libvirtxml.ml" 248 9108 9118 "input_libvirtxml.ml" 262 9712 9723
+type(
+  unit
+)
+"input_libvirtxml.ml" 247 9054 9064 "input_libvirtxml.ml" 262 9712 9723
+type(
+  unit
+)
+"input_libvirtxml.ml" 246 9010 9020 "input_libvirtxml.ml" 262 9712 9723
+type(
+  unit
+)
+"input_libvirtxml.ml" 245 8950 8960 "input_libvirtxml.ml" 262 9712 9723
+type(
+  unit
+)
+"input_libvirtxml.ml" 242 8781 8789 "input_libvirtxml.ml" 263 9724 9733
+type(
+  unit
+)
+"input_libvirtxml.ml" 264 9734 9747 "input_libvirtxml.ml" 264 9734 9756
+type(
+  string
+)
+ident(
+  def disk_type "input_libvirtxml.ml" 265 9760 9768 "input_libvirtxml.ml" 265 9760 9820
+)
+"input_libvirtxml.ml" 264 9734 9742 "input_libvirtxml.ml" 264 9734 9756
+type(
+  string option
+)
+"input_libvirtxml.ml" 265 9760 9768 "input_libvirtxml.ml" 265 9760 9775
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirtxml.ml" 265 9760 9777 "input_libvirtxml.ml" 265 9760 9779
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 265 9760 9779 "input_libvirtxml.ml" 265 9760 9809
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 265 9760 9776 "input_libvirtxml.ml" 265 9760 9810
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 265 9760 9811 "input_libvirtxml.ml" 265 9760 9820
+type(
+  string
+)
+ident(
+  int_ref disk_type "input_libvirtxml.ml" 264 9734 9747 "input_libvirtxml.ml" 264 9734 9756
+)
+"input_libvirtxml.ml" 265 9760 9768 "input_libvirtxml.ml" 265 9760 9820
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 209 7483 7489 "input_libvirtxml.ml" 265 9760 9820
+type(
+  unit
+)
+"input_libvirtxml.ml" 200 7163 7169 "input_libvirtxml.ml" 265 9760 9820
+type(
+  unit
+)
+"input_libvirtxml.ml" 191 6871 6877 "input_libvirtxml.ml" 265 9760 9820
+type(
+  unit
+)
+"input_libvirtxml.ml" 189 6816 6822 "input_libvirtxml.ml" 265 9760 9820
+type(
+  unit
+)
+"input_libvirtxml.ml" 188 6772 6778 "input_libvirtxml.ml" 265 9760 9820
+type(
+  unit
+)
+"input_libvirtxml.ml" 187 6741 6745 "input_libvirtxml.ml" 266 9821 9829
+type(
+  unit
+)
+"input_libvirtxml.ml" 267 9831 9835 "input_libvirtxml.ml" 267 9831 9844
+type(
+  unit -> parsed_disk list
+)
+ident(
+  int_ref get_disks "input_libvirtxml.ml" 168 6037 6045 "input_libvirtxml.ml" 168 6037 6054
+)
+"input_libvirtxml.ml" 267 9831 9845 "input_libvirtxml.ml" 267 9831 9847
+type(
+  unit
+)
+"input_libvirtxml.ml" 267 9831 9835 "input_libvirtxml.ml" 267 9831 9847
+call(
+  stack
+)
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 187 6741 6745 "input_libvirtxml.ml" 267 9831 9847
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 185 6659 6663 "input_libvirtxml.ml" 267 9831 9847
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 184 6611 6615 "input_libvirtxml.ml" 267 9831 9847
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 181 6506 6510 "input_libvirtxml.ml" 267 9831 9847
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 168 6037 6041 "input_libvirtxml.ml" 267 9831 9847
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 270 9905 9911 "input_libvirtxml.ml" 270 9905 9921
+type(
+  Types.source_removable list
+)
+"input_libvirtxml.ml" 271 9924 9932 "input_libvirtxml.ml" 271 9924 9935
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 272 9938 9944 "input_libvirtxml.ml" 272 9938 9969
+type(
+  Xml.xpathctx -> string -> Xml.xpathobj
+)
+ident(
+  ext_ref Xml.xpath_eval_expression
+)
+"input_libvirtxml.ml" 272 9938 9970 "input_libvirtxml.ml" 272 9938 9978
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 273 9979 9987 "input_libvirtxml.ml" 273 9979 10046
+type(
+  string
+)
+"input_libvirtxml.ml" 272 9938 9944 "input_libvirtxml.ml" 273 9979 10046
+call(
+  stack
+)
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 274 10050 10058 "input_libvirtxml.ml" 274 10050 10066
+type(
+  int
+)
+"input_libvirtxml.ml" 274 10050 10069 "input_libvirtxml.ml" 274 10050 10090
+type(
+  Xml.xpathobj -> int
+)
+ident(
+  ext_ref Xml.xpathobj_nr_nodes
+)
+"input_libvirtxml.ml" 274 10050 10091 "input_libvirtxml.ml" 274 10050 10094
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 271 9924 9932 "input_libvirtxml.ml" 271 9924 9935
+)
+"input_libvirtxml.ml" 274 10050 10069 "input_libvirtxml.ml" 274 10050 10094
+call(
+  stack
+)
+type(
+  int
+)
+"input_libvirtxml.ml" 275 10098 10106 "input_libvirtxml.ml" 275 10098 10111
+type(
+  Types.source_removable list ref
+)
+"input_libvirtxml.ml" 275 10098 10114 "input_libvirtxml.ml" 275 10098 10117
+type(
+  Types.source_removable list -> Types.source_removable list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"input_libvirtxml.ml" 275 10098 10118 "input_libvirtxml.ml" 275 10098 10120
+type(
+  Types.source_removable list
+)
+"input_libvirtxml.ml" 275 10098 10114 "input_libvirtxml.ml" 275 10098 10120
+type(
+  Types.source_removable list ref
+)
+"input_libvirtxml.ml" 276 10124 10136 "input_libvirtxml.ml" 276 10124 10137
+type(
+  int
+)
+"input_libvirtxml.ml" 276 10124 10141 "input_libvirtxml.ml" 276 10124 10149
+type(
+  int
+)
+ident(
+  int_ref nr_nodes "input_libvirtxml.ml" 274 10050 10058 "input_libvirtxml.ml" 274 10050 10066
+)
+"input_libvirtxml.ml" 276 10124 10149 "input_libvirtxml.ml" 276 10124 10150
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"input_libvirtxml.ml" 276 10124 10150 "input_libvirtxml.ml" 276 10124 10151
+type(
+  int
+)
+"input_libvirtxml.ml" 276 10124 10141 "input_libvirtxml.ml" 276 10124 10151
+type(
+  int
+)
+"input_libvirtxml.ml" 277 10155 10165 "input_libvirtxml.ml" 277 10155 10169
+type(
+  Xml.node
+)
+ident(
+  def node "input_libvirtxml.ml" 278 10199 10205 "input_libvirtxml.ml" 311 11392 11421
+)
+"input_libvirtxml.ml" 277 10155 10172 "input_libvirtxml.ml" 277 10155 10189
+type(
+  Xml.xpathobj -> int -> Xml.node
+)
+ident(
+  ext_ref Xml.xpathobj_node
+)
+"input_libvirtxml.ml" 277 10155 10190 "input_libvirtxml.ml" 277 10155 10193
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 271 9924 9932 "input_libvirtxml.ml" 271 9924 9935
+)
+"input_libvirtxml.ml" 277 10155 10194 "input_libvirtxml.ml" 277 10155 10195
+type(
+  int
+)
+"input_libvirtxml.ml" 277 10155 10172 "input_libvirtxml.ml" 277 10155 10195
+call(
+  stack
+)
+type(
+  Xml.node
+)
+"input_libvirtxml.ml" 278 10199 10205 "input_libvirtxml.ml" 278 10199 10237
+type(
+  Xml.xpathctx -> Xml.node -> unit
+)
+ident(
+  ext_ref Xml.xpathctx_set_current_context
+)
+"input_libvirtxml.ml" 278 10199 10238 "input_libvirtxml.ml" 278 10199 10246
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 278 10199 10247 "input_libvirtxml.ml" 278 10199 10251
+type(
+  Xml.node
+)
+ident(
+  int_ref node "input_libvirtxml.ml" 277 10155 10165 "input_libvirtxml.ml" 277 10155 10169
+)
+"input_libvirtxml.ml" 278 10199 10205 "input_libvirtxml.ml" 278 10199 10251
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 280 10254 10264 "input_libvirtxml.ml" 280 10254 10274
+type(
+  Types.s_controller option
+)
+ident(
+  def controller "input_libvirtxml.ml" 289 10546 10552 "input_libvirtxml.ml" 311 11392 11421
+)
+"input_libvirtxml.ml" 281 10277 10289 "input_libvirtxml.ml" 281 10277 10299
+type(
+  string option
+)
+"input_libvirtxml.ml" 281 10277 10302 "input_libvirtxml.ml" 281 10277 10314
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 281 10277 10315 "input_libvirtxml.ml" 281 10277 10328
+type(
+  string
+)
+"input_libvirtxml.ml" 281 10277 10302 "input_libvirtxml.ml" 281 10277 10328
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 282 10332 10346 "input_libvirtxml.ml" 282 10332 10356
+type(
+  string option
+)
+ident(
+  int_ref target_bus "input_libvirtxml.ml" 281 10277 10289 "input_libvirtxml.ml" 281 10277 10299
+)
+"input_libvirtxml.ml" 283 10362 10372 "input_libvirtxml.ml" 283 10362 10376
+type(
+  string option
+)
+"input_libvirtxml.ml" 283 10362 10380 "input_libvirtxml.ml" 283 10362 10384
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 284 10385 10400 "input_libvirtxml.ml" 284 10385 10405
+type(
+  string
+)
+"input_libvirtxml.ml" 284 10385 10395 "input_libvirtxml.ml" 284 10385 10405
+type(
+  string option
+)
+"input_libvirtxml.ml" 284 10385 10414 "input_libvirtxml.ml" 284 10385 10424
+type(
+  Types.s_controller
+)
+"input_libvirtxml.ml" 284 10385 10409 "input_libvirtxml.ml" 284 10385 10424
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 285 10425 10440 "input_libvirtxml.ml" 285 10425 10446
+type(
+  string
+)
+"input_libvirtxml.ml" 285 10425 10435 "input_libvirtxml.ml" 285 10425 10446
+type(
+  string option
+)
+"input_libvirtxml.ml" 285 10425 10455 "input_libvirtxml.ml" 285 10425 10466
+type(
+  Types.s_controller
+)
+"input_libvirtxml.ml" 285 10425 10450 "input_libvirtxml.ml" 285 10425 10466
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 286 10467 10482 "input_libvirtxml.ml" 286 10467 10490
+type(
+  string
+)
+"input_libvirtxml.ml" 286 10467 10477 "input_libvirtxml.ml" 286 10467 10490
+type(
+  string option
+)
+"input_libvirtxml.ml" 286 10467 10499 "input_libvirtxml.ml" 286 10467 10516
+type(
+  Types.s_controller
+)
+"input_libvirtxml.ml" 286 10467 10494 "input_libvirtxml.ml" 286 10467 10516
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 287 10517 10532 "input_libvirtxml.ml" 287 10517 10533
+type(
+  string
+)
+"input_libvirtxml.ml" 287 10517 10527 "input_libvirtxml.ml" 287 10517 10533
+type(
+  string option
+)
+"input_libvirtxml.ml" 287 10517 10537 "input_libvirtxml.ml" 287 10517 10541
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 282 10332 10340 "input_libvirtxml.ml" 287 10517 10541
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 281 10277 10285 "input_libvirtxml.ml" 287 10517 10541
+type(
+  Types.s_controller option
+)
+"input_libvirtxml.ml" 289 10546 10556 "input_libvirtxml.ml" 289 10546 10560
+type(
+  int option
+)
+ident(
+  def slot "input_libvirtxml.ml" 301 11078 11084 "input_libvirtxml.ml" 311 11392 11421
+)
+"input_libvirtxml.ml" 290 10563 10575 "input_libvirtxml.ml" 290 10563 10585
+type(
+  string option
+)
+"input_libvirtxml.ml" 290 10563 10588 "input_libvirtxml.ml" 290 10563 10600
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 290 10563 10601 "input_libvirtxml.ml" 290 10563 10614
+type(
+  string
+)
+"input_libvirtxml.ml" 290 10563 10588 "input_libvirtxml.ml" 290 10563 10614
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 291 10618 10632 "input_libvirtxml.ml" 291 10618 10642
+type(
+  string option
+)
+ident(
+  int_ref target_dev "input_libvirtxml.ml" 290 10563 10575 "input_libvirtxml.ml" 290 10563 10585
+)
+"input_libvirtxml.ml" 292 10648 10658 "input_libvirtxml.ml" 292 10648 10662
+type(
+  string option
+)
+"input_libvirtxml.ml" 292 10648 10666 "input_libvirtxml.ml" 292 10648 10670
+type(
+  int option
+)
+"input_libvirtxml.ml" 293 10671 10686 "input_libvirtxml.ml" 293 10671 10687
+type(
+  string
+)
+ident(
+  def s "input_libvirtxml.ml" 293 10671 10688 "input_libvirtxml.ml" 293 10671 10735
+)
+"input_libvirtxml.ml" 293 10671 10681 "input_libvirtxml.ml" 293 10671 10687
+type(
+  string option
+)
+"input_libvirtxml.ml" 293 10671 10693 "input_libvirtxml.ml" 293 10671 10706
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Common_utils.string_prefix
+)
+"input_libvirtxml.ml" 293 10671 10707 "input_libvirtxml.ml" 293 10671 10708
+type(
+  string
+)
+ident(
+  int_ref s "input_libvirtxml.ml" 293 10671 10686 "input_libvirtxml.ml" 293 10671 10687
+)
+"input_libvirtxml.ml" 293 10671 10709 "input_libvirtxml.ml" 293 10671 10713
+type(
+  string
+)
+"input_libvirtxml.ml" 293 10671 10693 "input_libvirtxml.ml" 293 10671 10713
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirtxml.ml" 293 10671 10717 "input_libvirtxml.ml" 293 10671 10731
+type(
+  string -> int -> int option
+)
+ident(
+  int_ref get_drive_slot "input_libvirtxml.ml" 39 1166 1170 "input_libvirtxml.ml" 39 1166 1184
+)
+"input_libvirtxml.ml" 293 10671 10732 "input_libvirtxml.ml" 293 10671 10733
+type(
+  string
+)
+ident(
+  int_ref s "input_libvirtxml.ml" 293 10671 10686 "input_libvirtxml.ml" 293 10671 10687
+)
+"input_libvirtxml.ml" 293 10671 10734 "input_libvirtxml.ml" 293 10671 10735
+type(
+  int
+)
+"input_libvirtxml.ml" 293 10671 10717 "input_libvirtxml.ml" 293 10671 10735
+call(
+  stack
+)
+type(
+  int option
+)
+"input_libvirtxml.ml" 293 10671 10688 "input_libvirtxml.ml" 293 10671 10735
+type(
+  int option
+)
+"input_libvirtxml.ml" 294 10736 10751 "input_libvirtxml.ml" 294 10736 10752
+type(
+  string
+)
+ident(
+  def s "input_libvirtxml.ml" 294 10736 10753 "input_libvirtxml.ml" 294 10736 10800
+)
+"input_libvirtxml.ml" 294 10736 10746 "input_libvirtxml.ml" 294 10736 10752
+type(
+  string option
+)
+"input_libvirtxml.ml" 294 10736 10758 "input_libvirtxml.ml" 294 10736 10771
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Common_utils.string_prefix
+)
+"input_libvirtxml.ml" 294 10736 10772 "input_libvirtxml.ml" 294 10736 10773
+type(
+  string
+)
+ident(
+  int_ref s "input_libvirtxml.ml" 294 10736 10751 "input_libvirtxml.ml" 294 10736 10752
+)
+"input_libvirtxml.ml" 294 10736 10774 "input_libvirtxml.ml" 294 10736 10778
+type(
+  string
+)
+"input_libvirtxml.ml" 294 10736 10758 "input_libvirtxml.ml" 294 10736 10778
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirtxml.ml" 294 10736 10782 "input_libvirtxml.ml" 294 10736 10796
+type(
+  string -> int -> int option
+)
+ident(
+  int_ref get_drive_slot "input_libvirtxml.ml" 39 1166 1170 "input_libvirtxml.ml" 39 1166 1184
+)
+"input_libvirtxml.ml" 294 10736 10797 "input_libvirtxml.ml" 294 10736 10798
+type(
+  string
+)
+ident(
+  int_ref s "input_libvirtxml.ml" 294 10736 10751 "input_libvirtxml.ml" 294 10736 10752
+)
+"input_libvirtxml.ml" 294 10736 10799 "input_libvirtxml.ml" 294 10736 10800
+type(
+  int
+)
+"input_libvirtxml.ml" 294 10736 10782 "input_libvirtxml.ml" 294 10736 10800
+call(
+  stack
+)
+type(
+  int option
+)
+"input_libvirtxml.ml" 294 10736 10753 "input_libvirtxml.ml" 294 10736 10800
+type(
+  int option
+)
+"input_libvirtxml.ml" 295 10801 10816 "input_libvirtxml.ml" 295 10801 10817
+type(
+  string
+)
+ident(
+  def s "input_libvirtxml.ml" 295 10801 10818 "input_libvirtxml.ml" 295 10801 10865
+)
+"input_libvirtxml.ml" 295 10801 10811 "input_libvirtxml.ml" 295 10801 10817
+type(
+  string option
+)
+"input_libvirtxml.ml" 295 10801 10823 "input_libvirtxml.ml" 295 10801 10836
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Common_utils.string_prefix
+)
+"input_libvirtxml.ml" 295 10801 10837 "input_libvirtxml.ml" 295 10801 10838
+type(
+  string
+)
+ident(
+  int_ref s "input_libvirtxml.ml" 295 10801 10816 "input_libvirtxml.ml" 295 10801 10817
+)
+"input_libvirtxml.ml" 295 10801 10839 "input_libvirtxml.ml" 295 10801 10843
+type(
+  string
+)
+"input_libvirtxml.ml" 295 10801 10823 "input_libvirtxml.ml" 295 10801 10843
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirtxml.ml" 295 10801 10847 "input_libvirtxml.ml" 295 10801 10861
+type(
+  string -> int -> int option
+)
+ident(
+  int_ref get_drive_slot "input_libvirtxml.ml" 39 1166 1170 "input_libvirtxml.ml" 39 1166 1184
+)
+"input_libvirtxml.ml" 295 10801 10862 "input_libvirtxml.ml" 295 10801 10863
+type(
+  string
+)
+ident(
+  int_ref s "input_libvirtxml.ml" 295 10801 10816 "input_libvirtxml.ml" 295 10801 10817
+)
+"input_libvirtxml.ml" 295 10801 10864 "input_libvirtxml.ml" 295 10801 10865
+type(
+  int
+)
+"input_libvirtxml.ml" 295 10801 10847 "input_libvirtxml.ml" 295 10801 10865
+call(
+  stack
+)
+type(
+  int option
+)
+"input_libvirtxml.ml" 295 10801 10818 "input_libvirtxml.ml" 295 10801 10865
+type(
+  int option
+)
+"input_libvirtxml.ml" 296 10866 10881 "input_libvirtxml.ml" 296 10866 10882
+type(
+  string
+)
+ident(
+  def s "input_libvirtxml.ml" 296 10866 10883 "input_libvirtxml.ml" 296 10866 10931
+)
+"input_libvirtxml.ml" 296 10866 10876 "input_libvirtxml.ml" 296 10866 10882
+type(
+  string option
+)
+"input_libvirtxml.ml" 296 10866 10888 "input_libvirtxml.ml" 296 10866 10901
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Common_utils.string_prefix
+)
+"input_libvirtxml.ml" 296 10866 10902 "input_libvirtxml.ml" 296 10866 10903
+type(
+  string
+)
+ident(
+  int_ref s "input_libvirtxml.ml" 296 10866 10881 "input_libvirtxml.ml" 296 10866 10882
+)
+"input_libvirtxml.ml" 296 10866 10904 "input_libvirtxml.ml" 296 10866 10909
+type(
+  string
+)
+"input_libvirtxml.ml" 296 10866 10888 "input_libvirtxml.ml" 296 10866 10909
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirtxml.ml" 296 10866 10913 "input_libvirtxml.ml" 296 10866 10927
+type(
+  string -> int -> int option
+)
+ident(
+  int_ref get_drive_slot "input_libvirtxml.ml" 39 1166 1170 "input_libvirtxml.ml" 39 1166 1184
+)
+"input_libvirtxml.ml" 296 10866 10928 "input_libvirtxml.ml" 296 10866 10929
+type(
+  string
+)
+ident(
+  int_ref s "input_libvirtxml.ml" 296 10866 10881 "input_libvirtxml.ml" 296 10866 10882
+)
+"input_libvirtxml.ml" 296 10866 10930 "input_libvirtxml.ml" 296 10866 10931
+type(
+  int
+)
+"input_libvirtxml.ml" 296 10866 10913 "input_libvirtxml.ml" 296 10866 10931
+call(
+  stack
+)
+type(
+  int option
+)
+"input_libvirtxml.ml" 296 10866 10883 "input_libvirtxml.ml" 296 10866 10931
+type(
+  int option
+)
+"input_libvirtxml.ml" 297 10932 10947 "input_libvirtxml.ml" 297 10932 10948
+type(
+  string
+)
+ident(
+  def s "input_libvirtxml.ml" 298 10952 10963 "input_libvirtxml.ml" 299 11058 11073
+)
+"input_libvirtxml.ml" 297 10932 10942 "input_libvirtxml.ml" 297 10932 10948
+type(
+  string option
+)
+"input_libvirtxml.ml" 298 10952 10963 "input_libvirtxml.ml" 298 10952 10970
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirtxml.ml" 298 10952 10972 "input_libvirtxml.ml" 298 10952 10974
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirtxml.ml" 298 10952 10974 "input_libvirtxml.ml" 298 10952 11053
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_libvirtxml.ml" 298 10952 10971 "input_libvirtxml.ml" 298 10952 11054
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_libvirtxml.ml" 298 10952 11055 "input_libvirtxml.ml" 298 10952 11056
+type(
+  string
+)
+ident(
+  int_ref s "input_libvirtxml.ml" 297 10932 10947 "input_libvirtxml.ml" 297 10932 10948
+)
+"input_libvirtxml.ml" 298 10952 10963 "input_libvirtxml.ml" 298 10952 11056
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 299 11058 11069 "input_libvirtxml.ml" 299 11058 11073
+type(
+  int option
+)
+"input_libvirtxml.ml" 298 10952 10963 "input_libvirtxml.ml" 299 11058 11073
+type(
+  int option
+)
+"input_libvirtxml.ml" 291 10618 10626 "input_libvirtxml.ml" 299 11058 11073
+type(
+  int option
+)
+"input_libvirtxml.ml" 290 10563 10571 "input_libvirtxml.ml" 299 11058 11073
+type(
+  int option
+)
+"input_libvirtxml.ml" 301 11078 11088 "input_libvirtxml.ml" 301 11078 11091
+type(
+  Types.s_removable_type
+)
+ident(
+  def typ "input_libvirtxml.ml" 307 11255 11261 "input_libvirtxml.ml" 311 11392 11421
+)
+"input_libvirtxml.ml" 302 11094 11108 "input_libvirtxml.ml" 302 11094 11120
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 302 11094 11121 "input_libvirtxml.ml" 302 11094 11130
+type(
+  string
+)
+"input_libvirtxml.ml" 302 11094 11108 "input_libvirtxml.ml" 302 11094 11130
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 303 11136 11151 "input_libvirtxml.ml" 303 11136 11158
+type(
+  string
+)
+"input_libvirtxml.ml" 303 11136 11146 "input_libvirtxml.ml" 303 11136 11158
+type(
+  string option
+)
+"input_libvirtxml.ml" 303 11136 11162 "input_libvirtxml.ml" 303 11136 11167
+type(
+  Types.s_removable_type
+)
+"input_libvirtxml.ml" 304 11168 11183 "input_libvirtxml.ml" 304 11168 11191
+type(
+  string
+)
+"input_libvirtxml.ml" 304 11168 11178 "input_libvirtxml.ml" 304 11168 11191
+type(
+  string option
+)
+"input_libvirtxml.ml" 304 11168 11195 "input_libvirtxml.ml" 304 11168 11201
+type(
+  Types.s_removable_type
+)
+"input_libvirtxml.ml" 305 11202 11212 "input_libvirtxml.ml" 305 11202 11213
+type(
+  string option
+)
+"input_libvirtxml.ml" 305 11202 11217 "input_libvirtxml.ml" 305 11202 11229
+type(
+  Types.s_removable_type
+)
+"input_libvirtxml.ml" 302 11094 11102 "input_libvirtxml.ml" 305 11202 11229
+type(
+  Types.s_removable_type
+)
+"input_libvirtxml.ml" 307 11255 11265 "input_libvirtxml.ml" 307 11255 11269
+type(
+  Types.source_removable
+)
+ident(
+  def disk "input_libvirtxml.ml" 311 11392 11398 "input_libvirtxml.ml" 311 11392 11421
+)
+"input_libvirtxml.ml" 308 11272 11301 "input_libvirtxml.ml" 308 11272 11304
+type(
+  Types.s_removable_type
+)
+ident(
+  int_ref typ "input_libvirtxml.ml" 301 11078 11088 "input_libvirtxml.ml" 301 11078 11091
+)
+"input_libvirtxml.ml" 309 11306 11341 "input_libvirtxml.ml" 309 11306 11351
+type(
+  Types.s_controller option
+)
+ident(
+  int_ref controller "input_libvirtxml.ml" 280 10254 10264 "input_libvirtxml.ml" 280 10254 10274
+)
+"input_libvirtxml.ml" 310 11353 11382 "input_libvirtxml.ml" 310 11353 11386
+type(
+  int option
+)
+ident(
+  int_ref slot "input_libvirtxml.ml" 289 10546 10556 "input_libvirtxml.ml" 289 10546 10560
+)
+"input_libvirtxml.ml" 308 11272 11280 "input_libvirtxml.ml" 310 11353 11388
+type(
+  Types.source_removable
+)
+"input_libvirtxml.ml" 311 11392 11398 "input_libvirtxml.ml" 311 11392 11403
+type(
+  Types.source_removable list ref
+)
+ident(
+  int_ref disks "input_libvirtxml.ml" 275 10098 10106 "input_libvirtxml.ml" 275 10098 10111
+)
+"input_libvirtxml.ml" 311 11392 11404 "input_libvirtxml.ml" 311 11392 11406
+type(
+  Types.source_removable list ref -> Types.source_removable list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"input_libvirtxml.ml" 311 11392 11407 "input_libvirtxml.ml" 311 11392 11411
+type(
+  Types.source_removable
+)
+ident(
+  int_ref disk "input_libvirtxml.ml" 307 11255 11265 "input_libvirtxml.ml" 307 11255 11269
+)
+"input_libvirtxml.ml" 311 11392 11415 "input_libvirtxml.ml" 311 11392 11416
+type(
+  Types.source_removable list ref -> Types.source_removable list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirtxml.ml" 311 11392 11416 "input_libvirtxml.ml" 311 11392 11421
+type(
+  Types.source_removable list ref
+)
+ident(
+  int_ref disks "input_libvirtxml.ml" 275 10098 10106 "input_libvirtxml.ml" 275 10098 10111
+)
+"input_libvirtxml.ml" 311 11392 11415 "input_libvirtxml.ml" 311 11392 11421
+type(
+  Types.source_removable list
+)
+"input_libvirtxml.ml" 311 11392 11407 "input_libvirtxml.ml" 311 11392 11421
+type(
+  Types.source_removable list
+)
+"input_libvirtxml.ml" 311 11392 11398 "input_libvirtxml.ml" 311 11392 11421
+type(
+  unit
+)
+"input_libvirtxml.ml" 307 11255 11261 "input_libvirtxml.ml" 311 11392 11421
+type(
+  unit
+)
+"input_libvirtxml.ml" 301 11078 11084 "input_libvirtxml.ml" 311 11392 11421
+type(
+  unit
+)
+"input_libvirtxml.ml" 289 10546 10552 "input_libvirtxml.ml" 311 11392 11421
+type(
+  unit
+)
+"input_libvirtxml.ml" 280 10254 10260 "input_libvirtxml.ml" 311 11392 11421
+type(
+  unit
+)
+"input_libvirtxml.ml" 278 10199 10205 "input_libvirtxml.ml" 311 11392 11421
+type(
+  unit
+)
+"input_libvirtxml.ml" 277 10155 10161 "input_libvirtxml.ml" 311 11392 11421
+type(
+  unit
+)
+"input_libvirtxml.ml" 276 10124 10128 "input_libvirtxml.ml" 312 11422 11430
+type(
+  unit
+)
+"input_libvirtxml.ml" 313 11432 11436 "input_libvirtxml.ml" 313 11432 11444
+type(
+  Types.source_removable list -> Types.source_removable list
+)
+ident(
+  ext_ref List.rev
+)
+"input_libvirtxml.ml" 313 11432 11445 "input_libvirtxml.ml" 313 11432 11446
+type(
+  Types.source_removable list ref -> Types.source_removable list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirtxml.ml" 313 11432 11446 "input_libvirtxml.ml" 313 11432 11451
+type(
+  Types.source_removable list ref
+)
+ident(
+  int_ref disks "input_libvirtxml.ml" 275 10098 10106 "input_libvirtxml.ml" 275 10098 10111
+)
+"input_libvirtxml.ml" 313 11432 11445 "input_libvirtxml.ml" 313 11432 11451
+type(
+  Types.source_removable list
+)
+"input_libvirtxml.ml" 313 11432 11436 "input_libvirtxml.ml" 313 11432 11451
+call(
+  stack
+)
+type(
+  Types.source_removable list
+)
+"input_libvirtxml.ml" 276 10124 10128 "input_libvirtxml.ml" 313 11432 11451
+type(
+  Types.source_removable list
+)
+"input_libvirtxml.ml" 275 10098 10102 "input_libvirtxml.ml" 313 11432 11451
+type(
+  Types.source_removable list
+)
+"input_libvirtxml.ml" 274 10050 10054 "input_libvirtxml.ml" 313 11432 11451
+type(
+  Types.source_removable list
+)
+"input_libvirtxml.ml" 271 9924 9928 "input_libvirtxml.ml" 313 11432 11451
+type(
+  Types.source_removable list
+)
+"input_libvirtxml.ml" 316 11484 11490 "input_libvirtxml.ml" 316 11484 11494
+type(
+  Types.source_nic list
+)
+"input_libvirtxml.ml" 317 11497 11505 "input_libvirtxml.ml" 317 11497 11508
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 317 11497 11511 "input_libvirtxml.ml" 317 11497 11536
+type(
+  Xml.xpathctx -> string -> Xml.xpathobj
+)
+ident(
+  ext_ref Xml.xpath_eval_expression
+)
+"input_libvirtxml.ml" 317 11497 11537 "input_libvirtxml.ml" 317 11497 11545
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 317 11497 11546 "input_libvirtxml.ml" 317 11497 11573
+type(
+  string
+)
+"input_libvirtxml.ml" 317 11497 11511 "input_libvirtxml.ml" 317 11497 11573
+call(
+  stack
+)
+type(
+  Xml.xpathobj
+)
+"input_libvirtxml.ml" 318 11577 11585 "input_libvirtxml.ml" 318 11577 11593
+type(
+  int
+)
+"input_libvirtxml.ml" 318 11577 11596 "input_libvirtxml.ml" 318 11577 11617
+type(
+  Xml.xpathobj -> int
+)
+ident(
+  ext_ref Xml.xpathobj_nr_nodes
+)
+"input_libvirtxml.ml" 318 11577 11618 "input_libvirtxml.ml" 318 11577 11621
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 317 11497 11505 "input_libvirtxml.ml" 317 11497 11508
+)
+"input_libvirtxml.ml" 318 11577 11596 "input_libvirtxml.ml" 318 11577 11621
+call(
+  stack
+)
+type(
+  int
+)
+"input_libvirtxml.ml" 319 11625 11633 "input_libvirtxml.ml" 319 11625 11637
+type(
+  Types.source_nic list ref
+)
+"input_libvirtxml.ml" 319 11625 11640 "input_libvirtxml.ml" 319 11625 11643
+type(
+  Types.source_nic list -> Types.source_nic list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"input_libvirtxml.ml" 319 11625 11644 "input_libvirtxml.ml" 319 11625 11646
+type(
+  Types.source_nic list
+)
+"input_libvirtxml.ml" 319 11625 11640 "input_libvirtxml.ml" 319 11625 11646
+type(
+  Types.source_nic list ref
+)
+"input_libvirtxml.ml" 320 11650 11662 "input_libvirtxml.ml" 320 11650 11663
+type(
+  int
+)
+"input_libvirtxml.ml" 320 11650 11667 "input_libvirtxml.ml" 320 11650 11675
+type(
+  int
+)
+ident(
+  int_ref nr_nodes "input_libvirtxml.ml" 318 11577 11585 "input_libvirtxml.ml" 318 11577 11593
+)
+"input_libvirtxml.ml" 320 11650 11675 "input_libvirtxml.ml" 320 11650 11676
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"input_libvirtxml.ml" 320 11650 11676 "input_libvirtxml.ml" 320 11650 11677
+type(
+  int
+)
+"input_libvirtxml.ml" 320 11650 11667 "input_libvirtxml.ml" 320 11650 11677
+type(
+  int
+)
+"input_libvirtxml.ml" 321 11681 11691 "input_libvirtxml.ml" 321 11681 11695
+type(
+  Xml.node
+)
+ident(
+  def node "input_libvirtxml.ml" 322 11725 11731 "input_libvirtxml.ml" 356 12774 12798
+)
+"input_libvirtxml.ml" 321 11681 11698 "input_libvirtxml.ml" 321 11681 11715
+type(
+  Xml.xpathobj -> int -> Xml.node
+)
+ident(
+  ext_ref Xml.xpathobj_node
+)
+"input_libvirtxml.ml" 321 11681 11716 "input_libvirtxml.ml" 321 11681 11719
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "input_libvirtxml.ml" 317 11497 11505 "input_libvirtxml.ml" 317 11497 11508
+)
+"input_libvirtxml.ml" 321 11681 11720 "input_libvirtxml.ml" 321 11681 11721
+type(
+  int
+)
+"input_libvirtxml.ml" 321 11681 11698 "input_libvirtxml.ml" 321 11681 11721
+call(
+  stack
+)
+type(
+  Xml.node
+)
+"input_libvirtxml.ml" 322 11725 11731 "input_libvirtxml.ml" 322 11725 11763
+type(
+  Xml.xpathctx -> Xml.node -> unit
+)
+ident(
+  ext_ref Xml.xpathctx_set_current_context
+)
+"input_libvirtxml.ml" 322 11725 11764 "input_libvirtxml.ml" 322 11725 11772
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "input_libvirtxml.ml" 54 1711 1717 "input_libvirtxml.ml" 54 1711 1725
+)
+"input_libvirtxml.ml" 322 11725 11773 "input_libvirtxml.ml" 322 11725 11777
+type(
+  Xml.node
+)
+ident(
+  int_ref node "input_libvirtxml.ml" 321 11681 11691 "input_libvirtxml.ml" 321 11681 11695
+)
+"input_libvirtxml.ml" 322 11725 11731 "input_libvirtxml.ml" 322 11725 11777
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 324 11780 11790 "input_libvirtxml.ml" 324 11780 11793
+type(
+  string option
+)
+ident(
+  def mac "input_libvirtxml.ml" 325 11827 11833 "input_libvirtxml.ml" 356 12774 12798
+)
+"input_libvirtxml.ml" 324 11780 11796 "input_libvirtxml.ml" 324 11780 11808
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 324 11780 11809 "input_libvirtxml.ml" 324 11780 11823
+type(
+  string
+)
+"input_libvirtxml.ml" 324 11780 11796 "input_libvirtxml.ml" 324 11780 11823
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 325 11827 11837 "input_libvirtxml.ml" 325 11827 11840
+type(
+  string option
+)
+ident(
+  def mac "input_libvirtxml.ml" 331 11980 11986 "input_libvirtxml.ml" 356 12774 12798
+)
+"input_libvirtxml.ml" 326 11843 11857 "input_libvirtxml.ml" 326 11843 11860
+type(
+  string option
+)
+ident(
+  int_ref mac "input_libvirtxml.ml" 324 11780 11790 "input_libvirtxml.ml" 324 11780 11793
+)
+"input_libvirtxml.ml" 327 11866 11876 "input_libvirtxml.ml" 327 11866 11880
+type(
+  string option
+)
+"input_libvirtxml.ml" 328 11881 11896 "input_libvirtxml.ml" 328 11881 11915
+type(
+  string
+)
+"input_libvirtxml.ml" 328 11881 11891 "input_libvirtxml.ml" 328 11881 11915
+type(
+  string option
+)
+"input_libvirtxml.ml" 327 11866 11876 "input_libvirtxml.ml" 328 11881 11915
+type(
+  string option
+)
+"input_libvirtxml.ml" 328 11881 11940 "input_libvirtxml.ml" 328 11881 11944
+type(
+  string option
+)
+"input_libvirtxml.ml" 329 11945 11960 "input_libvirtxml.ml" 329 11945 11963
+type(
+  string
+)
+ident(
+  def mac "input_libvirtxml.ml" 329 11945 11967 "input_libvirtxml.ml" 329 11945 11975
+)
+"input_libvirtxml.ml" 329 11945 11955 "input_libvirtxml.ml" 329 11945 11963
+type(
+  string option
+)
+"input_libvirtxml.ml" 329 11945 11972 "input_libvirtxml.ml" 329 11945 11975
+type(
+  string
+)
+ident(
+  int_ref mac "input_libvirtxml.ml" 329 11945 11960 "input_libvirtxml.ml" 329 11945 11963
+)
+"input_libvirtxml.ml" 329 11945 11967 "input_libvirtxml.ml" 329 11945 11975
+type(
+  string option
+)
+"input_libvirtxml.ml" 326 11843 11851 "input_libvirtxml.ml" 329 11945 11975
+type(
+  string option
+)
+"input_libvirtxml.ml" 331 11980 11990 "input_libvirtxml.ml" 331 11980 11999
+type(
+  Types.vnet_type option
+)
+ident(
+  def vnet_type "input_libvirtxml.ml" 336 12157 12163 "input_libvirtxml.ml" 356 12774 12798
+)
+"input_libvirtxml.ml" 332 12002 12016 "input_libvirtxml.ml" 332 12002 12028
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 332 12002 12029 "input_libvirtxml.ml" 332 12002 12036
+type(
+  string
+)
+"input_libvirtxml.ml" 332 12002 12016 "input_libvirtxml.ml" 332 12002 12036
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 333 12042 12057 "input_libvirtxml.ml" 333 12042 12066
+type(
+  string
+)
+"input_libvirtxml.ml" 333 12042 12052 "input_libvirtxml.ml" 333 12042 12066
+type(
+  string option
+)
+"input_libvirtxml.ml" 333 12042 12075 "input_libvirtxml.ml" 333 12042 12082
+type(
+  Types.vnet_type
+)
+"input_libvirtxml.ml" 333 12042 12070 "input_libvirtxml.ml" 333 12042 12082
+type(
+  Types.vnet_type option
+)
+"input_libvirtxml.ml" 334 12083 12098 "input_libvirtxml.ml" 334 12083 12106
+type(
+  string
+)
+"input_libvirtxml.ml" 334 12083 12093 "input_libvirtxml.ml" 334 12083 12106
+type(
+  string option
+)
+"input_libvirtxml.ml" 334 12083 12115 "input_libvirtxml.ml" 334 12083 12121
+type(
+  Types.vnet_type
+)
+"input_libvirtxml.ml" 334 12083 12110 "input_libvirtxml.ml" 334 12083 12121
+type(
+  Types.vnet_type option
+)
+"input_libvirtxml.ml" 335 12122 12132 "input_libvirtxml.ml" 335 12122 12136
+type(
+  string option
+)
+"input_libvirtxml.ml" 335 12122 12144 "input_libvirtxml.ml" 335 12122 12145
+type(
+  string
+)
+"input_libvirtxml.ml" 335 12122 12139 "input_libvirtxml.ml" 335 12122 12145
+type(
+  string option
+)
+"input_libvirtxml.ml" 335 12122 12132 "input_libvirtxml.ml" 335 12122 12145
+type(
+  string option
+)
+"input_libvirtxml.ml" 335 12122 12149 "input_libvirtxml.ml" 335 12122 12153
+type(
+  Types.vnet_type option
+)
+"input_libvirtxml.ml" 332 12002 12010 "input_libvirtxml.ml" 335 12122 12153
+type(
+  Types.vnet_type option
+)
+"input_libvirtxml.ml" 336 12157 12169 "input_libvirtxml.ml" 336 12157 12178
+type(
+  Types.vnet_type option
+)
+ident(
+  int_ref vnet_type "input_libvirtxml.ml" 331 11980 11990 "input_libvirtxml.ml" 331 11980 11999
+)
+"input_libvirtxml.ml" 337 12184 12192 "input_libvirtxml.ml" 337 12184 12196
+type(
+  Types.vnet_type option
+)
+"input_libvirtxml.ml" 337 12184 12200 "input_libvirtxml.ml" 337 12184 12202
+type(
+  unit
+)
+"input_libvirtxml.ml" 338 12203 12216 "input_libvirtxml.ml" 338 12203 12225
+type(
+  Types.vnet_type
+)
+ident(
+  def vnet_type "input_libvirtxml.ml" 339 12229 12238 "input_libvirtxml.ml" 356 12774 12798
+)
+"input_libvirtxml.ml" 338 12203 12211 "input_libvirtxml.ml" 338 12203 12225
+type(
+  Types.vnet_type option
+)
+"input_libvirtxml.ml" 339 12229 12242 "input_libvirtxml.ml" 339 12229 12249
+type(
+  string -> unit
+)
+"input_libvirtxml.ml" 339 12229 12250 "input_libvirtxml.ml" 339 12229 12254
+type(
+  string
+)
+ident(
+  def vnet "input_libvirtxml.ml" 340 12257 12268 "input_libvirtxml.ml" 346 12420 12451
+)
+"input_libvirtxml.ml" 340 12257 12272 "input_libvirtxml.ml" 340 12257 12275
+type(
+  Types.source_nic
+)
+"input_libvirtxml.ml" 341 12280 12301 "input_libvirtxml.ml" 341 12280 12304
+type(
+  string option
+)
+ident(
+  int_ref mac "input_libvirtxml.ml" 325 11827 11837 "input_libvirtxml.ml" 325 11827 11840
+)
+"input_libvirtxml.ml" 342 12306 12328 "input_libvirtxml.ml" 342 12306 12332
+type(
+  string
+)
+ident(
+  int_ref vnet "input_libvirtxml.ml" 339 12229 12250 "input_libvirtxml.ml" 339 12229 12254
+)
+"input_libvirtxml.ml" 343 12334 12361 "input_libvirtxml.ml" 343 12334 12365
+type(
+  string
+)
+ident(
+  int_ref vnet "input_libvirtxml.ml" 339 12229 12250 "input_libvirtxml.ml" 339 12229 12254
+)
+"input_libvirtxml.ml" 344 12367 12394 "input_libvirtxml.ml" 344 12367 12403
+type(
+  Types.vnet_type
+)
+ident(
+  int_ref vnet_type "input_libvirtxml.ml" 338 12203 12216 "input_libvirtxml.ml" 338 12203 12225
+)
+"input_libvirtxml.ml" 340 12257 12278 "input_libvirtxml.ml" 345 12404 12416
+type(
+  Types.source_nic
+)
+"input_libvirtxml.ml" 346 12420 12431 "input_libvirtxml.ml" 346 12420 12435
+type(
+  Types.source_nic list ref
+)
+ident(
+  int_ref nics "input_libvirtxml.ml" 319 11625 11633 "input_libvirtxml.ml" 319 11625 11637
+)
+"input_libvirtxml.ml" 346 12420 12436 "input_libvirtxml.ml" 346 12420 12438
+type(
+  Types.source_nic list ref -> Types.source_nic list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"input_libvirtxml.ml" 346 12420 12439 "input_libvirtxml.ml" 346 12420 12442
+type(
+  Types.source_nic
+)
+ident(
+  int_ref nic "input_libvirtxml.ml" 340 12257 12272 "input_libvirtxml.ml" 340 12257 12275
+)
+"input_libvirtxml.ml" 346 12420 12446 "input_libvirtxml.ml" 346 12420 12447
+type(
+  Types.source_nic list ref -> Types.source_nic list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirtxml.ml" 346 12420 12447 "input_libvirtxml.ml" 346 12420 12451
+type(
+  Types.source_nic list ref
+)
+ident(
+  int_ref nics "input_libvirtxml.ml" 319 11625 11633 "input_libvirtxml.ml" 319 11625 11637
+)
+"input_libvirtxml.ml" 346 12420 12446 "input_libvirtxml.ml" 346 12420 12451
+type(
+  Types.source_nic list
+)
+"input_libvirtxml.ml" 346 12420 12439 "input_libvirtxml.ml" 346 12420 12451
+type(
+  Types.source_nic list
+)
+"input_libvirtxml.ml" 346 12420 12431 "input_libvirtxml.ml" 346 12420 12451
+type(
+  unit
+)
+"input_libvirtxml.ml" 340 12257 12268 "input_libvirtxml.ml" 346 12420 12451
+type(
+  unit
+)
+"input_libvirtxml.ml" 348 12464 12479 "input_libvirtxml.ml" 348 12464 12491
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "input_libvirtxml.ml" 55 1757 1763 "input_libvirtxml.ml" 55 1757 1775
+)
+"input_libvirtxml.ml" 348 12464 12492 "input_libvirtxml.ml" 348 12464 12526
+type(
+  string
+)
+"input_libvirtxml.ml" 348 12464 12479 "input_libvirtxml.ml" 348 12464 12526
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirtxml.ml" 349 12532 12543 "input_libvirtxml.ml" 349 12532 12547
+type(
+  string option
+)
+"input_libvirtxml.ml" 349 12532 12551 "input_libvirtxml.ml" 349 12532 12553
+type(
+  unit
+)
+"input_libvirtxml.ml" 350 12554 12570 "input_libvirtxml.ml" 350 12554 12572
+type(
+  string
+)
+"input_libvirtxml.ml" 350 12554 12565 "input_libvirtxml.ml" 350 12554 12572
+type(
+  string option
+)
+"input_libvirtxml.ml" 354 12710 12722 "input_libvirtxml.ml" 354 12710 12729
+type(
+  string -> unit
+)
+ident(
+  int_ref add_nic "input_libvirtxml.ml" 339 12229 12242 "input_libvirtxml.ml" 339 12229 12249
+)
+"input_libvirtxml.ml" 354 12710 12731 "input_libvirtxml.ml" 354 12710 12738
+type(
+  (int -> string, unit, string) format -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"input_libvirtxml.ml" 354 12710 12739 "input_libvirtxml.ml" 354 12710 12746
+type(
+  (int -> string, unit, string) format
+)
+"input_libvirtxml.ml" 354 12710 12747 "input_libvirtxml.ml" 354 12710 12748
+type(
+  int
+)
+"input_libvirtxml.ml" 354 12710 12730 "input_libvirtxml.ml" 354 12710 12749
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 354 12710 12722 "input_libvirtxml.ml" 354 12710 12749
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 355 12750 12766 "input_libvirtxml.ml" 355 12750 12770
+type(
+  string
+)
+ident(
+  def vnet "input_libvirtxml.ml" 356 12774 12786 "input_libvirtxml.ml" 356 12774 12798
+)
+"input_libvirtxml.ml" 355 12750 12761 "input_libvirtxml.ml" 355 12750 12770
+type(
+  string option
+)
+"input_libvirtxml.ml" 356 12774 12786 "input_libvirtxml.ml" 356 12774 12793
+type(
+  string -> unit
+)
+ident(
+  int_ref add_nic "input_libvirtxml.ml" 339 12229 12242 "input_libvirtxml.ml" 339 12229 12249
+)
+"input_libvirtxml.ml" 356 12774 12794 "input_libvirtxml.ml" 356 12774 12798
+type(
+  string
+)
+ident(
+  int_ref vnet "input_libvirtxml.ml" 355 12750 12766 "input_libvirtxml.ml" 355 12750 12770
+)
+"input_libvirtxml.ml" 356 12774 12786 "input_libvirtxml.ml" 356 12774 12798
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirtxml.ml" 348 12464 12473 "input_libvirtxml.ml" 356 12774 12798
+type(
+  unit
+)
+"input_libvirtxml.ml" 339 12229 12238 "input_libvirtxml.ml" 356 12774 12798
+type(
+  unit
+)
+"input_libvirtxml.ml" 336 12157 12163 "input_libvirtxml.ml" 356 12774 12798
+type(
+  unit
+)
+"input_libvirtxml.ml" 331 11980 11986 "input_libvirtxml.ml" 356 12774 12798
+type(
+  unit
+)
+"input_libvirtxml.ml" 325 11827 11833 "input_libvirtxml.ml" 356 12774 12798
+type(
+  unit
+)
+"input_libvirtxml.ml" 324 11780 11786 "input_libvirtxml.ml" 356 12774 12798
+type(
+  unit
+)
+"input_libvirtxml.ml" 322 11725 11731 "input_libvirtxml.ml" 356 12774 12798
+type(
+  unit
+)
+"input_libvirtxml.ml" 321 11681 11687 "input_libvirtxml.ml" 356 12774 12798
+type(
+  unit
+)
+"input_libvirtxml.ml" 320 11650 11654 "input_libvirtxml.ml" 357 12799 12807
+type(
+  unit
+)
+"input_libvirtxml.ml" 358 12809 12813 "input_libvirtxml.ml" 358 12809 12821
+type(
+  Types.source_nic list -> Types.source_nic list
+)
+ident(
+  ext_ref List.rev
+)
+"input_libvirtxml.ml" 358 12809 12822 "input_libvirtxml.ml" 358 12809 12823
+type(
+  Types.source_nic list ref -> Types.source_nic list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirtxml.ml" 358 12809 12823 "input_libvirtxml.ml" 358 12809 12827
+type(
+  Types.source_nic list ref
+)
+ident(
+  int_ref nics "input_libvirtxml.ml" 319 11625 11633 "input_libvirtxml.ml" 319 11625 11637
+)
+"input_libvirtxml.ml" 358 12809 12822 "input_libvirtxml.ml" 358 12809 12827
+type(
+  Types.source_nic list
+)
+"input_libvirtxml.ml" 358 12809 12813 "input_libvirtxml.ml" 358 12809 12827
+call(
+  stack
+)
+type(
+  Types.source_nic list
+)
+"input_libvirtxml.ml" 320 11650 11654 "input_libvirtxml.ml" 358 12809 12827
+type(
+  Types.source_nic list
+)
+"input_libvirtxml.ml" 319 11625 11629 "input_libvirtxml.ml" 358 12809 12827
+type(
+  Types.source_nic list
+)
+"input_libvirtxml.ml" 318 11577 11581 "input_libvirtxml.ml" 358 12809 12827
+type(
+  Types.source_nic list
+)
+"input_libvirtxml.ml" 317 11497 11501 "input_libvirtxml.ml" 358 12809 12827
+type(
+  Types.source_nic list
+)
+"input_libvirtxml.ml" 361 12837 12856 "input_libvirtxml.ml" 361 12837 12866
+type(
+  Types.source_hypervisor
+)
+ident(
+  int_ref hypervisor "input_libvirtxml.ml" 59 1894 1900 "input_libvirtxml.ml" 59 1894 1910
+)
+"input_libvirtxml.ml" 362 12868 12881 "input_libvirtxml.ml" 362 12868 12885
+type(
+  string
+)
+ident(
+  int_ref name "input_libvirtxml.ml" 64 2118 2124 "input_libvirtxml.ml" 64 2118 2128
+)
+"input_libvirtxml.ml" 362 12868 12901 "input_libvirtxml.ml" 362 12868 12905
+type(
+  string
+)
+ident(
+  int_ref name "input_libvirtxml.ml" 64 2118 2124 "input_libvirtxml.ml" 64 2118 2128
+)
+"input_libvirtxml.ml" 363 12907 12922 "input_libvirtxml.ml" 363 12907 12928
+type(
+  int64
+)
+ident(
+  int_ref memory "input_libvirtxml.ml" 70 2375 2381 "input_libvirtxml.ml" 70 2375 2387
+)
+"input_libvirtxml.ml" 364 12930 12943 "input_libvirtxml.ml" 364 12930 12947
+type(
+  int
+)
+ident(
+  int_ref vcpu "input_libvirtxml.ml" 71 2422 2428 "input_libvirtxml.ml" 71 2422 2432
+)
+"input_libvirtxml.ml" 365 12949 12966 "input_libvirtxml.ml" 365 12949 12974
+type(
+  string list
+)
+ident(
+  int_ref features "input_libvirtxml.ml" 73 2481 2487 "input_libvirtxml.ml" 73 2481 2495
+)
+"input_libvirtxml.ml" 366 12976 12993 "input_libvirtxml.ml" 366 12976 13008
+type(
+  Types.source_firmware
+)
+"input_libvirtxml.ml" 367 13048 13064 "input_libvirtxml.ml" 367 13048 13071
+type(
+  Types.source_display option
+)
+ident(
+  int_ref display "input_libvirtxml.ml" 83 2801 2807 "input_libvirtxml.ml" 83 2801 2814
+)
+"input_libvirtxml.ml" 368 13073 13087 "input_libvirtxml.ml" 368 13073 13092
+type(
+  Types.source_sound option
+)
+ident(
+  int_ref sound "input_libvirtxml.ml" 143 5083 5089 "input_libvirtxml.ml" 143 5083 5094
+)
+"input_libvirtxml.ml" 369 13094 13108 "input_libvirtxml.ml" 369 13094 13110
+type(
+  Types.source_disk list
+)
+"input_libvirtxml.ml" 370 13112 13131 "input_libvirtxml.ml" 370 13112 13141
+type(
+  Types.source_removable list
+)
+ident(
+  int_ref removables "input_libvirtxml.ml" 270 9905 9911 "input_libvirtxml.ml" 270 9905 9921
+)
+"input_libvirtxml.ml" 371 13143 13156 "input_libvirtxml.ml" 371 13143 13160
+type(
+  Types.source_nic list
+)
+ident(
+  int_ref nics "input_libvirtxml.ml" 316 11484 11490 "input_libvirtxml.ml" 316 11484 11494
+)
+"input_libvirtxml.ml" 360 12832 12835 "input_libvirtxml.ml" 372 13162 13166
+type(
+  Types.source
+)
+"input_libvirtxml.ml" 373 13168 13171 "input_libvirtxml.ml" 373 13168 13176
+type(
+  parsed_disk list
+)
+ident(
+  int_ref disks "input_libvirtxml.ml" 167 6023 6029 "input_libvirtxml.ml" 167 6023 6034
+)
+"input_libvirtxml.ml" 360 12832 12834 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 316 11484 11486 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 270 9905 9907 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 167 6023 6025 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 143 5083 5085 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 83 2801 2803 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 73 2481 2483 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 71 2422 2424 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 70 2375 2377 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 69 2301 2303 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 64 2118 2120 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 59 1894 1896 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 55 1757 1759 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 54 1711 1713 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 53 1675 1677 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 50 1613 1615 "input_libvirtxml.ml" 373 13168 13177
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 375 13179 13202 "input_libvirtxml.ml" 375 13179 13206
+type(
+  string
+)
+"input_libvirtxml.ml" 379 13233 13255 "input_libvirtxml.ml" 379 13233 13271
+type(
+  string
+)
+"input_libvirtxml.ml" 379 13233 13272 "input_libvirtxml.ml" 379 13233 13273
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"input_libvirtxml.ml" 379 13233 13274 "input_libvirtxml.ml" 379 13233 13278
+type(
+  string
+)
+"input_libvirtxml.ml" 379 13233 13255 "input_libvirtxml.ml" 379 13233 13278
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 381 13280 13296 "input_libvirtxml.ml" 381 13280 13298
+type(
+  unit
+)
+"input_libvirtxml.ml" 382 13301 13309 "input_libvirtxml.ml" 382 13301 13312
+type(
+  string
+)
+"input_libvirtxml.ml" 382 13301 13315 "input_libvirtxml.ml" 382 13301 13330
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.read_whole_file
+)
+"input_libvirtxml.ml" 382 13301 13331 "input_libvirtxml.ml" 382 13301 13335
+type(
+  string
+)
+"input_libvirtxml.ml" 382 13301 13315 "input_libvirtxml.ml" 382 13301 13335
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 384 13340 13348 "input_libvirtxml.ml" 384 13340 13354
+type(
+  Types.source
+)
+"input_libvirtxml.ml" 384 13340 13356 "input_libvirtxml.ml" 384 13340 13361
+type(
+  parsed_disk list
+)
+"input_libvirtxml.ml" 384 13340 13348 "input_libvirtxml.ml" 384 13340 13361
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 384 13340 13364 "input_libvirtxml.ml" 384 13340 13381
+type(
+  ?conn:string -> string -> Types.source * parsed_disk list
+)
+ident(
+  int_ref parse_libvirt_xml "input_libvirtxml.ml" 49 1579 1583 "input_libvirtxml.ml" 49 1579 1600
+)
+"input_libvirtxml.ml" 384 13340 13382 "input_libvirtxml.ml" 384 13340 13385
+type(
+  string
+)
+ident(
+  int_ref xml "input_libvirtxml.ml" 382 13301 13309 "input_libvirtxml.ml" 382 13301 13312
+)
+"input_libvirtxml.ml" 384 13340 13364 "input_libvirtxml.ml" 384 13340 13385
+call(
+  stack
+)
+type(
+  Types.source * parsed_disk list
+)
+"input_libvirtxml.ml" 392 13720 13728 "input_libvirtxml.ml" 392 13720 13731
+type(
+  string
+)
+"input_libvirtxml.ml" 392 13720 13734 "input_libvirtxml.ml" 392 13720 13750
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.dirname
+)
+"input_libvirtxml.ml" 392 13720 13752 "input_libvirtxml.ml" 392 13720 13765
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.absolute_path
+)
+"input_libvirtxml.ml" 392 13720 13766 "input_libvirtxml.ml" 392 13720 13770
+type(
+  string
+)
+"input_libvirtxml.ml" 392 13720 13751 "input_libvirtxml.ml" 392 13720 13771
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 392 13720 13734 "input_libvirtxml.ml" 392 13720 13771
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 393 13775 13783 "input_libvirtxml.ml" 393 13775 13788
+type(
+  Types.source_disk list
+)
+"input_libvirtxml.ml" 393 13775 13791 "input_libvirtxml.ml" 393 13775 13799
+type(
+  (parsed_disk -> Types.source_disk) ->
+  parsed_disk list -> Types.source_disk list
+)
+ident(
+  ext_ref List.map
+)
+"input_libvirtxml.ml" 395 13817 13843 "input_libvirtxml.ml" 395 13817 13847
+type(
+  Types.source_disk
+)
+ident(
+  def disk "input_libvirtxml.ml" 395 13817 13880 "input_libvirtxml.ml" 395 13817 13884
+)
+"input_libvirtxml.ml" 395 13817 13860 "input_libvirtxml.ml" 395 13817 13874
+type(
+  parsed_source
+)
+"input_libvirtxml.ml" 395 13817 13825 "input_libvirtxml.ml" 395 13817 13876
+type(
+  parsed_disk
+)
+"input_libvirtxml.ml" 395 13817 13880 "input_libvirtxml.ml" 395 13817 13884
+type(
+  Types.source_disk
+)
+ident(
+  int_ref disk "input_libvirtxml.ml" 395 13817 13843 "input_libvirtxml.ml" 395 13817 13847
+)
+"input_libvirtxml.ml" 396 13885 13911 "input_libvirtxml.ml" 396 13885 13915
+type(
+  Types.source_disk
+)
+ident(
+  def disk "input_libvirtxml.ml" 396 13885 13948 "input_libvirtxml.ml" 396 13885 13952
+)
+"input_libvirtxml.ml" 396 13885 13941 "input_libvirtxml.ml" 396 13885 13942
+type(
+  string
+)
+"input_libvirtxml.ml" 396 13885 13928 "input_libvirtxml.ml" 396 13885 13942
+type(
+  parsed_source
+)
+"input_libvirtxml.ml" 396 13885 13893 "input_libvirtxml.ml" 396 13885 13944
+type(
+  parsed_disk
+)
+"input_libvirtxml.ml" 396 13885 13948 "input_libvirtxml.ml" 396 13885 13952
+type(
+  Types.source_disk
+)
+ident(
+  int_ref disk "input_libvirtxml.ml" 396 13885 13911 "input_libvirtxml.ml" 396 13885 13915
+)
+"input_libvirtxml.ml" 397 13953 13979 "input_libvirtxml.ml" 397 13953 13983
+type(
+  Types.source_disk
+)
+ident(
+  def disk "input_libvirtxml.ml" 398 14020 14028 "input_libvirtxml.ml" 400 14114 14153
+)
+"input_libvirtxml.ml" 397 13953 14010 "input_libvirtxml.ml" 397 13953 14014
+type(
+  string
+)
+ident(
+  def path "input_libvirtxml.ml" 398 14020 14028 "input_libvirtxml.ml" 400 14114 14153
+)
+"input_libvirtxml.ml" 397 13953 13996 "input_libvirtxml.ml" 397 13953 14014
+type(
+  parsed_source
+)
+"input_libvirtxml.ml" 397 13953 13961 "input_libvirtxml.ml" 397 13953 14016
+type(
+  parsed_disk
+)
+"input_libvirtxml.ml" 398 14020 14032 "input_libvirtxml.ml" 398 14020 14036
+type(
+  string
+)
+"input_libvirtxml.ml" 399 14039 14052 "input_libvirtxml.ml" 399 14039 14055
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"input_libvirtxml.ml" 399 14039 14057 "input_libvirtxml.ml" 399 14039 14077
+type(
+  string -> bool
+)
+ident(
+  ext_ref Filename.is_relative
+)
+"input_libvirtxml.ml" 399 14039 14078 "input_libvirtxml.ml" 399 14039 14082
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirtxml.ml" 397 13953 14010 "input_libvirtxml.ml" 397 13953 14014
+)
+"input_libvirtxml.ml" 399 14039 14056 "input_libvirtxml.ml" 399 14039 14083
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirtxml.ml" 399 14039 14052 "input_libvirtxml.ml" 399 14039 14083
+type(
+  bool
+)
+"input_libvirtxml.ml" 399 14039 14089 "input_libvirtxml.ml" 399 14039 14093
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirtxml.ml" 397 13953 14010 "input_libvirtxml.ml" 397 13953 14014
+)
+"input_libvirtxml.ml" 399 14039 14099 "input_libvirtxml.ml" 399 14039 14102
+type(
+  string
+)
+ident(
+  int_ref dir "input_libvirtxml.ml" 392 13720 13728 "input_libvirtxml.ml" 392 13720 13731
+)
+"input_libvirtxml.ml" 399 14039 14103 "input_libvirtxml.ml" 399 14039 14105
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"input_libvirtxml.ml" 399 14039 14106 "input_libvirtxml.ml" 399 14039 14110
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirtxml.ml" 397 13953 14010 "input_libvirtxml.ml" 397 13953 14014
+)
+"input_libvirtxml.ml" 399 14039 14099 "input_libvirtxml.ml" 399 14039 14110
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirtxml.ml" 399 14039 14049 "input_libvirtxml.ml" 399 14039 14110
+type(
+  string
+)
+"input_libvirtxml.ml" 400 14114 14124 "input_libvirtxml.ml" 400 14114 14128
+type(
+  Types.source_disk
+)
+ident(
+  int_ref disk "input_libvirtxml.ml" 397 13953 13979 "input_libvirtxml.ml" 397 13953 13983
+)
+"input_libvirtxml.ml" 400 14114 14147 "input_libvirtxml.ml" 400 14114 14151
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirtxml.ml" 398 14020 14032 "input_libvirtxml.ml" 398 14020 14036
+)
+"input_libvirtxml.ml" 400 14114 14122 "input_libvirtxml.ml" 400 14114 14153
+type(
+  Types.source_disk
+)
+"input_libvirtxml.ml" 398 14020 14028 "input_libvirtxml.ml" 400 14114 14153
+type(
+  Types.source_disk
+)
+"input_libvirtxml.ml" 393 13775 13800 "input_libvirtxml.ml" 401 14154 14159
+type(
+  parsed_disk -> Types.source_disk
+)
+"input_libvirtxml.ml" 401 14154 14160 "input_libvirtxml.ml" 401 14154 14165
+type(
+  parsed_disk list
+)
+ident(
+  int_ref disks "input_libvirtxml.ml" 384 13340 13356 "input_libvirtxml.ml" 384 13340 13361
+)
+"input_libvirtxml.ml" 393 13775 13791 "input_libvirtxml.ml" 401 14154 14165
+call(
+  stack
+)
+type(
+  Types.source_disk list
+)
+"input_libvirtxml.ml" 403 14170 14176 "input_libvirtxml.ml" 403 14170 14182
+type(
+  Types.source
+)
+ident(
+  int_ref source "input_libvirtxml.ml" 384 13340 13348 "input_libvirtxml.ml" 384 13340 13354
+)
+"input_libvirtxml.ml" 403 14170 14198 "input_libvirtxml.ml" 403 14170 14203
+type(
+  Types.source_disk list
+)
+ident(
+  int_ref disks "input_libvirtxml.ml" 393 13775 13783 "input_libvirtxml.ml" 393 13775 13788
+)
+"input_libvirtxml.ml" 403 14170 14174 "input_libvirtxml.ml" 403 14170 14205
+type(
+  Types.source
+)
+"input_libvirtxml.ml" 393 13775 13779 "input_libvirtxml.ml" 403 14170 14205
+type(
+  Types.source
+)
+"input_libvirtxml.ml" 392 13720 13724 "input_libvirtxml.ml" 403 14170 14205
+type(
+  Types.source
+)
+"input_libvirtxml.ml" 384 13340 13344 "input_libvirtxml.ml" 403 14170 14205
+type(
+  Types.source
+)
+"input_libvirtxml.ml" 382 13301 13305 "input_libvirtxml.ml" 403 14170 14205
+type(
+  Types.source
+)
+"input_libvirtxml.ml" 406 14211 14215 "input_libvirtxml.ml" 406 14211 14231
+type(
+  string -> input_libvirtxml
+)
+ident(
+  def input_libvirtxml "input_libvirtxml.ml" 407 14255 14255 --
+)
+"input_libvirtxml.ml" 406 14211 14234 "input_libvirtxml.ml" 406 14211 14254
+type(
+  string -> input_libvirtxml
+)
+"input_libvirtxml.ml" 407 14255 14259 "input_libvirtxml.ml" 407 14255 14261
+type(
+  unit
+)
+"input_libvirtxml.ml" 407 14255 14264 "input_libvirtxml.ml" 407 14255 14298
+type(
+  string -> unit
+)
+ident(
+  ext_ref Modules_list.register_input_module
+)
+"input_libvirtxml.ml" 407 14255 14299 "input_libvirtxml.ml" 407 14255 14311
+type(
+  string
+)
+"input_libvirtxml.ml" 407 14255 14264 "input_libvirtxml.ml" 407 14255 14311
+call(
+  stack
+)
+type(
+  unit
+)

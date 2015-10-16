@@ -35,38 +35,17 @@ guestfish-copy.o: copy.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h /usr/include/libintl.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h /usr/include/libintl.h \
  ../gnulib/lib/locale.h /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/errno.h \
  /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
- ../gnulib/lib/sys/stat.h /usr/include/x86_64-linux-gnu/bits/timex.h \
- /usr/include/x86_64-linux-gnu/sys/stat.h \
- /usr/include/x86_64-linux-gnu/bits/stat.h ../gnulib/lib/sys/wait.h \
- /usr/include/x86_64-linux-gnu/sys/wait.h ../gnulib/lib/signal.h \
- /usr/include/signal.h /usr/include/x86_64-linux-gnu/bits/signum.h \
- /usr/include/x86_64-linux-gnu/bits/siginfo.h \
- /usr/include/x86_64-linux-gnu/bits/sigaction.h \
- /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigstack.h \
- /usr/include/x86_64-linux-gnu/sys/ucontext.h \
- /usr/include/x86_64-linux-gnu/bits/sigthread.h \
- /usr/include/x86_64-linux-gnu/sys/resource.h \
- /usr/include/x86_64-linux-gnu/bits/resource.h /usr/include/assert.h \
  fish.h ../src/guestfs.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h fish-cmds.h
+ ../src/guestfs-internal-frontend-cleanups.h fish-cmds.h
 
 ../config.h:
 
@@ -180,22 +159,6 @@ guestfish-copy.o: copy.c ../config.h ../gnulib/lib/stdio.h \
 
 /usr/include/x86_64-linux-gnu/bits/unistd.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/limits.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include-fixed/syslimits.h:
-
-/usr/include/limits.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
 /usr/include/libintl.h:
 
 ../gnulib/lib/locale.h:
@@ -216,42 +179,6 @@ guestfish-copy.o: copy.c ../config.h ../gnulib/lib/stdio.h \
 
 /usr/include/asm-generic/errno-base.h:
 
-../gnulib/lib/sys/stat.h:
-
-/usr/include/x86_64-linux-gnu/bits/timex.h:
-
-/usr/include/x86_64-linux-gnu/sys/stat.h:
-
-/usr/include/x86_64-linux-gnu/bits/stat.h:
-
-../gnulib/lib/sys/wait.h:
-
-/usr/include/x86_64-linux-gnu/sys/wait.h:
-
-../gnulib/lib/signal.h:
-
-/usr/include/signal.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum.h:
-
-/usr/include/x86_64-linux-gnu/bits/siginfo.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigstack.h:
-
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigthread.h:
-
-/usr/include/x86_64-linux-gnu/sys/resource.h:
-
-/usr/include/x86_64-linux-gnu/bits/resource.h:
-
-/usr/include/assert.h:
-
 fish.h:
 
 ../src/guestfs.h:
@@ -267,7 +194,5 @@ fish.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 fish-cmds.h:

@@ -1,0 +1,484 @@
+
+<html>
+<head>
+<title>virt-filesystems</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#columns">COLUMNS</a></li>
+  <li><a href="#note-about-csv-format">NOTE ABOUT CSV FORMAT</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-filesystems - List filesystems, partitions, block devices, LVM in a virtual machine or disk image</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-filesystems [--options] -d domname
+
+ virt-filesystems [--options] -a disk.img [-a disk.img ...]</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>This tool allows you to discover filesystems, partitions, logical volumes, and their sizes in a disk image or virtual machine. It is a replacement for <a href="virt-list-filesystems.1.html">virt-list-filesystems(1)</a> and <a href="virt-list-partitions.1.html">virt-list-partitions(1)</a>.</p>
+
+<p>One use for this tool is from shell scripts to iterate over all filesystems from a disk image:</p>
+
+<pre><code> for fs in $(virt-filesystems -a disk.img); do
+   # ...
+ done</code></pre>
+
+<p>Another use is to list partitions before using another tool to modify those partitions (such as <a href="virt-resize.1.html">virt-resize(1)</a>). If you are curious about what an unknown disk image contains, use this tool along with <a href="virt-inspector.1.html">virt-inspector(1)</a>.</p>
+
+<p>Various command line options control what this program displays. You need to give either <i>-a</i> or <i>-d</i> options to specify the disk image or libvirt guest respectively. If you just specify that then the program shows filesystems found, one per line, like this:</p>
+
+<pre><code> $ virt-filesystems -a disk.img
+ /dev/sda1
+ /dev/vg_guest/lv_root</code></pre>
+
+<p>If you add <i>-l</i> or <i>--long</i> then the output includes extra information:</p>
+
+<pre><code> $ virt-filesystems -a disk.img -l
+ Name                   Type         VFS   Label  Size
+ /dev/sda1              filesystem   ext4  boot   524288000
+ /dev/vg_guest/lv_root  filesystem   ext4  root   10212081664</code></pre>
+
+<p>If you add <i>--extra</i> then non-mountable (swap, unknown) filesystems are shown as well:</p>
+
+<pre><code> $ virt-filesystems -a disk.img --extra
+ /dev/sda1
+ /dev/vg_guest/lv_root
+ /dev/vg_guest/lv_swap
+ /dev/vg_guest/lv_data</code></pre>
+
+<p>If you add <i>--partitions</i> then partitions are shown instead of filesystems:</p>
+
+<pre><code> $ virt-filesystems -a disk.img --partitions
+ /dev/sda1
+ /dev/sda2</code></pre>
+
+<p>Similarly you can use <i>--logical-volumes</i>, <i>--volume-groups</i>, <i>--physical-volumes</i>, <i>--block-devices</i> to list those items.</p>
+
+<p>You can use these options in combination as well (if you want a combination including filesystems, you have to add <i>--filesystems</i>). Notice that some items fall into several categories (eg. <i>/dev/sda1</i> might be both a partition and a filesystem). These items are listed several times. To get a list which includes absolutely everything that virt-filesystems knows about, use the <i>--all</i> option.</p>
+
+<p>UUIDs (because they are quite long) are not shown by default. Add the <i>--uuid</i> option to display device and filesystem UUIDs in the long output.</p>
+
+<p><i>--all --long --uuid</i> is a useful combination to display all possible information about everything.</p>
+
+<pre><code> $ virt-filesystems -a win.img --all --long --uuid -h
+ Name      Type       VFS  Label           Size Parent   UUID
+ /dev/sda1 filesystem ntfs System Reserved 100M -        F81C92571C92112C
+ /dev/sda2 filesystem ntfs -               20G  -        F2E8996AE8992E3B
+ /dev/sda1 partition  -    -               100M /dev/sda -
+ /dev/sda2 partition  -    -               20G  /dev/sda -
+ /dev/sda  device     -    -               20G  -        -</code></pre>
+
+<p>For machine-readable output, use <i>--csv</i> to get Comma-Separated Values.</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display brief help.</p>
+
+</dd>
+<dt><b>-a</b> file</dt>
+<dd>
+
+</dd>
+<dt><b>--add</b> file</dt>
+<dd>
+
+<p>Add <i>file</i> which should be a disk image from a virtual machine. If the virtual machine has multiple block devices, you must supply all of them with separate <i>-a</i> options.</p>
+
+<p>The format of the disk image is auto-detected. To override this and force a particular format use the <i>--format=..</i> option.</p>
+
+</dd>
+<dt><b>-a URI</b></dt>
+<dd>
+
+</dd>
+<dt><b>--add URI</b></dt>
+<dd>
+
+<p>Add a remote disk. See <a href="guestfish.1.html#adding-remote-storage">&quot;ADDING REMOTE STORAGE&quot; in guestfish(1)</a>.</p>
+
+</dd>
+<dt><b>--all</b></dt>
+<dd>
+
+<p>Display everything. This is currently the same as specifying these options: <i>--filesystems</i>, <i>--extra</i>, <i>--partitions</i>, <i>--block-devices</i>, <i>--logical-volumes</i>, <i>--volume-groups</i>, <i>--physical-volumes</i>. (More may be added to this list in future).</p>
+
+<p>See also <i>--long</i>.</p>
+
+</dd>
+<dt><b>--blkdevs</b></dt>
+<dd>
+
+</dd>
+<dt><b>--block-devices</b></dt>
+<dd>
+
+<p>Display block devices.</p>
+
+</dd>
+<dt><b>-c</b> URI</dt>
+<dd>
+
+</dd>
+<dt><b>--connect</b> URI</dt>
+<dd>
+
+<p>If using libvirt, connect to the given <i>URI</i>. If omitted, then we connect to the default libvirt hypervisor.</p>
+
+<p>If you specify guest block devices directly (<i>-a</i>), then libvirt is not used at all.</p>
+
+</dd>
+<dt><b>--csv</b></dt>
+<dd>
+
+<p>Write out the results in CSV format (comma-separated values). This format can be imported easily into databases and spreadsheets, but read <a href="#note-about-csv-format">&quot;NOTE ABOUT CSV FORMAT&quot;</a> below.</p>
+
+</dd>
+<dt><b>-d</b> guest</dt>
+<dd>
+
+</dd>
+<dt><b>--domain</b> guest</dt>
+<dd>
+
+<p>Add all the disks from the named libvirt guest. Domain UUIDs can be used instead of names.</p>
+
+</dd>
+<dt><b>--echo-keys</b></dt>
+<dd>
+
+<p>When prompting for keys and passphrases, virt-filesystems normally turns echoing off so you cannot see what you are typing. If you are not worried about Tempest attacks and there is no one else in the room you can specify this flag to see what you are typing.</p>
+
+</dd>
+<dt><b>--extra</b></dt>
+<dd>
+
+<p>This causes filesystems that are not ordinary, mountable filesystems to be displayed. This category includes swapspace, and filesystems that are empty or contain unknown data.</p>
+
+<p>This option implies <i>--filesystems</i>.</p>
+
+</dd>
+<dt><b>--filesystems</b></dt>
+<dd>
+
+<p>Display mountable filesystems. If no display option was selected then this option is implied.</p>
+
+<p>With <i>--extra</i>, non-mountable filesystems are shown too.</p>
+
+</dd>
+<dt><b>--format=raw|qcow2|..</b></dt>
+<dd>
+
+</dd>
+<dt><b>--format</b></dt>
+<dd>
+
+<p>The default for the <i>-a</i> option is to auto-detect the format of the disk image. Using this forces the disk format for <i>-a</i> options which follow on the command line. Using <i>--format</i> with no argument switches back to auto-detection for subsequent <i>-a</i> options.</p>
+
+<p>For example:</p>
+
+<pre><code> virt-filesystems --format=raw -a disk.img</code></pre>
+
+<p>forces raw format (no auto-detection) for <i>disk.img</i>.</p>
+
+<pre><code> virt-filesystems --format=raw -a disk.img --format -a another.img</code></pre>
+
+<p>forces raw format (no auto-detection) for <i>disk.img</i> and reverts to auto-detection for <i>another.img</i>.</p>
+
+<p>If you have untrusted raw-format guest disk images, you should use this option to specify the disk format. This avoids a possible security problem with malicious guests (CVE-2010-3851).</p>
+
+</dd>
+<dt><b>-h</b></dt>
+<dd>
+
+</dd>
+<dt><b>--human-readable</b></dt>
+<dd>
+
+<p>In <i>--long</i> mode, display sizes in human-readable format.</p>
+
+</dd>
+<dt><b>--keys-from-stdin</b></dt>
+<dd>
+
+<p>Read key or passphrase parameters from stdin. The default is to try to read passphrases from the user by opening <i>/dev/tty</i>.</p>
+
+</dd>
+<dt><b>-l</b></dt>
+<dd>
+
+</dd>
+<dt><b>--long</b></dt>
+<dd>
+
+<p>Display extra columns of data (&quot;long format&quot;).</p>
+
+<p>A title row is added unless you also specify <i>--no-title</i>.</p>
+
+<p>The extra columns displayed depend on what output you select, and the ordering of columns may change in future versions. Use the title row, <i>--csv</i> output and/or <a href="http://man.he.net/man1/csvtool">csvtool(1)</a> to match columns to data in external programs.</p>
+
+<p>Use <i>-h</i> if you want sizes to be displayed in human-readable format. The default is to show raw numbers of <i>bytes</i>.</p>
+
+<p>Use <i>--uuid</i> to display UUIDs too.</p>
+
+</dd>
+<dt><b>--lvs</b></dt>
+<dd>
+
+</dd>
+<dt><b>--logvols</b></dt>
+<dd>
+
+</dd>
+<dt><b>--logical-volumes</b></dt>
+<dd>
+
+<p>Display LVM logical volumes. In this mode, these are displayed irrespective of whether the LVs contain filesystems.</p>
+
+</dd>
+<dt><b>--no-title</b></dt>
+<dd>
+
+<p>In <i>--long</i> mode, don&#39;t add a title row.</p>
+
+<p>Note that the order of the columns is not fixed, and may change in future versions of virt-filesystems, so using this option may give you unexpected surprises.</p>
+
+</dd>
+<dt><b>--parts</b></dt>
+<dd>
+
+</dd>
+<dt><b>--partitions</b></dt>
+<dd>
+
+<p>Display partitions. In this mode, these are displayed irrespective of whether the partitions contain filesystems.</p>
+
+</dd>
+<dt><b>--pvs</b></dt>
+<dd>
+
+</dd>
+<dt><b>--physvols</b></dt>
+<dd>
+
+</dd>
+<dt><b>--physical-volumes</b></dt>
+<dd>
+
+<p>Display LVM physical volumes.</p>
+
+</dd>
+<dt><b>--uuid</b></dt>
+<dd>
+
+</dd>
+<dt><b>--uuids</b></dt>
+<dd>
+
+<p>In <i>--long</i> mode, display UUIDs as well.</p>
+
+</dd>
+<dt><b>-v</b></dt>
+<dd>
+
+</dd>
+<dt><b>--verbose</b></dt>
+<dd>
+
+<p>Enable verbose messages for debugging.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+<dt><b>--vgs</b></dt>
+<dd>
+
+</dd>
+<dt><b>--volgroups</b></dt>
+<dd>
+
+</dd>
+<dt><b>--volume-groups</b></dt>
+<dd>
+
+<p>Display LVM volume groups.</p>
+
+</dd>
+<dt><b>-x</b></dt>
+<dd>
+
+<p>Enable tracing of libguestfs API calls.</p>
+
+</dd>
+</dl>
+
+<h1 id="columns">COLUMNS</h1>
+
+<p>Note that columns in the output are subject to reordering and change in future versions of this tool.</p>
+
+<dl>
+
+<dt><b>Name</b></dt>
+<dd>
+
+<p>The filesystem, partition, block device or LVM name.</p>
+
+<p>For device and partition names these are displayed as canonical libguestfs names, so that for example <i>/dev/sda2</i> is the second partition on the first device.</p>
+
+<p>If the <i>--long</i> option is <b>not</b> specified, then only the name column is shown in the output.</p>
+
+</dd>
+<dt><b>Type</b></dt>
+<dd>
+
+<p>The object type, for example <code>filesystem</code>, <code>lv</code>, <code>device</code> etc.</p>
+
+</dd>
+<dt><b>VFS</b></dt>
+<dd>
+
+<p>If there is a filesystem, then this column displays the filesystem type if one could be detected, eg. <code>ext4</code>.</p>
+
+</dd>
+<dt><b>Label</b></dt>
+<dd>
+
+<p>If the object has a label (used for identifying and mounting filesystems) then this column contains the label.</p>
+
+</dd>
+<dt><b>MBR</b></dt>
+<dd>
+
+<p>The partition type byte, displayed as a two digit hexadecimal number. A comprehensive list of partition types can be found here: <a href="http://www.win.tue.nl/~aeb/partitions/partition_types-1.html">http://www.win.tue.nl/~aeb/partitions/partition_types-1.html</a></p>
+
+<p>This is only applicable for DOS (MBR) partitions.</p>
+
+</dd>
+<dt><b>Size</b></dt>
+<dd>
+
+<p>The size of the object in bytes. If the <i>--human</i> option is used then the size is displayed in a human-readable form.</p>
+
+</dd>
+<dt><b>Parent</b></dt>
+<dd>
+
+<p>The parent column records the parent relationship between objects.</p>
+
+<p>For example, if the object is a partition, then this column contains the name of the containing device. If the object is a logical volume, then this column is the name of the volume group.</p>
+
+<p>If there is more than one parent, then this column is (internal to the column) a comma-separated list, eg. <code>/dev/sda,/dev/sdb</code>.</p>
+
+</dd>
+<dt><b>UUID</b></dt>
+<dd>
+
+<p>If the object has a UUID (used for identifying and mounting filesystems and block devices) then this column contains the UUID as a string.</p>
+
+<p>The UUID is only displayed if the <i>--uuid</i> option is given.</p>
+
+</dd>
+</dl>
+
+<h1 id="note-about-csv-format">NOTE ABOUT CSV FORMAT</h1>
+
+<p>Comma-separated values (CSV) is a deceptive format. It <i>seems</i> like it should be easy to parse, but it is definitely not easy to parse.</p>
+
+<p>Myth: Just split fields at commas. Reality: This does <i>not</i> work reliably. This example has two columns:</p>
+
+<pre><code> &quot;foo,bar&quot;,baz</code></pre>
+
+<p>Myth: Read the file one line at a time. Reality: This does <i>not</i> work reliably. This example has one row:</p>
+
+<pre><code> &quot;foo
+ bar&quot;,baz</code></pre>
+
+<p>For shell scripts, use <code>csvtool</code> (<a href="http://merjis.com/developers/csv">http://merjis.com/developers/csv</a> also packaged in major Linux distributions).</p>
+
+<p>For other languages, use a CSV processing library (eg. <code>Text::CSV</code> for Perl or Python&#39;s built-in csv library).</p>
+
+<p>Most spreadsheets and databases can import CSV directly.</p>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>This program returns 0 if successful, or non-zero if there was an error.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="virt-cat.1.html">virt-cat(1)</a>, <a href="virt-df.1.html">virt-df(1)</a>, <a href="virt-list-filesystems.1.html">virt-list-filesystems(1)</a>, <a href="virt-list-partitions.1.html">virt-list-partitions(1)</a>, <a href="http://man.he.net/man1/csvtool">csvtool(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2010-2012 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

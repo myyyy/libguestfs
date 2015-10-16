@@ -1,0 +1,274 @@
+"sysprep_operation_abrt_data.ml" 24 852 856 "sysprep_operation_abrt_data.ml" 24 852 873
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm_rf : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def abrt_data_perform "sysprep_operation_abrt_data.ml" 33 1083 1083 --
+)
+"sysprep_operation_abrt_data.ml" 24 852 874 "sysprep_operation_abrt_data.ml" 24 852 875
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm_rf : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_abrt_data.ml" 24 852 876 "sysprep_operation_abrt_data.ml" 31 1078 1081
+)
+"sysprep_operation_abrt_data.ml" 24 852 876 "sysprep_operation_abrt_data.ml" 24 852 880
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_abrt_data.ml" 24 852 881 "sysprep_operation_abrt_data.ml" 31 1078 1081
+)
+"sysprep_operation_abrt_data.ml" 24 852 881 "sysprep_operation_abrt_data.ml" 24 852 893
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_abrt_data.ml" 25 896 898 "sysprep_operation_abrt_data.ml" 31 1078 1081
+)
+"sysprep_operation_abrt_data.ml" 25 896 902 "sysprep_operation_abrt_data.ml" 25 896 905
+type(
+  string
+)
+"sysprep_operation_abrt_data.ml" 25 896 908 "sysprep_operation_abrt_data.ml" 25 896 909
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_abrt_data.ml" 24 852 874 "sysprep_operation_abrt_data.ml" 24 852 875
+)
+"sysprep_operation_abrt_data.ml" 25 896 908 "sysprep_operation_abrt_data.ml" 25 896 926
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_abrt_data.ml" 25 896 927 "sysprep_operation_abrt_data.ml" 25 896 931
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_abrt_data.ml" 24 852 876 "sysprep_operation_abrt_data.ml" 24 852 880
+)
+"sysprep_operation_abrt_data.ml" 25 896 908 "sysprep_operation_abrt_data.ml" 25 896 931
+type(
+  string
+)
+"sysprep_operation_abrt_data.ml" 26 935 940 "sysprep_operation_abrt_data.ml" 26 935 943
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_abrt_data.ml" 25 896 902 "sysprep_operation_abrt_data.ml" 25 896 905
+)
+"sysprep_operation_abrt_data.ml" 26 935 944 "sysprep_operation_abrt_data.ml" 26 935 946
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_abrt_data.ml" 26 935 947 "sysprep_operation_abrt_data.ml" 26 935 956
+type(
+  string
+)
+"sysprep_operation_abrt_data.ml" 26 935 940 "sysprep_operation_abrt_data.ml" 26 935 956
+type(
+  bool
+)
+"sysprep_operation_abrt_data.ml" 27 964 972 "sysprep_operation_abrt_data.ml" 27 964 977
+type(
+  'a array
+)
+"sysprep_operation_abrt_data.ml" 27 964 980 "sysprep_operation_abrt_data.ml" 27 964 981
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_abrt_data.ml" 24 852 874 "sysprep_operation_abrt_data.ml" 24 852 875
+)
+"sysprep_operation_abrt_data.ml" 27 964 980 "sysprep_operation_abrt_data.ml" 27 964 993
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_abrt_data.ml" 27 964 994 "sysprep_operation_abrt_data.ml" 27 964 1013
+type(
+  string
+)
+"sysprep_operation_abrt_data.ml" 27 964 980 "sysprep_operation_abrt_data.ml" 27 964 1013
+type(
+  'a array
+)
+"sysprep_operation_abrt_data.ml" 28 1017 1021 "sysprep_operation_abrt_data.ml" 28 1017 1031
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_abrt_data.ml" 29 1034 1044 "sysprep_operation_abrt_data.ml" 29 1034 1048
+type(
+  'a
+)
+ident(
+  def path "sysprep_operation_abrt_data.ml" 29 1034 1052 "sysprep_operation_abrt_data.ml" 29 1034 1065
+)
+"sysprep_operation_abrt_data.ml" 29 1034 1052 "sysprep_operation_abrt_data.ml" 29 1034 1053
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_abrt_data.ml" 24 852 874 "sysprep_operation_abrt_data.ml" 24 852 875
+)
+"sysprep_operation_abrt_data.ml" 29 1034 1052 "sysprep_operation_abrt_data.ml" 29 1034 1059
+call(
+  tail
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_abrt_data.ml" 29 1034 1060 "sysprep_operation_abrt_data.ml" 29 1034 1064
+type(
+  'a
+)
+ident(
+  int_ref path "sysprep_operation_abrt_data.ml" 29 1034 1044 "sysprep_operation_abrt_data.ml" 29 1034 1048
+)
+"sysprep_operation_abrt_data.ml" 29 1034 1052 "sysprep_operation_abrt_data.ml" 29 1034 1065
+type(
+  unit
+)
+"sysprep_operation_abrt_data.ml" 28 1017 1032 "sysprep_operation_abrt_data.ml" 30 1066 1071
+type(
+  'a -> unit
+)
+"sysprep_operation_abrt_data.ml" 30 1066 1072 "sysprep_operation_abrt_data.ml" 30 1066 1077
+type(
+  'a array
+)
+ident(
+  int_ref paths "sysprep_operation_abrt_data.ml" 27 964 972 "sysprep_operation_abrt_data.ml" 27 964 977
+)
+"sysprep_operation_abrt_data.ml" 28 1017 1021 "sysprep_operation_abrt_data.ml" 30 1066 1077
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_abrt_data.ml" 26 935 962 "sysprep_operation_abrt_data.ml" 31 1078 1081
+type(
+  unit
+)
+"sysprep_operation_abrt_data.ml" 26 935 937 "sysprep_operation_abrt_data.ml" 31 1078 1081
+type(
+  unit
+)
+"sysprep_operation_abrt_data.ml" 25 896 898 "sysprep_operation_abrt_data.ml" 31 1078 1081
+type(
+  unit
+)
+"sysprep_operation_abrt_data.ml" 33 1083 1087 "sysprep_operation_abrt_data.ml" 33 1083 1089
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_abrt_data.ml" 44 1391 1391 --
+)
+"sysprep_operation_abrt_data.ml" 34 1094 1096 "sysprep_operation_abrt_data.ml" 34 1094 1104
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_abrt_data.ml" 35 1110 1121 "sysprep_operation_abrt_data.ml" 35 1110 1132
+type(
+  string
+)
+"sysprep_operation_abrt_data.ml" 36 1134 1159 "sysprep_operation_abrt_data.ml" 36 1134 1163
+type(
+  bool
+)
+"sysprep_operation_abrt_data.ml" 37 1165 1179 "sysprep_operation_abrt_data.ml" 37 1165 1181
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_abrt_data.ml" 37 1165 1181 "sysprep_operation_abrt_data.ml" 37 1165 1222
+type(
+  string
+)
+"sysprep_operation_abrt_data.ml" 37 1165 1179 "sysprep_operation_abrt_data.ml" 37 1165 1222
+type(
+  string
+)
+"sysprep_operation_abrt_data.ml" 38 1224 1252 "sysprep_operation_abrt_data.ml" 38 1224 1254
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_abrt_data.ml" 38 1224 1254 "sysprep_operation_abrt_data.ml" 40 1311 1332
+type(
+  string
+)
+"sysprep_operation_abrt_data.ml" 38 1224 1251 "sysprep_operation_abrt_data.ml" 40 1311 1333
+type(
+  string
+)
+"sysprep_operation_abrt_data.ml" 38 1224 1246 "sysprep_operation_abrt_data.ml" 40 1311 1333
+type(
+  string option
+)
+"sysprep_operation_abrt_data.ml" 41 1335 1369 "sysprep_operation_abrt_data.ml" 41 1335 1386
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref abrt_data_perform "sysprep_operation_abrt_data.ml" 24 852 856 "sysprep_operation_abrt_data.ml" 24 852 873
+)
+"sysprep_operation_abrt_data.ml" 41 1335 1364 "sysprep_operation_abrt_data.ml" 41 1335 1386
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_abrt_data.ml" 33 1083 1092 "sysprep_operation_abrt_data.ml" 42 1388 1389
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_abrt_data.ml" 44 1391 1395 "sysprep_operation_abrt_data.ml" 44 1391 1397
+type(
+  unit
+)
+"sysprep_operation_abrt_data.ml" 44 1391 1400 "sysprep_operation_abrt_data.ml" 44 1391 1418
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_abrt_data.ml" 44 1391 1419 "sysprep_operation_abrt_data.ml" 44 1391 1421
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_abrt_data.ml" 33 1083 1087 "sysprep_operation_abrt_data.ml" 33 1083 1089
+)
+"sysprep_operation_abrt_data.ml" 44 1391 1400 "sysprep_operation_abrt_data.ml" 44 1391 1421
+call(
+  stack
+)
+type(
+  unit
+)

@@ -52,8 +52,8 @@ guestfish-cmds.o: cmds.c ../config.h ../gnulib/lib/stdio.h \
  ../gnulib/lib/full-write.h ../gnulib/lib/xstrtol.h /usr/include/getopt.h \
  ../src/guestfs.h ../src/guestfs-internal-frontend.h \
  ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h fish.h fish-cmds.h options.h cmds-gperf.h
+ ../src/guestfs-internal-frontend-cleanups.h fish.h fish-cmds.h options.h \
+ cmds-gperf.h
 
 ../config.h:
 
@@ -216,8 +216,6 @@ guestfish-cmds.o: cmds.c ../config.h ../gnulib/lib/stdio.h \
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 fish.h:
 

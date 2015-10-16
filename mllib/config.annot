@@ -1,0 +1,87 @@
+"config.ml" 20 851 855 "config.ml" 20 851 867
+type(
+  string
+)
+ident(
+  def package_name "config.ml" 21 883 883 --
+)
+"config.ml" 20 851 870 "config.ml" 20 851 882
+type(
+  string
+)
+"config.ml" 21 883 887 "config.ml" 21 883 902
+type(
+  string
+)
+ident(
+  def package_version "config.ml" 22 914 914 --
+)
+"config.ml" 21 883 905 "config.ml" 21 883 913
+type(
+  string
+)
+"config.ml" 22 914 918 "config.ml" 22 914 938
+type(
+  string
+)
+ident(
+  def package_version_full "config.ml" 23 950 950 --
+)
+"config.ml" 22 914 941 "config.ml" 22 914 949
+type(
+  string
+)
+"config.ml" 23 950 954 "config.ml" 23 950 960
+type(
+  string
+)
+ident(
+  def prefix "config.ml" 24 976 976 --
+)
+"config.ml" 23 950 963 "config.ml" 23 950 975
+type(
+  string
+)
+"config.ml" 24 976 980 "config.ml" 24 976 987
+type(
+  string
+)
+ident(
+  def datadir "config.ml" 25 1008 1008 --
+)
+"config.ml" 24 976 990 "config.ml" 24 976 996
+type(
+  string
+)
+ident(
+  int_ref prefix "config.ml" 23 950 954 "config.ml" 23 950 960
+)
+"config.ml" 24 976 997 "config.ml" 24 976 998
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"config.ml" 24 976 999 "config.ml" 24 976 1007
+type(
+  string
+)
+"config.ml" 24 976 990 "config.ml" 24 976 1007
+call(
+  stack
+)
+type(
+  string
+)
+"config.ml" 25 1008 1012 "config.ml" 25 1008 1020
+type(
+  string
+)
+ident(
+  def host_cpu "config.ml" 25 1008 1031 --
+)
+"config.ml" 25 1008 1023 "config.ml" 25 1008 1031
+type(
+  string
+)

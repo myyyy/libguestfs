@@ -1,0 +1,222 @@
+"sysprep_operation_utmp.ml" 24 848 852 "sysprep_operation_utmp.ml" 24 848 864
+type(
+  < inspect_get_type : 'a -> string; rm : string -> unit; .. > ->
+  'a -> 'b -> unit
+)
+ident(
+  def utmp_perform "sysprep_operation_utmp.ml" 31 1014 1014 --
+)
+"sysprep_operation_utmp.ml" 24 848 865 "sysprep_operation_utmp.ml" 24 848 866
+type(
+  < inspect_get_type : 'a -> string; rm : string -> unit; .. > as 'c
+)
+ident(
+  def g "sysprep_operation_utmp.ml" 24 848 867 "sysprep_operation_utmp.ml" 29 1009 1012
+)
+"sysprep_operation_utmp.ml" 24 848 867 "sysprep_operation_utmp.ml" 24 848 871
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_utmp.ml" 24 848 872 "sysprep_operation_utmp.ml" 29 1009 1012
+)
+"sysprep_operation_utmp.ml" 24 848 872 "sysprep_operation_utmp.ml" 24 848 884
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_utmp.ml" 25 887 889 "sysprep_operation_utmp.ml" 29 1009 1012
+)
+"sysprep_operation_utmp.ml" 25 887 893 "sysprep_operation_utmp.ml" 25 887 896
+type(
+  string
+)
+"sysprep_operation_utmp.ml" 25 887 899 "sysprep_operation_utmp.ml" 25 887 900
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_utmp.ml" 24 848 865 "sysprep_operation_utmp.ml" 24 848 866
+)
+"sysprep_operation_utmp.ml" 25 887 899 "sysprep_operation_utmp.ml" 25 887 917
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_utmp.ml" 25 887 918 "sysprep_operation_utmp.ml" 25 887 922
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_utmp.ml" 24 848 867 "sysprep_operation_utmp.ml" 24 848 871
+)
+"sysprep_operation_utmp.ml" 25 887 899 "sysprep_operation_utmp.ml" 25 887 922
+type(
+  string
+)
+"sysprep_operation_utmp.ml" 26 926 931 "sysprep_operation_utmp.ml" 26 926 934
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_utmp.ml" 25 887 893 "sysprep_operation_utmp.ml" 25 887 896
+)
+"sysprep_operation_utmp.ml" 26 926 935 "sysprep_operation_utmp.ml" 26 926 937
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_utmp.ml" 26 926 938 "sysprep_operation_utmp.ml" 26 926 947
+type(
+  string
+)
+"sysprep_operation_utmp.ml" 26 926 931 "sysprep_operation_utmp.ml" 26 926 947
+type(
+  bool
+)
+"sysprep_operation_utmp.ml" 27 955 963 "sysprep_operation_utmp.ml" 27 955 964
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_utmp.ml" 24 848 865 "sysprep_operation_utmp.ml" 24 848 866
+)
+"sysprep_operation_utmp.ml" 27 955 963 "sysprep_operation_utmp.ml" 27 955 967
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_utmp.ml" 27 955 968 "sysprep_operation_utmp.ml" 27 955 983
+type(
+  string
+)
+"sysprep_operation_utmp.ml" 27 955 963 "sysprep_operation_utmp.ml" 27 955 983
+type(
+  unit
+)
+"sysprep_operation_utmp.ml" 28 984 1001 "sysprep_operation_utmp.ml" 28 984 1002
+type(
+  string
+)
+"sysprep_operation_utmp.ml" 28 984 993 "sysprep_operation_utmp.ml" 28 984 1002
+type(
+  exn
+)
+"sysprep_operation_utmp.ml" 28 984 1006 "sysprep_operation_utmp.ml" 28 984 1008
+type(
+  unit
+)
+"sysprep_operation_utmp.ml" 26 926 953 "sysprep_operation_utmp.ml" 29 1009 1012
+type(
+  unit
+)
+"sysprep_operation_utmp.ml" 26 926 928 "sysprep_operation_utmp.ml" 29 1009 1012
+type(
+  unit
+)
+"sysprep_operation_utmp.ml" 25 887 889 "sysprep_operation_utmp.ml" 29 1009 1012
+type(
+  unit
+)
+"sysprep_operation_utmp.ml" 31 1014 1018 "sysprep_operation_utmp.ml" 31 1014 1020
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_utmp.ml" 43 1422 1422 --
+)
+"sysprep_operation_utmp.ml" 32 1025 1027 "sysprep_operation_utmp.ml" 32 1025 1035
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_utmp.ml" 33 1041 1052 "sysprep_operation_utmp.ml" 33 1041 1058
+type(
+  string
+)
+"sysprep_operation_utmp.ml" 34 1060 1085 "sysprep_operation_utmp.ml" 34 1060 1089
+type(
+  bool
+)
+"sysprep_operation_utmp.ml" 35 1091 1105 "sysprep_operation_utmp.ml" 35 1091 1107
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_utmp.ml" 35 1091 1107 "sysprep_operation_utmp.ml" 35 1091 1129
+type(
+  string
+)
+"sysprep_operation_utmp.ml" 35 1091 1105 "sysprep_operation_utmp.ml" 35 1091 1129
+type(
+  string
+)
+"sysprep_operation_utmp.ml" 36 1131 1159 "sysprep_operation_utmp.ml" 36 1131 1161
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_utmp.ml" 36 1131 1161 "sysprep_operation_utmp.ml" 39 1300 1368
+type(
+  string
+)
+"sysprep_operation_utmp.ml" 36 1131 1158 "sysprep_operation_utmp.ml" 39 1300 1369
+type(
+  string
+)
+"sysprep_operation_utmp.ml" 36 1131 1153 "sysprep_operation_utmp.ml" 39 1300 1369
+type(
+  string option
+)
+"sysprep_operation_utmp.ml" 40 1371 1405 "sysprep_operation_utmp.ml" 40 1371 1417
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref utmp_perform "sysprep_operation_utmp.ml" 24 848 852 "sysprep_operation_utmp.ml" 24 848 864
+)
+"sysprep_operation_utmp.ml" 40 1371 1400 "sysprep_operation_utmp.ml" 40 1371 1417
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_utmp.ml" 31 1014 1023 "sysprep_operation_utmp.ml" 41 1419 1420
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_utmp.ml" 43 1422 1426 "sysprep_operation_utmp.ml" 43 1422 1428
+type(
+  unit
+)
+"sysprep_operation_utmp.ml" 43 1422 1431 "sysprep_operation_utmp.ml" 43 1422 1449
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_utmp.ml" 43 1422 1450 "sysprep_operation_utmp.ml" 43 1422 1452
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_utmp.ml" 31 1014 1018 "sysprep_operation_utmp.ml" 31 1014 1020
+)
+"sysprep_operation_utmp.ml" 43 1422 1431 "sysprep_operation_utmp.ml" 43 1422 1452
+call(
+  stack
+)
+type(
+  unit
+)

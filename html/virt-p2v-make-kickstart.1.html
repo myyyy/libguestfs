@@ -1,0 +1,293 @@
+
+<html>
+<head>
+<title>virt-p2v-make-kickstart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#building-the-kickstart-file">BUILDING THE KICKSTART FILE</a></li>
+  <li><a href="#building-a-live-cd-iso">BUILDING A LIVE CD / ISO</a></li>
+  <li><a href="#building-a-fedora-spin-using-koji">BUILDING A FEDORA SPIN USING KOJI</a></li>
+  <li><a href="#building-a-bootable-usb-key">BUILDING A BOOTABLE USB KEY</a></li>
+  <li><a href="#building-a-pxe-boot-image">BUILDING A PXE BOOT IMAGE</a></li>
+  <li><a href="#testing-virt-p2v-using-qemu">TESTING VIRT-P2V USING QEMU</a>
+    <ul>
+      <li><a href="#testing-the-p2v-iso-using-qemu">TESTING THE P2V ISO USING QEMU</a></li>
+      <li><a href="#testing-pxe-support-using-qemu">TESTING PXE SUPPORT USING QEMU</a></li>
+    </ul>
+  </li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#files">FILES</a></li>
+  <li><a href="#environment-variables">ENVIRONMENT VARIABLES</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-p2v-make-kickstart - Build the virt-p2v kickstart</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-p2v-make-kickstart [-o p2v.ks] [--proxy=http://...] repo [repo...]</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><a href="virt-p2v.1.html">virt-p2v(1)</a> converts a physical machine to run virtualized on KVM, managed by libvirt, OpenStack, oVirt, Red Hat Enterprise Virtualisation (RHEV), or one of the other targets supported by <a href="virt-v2v.1.html">virt-v2v(1)</a>.</p>
+
+<p>Kickstart is a format used by Red Hat-derived distributions (such as Fedora, Red Hat Enterprise Linux, CentOS, Scientific Linux, and others) to describe how to make live CDs, install the distro, make &quot;Spins&quot; and so on. It is driven by a kickstart file.</p>
+
+<p>virt-p2v-make-kickstart builds a kickstart file which can be used to build a bootable P2V ISO, live CD, USB key, or PXE image. This tool only builds the kickstart file, but this manual page describes some of the ways you can use the kickstart file.</p>
+
+<h1 id="building-the-kickstart-file">BUILDING THE KICKSTART FILE</h1>
+
+<p>Using virt-p2v-make-kickstart is very simple:</p>
+
+<pre><code> virt-p2v-make-kickstart fedora</code></pre>
+
+<p>will build a kickstart file for Fedora. The kickstart file will be called <i>p2v.ks</i> and located in the current directory.</p>
+
+<p>The parameters are a list of one or more repositories. Some built-in repositories are available: <code>fedora</code>, <code>rawhide</code> or <code>koji</code>. You can also use a URL as a parameter to point to a repository, for example:</p>
+
+<pre><code> virt-p2v-make-kickstart https://dl.fedoraproject.org/pub/fedora/linux/releases/21/Everything/x86_64/os/</code></pre>
+
+<p>To control the name of the output file, use the <i>-o</i> parameter. To tell kickstart to use a proxy server or web cache to download files, use the <i>--proxy</i> parameter.</p>
+
+<h1 id="building-a-live-cd-iso">BUILDING A LIVE CD / ISO</h1>
+
+<p>Once you have the kickstart file, you can use <a href="http://man.he.net/man8/livecd-creator">livecd-creator(8)</a> to make a live CD:</p>
+
+<pre><code> sudo livecd-creator p2v.ks</code></pre>
+
+<p>Before running this note that you should probably run <code>livecd-creator</code> in a disposable virtual machine for these reasons:</p>
+
+<ul>
+
+<li><p>You have to disable SELinux when running the tool.</p>
+
+</li>
+<li><p>This tool has to be run as root, and has some nasty failure modes.</p>
+
+</li>
+<li><p>You can only create the exact same Live CD distro as the host distro. Cross-builds will fail in strange ways (eg. RHBZ#1092327).</p>
+
+</li>
+</ul>
+
+<h1 id="building-a-fedora-spin-using-koji">BUILDING A FEDORA SPIN USING KOJI</h1>
+
+<p>This requires <code>spin-livecd</code> permissions on Koji, which are not given out usually, even to Fedora packagers. However assuming you have been given these permissions (or have your own Koji instance, I guess), then you can do:</p>
+
+<pre><code> koji spin-livecd [--scratch] virt-p2v 1.XX.YY rawhide x86_64 p2v.ks</code></pre>
+
+<ul>
+
+<li><p>Add the <code>--scratch</code> option to do a scratch build (recommended for testing).</p>
+
+</li>
+<li><p><code>1.XX.YY</code> should match the libguestfs version</p>
+
+</li>
+<li><p>Instead of <code>rawhide</code> you can use any Koji target.</p>
+
+</li>
+</ul>
+
+<h1 id="building-a-bootable-usb-key">BUILDING A BOOTABLE USB KEY</h1>
+
+<p>Use the <a href="http://man.he.net/man8/livecd-iso-to-disk">livecd-iso-to-disk(8)</a> program to convert the ISO created above to a USB key:</p>
+
+<pre><code> sudo livecd-iso-to-disk livecd-p2v.iso /dev/sdX</code></pre>
+
+<h1 id="building-a-pxe-boot-image">BUILDING A PXE BOOT IMAGE</h1>
+
+<p>Use the <code>livecd-iso-to-pxeboot</code> program to convert the ISO created above to a PXE boot image.</p>
+
+<pre><code> sudo livecd-iso-to-pxeboot livecd-p2v.iso</code></pre>
+
+<p>This creates a <code>tftpboot</code> subdirectory under the current directory containing the files required to PXE boot virt-p2v:</p>
+
+<pre><code> $ ls -1R tftpboot/
+ tftpboot/:
+ initrd0.img
+ pxelinux.0
+ pxelinux.cfg/
+ vmlinuz0
+ 
+ tftpboot/pxelinux.cfg:
+ default</code></pre>
+
+<h1 id="testing-virt-p2v-using-qemu">TESTING VIRT-P2V USING QEMU</h1>
+
+<h2 id="testing-the-p2v-iso-using-qemu">TESTING THE P2V ISO USING QEMU</h2>
+
+<p>You can use qemu to test-boot the P2V ISO:</p>
+
+<pre><code> qemu-kvm -m 1024 -hda /tmp/guest.img -cdrom /tmp/livecd-p2v.iso -boot d</code></pre>
+
+<p>Note that <code>-hda</code> is the (virtual) system that you want to convert (for test purposes). It could be any guest type supported by <a href="virt-v2v.1.html">virt-v2v(1)</a>, including Windows or Red Hat Enterprise Linux.</p>
+
+<h2 id="testing-pxe-support-using-qemu">TESTING PXE SUPPORT USING QEMU</h2>
+
+<ul>
+
+<li><p>Unpack the tftpboot directory into <i>/tmp</i> (so it appears as <i>/tmp/tftpboot</i>).</p>
+
+</li>
+<li><p>Copy <i>pxelinux.0</i> and <i>ldlinux.c32</i> from syslinux (usually from <i>/usr/share/syslinux</i>) into <i>/tmp/tftpboot</i>.</p>
+
+</li>
+<li><p>Adjust the <code>APPEND</code> line in <i>/tmp/tftpboot/pxelinux.cfg/default</i> if required. See <a href="virt-p2v.1.html#kernel-command-line-configuration">&quot;KERNEL COMMAND LINE CONFIGURATION&quot; in virt-p2v(1)</a>.</p>
+
+</li>
+<li><p>Run qemu like this so that it acts as a TFTP and BOOTP server, emulating a netboot:</p>
+
+<pre><code> qemu-kvm \
+     -m 4096 -hda /tmp/guest.img \
+     -boot n \
+     -netdev user,id=unet,tftp=/tmp/tftpboot,bootfile=/pxelinux.0 \
+     -device virtio-net-pci,netdev=unet \
+     -serial stdio</code></pre>
+
+<p>Note that this requires considerably more memory because the PXE image is loaded into memory. Also that qemu&#39;s TFTP server is very slow and the virt-p2v PXE image is very large, so it can appear to &quot;hang&quot; after pxelinux starts up.</p>
+
+</li>
+</ul>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display help.</p>
+
+</dd>
+<dt><b>-o</b> OUTPUT</dt>
+<dd>
+
+</dd>
+<dt><b>--output</b> OUTPUT</dt>
+<dd>
+
+<p>Write kickstart to <code>OUTPUT</code>. If not specified, the default is <i>p2v.ks</i> in the current directory.</p>
+
+</dd>
+<dt><b>--proxy</b> URL</dt>
+<dd>
+
+<p>Tell the kickstart to use a proxy server or web cache for downloads.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+</dl>
+
+<h1 id="files">FILES</h1>
+
+<dl>
+
+<dt><i>$libexecdir/virt-p2v</i></dt>
+<dd>
+
+<p>The <a href="virt-p2v.1.html">virt-p2v(1)</a> binary which is copied into the kickstart file.</p>
+
+</dd>
+<dt><i>$datadir/issue</i></dt>
+<dd>
+
+</dd>
+<dt><i>$datadir/launch-virt-p2v.in</i></dt>
+<dd>
+
+</dd>
+<dt><i>$datadir/p2v.ks.in</i></dt>
+<dd>
+
+</dd>
+<dt><i>$datadir/p2v.service</i></dt>
+<dd>
+
+<p>Various data files that are used to make the kickstart.</p>
+
+</dd>
+</dl>
+
+<h1 id="environment-variables">ENVIRONMENT VARIABLES</h1>
+
+<dl>
+
+<dt><code>VIRT_P2V_DATA_DIR</code></dt>
+<dd>
+
+<p>The directory where virt-p2v-make-kickstart looks for data files and the virt-p2v binary (see <a href="#files">&quot;FILES&quot;</a> above). If not set, a compiled-in location is used.</p>
+
+</dd>
+</dl>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="virt-p2v.1.html">virt-p2v(1)</a>, <a href="virt-p2v-make-disk.1.html">virt-p2v-make-disk(1)</a>, <a href="virt-v2v.1.html">virt-v2v(1)</a>, <a href="http://man.he.net/man8/livecd-creator">livecd-creator(8)</a>, <a href="http://man.he.net/man8/livecd-iso-to-disk">livecd-iso-to-disk(8)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2009-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

@@ -1,0 +1,271 @@
+"sysprep_operation_dovecot_data.ml" 24 851 855 "sysprep_operation_dovecot_data.ml" 24 851 875
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def dovecot_data_perform "sysprep_operation_dovecot_data.ml" 33 1107 1107 --
+)
+"sysprep_operation_dovecot_data.ml" 24 851 876 "sysprep_operation_dovecot_data.ml" 24 851 877
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_dovecot_data.ml" 24 851 878 "sysprep_operation_dovecot_data.ml" 31 1102 1105
+)
+"sysprep_operation_dovecot_data.ml" 24 851 878 "sysprep_operation_dovecot_data.ml" 24 851 882
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_dovecot_data.ml" 24 851 883 "sysprep_operation_dovecot_data.ml" 31 1102 1105
+)
+"sysprep_operation_dovecot_data.ml" 24 851 883 "sysprep_operation_dovecot_data.ml" 24 851 895
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_dovecot_data.ml" 25 898 900 "sysprep_operation_dovecot_data.ml" 31 1102 1105
+)
+"sysprep_operation_dovecot_data.ml" 25 898 904 "sysprep_operation_dovecot_data.ml" 25 898 907
+type(
+  string
+)
+"sysprep_operation_dovecot_data.ml" 25 898 910 "sysprep_operation_dovecot_data.ml" 25 898 911
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_dovecot_data.ml" 24 851 876 "sysprep_operation_dovecot_data.ml" 24 851 877
+)
+"sysprep_operation_dovecot_data.ml" 25 898 910 "sysprep_operation_dovecot_data.ml" 25 898 928
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_dovecot_data.ml" 25 898 929 "sysprep_operation_dovecot_data.ml" 25 898 933
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_dovecot_data.ml" 24 851 878 "sysprep_operation_dovecot_data.ml" 24 851 882
+)
+"sysprep_operation_dovecot_data.ml" 25 898 910 "sysprep_operation_dovecot_data.ml" 25 898 933
+type(
+  string
+)
+"sysprep_operation_dovecot_data.ml" 26 937 942 "sysprep_operation_dovecot_data.ml" 26 937 945
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_dovecot_data.ml" 25 898 904 "sysprep_operation_dovecot_data.ml" 25 898 907
+)
+"sysprep_operation_dovecot_data.ml" 26 937 946 "sysprep_operation_dovecot_data.ml" 26 937 948
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_dovecot_data.ml" 26 937 949 "sysprep_operation_dovecot_data.ml" 26 937 958
+type(
+  string
+)
+"sysprep_operation_dovecot_data.ml" 26 937 942 "sysprep_operation_dovecot_data.ml" 26 937 958
+type(
+  bool
+)
+"sysprep_operation_dovecot_data.ml" 27 966 974 "sysprep_operation_dovecot_data.ml" 27 966 979
+type(
+  'a array
+)
+"sysprep_operation_dovecot_data.ml" 27 966 982 "sysprep_operation_dovecot_data.ml" 27 966 983
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_dovecot_data.ml" 24 851 876 "sysprep_operation_dovecot_data.ml" 24 851 877
+)
+"sysprep_operation_dovecot_data.ml" 27 966 982 "sysprep_operation_dovecot_data.ml" 27 966 995
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_dovecot_data.ml" 27 966 996 "sysprep_operation_dovecot_data.ml" 27 966 1016
+type(
+  string
+)
+"sysprep_operation_dovecot_data.ml" 27 966 982 "sysprep_operation_dovecot_data.ml" 27 966 1016
+type(
+  'a array
+)
+"sysprep_operation_dovecot_data.ml" 28 1020 1024 "sysprep_operation_dovecot_data.ml" 28 1020 1034
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_dovecot_data.ml" 29 1037 1047 "sysprep_operation_dovecot_data.ml" 29 1037 1051
+type(
+  'a
+)
+ident(
+  def file "sysprep_operation_dovecot_data.ml" 29 1037 1055 "sysprep_operation_dovecot_data.ml" 29 1037 1089
+)
+"sysprep_operation_dovecot_data.ml" 29 1037 1059 "sysprep_operation_dovecot_data.ml" 29 1037 1060
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_dovecot_data.ml" 24 851 876 "sysprep_operation_dovecot_data.ml" 24 851 877
+)
+"sysprep_operation_dovecot_data.ml" 29 1037 1059 "sysprep_operation_dovecot_data.ml" 29 1037 1063
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_dovecot_data.ml" 29 1037 1064 "sysprep_operation_dovecot_data.ml" 29 1037 1068
+type(
+  'a
+)
+ident(
+  int_ref file "sysprep_operation_dovecot_data.ml" 29 1037 1047 "sysprep_operation_dovecot_data.ml" 29 1037 1051
+)
+"sysprep_operation_dovecot_data.ml" 29 1037 1059 "sysprep_operation_dovecot_data.ml" 29 1037 1068
+type(
+  unit
+)
+"sysprep_operation_dovecot_data.ml" 29 1037 1082 "sysprep_operation_dovecot_data.ml" 29 1037 1083
+type(
+  string
+)
+"sysprep_operation_dovecot_data.ml" 29 1037 1074 "sysprep_operation_dovecot_data.ml" 29 1037 1083
+type(
+  exn
+)
+"sysprep_operation_dovecot_data.ml" 29 1037 1087 "sysprep_operation_dovecot_data.ml" 29 1037 1089
+type(
+  unit
+)
+"sysprep_operation_dovecot_data.ml" 29 1037 1055 "sysprep_operation_dovecot_data.ml" 29 1037 1089
+type(
+  unit
+)
+"sysprep_operation_dovecot_data.ml" 28 1020 1035 "sysprep_operation_dovecot_data.ml" 30 1090 1095
+type(
+  'a -> unit
+)
+"sysprep_operation_dovecot_data.ml" 30 1090 1096 "sysprep_operation_dovecot_data.ml" 30 1090 1101
+type(
+  'a array
+)
+ident(
+  int_ref files "sysprep_operation_dovecot_data.ml" 27 966 974 "sysprep_operation_dovecot_data.ml" 27 966 979
+)
+"sysprep_operation_dovecot_data.ml" 28 1020 1024 "sysprep_operation_dovecot_data.ml" 30 1090 1101
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_dovecot_data.ml" 26 937 964 "sysprep_operation_dovecot_data.ml" 31 1102 1105
+type(
+  unit
+)
+"sysprep_operation_dovecot_data.ml" 26 937 939 "sysprep_operation_dovecot_data.ml" 31 1102 1105
+type(
+  unit
+)
+"sysprep_operation_dovecot_data.ml" 25 898 900 "sysprep_operation_dovecot_data.ml" 31 1102 1105
+type(
+  unit
+)
+"sysprep_operation_dovecot_data.ml" 33 1107 1111 "sysprep_operation_dovecot_data.ml" 33 1107 1113
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_dovecot_data.ml" 41 1304 1304 --
+)
+"sysprep_operation_dovecot_data.ml" 34 1118 1120 "sysprep_operation_dovecot_data.ml" 34 1118 1128
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_dovecot_data.ml" 35 1134 1145 "sysprep_operation_dovecot_data.ml" 35 1134 1159
+type(
+  string
+)
+"sysprep_operation_dovecot_data.ml" 36 1161 1186 "sysprep_operation_dovecot_data.ml" 36 1161 1190
+type(
+  bool
+)
+"sysprep_operation_dovecot_data.ml" 37 1192 1206 "sysprep_operation_dovecot_data.ml" 37 1192 1208
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_dovecot_data.ml" 37 1192 1208 "sysprep_operation_dovecot_data.ml" 37 1192 1243
+type(
+  string
+)
+"sysprep_operation_dovecot_data.ml" 37 1192 1206 "sysprep_operation_dovecot_data.ml" 37 1192 1243
+type(
+  string
+)
+"sysprep_operation_dovecot_data.ml" 38 1245 1279 "sysprep_operation_dovecot_data.ml" 38 1245 1299
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref dovecot_data_perform "sysprep_operation_dovecot_data.ml" 24 851 855 "sysprep_operation_dovecot_data.ml" 24 851 875
+)
+"sysprep_operation_dovecot_data.ml" 38 1245 1274 "sysprep_operation_dovecot_data.ml" 38 1245 1299
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_dovecot_data.ml" 33 1107 1116 "sysprep_operation_dovecot_data.ml" 39 1301 1302
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_dovecot_data.ml" 41 1304 1308 "sysprep_operation_dovecot_data.ml" 41 1304 1310
+type(
+  unit
+)
+"sysprep_operation_dovecot_data.ml" 41 1304 1313 "sysprep_operation_dovecot_data.ml" 41 1304 1331
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_dovecot_data.ml" 41 1304 1332 "sysprep_operation_dovecot_data.ml" 41 1304 1334
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_dovecot_data.ml" 33 1107 1111 "sysprep_operation_dovecot_data.ml" 33 1107 1113
+)
+"sysprep_operation_dovecot_data.ml" 41 1304 1313 "sysprep_operation_dovecot_data.ml" 41 1304 1334
+call(
+  stack
+)
+type(
+  unit
+)

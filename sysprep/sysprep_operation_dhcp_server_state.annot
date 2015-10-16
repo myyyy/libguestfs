@@ -1,0 +1,156 @@
+"sysprep_operation_dhcp_server_state.ml" 24 848 852 "sysprep_operation_dhcp_server_state.ml" 24 848 877
+type(
+  < glob_expand : string -> 'a array; rm_rf : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def dhcp_server_state_perform "sysprep_operation_dhcp_server_state.ml" 27 957 957 --
+)
+"sysprep_operation_dhcp_server_state.ml" 24 848 878 "sysprep_operation_dhcp_server_state.ml" 24 848 879
+type(
+  < glob_expand : string -> 'a array; rm_rf : 'a -> unit; .. > as 'd
+)
+ident(
+  def g "sysprep_operation_dhcp_server_state.ml" 24 848 880 "sysprep_operation_dhcp_server_state.ml" 25 900 955
+)
+"sysprep_operation_dhcp_server_state.ml" 24 848 880 "sysprep_operation_dhcp_server_state.ml" 24 848 884
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_dhcp_server_state.ml" 24 848 885 "sysprep_operation_dhcp_server_state.ml" 25 900 955
+)
+"sysprep_operation_dhcp_server_state.ml" 24 848 885 "sysprep_operation_dhcp_server_state.ml" 24 848 897
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_dhcp_server_state.ml" 25 900 902 "sysprep_operation_dhcp_server_state.ml" 25 900 955
+)
+"sysprep_operation_dhcp_server_state.ml" 25 900 902 "sysprep_operation_dhcp_server_state.ml" 25 900 912
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_dhcp_server_state.ml" 25 900 913 "sysprep_operation_dhcp_server_state.ml" 25 900 914
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_dhcp_server_state.ml" 24 848 878 "sysprep_operation_dhcp_server_state.ml" 24 848 879
+)
+"sysprep_operation_dhcp_server_state.ml" 25 900 913 "sysprep_operation_dhcp_server_state.ml" 25 900 920
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_dhcp_server_state.ml" 25 900 922 "sysprep_operation_dhcp_server_state.ml" 25 900 923
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_dhcp_server_state.ml" 24 848 878 "sysprep_operation_dhcp_server_state.ml" 24 848 879
+)
+"sysprep_operation_dhcp_server_state.ml" 25 900 922 "sysprep_operation_dhcp_server_state.ml" 25 900 935
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_dhcp_server_state.ml" 25 900 936 "sysprep_operation_dhcp_server_state.ml" 25 900 954
+type(
+  string
+)
+"sysprep_operation_dhcp_server_state.ml" 25 900 921 "sysprep_operation_dhcp_server_state.ml" 25 900 955
+type(
+  'a array
+)
+"sysprep_operation_dhcp_server_state.ml" 25 900 902 "sysprep_operation_dhcp_server_state.ml" 25 900 955
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_dhcp_server_state.ml" 27 957 961 "sysprep_operation_dhcp_server_state.ml" 27 957 963
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_dhcp_server_state.ml" 35 1156 1156 --
+)
+"sysprep_operation_dhcp_server_state.ml" 28 968 970 "sysprep_operation_dhcp_server_state.ml" 28 968 978
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_dhcp_server_state.ml" 29 984 995 "sysprep_operation_dhcp_server_state.ml" 29 984 1014
+type(
+  string
+)
+"sysprep_operation_dhcp_server_state.ml" 30 1016 1041 "sysprep_operation_dhcp_server_state.ml" 30 1016 1045
+type(
+  bool
+)
+"sysprep_operation_dhcp_server_state.ml" 31 1047 1061 "sysprep_operation_dhcp_server_state.ml" 31 1047 1063
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_dhcp_server_state.ml" 31 1047 1063 "sysprep_operation_dhcp_server_state.ml" 31 1047 1090
+type(
+  string
+)
+"sysprep_operation_dhcp_server_state.ml" 31 1047 1061 "sysprep_operation_dhcp_server_state.ml" 31 1047 1090
+type(
+  string
+)
+"sysprep_operation_dhcp_server_state.ml" 32 1092 1126 "sysprep_operation_dhcp_server_state.ml" 32 1092 1151
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref dhcp_server_state_perform "sysprep_operation_dhcp_server_state.ml" 24 848 852 "sysprep_operation_dhcp_server_state.ml" 24 848 877
+)
+"sysprep_operation_dhcp_server_state.ml" 32 1092 1121 "sysprep_operation_dhcp_server_state.ml" 32 1092 1151
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_dhcp_server_state.ml" 27 957 966 "sysprep_operation_dhcp_server_state.ml" 33 1153 1154
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_dhcp_server_state.ml" 35 1156 1160 "sysprep_operation_dhcp_server_state.ml" 35 1156 1162
+type(
+  unit
+)
+"sysprep_operation_dhcp_server_state.ml" 35 1156 1165 "sysprep_operation_dhcp_server_state.ml" 35 1156 1183
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_dhcp_server_state.ml" 35 1156 1184 "sysprep_operation_dhcp_server_state.ml" 35 1156 1186
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_dhcp_server_state.ml" 27 957 961 "sysprep_operation_dhcp_server_state.ml" 27 957 963
+)
+"sysprep_operation_dhcp_server_state.ml" 35 1156 1165 "sysprep_operation_dhcp_server_state.ml" 35 1156 1186
+call(
+  stack
+)
+type(
+  unit
+)

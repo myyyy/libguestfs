@@ -1,0 +1,294 @@
+"sysprep_operation_rpm_db.ml" 22 828 847 "sysprep_operation_rpm_db.ml" 22 828 864
+call(
+  stack
+)
+"sysprep_operation_rpm_db.ml" 25 885 889 "sysprep_operation_rpm_db.ml" 25 885 903
+type(
+  < glob_expand : string -> 'a array;
+    inspect_get_package_format : 'b -> string; rm : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def rpm_db_perform "sysprep_operation_rpm_db.ml" 35 1155 1155 --
+)
+"sysprep_operation_rpm_db.ml" 25 885 904 "sysprep_operation_rpm_db.ml" 25 885 905
+type(
+  < glob_expand : string -> 'a array;
+    inspect_get_package_format : 'b -> string; rm : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_rpm_db.ml" 25 885 906 "sysprep_operation_rpm_db.ml" 33 1150 1153
+)
+"sysprep_operation_rpm_db.ml" 25 885 906 "sysprep_operation_rpm_db.ml" 25 885 910
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_rpm_db.ml" 25 885 911 "sysprep_operation_rpm_db.ml" 33 1150 1153
+)
+"sysprep_operation_rpm_db.ml" 25 885 911 "sysprep_operation_rpm_db.ml" 25 885 923
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_rpm_db.ml" 26 926 928 "sysprep_operation_rpm_db.ml" 33 1150 1153
+)
+"sysprep_operation_rpm_db.ml" 26 926 932 "sysprep_operation_rpm_db.ml" 26 926 934
+type(
+  string
+)
+"sysprep_operation_rpm_db.ml" 26 926 937 "sysprep_operation_rpm_db.ml" 26 926 938
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_rpm_db.ml" 25 885 904 "sysprep_operation_rpm_db.ml" 25 885 905
+)
+"sysprep_operation_rpm_db.ml" 26 926 937 "sysprep_operation_rpm_db.ml" 26 926 965
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_rpm_db.ml" 26 926 966 "sysprep_operation_rpm_db.ml" 26 926 970
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_rpm_db.ml" 25 885 906 "sysprep_operation_rpm_db.ml" 25 885 910
+)
+"sysprep_operation_rpm_db.ml" 26 926 937 "sysprep_operation_rpm_db.ml" 26 926 970
+type(
+  string
+)
+"sysprep_operation_rpm_db.ml" 27 974 979 "sysprep_operation_rpm_db.ml" 27 974 981
+type(
+  string
+)
+ident(
+  int_ref pf "sysprep_operation_rpm_db.ml" 26 926 932 "sysprep_operation_rpm_db.ml" 26 926 934
+)
+"sysprep_operation_rpm_db.ml" 27 974 982 "sysprep_operation_rpm_db.ml" 27 974 983
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation_rpm_db.ml" 27 974 984 "sysprep_operation_rpm_db.ml" 27 974 989
+type(
+  string
+)
+"sysprep_operation_rpm_db.ml" 27 974 979 "sysprep_operation_rpm_db.ml" 27 974 989
+type(
+  bool
+)
+"sysprep_operation_rpm_db.ml" 28 997 1005 "sysprep_operation_rpm_db.ml" 28 997 1010
+type(
+  'a array
+)
+"sysprep_operation_rpm_db.ml" 28 997 1013 "sysprep_operation_rpm_db.ml" 28 997 1014
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_rpm_db.ml" 25 885 904 "sysprep_operation_rpm_db.ml" 25 885 905
+)
+"sysprep_operation_rpm_db.ml" 28 997 1013 "sysprep_operation_rpm_db.ml" 28 997 1026
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_rpm_db.ml" 28 997 1027 "sysprep_operation_rpm_db.ml" 28 997 1048
+type(
+  string
+)
+"sysprep_operation_rpm_db.ml" 28 997 1013 "sysprep_operation_rpm_db.ml" 28 997 1048
+type(
+  'a array
+)
+"sysprep_operation_rpm_db.ml" 29 1052 1056 "sysprep_operation_rpm_db.ml" 29 1052 1066
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_rpm_db.ml" 30 1069 1079 "sysprep_operation_rpm_db.ml" 30 1069 1087
+type(
+  'a
+)
+ident(
+  def filename "sysprep_operation_rpm_db.ml" 31 1091 1099 "sysprep_operation_rpm_db.ml" 31 1091 1137
+)
+"sysprep_operation_rpm_db.ml" 31 1091 1103 "sysprep_operation_rpm_db.ml" 31 1091 1104
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_rpm_db.ml" 25 885 904 "sysprep_operation_rpm_db.ml" 25 885 905
+)
+"sysprep_operation_rpm_db.ml" 31 1091 1103 "sysprep_operation_rpm_db.ml" 31 1091 1107
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_rpm_db.ml" 31 1091 1108 "sysprep_operation_rpm_db.ml" 31 1091 1116
+type(
+  'a
+)
+ident(
+  int_ref filename "sysprep_operation_rpm_db.ml" 30 1069 1079 "sysprep_operation_rpm_db.ml" 30 1069 1087
+)
+"sysprep_operation_rpm_db.ml" 31 1091 1103 "sysprep_operation_rpm_db.ml" 31 1091 1116
+type(
+  unit
+)
+"sysprep_operation_rpm_db.ml" 31 1091 1130 "sysprep_operation_rpm_db.ml" 31 1091 1131
+type(
+  string
+)
+"sysprep_operation_rpm_db.ml" 31 1091 1122 "sysprep_operation_rpm_db.ml" 31 1091 1131
+type(
+  exn
+)
+"sysprep_operation_rpm_db.ml" 31 1091 1135 "sysprep_operation_rpm_db.ml" 31 1091 1137
+type(
+  unit
+)
+"sysprep_operation_rpm_db.ml" 31 1091 1099 "sysprep_operation_rpm_db.ml" 31 1091 1137
+type(
+  unit
+)
+"sysprep_operation_rpm_db.ml" 29 1052 1067 "sysprep_operation_rpm_db.ml" 32 1138 1143
+type(
+  'a -> unit
+)
+"sysprep_operation_rpm_db.ml" 32 1138 1144 "sysprep_operation_rpm_db.ml" 32 1138 1149
+type(
+  'a array
+)
+ident(
+  int_ref paths "sysprep_operation_rpm_db.ml" 28 997 1005 "sysprep_operation_rpm_db.ml" 28 997 1010
+)
+"sysprep_operation_rpm_db.ml" 29 1052 1056 "sysprep_operation_rpm_db.ml" 32 1138 1149
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_rpm_db.ml" 27 974 995 "sysprep_operation_rpm_db.ml" 33 1150 1153
+type(
+  unit
+)
+"sysprep_operation_rpm_db.ml" 27 974 976 "sysprep_operation_rpm_db.ml" 33 1150 1153
+type(
+  unit
+)
+"sysprep_operation_rpm_db.ml" 26 926 928 "sysprep_operation_rpm_db.ml" 33 1150 1153
+type(
+  unit
+)
+"sysprep_operation_rpm_db.ml" 35 1155 1159 "sysprep_operation_rpm_db.ml" 35 1155 1161
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_rpm_db.ml" 46 1489 1489 --
+)
+"sysprep_operation_rpm_db.ml" 36 1166 1168 "sysprep_operation_rpm_db.ml" 36 1166 1176
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_rpm_db.ml" 37 1182 1193 "sysprep_operation_rpm_db.ml" 37 1182 1201
+type(
+  string
+)
+"sysprep_operation_rpm_db.ml" 38 1203 1228 "sysprep_operation_rpm_db.ml" 38 1203 1232
+type(
+  bool
+)
+"sysprep_operation_rpm_db.ml" 39 1234 1248 "sysprep_operation_rpm_db.ml" 39 1234 1250
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_rpm_db.ml" 39 1234 1250 "sysprep_operation_rpm_db.ml" 39 1234 1291
+type(
+  string
+)
+"sysprep_operation_rpm_db.ml" 39 1234 1248 "sysprep_operation_rpm_db.ml" 39 1234 1291
+type(
+  string
+)
+"sysprep_operation_rpm_db.ml" 40 1293 1321 "sysprep_operation_rpm_db.ml" 40 1293 1323
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_rpm_db.ml" 40 1293 1323 "sysprep_operation_rpm_db.ml" 42 1387 1433
+type(
+  string
+)
+"sysprep_operation_rpm_db.ml" 40 1293 1320 "sysprep_operation_rpm_db.ml" 42 1387 1434
+type(
+  string
+)
+"sysprep_operation_rpm_db.ml" 40 1293 1315 "sysprep_operation_rpm_db.ml" 42 1387 1434
+type(
+  string option
+)
+"sysprep_operation_rpm_db.ml" 43 1436 1470 "sysprep_operation_rpm_db.ml" 43 1436 1484
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref rpm_db_perform "sysprep_operation_rpm_db.ml" 25 885 889 "sysprep_operation_rpm_db.ml" 25 885 903
+)
+"sysprep_operation_rpm_db.ml" 43 1436 1465 "sysprep_operation_rpm_db.ml" 43 1436 1484
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_rpm_db.ml" 35 1155 1164 "sysprep_operation_rpm_db.ml" 44 1486 1487
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_rpm_db.ml" 46 1489 1493 "sysprep_operation_rpm_db.ml" 46 1489 1495
+type(
+  unit
+)
+"sysprep_operation_rpm_db.ml" 46 1489 1498 "sysprep_operation_rpm_db.ml" 46 1489 1516
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_rpm_db.ml" 46 1489 1517 "sysprep_operation_rpm_db.ml" 46 1489 1519
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_rpm_db.ml" 35 1155 1159 "sysprep_operation_rpm_db.ml" 35 1155 1161
+)
+"sysprep_operation_rpm_db.ml" 46 1489 1498 "sysprep_operation_rpm_db.ml" 46 1489 1519
+call(
+  stack
+)
+type(
+  unit
+)

@@ -53,8 +53,7 @@ guestfish-more.o: more.c ../config.h ../gnulib/lib/stdio.h \
  ../gnulib/lib/locale.h /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h fish.h ../src/guestfs.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h fish-cmds.h
+ ../src/guestfs-internal-frontend-cleanups.h fish-cmds.h
 
 ../config.h:
 
@@ -223,7 +222,5 @@ fish.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 fish-cmds.h:

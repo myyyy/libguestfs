@@ -1,0 +1,231 @@
+
+<html>
+<head>
+<title>libguestfs-test-tool</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#trying-out-a-different-version-of-qemu">TRYING OUT A DIFFERENT VERSION OF QEMU</a></li>
+  <li><a href="#trying-out-a-different-kernel">TRYING OUT A DIFFERENT KERNEL</a></li>
+  <li><a href="#trying-out-a-different-version-of-libvirt">TRYING OUT A DIFFERENT VERSION OF LIBVIRT</a></li>
+  <li><a href="#trying-out-with-without-libvirt">TRYING OUT WITH / WITHOUT LIBVIRT</a></li>
+  <li><a href="#trying-out-different-selinux-settings">TRYING OUT DIFFERENT SELINUX SETTINGS</a></li>
+  <li><a href="#self-diagnosis">SELF-DIAGNOSIS</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#environment-variables">ENVIRONMENT VARIABLES</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>libguestfs-test-tool - Diagnostics for libguestfs</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> libguestfs-test-tool [--options]</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>libguestfs-test-tool is a test program shipped with libguestfs to allow you to check basic libguestfs functionality is working. This is needed because libguestfs occasionally breaks for reasons beyond our control: usually because of changes in the underlying qemu or kernel packages, or the host environment.</p>
+
+<p>If you suspect a problem in libguestfs, then just run:</p>
+
+<pre><code> libguestfs-test-tool</code></pre>
+
+<p>It will print lots of diagnostic messages.</p>
+
+<p>If it runs to completion successfully, you will see this near the end:</p>
+
+<pre><code> ===== TEST FINISHED OK =====</code></pre>
+
+<p>and the test tool will exit with code 0.</p>
+
+<p>If it fails (and/or exits with non-zero error code), please paste the <i>complete, unedited</i> output of the test tool into a bug report. More information about reporting bugs can be found on the <a href="http://libguestfs.org/">http://libguestfs.org/</a> website.</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display short usage information and exit.</p>
+
+</dd>
+<dt><b>--qemu qemu_binary</b></dt>
+<dd>
+
+<p>If you have downloaded another qemu binary, point this option at the full path of the binary to try it.</p>
+
+</dd>
+<dt><b>--qemudir qemu_source_dir</b></dt>
+<dd>
+
+<p>If you have compiled qemu from source, point this option at the source directory to try it.</p>
+
+</dd>
+<dt><b>-t N</b></dt>
+<dd>
+
+</dd>
+<dt><b>--timeout N</b></dt>
+<dd>
+
+<p>Set the launch timeout to <code>N</code> seconds. The default is 600 seconds (10 minutes) which does not usually need to be adjusted.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display the libguestfs version number and exit.</p>
+
+</dd>
+</dl>
+
+<h1 id="trying-out-a-different-version-of-qemu">TRYING OUT A DIFFERENT VERSION OF QEMU</h1>
+
+<p>If you have compiled another version of qemu from source and would like to try that, then you can use the <i>--qemudir</i> option to point to the qemu source directory.</p>
+
+<p>If you have downloaded a qemu binary from somewhere, use the <i>--qemu</i> option to point to the binary.</p>
+
+<p>Note when using these options, you can ignore the business of qemu wrapper scripts (<a href="guestfs.3.html#qemu-wrappers">&quot;QEMU WRAPPERS&quot; in guestfs(3)</a>), since libguestfs-test-tool writes a wrapper script for you if one is needed.</p>
+
+<h1 id="trying-out-a-different-kernel">TRYING OUT A DIFFERENT KERNEL</h1>
+
+<p>You can tell supermin to try a different kernel. You do this by setting the environment variables <code>SUPERMIN_KERNEL</code>, <code>SUPERMIN_KERNEL_VERSION</code> and/or <code>SUPERMIN_MODULES</code>.</p>
+
+<p>Refer to <a href="supermin.1.html#environment-variables">&quot;ENVIRONMENT VARIABLES&quot; in supermin(1)</a> for further information.</p>
+
+<h1 id="trying-out-a-different-version-of-libvirt">TRYING OUT A DIFFERENT VERSION OF LIBVIRT</h1>
+
+<p>To find out which backend is the default in your libguestfs package, do:</p>
+
+<pre><code> unset LIBGUESTFS_BACKEND
+ guestfish get-backend</code></pre>
+
+<p>If you are using the libvirt backend, then you can try out a different (eg. upstream) version of libvirt by running these commands (<i>not</i> as root):</p>
+
+<pre><code> killall libvirtd lt-libvirtd
+ ~/path/to/libvirt/run libguestfs-test-tool</code></pre>
+
+<p>The first command kills any session <code>libvirtd</code> process(es) that may be running on the machine. The second command uses libvirt&#39;s <code>run</code> script (in the top-level libvirt build directory) to set some environment variables so that the alternate version of libvirt is used to run the program.</p>
+
+<h1 id="trying-out-with-without-libvirt">TRYING OUT WITH / WITHOUT LIBVIRT</h1>
+
+<p>To find out which backend is the default in your libguestfs package, do:</p>
+
+<pre><code> unset LIBGUESTFS_BACKEND
+ guestfish get-backend</code></pre>
+
+<p>If you are using the libvirt backend, you can try without (ie. libguestfs directly launching qemu) by doing:</p>
+
+<pre><code> export LIBGUESTFS_BACKEND=direct</code></pre>
+
+<p>Or if you are using the default (direct) backend, then you can try libvirt:</p>
+
+<pre><code> export LIBGUESTFS_BACKEND=libvirt</code></pre>
+
+<p>or with libvirt and a specific <a href="http://libvirt.org/uri.html">libvirt URI</a>:</p>
+
+<pre><code> export LIBGUESTFS_BACKEND=libvirt:qemu:///session</code></pre>
+
+<h1 id="trying-out-different-selinux-settings">TRYING OUT DIFFERENT SELINUX SETTINGS</h1>
+
+<p>To find out which backend is the default in your libguestfs package, do:</p>
+
+<pre><code> unset LIBGUESTFS_BACKEND
+ guestfish get-backend</code></pre>
+
+<p>To find out if SELinux is being used, do:</p>
+
+<pre><code> getenforce</code></pre>
+
+<p>If you are using libvirt, SELinux and sVirt, then you can try to see if changing SELinux to &quot;permissive&quot; mode makes any difference. Use this command as root:</p>
+
+<pre><code> setenforce Permissive</code></pre>
+
+<p>If this makes a difference, look in the audit logs for recent failures (&quot;AVCs&quot;):</p>
+
+<pre><code> ausearch -m avc -ts recent</code></pre>
+
+<p>You can convert AVCs into suggested SELinux policy rules using tools like <a href="http://man.he.net/man1/audit2allow">audit2allow(1)</a>. For more information, see the &quot;Security Enhanced Linux User Guide&quot;.</p>
+
+<p>To reenable SELinux and sVirt, do:</p>
+
+<pre><code> setenforce Enforcing</code></pre>
+
+<h1 id="self-diagnosis">SELF-DIAGNOSIS</h1>
+
+<p>Refer to <a href="guestfs.3.html#appliance-boot-process">&quot;APPLIANCE BOOT PROCESS&quot; in guestfs(3)</a> to understand the messages produced by libguestfs-test-tool and/or possible errors.</p>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>libguestfs-test-tool returns <i>0</i> if the tests completed without error, or <i>1</i> if there was an error.</p>
+
+<h1 id="environment-variables">ENVIRONMENT VARIABLES</h1>
+
+<p>For the full list of environment variables which may affect libguestfs, please see the <a href="guestfs.3.html">guestfs(3)</a> manual page.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>, <a href="http://qemu.org/">http://qemu.org/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones (<code>rjones at redhat dot com</code>)</p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2009-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

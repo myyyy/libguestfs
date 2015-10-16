@@ -54,9 +54,8 @@ guestfish-progress.o: progress.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/nl_types.h /usr/include/x86_64-linux-gnu/bits/locale.h \
  ../src/guestfs.h ../src/guestfs-internal-frontend.h \
  ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h progress.h /usr/include/term.h \
- /usr/include/ncurses_dll.h /usr/include/termios.h \
+ ../src/guestfs-internal-frontend-cleanups.h progress.h \
+ /usr/include/term.h /usr/include/ncurses_dll.h /usr/include/termios.h \
  /usr/include/x86_64-linux-gnu/bits/termios.h \
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h /usr/include/curses.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h \
@@ -221,8 +220,6 @@ guestfish-progress.o: progress.c ../config.h ../gnulib/lib/stdio.h \
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 progress.h:
 

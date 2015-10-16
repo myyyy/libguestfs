@@ -1,0 +1,2124 @@
+"in_place.ml" 32 947 955 "in_place.ml" 32 947 958
+type(
+  string -> string option -> string list -> bool -> string list -> unit
+)
+ident(
+  def run "in_place.ml" 32 947 947 --
+)
+"in_place.ml" 32 947 959 "in_place.ml" 32 947 963
+type(
+  string
+)
+ident(
+  def disk "in_place.ml" 32 947 964 "in_place.ml" 46 1422 1442
+)
+"in_place.ml" 32 947 964 "in_place.ml" 32 947 970
+type(
+  string option
+)
+ident(
+  def format "in_place.ml" 32 947 971 "in_place.ml" 46 1422 1442
+)
+"in_place.ml" 32 947 971 "in_place.ml" 32 947 978
+type(
+  string list
+)
+ident(
+  def ignores "in_place.ml" 32 947 979 "in_place.ml" 46 1422 1442
+)
+"in_place.ml" 32 947 979 "in_place.ml" 32 947 995
+type(
+  bool
+)
+ident(
+  def machine_readable "in_place.ml" 32 947 996 "in_place.ml" 46 1422 1442
+)
+"in_place.ml" 32 947 996 "in_place.ml" 32 947 1002
+type(
+  string list
+)
+ident(
+  def zeroes "in_place.ml" 34 1036 1038 "in_place.ml" 46 1422 1442
+)
+"in_place.ml" 34 1036 1042 "in_place.ml" 34 1036 1043
+type(
+  G.guestfs
+)
+"in_place.ml" 34 1036 1046 "in_place.ml" 34 1036 1059
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> G.guestfs
+)
+"in_place.ml" 34 1036 1060 "in_place.ml" 34 1036 1062
+type(
+  unit
+)
+"in_place.ml" 34 1036 1046 "in_place.ml" 34 1036 1062
+call(
+  stack
+)
+type(
+  G.guestfs
+)
+"in_place.ml" 35 1066 1071 "in_place.ml" 35 1066 1076
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.trace
+)
+"in_place.ml" 35 1066 1077 "in_place.ml" 35 1066 1079
+type(
+  unit
+)
+"in_place.ml" 35 1066 1071 "in_place.ml" 35 1066 1079
+call(
+  stack
+)
+type(
+  bool
+)
+"in_place.ml" 35 1066 1085 "in_place.ml" 35 1066 1086
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 34 1036 1042 "in_place.ml" 34 1036 1043
+)
+"in_place.ml" 35 1066 1085 "in_place.ml" 35 1066 1096
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"in_place.ml" 35 1066 1097 "in_place.ml" 35 1066 1101
+type(
+  bool
+)
+"in_place.ml" 35 1066 1085 "in_place.ml" 35 1066 1101
+type(
+  unit
+)
+"in_place.ml" 35 1066 1068 "in_place.ml" 35 1066 1101
+type(
+  unit
+)
+"in_place.ml" 36 1103 1108 "in_place.ml" 36 1103 1115
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"in_place.ml" 36 1103 1116 "in_place.ml" 36 1103 1118
+type(
+  unit
+)
+"in_place.ml" 36 1103 1108 "in_place.ml" 36 1103 1118
+call(
+  stack
+)
+type(
+  bool
+)
+"in_place.ml" 36 1103 1124 "in_place.ml" 36 1103 1125
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 34 1036 1042 "in_place.ml" 34 1036 1043
+)
+"in_place.ml" 36 1103 1124 "in_place.ml" 36 1103 1137
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"in_place.ml" 36 1103 1138 "in_place.ml" 36 1103 1142
+type(
+  bool
+)
+"in_place.ml" 36 1103 1124 "in_place.ml" 36 1103 1142
+type(
+  unit
+)
+"in_place.ml" 36 1103 1105 "in_place.ml" 36 1103 1142
+type(
+  unit
+)
+"in_place.ml" 39 1151 1155 "in_place.ml" 39 1151 1162
+type(
+  G.guestfs ->
+  string -> string option -> string list -> bool -> string list -> unit
+)
+ident(
+  int_ref perform "in_place.ml" 48 1444 1448 "in_place.ml" 48 1444 1455
+)
+"in_place.ml" 39 1151 1163 "in_place.ml" 39 1151 1164
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 34 1036 1042 "in_place.ml" 34 1036 1043
+)
+"in_place.ml" 39 1151 1165 "in_place.ml" 39 1151 1169
+type(
+  string
+)
+ident(
+  int_ref disk "in_place.ml" 32 947 959 "in_place.ml" 32 947 963
+)
+"in_place.ml" 39 1151 1170 "in_place.ml" 39 1151 1176
+type(
+  string option
+)
+ident(
+  int_ref format "in_place.ml" 32 947 964 "in_place.ml" 32 947 970
+)
+"in_place.ml" 39 1151 1177 "in_place.ml" 39 1151 1184
+type(
+  string list
+)
+ident(
+  int_ref ignores "in_place.ml" 32 947 971 "in_place.ml" 32 947 978
+)
+"in_place.ml" 39 1151 1185 "in_place.ml" 39 1151 1201
+type(
+  bool
+)
+ident(
+  int_ref machine_readable "in_place.ml" 32 947 979 "in_place.ml" 32 947 995
+)
+"in_place.ml" 39 1151 1202 "in_place.ml" 39 1151 1208
+type(
+  string list
+)
+ident(
+  int_ref zeroes "in_place.ml" 32 947 996 "in_place.ml" 32 947 1002
+)
+"in_place.ml" 39 1151 1155 "in_place.ml" 39 1151 1208
+call(
+  stack
+)
+type(
+  unit
+)
+"in_place.ml" 41 1216 1228 "in_place.ml" 41 1216 1231
+type(
+  string
+)
+ident(
+  def msg "in_place.ml" 42 1242 1248 "in_place.ml" 46 1422 1442
+)
+"in_place.ml" 41 1216 1220 "in_place.ml" 41 1216 1231
+type(
+  exn
+)
+"in_place.ml" 41 1216 1220 "in_place.ml" 41 1216 1238
+type(
+  exn
+)
+ident(
+  def exn "in_place.ml" 42 1242 1248 "in_place.ml" 46 1422 1442
+)
+"in_place.ml" 42 1242 1251 "in_place.ml" 42 1242 1252
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 34 1036 1042 "in_place.ml" 34 1036 1043
+)
+"in_place.ml" 42 1242 1251 "in_place.ml" 42 1242 1263
+call(
+  stack
+)
+type(
+  unit -> int
+)
+"in_place.ml" 42 1242 1264 "in_place.ml" 42 1242 1266
+type(
+  unit
+)
+"in_place.ml" 42 1242 1251 "in_place.ml" 42 1242 1266
+type(
+  int
+)
+"in_place.ml" 42 1242 1267 "in_place.ml" 42 1242 1268
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"in_place.ml" 42 1242 1269 "in_place.ml" 42 1242 1290
+type(
+  int
+)
+ident(
+  ext_ref G.Errno.errno_ENOTSUP
+)
+"in_place.ml" 42 1242 1251 "in_place.ml" 42 1242 1290
+type(
+  bool
+)
+"in_place.ml" 44 1342 1350 "in_place.ml" 44 1342 1355
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"in_place.ml" 44 1342 1367 "in_place.ml" 44 1342 1368
+type(
+  int
+)
+"in_place.ml" 44 1342 1370 "in_place.ml" 44 1342 1372
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"in_place.ml" 44 1342 1372 "in_place.ml" 44 1342 1407
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"in_place.ml" 44 1342 1369 "in_place.ml" 44 1342 1408
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"in_place.ml" 44 1342 1409 "in_place.ml" 44 1342 1412
+type(
+  string
+)
+ident(
+  int_ref msg "in_place.ml" 41 1216 1228 "in_place.ml" 41 1216 1231
+)
+"in_place.ml" 42 1242 1296 "in_place.ml" 45 1414 1421
+call(
+  tail
+)
+type(
+  unit
+)
+"in_place.ml" 46 1422 1433 "in_place.ml" 46 1422 1438
+type(
+  exn -> unit
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"in_place.ml" 46 1422 1439 "in_place.ml" 46 1422 1442
+type(
+  exn
+)
+ident(
+  int_ref exn "in_place.ml" 41 1216 1220 "in_place.ml" 41 1216 1238
+)
+"in_place.ml" 46 1422 1433 "in_place.ml" 46 1422 1442
+type(
+  unit
+)
+"in_place.ml" 42 1242 1248 "in_place.ml" 46 1422 1442
+type(
+  unit
+)
+"in_place.ml" 38 1145 1147 "in_place.ml" 46 1422 1442
+type(
+  unit
+)
+"in_place.ml" 36 1103 1105 "in_place.ml" 46 1422 1442
+type(
+  unit
+)
+"in_place.ml" 35 1066 1068 "in_place.ml" 46 1422 1442
+type(
+  unit
+)
+"in_place.ml" 34 1036 1038 "in_place.ml" 46 1422 1442
+type(
+  unit
+)
+"in_place.ml" 48 1444 1448 "in_place.ml" 48 1444 1455
+type(
+  G.guestfs ->
+  string -> string option -> string list -> bool -> string list -> unit
+)
+ident(
+  def perform "in_place.ml" 32 947 947 --
+)
+"in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+type(
+  G.guestfs
+)
+ident(
+  def g "in_place.ml" 48 1444 1458 "in_place.ml" 150 4543 4611
+)
+"in_place.ml" 48 1444 1458 "in_place.ml" 48 1444 1462
+type(
+  string
+)
+ident(
+  def disk "in_place.ml" 48 1444 1463 "in_place.ml" 150 4543 4611
+)
+"in_place.ml" 48 1444 1463 "in_place.ml" 48 1444 1469
+type(
+  string option
+)
+ident(
+  def format "in_place.ml" 48 1444 1470 "in_place.ml" 150 4543 4611
+)
+"in_place.ml" 48 1444 1470 "in_place.ml" 48 1444 1477
+type(
+  string list
+)
+ident(
+  def ignores "in_place.ml" 48 1444 1478 "in_place.ml" 150 4543 4611
+)
+"in_place.ml" 48 1444 1478 "in_place.ml" 48 1444 1494
+type(
+  bool
+)
+ident(
+  def machine_readable "in_place.ml" 48 1444 1495 "in_place.ml" 150 4543 4611
+)
+"in_place.ml" 48 1444 1495 "in_place.ml" 48 1444 1501
+type(
+  string list
+)
+ident(
+  def zeroes "in_place.ml" 50 1580 1582 "in_place.ml" 150 4543 4611
+)
+"in_place.ml" 50 1580 1586 "in_place.ml" 50 1580 1592
+type(
+  string option
+)
+"in_place.ml" 51 1595 1605 "in_place.ml" 51 1595 1611
+type(
+  string option
+)
+ident(
+  int_ref format "in_place.ml" 48 1444 1463 "in_place.ml" 48 1444 1469
+)
+"in_place.ml" 52 1617 1628 "in_place.ml" 52 1617 1629
+type(
+  string
+)
+"in_place.ml" 52 1617 1623 "in_place.ml" 52 1617 1629
+type(
+  string option
+)
+"in_place.ml" 52 1617 1633 "in_place.ml" 52 1617 1639
+type(
+  string option
+)
+ident(
+  int_ref format "in_place.ml" 48 1444 1463 "in_place.ml" 48 1444 1469
+)
+"in_place.ml" 53 1640 1646 "in_place.ml" 53 1640 1650
+type(
+  string option
+)
+"in_place.ml" 53 1640 1660 "in_place.ml" 53 1640 1661
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 53 1640 1660 "in_place.ml" 53 1640 1673
+call(
+  stack
+)
+type(
+  string -> string
+)
+"in_place.ml" 53 1640 1674 "in_place.ml" 53 1640 1678
+type(
+  string
+)
+ident(
+  int_ref disk "in_place.ml" 48 1444 1458 "in_place.ml" 48 1444 1462
+)
+"in_place.ml" 53 1640 1659 "in_place.ml" 53 1640 1679
+type(
+  string
+)
+"in_place.ml" 53 1640 1654 "in_place.ml" 53 1640 1679
+type(
+  string option
+)
+"in_place.ml" 51 1595 1599 "in_place.ml" 53 1640 1679
+type(
+  string option
+)
+"in_place.ml" 55 1684 1686 "in_place.ml" 55 1684 1687
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 55 1684 1686 "in_place.ml" 55 1684 1697
+call(
+  stack
+)
+type(
+  ?readonly:bool ->
+  ?format:string ->
+  ?iface:string ->
+  ?name:string ->
+  ?label:string ->
+  ?protocol:string ->
+  ?server:string array ->
+  ?username:string ->
+  ?secret:string ->
+  ?cachemode:string -> ?discard:string -> ?copyonread:bool -> string -> unit
+)
+"in_place.ml" 55 1684 1699 "in_place.ml" 55 1684 1705
+type(
+  string option
+)
+ident(
+  int_ref format "in_place.ml" 50 1580 1586 "in_place.ml" 50 1580 1592
+)
+"in_place.ml" 55 1684 1715 "in_place.ml" 55 1684 1723
+type(
+  string
+)
+"in_place.ml" 55 1684 1724 "in_place.ml" 55 1684 1728
+type(
+  string
+)
+ident(
+  int_ref disk "in_place.ml" 48 1444 1458 "in_place.ml" 48 1444 1462
+)
+"in_place.ml" 55 1684 1686 "in_place.ml" 55 1684 1728
+type(
+  unit
+)
+"in_place.ml" 57 1731 1736 "in_place.ml" 57 1731 1739
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"in_place.ml" 57 1731 1741 "in_place.ml" 57 1731 1746
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.quiet
+)
+"in_place.ml" 57 1731 1747 "in_place.ml" 57 1731 1749
+type(
+  unit
+)
+"in_place.ml" 57 1731 1740 "in_place.ml" 57 1731 1750
+call(
+  stack
+)
+type(
+  bool
+)
+"in_place.ml" 57 1731 1736 "in_place.ml" 57 1731 1750
+type(
+  bool
+)
+"in_place.ml" 57 1731 1756 "in_place.ml" 57 1731 1784
+type(
+  ?machine_readable:bool -> Guestfs.guestfs -> unit
+)
+ident(
+  ext_ref Progress.set_up_progress_bar
+)
+"in_place.ml" 57 1731 1786 "in_place.ml" 57 1731 1802
+type(
+  bool
+)
+ident(
+  int_ref machine_readable "in_place.ml" 48 1444 1478 "in_place.ml" 48 1444 1494
+)
+"in_place.ml" 57 1731 1803 "in_place.ml" 57 1731 1804
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 57 1731 1756 "in_place.ml" 57 1731 1804
+call(
+  stack
+)
+type(
+  unit
+)
+"in_place.ml" 57 1731 1733 "in_place.ml" 57 1731 1804
+type(
+  unit
+)
+"in_place.ml" 58 1806 1808 "in_place.ml" 58 1806 1809
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 58 1806 1808 "in_place.ml" 58 1806 1816
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"in_place.ml" 58 1806 1817 "in_place.ml" 58 1806 1819
+type(
+  unit
+)
+"in_place.ml" 58 1806 1808 "in_place.ml" 58 1806 1819
+type(
+  unit
+)
+"in_place.ml" 63 1927 1933 "in_place.ml" 63 1927 1944
+type(
+  (string * string) list
+)
+"in_place.ml" 63 1927 1947 "in_place.ml" 63 1927 1948
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 63 1927 1947 "in_place.ml" 63 1927 1965
+call(
+  stack
+)
+type(
+  unit -> (string * string) list
+)
+"in_place.ml" 63 1927 1966 "in_place.ml" 63 1927 1968
+type(
+  unit
+)
+"in_place.ml" 63 1927 1947 "in_place.ml" 63 1927 1968
+type(
+  (string * string) list
+)
+"in_place.ml" 64 1972 1978 "in_place.ml" 64 1972 1989
+type(
+  string list
+)
+"in_place.ml" 64 1972 1992 "in_place.ml" 64 1972 2000
+type(
+  (string * string -> string) -> (string * string) list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"in_place.ml" 64 1972 2001 "in_place.ml" 64 1972 2004
+type(
+  string * string -> string
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"in_place.ml" 64 1972 2005 "in_place.ml" 64 1972 2016
+type(
+  (string * string) list
+)
+ident(
+  int_ref filesystems "in_place.ml" 63 1927 1933 "in_place.ml" 63 1927 1944
+)
+"in_place.ml" 64 1972 1992 "in_place.ml" 64 1972 2016
+call(
+  stack
+)
+type(
+  string list
+)
+"in_place.ml" 65 2020 2026 "in_place.ml" 65 2020 2037
+type(
+  string list
+)
+"in_place.ml" 65 2020 2040 "in_place.ml" 65 2020 2049
+type(
+  (string -> string -> int) -> string list -> string list
+)
+ident(
+  ext_ref List.sort
+)
+"in_place.ml" 65 2020 2050 "in_place.ml" 65 2020 2057
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"in_place.ml" 65 2020 2058 "in_place.ml" 65 2020 2069
+type(
+  string list
+)
+ident(
+  int_ref filesystems "in_place.ml" 64 1972 1978 "in_place.ml" 64 1972 1989
+)
+"in_place.ml" 65 2020 2040 "in_place.ml" 65 2020 2069
+call(
+  stack
+)
+type(
+  string list
+)
+"in_place.ml" 67 2074 2080 "in_place.ml" 67 2074 2090
+type(
+  string -> bool
+)
+"in_place.ml" 67 2074 2091 "in_place.ml" 67 2074 2093
+type(
+  string
+)
+ident(
+  def fs "in_place.ml" 68 2096 2100 "in_place.ml" 69 2139 2208
+)
+"in_place.ml" 68 2096 2104 "in_place.ml" 68 2096 2106
+type(
+  string
+)
+"in_place.ml" 68 2096 2109 "in_place.ml" 68 2096 2110
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 68 2096 2109 "in_place.ml" 68 2096 2132
+call(
+  stack
+)
+type(
+  string -> string
+)
+"in_place.ml" 68 2096 2133 "in_place.ml" 68 2096 2135
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 67 2074 2091 "in_place.ml" 67 2074 2093
+)
+"in_place.ml" 68 2096 2109 "in_place.ml" 68 2096 2135
+type(
+  string
+)
+"in_place.ml" 69 2139 2143 "in_place.ml" 69 2139 2154
+type(
+  (string -> bool) -> string list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"in_place.ml" 69 2139 2160 "in_place.ml" 69 2139 2163
+type(
+  string
+)
+ident(
+  def fs' "in_place.ml" 69 2139 2167 "in_place.ml" 69 2139 2199
+)
+"in_place.ml" 69 2139 2167 "in_place.ml" 69 2139 2169
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 68 2096 2104 "in_place.ml" 68 2096 2106
+)
+"in_place.ml" 69 2139 2170 "in_place.ml" 69 2139 2171
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"in_place.ml" 69 2139 2172 "in_place.ml" 69 2139 2173
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 69 2139 2172 "in_place.ml" 69 2139 2195
+call(
+  stack
+)
+type(
+  string -> string
+)
+"in_place.ml" 69 2139 2196 "in_place.ml" 69 2139 2199
+type(
+  string
+)
+ident(
+  int_ref fs' "in_place.ml" 69 2139 2160 "in_place.ml" 69 2139 2163
+)
+"in_place.ml" 69 2139 2172 "in_place.ml" 69 2139 2199
+type(
+  string
+)
+"in_place.ml" 69 2139 2167 "in_place.ml" 69 2139 2199
+type(
+  bool
+)
+"in_place.ml" 69 2139 2155 "in_place.ml" 69 2139 2200
+type(
+  string -> bool
+)
+"in_place.ml" 69 2139 2201 "in_place.ml" 69 2139 2208
+type(
+  string list
+)
+ident(
+  int_ref ignores "in_place.ml" 48 1444 1470 "in_place.ml" 48 1444 1477
+)
+"in_place.ml" 69 2139 2143 "in_place.ml" 69 2139 2208
+call(
+  tail
+)
+type(
+  bool
+)
+"in_place.ml" 68 2096 2100 "in_place.ml" 69 2139 2208
+type(
+  bool
+)
+"in_place.ml" 72 2215 2221 "in_place.ml" 72 2215 2236
+type(
+  string -> bool
+)
+"in_place.ml" 72 2215 2239 "in_place.ml" 72 2215 2254
+type(
+  Utils.G.guestfs -> string -> bool
+)
+ident(
+  ext_ref Utils.is_read_only_lv
+)
+"in_place.ml" 72 2215 2255 "in_place.ml" 72 2215 2256
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 72 2215 2239 "in_place.ml" 72 2215 2256
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"in_place.ml" 74 2261 2263 "in_place.ml" 74 2261 2272
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+type(
+  string
+)
+ident(
+  def fs "in_place.ml" 76 2289 2295 "in_place.ml" 119 3870 3877
+)
+"in_place.ml" 76 2289 2298 "in_place.ml" 76 2289 2301
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"in_place.ml" 76 2289 2303 "in_place.ml" 76 2289 2313
+type(
+  string -> bool
+)
+ident(
+  int_ref is_ignored "in_place.ml" 67 2074 2080 "in_place.ml" 67 2074 2090
+)
+"in_place.ml" 76 2289 2314 "in_place.ml" 76 2289 2316
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 76 2289 2302 "in_place.ml" 76 2289 2317
+call(
+  stack
+)
+type(
+  bool
+)
+"in_place.ml" 76 2289 2298 "in_place.ml" 76 2289 2317
+type(
+  bool
+)
+"in_place.ml" 76 2289 2318 "in_place.ml" 76 2289 2320
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"in_place.ml" 76 2289 2321 "in_place.ml" 76 2289 2324
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"in_place.ml" 76 2289 2326 "in_place.ml" 76 2289 2341
+type(
+  string -> bool
+)
+ident(
+  int_ref is_read_only_lv "in_place.ml" 72 2215 2221 "in_place.ml" 72 2215 2236
+)
+"in_place.ml" 76 2289 2342 "in_place.ml" 76 2289 2344
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 76 2289 2325 "in_place.ml" 76 2289 2345
+call(
+  stack
+)
+type(
+  bool
+)
+"in_place.ml" 76 2289 2321 "in_place.ml" 76 2289 2345
+type(
+  bool
+)
+"in_place.ml" 76 2289 2298 "in_place.ml" 76 2289 2345
+type(
+  bool
+)
+"in_place.ml" 77 2353 2364 "in_place.ml" 77 2353 2372
+type(
+  string -> string list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"in_place.ml" 77 2353 2373 "in_place.ml" 77 2353 2375
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 77 2353 2376 "in_place.ml" 77 2353 2382
+type(
+  string list
+)
+ident(
+  int_ref zeroes "in_place.ml" 48 1444 1495 "in_place.ml" 48 1444 1501
+)
+"in_place.ml" 77 2353 2364 "in_place.ml" 77 2353 2382
+call(
+  stack
+)
+type(
+  bool
+)
+"in_place.ml" 78 2390 2400 "in_place.ml" 78 2390 2407
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"in_place.ml" 78 2390 2409 "in_place.ml" 78 2390 2411
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"in_place.ml" 78 2390 2411 "in_place.ml" 78 2390 2423
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"in_place.ml" 78 2390 2408 "in_place.ml" 78 2390 2424
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"in_place.ml" 78 2390 2425 "in_place.ml" 78 2390 2427
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 78 2390 2400 "in_place.ml" 78 2390 2427
+call(
+  stack
+)
+type(
+  unit
+)
+"in_place.ml" 80 2430 2443 "in_place.ml" 80 2430 2446
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"in_place.ml" 80 2430 2448 "in_place.ml" 80 2430 2449
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 80 2430 2448 "in_place.ml" 80 2430 2466
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"in_place.ml" 80 2430 2467 "in_place.ml" 80 2430 2469
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 80 2430 2447 "in_place.ml" 80 2430 2470
+type(
+  bool
+)
+"in_place.ml" 80 2430 2443 "in_place.ml" 80 2430 2470
+type(
+  bool
+)
+"in_place.ml" 81 2476 2488 "in_place.ml" 81 2476 2489
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 81 2476 2488 "in_place.ml" 81 2476 2501
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"in_place.ml" 81 2476 2502 "in_place.ml" 81 2476 2504
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 81 2476 2488 "in_place.ml" 81 2476 2504
+type(
+  unit
+)
+"in_place.ml" 80 2430 2440 "in_place.ml" 81 2476 2504
+type(
+  unit
+)
+"in_place.ml" 82 2506 2516 "in_place.ml" 82 2506 2517
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 82 2506 2516 "in_place.ml" 82 2506 2528
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"in_place.ml" 82 2506 2529 "in_place.ml" 82 2506 2531
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 82 2506 2516 "in_place.ml" 82 2506 2531
+type(
+  unit
+)
+"in_place.ml" 80 2430 2440 "in_place.ml" 82 2506 2531
+type(
+  unit
+)
+"in_place.ml" 77 2353 2388 "in_place.ml" 83 2532 2541
+type(
+  unit
+)
+"in_place.ml" 84 2549 2563 "in_place.ml" 84 2549 2570
+type(
+  bool
+)
+"in_place.ml" 85 2573 2589 "in_place.ml" 85 2573 2590
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 85 2573 2589 "in_place.ml" 85 2573 2604
+call(
+  stack
+)
+type(
+  string -> string -> string -> unit
+)
+"in_place.ml" 85 2573 2605 "in_place.ml" 85 2573 2614
+type(
+  string
+)
+"in_place.ml" 85 2573 2615 "in_place.ml" 85 2573 2617
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 85 2573 2618 "in_place.ml" 85 2573 2621
+type(
+  string
+)
+"in_place.ml" 85 2573 2589 "in_place.ml" 85 2573 2621
+type(
+  unit
+)
+"in_place.ml" 85 2573 2623 "in_place.ml" 85 2573 2627
+type(
+  bool
+)
+"in_place.ml" 85 2573 2589 "in_place.ml" 85 2573 2627
+type(
+  bool
+)
+"in_place.ml" 86 2628 2645 "in_place.ml" 86 2628 2646
+type(
+  exn
+)
+"in_place.ml" 86 2628 2650 "in_place.ml" 86 2628 2655
+type(
+  bool
+)
+"in_place.ml" 85 2573 2585 "in_place.ml" 86 2628 2655
+type(
+  bool
+)
+"in_place.ml" 88 2660 2673 "in_place.ml" 88 2660 2680
+type(
+  bool
+)
+ident(
+  int_ref mounted "in_place.ml" 84 2549 2563 "in_place.ml" 84 2549 2570
+)
+"in_place.ml" 89 2688 2700 "in_place.ml" 89 2688 2707
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"in_place.ml" 89 2688 2709 "in_place.ml" 89 2688 2711
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"in_place.ml" 89 2688 2711 "in_place.ml" 89 2688 2724
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"in_place.ml" 89 2688 2708 "in_place.ml" 89 2688 2725
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"in_place.ml" 89 2688 2726 "in_place.ml" 89 2688 2728
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 89 2688 2700 "in_place.ml" 89 2688 2728
+call(
+  stack
+)
+type(
+  unit
+)
+"in_place.ml" 91 2731 2743 "in_place.ml" 91 2731 2744
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 91 2731 2743 "in_place.ml" 91 2731 2751
+call(
+  stack
+)
+type(
+  ?offset:int64 ->
+  ?length:int64 -> ?minimumfreeextent:int64 -> string -> unit
+)
+"in_place.ml" 91 2731 2752 "in_place.ml" 91 2731 2755
+type(
+  string
+)
+"in_place.ml" 91 2731 2743 "in_place.ml" 91 2731 2755
+type(
+  unit
+)
+"in_place.ml" 88 2660 2686 "in_place.ml" 92 2756 2767
+type(
+  unit
+)
+"in_place.ml" 93 2775 2791 "in_place.ml" 93 2775 2808
+type(
+  bool
+)
+"in_place.ml" 100 3176 3194 "in_place.ml" 100 3176 3195
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 100 3176 3194 "in_place.ml" 100 3176 3208
+call(
+  stack
+)
+type(
+  string -> int -> int64 -> string
+)
+"in_place.ml" 100 3176 3209 "in_place.ml" 100 3176 3211
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 100 3176 3212 "in_place.ml" 100 3176 3214
+type(
+  int
+)
+"in_place.ml" 100 3176 3215 "in_place.ml" 100 3176 3220
+type(
+  int64
+)
+"in_place.ml" 100 3176 3194 "in_place.ml" 100 3176 3220
+type(
+  string
+)
+"in_place.ml" 100 3176 3221 "in_place.ml" 100 3176 3222
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"in_place.ml" 100 3176 3223 "in_place.ml" 100 3176 3235
+type(
+  string
+)
+"in_place.ml" 100 3176 3194 "in_place.ml" 100 3176 3235
+type(
+  bool
+)
+"in_place.ml" 101 3236 3255 "in_place.ml" 101 3236 3256
+type(
+  exn
+)
+"in_place.ml" 101 3236 3260 "in_place.ml" 101 3236 3265
+type(
+  bool
+)
+"in_place.ml" 100 3176 3190 "in_place.ml" 101 3236 3265
+type(
+  bool
+)
+"in_place.ml" 103 3270 3285 "in_place.ml" 103 3270 3302
+type(
+  bool
+)
+ident(
+  int_ref is_linux_x86_swap "in_place.ml" 93 2775 2791 "in_place.ml" 93 2775 2808
+)
+"in_place.ml" 104 3310 3324 "in_place.ml" 104 3310 3331
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"in_place.ml" 104 3310 3333 "in_place.ml" 104 3310 3335
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"in_place.ml" 104 3310 3335 "in_place.ml" 104 3310 3362
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"in_place.ml" 104 3310 3332 "in_place.ml" 104 3310 3363
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"in_place.ml" 104 3310 3364 "in_place.ml" 104 3310 3366
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 104 3310 3324 "in_place.ml" 104 3310 3366
+call(
+  stack
+)
+type(
+  unit
+)
+"in_place.ml" 110 3582 3600 "in_place.ml" 110 3582 3606
+type(
+  string
+)
+"in_place.ml" 110 3582 3609 "in_place.ml" 110 3582 3610
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 110 3582 3609 "in_place.ml" 110 3582 3623
+call(
+  stack
+)
+type(
+  string -> int -> int64 -> string
+)
+"in_place.ml" 110 3582 3624 "in_place.ml" 110 3582 3626
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 110 3582 3627 "in_place.ml" 110 3582 3631
+type(
+  int
+)
+"in_place.ml" 110 3582 3632 "in_place.ml" 110 3582 3634
+type(
+  int64
+)
+"in_place.ml" 110 3582 3609 "in_place.ml" 110 3582 3634
+type(
+  string
+)
+"in_place.ml" 111 3638 3652 "in_place.ml" 111 3638 3653
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 111 3638 3652 "in_place.ml" 111 3638 3664
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"in_place.ml" 111 3638 3665 "in_place.ml" 111 3638 3667
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 111 3638 3652 "in_place.ml" 111 3638 3667
+type(
+  unit
+)
+"in_place.ml" 112 3669 3686 "in_place.ml" 112 3669 3687
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 112 3669 3686 "in_place.ml" 112 3669 3701
+call(
+  stack
+)
+type(
+  string -> string -> int64 -> int
+)
+"in_place.ml" 112 3669 3702 "in_place.ml" 112 3669 3704
+type(
+  string
+)
+ident(
+  int_ref fs "in_place.ml" 75 2275 2283 "in_place.ml" 75 2275 2285
+)
+"in_place.ml" 112 3669 3705 "in_place.ml" 112 3669 3711
+type(
+  string
+)
+ident(
+  int_ref header "in_place.ml" 110 3582 3600 "in_place.ml" 110 3582 3606
+)
+"in_place.ml" 112 3669 3712 "in_place.ml" 112 3669 3714
+type(
+  int64
+)
+"in_place.ml" 112 3669 3686 "in_place.ml" 112 3669 3714
+type(
+  int
+)
+"in_place.ml" 112 3669 3715 "in_place.ml" 112 3669 3717
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"in_place.ml" 112 3669 3718 "in_place.ml" 112 3669 3722
+type(
+  int
+)
+"in_place.ml" 112 3669 3686 "in_place.ml" 112 3669 3722
+type(
+  bool
+)
+"in_place.ml" 113 3728 3744 "in_place.ml" 113 3728 3749
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"in_place.ml" 113 3728 3751 "in_place.ml" 113 3728 3753
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"in_place.ml" 113 3728 3753 "in_place.ml" 113 3728 3806
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"in_place.ml" 113 3728 3750 "in_place.ml" 113 3728 3807
+type(
+  (unit, unit, string, unit) format4
+)
+"in_place.ml" 113 3728 3744 "in_place.ml" 113 3728 3807
+call(
+  stack
+)
+type(
+  unit
+)
+"in_place.ml" 112 3669 3683 "in_place.ml" 113 3728 3807
+type(
+  unit
+)
+"in_place.ml" 111 3638 3652 "in_place.ml" 113 3728 3807
+type(
+  unit
+)
+"in_place.ml" 110 3582 3596 "in_place.ml" 113 3728 3807
+type(
+  unit
+)
+"in_place.ml" 103 3270 3308 "in_place.ml" 114 3808 3821
+type(
+  unit
+)
+"in_place.ml" 103 3270 3282 "in_place.ml" 114 3808 3821
+type(
+  unit
+)
+"in_place.ml" 92 2756 2773 "in_place.ml" 115 3822 3833
+type(
+  unit
+)
+"in_place.ml" 88 2660 2670 "in_place.ml" 115 3822 3833
+type(
+  unit
+)
+"in_place.ml" 83 2532 2547 "in_place.ml" 116 3834 3843
+type(
+  unit
+)
+"in_place.ml" 77 2353 2361 "in_place.ml" 116 3834 3843
+type(
+  unit
+)
+"in_place.ml" 118 3846 3854 "in_place.ml" 118 3846 3855
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 118 3846 3854 "in_place.ml" 118 3846 3866
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"in_place.ml" 118 3846 3867 "in_place.ml" 118 3846 3869
+type(
+  unit
+)
+"in_place.ml" 118 3846 3854 "in_place.ml" 118 3846 3869
+type(
+  unit
+)
+"in_place.ml" 76 2289 2351 "in_place.ml" 119 3870 3877
+type(
+  unit
+)
+"in_place.ml" 76 2289 2295 "in_place.ml" 119 3870 3877
+type(
+  unit
+)
+"in_place.ml" 74 2261 2273 "in_place.ml" 120 3878 3881
+type(
+  string -> unit
+)
+"in_place.ml" 120 3878 3882 "in_place.ml" 120 3878 3893
+type(
+  string list
+)
+ident(
+  int_ref filesystems "in_place.ml" 65 2020 2026 "in_place.ml" 65 2020 2037
+)
+"in_place.ml" 74 2261 2263 "in_place.ml" 120 3878 3893
+call(
+  stack
+)
+type(
+  unit
+)
+"in_place.ml" 123 3943 3949 "in_place.ml" 123 3943 3952
+type(
+  string array
+)
+"in_place.ml" 123 3943 3955 "in_place.ml" 123 3943 3956
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 123 3943 3955 "in_place.ml" 123 3943 3960
+call(
+  stack
+)
+type(
+  unit -> string array
+)
+"in_place.ml" 123 3943 3961 "in_place.ml" 123 3943 3963
+type(
+  unit
+)
+"in_place.ml" 123 3943 3955 "in_place.ml" 123 3943 3963
+type(
+  string array
+)
+"in_place.ml" 124 3967 3973 "in_place.ml" 124 3967 3976
+type(
+  string list
+)
+"in_place.ml" 124 3967 3979 "in_place.ml" 124 3967 3992
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"in_place.ml" 124 3967 3993 "in_place.ml" 124 3967 3996
+type(
+  string array
+)
+ident(
+  int_ref vgs "in_place.ml" 123 3943 3949 "in_place.ml" 123 3943 3952
+)
+"in_place.ml" 124 3967 3979 "in_place.ml" 124 3967 3996
+call(
+  stack
+)
+type(
+  string list
+)
+"in_place.ml" 125 4000 4006 "in_place.ml" 125 4000 4009
+type(
+  string list
+)
+"in_place.ml" 125 4000 4012 "in_place.ml" 125 4000 4021
+type(
+  (string -> string -> int) -> string list -> string list
+)
+ident(
+  ext_ref List.sort
+)
+"in_place.ml" 125 4000 4022 "in_place.ml" 125 4000 4029
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"in_place.ml" 125 4000 4030 "in_place.ml" 125 4000 4033
+type(
+  string list
+)
+ident(
+  int_ref vgs "in_place.ml" 124 3967 3973 "in_place.ml" 124 3967 3976
+)
+"in_place.ml" 125 4000 4012 "in_place.ml" 125 4000 4033
+call(
+  stack
+)
+type(
+  string list
+)
+"in_place.ml" 126 4037 4039 "in_place.ml" 126 4037 4048
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"in_place.ml" 127 4051 4059 "in_place.ml" 127 4051 4061
+type(
+  string
+)
+ident(
+  def vg "in_place.ml" 128 4065 4071 "in_place.ml" 143 4475 4482
+)
+"in_place.ml" 128 4065 4074 "in_place.ml" 128 4065 4077
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"in_place.ml" 128 4065 4079 "in_place.ml" 128 4065 4087
+type(
+  string -> string list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"in_place.ml" 128 4065 4088 "in_place.ml" 128 4065 4090
+type(
+  string
+)
+ident(
+  int_ref vg "in_place.ml" 127 4051 4059 "in_place.ml" 127 4051 4061
+)
+"in_place.ml" 128 4065 4091 "in_place.ml" 128 4065 4098
+type(
+  string list
+)
+ident(
+  int_ref ignores "in_place.ml" 48 1444 1470 "in_place.ml" 48 1444 1477
+)
+"in_place.ml" 128 4065 4078 "in_place.ml" 128 4065 4099
+call(
+  stack
+)
+type(
+  bool
+)
+"in_place.ml" 128 4065 4074 "in_place.ml" 128 4065 4099
+type(
+  bool
+)
+"in_place.ml" 129 4107 4119 "in_place.ml" 129 4107 4125
+type(
+  string
+)
+"in_place.ml" 129 4107 4128 "in_place.ml" 129 4107 4142
+type(
+  unit -> string
+)
+ident(
+  ext_ref Common_utils.string_random8
+)
+"in_place.ml" 129 4107 4143 "in_place.ml" 129 4107 4145
+type(
+  unit
+)
+"in_place.ml" 129 4107 4128 "in_place.ml" 129 4107 4145
+call(
+  stack
+)
+type(
+  string
+)
+"in_place.ml" 130 4149 4161 "in_place.ml" 130 4149 4166
+type(
+  string
+)
+"in_place.ml" 130 4149 4169 "in_place.ml" 130 4149 4176
+type(
+  string
+)
+"in_place.ml" 130 4149 4177 "in_place.ml" 130 4149 4178
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"in_place.ml" 130 4149 4179 "in_place.ml" 130 4149 4181
+type(
+  string
+)
+ident(
+  int_ref vg "in_place.ml" 127 4051 4059 "in_place.ml" 127 4051 4061
+)
+"in_place.ml" 130 4149 4182 "in_place.ml" 130 4149 4183
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"in_place.ml" 130 4149 4184 "in_place.ml" 130 4149 4187
+type(
+  string
+)
+"in_place.ml" 130 4149 4188 "in_place.ml" 130 4149 4189
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"in_place.ml" 130 4149 4190 "in_place.ml" 130 4149 4196
+type(
+  string
+)
+ident(
+  int_ref lvname "in_place.ml" 129 4107 4119 "in_place.ml" 129 4107 4125
+)
+"in_place.ml" 130 4149 4184 "in_place.ml" 130 4149 4196
+call(
+  stack
+)
+type(
+  string
+)
+"in_place.ml" 130 4149 4179 "in_place.ml" 130 4149 4196
+call(
+  stack
+)
+type(
+  string
+)
+"in_place.ml" 130 4149 4169 "in_place.ml" 130 4149 4196
+call(
+  stack
+)
+type(
+  string
+)
+"in_place.ml" 132 4201 4213 "in_place.ml" 132 4201 4220
+type(
+  bool
+)
+"in_place.ml" 133 4223 4237 "in_place.ml" 133 4223 4238
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 133 4223 4237 "in_place.ml" 133 4223 4252
+call(
+  stack
+)
+type(
+  string -> string -> int -> unit
+)
+"in_place.ml" 133 4223 4253 "in_place.ml" 133 4223 4259
+type(
+  string
+)
+ident(
+  int_ref lvname "in_place.ml" 129 4107 4119 "in_place.ml" 129 4107 4125
+)
+"in_place.ml" 133 4223 4260 "in_place.ml" 133 4223 4262
+type(
+  string
+)
+ident(
+  int_ref vg "in_place.ml" 127 4051 4059 "in_place.ml" 127 4051 4061
+)
+"in_place.ml" 133 4223 4263 "in_place.ml" 133 4223 4266
+type(
+  int
+)
+"in_place.ml" 133 4223 4237 "in_place.ml" 133 4223 4266
+type(
+  unit
+)
+"in_place.ml" 133 4223 4268 "in_place.ml" 133 4223 4272
+type(
+  bool
+)
+"in_place.ml" 133 4223 4237 "in_place.ml" 133 4223 4272
+type(
+  bool
+)
+"in_place.ml" 134 4273 4288 "in_place.ml" 134 4273 4289
+type(
+  exn
+)
+"in_place.ml" 134 4273 4293 "in_place.ml" 134 4273 4298
+type(
+  bool
+)
+"in_place.ml" 133 4223 4233 "in_place.ml" 134 4273 4298
+type(
+  bool
+)
+"in_place.ml" 136 4303 4314 "in_place.ml" 136 4303 4321
+type(
+  bool
+)
+ident(
+  int_ref created "in_place.ml" 132 4201 4213 "in_place.ml" 132 4201 4220
+)
+"in_place.ml" 137 4329 4339 "in_place.ml" 137 4329 4346
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"in_place.ml" 137 4329 4348 "in_place.ml" 137 4329 4350
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"in_place.ml" 137 4329 4350 "in_place.ml" 137 4329 4380
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"in_place.ml" 137 4329 4347 "in_place.ml" 137 4329 4381
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"in_place.ml" 137 4329 4382 "in_place.ml" 137 4329 4384
+type(
+  string
+)
+ident(
+  int_ref vg "in_place.ml" 127 4051 4059 "in_place.ml" 127 4051 4061
+)
+"in_place.ml" 137 4329 4339 "in_place.ml" 137 4329 4384
+call(
+  stack
+)
+type(
+  unit
+)
+"in_place.ml" 139 4387 4397 "in_place.ml" 139 4387 4398
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 139 4387 4397 "in_place.ml" 139 4387 4409
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"in_place.ml" 139 4387 4410 "in_place.ml" 139 4387 4415
+type(
+  string
+)
+ident(
+  int_ref lvdev "in_place.ml" 130 4149 4161 "in_place.ml" 130 4149 4166
+)
+"in_place.ml" 139 4387 4397 "in_place.ml" 139 4387 4415
+type(
+  unit
+)
+"in_place.ml" 140 4417 4427 "in_place.ml" 140 4417 4428
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 140 4417 4427 "in_place.ml" 140 4417 4433
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"in_place.ml" 140 4417 4434 "in_place.ml" 140 4417 4436
+type(
+  unit
+)
+"in_place.ml" 140 4417 4427 "in_place.ml" 140 4417 4436
+type(
+  unit
+)
+"in_place.ml" 141 4438 4448 "in_place.ml" 141 4438 4449
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 141 4438 4448 "in_place.ml" 141 4438 4458
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"in_place.ml" 141 4438 4459 "in_place.ml" 141 4438 4464
+type(
+  string
+)
+ident(
+  int_ref lvdev "in_place.ml" 130 4149 4161 "in_place.ml" 130 4149 4166
+)
+"in_place.ml" 141 4438 4448 "in_place.ml" 141 4438 4464
+type(
+  unit
+)
+"in_place.ml" 140 4417 4427 "in_place.ml" 141 4438 4464
+type(
+  unit
+)
+"in_place.ml" 139 4387 4397 "in_place.ml" 141 4438 4464
+type(
+  unit
+)
+"in_place.ml" 136 4303 4327 "in_place.ml" 142 4465 4474
+type(
+  unit
+)
+"in_place.ml" 136 4303 4311 "in_place.ml" 142 4465 4474
+type(
+  unit
+)
+"in_place.ml" 132 4201 4209 "in_place.ml" 142 4465 4474
+type(
+  unit
+)
+"in_place.ml" 130 4149 4157 "in_place.ml" 142 4465 4474
+type(
+  unit
+)
+"in_place.ml" 128 4065 4105 "in_place.ml" 143 4475 4482
+type(
+  unit
+)
+"in_place.ml" 128 4065 4071 "in_place.ml" 143 4475 4482
+type(
+  unit
+)
+"in_place.ml" 126 4037 4049 "in_place.ml" 144 4483 4486
+type(
+  string -> unit
+)
+"in_place.ml" 144 4483 4487 "in_place.ml" 144 4483 4490
+type(
+  string list
+)
+ident(
+  int_ref vgs "in_place.ml" 125 4000 4006 "in_place.ml" 125 4000 4009
+)
+"in_place.ml" 126 4037 4039 "in_place.ml" 144 4483 4490
+call(
+  stack
+)
+type(
+  unit
+)
+"in_place.ml" 146 4493 4495 "in_place.ml" 146 4493 4496
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 146 4493 4495 "in_place.ml" 146 4493 4505
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"in_place.ml" 146 4493 4506 "in_place.ml" 146 4493 4508
+type(
+  unit
+)
+"in_place.ml" 146 4493 4495 "in_place.ml" 146 4493 4508
+type(
+  unit
+)
+"in_place.ml" 147 4510 4512 "in_place.ml" 147 4510 4513
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "in_place.ml" 48 1444 1456 "in_place.ml" 48 1444 1457
+)
+"in_place.ml" 147 4510 4512 "in_place.ml" 147 4510 4519
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"in_place.ml" 147 4510 4520 "in_place.ml" 147 4510 4522
+type(
+  unit
+)
+"in_place.ml" 147 4510 4512 "in_place.ml" 147 4510 4522
+type(
+  unit
+)
+"in_place.ml" 150 4543 4545 "in_place.ml" 150 4543 4552
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"in_place.ml" 150 4543 4554 "in_place.ml" 150 4543 4556
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"in_place.ml" 150 4543 4556 "in_place.ml" 150 4543 4610
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"in_place.ml" 150 4543 4553 "in_place.ml" 150 4543 4611
+type(
+  (unit, unit, string, unit) format4
+)
+"in_place.ml" 150 4543 4545 "in_place.ml" 150 4543 4611
+call(
+  tail
+)
+type(
+  unit
+)
+"in_place.ml" 147 4510 4512 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 146 4493 4495 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 126 4037 4039 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 125 4000 4002 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 124 3967 3969 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 123 3943 3945 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 74 2261 2263 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 72 2215 2217 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 67 2074 2076 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 65 2020 2022 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 64 1972 1974 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 63 1927 1929 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 58 1806 1808 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 57 1731 1733 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 55 1684 1686 "in_place.ml" 150 4543 4611
+type(
+  unit
+)
+"in_place.ml" 50 1580 1582 "in_place.ml" 150 4543 4611
+type(
+  unit
+)

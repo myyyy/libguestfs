@@ -50,11 +50,21 @@ virt_p2v-kernel.o: kernel.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/assert.h ../gnulib/lib/locale.h /usr/include/locale.h \
- /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/libintl.h p2v.h \
- miniexpect.h /usr/include/pcre.h ../src/guestfs.h \
- ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/libintl.h \
+ ../gnulib/lib/sys/wait.h /usr/include/x86_64-linux-gnu/sys/wait.h \
+ ../gnulib/lib/signal.h /usr/include/signal.h \
+ /usr/include/x86_64-linux-gnu/bits/signum.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo.h \
+ /usr/include/x86_64-linux-gnu/bits/sigaction.h \
+ /usr/include/x86_64-linux-gnu/bits/sigcontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigstack.h \
+ /usr/include/x86_64-linux-gnu/sys/ucontext.h \
+ /usr/include/x86_64-linux-gnu/bits/sigthread.h \
+ /usr/include/x86_64-linux-gnu/sys/resource.h \
+ /usr/include/x86_64-linux-gnu/bits/resource.h p2v.h miniexpect.h \
+ /usr/include/pcre.h ../src/guestfs.h ../src/guestfs-internal-frontend.h \
+ ../src/guestfs-internal-all.h \
+ ../src/guestfs-internal-frontend-cleanups.h
 
 ../config.h:
 
@@ -216,6 +226,32 @@ virt_p2v-kernel.o: kernel.c ../config.h ../gnulib/lib/stdio.h \
 
 /usr/include/libintl.h:
 
+../gnulib/lib/sys/wait.h:
+
+/usr/include/x86_64-linux-gnu/sys/wait.h:
+
+../gnulib/lib/signal.h:
+
+/usr/include/signal.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigstack.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigthread.h:
+
+/usr/include/x86_64-linux-gnu/sys/resource.h:
+
+/usr/include/x86_64-linux-gnu/bits/resource.h:
+
 p2v.h:
 
 miniexpect.h:
@@ -229,5 +265,3 @@ miniexpect.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:

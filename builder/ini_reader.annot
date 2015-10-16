@@ -1,0 +1,182 @@
+"ini_reader.ml" 34 1314 1318 "ini_reader.ml" 34 1314 1326
+type(
+  ?error_suffix:string -> string -> (string * field list) list
+)
+ident(
+  def read_ini "ini_reader.ml" 40 1521 1533 --
+)
+"ini_reader.ml" 34 1314 1329 "ini_reader.ml" 34 1314 1341
+type(
+  string
+)
+"ini_reader.ml" 34 1314 1344 "ini_reader.ml" 34 1314 1346
+type(
+  string
+)
+type(
+  string
+)
+ident(
+  int_ref *sth* "ini_reader.ml" 34 1314 1344 "ini_reader.ml" 34 1314 1346
+)
+type(
+  string option
+)
+type(
+  string option
+)
+type(
+  string
+)
+ident(
+  def *sth* "ini_reader.ml" 34 1314 1344 "ini_reader.ml" 34 1314 1346
+)
+"ini_reader.ml" 34 1314 1348 "ini_reader.ml" 34 1314 1352
+type(
+  string
+)
+ident(
+  def file "ini_reader.ml" 35 1355 1357 "ini_reader.ml" 40 1521 1533
+)
+"ini_reader.ml" 35 1355 1361 "ini_reader.ml" 35 1355 1369
+type(
+  c_sections
+)
+"ini_reader.ml" 35 1355 1372 "ini_reader.ml" 35 1355 1383
+type(
+  prog:string -> error_suffix:string -> string -> c_sections
+)
+"ini_reader.ml" 35 1355 1385 "ini_reader.ml" 35 1355 1389
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"ini_reader.ml" 35 1355 1391 "ini_reader.ml" 35 1355 1403
+type(
+  string
+)
+ident(
+  int_ref error_suffix "ini_reader.ml" 34 1314 1329 "ini_reader.ml" 34 1314 1341
+)
+"ini_reader.ml" 35 1355 1404 "ini_reader.ml" 35 1355 1408
+type(
+  string
+)
+ident(
+  int_ref file "ini_reader.ml" 34 1314 1348 "ini_reader.ml" 34 1314 1352
+)
+"ini_reader.ml" 35 1355 1372 "ini_reader.ml" 35 1355 1408
+type(
+  c_sections
+)
+"ini_reader.ml" 36 1412 1418 "ini_reader.ml" 36 1412 1426
+type(
+  c_section list
+)
+"ini_reader.ml" 36 1412 1429 "ini_reader.ml" 36 1412 1442
+type(
+  c_sections -> c_section list
+)
+ident(
+  ext_ref Array.to_list
+)
+"ini_reader.ml" 36 1412 1443 "ini_reader.ml" 36 1412 1451
+type(
+  c_sections
+)
+ident(
+  int_ref sections "ini_reader.ml" 35 1355 1361 "ini_reader.ml" 35 1355 1369
+)
+"ini_reader.ml" 36 1412 1429 "ini_reader.ml" 36 1412 1451
+call(
+  stack
+)
+type(
+  c_section list
+)
+"ini_reader.ml" 37 1455 1457 "ini_reader.ml" 37 1455 1465
+type(
+  (c_section -> string * field list) ->
+  c_section list -> (string * field list) list
+)
+ident(
+  ext_ref List.map
+)
+"ini_reader.ml" 38 1468 1477 "ini_reader.ml" 38 1468 1478
+type(
+  string
+)
+ident(
+  def n "ini_reader.ml" 39 1491 1497 "ini_reader.ml" 39 1491 1520
+)
+"ini_reader.ml" 38 1468 1480 "ini_reader.ml" 38 1468 1486
+type(
+  c_fields
+)
+ident(
+  def fields "ini_reader.ml" 39 1491 1497 "ini_reader.ml" 39 1491 1520
+)
+"ini_reader.ml" 38 1468 1476 "ini_reader.ml" 38 1468 1487
+type(
+  c_section
+)
+"ini_reader.ml" 39 1491 1497 "ini_reader.ml" 39 1491 1498
+type(
+  string
+)
+ident(
+  int_ref n "ini_reader.ml" 38 1468 1477 "ini_reader.ml" 38 1468 1478
+)
+"ini_reader.ml" 39 1491 1500 "ini_reader.ml" 39 1491 1513
+type(
+  c_fields -> field list
+)
+ident(
+  ext_ref Array.to_list
+)
+"ini_reader.ml" 39 1491 1514 "ini_reader.ml" 39 1491 1520
+type(
+  c_fields
+)
+ident(
+  int_ref fields "ini_reader.ml" 38 1468 1480 "ini_reader.ml" 38 1468 1486
+)
+"ini_reader.ml" 39 1491 1500 "ini_reader.ml" 39 1491 1520
+call(
+  stack
+)
+type(
+  field list
+)
+"ini_reader.ml" 39 1491 1497 "ini_reader.ml" 39 1491 1520
+type(
+  string * field list
+)
+"ini_reader.ml" 37 1455 1466 "ini_reader.ml" 40 1521 1524
+type(
+  c_section -> string * field list
+)
+"ini_reader.ml" 40 1521 1525 "ini_reader.ml" 40 1521 1533
+type(
+  c_section list
+)
+ident(
+  int_ref sections "ini_reader.ml" 36 1412 1418 "ini_reader.ml" 36 1412 1426
+)
+"ini_reader.ml" 37 1455 1457 "ini_reader.ml" 40 1521 1533
+call(
+  tail
+)
+type(
+  (string * field list) list
+)
+"ini_reader.ml" 36 1412 1414 "ini_reader.ml" 40 1521 1533
+type(
+  (string * field list) list
+)
+"ini_reader.ml" 35 1355 1357 "ini_reader.ml" 40 1521 1533
+type(
+  (string * field list) list
+)

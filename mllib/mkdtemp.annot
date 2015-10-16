@@ -1,0 +1,125 @@
+"mkdtemp.ml" 23 857 861 "mkdtemp.ml" 23 857 869
+type(
+  ?base_dir:string -> string -> string -> string
+)
+ident(
+  def temp_dir "mkdtemp.ml" 24 923 975 --
+)
+"mkdtemp.ml" 23 857 872 "mkdtemp.ml" 23 857 880
+type(
+  string
+)
+"mkdtemp.ml" 23 857 883 "mkdtemp.ml" 23 857 905
+type(
+  string
+)
+ident(
+  ext_ref Filename.temp_dir_name
+)
+type(
+  string
+)
+ident(
+  int_ref *sth* "mkdtemp.ml" 23 857 883 "mkdtemp.ml" 23 857 905
+)
+type(
+  string option
+)
+type(
+  string option
+)
+type(
+  string
+)
+ident(
+  def *sth* "mkdtemp.ml" 23 857 883 "mkdtemp.ml" 23 857 905
+)
+"mkdtemp.ml" 23 857 907 "mkdtemp.ml" 23 857 913
+type(
+  string
+)
+ident(
+  def prefix "mkdtemp.ml" 23 857 914 "mkdtemp.ml" 24 923 975
+)
+"mkdtemp.ml" 23 857 914 "mkdtemp.ml" 23 857 920
+type(
+  string
+)
+ident(
+  def suffix "mkdtemp.ml" 24 923 925 "mkdtemp.ml" 24 923 975
+)
+"mkdtemp.ml" 24 923 925 "mkdtemp.ml" 24 923 932
+type(
+  string -> string
+)
+"mkdtemp.ml" 24 923 934 "mkdtemp.ml" 24 923 942
+type(
+  string
+)
+ident(
+  int_ref base_dir "mkdtemp.ml" 23 857 872 "mkdtemp.ml" 23 857 880
+)
+"mkdtemp.ml" 24 923 943 "mkdtemp.ml" 24 923 945
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"mkdtemp.ml" 24 923 947 "mkdtemp.ml" 24 923 953
+type(
+  string
+)
+ident(
+  int_ref prefix "mkdtemp.ml" 23 857 907 "mkdtemp.ml" 23 857 913
+)
+"mkdtemp.ml" 24 923 954 "mkdtemp.ml" 24 923 955
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mkdtemp.ml" 24 923 956 "mkdtemp.ml" 24 923 964
+type(
+  string
+)
+"mkdtemp.ml" 24 923 965 "mkdtemp.ml" 24 923 966
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"mkdtemp.ml" 24 923 967 "mkdtemp.ml" 24 923 973
+type(
+  string
+)
+ident(
+  int_ref suffix "mkdtemp.ml" 23 857 914 "mkdtemp.ml" 23 857 920
+)
+"mkdtemp.ml" 24 923 956 "mkdtemp.ml" 24 923 973
+call(
+  stack
+)
+type(
+  string
+)
+"mkdtemp.ml" 24 923 946 "mkdtemp.ml" 24 923 974
+call(
+  stack
+)
+type(
+  string
+)
+"mkdtemp.ml" 24 923 933 "mkdtemp.ml" 24 923 975
+call(
+  stack
+)
+type(
+  string
+)
+"mkdtemp.ml" 24 923 925 "mkdtemp.ml" 24 923 975
+type(
+  string
+)

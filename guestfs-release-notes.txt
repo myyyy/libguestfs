@@ -1744,6 +1744,7 @@ RELEASE NOTES FOR LIBGUESTFS 1.24
     CVE-2013-2124
 
       https://bugzilla.redhat.com/show_bug.cgi?id=968306
+      <https://bugzilla.redhat.com/show_bug.cgi?id=968306>
 
       A denial of service was possible when inspecting certain guests. The
       fix has been backported to 1.20 and 1.22 branches.
@@ -2472,6 +2473,7 @@ RELEASE NOTES FOR LIBGUESTFS 1.20
 
     For further information, see
     https://bugzilla.redhat.com/show_bug.cgi?id=788642
+    <https://bugzilla.redhat.com/show_bug.cgi?id=788642>
 
  New APIs
 
@@ -4225,9 +4227,11 @@ BUGS
 
     To get a list of bugs against libguestfs, use this link:
     https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&product=Virtualization+Tools
+    <https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&product=Virtualization+Tools>
 
     To report a new bug against libguestfs, use this link:
     https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&product=Virtualization+Tools
+    <https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&product=Virtualization+Tools>
 
     When reporting a bug, please supply:
 

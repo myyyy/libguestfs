@@ -58,8 +58,8 @@ virt_edit-edit.o: edit.c ../config.h ../gnulib/lib/stdio.h \
  ../gnulib/lib/xvasprintf.h ../src/guestfs.h ../fish/options.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h ../fish/windows.h ../fish/file-edit.h
+ ../src/guestfs-internal-frontend-cleanups.h ../fish/windows.h \
+ ../fish/file-edit.h
 
 ../config.h:
 
@@ -248,8 +248,6 @@ virt_edit-edit.o: edit.c ../config.h ../gnulib/lib/stdio.h \
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 ../fish/windows.h:
 

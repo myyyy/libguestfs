@@ -560,8 +560,7 @@ virt_p2v-main.o: main.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/gtk-2.0/gtk/gtktipsquery.h p2v.h miniexpect.h \
  /usr/include/pcre.h ../src/guestfs.h ../src/guestfs-internal-frontend.h \
  ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h
+ ../src/guestfs-internal-frontend-cleanups.h
 
 ../config.h:
 
@@ -1864,5 +1863,3 @@ miniexpect.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:

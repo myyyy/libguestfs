@@ -1,0 +1,2494 @@
+"list_entries.ml" 24 836 844 "list_entries.ml" 24 836 856
+type(
+  list_format:[< `Json | `Long | `Short ] ->
+  sources:Sources.source list -> (string * Index_parser.entry) list -> unit
+)
+ident(
+  def list_entries "list_entries.ml" 24 836 836 --
+)
+"list_entries.ml" 24 836 858 "list_entries.ml" 24 836 869
+type(
+  [< `Json | `Long | `Short ] as 'a
+)
+ident(
+  def list_format "list_entries.ml" 24 836 870 "list_entries.ml" 28 997 1042
+)
+"list_entries.ml" 24 836 871 "list_entries.ml" 24 836 878
+type(
+  Sources.source list
+)
+ident(
+  def sources "list_entries.ml" 24 836 879 "list_entries.ml" 28 997 1042
+)
+"list_entries.ml" 24 836 879 "list_entries.ml" 24 836 884
+type(
+  (string * Index_parser.entry) list
+)
+ident(
+  def index "list_entries.ml" 25 887 889 "list_entries.ml" 28 997 1042
+)
+"list_entries.ml" 25 887 895 "list_entries.ml" 25 887 906
+type(
+  'a
+)
+ident(
+  int_ref list_format "list_entries.ml" 24 836 858 "list_entries.ml" 24 836 869
+)
+"list_entries.ml" 26 912 916 "list_entries.ml" 26 912 922
+type(
+  'a
+)
+"list_entries.ml" 26 912 926 "list_entries.ml" 26 912 944
+type(
+  (string * Index_parser.entry) list -> unit
+)
+ident(
+  int_ref list_entries_short "list_entries.ml" 30 1044 1048 "list_entries.ml" 30 1044 1066
+)
+"list_entries.ml" 26 912 945 "list_entries.ml" 26 912 950
+type(
+  (string * Index_parser.entry) list
+)
+ident(
+  int_ref index "list_entries.ml" 24 836 879 "list_entries.ml" 24 836 884
+)
+"list_entries.ml" 26 912 926 "list_entries.ml" 26 912 950
+call(
+  tail
+)
+type(
+  unit
+)
+"list_entries.ml" 27 951 955 "list_entries.ml" 27 951 960
+type(
+  'a
+)
+"list_entries.ml" 27 951 964 "list_entries.ml" 27 951 981
+type(
+  sources:Sources.source list -> (string * Index_parser.entry) list -> unit
+)
+ident(
+  int_ref list_entries_long "list_entries.ml" 46 1448 1452 "list_entries.ml" 46 1448 1469
+)
+"list_entries.ml" 27 951 983 "list_entries.ml" 27 951 990
+type(
+  Sources.source list
+)
+ident(
+  int_ref sources "list_entries.ml" 24 836 871 "list_entries.ml" 24 836 878
+)
+"list_entries.ml" 27 951 991 "list_entries.ml" 27 951 996
+type(
+  (string * Index_parser.entry) list
+)
+ident(
+  int_ref index "list_entries.ml" 24 836 879 "list_entries.ml" 24 836 884
+)
+"list_entries.ml" 27 951 964 "list_entries.ml" 27 951 996
+call(
+  tail
+)
+type(
+  unit
+)
+"list_entries.ml" 28 997 1001 "list_entries.ml" 28 997 1006
+type(
+  'a
+)
+"list_entries.ml" 28 997 1010 "list_entries.ml" 28 997 1027
+type(
+  sources:Sources.source list -> (string * Index_parser.entry) list -> unit
+)
+ident(
+  int_ref list_entries_json "list_entries.ml" 99 3060 3064 "list_entries.ml" 99 3060 3081
+)
+"list_entries.ml" 28 997 1029 "list_entries.ml" 28 997 1036
+type(
+  Sources.source list
+)
+ident(
+  int_ref sources "list_entries.ml" 24 836 871 "list_entries.ml" 24 836 878
+)
+"list_entries.ml" 28 997 1037 "list_entries.ml" 28 997 1042
+type(
+  (string * Index_parser.entry) list
+)
+ident(
+  int_ref index "list_entries.ml" 24 836 879 "list_entries.ml" 24 836 884
+)
+"list_entries.ml" 28 997 1010 "list_entries.ml" 28 997 1042
+call(
+  tail
+)
+type(
+  unit
+)
+"list_entries.ml" 25 887 889 "list_entries.ml" 28 997 1042
+type(
+  unit
+)
+"list_entries.ml" 30 1044 1048 "list_entries.ml" 30 1044 1066
+type(
+  (string * Index_parser.entry) list -> unit
+)
+ident(
+  def list_entries_short "list_entries.ml" 24 836 836 --
+)
+"list_entries.ml" 30 1044 1067 "list_entries.ml" 30 1044 1072
+type(
+  (string * Index_parser.entry) list
+)
+ident(
+  def index "list_entries.ml" 31 1075 1077 "list_entries.ml" 44 1437 1446
+)
+"list_entries.ml" 31 1075 1077 "list_entries.ml" 31 1075 1086
+type(
+  (string * Index_parser.entry -> unit) ->
+  (string * Index_parser.entry) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"list_entries.ml" 32 1089 1098 "list_entries.ml" 32 1089 1102
+type(
+  string
+)
+ident(
+  def name "list_entries.ml" 35 1221 1227 "list_entries.ml" 43 1429 1436
+)
+"list_entries.ml" 32 1089 1136 "list_entries.ml" 32 1089 1150
+type(
+  string option
+)
+ident(
+  def printable_name "list_entries.ml" 35 1221 1227 "list_entries.ml" 43 1429 1436
+)
+"list_entries.ml" 33 1152 1176 "list_entries.ml" 33 1152 1180
+type(
+  string
+)
+ident(
+  def arch "list_entries.ml" 35 1221 1227 "list_entries.ml" 43 1429 1436
+)
+"list_entries.ml" 34 1182 1208 "list_entries.ml" 34 1182 1214
+type(
+  bool
+)
+ident(
+  def hidden "list_entries.ml" 35 1221 1227 "list_entries.ml" 43 1429 1436
+)
+"list_entries.ml" 32 1089 1104 "list_entries.ml" 34 1182 1216
+type(
+  Index_parser.entry
+)
+"list_entries.ml" 32 1089 1097 "list_entries.ml" 34 1182 1217
+type(
+  string * Index_parser.entry
+)
+"list_entries.ml" 35 1221 1230 "list_entries.ml" 35 1221 1233
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"list_entries.ml" 35 1221 1234 "list_entries.ml" 35 1221 1240
+type(
+  bool
+)
+ident(
+  int_ref hidden "list_entries.ml" 34 1182 1208 "list_entries.ml" 34 1182 1214
+)
+"list_entries.ml" 35 1221 1230 "list_entries.ml" 35 1221 1240
+type(
+  bool
+)
+"list_entries.ml" 36 1248 1256 "list_entries.ml" 36 1248 1262
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 36 1248 1263 "list_entries.ml" 36 1248 1270
+type(
+  (string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 36 1248 1271 "list_entries.ml" 36 1248 1275
+type(
+  string
+)
+ident(
+  int_ref name "list_entries.ml" 32 1089 1098 "list_entries.ml" 32 1089 1102
+)
+"list_entries.ml" 36 1248 1256 "list_entries.ml" 36 1248 1275
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 37 1277 1285 "list_entries.ml" 37 1277 1291
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 37 1277 1292 "list_entries.ml" 37 1277 1300
+type(
+  (string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 37 1277 1301 "list_entries.ml" 37 1277 1305
+type(
+  string
+)
+ident(
+  int_ref arch "list_entries.ml" 33 1152 1176 "list_entries.ml" 33 1152 1180
+)
+"list_entries.ml" 37 1277 1285 "list_entries.ml" 37 1277 1305
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 38 1307 1322 "list_entries.ml" 38 1307 1336
+type(
+  string option
+)
+ident(
+  int_ref printable_name "list_entries.ml" 32 1089 1136 "list_entries.ml" 32 1089 1150
+)
+"list_entries.ml" 39 1342 1352 "list_entries.ml" 39 1342 1356
+type(
+  string option
+)
+"list_entries.ml" 39 1342 1360 "list_entries.ml" 39 1342 1362
+type(
+  unit
+)
+"list_entries.ml" 40 1363 1378 "list_entries.ml" 40 1363 1379
+type(
+  string
+)
+ident(
+  def s "list_entries.ml" 40 1363 1383 "list_entries.ml" 40 1363 1397
+)
+"list_entries.ml" 40 1363 1373 "list_entries.ml" 40 1363 1379
+type(
+  string option
+)
+"list_entries.ml" 40 1363 1383 "list_entries.ml" 40 1363 1389
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 40 1363 1390 "list_entries.ml" 40 1363 1395
+type(
+  (string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 40 1363 1396 "list_entries.ml" 40 1363 1397
+type(
+  string
+)
+ident(
+  int_ref s "list_entries.ml" 40 1363 1378 "list_entries.ml" 40 1363 1379
+)
+"list_entries.ml" 40 1363 1383 "list_entries.ml" 40 1363 1397
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 38 1307 1315 "list_entries.ml" 41 1398 1407
+type(
+  unit
+)
+"list_entries.ml" 42 1409 1417 "list_entries.ml" 42 1409 1423
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 42 1409 1424 "list_entries.ml" 42 1409 1428
+type(
+  (unit, out_channel, unit) format
+)
+"list_entries.ml" 42 1409 1417 "list_entries.ml" 42 1409 1428
+call(
+  tail
+)
+type(
+  unit
+)
+"list_entries.ml" 38 1307 1315 "list_entries.ml" 42 1409 1428
+type(
+  unit
+)
+"list_entries.ml" 37 1277 1285 "list_entries.ml" 42 1409 1428
+type(
+  unit
+)
+"list_entries.ml" 35 1221 1246 "list_entries.ml" 43 1429 1436
+type(
+  unit
+)
+"list_entries.ml" 35 1221 1227 "list_entries.ml" 43 1429 1436
+type(
+  unit
+)
+"list_entries.ml" 31 1075 1087 "list_entries.ml" 44 1437 1440
+type(
+  string * Index_parser.entry -> unit
+)
+"list_entries.ml" 44 1437 1441 "list_entries.ml" 44 1437 1446
+type(
+  (string * Index_parser.entry) list
+)
+ident(
+  int_ref index "list_entries.ml" 30 1044 1067 "list_entries.ml" 30 1044 1072
+)
+"list_entries.ml" 31 1075 1077 "list_entries.ml" 44 1437 1446
+call(
+  tail
+)
+type(
+  unit
+)
+"list_entries.ml" 46 1448 1452 "list_entries.ml" 46 1448 1469
+type(
+  sources:Sources.source list -> (string * Index_parser.entry) list -> unit
+)
+ident(
+  def list_entries_long "list_entries.ml" 24 836 836 --
+)
+"list_entries.ml" 46 1448 1471 "list_entries.ml" 46 1448 1478
+type(
+  Sources.source list
+)
+ident(
+  def sources "list_entries.ml" 46 1448 1479 "list_entries.ml" 97 3049 3058
+)
+"list_entries.ml" 46 1448 1479 "list_entries.ml" 46 1448 1484
+type(
+  (string * Index_parser.entry) list
+)
+ident(
+  def index "list_entries.ml" 47 1487 1489 "list_entries.ml" 97 3049 3058
+)
+"list_entries.ml" 47 1487 1493 "list_entries.ml" 47 1487 1498
+type(
+  string list
+)
+"list_entries.ml" 47 1487 1501 "list_entries.ml" 47 1487 1520
+type(
+  unit -> string list
+)
+ident(
+  ext_ref Languages.languages
+)
+"list_entries.ml" 47 1487 1521 "list_entries.ml" 47 1487 1523
+type(
+  unit
+)
+"list_entries.ml" 47 1487 1501 "list_entries.ml" 47 1487 1523
+call(
+  stack
+)
+type(
+  string list
+)
+"list_entries.ml" 49 1528 1530 "list_entries.ml" 49 1528 1539
+type(
+  (Sources.source -> unit) -> Sources.source list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"list_entries.ml" 50 1542 1566 "list_entries.ml" 50 1542 1569
+type(
+  string
+)
+ident(
+  def uri "list_entries.ml" 51 1592 1598 "list_entries.ml" 59 1832 1849
+)
+"list_entries.ml" 50 1542 1580 "list_entries.ml" 50 1542 1586
+type(
+  Utils.gpgkey_type
+)
+ident(
+  def gpgkey "list_entries.ml" 51 1592 1598 "list_entries.ml" 59 1832 1849
+)
+"list_entries.ml" 50 1542 1550 "list_entries.ml" 50 1542 1588
+type(
+  Sources.source
+)
+"list_entries.ml" 51 1592 1598 "list_entries.ml" 51 1592 1604
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 51 1592 1606 "list_entries.ml" 51 1592 1608
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"list_entries.ml" 51 1592 1608 "list_entries.ml" 51 1592 1626
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"list_entries.ml" 51 1592 1605 "list_entries.ml" 51 1592 1627
+type(
+  (string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 51 1592 1628 "list_entries.ml" 51 1592 1631
+type(
+  string
+)
+ident(
+  int_ref uri "list_entries.ml" 50 1542 1566 "list_entries.ml" 50 1542 1569
+)
+"list_entries.ml" 51 1592 1598 "list_entries.ml" 51 1592 1631
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 52 1633 1646 "list_entries.ml" 52 1633 1652
+type(
+  Utils.gpgkey_type
+)
+ident(
+  int_ref gpgkey "list_entries.ml" 50 1542 1580 "list_entries.ml" 50 1542 1586
+)
+"list_entries.ml" 53 1658 1666 "list_entries.ml" 53 1658 1678
+type(
+  Utils.gpgkey_type
+)
+"list_entries.ml" 53 1658 1682 "list_entries.ml" 53 1658 1684
+type(
+  unit
+)
+"list_entries.ml" 54 1685 1711 "list_entries.ml" 54 1685 1713
+type(
+  string
+)
+ident(
+  def fp "list_entries.ml" 55 1717 1725 "list_entries.ml" 55 1717 1759
+)
+"list_entries.ml" 54 1685 1693 "list_entries.ml" 54 1685 1713
+type(
+  Utils.gpgkey_type
+)
+"list_entries.ml" 55 1717 1725 "list_entries.ml" 55 1717 1731
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 55 1717 1733 "list_entries.ml" 55 1717 1735
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"list_entries.ml" 55 1717 1735 "list_entries.ml" 55 1717 1754
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"list_entries.ml" 55 1717 1732 "list_entries.ml" 55 1717 1755
+type(
+  (string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 55 1717 1756 "list_entries.ml" 55 1717 1758
+type(
+  string
+)
+ident(
+  int_ref fp "list_entries.ml" 54 1685 1711 "list_entries.ml" 54 1685 1713
+)
+"list_entries.ml" 55 1717 1725 "list_entries.ml" 55 1717 1759
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 56 1760 1782 "list_entries.ml" 56 1760 1784
+type(
+  string
+)
+ident(
+  def kf "list_entries.ml" 57 1788 1796 "list_entries.ml" 57 1788 1822
+)
+"list_entries.ml" 56 1760 1768 "list_entries.ml" 56 1760 1784
+type(
+  Utils.gpgkey_type
+)
+"list_entries.ml" 57 1788 1796 "list_entries.ml" 57 1788 1802
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 57 1788 1804 "list_entries.ml" 57 1788 1806
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"list_entries.ml" 57 1788 1806 "list_entries.ml" 57 1788 1817
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"list_entries.ml" 57 1788 1803 "list_entries.ml" 57 1788 1818
+type(
+  (string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 57 1788 1819 "list_entries.ml" 57 1788 1821
+type(
+  string
+)
+ident(
+  int_ref kf "list_entries.ml" 56 1760 1782 "list_entries.ml" 56 1760 1784
+)
+"list_entries.ml" 57 1788 1796 "list_entries.ml" 57 1788 1822
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 52 1633 1639 "list_entries.ml" 58 1823 1830
+type(
+  unit
+)
+"list_entries.ml" 59 1832 1838 "list_entries.ml" 59 1832 1844
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 59 1832 1845 "list_entries.ml" 59 1832 1849
+type(
+  (unit, out_channel, unit) format
+)
+"list_entries.ml" 59 1832 1838 "list_entries.ml" 59 1832 1849
+call(
+  tail
+)
+type(
+  unit
+)
+"list_entries.ml" 52 1633 1639 "list_entries.ml" 59 1832 1849
+type(
+  unit
+)
+"list_entries.ml" 51 1592 1598 "list_entries.ml" 59 1832 1849
+type(
+  unit
+)
+"list_entries.ml" 49 1528 1540 "list_entries.ml" 60 1850 1853
+type(
+  Sources.source -> unit
+)
+"list_entries.ml" 60 1850 1854 "list_entries.ml" 60 1850 1861
+type(
+  Sources.source list
+)
+ident(
+  int_ref sources "list_entries.ml" 46 1448 1471 "list_entries.ml" 46 1448 1478
+)
+"list_entries.ml" 49 1528 1530 "list_entries.ml" 60 1850 1861
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 62 1864 1866 "list_entries.ml" 62 1864 1875
+type(
+  (string * Index_parser.entry -> unit) ->
+  (string * Index_parser.entry) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"list_entries.ml" 63 1878 1887 "list_entries.ml" 63 1878 1891
+type(
+  string
+)
+ident(
+  def name "list_entries.ml" 70 2160 2166 "list_entries.ml" 96 3041 3048
+)
+"list_entries.ml" 63 1878 1925 "list_entries.ml" 63 1878 1939
+type(
+  string option
+)
+ident(
+  def printable_name "list_entries.ml" 70 2160 2166 "list_entries.ml" 96 3041 3048
+)
+"list_entries.ml" 64 1941 1965 "list_entries.ml" 64 1941 1969
+type(
+  string
+)
+ident(
+  def arch "list_entries.ml" 70 2160 2166 "list_entries.ml" 96 3041 3048
+)
+"list_entries.ml" 65 1971 1995 "list_entries.ml" 65 1971 1999
+type(
+  int64
+)
+ident(
+  def size "list_entries.ml" 70 2160 2166 "list_entries.ml" 96 3041 3048
+)
+"list_entries.ml" 66 2001 2036 "list_entries.ml" 66 2001 2051
+type(
+  int64 option
+)
+ident(
+  def compressed_size "list_entries.ml" 70 2160 2166 "list_entries.ml" 96 3041 3048
+)
+"list_entries.ml" 67 2053 2078 "list_entries.ml" 67 2053 2083
+type(
+  (string * string) list
+)
+ident(
+  def notes "list_entries.ml" 70 2160 2166 "list_entries.ml" 96 3041 3048
+)
+"list_entries.ml" 68 2085 2112 "list_entries.ml" 68 2085 2119
+type(
+  string list option
+)
+ident(
+  def aliases "list_entries.ml" 70 2160 2166 "list_entries.ml" 96 3041 3048
+)
+"list_entries.ml" 69 2121 2147 "list_entries.ml" 69 2121 2153
+type(
+  bool
+)
+ident(
+  def hidden "list_entries.ml" 70 2160 2166 "list_entries.ml" 96 3041 3048
+)
+"list_entries.ml" 63 1878 1893 "list_entries.ml" 69 2121 2155
+type(
+  Index_parser.entry
+)
+"list_entries.ml" 63 1878 1886 "list_entries.ml" 69 2121 2156
+type(
+  string * Index_parser.entry
+)
+"list_entries.ml" 70 2160 2169 "list_entries.ml" 70 2160 2172
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"list_entries.ml" 70 2160 2173 "list_entries.ml" 70 2160 2179
+type(
+  bool
+)
+ident(
+  int_ref hidden "list_entries.ml" 69 2121 2147 "list_entries.ml" 69 2121 2153
+)
+"list_entries.ml" 70 2160 2169 "list_entries.ml" 70 2160 2179
+type(
+  bool
+)
+"list_entries.ml" 71 2187 2195 "list_entries.ml" 71 2187 2201
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 71 2187 2202 "list_entries.ml" 71 2187 2214
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 71 2187 2215 "list_entries.ml" 71 2187 2228
+type(
+  string
+)
+"list_entries.ml" 71 2187 2229 "list_entries.ml" 71 2187 2233
+type(
+  string
+)
+ident(
+  int_ref name "list_entries.ml" 63 1878 1887 "list_entries.ml" 63 1878 1891
+)
+"list_entries.ml" 71 2187 2195 "list_entries.ml" 71 2187 2233
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 72 2235 2250 "list_entries.ml" 72 2235 2264
+type(
+  string option
+)
+ident(
+  int_ref printable_name "list_entries.ml" 63 1878 1925 "list_entries.ml" 63 1878 1939
+)
+"list_entries.ml" 73 2270 2280 "list_entries.ml" 73 2270 2284
+type(
+  string option
+)
+"list_entries.ml" 73 2270 2288 "list_entries.ml" 73 2270 2290
+type(
+  unit
+)
+"list_entries.ml" 74 2291 2306 "list_entries.ml" 74 2291 2310
+type(
+  string
+)
+ident(
+  def name "list_entries.ml" 74 2291 2314 "list_entries.ml" 74 2291 2356
+)
+"list_entries.ml" 74 2291 2301 "list_entries.ml" 74 2291 2310
+type(
+  string option
+)
+"list_entries.ml" 74 2291 2314 "list_entries.ml" 74 2291 2320
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 74 2291 2321 "list_entries.ml" 74 2291 2333
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 74 2291 2335 "list_entries.ml" 74 2291 2337
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"list_entries.ml" 74 2291 2337 "list_entries.ml" 74 2291 2349
+type(
+  string
+)
+"list_entries.ml" 74 2291 2334 "list_entries.ml" 74 2291 2350
+type(
+  string
+)
+"list_entries.ml" 74 2291 2351 "list_entries.ml" 74 2291 2355
+type(
+  string
+)
+ident(
+  int_ref name "list_entries.ml" 74 2291 2306 "list_entries.ml" 74 2291 2310
+)
+"list_entries.ml" 74 2291 2314 "list_entries.ml" 74 2291 2356
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 72 2235 2243 "list_entries.ml" 75 2357 2366
+type(
+  unit
+)
+"list_entries.ml" 76 2368 2376 "list_entries.ml" 76 2368 2382
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 76 2368 2383 "list_entries.ml" 76 2368 2395
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 76 2368 2397 "list_entries.ml" 76 2368 2399
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"list_entries.ml" 76 2368 2399 "list_entries.ml" 76 2368 2414
+type(
+  string
+)
+"list_entries.ml" 76 2368 2396 "list_entries.ml" 76 2368 2415
+type(
+  string
+)
+"list_entries.ml" 76 2368 2416 "list_entries.ml" 76 2368 2420
+type(
+  string
+)
+ident(
+  int_ref arch "list_entries.ml" 64 1941 1965 "list_entries.ml" 64 1941 1969
+)
+"list_entries.ml" 76 2368 2376 "list_entries.ml" 76 2368 2420
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 77 2422 2430 "list_entries.ml" 77 2422 2436
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 77 2422 2437 "list_entries.ml" 77 2422 2449
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 77 2422 2451 "list_entries.ml" 77 2422 2453
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"list_entries.ml" 77 2422 2453 "list_entries.ml" 77 2422 2476
+type(
+  string
+)
+"list_entries.ml" 77 2422 2450 "list_entries.ml" 77 2422 2477
+type(
+  string
+)
+"list_entries.ml" 77 2422 2479 "list_entries.ml" 77 2422 2489
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Common_utils.human_size
+)
+"list_entries.ml" 77 2422 2490 "list_entries.ml" 77 2422 2494
+type(
+  int64
+)
+ident(
+  int_ref size "list_entries.ml" 65 1971 1995 "list_entries.ml" 65 1971 1999
+)
+"list_entries.ml" 77 2422 2478 "list_entries.ml" 77 2422 2495
+call(
+  stack
+)
+type(
+  string
+)
+"list_entries.ml" 77 2422 2430 "list_entries.ml" 77 2422 2495
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 78 2497 2512 "list_entries.ml" 78 2497 2527
+type(
+  int64 option
+)
+ident(
+  int_ref compressed_size "list_entries.ml" 66 2001 2036 "list_entries.ml" 66 2001 2051
+)
+"list_entries.ml" 79 2533 2543 "list_entries.ml" 79 2533 2547
+type(
+  int64 option
+)
+"list_entries.ml" 79 2533 2551 "list_entries.ml" 79 2533 2553
+type(
+  unit
+)
+"list_entries.ml" 80 2554 2569 "list_entries.ml" 80 2554 2573
+type(
+  int64
+)
+ident(
+  def size "list_entries.ml" 81 2577 2587 "list_entries.ml" 81 2577 2646
+)
+"list_entries.ml" 80 2554 2564 "list_entries.ml" 80 2554 2573
+type(
+  int64 option
+)
+"list_entries.ml" 81 2577 2587 "list_entries.ml" 81 2577 2593
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 81 2577 2594 "list_entries.ml" 81 2577 2606
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 81 2577 2608 "list_entries.ml" 81 2577 2610
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"list_entries.ml" 81 2577 2610 "list_entries.ml" 81 2577 2626
+type(
+  string
+)
+"list_entries.ml" 81 2577 2607 "list_entries.ml" 81 2577 2627
+type(
+  string
+)
+"list_entries.ml" 81 2577 2629 "list_entries.ml" 81 2577 2639
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Common_utils.human_size
+)
+"list_entries.ml" 81 2577 2640 "list_entries.ml" 81 2577 2644
+type(
+  int64
+)
+ident(
+  int_ref size "list_entries.ml" 80 2554 2569 "list_entries.ml" 80 2554 2573
+)
+"list_entries.ml" 81 2577 2628 "list_entries.ml" 81 2577 2645
+call(
+  stack
+)
+type(
+  string
+)
+"list_entries.ml" 81 2577 2587 "list_entries.ml" 81 2577 2646
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 78 2497 2505 "list_entries.ml" 82 2647 2656
+type(
+  unit
+)
+"list_entries.ml" 83 2658 2673 "list_entries.ml" 83 2658 2680
+type(
+  string list option
+)
+ident(
+  int_ref aliases "list_entries.ml" 68 2085 2112 "list_entries.ml" 68 2085 2119
+)
+"list_entries.ml" 84 2686 2696 "list_entries.ml" 84 2686 2700
+type(
+  string list option
+)
+"list_entries.ml" 84 2686 2704 "list_entries.ml" 84 2686 2706
+type(
+  unit
+)
+"list_entries.ml" 85 2707 2722 "list_entries.ml" 85 2707 2723
+type(
+  string list
+)
+ident(
+  def l "list_entries.ml" 85 2707 2727 "list_entries.ml" 86 2762 2806
+)
+"list_entries.ml" 85 2707 2717 "list_entries.ml" 85 2707 2723
+type(
+  string list option
+)
+"list_entries.ml" 85 2707 2727 "list_entries.ml" 85 2707 2733
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 85 2707 2734 "list_entries.ml" 85 2707 2746
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 85 2707 2748 "list_entries.ml" 85 2707 2750
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"list_entries.ml" 85 2707 2750 "list_entries.ml" 85 2707 2760
+type(
+  string
+)
+"list_entries.ml" 85 2707 2747 "list_entries.ml" 85 2707 2761
+type(
+  string
+)
+"list_entries.ml" 86 2762 2785 "list_entries.ml" 86 2762 2798
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"list_entries.ml" 86 2762 2799 "list_entries.ml" 86 2762 2802
+type(
+  string
+)
+"list_entries.ml" 86 2762 2803 "list_entries.ml" 86 2762 2804
+type(
+  string list
+)
+ident(
+  int_ref l "list_entries.ml" 85 2707 2722 "list_entries.ml" 85 2707 2723
+)
+"list_entries.ml" 86 2762 2784 "list_entries.ml" 86 2762 2805
+call(
+  stack
+)
+type(
+  string
+)
+"list_entries.ml" 85 2707 2727 "list_entries.ml" 86 2762 2806
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 83 2658 2666 "list_entries.ml" 87 2807 2816
+type(
+  unit
+)
+"list_entries.ml" 88 2818 2830 "list_entries.ml" 88 2818 2835
+type(
+  string list
+)
+"list_entries.ml" 88 2818 2838 "list_entries.ml" 88 2818 2858
+type(
+  string list -> (string * string) list -> string list
+)
+ident(
+  ext_ref Languages.find_notes
+)
+"list_entries.ml" 88 2818 2859 "list_entries.ml" 88 2818 2864
+type(
+  string list
+)
+ident(
+  int_ref langs "list_entries.ml" 47 1487 1493 "list_entries.ml" 47 1487 1498
+)
+"list_entries.ml" 88 2818 2865 "list_entries.ml" 88 2818 2870
+type(
+  (string * string) list
+)
+ident(
+  int_ref notes "list_entries.ml" 67 2053 2078 "list_entries.ml" 67 2053 2083
+)
+"list_entries.ml" 88 2818 2838 "list_entries.ml" 88 2818 2870
+call(
+  stack
+)
+type(
+  string list
+)
+"list_entries.ml" 89 2874 2889 "list_entries.ml" 89 2874 2894
+type(
+  string list
+)
+ident(
+  int_ref notes "list_entries.ml" 88 2818 2830 "list_entries.ml" 88 2818 2835
+)
+"list_entries.ml" 90 2900 2910 "list_entries.ml" 90 2900 2915
+type(
+  string
+)
+ident(
+  def notes "list_entries.ml" 91 2924 2934 "list_entries.ml" 92 2947 2990
+)
+"list_entries.ml" 90 2900 2919 "list_entries.ml" 90 2900 2920
+type(
+  string list
+)
+"list_entries.ml" 90 2900 2910 "list_entries.ml" 90 2900 2920
+type(
+  string list
+)
+"list_entries.ml" 91 2924 2934 "list_entries.ml" 91 2924 2940
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 91 2924 2941 "list_entries.ml" 91 2924 2945
+type(
+  (unit, out_channel, unit) format
+)
+"list_entries.ml" 91 2924 2934 "list_entries.ml" 91 2924 2945
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 92 2947 2957 "list_entries.ml" 92 2947 2963
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 92 2947 2965 "list_entries.ml" 92 2947 2967
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"list_entries.ml" 92 2947 2967 "list_entries.ml" 92 2947 2983
+type(
+  (string -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"list_entries.ml" 92 2947 2964 "list_entries.ml" 92 2947 2984
+type(
+  (string -> unit, out_channel, unit) format
+)
+"list_entries.ml" 92 2947 2985 "list_entries.ml" 92 2947 2990
+type(
+  string
+)
+ident(
+  int_ref notes "list_entries.ml" 90 2900 2910 "list_entries.ml" 90 2900 2915
+)
+"list_entries.ml" 92 2947 2957 "list_entries.ml" 92 2947 2990
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 91 2924 2934 "list_entries.ml" 92 2947 2990
+type(
+  unit
+)
+"list_entries.ml" 93 2991 3001 "list_entries.ml" 93 2991 3003
+type(
+  string list
+)
+"list_entries.ml" 93 2991 3007 "list_entries.ml" 93 2991 3009
+type(
+  unit
+)
+"list_entries.ml" 89 2874 2882 "list_entries.ml" 94 3010 3019
+type(
+  unit
+)
+"list_entries.ml" 95 3021 3029 "list_entries.ml" 95 3021 3035
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"list_entries.ml" 95 3021 3036 "list_entries.ml" 95 3021 3040
+type(
+  (unit, out_channel, unit) format
+)
+"list_entries.ml" 95 3021 3029 "list_entries.ml" 95 3021 3040
+call(
+  tail
+)
+type(
+  unit
+)
+"list_entries.ml" 89 2874 2882 "list_entries.ml" 95 3021 3040
+type(
+  unit
+)
+"list_entries.ml" 88 2818 2826 "list_entries.ml" 95 3021 3040
+type(
+  unit
+)
+"list_entries.ml" 83 2658 2666 "list_entries.ml" 95 3021 3040
+type(
+  unit
+)
+"list_entries.ml" 78 2497 2505 "list_entries.ml" 95 3021 3040
+type(
+  unit
+)
+"list_entries.ml" 77 2422 2430 "list_entries.ml" 95 3021 3040
+type(
+  unit
+)
+"list_entries.ml" 76 2368 2376 "list_entries.ml" 95 3021 3040
+type(
+  unit
+)
+"list_entries.ml" 72 2235 2243 "list_entries.ml" 95 3021 3040
+type(
+  unit
+)
+"list_entries.ml" 70 2160 2185 "list_entries.ml" 96 3041 3048
+type(
+  unit
+)
+"list_entries.ml" 70 2160 2166 "list_entries.ml" 96 3041 3048
+type(
+  unit
+)
+"list_entries.ml" 62 1864 1876 "list_entries.ml" 97 3049 3052
+type(
+  string * Index_parser.entry -> unit
+)
+"list_entries.ml" 97 3049 3053 "list_entries.ml" 97 3049 3058
+type(
+  (string * Index_parser.entry) list
+)
+ident(
+  int_ref index "list_entries.ml" 46 1448 1479 "list_entries.ml" 46 1448 1484
+)
+"list_entries.ml" 62 1864 1866 "list_entries.ml" 97 3049 3058
+call(
+  tail
+)
+type(
+  unit
+)
+"list_entries.ml" 49 1528 1530 "list_entries.ml" 97 3049 3058
+type(
+  unit
+)
+"list_entries.ml" 47 1487 1489 "list_entries.ml" 97 3049 3058
+type(
+  unit
+)
+"list_entries.ml" 99 3060 3064 "list_entries.ml" 99 3060 3081
+type(
+  sources:Sources.source list -> (string * Index_parser.entry) list -> unit
+)
+ident(
+  def list_entries_json "list_entries.ml" 24 836 836 --
+)
+"list_entries.ml" 99 3060 3083 "list_entries.ml" 99 3060 3090
+type(
+  Sources.source list
+)
+ident(
+  def sources "list_entries.ml" 99 3060 3091 "list_entries.ml" 165 5438 5456
+)
+"list_entries.ml" 99 3060 3091 "list_entries.ml" 99 3060 3096
+type(
+  (string * Index_parser.entry) list
+)
+ident(
+  def index "list_entries.ml" 100 3099 3101 "list_entries.ml" 165 5438 5456
+)
+"list_entries.ml" 100 3099 3105 "list_entries.ml" 100 3099 3117
+type(
+  JSON.json_t list
+)
+"list_entries.ml" 101 3120 3124 "list_entries.ml" 101 3120 3132
+type(
+  (Sources.source -> JSON.json_t) -> Sources.source list -> JSON.json_t list
+)
+ident(
+  ext_ref List.map
+)
+"list_entries.ml" 102 3135 3161 "list_entries.ml" 102 3135 3164
+type(
+  string
+)
+ident(
+  def uri "list_entries.ml" 103 3187 3195 "list_entries.ml" 111 3483 3505
+)
+"list_entries.ml" 102 3135 3175 "list_entries.ml" 102 3135 3181
+type(
+  Utils.gpgkey_type
+)
+ident(
+  def gpgkey "list_entries.ml" 103 3187 3195 "list_entries.ml" 111 3483 3505
+)
+"list_entries.ml" 102 3135 3145 "list_entries.ml" 102 3135 3183
+type(
+  Sources.source
+)
+"list_entries.ml" 103 3187 3199 "list_entries.ml" 103 3187 3203
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 103 3187 3208 "list_entries.ml" 103 3187 3213
+type(
+  string
+)
+"list_entries.ml" 103 3187 3227 "list_entries.ml" 103 3187 3230
+type(
+  string
+)
+ident(
+  int_ref uri "list_entries.ml" 102 3135 3161 "list_entries.ml" 102 3135 3164
+)
+"list_entries.ml" 103 3187 3215 "list_entries.ml" 103 3187 3230
+type(
+  JSON.json_t
+)
+"list_entries.ml" 103 3187 3208 "list_entries.ml" 103 3187 3230
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 103 3187 3206 "list_entries.ml" 103 3187 3232
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 104 3236 3248 "list_entries.ml" 104 3236 3252
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 105 3255 3271 "list_entries.ml" 105 3255 3277
+type(
+  Utils.gpgkey_type
+)
+ident(
+  int_ref gpgkey "list_entries.ml" 102 3135 3175 "list_entries.ml" 102 3135 3181
+)
+"list_entries.ml" 106 3283 3295 "list_entries.ml" 106 3283 3307
+type(
+  Utils.gpgkey_type
+)
+"list_entries.ml" 106 3283 3311 "list_entries.ml" 106 3283 3315
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 103 3187 3199 "list_entries.ml" 103 3187 3203
+)
+"list_entries.ml" 107 3316 3346 "list_entries.ml" 107 3316 3348
+type(
+  string
+)
+ident(
+  def fp "list_entries.ml" 108 3352 3364 "list_entries.ml" 108 3352 3403
+)
+"list_entries.ml" 107 3316 3328 "list_entries.ml" 107 3316 3348
+type(
+  Utils.gpgkey_type
+)
+"list_entries.ml" 108 3352 3365 "list_entries.ml" 108 3352 3378
+type(
+  string
+)
+"list_entries.ml" 108 3352 3392 "list_entries.ml" 108 3352 3394
+type(
+  string
+)
+ident(
+  int_ref fp "list_entries.ml" 107 3316 3346 "list_entries.ml" 107 3316 3348
+)
+"list_entries.ml" 108 3352 3380 "list_entries.ml" 108 3352 3394
+type(
+  JSON.json_t
+)
+"list_entries.ml" 108 3352 3364 "list_entries.ml" 108 3352 3395
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 108 3352 3399 "list_entries.ml" 108 3352 3403
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 103 3187 3199 "list_entries.ml" 103 3187 3203
+)
+"list_entries.ml" 108 3352 3364 "list_entries.ml" 108 3352 3403
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 109 3404 3430 "list_entries.ml" 109 3404 3432
+type(
+  string
+)
+ident(
+  def kf "list_entries.ml" 110 3436 3448 "list_entries.ml" 110 3436 3479
+)
+"list_entries.ml" 109 3404 3416 "list_entries.ml" 109 3404 3432
+type(
+  Utils.gpgkey_type
+)
+"list_entries.ml" 110 3436 3449 "list_entries.ml" 110 3436 3454
+type(
+  string
+)
+"list_entries.ml" 110 3436 3468 "list_entries.ml" 110 3436 3470
+type(
+  string
+)
+ident(
+  int_ref kf "list_entries.ml" 109 3404 3430 "list_entries.ml" 109 3404 3432
+)
+"list_entries.ml" 110 3436 3456 "list_entries.ml" 110 3436 3470
+type(
+  JSON.json_t
+)
+"list_entries.ml" 110 3436 3448 "list_entries.ml" 110 3436 3471
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 110 3436 3475 "list_entries.ml" 110 3436 3479
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 103 3187 3199 "list_entries.ml" 103 3187 3203
+)
+"list_entries.ml" 110 3436 3448 "list_entries.ml" 110 3436 3479
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 105 3255 3265 "list_entries.ml" 110 3436 3479
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 111 3483 3501 "list_entries.ml" 111 3483 3505
+type(
+  JSON.field list
+)
+ident(
+  int_ref item "list_entries.ml" 104 3236 3248 "list_entries.ml" 104 3236 3252
+)
+"list_entries.ml" 111 3483 3491 "list_entries.ml" 111 3483 3505
+type(
+  JSON.json_t
+)
+"list_entries.ml" 104 3236 3244 "list_entries.ml" 111 3483 3505
+type(
+  JSON.json_t
+)
+"list_entries.ml" 103 3187 3195 "list_entries.ml" 111 3483 3505
+type(
+  JSON.json_t
+)
+"list_entries.ml" 101 3120 3133 "list_entries.ml" 112 3506 3511
+type(
+  Sources.source -> JSON.json_t
+)
+"list_entries.ml" 112 3506 3512 "list_entries.ml" 112 3506 3519
+type(
+  Sources.source list
+)
+ident(
+  int_ref sources "list_entries.ml" 99 3060 3083 "list_entries.ml" 99 3060 3090
+)
+"list_entries.ml" 101 3120 3124 "list_entries.ml" 112 3506 3519
+call(
+  stack
+)
+type(
+  JSON.json_t list
+)
+"list_entries.ml" 113 3523 3529 "list_entries.ml" 113 3523 3543
+type(
+  JSON.json_t list
+)
+"list_entries.ml" 114 3546 3550 "list_entries.ml" 114 3546 3558
+type(
+  (string * Index_parser.entry -> JSON.json_t) ->
+  (string * Index_parser.entry) list -> JSON.json_t list
+)
+ident(
+  ext_ref List.map
+)
+"list_entries.ml" 115 3561 3572 "list_entries.ml" 115 3561 3576
+type(
+  string
+)
+ident(
+  def name "list_entries.ml" 123 3893 3901 "list_entries.ml" 157 5199 5232
+)
+"list_entries.ml" 115 3561 3610 "list_entries.ml" 115 3561 3624
+type(
+  string option
+)
+ident(
+  def printable_name "list_entries.ml" 123 3893 3901 "list_entries.ml" 157 5199 5232
+)
+"list_entries.ml" 116 3626 3652 "list_entries.ml" 116 3626 3656
+type(
+  string
+)
+ident(
+  def arch "list_entries.ml" 123 3893 3901 "list_entries.ml" 157 5199 5232
+)
+"list_entries.ml" 117 3658 3684 "list_entries.ml" 117 3658 3688
+type(
+  int64
+)
+ident(
+  def size "list_entries.ml" 123 3893 3901 "list_entries.ml" 157 5199 5232
+)
+"list_entries.ml" 118 3690 3727 "list_entries.ml" 118 3690 3742
+type(
+  int64 option
+)
+ident(
+  def compressed_size "list_entries.ml" 123 3893 3901 "list_entries.ml" 157 5199 5232
+)
+"list_entries.ml" 119 3744 3771 "list_entries.ml" 119 3744 3776
+type(
+  (string * string) list
+)
+ident(
+  def notes "list_entries.ml" 123 3893 3901 "list_entries.ml" 157 5199 5232
+)
+"list_entries.ml" 120 3778 3807 "list_entries.ml" 120 3778 3814
+type(
+  string list option
+)
+ident(
+  def aliases "list_entries.ml" 123 3893 3901 "list_entries.ml" 157 5199 5232
+)
+"list_entries.ml" 121 3816 3844 "list_entries.ml" 121 3816 3850
+type(
+  string option
+)
+ident(
+  def osinfo "list_entries.ml" 123 3893 3901 "list_entries.ml" 157 5199 5232
+)
+"list_entries.ml" 122 3852 3880 "list_entries.ml" 122 3852 3886
+type(
+  bool
+)
+ident(
+  def hidden "list_entries.ml" 123 3893 3901 "list_entries.ml" 157 5199 5232
+)
+"list_entries.ml" 115 3561 3578 "list_entries.ml" 122 3852 3888
+type(
+  Index_parser.entry
+)
+"list_entries.ml" 115 3561 3571 "list_entries.ml" 122 3852 3889
+type(
+  string * Index_parser.entry
+)
+"list_entries.ml" 123 3893 3905 "list_entries.ml" 123 3893 3909
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 123 3893 3914 "list_entries.ml" 123 3893 3926
+type(
+  string
+)
+"list_entries.ml" 123 3893 3940 "list_entries.ml" 123 3893 3944
+type(
+  string
+)
+ident(
+  int_ref name "list_entries.ml" 115 3561 3572 "list_entries.ml" 115 3561 3576
+)
+"list_entries.ml" 123 3893 3928 "list_entries.ml" 123 3893 3944
+type(
+  JSON.json_t
+)
+"list_entries.ml" 123 3893 3914 "list_entries.ml" 123 3893 3944
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 123 3893 3912 "list_entries.ml" 123 3893 3946
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 124 3950 3962 "list_entries.ml" 124 3950 3966
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 125 3969 3985 "list_entries.ml" 125 3969 3999
+type(
+  string option
+)
+ident(
+  int_ref printable_name "list_entries.ml" 115 3561 3610 "list_entries.ml" 115 3561 3624
+)
+"list_entries.ml" 126 4005 4017 "list_entries.ml" 126 4005 4021
+type(
+  string option
+)
+"list_entries.ml" 126 4005 4025 "list_entries.ml" 126 4005 4029
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 123 3893 3905 "list_entries.ml" 123 3893 3909
+)
+"list_entries.ml" 127 4030 4047 "list_entries.ml" 127 4030 4050
+type(
+  string
+)
+ident(
+  def str "list_entries.ml" 127 4030 4054 "list_entries.ml" 127 4030 4092
+)
+"list_entries.ml" 127 4030 4042 "list_entries.ml" 127 4030 4050
+type(
+  string option
+)
+"list_entries.ml" 127 4030 4055 "list_entries.ml" 127 4030 4066
+type(
+  string
+)
+"list_entries.ml" 127 4030 4080 "list_entries.ml" 127 4030 4083
+type(
+  string
+)
+ident(
+  int_ref str "list_entries.ml" 127 4030 4047 "list_entries.ml" 127 4030 4050
+)
+"list_entries.ml" 127 4030 4068 "list_entries.ml" 127 4030 4083
+type(
+  JSON.json_t
+)
+"list_entries.ml" 127 4030 4054 "list_entries.ml" 127 4030 4084
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 127 4030 4088 "list_entries.ml" 127 4030 4092
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 123 3893 3905 "list_entries.ml" 123 3893 3909
+)
+"list_entries.ml" 127 4030 4054 "list_entries.ml" 127 4030 4092
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 125 3969 3979 "list_entries.ml" 127 4030 4092
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 128 4096 4108 "list_entries.ml" 128 4096 4112
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 128 4096 4116 "list_entries.ml" 128 4096 4122
+type(
+  string
+)
+"list_entries.ml" 128 4096 4136 "list_entries.ml" 128 4096 4140
+type(
+  string
+)
+ident(
+  int_ref arch "list_entries.ml" 116 3626 3652 "list_entries.ml" 116 3626 3656
+)
+"list_entries.ml" 128 4096 4124 "list_entries.ml" 128 4096 4140
+type(
+  JSON.json_t
+)
+"list_entries.ml" 128 4096 4115 "list_entries.ml" 128 4096 4141
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 128 4096 4145 "list_entries.ml" 128 4096 4149
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 124 3950 3962 "list_entries.ml" 124 3950 3966
+)
+"list_entries.ml" 128 4096 4115 "list_entries.ml" 128 4096 4149
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 129 4153 4165 "list_entries.ml" 129 4153 4169
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 129 4153 4173 "list_entries.ml" 129 4153 4179
+type(
+  string
+)
+"list_entries.ml" 129 4153 4192 "list_entries.ml" 129 4153 4196
+type(
+  int64
+)
+ident(
+  int_ref size "list_entries.ml" 117 3658 3684 "list_entries.ml" 117 3658 3688
+)
+"list_entries.ml" 129 4153 4181 "list_entries.ml" 129 4153 4196
+type(
+  JSON.json_t
+)
+"list_entries.ml" 129 4153 4172 "list_entries.ml" 129 4153 4197
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 129 4153 4201 "list_entries.ml" 129 4153 4205
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 128 4096 4108 "list_entries.ml" 128 4096 4112
+)
+"list_entries.ml" 129 4153 4172 "list_entries.ml" 129 4153 4205
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 130 4209 4221 "list_entries.ml" 130 4209 4225
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 131 4228 4244 "list_entries.ml" 131 4228 4259
+type(
+  int64 option
+)
+ident(
+  int_ref compressed_size "list_entries.ml" 118 3690 3727 "list_entries.ml" 118 3690 3742
+)
+"list_entries.ml" 132 4265 4277 "list_entries.ml" 132 4265 4281
+type(
+  int64 option
+)
+"list_entries.ml" 132 4265 4285 "list_entries.ml" 132 4265 4289
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 129 4153 4165 "list_entries.ml" 129 4153 4169
+)
+"list_entries.ml" 133 4290 4307 "list_entries.ml" 133 4290 4308
+type(
+  int64
+)
+ident(
+  def n "list_entries.ml" 133 4290 4312 "list_entries.ml" 133 4290 4372
+)
+"list_entries.ml" 133 4290 4302 "list_entries.ml" 133 4290 4308
+type(
+  int64 option
+)
+"list_entries.ml" 133 4290 4313 "list_entries.ml" 133 4290 4330
+type(
+  string
+)
+"list_entries.ml" 133 4290 4345 "list_entries.ml" 133 4290 4360
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Int64.to_string
+)
+"list_entries.ml" 133 4290 4361 "list_entries.ml" 133 4290 4362
+type(
+  int64
+)
+ident(
+  int_ref n "list_entries.ml" 133 4290 4307 "list_entries.ml" 133 4290 4308
+)
+"list_entries.ml" 133 4290 4344 "list_entries.ml" 133 4290 4363
+call(
+  stack
+)
+type(
+  string
+)
+"list_entries.ml" 133 4290 4332 "list_entries.ml" 133 4290 4363
+type(
+  JSON.json_t
+)
+"list_entries.ml" 133 4290 4312 "list_entries.ml" 133 4290 4364
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 133 4290 4368 "list_entries.ml" 133 4290 4372
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 129 4153 4165 "list_entries.ml" 129 4153 4169
+)
+"list_entries.ml" 133 4290 4312 "list_entries.ml" 133 4290 4372
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 131 4228 4238 "list_entries.ml" 133 4290 4372
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 134 4376 4388 "list_entries.ml" 134 4376 4392
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 135 4395 4409 "list_entries.ml" 135 4395 4419
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 136 4422 4434 "list_entries.ml" 136 4422 4449
+type(
+  (string * string ->
+   (string * JSON.json_t) list -> (string * JSON.json_t) list) ->
+  (string * string) list ->
+  (string * JSON.json_t) list -> (string * JSON.json_t) list
+)
+ident(
+  ext_ref List.fold_right
+)
+"list_entries.ml" 137 4452 4471 "list_entries.ml" 137 4452 4475
+type(
+  string
+)
+ident(
+  def lang "list_entries.ml" 137 4452 4488 "list_entries.ml" 142 4616 4668
+)
+"list_entries.ml" 137 4452 4477 "list_entries.ml" 137 4452 4486
+type(
+  string
+)
+ident(
+  def langnotes "list_entries.ml" 137 4452 4488 "list_entries.ml" 142 4616 4668
+)
+"list_entries.ml" 137 4452 4470 "list_entries.ml" 137 4452 4487
+type(
+  string * string
+)
+"list_entries.ml" 137 4452 4488 "list_entries.ml" 137 4452 4491
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  def acc "list_entries.ml" 138 4495 4511 "list_entries.ml" 142 4616 4668
+)
+"list_entries.ml" 138 4495 4515 "list_entries.ml" 138 4495 4519
+type(
+  string
+)
+"list_entries.ml" 139 4522 4546 "list_entries.ml" 139 4522 4550
+type(
+  string
+)
+ident(
+  int_ref lang "list_entries.ml" 137 4452 4471 "list_entries.ml" 137 4452 4475
+)
+"list_entries.ml" 140 4556 4576 "list_entries.ml" 140 4556 4578
+type(
+  string
+)
+"list_entries.ml" 140 4556 4582 "list_entries.ml" 140 4556 4585
+type(
+  string
+)
+"list_entries.ml" 141 4586 4606 "list_entries.ml" 141 4586 4607
+type(
+  string
+)
+ident(
+  def x "list_entries.ml" 141 4586 4611 "list_entries.ml" 141 4586 4612
+)
+"list_entries.ml" 141 4586 4611 "list_entries.ml" 141 4586 4612
+type(
+  string
+)
+ident(
+  int_ref x "list_entries.ml" 141 4586 4606 "list_entries.ml" 141 4586 4607
+)
+"list_entries.ml" 139 4522 4540 "list_entries.ml" 141 4586 4612
+type(
+  string
+)
+"list_entries.ml" 142 4616 4633 "list_entries.ml" 142 4616 4637
+type(
+  string
+)
+ident(
+  int_ref lang "list_entries.ml" 138 4495 4515 "list_entries.ml" 138 4495 4519
+)
+"list_entries.ml" 142 4616 4651 "list_entries.ml" 142 4616 4660
+type(
+  string
+)
+ident(
+  int_ref langnotes "list_entries.ml" 137 4452 4477 "list_entries.ml" 137 4452 4486
+)
+"list_entries.ml" 142 4616 4639 "list_entries.ml" 142 4616 4660
+type(
+  JSON.json_t
+)
+"list_entries.ml" 142 4616 4632 "list_entries.ml" 142 4616 4661
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 142 4616 4665 "list_entries.ml" 142 4616 4668
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref acc "list_entries.ml" 137 4452 4488 "list_entries.ml" 137 4452 4491
+)
+"list_entries.ml" 142 4616 4632 "list_entries.ml" 142 4616 4668
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 138 4495 4511 "list_entries.ml" 142 4616 4668
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 136 4422 4450 "list_entries.ml" 143 4669 4682
+type(
+  string * string ->
+  (string * JSON.json_t) list -> (string * JSON.json_t) list
+)
+"list_entries.ml" 143 4669 4683 "list_entries.ml" 143 4669 4688
+type(
+  (string * string) list
+)
+ident(
+  int_ref notes "list_entries.ml" 119 3744 3771 "list_entries.ml" 119 3744 3776
+)
+"list_entries.ml" 143 4669 4689 "list_entries.ml" 143 4669 4691
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 136 4422 4434 "list_entries.ml" 143 4669 4691
+call(
+  stack
+)
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 144 4695 4708 "list_entries.ml" 144 4695 4719
+type(
+  (string * JSON.json_t) list -> int
+)
+ident(
+  ext_ref List.length
+)
+"list_entries.ml" 144 4695 4720 "list_entries.ml" 144 4695 4730
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref json_notes "list_entries.ml" 135 4395 4409 "list_entries.ml" 135 4395 4419
+)
+"list_entries.ml" 144 4695 4708 "list_entries.ml" 144 4695 4730
+call(
+  stack
+)
+type(
+  int
+)
+"list_entries.ml" 144 4695 4731 "list_entries.ml" 144 4695 4732
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"list_entries.ml" 144 4695 4733 "list_entries.ml" 144 4695 4734
+type(
+  int
+)
+"list_entries.ml" 144 4695 4708 "list_entries.ml" 144 4695 4734
+type(
+  bool
+)
+"list_entries.ml" 144 4695 4740 "list_entries.ml" 144 4695 4744
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 130 4209 4221 "list_entries.ml" 130 4209 4225
+)
+"list_entries.ml" 145 4745 4761 "list_entries.ml" 145 4745 4768
+type(
+  string
+)
+"list_entries.ml" 145 4745 4780 "list_entries.ml" 145 4745 4790
+type(
+  JSON.field list
+)
+ident(
+  int_ref json_notes "list_entries.ml" 135 4395 4409 "list_entries.ml" 135 4395 4419
+)
+"list_entries.ml" 145 4745 4770 "list_entries.ml" 145 4745 4790
+type(
+  JSON.json_t
+)
+"list_entries.ml" 145 4745 4760 "list_entries.ml" 145 4745 4791
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 145 4745 4795 "list_entries.ml" 145 4745 4799
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 130 4209 4221 "list_entries.ml" 130 4209 4225
+)
+"list_entries.ml" 145 4745 4760 "list_entries.ml" 145 4745 4799
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 144 4695 4705 "list_entries.ml" 145 4745 4799
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 135 4395 4405 "list_entries.ml" 145 4745 4799
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 146 4803 4815 "list_entries.ml" 146 4803 4819
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 147 4822 4838 "list_entries.ml" 147 4822 4845
+type(
+  string list option
+)
+ident(
+  int_ref aliases "list_entries.ml" 120 3778 3807 "list_entries.ml" 120 3778 3814
+)
+"list_entries.ml" 148 4851 4863 "list_entries.ml" 148 4851 4867
+type(
+  string list option
+)
+"list_entries.ml" 148 4851 4871 "list_entries.ml" 148 4851 4875
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 134 4376 4388 "list_entries.ml" 134 4376 4392
+)
+"list_entries.ml" 149 4876 4893 "list_entries.ml" 149 4876 4894
+type(
+  string list
+)
+ident(
+  def l "list_entries.ml" 150 4898 4910 "list_entries.ml" 151 4957 5001
+)
+"list_entries.ml" 149 4876 4888 "list_entries.ml" 149 4876 4894
+type(
+  string list option
+)
+"list_entries.ml" 150 4898 4914 "list_entries.ml" 150 4898 4915
+type(
+  JSON.json_t list
+)
+"list_entries.ml" 150 4898 4918 "list_entries.ml" 150 4898 4926
+type(
+  (string -> JSON.json_t) -> string list -> JSON.json_t list
+)
+ident(
+  ext_ref List.map
+)
+"list_entries.ml" 150 4898 4932 "list_entries.ml" 150 4898 4933
+type(
+  string
+)
+ident(
+  def x "list_entries.ml" 150 4898 4937 "list_entries.ml" 150 4898 4950
+)
+"list_entries.ml" 150 4898 4949 "list_entries.ml" 150 4898 4950
+type(
+  string
+)
+ident(
+  int_ref x "list_entries.ml" 150 4898 4932 "list_entries.ml" 150 4898 4933
+)
+"list_entries.ml" 150 4898 4937 "list_entries.ml" 150 4898 4950
+type(
+  JSON.json_t
+)
+"list_entries.ml" 150 4898 4927 "list_entries.ml" 150 4898 4951
+type(
+  string -> JSON.json_t
+)
+"list_entries.ml" 150 4898 4952 "list_entries.ml" 150 4898 4953
+type(
+  string list
+)
+ident(
+  int_ref l "list_entries.ml" 149 4876 4893 "list_entries.ml" 149 4876 4894
+)
+"list_entries.ml" 150 4898 4918 "list_entries.ml" 150 4898 4953
+call(
+  stack
+)
+type(
+  JSON.json_t list
+)
+"list_entries.ml" 151 4957 4970 "list_entries.ml" 151 4957 4979
+type(
+  string
+)
+"list_entries.ml" 151 4957 4991 "list_entries.ml" 151 4957 4992
+type(
+  JSON.json_t list
+)
+ident(
+  int_ref l "list_entries.ml" 150 4898 4914 "list_entries.ml" 150 4898 4915
+)
+"list_entries.ml" 151 4957 4981 "list_entries.ml" 151 4957 4992
+type(
+  JSON.json_t
+)
+"list_entries.ml" 151 4957 4969 "list_entries.ml" 151 4957 4993
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 151 4957 4997 "list_entries.ml" 151 4957 5001
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 134 4376 4388 "list_entries.ml" 134 4376 4392
+)
+"list_entries.ml" 151 4957 4969 "list_entries.ml" 151 4957 5001
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 150 4898 4910 "list_entries.ml" 151 4957 5001
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 147 4822 4832 "list_entries.ml" 151 4957 5001
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 152 5005 5017 "list_entries.ml" 152 5005 5021
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 153 5024 5040 "list_entries.ml" 153 5024 5046
+type(
+  string option
+)
+ident(
+  int_ref osinfo "list_entries.ml" 121 3816 3844 "list_entries.ml" 121 3816 3850
+)
+"list_entries.ml" 154 5052 5064 "list_entries.ml" 154 5052 5068
+type(
+  string option
+)
+"list_entries.ml" 154 5052 5072 "list_entries.ml" 154 5052 5076
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 146 4803 4815 "list_entries.ml" 146 4803 4819
+)
+"list_entries.ml" 155 5077 5094 "list_entries.ml" 155 5077 5097
+type(
+  string
+)
+ident(
+  def str "list_entries.ml" 155 5077 5101 "list_entries.ml" 155 5077 5136
+)
+"list_entries.ml" 155 5077 5089 "list_entries.ml" 155 5077 5097
+type(
+  string option
+)
+"list_entries.ml" 155 5077 5102 "list_entries.ml" 155 5077 5110
+type(
+  string
+)
+"list_entries.ml" 155 5077 5124 "list_entries.ml" 155 5077 5127
+type(
+  string
+)
+ident(
+  int_ref str "list_entries.ml" 155 5077 5094 "list_entries.ml" 155 5077 5097
+)
+"list_entries.ml" 155 5077 5112 "list_entries.ml" 155 5077 5127
+type(
+  JSON.json_t
+)
+"list_entries.ml" 155 5077 5101 "list_entries.ml" 155 5077 5128
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 155 5077 5132 "list_entries.ml" 155 5077 5136
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 146 4803 4815 "list_entries.ml" 146 4803 4819
+)
+"list_entries.ml" 155 5077 5101 "list_entries.ml" 155 5077 5136
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 153 5024 5034 "list_entries.ml" 155 5077 5136
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 156 5140 5152 "list_entries.ml" 156 5140 5156
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 156 5140 5160 "list_entries.ml" 156 5140 5168
+type(
+  string
+)
+"list_entries.ml" 156 5140 5180 "list_entries.ml" 156 5140 5186
+type(
+  bool
+)
+ident(
+  int_ref hidden "list_entries.ml" 122 3852 3880 "list_entries.ml" 122 3852 3886
+)
+"list_entries.ml" 156 5140 5170 "list_entries.ml" 156 5140 5186
+type(
+  JSON.json_t
+)
+"list_entries.ml" 156 5140 5159 "list_entries.ml" 156 5140 5187
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 156 5140 5191 "list_entries.ml" 156 5140 5195
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref item "list_entries.ml" 152 5005 5017 "list_entries.ml" 152 5005 5021
+)
+"list_entries.ml" 156 5140 5159 "list_entries.ml" 156 5140 5195
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 157 5199 5218 "list_entries.ml" 157 5199 5226
+type(
+  JSON.field list -> JSON.field list
+)
+ident(
+  ext_ref List.rev
+)
+"list_entries.ml" 157 5199 5227 "list_entries.ml" 157 5199 5231
+type(
+  JSON.field list
+)
+ident(
+  int_ref item "list_entries.ml" 156 5140 5152 "list_entries.ml" 156 5140 5156
+)
+"list_entries.ml" 157 5199 5217 "list_entries.ml" 157 5199 5232
+call(
+  stack
+)
+type(
+  JSON.field list
+)
+"list_entries.ml" 157 5199 5207 "list_entries.ml" 157 5199 5232
+type(
+  JSON.json_t
+)
+"list_entries.ml" 156 5140 5148 "list_entries.ml" 157 5199 5232
+type(
+  JSON.json_t
+)
+"list_entries.ml" 152 5005 5013 "list_entries.ml" 157 5199 5232
+type(
+  JSON.json_t
+)
+"list_entries.ml" 146 4803 4811 "list_entries.ml" 157 5199 5232
+type(
+  JSON.json_t
+)
+"list_entries.ml" 134 4376 4384 "list_entries.ml" 157 5199 5232
+type(
+  JSON.json_t
+)
+"list_entries.ml" 130 4209 4217 "list_entries.ml" 157 5199 5232
+type(
+  JSON.json_t
+)
+"list_entries.ml" 129 4153 4161 "list_entries.ml" 157 5199 5232
+type(
+  JSON.json_t
+)
+"list_entries.ml" 128 4096 4104 "list_entries.ml" 157 5199 5232
+type(
+  JSON.json_t
+)
+"list_entries.ml" 124 3950 3958 "list_entries.ml" 157 5199 5232
+type(
+  JSON.json_t
+)
+"list_entries.ml" 123 3893 3901 "list_entries.ml" 157 5199 5232
+type(
+  JSON.json_t
+)
+"list_entries.ml" 114 3546 3559 "list_entries.ml" 158 5233 5238
+type(
+  string * Index_parser.entry -> JSON.json_t
+)
+"list_entries.ml" 158 5233 5239 "list_entries.ml" 158 5233 5244
+type(
+  (string * Index_parser.entry) list
+)
+ident(
+  int_ref index "list_entries.ml" 99 3060 3091 "list_entries.ml" 99 3060 3096
+)
+"list_entries.ml" 114 3546 3550 "list_entries.ml" 158 5233 5244
+call(
+  stack
+)
+type(
+  JSON.json_t list
+)
+"list_entries.ml" 159 5248 5254 "list_entries.ml" 159 5248 5257
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 160 5262 5266 "list_entries.ml" 160 5262 5275
+type(
+  string
+)
+"list_entries.ml" 160 5262 5286 "list_entries.ml" 160 5262 5287
+type(
+  int
+)
+"list_entries.ml" 160 5262 5277 "list_entries.ml" 160 5262 5287
+type(
+  JSON.json_t
+)
+"list_entries.ml" 160 5262 5266 "list_entries.ml" 160 5262 5287
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 161 5289 5293 "list_entries.ml" 161 5289 5302
+type(
+  string
+)
+"list_entries.ml" 161 5289 5314 "list_entries.ml" 161 5289 5326
+type(
+  JSON.json_t list
+)
+ident(
+  int_ref json_sources "list_entries.ml" 100 3099 3105 "list_entries.ml" 100 3099 3117
+)
+"list_entries.ml" 161 5289 5304 "list_entries.ml" 161 5289 5326
+type(
+  JSON.json_t
+)
+"list_entries.ml" 161 5289 5293 "list_entries.ml" 161 5289 5326
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 162 5328 5332 "list_entries.ml" 162 5328 5343
+type(
+  string
+)
+"list_entries.ml" 162 5328 5355 "list_entries.ml" 162 5328 5369
+type(
+  JSON.json_t list
+)
+ident(
+  int_ref json_templates "list_entries.ml" 113 3523 3529 "list_entries.ml" 113 3523 3543
+)
+"list_entries.ml" 162 5328 5345 "list_entries.ml" 162 5328 5369
+type(
+  JSON.json_t
+)
+"list_entries.ml" 162 5328 5332 "list_entries.ml" 162 5328 5369
+type(
+  string * JSON.json_t
+)
+"list_entries.ml" 159 5248 5260 "list_entries.ml" 163 5371 5374
+type(
+  (string * JSON.json_t) list
+)
+"list_entries.ml" 164 5378 5380 "list_entries.ml" 164 5378 5392
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"list_entries.ml" 164 5378 5394 "list_entries.ml" 164 5378 5412
+type(
+  ?fmt:JSON.output_format -> JSON.doc -> string
+)
+ident(
+  ext_ref JSON.string_of_doc
+)
+"list_entries.ml" 164 5378 5418 "list_entries.ml" 164 5378 5431
+type(
+  JSON.output_format
+)
+"list_entries.ml" 164 5378 5432 "list_entries.ml" 164 5378 5435
+type(
+  JSON.doc
+)
+ident(
+  int_ref doc "list_entries.ml" 159 5248 5254 "list_entries.ml" 159 5248 5257
+)
+"list_entries.ml" 164 5378 5393 "list_entries.ml" 164 5378 5436
+call(
+  stack
+)
+type(
+  string
+)
+"list_entries.ml" 164 5378 5380 "list_entries.ml" 164 5378 5436
+call(
+  stack
+)
+type(
+  unit
+)
+"list_entries.ml" 165 5438 5440 "list_entries.ml" 165 5438 5453
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Pervasives.print_newline
+)
+"list_entries.ml" 165 5438 5454 "list_entries.ml" 165 5438 5456
+type(
+  unit
+)
+"list_entries.ml" 165 5438 5440 "list_entries.ml" 165 5438 5456
+call(
+  tail
+)
+type(
+  unit
+)
+"list_entries.ml" 164 5378 5380 "list_entries.ml" 165 5438 5456
+type(
+  unit
+)
+"list_entries.ml" 159 5248 5250 "list_entries.ml" 165 5438 5456
+type(
+  unit
+)
+"list_entries.ml" 113 3523 3525 "list_entries.ml" 165 5438 5456
+type(
+  unit
+)
+"list_entries.ml" 100 3099 3101 "list_entries.ml" 165 5438 5456
+type(
+  unit
+)

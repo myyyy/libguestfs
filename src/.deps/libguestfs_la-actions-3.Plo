@@ -62,7 +62,18 @@ libguestfs_la-actions-3.lo: actions-3.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/socket2.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/rpc/xdr.h \
- /usr/include/pcre.h /usr/include/libvirt/libvirt.h ../gnulib/lib/hash.h \
+ /usr/include/pcre.h /usr/local/include/libvirt/libvirt.h \
+ /usr/local/include/libvirt/libvirt-host.h \
+ /usr/local/include/libvirt/libvirt-domain.h \
+ /usr/local/include/libvirt/libvirt-domain-snapshot.h \
+ /usr/local/include/libvirt/libvirt-event.h \
+ /usr/local/include/libvirt/libvirt-interface.h \
+ /usr/local/include/libvirt/libvirt-network.h \
+ /usr/local/include/libvirt/libvirt-nodedev.h \
+ /usr/local/include/libvirt/libvirt-nwfilter.h \
+ /usr/local/include/libvirt/libvirt-secret.h \
+ /usr/local/include/libvirt/libvirt-storage.h \
+ /usr/local/include/libvirt/libvirt-stream.h ../gnulib/lib/hash.h \
  guestfs-internal-frontend.h guestfs-internal-all.h \
  guestfs-internal-frontend-cleanups.h /usr/include/sys/sdt.h \
  /usr/include/sys/sdt-config.h guestfs-internal-actions.h \
@@ -264,7 +275,29 @@ guestfs-internal.h:
 
 /usr/include/pcre.h:
 
-/usr/include/libvirt/libvirt.h:
+/usr/local/include/libvirt/libvirt.h:
+
+/usr/local/include/libvirt/libvirt-host.h:
+
+/usr/local/include/libvirt/libvirt-domain.h:
+
+/usr/local/include/libvirt/libvirt-domain-snapshot.h:
+
+/usr/local/include/libvirt/libvirt-event.h:
+
+/usr/local/include/libvirt/libvirt-interface.h:
+
+/usr/local/include/libvirt/libvirt-network.h:
+
+/usr/local/include/libvirt/libvirt-nodedev.h:
+
+/usr/local/include/libvirt/libvirt-nwfilter.h:
+
+/usr/local/include/libvirt/libvirt-secret.h:
+
+/usr/local/include/libvirt/libvirt-storage.h:
+
+/usr/local/include/libvirt/libvirt-stream.h:
 
 ../gnulib/lib/hash.h:
 

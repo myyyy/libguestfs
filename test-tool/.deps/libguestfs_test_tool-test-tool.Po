@@ -64,8 +64,7 @@ libguestfs_test_tool-test-tool.o: test-tool.c ../config.h \
  /usr/include/locale.h /usr/include/x86_64-linux-gnu/bits/locale.h \
  /usr/include/libintl.h ../src/guestfs.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h ../gnulib/lib/ignore-value.h
+ ../src/guestfs-internal-frontend-cleanups.h ../gnulib/lib/ignore-value.h
 
 ../config.h:
 
@@ -264,7 +263,5 @@ libguestfs_test_tool-test-tool.o: test-tool.c ../config.h \
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 ../gnulib/lib/ignore-value.h:

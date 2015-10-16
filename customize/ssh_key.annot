@@ -1,0 +1,1831 @@
+"ssh_key.ml" 35 978 986 "ssh_key.ml" 35 978 1000
+type(
+  string -> ssh_key_selector
+)
+ident(
+  def parse_selector "ssh_key.ml" 35 978 978 --
+)
+"ssh_key.ml" 35 978 1001 "ssh_key.ml" 35 978 1004
+type(
+  string
+)
+ident(
+  def arg "ssh_key.ml" 36 1007 1009 "ssh_key.ml" 36 1007 1056
+)
+"ssh_key.ml" 36 1007 1009 "ssh_key.ml" 36 1007 1028
+type(
+  string -> string list -> ssh_key_selector
+)
+ident(
+  int_ref parse_selector_list "ssh_key.ml" 38 1058 1062 "ssh_key.ml" 38 1058 1081
+)
+"ssh_key.ml" 36 1007 1029 "ssh_key.ml" 36 1007 1032
+type(
+  string
+)
+ident(
+  int_ref arg "ssh_key.ml" 35 978 1001 "ssh_key.ml" 35 978 1004
+)
+"ssh_key.ml" 36 1007 1034 "ssh_key.ml" 36 1007 1047
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"ssh_key.ml" 36 1007 1048 "ssh_key.ml" 36 1007 1051
+type(
+  string
+)
+"ssh_key.ml" 36 1007 1052 "ssh_key.ml" 36 1007 1055
+type(
+  string
+)
+ident(
+  int_ref arg "ssh_key.ml" 35 978 1001 "ssh_key.ml" 35 978 1004
+)
+"ssh_key.ml" 36 1007 1033 "ssh_key.ml" 36 1007 1056
+call(
+  stack
+)
+type(
+  string list
+)
+"ssh_key.ml" 36 1007 1009 "ssh_key.ml" 36 1007 1056
+call(
+  tail
+)
+type(
+  ssh_key_selector
+)
+"ssh_key.ml" 38 1058 1062 "ssh_key.ml" 38 1058 1081
+type(
+  string -> string list -> ssh_key_selector
+)
+ident(
+  def parse_selector_list "ssh_key.ml" 35 978 978 --
+)
+"ssh_key.ml" 38 1058 1082 "ssh_key.ml" 38 1058 1090
+type(
+  string
+)
+ident(
+  def orig_arg "ssh_key.ml" 38 1058 1093 "ssh_key.ml" 46 1218 1293
+)
+"ssh_key.ml" 39 1102 1106 "ssh_key.ml" 39 1102 1108
+type(
+  string list
+)
+"ssh_key.ml" 39 1102 1113 "ssh_key.ml" 39 1102 1115
+type(
+  string
+)
+"ssh_key.ml" 39 1102 1111 "ssh_key.ml" 39 1102 1117
+type(
+  string list
+)
+"ssh_key.ml" 39 1102 1106 "ssh_key.ml" 39 1102 1117
+type(
+  string list
+)
+"ssh_key.ml" 40 1121 1125 "ssh_key.ml" 40 1121 1134
+type(
+  ssh_key_selector
+)
+"ssh_key.ml" 41 1135 1141 "ssh_key.ml" 41 1135 1147
+type(
+  string
+)
+"ssh_key.ml" 41 1135 1149 "ssh_key.ml" 41 1135 1150
+type(
+  string
+)
+ident(
+  def f "ssh_key.ml" 42 1156 1160 "ssh_key.ml" 42 1156 1169
+)
+"ssh_key.ml" 41 1135 1139 "ssh_key.ml" 41 1135 1152
+type(
+  string list
+)
+"ssh_key.ml" 42 1156 1168 "ssh_key.ml" 42 1156 1169
+type(
+  string
+)
+ident(
+  int_ref f "ssh_key.ml" 41 1135 1149 "ssh_key.ml" 41 1135 1150
+)
+"ssh_key.ml" 42 1156 1160 "ssh_key.ml" 42 1156 1169
+type(
+  ssh_key_selector
+)
+"ssh_key.ml" 43 1170 1176 "ssh_key.ml" 43 1170 1184
+type(
+  string
+)
+"ssh_key.ml" 43 1170 1186 "ssh_key.ml" 43 1170 1187
+type(
+  string
+)
+ident(
+  def s "ssh_key.ml" 44 1193 1197 "ssh_key.ml" 44 1193 1208
+)
+"ssh_key.ml" 43 1170 1174 "ssh_key.ml" 43 1170 1189
+type(
+  string list
+)
+"ssh_key.ml" 44 1193 1207 "ssh_key.ml" 44 1193 1208
+type(
+  string
+)
+ident(
+  int_ref s "ssh_key.ml" 43 1170 1186 "ssh_key.ml" 43 1170 1187
+)
+"ssh_key.ml" 44 1193 1197 "ssh_key.ml" 44 1193 1208
+type(
+  ssh_key_selector
+)
+"ssh_key.ml" 45 1209 1213 "ssh_key.ml" 45 1209 1214
+type(
+  string list
+)
+"ssh_key.ml" 46 1218 1222 "ssh_key.ml" 46 1218 1227
+type(
+  ?exit_code:int ->
+  (string -> ssh_key_selector, unit, string, ssh_key_selector) format4 ->
+  string -> ssh_key_selector
+)
+ident(
+  ext_ref Common_utils.error
+)
+"ssh_key.ml" 46 1218 1229 "ssh_key.ml" 46 1218 1231
+type(
+  (string -> ssh_key_selector, unit, string, string, string,
+   ssh_key_selector)
+  format6 ->
+  (string -> ssh_key_selector, unit, string, ssh_key_selector) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"ssh_key.ml" 46 1218 1231 "ssh_key.ml" 46 1218 1283
+type(
+  (string -> ssh_key_selector, unit, string, string, string,
+   ssh_key_selector)
+  format6
+)
+"ssh_key.ml" 46 1218 1228 "ssh_key.ml" 46 1218 1284
+type(
+  (string -> ssh_key_selector, unit, string, ssh_key_selector) format4
+)
+"ssh_key.ml" 46 1218 1285 "ssh_key.ml" 46 1218 1293
+type(
+  string
+)
+ident(
+  int_ref orig_arg "ssh_key.ml" 38 1058 1082 "ssh_key.ml" 38 1058 1090
+)
+"ssh_key.ml" 46 1218 1222 "ssh_key.ml" 46 1218 1293
+call(
+  tail
+)
+type(
+  ssh_key_selector
+)
+"ssh_key.ml" 38 1058 1093 "ssh_key.ml" 46 1218 1293
+type(
+  string list -> ssh_key_selector
+)
+"ssh_key.ml" 51 1408 1412 "ssh_key.ml" 51 1408 1421
+type(
+  Str.regexp
+)
+ident(
+  def pubkey_re "ssh_key.ml" 52 1450 1450 --
+)
+"ssh_key.ml" 51 1408 1424 "ssh_key.ml" 51 1408 1434
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"ssh_key.ml" 51 1408 1435 "ssh_key.ml" 51 1408 1449
+type(
+  string
+)
+"ssh_key.ml" 51 1408 1424 "ssh_key.ml" 51 1408 1449
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"ssh_key.ml" 52 1450 1454 "ssh_key.ml" 52 1450 1470
+type(
+  Str.regexp
+)
+ident(
+  def pubkey_ignore_re "ssh_key.ml" 54 1502 1502 --
+)
+"ssh_key.ml" 52 1450 1473 "ssh_key.ml" 52 1450 1483
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"ssh_key.ml" 52 1450 1484 "ssh_key.ml" 52 1450 1500
+type(
+  string
+)
+"ssh_key.ml" 52 1450 1473 "ssh_key.ml" 52 1450 1500
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"ssh_key.ml" 54 1502 1506 "ssh_key.ml" 54 1502 1527
+type(
+  unit -> string
+)
+ident(
+  def local_user_ssh_pubkey "ssh_key.ml" 81 2285 2285 --
+)
+"ssh_key.ml" 54 1502 1528 "ssh_key.ml" 54 1502 1530
+type(
+  unit
+)
+"ssh_key.ml" 55 1533 1539 "ssh_key.ml" 55 1533 1547
+type(
+  string
+)
+"ssh_key.ml" 56 1550 1558 "ssh_key.ml" 56 1550 1564
+type(
+  string -> string
+)
+ident(
+  ext_ref Unix.getenv
+)
+"ssh_key.ml" 56 1550 1565 "ssh_key.ml" 56 1550 1571
+type(
+  string
+)
+"ssh_key.ml" 56 1550 1558 "ssh_key.ml" 56 1550 1571
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 57 1572 1581 "ssh_key.ml" 57 1572 1590
+type(
+  exn
+)
+"ssh_key.ml" 58 1594 1600 "ssh_key.ml" 58 1594 1605
+type(
+  ?exit_code:int -> (string, unit, string, string) format4 -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"ssh_key.ml" 58 1594 1607 "ssh_key.ml" 58 1594 1609
+type(
+  (string, unit, string, string, string, string) format6 ->
+  (string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"ssh_key.ml" 58 1594 1609 "ssh_key.ml" 58 1594 1660
+type(
+  (string, unit, string, string, string, string) format6
+)
+"ssh_key.ml" 58 1594 1606 "ssh_key.ml" 58 1594 1661
+type(
+  (string, unit, string, string) format4
+)
+"ssh_key.ml" 58 1594 1600 "ssh_key.ml" 58 1594 1661
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 56 1550 1554 "ssh_key.ml" 58 1594 1661
+type(
+  string
+)
+"ssh_key.ml" 59 1665 1671 "ssh_key.ml" 59 1665 1678
+type(
+  string
+)
+"ssh_key.ml" 59 1665 1681 "ssh_key.ml" 59 1665 1689
+type(
+  string
+)
+ident(
+  int_ref home_dir "ssh_key.ml" 55 1533 1539 "ssh_key.ml" 55 1533 1547
+)
+"ssh_key.ml" 59 1665 1690 "ssh_key.ml" 59 1665 1692
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"ssh_key.ml" 59 1665 1693 "ssh_key.ml" 59 1665 1699
+type(
+  string
+)
+"ssh_key.ml" 59 1665 1681 "ssh_key.ml" 59 1665 1699
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 60 1703 1709 "ssh_key.ml" 60 1703 1714
+type(
+  string array
+)
+"ssh_key.ml" 60 1703 1717 "ssh_key.ml" 60 1703 1728
+type(
+  string -> string array
+)
+ident(
+  ext_ref Sys.readdir
+)
+"ssh_key.ml" 60 1703 1729 "ssh_key.ml" 60 1703 1736
+type(
+  string
+)
+ident(
+  int_ref ssh_dir "ssh_key.ml" 59 1665 1671 "ssh_key.ml" 59 1665 1678
+)
+"ssh_key.ml" 60 1703 1717 "ssh_key.ml" 60 1703 1736
+type(
+  string array
+)
+"ssh_key.ml" 61 1740 1746 "ssh_key.ml" 61 1740 1751
+type(
+  string list
+)
+"ssh_key.ml" 61 1740 1754 "ssh_key.ml" 61 1740 1767
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"ssh_key.ml" 61 1740 1768 "ssh_key.ml" 61 1740 1773
+type(
+  string array
+)
+ident(
+  int_ref files "ssh_key.ml" 60 1703 1709 "ssh_key.ml" 60 1703 1714
+)
+"ssh_key.ml" 61 1740 1754 "ssh_key.ml" 61 1740 1773
+call(
+  stack
+)
+type(
+  string list
+)
+"ssh_key.ml" 62 1777 1783 "ssh_key.ml" 62 1777 1788
+type(
+  string list
+)
+"ssh_key.ml" 62 1777 1791 "ssh_key.ml" 62 1777 1802
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"ssh_key.ml" 63 1805 1813 "ssh_key.ml" 63 1805 1817
+type(
+  string
+)
+ident(
+  def file "ssh_key.ml" 64 1821 1827 "ssh_key.ml" 65 1864 1918
+)
+"ssh_key.ml" 64 1821 1827 "ssh_key.ml" 64 1821 1843
+type(
+  Str.regexp -> string -> int -> bool
+)
+ident(
+  ext_ref Str.string_match
+)
+"ssh_key.ml" 64 1821 1844 "ssh_key.ml" 64 1821 1853
+type(
+  Str.regexp
+)
+ident(
+  int_ref pubkey_re "ssh_key.ml" 51 1408 1412 "ssh_key.ml" 51 1408 1421
+)
+"ssh_key.ml" 64 1821 1854 "ssh_key.ml" 64 1821 1858
+type(
+  string
+)
+ident(
+  int_ref file "ssh_key.ml" 63 1805 1813 "ssh_key.ml" 63 1805 1817
+)
+"ssh_key.ml" 64 1821 1859 "ssh_key.ml" 64 1821 1860
+type(
+  int
+)
+"ssh_key.ml" 64 1821 1827 "ssh_key.ml" 64 1821 1860
+call(
+  stack
+)
+type(
+  bool
+)
+"ssh_key.ml" 64 1821 1861 "ssh_key.ml" 64 1821 1863
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"ssh_key.ml" 65 1864 1872 "ssh_key.ml" 65 1864 1875
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ssh_key.ml" 65 1864 1877 "ssh_key.ml" 65 1864 1893
+type(
+  Str.regexp -> string -> int -> bool
+)
+ident(
+  ext_ref Str.string_match
+)
+"ssh_key.ml" 65 1864 1894 "ssh_key.ml" 65 1864 1910
+type(
+  Str.regexp
+)
+ident(
+  int_ref pubkey_ignore_re "ssh_key.ml" 52 1450 1454 "ssh_key.ml" 52 1450 1470
+)
+"ssh_key.ml" 65 1864 1911 "ssh_key.ml" 65 1864 1915
+type(
+  string
+)
+ident(
+  int_ref file "ssh_key.ml" 63 1805 1813 "ssh_key.ml" 63 1805 1817
+)
+"ssh_key.ml" 65 1864 1916 "ssh_key.ml" 65 1864 1917
+type(
+  int
+)
+"ssh_key.ml" 65 1864 1876 "ssh_key.ml" 65 1864 1918
+call(
+  stack
+)
+type(
+  bool
+)
+"ssh_key.ml" 65 1864 1872 "ssh_key.ml" 65 1864 1918
+type(
+  bool
+)
+"ssh_key.ml" 64 1821 1827 "ssh_key.ml" 65 1864 1918
+type(
+  bool
+)
+"ssh_key.ml" 62 1777 1803 "ssh_key.ml" 66 1919 1922
+type(
+  string -> bool
+)
+"ssh_key.ml" 66 1919 1923 "ssh_key.ml" 66 1919 1928
+type(
+  string list
+)
+ident(
+  int_ref files "ssh_key.ml" 61 1740 1746 "ssh_key.ml" 61 1740 1751
+)
+"ssh_key.ml" 62 1777 1791 "ssh_key.ml" 66 1919 1928
+call(
+  stack
+)
+type(
+  string list
+)
+"ssh_key.ml" 67 1932 1937 "ssh_key.ml" 67 1932 1942
+type(
+  string list
+)
+ident(
+  int_ref files "ssh_key.ml" 62 1777 1783 "ssh_key.ml" 62 1777 1788
+)
+"ssh_key.ml" 67 1932 1943 "ssh_key.ml" 67 1932 1944
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"ssh_key.ml" 67 1932 1945 "ssh_key.ml" 67 1932 1947
+type(
+  string list
+)
+"ssh_key.ml" 67 1932 1937 "ssh_key.ml" 67 1932 1947
+type(
+  bool
+)
+"ssh_key.ml" 68 1953 1957 "ssh_key.ml" 68 1953 1962
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"ssh_key.ml" 68 1953 1964 "ssh_key.ml" 68 1953 1966
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"ssh_key.ml" 68 1953 1966 "ssh_key.ml" 68 1953 2010
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"ssh_key.ml" 68 1953 1963 "ssh_key.ml" 68 1953 2011
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"ssh_key.ml" 68 1953 2012 "ssh_key.ml" 68 1953 2019
+type(
+  string
+)
+ident(
+  int_ref ssh_dir "ssh_key.ml" 59 1665 1671 "ssh_key.ml" 59 1665 1678
+)
+"ssh_key.ml" 68 1953 1957 "ssh_key.ml" 68 1953 2019
+call(
+  stack
+)
+type(
+  unit
+)
+"ssh_key.ml" 67 1932 1934 "ssh_key.ml" 68 1953 2019
+type(
+  unit
+)
+"ssh_key.ml" 71 2043 2049 "ssh_key.ml" 71 2043 2054
+type(
+  (string * float) list
+)
+"ssh_key.ml" 71 2043 2057 "ssh_key.ml" 71 2043 2065
+type(
+  (string -> string * float) -> string list -> (string * float) list
+)
+ident(
+  ext_ref List.map
+)
+"ssh_key.ml" 72 2068 2076 "ssh_key.ml" 72 2068 2080
+type(
+  string
+)
+ident(
+  def file "ssh_key.ml" 73 2084 2090 "ssh_key.ml" 75 2150 2177
+)
+"ssh_key.ml" 73 2084 2094 "ssh_key.ml" 73 2084 2098
+type(
+  string
+)
+"ssh_key.ml" 73 2084 2101 "ssh_key.ml" 73 2084 2108
+type(
+  string
+)
+ident(
+  int_ref ssh_dir "ssh_key.ml" 59 1665 1671 "ssh_key.ml" 59 1665 1678
+)
+"ssh_key.ml" 73 2084 2109 "ssh_key.ml" 73 2084 2111
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"ssh_key.ml" 73 2084 2112 "ssh_key.ml" 73 2084 2116
+type(
+  string
+)
+ident(
+  int_ref file "ssh_key.ml" 72 2068 2076 "ssh_key.ml" 72 2068 2080
+)
+"ssh_key.ml" 73 2084 2101 "ssh_key.ml" 73 2084 2116
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 74 2120 2130 "ssh_key.ml" 74 2120 2134
+type(
+  Unix.stats
+)
+"ssh_key.ml" 74 2120 2137 "ssh_key.ml" 74 2120 2141
+type(
+  string -> Unix.stats
+)
+ident(
+  ext_ref Unix.stat
+)
+"ssh_key.ml" 74 2120 2142 "ssh_key.ml" 74 2120 2146
+type(
+  string
+)
+ident(
+  int_ref file "ssh_key.ml" 73 2084 2094 "ssh_key.ml" 73 2084 2098
+)
+"ssh_key.ml" 74 2120 2137 "ssh_key.ml" 74 2120 2146
+call(
+  stack
+)
+type(
+  Unix.stats
+)
+"ssh_key.ml" 75 2150 2157 "ssh_key.ml" 75 2150 2161
+type(
+  string
+)
+ident(
+  int_ref file "ssh_key.ml" 73 2084 2094 "ssh_key.ml" 73 2084 2098
+)
+"ssh_key.ml" 75 2150 2163 "ssh_key.ml" 75 2150 2167
+type(
+  Unix.stats
+)
+ident(
+  int_ref stat "ssh_key.ml" 74 2120 2130 "ssh_key.ml" 74 2120 2134
+)
+"ssh_key.ml" 75 2150 2163 "ssh_key.ml" 75 2150 2176
+type(
+  float
+)
+"ssh_key.ml" 75 2150 2156 "ssh_key.ml" 75 2150 2177
+type(
+  string * float
+)
+"ssh_key.ml" 74 2120 2126 "ssh_key.ml" 75 2150 2177
+type(
+  string * float
+)
+"ssh_key.ml" 73 2084 2090 "ssh_key.ml" 75 2150 2177
+type(
+  string * float
+)
+"ssh_key.ml" 71 2043 2066 "ssh_key.ml" 76 2178 2181
+type(
+  string -> string * float
+)
+"ssh_key.ml" 76 2178 2182 "ssh_key.ml" 76 2178 2187
+type(
+  string list
+)
+ident(
+  int_ref files "ssh_key.ml" 62 1777 1783 "ssh_key.ml" 62 1777 1788
+)
+"ssh_key.ml" 71 2043 2057 "ssh_key.ml" 76 2178 2187
+call(
+  stack
+)
+type(
+  (string * float) list
+)
+"ssh_key.ml" 77 2191 2197 "ssh_key.ml" 77 2191 2202
+type(
+  (string * float) list
+)
+"ssh_key.ml" 77 2191 2205 "ssh_key.ml" 77 2191 2214
+type(
+  (string * float -> string * float -> int) ->
+  (string * float) list -> (string * float) list
+)
+ident(
+  ext_ref List.sort
+)
+"ssh_key.ml" 77 2191 2221 "ssh_key.ml" 77 2191 2222
+type(
+  string
+)
+"ssh_key.ml" 77 2191 2223 "ssh_key.ml" 77 2191 2225
+type(
+  float
+)
+ident(
+  def m1 "ssh_key.ml" 77 2191 2227 "ssh_key.ml" 77 2191 2250
+)
+"ssh_key.ml" 77 2191 2220 "ssh_key.ml" 77 2191 2226
+type(
+  string * float
+)
+"ssh_key.ml" 77 2191 2228 "ssh_key.ml" 77 2191 2229
+type(
+  string
+)
+"ssh_key.ml" 77 2191 2230 "ssh_key.ml" 77 2191 2232
+type(
+  float
+)
+ident(
+  def m2 "ssh_key.ml" 77 2191 2237 "ssh_key.ml" 77 2191 2250
+)
+"ssh_key.ml" 77 2191 2227 "ssh_key.ml" 77 2191 2233
+type(
+  string * float
+)
+"ssh_key.ml" 77 2191 2237 "ssh_key.ml" 77 2191 2244
+type(
+  float -> float -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"ssh_key.ml" 77 2191 2245 "ssh_key.ml" 77 2191 2247
+type(
+  float
+)
+ident(
+  int_ref m2 "ssh_key.ml" 77 2191 2230 "ssh_key.ml" 77 2191 2232
+)
+"ssh_key.ml" 77 2191 2248 "ssh_key.ml" 77 2191 2250
+type(
+  float
+)
+ident(
+  int_ref m1 "ssh_key.ml" 77 2191 2223 "ssh_key.ml" 77 2191 2225
+)
+"ssh_key.ml" 77 2191 2237 "ssh_key.ml" 77 2191 2250
+type(
+  int
+)
+"ssh_key.ml" 77 2191 2215 "ssh_key.ml" 77 2191 2251
+type(
+  string * float -> string * float -> int
+)
+"ssh_key.ml" 77 2191 2252 "ssh_key.ml" 77 2191 2257
+type(
+  (string * float) list
+)
+ident(
+  int_ref files "ssh_key.ml" 71 2043 2049 "ssh_key.ml" 71 2043 2054
+)
+"ssh_key.ml" 77 2191 2205 "ssh_key.ml" 77 2191 2257
+call(
+  stack
+)
+type(
+  (string * float) list
+)
+"ssh_key.ml" 79 2262 2264 "ssh_key.ml" 79 2262 2267
+type(
+  string * float -> string
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"ssh_key.ml" 79 2262 2269 "ssh_key.ml" 79 2262 2276
+type(
+  (string * float) list -> string * float
+)
+ident(
+  ext_ref List.hd
+)
+"ssh_key.ml" 79 2262 2277 "ssh_key.ml" 79 2262 2282
+type(
+  (string * float) list
+)
+ident(
+  int_ref files "ssh_key.ml" 77 2191 2197 "ssh_key.ml" 77 2191 2202
+)
+"ssh_key.ml" 79 2262 2268 "ssh_key.ml" 79 2262 2283
+call(
+  stack
+)
+type(
+  string * float
+)
+"ssh_key.ml" 79 2262 2264 "ssh_key.ml" 79 2262 2283
+type(
+  string
+)
+"ssh_key.ml" 77 2191 2193 "ssh_key.ml" 79 2262 2283
+type(
+  string
+)
+"ssh_key.ml" 71 2043 2045 "ssh_key.ml" 79 2262 2283
+type(
+  string
+)
+"ssh_key.ml" 67 1932 1934 "ssh_key.ml" 79 2262 2283
+type(
+  string
+)
+"ssh_key.ml" 62 1777 1779 "ssh_key.ml" 79 2262 2283
+type(
+  string
+)
+"ssh_key.ml" 61 1740 1742 "ssh_key.ml" 79 2262 2283
+type(
+  string
+)
+"ssh_key.ml" 60 1703 1705 "ssh_key.ml" 79 2262 2283
+type(
+  string
+)
+"ssh_key.ml" 59 1665 1667 "ssh_key.ml" 79 2262 2283
+type(
+  string
+)
+"ssh_key.ml" 55 1533 1535 "ssh_key.ml" 79 2262 2283
+type(
+  string
+)
+"ssh_key.ml" 81 2285 2289 "ssh_key.ml" 81 2285 2297
+type(
+  string -> string
+)
+ident(
+  def read_key "ssh_key.ml" 88 2471 2471 --
+)
+"ssh_key.ml" 81 2285 2298 "ssh_key.ml" 81 2285 2302
+type(
+  string
+)
+ident(
+  def file "ssh_key.ml" 83 2345 2347 "ssh_key.ml" 86 2464 2469
+)
+"ssh_key.ml" 83 2345 2351 "ssh_key.ml" 83 2345 2354
+type(
+  string
+)
+"ssh_key.ml" 83 2345 2357 "ssh_key.ml" 83 2345 2372
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.read_whole_file
+)
+"ssh_key.ml" 83 2345 2373 "ssh_key.ml" 83 2345 2377
+type(
+  string
+)
+ident(
+  int_ref file "ssh_key.ml" 81 2285 2298 "ssh_key.ml" 81 2285 2302
+)
+"ssh_key.ml" 83 2345 2357 "ssh_key.ml" 83 2345 2377
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 84 2381 2386 "ssh_key.ml" 84 2381 2389
+type(
+  string
+)
+ident(
+  int_ref key "ssh_key.ml" 83 2345 2351 "ssh_key.ml" 83 2345 2354
+)
+"ssh_key.ml" 84 2381 2390 "ssh_key.ml" 84 2381 2391
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"ssh_key.ml" 84 2381 2392 "ssh_key.ml" 84 2381 2394
+type(
+  string
+)
+"ssh_key.ml" 84 2381 2386 "ssh_key.ml" 84 2381 2394
+type(
+  bool
+)
+"ssh_key.ml" 85 2400 2404 "ssh_key.ml" 85 2400 2409
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"ssh_key.ml" 85 2400 2411 "ssh_key.ml" 85 2400 2413
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"ssh_key.ml" 85 2400 2413 "ssh_key.ml" 85 2400 2456
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"ssh_key.ml" 85 2400 2410 "ssh_key.ml" 85 2400 2457
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"ssh_key.ml" 85 2400 2458 "ssh_key.ml" 85 2400 2462
+type(
+  string
+)
+ident(
+  int_ref file "ssh_key.ml" 81 2285 2298 "ssh_key.ml" 81 2285 2302
+)
+"ssh_key.ml" 85 2400 2404 "ssh_key.ml" 85 2400 2462
+call(
+  stack
+)
+type(
+  unit
+)
+"ssh_key.ml" 84 2381 2383 "ssh_key.ml" 85 2400 2462
+type(
+  unit
+)
+"ssh_key.ml" 86 2464 2466 "ssh_key.ml" 86 2464 2469
+type(
+  string
+)
+ident(
+  int_ref key "ssh_key.ml" 83 2345 2351 "ssh_key.ml" 83 2345 2354
+)
+"ssh_key.ml" 84 2381 2383 "ssh_key.ml" 86 2464 2469
+type(
+  string
+)
+"ssh_key.ml" 83 2345 2347 "ssh_key.ml" 86 2464 2469
+type(
+  string
+)
+"ssh_key.ml" 88 2471 2475 "ssh_key.ml" 88 2471 2499
+type(
+  ssh_key_selector -> string
+)
+ident(
+  def key_string_from_selector "ssh_key.ml" 99 2750 2750 --
+)
+"ssh_key.ml" 89 2511 2515 "ssh_key.ml" 89 2511 2524
+type(
+  ssh_key_selector
+)
+"ssh_key.ml" 90 2528 2532 "ssh_key.ml" 90 2528 2540
+type(
+  string -> string
+)
+ident(
+  int_ref read_key "ssh_key.ml" 81 2285 2289 "ssh_key.ml" 81 2285 2297
+)
+"ssh_key.ml" 90 2528 2542 "ssh_key.ml" 90 2528 2563
+type(
+  unit -> string
+)
+ident(
+  int_ref local_user_ssh_pubkey "ssh_key.ml" 54 1502 1506 "ssh_key.ml" 54 1502 1527
+)
+"ssh_key.ml" 90 2528 2564 "ssh_key.ml" 90 2528 2566
+type(
+  unit
+)
+"ssh_key.ml" 90 2528 2541 "ssh_key.ml" 90 2528 2567
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 90 2528 2532 "ssh_key.ml" 90 2528 2567
+call(
+  tail
+)
+type(
+  string
+)
+"ssh_key.ml" 91 2568 2580 "ssh_key.ml" 91 2568 2581
+type(
+  string
+)
+ident(
+  def f "ssh_key.ml" 92 2585 2589 "ssh_key.ml" 92 2585 2599
+)
+"ssh_key.ml" 91 2568 2572 "ssh_key.ml" 91 2568 2581
+type(
+  ssh_key_selector
+)
+"ssh_key.ml" 92 2585 2589 "ssh_key.ml" 92 2585 2597
+type(
+  string -> string
+)
+ident(
+  int_ref read_key "ssh_key.ml" 81 2285 2289 "ssh_key.ml" 81 2285 2297
+)
+"ssh_key.ml" 92 2585 2598 "ssh_key.ml" 92 2585 2599
+type(
+  string
+)
+ident(
+  int_ref f "ssh_key.ml" 91 2568 2580 "ssh_key.ml" 91 2568 2581
+)
+"ssh_key.ml" 92 2585 2589 "ssh_key.ml" 92 2585 2599
+call(
+  tail
+)
+type(
+  string
+)
+"ssh_key.ml" 93 2600 2614 "ssh_key.ml" 93 2600 2615
+type(
+  string
+)
+ident(
+  def s "ssh_key.ml" 94 2619 2623 "ssh_key.ml" 96 2705 2710
+)
+"ssh_key.ml" 93 2600 2604 "ssh_key.ml" 93 2600 2615
+type(
+  ssh_key_selector
+)
+"ssh_key.ml" 94 2619 2626 "ssh_key.ml" 94 2619 2639
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"ssh_key.ml" 94 2619 2640 "ssh_key.ml" 94 2619 2641
+type(
+  string
+)
+ident(
+  int_ref s "ssh_key.ml" 93 2600 2614 "ssh_key.ml" 93 2600 2615
+)
+"ssh_key.ml" 94 2619 2626 "ssh_key.ml" 94 2619 2641
+type(
+  int
+)
+"ssh_key.ml" 94 2619 2642 "ssh_key.ml" 94 2619 2643
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"ssh_key.ml" 94 2619 2644 "ssh_key.ml" 94 2619 2645
+type(
+  int
+)
+"ssh_key.ml" 94 2619 2626 "ssh_key.ml" 94 2619 2645
+type(
+  bool
+)
+"ssh_key.ml" 95 2651 2657 "ssh_key.ml" 95 2651 2662
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"ssh_key.ml" 95 2651 2664 "ssh_key.ml" 95 2651 2666
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"ssh_key.ml" 95 2651 2666 "ssh_key.ml" 95 2651 2702
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"ssh_key.ml" 95 2651 2663 "ssh_key.ml" 95 2651 2703
+type(
+  (unit, unit, string, unit) format4
+)
+"ssh_key.ml" 95 2651 2657 "ssh_key.ml" 95 2651 2703
+call(
+  stack
+)
+type(
+  unit
+)
+"ssh_key.ml" 94 2619 2623 "ssh_key.ml" 95 2651 2703
+type(
+  unit
+)
+"ssh_key.ml" 96 2705 2709 "ssh_key.ml" 96 2705 2710
+type(
+  string
+)
+ident(
+  int_ref s "ssh_key.ml" 93 2600 2614 "ssh_key.ml" 93 2600 2615
+)
+"ssh_key.ml" 94 2619 2623 "ssh_key.ml" 96 2705 2710
+type(
+  string
+)
+"ssh_key.ml" 88 2471 2502 "ssh_key.ml" 96 2705 2710
+type(
+  ssh_key_selector -> string
+)
+"ssh_key.ml" 99 2750 2754 "ssh_key.ml" 99 2750 2772
+type(
+  Guestfs.guestfs -> string -> ssh_key_selector -> unit
+)
+ident(
+  def do_ssh_inject_unix "ssh_key.ml" 133 3755 3785 --
+)
+"ssh_key.ml" 99 2750 2774 "ssh_key.ml" 99 2750 2775
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "ssh_key.ml" 99 2750 2795 "ssh_key.ml" 133 3755 3785
+)
+"ssh_key.ml" 99 2750 2795 "ssh_key.ml" 99 2750 2799
+type(
+  string
+)
+ident(
+  def user "ssh_key.ml" 99 2750 2800 "ssh_key.ml" 133 3755 3785
+)
+"ssh_key.ml" 99 2750 2800 "ssh_key.ml" 99 2750 2808
+type(
+  ssh_key_selector
+)
+ident(
+  def selector "ssh_key.ml" 100 2811 2813 "ssh_key.ml" 133 3755 3785
+)
+"ssh_key.ml" 100 2811 2817 "ssh_key.ml" 100 2811 2820
+type(
+  string
+)
+"ssh_key.ml" 100 2811 2823 "ssh_key.ml" 100 2811 2847
+type(
+  ssh_key_selector -> string
+)
+ident(
+  int_ref key_string_from_selector "ssh_key.ml" 88 2471 2475 "ssh_key.ml" 88 2471 2499
+)
+"ssh_key.ml" 100 2811 2848 "ssh_key.ml" 100 2811 2856
+type(
+  ssh_key_selector
+)
+ident(
+  int_ref selector "ssh_key.ml" 99 2750 2800 "ssh_key.ml" 99 2750 2808
+)
+"ssh_key.ml" 100 2811 2823 "ssh_key.ml" 100 2811 2856
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 101 2860 2870 "ssh_key.ml" 101 2860 2883
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"ssh_key.ml" 101 2860 2884 "ssh_key.ml" 101 2860 2887
+type(
+  string
+)
+ident(
+  int_ref key "ssh_key.ml" 100 2811 2817 "ssh_key.ml" 100 2811 2820
+)
+"ssh_key.ml" 101 2860 2870 "ssh_key.ml" 101 2860 2887
+type(
+  int
+)
+"ssh_key.ml" 101 2860 2888 "ssh_key.ml" 101 2860 2889
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"ssh_key.ml" 101 2860 2890 "ssh_key.ml" 101 2860 2891
+type(
+  int
+)
+"ssh_key.ml" 101 2860 2869 "ssh_key.ml" 101 2860 2892
+type(
+  bool
+)
+"ssh_key.ml" 101 2860 2862 "ssh_key.ml" 101 2860 2892
+type(
+  unit
+)
+"ssh_key.ml" 104 2950 2956 "ssh_key.ml" 104 2950 2959
+type(
+  int
+)
+"ssh_key.ml" 104 2950 2962 "ssh_key.ml" 104 2950 2975
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"ssh_key.ml" 104 2950 2976 "ssh_key.ml" 104 2950 2979
+type(
+  string
+)
+ident(
+  int_ref key "ssh_key.ml" 100 2811 2817 "ssh_key.ml" 100 2811 2820
+)
+"ssh_key.ml" 104 2950 2962 "ssh_key.ml" 104 2950 2979
+type(
+  int
+)
+"ssh_key.ml" 105 2983 2989 "ssh_key.ml" 105 2983 2992
+type(
+  string
+)
+"ssh_key.ml" 105 2983 2998 "ssh_key.ml" 105 2983 3001
+type(
+  string
+)
+ident(
+  int_ref key "ssh_key.ml" 100 2811 2817 "ssh_key.ml" 100 2811 2820
+)
+"ssh_key.ml" 105 2983 3003 "ssh_key.ml" 105 2983 3006
+type(
+  int
+)
+ident(
+  int_ref len "ssh_key.ml" 104 2950 2956 "ssh_key.ml" 104 2950 2959
+)
+"ssh_key.ml" 105 2983 3006 "ssh_key.ml" 105 2983 3007
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"ssh_key.ml" 105 2983 3007 "ssh_key.ml" 105 2983 3008
+type(
+  int
+)
+"ssh_key.ml" 105 2983 3003 "ssh_key.ml" 105 2983 3008
+type(
+  int
+)
+"ssh_key.ml" 105 2983 2998 "ssh_key.ml" 105 2983 3009
+type(
+  char
+)
+"ssh_key.ml" 105 2983 3010 "ssh_key.ml" 105 2983 3011
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"ssh_key.ml" 105 2983 3012 "ssh_key.ml" 105 2983 3016
+type(
+  char
+)
+"ssh_key.ml" 105 2983 2998 "ssh_key.ml" 105 2983 3016
+type(
+  bool
+)
+"ssh_key.ml" 105 2983 3022 "ssh_key.ml" 105 2983 3025
+type(
+  string
+)
+ident(
+  int_ref key "ssh_key.ml" 100 2811 2817 "ssh_key.ml" 100 2811 2820
+)
+"ssh_key.ml" 105 2983 3031 "ssh_key.ml" 105 2983 3034
+type(
+  string
+)
+ident(
+  int_ref key "ssh_key.ml" 100 2811 2817 "ssh_key.ml" 100 2811 2820
+)
+"ssh_key.ml" 105 2983 3035 "ssh_key.ml" 105 2983 3036
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"ssh_key.ml" 105 2983 3037 "ssh_key.ml" 105 2983 3041
+type(
+  string
+)
+"ssh_key.ml" 105 2983 3031 "ssh_key.ml" 105 2983 3041
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 105 2983 2995 "ssh_key.ml" 105 2983 3041
+type(
+  string
+)
+"ssh_key.ml" 108 3081 3083 "ssh_key.ml" 108 3081 3084
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "ssh_key.ml" 99 2750 2774 "ssh_key.ml" 99 2750 2775
+)
+"ssh_key.ml" 108 3081 3083 "ssh_key.ml" 108 3081 3093
+call(
+  stack
+)
+type(
+  string -> int -> unit
+)
+"ssh_key.ml" 108 3081 3094 "ssh_key.ml" 108 3081 3097
+type(
+  string
+)
+"ssh_key.ml" 108 3081 3098 "ssh_key.ml" 108 3081 3099
+type(
+  int
+)
+"ssh_key.ml" 108 3081 3083 "ssh_key.ml" 108 3081 3099
+type(
+  unit
+)
+"ssh_key.ml" 109 3101 3107 "ssh_key.ml" 109 3101 3115
+type(
+  string
+)
+"ssh_key.ml" 111 3126 3136 "ssh_key.ml" 111 3126 3140
+type(
+  string
+)
+ident(
+  def expr "ssh_key.ml" 112 3187 3193 "ssh_key.ml" 112 3187 3207
+)
+"ssh_key.ml" 111 3126 3143 "ssh_key.ml" 111 3126 3150
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"ssh_key.ml" 111 3126 3151 "ssh_key.ml" 111 3126 3178
+type(
+  (string -> string, unit, string) format
+)
+"ssh_key.ml" 111 3126 3179 "ssh_key.ml" 111 3126 3183
+type(
+  string
+)
+ident(
+  int_ref user "ssh_key.ml" 99 2750 2795 "ssh_key.ml" 99 2750 2799
+)
+"ssh_key.ml" 111 3126 3143 "ssh_key.ml" 111 3126 3183
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 112 3187 3193 "ssh_key.ml" 112 3187 3194
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "ssh_key.ml" 99 2750 2774 "ssh_key.ml" 99 2750 2775
+)
+"ssh_key.ml" 112 3187 3193 "ssh_key.ml" 112 3187 3202
+call(
+  stack
+)
+type(
+  string -> string
+)
+"ssh_key.ml" 112 3187 3203 "ssh_key.ml" 112 3187 3207
+type(
+  string
+)
+ident(
+  int_ref expr "ssh_key.ml" 111 3126 3136 "ssh_key.ml" 111 3126 3140
+)
+"ssh_key.ml" 112 3187 3193 "ssh_key.ml" 112 3187 3207
+type(
+  string
+)
+"ssh_key.ml" 111 3126 3132 "ssh_key.ml" 112 3187 3207
+type(
+  string
+)
+"ssh_key.ml" 113 3208 3225 "ssh_key.ml" 113 3208 3226
+type(
+  string
+)
+"ssh_key.ml" 113 3208 3217 "ssh_key.ml" 113 3208 3226
+type(
+  exn
+)
+"ssh_key.ml" 114 3230 3236 "ssh_key.ml" 114 3230 3241
+type(
+  ?exit_code:int ->
+  (string -> string, unit, string, string) format4 -> string -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"ssh_key.ml" 114 3230 3243 "ssh_key.ml" 114 3230 3245
+type(
+  (string -> string, unit, string, string, string, string) format6 ->
+  (string -> string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"ssh_key.ml" 114 3230 3245 "ssh_key.ml" 114 3230 3298
+type(
+  (string -> string, unit, string, string, string, string) format6
+)
+"ssh_key.ml" 114 3230 3242 "ssh_key.ml" 114 3230 3299
+type(
+  (string -> string, unit, string, string) format4
+)
+"ssh_key.ml" 115 3300 3308 "ssh_key.ml" 115 3300 3312
+type(
+  string
+)
+ident(
+  int_ref user "ssh_key.ml" 99 2750 2795 "ssh_key.ml" 99 2750 2799
+)
+"ssh_key.ml" 114 3230 3236 "ssh_key.ml" 115 3300 3312
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 110 3118 3122 "ssh_key.ml" 115 3300 3312
+type(
+  string
+)
+"ssh_key.ml" 116 3316 3318 "ssh_key.ml" 116 3316 3319
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "ssh_key.ml" 99 2750 2774 "ssh_key.ml" 99 2750 2775
+)
+"ssh_key.ml" 116 3316 3318 "ssh_key.ml" 116 3316 3329
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"ssh_key.ml" 116 3316 3330 "ssh_key.ml" 116 3316 3332
+type(
+  unit
+)
+"ssh_key.ml" 116 3316 3318 "ssh_key.ml" 116 3316 3332
+type(
+  unit
+)
+"ssh_key.ml" 119 3382 3388 "ssh_key.ml" 119 3382 3395
+type(
+  string
+)
+"ssh_key.ml" 119 3382 3398 "ssh_key.ml" 119 3382 3405
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"ssh_key.ml" 119 3382 3406 "ssh_key.ml" 119 3382 3415
+type(
+  (string -> string, unit, string) format
+)
+"ssh_key.ml" 119 3382 3416 "ssh_key.ml" 119 3382 3424
+type(
+  string
+)
+ident(
+  int_ref home_dir "ssh_key.ml" 109 3101 3107 "ssh_key.ml" 109 3101 3115
+)
+"ssh_key.ml" 119 3382 3398 "ssh_key.ml" 119 3382 3424
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 120 3428 3433 "ssh_key.ml" 120 3428 3436
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ssh_key.ml" 120 3428 3438 "ssh_key.ml" 120 3428 3439
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "ssh_key.ml" 99 2750 2774 "ssh_key.ml" 99 2750 2775
+)
+"ssh_key.ml" 120 3428 3438 "ssh_key.ml" 120 3428 3446
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"ssh_key.ml" 120 3428 3447 "ssh_key.ml" 120 3428 3454
+type(
+  string
+)
+ident(
+  int_ref ssh_dir "ssh_key.ml" 119 3382 3388 "ssh_key.ml" 119 3382 3395
+)
+"ssh_key.ml" 120 3428 3437 "ssh_key.ml" 120 3428 3455
+type(
+  bool
+)
+"ssh_key.ml" 120 3428 3433 "ssh_key.ml" 120 3428 3455
+type(
+  bool
+)
+"ssh_key.ml" 121 3463 3467 "ssh_key.ml" 121 3463 3468
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "ssh_key.ml" 99 2750 2774 "ssh_key.ml" 99 2750 2775
+)
+"ssh_key.ml" 121 3463 3467 "ssh_key.ml" 121 3463 3474
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"ssh_key.ml" 121 3463 3475 "ssh_key.ml" 121 3463 3482
+type(
+  string
+)
+ident(
+  int_ref ssh_dir "ssh_key.ml" 119 3382 3388 "ssh_key.ml" 119 3382 3395
+)
+"ssh_key.ml" 121 3463 3467 "ssh_key.ml" 121 3463 3482
+type(
+  unit
+)
+"ssh_key.ml" 122 3484 3488 "ssh_key.ml" 122 3484 3489
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "ssh_key.ml" 99 2750 2774 "ssh_key.ml" 99 2750 2775
+)
+"ssh_key.ml" 122 3484 3488 "ssh_key.ml" 122 3484 3495
+call(
+  stack
+)
+type(
+  int -> string -> unit
+)
+"ssh_key.ml" 122 3484 3496 "ssh_key.ml" 122 3484 3501
+type(
+  int
+)
+"ssh_key.ml" 122 3484 3502 "ssh_key.ml" 122 3484 3509
+type(
+  string
+)
+ident(
+  int_ref ssh_dir "ssh_key.ml" 119 3382 3388 "ssh_key.ml" 119 3382 3395
+)
+"ssh_key.ml" 122 3484 3488 "ssh_key.ml" 122 3484 3509
+type(
+  unit
+)
+"ssh_key.ml" 120 3428 3461 "ssh_key.ml" 123 3510 3513
+type(
+  unit
+)
+"ssh_key.ml" 120 3428 3430 "ssh_key.ml" 123 3510 3513
+type(
+  unit
+)
+"ssh_key.ml" 126 3579 3585 "ssh_key.ml" 126 3579 3594
+type(
+  string
+)
+"ssh_key.ml" 126 3579 3597 "ssh_key.ml" 126 3579 3604
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"ssh_key.ml" 126 3579 3605 "ssh_key.ml" 126 3579 3625
+type(
+  (string -> string, unit, string) format
+)
+"ssh_key.ml" 126 3579 3626 "ssh_key.ml" 126 3579 3633
+type(
+  string
+)
+ident(
+  int_ref ssh_dir "ssh_key.ml" 119 3382 3388 "ssh_key.ml" 119 3382 3395
+)
+"ssh_key.ml" 126 3579 3597 "ssh_key.ml" 126 3579 3633
+call(
+  stack
+)
+type(
+  string
+)
+"ssh_key.ml" 127 3637 3642 "ssh_key.ml" 127 3637 3645
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"ssh_key.ml" 127 3637 3647 "ssh_key.ml" 127 3637 3648
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "ssh_key.ml" 99 2750 2774 "ssh_key.ml" 99 2750 2775
+)
+"ssh_key.ml" 127 3637 3647 "ssh_key.ml" 127 3637 3655
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"ssh_key.ml" 127 3637 3656 "ssh_key.ml" 127 3637 3665
+type(
+  string
+)
+ident(
+  int_ref auth_keys "ssh_key.ml" 126 3579 3585 "ssh_key.ml" 126 3579 3594
+)
+"ssh_key.ml" 127 3637 3646 "ssh_key.ml" 127 3637 3666
+type(
+  bool
+)
+"ssh_key.ml" 127 3637 3642 "ssh_key.ml" 127 3637 3666
+type(
+  bool
+)
+"ssh_key.ml" 128 3674 3678 "ssh_key.ml" 128 3674 3679
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "ssh_key.ml" 99 2750 2774 "ssh_key.ml" 99 2750 2775
+)
+"ssh_key.ml" 128 3674 3678 "ssh_key.ml" 128 3674 3685
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"ssh_key.ml" 128 3674 3686 "ssh_key.ml" 128 3674 3695
+type(
+  string
+)
+ident(
+  int_ref auth_keys "ssh_key.ml" 126 3579 3585 "ssh_key.ml" 126 3579 3594
+)
+"ssh_key.ml" 128 3674 3678 "ssh_key.ml" 128 3674 3695
+type(
+  unit
+)
+"ssh_key.ml" 129 3697 3701 "ssh_key.ml" 129 3697 3702
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "ssh_key.ml" 99 2750 2774 "ssh_key.ml" 99 2750 2775
+)
+"ssh_key.ml" 129 3697 3701 "ssh_key.ml" 129 3697 3708
+call(
+  stack
+)
+type(
+  int -> string -> unit
+)
+"ssh_key.ml" 129 3697 3709 "ssh_key.ml" 129 3697 3714
+type(
+  int
+)
+"ssh_key.ml" 129 3697 3715 "ssh_key.ml" 129 3697 3724
+type(
+  string
+)
+ident(
+  int_ref auth_keys "ssh_key.ml" 126 3579 3585 "ssh_key.ml" 126 3579 3594
+)
+"ssh_key.ml" 129 3697 3701 "ssh_key.ml" 129 3697 3724
+type(
+  unit
+)
+"ssh_key.ml" 127 3637 3672 "ssh_key.ml" 130 3725 3728
+type(
+  unit
+)
+"ssh_key.ml" 127 3637 3639 "ssh_key.ml" 130 3725 3728
+type(
+  unit
+)
+"ssh_key.ml" 133 3755 3757 "ssh_key.ml" 133 3755 3758
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "ssh_key.ml" 99 2750 2774 "ssh_key.ml" 99 2750 2775
+)
+"ssh_key.ml" 133 3755 3757 "ssh_key.ml" 133 3755 3771
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"ssh_key.ml" 133 3755 3772 "ssh_key.ml" 133 3755 3781
+type(
+  string
+)
+ident(
+  int_ref auth_keys "ssh_key.ml" 126 3579 3585 "ssh_key.ml" 126 3579 3594
+)
+"ssh_key.ml" 133 3755 3782 "ssh_key.ml" 133 3755 3785
+type(
+  string
+)
+ident(
+  int_ref key "ssh_key.ml" 105 2983 2989 "ssh_key.ml" 105 2983 2992
+)
+"ssh_key.ml" 133 3755 3757 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)
+"ssh_key.ml" 127 3637 3639 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)
+"ssh_key.ml" 126 3579 3581 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)
+"ssh_key.ml" 120 3428 3430 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)
+"ssh_key.ml" 119 3382 3384 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)
+"ssh_key.ml" 116 3316 3318 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)
+"ssh_key.ml" 109 3101 3103 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)
+"ssh_key.ml" 108 3081 3083 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)
+"ssh_key.ml" 105 2983 2985 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)
+"ssh_key.ml" 104 2950 2952 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)
+"ssh_key.ml" 101 2860 2862 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)
+"ssh_key.ml" 100 2811 2813 "ssh_key.ml" 133 3755 3785
+type(
+  unit
+)

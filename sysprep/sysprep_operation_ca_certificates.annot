@@ -1,0 +1,504 @@
+"sysprep_operation_ca_certificates.ml" 22 831 850 "sysprep_operation_ca_certificates.ml" 22 831 867
+call(
+  stack
+)
+"sysprep_operation_ca_certificates.ml" 25 888 892 "sysprep_operation_ca_certificates.ml" 25 888 915
+type(
+  < glob_expand : string -> StringSet.elt array;
+    inspect_get_type : 'a -> string; rm : StringSet.elt -> unit; .. > ->
+  'a -> 'b -> unit
+)
+ident(
+  def ca_certificates_perform "sysprep_operation_ca_certificates.ml" 47 1839 1839 --
+)
+"sysprep_operation_ca_certificates.ml" 25 888 916 "sysprep_operation_ca_certificates.ml" 25 888 917
+type(
+  < glob_expand : string -> StringSet.elt array;
+    inspect_get_type : 'a -> string; rm : StringSet.elt -> unit; .. >
+  as 'c
+)
+ident(
+  def g "sysprep_operation_ca_certificates.ml" 25 888 918 "sysprep_operation_ca_certificates.ml" 45 1834 1837
+)
+"sysprep_operation_ca_certificates.ml" 25 888 918 "sysprep_operation_ca_certificates.ml" 25 888 922
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_ca_certificates.ml" 25 888 923 "sysprep_operation_ca_certificates.ml" 45 1834 1837
+)
+"sysprep_operation_ca_certificates.ml" 25 888 923 "sysprep_operation_ca_certificates.ml" 25 888 935
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_ca_certificates.ml" 26 938 940 "sysprep_operation_ca_certificates.ml" 45 1834 1837
+)
+"sysprep_operation_ca_certificates.ml" 26 938 944 "sysprep_operation_ca_certificates.ml" 26 938 947
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 26 938 950 "sysprep_operation_ca_certificates.ml" 26 938 951
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_ca_certificates.ml" 25 888 916 "sysprep_operation_ca_certificates.ml" 25 888 917
+)
+"sysprep_operation_ca_certificates.ml" 26 938 950 "sysprep_operation_ca_certificates.ml" 26 938 968
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_ca_certificates.ml" 26 938 969 "sysprep_operation_ca_certificates.ml" 26 938 973
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_ca_certificates.ml" 25 888 918 "sysprep_operation_ca_certificates.ml" 25 888 922
+)
+"sysprep_operation_ca_certificates.ml" 26 938 950 "sysprep_operation_ca_certificates.ml" 26 938 973
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 27 977 982 "sysprep_operation_ca_certificates.ml" 27 977 985
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_ca_certificates.ml" 26 938 944 "sysprep_operation_ca_certificates.ml" 26 938 947
+)
+"sysprep_operation_ca_certificates.ml" 27 977 986 "sysprep_operation_ca_certificates.ml" 27 977 988
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_ca_certificates.ml" 27 977 989 "sysprep_operation_ca_certificates.ml" 27 977 998
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 27 977 982 "sysprep_operation_ca_certificates.ml" 27 977 998
+type(
+  bool
+)
+"sysprep_operation_ca_certificates.ml" 28 1006 1014 "sysprep_operation_ca_certificates.ml" 28 1006 1019
+type(
+  string list
+)
+"sysprep_operation_ca_certificates.ml" 28 1006 1024 "sysprep_operation_ca_certificates.ml" 28 1006 1049
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 29 1051 1069 "sysprep_operation_ca_certificates.ml" 29 1051 1092
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 30 1094 1112 "sysprep_operation_ca_certificates.ml" 30 1094 1140
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 31 1142 1160 "sysprep_operation_ca_certificates.ml" 31 1142 1187
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 32 1189 1207 "sysprep_operation_ca_certificates.ml" 32 1189 1235
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 33 1237 1255 "sysprep_operation_ca_certificates.ml" 33 1237 1281
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 28 1006 1022 "sysprep_operation_ca_certificates.ml" 33 1237 1284
+type(
+  string list
+)
+"sysprep_operation_ca_certificates.ml" 34 1288 1296 "sysprep_operation_ca_certificates.ml" 34 1288 1303
+type(
+  string list
+)
+"sysprep_operation_ca_certificates.ml" 34 1288 1308 "sysprep_operation_ca_certificates.ml" 34 1288 1342
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 35 1344 1364 "sysprep_operation_ca_certificates.ml" 35 1344 1404
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 34 1288 1306 "sysprep_operation_ca_certificates.ml" 35 1344 1407
+type(
+  string list
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1467 "sysprep_operation_ca_certificates.ml" 37 1459 1472
+type(
+  StringSet.elt list
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1475 "sysprep_operation_ca_certificates.ml" 37 1459 1486
+type(
+  StringSet.elt list list -> StringSet.elt list
+)
+ident(
+  ext_ref List.concat
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1488 "sysprep_operation_ca_certificates.ml" 37 1459 1496
+type(
+  (StringSet.elt array -> StringSet.elt list) ->
+  StringSet.elt array list -> StringSet.elt list list
+)
+ident(
+  ext_ref List.map
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1497 "sysprep_operation_ca_certificates.ml" 37 1459 1510
+type(
+  StringSet.elt array -> StringSet.elt list
+)
+ident(
+  ext_ref Array.to_list
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1512 "sysprep_operation_ca_certificates.ml" 37 1459 1520
+type(
+  (string -> StringSet.elt array) -> string list -> StringSet.elt array list
+)
+ident(
+  ext_ref List.map
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1521 "sysprep_operation_ca_certificates.ml" 37 1459 1522
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_ca_certificates.ml" 25 888 916 "sysprep_operation_ca_certificates.ml" 25 888 917
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1521 "sysprep_operation_ca_certificates.ml" 37 1459 1534
+call(
+  stack
+)
+type(
+  string -> StringSet.elt array
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1535 "sysprep_operation_ca_certificates.ml" 37 1459 1540
+type(
+  string list
+)
+ident(
+  int_ref paths "sysprep_operation_ca_certificates.ml" 28 1006 1014 "sysprep_operation_ca_certificates.ml" 28 1006 1019
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1511 "sysprep_operation_ca_certificates.ml" 37 1459 1541
+call(
+  stack
+)
+type(
+  StringSet.elt array list
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1487 "sysprep_operation_ca_certificates.ml" 37 1459 1542
+call(
+  stack
+)
+type(
+  StringSet.elt list list
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1475 "sysprep_operation_ca_certificates.ml" 37 1459 1542
+call(
+  stack
+)
+type(
+  StringSet.elt list
+)
+"sysprep_operation_ca_certificates.ml" 38 1546 1554 "sysprep_operation_ca_certificates.ml" 38 1546 1557
+type(
+  StringSet.t
+)
+"sysprep_operation_ca_certificates.ml" 38 1546 1560 "sysprep_operation_ca_certificates.ml" 38 1546 1575
+type(
+  (StringSet.elt -> StringSet.t -> StringSet.t) ->
+  StringSet.elt list -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref List.fold_right
+)
+"sysprep_operation_ca_certificates.ml" 38 1546 1576 "sysprep_operation_ca_certificates.ml" 38 1546 1589
+type(
+  StringSet.elt -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.add
+)
+"sysprep_operation_ca_certificates.ml" 38 1546 1590 "sysprep_operation_ca_certificates.ml" 38 1546 1595
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref paths "sysprep_operation_ca_certificates.ml" 37 1459 1467 "sysprep_operation_ca_certificates.ml" 37 1459 1472
+)
+"sysprep_operation_ca_certificates.ml" 38 1546 1596 "sysprep_operation_ca_certificates.ml" 38 1546 1611
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"sysprep_operation_ca_certificates.ml" 38 1546 1560 "sysprep_operation_ca_certificates.ml" 38 1546 1611
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"sysprep_operation_ca_certificates.ml" 39 1615 1623 "sysprep_operation_ca_certificates.ml" 39 1615 1630
+type(
+  StringSet.t
+)
+"sysprep_operation_ca_certificates.ml" 39 1615 1633 "sysprep_operation_ca_certificates.ml" 39 1615 1648
+type(
+  (StringSet.elt -> StringSet.t -> StringSet.t) ->
+  StringSet.elt list -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref List.fold_right
+)
+"sysprep_operation_ca_certificates.ml" 39 1615 1649 "sysprep_operation_ca_certificates.ml" 39 1615 1662
+type(
+  StringSet.elt -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.add
+)
+"sysprep_operation_ca_certificates.ml" 39 1615 1663 "sysprep_operation_ca_certificates.ml" 39 1615 1670
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref excepts "sysprep_operation_ca_certificates.ml" 34 1288 1296 "sysprep_operation_ca_certificates.ml" 34 1288 1303
+)
+"sysprep_operation_ca_certificates.ml" 39 1615 1671 "sysprep_operation_ca_certificates.ml" 39 1615 1686
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"sysprep_operation_ca_certificates.ml" 39 1615 1633 "sysprep_operation_ca_certificates.ml" 39 1615 1686
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"sysprep_operation_ca_certificates.ml" 40 1690 1698 "sysprep_operation_ca_certificates.ml" 40 1690 1701
+type(
+  StringSet.t
+)
+"sysprep_operation_ca_certificates.ml" 40 1690 1704 "sysprep_operation_ca_certificates.ml" 40 1690 1718
+type(
+  StringSet.t -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.diff
+)
+"sysprep_operation_ca_certificates.ml" 40 1690 1719 "sysprep_operation_ca_certificates.ml" 40 1690 1722
+type(
+  StringSet.t
+)
+ident(
+  int_ref set "sysprep_operation_ca_certificates.ml" 38 1546 1554 "sysprep_operation_ca_certificates.ml" 38 1546 1557
+)
+"sysprep_operation_ca_certificates.ml" 40 1690 1723 "sysprep_operation_ca_certificates.ml" 40 1690 1730
+type(
+  StringSet.t
+)
+ident(
+  int_ref excepts "sysprep_operation_ca_certificates.ml" 39 1615 1623 "sysprep_operation_ca_certificates.ml" 39 1615 1630
+)
+"sysprep_operation_ca_certificates.ml" 40 1690 1704 "sysprep_operation_ca_certificates.ml" 40 1690 1730
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"sysprep_operation_ca_certificates.ml" 41 1734 1738 "sysprep_operation_ca_certificates.ml" 41 1734 1752
+type(
+  (StringSet.elt -> unit) -> StringSet.t -> unit
+)
+ident(
+  ext_ref StringSet.iter
+)
+"sysprep_operation_ca_certificates.ml" 42 1755 1765 "sysprep_operation_ca_certificates.ml" 42 1755 1773
+type(
+  StringSet.elt
+)
+ident(
+  def filename "sysprep_operation_ca_certificates.ml" 43 1777 1785 "sysprep_operation_ca_certificates.ml" 43 1777 1823
+)
+"sysprep_operation_ca_certificates.ml" 43 1777 1789 "sysprep_operation_ca_certificates.ml" 43 1777 1790
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_ca_certificates.ml" 25 888 916 "sysprep_operation_ca_certificates.ml" 25 888 917
+)
+"sysprep_operation_ca_certificates.ml" 43 1777 1789 "sysprep_operation_ca_certificates.ml" 43 1777 1793
+call(
+  stack
+)
+type(
+  StringSet.elt -> unit
+)
+"sysprep_operation_ca_certificates.ml" 43 1777 1794 "sysprep_operation_ca_certificates.ml" 43 1777 1802
+type(
+  StringSet.elt
+)
+ident(
+  int_ref filename "sysprep_operation_ca_certificates.ml" 42 1755 1765 "sysprep_operation_ca_certificates.ml" 42 1755 1773
+)
+"sysprep_operation_ca_certificates.ml" 43 1777 1789 "sysprep_operation_ca_certificates.ml" 43 1777 1802
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 43 1777 1816 "sysprep_operation_ca_certificates.ml" 43 1777 1817
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 43 1777 1808 "sysprep_operation_ca_certificates.ml" 43 1777 1817
+type(
+  exn
+)
+"sysprep_operation_ca_certificates.ml" 43 1777 1821 "sysprep_operation_ca_certificates.ml" 43 1777 1823
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 43 1777 1785 "sysprep_operation_ca_certificates.ml" 43 1777 1823
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 41 1734 1753 "sysprep_operation_ca_certificates.ml" 44 1824 1829
+type(
+  StringSet.elt -> unit
+)
+"sysprep_operation_ca_certificates.ml" 44 1824 1830 "sysprep_operation_ca_certificates.ml" 44 1824 1833
+type(
+  StringSet.t
+)
+ident(
+  int_ref set "sysprep_operation_ca_certificates.ml" 40 1690 1698 "sysprep_operation_ca_certificates.ml" 40 1690 1701
+)
+"sysprep_operation_ca_certificates.ml" 41 1734 1738 "sysprep_operation_ca_certificates.ml" 44 1824 1833
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 40 1690 1694 "sysprep_operation_ca_certificates.ml" 44 1824 1833
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 39 1615 1619 "sysprep_operation_ca_certificates.ml" 44 1824 1833
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 38 1546 1550 "sysprep_operation_ca_certificates.ml" 44 1824 1833
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 37 1459 1463 "sysprep_operation_ca_certificates.ml" 44 1824 1833
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 34 1288 1292 "sysprep_operation_ca_certificates.ml" 44 1824 1833
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 27 977 1004 "sysprep_operation_ca_certificates.ml" 45 1834 1837
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 27 977 979 "sysprep_operation_ca_certificates.ml" 45 1834 1837
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 26 938 940 "sysprep_operation_ca_certificates.ml" 45 1834 1837
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 47 1839 1843 "sysprep_operation_ca_certificates.ml" 47 1839 1845
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_ca_certificates.ml" 55 2045 2045 --
+)
+"sysprep_operation_ca_certificates.ml" 48 1850 1852 "sysprep_operation_ca_certificates.ml" 48 1850 1860
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_ca_certificates.ml" 49 1866 1877 "sysprep_operation_ca_certificates.ml" 49 1866 1894
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 50 1896 1921 "sysprep_operation_ca_certificates.ml" 50 1896 1926
+type(
+  bool
+)
+"sysprep_operation_ca_certificates.ml" 51 1928 1942 "sysprep_operation_ca_certificates.ml" 51 1928 1944
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_ca_certificates.ml" 51 1928 1944 "sysprep_operation_ca_certificates.ml" 51 1928 1981
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 51 1928 1942 "sysprep_operation_ca_certificates.ml" 51 1928 1981
+type(
+  string
+)
+"sysprep_operation_ca_certificates.ml" 52 1983 2017 "sysprep_operation_ca_certificates.ml" 52 1983 2040
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref ca_certificates_perform "sysprep_operation_ca_certificates.ml" 25 888 892 "sysprep_operation_ca_certificates.ml" 25 888 915
+)
+"sysprep_operation_ca_certificates.ml" 52 1983 2012 "sysprep_operation_ca_certificates.ml" 52 1983 2040
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_ca_certificates.ml" 47 1839 1848 "sysprep_operation_ca_certificates.ml" 53 2042 2043
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_ca_certificates.ml" 55 2045 2049 "sysprep_operation_ca_certificates.ml" 55 2045 2051
+type(
+  unit
+)
+"sysprep_operation_ca_certificates.ml" 55 2045 2054 "sysprep_operation_ca_certificates.ml" 55 2045 2072
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_ca_certificates.ml" 55 2045 2073 "sysprep_operation_ca_certificates.ml" 55 2045 2075
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_ca_certificates.ml" 47 1839 1843 "sysprep_operation_ca_certificates.ml" 47 1839 1845
+)
+"sysprep_operation_ca_certificates.ml" 55 2045 2054 "sysprep_operation_ca_certificates.ml" 55 2045 2075
+call(
+  stack
+)
+type(
+  unit
+)

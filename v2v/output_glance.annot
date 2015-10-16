@@ -1,0 +1,1650 @@
+"output_glance.ml" 27 860 880 "output_glance.ml" 27 860 882
+type(
+  unit
+)
+"output_glance.ml" 33 1134 1140 "output_glance.ml" 33 1134 1146
+type(
+  string
+)
+"output_glance.ml" 34 1149 1157 "output_glance.ml" 34 1149 1165
+type(
+  string
+)
+"output_glance.ml" 34 1149 1169 "output_glance.ml" 34 1149 1188
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> Guestfs.guestfs
+)
+"output_glance.ml" 34 1149 1189 "output_glance.ml" 34 1149 1191
+type(
+  unit
+)
+"output_glance.ml" 34 1149 1168 "output_glance.ml" 34 1149 1192
+call(
+  stack
+)
+type(
+  Guestfs.guestfs
+)
+"output_glance.ml" 34 1149 1168 "output_glance.ml" 34 1149 1205
+call(
+  stack
+)
+type(
+  unit -> string
+)
+"output_glance.ml" 34 1149 1206 "output_glance.ml" 34 1149 1208
+type(
+  unit
+)
+"output_glance.ml" 34 1149 1168 "output_glance.ml" 34 1149 1208
+type(
+  string
+)
+"output_glance.ml" 35 1212 1220 "output_glance.ml" 35 1212 1221
+type(
+  string
+)
+"output_glance.ml" 35 1212 1224 "output_glance.ml" 35 1212 1240
+type(
+  ?base_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Mkdtemp.temp_dir
+)
+"output_glance.ml" 35 1212 1242 "output_glance.ml" 35 1212 1250
+type(
+  string
+)
+ident(
+  int_ref base_dir "output_glance.ml" 34 1149 1157 "output_glance.ml" 34 1149 1165
+)
+"output_glance.ml" 35 1212 1251 "output_glance.ml" 35 1212 1260
+type(
+  string
+)
+"output_glance.ml" 35 1212 1261 "output_glance.ml" 35 1212 1263
+type(
+  string
+)
+"output_glance.ml" 35 1212 1224 "output_glance.ml" 35 1212 1263
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 36 1267 1271 "output_glance.ml" 36 1267 1284
+type(
+  string -> unit
+)
+ident(
+  ext_ref Common_utils.rmdir_on_exit
+)
+"output_glance.ml" 36 1267 1285 "output_glance.ml" 36 1267 1286
+type(
+  string
+)
+ident(
+  int_ref t "output_glance.ml" 35 1212 1220 "output_glance.ml" 35 1212 1221
+)
+"output_glance.ml" 36 1267 1271 "output_glance.ml" 36 1267 1286
+call(
+  stack
+)
+type(
+  unit
+)
+"output_glance.ml" 37 1288 1292 "output_glance.ml" 37 1288 1293
+type(
+  string
+)
+ident(
+  int_ref t "output_glance.ml" 35 1212 1220 "output_glance.ml" 35 1212 1221
+)
+"output_glance.ml" 36 1267 1271 "output_glance.ml" 37 1288 1293
+type(
+  string
+)
+"output_glance.ml" 35 1212 1216 "output_glance.ml" 37 1288 1293
+type(
+  string
+)
+"output_glance.ml" 34 1149 1153 "output_glance.ml" 37 1288 1293
+type(
+  string
+)
+"output_glance.ml" 41 1322 1344 "output_glance.ml" 41 1322 1355
+type(
+  string
+)
+type(
+  string
+)
+"output_glance.ml" 43 1357 1389 "output_glance.ml" 43 1357 1399
+type(
+  Types.target_firmware
+)
+"output_glance.ml" 43 1357 1387 "output_glance.ml" 43 1357 1401
+type(
+  Types.target_firmware list
+)
+type(
+  Types.target_firmware list
+)
+"output_glance.ml" 45 1403 1428 "output_glance.ml" 45 1403 1434
+type(
+  Types.source
+)
+ident(
+  def source "output_glance.ml" 45 1403 1435 "output_glance.ml" 63 2351 2364
+)
+"output_glance.ml" 45 1403 1435 "output_glance.ml" 45 1403 1442
+type(
+  Types.target list
+)
+ident(
+  def targets "output_glance.ml" 51 1682 1686 "output_glance.ml" 63 2351 2364
+)
+"output_glance.ml" 51 1682 1689 "output_glance.ml" 51 1682 1700
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"output_glance.ml" 51 1682 1701 "output_glance.ml" 51 1682 1732
+type(
+  string
+)
+"output_glance.ml" 51 1682 1689 "output_glance.ml" 51 1682 1732
+type(
+  int
+)
+"output_glance.ml" 51 1682 1733 "output_glance.ml" 51 1682 1735
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_glance.ml" 51 1682 1736 "output_glance.ml" 51 1682 1737
+type(
+  int
+)
+"output_glance.ml" 51 1682 1689 "output_glance.ml" 51 1682 1737
+type(
+  bool
+)
+"output_glance.ml" 52 1743 1749 "output_glance.ml" 52 1743 1754
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_glance.ml" 52 1743 1756 "output_glance.ml" 52 1743 1758
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_glance.ml" 52 1743 1758 "output_glance.ml" 52 1743 1944
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"output_glance.ml" 52 1743 1755 "output_glance.ml" 52 1743 1945
+type(
+  (unit, unit, string, unit) format4
+)
+"output_glance.ml" 52 1743 1749 "output_glance.ml" 52 1743 1945
+call(
+  stack
+)
+type(
+  unit
+)
+"output_glance.ml" 51 1682 1686 "output_glance.ml" 52 1743 1945
+type(
+  unit
+)
+"output_glance.ml" 55 2009 2017 "output_glance.ml" 55 2009 2027
+type(
+  int
+)
+"output_glance.ml" 55 2009 2030 "output_glance.ml" 55 2009 2041
+type(
+  Types.target list -> int
+)
+ident(
+  ext_ref List.length
+)
+"output_glance.ml" 55 2009 2042 "output_glance.ml" 55 2009 2049
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_glance.ml" 45 1403 1435 "output_glance.ml" 45 1403 1442
+)
+"output_glance.ml" 55 2009 2030 "output_glance.ml" 55 2009 2049
+call(
+  stack
+)
+type(
+  int
+)
+"output_glance.ml" 56 2053 2060 "output_glance.ml" 56 2053 2070
+type(
+  int
+)
+ident(
+  int_ref nr_targets "output_glance.ml" 55 2009 2017 "output_glance.ml" 55 2009 2027
+)
+"output_glance.ml" 56 2053 2071 "output_glance.ml" 56 2053 2073
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_glance.ml" 56 2053 2074 "output_glance.ml" 56 2053 2075
+type(
+  int
+)
+"output_glance.ml" 56 2053 2060 "output_glance.ml" 56 2053 2075
+type(
+  bool
+)
+"output_glance.ml" 57 2081 2087 "output_glance.ml" 57 2081 2092
+type(
+  ?exit_code:int -> (int -> unit, unit, string, unit) format4 -> int -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_glance.ml" 57 2081 2094 "output_glance.ml" 57 2081 2096
+type(
+  (int -> unit, unit, string, string, string, unit) format6 ->
+  (int -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_glance.ml" 57 2081 2096 "output_glance.ml" 57 2081 2199
+type(
+  (int -> unit, unit, string, string, string, unit) format6
+)
+"output_glance.ml" 57 2081 2093 "output_glance.ml" 57 2081 2200
+type(
+  (int -> unit, unit, string, unit) format4
+)
+"output_glance.ml" 57 2081 2201 "output_glance.ml" 57 2081 2211
+type(
+  int
+)
+ident(
+  int_ref nr_targets "output_glance.ml" 55 2009 2017 "output_glance.ml" 55 2009 2027
+)
+"output_glance.ml" 57 2081 2087 "output_glance.ml" 57 2081 2211
+call(
+  stack
+)
+type(
+  unit
+)
+"output_glance.ml" 56 2053 2057 "output_glance.ml" 57 2081 2211
+type(
+  unit
+)
+"output_glance.ml" 59 2214 2218 "output_glance.ml" 59 2214 2226
+type(
+  (Types.target -> Types.target) -> Types.target list -> Types.target list
+)
+ident(
+  ext_ref List.map
+)
+"output_glance.ml" 60 2229 2239 "output_glance.ml" 60 2229 2240
+type(
+  Types.target
+)
+ident(
+  def t "output_glance.ml" 61 2244 2252 "output_glance.ml" 62 2306 2350
+)
+"output_glance.ml" 61 2244 2256 "output_glance.ml" 61 2244 2267
+type(
+  string
+)
+"output_glance.ml" 61 2244 2270 "output_glance.ml" 61 2244 2276
+type(
+  string
+)
+"output_glance.ml" 61 2244 2277 "output_glance.ml" 61 2244 2279
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_glance.ml" 61 2244 2280 "output_glance.ml" 61 2244 2281
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_glance.ml" 60 2229 2239 "output_glance.ml" 60 2229 2240
+)
+"output_glance.ml" 61 2244 2280 "output_glance.ml" 61 2244 2296
+type(
+  Types.overlay
+)
+"output_glance.ml" 61 2244 2280 "output_glance.ml" 61 2244 2302
+type(
+  string
+)
+"output_glance.ml" 61 2244 2270 "output_glance.ml" 61 2244 2302
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 62 2306 2316 "output_glance.ml" 62 2306 2317
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_glance.ml" 60 2229 2239 "output_glance.ml" 60 2229 2240
+)
+"output_glance.ml" 62 2306 2337 "output_glance.ml" 62 2306 2348
+type(
+  string
+)
+ident(
+  int_ref target_file "output_glance.ml" 61 2244 2256 "output_glance.ml" 61 2244 2267
+)
+"output_glance.ml" 62 2306 2314 "output_glance.ml" 62 2306 2350
+type(
+  Types.target
+)
+"output_glance.ml" 61 2244 2252 "output_glance.ml" 62 2306 2350
+type(
+  Types.target
+)
+"output_glance.ml" 59 2214 2227 "output_glance.ml" 63 2351 2356
+type(
+  Types.target -> Types.target
+)
+"output_glance.ml" 63 2351 2357 "output_glance.ml" 63 2351 2364
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_glance.ml" 45 1403 1435 "output_glance.ml" 45 1403 1442
+)
+"output_glance.ml" 59 2214 2218 "output_glance.ml" 63 2351 2364
+call(
+  tail
+)
+type(
+  Types.target list
+)
+"output_glance.ml" 56 2053 2057 "output_glance.ml" 63 2351 2364
+type(
+  Types.target list
+)
+"output_glance.ml" 55 2009 2013 "output_glance.ml" 63 2351 2364
+type(
+  Types.target list
+)
+"output_glance.ml" 51 1682 1686 "output_glance.ml" 63 2351 2364
+type(
+  Types.target list
+)
+"output_glance.ml" 65 2366 2391 "output_glance.ml" 65 2366 2397
+type(
+  Types.source
+)
+ident(
+  def source "output_glance.ml" 65 2366 2398 "output_glance.ml" 130 4848 4853
+)
+"output_glance.ml" 65 2366 2398 "output_glance.ml" 65 2366 2405
+type(
+  Types.target list
+)
+ident(
+  def targets "output_glance.ml" 65 2366 2406 "output_glance.ml" 130 4848 4853
+)
+"output_glance.ml" 65 2366 2406 "output_glance.ml" 65 2366 2407
+type(
+  Types.target_buses
+)
+"output_glance.ml" 65 2366 2408 "output_glance.ml" 65 2366 2417
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "output_glance.ml" 65 2366 2418 "output_glance.ml" 130 4848 4853
+)
+"output_glance.ml" 65 2366 2418 "output_glance.ml" 65 2366 2425
+type(
+  Types.inspect
+)
+ident(
+  def inspect "output_glance.ml" 65 2366 2426 "output_glance.ml" 130 4848 4853
+)
+"output_glance.ml" 65 2366 2426 "output_glance.ml" 65 2366 2441
+type(
+  Types.target_firmware
+)
+ident(
+  def target_firmware "output_glance.ml" 67 2485 2489 "output_glance.ml" 130 4848 4853
+)
+"output_glance.ml" 67 2485 2497 "output_glance.ml" 67 2485 2512
+type(
+  Types.target_firmware
+)
+ident(
+  int_ref target_firmware "output_glance.ml" 65 2366 2426 "output_glance.ml" 65 2366 2441
+)
+"output_glance.ml" 67 2485 2513 "output_glance.ml" 67 2485 2514
+type(
+  Types.target_firmware -> Types.target_firmware -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_glance.ml" 67 2485 2515 "output_glance.ml" 67 2485 2525
+type(
+  Types.target_firmware
+)
+"output_glance.ml" 67 2485 2496 "output_glance.ml" 67 2485 2526
+type(
+  bool
+)
+"output_glance.ml" 67 2485 2489 "output_glance.ml" 67 2485 2526
+type(
+  unit
+)
+"output_glance.ml" 70 2601 2625 "output_glance.ml" 70 2601 2636
+type(
+  string
+)
+"output_glance.ml" 70 2601 2654 "output_glance.ml" 70 2601 2667
+type(
+  string
+)
+"output_glance.ml" 70 2601 2609 "output_glance.ml" 70 2601 2669
+type(
+  Types.target
+)
+"output_glance.ml" 71 2672 2678 "output_glance.ml" 71 2672 2685
+type(
+  Types.target list -> Types.target
+)
+ident(
+  ext_ref List.hd
+)
+"output_glance.ml" 71 2672 2686 "output_glance.ml" 71 2672 2693
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_glance.ml" 65 2366 2398 "output_glance.ml" 65 2366 2405
+)
+"output_glance.ml" 71 2672 2678 "output_glance.ml" 71 2672 2693
+call(
+  stack
+)
+type(
+  Types.target
+)
+"output_glance.ml" 72 2697 2705 "output_glance.ml" 72 2697 2708
+type(
+  string
+)
+"output_glance.ml" 73 2711 2717 "output_glance.ml" 73 2711 2724
+type(
+  (string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_glance.ml" 73 2711 2725 "output_glance.ml" 73 2711 2807
+type(
+  (string -> string -> string -> string, unit, string) format
+)
+"output_glance.ml" 74 2808 2817 "output_glance.ml" 74 2808 2822
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_glance.ml" 74 2808 2823 "output_glance.ml" 74 2808 2829
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_glance.ml" 65 2366 2391 "output_glance.ml" 65 2366 2397
+)
+"output_glance.ml" 74 2808 2823 "output_glance.ml" 74 2808 2836
+type(
+  string
+)
+"output_glance.ml" 74 2808 2816 "output_glance.ml" 74 2808 2837
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 74 2808 2839 "output_glance.ml" 74 2808 2844
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_glance.ml" 74 2808 2845 "output_glance.ml" 74 2808 2858
+type(
+  string
+)
+ident(
+  int_ref target_format "output_glance.ml" 70 2601 2654 "output_glance.ml" 70 2601 2667
+)
+"output_glance.ml" 74 2808 2838 "output_glance.ml" 74 2808 2859
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 74 2808 2860 "output_glance.ml" 74 2808 2871
+type(
+  string
+)
+ident(
+  int_ref target_file "output_glance.ml" 70 2601 2625 "output_glance.ml" 70 2601 2636
+)
+"output_glance.ml" 73 2711 2717 "output_glance.ml" 74 2808 2871
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 75 2875 2882 "output_glance.ml" 75 2875 2889
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_glance.ml" 75 2875 2890 "output_glance.ml" 75 2875 2892
+type(
+  unit
+)
+"output_glance.ml" 75 2875 2882 "output_glance.ml" 75 2875 2892
+call(
+  stack
+)
+type(
+  bool
+)
+"output_glance.ml" 75 2875 2898 "output_glance.ml" 75 2875 2904
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"output_glance.ml" 75 2875 2905 "output_glance.ml" 75 2875 2913
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_glance.ml" 75 2875 2914 "output_glance.ml" 75 2875 2917
+type(
+  string
+)
+ident(
+  int_ref cmd "output_glance.ml" 72 2697 2705 "output_glance.ml" 72 2697 2708
+)
+"output_glance.ml" 75 2875 2898 "output_glance.ml" 75 2875 2917
+call(
+  stack
+)
+type(
+  unit
+)
+"output_glance.ml" 75 2875 2879 "output_glance.ml" 75 2875 2917
+type(
+  unit
+)
+"output_glance.ml" 76 2919 2926 "output_glance.ml" 76 2919 2937
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"output_glance.ml" 76 2919 2938 "output_glance.ml" 76 2919 2941
+type(
+  string
+)
+ident(
+  int_ref cmd "output_glance.ml" 72 2697 2705 "output_glance.ml" 72 2697 2708
+)
+"output_glance.ml" 76 2919 2926 "output_glance.ml" 76 2919 2941
+type(
+  int
+)
+"output_glance.ml" 76 2919 2942 "output_glance.ml" 76 2919 2944
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_glance.ml" 76 2919 2945 "output_glance.ml" 76 2919 2946
+type(
+  int
+)
+"output_glance.ml" 76 2919 2926 "output_glance.ml" 76 2919 2946
+type(
+  bool
+)
+"output_glance.ml" 77 2952 2958 "output_glance.ml" 77 2952 2963
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_glance.ml" 77 2952 2965 "output_glance.ml" 77 2952 2967
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_glance.ml" 77 2952 2967 "output_glance.ml" 77 2952 3026
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"output_glance.ml" 77 2952 2964 "output_glance.ml" 77 2952 3027
+type(
+  (unit, unit, string, unit) format4
+)
+"output_glance.ml" 77 2952 2958 "output_glance.ml" 77 2952 3027
+call(
+  stack
+)
+type(
+  unit
+)
+"output_glance.ml" 76 2919 2923 "output_glance.ml" 77 2952 3027
+type(
+  unit
+)
+"output_glance.ml" 80 3075 3083 "output_glance.ml" 80 3075 3090
+type(
+  int64
+)
+"output_glance.ml" 80 3075 3093 "output_glance.ml" 80 3075 3099
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_glance.ml" 65 2366 2391 "output_glance.ml" 65 2366 2397
+)
+"output_glance.ml" 80 3075 3093 "output_glance.ml" 80 3075 3108
+type(
+  int64
+)
+"output_glance.ml" 80 3075 3109 "output_glance.ml" 80 3075 3111
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( /^ )
+)
+"output_glance.ml" 80 3075 3112 "output_glance.ml" 80 3075 3117
+type(
+  int64
+)
+"output_glance.ml" 80 3075 3093 "output_glance.ml" 80 3075 3117
+call(
+  stack
+)
+type(
+  int64
+)
+"output_glance.ml" 80 3075 3118 "output_glance.ml" 80 3075 3120
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( /^ )
+)
+"output_glance.ml" 80 3075 3121 "output_glance.ml" 80 3075 3126
+type(
+  int64
+)
+"output_glance.ml" 80 3075 3093 "output_glance.ml" 80 3075 3126
+call(
+  stack
+)
+type(
+  int64
+)
+"output_glance.ml" 81 3130 3138 "output_glance.ml" 81 3130 3148
+type(
+  (string * string) list
+)
+"output_glance.ml" 82 3153 3159 "output_glance.ml" 82 3153 3172
+type(
+  string
+)
+"output_glance.ml" 83 3174 3187 "output_glance.ml" 83 3174 3196
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_glance.ml" 65 2366 2408 "output_glance.ml" 65 2366 2417
+)
+"output_glance.ml" 83 3174 3187 "output_glance.ml" 83 3174 3212
+type(
+  Types.guestcaps_block_type
+)
+"output_glance.ml" 84 3218 3226 "output_glance.ml" 84 3218 3236
+type(
+  Types.guestcaps_block_type
+)
+"output_glance.ml" 84 3218 3240 "output_glance.ml" 84 3218 3248
+type(
+  string
+)
+"output_glance.ml" 85 3249 3257 "output_glance.ml" 85 3249 3260
+type(
+  Types.guestcaps_block_type
+)
+"output_glance.ml" 85 3249 3264 "output_glance.ml" 85 3249 3269
+type(
+  string
+)
+"output_glance.ml" 83 3174 3180 "output_glance.ml" 85 3249 3270
+type(
+  string
+)
+"output_glance.ml" 82 3153 3159 "output_glance.ml" 85 3249 3270
+type(
+  string * string
+)
+"output_glance.ml" 86 3272 3278 "output_glance.ml" 86 3272 3292
+type(
+  string
+)
+"output_glance.ml" 87 3294 3307 "output_glance.ml" 87 3294 3316
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_glance.ml" 65 2366 2408 "output_glance.ml" 65 2366 2417
+)
+"output_glance.ml" 87 3294 3307 "output_glance.ml" 87 3294 3330
+type(
+  Types.guestcaps_net_type
+)
+"output_glance.ml" 88 3336 3344 "output_glance.ml" 88 3336 3354
+type(
+  Types.guestcaps_net_type
+)
+"output_glance.ml" 88 3336 3358 "output_glance.ml" 88 3336 3366
+type(
+  string
+)
+"output_glance.ml" 89 3367 3375 "output_glance.ml" 89 3367 3380
+type(
+  Types.guestcaps_net_type
+)
+"output_glance.ml" 89 3367 3384 "output_glance.ml" 89 3367 3391
+type(
+  string
+)
+"output_glance.ml" 90 3392 3400 "output_glance.ml" 90 3392 3407
+type(
+  Types.guestcaps_net_type
+)
+"output_glance.ml" 90 3392 3411 "output_glance.ml" 90 3392 3420
+type(
+  string
+)
+"output_glance.ml" 87 3294 3300 "output_glance.ml" 90 3392 3421
+type(
+  string
+)
+"output_glance.ml" 86 3272 3278 "output_glance.ml" 90 3392 3421
+type(
+  string * string
+)
+"output_glance.ml" 91 3423 3429 "output_glance.ml" 91 3423 3443
+type(
+  string
+)
+"output_glance.ml" 91 3423 3445 "output_glance.ml" 91 3423 3454
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_glance.ml" 65 2366 2408 "output_glance.ml" 65 2366 2417
+)
+"output_glance.ml" 91 3423 3445 "output_glance.ml" 91 3423 3465
+type(
+  string
+)
+"output_glance.ml" 91 3423 3429 "output_glance.ml" 91 3423 3465
+type(
+  string * string
+)
+"output_glance.ml" 92 3467 3473 "output_glance.ml" 92 3467 3490
+type(
+  string
+)
+"output_glance.ml" 92 3467 3492 "output_glance.ml" 92 3467 3497
+type(
+  string
+)
+"output_glance.ml" 92 3467 3473 "output_glance.ml" 92 3467 3497
+type(
+  string * string
+)
+"output_glance.ml" 93 3499 3505 "output_glance.ml" 93 3499 3514
+type(
+  string
+)
+"output_glance.ml" 93 3499 3516 "output_glance.ml" 93 3499 3521
+type(
+  string
+)
+"output_glance.ml" 93 3499 3505 "output_glance.ml" 93 3499 3521
+type(
+  string * string
+)
+"output_glance.ml" 94 3523 3529 "output_glance.ml" 94 3523 3538
+type(
+  string
+)
+"output_glance.ml" 94 3523 3540 "output_glance.ml" 94 3523 3547
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "output_glance.ml" 65 2366 2418 "output_glance.ml" 65 2366 2425
+)
+"output_glance.ml" 94 3523 3540 "output_glance.ml" 94 3523 3554
+type(
+  string
+)
+"output_glance.ml" 94 3523 3529 "output_glance.ml" 94 3523 3554
+type(
+  string * string
+)
+"output_glance.ml" 95 3556 3562 "output_glance.ml" 95 3556 3573
+type(
+  string
+)
+"output_glance.ml" 96 3575 3588 "output_glance.ml" 96 3575 3595
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "output_glance.ml" 65 2366 2418 "output_glance.ml" 65 2366 2425
+)
+"output_glance.ml" 96 3575 3588 "output_glance.ml" 96 3575 3604
+type(
+  string
+)
+"output_glance.ml" 98 3708 3716 "output_glance.ml" 98 3708 3727
+type(
+  string
+)
+"output_glance.ml" 98 3708 3731 "output_glance.ml" 98 3708 3737
+type(
+  string
+)
+"output_glance.ml" 99 3738 3746 "output_glance.ml" 99 3738 3752
+type(
+  string
+)
+"output_glance.ml" 99 3738 3756 "output_glance.ml" 99 3738 3762
+type(
+  string
+)
+"output_glance.ml" 100 3763 3771 "output_glance.ml" 100 3763 3772
+type(
+  string
+)
+ident(
+  def x "output_glance.ml" 100 3763 3776 "output_glance.ml" 100 3763 3777
+)
+"output_glance.ml" 100 3763 3776 "output_glance.ml" 100 3763 3777
+type(
+  string
+)
+ident(
+  int_ref x "output_glance.ml" 100 3763 3771 "output_glance.ml" 100 3763 3772
+)
+"output_glance.ml" 96 3575 3581 "output_glance.ml" 101 3840 3847
+type(
+  string
+)
+"output_glance.ml" 95 3556 3562 "output_glance.ml" 101 3840 3847
+type(
+  string * string
+)
+"output_glance.ml" 81 3130 3151 "output_glance.ml" 102 3848 3853
+type(
+  (string * string) list
+)
+"output_glance.ml" 103 3857 3865 "output_glance.ml" 103 3857 3875
+type(
+  (string * string) list
+)
+"output_glance.ml" 104 3878 3890 "output_glance.ml" 104 3878 3897
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "output_glance.ml" 65 2366 2418 "output_glance.ml" 65 2366 2425
+)
+"output_glance.ml" 104 3878 3890 "output_glance.ml" 104 3878 3913
+type(
+  int
+)
+"output_glance.ml" 104 3878 3915 "output_glance.ml" 104 3878 3922
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "output_glance.ml" 65 2366 2418 "output_glance.ml" 65 2366 2425
+)
+"output_glance.ml" 104 3878 3915 "output_glance.ml" 104 3878 3938
+type(
+  int
+)
+"output_glance.ml" 104 3878 3890 "output_glance.ml" 104 3878 3938
+type(
+  int * int
+)
+"output_glance.ml" 105 3944 3952 "output_glance.ml" 105 3944 3953
+type(
+  int
+)
+"output_glance.ml" 105 3944 3955 "output_glance.ml" 105 3944 3956
+type(
+  int
+)
+"output_glance.ml" 105 3944 3952 "output_glance.ml" 105 3944 3956
+type(
+  int * int
+)
+"output_glance.ml" 105 3944 3960 "output_glance.ml" 105 3944 3970
+type(
+  (string * string) list
+)
+ident(
+  int_ref properties "output_glance.ml" 81 3130 3138 "output_glance.ml" 81 3130 3148
+)
+"output_glance.ml" 106 3971 3979 "output_glance.ml" 106 3971 3980
+type(
+  int
+)
+ident(
+  def x "output_glance.ml" 106 3971 3987 "output_glance.ml" 106 3971 4032
+)
+"output_glance.ml" 106 3971 3982 "output_glance.ml" 106 3971 3983
+type(
+  int
+)
+"output_glance.ml" 106 3971 3979 "output_glance.ml" 106 3971 3983
+type(
+  int * int
+)
+"output_glance.ml" 106 3971 3988 "output_glance.ml" 106 3971 4000
+type(
+  string
+)
+"output_glance.ml" 106 3971 4002 "output_glance.ml" 106 3971 4015
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"output_glance.ml" 106 3971 4016 "output_glance.ml" 106 3971 4017
+type(
+  int
+)
+ident(
+  int_ref x "output_glance.ml" 106 3971 3979 "output_glance.ml" 106 3971 3980
+)
+"output_glance.ml" 106 3971 4002 "output_glance.ml" 106 3971 4017
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 106 3971 3987 "output_glance.ml" 106 3971 4018
+type(
+  string * string
+)
+"output_glance.ml" 106 3971 4022 "output_glance.ml" 106 3971 4032
+type(
+  (string * string) list
+)
+ident(
+  int_ref properties "output_glance.ml" 81 3130 3138 "output_glance.ml" 81 3130 3148
+)
+"output_glance.ml" 106 3971 3987 "output_glance.ml" 106 3971 4032
+type(
+  (string * string) list
+)
+"output_glance.ml" 107 4033 4041 "output_glance.ml" 107 4033 4042
+type(
+  int
+)
+ident(
+  def x "output_glance.ml" 107 4033 4049 "output_glance.ml" 107 4033 4098
+)
+"output_glance.ml" 107 4033 4044 "output_glance.ml" 107 4033 4045
+type(
+  int
+)
+ident(
+  def y "output_glance.ml" 107 4033 4049 "output_glance.ml" 107 4033 4098
+)
+"output_glance.ml" 107 4033 4041 "output_glance.ml" 107 4033 4045
+type(
+  int * int
+)
+"output_glance.ml" 107 4033 4050 "output_glance.ml" 107 4033 4062
+type(
+  string
+)
+"output_glance.ml" 107 4033 4064 "output_glance.ml" 107 4033 4071
+type(
+  (int -> int -> string, unit, string) format -> int -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_glance.ml" 107 4033 4072 "output_glance.ml" 107 4033 4079
+type(
+  (int -> int -> string, unit, string) format
+)
+"output_glance.ml" 107 4033 4080 "output_glance.ml" 107 4033 4081
+type(
+  int
+)
+ident(
+  int_ref x "output_glance.ml" 107 4033 4041 "output_glance.ml" 107 4033 4042
+)
+"output_glance.ml" 107 4033 4082 "output_glance.ml" 107 4033 4083
+type(
+  int
+)
+ident(
+  int_ref y "output_glance.ml" 107 4033 4044 "output_glance.ml" 107 4033 4045
+)
+"output_glance.ml" 107 4033 4064 "output_glance.ml" 107 4033 4083
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 107 4033 4049 "output_glance.ml" 107 4033 4084
+type(
+  string * string
+)
+"output_glance.ml" 107 4033 4088 "output_glance.ml" 107 4033 4098
+type(
+  (string * string) list
+)
+ident(
+  int_ref properties "output_glance.ml" 81 3130 3138 "output_glance.ml" 81 3130 3148
+)
+"output_glance.ml" 107 4033 4049 "output_glance.ml" 107 4033 4098
+type(
+  (string * string) list
+)
+"output_glance.ml" 104 3878 3884 "output_glance.ml" 107 4033 4098
+type(
+  (string * string) list
+)
+"output_glance.ml" 110 4160 4168 "output_glance.ml" 110 4160 4171
+type(
+  string
+)
+"output_glance.ml" 111 4174 4180 "output_glance.ml" 111 4174 4187
+type(
+  (int64 -> string -> string -> string, unit, string) format ->
+  int64 -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_glance.ml" 111 4174 4188 "output_glance.ml" 111 4174 4229
+type(
+  (int64 -> string -> string -> string, unit, string) format
+)
+"output_glance.ml" 112 4230 4238 "output_glance.ml" 112 4230 4245
+type(
+  int64
+)
+ident(
+  int_ref min_ram "output_glance.ml" 80 3075 3083 "output_glance.ml" 80 3075 3090
+)
+"output_glance.ml" 113 4246 4255 "output_glance.ml" 113 4246 4268
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"output_glance.ml" 113 4246 4269 "output_glance.ml" 113 4246 4272
+type(
+  string
+)
+"output_glance.ml" 114 4275 4285 "output_glance.ml" 114 4275 4293
+type(
+  (string * string -> string) -> (string * string) list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"output_glance.ml" 115 4296 4313 "output_glance.ml" 115 4296 4314
+type(
+  string
+)
+ident(
+  def k "output_glance.ml" 116 4322 4336 "output_glance.ml" 116 4322 4382
+)
+"output_glance.ml" 115 4296 4316 "output_glance.ml" 115 4296 4317
+type(
+  string
+)
+ident(
+  def v "output_glance.ml" 116 4322 4336 "output_glance.ml" 116 4322 4382
+)
+"output_glance.ml" 115 4296 4312 "output_glance.ml" 115 4296 4318
+type(
+  string * string
+)
+"output_glance.ml" 116 4322 4336 "output_glance.ml" 116 4322 4343
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_glance.ml" 116 4322 4344 "output_glance.ml" 116 4322 4362
+type(
+  (string -> string -> string, unit, string) format
+)
+"output_glance.ml" 116 4322 4364 "output_glance.ml" 116 4322 4369
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_glance.ml" 116 4322 4370 "output_glance.ml" 116 4322 4371
+type(
+  string
+)
+ident(
+  int_ref k "output_glance.ml" 115 4296 4313 "output_glance.ml" 115 4296 4314
+)
+"output_glance.ml" 116 4322 4363 "output_glance.ml" 116 4322 4372
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 116 4322 4374 "output_glance.ml" 116 4322 4379
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_glance.ml" 116 4322 4380 "output_glance.ml" 116 4322 4381
+type(
+  string
+)
+ident(
+  int_ref v "output_glance.ml" 115 4296 4316 "output_glance.ml" 115 4296 4317
+)
+"output_glance.ml" 116 4322 4373 "output_glance.ml" 116 4322 4382
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 116 4322 4336 "output_glance.ml" 116 4322 4382
+call(
+  tail
+)
+type(
+  string
+)
+"output_glance.ml" 114 4275 4294 "output_glance.ml" 117 4383 4394
+type(
+  string * string -> string
+)
+"output_glance.ml" 117 4383 4395 "output_glance.ml" 117 4383 4405
+type(
+  (string * string) list
+)
+ident(
+  int_ref properties "output_glance.ml" 103 3857 3865 "output_glance.ml" 103 3857 3875
+)
+"output_glance.ml" 113 4246 4273 "output_glance.ml" 118 4406 4415
+call(
+  stack
+)
+type(
+  string list
+)
+"output_glance.ml" 113 4246 4254 "output_glance.ml" 118 4406 4416
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 119 4417 4426 "output_glance.ml" 119 4417 4431
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_glance.ml" 119 4417 4432 "output_glance.ml" 119 4417 4438
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_glance.ml" 65 2366 2391 "output_glance.ml" 65 2366 2397
+)
+"output_glance.ml" 119 4417 4432 "output_glance.ml" 119 4417 4445
+type(
+  string
+)
+"output_glance.ml" 119 4417 4425 "output_glance.ml" 119 4417 4446
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 111 4174 4180 "output_glance.ml" 119 4417 4446
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 120 4450 4457 "output_glance.ml" 120 4450 4464
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_glance.ml" 120 4450 4465 "output_glance.ml" 120 4450 4467
+type(
+  unit
+)
+"output_glance.ml" 120 4450 4457 "output_glance.ml" 120 4450 4467
+call(
+  stack
+)
+type(
+  bool
+)
+"output_glance.ml" 120 4450 4473 "output_glance.ml" 120 4450 4479
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"output_glance.ml" 120 4450 4480 "output_glance.ml" 120 4450 4488
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_glance.ml" 120 4450 4489 "output_glance.ml" 120 4450 4492
+type(
+  string
+)
+ident(
+  int_ref cmd "output_glance.ml" 110 4160 4168 "output_glance.ml" 110 4160 4171
+)
+"output_glance.ml" 120 4450 4473 "output_glance.ml" 120 4450 4492
+call(
+  stack
+)
+type(
+  unit
+)
+"output_glance.ml" 120 4450 4454 "output_glance.ml" 120 4450 4492
+type(
+  unit
+)
+"output_glance.ml" 121 4494 4501 "output_glance.ml" 121 4494 4512
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"output_glance.ml" 121 4494 4513 "output_glance.ml" 121 4494 4516
+type(
+  string
+)
+ident(
+  int_ref cmd "output_glance.ml" 110 4160 4168 "output_glance.ml" 110 4160 4171
+)
+"output_glance.ml" 121 4494 4501 "output_glance.ml" 121 4494 4516
+type(
+  int
+)
+"output_glance.ml" 121 4494 4517 "output_glance.ml" 121 4494 4519
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_glance.ml" 121 4494 4520 "output_glance.ml" 121 4494 4521
+type(
+  int
+)
+"output_glance.ml" 121 4494 4501 "output_glance.ml" 121 4494 4521
+type(
+  bool
+)
+"output_glance.ml" 122 4529 4535 "output_glance.ml" 122 4529 4542
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"output_glance.ml" 122 4529 4544 "output_glance.ml" 122 4529 4546
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_glance.ml" 122 4529 4546 "output_glance.ml" 122 4529 4596
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"output_glance.ml" 122 4529 4543 "output_glance.ml" 122 4529 4597
+type(
+  (unit, unit, string, unit) format4
+)
+"output_glance.ml" 122 4529 4535 "output_glance.ml" 122 4529 4597
+call(
+  stack
+)
+type(
+  unit
+)
+"output_glance.ml" 124 4667 4673 "output_glance.ml" 124 4667 4679
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"output_glance.ml" 124 4667 4680 "output_glance.ml" 124 4667 4701
+type(
+  (unit, out_channel, unit) format
+)
+"output_glance.ml" 124 4667 4673 "output_glance.ml" 124 4667 4701
+call(
+  stack
+)
+type(
+  unit
+)
+"output_glance.ml" 125 4703 4709 "output_glance.ml" 125 4703 4715
+type(
+  (int64 -> unit, out_channel, unit) format -> int64 -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"output_glance.ml" 125 4703 4716 "output_glance.ml" 125 4703 4735
+type(
+  (int64 -> unit, out_channel, unit) format
+)
+"output_glance.ml" 125 4703 4736 "output_glance.ml" 125 4703 4743
+type(
+  int64
+)
+ident(
+  int_ref min_ram "output_glance.ml" 80 3075 3083 "output_glance.ml" 80 3075 3090
+)
+"output_glance.ml" 125 4703 4709 "output_glance.ml" 125 4703 4743
+call(
+  stack
+)
+type(
+  unit
+)
+"output_glance.ml" 126 4745 4751 "output_glance.ml" 126 4745 4760
+type(
+  (string * string -> unit) -> (string * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"output_glance.ml" 127 4763 4769 "output_glance.ml" 127 4763 4770
+type(
+  string
+)
+ident(
+  def k "output_glance.ml" 128 4778 4781 "output_glance.ml" 128 4778 4828
+)
+"output_glance.ml" 127 4763 4772 "output_glance.ml" 127 4763 4773
+type(
+  string
+)
+ident(
+  def v "output_glance.ml" 128 4778 4781 "output_glance.ml" 128 4778 4828
+)
+"output_glance.ml" 127 4763 4768 "output_glance.ml" 127 4763 4774
+type(
+  string * string
+)
+"output_glance.ml" 128 4778 4781 "output_glance.ml" 128 4778 4787
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"output_glance.ml" 128 4778 4788 "output_glance.ml" 128 4778 4808
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_glance.ml" 128 4778 4810 "output_glance.ml" 128 4778 4815
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_glance.ml" 128 4778 4816 "output_glance.ml" 128 4778 4817
+type(
+  string
+)
+ident(
+  int_ref k "output_glance.ml" 127 4763 4769 "output_glance.ml" 127 4763 4770
+)
+"output_glance.ml" 128 4778 4809 "output_glance.ml" 128 4778 4818
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 128 4778 4820 "output_glance.ml" 128 4778 4825
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_glance.ml" 128 4778 4826 "output_glance.ml" 128 4778 4827
+type(
+  string
+)
+ident(
+  int_ref v "output_glance.ml" 127 4763 4772 "output_glance.ml" 127 4763 4773
+)
+"output_glance.ml" 128 4778 4819 "output_glance.ml" 128 4778 4828
+call(
+  stack
+)
+type(
+  string
+)
+"output_glance.ml" 128 4778 4781 "output_glance.ml" 128 4778 4828
+call(
+  tail
+)
+type(
+  unit
+)
+"output_glance.ml" 126 4745 4761 "output_glance.ml" 129 4829 4836
+type(
+  string * string -> unit
+)
+"output_glance.ml" 129 4829 4837 "output_glance.ml" 129 4829 4847
+type(
+  (string * string) list
+)
+ident(
+  int_ref properties "output_glance.ml" 103 3857 3865 "output_glance.ml" 103 3857 3875
+)
+"output_glance.ml" 126 4745 4751 "output_glance.ml" 129 4829 4847
+call(
+  tail
+)
+type(
+  unit
+)
+"output_glance.ml" 125 4703 4709 "output_glance.ml" 129 4829 4847
+type(
+  unit
+)
+"output_glance.ml" 124 4667 4673 "output_glance.ml" 129 4829 4847
+type(
+  unit
+)
+"output_glance.ml" 121 4494 4527 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 121 4494 4498 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 120 4450 4454 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 110 4160 4164 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 103 3857 3861 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 81 3130 3134 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 80 3075 3079 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 76 2919 2923 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 75 2875 2879 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 72 2697 2701 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 70 2601 2605 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 67 2485 2489 "output_glance.ml" 130 4848 4853
+type(
+  unit
+)
+"output_glance.ml" 133 4859 4863 "output_glance.ml" 133 4859 4876
+type(
+  unit -> output_glance
+)
+ident(
+  def output_glance "output_glance.ml" 134 4897 4897 --
+)
+"output_glance.ml" 133 4859 4879 "output_glance.ml" 133 4859 4896
+type(
+  unit -> output_glance
+)
+"output_glance.ml" 134 4897 4901 "output_glance.ml" 134 4897 4903
+type(
+  unit
+)
+"output_glance.ml" 134 4897 4906 "output_glance.ml" 134 4897 4941
+type(
+  string -> unit
+)
+ident(
+  ext_ref Modules_list.register_output_module
+)
+"output_glance.ml" 134 4897 4942 "output_glance.ml" 134 4897 4950
+type(
+  string
+)
+"output_glance.ml" 134 4897 4906 "output_glance.ml" 134 4897 4950
+call(
+  stack
+)
+type(
+  unit
+)

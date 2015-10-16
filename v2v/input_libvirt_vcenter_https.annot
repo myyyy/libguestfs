@@ -1,0 +1,5265 @@
+"input_libvirt_vcenter_https.ml" 33 1012 1016 "input_libvirt_vcenter_https.ml" 33 1012 1040
+type(
+  'a option
+)
+ident(
+  def readahead_for_conversion "input_libvirt_vcenter_https.ml" 34 1048 1048 --
+)
+"input_libvirt_vcenter_https.ml" 33 1012 1043 "input_libvirt_vcenter_https.ml" 33 1012 1047
+type(
+  'a option
+)
+"input_libvirt_vcenter_https.ml" 34 1048 1052 "input_libvirt_vcenter_https.ml" 34 1048 1073
+type(
+  int option
+)
+ident(
+  def readahead_for_copying "input_libvirt_vcenter_https.ml" 39 1198 1198 --
+)
+"input_libvirt_vcenter_https.ml" 34 1048 1082 "input_libvirt_vcenter_https.ml" 34 1048 1084
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 34 1048 1085 "input_libvirt_vcenter_https.ml" 34 1048 1086
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"input_libvirt_vcenter_https.ml" 34 1048 1087 "input_libvirt_vcenter_https.ml" 34 1048 1091
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 34 1048 1082 "input_libvirt_vcenter_https.ml" 34 1048 1091
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 34 1048 1092 "input_libvirt_vcenter_https.ml" 34 1048 1093
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( * )
+)
+"input_libvirt_vcenter_https.ml" 34 1048 1094 "input_libvirt_vcenter_https.ml" 34 1048 1098
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 34 1048 1081 "input_libvirt_vcenter_https.ml" 34 1048 1099
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 34 1048 1076 "input_libvirt_vcenter_https.ml" 34 1048 1099
+type(
+  int option
+)
+"input_libvirt_vcenter_https.ml" 39 1198 1206 "input_libvirt_vcenter_https.ml" 39 1198 1224
+type(
+  string option -> string -> Xml.uri -> bool -> string -> string option
+)
+ident(
+  def get_session_cookie "input_libvirt_vcenter_https.ml" 39 1198 1198 --
+)
+"input_libvirt_vcenter_https.ml" 40 1227 1233 "input_libvirt_vcenter_https.ml" 40 1227 1247
+type(
+  string ref
+)
+"input_libvirt_vcenter_https.ml" 40 1227 1250 "input_libvirt_vcenter_https.ml" 40 1227 1253
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"input_libvirt_vcenter_https.ml" 40 1227 1254 "input_libvirt_vcenter_https.ml" 40 1227 1256
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 40 1227 1250 "input_libvirt_vcenter_https.ml" 40 1227 1256
+type(
+  string ref
+)
+"input_libvirt_vcenter_https.ml" 41 1260 1266 "input_libvirt_vcenter_https.ml" 41 1260 1274
+type(
+  string option
+)
+ident(
+  def password "input_libvirt_vcenter_https.ml" 41 1260 1275 "input_libvirt_vcenter_https.ml" 138 4541 4546
+)
+"input_libvirt_vcenter_https.ml" 41 1260 1275 "input_libvirt_vcenter_https.ml" 41 1260 1281
+type(
+  string
+)
+ident(
+  def scheme "input_libvirt_vcenter_https.ml" 41 1260 1282 "input_libvirt_vcenter_https.ml" 138 4541 4546
+)
+"input_libvirt_vcenter_https.ml" 41 1260 1282 "input_libvirt_vcenter_https.ml" 41 1260 1285
+type(
+  Xml.uri
+)
+ident(
+  def uri "input_libvirt_vcenter_https.ml" 41 1260 1286 "input_libvirt_vcenter_https.ml" 138 4541 4546
+)
+"input_libvirt_vcenter_https.ml" 41 1260 1286 "input_libvirt_vcenter_https.ml" 41 1260 1295
+type(
+  bool
+)
+ident(
+  def sslverify "input_libvirt_vcenter_https.ml" 41 1260 1296 "input_libvirt_vcenter_https.ml" 138 4541 4546
+)
+"input_libvirt_vcenter_https.ml" 41 1260 1296 "input_libvirt_vcenter_https.ml" 41 1260 1299
+type(
+  string
+)
+ident(
+  def url "input_libvirt_vcenter_https.ml" 42 1303 1307 "input_libvirt_vcenter_https.ml" 138 4541 4546
+)
+"input_libvirt_vcenter_https.ml" 42 1303 1310 "input_libvirt_vcenter_https.ml" 42 1303 1311
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirt_vcenter_https.ml" 42 1303 1311 "input_libvirt_vcenter_https.ml" 42 1303 1325
+type(
+  string ref
+)
+ident(
+  int_ref session_cookie "input_libvirt_vcenter_https.ml" 40 1227 1233 "input_libvirt_vcenter_https.ml" 40 1227 1247
+)
+"input_libvirt_vcenter_https.ml" 42 1303 1310 "input_libvirt_vcenter_https.ml" 42 1303 1325
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 42 1303 1326 "input_libvirt_vcenter_https.ml" 42 1303 1328
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"input_libvirt_vcenter_https.ml" 42 1303 1329 "input_libvirt_vcenter_https.ml" 42 1303 1331
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 42 1303 1310 "input_libvirt_vcenter_https.ml" 42 1303 1331
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 43 1337 1348 "input_libvirt_vcenter_https.ml" 43 1337 1349
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirt_vcenter_https.ml" 43 1337 1349 "input_libvirt_vcenter_https.ml" 43 1337 1363
+type(
+  string ref
+)
+ident(
+  int_ref session_cookie "input_libvirt_vcenter_https.ml" 40 1227 1233 "input_libvirt_vcenter_https.ml" 40 1227 1247
+)
+"input_libvirt_vcenter_https.ml" 43 1337 1348 "input_libvirt_vcenter_https.ml" 43 1337 1363
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 43 1337 1343 "input_libvirt_vcenter_https.ml" 43 1337 1363
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 45 1375 1385 "input_libvirt_vcenter_https.ml" 45 1375 1394
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 46 1399 1407 "input_libvirt_vcenter_https.ml" 46 1399 1413
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 46 1399 1415 "input_libvirt_vcenter_https.ml" 46 1399 1419
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 46 1399 1407 "input_libvirt_vcenter_https.ml" 46 1399 1419
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 47 1421 1429 "input_libvirt_vcenter_https.ml" 47 1421 1437
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 47 1421 1439 "input_libvirt_vcenter_https.ml" 47 1421 1443
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 47 1421 1429 "input_libvirt_vcenter_https.ml" 47 1421 1443
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 48 1445 1453 "input_libvirt_vcenter_https.ml" 48 1445 1458
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 48 1445 1465 "input_libvirt_vcenter_https.ml" 48 1445 1468
+type(
+  string
+)
+ident(
+  int_ref url "input_libvirt_vcenter_https.ml" 41 1260 1296 "input_libvirt_vcenter_https.ml" 41 1260 1299
+)
+"input_libvirt_vcenter_https.ml" 48 1445 1460 "input_libvirt_vcenter_https.ml" 48 1445 1468
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 48 1445 1453 "input_libvirt_vcenter_https.ml" 48 1445 1468
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 45 1375 1397 "input_libvirt_vcenter_https.ml" 49 1470 1477
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 50 1481 1491 "input_libvirt_vcenter_https.ml" 50 1481 1500
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 51 1503 1517 "input_libvirt_vcenter_https.ml" 51 1503 1520
+type(
+  Xml.uri
+)
+ident(
+  int_ref uri "input_libvirt_vcenter_https.ml" 41 1260 1282 "input_libvirt_vcenter_https.ml" 41 1260 1285
+)
+"input_libvirt_vcenter_https.ml" 51 1503 1517 "input_libvirt_vcenter_https.ml" 51 1503 1529
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 51 1503 1531 "input_libvirt_vcenter_https.ml" 51 1503 1539
+type(
+  string option
+)
+ident(
+  int_ref password "input_libvirt_vcenter_https.ml" 41 1260 1266 "input_libvirt_vcenter_https.ml" 41 1260 1274
+)
+"input_libvirt_vcenter_https.ml" 51 1503 1517 "input_libvirt_vcenter_https.ml" 51 1503 1539
+type(
+  string option * string option
+)
+"input_libvirt_vcenter_https.ml" 52 1545 1555 "input_libvirt_vcenter_https.ml" 52 1545 1559
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 52 1545 1561 "input_libvirt_vcenter_https.ml" 52 1545 1565
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 52 1545 1555 "input_libvirt_vcenter_https.ml" 52 1545 1565
+type(
+  string option * string option
+)
+"input_libvirt_vcenter_https.ml" 52 1545 1569 "input_libvirt_vcenter_https.ml" 52 1545 1578
+type(
+  (string * string option) list
+)
+ident(
+  int_ref curl_args "input_libvirt_vcenter_https.ml" 45 1375 1385 "input_libvirt_vcenter_https.ml" 45 1375 1394
+)
+"input_libvirt_vcenter_https.ml" 53 1579 1589 "input_libvirt_vcenter_https.ml" 53 1579 1593
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 53 1579 1600 "input_libvirt_vcenter_https.ml" 53 1579 1601
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 53 1579 1595 "input_libvirt_vcenter_https.ml" 53 1579 1601
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 53 1579 1589 "input_libvirt_vcenter_https.ml" 53 1579 1601
+type(
+  string option * string option
+)
+"input_libvirt_vcenter_https.ml" 54 1605 1615 "input_libvirt_vcenter_https.ml" 54 1605 1622
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirt_vcenter_https.ml" 54 1605 1624 "input_libvirt_vcenter_https.ml" 54 1605 1626
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_vcenter_https.ml" 54 1605 1626 "input_libvirt_vcenter_https.ml" 54 1605 1702
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_vcenter_https.ml" 54 1605 1623 "input_libvirt_vcenter_https.ml" 54 1605 1703
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirt_vcenter_https.ml" 54 1605 1615 "input_libvirt_vcenter_https.ml" 54 1605 1703
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 55 1705 1715 "input_libvirt_vcenter_https.ml" 55 1705 1724
+type(
+  (string * string option) list
+)
+ident(
+  int_ref curl_args "input_libvirt_vcenter_https.ml" 45 1375 1385 "input_libvirt_vcenter_https.ml" 45 1375 1394
+)
+"input_libvirt_vcenter_https.ml" 54 1605 1615 "input_libvirt_vcenter_https.ml" 55 1705 1724
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 56 1725 1740 "input_libvirt_vcenter_https.ml" 56 1725 1744
+type(
+  string
+)
+ident(
+  def user "input_libvirt_vcenter_https.ml" 57 1754 1764 "input_libvirt_vcenter_https.ml" 57 1754 1796
+)
+"input_libvirt_vcenter_https.ml" 56 1725 1735 "input_libvirt_vcenter_https.ml" 56 1725 1744
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 56 1725 1746 "input_libvirt_vcenter_https.ml" 56 1725 1750
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 56 1725 1735 "input_libvirt_vcenter_https.ml" 56 1725 1750
+type(
+  string option * string option
+)
+"input_libvirt_vcenter_https.ml" 57 1754 1765 "input_libvirt_vcenter_https.ml" 57 1754 1771
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 57 1754 1778 "input_libvirt_vcenter_https.ml" 57 1754 1782
+type(
+  string
+)
+ident(
+  int_ref user "input_libvirt_vcenter_https.ml" 56 1725 1740 "input_libvirt_vcenter_https.ml" 56 1725 1744
+)
+"input_libvirt_vcenter_https.ml" 57 1754 1773 "input_libvirt_vcenter_https.ml" 57 1754 1782
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 57 1754 1764 "input_libvirt_vcenter_https.ml" 57 1754 1783
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 57 1754 1787 "input_libvirt_vcenter_https.ml" 57 1754 1796
+type(
+  (string * string option) list
+)
+ident(
+  int_ref curl_args "input_libvirt_vcenter_https.ml" 45 1375 1385 "input_libvirt_vcenter_https.ml" 45 1375 1394
+)
+"input_libvirt_vcenter_https.ml" 57 1754 1764 "input_libvirt_vcenter_https.ml" 57 1754 1796
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 58 1797 1812 "input_libvirt_vcenter_https.ml" 58 1797 1816
+type(
+  string
+)
+ident(
+  def user "input_libvirt_vcenter_https.ml" 59 1835 1845 "input_libvirt_vcenter_https.ml" 59 1835 1896
+)
+"input_libvirt_vcenter_https.ml" 58 1797 1807 "input_libvirt_vcenter_https.ml" 58 1797 1816
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 58 1797 1823 "input_libvirt_vcenter_https.ml" 58 1797 1831
+type(
+  string
+)
+ident(
+  def password "input_libvirt_vcenter_https.ml" 59 1835 1845 "input_libvirt_vcenter_https.ml" 59 1835 1896
+)
+"input_libvirt_vcenter_https.ml" 58 1797 1818 "input_libvirt_vcenter_https.ml" 58 1797 1831
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 58 1797 1807 "input_libvirt_vcenter_https.ml" 58 1797 1831
+type(
+  string option * string option
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1846 "input_libvirt_vcenter_https.ml" 59 1835 1852
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1860 "input_libvirt_vcenter_https.ml" 59 1835 1864
+type(
+  string
+)
+ident(
+  int_ref user "input_libvirt_vcenter_https.ml" 58 1797 1812 "input_libvirt_vcenter_https.ml" 58 1797 1816
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1865 "input_libvirt_vcenter_https.ml" 59 1835 1866
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1867 "input_libvirt_vcenter_https.ml" 59 1835 1870
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1871 "input_libvirt_vcenter_https.ml" 59 1835 1872
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1873 "input_libvirt_vcenter_https.ml" 59 1835 1881
+type(
+  string
+)
+ident(
+  int_ref password "input_libvirt_vcenter_https.ml" 58 1797 1823 "input_libvirt_vcenter_https.ml" 58 1797 1831
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1867 "input_libvirt_vcenter_https.ml" 59 1835 1881
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1859 "input_libvirt_vcenter_https.ml" 59 1835 1882
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1854 "input_libvirt_vcenter_https.ml" 59 1835 1882
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1845 "input_libvirt_vcenter_https.ml" 59 1835 1883
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1887 "input_libvirt_vcenter_https.ml" 59 1835 1896
+type(
+  (string * string option) list
+)
+ident(
+  int_ref curl_args "input_libvirt_vcenter_https.ml" 45 1375 1385 "input_libvirt_vcenter_https.ml" 45 1375 1394
+)
+"input_libvirt_vcenter_https.ml" 59 1835 1845 "input_libvirt_vcenter_https.ml" 59 1835 1896
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 51 1503 1511 "input_libvirt_vcenter_https.ml" 59 1835 1896
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 60 1900 1910 "input_libvirt_vcenter_https.ml" 60 1900 1919
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 61 1922 1933 "input_libvirt_vcenter_https.ml" 61 1922 1936
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"input_libvirt_vcenter_https.ml" 61 1922 1937 "input_libvirt_vcenter_https.ml" 61 1922 1946
+type(
+  bool
+)
+ident(
+  int_ref sslverify "input_libvirt_vcenter_https.ml" 41 1260 1286 "input_libvirt_vcenter_https.ml" 41 1260 1295
+)
+"input_libvirt_vcenter_https.ml" 61 1922 1933 "input_libvirt_vcenter_https.ml" 61 1922 1946
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 61 1922 1953 "input_libvirt_vcenter_https.ml" 61 1922 1963
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 61 1922 1965 "input_libvirt_vcenter_https.ml" 61 1922 1969
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 61 1922 1952 "input_libvirt_vcenter_https.ml" 61 1922 1970
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 61 1922 1974 "input_libvirt_vcenter_https.ml" 61 1922 1983
+type(
+  (string * string option) list
+)
+ident(
+  int_ref curl_args "input_libvirt_vcenter_https.ml" 50 1481 1491 "input_libvirt_vcenter_https.ml" 50 1481 1500
+)
+"input_libvirt_vcenter_https.ml" 61 1922 1952 "input_libvirt_vcenter_https.ml" 61 1922 1983
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 61 1922 1989 "input_libvirt_vcenter_https.ml" 61 1922 1998
+type(
+  (string * string option) list
+)
+ident(
+  int_ref curl_args "input_libvirt_vcenter_https.ml" 50 1481 1491 "input_libvirt_vcenter_https.ml" 50 1481 1500
+)
+"input_libvirt_vcenter_https.ml" 61 1922 1930 "input_libvirt_vcenter_https.ml" 61 1922 1998
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 63 2003 2013 "input_libvirt_vcenter_https.ml" 63 2003 2018
+type(
+  string list
+)
+"input_libvirt_vcenter_https.ml" 63 2003 2021 "input_libvirt_vcenter_https.ml" 63 2003 2039
+type(
+  (string * string option) list -> string list
+)
+ident(
+  int_ref run_curl_get_lines "input_libvirt_vcenter_https.ml" 143 4651 4655 "input_libvirt_vcenter_https.ml" 143 4651 4673
+)
+"input_libvirt_vcenter_https.ml" 63 2003 2040 "input_libvirt_vcenter_https.ml" 63 2003 2049
+type(
+  (string * string option) list
+)
+ident(
+  int_ref curl_args "input_libvirt_vcenter_https.ml" 60 1900 1910 "input_libvirt_vcenter_https.ml" 60 1900 1919
+)
+"input_libvirt_vcenter_https.ml" 63 2003 2021 "input_libvirt_vcenter_https.ml" 63 2003 2049
+call(
+  stack
+)
+type(
+  string list
+)
+"input_libvirt_vcenter_https.ml" 65 2054 2064 "input_libvirt_vcenter_https.ml" 65 2054 2077
+type(
+  out_channel -> unit
+)
+"input_libvirt_vcenter_https.ml" 65 2054 2078 "input_libvirt_vcenter_https.ml" 65 2054 2082
+type(
+  out_channel
+)
+ident(
+  def chan "input_libvirt_vcenter_https.ml" 67 2142 2150 "input_libvirt_vcenter_https.ml" 83 2734 2752
+)
+"input_libvirt_vcenter_https.ml" 67 2142 2154 "input_libvirt_vcenter_https.ml" 67 2142 2163
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 68 2166 2176 "input_libvirt_vcenter_https.ml" 68 2166 2184
+type(
+  (string * string option -> string * string option) ->
+  (string * string option) list -> (string * string option) list
+)
+ident(
+  ext_ref List.map
+)
+"input_libvirt_vcenter_https.ml" 70 2208 2223 "input_libvirt_vcenter_https.ml" 70 2208 2229
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 70 2208 2236 "input_libvirt_vcenter_https.ml" 70 2208 2237
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 70 2208 2231 "input_libvirt_vcenter_https.ml" 70 2208 2237
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 70 2208 2222 "input_libvirt_vcenter_https.ml" 70 2208 2238
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 70 2208 2243 "input_libvirt_vcenter_https.ml" 70 2208 2249
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 70 2208 2256 "input_libvirt_vcenter_https.ml" 70 2208 2266
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 70 2208 2251 "input_libvirt_vcenter_https.ml" 70 2208 2266
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 70 2208 2242 "input_libvirt_vcenter_https.ml" 70 2208 2267
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 71 2268 2282 "input_libvirt_vcenter_https.ml" 71 2268 2283
+type(
+  string * string option
+)
+ident(
+  def x "input_libvirt_vcenter_https.ml" 71 2268 2287 "input_libvirt_vcenter_https.ml" 71 2268 2288
+)
+"input_libvirt_vcenter_https.ml" 71 2268 2287 "input_libvirt_vcenter_https.ml" 71 2268 2288
+type(
+  string * string option
+)
+ident(
+  int_ref x "input_libvirt_vcenter_https.ml" 71 2268 2282 "input_libvirt_vcenter_https.ml" 71 2268 2283
+)
+"input_libvirt_vcenter_https.ml" 68 2166 2185 "input_libvirt_vcenter_https.ml" 72 2289 2300
+type(
+  string * string option -> string * string option
+)
+"input_libvirt_vcenter_https.ml" 72 2289 2301 "input_libvirt_vcenter_https.ml" 72 2289 2310
+type(
+  (string * string option) list
+)
+ident(
+  int_ref curl_args "input_libvirt_vcenter_https.ml" 60 1900 1910 "input_libvirt_vcenter_https.ml" 60 1900 1919
+)
+"input_libvirt_vcenter_https.ml" 68 2166 2176 "input_libvirt_vcenter_https.ml" 72 2289 2310
+call(
+  stack
+)
+type(
+  (string * string option) list
+)
+"input_libvirt_vcenter_https.ml" 74 2380 2388 "input_libvirt_vcenter_https.ml" 74 2380 2395
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"input_libvirt_vcenter_https.ml" 74 2380 2396 "input_libvirt_vcenter_https.ml" 74 2380 2400
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 65 2054 2078 "input_libvirt_vcenter_https.ml" 65 2054 2082
+)
+"input_libvirt_vcenter_https.ml" 74 2380 2401 "input_libvirt_vcenter_https.ml" 74 2380 2410
+type(
+  (unit, out_channel, unit) format
+)
+"input_libvirt_vcenter_https.ml" 74 2380 2388 "input_libvirt_vcenter_https.ml" 74 2380 2410
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 75 2412 2420 "input_libvirt_vcenter_https.ml" 75 2412 2429
+type(
+  (string * string option -> unit) -> (string * string option) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"input_libvirt_vcenter_https.ml" 77 2451 2463 "input_libvirt_vcenter_https.ml" 77 2451 2467
+type(
+  string
+)
+ident(
+  def name "input_libvirt_vcenter_https.ml" 77 2451 2477 "input_libvirt_vcenter_https.ml" 77 2451 2502
+)
+"input_libvirt_vcenter_https.ml" 77 2451 2469 "input_libvirt_vcenter_https.ml" 77 2451 2473
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 77 2451 2463 "input_libvirt_vcenter_https.ml" 77 2451 2473
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 77 2451 2477 "input_libvirt_vcenter_https.ml" 77 2451 2484
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"input_libvirt_vcenter_https.ml" 77 2451 2485 "input_libvirt_vcenter_https.ml" 77 2451 2489
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 65 2054 2078 "input_libvirt_vcenter_https.ml" 65 2054 2082
+)
+"input_libvirt_vcenter_https.ml" 77 2451 2490 "input_libvirt_vcenter_https.ml" 77 2451 2497
+type(
+  (string -> unit, out_channel, unit) format
+)
+"input_libvirt_vcenter_https.ml" 77 2451 2498 "input_libvirt_vcenter_https.ml" 77 2451 2502
+type(
+  string
+)
+ident(
+  int_ref name "input_libvirt_vcenter_https.ml" 77 2451 2463 "input_libvirt_vcenter_https.ml" 77 2451 2467
+)
+"input_libvirt_vcenter_https.ml" 77 2451 2477 "input_libvirt_vcenter_https.ml" 77 2451 2502
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2515 "input_libvirt_vcenter_https.ml" 78 2503 2519
+type(
+  string
+)
+ident(
+  def name "input_libvirt_vcenter_https.ml" 78 2503 2535 "input_libvirt_vcenter_https.ml" 78 2503 2577
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2526 "input_libvirt_vcenter_https.ml" 78 2503 2531
+type(
+  string
+)
+ident(
+  def value "input_libvirt_vcenter_https.ml" 78 2503 2535 "input_libvirt_vcenter_https.ml" 78 2503 2577
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2521 "input_libvirt_vcenter_https.ml" 78 2503 2531
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2515 "input_libvirt_vcenter_https.ml" 78 2503 2531
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2535 "input_libvirt_vcenter_https.ml" 78 2503 2542
+type(
+  out_channel ->
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2543 "input_libvirt_vcenter_https.ml" 78 2503 2547
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 65 2054 2078 "input_libvirt_vcenter_https.ml" 65 2054 2082
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2548 "input_libvirt_vcenter_https.ml" 78 2503 2558
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2559 "input_libvirt_vcenter_https.ml" 78 2503 2563
+type(
+  string
+)
+ident(
+  int_ref name "input_libvirt_vcenter_https.ml" 78 2503 2515 "input_libvirt_vcenter_https.ml" 78 2503 2519
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2565 "input_libvirt_vcenter_https.ml" 78 2503 2570
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2571 "input_libvirt_vcenter_https.ml" 78 2503 2576
+type(
+  string
+)
+ident(
+  int_ref value "input_libvirt_vcenter_https.ml" 78 2503 2526 "input_libvirt_vcenter_https.ml" 78 2503 2531
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2564 "input_libvirt_vcenter_https.ml" 78 2503 2577
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 78 2503 2535 "input_libvirt_vcenter_https.ml" 78 2503 2577
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 75 2412 2430 "input_libvirt_vcenter_https.ml" 79 2578 2587
+type(
+  string * string option -> unit
+)
+"input_libvirt_vcenter_https.ml" 79 2578 2588 "input_libvirt_vcenter_https.ml" 79 2578 2597
+type(
+  (string * string option) list
+)
+ident(
+  int_ref curl_args "input_libvirt_vcenter_https.ml" 67 2142 2154 "input_libvirt_vcenter_https.ml" 67 2142 2163
+)
+"input_libvirt_vcenter_https.ml" 75 2412 2420 "input_libvirt_vcenter_https.ml" 79 2578 2597
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 80 2599 2607 "input_libvirt_vcenter_https.ml" 80 2599 2614
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"input_libvirt_vcenter_https.ml" 80 2599 2615 "input_libvirt_vcenter_https.ml" 80 2599 2619
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 65 2054 2078 "input_libvirt_vcenter_https.ml" 65 2054 2082
+)
+"input_libvirt_vcenter_https.ml" 80 2599 2620 "input_libvirt_vcenter_https.ml" 80 2599 2624
+type(
+  (unit, out_channel, unit) format
+)
+"input_libvirt_vcenter_https.ml" 80 2599 2607 "input_libvirt_vcenter_https.ml" 80 2599 2624
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 82 2676 2684 "input_libvirt_vcenter_https.ml" 82 2676 2693
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"input_libvirt_vcenter_https.ml" 82 2676 2699 "input_libvirt_vcenter_https.ml" 82 2676 2700
+type(
+  string
+)
+ident(
+  def x "input_libvirt_vcenter_https.ml" 82 2676 2704 "input_libvirt_vcenter_https.ml" 82 2676 2725
+)
+"input_libvirt_vcenter_https.ml" 82 2676 2704 "input_libvirt_vcenter_https.ml" 82 2676 2711
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"input_libvirt_vcenter_https.ml" 82 2676 2712 "input_libvirt_vcenter_https.ml" 82 2676 2716
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 65 2054 2078 "input_libvirt_vcenter_https.ml" 65 2054 2082
+)
+"input_libvirt_vcenter_https.ml" 82 2676 2717 "input_libvirt_vcenter_https.ml" 82 2676 2723
+type(
+  (string -> unit, out_channel, unit) format
+)
+"input_libvirt_vcenter_https.ml" 82 2676 2724 "input_libvirt_vcenter_https.ml" 82 2676 2725
+type(
+  string
+)
+ident(
+  int_ref x "input_libvirt_vcenter_https.ml" 82 2676 2699 "input_libvirt_vcenter_https.ml" 82 2676 2700
+)
+"input_libvirt_vcenter_https.ml" 82 2676 2704 "input_libvirt_vcenter_https.ml" 82 2676 2725
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 82 2676 2694 "input_libvirt_vcenter_https.ml" 82 2676 2726
+type(
+  string -> unit
+)
+"input_libvirt_vcenter_https.ml" 82 2676 2727 "input_libvirt_vcenter_https.ml" 82 2676 2732
+type(
+  string list
+)
+ident(
+  int_ref lines "input_libvirt_vcenter_https.ml" 63 2003 2013 "input_libvirt_vcenter_https.ml" 63 2003 2018
+)
+"input_libvirt_vcenter_https.ml" 82 2676 2684 "input_libvirt_vcenter_https.ml" 82 2676 2732
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 83 2734 2742 "input_libvirt_vcenter_https.ml" 83 2734 2747
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.flush
+)
+"input_libvirt_vcenter_https.ml" 83 2734 2748 "input_libvirt_vcenter_https.ml" 83 2734 2752
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 65 2054 2078 "input_libvirt_vcenter_https.ml" 65 2054 2082
+)
+"input_libvirt_vcenter_https.ml" 83 2734 2742 "input_libvirt_vcenter_https.ml" 83 2734 2752
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 82 2676 2684 "input_libvirt_vcenter_https.ml" 83 2734 2752
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 80 2599 2607 "input_libvirt_vcenter_https.ml" 83 2734 2752
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 75 2412 2420 "input_libvirt_vcenter_https.ml" 83 2734 2752
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 74 2380 2388 "input_libvirt_vcenter_https.ml" 83 2734 2752
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 67 2142 2150 "input_libvirt_vcenter_https.ml" 83 2734 2752
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 86 2763 2772 "input_libvirt_vcenter_https.ml" 86 2763 2779
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"input_libvirt_vcenter_https.ml" 86 2763 2780 "input_libvirt_vcenter_https.ml" 86 2763 2782
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 86 2763 2772 "input_libvirt_vcenter_https.ml" 86 2763 2782
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 86 2763 2788 "input_libvirt_vcenter_https.ml" 86 2763 2801
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref dump_response "input_libvirt_vcenter_https.ml" 65 2054 2064 "input_libvirt_vcenter_https.ml" 65 2054 2077
+)
+"input_libvirt_vcenter_https.ml" 86 2763 2802 "input_libvirt_vcenter_https.ml" 86 2763 2808
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stdout
+)
+"input_libvirt_vcenter_https.ml" 86 2763 2788 "input_libvirt_vcenter_https.ml" 86 2763 2808
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 86 2763 2769 "input_libvirt_vcenter_https.ml" 86 2763 2808
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 89 2881 2891 "input_libvirt_vcenter_https.ml" 89 2881 2897
+type(
+  string ref
+)
+"input_libvirt_vcenter_https.ml" 89 2881 2900 "input_libvirt_vcenter_https.ml" 89 2881 2903
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"input_libvirt_vcenter_https.ml" 89 2881 2904 "input_libvirt_vcenter_https.ml" 89 2881 2906
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 89 2881 2900 "input_libvirt_vcenter_https.ml" 89 2881 2906
+type(
+  string ref
+)
+"input_libvirt_vcenter_https.ml" 90 2910 2916 "input_libvirt_vcenter_https.ml" 90 2910 2925
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"input_libvirt_vcenter_https.ml" 91 2928 2940 "input_libvirt_vcenter_https.ml" 91 2928 2944
+type(
+  string
+)
+ident(
+  def line "input_libvirt_vcenter_https.ml" 92 2948 2958 "input_libvirt_vcenter_https.ml" 94 3051 3092
+)
+"input_libvirt_vcenter_https.ml" 92 2948 2962 "input_libvirt_vcenter_https.ml" 92 2948 2965
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 92 2948 2968 "input_libvirt_vcenter_https.ml" 92 2948 2981
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"input_libvirt_vcenter_https.ml" 92 2948 2982 "input_libvirt_vcenter_https.ml" 92 2948 2986
+type(
+  string
+)
+ident(
+  int_ref line "input_libvirt_vcenter_https.ml" 91 2928 2940 "input_libvirt_vcenter_https.ml" 91 2928 2944
+)
+"input_libvirt_vcenter_https.ml" 92 2948 2968 "input_libvirt_vcenter_https.ml" 92 2948 2986
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3003 "input_libvirt_vcenter_https.ml" 93 2990 3006
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirt_vcenter_https.ml" 92 2948 2962 "input_libvirt_vcenter_https.ml" 92 2948 2965
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3007 "input_libvirt_vcenter_https.ml" 93 2990 3009
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3010 "input_libvirt_vcenter_https.ml" 93 2990 3012
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3003 "input_libvirt_vcenter_https.ml" 93 2990 3012
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3013 "input_libvirt_vcenter_https.ml" 93 2990 3015
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3016 "input_libvirt_vcenter_https.ml" 93 2990 3026
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3027 "input_libvirt_vcenter_https.ml" 93 2990 3031
+type(
+  string
+)
+ident(
+  int_ref line "input_libvirt_vcenter_https.ml" 91 2928 2940 "input_libvirt_vcenter_https.ml" 91 2928 2944
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3032 "input_libvirt_vcenter_https.ml" 93 2990 3033
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3034 "input_libvirt_vcenter_https.ml" 93 2990 3035
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3016 "input_libvirt_vcenter_https.ml" 93 2990 3035
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3036 "input_libvirt_vcenter_https.ml" 93 2990 3037
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3038 "input_libvirt_vcenter_https.ml" 93 2990 3045
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3016 "input_libvirt_vcenter_https.ml" 93 2990 3045
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3003 "input_libvirt_vcenter_https.ml" 93 2990 3045
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 94 3051 3063 "input_libvirt_vcenter_https.ml" 94 3051 3069
+type(
+  string ref
+)
+ident(
+  int_ref status "input_libvirt_vcenter_https.ml" 89 2881 2891 "input_libvirt_vcenter_https.ml" 89 2881 2897
+)
+"input_libvirt_vcenter_https.ml" 94 3051 3070 "input_libvirt_vcenter_https.ml" 94 3051 3072
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"input_libvirt_vcenter_https.ml" 94 3051 3073 "input_libvirt_vcenter_https.ml" 94 3051 3083
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"input_libvirt_vcenter_https.ml" 94 3051 3084 "input_libvirt_vcenter_https.ml" 94 3051 3088
+type(
+  string
+)
+ident(
+  int_ref line "input_libvirt_vcenter_https.ml" 91 2928 2940 "input_libvirt_vcenter_https.ml" 91 2928 2944
+)
+"input_libvirt_vcenter_https.ml" 94 3051 3089 "input_libvirt_vcenter_https.ml" 94 3051 3090
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 94 3051 3091 "input_libvirt_vcenter_https.ml" 94 3051 3092
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 94 3051 3073 "input_libvirt_vcenter_https.ml" 94 3051 3092
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 94 3051 3063 "input_libvirt_vcenter_https.ml" 94 3051 3092
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 93 2990 3000 "input_libvirt_vcenter_https.ml" 94 3051 3092
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 92 2948 2958 "input_libvirt_vcenter_https.ml" 94 3051 3092
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 90 2910 2926 "input_libvirt_vcenter_https.ml" 95 3093 3100
+type(
+  string -> unit
+)
+"input_libvirt_vcenter_https.ml" 95 3093 3101 "input_libvirt_vcenter_https.ml" 95 3093 3106
+type(
+  string list
+)
+ident(
+  int_ref lines "input_libvirt_vcenter_https.ml" 63 2003 2013 "input_libvirt_vcenter_https.ml" 63 2003 2018
+)
+"input_libvirt_vcenter_https.ml" 90 2910 2916 "input_libvirt_vcenter_https.ml" 95 3093 3106
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 96 3108 3118 "input_libvirt_vcenter_https.ml" 96 3108 3124
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 96 3108 3127 "input_libvirt_vcenter_https.ml" 96 3108 3128
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirt_vcenter_https.ml" 96 3108 3128 "input_libvirt_vcenter_https.ml" 96 3108 3134
+type(
+  string ref
+)
+ident(
+  int_ref status "input_libvirt_vcenter_https.ml" 89 2881 2891 "input_libvirt_vcenter_https.ml" 89 2881 2897
+)
+"input_libvirt_vcenter_https.ml" 96 3108 3127 "input_libvirt_vcenter_https.ml" 96 3108 3134
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 97 3138 3147 "input_libvirt_vcenter_https.ml" 97 3138 3153
+type(
+  string
+)
+ident(
+  int_ref status "input_libvirt_vcenter_https.ml" 96 3108 3118 "input_libvirt_vcenter_https.ml" 96 3108 3124
+)
+"input_libvirt_vcenter_https.ml" 97 3138 3154 "input_libvirt_vcenter_https.ml" 97 3138 3155
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"input_libvirt_vcenter_https.ml" 97 3138 3156 "input_libvirt_vcenter_https.ml" 97 3138 3158
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 97 3138 3147 "input_libvirt_vcenter_https.ml" 97 3138 3158
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 98 3166 3174 "input_libvirt_vcenter_https.ml" 98 3166 3187
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref dump_response "input_libvirt_vcenter_https.ml" 65 2054 2064 "input_libvirt_vcenter_https.ml" 65 2054 2077
+)
+"input_libvirt_vcenter_https.ml" 98 3166 3188 "input_libvirt_vcenter_https.ml" 98 3166 3194
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"input_libvirt_vcenter_https.ml" 98 3166 3174 "input_libvirt_vcenter_https.ml" 98 3166 3194
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 99 3196 3204 "input_libvirt_vcenter_https.ml" 99 3196 3209
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_libvirt_vcenter_https.ml" 99 3196 3211 "input_libvirt_vcenter_https.ml" 99 3196 3213
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_vcenter_https.ml" 99 3196 3213 "input_libvirt_vcenter_https.ml" 99 3196 3289
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_vcenter_https.ml" 99 3196 3210 "input_libvirt_vcenter_https.ml" 99 3196 3290
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirt_vcenter_https.ml" 99 3196 3204 "input_libvirt_vcenter_https.ml" 99 3196 3290
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 97 3138 3164 "input_libvirt_vcenter_https.ml" 100 3291 3298
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 97 3138 3144 "input_libvirt_vcenter_https.ml" 100 3291 3298
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 102 3301 3310 "input_libvirt_vcenter_https.ml" 102 3301 3316
+type(
+  string
+)
+ident(
+  int_ref status "input_libvirt_vcenter_https.ml" 96 3108 3118 "input_libvirt_vcenter_https.ml" 96 3108 3124
+)
+"input_libvirt_vcenter_https.ml" 102 3301 3317 "input_libvirt_vcenter_https.ml" 102 3301 3318
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"input_libvirt_vcenter_https.ml" 102 3301 3319 "input_libvirt_vcenter_https.ml" 102 3301 3324
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 102 3301 3310 "input_libvirt_vcenter_https.ml" 102 3301 3324
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 103 3332 3340 "input_libvirt_vcenter_https.ml" 103 3332 3353
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref dump_response "input_libvirt_vcenter_https.ml" 65 2054 2064 "input_libvirt_vcenter_https.ml" 65 2054 2077
+)
+"input_libvirt_vcenter_https.ml" 103 3332 3354 "input_libvirt_vcenter_https.ml" 103 3332 3360
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"input_libvirt_vcenter_https.ml" 103 3332 3340 "input_libvirt_vcenter_https.ml" 103 3332 3360
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 104 3362 3373 "input_libvirt_vcenter_https.ml" 104 3362 3376
+type(
+  Xml.uri
+)
+ident(
+  int_ref uri "input_libvirt_vcenter_https.ml" 41 1260 1282 "input_libvirt_vcenter_https.ml" 41 1260 1285
+)
+"input_libvirt_vcenter_https.ml" 104 3362 3373 "input_libvirt_vcenter_https.ml" 104 3362 3385
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 104 3362 3386 "input_libvirt_vcenter_https.ml" 104 3362 3388
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"input_libvirt_vcenter_https.ml" 104 3362 3389 "input_libvirt_vcenter_https.ml" 104 3362 3393
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 104 3362 3373 "input_libvirt_vcenter_https.ml" 104 3362 3393
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 105 3399 3409 "input_libvirt_vcenter_https.ml" 105 3399 3414
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_libvirt_vcenter_https.ml" 105 3399 3416 "input_libvirt_vcenter_https.ml" 105 3399 3418
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_vcenter_https.ml" 105 3399 3418 "input_libvirt_vcenter_https.ml" 105 3399 3459
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_vcenter_https.ml" 105 3399 3415 "input_libvirt_vcenter_https.ml" 105 3399 3460
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirt_vcenter_https.ml" 105 3399 3409 "input_libvirt_vcenter_https.ml" 105 3399 3460
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 107 3474 3484 "input_libvirt_vcenter_https.ml" 107 3474 3489
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_libvirt_vcenter_https.ml" 107 3474 3491 "input_libvirt_vcenter_https.ml" 107 3474 3493
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_vcenter_https.ml" 107 3474 3493 "input_libvirt_vcenter_https.ml" 107 3474 3617
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_vcenter_https.ml" 107 3474 3490 "input_libvirt_vcenter_https.ml" 107 3474 3618
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_libvirt_vcenter_https.ml" 108 3619 3631 "input_libvirt_vcenter_https.ml" 108 3619 3637
+type(
+  string
+)
+ident(
+  int_ref scheme "input_libvirt_vcenter_https.ml" 41 1260 1275 "input_libvirt_vcenter_https.ml" 41 1260 1281
+)
+"input_libvirt_vcenter_https.ml" 107 3474 3484 "input_libvirt_vcenter_https.ml" 108 3619 3637
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 104 3362 3370 "input_libvirt_vcenter_https.ml" 108 3619 3637
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 102 3301 3330 "input_libvirt_vcenter_https.ml" 109 3638 3645
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 102 3301 3307 "input_libvirt_vcenter_https.ml" 109 3638 3645
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 111 3648 3657 "input_libvirt_vcenter_https.ml" 111 3648 3663
+type(
+  string
+)
+ident(
+  int_ref status "input_libvirt_vcenter_https.ml" 96 3108 3118 "input_libvirt_vcenter_https.ml" 96 3108 3124
+)
+"input_libvirt_vcenter_https.ml" 111 3648 3664 "input_libvirt_vcenter_https.ml" 111 3648 3665
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"input_libvirt_vcenter_https.ml" 111 3648 3666 "input_libvirt_vcenter_https.ml" 111 3648 3671
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 111 3648 3657 "input_libvirt_vcenter_https.ml" 111 3648 3671
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 112 3679 3687 "input_libvirt_vcenter_https.ml" 112 3679 3700
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref dump_response "input_libvirt_vcenter_https.ml" 65 2054 2064 "input_libvirt_vcenter_https.ml" 65 2054 2077
+)
+"input_libvirt_vcenter_https.ml" 112 3679 3701 "input_libvirt_vcenter_https.ml" 112 3679 3707
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"input_libvirt_vcenter_https.ml" 112 3679 3687 "input_libvirt_vcenter_https.ml" 112 3679 3707
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 113 3709 3717 "input_libvirt_vcenter_https.ml" 113 3709 3722
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_libvirt_vcenter_https.ml" 113 3709 3724 "input_libvirt_vcenter_https.ml" 113 3709 3726
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_vcenter_https.ml" 113 3709 3726 "input_libvirt_vcenter_https.ml" 113 3709 3754
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_vcenter_https.ml" 113 3709 3723 "input_libvirt_vcenter_https.ml" 113 3709 3755
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_libvirt_vcenter_https.ml" 113 3709 3756 "input_libvirt_vcenter_https.ml" 113 3709 3759
+type(
+  string
+)
+ident(
+  int_ref url "input_libvirt_vcenter_https.ml" 41 1260 1296 "input_libvirt_vcenter_https.ml" 41 1260 1299
+)
+"input_libvirt_vcenter_https.ml" 113 3709 3717 "input_libvirt_vcenter_https.ml" 113 3709 3759
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 111 3648 3677 "input_libvirt_vcenter_https.ml" 114 3760 3767
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 111 3648 3654 "input_libvirt_vcenter_https.ml" 114 3760 3767
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 116 3770 3779 "input_libvirt_vcenter_https.ml" 116 3770 3785
+type(
+  string
+)
+ident(
+  int_ref status "input_libvirt_vcenter_https.ml" 96 3108 3118 "input_libvirt_vcenter_https.ml" 96 3108 3124
+)
+"input_libvirt_vcenter_https.ml" 116 3770 3786 "input_libvirt_vcenter_https.ml" 116 3770 3788
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"input_libvirt_vcenter_https.ml" 116 3770 3789 "input_libvirt_vcenter_https.ml" 116 3770 3794
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 116 3770 3779 "input_libvirt_vcenter_https.ml" 116 3770 3794
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 117 3802 3810 "input_libvirt_vcenter_https.ml" 117 3802 3823
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref dump_response "input_libvirt_vcenter_https.ml" 65 2054 2064 "input_libvirt_vcenter_https.ml" 65 2054 2077
+)
+"input_libvirt_vcenter_https.ml" 117 3802 3824 "input_libvirt_vcenter_https.ml" 117 3802 3830
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"input_libvirt_vcenter_https.ml" 117 3802 3810 "input_libvirt_vcenter_https.ml" 117 3802 3830
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 118 3832 3840 "input_libvirt_vcenter_https.ml" 118 3832 3845
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_libvirt_vcenter_https.ml" 118 3832 3847 "input_libvirt_vcenter_https.ml" 118 3832 3849
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_vcenter_https.ml" 118 3832 3849 "input_libvirt_vcenter_https.ml" 118 3832 3888
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_vcenter_https.ml" 118 3832 3846 "input_libvirt_vcenter_https.ml" 118 3832 3889
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirt_vcenter_https.ml" 118 3832 3840 "input_libvirt_vcenter_https.ml" 118 3832 3889
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 116 3770 3800 "input_libvirt_vcenter_https.ml" 119 3890 3897
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 116 3770 3776 "input_libvirt_vcenter_https.ml" 119 3890 3897
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 122 3928 3934 "input_libvirt_vcenter_https.ml" 122 3928 3943
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"input_libvirt_vcenter_https.ml" 123 3946 3958 "input_libvirt_vcenter_https.ml" 123 3946 3962
+type(
+  string
+)
+ident(
+  def line "input_libvirt_vcenter_https.ml" 124 3966 3976 "input_libvirt_vcenter_https.ml" 129 4223 4234
+)
+"input_libvirt_vcenter_https.ml" 124 3966 3980 "input_libvirt_vcenter_https.ml" 124 3966 3983
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 124 3966 3986 "input_libvirt_vcenter_https.ml" 124 3966 3999
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"input_libvirt_vcenter_https.ml" 124 3966 4000 "input_libvirt_vcenter_https.ml" 124 3966 4004
+type(
+  string
+)
+ident(
+  int_ref line "input_libvirt_vcenter_https.ml" 123 3946 3958 "input_libvirt_vcenter_https.ml" 123 3946 3962
+)
+"input_libvirt_vcenter_https.ml" 124 3966 3986 "input_libvirt_vcenter_https.ml" 124 3966 4004
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4021 "input_libvirt_vcenter_https.ml" 125 4008 4024
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirt_vcenter_https.ml" 124 3966 3980 "input_libvirt_vcenter_https.ml" 124 3966 3983
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4025 "input_libvirt_vcenter_https.ml" 125 4008 4027
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4028 "input_libvirt_vcenter_https.ml" 125 4008 4030
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4021 "input_libvirt_vcenter_https.ml" 125 4008 4030
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4031 "input_libvirt_vcenter_https.ml" 125 4008 4033
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4034 "input_libvirt_vcenter_https.ml" 125 4008 4044
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4045 "input_libvirt_vcenter_https.ml" 125 4008 4049
+type(
+  string
+)
+ident(
+  int_ref line "input_libvirt_vcenter_https.ml" 123 3946 3958 "input_libvirt_vcenter_https.ml" 123 3946 3962
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4050 "input_libvirt_vcenter_https.ml" 125 4008 4051
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4052 "input_libvirt_vcenter_https.ml" 125 4008 4054
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4034 "input_libvirt_vcenter_https.ml" 125 4008 4054
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4055 "input_libvirt_vcenter_https.ml" 125 4008 4056
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4057 "input_libvirt_vcenter_https.ml" 125 4008 4071
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4034 "input_libvirt_vcenter_https.ml" 125 4008 4071
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4021 "input_libvirt_vcenter_https.ml" 125 4008 4071
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 126 4079 4095 "input_libvirt_vcenter_https.ml" 126 4079 4099
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 126 4079 4102 "input_libvirt_vcenter_https.ml" 126 4079 4112
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"input_libvirt_vcenter_https.ml" 126 4079 4113 "input_libvirt_vcenter_https.ml" 126 4079 4117
+type(
+  string
+)
+ident(
+  int_ref line "input_libvirt_vcenter_https.ml" 123 3946 3958 "input_libvirt_vcenter_https.ml" 123 3946 3962
+)
+"input_libvirt_vcenter_https.ml" 126 4079 4118 "input_libvirt_vcenter_https.ml" 126 4079 4120
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 126 4079 4122 "input_libvirt_vcenter_https.ml" 126 4079 4125
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirt_vcenter_https.ml" 124 3966 3980 "input_libvirt_vcenter_https.ml" 124 3966 3983
+)
+"input_libvirt_vcenter_https.ml" 126 4079 4125 "input_libvirt_vcenter_https.ml" 126 4079 4126
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"input_libvirt_vcenter_https.ml" 126 4079 4126 "input_libvirt_vcenter_https.ml" 126 4079 4128
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 126 4079 4121 "input_libvirt_vcenter_https.ml" 126 4079 4129
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 126 4079 4102 "input_libvirt_vcenter_https.ml" 126 4079 4129
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 127 4133 4149 "input_libvirt_vcenter_https.ml" 127 4133 4155
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 127 4133 4157 "input_libvirt_vcenter_https.ml" 127 4133 4158
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 127 4133 4149 "input_libvirt_vcenter_https.ml" 127 4133 4158
+type(
+  string * string
+)
+"input_libvirt_vcenter_https.ml" 127 4133 4161 "input_libvirt_vcenter_https.ml" 127 4133 4173
+type(
+  string -> string -> string * string
+)
+ident(
+  ext_ref Common_utils.string_split
+)
+"input_libvirt_vcenter_https.ml" 127 4133 4174 "input_libvirt_vcenter_https.ml" 127 4133 4177
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 127 4133 4178 "input_libvirt_vcenter_https.ml" 127 4133 4182
+type(
+  string
+)
+ident(
+  int_ref line "input_libvirt_vcenter_https.ml" 126 4079 4095 "input_libvirt_vcenter_https.ml" 126 4079 4099
+)
+"input_libvirt_vcenter_https.ml" 127 4133 4161 "input_libvirt_vcenter_https.ml" 127 4133 4182
+call(
+  stack
+)
+type(
+  string * string
+)
+"input_libvirt_vcenter_https.ml" 128 4186 4198 "input_libvirt_vcenter_https.ml" 128 4186 4212
+type(
+  string ref
+)
+ident(
+  int_ref session_cookie "input_libvirt_vcenter_https.ml" 40 1227 1233 "input_libvirt_vcenter_https.ml" 40 1227 1247
+)
+"input_libvirt_vcenter_https.ml" 128 4186 4213 "input_libvirt_vcenter_https.ml" 128 4186 4215
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"input_libvirt_vcenter_https.ml" 128 4186 4216 "input_libvirt_vcenter_https.ml" 128 4186 4222
+type(
+  string
+)
+ident(
+  int_ref cookie "input_libvirt_vcenter_https.ml" 127 4133 4149 "input_libvirt_vcenter_https.ml" 127 4133 4155
+)
+"input_libvirt_vcenter_https.ml" 128 4186 4198 "input_libvirt_vcenter_https.ml" 128 4186 4222
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 127 4133 4145 "input_libvirt_vcenter_https.ml" 128 4186 4222
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4077 "input_libvirt_vcenter_https.ml" 129 4223 4234
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 125 4008 4018 "input_libvirt_vcenter_https.ml" 129 4223 4234
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 124 3966 3976 "input_libvirt_vcenter_https.ml" 129 4223 4234
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 122 3928 3944 "input_libvirt_vcenter_https.ml" 130 4235 4242
+type(
+  string -> unit
+)
+"input_libvirt_vcenter_https.ml" 130 4235 4243 "input_libvirt_vcenter_https.ml" 130 4235 4248
+type(
+  string list
+)
+ident(
+  int_ref lines "input_libvirt_vcenter_https.ml" 63 2003 2013 "input_libvirt_vcenter_https.ml" 63 2003 2018
+)
+"input_libvirt_vcenter_https.ml" 122 3928 3934 "input_libvirt_vcenter_https.ml" 130 4235 4248
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 131 4250 4259 "input_libvirt_vcenter_https.ml" 131 4250 4260
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirt_vcenter_https.ml" 131 4250 4260 "input_libvirt_vcenter_https.ml" 131 4250 4274
+type(
+  string ref
+)
+ident(
+  int_ref session_cookie "input_libvirt_vcenter_https.ml" 40 1227 1233 "input_libvirt_vcenter_https.ml" 40 1227 1247
+)
+"input_libvirt_vcenter_https.ml" 131 4250 4259 "input_libvirt_vcenter_https.ml" 131 4250 4274
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 131 4250 4275 "input_libvirt_vcenter_https.ml" 131 4250 4276
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"input_libvirt_vcenter_https.ml" 131 4250 4277 "input_libvirt_vcenter_https.ml" 131 4250 4279
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 131 4250 4259 "input_libvirt_vcenter_https.ml" 131 4250 4279
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 132 4287 4295 "input_libvirt_vcenter_https.ml" 132 4287 4308
+type(
+  out_channel -> unit
+)
+ident(
+  int_ref dump_response "input_libvirt_vcenter_https.ml" 65 2054 2064 "input_libvirt_vcenter_https.ml" 65 2054 2077
+)
+"input_libvirt_vcenter_https.ml" 132 4287 4309 "input_libvirt_vcenter_https.ml" 132 4287 4315
+type(
+  out_channel
+)
+ident(
+  ext_ref Pervasives.stderr
+)
+"input_libvirt_vcenter_https.ml" 132 4287 4295 "input_libvirt_vcenter_https.ml" 132 4287 4315
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 133 4317 4325 "input_libvirt_vcenter_https.ml" 133 4317 4332
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirt_vcenter_https.ml" 133 4317 4334 "input_libvirt_vcenter_https.ml" 133 4317 4336
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_vcenter_https.ml" 133 4317 4336 "input_libvirt_vcenter_https.ml" 133 4317 4477
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_vcenter_https.ml" 133 4317 4333 "input_libvirt_vcenter_https.ml" 133 4317 4478
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirt_vcenter_https.ml" 133 4317 4325 "input_libvirt_vcenter_https.ml" 133 4317 4478
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 134 4480 4488 "input_libvirt_vcenter_https.ml" 134 4480 4492
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 133 4317 4325 "input_libvirt_vcenter_https.ml" 134 4480 4492
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 131 4250 4285 "input_libvirt_vcenter_https.ml" 135 4493 4500
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 137 4512 4525 "input_libvirt_vcenter_https.ml" 137 4512 4526
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"input_libvirt_vcenter_https.ml" 137 4512 4526 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string ref
+)
+ident(
+  int_ref session_cookie "input_libvirt_vcenter_https.ml" 40 1227 1233 "input_libvirt_vcenter_https.ml" 40 1227 1247
+)
+"input_libvirt_vcenter_https.ml" 137 4512 4525 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 137 4512 4520 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 131 4250 4256 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 122 3928 3934 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 116 3770 3776 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 111 3648 3654 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 102 3301 3307 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 97 3138 3144 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 96 3108 3114 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 90 2910 2916 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 89 2881 2887 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 86 2763 2769 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 65 2054 2060 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 63 2003 2009 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 60 1900 1906 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 50 1481 1487 "input_libvirt_vcenter_https.ml" 137 4512 4540
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 44 1364 1373 "input_libvirt_vcenter_https.ml" 138 4541 4546
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 42 1303 1307 "input_libvirt_vcenter_https.ml" 138 4541 4546
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 41 1260 1262 "input_libvirt_vcenter_https.ml" 138 4541 4546
+type(
+  string option -> string -> Xml.uri -> bool -> string -> string option
+)
+"input_libvirt_vcenter_https.ml" 40 1227 1229 "input_libvirt_vcenter_https.ml" 138 4541 4546
+type(
+  string option -> string -> Xml.uri -> bool -> string -> string option
+)
+"input_libvirt_vcenter_https.ml" 143 4651 4655 "input_libvirt_vcenter_https.ml" 143 4651 4673
+type(
+  (string * string option) list -> string list
+)
+ident(
+  def run_curl_get_lines "input_libvirt_vcenter_https.ml" 39 1198 1198 --
+)
+"input_libvirt_vcenter_https.ml" 143 4651 4674 "input_libvirt_vcenter_https.ml" 143 4651 4683
+type(
+  (string * string option) list
+)
+ident(
+  def curl_args "input_libvirt_vcenter_https.ml" 144 4686 4688 "input_libvirt_vcenter_https.ml" 171 5582 5589
+)
+"input_libvirt_vcenter_https.ml" 144 4686 4692 "input_libvirt_vcenter_https.ml" 144 4686 4703
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+type(
+  out_channel
+)
+"input_libvirt_vcenter_https.ml" 144 4686 4692 "input_libvirt_vcenter_https.ml" 144 4686 4709
+type(
+  string * out_channel
+)
+"input_libvirt_vcenter_https.ml" 144 4686 4712 "input_libvirt_vcenter_https.ml" 144 4686 4735
+type(
+  ?mode:open_flag list ->
+  ?temp_dir:string -> string -> string -> string * out_channel
+)
+ident(
+  ext_ref Filename.open_temp_file
+)
+"input_libvirt_vcenter_https.ml" 144 4686 4736 "input_libvirt_vcenter_https.ml" 144 4686 4745
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 144 4686 4746 "input_libvirt_vcenter_https.ml" 144 4686 4753
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 144 4686 4712 "input_libvirt_vcenter_https.ml" 144 4686 4753
+call(
+  stack
+)
+type(
+  string * out_channel
+)
+"input_libvirt_vcenter_https.ml" 145 4757 4759 "input_libvirt_vcenter_https.ml" 145 4757 4768
+type(
+  (string * string option -> unit) -> (string * string option) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"input_libvirt_vcenter_https.ml" 147 4784 4790 "input_libvirt_vcenter_https.ml" 147 4784 4794
+type(
+  string
+)
+ident(
+  def name "input_libvirt_vcenter_https.ml" 147 4784 4804 "input_libvirt_vcenter_https.ml" 147 4784 4828
+)
+"input_libvirt_vcenter_https.ml" 147 4784 4796 "input_libvirt_vcenter_https.ml" 147 4784 4800
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 147 4784 4790 "input_libvirt_vcenter_https.ml" 147 4784 4800
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 147 4784 4804 "input_libvirt_vcenter_https.ml" 147 4784 4811
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"input_libvirt_vcenter_https.ml" 147 4784 4812 "input_libvirt_vcenter_https.ml" 147 4784 4816
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+)
+"input_libvirt_vcenter_https.ml" 147 4784 4817 "input_libvirt_vcenter_https.ml" 147 4784 4823
+type(
+  (string -> unit, out_channel, unit) format
+)
+"input_libvirt_vcenter_https.ml" 147 4784 4824 "input_libvirt_vcenter_https.ml" 147 4784 4828
+type(
+  string
+)
+ident(
+  int_ref name "input_libvirt_vcenter_https.ml" 147 4784 4790 "input_libvirt_vcenter_https.ml" 147 4784 4794
+)
+"input_libvirt_vcenter_https.ml" 147 4784 4804 "input_libvirt_vcenter_https.ml" 147 4784 4828
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 148 4829 4835 "input_libvirt_vcenter_https.ml" 148 4829 4839
+type(
+  string
+)
+ident(
+  def name "input_libvirt_vcenter_https.ml" 149 4855 4861 "input_libvirt_vcenter_https.ml" 164 5392 5417
+)
+"input_libvirt_vcenter_https.ml" 148 4829 4846 "input_libvirt_vcenter_https.ml" 148 4829 4851
+type(
+  string
+)
+ident(
+  def value "input_libvirt_vcenter_https.ml" 149 4855 4861 "input_libvirt_vcenter_https.ml" 164 5392 5417
+)
+"input_libvirt_vcenter_https.ml" 148 4829 4841 "input_libvirt_vcenter_https.ml" 148 4829 4851
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 148 4829 4835 "input_libvirt_vcenter_https.ml" 148 4829 4851
+type(
+  string * string option
+)
+"input_libvirt_vcenter_https.ml" 149 4855 4861 "input_libvirt_vcenter_https.ml" 149 4855 4868
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"input_libvirt_vcenter_https.ml" 149 4855 4869 "input_libvirt_vcenter_https.ml" 149 4855 4873
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+)
+"input_libvirt_vcenter_https.ml" 149 4855 4874 "input_libvirt_vcenter_https.ml" 149 4855 4883
+type(
+  (string -> unit, out_channel, unit) format
+)
+"input_libvirt_vcenter_https.ml" 149 4855 4884 "input_libvirt_vcenter_https.ml" 149 4855 4888
+type(
+  string
+)
+ident(
+  int_ref name "input_libvirt_vcenter_https.ml" 148 4829 4835 "input_libvirt_vcenter_https.ml" 148 4829 4839
+)
+"input_libvirt_vcenter_https.ml" 149 4855 4861 "input_libvirt_vcenter_https.ml" 149 4855 4888
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 153 4989 4999 "input_libvirt_vcenter_https.ml" 153 4989 5002
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 153 4989 5005 "input_libvirt_vcenter_https.ml" 153 4989 5018
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"input_libvirt_vcenter_https.ml" 153 4989 5019 "input_libvirt_vcenter_https.ml" 153 4989 5024
+type(
+  string
+)
+ident(
+  int_ref value "input_libvirt_vcenter_https.ml" 148 4829 4846 "input_libvirt_vcenter_https.ml" 148 4829 4851
+)
+"input_libvirt_vcenter_https.ml" 153 4989 5005 "input_libvirt_vcenter_https.ml" 153 4989 5024
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 154 5028 5042 "input_libvirt_vcenter_https.ml" 154 5028 5043
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 154 5028 5047 "input_libvirt_vcenter_https.ml" 154 5028 5050
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirt_vcenter_https.ml" 153 4989 4999 "input_libvirt_vcenter_https.ml" 153 4989 5002
+)
+"input_libvirt_vcenter_https.ml" 154 5028 5050 "input_libvirt_vcenter_https.ml" 154 5028 5051
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"input_libvirt_vcenter_https.ml" 154 5028 5051 "input_libvirt_vcenter_https.ml" 154 5028 5052
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 154 5028 5047 "input_libvirt_vcenter_https.ml" 154 5028 5052
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 155 5056 5070 "input_libvirt_vcenter_https.ml" 155 5056 5075
+type(
+  string
+)
+ident(
+  int_ref value "input_libvirt_vcenter_https.ml" 148 4829 4846 "input_libvirt_vcenter_https.ml" 148 4829 4851
+)
+"input_libvirt_vcenter_https.ml" 155 5056 5077 "input_libvirt_vcenter_https.ml" 155 5056 5078
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 155 5056 5070 "input_libvirt_vcenter_https.ml" 155 5056 5079
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 156 5085 5095 "input_libvirt_vcenter_https.ml" 156 5085 5099
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 156 5085 5103 "input_libvirt_vcenter_https.ml" 156 5085 5116
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"input_libvirt_vcenter_https.ml" 156 5085 5117 "input_libvirt_vcenter_https.ml" 156 5085 5121
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+)
+"input_libvirt_vcenter_https.ml" 156 5085 5122 "input_libvirt_vcenter_https.ml" 156 5085 5128
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 156 5085 5103 "input_libvirt_vcenter_https.ml" 156 5085 5128
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 157 5129 5139 "input_libvirt_vcenter_https.ml" 157 5129 5142
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 157 5129 5146 "input_libvirt_vcenter_https.ml" 157 5129 5159
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"input_libvirt_vcenter_https.ml" 157 5129 5160 "input_libvirt_vcenter_https.ml" 157 5129 5164
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+)
+"input_libvirt_vcenter_https.ml" 157 5129 5165 "input_libvirt_vcenter_https.ml" 157 5129 5171
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 157 5129 5146 "input_libvirt_vcenter_https.ml" 157 5129 5171
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 158 5172 5182 "input_libvirt_vcenter_https.ml" 158 5172 5186
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 158 5172 5190 "input_libvirt_vcenter_https.ml" 158 5172 5203
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"input_libvirt_vcenter_https.ml" 158 5172 5204 "input_libvirt_vcenter_https.ml" 158 5172 5208
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+)
+"input_libvirt_vcenter_https.ml" 158 5172 5209 "input_libvirt_vcenter_https.ml" 158 5172 5214
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 158 5172 5190 "input_libvirt_vcenter_https.ml" 158 5172 5214
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 159 5215 5225 "input_libvirt_vcenter_https.ml" 159 5215 5229
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 159 5215 5233 "input_libvirt_vcenter_https.ml" 159 5215 5246
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"input_libvirt_vcenter_https.ml" 159 5215 5247 "input_libvirt_vcenter_https.ml" 159 5215 5251
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+)
+"input_libvirt_vcenter_https.ml" 159 5215 5252 "input_libvirt_vcenter_https.ml" 159 5215 5257
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 159 5215 5233 "input_libvirt_vcenter_https.ml" 159 5215 5257
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 160 5258 5268 "input_libvirt_vcenter_https.ml" 160 5258 5272
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 160 5258 5276 "input_libvirt_vcenter_https.ml" 160 5258 5289
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"input_libvirt_vcenter_https.ml" 160 5258 5290 "input_libvirt_vcenter_https.ml" 160 5258 5294
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+)
+"input_libvirt_vcenter_https.ml" 160 5258 5295 "input_libvirt_vcenter_https.ml" 160 5258 5300
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 160 5258 5276 "input_libvirt_vcenter_https.ml" 160 5258 5300
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 161 5301 5311 "input_libvirt_vcenter_https.ml" 161 5301 5317
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 161 5301 5321 "input_libvirt_vcenter_https.ml" 161 5301 5334
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"input_libvirt_vcenter_https.ml" 161 5301 5335 "input_libvirt_vcenter_https.ml" 161 5301 5339
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+)
+"input_libvirt_vcenter_https.ml" 161 5301 5340 "input_libvirt_vcenter_https.ml" 161 5301 5345
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 161 5301 5321 "input_libvirt_vcenter_https.ml" 161 5301 5345
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 162 5346 5356 "input_libvirt_vcenter_https.ml" 162 5346 5357
+type(
+  char
+)
+ident(
+  def c "input_libvirt_vcenter_https.ml" 162 5346 5361 "input_libvirt_vcenter_https.ml" 162 5346 5379
+)
+"input_libvirt_vcenter_https.ml" 162 5346 5361 "input_libvirt_vcenter_https.ml" 162 5346 5372
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"input_libvirt_vcenter_https.ml" 162 5346 5373 "input_libvirt_vcenter_https.ml" 162 5346 5377
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+)
+"input_libvirt_vcenter_https.ml" 162 5346 5378 "input_libvirt_vcenter_https.ml" 162 5346 5379
+type(
+  char
+)
+ident(
+  int_ref c "input_libvirt_vcenter_https.ml" 162 5346 5356 "input_libvirt_vcenter_https.ml" 162 5346 5357
+)
+"input_libvirt_vcenter_https.ml" 162 5346 5361 "input_libvirt_vcenter_https.ml" 162 5346 5379
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 155 5056 5064 "input_libvirt_vcenter_https.ml" 162 5346 5379
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 154 5028 5034 "input_libvirt_vcenter_https.ml" 163 5380 5390
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 164 5392 5398 "input_libvirt_vcenter_https.ml" 164 5392 5405
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"input_libvirt_vcenter_https.ml" 164 5392 5406 "input_libvirt_vcenter_https.ml" 164 5392 5410
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+)
+"input_libvirt_vcenter_https.ml" 164 5392 5411 "input_libvirt_vcenter_https.ml" 164 5392 5417
+type(
+  (unit, out_channel, unit) format
+)
+"input_libvirt_vcenter_https.ml" 164 5392 5398 "input_libvirt_vcenter_https.ml" 164 5392 5417
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 154 5028 5034 "input_libvirt_vcenter_https.ml" 164 5392 5417
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 153 4989 4995 "input_libvirt_vcenter_https.ml" 164 5392 5417
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 149 4855 4861 "input_libvirt_vcenter_https.ml" 164 5392 5417
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 145 4757 4769 "input_libvirt_vcenter_https.ml" 165 5418 5421
+type(
+  string * string option -> unit
+)
+"input_libvirt_vcenter_https.ml" 165 5418 5422 "input_libvirt_vcenter_https.ml" 165 5418 5431
+type(
+  (string * string option) list
+)
+ident(
+  int_ref curl_args "input_libvirt_vcenter_https.ml" 143 4651 4674 "input_libvirt_vcenter_https.ml" 143 4651 4683
+)
+"input_libvirt_vcenter_https.ml" 145 4757 4759 "input_libvirt_vcenter_https.ml" 165 5418 5431
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 166 5433 5435 "input_libvirt_vcenter_https.ml" 166 5433 5444
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"input_libvirt_vcenter_https.ml" 166 5433 5445 "input_libvirt_vcenter_https.ml" 166 5433 5449
+type(
+  out_channel
+)
+ident(
+  int_ref chan "input_libvirt_vcenter_https.ml" 144 4686 4705 "input_libvirt_vcenter_https.ml" 144 4686 4709
+)
+"input_libvirt_vcenter_https.ml" 166 5433 5435 "input_libvirt_vcenter_https.ml" 166 5433 5449
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 168 5452 5458 "input_libvirt_vcenter_https.ml" 168 5452 5461
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 168 5452 5464 "input_libvirt_vcenter_https.ml" 168 5452 5471
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"input_libvirt_vcenter_https.ml" 168 5452 5472 "input_libvirt_vcenter_https.ml" 168 5452 5493
+type(
+  (string -> string, unit, string) format
+)
+"input_libvirt_vcenter_https.ml" 168 5452 5495 "input_libvirt_vcenter_https.ml" 168 5452 5500
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"input_libvirt_vcenter_https.ml" 168 5452 5501 "input_libvirt_vcenter_https.ml" 168 5452 5512
+type(
+  string
+)
+ident(
+  int_ref config_file "input_libvirt_vcenter_https.ml" 144 4686 4692 "input_libvirt_vcenter_https.ml" 144 4686 4703
+)
+"input_libvirt_vcenter_https.ml" 168 5452 5494 "input_libvirt_vcenter_https.ml" 168 5452 5513
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 168 5452 5464 "input_libvirt_vcenter_https.ml" 168 5452 5513
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 169 5517 5523 "input_libvirt_vcenter_https.ml" 169 5517 5528
+type(
+  string list
+)
+"input_libvirt_vcenter_https.ml" 169 5517 5531 "input_libvirt_vcenter_https.ml" 169 5517 5547
+type(
+  string -> string list
+)
+ident(
+  ext_ref Common_utils.external_command
+)
+"input_libvirt_vcenter_https.ml" 169 5517 5548 "input_libvirt_vcenter_https.ml" 169 5517 5551
+type(
+  string
+)
+ident(
+  int_ref cmd "input_libvirt_vcenter_https.ml" 168 5452 5458 "input_libvirt_vcenter_https.ml" 168 5452 5461
+)
+"input_libvirt_vcenter_https.ml" 169 5517 5531 "input_libvirt_vcenter_https.ml" 169 5517 5551
+call(
+  stack
+)
+type(
+  string list
+)
+"input_libvirt_vcenter_https.ml" 170 5555 5557 "input_libvirt_vcenter_https.ml" 170 5555 5568
+type(
+  string -> unit
+)
+ident(
+  ext_ref Unix.unlink
+)
+"input_libvirt_vcenter_https.ml" 170 5555 5569 "input_libvirt_vcenter_https.ml" 170 5555 5580
+type(
+  string
+)
+ident(
+  int_ref config_file "input_libvirt_vcenter_https.ml" 144 4686 4692 "input_libvirt_vcenter_https.ml" 144 4686 4703
+)
+"input_libvirt_vcenter_https.ml" 170 5555 5557 "input_libvirt_vcenter_https.ml" 170 5555 5580
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 171 5582 5584 "input_libvirt_vcenter_https.ml" 171 5582 5589
+type(
+  string list
+)
+ident(
+  int_ref lines "input_libvirt_vcenter_https.ml" 169 5517 5523 "input_libvirt_vcenter_https.ml" 169 5517 5528
+)
+"input_libvirt_vcenter_https.ml" 170 5555 5557 "input_libvirt_vcenter_https.ml" 171 5582 5589
+type(
+  string list
+)
+"input_libvirt_vcenter_https.ml" 169 5517 5519 "input_libvirt_vcenter_https.ml" 171 5582 5589
+type(
+  string list
+)
+"input_libvirt_vcenter_https.ml" 168 5452 5454 "input_libvirt_vcenter_https.ml" 171 5582 5589
+type(
+  string list
+)
+"input_libvirt_vcenter_https.ml" 166 5433 5435 "input_libvirt_vcenter_https.ml" 171 5582 5589
+type(
+  string list
+)
+"input_libvirt_vcenter_https.ml" 145 4757 4759 "input_libvirt_vcenter_https.ml" 171 5582 5589
+type(
+  string list
+)
+"input_libvirt_vcenter_https.ml" 144 4686 4688 "input_libvirt_vcenter_https.ml" 171 5582 5589
+type(
+  string list
+)
+"input_libvirt_vcenter_https.ml" 173 5591 5595 "input_libvirt_vcenter_https.ml" 173 5591 5609
+type(
+  Str.regexp
+)
+ident(
+  def multiple_slash "input_libvirt_vcenter_https.ml" 176 5685 5685 --
+)
+"input_libvirt_vcenter_https.ml" 173 5591 5612 "input_libvirt_vcenter_https.ml" 173 5591 5622
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"input_libvirt_vcenter_https.ml" 173 5591 5623 "input_libvirt_vcenter_https.ml" 173 5591 5627
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 173 5591 5612 "input_libvirt_vcenter_https.ml" 173 5591 5627
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"input_libvirt_vcenter_https.ml" 176 5685 5689 "input_libvirt_vcenter_https.ml" 176 5685 5699
+type(
+  Xml.uri -> string -> string
+)
+ident(
+  def get_dcPath "input_libvirt_vcenter_https.ml" 236 8033 8033 --
+)
+"input_libvirt_vcenter_https.ml" 176 5685 5700 "input_libvirt_vcenter_https.ml" 176 5685 5703
+type(
+  Xml.uri
+)
+ident(
+  def uri "input_libvirt_vcenter_https.ml" 176 5685 5704 "input_libvirt_vcenter_https.ml" 220 7592 7606
+)
+"input_libvirt_vcenter_https.ml" 176 5685 5704 "input_libvirt_vcenter_https.ml" 176 5685 5710
+type(
+  string
+)
+ident(
+  def scheme "input_libvirt_vcenter_https.ml" 177 5713 5715 "input_libvirt_vcenter_https.ml" 220 7592 7606
+)
+"input_libvirt_vcenter_https.ml" 177 5713 5719 "input_libvirt_vcenter_https.ml" 177 5713 5729
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 177 5713 5732 "input_libvirt_vcenter_https.ml" 177 5713 5747
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 178 5751 5759 "input_libvirt_vcenter_https.ml" 178 5751 5765
+type(
+  string
+)
+ident(
+  int_ref scheme "input_libvirt_vcenter_https.ml" 176 5685 5704 "input_libvirt_vcenter_https.ml" 176 5685 5710
+)
+"input_libvirt_vcenter_https.ml" 179 5771 5775 "input_libvirt_vcenter_https.ml" 179 5771 5780
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 180 5784 5795 "input_libvirt_vcenter_https.ml" 180 5784 5798
+type(
+  Xml.uri
+)
+ident(
+  int_ref uri "input_libvirt_vcenter_https.ml" 176 5685 5700 "input_libvirt_vcenter_https.ml" 176 5685 5703
+)
+"input_libvirt_vcenter_https.ml" 180 5784 5795 "input_libvirt_vcenter_https.ml" 180 5784 5807
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 181 5813 5819 "input_libvirt_vcenter_https.ml" 181 5813 5823
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 182 5827 5833 "input_libvirt_vcenter_https.ml" 182 5827 5840
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirt_vcenter_https.ml" 182 5827 5842 "input_libvirt_vcenter_https.ml" 182 5827 5844
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_vcenter_https.ml" 182 5827 5844 "input_libvirt_vcenter_https.ml" 182 5827 5944
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_vcenter_https.ml" 182 5827 5841 "input_libvirt_vcenter_https.ml" 182 5827 5945
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirt_vcenter_https.ml" 182 5827 5833 "input_libvirt_vcenter_https.ml" 182 5827 5945
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 183 5947 5953 "input_libvirt_vcenter_https.ml" 183 5947 5963
+type(
+  string
+)
+ident(
+  int_ref default_dc "input_libvirt_vcenter_https.ml" 177 5713 5719 "input_libvirt_vcenter_https.ml" 177 5713 5729
+)
+"input_libvirt_vcenter_https.ml" 182 5827 5833 "input_libvirt_vcenter_https.ml" 183 5947 5963
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 184 5964 5975 "input_libvirt_vcenter_https.ml" 184 5964 5979
+type(
+  string
+)
+ident(
+  def path "input_libvirt_vcenter_https.ml" 200 6815 6821 "input_libvirt_vcenter_https.ml" 215 7401 7428
+)
+"input_libvirt_vcenter_https.ml" 184 5964 5970 "input_libvirt_vcenter_https.ml" 184 5964 5979
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 200 6815 6825 "input_libvirt_vcenter_https.ml" 200 6815 6829
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 200 6815 6832 "input_libvirt_vcenter_https.ml" 200 6815 6850
+type(
+  Str.regexp -> string -> string -> string
+)
+ident(
+  ext_ref Str.global_replace
+)
+"input_libvirt_vcenter_https.ml" 200 6815 6851 "input_libvirt_vcenter_https.ml" 200 6815 6865
+type(
+  Str.regexp
+)
+ident(
+  int_ref multiple_slash "input_libvirt_vcenter_https.ml" 173 5591 5595 "input_libvirt_vcenter_https.ml" 173 5591 5609
+)
+"input_libvirt_vcenter_https.ml" 200 6815 6866 "input_libvirt_vcenter_https.ml" 200 6815 6869
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 200 6815 6870 "input_libvirt_vcenter_https.ml" 200 6815 6874
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 184 5964 5975 "input_libvirt_vcenter_https.ml" 184 5964 5979
+)
+"input_libvirt_vcenter_https.ml" 200 6815 6832 "input_libvirt_vcenter_https.ml" 200 6815 6874
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 202 6938 6948 "input_libvirt_vcenter_https.ml" 202 6938 6952
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 203 6955 6967 "input_libvirt_vcenter_https.ml" 203 6955 6970
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 203 6955 6973 "input_libvirt_vcenter_https.ml" 203 6955 6986
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"input_libvirt_vcenter_https.ml" 203 6955 6987 "input_libvirt_vcenter_https.ml" 203 6955 6991
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 200 6815 6825 "input_libvirt_vcenter_https.ml" 200 6815 6829
+)
+"input_libvirt_vcenter_https.ml" 203 6955 6973 "input_libvirt_vcenter_https.ml" 203 6955 6991
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7006 "input_libvirt_vcenter_https.ml" 204 6995 7009
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirt_vcenter_https.ml" 203 6955 6967 "input_libvirt_vcenter_https.ml" 203 6955 6970
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7010 "input_libvirt_vcenter_https.ml" 204 6995 7011
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7012 "input_libvirt_vcenter_https.ml" 204 6995 7013
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7006 "input_libvirt_vcenter_https.ml" 204 6995 7013
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7014 "input_libvirt_vcenter_https.ml" 204 6995 7016
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7017 "input_libvirt_vcenter_https.ml" 204 6995 7021
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 200 6815 6825 "input_libvirt_vcenter_https.ml" 200 6815 6829
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7023 "input_libvirt_vcenter_https.ml" 204 6995 7024
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7017 "input_libvirt_vcenter_https.ml" 204 6995 7025
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7026 "input_libvirt_vcenter_https.ml" 204 6995 7027
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7028 "input_libvirt_vcenter_https.ml" 204 6995 7031
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7017 "input_libvirt_vcenter_https.ml" 204 6995 7031
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7006 "input_libvirt_vcenter_https.ml" 204 6995 7031
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 205 7037 7047 "input_libvirt_vcenter_https.ml" 205 7037 7057
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"input_libvirt_vcenter_https.ml" 205 7037 7058 "input_libvirt_vcenter_https.ml" 205 7037 7062
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 200 6815 6825 "input_libvirt_vcenter_https.ml" 200 6815 6829
+)
+"input_libvirt_vcenter_https.ml" 205 7037 7063 "input_libvirt_vcenter_https.ml" 205 7037 7064
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 205 7037 7066 "input_libvirt_vcenter_https.ml" 205 7037 7069
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirt_vcenter_https.ml" 203 6955 6967 "input_libvirt_vcenter_https.ml" 203 6955 6970
+)
+"input_libvirt_vcenter_https.ml" 205 7037 7069 "input_libvirt_vcenter_https.ml" 205 7037 7070
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"input_libvirt_vcenter_https.ml" 205 7037 7070 "input_libvirt_vcenter_https.ml" 205 7037 7071
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 205 7037 7065 "input_libvirt_vcenter_https.ml" 205 7037 7072
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 205 7037 7047 "input_libvirt_vcenter_https.ml" 205 7037 7072
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 206 7073 7086 "input_libvirt_vcenter_https.ml" 206 7073 7090
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 200 6815 6825 "input_libvirt_vcenter_https.ml" 200 6815 6829
+)
+"input_libvirt_vcenter_https.ml" 204 6995 7003 "input_libvirt_vcenter_https.ml" 206 7073 7090
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 203 6955 6963 "input_libvirt_vcenter_https.ml" 206 7073 7090
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 207 7094 7104 "input_libvirt_vcenter_https.ml" 207 7094 7108
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 208 7111 7123 "input_libvirt_vcenter_https.ml" 208 7111 7126
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 208 7111 7129 "input_libvirt_vcenter_https.ml" 208 7111 7142
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"input_libvirt_vcenter_https.ml" 208 7111 7143 "input_libvirt_vcenter_https.ml" 208 7111 7147
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 202 6938 6948 "input_libvirt_vcenter_https.ml" 202 6938 6952
+)
+"input_libvirt_vcenter_https.ml" 208 7111 7129 "input_libvirt_vcenter_https.ml" 208 7111 7147
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7162 "input_libvirt_vcenter_https.ml" 209 7151 7165
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirt_vcenter_https.ml" 208 7111 7123 "input_libvirt_vcenter_https.ml" 208 7111 7126
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7166 "input_libvirt_vcenter_https.ml" 209 7151 7167
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7168 "input_libvirt_vcenter_https.ml" 209 7151 7169
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7162 "input_libvirt_vcenter_https.ml" 209 7151 7169
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7170 "input_libvirt_vcenter_https.ml" 209 7151 7172
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7173 "input_libvirt_vcenter_https.ml" 209 7151 7177
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 202 6938 6948 "input_libvirt_vcenter_https.ml" 202 6938 6952
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7179 "input_libvirt_vcenter_https.ml" 209 7151 7182
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirt_vcenter_https.ml" 208 7111 7123 "input_libvirt_vcenter_https.ml" 208 7111 7126
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7182 "input_libvirt_vcenter_https.ml" 209 7151 7183
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7183 "input_libvirt_vcenter_https.ml" 209 7151 7184
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7179 "input_libvirt_vcenter_https.ml" 209 7151 7184
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7173 "input_libvirt_vcenter_https.ml" 209 7151 7185
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7186 "input_libvirt_vcenter_https.ml" 209 7151 7187
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7188 "input_libvirt_vcenter_https.ml" 209 7151 7191
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7173 "input_libvirt_vcenter_https.ml" 209 7151 7191
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7162 "input_libvirt_vcenter_https.ml" 209 7151 7191
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 210 7197 7207 "input_libvirt_vcenter_https.ml" 210 7197 7217
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"input_libvirt_vcenter_https.ml" 210 7197 7218 "input_libvirt_vcenter_https.ml" 210 7197 7222
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 202 6938 6948 "input_libvirt_vcenter_https.ml" 202 6938 6952
+)
+"input_libvirt_vcenter_https.ml" 210 7197 7223 "input_libvirt_vcenter_https.ml" 210 7197 7224
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 210 7197 7226 "input_libvirt_vcenter_https.ml" 210 7197 7229
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirt_vcenter_https.ml" 208 7111 7123 "input_libvirt_vcenter_https.ml" 208 7111 7126
+)
+"input_libvirt_vcenter_https.ml" 210 7197 7229 "input_libvirt_vcenter_https.ml" 210 7197 7230
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"input_libvirt_vcenter_https.ml" 210 7197 7230 "input_libvirt_vcenter_https.ml" 210 7197 7231
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 210 7197 7225 "input_libvirt_vcenter_https.ml" 210 7197 7232
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 210 7197 7207 "input_libvirt_vcenter_https.ml" 210 7197 7232
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 211 7233 7246 "input_libvirt_vcenter_https.ml" 211 7233 7250
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 202 6938 6948 "input_libvirt_vcenter_https.ml" 202 6938 6952
+)
+"input_libvirt_vcenter_https.ml" 209 7151 7159 "input_libvirt_vcenter_https.ml" 211 7233 7250
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 208 7111 7119 "input_libvirt_vcenter_https.ml" 211 7233 7250
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 213 7310 7320 "input_libvirt_vcenter_https.ml" 213 7310 7323
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 214 7326 7338 "input_libvirt_vcenter_https.ml" 214 7326 7351
+type(
+  string -> char -> int
+)
+ident(
+  ext_ref String.rindex
+)
+"input_libvirt_vcenter_https.ml" 214 7326 7352 "input_libvirt_vcenter_https.ml" 214 7326 7356
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 207 7094 7104 "input_libvirt_vcenter_https.ml" 207 7094 7108
+)
+"input_libvirt_vcenter_https.ml" 214 7326 7357 "input_libvirt_vcenter_https.ml" 214 7326 7360
+type(
+  char
+)
+"input_libvirt_vcenter_https.ml" 214 7326 7338 "input_libvirt_vcenter_https.ml" 214 7326 7360
+call(
+  stack
+)
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 214 7326 7366 "input_libvirt_vcenter_https.ml" 214 7326 7375
+type(
+  exn
+)
+"input_libvirt_vcenter_https.ml" 214 7326 7379 "input_libvirt_vcenter_https.ml" 214 7326 7392
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"input_libvirt_vcenter_https.ml" 214 7326 7393 "input_libvirt_vcenter_https.ml" 214 7326 7397
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 207 7094 7104 "input_libvirt_vcenter_https.ml" 207 7094 7108
+)
+"input_libvirt_vcenter_https.ml" 214 7326 7379 "input_libvirt_vcenter_https.ml" 214 7326 7397
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 214 7326 7334 "input_libvirt_vcenter_https.ml" 214 7326 7397
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 215 7401 7407 "input_libvirt_vcenter_https.ml" 215 7401 7417
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"input_libvirt_vcenter_https.ml" 215 7401 7418 "input_libvirt_vcenter_https.ml" 215 7401 7422
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 207 7094 7104 "input_libvirt_vcenter_https.ml" 207 7094 7108
+)
+"input_libvirt_vcenter_https.ml" 215 7401 7423 "input_libvirt_vcenter_https.ml" 215 7401 7424
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 215 7401 7425 "input_libvirt_vcenter_https.ml" 215 7401 7428
+type(
+  int
+)
+ident(
+  int_ref len "input_libvirt_vcenter_https.ml" 213 7310 7320 "input_libvirt_vcenter_https.ml" 213 7310 7323
+)
+"input_libvirt_vcenter_https.ml" 215 7401 7407 "input_libvirt_vcenter_https.ml" 215 7401 7428
+call(
+  tail
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 213 7310 7316 "input_libvirt_vcenter_https.ml" 215 7401 7428
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 207 7094 7100 "input_libvirt_vcenter_https.ml" 215 7401 7428
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 202 6938 6944 "input_libvirt_vcenter_https.ml" 215 7401 7428
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 200 6815 6821 "input_libvirt_vcenter_https.ml" 215 7401 7428
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 180 5784 5788 "input_libvirt_vcenter_https.ml" 216 7429 7435
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 217 7436 7440 "input_libvirt_vcenter_https.ml" 217 7436 7445
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 218 7513 7517 "input_libvirt_vcenter_https.ml" 218 7513 7527
+type(
+  string
+)
+ident(
+  int_ref default_dc "input_libvirt_vcenter_https.ml" 177 5713 5719 "input_libvirt_vcenter_https.ml" 177 5713 5729
+)
+"input_libvirt_vcenter_https.ml" 219 7528 7532 "input_libvirt_vcenter_https.ml" 219 7528 7533
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 220 7592 7596 "input_libvirt_vcenter_https.ml" 220 7592 7606
+type(
+  string
+)
+ident(
+  int_ref default_dc "input_libvirt_vcenter_https.ml" 177 5713 5719 "input_libvirt_vcenter_https.ml" 177 5713 5729
+)
+"input_libvirt_vcenter_https.ml" 178 5751 5753 "input_libvirt_vcenter_https.ml" 220 7592 7606
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 177 5713 5715 "input_libvirt_vcenter_https.ml" 220 7592 7606
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 236 8033 8037 "input_libvirt_vcenter_https.ml" 236 8033 8046
+type(
+  Str.regexp
+)
+ident(
+  def source_re "input_libvirt_vcenter_https.ml" 238 8096 8096 --
+)
+"input_libvirt_vcenter_https.ml" 236 8033 8049 "input_libvirt_vcenter_https.ml" 236 8033 8059
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"input_libvirt_vcenter_https.ml" 236 8033 8060 "input_libvirt_vcenter_https.ml" 236 8033 8094
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 236 8033 8049 "input_libvirt_vcenter_https.ml" 236 8033 8094
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"input_libvirt_vcenter_https.ml" 238 8096 8100 "input_libvirt_vcenter_https.ml" 238 8096 8117
+type(
+  ?readahead:int ->
+  string option -> Xml.uri -> string -> string -> string -> string
+)
+ident(
+  def map_source_to_uri "input_libvirt_vcenter_https.ml" 309 10282 10282 --
+)
+"input_libvirt_vcenter_https.ml" 238 8096 8119 "input_libvirt_vcenter_https.ml" 238 8096 8128
+type(
+  int option
+)
+ident(
+  def readahead "input_libvirt_vcenter_https.ml" 238 8096 8129 "input_libvirt_vcenter_https.ml" 306 10210 10213
+)
+"input_libvirt_vcenter_https.ml" 238 8096 8129 "input_libvirt_vcenter_https.ml" 238 8096 8137
+type(
+  string option
+)
+ident(
+  def password "input_libvirt_vcenter_https.ml" 238 8096 8138 "input_libvirt_vcenter_https.ml" 306 10210 10213
+)
+"input_libvirt_vcenter_https.ml" 238 8096 8138 "input_libvirt_vcenter_https.ml" 238 8096 8141
+type(
+  Xml.uri
+)
+ident(
+  def uri "input_libvirt_vcenter_https.ml" 238 8096 8142 "input_libvirt_vcenter_https.ml" 306 10210 10213
+)
+"input_libvirt_vcenter_https.ml" 238 8096 8142 "input_libvirt_vcenter_https.ml" 238 8096 8148
+type(
+  string
+)
+ident(
+  def scheme "input_libvirt_vcenter_https.ml" 238 8096 8149 "input_libvirt_vcenter_https.ml" 306 10210 10213
+)
+"input_libvirt_vcenter_https.ml" 238 8096 8149 "input_libvirt_vcenter_https.ml" 238 8096 8155
+type(
+  string
+)
+ident(
+  def server "input_libvirt_vcenter_https.ml" 238 8096 8156 "input_libvirt_vcenter_https.ml" 306 10210 10213
+)
+"input_libvirt_vcenter_https.ml" 238 8096 8156 "input_libvirt_vcenter_https.ml" 238 8096 8160
+type(
+  string
+)
+ident(
+  def path "input_libvirt_vcenter_https.ml" 239 8163 8165 "input_libvirt_vcenter_https.ml" 306 10210 10213
+)
+"input_libvirt_vcenter_https.ml" 239 8163 8168 "input_libvirt_vcenter_https.ml" 239 8163 8171
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"input_libvirt_vcenter_https.ml" 239 8163 8173 "input_libvirt_vcenter_https.ml" 239 8163 8189
+type(
+  Str.regexp -> string -> int -> bool
+)
+ident(
+  ext_ref Str.string_match
+)
+"input_libvirt_vcenter_https.ml" 239 8163 8190 "input_libvirt_vcenter_https.ml" 239 8163 8199
+type(
+  Str.regexp
+)
+ident(
+  int_ref source_re "input_libvirt_vcenter_https.ml" 236 8033 8037 "input_libvirt_vcenter_https.ml" 236 8033 8046
+)
+"input_libvirt_vcenter_https.ml" 239 8163 8200 "input_libvirt_vcenter_https.ml" 239 8163 8204
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 238 8096 8156 "input_libvirt_vcenter_https.ml" 238 8096 8160
+)
+"input_libvirt_vcenter_https.ml" 239 8163 8205 "input_libvirt_vcenter_https.ml" 239 8163 8206
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 239 8163 8172 "input_libvirt_vcenter_https.ml" 239 8163 8207
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 239 8163 8168 "input_libvirt_vcenter_https.ml" 239 8163 8207
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 240 8213 8217 "input_libvirt_vcenter_https.ml" 240 8213 8221
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 238 8096 8156 "input_libvirt_vcenter_https.ml" 238 8096 8160
+)
+"input_libvirt_vcenter_https.ml" 242 8231 8239 "input_libvirt_vcenter_https.ml" 242 8231 8248
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 242 8231 8251 "input_libvirt_vcenter_https.ml" 242 8231 8268
+type(
+  int -> string -> string
+)
+ident(
+  ext_ref Str.matched_group
+)
+"input_libvirt_vcenter_https.ml" 242 8231 8269 "input_libvirt_vcenter_https.ml" 242 8231 8270
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 242 8231 8271 "input_libvirt_vcenter_https.ml" 242 8231 8275
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 238 8096 8156 "input_libvirt_vcenter_https.ml" 238 8096 8160
+)
+"input_libvirt_vcenter_https.ml" 242 8231 8251 "input_libvirt_vcenter_https.ml" 242 8231 8275
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 243 8276 8284 "input_libvirt_vcenter_https.ml" 243 8276 8288
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 243 8276 8291 "input_libvirt_vcenter_https.ml" 243 8276 8308
+type(
+  int -> string -> string
+)
+ident(
+  ext_ref Str.matched_group
+)
+"input_libvirt_vcenter_https.ml" 243 8276 8309 "input_libvirt_vcenter_https.ml" 243 8276 8310
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 243 8276 8311 "input_libvirt_vcenter_https.ml" 243 8276 8315
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 238 8096 8156 "input_libvirt_vcenter_https.ml" 238 8096 8160
+)
+"input_libvirt_vcenter_https.ml" 243 8276 8291 "input_libvirt_vcenter_https.ml" 243 8276 8315
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 246 8346 8354 "input_libvirt_vcenter_https.ml" 246 8346 8360
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 246 8346 8363 "input_libvirt_vcenter_https.ml" 246 8346 8373
+type(
+  Xml.uri -> string -> string
+)
+ident(
+  int_ref get_dcPath "input_libvirt_vcenter_https.ml" 176 5685 5689 "input_libvirt_vcenter_https.ml" 176 5685 5699
+)
+"input_libvirt_vcenter_https.ml" 246 8346 8374 "input_libvirt_vcenter_https.ml" 246 8346 8377
+type(
+  Xml.uri
+)
+ident(
+  int_ref uri "input_libvirt_vcenter_https.ml" 238 8096 8138 "input_libvirt_vcenter_https.ml" 238 8096 8141
+)
+"input_libvirt_vcenter_https.ml" 246 8346 8378 "input_libvirt_vcenter_https.ml" 246 8346 8384
+type(
+  string
+)
+ident(
+  int_ref scheme "input_libvirt_vcenter_https.ml" 238 8096 8142 "input_libvirt_vcenter_https.ml" 238 8096 8148
+)
+"input_libvirt_vcenter_https.ml" 246 8346 8363 "input_libvirt_vcenter_https.ml" 246 8346 8384
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 248 8389 8397 "input_libvirt_vcenter_https.ml" 248 8389 8401
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 249 8404 8416 "input_libvirt_vcenter_https.ml" 249 8404 8419
+type(
+  Xml.uri
+)
+ident(
+  int_ref uri "input_libvirt_vcenter_https.ml" 238 8096 8138 "input_libvirt_vcenter_https.ml" 238 8096 8141
+)
+"input_libvirt_vcenter_https.ml" 249 8404 8416 "input_libvirt_vcenter_https.ml" 249 8404 8428
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 250 8434 8442 "input_libvirt_vcenter_https.ml" 250 8434 8445
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 250 8434 8449 "input_libvirt_vcenter_https.ml" 250 8434 8451
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8460 "input_libvirt_vcenter_https.ml" 251 8452 8461
+type(
+  int
+)
+ident(
+  def n "input_libvirt_vcenter_https.ml" 251 8452 8462 "input_libvirt_vcenter_https.ml" 251 8452 8498
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8467 "input_libvirt_vcenter_https.ml" 251 8452 8468
+type(
+  int
+)
+ident(
+  int_ref n "input_libvirt_vcenter_https.ml" 251 8452 8460 "input_libvirt_vcenter_https.ml" 251 8452 8461
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8469 "input_libvirt_vcenter_https.ml" 251 8452 8471
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8472 "input_libvirt_vcenter_https.ml" 251 8452 8473
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8467 "input_libvirt_vcenter_https.ml" 251 8452 8473
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8477 "input_libvirt_vcenter_https.ml" 251 8452 8480
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8481 "input_libvirt_vcenter_https.ml" 251 8452 8482
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8483 "input_libvirt_vcenter_https.ml" 251 8452 8496
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8497 "input_libvirt_vcenter_https.ml" 251 8452 8498
+type(
+  int
+)
+ident(
+  int_ref n "input_libvirt_vcenter_https.ml" 251 8452 8460 "input_libvirt_vcenter_https.ml" 251 8452 8461
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8483 "input_libvirt_vcenter_https.ml" 251 8452 8498
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8477 "input_libvirt_vcenter_https.ml" 251 8452 8498
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 251 8452 8462 "input_libvirt_vcenter_https.ml" 251 8452 8498
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 252 8499 8507 "input_libvirt_vcenter_https.ml" 252 8499 8508
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 252 8499 8512 "input_libvirt_vcenter_https.ml" 252 8499 8514
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 249 8404 8410 "input_libvirt_vcenter_https.ml" 252 8499 8514
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 254 8519 8527 "input_libvirt_vcenter_https.ml" 254 8519 8530
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 255 8533 8539 "input_libvirt_vcenter_https.ml" 255 8533 8546
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format -> string -> string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"input_libvirt_vcenter_https.ml" 256 8547 8555 "input_libvirt_vcenter_https.ml" 256 8547 8609
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format
+)
+"input_libvirt_vcenter_https.ml" 257 8610 8618 "input_libvirt_vcenter_https.ml" 257 8610 8624
+type(
+  string
+)
+ident(
+  int_ref server "input_libvirt_vcenter_https.ml" 238 8096 8149 "input_libvirt_vcenter_https.ml" 238 8096 8155
+)
+"input_libvirt_vcenter_https.ml" 257 8610 8625 "input_libvirt_vcenter_https.ml" 257 8610 8629
+type(
+  string
+)
+ident(
+  int_ref port "input_libvirt_vcenter_https.ml" 248 8389 8397 "input_libvirt_vcenter_https.ml" 248 8389 8401
+)
+"input_libvirt_vcenter_https.ml" 258 8630 8639 "input_libvirt_vcenter_https.ml" 258 8630 8648
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.uri_quote
+)
+"input_libvirt_vcenter_https.ml" 258 8630 8649 "input_libvirt_vcenter_https.ml" 258 8630 8653
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 243 8276 8284 "input_libvirt_vcenter_https.ml" 243 8276 8288
+)
+"input_libvirt_vcenter_https.ml" 258 8630 8638 "input_libvirt_vcenter_https.ml" 258 8630 8654
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 258 8630 8656 "input_libvirt_vcenter_https.ml" 258 8630 8665
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.uri_quote
+)
+"input_libvirt_vcenter_https.ml" 258 8630 8666 "input_libvirt_vcenter_https.ml" 258 8630 8672
+type(
+  string
+)
+ident(
+  int_ref dcPath "input_libvirt_vcenter_https.ml" 246 8346 8354 "input_libvirt_vcenter_https.ml" 246 8346 8360
+)
+"input_libvirt_vcenter_https.ml" 258 8630 8655 "input_libvirt_vcenter_https.ml" 258 8630 8673
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 258 8630 8675 "input_libvirt_vcenter_https.ml" 258 8630 8684
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.uri_quote
+)
+"input_libvirt_vcenter_https.ml" 258 8630 8685 "input_libvirt_vcenter_https.ml" 258 8630 8694
+type(
+  string
+)
+ident(
+  int_ref datastore "input_libvirt_vcenter_https.ml" 242 8231 8239 "input_libvirt_vcenter_https.ml" 242 8231 8248
+)
+"input_libvirt_vcenter_https.ml" 258 8630 8674 "input_libvirt_vcenter_https.ml" 258 8630 8695
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 255 8533 8539 "input_libvirt_vcenter_https.ml" 258 8630 8695
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 263 8828 8836 "input_libvirt_vcenter_https.ml" 263 8828 8845
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 264 8848 8860 "input_libvirt_vcenter_https.ml" 264 8848 8863
+type(
+  Xml.uri
+)
+ident(
+  int_ref uri "input_libvirt_vcenter_https.ml" 238 8096 8138 "input_libvirt_vcenter_https.ml" 238 8096 8141
+)
+"input_libvirt_vcenter_https.ml" 264 8848 8860 "input_libvirt_vcenter_https.ml" 264 8848 8877
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 265 8883 8891 "input_libvirt_vcenter_https.ml" 265 8883 8895
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 265 8883 8899 "input_libvirt_vcenter_https.ml" 265 8883 8903
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 266 8904 8917 "input_libvirt_vcenter_https.ml" 266 8904 8922
+type(
+  string
+)
+ident(
+  def query "input_libvirt_vcenter_https.ml" 268 8993 9001 "input_libvirt_vcenter_https.ml" 268 8993 9037
+)
+"input_libvirt_vcenter_https.ml" 266 8904 8912 "input_libvirt_vcenter_https.ml" 266 8904 8922
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 268 8993 9001 "input_libvirt_vcenter_https.ml" 268 8993 9012
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.string_find
+)
+"input_libvirt_vcenter_https.ml" 268 8993 9013 "input_libvirt_vcenter_https.ml" 268 8993 9018
+type(
+  string
+)
+ident(
+  int_ref query "input_libvirt_vcenter_https.ml" 266 8904 8917 "input_libvirt_vcenter_https.ml" 266 8904 8922
+)
+"input_libvirt_vcenter_https.ml" 268 8993 9019 "input_libvirt_vcenter_https.ml" 268 8993 9032
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 268 8993 9001 "input_libvirt_vcenter_https.ml" 268 8993 9032
+call(
+  stack
+)
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 268 8993 9033 "input_libvirt_vcenter_https.ml" 268 8993 9034
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"input_libvirt_vcenter_https.ml" 268 8993 9035 "input_libvirt_vcenter_https.ml" 268 8993 9037
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 268 8993 9001 "input_libvirt_vcenter_https.ml" 268 8993 9037
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 264 8848 8854 "input_libvirt_vcenter_https.ml" 268 8993 9037
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 271 9111 9119 "input_libvirt_vcenter_https.ml" 271 9111 9133
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 272 9136 9142 "input_libvirt_vcenter_https.ml" 272 9136 9160
+type(
+  string option -> string -> Xml.uri -> bool -> string -> string option
+)
+ident(
+  int_ref get_session_cookie "input_libvirt_vcenter_https.ml" 39 1198 1206 "input_libvirt_vcenter_https.ml" 39 1198 1224
+)
+"input_libvirt_vcenter_https.ml" 272 9136 9161 "input_libvirt_vcenter_https.ml" 272 9136 9169
+type(
+  string option
+)
+ident(
+  int_ref password "input_libvirt_vcenter_https.ml" 238 8096 8129 "input_libvirt_vcenter_https.ml" 238 8096 8137
+)
+"input_libvirt_vcenter_https.ml" 272 9136 9170 "input_libvirt_vcenter_https.ml" 272 9136 9176
+type(
+  string
+)
+ident(
+  int_ref scheme "input_libvirt_vcenter_https.ml" 238 8096 8142 "input_libvirt_vcenter_https.ml" 238 8096 8148
+)
+"input_libvirt_vcenter_https.ml" 272 9136 9177 "input_libvirt_vcenter_https.ml" 272 9136 9180
+type(
+  Xml.uri
+)
+ident(
+  int_ref uri "input_libvirt_vcenter_https.ml" 238 8096 8138 "input_libvirt_vcenter_https.ml" 238 8096 8141
+)
+"input_libvirt_vcenter_https.ml" 272 9136 9181 "input_libvirt_vcenter_https.ml" 272 9136 9190
+type(
+  bool
+)
+ident(
+  int_ref sslverify "input_libvirt_vcenter_https.ml" 263 8828 8836 "input_libvirt_vcenter_https.ml" 263 8828 8845
+)
+"input_libvirt_vcenter_https.ml" 272 9136 9191 "input_libvirt_vcenter_https.ml" 272 9136 9194
+type(
+  string
+)
+ident(
+  int_ref url "input_libvirt_vcenter_https.ml" 254 8519 8527 "input_libvirt_vcenter_https.ml" 254 8519 8530
+)
+"input_libvirt_vcenter_https.ml" 272 9136 9142 "input_libvirt_vcenter_https.ml" 272 9136 9194
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 275 9240 9248 "input_libvirt_vcenter_https.ml" 275 9240 9259
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_vcenter_https.ml" 276 9264 9270 "input_libvirt_vcenter_https.ml" 276 9264 9283
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 276 9264 9297 "input_libvirt_vcenter_https.ml" 276 9264 9304
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 276 9264 9285 "input_libvirt_vcenter_https.ml" 276 9264 9304
+type(
+  JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 276 9264 9270 "input_libvirt_vcenter_https.ml" 276 9264 9304
+type(
+  string * JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 277 9306 9312 "input_libvirt_vcenter_https.ml" 277 9306 9322
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 277 9306 9336 "input_libvirt_vcenter_https.ml" 277 9306 9339
+type(
+  string
+)
+ident(
+  int_ref url "input_libvirt_vcenter_https.ml" 254 8519 8527 "input_libvirt_vcenter_https.ml" 254 8519 8530
+)
+"input_libvirt_vcenter_https.ml" 277 9306 9324 "input_libvirt_vcenter_https.ml" 277 9306 9339
+type(
+  JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 277 9306 9312 "input_libvirt_vcenter_https.ml" 277 9306 9339
+type(
+  string * JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 279 9409 9415 "input_libvirt_vcenter_https.ml" 279 9409 9429
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 279 9409 9440 "input_libvirt_vcenter_https.ml" 279 9409 9444
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 279 9409 9431 "input_libvirt_vcenter_https.ml" 279 9409 9444
+type(
+  JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 279 9409 9415 "input_libvirt_vcenter_https.ml" 279 9409 9444
+type(
+  string * JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 275 9240 9262 "input_libvirt_vcenter_https.ml" 280 9446 9451
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_vcenter_https.ml" 282 9456 9464 "input_libvirt_vcenter_https.ml" 282 9456 9475
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_vcenter_https.ml" 283 9478 9490 "input_libvirt_vcenter_https.ml" 283 9478 9499
+type(
+  int option
+)
+ident(
+  int_ref readahead "input_libvirt_vcenter_https.ml" 238 8096 8119 "input_libvirt_vcenter_https.ml" 238 8096 8128
+)
+"input_libvirt_vcenter_https.ml" 284 9505 9513 "input_libvirt_vcenter_https.ml" 284 9505 9517
+type(
+  int option
+)
+"input_libvirt_vcenter_https.ml" 284 9505 9521 "input_libvirt_vcenter_https.ml" 284 9505 9532
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref json_params "input_libvirt_vcenter_https.ml" 275 9240 9248 "input_libvirt_vcenter_https.ml" 275 9240 9259
+)
+"input_libvirt_vcenter_https.ml" 285 9533 9546 "input_libvirt_vcenter_https.ml" 285 9533 9555
+type(
+  int
+)
+ident(
+  def readahead "input_libvirt_vcenter_https.ml" 286 9559 9567 "input_libvirt_vcenter_https.ml" 286 9559 9620
+)
+"input_libvirt_vcenter_https.ml" 285 9533 9541 "input_libvirt_vcenter_https.ml" 285 9533 9555
+type(
+  int option
+)
+"input_libvirt_vcenter_https.ml" 286 9559 9568 "input_libvirt_vcenter_https.ml" 286 9559 9584
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 286 9559 9595 "input_libvirt_vcenter_https.ml" 286 9559 9604
+type(
+  int
+)
+ident(
+  int_ref readahead "input_libvirt_vcenter_https.ml" 285 9533 9546 "input_libvirt_vcenter_https.ml" 285 9533 9555
+)
+"input_libvirt_vcenter_https.ml" 286 9559 9586 "input_libvirt_vcenter_https.ml" 286 9559 9604
+type(
+  JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 286 9559 9567 "input_libvirt_vcenter_https.ml" 286 9559 9605
+type(
+  string * JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 286 9559 9609 "input_libvirt_vcenter_https.ml" 286 9559 9620
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref json_params "input_libvirt_vcenter_https.ml" 275 9240 9248 "input_libvirt_vcenter_https.ml" 275 9240 9259
+)
+"input_libvirt_vcenter_https.ml" 286 9559 9567 "input_libvirt_vcenter_https.ml" 286 9559 9620
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_vcenter_https.ml" 283 9478 9484 "input_libvirt_vcenter_https.ml" 286 9559 9620
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_vcenter_https.ml" 288 9625 9633 "input_libvirt_vcenter_https.ml" 288 9625 9644
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_vcenter_https.ml" 289 9647 9656 "input_libvirt_vcenter_https.ml" 289 9647 9665
+type(
+  bool
+)
+ident(
+  int_ref sslverify "input_libvirt_vcenter_https.ml" 263 8828 8836 "input_libvirt_vcenter_https.ml" 263 8828 8845
+)
+"input_libvirt_vcenter_https.ml" 289 9647 9671 "input_libvirt_vcenter_https.ml" 289 9647 9682
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref json_params "input_libvirt_vcenter_https.ml" 282 9456 9464 "input_libvirt_vcenter_https.ml" 282 9456 9475
+)
+"input_libvirt_vcenter_https.ml" 290 9683 9695 "input_libvirt_vcenter_https.ml" 290 9683 9711
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 290 9683 9725 "input_libvirt_vcenter_https.ml" 290 9683 9730
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 290 9683 9713 "input_libvirt_vcenter_https.ml" 290 9683 9730
+type(
+  JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 290 9683 9694 "input_libvirt_vcenter_https.ml" 290 9683 9731
+type(
+  string * JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 290 9683 9735 "input_libvirt_vcenter_https.ml" 290 9683 9746
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref json_params "input_libvirt_vcenter_https.ml" 282 9456 9464 "input_libvirt_vcenter_https.ml" 282 9456 9475
+)
+"input_libvirt_vcenter_https.ml" 290 9683 9694 "input_libvirt_vcenter_https.ml" 290 9683 9746
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_vcenter_https.ml" 289 9647 9653 "input_libvirt_vcenter_https.ml" 290 9683 9746
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_vcenter_https.ml" 292 9751 9759 "input_libvirt_vcenter_https.ml" 292 9751 9770
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_vcenter_https.ml" 293 9773 9785 "input_libvirt_vcenter_https.ml" 293 9773 9799
+type(
+  string option
+)
+ident(
+  int_ref session_cookie "input_libvirt_vcenter_https.ml" 271 9111 9119 "input_libvirt_vcenter_https.ml" 271 9111 9133
+)
+"input_libvirt_vcenter_https.ml" 294 9805 9813 "input_libvirt_vcenter_https.ml" 294 9805 9817
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 294 9805 9821 "input_libvirt_vcenter_https.ml" 294 9805 9832
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref json_params "input_libvirt_vcenter_https.ml" 288 9625 9633 "input_libvirt_vcenter_https.ml" 288 9625 9644
+)
+"input_libvirt_vcenter_https.ml" 295 9833 9846 "input_libvirt_vcenter_https.ml" 295 9833 9852
+type(
+  string
+)
+ident(
+  def cookie "input_libvirt_vcenter_https.ml" 295 9833 9856 "input_libvirt_vcenter_https.ml" 295 9833 9906
+)
+"input_libvirt_vcenter_https.ml" 295 9833 9841 "input_libvirt_vcenter_https.ml" 295 9833 9852
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 295 9833 9857 "input_libvirt_vcenter_https.ml" 295 9833 9870
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 295 9833 9884 "input_libvirt_vcenter_https.ml" 295 9833 9890
+type(
+  string
+)
+ident(
+  int_ref cookie "input_libvirt_vcenter_https.ml" 295 9833 9846 "input_libvirt_vcenter_https.ml" 295 9833 9852
+)
+"input_libvirt_vcenter_https.ml" 295 9833 9872 "input_libvirt_vcenter_https.ml" 295 9833 9890
+type(
+  JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 295 9833 9856 "input_libvirt_vcenter_https.ml" 295 9833 9891
+type(
+  string * JSON.json_t
+)
+"input_libvirt_vcenter_https.ml" 295 9833 9895 "input_libvirt_vcenter_https.ml" 295 9833 9906
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref json_params "input_libvirt_vcenter_https.ml" 288 9625 9633 "input_libvirt_vcenter_https.ml" 288 9625 9644
+)
+"input_libvirt_vcenter_https.ml" 295 9833 9856 "input_libvirt_vcenter_https.ml" 295 9833 9906
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_vcenter_https.ml" 293 9773 9779 "input_libvirt_vcenter_https.ml" 295 9833 9906
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_vcenter_https.ml" 297 9911 9918 "input_libvirt_vcenter_https.ml" 297 9911 9925
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"input_libvirt_vcenter_https.ml" 297 9911 9926 "input_libvirt_vcenter_https.ml" 297 9911 9928
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 297 9911 9918 "input_libvirt_vcenter_https.ml" 297 9911 9928
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 298 9934 9940 "input_libvirt_vcenter_https.ml" 298 9934 9946
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"input_libvirt_vcenter_https.ml" 298 9934 9947 "input_libvirt_vcenter_https.ml" 298 9934 9979
+type(
+  (string -> unit, out_channel, unit) format
+)
+"input_libvirt_vcenter_https.ml" 298 9934 9981 "input_libvirt_vcenter_https.ml" 298 9934 9999
+type(
+  ?fmt:JSON.output_format -> JSON.doc -> string
+)
+ident(
+  ext_ref JSON.string_of_doc
+)
+"input_libvirt_vcenter_https.ml" 298 9934 10000 "input_libvirt_vcenter_https.ml" 298 9934 10011
+type(
+  JSON.doc
+)
+ident(
+  int_ref json_params "input_libvirt_vcenter_https.ml" 292 9751 9759 "input_libvirt_vcenter_https.ml" 292 9751 9770
+)
+"input_libvirt_vcenter_https.ml" 298 9934 9980 "input_libvirt_vcenter_https.ml" 298 9934 10012
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 298 9934 9940 "input_libvirt_vcenter_https.ml" 298 9934 10012
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 297 9911 9915 "input_libvirt_vcenter_https.ml" 298 9934 10012
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 303 10132 10140 "input_libvirt_vcenter_https.ml" 303 10132 10148
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 303 10132 10151 "input_libvirt_vcenter_https.ml" 303 10132 10159
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 303 10132 10160 "input_libvirt_vcenter_https.ml" 303 10132 10161
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"input_libvirt_vcenter_https.ml" 303 10132 10162 "input_libvirt_vcenter_https.ml" 303 10132 10180
+type(
+  ?fmt:JSON.output_format -> JSON.doc -> string
+)
+ident(
+  ext_ref JSON.string_of_doc
+)
+"input_libvirt_vcenter_https.ml" 303 10132 10181 "input_libvirt_vcenter_https.ml" 303 10132 10192
+type(
+  JSON.doc
+)
+ident(
+  int_ref json_params "input_libvirt_vcenter_https.ml" 292 9751 9759 "input_libvirt_vcenter_https.ml" 292 9751 9770
+)
+"input_libvirt_vcenter_https.ml" 303 10132 10162 "input_libvirt_vcenter_https.ml" 303 10132 10192
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 303 10132 10151 "input_libvirt_vcenter_https.ml" 303 10132 10192
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 305 10197 10201 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+ident(
+  int_ref qemu_uri "input_libvirt_vcenter_https.ml" 303 10132 10140 "input_libvirt_vcenter_https.ml" 303 10132 10148
+)
+"input_libvirt_vcenter_https.ml" 303 10132 10136 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 297 9911 9915 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 292 9751 9755 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 288 9625 9629 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 282 9456 9460 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 275 9240 9244 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 271 9111 9115 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 263 8828 8832 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 254 8519 8523 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 248 8389 8393 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 246 8346 8350 "input_libvirt_vcenter_https.ml" 305 10197 10209
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 241 8222 8229 "input_libvirt_vcenter_https.ml" 306 10210 10213
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 239 8163 8165 "input_libvirt_vcenter_https.ml" 306 10210 10213
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 310 10316 10318 "input_libvirt_vcenter_https.ml" 310 10316 10326
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 310 10316 10327 "input_libvirt_vcenter_https.ml" 310 10316 10338
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 310 10316 10339 "input_libvirt_vcenter_https.ml" 310 10316 10349
+type(
+  Xml.uri
+)
+"input_libvirt_vcenter_https.ml" 310 10316 10350 "input_libvirt_vcenter_https.ml" 310 10316 10356
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 310 10316 10357 "input_libvirt_vcenter_https.ml" 310 10316 10363
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 310 10316 10364 "input_libvirt_vcenter_https.ml" 310 10316 10369
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 312 10379 10403 "input_libvirt_vcenter_https.ml" 312 10379 10411
+type(
+  string option
+)
+ident(
+  int_ref password "input_libvirt_vcenter_https.ml" 310 10316 10318 "input_libvirt_vcenter_https.ml" 310 10316 10326
+)
+"input_libvirt_vcenter_https.ml" 312 10379 10412 "input_libvirt_vcenter_https.ml" 312 10379 10423
+type(
+  string option
+)
+ident(
+  int_ref libvirt_uri "input_libvirt_vcenter_https.ml" 310 10316 10327 "input_libvirt_vcenter_https.ml" 310 10316 10338
+)
+"input_libvirt_vcenter_https.ml" 312 10379 10424 "input_libvirt_vcenter_https.ml" 312 10379 10429
+type(
+  string
+)
+ident(
+  int_ref guest "input_libvirt_vcenter_https.ml" 310 10316 10364 "input_libvirt_vcenter_https.ml" 310 10316 10369
+)
+"input_libvirt_vcenter_https.ml" 314 10431 10458 "input_libvirt_vcenter_https.ml" 314 10431 10472
+type(
+  int -> (int, string option) Hashtbl.t
+)
+ident(
+  ext_ref Hashtbl.create
+)
+"input_libvirt_vcenter_https.ml" 314 10431 10473 "input_libvirt_vcenter_https.ml" 314 10431 10475
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 314 10431 10458 "input_libvirt_vcenter_https.ml" 314 10431 10475
+call(
+  stack
+)
+type(
+  (int, string option) Hashtbl.t
+)
+"input_libvirt_vcenter_https.ml" 316 10477 10493 "input_libvirt_vcenter_https.ml" 316 10477 10495
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 317 10498 10505 "input_libvirt_vcenter_https.ml" 317 10498 10512
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"input_libvirt_vcenter_https.ml" 317 10498 10513 "input_libvirt_vcenter_https.ml" 317 10498 10515
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 317 10498 10505 "input_libvirt_vcenter_https.ml" 317 10498 10515
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 318 10521 10527 "input_libvirt_vcenter_https.ml" 318 10521 10533
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"input_libvirt_vcenter_https.ml" 318 10521 10534 "input_libvirt_vcenter_https.ml" 318 10521 10596
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"input_libvirt_vcenter_https.ml" 319 10597 10605 "input_libvirt_vcenter_https.ml" 319 10597 10611
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 319 10597 10612 "input_libvirt_vcenter_https.ml" 319 10597 10618
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 318 10521 10527 "input_libvirt_vcenter_https.ml" 319 10597 10618
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 317 10498 10502 "input_libvirt_vcenter_https.ml" 319 10597 10618
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 321 10621 10625 "input_libvirt_vcenter_https.ml" 321 10621 10649
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Input_libvirt_other.error_if_libvirt_backend
+)
+"input_libvirt_vcenter_https.ml" 321 10621 10650 "input_libvirt_vcenter_https.ml" 321 10621 10652
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 321 10621 10625 "input_libvirt_vcenter_https.ml" 321 10621 10652
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 326 10783 10791 "input_libvirt_vcenter_https.ml" 326 10783 10794
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 326 10783 10797 "input_libvirt_vcenter_https.ml" 326 10783 10814
+type(
+  ?password:string -> ?conn:string -> string -> string
+)
+ident(
+  ext_ref Domainxml.dumpxml
+)
+"input_libvirt_vcenter_https.ml" 326 10783 10816 "input_libvirt_vcenter_https.ml" 326 10783 10824
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 326 10783 10831 "input_libvirt_vcenter_https.ml" 326 10783 10842
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 326 10783 10843 "input_libvirt_vcenter_https.ml" 326 10783 10848
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 326 10783 10797 "input_libvirt_vcenter_https.ml" 326 10783 10848
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 327 10852 10860 "input_libvirt_vcenter_https.ml" 327 10852 10866
+type(
+  Types.source
+)
+"input_libvirt_vcenter_https.ml" 327 10852 10868 "input_libvirt_vcenter_https.ml" 327 10852 10873
+type(
+  Input_libvirtxml.parsed_disk list
+)
+"input_libvirt_vcenter_https.ml" 327 10852 10860 "input_libvirt_vcenter_https.ml" 327 10852 10873
+type(
+  Types.source * Input_libvirtxml.parsed_disk list
+)
+"input_libvirt_vcenter_https.ml" 327 10852 10876 "input_libvirt_vcenter_https.ml" 327 10852 10893
+type(
+  ?conn:string -> string -> Types.source * Input_libvirtxml.parsed_disk list
+)
+ident(
+  ext_ref Input_libvirtxml.parse_libvirt_xml
+)
+"input_libvirt_vcenter_https.ml" 327 10852 10900 "input_libvirt_vcenter_https.ml" 327 10852 10911
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 327 10852 10912 "input_libvirt_vcenter_https.ml" 327 10852 10915
+type(
+  string
+)
+ident(
+  int_ref xml "input_libvirt_vcenter_https.ml" 326 10783 10791 "input_libvirt_vcenter_https.ml" 326 10783 10794
+)
+"input_libvirt_vcenter_https.ml" 327 10852 10876 "input_libvirt_vcenter_https.ml" 327 10852 10915
+call(
+  stack
+)
+type(
+  Types.source * Input_libvirtxml.parsed_disk list
+)
+"input_libvirt_vcenter_https.ml" 332 11039 11043 "input_libvirt_vcenter_https.ml" 332 11039 11052
+type(
+  (Input_libvirtxml.parsed_disk -> unit) ->
+  Input_libvirtxml.parsed_disk list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"input_libvirt_vcenter_https.ml" 334 11070 11104 "input_libvirt_vcenter_https.ml" 334 11070 11105
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 334 11070 11091 "input_libvirt_vcenter_https.ml" 334 11070 11105
+type(
+  Input_libvirtxml.parsed_source
+)
+"input_libvirt_vcenter_https.ml" 334 11070 11078 "input_libvirt_vcenter_https.ml" 334 11070 11107
+type(
+  Input_libvirtxml.parsed_disk
+)
+"input_libvirt_vcenter_https.ml" 336 11149 11157 "input_libvirt_vcenter_https.ml" 336 11149 11162
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_libvirt_vcenter_https.ml" 336 11149 11164 "input_libvirt_vcenter_https.ml" 336 11149 11166
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_vcenter_https.ml" 336 11149 11166 "input_libvirt_vcenter_https.ml" 336 11149 11217
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_vcenter_https.ml" 336 11149 11163 "input_libvirt_vcenter_https.ml" 336 11149 11218
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirt_vcenter_https.ml" 336 11149 11157 "input_libvirt_vcenter_https.ml" 336 11149 11218
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 337 11219 11259 "input_libvirt_vcenter_https.ml" 337 11219 11261
+type(
+  int
+)
+ident(
+  def id "input_libvirt_vcenter_https.ml" 338 11296 11304 "input_libvirt_vcenter_https.ml" 338 11296 11342
+)
+"input_libvirt_vcenter_https.ml" 337 11219 11245 "input_libvirt_vcenter_https.ml" 337 11219 11263
+type(
+  Types.source_disk
+)
+"input_libvirt_vcenter_https.ml" 337 11219 11276 "input_libvirt_vcenter_https.ml" 337 11219 11290
+type(
+  Input_libvirtxml.parsed_source
+)
+"input_libvirt_vcenter_https.ml" 337 11219 11227 "input_libvirt_vcenter_https.ml" 337 11219 11292
+type(
+  Input_libvirtxml.parsed_disk
+)
+"input_libvirt_vcenter_https.ml" 338 11296 11304 "input_libvirt_vcenter_https.ml" 338 11296 11315
+type(
+  (int, string option) Hashtbl.t -> int -> string option -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"input_libvirt_vcenter_https.ml" 338 11296 11316 "input_libvirt_vcenter_https.ml" 338 11296 11334
+type(
+  (int, string option) Hashtbl.t
+)
+"input_libvirt_vcenter_https.ml" 338 11296 11335 "input_libvirt_vcenter_https.ml" 338 11296 11337
+type(
+  int
+)
+ident(
+  int_ref id "input_libvirt_vcenter_https.ml" 337 11219 11259 "input_libvirt_vcenter_https.ml" 337 11219 11261
+)
+"input_libvirt_vcenter_https.ml" 338 11296 11338 "input_libvirt_vcenter_https.ml" 338 11296 11342
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 338 11296 11304 "input_libvirt_vcenter_https.ml" 338 11296 11342
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 339 11343 11383 "input_libvirt_vcenter_https.ml" 339 11343 11385
+type(
+  int
+)
+ident(
+  def id "input_libvirt_vcenter_https.ml" 340 11424 11432 "input_libvirt_vcenter_https.ml" 340 11424 11477
+)
+"input_libvirt_vcenter_https.ml" 339 11343 11369 "input_libvirt_vcenter_https.ml" 339 11343 11387
+type(
+  Types.source_disk
+)
+"input_libvirt_vcenter_https.ml" 339 11343 11414 "input_libvirt_vcenter_https.ml" 339 11343 11418
+type(
+  string
+)
+ident(
+  def path "input_libvirt_vcenter_https.ml" 340 11424 11432 "input_libvirt_vcenter_https.ml" 340 11424 11477
+)
+"input_libvirt_vcenter_https.ml" 339 11343 11400 "input_libvirt_vcenter_https.ml" 339 11343 11418
+type(
+  Input_libvirtxml.parsed_source
+)
+"input_libvirt_vcenter_https.ml" 339 11343 11351 "input_libvirt_vcenter_https.ml" 339 11343 11420
+type(
+  Input_libvirtxml.parsed_disk
+)
+"input_libvirt_vcenter_https.ml" 340 11424 11432 "input_libvirt_vcenter_https.ml" 340 11424 11443
+type(
+  (int, string option) Hashtbl.t -> int -> string option -> unit
+)
+ident(
+  ext_ref Hashtbl.add
+)
+"input_libvirt_vcenter_https.ml" 340 11424 11444 "input_libvirt_vcenter_https.ml" 340 11424 11462
+type(
+  (int, string option) Hashtbl.t
+)
+"input_libvirt_vcenter_https.ml" 340 11424 11463 "input_libvirt_vcenter_https.ml" 340 11424 11465
+type(
+  int
+)
+ident(
+  int_ref id "input_libvirt_vcenter_https.ml" 339 11343 11383 "input_libvirt_vcenter_https.ml" 339 11343 11385
+)
+"input_libvirt_vcenter_https.ml" 340 11424 11472 "input_libvirt_vcenter_https.ml" 340 11424 11476
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 339 11343 11414 "input_libvirt_vcenter_https.ml" 339 11343 11418
+)
+"input_libvirt_vcenter_https.ml" 340 11424 11466 "input_libvirt_vcenter_https.ml" 340 11424 11477
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 340 11424 11432 "input_libvirt_vcenter_https.ml" 340 11424 11477
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 332 11039 11053 "input_libvirt_vcenter_https.ml" 341 11478 11483
+type(
+  Input_libvirtxml.parsed_disk -> unit
+)
+"input_libvirt_vcenter_https.ml" 341 11478 11484 "input_libvirt_vcenter_https.ml" 341 11478 11489
+type(
+  Input_libvirtxml.parsed_disk list
+)
+ident(
+  int_ref disks "input_libvirt_vcenter_https.ml" 327 10852 10868 "input_libvirt_vcenter_https.ml" 327 10852 10873
+)
+"input_libvirt_vcenter_https.ml" 332 11039 11043 "input_libvirt_vcenter_https.ml" 341 11478 11489
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 343 11492 11500 "input_libvirt_vcenter_https.ml" 343 11492 11509
+type(
+  'a option
+)
+"input_libvirt_vcenter_https.ml" 343 11492 11512 "input_libvirt_vcenter_https.ml" 343 11492 11536
+type(
+  'a option
+)
+ident(
+  int_ref readahead_for_conversion "input_libvirt_vcenter_https.ml" 33 1012 1016 "input_libvirt_vcenter_https.ml" 33 1012 1040
+)
+"input_libvirt_vcenter_https.ml" 344 11540 11548 "input_libvirt_vcenter_https.ml" 344 11540 11553
+type(
+  Types.source_disk list
+)
+"input_libvirt_vcenter_https.ml" 344 11540 11556 "input_libvirt_vcenter_https.ml" 344 11540 11564
+type(
+  (Input_libvirtxml.parsed_disk -> Types.source_disk) ->
+  Input_libvirtxml.parsed_disk list -> Types.source_disk list
+)
+ident(
+  ext_ref List.map
+)
+"input_libvirt_vcenter_https.ml" 346 11582 11616 "input_libvirt_vcenter_https.ml" 346 11582 11617
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 346 11582 11603 "input_libvirt_vcenter_https.ml" 346 11582 11617
+type(
+  Input_libvirtxml.parsed_source
+)
+"input_libvirt_vcenter_https.ml" 346 11582 11590 "input_libvirt_vcenter_https.ml" 346 11582 11619
+type(
+  Input_libvirtxml.parsed_disk
+)
+"input_libvirt_vcenter_https.ml" 346 11582 11623 "input_libvirt_vcenter_https.ml" 346 11582 11635
+type(
+  Types.source_disk
+)
+"input_libvirt_vcenter_https.ml" 347 11636 11662 "input_libvirt_vcenter_https.ml" 347 11636 11666
+type(
+  Types.source_disk
+)
+ident(
+  def disk "input_libvirt_vcenter_https.ml" 347 11636 11699 "input_libvirt_vcenter_https.ml" 347 11636 11703
+)
+"input_libvirt_vcenter_https.ml" 347 11636 11679 "input_libvirt_vcenter_https.ml" 347 11636 11693
+type(
+  Input_libvirtxml.parsed_source
+)
+"input_libvirt_vcenter_https.ml" 347 11636 11644 "input_libvirt_vcenter_https.ml" 347 11636 11695
+type(
+  Input_libvirtxml.parsed_disk
+)
+"input_libvirt_vcenter_https.ml" 347 11636 11699 "input_libvirt_vcenter_https.ml" 347 11636 11703
+type(
+  Types.source_disk
+)
+ident(
+  int_ref disk "input_libvirt_vcenter_https.ml" 347 11636 11662 "input_libvirt_vcenter_https.ml" 347 11636 11666
+)
+"input_libvirt_vcenter_https.ml" 348 11704 11730 "input_libvirt_vcenter_https.ml" 348 11704 11734
+type(
+  Types.source_disk
+)
+ident(
+  def disk "input_libvirt_vcenter_https.ml" 349 11771 11779 "input_libvirt_vcenter_https.ml" 355 12029 12095
+)
+"input_libvirt_vcenter_https.ml" 348 11704 11761 "input_libvirt_vcenter_https.ml" 348 11704 11765
+type(
+  string
+)
+ident(
+  def path "input_libvirt_vcenter_https.ml" 349 11771 11779 "input_libvirt_vcenter_https.ml" 355 12029 12095
+)
+"input_libvirt_vcenter_https.ml" 348 11704 11747 "input_libvirt_vcenter_https.ml" 348 11704 11765
+type(
+  Input_libvirtxml.parsed_source
+)
+"input_libvirt_vcenter_https.ml" 348 11704 11712 "input_libvirt_vcenter_https.ml" 348 11704 11767
+type(
+  Input_libvirtxml.parsed_disk
+)
+"input_libvirt_vcenter_https.ml" 349 11771 11783 "input_libvirt_vcenter_https.ml" 349 11771 11791
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 349 11771 11794 "input_libvirt_vcenter_https.ml" 349 11771 11811
+type(
+  ?readahead:int ->
+  string option -> Xml.uri -> string -> string -> string -> string
+)
+ident(
+  int_ref map_source_to_uri "input_libvirt_vcenter_https.ml" 238 8096 8100 "input_libvirt_vcenter_https.ml" 238 8096 8117
+)
+"input_libvirt_vcenter_https.ml" 349 11771 11813 "input_libvirt_vcenter_https.ml" 349 11771 11822
+type(
+  int option
+)
+ident(
+  int_ref readahead "input_libvirt_vcenter_https.ml" 343 11492 11500 "input_libvirt_vcenter_https.ml" 343 11492 11509
+)
+"input_libvirt_vcenter_https.ml" 350 11823 11826 "input_libvirt_vcenter_https.ml" 350 11823 11834
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 350 11823 11835 "input_libvirt_vcenter_https.ml" 350 11823 11845
+type(
+  Xml.uri
+)
+"input_libvirt_vcenter_https.ml" 350 11823 11846 "input_libvirt_vcenter_https.ml" 350 11823 11852
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 350 11823 11853 "input_libvirt_vcenter_https.ml" 350 11823 11859
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 350 11823 11860 "input_libvirt_vcenter_https.ml" 350 11823 11864
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_vcenter_https.ml" 348 11704 11761 "input_libvirt_vcenter_https.ml" 348 11704 11765
+)
+"input_libvirt_vcenter_https.ml" 349 11771 11794 "input_libvirt_vcenter_https.ml" 350 11823 11864
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 355 12029 12039 "input_libvirt_vcenter_https.ml" 355 12029 12043
+type(
+  Types.source_disk
+)
+ident(
+  int_ref disk "input_libvirt_vcenter_https.ml" 348 11704 11730 "input_libvirt_vcenter_https.ml" 348 11704 11734
+)
+"input_libvirt_vcenter_https.ml" 355 12029 12062 "input_libvirt_vcenter_https.ml" 355 12029 12070
+type(
+  string
+)
+ident(
+  int_ref qemu_uri "input_libvirt_vcenter_https.ml" 349 11771 11783 "input_libvirt_vcenter_https.ml" 349 11771 11791
+)
+"input_libvirt_vcenter_https.ml" 355 12029 12088 "input_libvirt_vcenter_https.ml" 355 12029 12093
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 355 12029 12083 "input_libvirt_vcenter_https.ml" 355 12029 12093
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 355 12029 12037 "input_libvirt_vcenter_https.ml" 355 12029 12095
+type(
+  Types.source_disk
+)
+"input_libvirt_vcenter_https.ml" 349 11771 11779 "input_libvirt_vcenter_https.ml" 355 12029 12095
+type(
+  Types.source_disk
+)
+"input_libvirt_vcenter_https.ml" 344 11540 11565 "input_libvirt_vcenter_https.ml" 356 12096 12101
+type(
+  Input_libvirtxml.parsed_disk -> Types.source_disk
+)
+"input_libvirt_vcenter_https.ml" 356 12096 12102 "input_libvirt_vcenter_https.ml" 356 12096 12107
+type(
+  Input_libvirtxml.parsed_disk list
+)
+ident(
+  int_ref disks "input_libvirt_vcenter_https.ml" 327 10852 10868 "input_libvirt_vcenter_https.ml" 327 10852 10873
+)
+"input_libvirt_vcenter_https.ml" 344 11540 11556 "input_libvirt_vcenter_https.ml" 356 12096 12107
+call(
+  stack
+)
+type(
+  Types.source_disk list
+)
+"input_libvirt_vcenter_https.ml" 358 12112 12118 "input_libvirt_vcenter_https.ml" 358 12112 12124
+type(
+  Types.source
+)
+ident(
+  int_ref source "input_libvirt_vcenter_https.ml" 327 10852 10860 "input_libvirt_vcenter_https.ml" 327 10852 10866
+)
+"input_libvirt_vcenter_https.ml" 358 12112 12140 "input_libvirt_vcenter_https.ml" 358 12112 12145
+type(
+  Types.source_disk list
+)
+ident(
+  int_ref disks "input_libvirt_vcenter_https.ml" 344 11540 11548 "input_libvirt_vcenter_https.ml" 344 11540 11553
+)
+"input_libvirt_vcenter_https.ml" 358 12112 12116 "input_libvirt_vcenter_https.ml" 358 12112 12147
+type(
+  Types.source
+)
+"input_libvirt_vcenter_https.ml" 344 11540 11544 "input_libvirt_vcenter_https.ml" 358 12112 12147
+type(
+  Types.source
+)
+"input_libvirt_vcenter_https.ml" 343 11492 11496 "input_libvirt_vcenter_https.ml" 358 12112 12147
+type(
+  Types.source
+)
+"input_libvirt_vcenter_https.ml" 332 11039 11043 "input_libvirt_vcenter_https.ml" 358 12112 12147
+type(
+  Types.source
+)
+"input_libvirt_vcenter_https.ml" 327 10852 10856 "input_libvirt_vcenter_https.ml" 358 12112 12147
+type(
+  Types.source
+)
+"input_libvirt_vcenter_https.ml" 326 10783 10787 "input_libvirt_vcenter_https.ml" 358 12112 12147
+type(
+  Types.source
+)
+"input_libvirt_vcenter_https.ml" 321 10621 10625 "input_libvirt_vcenter_https.ml" 358 12112 12147
+type(
+  Types.source
+)
+"input_libvirt_vcenter_https.ml" 317 10498 10502 "input_libvirt_vcenter_https.ml" 358 12112 12147
+type(
+  Types.source
+)
+"input_libvirt_vcenter_https.ml" 361 12218 12253 "input_libvirt_vcenter_https.ml" 361 12218 12260
+type(
+  Types.overlay
+)
+ident(
+  def overlay "input_libvirt_vcenter_https.ml" 362 12263 12267 "input_libvirt_vcenter_https.ml" 379 12957 13011
+)
+"input_libvirt_vcenter_https.ml" 362 12263 12271 "input_libvirt_vcenter_https.ml" 362 12263 12280
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 363 12283 12293 "input_libvirt_vcenter_https.ml" 363 12283 12305
+type(
+  (int, string option) Hashtbl.t -> int -> string option
+)
+ident(
+  ext_ref Hashtbl.find
+)
+"input_libvirt_vcenter_https.ml" 363 12283 12306 "input_libvirt_vcenter_https.ml" 363 12283 12324
+type(
+  (int, string option) Hashtbl.t
+)
+"input_libvirt_vcenter_https.ml" 363 12283 12325 "input_libvirt_vcenter_https.ml" 363 12283 12332
+type(
+  Types.overlay
+)
+ident(
+  int_ref overlay "input_libvirt_vcenter_https.ml" 361 12218 12253 "input_libvirt_vcenter_https.ml" 361 12218 12260
+)
+"input_libvirt_vcenter_https.ml" 363 12283 12325 "input_libvirt_vcenter_https.ml" 363 12283 12342
+type(
+  Types.source_disk
+)
+"input_libvirt_vcenter_https.ml" 363 12283 12325 "input_libvirt_vcenter_https.ml" 363 12283 12352
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 363 12283 12293 "input_libvirt_vcenter_https.ml" 363 12283 12352
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 364 12353 12364 "input_libvirt_vcenter_https.ml" 364 12353 12373
+type(
+  exn
+)
+"input_libvirt_vcenter_https.ml" 364 12353 12377 "input_libvirt_vcenter_https.ml" 364 12353 12385
+type(
+  string -> string option
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"input_libvirt_vcenter_https.ml" 364 12353 12386 "input_libvirt_vcenter_https.ml" 364 12353 12431
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 364 12353 12377 "input_libvirt_vcenter_https.ml" 364 12353 12431
+call(
+  stack
+)
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 363 12283 12289 "input_libvirt_vcenter_https.ml" 364 12353 12431
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 365 12435 12445 "input_libvirt_vcenter_https.ml" 365 12435 12454
+type(
+  string option
+)
+ident(
+  int_ref orig_path "input_libvirt_vcenter_https.ml" 362 12263 12271 "input_libvirt_vcenter_https.ml" 362 12263 12280
+)
+"input_libvirt_vcenter_https.ml" 366 12460 12466 "input_libvirt_vcenter_https.ml" 366 12460 12470
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 366 12460 12474 "input_libvirt_vcenter_https.ml" 366 12460 12476
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 367 12477 12488 "input_libvirt_vcenter_https.ml" 367 12477 12497
+type(
+  string
+)
+ident(
+  def orig_path "input_libvirt_vcenter_https.ml" 368 12501 12507 "input_libvirt_vcenter_https.ml" 379 12957 13011
+)
+"input_libvirt_vcenter_https.ml" 367 12477 12483 "input_libvirt_vcenter_https.ml" 367 12477 12497
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 368 12501 12511 "input_libvirt_vcenter_https.ml" 368 12501 12520
+type(
+  int option
+)
+"input_libvirt_vcenter_https.ml" 368 12501 12523 "input_libvirt_vcenter_https.ml" 368 12501 12544
+type(
+  int option
+)
+ident(
+  int_ref readahead_for_copying "input_libvirt_vcenter_https.ml" 34 1048 1052 "input_libvirt_vcenter_https.ml" 34 1048 1073
+)
+"input_libvirt_vcenter_https.ml" 369 12548 12558 "input_libvirt_vcenter_https.ml" 369 12548 12574
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 370 12577 12585 "input_libvirt_vcenter_https.ml" 370 12577 12602
+type(
+  ?readahead:int ->
+  string option -> Xml.uri -> string -> string -> string -> string
+)
+ident(
+  int_ref map_source_to_uri "input_libvirt_vcenter_https.ml" 238 8096 8100 "input_libvirt_vcenter_https.ml" 238 8096 8117
+)
+"input_libvirt_vcenter_https.ml" 370 12577 12604 "input_libvirt_vcenter_https.ml" 370 12577 12613
+type(
+  int option
+)
+ident(
+  int_ref readahead "input_libvirt_vcenter_https.ml" 368 12501 12511 "input_libvirt_vcenter_https.ml" 368 12501 12520
+)
+"input_libvirt_vcenter_https.ml" 371 12614 12624 "input_libvirt_vcenter_https.ml" 371 12614 12632
+type(
+  string option
+)
+"input_libvirt_vcenter_https.ml" 371 12614 12633 "input_libvirt_vcenter_https.ml" 371 12614 12643
+type(
+  Xml.uri
+)
+"input_libvirt_vcenter_https.ml" 371 12614 12644 "input_libvirt_vcenter_https.ml" 371 12614 12650
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 371 12614 12651 "input_libvirt_vcenter_https.ml" 371 12614 12657
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 371 12614 12658 "input_libvirt_vcenter_https.ml" 371 12614 12667
+type(
+  string
+)
+ident(
+  int_ref orig_path "input_libvirt_vcenter_https.ml" 367 12477 12488 "input_libvirt_vcenter_https.ml" 367 12477 12497
+)
+"input_libvirt_vcenter_https.ml" 370 12577 12585 "input_libvirt_vcenter_https.ml" 371 12614 12667
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 374 12744 12754 "input_libvirt_vcenter_https.ml" 374 12744 12757
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 375 12760 12768 "input_libvirt_vcenter_https.ml" 375 12760 12775
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"input_libvirt_vcenter_https.ml" 375 12760 12776 "input_libvirt_vcenter_https.ml" 375 12760 12805
+type(
+  (string -> string -> string, unit, string) format
+)
+"input_libvirt_vcenter_https.ml" 376 12806 12817 "input_libvirt_vcenter_https.ml" 376 12806 12822
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"input_libvirt_vcenter_https.ml" 376 12806 12823 "input_libvirt_vcenter_https.ml" 376 12806 12839
+type(
+  string
+)
+ident(
+  int_ref backing_qemu_uri "input_libvirt_vcenter_https.ml" 369 12548 12558 "input_libvirt_vcenter_https.ml" 369 12548 12574
+)
+"input_libvirt_vcenter_https.ml" 376 12806 12816 "input_libvirt_vcenter_https.ml" 376 12806 12840
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 376 12806 12842 "input_libvirt_vcenter_https.ml" 376 12806 12847
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"input_libvirt_vcenter_https.ml" 376 12806 12848 "input_libvirt_vcenter_https.ml" 376 12806 12855
+type(
+  Types.overlay
+)
+ident(
+  int_ref overlay "input_libvirt_vcenter_https.ml" 361 12218 12253 "input_libvirt_vcenter_https.ml" 361 12218 12260
+)
+"input_libvirt_vcenter_https.ml" 376 12806 12848 "input_libvirt_vcenter_https.ml" 376 12806 12871
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 376 12806 12841 "input_libvirt_vcenter_https.ml" 376 12806 12872
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 375 12760 12768 "input_libvirt_vcenter_https.ml" 376 12806 12872
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_vcenter_https.ml" 377 12876 12885 "input_libvirt_vcenter_https.ml" 377 12876 12892
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"input_libvirt_vcenter_https.ml" 377 12876 12893 "input_libvirt_vcenter_https.ml" 377 12876 12895
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 377 12876 12885 "input_libvirt_vcenter_https.ml" 377 12876 12895
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 377 12876 12901 "input_libvirt_vcenter_https.ml" 377 12876 12907
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"input_libvirt_vcenter_https.ml" 377 12876 12908 "input_libvirt_vcenter_https.ml" 377 12876 12916
+type(
+  (string -> unit, out_channel, unit) format
+)
+"input_libvirt_vcenter_https.ml" 377 12876 12917 "input_libvirt_vcenter_https.ml" 377 12876 12920
+type(
+  string
+)
+ident(
+  int_ref cmd "input_libvirt_vcenter_https.ml" 374 12744 12754 "input_libvirt_vcenter_https.ml" 374 12744 12757
+)
+"input_libvirt_vcenter_https.ml" 377 12876 12901 "input_libvirt_vcenter_https.ml" 377 12876 12920
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 377 12876 12882 "input_libvirt_vcenter_https.ml" 377 12876 12920
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 378 12922 12931 "input_libvirt_vcenter_https.ml" 378 12922 12942
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"input_libvirt_vcenter_https.ml" 378 12922 12943 "input_libvirt_vcenter_https.ml" 378 12922 12946
+type(
+  string
+)
+ident(
+  int_ref cmd "input_libvirt_vcenter_https.ml" 374 12744 12754 "input_libvirt_vcenter_https.ml" 374 12744 12757
+)
+"input_libvirt_vcenter_https.ml" 378 12922 12931 "input_libvirt_vcenter_https.ml" 378 12922 12946
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 378 12922 12947 "input_libvirt_vcenter_https.ml" 378 12922 12949
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"input_libvirt_vcenter_https.ml" 378 12922 12950 "input_libvirt_vcenter_https.ml" 378 12922 12951
+type(
+  int
+)
+"input_libvirt_vcenter_https.ml" 378 12922 12931 "input_libvirt_vcenter_https.ml" 378 12922 12951
+type(
+  bool
+)
+"input_libvirt_vcenter_https.ml" 379 12957 12965 "input_libvirt_vcenter_https.ml" 379 12957 12972
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"input_libvirt_vcenter_https.ml" 379 12957 12974 "input_libvirt_vcenter_https.ml" 379 12957 12976
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_vcenter_https.ml" 379 12957 12976 "input_libvirt_vcenter_https.ml" 379 12957 13010
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_vcenter_https.ml" 379 12957 12973 "input_libvirt_vcenter_https.ml" 379 12957 13011
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirt_vcenter_https.ml" 379 12957 12965 "input_libvirt_vcenter_https.ml" 379 12957 13011
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 378 12922 12928 "input_libvirt_vcenter_https.ml" 379 12957 13011
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 377 12876 12882 "input_libvirt_vcenter_https.ml" 379 12957 13011
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 374 12744 12750 "input_libvirt_vcenter_https.ml" 379 12957 13011
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 369 12548 12554 "input_libvirt_vcenter_https.ml" 379 12957 13011
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 368 12501 12507 "input_libvirt_vcenter_https.ml" 379 12957 13011
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 365 12435 12439 "input_libvirt_vcenter_https.ml" 379 12957 13011
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 362 12263 12267 "input_libvirt_vcenter_https.ml" 379 12957 13011
+type(
+  unit
+)
+"input_libvirt_vcenter_https.ml" 382 13017 13021 "input_libvirt_vcenter_https.ml" 382 13017 13048
+type(
+  string option ->
+  string option ->
+  Xml.uri -> string -> string -> string -> input_libvirt_vcenter_https
+)
+ident(
+  def input_libvirt_vcenter_https "input_libvirt_vcenter_https.ml" 382 13017 13082 --
+)
+"input_libvirt_vcenter_https.ml" 382 13017 13051 "input_libvirt_vcenter_https.ml" 382 13017 13082
+type(
+  string option ->
+  string option ->
+  Xml.uri -> string -> string -> string -> input_libvirt_vcenter_https
+)

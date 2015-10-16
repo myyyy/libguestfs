@@ -1,0 +1,21 @@
+
+
+
+libpcre3
+  libxml2
+  libgtk2.0-0
+  openssh-client
+  qemu-utils
+  hwdata
+  xorg
+  xserver-xorg-video-all
+  metacity
+  network-manager
+  network-manager-gnome
+  network-manager-applet
+  dbus-x11
+
+
+
+
+

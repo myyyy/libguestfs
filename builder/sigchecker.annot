@@ -1,0 +1,4230 @@
+"sigchecker.ml" 35 995 999 "sigchecker.ml" 35 995 1013
+type(
+  gpg:string -> gpghome:string -> ?trust:bool -> string -> string
+)
+ident(
+  def import_keyfile "sigchecker.ml" 68 2328 2328 --
+)
+"sigchecker.ml" 35 995 1015 "sigchecker.ml" 35 995 1018
+type(
+  string
+)
+ident(
+  def gpg "sigchecker.ml" 35 995 1019 "sigchecker.ml" 66 2312 2326
+)
+"sigchecker.ml" 35 995 1020 "sigchecker.ml" 35 995 1027
+type(
+  string
+)
+ident(
+  def gpghome "sigchecker.ml" 35 995 1028 "sigchecker.ml" 66 2312 2326
+)
+"sigchecker.ml" 35 995 1030 "sigchecker.ml" 35 995 1035
+type(
+  bool
+)
+"sigchecker.ml" 35 995 1038 "sigchecker.ml" 35 995 1042
+type(
+  bool
+)
+type(
+  bool
+)
+ident(
+  int_ref *sth* "sigchecker.ml" 35 995 1038 "sigchecker.ml" 35 995 1042
+)
+type(
+  bool option
+)
+type(
+  bool option
+)
+type(
+  bool
+)
+ident(
+  def *sth* "sigchecker.ml" 35 995 1038 "sigchecker.ml" 35 995 1042
+)
+"sigchecker.ml" 35 995 1044 "sigchecker.ml" 35 995 1051
+type(
+  string
+)
+ident(
+  def keyfile "sigchecker.ml" 36 1054 1056 "sigchecker.ml" 66 2312 2326
+)
+"sigchecker.ml" 36 1054 1060 "sigchecker.ml" 36 1054 1071
+type(
+  string
+)
+"sigchecker.ml" 36 1054 1074 "sigchecker.ml" 36 1054 1092
+type(
+  ?temp_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Filename.temp_file
+)
+"sigchecker.ml" 36 1054 1093 "sigchecker.ml" 36 1054 1101
+type(
+  string
+)
+"sigchecker.ml" 36 1054 1102 "sigchecker.ml" 36 1054 1108
+type(
+  string
+)
+"sigchecker.ml" 36 1054 1074 "sigchecker.ml" 36 1054 1108
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 37 1112 1114 "sigchecker.ml" 37 1112 1128
+type(
+  string -> unit
+)
+ident(
+  ext_ref Common_utils.unlink_on_exit
+)
+"sigchecker.ml" 37 1112 1129 "sigchecker.ml" 37 1112 1140
+type(
+  string
+)
+ident(
+  int_ref status_file "sigchecker.ml" 36 1054 1060 "sigchecker.ml" 36 1054 1071
+)
+"sigchecker.ml" 37 1112 1114 "sigchecker.ml" 37 1112 1140
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 38 1142 1148 "sigchecker.ml" 38 1142 1151
+type(
+  string
+)
+"sigchecker.ml" 38 1142 1154 "sigchecker.ml" 38 1142 1161
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format -> string -> string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sigchecker.ml" 38 1142 1162 "sigchecker.ml" 38 1142 1210
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format
+)
+"sigchecker.ml" 39 1211 1215 "sigchecker.ml" 39 1211 1218
+type(
+  string
+)
+ident(
+  int_ref gpg "sigchecker.ml" 35 995 1015 "sigchecker.ml" 35 995 1018
+)
+"sigchecker.ml" 39 1211 1219 "sigchecker.ml" 39 1211 1226
+type(
+  string
+)
+ident(
+  int_ref gpghome "sigchecker.ml" 35 995 1020 "sigchecker.ml" 35 995 1027
+)
+"sigchecker.ml" 39 1211 1228 "sigchecker.ml" 39 1211 1233
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"sigchecker.ml" 39 1211 1234 "sigchecker.ml" 39 1211 1245
+type(
+  string
+)
+ident(
+  int_ref status_file "sigchecker.ml" 36 1054 1060 "sigchecker.ml" 36 1054 1071
+)
+"sigchecker.ml" 39 1211 1227 "sigchecker.ml" 39 1211 1246
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 39 1211 1248 "sigchecker.ml" 39 1211 1253
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"sigchecker.ml" 39 1211 1254 "sigchecker.ml" 39 1211 1261
+type(
+  string
+)
+ident(
+  int_ref keyfile "sigchecker.ml" 35 995 1044 "sigchecker.ml" 35 995 1051
+)
+"sigchecker.ml" 39 1211 1247 "sigchecker.ml" 39 1211 1262
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 40 1263 1271 "sigchecker.ml" 40 1263 1278
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sigchecker.ml" 40 1263 1279 "sigchecker.ml" 40 1263 1281
+type(
+  unit
+)
+"sigchecker.ml" 40 1263 1271 "sigchecker.ml" 40 1263 1281
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 40 1263 1287 "sigchecker.ml" 40 1263 1289
+type(
+  string
+)
+"sigchecker.ml" 40 1263 1295 "sigchecker.ml" 40 1263 1313
+type(
+  string
+)
+"sigchecker.ml" 40 1263 1267 "sigchecker.ml" 40 1263 1314
+type(
+  string
+)
+"sigchecker.ml" 38 1142 1154 "sigchecker.ml" 40 1263 1314
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 41 1318 1323 "sigchecker.ml" 41 1318 1330
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sigchecker.ml" 41 1318 1331 "sigchecker.ml" 41 1318 1333
+type(
+  unit
+)
+"sigchecker.ml" 41 1318 1323 "sigchecker.ml" 41 1318 1333
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 41 1318 1339 "sigchecker.ml" 41 1318 1345
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sigchecker.ml" 41 1318 1346 "sigchecker.ml" 41 1318 1354
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sigchecker.ml" 41 1318 1355 "sigchecker.ml" 41 1318 1358
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 38 1142 1148 "sigchecker.ml" 38 1142 1151
+)
+"sigchecker.ml" 41 1318 1339 "sigchecker.ml" 41 1318 1358
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 41 1318 1320 "sigchecker.ml" 41 1318 1358
+type(
+  unit
+)
+"sigchecker.ml" 42 1360 1366 "sigchecker.ml" 42 1360 1367
+type(
+  int
+)
+"sigchecker.ml" 42 1360 1370 "sigchecker.ml" 42 1360 1381
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"sigchecker.ml" 42 1360 1382 "sigchecker.ml" 42 1360 1385
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 38 1142 1148 "sigchecker.ml" 38 1142 1151
+)
+"sigchecker.ml" 42 1360 1370 "sigchecker.ml" 42 1360 1385
+type(
+  int
+)
+"sigchecker.ml" 43 1389 1394 "sigchecker.ml" 43 1389 1395
+type(
+  int
+)
+ident(
+  int_ref r "sigchecker.ml" 42 1360 1366 "sigchecker.ml" 42 1360 1367
+)
+"sigchecker.ml" 43 1389 1396 "sigchecker.ml" 43 1389 1398
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sigchecker.ml" 43 1389 1399 "sigchecker.ml" 43 1389 1400
+type(
+  int
+)
+"sigchecker.ml" 43 1389 1394 "sigchecker.ml" 43 1389 1400
+type(
+  bool
+)
+"sigchecker.ml" 44 1406 1410 "sigchecker.ml" 44 1406 1415
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sigchecker.ml" 44 1406 1417 "sigchecker.ml" 44 1406 1419
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sigchecker.ml" 44 1406 1419 "sigchecker.ml" 44 1406 1506
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sigchecker.ml" 44 1406 1416 "sigchecker.ml" 44 1406 1507
+type(
+  (unit, unit, string, unit) format4
+)
+"sigchecker.ml" 44 1406 1410 "sigchecker.ml" 44 1406 1507
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 43 1389 1391 "sigchecker.ml" 44 1406 1507
+type(
+  unit
+)
+"sigchecker.ml" 45 1509 1515 "sigchecker.ml" 45 1509 1521
+type(
+  string
+)
+"sigchecker.ml" 45 1509 1524 "sigchecker.ml" 45 1509 1539
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.read_whole_file
+)
+"sigchecker.ml" 45 1509 1540 "sigchecker.ml" 45 1509 1551
+type(
+  string
+)
+ident(
+  int_ref status_file "sigchecker.ml" 36 1054 1060 "sigchecker.ml" 36 1054 1071
+)
+"sigchecker.ml" 45 1509 1524 "sigchecker.ml" 45 1509 1551
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 46 1555 1561 "sigchecker.ml" 46 1555 1567
+type(
+  string list
+)
+"sigchecker.ml" 46 1555 1570 "sigchecker.ml" 46 1555 1583
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"sigchecker.ml" 46 1555 1584 "sigchecker.ml" 46 1555 1588
+type(
+  string
+)
+"sigchecker.ml" 46 1555 1589 "sigchecker.ml" 46 1555 1595
+type(
+  string
+)
+ident(
+  int_ref status "sigchecker.ml" 45 1509 1515 "sigchecker.ml" 45 1509 1521
+)
+"sigchecker.ml" 46 1555 1570 "sigchecker.ml" 46 1555 1595
+call(
+  stack
+)
+type(
+  string list
+)
+"sigchecker.ml" 47 1599 1605 "sigchecker.ml" 47 1599 1611
+type(
+  string ref
+)
+"sigchecker.ml" 47 1599 1614 "sigchecker.ml" 47 1599 1617
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sigchecker.ml" 47 1599 1618 "sigchecker.ml" 47 1599 1620
+type(
+  string
+)
+"sigchecker.ml" 47 1599 1614 "sigchecker.ml" 47 1599 1620
+type(
+  string ref
+)
+"sigchecker.ml" 48 1624 1630 "sigchecker.ml" 48 1624 1641
+type(
+  string ref
+)
+"sigchecker.ml" 48 1624 1644 "sigchecker.ml" 48 1624 1647
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sigchecker.ml" 48 1624 1648 "sigchecker.ml" 48 1624 1650
+type(
+  string
+)
+"sigchecker.ml" 48 1624 1644 "sigchecker.ml" 48 1624 1650
+type(
+  string ref
+)
+"sigchecker.ml" 49 1654 1656 "sigchecker.ml" 49 1654 1665
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sigchecker.ml" 50 1668 1676 "sigchecker.ml" 50 1668 1680
+type(
+  string
+)
+ident(
+  def line "sigchecker.ml" 51 1684 1690 "sigchecker.ml" 55 1882 1897
+)
+"sigchecker.ml" 51 1684 1694 "sigchecker.ml" 51 1684 1698
+type(
+  string list
+)
+"sigchecker.ml" 51 1684 1701 "sigchecker.ml" 51 1684 1714
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"sigchecker.ml" 51 1684 1715 "sigchecker.ml" 51 1684 1718
+type(
+  string
+)
+"sigchecker.ml" 51 1684 1719 "sigchecker.ml" 51 1684 1723
+type(
+  string
+)
+ident(
+  int_ref line "sigchecker.ml" 50 1668 1676 "sigchecker.ml" 50 1668 1680
+)
+"sigchecker.ml" 51 1684 1701 "sigchecker.ml" 51 1684 1723
+call(
+  stack
+)
+type(
+  string list
+)
+"sigchecker.ml" 52 1727 1739 "sigchecker.ml" 52 1727 1743
+type(
+  string list
+)
+ident(
+  int_ref line "sigchecker.ml" 51 1684 1694 "sigchecker.ml" 51 1684 1698
+)
+"sigchecker.ml" 53 1749 1757 "sigchecker.ml" 53 1749 1767
+type(
+  string
+)
+"sigchecker.ml" 53 1749 1771 "sigchecker.ml" 53 1749 1782
+type(
+  string
+)
+"sigchecker.ml" 53 1749 1786 "sigchecker.ml" 53 1749 1787
+type(
+  string
+)
+"sigchecker.ml" 53 1749 1791 "sigchecker.ml" 53 1749 1793
+type(
+  string
+)
+ident(
+  def fp "sigchecker.ml" 53 1749 1802 "sigchecker.ml" 53 1749 1819
+)
+"sigchecker.ml" 53 1749 1797 "sigchecker.ml" 53 1749 1798
+type(
+  string list
+)
+"sigchecker.ml" 53 1749 1791 "sigchecker.ml" 53 1749 1798
+type(
+  string list
+)
+"sigchecker.ml" 53 1749 1786 "sigchecker.ml" 53 1749 1798
+type(
+  string list
+)
+"sigchecker.ml" 53 1749 1771 "sigchecker.ml" 53 1749 1798
+type(
+  string list
+)
+"sigchecker.ml" 53 1749 1757 "sigchecker.ml" 53 1749 1798
+type(
+  string list
+)
+"sigchecker.ml" 53 1749 1802 "sigchecker.ml" 53 1749 1813
+type(
+  string ref
+)
+ident(
+  int_ref fingerprint "sigchecker.ml" 48 1624 1630 "sigchecker.ml" 48 1624 1641
+)
+"sigchecker.ml" 53 1749 1814 "sigchecker.ml" 53 1749 1816
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sigchecker.ml" 53 1749 1817 "sigchecker.ml" 53 1749 1819
+type(
+  string
+)
+ident(
+  int_ref fp "sigchecker.ml" 53 1749 1791 "sigchecker.ml" 53 1749 1793
+)
+"sigchecker.ml" 53 1749 1802 "sigchecker.ml" 53 1749 1819
+type(
+  unit
+)
+"sigchecker.ml" 54 1820 1828 "sigchecker.ml" 54 1820 1838
+type(
+  string
+)
+"sigchecker.ml" 54 1820 1842 "sigchecker.ml" 54 1820 1852
+type(
+  string
+)
+"sigchecker.ml" 54 1820 1856 "sigchecker.ml" 54 1820 1859
+type(
+  string
+)
+ident(
+  def key "sigchecker.ml" 54 1820 1868 "sigchecker.ml" 54 1820 1881
+)
+"sigchecker.ml" 54 1820 1863 "sigchecker.ml" 54 1820 1864
+type(
+  string list
+)
+"sigchecker.ml" 54 1820 1856 "sigchecker.ml" 54 1820 1864
+type(
+  string list
+)
+"sigchecker.ml" 54 1820 1842 "sigchecker.ml" 54 1820 1864
+type(
+  string list
+)
+"sigchecker.ml" 54 1820 1828 "sigchecker.ml" 54 1820 1864
+type(
+  string list
+)
+"sigchecker.ml" 54 1820 1868 "sigchecker.ml" 54 1820 1874
+type(
+  string ref
+)
+ident(
+  int_ref key_id "sigchecker.ml" 47 1599 1605 "sigchecker.ml" 47 1599 1611
+)
+"sigchecker.ml" 54 1820 1875 "sigchecker.ml" 54 1820 1877
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sigchecker.ml" 54 1820 1878 "sigchecker.ml" 54 1820 1881
+type(
+  string
+)
+ident(
+  int_ref key "sigchecker.ml" 54 1820 1856 "sigchecker.ml" 54 1820 1859
+)
+"sigchecker.ml" 54 1820 1868 "sigchecker.ml" 54 1820 1881
+type(
+  unit
+)
+"sigchecker.ml" 55 1882 1890 "sigchecker.ml" 55 1882 1891
+type(
+  string list
+)
+"sigchecker.ml" 55 1882 1895 "sigchecker.ml" 55 1882 1897
+type(
+  unit
+)
+"sigchecker.ml" 52 1727 1733 "sigchecker.ml" 55 1882 1897
+type(
+  unit
+)
+"sigchecker.ml" 51 1684 1690 "sigchecker.ml" 55 1882 1897
+type(
+  unit
+)
+"sigchecker.ml" 49 1654 1666 "sigchecker.ml" 56 1898 1901
+type(
+  string -> unit
+)
+"sigchecker.ml" 56 1898 1902 "sigchecker.ml" 56 1898 1908
+type(
+  string list
+)
+ident(
+  int_ref status "sigchecker.ml" 46 1555 1561 "sigchecker.ml" 46 1555 1567
+)
+"sigchecker.ml" 49 1654 1656 "sigchecker.ml" 56 1898 1908
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 57 1910 1915 "sigchecker.ml" 57 1910 1920
+type(
+  bool
+)
+ident(
+  int_ref trust "sigchecker.ml" 35 995 1030 "sigchecker.ml" 35 995 1035
+)
+"sigchecker.ml" 58 1928 1936 "sigchecker.ml" 58 1928 1939
+type(
+  string
+)
+"sigchecker.ml" 58 1928 1942 "sigchecker.ml" 58 1928 1949
+type(
+  (string -> string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sigchecker.ml" 58 1928 1950 "sigchecker.ml" 58 1928 1998
+type(
+  (string -> string -> string -> string -> string, unit, string) format
+)
+"sigchecker.ml" 59 1999 2005 "sigchecker.ml" 59 1999 2008
+type(
+  string
+)
+ident(
+  int_ref gpg "sigchecker.ml" 35 995 1015 "sigchecker.ml" 35 995 1018
+)
+"sigchecker.ml" 59 1999 2009 "sigchecker.ml" 59 1999 2016
+type(
+  string
+)
+ident(
+  int_ref gpghome "sigchecker.ml" 35 995 1020 "sigchecker.ml" 35 995 1027
+)
+"sigchecker.ml" 59 1999 2018 "sigchecker.ml" 59 1999 2023
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"sigchecker.ml" 59 1999 2024 "sigchecker.ml" 59 1999 2025
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sigchecker.ml" 59 1999 2025 "sigchecker.ml" 59 1999 2031
+type(
+  string ref
+)
+ident(
+  int_ref key_id "sigchecker.ml" 47 1599 1605 "sigchecker.ml" 47 1599 1611
+)
+"sigchecker.ml" 59 1999 2024 "sigchecker.ml" 59 1999 2031
+type(
+  string
+)
+"sigchecker.ml" 59 1999 2017 "sigchecker.ml" 59 1999 2032
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 60 2033 2043 "sigchecker.ml" 60 2033 2050
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sigchecker.ml" 60 2033 2051 "sigchecker.ml" 60 2033 2053
+type(
+  unit
+)
+"sigchecker.ml" 60 2033 2043 "sigchecker.ml" 60 2033 2053
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 60 2033 2059 "sigchecker.ml" 60 2033 2061
+type(
+  string
+)
+"sigchecker.ml" 60 2033 2067 "sigchecker.ml" 60 2033 2085
+type(
+  string
+)
+"sigchecker.ml" 60 2033 2039 "sigchecker.ml" 60 2033 2086
+type(
+  string
+)
+"sigchecker.ml" 58 1928 1942 "sigchecker.ml" 60 2033 2086
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 61 2090 2097 "sigchecker.ml" 61 2090 2104
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sigchecker.ml" 61 2090 2105 "sigchecker.ml" 61 2090 2107
+type(
+  unit
+)
+"sigchecker.ml" 61 2090 2097 "sigchecker.ml" 61 2090 2107
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 61 2090 2113 "sigchecker.ml" 61 2090 2119
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sigchecker.ml" 61 2090 2120 "sigchecker.ml" 61 2090 2128
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sigchecker.ml" 61 2090 2129 "sigchecker.ml" 61 2090 2132
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 58 1928 1936 "sigchecker.ml" 58 1928 1939
+)
+"sigchecker.ml" 61 2090 2113 "sigchecker.ml" 61 2090 2132
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 61 2090 2094 "sigchecker.ml" 61 2090 2132
+type(
+  unit
+)
+"sigchecker.ml" 62 2134 2142 "sigchecker.ml" 62 2134 2143
+type(
+  int
+)
+"sigchecker.ml" 62 2134 2146 "sigchecker.ml" 62 2134 2157
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"sigchecker.ml" 62 2134 2158 "sigchecker.ml" 62 2134 2161
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 58 1928 1936 "sigchecker.ml" 58 1928 1939
+)
+"sigchecker.ml" 62 2134 2146 "sigchecker.ml" 62 2134 2161
+type(
+  int
+)
+"sigchecker.ml" 63 2165 2172 "sigchecker.ml" 63 2165 2173
+type(
+  int
+)
+ident(
+  int_ref r "sigchecker.ml" 62 2134 2142 "sigchecker.ml" 62 2134 2143
+)
+"sigchecker.ml" 63 2165 2174 "sigchecker.ml" 63 2165 2176
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sigchecker.ml" 63 2165 2177 "sigchecker.ml" 63 2165 2178
+type(
+  int
+)
+"sigchecker.ml" 63 2165 2172 "sigchecker.ml" 63 2165 2178
+type(
+  bool
+)
+"sigchecker.ml" 64 2184 2190 "sigchecker.ml" 64 2184 2195
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sigchecker.ml" 64 2184 2197 "sigchecker.ml" 64 2184 2199
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sigchecker.ml" 64 2184 2199 "sigchecker.ml" 64 2184 2304
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sigchecker.ml" 64 2184 2196 "sigchecker.ml" 64 2184 2305
+type(
+  (unit, unit, string, unit) format4
+)
+"sigchecker.ml" 64 2184 2190 "sigchecker.ml" 64 2184 2305
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 63 2165 2169 "sigchecker.ml" 64 2184 2306
+type(
+  unit
+)
+"sigchecker.ml" 62 2134 2138 "sigchecker.ml" 64 2184 2306
+type(
+  unit
+)
+"sigchecker.ml" 61 2090 2094 "sigchecker.ml" 64 2184 2306
+type(
+  unit
+)
+"sigchecker.ml" 57 1910 1926 "sigchecker.ml" 65 2307 2310
+type(
+  unit
+)
+"sigchecker.ml" 57 1910 1912 "sigchecker.ml" 65 2307 2310
+type(
+  unit
+)
+"sigchecker.ml" 66 2312 2314 "sigchecker.ml" 66 2312 2315
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sigchecker.ml" 66 2312 2315 "sigchecker.ml" 66 2312 2326
+type(
+  string ref
+)
+ident(
+  int_ref fingerprint "sigchecker.ml" 48 1624 1630 "sigchecker.ml" 48 1624 1641
+)
+"sigchecker.ml" 66 2312 2314 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 57 1910 1912 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 49 1654 1656 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 48 1624 1626 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 47 1599 1601 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 46 1555 1557 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 45 1509 1511 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 43 1389 1391 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 42 1360 1362 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 41 1318 1320 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 38 1142 1144 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 37 1112 1114 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 36 1054 1056 "sigchecker.ml" 66 2312 2326
+type(
+  string
+)
+"sigchecker.ml" 68 2328 2336 "sigchecker.ml" 68 2328 2342
+type(
+  gpg:string -> gpgkey:Utils.gpgkey_type -> check_signature:bool -> t
+)
+ident(
+  def create "sigchecker.ml" 68 2328 2328 --
+)
+"sigchecker.ml" 68 2328 2344 "sigchecker.ml" 68 2328 2347
+type(
+  string
+)
+ident(
+  def gpg "sigchecker.ml" 68 2328 2348 "sigchecker.ml" 112 4028 4031
+)
+"sigchecker.ml" 68 2328 2349 "sigchecker.ml" 68 2328 2355
+type(
+  Utils.gpgkey_type
+)
+ident(
+  def gpgkey "sigchecker.ml" 68 2328 2356 "sigchecker.ml" 112 4028 4031
+)
+"sigchecker.ml" 68 2328 2357 "sigchecker.ml" 68 2328 2372
+type(
+  bool
+)
+ident(
+  def check_signature "sigchecker.ml" 70 2423 2425 "sigchecker.ml" 112 4028 4031
+)
+"sigchecker.ml" 70 2423 2429 "sigchecker.ml" 70 2423 2435
+type(
+  string
+)
+"sigchecker.ml" 70 2423 2438 "sigchecker.ml" 70 2423 2454
+type(
+  ?base_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Mkdtemp.temp_dir
+)
+"sigchecker.ml" 70 2423 2455 "sigchecker.ml" 70 2423 2468
+type(
+  string
+)
+"sigchecker.ml" 70 2423 2469 "sigchecker.ml" 70 2423 2471
+type(
+  string
+)
+"sigchecker.ml" 70 2423 2438 "sigchecker.ml" 70 2423 2471
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 71 2475 2477 "sigchecker.ml" 71 2475 2490
+type(
+  string -> unit
+)
+ident(
+  ext_ref Common_utils.rmdir_on_exit
+)
+"sigchecker.ml" 71 2475 2491 "sigchecker.ml" 71 2475 2497
+type(
+  string
+)
+ident(
+  int_ref tmpdir "sigchecker.ml" 70 2423 2429 "sigchecker.ml" 70 2423 2435
+)
+"sigchecker.ml" 71 2475 2477 "sigchecker.ml" 71 2475 2497
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 73 2569 2575 "sigchecker.ml" 73 2569 2590
+type(
+  bool
+)
+"sigchecker.ml" 73 2569 2592 "sigchecker.ml" 73 2569 2598
+type(
+  Utils.gpgkey_type
+)
+"sigchecker.ml" 73 2569 2575 "sigchecker.ml" 73 2569 2598
+type(
+  bool * Utils.gpgkey_type
+)
+"sigchecker.ml" 74 2601 2611 "sigchecker.ml" 74 2601 2626
+type(
+  bool
+)
+ident(
+  int_ref check_signature "sigchecker.ml" 68 2328 2357 "sigchecker.ml" 68 2328 2372
+)
+"sigchecker.ml" 74 2601 2628 "sigchecker.ml" 74 2601 2634
+type(
+  Utils.gpgkey_type
+)
+ident(
+  int_ref gpgkey "sigchecker.ml" 68 2328 2349 "sigchecker.ml" 68 2328 2355
+)
+"sigchecker.ml" 74 2601 2611 "sigchecker.ml" 74 2601 2634
+type(
+  bool * Utils.gpgkey_type
+)
+"sigchecker.ml" 75 2640 2646 "sigchecker.ml" 75 2640 2650
+type(
+  bool
+)
+"sigchecker.ml" 75 2640 2652 "sigchecker.ml" 75 2640 2658
+type(
+  Utils.gpgkey_type
+)
+"sigchecker.ml" 75 2640 2646 "sigchecker.ml" 75 2640 2658
+type(
+  bool * Utils.gpgkey_type
+)
+"sigchecker.ml" 75 2640 2662 "sigchecker.ml" 75 2640 2667
+type(
+  bool
+)
+"sigchecker.ml" 75 2640 2669 "sigchecker.ml" 75 2640 2675
+type(
+  Utils.gpgkey_type
+)
+"sigchecker.ml" 75 2640 2662 "sigchecker.ml" 75 2640 2675
+type(
+  bool * Utils.gpgkey_type
+)
+"sigchecker.ml" 76 2676 2682 "sigchecker.ml" 76 2676 2683
+type(
+  bool
+)
+ident(
+  def x "sigchecker.ml" 76 2676 2690 "sigchecker.ml" 76 2676 2694
+)
+"sigchecker.ml" 76 2676 2685 "sigchecker.ml" 76 2676 2686
+type(
+  Utils.gpgkey_type
+)
+ident(
+  def y "sigchecker.ml" 76 2676 2690 "sigchecker.ml" 76 2676 2694
+)
+"sigchecker.ml" 76 2676 2682 "sigchecker.ml" 76 2676 2686
+type(
+  bool * Utils.gpgkey_type
+)
+"sigchecker.ml" 76 2676 2690 "sigchecker.ml" 76 2676 2691
+type(
+  bool
+)
+ident(
+  int_ref x "sigchecker.ml" 76 2676 2682 "sigchecker.ml" 76 2676 2683
+)
+"sigchecker.ml" 76 2676 2693 "sigchecker.ml" 76 2676 2694
+type(
+  Utils.gpgkey_type
+)
+ident(
+  int_ref y "sigchecker.ml" 76 2676 2685 "sigchecker.ml" 76 2676 2686
+)
+"sigchecker.ml" 76 2676 2690 "sigchecker.ml" 76 2676 2694
+type(
+  bool * Utils.gpgkey_type
+)
+"sigchecker.ml" 74 2601 2605 "sigchecker.ml" 76 2676 2694
+type(
+  bool * Utils.gpgkey_type
+)
+"sigchecker.ml" 77 2698 2704 "sigchecker.ml" 77 2698 2715
+type(
+  string
+)
+"sigchecker.ml" 78 2718 2725 "sigchecker.ml" 78 2718 2740
+type(
+  bool
+)
+ident(
+  int_ref check_signature "sigchecker.ml" 73 2569 2575 "sigchecker.ml" 73 2569 2590
+)
+"sigchecker.ml" 82 2846 2856 "sigchecker.ml" 82 2846 2859
+type(
+  string
+)
+ident(
+  def cmd "sigchecker.ml" 84 2972 2978 "sigchecker.ml" 104 3883 3893
+)
+"sigchecker.ml" 82 2846 2862 "sigchecker.ml" 82 2846 2869
+type(
+  (string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sigchecker.ml" 82 2846 2870 "sigchecker.ml" 82 2846 2901
+type(
+  (string -> string -> string -> string, unit, string) format
+)
+"sigchecker.ml" 83 2902 2910 "sigchecker.ml" 83 2902 2913
+type(
+  string
+)
+ident(
+  int_ref gpg "sigchecker.ml" 68 2328 2344 "sigchecker.ml" 68 2328 2347
+)
+"sigchecker.ml" 83 2902 2914 "sigchecker.ml" 83 2902 2920
+type(
+  string
+)
+ident(
+  int_ref tmpdir "sigchecker.ml" 70 2423 2429 "sigchecker.ml" 70 2423 2435
+)
+"sigchecker.ml" 83 2902 2925 "sigchecker.ml" 83 2902 2932
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sigchecker.ml" 83 2902 2933 "sigchecker.ml" 83 2902 2935
+type(
+  unit
+)
+"sigchecker.ml" 83 2902 2925 "sigchecker.ml" 83 2902 2935
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 83 2902 2941 "sigchecker.ml" 83 2902 2943
+type(
+  string
+)
+"sigchecker.ml" 83 2902 2949 "sigchecker.ml" 83 2902 2967
+type(
+  string
+)
+"sigchecker.ml" 83 2902 2921 "sigchecker.ml" 83 2902 2968
+type(
+  string
+)
+"sigchecker.ml" 82 2846 2862 "sigchecker.ml" 83 2902 2968
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 84 2972 2981 "sigchecker.ml" 84 2972 2988
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sigchecker.ml" 84 2972 2989 "sigchecker.ml" 84 2972 2991
+type(
+  unit
+)
+"sigchecker.ml" 84 2972 2981 "sigchecker.ml" 84 2972 2991
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 84 2972 2997 "sigchecker.ml" 84 2972 3003
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sigchecker.ml" 84 2972 3004 "sigchecker.ml" 84 2972 3012
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sigchecker.ml" 84 2972 3013 "sigchecker.ml" 84 2972 3016
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 82 2846 2856 "sigchecker.ml" 82 2846 2859
+)
+"sigchecker.ml" 84 2972 2997 "sigchecker.ml" 84 2972 3016
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 84 2972 2978 "sigchecker.ml" 84 2972 3016
+type(
+  unit
+)
+"sigchecker.ml" 85 3018 3028 "sigchecker.ml" 85 3018 3029
+type(
+  int
+)
+ident(
+  def r "sigchecker.ml" 86 3051 3057 "sigchecker.ml" 104 3883 3893
+)
+"sigchecker.ml" 85 3018 3032 "sigchecker.ml" 85 3018 3043
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"sigchecker.ml" 85 3018 3044 "sigchecker.ml" 85 3018 3047
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 82 2846 2856 "sigchecker.ml" 82 2846 2859
+)
+"sigchecker.ml" 85 3018 3032 "sigchecker.ml" 85 3018 3047
+type(
+  int
+)
+"sigchecker.ml" 86 3051 3060 "sigchecker.ml" 86 3051 3061
+type(
+  int
+)
+ident(
+  int_ref r "sigchecker.ml" 85 3018 3028 "sigchecker.ml" 85 3018 3029
+)
+"sigchecker.ml" 86 3051 3062 "sigchecker.ml" 86 3051 3064
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sigchecker.ml" 86 3051 3065 "sigchecker.ml" 86 3051 3066
+type(
+  int
+)
+"sigchecker.ml" 86 3051 3060 "sigchecker.ml" 86 3051 3066
+type(
+  bool
+)
+"sigchecker.ml" 87 3072 3080 "sigchecker.ml" 87 3072 3085
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sigchecker.ml" 87 3072 3087 "sigchecker.ml" 87 3072 3089
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sigchecker.ml" 87 3072 3089 "sigchecker.ml" 87 3072 3194
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sigchecker.ml" 87 3072 3086 "sigchecker.ml" 87 3072 3195
+type(
+  (unit, unit, string, unit) format4
+)
+"sigchecker.ml" 87 3072 3080 "sigchecker.ml" 87 3072 3195
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 86 3051 3057 "sigchecker.ml" 87 3072 3195
+type(
+  unit
+)
+"sigchecker.ml" 88 3197 3209 "sigchecker.ml" 88 3197 3215
+type(
+  Utils.gpgkey_type
+)
+ident(
+  int_ref gpgkey "sigchecker.ml" 73 2569 2592 "sigchecker.ml" 73 2569 2598
+)
+"sigchecker.ml" 89 3221 3229 "sigchecker.ml" 89 3221 3235
+type(
+  Utils.gpgkey_type
+)
+"sigchecker.ml" 90 3239 3247 "sigchecker.ml" 90 3239 3259
+type(
+  string
+)
+"sigchecker.ml" 91 3260 3276 "sigchecker.ml" 91 3260 3278
+type(
+  string
+)
+ident(
+  def kf "sigchecker.ml" 92 3282 3290 "sigchecker.ml" 92 3282 3318
+)
+"sigchecker.ml" 91 3260 3268 "sigchecker.ml" 91 3260 3278
+type(
+  Utils.gpgkey_type
+)
+"sigchecker.ml" 92 3282 3290 "sigchecker.ml" 92 3282 3304
+type(
+  gpg:string -> gpghome:string -> ?trust:bool -> string -> string
+)
+ident(
+  int_ref import_keyfile "sigchecker.ml" 35 995 999 "sigchecker.ml" 35 995 1013
+)
+"sigchecker.ml" 92 3282 3305 "sigchecker.ml" 92 3282 3308
+type(
+  string
+)
+ident(
+  int_ref gpg "sigchecker.ml" 68 2328 2344 "sigchecker.ml" 68 2328 2347
+)
+"sigchecker.ml" 92 3282 3309 "sigchecker.ml" 92 3282 3315
+type(
+  string
+)
+ident(
+  int_ref tmpdir "sigchecker.ml" 70 2423 2429 "sigchecker.ml" 70 2423 2435
+)
+"sigchecker.ml" 92 3282 3316 "sigchecker.ml" 92 3282 3318
+type(
+  string
+)
+ident(
+  int_ref kf "sigchecker.ml" 91 3260 3276 "sigchecker.ml" 91 3260 3278
+)
+"sigchecker.ml" 92 3282 3290 "sigchecker.ml" 92 3282 3318
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 93 3319 3339 "sigchecker.ml" 93 3319 3341
+type(
+  string
+)
+ident(
+  def fp "sigchecker.ml" 94 3345 3353 "sigchecker.ml" 104 3883 3893
+)
+"sigchecker.ml" 93 3319 3327 "sigchecker.ml" 93 3319 3341
+type(
+  Utils.gpgkey_type
+)
+"sigchecker.ml" 94 3345 3357 "sigchecker.ml" 94 3345 3365
+type(
+  string
+)
+"sigchecker.ml" 94 3345 3368 "sigchecker.ml" 94 3345 3386
+type(
+  ?temp_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Filename.temp_file
+)
+"sigchecker.ml" 94 3345 3387 "sigchecker.ml" 94 3345 3397
+type(
+  string
+)
+"sigchecker.ml" 94 3345 3398 "sigchecker.ml" 94 3345 3404
+type(
+  string
+)
+"sigchecker.ml" 94 3345 3368 "sigchecker.ml" 94 3345 3404
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 95 3408 3416 "sigchecker.ml" 95 3408 3430
+type(
+  string -> unit
+)
+ident(
+  ext_ref Common_utils.unlink_on_exit
+)
+"sigchecker.ml" 95 3408 3431 "sigchecker.ml" 95 3408 3439
+type(
+  string
+)
+ident(
+  int_ref filename "sigchecker.ml" 94 3345 3357 "sigchecker.ml" 94 3345 3365
+)
+"sigchecker.ml" 95 3408 3416 "sigchecker.ml" 95 3408 3439
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 96 3441 3453 "sigchecker.ml" 96 3441 3456
+type(
+  string
+)
+"sigchecker.ml" 96 3441 3459 "sigchecker.ml" 96 3441 3466
+type(
+  (string -> string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sigchecker.ml" 96 3441 3467 "sigchecker.ml" 96 3441 3511
+type(
+  (string -> string -> string -> string -> string, unit, string) format
+)
+"sigchecker.ml" 97 3512 3522 "sigchecker.ml" 97 3512 3525
+type(
+  string
+)
+ident(
+  int_ref gpg "sigchecker.ml" 68 2328 2344 "sigchecker.ml" 68 2328 2347
+)
+"sigchecker.ml" 97 3512 3527 "sigchecker.ml" 97 3512 3532
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"sigchecker.ml" 97 3512 3533 "sigchecker.ml" 97 3512 3541
+type(
+  string
+)
+ident(
+  int_ref filename "sigchecker.ml" 94 3345 3357 "sigchecker.ml" 94 3345 3365
+)
+"sigchecker.ml" 97 3512 3526 "sigchecker.ml" 97 3512 3542
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 97 3512 3544 "sigchecker.ml" 97 3512 3549
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"sigchecker.ml" 97 3512 3550 "sigchecker.ml" 97 3512 3552
+type(
+  string
+)
+ident(
+  int_ref fp "sigchecker.ml" 93 3319 3339 "sigchecker.ml" 93 3319 3341
+)
+"sigchecker.ml" 97 3512 3543 "sigchecker.ml" 97 3512 3553
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 98 3554 3568 "sigchecker.ml" 98 3554 3575
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sigchecker.ml" 98 3554 3576 "sigchecker.ml" 98 3554 3578
+type(
+  unit
+)
+"sigchecker.ml" 98 3554 3568 "sigchecker.ml" 98 3554 3578
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 98 3554 3584 "sigchecker.ml" 98 3554 3586
+type(
+  string
+)
+"sigchecker.ml" 98 3554 3592 "sigchecker.ml" 98 3554 3610
+type(
+  string
+)
+"sigchecker.ml" 98 3554 3564 "sigchecker.ml" 98 3554 3611
+type(
+  string
+)
+"sigchecker.ml" 96 3441 3459 "sigchecker.ml" 98 3554 3611
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 99 3615 3626 "sigchecker.ml" 99 3615 3633
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sigchecker.ml" 99 3615 3634 "sigchecker.ml" 99 3615 3636
+type(
+  unit
+)
+"sigchecker.ml" 99 3615 3626 "sigchecker.ml" 99 3615 3636
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 99 3615 3642 "sigchecker.ml" 99 3615 3648
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sigchecker.ml" 99 3615 3649 "sigchecker.ml" 99 3615 3657
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sigchecker.ml" 99 3615 3658 "sigchecker.ml" 99 3615 3661
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 96 3441 3453 "sigchecker.ml" 96 3441 3456
+)
+"sigchecker.ml" 99 3615 3642 "sigchecker.ml" 99 3615 3661
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 99 3615 3623 "sigchecker.ml" 99 3615 3661
+type(
+  unit
+)
+"sigchecker.ml" 100 3663 3675 "sigchecker.ml" 100 3663 3676
+type(
+  int
+)
+"sigchecker.ml" 100 3663 3679 "sigchecker.ml" 100 3663 3690
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"sigchecker.ml" 100 3663 3691 "sigchecker.ml" 100 3663 3694
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 96 3441 3453 "sigchecker.ml" 96 3441 3456
+)
+"sigchecker.ml" 100 3663 3679 "sigchecker.ml" 100 3663 3694
+type(
+  int
+)
+"sigchecker.ml" 101 3698 3709 "sigchecker.ml" 101 3698 3710
+type(
+  int
+)
+ident(
+  int_ref r "sigchecker.ml" 100 3663 3675 "sigchecker.ml" 100 3663 3676
+)
+"sigchecker.ml" 101 3698 3711 "sigchecker.ml" 101 3698 3713
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sigchecker.ml" 101 3698 3714 "sigchecker.ml" 101 3698 3715
+type(
+  int
+)
+"sigchecker.ml" 101 3698 3709 "sigchecker.ml" 101 3698 3715
+type(
+  bool
+)
+"sigchecker.ml" 102 3721 3731 "sigchecker.ml" 102 3721 3736
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sigchecker.ml" 102 3721 3738 "sigchecker.ml" 102 3721 3740
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sigchecker.ml" 102 3721 3740 "sigchecker.ml" 102 3721 3827
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sigchecker.ml" 102 3721 3737 "sigchecker.ml" 102 3721 3828
+type(
+  (unit, unit, string, unit) format4
+)
+"sigchecker.ml" 102 3721 3731 "sigchecker.ml" 102 3721 3828
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 101 3698 3706 "sigchecker.ml" 102 3721 3828
+type(
+  unit
+)
+"sigchecker.ml" 103 3830 3838 "sigchecker.ml" 103 3830 3844
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"sigchecker.ml" 103 3830 3846 "sigchecker.ml" 103 3830 3860
+type(
+  gpg:string -> gpghome:string -> ?trust:bool -> string -> string
+)
+ident(
+  int_ref import_keyfile "sigchecker.ml" 35 995 999 "sigchecker.ml" 35 995 1013
+)
+"sigchecker.ml" 103 3830 3861 "sigchecker.ml" 103 3830 3864
+type(
+  string
+)
+ident(
+  int_ref gpg "sigchecker.ml" 68 2328 2344 "sigchecker.ml" 68 2328 2347
+)
+"sigchecker.ml" 103 3830 3865 "sigchecker.ml" 103 3830 3871
+type(
+  string
+)
+ident(
+  int_ref tmpdir "sigchecker.ml" 70 2423 2429 "sigchecker.ml" 70 2423 2435
+)
+"sigchecker.ml" 103 3830 3872 "sigchecker.ml" 103 3830 3880
+type(
+  string
+)
+ident(
+  int_ref filename "sigchecker.ml" 94 3345 3357 "sigchecker.ml" 94 3345 3365
+)
+"sigchecker.ml" 103 3830 3845 "sigchecker.ml" 103 3830 3881
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 103 3830 3838 "sigchecker.ml" 103 3830 3881
+type(
+  unit
+)
+"sigchecker.ml" 104 3883 3891 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+ident(
+  int_ref fp "sigchecker.ml" 93 3319 3339 "sigchecker.ml" 93 3319 3341
+)
+"sigchecker.ml" 103 3830 3838 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+"sigchecker.ml" 101 3698 3706 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+"sigchecker.ml" 100 3663 3671 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+"sigchecker.ml" 99 3615 3623 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+"sigchecker.ml" 96 3441 3449 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+"sigchecker.ml" 95 3408 3416 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+"sigchecker.ml" 94 3345 3353 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+"sigchecker.ml" 88 3197 3203 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+"sigchecker.ml" 86 3051 3057 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+"sigchecker.ml" 85 3018 3024 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+"sigchecker.ml" 84 2972 2978 "sigchecker.ml" 104 3883 3893
+type(
+  string
+)
+"sigchecker.ml" 78 2718 2746 "sigchecker.ml" 105 3894 3899
+type(
+  string
+)
+"sigchecker.ml" 106 3905 3911 "sigchecker.ml" 106 3905 3913
+type(
+  string
+)
+"sigchecker.ml" 78 2718 2722 "sigchecker.ml" 106 3905 3913
+type(
+  string
+)
+"sigchecker.ml" 108 3921 3931 "sigchecker.ml" 108 3921 3934
+type(
+  string
+)
+ident(
+  int_ref gpg "sigchecker.ml" 68 2328 2344 "sigchecker.ml" 68 2328 2347
+)
+"sigchecker.ml" 109 3936 3954 "sigchecker.ml" 109 3936 3965
+type(
+  string
+)
+ident(
+  int_ref fingerprint "sigchecker.ml" 77 2698 2704 "sigchecker.ml" 77 2698 2715
+)
+"sigchecker.ml" 110 3967 3989 "sigchecker.ml" 110 3967 4004
+type(
+  bool
+)
+ident(
+  int_ref check_signature "sigchecker.ml" 73 2569 2575 "sigchecker.ml" 73 2569 2590
+)
+"sigchecker.ml" 111 4006 4020 "sigchecker.ml" 111 4006 4026
+type(
+  string
+)
+ident(
+  int_ref tmpdir "sigchecker.ml" 70 2423 2429 "sigchecker.ml" 70 2423 2435
+)
+"sigchecker.ml" 107 3917 3919 "sigchecker.ml" 112 4028 4031
+type(
+  t
+)
+"sigchecker.ml" 77 2698 2700 "sigchecker.ml" 112 4028 4031
+type(
+  t
+)
+"sigchecker.ml" 73 2569 2571 "sigchecker.ml" 112 4028 4031
+type(
+  t
+)
+"sigchecker.ml" 71 2475 2477 "sigchecker.ml" 112 4028 4031
+type(
+  t
+)
+"sigchecker.ml" 70 2423 2425 "sigchecker.ml" 112 4028 4031
+type(
+  t
+)
+"sigchecker.ml" 115 4103 4107 "sigchecker.ml" 115 4103 4125
+type(
+  string -> string -> bool
+)
+ident(
+  def equal_fingerprints "sigchecker.ml" 68 2328 2328 --
+)
+"sigchecker.ml" 115 4103 4126 "sigchecker.ml" 115 4103 4129
+type(
+  string
+)
+ident(
+  def fp1 "sigchecker.ml" 115 4103 4130 "sigchecker.ml" 130 4699 4709
+)
+"sigchecker.ml" 115 4103 4130 "sigchecker.ml" 115 4103 4133
+type(
+  string
+)
+ident(
+  def fp2 "sigchecker.ml" 116 4136 4138 "sigchecker.ml" 130 4699 4709
+)
+"sigchecker.ml" 116 4136 4142 "sigchecker.ml" 116 4136 4146
+type(
+  int
+)
+"sigchecker.ml" 116 4136 4149 "sigchecker.ml" 116 4136 4162
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"sigchecker.ml" 116 4136 4163 "sigchecker.ml" 116 4136 4166
+type(
+  string
+)
+ident(
+  int_ref fp1 "sigchecker.ml" 115 4103 4126 "sigchecker.ml" 115 4103 4129
+)
+"sigchecker.ml" 116 4136 4149 "sigchecker.ml" 116 4136 4166
+type(
+  int
+)
+"sigchecker.ml" 116 4136 4171 "sigchecker.ml" 116 4136 4175
+type(
+  int
+)
+"sigchecker.ml" 116 4136 4178 "sigchecker.ml" 116 4136 4191
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"sigchecker.ml" 116 4136 4192 "sigchecker.ml" 116 4136 4195
+type(
+  string
+)
+ident(
+  int_ref fp2 "sigchecker.ml" 115 4103 4130 "sigchecker.ml" 115 4103 4133
+)
+"sigchecker.ml" 116 4136 4178 "sigchecker.ml" 116 4136 4195
+type(
+  int
+)
+"sigchecker.ml" 117 4199 4209 "sigchecker.ml" 117 4199 4213
+type(
+  int -> int -> bool
+)
+"sigchecker.ml" 117 4199 4214 "sigchecker.ml" 117 4199 4215
+type(
+  int
+)
+ident(
+  def i "sigchecker.ml" 117 4199 4216 "sigchecker.ml" 128 4688 4693
+)
+"sigchecker.ml" 117 4199 4216 "sigchecker.ml" 117 4199 4217
+type(
+  int
+)
+ident(
+  def j "sigchecker.ml" 118 4220 4224 "sigchecker.ml" 128 4688 4693
+)
+"sigchecker.ml" 118 4220 4227 "sigchecker.ml" 118 4220 4228
+type(
+  int
+)
+ident(
+  int_ref i "sigchecker.ml" 117 4199 4214 "sigchecker.ml" 117 4199 4215
+)
+"sigchecker.ml" 118 4220 4229 "sigchecker.ml" 118 4220 4230
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sigchecker.ml" 118 4220 4231 "sigchecker.ml" 118 4220 4235
+type(
+  int
+)
+ident(
+  int_ref len1 "sigchecker.ml" 116 4136 4142 "sigchecker.ml" 116 4136 4146
+)
+"sigchecker.ml" 118 4220 4227 "sigchecker.ml" 118 4220 4235
+type(
+  bool
+)
+"sigchecker.ml" 118 4220 4236 "sigchecker.ml" 118 4220 4238
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"sigchecker.ml" 118 4220 4239 "sigchecker.ml" 118 4220 4240
+type(
+  int
+)
+ident(
+  int_ref j "sigchecker.ml" 117 4199 4216 "sigchecker.ml" 117 4199 4217
+)
+"sigchecker.ml" 118 4220 4241 "sigchecker.ml" 118 4220 4242
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sigchecker.ml" 118 4220 4243 "sigchecker.ml" 118 4220 4247
+type(
+  int
+)
+ident(
+  int_ref len2 "sigchecker.ml" 116 4136 4171 "sigchecker.ml" 116 4136 4175
+)
+"sigchecker.ml" 118 4220 4239 "sigchecker.ml" 118 4220 4247
+type(
+  bool
+)
+"sigchecker.ml" 118 4220 4227 "sigchecker.ml" 118 4220 4247
+type(
+  bool
+)
+"sigchecker.ml" 118 4220 4253 "sigchecker.ml" 118 4220 4257
+type(
+  bool
+)
+"sigchecker.ml" 119 4271 4283 "sigchecker.ml" 119 4271 4284
+type(
+  int
+)
+ident(
+  int_ref i "sigchecker.ml" 117 4199 4214 "sigchecker.ml" 117 4199 4215
+)
+"sigchecker.ml" 119 4271 4285 "sigchecker.ml" 119 4271 4286
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sigchecker.ml" 119 4271 4287 "sigchecker.ml" 119 4271 4291
+type(
+  int
+)
+ident(
+  int_ref len1 "sigchecker.ml" 116 4136 4142 "sigchecker.ml" 116 4136 4146
+)
+"sigchecker.ml" 119 4271 4283 "sigchecker.ml" 119 4271 4291
+type(
+  bool
+)
+"sigchecker.ml" 119 4271 4292 "sigchecker.ml" 119 4271 4294
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"sigchecker.ml" 119 4271 4295 "sigchecker.ml" 119 4271 4296
+type(
+  int
+)
+ident(
+  int_ref j "sigchecker.ml" 117 4199 4216 "sigchecker.ml" 117 4199 4217
+)
+"sigchecker.ml" 119 4271 4297 "sigchecker.ml" 119 4271 4298
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sigchecker.ml" 119 4271 4299 "sigchecker.ml" 119 4271 4303
+type(
+  int
+)
+ident(
+  int_ref len2 "sigchecker.ml" 116 4136 4171 "sigchecker.ml" 116 4136 4175
+)
+"sigchecker.ml" 119 4271 4295 "sigchecker.ml" 119 4271 4303
+type(
+  bool
+)
+"sigchecker.ml" 119 4271 4283 "sigchecker.ml" 119 4271 4303
+type(
+  bool
+)
+"sigchecker.ml" 119 4271 4309 "sigchecker.ml" 119 4271 4314
+type(
+  bool
+)
+"sigchecker.ml" 121 4361 4371 "sigchecker.ml" 121 4361 4373
+type(
+  int option
+)
+"sigchecker.ml" 121 4361 4376 "sigchecker.ml" 121 4361 4385
+type(
+  char -> int option
+)
+ident(
+  int_ref getxdigit "sigchecker.ml" 132 4711 4715 "sigchecker.ml" 132 4711 4724
+)
+"sigchecker.ml" 121 4361 4386 "sigchecker.ml" 121 4361 4389
+type(
+  string
+)
+ident(
+  int_ref fp1 "sigchecker.ml" 115 4103 4126 "sigchecker.ml" 115 4103 4129
+)
+"sigchecker.ml" 121 4361 4391 "sigchecker.ml" 121 4361 4392
+type(
+  int
+)
+ident(
+  int_ref i "sigchecker.ml" 117 4199 4214 "sigchecker.ml" 117 4199 4215
+)
+"sigchecker.ml" 121 4361 4386 "sigchecker.ml" 121 4361 4393
+type(
+  char
+)
+"sigchecker.ml" 121 4361 4376 "sigchecker.ml" 121 4361 4393
+call(
+  stack
+)
+type(
+  int option
+)
+"sigchecker.ml" 121 4361 4398 "sigchecker.ml" 121 4361 4400
+type(
+  int option
+)
+"sigchecker.ml" 121 4361 4403 "sigchecker.ml" 121 4361 4412
+type(
+  char -> int option
+)
+ident(
+  int_ref getxdigit "sigchecker.ml" 132 4711 4715 "sigchecker.ml" 132 4711 4724
+)
+"sigchecker.ml" 121 4361 4413 "sigchecker.ml" 121 4361 4416
+type(
+  string
+)
+ident(
+  int_ref fp2 "sigchecker.ml" 115 4103 4130 "sigchecker.ml" 115 4103 4133
+)
+"sigchecker.ml" 121 4361 4418 "sigchecker.ml" 121 4361 4419
+type(
+  int
+)
+ident(
+  int_ref j "sigchecker.ml" 117 4199 4216 "sigchecker.ml" 117 4199 4217
+)
+"sigchecker.ml" 121 4361 4413 "sigchecker.ml" 121 4361 4420
+type(
+  char
+)
+"sigchecker.ml" 121 4361 4403 "sigchecker.ml" 121 4361 4420
+call(
+  stack
+)
+type(
+  int option
+)
+"sigchecker.ml" 122 4424 4436 "sigchecker.ml" 122 4424 4438
+type(
+  int option
+)
+ident(
+  int_ref x1 "sigchecker.ml" 121 4361 4371 "sigchecker.ml" 121 4361 4373
+)
+"sigchecker.ml" 122 4424 4440 "sigchecker.ml" 122 4424 4442
+type(
+  int option
+)
+ident(
+  int_ref x2 "sigchecker.ml" 121 4361 4398 "sigchecker.ml" 121 4361 4400
+)
+"sigchecker.ml" 122 4424 4436 "sigchecker.ml" 122 4424 4442
+type(
+  int option * int option
+)
+"sigchecker.ml" 123 4448 4461 "sigchecker.ml" 123 4448 4463
+type(
+  int
+)
+ident(
+  def x1 "sigchecker.ml" 123 4448 4473 "sigchecker.ml" 123 4448 4505
+)
+"sigchecker.ml" 123 4448 4456 "sigchecker.ml" 123 4448 4463
+type(
+  int option
+)
+"sigchecker.ml" 123 4448 4470 "sigchecker.ml" 123 4448 4472
+type(
+  int
+)
+ident(
+  def x2 "sigchecker.ml" 123 4448 4473 "sigchecker.ml" 123 4448 4505
+)
+"sigchecker.ml" 123 4448 4465 "sigchecker.ml" 123 4448 4472
+type(
+  int option
+)
+"sigchecker.ml" 123 4448 4456 "sigchecker.ml" 123 4448 4472
+type(
+  int option * int option
+)
+"sigchecker.ml" 123 4448 4478 "sigchecker.ml" 123 4448 4480
+type(
+  int
+)
+ident(
+  int_ref x1 "sigchecker.ml" 123 4448 4461 "sigchecker.ml" 123 4448 4463
+)
+"sigchecker.ml" 123 4448 4481 "sigchecker.ml" 123 4448 4482
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sigchecker.ml" 123 4448 4483 "sigchecker.ml" 123 4448 4485
+type(
+  int
+)
+ident(
+  int_ref x2 "sigchecker.ml" 123 4448 4470 "sigchecker.ml" 123 4448 4472
+)
+"sigchecker.ml" 123 4448 4478 "sigchecker.ml" 123 4448 4485
+type(
+  bool
+)
+"sigchecker.ml" 123 4448 4489 "sigchecker.ml" 123 4448 4493
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref loop "sigchecker.ml" 117 4199 4209 "sigchecker.ml" 117 4199 4213
+)
+"sigchecker.ml" 123 4448 4495 "sigchecker.ml" 123 4448 4496
+type(
+  int
+)
+ident(
+  int_ref i "sigchecker.ml" 117 4199 4214 "sigchecker.ml" 117 4199 4215
+)
+"sigchecker.ml" 123 4448 4496 "sigchecker.ml" 123 4448 4497
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"sigchecker.ml" 123 4448 4497 "sigchecker.ml" 123 4448 4498
+type(
+  int
+)
+"sigchecker.ml" 123 4448 4494 "sigchecker.ml" 123 4448 4499
+type(
+  int
+)
+"sigchecker.ml" 123 4448 4501 "sigchecker.ml" 123 4448 4502
+type(
+  int
+)
+ident(
+  int_ref j "sigchecker.ml" 117 4199 4216 "sigchecker.ml" 117 4199 4217
+)
+"sigchecker.ml" 123 4448 4502 "sigchecker.ml" 123 4448 4503
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"sigchecker.ml" 123 4448 4503 "sigchecker.ml" 123 4448 4504
+type(
+  int
+)
+"sigchecker.ml" 123 4448 4500 "sigchecker.ml" 123 4448 4505
+type(
+  int
+)
+"sigchecker.ml" 123 4448 4489 "sigchecker.ml" 123 4448 4505
+call(
+  tail
+)
+type(
+  bool
+)
+"sigchecker.ml" 123 4448 4473 "sigchecker.ml" 123 4448 4505
+type(
+  bool
+)
+"sigchecker.ml" 124 4506 4519 "sigchecker.ml" 124 4506 4521
+type(
+  int
+)
+ident(
+  def x1 "sigchecker.ml" 124 4506 4534 "sigchecker.ml" 124 4506 4539
+)
+"sigchecker.ml" 124 4506 4514 "sigchecker.ml" 124 4506 4521
+type(
+  int option
+)
+"sigchecker.ml" 124 4506 4528 "sigchecker.ml" 124 4506 4530
+type(
+  int
+)
+ident(
+  def x2 "sigchecker.ml" 124 4506 4534 "sigchecker.ml" 124 4506 4539
+)
+"sigchecker.ml" 124 4506 4523 "sigchecker.ml" 124 4506 4530
+type(
+  int option
+)
+"sigchecker.ml" 124 4506 4514 "sigchecker.ml" 124 4506 4530
+type(
+  int option * int option
+)
+"sigchecker.ml" 124 4506 4534 "sigchecker.ml" 124 4506 4539
+type(
+  bool
+)
+"sigchecker.ml" 125 4575 4588 "sigchecker.ml" 125 4575 4589
+type(
+  int
+)
+"sigchecker.ml" 125 4575 4583 "sigchecker.ml" 125 4575 4589
+type(
+  int option
+)
+"sigchecker.ml" 125 4575 4591 "sigchecker.ml" 125 4575 4595
+type(
+  int option
+)
+"sigchecker.ml" 125 4575 4583 "sigchecker.ml" 125 4575 4595
+type(
+  int option * int option
+)
+"sigchecker.ml" 125 4575 4599 "sigchecker.ml" 125 4575 4603
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref loop "sigchecker.ml" 117 4199 4209 "sigchecker.ml" 117 4199 4213
+)
+"sigchecker.ml" 125 4575 4604 "sigchecker.ml" 125 4575 4605
+type(
+  int
+)
+ident(
+  int_ref i "sigchecker.ml" 117 4199 4214 "sigchecker.ml" 117 4199 4215
+)
+"sigchecker.ml" 125 4575 4607 "sigchecker.ml" 125 4575 4608
+type(
+  int
+)
+ident(
+  int_ref j "sigchecker.ml" 117 4199 4216 "sigchecker.ml" 117 4199 4217
+)
+"sigchecker.ml" 125 4575 4608 "sigchecker.ml" 125 4575 4609
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"sigchecker.ml" 125 4575 4609 "sigchecker.ml" 125 4575 4610
+type(
+  int
+)
+"sigchecker.ml" 125 4575 4606 "sigchecker.ml" 125 4575 4611
+type(
+  int
+)
+"sigchecker.ml" 125 4575 4599 "sigchecker.ml" 125 4575 4611
+call(
+  tail
+)
+type(
+  bool
+)
+"sigchecker.ml" 126 4612 4620 "sigchecker.ml" 126 4612 4624
+type(
+  int option
+)
+"sigchecker.ml" 126 4612 4631 "sigchecker.ml" 126 4612 4632
+type(
+  int
+)
+"sigchecker.ml" 126 4612 4626 "sigchecker.ml" 126 4612 4632
+type(
+  int option
+)
+"sigchecker.ml" 126 4612 4620 "sigchecker.ml" 126 4612 4632
+type(
+  int option * int option
+)
+"sigchecker.ml" 126 4612 4636 "sigchecker.ml" 126 4612 4640
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref loop "sigchecker.ml" 117 4199 4209 "sigchecker.ml" 117 4199 4213
+)
+"sigchecker.ml" 126 4612 4642 "sigchecker.ml" 126 4612 4643
+type(
+  int
+)
+ident(
+  int_ref i "sigchecker.ml" 117 4199 4214 "sigchecker.ml" 117 4199 4215
+)
+"sigchecker.ml" 126 4612 4643 "sigchecker.ml" 126 4612 4644
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"sigchecker.ml" 126 4612 4644 "sigchecker.ml" 126 4612 4645
+type(
+  int
+)
+"sigchecker.ml" 126 4612 4641 "sigchecker.ml" 126 4612 4646
+type(
+  int
+)
+"sigchecker.ml" 126 4612 4647 "sigchecker.ml" 126 4612 4648
+type(
+  int
+)
+ident(
+  int_ref j "sigchecker.ml" 117 4199 4216 "sigchecker.ml" 117 4199 4217
+)
+"sigchecker.ml" 126 4612 4636 "sigchecker.ml" 126 4612 4648
+call(
+  tail
+)
+type(
+  bool
+)
+"sigchecker.ml" 127 4649 4657 "sigchecker.ml" 127 4649 4661
+type(
+  int option
+)
+"sigchecker.ml" 127 4649 4663 "sigchecker.ml" 127 4649 4667
+type(
+  int option
+)
+"sigchecker.ml" 127 4649 4657 "sigchecker.ml" 127 4649 4667
+type(
+  int option * int option
+)
+"sigchecker.ml" 127 4649 4671 "sigchecker.ml" 127 4649 4675
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref loop "sigchecker.ml" 117 4199 4209 "sigchecker.ml" 117 4199 4213
+)
+"sigchecker.ml" 127 4649 4677 "sigchecker.ml" 127 4649 4678
+type(
+  int
+)
+ident(
+  int_ref i "sigchecker.ml" 117 4199 4214 "sigchecker.ml" 117 4199 4215
+)
+"sigchecker.ml" 127 4649 4678 "sigchecker.ml" 127 4649 4679
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"sigchecker.ml" 127 4649 4679 "sigchecker.ml" 127 4649 4680
+type(
+  int
+)
+"sigchecker.ml" 127 4649 4676 "sigchecker.ml" 127 4649 4681
+type(
+  int
+)
+"sigchecker.ml" 127 4649 4683 "sigchecker.ml" 127 4649 4684
+type(
+  int
+)
+ident(
+  int_ref j "sigchecker.ml" 117 4199 4216 "sigchecker.ml" 117 4199 4217
+)
+"sigchecker.ml" 127 4649 4684 "sigchecker.ml" 127 4649 4685
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"sigchecker.ml" 127 4649 4685 "sigchecker.ml" 127 4649 4686
+type(
+  int
+)
+"sigchecker.ml" 127 4649 4682 "sigchecker.ml" 127 4649 4687
+type(
+  int
+)
+"sigchecker.ml" 127 4649 4671 "sigchecker.ml" 127 4649 4687
+call(
+  tail
+)
+type(
+  bool
+)
+"sigchecker.ml" 122 4424 4430 "sigchecker.ml" 127 4649 4687
+type(
+  bool
+)
+"sigchecker.ml" 120 4350 4359 "sigchecker.ml" 128 4688 4693
+type(
+  bool
+)
+"sigchecker.ml" 119 4271 4280 "sigchecker.ml" 128 4688 4693
+type(
+  bool
+)
+"sigchecker.ml" 118 4220 4224 "sigchecker.ml" 128 4688 4693
+type(
+  bool
+)
+"sigchecker.ml" 130 4699 4701 "sigchecker.ml" 130 4699 4705
+type(
+  int -> int -> bool
+)
+ident(
+  int_ref loop "sigchecker.ml" 117 4199 4209 "sigchecker.ml" 117 4199 4213
+)
+"sigchecker.ml" 130 4699 4706 "sigchecker.ml" 130 4699 4707
+type(
+  int
+)
+"sigchecker.ml" 130 4699 4708 "sigchecker.ml" 130 4699 4709
+type(
+  int
+)
+"sigchecker.ml" 130 4699 4701 "sigchecker.ml" 130 4699 4709
+call(
+  tail
+)
+type(
+  bool
+)
+"sigchecker.ml" 117 4199 4201 "sigchecker.ml" 130 4699 4709
+type(
+  bool
+)
+"sigchecker.ml" 116 4136 4138 "sigchecker.ml" 130 4699 4709
+type(
+  bool
+)
+"sigchecker.ml" 132 4711 4715 "sigchecker.ml" 132 4711 4724
+type(
+  char -> int option
+)
+ident(
+  def getxdigit "sigchecker.ml" 68 2328 2328 --
+)
+"sigchecker.ml" 133 4736 4740 "sigchecker.ml" 133 4736 4748
+type(
+  char
+)
+"sigchecker.ml" 133 4736 4740 "sigchecker.ml" 133 4736 4753
+type(
+  char
+)
+ident(
+  def c "sigchecker.ml" 133 4736 4757 "sigchecker.ml" 133 4736 4791
+)
+"sigchecker.ml" 133 4736 4763 "sigchecker.ml" 133 4736 4772
+type(
+  char -> int
+)
+ident(
+  ext_ref Char.code
+)
+"sigchecker.ml" 133 4736 4773 "sigchecker.ml" 133 4736 4774
+type(
+  char
+)
+ident(
+  int_ref c "sigchecker.ml" 133 4736 4740 "sigchecker.ml" 133 4736 4753
+)
+"sigchecker.ml" 133 4736 4763 "sigchecker.ml" 133 4736 4774
+type(
+  int
+)
+"sigchecker.ml" 133 4736 4775 "sigchecker.ml" 133 4736 4776
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"sigchecker.ml" 133 4736 4777 "sigchecker.ml" 133 4736 4786
+type(
+  char -> int
+)
+ident(
+  ext_ref Char.code
+)
+"sigchecker.ml" 133 4736 4787 "sigchecker.ml" 133 4736 4790
+type(
+  char
+)
+"sigchecker.ml" 133 4736 4777 "sigchecker.ml" 133 4736 4790
+type(
+  int
+)
+"sigchecker.ml" 133 4736 4762 "sigchecker.ml" 133 4736 4791
+type(
+  int
+)
+"sigchecker.ml" 133 4736 4757 "sigchecker.ml" 133 4736 4791
+type(
+  int option
+)
+"sigchecker.ml" 134 4792 4796 "sigchecker.ml" 134 4792 4804
+type(
+  char
+)
+"sigchecker.ml" 134 4792 4796 "sigchecker.ml" 134 4792 4809
+type(
+  char
+)
+ident(
+  def c "sigchecker.ml" 134 4792 4813 "sigchecker.ml" 134 4792 4847
+)
+"sigchecker.ml" 134 4792 4819 "sigchecker.ml" 134 4792 4828
+type(
+  char -> int
+)
+ident(
+  ext_ref Char.code
+)
+"sigchecker.ml" 134 4792 4829 "sigchecker.ml" 134 4792 4830
+type(
+  char
+)
+ident(
+  int_ref c "sigchecker.ml" 134 4792 4796 "sigchecker.ml" 134 4792 4809
+)
+"sigchecker.ml" 134 4792 4819 "sigchecker.ml" 134 4792 4830
+type(
+  int
+)
+"sigchecker.ml" 134 4792 4831 "sigchecker.ml" 134 4792 4832
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"sigchecker.ml" 134 4792 4833 "sigchecker.ml" 134 4792 4842
+type(
+  char -> int
+)
+ident(
+  ext_ref Char.code
+)
+"sigchecker.ml" 134 4792 4843 "sigchecker.ml" 134 4792 4846
+type(
+  char
+)
+"sigchecker.ml" 134 4792 4833 "sigchecker.ml" 134 4792 4846
+type(
+  int
+)
+"sigchecker.ml" 134 4792 4818 "sigchecker.ml" 134 4792 4847
+type(
+  int
+)
+"sigchecker.ml" 134 4792 4813 "sigchecker.ml" 134 4792 4847
+type(
+  int option
+)
+"sigchecker.ml" 135 4848 4852 "sigchecker.ml" 135 4848 4860
+type(
+  char
+)
+"sigchecker.ml" 135 4848 4852 "sigchecker.ml" 135 4848 4865
+type(
+  char
+)
+ident(
+  def c "sigchecker.ml" 135 4848 4869 "sigchecker.ml" 135 4848 4903
+)
+"sigchecker.ml" 135 4848 4875 "sigchecker.ml" 135 4848 4884
+type(
+  char -> int
+)
+ident(
+  ext_ref Char.code
+)
+"sigchecker.ml" 135 4848 4885 "sigchecker.ml" 135 4848 4886
+type(
+  char
+)
+ident(
+  int_ref c "sigchecker.ml" 135 4848 4852 "sigchecker.ml" 135 4848 4865
+)
+"sigchecker.ml" 135 4848 4875 "sigchecker.ml" 135 4848 4886
+type(
+  int
+)
+"sigchecker.ml" 135 4848 4887 "sigchecker.ml" 135 4848 4888
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"sigchecker.ml" 135 4848 4889 "sigchecker.ml" 135 4848 4898
+type(
+  char -> int
+)
+ident(
+  ext_ref Char.code
+)
+"sigchecker.ml" 135 4848 4899 "sigchecker.ml" 135 4848 4902
+type(
+  char
+)
+"sigchecker.ml" 135 4848 4889 "sigchecker.ml" 135 4848 4902
+type(
+  int
+)
+"sigchecker.ml" 135 4848 4874 "sigchecker.ml" 135 4848 4903
+type(
+  int
+)
+"sigchecker.ml" 135 4848 4869 "sigchecker.ml" 135 4848 4903
+type(
+  int option
+)
+"sigchecker.ml" 136 4904 4908 "sigchecker.ml" 136 4904 4909
+type(
+  char
+)
+"sigchecker.ml" 136 4904 4913 "sigchecker.ml" 136 4904 4917
+type(
+  int option
+)
+"sigchecker.ml" 132 4711 4727 "sigchecker.ml" 136 4904 4917
+type(
+  char -> int option
+)
+"sigchecker.ml" 138 4919 4927 "sigchecker.ml" 138 4919 4933
+type(
+  t -> string -> unit
+)
+ident(
+  def verify "sigchecker.ml" 138 4919 4919 --
+)
+"sigchecker.ml" 138 4919 4934 "sigchecker.ml" 138 4919 4935
+type(
+  t
+)
+ident(
+  def t "sigchecker.ml" 138 4919 4936 "sigchecker.ml" 142 5031 5034
+)
+"sigchecker.ml" 138 4919 4936 "sigchecker.ml" 138 4919 4944
+type(
+  string
+)
+ident(
+  def filename "sigchecker.ml" 139 4947 4949 "sigchecker.ml" 142 5031 5034
+)
+"sigchecker.ml" 139 4947 4952 "sigchecker.ml" 139 4947 4953
+type(
+  t
+)
+ident(
+  int_ref t "sigchecker.ml" 138 4919 4934 "sigchecker.ml" 138 4919 4935
+)
+"sigchecker.ml" 139 4947 4952 "sigchecker.ml" 139 4947 4969
+type(
+  bool
+)
+"sigchecker.ml" 140 4977 4985 "sigchecker.ml" 140 4977 4989
+type(
+  string
+)
+"sigchecker.ml" 140 4977 4992 "sigchecker.ml" 140 4977 4997
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"sigchecker.ml" 140 4977 4998 "sigchecker.ml" 140 4977 5006
+type(
+  string
+)
+ident(
+  int_ref filename "sigchecker.ml" 138 4919 4936 "sigchecker.ml" 138 4919 4944
+)
+"sigchecker.ml" 140 4977 4992 "sigchecker.ml" 140 4977 5006
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 141 5010 5014 "sigchecker.ml" 141 5010 5023
+type(
+  t -> string -> unit
+)
+ident(
+  int_ref do_verify "sigchecker.ml" 154 5501 5505 "sigchecker.ml" 154 5501 5514
+)
+"sigchecker.ml" 141 5010 5024 "sigchecker.ml" 141 5010 5025
+type(
+  t
+)
+ident(
+  int_ref t "sigchecker.ml" 138 4919 4934 "sigchecker.ml" 138 4919 4935
+)
+"sigchecker.ml" 141 5010 5026 "sigchecker.ml" 141 5010 5030
+type(
+  string
+)
+ident(
+  int_ref args "sigchecker.ml" 140 4977 4985 "sigchecker.ml" 140 4977 4989
+)
+"sigchecker.ml" 141 5010 5014 "sigchecker.ml" 141 5010 5030
+call(
+  tail
+)
+type(
+  unit
+)
+"sigchecker.ml" 139 4947 4975 "sigchecker.ml" 142 5031 5034
+type(
+  unit
+)
+"sigchecker.ml" 139 4947 4949 "sigchecker.ml" 142 5031 5034
+type(
+  unit
+)
+"sigchecker.ml" 144 5036 5040 "sigchecker.ml" 144 5036 5055
+type(
+  t -> string -> string option -> unit
+)
+ident(
+  def verify_detached "sigchecker.ml" 138 4919 4919 --
+)
+"sigchecker.ml" 144 5036 5056 "sigchecker.ml" 144 5036 5057
+type(
+  t
+)
+ident(
+  def t "sigchecker.ml" 144 5036 5058 "sigchecker.ml" 152 5496 5499
+)
+"sigchecker.ml" 144 5036 5058 "sigchecker.ml" 144 5036 5066
+type(
+  string
+)
+ident(
+  def filename "sigchecker.ml" 144 5036 5067 "sigchecker.ml" 152 5496 5499
+)
+"sigchecker.ml" 144 5036 5067 "sigchecker.ml" 144 5036 5074
+type(
+  string option
+)
+ident(
+  def sigfile "sigchecker.ml" 145 5077 5079 "sigchecker.ml" 152 5496 5499
+)
+"sigchecker.ml" 145 5077 5082 "sigchecker.ml" 145 5077 5083
+type(
+  t
+)
+ident(
+  int_ref t "sigchecker.ml" 144 5036 5056 "sigchecker.ml" 144 5036 5057
+)
+"sigchecker.ml" 145 5077 5082 "sigchecker.ml" 145 5077 5099
+type(
+  bool
+)
+"sigchecker.ml" 146 5107 5117 "sigchecker.ml" 146 5107 5124
+type(
+  string option
+)
+ident(
+  int_ref sigfile "sigchecker.ml" 144 5036 5067 "sigchecker.ml" 144 5036 5074
+)
+"sigchecker.ml" 147 5130 5136 "sigchecker.ml" 147 5130 5140
+type(
+  string option
+)
+"sigchecker.ml" 148 5144 5150 "sigchecker.ml" 148 5144 5155
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sigchecker.ml" 148 5144 5157 "sigchecker.ml" 148 5144 5159
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sigchecker.ml" 148 5144 5159 "sigchecker.ml" 148 5144 5380
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sigchecker.ml" 148 5144 5156 "sigchecker.ml" 148 5144 5381
+type(
+  (unit, unit, string, unit) format4
+)
+"sigchecker.ml" 148 5144 5150 "sigchecker.ml" 148 5144 5381
+call(
+  tail
+)
+type(
+  unit
+)
+"sigchecker.ml" 149 5382 5393 "sigchecker.ml" 149 5382 5400
+type(
+  string
+)
+ident(
+  def sigfile "sigchecker.ml" 150 5404 5410 "sigchecker.ml" 151 5473 5495
+)
+"sigchecker.ml" 149 5382 5388 "sigchecker.ml" 149 5382 5400
+type(
+  string option
+)
+"sigchecker.ml" 150 5404 5414 "sigchecker.ml" 150 5404 5418
+type(
+  string
+)
+"sigchecker.ml" 150 5404 5421 "sigchecker.ml" 150 5404 5428
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sigchecker.ml" 150 5404 5429 "sigchecker.ml" 150 5404 5436
+type(
+  (string -> string -> string, unit, string) format
+)
+"sigchecker.ml" 150 5404 5438 "sigchecker.ml" 150 5404 5443
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"sigchecker.ml" 150 5404 5444 "sigchecker.ml" 150 5404 5451
+type(
+  string
+)
+ident(
+  int_ref sigfile "sigchecker.ml" 149 5382 5393 "sigchecker.ml" 149 5382 5400
+)
+"sigchecker.ml" 150 5404 5437 "sigchecker.ml" 150 5404 5452
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 150 5404 5454 "sigchecker.ml" 150 5404 5459
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"sigchecker.ml" 150 5404 5460 "sigchecker.ml" 150 5404 5468
+type(
+  string
+)
+ident(
+  int_ref filename "sigchecker.ml" 144 5036 5058 "sigchecker.ml" 144 5036 5066
+)
+"sigchecker.ml" 150 5404 5453 "sigchecker.ml" 150 5404 5469
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 150 5404 5421 "sigchecker.ml" 150 5404 5469
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 151 5473 5479 "sigchecker.ml" 151 5473 5488
+type(
+  t -> string -> unit
+)
+ident(
+  int_ref do_verify "sigchecker.ml" 154 5501 5505 "sigchecker.ml" 154 5501 5514
+)
+"sigchecker.ml" 151 5473 5489 "sigchecker.ml" 151 5473 5490
+type(
+  t
+)
+ident(
+  int_ref t "sigchecker.ml" 144 5036 5056 "sigchecker.ml" 144 5036 5057
+)
+"sigchecker.ml" 151 5473 5491 "sigchecker.ml" 151 5473 5495
+type(
+  string
+)
+ident(
+  int_ref args "sigchecker.ml" 150 5404 5414 "sigchecker.ml" 150 5404 5418
+)
+"sigchecker.ml" 151 5473 5479 "sigchecker.ml" 151 5473 5495
+call(
+  tail
+)
+type(
+  unit
+)
+"sigchecker.ml" 150 5404 5410 "sigchecker.ml" 151 5473 5495
+type(
+  unit
+)
+"sigchecker.ml" 145 5077 5105 "sigchecker.ml" 152 5496 5499
+type(
+  unit
+)
+"sigchecker.ml" 145 5077 5079 "sigchecker.ml" 152 5496 5499
+type(
+  unit
+)
+"sigchecker.ml" 154 5501 5505 "sigchecker.ml" 154 5501 5514
+type(
+  t -> string -> unit
+)
+ident(
+  def do_verify "sigchecker.ml" 138 4919 4919 --
+)
+"sigchecker.ml" 154 5501 5515 "sigchecker.ml" 154 5501 5516
+type(
+  t
+)
+ident(
+  def t "sigchecker.ml" 154 5501 5517 "sigchecker.ml" 182 6721 6753
+)
+"sigchecker.ml" 154 5501 5517 "sigchecker.ml" 154 5501 5521
+type(
+  string
+)
+ident(
+  def args "sigchecker.ml" 155 5524 5526 "sigchecker.ml" 182 6721 6753
+)
+"sigchecker.ml" 155 5524 5530 "sigchecker.ml" 155 5524 5541
+type(
+  string
+)
+"sigchecker.ml" 155 5524 5544 "sigchecker.ml" 155 5524 5562
+type(
+  ?temp_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Filename.temp_file
+)
+"sigchecker.ml" 155 5524 5563 "sigchecker.ml" 155 5524 5571
+type(
+  string
+)
+"sigchecker.ml" 155 5524 5572 "sigchecker.ml" 155 5524 5578
+type(
+  string
+)
+"sigchecker.ml" 155 5524 5544 "sigchecker.ml" 155 5524 5578
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 156 5582 5584 "sigchecker.ml" 156 5582 5598
+type(
+  string -> unit
+)
+ident(
+  ext_ref Common_utils.unlink_on_exit
+)
+"sigchecker.ml" 156 5582 5599 "sigchecker.ml" 156 5582 5610
+type(
+  string
+)
+ident(
+  int_ref status_file "sigchecker.ml" 155 5524 5530 "sigchecker.ml" 155 5524 5541
+)
+"sigchecker.ml" 156 5582 5584 "sigchecker.ml" 156 5582 5610
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 157 5612 5618 "sigchecker.ml" 157 5612 5621
+type(
+  string
+)
+"sigchecker.ml" 158 5624 5628 "sigchecker.ml" 158 5624 5635
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format -> string -> string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sigchecker.ml" 158 5624 5636 "sigchecker.ml" 158 5624 5684
+type(
+  (string -> string -> string -> string -> string -> string, unit, string)
+  format
+)
+"sigchecker.ml" 159 5685 5693 "sigchecker.ml" 159 5685 5694
+type(
+  t
+)
+ident(
+  int_ref t "sigchecker.ml" 154 5501 5515 "sigchecker.ml" 154 5501 5516
+)
+"sigchecker.ml" 159 5685 5693 "sigchecker.ml" 159 5685 5698
+type(
+  string
+)
+"sigchecker.ml" 159 5685 5699 "sigchecker.ml" 159 5685 5700
+type(
+  t
+)
+ident(
+  int_ref t "sigchecker.ml" 154 5501 5515 "sigchecker.ml" 154 5501 5516
+)
+"sigchecker.ml" 159 5685 5699 "sigchecker.ml" 159 5685 5708
+type(
+  string
+)
+"sigchecker.ml" 160 5709 5721 "sigchecker.ml" 160 5709 5728
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sigchecker.ml" 160 5709 5729 "sigchecker.ml" 160 5709 5731
+type(
+  unit
+)
+"sigchecker.ml" 160 5709 5721 "sigchecker.ml" 160 5709 5731
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 160 5709 5737 "sigchecker.ml" 160 5709 5739
+type(
+  string
+)
+"sigchecker.ml" 160 5709 5745 "sigchecker.ml" 160 5709 5782
+type(
+  string
+)
+"sigchecker.ml" 160 5709 5717 "sigchecker.ml" 160 5709 5783
+type(
+  string
+)
+"sigchecker.ml" 161 5784 5793 "sigchecker.ml" 161 5784 5798
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"sigchecker.ml" 161 5784 5799 "sigchecker.ml" 161 5784 5810
+type(
+  string
+)
+ident(
+  int_ref status_file "sigchecker.ml" 155 5524 5530 "sigchecker.ml" 155 5524 5541
+)
+"sigchecker.ml" 161 5784 5792 "sigchecker.ml" 161 5784 5811
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 161 5784 5812 "sigchecker.ml" 161 5784 5816
+type(
+  string
+)
+ident(
+  int_ref args "sigchecker.ml" 154 5501 5517 "sigchecker.ml" 154 5501 5521
+)
+"sigchecker.ml" 158 5624 5628 "sigchecker.ml" 161 5784 5816
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 162 5820 5825 "sigchecker.ml" 162 5820 5832
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sigchecker.ml" 162 5820 5833 "sigchecker.ml" 162 5820 5835
+type(
+  unit
+)
+"sigchecker.ml" 162 5820 5825 "sigchecker.ml" 162 5820 5835
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 162 5820 5841 "sigchecker.ml" 162 5820 5847
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sigchecker.ml" 162 5820 5848 "sigchecker.ml" 162 5820 5856
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sigchecker.ml" 162 5820 5857 "sigchecker.ml" 162 5820 5860
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 157 5612 5618 "sigchecker.ml" 157 5612 5621
+)
+"sigchecker.ml" 162 5820 5841 "sigchecker.ml" 162 5820 5860
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 162 5820 5822 "sigchecker.ml" 162 5820 5860
+type(
+  unit
+)
+"sigchecker.ml" 163 5862 5868 "sigchecker.ml" 163 5862 5869
+type(
+  int
+)
+"sigchecker.ml" 163 5862 5872 "sigchecker.ml" 163 5862 5883
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"sigchecker.ml" 163 5862 5884 "sigchecker.ml" 163 5862 5887
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 157 5612 5618 "sigchecker.ml" 157 5612 5621
+)
+"sigchecker.ml" 163 5862 5872 "sigchecker.ml" 163 5862 5887
+type(
+  int
+)
+"sigchecker.ml" 164 5891 5896 "sigchecker.ml" 164 5891 5897
+type(
+  int
+)
+ident(
+  int_ref r "sigchecker.ml" 163 5862 5868 "sigchecker.ml" 163 5862 5869
+)
+"sigchecker.ml" 164 5891 5898 "sigchecker.ml" 164 5891 5900
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sigchecker.ml" 164 5891 5901 "sigchecker.ml" 164 5891 5902
+type(
+  int
+)
+"sigchecker.ml" 164 5891 5896 "sigchecker.ml" 164 5891 5902
+type(
+  bool
+)
+"sigchecker.ml" 165 5908 5912 "sigchecker.ml" 165 5908 5917
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sigchecker.ml" 165 5908 5919 "sigchecker.ml" 165 5908 5921
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sigchecker.ml" 165 5908 5921 "sigchecker.ml" 165 5908 6159
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sigchecker.ml" 165 5908 5918 "sigchecker.ml" 165 5908 6160
+type(
+  (unit, unit, string, unit) format4
+)
+"sigchecker.ml" 165 5908 5912 "sigchecker.ml" 165 5908 6160
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 164 5891 5893 "sigchecker.ml" 165 5908 6160
+type(
+  unit
+)
+"sigchecker.ml" 168 6214 6220 "sigchecker.ml" 168 6214 6226
+type(
+  string
+)
+"sigchecker.ml" 168 6214 6229 "sigchecker.ml" 168 6214 6244
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.read_whole_file
+)
+"sigchecker.ml" 168 6214 6245 "sigchecker.ml" 168 6214 6256
+type(
+  string
+)
+ident(
+  int_ref status_file "sigchecker.ml" 155 5524 5530 "sigchecker.ml" 155 5524 5541
+)
+"sigchecker.ml" 168 6214 6229 "sigchecker.ml" 168 6214 6256
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 170 6261 6267 "sigchecker.ml" 170 6261 6273
+type(
+  string list
+)
+"sigchecker.ml" 170 6261 6276 "sigchecker.ml" 170 6261 6289
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"sigchecker.ml" 170 6261 6290 "sigchecker.ml" 170 6261 6294
+type(
+  string
+)
+"sigchecker.ml" 170 6261 6295 "sigchecker.ml" 170 6261 6301
+type(
+  string
+)
+ident(
+  int_ref status "sigchecker.ml" 168 6214 6220 "sigchecker.ml" 168 6214 6226
+)
+"sigchecker.ml" 170 6261 6276 "sigchecker.ml" 170 6261 6301
+call(
+  stack
+)
+type(
+  string list
+)
+"sigchecker.ml" 171 6305 6311 "sigchecker.ml" 171 6305 6322
+type(
+  string ref
+)
+"sigchecker.ml" 171 6305 6325 "sigchecker.ml" 171 6305 6328
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sigchecker.ml" 171 6305 6329 "sigchecker.ml" 171 6305 6331
+type(
+  string
+)
+"sigchecker.ml" 171 6305 6325 "sigchecker.ml" 171 6305 6331
+type(
+  string ref
+)
+"sigchecker.ml" 172 6335 6337 "sigchecker.ml" 172 6335 6346
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sigchecker.ml" 173 6349 6357 "sigchecker.ml" 173 6349 6361
+type(
+  string
+)
+ident(
+  def line "sigchecker.ml" 174 6365 6371 "sigchecker.ml" 177 6495 6510
+)
+"sigchecker.ml" 174 6365 6375 "sigchecker.ml" 174 6365 6379
+type(
+  string list
+)
+"sigchecker.ml" 174 6365 6382 "sigchecker.ml" 174 6365 6395
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"sigchecker.ml" 174 6365 6396 "sigchecker.ml" 174 6365 6399
+type(
+  string
+)
+"sigchecker.ml" 174 6365 6400 "sigchecker.ml" 174 6365 6404
+type(
+  string
+)
+ident(
+  int_ref line "sigchecker.ml" 173 6349 6357 "sigchecker.ml" 173 6349 6361
+)
+"sigchecker.ml" 174 6365 6382 "sigchecker.ml" 174 6365 6404
+call(
+  stack
+)
+type(
+  string list
+)
+"sigchecker.ml" 175 6408 6420 "sigchecker.ml" 175 6408 6424
+type(
+  string list
+)
+ident(
+  int_ref line "sigchecker.ml" 174 6365 6375 "sigchecker.ml" 174 6365 6379
+)
+"sigchecker.ml" 176 6430 6438 "sigchecker.ml" 176 6430 6448
+type(
+  string
+)
+"sigchecker.ml" 176 6430 6452 "sigchecker.ml" 176 6430 6462
+type(
+  string
+)
+"sigchecker.ml" 176 6430 6466 "sigchecker.ml" 176 6430 6468
+type(
+  string
+)
+ident(
+  def fp "sigchecker.ml" 176 6430 6477 "sigchecker.ml" 176 6430 6494
+)
+"sigchecker.ml" 176 6430 6472 "sigchecker.ml" 176 6430 6473
+type(
+  string list
+)
+"sigchecker.ml" 176 6430 6466 "sigchecker.ml" 176 6430 6473
+type(
+  string list
+)
+"sigchecker.ml" 176 6430 6452 "sigchecker.ml" 176 6430 6473
+type(
+  string list
+)
+"sigchecker.ml" 176 6430 6438 "sigchecker.ml" 176 6430 6473
+type(
+  string list
+)
+"sigchecker.ml" 176 6430 6477 "sigchecker.ml" 176 6430 6488
+type(
+  string ref
+)
+ident(
+  int_ref fingerprint "sigchecker.ml" 171 6305 6311 "sigchecker.ml" 171 6305 6322
+)
+"sigchecker.ml" 176 6430 6489 "sigchecker.ml" 176 6430 6491
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sigchecker.ml" 176 6430 6492 "sigchecker.ml" 176 6430 6494
+type(
+  string
+)
+ident(
+  int_ref fp "sigchecker.ml" 176 6430 6466 "sigchecker.ml" 176 6430 6468
+)
+"sigchecker.ml" 176 6430 6477 "sigchecker.ml" 176 6430 6494
+type(
+  unit
+)
+"sigchecker.ml" 177 6495 6503 "sigchecker.ml" 177 6495 6504
+type(
+  string list
+)
+"sigchecker.ml" 177 6495 6508 "sigchecker.ml" 177 6495 6510
+type(
+  unit
+)
+"sigchecker.ml" 175 6408 6414 "sigchecker.ml" 177 6495 6510
+type(
+  unit
+)
+"sigchecker.ml" 174 6365 6371 "sigchecker.ml" 177 6495 6510
+type(
+  unit
+)
+"sigchecker.ml" 172 6335 6347 "sigchecker.ml" 178 6511 6514
+type(
+  string -> unit
+)
+"sigchecker.ml" 178 6511 6515 "sigchecker.ml" 178 6511 6521
+type(
+  string list
+)
+ident(
+  int_ref status "sigchecker.ml" 170 6261 6267 "sigchecker.ml" 170 6261 6273
+)
+"sigchecker.ml" 172 6335 6337 "sigchecker.ml" 178 6511 6521
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 180 6524 6529 "sigchecker.ml" 180 6524 6532
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"sigchecker.ml" 180 6524 6534 "sigchecker.ml" 180 6524 6552
+type(
+  string -> string -> bool
+)
+ident(
+  int_ref equal_fingerprints "sigchecker.ml" 115 4103 4107 "sigchecker.ml" 115 4103 4125
+)
+"sigchecker.ml" 180 6524 6553 "sigchecker.ml" 180 6524 6554
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sigchecker.ml" 180 6524 6554 "sigchecker.ml" 180 6524 6565
+type(
+  string ref
+)
+ident(
+  int_ref fingerprint "sigchecker.ml" 171 6305 6311 "sigchecker.ml" 171 6305 6322
+)
+"sigchecker.ml" 180 6524 6553 "sigchecker.ml" 180 6524 6565
+type(
+  string
+)
+"sigchecker.ml" 180 6524 6566 "sigchecker.ml" 180 6524 6567
+type(
+  t
+)
+ident(
+  int_ref t "sigchecker.ml" 154 5501 5515 "sigchecker.ml" 154 5501 5516
+)
+"sigchecker.ml" 180 6524 6566 "sigchecker.ml" 180 6524 6579
+type(
+  string
+)
+"sigchecker.ml" 180 6524 6533 "sigchecker.ml" 180 6524 6580
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 180 6524 6529 "sigchecker.ml" 180 6524 6580
+type(
+  bool
+)
+"sigchecker.ml" 181 6586 6590 "sigchecker.ml" 181 6586 6595
+type(
+  ?exit_code:int ->
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sigchecker.ml" 181 6586 6597 "sigchecker.ml" 181 6586 6599
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sigchecker.ml" 181 6586 6599 "sigchecker.ml" 181 6586 6719
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"sigchecker.ml" 181 6586 6596 "sigchecker.ml" 181 6586 6720
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"sigchecker.ml" 182 6721 6727 "sigchecker.ml" 182 6721 6728
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sigchecker.ml" 182 6721 6728 "sigchecker.ml" 182 6721 6739
+type(
+  string ref
+)
+ident(
+  int_ref fingerprint "sigchecker.ml" 171 6305 6311 "sigchecker.ml" 171 6305 6322
+)
+"sigchecker.ml" 182 6721 6727 "sigchecker.ml" 182 6721 6739
+type(
+  string
+)
+"sigchecker.ml" 182 6721 6740 "sigchecker.ml" 182 6721 6741
+type(
+  t
+)
+ident(
+  int_ref t "sigchecker.ml" 154 5501 5515 "sigchecker.ml" 154 5501 5516
+)
+"sigchecker.ml" 182 6721 6740 "sigchecker.ml" 182 6721 6753
+type(
+  string
+)
+"sigchecker.ml" 181 6586 6590 "sigchecker.ml" 182 6721 6753
+call(
+  tail
+)
+type(
+  unit
+)
+"sigchecker.ml" 180 6524 6526 "sigchecker.ml" 182 6721 6753
+type(
+  unit
+)
+"sigchecker.ml" 172 6335 6337 "sigchecker.ml" 182 6721 6753
+type(
+  unit
+)
+"sigchecker.ml" 171 6305 6307 "sigchecker.ml" 182 6721 6753
+type(
+  unit
+)
+"sigchecker.ml" 170 6261 6263 "sigchecker.ml" 182 6721 6753
+type(
+  unit
+)
+"sigchecker.ml" 168 6214 6216 "sigchecker.ml" 182 6721 6753
+type(
+  unit
+)
+"sigchecker.ml" 164 5891 5893 "sigchecker.ml" 182 6721 6753
+type(
+  unit
+)
+"sigchecker.ml" 163 5862 5864 "sigchecker.ml" 182 6721 6753
+type(
+  unit
+)
+"sigchecker.ml" 162 5820 5822 "sigchecker.ml" 182 6721 6753
+type(
+  unit
+)
+"sigchecker.ml" 157 5612 5614 "sigchecker.ml" 182 6721 6753
+type(
+  unit
+)
+"sigchecker.ml" 156 5582 5584 "sigchecker.ml" 182 6721 6753
+type(
+  unit
+)
+"sigchecker.ml" 155 5524 5526 "sigchecker.ml" 182 6721 6753
+type(
+  unit
+)
+"sigchecker.ml" 186 6787 6791 "sigchecker.ml" 186 6787 6806
+type(
+  'a -> csum_t -> string -> unit
+)
+ident(
+  def verify_checksum "sigchecker.ml" 207 7741 7763 --
+)
+"sigchecker.ml" 186 6787 6807 "sigchecker.ml" 186 6787 6808
+type(
+  'a
+)
+ident(
+  def t "sigchecker.ml" 186 6787 6809 "sigchecker.ml" 207 7741 7763
+)
+"sigchecker.ml" 186 6787 6817 "sigchecker.ml" 186 6787 6821
+type(
+  string
+)
+ident(
+  def csum "sigchecker.ml" 186 6787 6823 "sigchecker.ml" 207 7741 7763
+)
+"sigchecker.ml" 186 6787 6809 "sigchecker.ml" 186 6787 6822
+type(
+  csum_t
+)
+"sigchecker.ml" 186 6787 6823 "sigchecker.ml" 186 6787 6831
+type(
+  string
+)
+ident(
+  def filename "sigchecker.ml" 187 6834 6836 "sigchecker.ml" 207 7741 7763
+)
+"sigchecker.ml" 187 6834 6840 "sigchecker.ml" 187 6834 6849
+type(
+  string
+)
+"sigchecker.ml" 187 6834 6852 "sigchecker.ml" 187 6834 6870
+type(
+  ?temp_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Filename.temp_file
+)
+"sigchecker.ml" 187 6834 6871 "sigchecker.ml" 187 6834 6879
+type(
+  string
+)
+"sigchecker.ml" 187 6834 6880 "sigchecker.ml" 187 6834 6886
+type(
+  string
+)
+"sigchecker.ml" 187 6834 6852 "sigchecker.ml" 187 6834 6886
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 188 6890 6892 "sigchecker.ml" 188 6890 6906
+type(
+  string -> unit
+)
+ident(
+  ext_ref Common_utils.unlink_on_exit
+)
+"sigchecker.ml" 188 6890 6907 "sigchecker.ml" 188 6890 6916
+type(
+  string
+)
+ident(
+  int_ref csum_file "sigchecker.ml" 187 6834 6840 "sigchecker.ml" 187 6834 6849
+)
+"sigchecker.ml" 188 6890 6892 "sigchecker.ml" 188 6890 6916
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 189 6918 6924 "sigchecker.ml" 189 6918 6927
+type(
+  string
+)
+"sigchecker.ml" 189 6918 6930 "sigchecker.ml" 189 6918 6937
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sigchecker.ml" 189 6918 6938 "sigchecker.ml" 189 6918 6976
+type(
+  (string -> string -> string, unit, string) format
+)
+"sigchecker.ml" 190 6977 6982 "sigchecker.ml" 190 6977 6987
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"sigchecker.ml" 190 6977 6988 "sigchecker.ml" 190 6977 6996
+type(
+  string
+)
+ident(
+  int_ref filename "sigchecker.ml" 186 6787 6823 "sigchecker.ml" 186 6787 6831
+)
+"sigchecker.ml" 190 6977 6981 "sigchecker.ml" 190 6977 6997
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 190 6977 6999 "sigchecker.ml" 190 6977 7004
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"sigchecker.ml" 190 6977 7005 "sigchecker.ml" 190 6977 7014
+type(
+  string
+)
+ident(
+  int_ref csum_file "sigchecker.ml" 187 6834 6840 "sigchecker.ml" 187 6834 6849
+)
+"sigchecker.ml" 190 6977 6998 "sigchecker.ml" 190 6977 7015
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 189 6918 6930 "sigchecker.ml" 190 6977 7015
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 191 7019 7024 "sigchecker.ml" 191 7019 7031
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sigchecker.ml" 191 7019 7032 "sigchecker.ml" 191 7019 7034
+type(
+  unit
+)
+"sigchecker.ml" 191 7019 7024 "sigchecker.ml" 191 7019 7034
+call(
+  stack
+)
+type(
+  bool
+)
+"sigchecker.ml" 191 7019 7040 "sigchecker.ml" 191 7019 7046
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sigchecker.ml" 191 7019 7047 "sigchecker.ml" 191 7019 7055
+type(
+  (string -> unit, out_channel, unit) format
+)
+"sigchecker.ml" 191 7019 7056 "sigchecker.ml" 191 7019 7059
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 189 6918 6924 "sigchecker.ml" 189 6918 6927
+)
+"sigchecker.ml" 191 7019 7040 "sigchecker.ml" 191 7019 7059
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 191 7019 7021 "sigchecker.ml" 191 7019 7059
+type(
+  unit
+)
+"sigchecker.ml" 192 7061 7067 "sigchecker.ml" 192 7061 7068
+type(
+  int
+)
+"sigchecker.ml" 192 7061 7071 "sigchecker.ml" 192 7061 7082
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"sigchecker.ml" 192 7061 7083 "sigchecker.ml" 192 7061 7086
+type(
+  string
+)
+ident(
+  int_ref cmd "sigchecker.ml" 189 6918 6924 "sigchecker.ml" 189 6918 6927
+)
+"sigchecker.ml" 192 7061 7071 "sigchecker.ml" 192 7061 7086
+type(
+  int
+)
+"sigchecker.ml" 193 7090 7095 "sigchecker.ml" 193 7090 7096
+type(
+  int
+)
+ident(
+  int_ref r "sigchecker.ml" 192 7061 7067 "sigchecker.ml" 192 7061 7068
+)
+"sigchecker.ml" 193 7090 7097 "sigchecker.ml" 193 7090 7099
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sigchecker.ml" 193 7090 7100 "sigchecker.ml" 193 7090 7101
+type(
+  int
+)
+"sigchecker.ml" 193 7090 7095 "sigchecker.ml" 193 7090 7101
+type(
+  bool
+)
+"sigchecker.ml" 194 7107 7111 "sigchecker.ml" 194 7107 7116
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sigchecker.ml" 194 7107 7118 "sigchecker.ml" 194 7107 7120
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sigchecker.ml" 194 7107 7120 "sigchecker.ml" 194 7107 7172
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"sigchecker.ml" 194 7107 7117 "sigchecker.ml" 194 7107 7173
+type(
+  (unit, unit, string, unit) format4
+)
+"sigchecker.ml" 194 7107 7111 "sigchecker.ml" 194 7107 7173
+call(
+  stack
+)
+type(
+  unit
+)
+"sigchecker.ml" 193 7090 7092 "sigchecker.ml" 194 7107 7173
+type(
+  unit
+)
+"sigchecker.ml" 196 7176 7182 "sigchecker.ml" 196 7176 7193
+type(
+  string
+)
+"sigchecker.ml" 196 7176 7196 "sigchecker.ml" 196 7176 7211
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.read_whole_file
+)
+"sigchecker.ml" 196 7176 7212 "sigchecker.ml" 196 7176 7221
+type(
+  string
+)
+ident(
+  int_ref csum_file "sigchecker.ml" 187 6834 6840 "sigchecker.ml" 187 6834 6849
+)
+"sigchecker.ml" 196 7176 7196 "sigchecker.ml" 196 7176 7221
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 198 7226 7232 "sigchecker.ml" 198 7226 7243
+type(
+  string
+)
+"sigchecker.ml" 199 7246 7254 "sigchecker.ml" 199 7246 7257
+type(
+  int
+)
+"sigchecker.ml" 199 7246 7260 "sigchecker.ml" 199 7246 7273
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"sigchecker.ml" 199 7246 7274 "sigchecker.ml" 199 7246 7285
+type(
+  string
+)
+ident(
+  int_ref csum_actual "sigchecker.ml" 196 7176 7182 "sigchecker.ml" 196 7176 7193
+)
+"sigchecker.ml" 199 7246 7260 "sigchecker.ml" 199 7246 7285
+type(
+  int
+)
+"sigchecker.ml" 200 7289 7296 "sigchecker.ml" 200 7289 7299
+type(
+  int
+)
+ident(
+  int_ref len "sigchecker.ml" 199 7246 7254 "sigchecker.ml" 199 7246 7257
+)
+"sigchecker.ml" 200 7289 7300 "sigchecker.ml" 200 7289 7301
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"sigchecker.ml" 200 7289 7302 "sigchecker.ml" 200 7289 7303
+type(
+  int
+)
+"sigchecker.ml" 200 7289 7296 "sigchecker.ml" 200 7289 7303
+type(
+  bool
+)
+"sigchecker.ml" 200 7289 7304 "sigchecker.ml" 200 7289 7306
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"sigchecker.ml" 200 7289 7307 "sigchecker.ml" 200 7289 7318
+type(
+  string
+)
+ident(
+  int_ref csum_actual "sigchecker.ml" 196 7176 7182 "sigchecker.ml" 196 7176 7193
+)
+"sigchecker.ml" 200 7289 7320 "sigchecker.ml" 200 7289 7323
+type(
+  int
+)
+ident(
+  int_ref len "sigchecker.ml" 199 7246 7254 "sigchecker.ml" 199 7246 7257
+)
+"sigchecker.ml" 200 7289 7323 "sigchecker.ml" 200 7289 7324
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"sigchecker.ml" 200 7289 7324 "sigchecker.ml" 200 7289 7325
+type(
+  int
+)
+"sigchecker.ml" 200 7289 7320 "sigchecker.ml" 200 7289 7325
+type(
+  int
+)
+"sigchecker.ml" 200 7289 7307 "sigchecker.ml" 200 7289 7326
+type(
+  char
+)
+"sigchecker.ml" 200 7289 7327 "sigchecker.ml" 200 7289 7328
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sigchecker.ml" 200 7289 7329 "sigchecker.ml" 200 7289 7333
+type(
+  char
+)
+"sigchecker.ml" 200 7289 7307 "sigchecker.ml" 200 7289 7333
+type(
+  bool
+)
+"sigchecker.ml" 200 7289 7296 "sigchecker.ml" 200 7289 7333
+type(
+  bool
+)
+"sigchecker.ml" 201 7339 7345 "sigchecker.ml" 201 7339 7355
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"sigchecker.ml" 201 7339 7356 "sigchecker.ml" 201 7339 7367
+type(
+  string
+)
+ident(
+  int_ref csum_actual "sigchecker.ml" 196 7176 7182 "sigchecker.ml" 196 7176 7193
+)
+"sigchecker.ml" 201 7339 7368 "sigchecker.ml" 201 7339 7369
+type(
+  int
+)
+"sigchecker.ml" 201 7339 7371 "sigchecker.ml" 201 7339 7374
+type(
+  int
+)
+ident(
+  int_ref len "sigchecker.ml" 199 7246 7254 "sigchecker.ml" 199 7246 7257
+)
+"sigchecker.ml" 201 7339 7374 "sigchecker.ml" 201 7339 7375
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"sigchecker.ml" 201 7339 7375 "sigchecker.ml" 201 7339 7376
+type(
+  int
+)
+"sigchecker.ml" 201 7339 7370 "sigchecker.ml" 201 7339 7377
+type(
+  int
+)
+"sigchecker.ml" 201 7339 7345 "sigchecker.ml" 201 7339 7377
+call(
+  stack
+)
+type(
+  string
+)
+"sigchecker.ml" 203 7387 7393 "sigchecker.ml" 203 7387 7404
+type(
+  string
+)
+ident(
+  int_ref csum_actual "sigchecker.ml" 196 7176 7182 "sigchecker.ml" 196 7176 7193
+)
+"sigchecker.ml" 200 7289 7293 "sigchecker.ml" 203 7387 7404
+type(
+  string
+)
+"sigchecker.ml" 199 7246 7250 "sigchecker.ml" 203 7387 7404
+type(
+  string
+)
+"sigchecker.ml" 205 7409 7414 "sigchecker.ml" 205 7409 7418
+type(
+  string
+)
+ident(
+  int_ref csum "sigchecker.ml" 186 6787 6817 "sigchecker.ml" 186 6787 6821
+)
+"sigchecker.ml" 205 7409 7419 "sigchecker.ml" 205 7409 7421
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sigchecker.ml" 205 7409 7422 "sigchecker.ml" 205 7409 7433
+type(
+  string
+)
+ident(
+  int_ref csum_actual "sigchecker.ml" 198 7226 7232 "sigchecker.ml" 198 7226 7243
+)
+"sigchecker.ml" 205 7409 7414 "sigchecker.ml" 205 7409 7433
+type(
+  bool
+)
+"sigchecker.ml" 206 7439 7443 "sigchecker.ml" 206 7439 7448
+type(
+  ?exit_code:int ->
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"sigchecker.ml" 206 7439 7450 "sigchecker.ml" 206 7439 7452
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sigchecker.ml" 206 7439 7452 "sigchecker.ml" 206 7439 7739
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"sigchecker.ml" 206 7439 7449 "sigchecker.ml" 206 7439 7740
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"sigchecker.ml" 207 7741 7747 "sigchecker.ml" 207 7741 7758
+type(
+  string
+)
+ident(
+  int_ref csum_actual "sigchecker.ml" 198 7226 7232 "sigchecker.ml" 198 7226 7243
+)
+"sigchecker.ml" 207 7741 7759 "sigchecker.ml" 207 7741 7763
+type(
+  string
+)
+ident(
+  int_ref csum "sigchecker.ml" 186 6787 6817 "sigchecker.ml" 186 6787 6821
+)
+"sigchecker.ml" 206 7439 7443 "sigchecker.ml" 207 7741 7763
+call(
+  tail
+)
+type(
+  unit
+)
+"sigchecker.ml" 205 7409 7411 "sigchecker.ml" 207 7741 7763
+type(
+  unit
+)
+"sigchecker.ml" 198 7226 7228 "sigchecker.ml" 207 7741 7763
+type(
+  unit
+)
+"sigchecker.ml" 196 7176 7178 "sigchecker.ml" 207 7741 7763
+type(
+  unit
+)
+"sigchecker.ml" 193 7090 7092 "sigchecker.ml" 207 7741 7763
+type(
+  unit
+)
+"sigchecker.ml" 192 7061 7063 "sigchecker.ml" 207 7741 7763
+type(
+  unit
+)
+"sigchecker.ml" 191 7019 7021 "sigchecker.ml" 207 7741 7763
+type(
+  unit
+)
+"sigchecker.ml" 189 6918 6920 "sigchecker.ml" 207 7741 7763
+type(
+  unit
+)
+"sigchecker.ml" 188 6890 6892 "sigchecker.ml" 207 7741 7763
+type(
+  unit
+)
+"sigchecker.ml" 187 6834 6836 "sigchecker.ml" 207 7741 7763
+type(
+  unit
+)

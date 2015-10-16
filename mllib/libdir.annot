@@ -1,0 +1,11 @@
+"libdir.ml" 1 0 4 "libdir.ml" 1 0 10
+type(
+  string
+)
+ident(
+  def libdir "libdir.ml" 1 0 29 --
+)
+"libdir.ml" 1 0 13 "libdir.ml" 1 0 29
+type(
+  string
+)

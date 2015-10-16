@@ -1,0 +1,326 @@
+"sysprep_operation_sssd_db_log.ml" 24 851 855 "sysprep_operation_sssd_db_log.ml" 24 851 874
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def sssd_db_log_perform "sysprep_operation_sssd_db_log.ml" 39 1245 1245 --
+)
+"sysprep_operation_sssd_db_log.ml" 24 851 875 "sysprep_operation_sssd_db_log.ml" 24 851 876
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_sssd_db_log.ml" 24 851 877 "sysprep_operation_sssd_db_log.ml" 37 1240 1243
+)
+"sysprep_operation_sssd_db_log.ml" 24 851 877 "sysprep_operation_sssd_db_log.ml" 24 851 881
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_sssd_db_log.ml" 24 851 882 "sysprep_operation_sssd_db_log.ml" 37 1240 1243
+)
+"sysprep_operation_sssd_db_log.ml" 24 851 882 "sysprep_operation_sssd_db_log.ml" 24 851 894
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_sssd_db_log.ml" 25 897 899 "sysprep_operation_sssd_db_log.ml" 37 1240 1243
+)
+"sysprep_operation_sssd_db_log.ml" 25 897 903 "sysprep_operation_sssd_db_log.ml" 25 897 906
+type(
+  string
+)
+"sysprep_operation_sssd_db_log.ml" 25 897 909 "sysprep_operation_sssd_db_log.ml" 25 897 910
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_sssd_db_log.ml" 24 851 875 "sysprep_operation_sssd_db_log.ml" 24 851 876
+)
+"sysprep_operation_sssd_db_log.ml" 25 897 909 "sysprep_operation_sssd_db_log.ml" 25 897 927
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_sssd_db_log.ml" 25 897 928 "sysprep_operation_sssd_db_log.ml" 25 897 932
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_sssd_db_log.ml" 24 851 877 "sysprep_operation_sssd_db_log.ml" 24 851 881
+)
+"sysprep_operation_sssd_db_log.ml" 25 897 909 "sysprep_operation_sssd_db_log.ml" 25 897 932
+type(
+  string
+)
+"sysprep_operation_sssd_db_log.ml" 26 936 941 "sysprep_operation_sssd_db_log.ml" 26 936 944
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_sssd_db_log.ml" 25 897 903 "sysprep_operation_sssd_db_log.ml" 25 897 906
+)
+"sysprep_operation_sssd_db_log.ml" 26 936 945 "sysprep_operation_sssd_db_log.ml" 26 936 947
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_sssd_db_log.ml" 26 936 948 "sysprep_operation_sssd_db_log.ml" 26 936 957
+type(
+  string
+)
+"sysprep_operation_sssd_db_log.ml" 26 936 941 "sysprep_operation_sssd_db_log.ml" 26 936 957
+type(
+  bool
+)
+"sysprep_operation_sssd_db_log.ml" 27 965 973 "sysprep_operation_sssd_db_log.ml" 27 965 978
+type(
+  string list
+)
+"sysprep_operation_sssd_db_log.ml" 27 965 983 "sysprep_operation_sssd_db_log.ml" 27 965 1000
+type(
+  string
+)
+"sysprep_operation_sssd_db_log.ml" 28 1002 1020 "sysprep_operation_sssd_db_log.ml" 28 1002 1039
+type(
+  string
+)
+"sysprep_operation_sssd_db_log.ml" 27 965 981 "sysprep_operation_sssd_db_log.ml" 28 1002 1041
+type(
+  string list
+)
+"sysprep_operation_sssd_db_log.ml" 29 1045 1049 "sysprep_operation_sssd_db_log.ml" 29 1045 1058
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_sssd_db_log.ml" 30 1061 1071 "sysprep_operation_sssd_db_log.ml" 30 1061 1075
+type(
+  string
+)
+ident(
+  def path "sysprep_operation_sssd_db_log.ml" 31 1079 1087 "sysprep_operation_sssd_db_log.ml" 35 1211 1227
+)
+"sysprep_operation_sssd_db_log.ml" 31 1079 1091 "sysprep_operation_sssd_db_log.ml" 31 1079 1096
+type(
+  'a array
+)
+"sysprep_operation_sssd_db_log.ml" 31 1079 1099 "sysprep_operation_sssd_db_log.ml" 31 1079 1100
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_sssd_db_log.ml" 24 851 875 "sysprep_operation_sssd_db_log.ml" 24 851 876
+)
+"sysprep_operation_sssd_db_log.ml" 31 1079 1099 "sysprep_operation_sssd_db_log.ml" 31 1079 1112
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_sssd_db_log.ml" 31 1079 1113 "sysprep_operation_sssd_db_log.ml" 31 1079 1117
+type(
+  string
+)
+ident(
+  int_ref path "sysprep_operation_sssd_db_log.ml" 30 1061 1071 "sysprep_operation_sssd_db_log.ml" 30 1061 1075
+)
+"sysprep_operation_sssd_db_log.ml" 31 1079 1099 "sysprep_operation_sssd_db_log.ml" 31 1079 1117
+type(
+  'a array
+)
+"sysprep_operation_sssd_db_log.ml" 32 1121 1129 "sysprep_operation_sssd_db_log.ml" 32 1121 1139
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_sssd_db_log.ml" 33 1142 1156 "sysprep_operation_sssd_db_log.ml" 33 1142 1160
+type(
+  'a
+)
+ident(
+  def file "sysprep_operation_sssd_db_log.ml" 34 1164 1176 "sysprep_operation_sssd_db_log.ml" 34 1164 1210
+)
+"sysprep_operation_sssd_db_log.ml" 34 1164 1180 "sysprep_operation_sssd_db_log.ml" 34 1164 1181
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_sssd_db_log.ml" 24 851 875 "sysprep_operation_sssd_db_log.ml" 24 851 876
+)
+"sysprep_operation_sssd_db_log.ml" 34 1164 1180 "sysprep_operation_sssd_db_log.ml" 34 1164 1184
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_sssd_db_log.ml" 34 1164 1185 "sysprep_operation_sssd_db_log.ml" 34 1164 1189
+type(
+  'a
+)
+ident(
+  int_ref file "sysprep_operation_sssd_db_log.ml" 33 1142 1156 "sysprep_operation_sssd_db_log.ml" 33 1142 1160
+)
+"sysprep_operation_sssd_db_log.ml" 34 1164 1180 "sysprep_operation_sssd_db_log.ml" 34 1164 1189
+type(
+  unit
+)
+"sysprep_operation_sssd_db_log.ml" 34 1164 1203 "sysprep_operation_sssd_db_log.ml" 34 1164 1204
+type(
+  string
+)
+"sysprep_operation_sssd_db_log.ml" 34 1164 1195 "sysprep_operation_sssd_db_log.ml" 34 1164 1204
+type(
+  exn
+)
+"sysprep_operation_sssd_db_log.ml" 34 1164 1208 "sysprep_operation_sssd_db_log.ml" 34 1164 1210
+type(
+  unit
+)
+"sysprep_operation_sssd_db_log.ml" 34 1164 1176 "sysprep_operation_sssd_db_log.ml" 34 1164 1210
+type(
+  unit
+)
+"sysprep_operation_sssd_db_log.ml" 32 1121 1140 "sysprep_operation_sssd_db_log.ml" 35 1211 1220
+type(
+  'a -> unit
+)
+"sysprep_operation_sssd_db_log.ml" 35 1211 1221 "sysprep_operation_sssd_db_log.ml" 35 1211 1226
+type(
+  'a array
+)
+ident(
+  int_ref files "sysprep_operation_sssd_db_log.ml" 31 1079 1091 "sysprep_operation_sssd_db_log.ml" 31 1079 1096
+)
+"sysprep_operation_sssd_db_log.ml" 32 1121 1129 "sysprep_operation_sssd_db_log.ml" 35 1211 1227
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_sssd_db_log.ml" 31 1079 1087 "sysprep_operation_sssd_db_log.ml" 35 1211 1227
+type(
+  unit
+)
+"sysprep_operation_sssd_db_log.ml" 29 1045 1059 "sysprep_operation_sssd_db_log.ml" 36 1228 1233
+type(
+  string -> unit
+)
+"sysprep_operation_sssd_db_log.ml" 36 1228 1234 "sysprep_operation_sssd_db_log.ml" 36 1228 1239
+type(
+  string list
+)
+ident(
+  int_ref paths "sysprep_operation_sssd_db_log.ml" 27 965 973 "sysprep_operation_sssd_db_log.ml" 27 965 978
+)
+"sysprep_operation_sssd_db_log.ml" 29 1045 1049 "sysprep_operation_sssd_db_log.ml" 36 1228 1239
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_sssd_db_log.ml" 26 936 963 "sysprep_operation_sssd_db_log.ml" 37 1240 1243
+type(
+  unit
+)
+"sysprep_operation_sssd_db_log.ml" 26 936 938 "sysprep_operation_sssd_db_log.ml" 37 1240 1243
+type(
+  unit
+)
+"sysprep_operation_sssd_db_log.ml" 25 897 899 "sysprep_operation_sssd_db_log.ml" 37 1240 1243
+type(
+  unit
+)
+"sysprep_operation_sssd_db_log.ml" 39 1245 1249 "sysprep_operation_sssd_db_log.ml" 39 1245 1251
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_sssd_db_log.ml" 47 1448 1448 --
+)
+"sysprep_operation_sssd_db_log.ml" 40 1256 1258 "sysprep_operation_sssd_db_log.ml" 40 1256 1266
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_sssd_db_log.ml" 41 1272 1283 "sysprep_operation_sssd_db_log.ml" 41 1272 1296
+type(
+  string
+)
+"sysprep_operation_sssd_db_log.ml" 42 1298 1323 "sysprep_operation_sssd_db_log.ml" 42 1298 1327
+type(
+  bool
+)
+"sysprep_operation_sssd_db_log.ml" 43 1329 1343 "sysprep_operation_sssd_db_log.ml" 43 1329 1345
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_sssd_db_log.ml" 43 1329 1345 "sysprep_operation_sssd_db_log.ml" 43 1329 1388
+type(
+  string
+)
+"sysprep_operation_sssd_db_log.ml" 43 1329 1343 "sysprep_operation_sssd_db_log.ml" 43 1329 1388
+type(
+  string
+)
+"sysprep_operation_sssd_db_log.ml" 44 1390 1424 "sysprep_operation_sssd_db_log.ml" 44 1390 1443
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref sssd_db_log_perform "sysprep_operation_sssd_db_log.ml" 24 851 855 "sysprep_operation_sssd_db_log.ml" 24 851 874
+)
+"sysprep_operation_sssd_db_log.ml" 44 1390 1419 "sysprep_operation_sssd_db_log.ml" 44 1390 1443
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_sssd_db_log.ml" 39 1245 1254 "sysprep_operation_sssd_db_log.ml" 45 1445 1446
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_sssd_db_log.ml" 47 1448 1452 "sysprep_operation_sssd_db_log.ml" 47 1448 1454
+type(
+  unit
+)
+"sysprep_operation_sssd_db_log.ml" 47 1448 1457 "sysprep_operation_sssd_db_log.ml" 47 1448 1475
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_sssd_db_log.ml" 47 1448 1476 "sysprep_operation_sssd_db_log.ml" 47 1448 1478
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_sssd_db_log.ml" 39 1245 1249 "sysprep_operation_sssd_db_log.ml" 39 1245 1251
+)
+"sysprep_operation_sssd_db_log.ml" 47 1448 1457 "sysprep_operation_sssd_db_log.ml" 47 1448 1478
+call(
+  stack
+)
+type(
+  unit
+)

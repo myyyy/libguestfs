@@ -1,0 +1,715 @@
+"input_disk.ml" 27 860 877 "input_disk.ml" 27 860 889
+type(
+  string option
+)
+"input_disk.ml" 27 860 890 "input_disk.ml" 27 860 894
+type(
+  string
+)
+"input_disk.ml" 31 943 947 "input_disk.ml" 31 943 954
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"input_disk.ml" 31 943 955 "input_disk.ml" 31 943 969
+type(
+  (string -> string -> string, unit, string) format
+)
+"input_disk.ml" 32 970 983 "input_disk.ml" 32 970 995
+type(
+  string option
+)
+"input_disk.ml" 33 1001 1009 "input_disk.ml" 33 1001 1013
+type(
+  string option
+)
+"input_disk.ml" 33 1001 1017 "input_disk.ml" 33 1001 1019
+type(
+  string
+)
+"input_disk.ml" 34 1020 1033 "input_disk.ml" 34 1020 1036
+type(
+  string
+)
+ident(
+  def fmt "input_disk.ml" 34 1020 1040 "input_disk.ml" 34 1020 1053
+)
+"input_disk.ml" 34 1020 1028 "input_disk.ml" 34 1020 1036
+type(
+  string option
+)
+"input_disk.ml" 34 1020 1040 "input_disk.ml" 34 1020 1047
+type(
+  string
+)
+"input_disk.ml" 34 1020 1048 "input_disk.ml" 34 1020 1049
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"input_disk.ml" 34 1020 1050 "input_disk.ml" 34 1020 1053
+type(
+  string
+)
+ident(
+  int_ref fmt "input_disk.ml" 34 1020 1033 "input_disk.ml" 34 1020 1036
+)
+"input_disk.ml" 34 1020 1040 "input_disk.ml" 34 1020 1053
+call(
+  stack
+)
+type(
+  string
+)
+"input_disk.ml" 32 970 976 "input_disk.ml" 34 1020 1054
+type(
+  string
+)
+"input_disk.ml" 35 1055 1061 "input_disk.ml" 35 1055 1065
+type(
+  string
+)
+"input_disk.ml" 31 943 947 "input_disk.ml" 35 1055 1065
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"input_disk.ml" 37 1067 1083 "input_disk.ml" 37 1067 1085
+type(
+  unit
+)
+"input_disk.ml" 39 1143 1147 "input_disk.ml" 39 1143 1158
+type(
+  string -> Unix.access_permission list -> unit
+)
+ident(
+  ext_ref Unix.access
+)
+"input_disk.ml" 39 1143 1159 "input_disk.ml" 39 1143 1163
+type(
+  string
+)
+"input_disk.ml" 39 1143 1165 "input_disk.ml" 39 1143 1174
+type(
+  Unix.access_permission
+)
+"input_disk.ml" 39 1143 1164 "input_disk.ml" 39 1143 1175
+type(
+  Unix.access_permission list
+)
+"input_disk.ml" 39 1143 1147 "input_disk.ml" 39 1143 1175
+call(
+  stack
+)
+type(
+  unit
+)
+"input_disk.ml" 45 1350 1358 "input_disk.ml" 45 1350 1362
+type(
+  string
+)
+"input_disk.ml" 45 1350 1365 "input_disk.ml" 45 1350 1382
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.basename
+)
+"input_disk.ml" 45 1350 1383 "input_disk.ml" 45 1350 1387
+type(
+  string
+)
+"input_disk.ml" 45 1350 1365 "input_disk.ml" 45 1350 1387
+call(
+  stack
+)
+type(
+  string
+)
+"input_disk.ml" 46 1391 1399 "input_disk.ml" 46 1391 1403
+type(
+  string
+)
+"input_disk.ml" 47 1406 1416 "input_disk.ml" 47 1406 1439
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.chop_extension
+)
+"input_disk.ml" 47 1406 1440 "input_disk.ml" 47 1406 1444
+type(
+  string
+)
+ident(
+  int_ref name "input_disk.ml" 45 1350 1358 "input_disk.ml" 45 1350 1362
+)
+"input_disk.ml" 47 1406 1416 "input_disk.ml" 47 1406 1444
+call(
+  stack
+)
+type(
+  string
+)
+"input_disk.ml" 47 1406 1467 "input_disk.ml" 47 1406 1468
+type(
+  string
+)
+"input_disk.ml" 47 1406 1450 "input_disk.ml" 47 1406 1468
+type(
+  exn
+)
+"input_disk.ml" 47 1406 1472 "input_disk.ml" 47 1406 1476
+type(
+  string
+)
+ident(
+  int_ref name "input_disk.ml" 45 1350 1358 "input_disk.ml" 45 1350 1362
+)
+"input_disk.ml" 47 1406 1412 "input_disk.ml" 47 1406 1476
+type(
+  string
+)
+"input_disk.ml" 48 1480 1487 "input_disk.ml" 48 1480 1491
+type(
+  string
+)
+ident(
+  int_ref name "input_disk.ml" 46 1391 1399 "input_disk.ml" 46 1391 1403
+)
+"input_disk.ml" 48 1480 1492 "input_disk.ml" 48 1480 1493
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"input_disk.ml" 48 1480 1494 "input_disk.ml" 48 1480 1496
+type(
+  string
+)
+"input_disk.ml" 48 1480 1487 "input_disk.ml" 48 1480 1496
+type(
+  bool
+)
+"input_disk.ml" 49 1502 1508 "input_disk.ml" 49 1502 1513
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_disk.ml" 49 1502 1515 "input_disk.ml" 49 1502 1517
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_disk.ml" 49 1502 1517 "input_disk.ml" 49 1502 1555
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"input_disk.ml" 49 1502 1514 "input_disk.ml" 49 1502 1556
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"input_disk.ml" 49 1502 1557 "input_disk.ml" 49 1502 1561
+type(
+  string
+)
+"input_disk.ml" 49 1502 1508 "input_disk.ml" 49 1502 1561
+call(
+  stack
+)
+type(
+  unit
+)
+"input_disk.ml" 48 1480 1484 "input_disk.ml" 49 1502 1561
+type(
+  unit
+)
+"input_disk.ml" 52 1614 1622 "input_disk.ml" 52 1614 1635
+type(
+  string
+)
+"input_disk.ml" 53 1638 1647 "input_disk.ml" 53 1638 1650
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"input_disk.ml" 53 1638 1652 "input_disk.ml" 53 1638 1672
+type(
+  string -> bool
+)
+ident(
+  ext_ref Filename.is_relative
+)
+"input_disk.ml" 53 1638 1673 "input_disk.ml" 53 1638 1677
+type(
+  string
+)
+"input_disk.ml" 53 1638 1651 "input_disk.ml" 53 1638 1678
+call(
+  stack
+)
+type(
+  bool
+)
+"input_disk.ml" 53 1638 1647 "input_disk.ml" 53 1638 1678
+type(
+  bool
+)
+"input_disk.ml" 53 1638 1684 "input_disk.ml" 53 1638 1688
+type(
+  string
+)
+"input_disk.ml" 54 1689 1700 "input_disk.ml" 54 1689 1710
+type(
+  unit -> string
+)
+ident(
+  ext_ref Sys.getcwd
+)
+"input_disk.ml" 54 1689 1711 "input_disk.ml" 54 1689 1713
+type(
+  unit
+)
+"input_disk.ml" 54 1689 1700 "input_disk.ml" 54 1689 1713
+type(
+  string
+)
+"input_disk.ml" 54 1689 1714 "input_disk.ml" 54 1689 1716
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"input_disk.ml" 54 1689 1717 "input_disk.ml" 54 1689 1721
+type(
+  string
+)
+"input_disk.ml" 54 1689 1700 "input_disk.ml" 54 1689 1721
+call(
+  stack
+)
+type(
+  string
+)
+"input_disk.ml" 53 1638 1644 "input_disk.ml" 54 1689 1721
+type(
+  string
+)
+"input_disk.ml" 59 1837 1845 "input_disk.ml" 59 1837 1851
+type(
+  string
+)
+"input_disk.ml" 60 1854 1866 "input_disk.ml" 60 1854 1878
+type(
+  string option
+)
+"input_disk.ml" 61 1884 1897 "input_disk.ml" 61 1884 1903
+type(
+  string
+)
+ident(
+  def format "input_disk.ml" 61 1884 1907 "input_disk.ml" 61 1884 1913
+)
+"input_disk.ml" 61 1884 1892 "input_disk.ml" 61 1884 1903
+type(
+  string option
+)
+"input_disk.ml" 61 1884 1907 "input_disk.ml" 61 1884 1913
+type(
+  string
+)
+ident(
+  int_ref format "input_disk.ml" 61 1884 1897 "input_disk.ml" 61 1884 1903
+)
+"input_disk.ml" 62 1914 1922 "input_disk.ml" 62 1914 1926
+type(
+  string option
+)
+"input_disk.ml" 63 1930 1945 "input_disk.ml" 63 1930 1964
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> Guestfs.guestfs
+)
+"input_disk.ml" 63 1930 1965 "input_disk.ml" 63 1930 1967
+type(
+  unit
+)
+"input_disk.ml" 63 1930 1944 "input_disk.ml" 63 1930 1968
+call(
+  stack
+)
+type(
+  Guestfs.guestfs
+)
+"input_disk.ml" 63 1930 1944 "input_disk.ml" 63 1930 1980
+call(
+  stack
+)
+type(
+  string -> string
+)
+"input_disk.ml" 63 1930 1981 "input_disk.ml" 63 1930 1985
+type(
+  string
+)
+"input_disk.ml" 63 1930 1944 "input_disk.ml" 63 1930 1985
+type(
+  string
+)
+"input_disk.ml" 64 1991 2001 "input_disk.ml" 64 1991 2010
+type(
+  string
+)
+"input_disk.ml" 65 2014 2024 "input_disk.ml" 65 2014 2029
+type(
+  ?exit_code:int -> (string, unit, string, string) format4 -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_disk.ml" 65 2014 2031 "input_disk.ml" 65 2014 2033
+type(
+  (string, unit, string, string, string, string) format6 ->
+  (string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_disk.ml" 65 2014 2033 "input_disk.ml" 65 2014 2093
+type(
+  (string, unit, string, string, string, string) format6
+)
+"input_disk.ml" 65 2014 2030 "input_disk.ml" 65 2014 2094
+type(
+  (string, unit, string, string) format4
+)
+"input_disk.ml" 65 2014 2024 "input_disk.ml" 65 2014 2094
+call(
+  stack
+)
+type(
+  string
+)
+"input_disk.ml" 66 2095 2105 "input_disk.ml" 66 2095 2111
+type(
+  string
+)
+ident(
+  def format "input_disk.ml" 66 2095 2115 "input_disk.ml" 66 2095 2121
+)
+"input_disk.ml" 66 2095 2115 "input_disk.ml" 66 2095 2121
+type(
+  string
+)
+ident(
+  int_ref format "input_disk.ml" 66 2095 2105 "input_disk.ml" 66 2095 2111
+)
+"input_disk.ml" 63 1930 1938 "input_disk.ml" 66 2095 2121
+type(
+  string
+)
+"input_disk.ml" 60 1854 1860 "input_disk.ml" 66 2095 2121
+type(
+  string
+)
+"input_disk.ml" 68 2126 2134 "input_disk.ml" 68 2126 2138
+type(
+  Types.source_disk
+)
+"input_disk.ml" 69 2143 2161 "input_disk.ml" 69 2143 2162
+type(
+  int
+)
+"input_disk.ml" 70 2164 2183 "input_disk.ml" 70 2164 2196
+type(
+  string
+)
+ident(
+  int_ref disk_absolute "input_disk.ml" 52 1614 1622 "input_disk.ml" 52 1614 1635
+)
+"input_disk.ml" 71 2198 2220 "input_disk.ml" 71 2198 2226
+type(
+  string
+)
+ident(
+  int_ref format "input_disk.ml" 59 1837 1845 "input_disk.ml" 59 1837 1851
+)
+"input_disk.ml" 71 2198 2215 "input_disk.ml" 71 2198 2226
+type(
+  string option
+)
+"input_disk.ml" 72 2228 2249 "input_disk.ml" 72 2228 2253
+type(
+  Types.s_controller option
+)
+"input_disk.ml" 68 2126 2141 "input_disk.ml" 73 2255 2260
+type(
+  Types.source_disk
+)
+"input_disk.ml" 76 2326 2334 "input_disk.ml" 76 2326 2341
+type(
+  Types.source_nic
+)
+"input_disk.ml" 77 2346 2360 "input_disk.ml" 77 2346 2364
+type(
+  string option
+)
+"input_disk.ml" 78 2366 2381 "input_disk.ml" 78 2366 2390
+type(
+  string
+)
+"input_disk.ml" 78 2366 2406 "input_disk.ml" 78 2366 2415
+type(
+  string
+)
+"input_disk.ml" 79 2417 2437 "input_disk.ml" 79 2417 2444
+type(
+  Types.vnet_type
+)
+"input_disk.ml" 76 2326 2344 "input_disk.ml" 80 2445 2450
+type(
+  Types.source_nic
+)
+"input_disk.ml" 82 2455 2463 "input_disk.ml" 82 2455 2469
+type(
+  Types.source
+)
+"input_disk.ml" 83 2474 2495 "input_disk.ml" 83 2474 2504
+type(
+  Types.source_hypervisor
+)
+"input_disk.ml" 84 2506 2521 "input_disk.ml" 84 2506 2525
+type(
+  string
+)
+ident(
+  int_ref name "input_disk.ml" 46 1391 1399 "input_disk.ml" 46 1391 1403
+)
+"input_disk.ml" 84 2506 2541 "input_disk.ml" 84 2506 2545
+type(
+  string
+)
+ident(
+  int_ref name "input_disk.ml" 46 1391 1399 "input_disk.ml" 46 1391 1403
+)
+"input_disk.ml" 85 2547 2564 "input_disk.ml" 85 2547 2569
+type(
+  int64
+)
+"input_disk.ml" 85 2547 2570 "input_disk.ml" 85 2547 2572
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( *^ )
+)
+"input_disk.ml" 85 2547 2573 "input_disk.ml" 85 2547 2578
+type(
+  int64
+)
+"input_disk.ml" 85 2547 2564 "input_disk.ml" 85 2547 2578
+call(
+  stack
+)
+type(
+  int64
+)
+"input_disk.ml" 85 2547 2579 "input_disk.ml" 85 2547 2581
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( *^ )
+)
+"input_disk.ml" 85 2547 2582 "input_disk.ml" 85 2547 2587
+type(
+  int64
+)
+"input_disk.ml" 85 2547 2564 "input_disk.ml" 85 2547 2587
+call(
+  stack
+)
+type(
+  int64
+)
+"input_disk.ml" 86 2603 2618 "input_disk.ml" 86 2603 2619
+type(
+  int
+)
+"input_disk.ml" 87 2676 2697 "input_disk.ml" 87 2676 2703
+type(
+  string
+)
+"input_disk.ml" 87 2676 2705 "input_disk.ml" 87 2676 2711
+type(
+  string
+)
+"input_disk.ml" 87 2676 2713 "input_disk.ml" 87 2676 2718
+type(
+  string
+)
+"input_disk.ml" 87 2676 2695 "input_disk.ml" 87 2676 2720
+type(
+  string list
+)
+"input_disk.ml" 88 2722 2741 "input_disk.ml" 88 2722 2756
+type(
+  Types.source_firmware
+)
+"input_disk.ml" 90 2818 2850 "input_disk.ml" 90 2818 2856
+type(
+  Types.s_display_type
+)
+"input_disk.ml" 90 2818 2869 "input_disk.ml" 90 2818 2873
+type(
+  string option
+)
+"input_disk.ml" 90 2818 2888 "input_disk.ml" 90 2818 2892
+type(
+  string option
+)
+"input_disk.ml" 91 2894 2920 "input_disk.ml" 91 2894 2925
+type(
+  Types.s_display_listen
+)
+"input_disk.ml" 91 2894 2936 "input_disk.ml" 91 2894 2940
+type(
+  int option
+)
+"input_disk.ml" 90 2818 2831 "input_disk.ml" 91 2894 2942
+type(
+  Types.source_display
+)
+"input_disk.ml" 90 2818 2826 "input_disk.ml" 91 2894 2942
+type(
+  Types.source_display option
+)
+"input_disk.ml" 92 2944 2960 "input_disk.ml" 92 2944 2964
+type(
+  Types.source_sound option
+)
+"input_disk.ml" 93 2966 2983 "input_disk.ml" 93 2966 2987
+type(
+  Types.source_disk
+)
+ident(
+  int_ref disk "input_disk.ml" 68 2126 2134 "input_disk.ml" 68 2126 2138
+)
+"input_disk.ml" 93 2966 2982 "input_disk.ml" 93 2966 2988
+type(
+  Types.source_disk list
+)
+"input_disk.ml" 94 2990 3011 "input_disk.ml" 94 2990 3013
+type(
+  Types.source_removable list
+)
+"input_disk.ml" 95 3015 3031 "input_disk.ml" 95 3015 3038
+type(
+  Types.source_nic
+)
+ident(
+  int_ref network "input_disk.ml" 76 2326 2334 "input_disk.ml" 76 2326 2341
+)
+"input_disk.ml" 95 3015 3030 "input_disk.ml" 95 3015 3039
+type(
+  Types.source_nic list
+)
+"input_disk.ml" 82 2455 2472 "input_disk.ml" 96 3041 3046
+type(
+  Types.source
+)
+"input_disk.ml" 98 3051 3055 "input_disk.ml" 98 3051 3061
+type(
+  Types.source
+)
+ident(
+  int_ref source "input_disk.ml" 82 2455 2463 "input_disk.ml" 82 2455 2469
+)
+"input_disk.ml" 82 2455 2459 "input_disk.ml" 98 3051 3061
+type(
+  Types.source
+)
+"input_disk.ml" 76 2326 2330 "input_disk.ml" 98 3051 3061
+type(
+  Types.source
+)
+"input_disk.ml" 68 2126 2130 "input_disk.ml" 98 3051 3061
+type(
+  Types.source
+)
+"input_disk.ml" 59 1837 1841 "input_disk.ml" 98 3051 3061
+type(
+  Types.source
+)
+"input_disk.ml" 52 1614 1618 "input_disk.ml" 98 3051 3061
+type(
+  Types.source
+)
+"input_disk.ml" 48 1480 1484 "input_disk.ml" 98 3051 3061
+type(
+  Types.source
+)
+"input_disk.ml" 46 1391 1395 "input_disk.ml" 98 3051 3061
+type(
+  Types.source
+)
+"input_disk.ml" 45 1350 1354 "input_disk.ml" 98 3051 3061
+type(
+  Types.source
+)
+"input_disk.ml" 39 1143 1147 "input_disk.ml" 98 3051 3061
+type(
+  Types.source
+)
+"input_disk.ml" 101 3067 3071 "input_disk.ml" 101 3067 3081
+type(
+  string option -> string -> input_disk
+)
+ident(
+  def input_disk "input_disk.ml" 102 3099 3099 --
+)
+"input_disk.ml" 101 3067 3084 "input_disk.ml" 101 3067 3098
+type(
+  string option -> string -> input_disk
+)
+"input_disk.ml" 102 3099 3103 "input_disk.ml" 102 3099 3105
+type(
+  unit
+)
+"input_disk.ml" 102 3099 3108 "input_disk.ml" 102 3099 3142
+type(
+  string -> unit
+)
+ident(
+  ext_ref Modules_list.register_input_module
+)
+"input_disk.ml" 102 3099 3143 "input_disk.ml" 102 3099 3149
+type(
+  string
+)
+"input_disk.ml" 102 3099 3108 "input_disk.ml" 102 3099 3149
+call(
+  stack
+)
+type(
+  unit
+)

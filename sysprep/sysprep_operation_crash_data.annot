@@ -1,0 +1,291 @@
+"sysprep_operation_crash_data.ml" 24 852 856 "sysprep_operation_crash_data.ml" 24 852 861
+type(
+  string list
+)
+ident(
+  def globs "sysprep_operation_crash_data.ml" 29 908 908 --
+)
+"sysprep_operation_crash_data.ml" 25 866 868 "sysprep_operation_crash_data.ml" 25 866 882
+type(
+  string
+)
+"sysprep_operation_crash_data.ml" 26 884 886 "sysprep_operation_crash_data.ml" 26 884 903
+type(
+  string
+)
+"sysprep_operation_crash_data.ml" 24 852 864 "sysprep_operation_crash_data.ml" 27 905 906
+type(
+  string list
+)
+"sysprep_operation_crash_data.ml" 29 908 912 "sysprep_operation_crash_data.ml" 29 908 930
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm_rf : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def crash_data_perform "sysprep_operation_crash_data.ml" 35 1097 1097 --
+)
+"sysprep_operation_crash_data.ml" 29 908 931 "sysprep_operation_crash_data.ml" 29 908 932
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm_rf : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_crash_data.ml" 29 908 933 "sysprep_operation_crash_data.ml" 33 1092 1095
+)
+"sysprep_operation_crash_data.ml" 29 908 933 "sysprep_operation_crash_data.ml" 29 908 937
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_crash_data.ml" 29 908 938 "sysprep_operation_crash_data.ml" 33 1092 1095
+)
+"sysprep_operation_crash_data.ml" 29 908 938 "sysprep_operation_crash_data.ml" 29 908 950
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_crash_data.ml" 30 953 955 "sysprep_operation_crash_data.ml" 33 1092 1095
+)
+"sysprep_operation_crash_data.ml" 30 953 959 "sysprep_operation_crash_data.ml" 30 953 962
+type(
+  string
+)
+"sysprep_operation_crash_data.ml" 30 953 965 "sysprep_operation_crash_data.ml" 30 953 966
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_crash_data.ml" 29 908 931 "sysprep_operation_crash_data.ml" 29 908 932
+)
+"sysprep_operation_crash_data.ml" 30 953 965 "sysprep_operation_crash_data.ml" 30 953 983
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_crash_data.ml" 30 953 984 "sysprep_operation_crash_data.ml" 30 953 988
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_crash_data.ml" 29 908 933 "sysprep_operation_crash_data.ml" 29 908 937
+)
+"sysprep_operation_crash_data.ml" 30 953 965 "sysprep_operation_crash_data.ml" 30 953 988
+type(
+  string
+)
+"sysprep_operation_crash_data.ml" 31 992 997 "sysprep_operation_crash_data.ml" 31 992 1000
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_crash_data.ml" 30 953 959 "sysprep_operation_crash_data.ml" 30 953 962
+)
+"sysprep_operation_crash_data.ml" 31 992 1001 "sysprep_operation_crash_data.ml" 31 992 1002
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation_crash_data.ml" 31 992 1003 "sysprep_operation_crash_data.ml" 31 992 1010
+type(
+  string
+)
+"sysprep_operation_crash_data.ml" 31 992 997 "sysprep_operation_crash_data.ml" 31 992 1010
+type(
+  bool
+)
+"sysprep_operation_crash_data.ml" 32 1018 1022 "sysprep_operation_crash_data.ml" 32 1018 1031
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_crash_data.ml" 32 1018 1037 "sysprep_operation_crash_data.ml" 32 1018 1041
+type(
+  string
+)
+ident(
+  def glob "sysprep_operation_crash_data.ml" 32 1018 1045 "sysprep_operation_crash_data.ml" 32 1018 1084
+)
+"sysprep_operation_crash_data.ml" 32 1018 1045 "sysprep_operation_crash_data.ml" 32 1018 1055
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_crash_data.ml" 32 1018 1056 "sysprep_operation_crash_data.ml" 32 1018 1057
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_crash_data.ml" 29 908 931 "sysprep_operation_crash_data.ml" 29 908 932
+)
+"sysprep_operation_crash_data.ml" 32 1018 1056 "sysprep_operation_crash_data.ml" 32 1018 1063
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_crash_data.ml" 32 1018 1065 "sysprep_operation_crash_data.ml" 32 1018 1066
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_crash_data.ml" 29 908 931 "sysprep_operation_crash_data.ml" 29 908 932
+)
+"sysprep_operation_crash_data.ml" 32 1018 1065 "sysprep_operation_crash_data.ml" 32 1018 1078
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_crash_data.ml" 32 1018 1079 "sysprep_operation_crash_data.ml" 32 1018 1083
+type(
+  string
+)
+ident(
+  int_ref glob "sysprep_operation_crash_data.ml" 32 1018 1037 "sysprep_operation_crash_data.ml" 32 1018 1041
+)
+"sysprep_operation_crash_data.ml" 32 1018 1064 "sysprep_operation_crash_data.ml" 32 1018 1084
+type(
+  'a array
+)
+"sysprep_operation_crash_data.ml" 32 1018 1045 "sysprep_operation_crash_data.ml" 32 1018 1084
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_crash_data.ml" 32 1018 1032 "sysprep_operation_crash_data.ml" 32 1018 1085
+type(
+  string -> unit
+)
+"sysprep_operation_crash_data.ml" 32 1018 1086 "sysprep_operation_crash_data.ml" 32 1018 1091
+type(
+  string list
+)
+ident(
+  int_ref globs "sysprep_operation_crash_data.ml" 24 852 856 "sysprep_operation_crash_data.ml" 24 852 861
+)
+"sysprep_operation_crash_data.ml" 31 992 1016 "sysprep_operation_crash_data.ml" 33 1092 1095
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_crash_data.ml" 31 992 994 "sysprep_operation_crash_data.ml" 33 1092 1095
+type(
+  unit
+)
+"sysprep_operation_crash_data.ml" 30 953 955 "sysprep_operation_crash_data.ml" 33 1092 1095
+type(
+  unit
+)
+"sysprep_operation_crash_data.ml" 35 1097 1101 "sysprep_operation_crash_data.ml" 35 1097 1103
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_crash_data.ml" 45 1399 1399 --
+)
+"sysprep_operation_crash_data.ml" 36 1108 1110 "sysprep_operation_crash_data.ml" 36 1108 1118
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_crash_data.ml" 37 1124 1135 "sysprep_operation_crash_data.ml" 37 1124 1147
+type(
+  string
+)
+"sysprep_operation_crash_data.ml" 38 1149 1174 "sysprep_operation_crash_data.ml" 38 1149 1178
+type(
+  bool
+)
+"sysprep_operation_crash_data.ml" 39 1180 1194 "sysprep_operation_crash_data.ml" 39 1180 1196
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_crash_data.ml" 39 1180 1196 "sysprep_operation_crash_data.ml" 39 1180 1244
+type(
+  string
+)
+"sysprep_operation_crash_data.ml" 39 1180 1194 "sysprep_operation_crash_data.ml" 39 1180 1244
+type(
+  string
+)
+"sysprep_operation_crash_data.ml" 40 1246 1274 "sysprep_operation_crash_data.ml" 40 1246 1276
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_crash_data.ml" 40 1246 1276 "sysprep_operation_crash_data.ml" 41 1279 1339
+type(
+  string
+)
+"sysprep_operation_crash_data.ml" 40 1246 1273 "sysprep_operation_crash_data.ml" 41 1279 1340
+type(
+  string
+)
+"sysprep_operation_crash_data.ml" 40 1246 1268 "sysprep_operation_crash_data.ml" 41 1279 1340
+type(
+  string option
+)
+"sysprep_operation_crash_data.ml" 42 1342 1376 "sysprep_operation_crash_data.ml" 42 1342 1394
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref crash_data_perform "sysprep_operation_crash_data.ml" 29 908 912 "sysprep_operation_crash_data.ml" 29 908 930
+)
+"sysprep_operation_crash_data.ml" 42 1342 1371 "sysprep_operation_crash_data.ml" 42 1342 1394
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_crash_data.ml" 35 1097 1106 "sysprep_operation_crash_data.ml" 43 1396 1397
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_crash_data.ml" 45 1399 1403 "sysprep_operation_crash_data.ml" 45 1399 1405
+type(
+  unit
+)
+"sysprep_operation_crash_data.ml" 45 1399 1408 "sysprep_operation_crash_data.ml" 45 1399 1426
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_crash_data.ml" 45 1399 1427 "sysprep_operation_crash_data.ml" 45 1399 1429
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_crash_data.ml" 35 1097 1101 "sysprep_operation_crash_data.ml" 35 1097 1103
+)
+"sysprep_operation_crash_data.ml" 45 1399 1408 "sysprep_operation_crash_data.ml" 45 1399 1429
+call(
+  stack
+)
+type(
+  unit
+)

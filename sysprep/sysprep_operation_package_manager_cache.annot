@@ -1,0 +1,332 @@
+"sysprep_operation_package_manager_cache.ml" 25 869 873 "sysprep_operation_package_manager_cache.ml" 25 869 902
+type(
+  Guestfs.guestfs -> string -> 'a -> unit
+)
+ident(
+  def package_manager_cache_perform "sysprep_operation_package_manager_cache.ml" 42 1368 1368 --
+)
+"sysprep_operation_package_manager_cache.ml" 25 869 903 "sysprep_operation_package_manager_cache.ml" 25 869 904
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "sysprep_operation_package_manager_cache.ml" 25 869 905 "sysprep_operation_package_manager_cache.ml" 40 1355 1366
+)
+"sysprep_operation_package_manager_cache.ml" 25 869 905 "sysprep_operation_package_manager_cache.ml" 25 869 909
+type(
+  string
+)
+ident(
+  def root "sysprep_operation_package_manager_cache.ml" 25 869 910 "sysprep_operation_package_manager_cache.ml" 40 1355 1366
+)
+"sysprep_operation_package_manager_cache.ml" 25 869 910 "sysprep_operation_package_manager_cache.ml" 25 869 922
+type(
+  'a
+)
+ident(
+  def side_effects "sysprep_operation_package_manager_cache.ml" 26 925 927 "sysprep_operation_package_manager_cache.ml" 40 1355 1366
+)
+"sysprep_operation_package_manager_cache.ml" 26 925 931 "sysprep_operation_package_manager_cache.ml" 26 925 939
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 26 925 942 "sysprep_operation_package_manager_cache.ml" 26 925 943
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_package_manager_cache.ml" 25 869 903 "sysprep_operation_package_manager_cache.ml" 25 869 904
+)
+"sysprep_operation_package_manager_cache.ml" 26 925 942 "sysprep_operation_package_manager_cache.ml" 26 925 974
+call(
+  stack
+)
+type(
+  string -> string
+)
+"sysprep_operation_package_manager_cache.ml" 26 925 975 "sysprep_operation_package_manager_cache.ml" 26 925 979
+type(
+  string
+)
+ident(
+  int_ref root "sysprep_operation_package_manager_cache.ml" 25 869 905 "sysprep_operation_package_manager_cache.ml" 25 869 909
+)
+"sysprep_operation_package_manager_cache.ml" 26 925 942 "sysprep_operation_package_manager_cache.ml" 26 925 979
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 27 983 989 "sysprep_operation_package_manager_cache.ml" 27 983 999
+type(
+  string list option
+)
+"sysprep_operation_package_manager_cache.ml" 28 1002 1012 "sysprep_operation_package_manager_cache.ml" 28 1002 1020
+type(
+  string
+)
+ident(
+  int_ref packager "sysprep_operation_package_manager_cache.ml" 26 925 931 "sysprep_operation_package_manager_cache.ml" 26 925 939
+)
+"sysprep_operation_package_manager_cache.ml" 29 1026 1032 "sysprep_operation_package_manager_cache.ml" 29 1026 1037
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 30 1041 1054 "sysprep_operation_package_manager_cache.ml" 30 1041 1080
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 30 1041 1052 "sysprep_operation_package_manager_cache.ml" 30 1041 1082
+type(
+  string list
+)
+"sysprep_operation_package_manager_cache.ml" 30 1041 1047 "sysprep_operation_package_manager_cache.ml" 30 1041 1082
+type(
+  string list option
+)
+"sysprep_operation_package_manager_cache.ml" 31 1083 1089 "sysprep_operation_package_manager_cache.ml" 31 1083 1094
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 32 1098 1111 "sysprep_operation_package_manager_cache.ml" 32 1098 1128
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 32 1098 1109 "sysprep_operation_package_manager_cache.ml" 32 1098 1130
+type(
+  string list
+)
+"sysprep_operation_package_manager_cache.ml" 32 1098 1104 "sysprep_operation_package_manager_cache.ml" 32 1098 1130
+type(
+  string list option
+)
+"sysprep_operation_package_manager_cache.ml" 33 1131 1137 "sysprep_operation_package_manager_cache.ml" 33 1131 1142
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 34 1146 1159 "sysprep_operation_package_manager_cache.ml" 34 1146 1176
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 34 1146 1157 "sysprep_operation_package_manager_cache.ml" 34 1146 1178
+type(
+  string list
+)
+"sysprep_operation_package_manager_cache.ml" 34 1146 1152 "sysprep_operation_package_manager_cache.ml" 34 1146 1178
+type(
+  string list option
+)
+"sysprep_operation_package_manager_cache.ml" 35 1179 1185 "sysprep_operation_package_manager_cache.ml" 35 1179 1193
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 36 1197 1209 "sysprep_operation_package_manager_cache.ml" 36 1197 1222
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"sysprep_operation_package_manager_cache.ml" 36 1197 1224 "sysprep_operation_package_manager_cache.ml" 36 1197 1225
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_package_manager_cache.ml" 25 869 903 "sysprep_operation_package_manager_cache.ml" 25 869 904
+)
+"sysprep_operation_package_manager_cache.ml" 36 1197 1224 "sysprep_operation_package_manager_cache.ml" 36 1197 1237
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"sysprep_operation_package_manager_cache.ml" 36 1197 1238 "sysprep_operation_package_manager_cache.ml" 36 1197 1256
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 36 1197 1223 "sysprep_operation_package_manager_cache.ml" 36 1197 1257
+type(
+  string array
+)
+"sysprep_operation_package_manager_cache.ml" 36 1197 1208 "sysprep_operation_package_manager_cache.ml" 36 1197 1258
+call(
+  stack
+)
+type(
+  string list
+)
+"sysprep_operation_package_manager_cache.ml" 36 1197 1203 "sysprep_operation_package_manager_cache.ml" 36 1197 1258
+type(
+  string list option
+)
+"sysprep_operation_package_manager_cache.ml" 37 1259 1265 "sysprep_operation_package_manager_cache.ml" 37 1259 1266
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 37 1259 1270 "sysprep_operation_package_manager_cache.ml" 37 1259 1274
+type(
+  string list option
+)
+"sysprep_operation_package_manager_cache.ml" 28 1002 1006 "sysprep_operation_package_manager_cache.ml" 37 1259 1274
+type(
+  string list option
+)
+"sysprep_operation_package_manager_cache.ml" 38 1278 1286 "sysprep_operation_package_manager_cache.ml" 38 1278 1296
+type(
+  string list option
+)
+ident(
+  int_ref cache_dirs "sysprep_operation_package_manager_cache.ml" 27 983 989 "sysprep_operation_package_manager_cache.ml" 27 983 999
+)
+"sysprep_operation_package_manager_cache.ml" 39 1302 1311 "sysprep_operation_package_manager_cache.ml" 39 1302 1315
+type(
+  string list
+)
+ident(
+  def dirs "sysprep_operation_package_manager_cache.ml" 39 1302 1319 "sysprep_operation_package_manager_cache.ml" 39 1302 1354
+)
+"sysprep_operation_package_manager_cache.ml" 39 1302 1306 "sysprep_operation_package_manager_cache.ml" 39 1302 1315
+type(
+  string list option
+)
+"sysprep_operation_package_manager_cache.ml" 39 1302 1319 "sysprep_operation_package_manager_cache.ml" 39 1302 1328
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_package_manager_cache.ml" 39 1302 1330 "sysprep_operation_package_manager_cache.ml" 39 1302 1346
+type(
+  Guestfs.guestfs -> ?filter:(string -> bool) -> string -> unit
+)
+ident(
+  ext_ref Common_utils.rm_rf_only_files
+)
+"sysprep_operation_package_manager_cache.ml" 39 1302 1347 "sysprep_operation_package_manager_cache.ml" 39 1302 1348
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_package_manager_cache.ml" 25 869 903 "sysprep_operation_package_manager_cache.ml" 25 869 904
+)
+"sysprep_operation_package_manager_cache.ml" 39 1302 1329 "sysprep_operation_package_manager_cache.ml" 39 1302 1349
+call(
+  stack
+)
+type(
+  string -> unit
+)
+type(
+  ?filter:(string -> bool) -> string -> unit
+)
+"sysprep_operation_package_manager_cache.ml" 39 1302 1350 "sysprep_operation_package_manager_cache.ml" 39 1302 1354
+type(
+  string list
+)
+ident(
+  int_ref dirs "sysprep_operation_package_manager_cache.ml" 39 1302 1311 "sysprep_operation_package_manager_cache.ml" 39 1302 1315
+)
+"sysprep_operation_package_manager_cache.ml" 39 1302 1319 "sysprep_operation_package_manager_cache.ml" 39 1302 1354
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_package_manager_cache.ml" 40 1355 1359 "sysprep_operation_package_manager_cache.ml" 40 1355 1360
+type(
+  string list option
+)
+"sysprep_operation_package_manager_cache.ml" 40 1355 1364 "sysprep_operation_package_manager_cache.ml" 40 1355 1366
+type(
+  unit
+)
+"sysprep_operation_package_manager_cache.ml" 38 1278 1280 "sysprep_operation_package_manager_cache.ml" 40 1355 1366
+type(
+  unit
+)
+"sysprep_operation_package_manager_cache.ml" 27 983 985 "sysprep_operation_package_manager_cache.ml" 40 1355 1366
+type(
+  unit
+)
+"sysprep_operation_package_manager_cache.ml" 26 925 927 "sysprep_operation_package_manager_cache.ml" 40 1355 1366
+type(
+  unit
+)
+"sysprep_operation_package_manager_cache.ml" 42 1368 1372 "sysprep_operation_package_manager_cache.ml" 42 1368 1374
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_package_manager_cache.ml" 50 1578 1578 --
+)
+"sysprep_operation_package_manager_cache.ml" 43 1379 1381 "sysprep_operation_package_manager_cache.ml" 43 1379 1389
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_package_manager_cache.ml" 44 1395 1406 "sysprep_operation_package_manager_cache.ml" 44 1395 1429
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 45 1431 1456 "sysprep_operation_package_manager_cache.ml" 45 1431 1460
+type(
+  bool
+)
+"sysprep_operation_package_manager_cache.ml" 46 1462 1476 "sysprep_operation_package_manager_cache.ml" 46 1462 1478
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_package_manager_cache.ml" 46 1462 1478 "sysprep_operation_package_manager_cache.ml" 46 1462 1508
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 46 1462 1476 "sysprep_operation_package_manager_cache.ml" 46 1462 1508
+type(
+  string
+)
+"sysprep_operation_package_manager_cache.ml" 47 1510 1544 "sysprep_operation_package_manager_cache.ml" 47 1510 1573
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref package_manager_cache_perform "sysprep_operation_package_manager_cache.ml" 25 869 873 "sysprep_operation_package_manager_cache.ml" 25 869 902
+)
+"sysprep_operation_package_manager_cache.ml" 47 1510 1539 "sysprep_operation_package_manager_cache.ml" 47 1510 1573
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_package_manager_cache.ml" 42 1368 1377 "sysprep_operation_package_manager_cache.ml" 48 1575 1576
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_package_manager_cache.ml" 50 1578 1582 "sysprep_operation_package_manager_cache.ml" 50 1578 1584
+type(
+  unit
+)
+"sysprep_operation_package_manager_cache.ml" 50 1578 1587 "sysprep_operation_package_manager_cache.ml" 50 1578 1605
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_package_manager_cache.ml" 50 1578 1606 "sysprep_operation_package_manager_cache.ml" 50 1578 1608
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_package_manager_cache.ml" 42 1368 1372 "sysprep_operation_package_manager_cache.ml" 42 1368 1374
+)
+"sysprep_operation_package_manager_cache.ml" 50 1578 1587 "sysprep_operation_package_manager_cache.ml" 50 1578 1608
+call(
+  stack
+)
+type(
+  unit
+)

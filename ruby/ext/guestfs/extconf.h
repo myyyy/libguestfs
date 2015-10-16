@@ -1,0 +1,7 @@
+#ifndef EXTCONF_H
+#define EXTCONF_H
+#define HAVE_GUESTFS_H 1
+#define HAVE_RB_HASH_LOOKUP 1
+#define HAVE_RB_DEFINE_ALLOC_FUNC 1
+#define HAVE_TYPE_RB_ALLOC_FUNC_T 1
+#endif

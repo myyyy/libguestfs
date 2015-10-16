@@ -1,0 +1,223 @@
+"sysprep_operation_yum_uuid.ml" 24 848 852 "sysprep_operation_yum_uuid.ml" 24 848 868
+type(
+  < inspect_get_package_management : 'a -> string; rm : string -> unit; .. > ->
+  'a -> 'b -> unit
+)
+ident(
+  def yum_uuid_perform "sysprep_operation_yum_uuid.ml" 30 1037 1037 --
+)
+"sysprep_operation_yum_uuid.ml" 24 848 869 "sysprep_operation_yum_uuid.ml" 24 848 870
+type(
+  < inspect_get_package_management : 'a -> string; rm : string -> unit; .. >
+  as 'c
+)
+ident(
+  def g "sysprep_operation_yum_uuid.ml" 24 848 871 "sysprep_operation_yum_uuid.ml" 28 1032 1035
+)
+"sysprep_operation_yum_uuid.ml" 24 848 871 "sysprep_operation_yum_uuid.ml" 24 848 875
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_yum_uuid.ml" 24 848 876 "sysprep_operation_yum_uuid.ml" 28 1032 1035
+)
+"sysprep_operation_yum_uuid.ml" 24 848 876 "sysprep_operation_yum_uuid.ml" 24 848 888
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_yum_uuid.ml" 25 891 893 "sysprep_operation_yum_uuid.ml" 28 1032 1035
+)
+"sysprep_operation_yum_uuid.ml" 25 891 897 "sysprep_operation_yum_uuid.ml" 25 891 905
+type(
+  string
+)
+"sysprep_operation_yum_uuid.ml" 25 891 908 "sysprep_operation_yum_uuid.ml" 25 891 909
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_yum_uuid.ml" 24 848 869 "sysprep_operation_yum_uuid.ml" 24 848 870
+)
+"sysprep_operation_yum_uuid.ml" 25 891 908 "sysprep_operation_yum_uuid.ml" 25 891 940
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_yum_uuid.ml" 25 891 941 "sysprep_operation_yum_uuid.ml" 25 891 945
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_yum_uuid.ml" 24 848 871 "sysprep_operation_yum_uuid.ml" 24 848 875
+)
+"sysprep_operation_yum_uuid.ml" 25 891 908 "sysprep_operation_yum_uuid.ml" 25 891 945
+type(
+  string
+)
+"sysprep_operation_yum_uuid.ml" 26 949 954 "sysprep_operation_yum_uuid.ml" 26 949 962
+type(
+  string
+)
+ident(
+  int_ref packager "sysprep_operation_yum_uuid.ml" 25 891 897 "sysprep_operation_yum_uuid.ml" 25 891 905
+)
+"sysprep_operation_yum_uuid.ml" 26 949 963 "sysprep_operation_yum_uuid.ml" 26 949 964
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation_yum_uuid.ml" 26 949 965 "sysprep_operation_yum_uuid.ml" 26 949 970
+type(
+  string
+)
+"sysprep_operation_yum_uuid.ml" 26 949 954 "sysprep_operation_yum_uuid.ml" 26 949 970
+type(
+  bool
+)
+"sysprep_operation_yum_uuid.ml" 27 978 986 "sysprep_operation_yum_uuid.ml" 27 978 987
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_yum_uuid.ml" 24 848 869 "sysprep_operation_yum_uuid.ml" 24 848 870
+)
+"sysprep_operation_yum_uuid.ml" 27 978 986 "sysprep_operation_yum_uuid.ml" 27 978 990
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_yum_uuid.ml" 27 978 991 "sysprep_operation_yum_uuid.ml" 27 978 1010
+type(
+  string
+)
+"sysprep_operation_yum_uuid.ml" 27 978 986 "sysprep_operation_yum_uuid.ml" 27 978 1010
+type(
+  unit
+)
+"sysprep_operation_yum_uuid.ml" 27 978 1024 "sysprep_operation_yum_uuid.ml" 27 978 1025
+type(
+  string
+)
+"sysprep_operation_yum_uuid.ml" 27 978 1016 "sysprep_operation_yum_uuid.ml" 27 978 1025
+type(
+  exn
+)
+"sysprep_operation_yum_uuid.ml" 27 978 1029 "sysprep_operation_yum_uuid.ml" 27 978 1031
+type(
+  unit
+)
+"sysprep_operation_yum_uuid.ml" 26 949 976 "sysprep_operation_yum_uuid.ml" 28 1032 1035
+type(
+  unit
+)
+"sysprep_operation_yum_uuid.ml" 26 949 951 "sysprep_operation_yum_uuid.ml" 28 1032 1035
+type(
+  unit
+)
+"sysprep_operation_yum_uuid.ml" 25 891 893 "sysprep_operation_yum_uuid.ml" 28 1032 1035
+type(
+  unit
+)
+"sysprep_operation_yum_uuid.ml" 30 1037 1041 "sysprep_operation_yum_uuid.ml" 30 1037 1043
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_yum_uuid.ml" 41 1351 1351 --
+)
+"sysprep_operation_yum_uuid.ml" 31 1048 1050 "sysprep_operation_yum_uuid.ml" 31 1048 1058
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_yum_uuid.ml" 32 1064 1075 "sysprep_operation_yum_uuid.ml" 32 1064 1085
+type(
+  string
+)
+"sysprep_operation_yum_uuid.ml" 33 1087 1112 "sysprep_operation_yum_uuid.ml" 33 1087 1116
+type(
+  bool
+)
+"sysprep_operation_yum_uuid.ml" 34 1118 1132 "sysprep_operation_yum_uuid.ml" 34 1118 1134
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_yum_uuid.ml" 34 1118 1134 "sysprep_operation_yum_uuid.ml" 34 1118 1155
+type(
+  string
+)
+"sysprep_operation_yum_uuid.ml" 34 1118 1132 "sysprep_operation_yum_uuid.ml" 34 1118 1155
+type(
+  string
+)
+"sysprep_operation_yum_uuid.ml" 35 1157 1185 "sysprep_operation_yum_uuid.ml" 35 1157 1187
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_yum_uuid.ml" 35 1157 1187 "sysprep_operation_yum_uuid.ml" 37 1262 1293
+type(
+  string
+)
+"sysprep_operation_yum_uuid.ml" 35 1157 1184 "sysprep_operation_yum_uuid.ml" 37 1262 1294
+type(
+  string
+)
+"sysprep_operation_yum_uuid.ml" 35 1157 1179 "sysprep_operation_yum_uuid.ml" 37 1262 1294
+type(
+  string option
+)
+"sysprep_operation_yum_uuid.ml" 38 1296 1330 "sysprep_operation_yum_uuid.ml" 38 1296 1346
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref yum_uuid_perform "sysprep_operation_yum_uuid.ml" 24 848 852 "sysprep_operation_yum_uuid.ml" 24 848 868
+)
+"sysprep_operation_yum_uuid.ml" 38 1296 1325 "sysprep_operation_yum_uuid.ml" 38 1296 1346
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_yum_uuid.ml" 30 1037 1046 "sysprep_operation_yum_uuid.ml" 39 1348 1349
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_yum_uuid.ml" 41 1351 1355 "sysprep_operation_yum_uuid.ml" 41 1351 1357
+type(
+  unit
+)
+"sysprep_operation_yum_uuid.ml" 41 1351 1360 "sysprep_operation_yum_uuid.ml" 41 1351 1378
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_yum_uuid.ml" 41 1351 1379 "sysprep_operation_yum_uuid.ml" 41 1351 1381
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_yum_uuid.ml" 30 1037 1041 "sysprep_operation_yum_uuid.ml" 30 1037 1043
+)
+"sysprep_operation_yum_uuid.ml" 41 1351 1360 "sysprep_operation_yum_uuid.ml" 41 1351 1381
+call(
+  stack
+)
+type(
+  unit
+)

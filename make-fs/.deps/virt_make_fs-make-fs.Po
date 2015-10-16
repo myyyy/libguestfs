@@ -69,9 +69,8 @@ virt_make_fs-make-fs.o: make-fs.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/x86_64-linux-gnu/sys/resource.h \
  /usr/include/x86_64-linux-gnu/bits/resource.h ../src/guestfs.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h ../gnulib/lib/xstrtol.h ../fish/options.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h
+ ../src/guestfs-internal-frontend-cleanups.h ../gnulib/lib/xstrtol.h \
+ ../fish/options.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h
 
 ../config.h:
 
@@ -284,8 +283,6 @@ virt_make_fs-make-fs.o: make-fs.c ../config.h ../gnulib/lib/stdio.h \
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 ../gnulib/lib/xstrtol.h:
 

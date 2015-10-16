@@ -1,0 +1,4358 @@
+"get_kernel.ml" 26 864 868 "get_kernel.ml" 26 864 881
+type(
+  unit -> (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+ident(
+  def parse_cmdline "get_kernel.ml" 123 4643 4643 --
+)
+"get_kernel.ml" 26 864 882 "get_kernel.ml" 26 864 884
+type(
+  unit
+)
+"get_kernel.ml" 27 887 893 "get_kernel.ml" 27 887 899
+type(
+  string option ref
+)
+"get_kernel.ml" 27 887 902 "get_kernel.ml" 27 887 905
+type(
+  string option -> string option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"get_kernel.ml" 27 887 906 "get_kernel.ml" 27 887 910
+type(
+  string option
+)
+"get_kernel.ml" 27 887 902 "get_kernel.ml" 27 887 910
+type(
+  string option ref
+)
+"get_kernel.ml" 28 914 920 "get_kernel.ml" 28 914 924
+type(
+  URI.uri option ref
+)
+"get_kernel.ml" 28 914 927 "get_kernel.ml" 28 914 930
+type(
+  URI.uri option -> URI.uri option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"get_kernel.ml" 28 914 931 "get_kernel.ml" 28 914 935
+type(
+  URI.uri option
+)
+"get_kernel.ml" 28 914 927 "get_kernel.ml" 28 914 935
+type(
+  URI.uri option ref
+)
+"get_kernel.ml" 29 939 945 "get_kernel.ml" 29 939 955
+type(
+  string ref
+)
+"get_kernel.ml" 29 939 958 "get_kernel.ml" 29 939 961
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"get_kernel.ml" 29 939 962 "get_kernel.ml" 29 939 964
+type(
+  string
+)
+"get_kernel.ml" 29 939 958 "get_kernel.ml" 29 939 964
+type(
+  string ref
+)
+"get_kernel.ml" 30 968 974 "get_kernel.ml" 30 968 980
+type(
+  string ref
+)
+"get_kernel.ml" 30 968 983 "get_kernel.ml" 30 968 986
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"get_kernel.ml" 30 968 987 "get_kernel.ml" 30 968 989
+type(
+  string
+)
+"get_kernel.ml" 30 968 983 "get_kernel.ml" 30 968 989
+type(
+  string ref
+)
+"get_kernel.ml" 31 993 999 "get_kernel.ml" 31 993 1005
+type(
+  string ref
+)
+"get_kernel.ml" 31 993 1008 "get_kernel.ml" 31 993 1011
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"get_kernel.ml" 31 993 1012 "get_kernel.ml" 31 993 1014
+type(
+  string
+)
+"get_kernel.ml" 31 993 1008 "get_kernel.ml" 31 993 1014
+type(
+  string ref
+)
+"get_kernel.ml" 32 1018 1024 "get_kernel.ml" 32 1018 1040
+type(
+  bool ref
+)
+"get_kernel.ml" 32 1018 1043 "get_kernel.ml" 32 1018 1046
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"get_kernel.ml" 32 1018 1047 "get_kernel.ml" 32 1018 1052
+type(
+  bool
+)
+"get_kernel.ml" 32 1018 1043 "get_kernel.ml" 32 1018 1052
+type(
+  bool ref
+)
+"get_kernel.ml" 33 1056 1062 "get_kernel.ml" 33 1056 1073
+type(
+  bool ref
+)
+"get_kernel.ml" 33 1056 1076 "get_kernel.ml" 33 1056 1079
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"get_kernel.ml" 33 1056 1080 "get_kernel.ml" 33 1056 1085
+type(
+  bool
+)
+"get_kernel.ml" 33 1056 1076 "get_kernel.ml" 33 1056 1085
+type(
+  bool ref
+)
+"get_kernel.ml" 34 1089 1095 "get_kernel.ml" 34 1089 1101
+type(
+  string option ref
+)
+"get_kernel.ml" 34 1089 1104 "get_kernel.ml" 34 1089 1107
+type(
+  string option -> string option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"get_kernel.ml" 34 1089 1108 "get_kernel.ml" 34 1089 1112
+type(
+  string option
+)
+"get_kernel.ml" 34 1089 1104 "get_kernel.ml" 34 1089 1112
+type(
+  string option ref
+)
+"get_kernel.ml" 36 1117 1123 "get_kernel.ml" 36 1117 1131
+type(
+  string -> unit
+)
+"get_kernel.ml" 36 1117 1132 "get_kernel.ml" 36 1117 1135
+type(
+  string
+)
+ident(
+  def arg "get_kernel.ml" 37 1138 1142 "get_kernel.ml" 43 1398 1418
+)
+"get_kernel.ml" 37 1138 1145 "get_kernel.ml" 37 1138 1146
+type(
+  URI.uri option ref -> URI.uri option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"get_kernel.ml" 37 1138 1146 "get_kernel.ml" 37 1138 1150
+type(
+  URI.uri option ref
+)
+ident(
+  int_ref file "get_kernel.ml" 28 914 920 "get_kernel.ml" 28 914 924
+)
+"get_kernel.ml" 37 1138 1145 "get_kernel.ml" 37 1138 1150
+type(
+  URI.uri option
+)
+"get_kernel.ml" 37 1138 1151 "get_kernel.ml" 37 1138 1153
+type(
+  URI.uri option -> URI.uri option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"get_kernel.ml" 37 1138 1154 "get_kernel.ml" 37 1138 1158
+type(
+  URI.uri option
+)
+"get_kernel.ml" 37 1138 1145 "get_kernel.ml" 37 1138 1158
+type(
+  bool
+)
+"get_kernel.ml" 38 1164 1170 "get_kernel.ml" 38 1164 1175
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"get_kernel.ml" 38 1164 1177 "get_kernel.ml" 38 1164 1179
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 38 1164 1179 "get_kernel.ml" 38 1164 1216
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"get_kernel.ml" 38 1164 1176 "get_kernel.ml" 38 1164 1217
+type(
+  (unit, unit, string, unit) format4
+)
+"get_kernel.ml" 38 1164 1170 "get_kernel.ml" 38 1164 1217
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 37 1138 1142 "get_kernel.ml" 38 1164 1217
+type(
+  unit
+)
+"get_kernel.ml" 39 1219 1227 "get_kernel.ml" 39 1219 1230
+type(
+  URI.uri
+)
+"get_kernel.ml" 40 1233 1243 "get_kernel.ml" 40 1233 1256
+type(
+  string -> URI.uri
+)
+ident(
+  ext_ref URI.parse_uri
+)
+"get_kernel.ml" 40 1233 1257 "get_kernel.ml" 40 1233 1260
+type(
+  string
+)
+ident(
+  int_ref arg "get_kernel.ml" 36 1117 1132 "get_kernel.ml" 36 1117 1135
+)
+"get_kernel.ml" 40 1233 1243 "get_kernel.ml" 40 1233 1260
+call(
+  stack
+)
+type(
+  URI.uri
+)
+"get_kernel.ml" 41 1261 1289 "get_kernel.ml" 41 1261 1304
+type(
+  string
+)
+"get_kernel.ml" 41 1261 1272 "get_kernel.ml" 41 1261 1304
+type(
+  exn
+)
+"get_kernel.ml" 42 1308 1316 "get_kernel.ml" 42 1308 1321
+type(
+  ?exit_code:int ->
+  (string -> URI.uri, unit, string, URI.uri) format4 -> string -> URI.uri
+)
+ident(
+  ext_ref Common_utils.error
+)
+"get_kernel.ml" 42 1308 1323 "get_kernel.ml" 42 1308 1325
+type(
+  (string -> URI.uri, unit, string, string, string, URI.uri) format6 ->
+  (string -> URI.uri, unit, string, URI.uri) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 42 1308 1325 "get_kernel.ml" 42 1308 1389
+type(
+  (string -> URI.uri, unit, string, string, string, URI.uri) format6
+)
+"get_kernel.ml" 42 1308 1322 "get_kernel.ml" 42 1308 1390
+type(
+  (string -> URI.uri, unit, string, URI.uri) format4
+)
+"get_kernel.ml" 42 1308 1391 "get_kernel.ml" 42 1308 1394
+type(
+  string
+)
+ident(
+  int_ref arg "get_kernel.ml" 36 1117 1132 "get_kernel.ml" 36 1117 1135
+)
+"get_kernel.ml" 42 1308 1316 "get_kernel.ml" 42 1308 1394
+call(
+  stack
+)
+type(
+  URI.uri
+)
+"get_kernel.ml" 40 1233 1239 "get_kernel.ml" 42 1308 1394
+type(
+  URI.uri
+)
+"get_kernel.ml" 43 1398 1402 "get_kernel.ml" 43 1398 1406
+type(
+  URI.uri option ref
+)
+ident(
+  int_ref file "get_kernel.ml" 28 914 920 "get_kernel.ml" 28 914 924
+)
+"get_kernel.ml" 43 1398 1407 "get_kernel.ml" 43 1398 1409
+type(
+  URI.uri option ref -> URI.uri option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"get_kernel.ml" 43 1398 1415 "get_kernel.ml" 43 1398 1418
+type(
+  URI.uri
+)
+ident(
+  int_ref uri "get_kernel.ml" 39 1219 1227 "get_kernel.ml" 39 1219 1230
+)
+"get_kernel.ml" 43 1398 1410 "get_kernel.ml" 43 1398 1418
+type(
+  URI.uri option
+)
+"get_kernel.ml" 43 1398 1402 "get_kernel.ml" 43 1398 1418
+type(
+  unit
+)
+"get_kernel.ml" 39 1219 1223 "get_kernel.ml" 43 1398 1418
+type(
+  unit
+)
+"get_kernel.ml" 37 1138 1142 "get_kernel.ml" 43 1398 1418
+type(
+  unit
+)
+"get_kernel.ml" 44 1419 1425 "get_kernel.ml" 44 1419 1435
+type(
+  string -> unit
+)
+"get_kernel.ml" 44 1419 1436 "get_kernel.ml" 44 1419 1439
+type(
+  string
+)
+ident(
+  def dom "get_kernel.ml" 45 1442 1446 "get_kernel.ml" 47 1528 1550
+)
+"get_kernel.ml" 45 1442 1449 "get_kernel.ml" 45 1442 1450
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"get_kernel.ml" 45 1442 1450 "get_kernel.ml" 45 1442 1456
+type(
+  string option ref
+)
+ident(
+  int_ref domain "get_kernel.ml" 27 887 893 "get_kernel.ml" 27 887 899
+)
+"get_kernel.ml" 45 1442 1449 "get_kernel.ml" 45 1442 1456
+type(
+  string option
+)
+"get_kernel.ml" 45 1442 1457 "get_kernel.ml" 45 1442 1459
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"get_kernel.ml" 45 1442 1460 "get_kernel.ml" 45 1442 1464
+type(
+  string option
+)
+"get_kernel.ml" 45 1442 1449 "get_kernel.ml" 45 1442 1464
+type(
+  bool
+)
+"get_kernel.ml" 46 1470 1476 "get_kernel.ml" 46 1470 1481
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"get_kernel.ml" 46 1470 1483 "get_kernel.ml" 46 1470 1485
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 46 1470 1485 "get_kernel.ml" 46 1470 1525
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"get_kernel.ml" 46 1470 1482 "get_kernel.ml" 46 1470 1526
+type(
+  (unit, unit, string, unit) format4
+)
+"get_kernel.ml" 46 1470 1476 "get_kernel.ml" 46 1470 1526
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 45 1442 1446 "get_kernel.ml" 46 1470 1526
+type(
+  unit
+)
+"get_kernel.ml" 47 1528 1532 "get_kernel.ml" 47 1528 1538
+type(
+  string option ref
+)
+ident(
+  int_ref domain "get_kernel.ml" 27 887 893 "get_kernel.ml" 27 887 899
+)
+"get_kernel.ml" 47 1528 1539 "get_kernel.ml" 47 1528 1541
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"get_kernel.ml" 47 1528 1547 "get_kernel.ml" 47 1528 1550
+type(
+  string
+)
+ident(
+  int_ref dom "get_kernel.ml" 44 1419 1436 "get_kernel.ml" 44 1419 1439
+)
+"get_kernel.ml" 47 1528 1542 "get_kernel.ml" 47 1528 1550
+type(
+  string option
+)
+"get_kernel.ml" 47 1528 1532 "get_kernel.ml" 47 1528 1550
+type(
+  unit
+)
+"get_kernel.ml" 45 1442 1446 "get_kernel.ml" 47 1528 1550
+type(
+  unit
+)
+"get_kernel.ml" 48 1551 1557 "get_kernel.ml" 48 1551 1567
+type(
+  string -> unit
+)
+"get_kernel.ml" 48 1551 1568 "get_kernel.ml" 48 1551 1569
+type(
+  string
+)
+ident(
+  def p "get_kernel.ml" 49 1572 1576 "get_kernel.ml" 51 1658 1678
+)
+"get_kernel.ml" 49 1572 1579 "get_kernel.ml" 49 1572 1580
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"get_kernel.ml" 49 1572 1580 "get_kernel.ml" 49 1572 1586
+type(
+  string option ref
+)
+ident(
+  int_ref prefix "get_kernel.ml" 34 1089 1095 "get_kernel.ml" 34 1089 1101
+)
+"get_kernel.ml" 49 1572 1579 "get_kernel.ml" 49 1572 1586
+type(
+  string option
+)
+"get_kernel.ml" 49 1572 1587 "get_kernel.ml" 49 1572 1589
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"get_kernel.ml" 49 1572 1590 "get_kernel.ml" 49 1572 1594
+type(
+  string option
+)
+"get_kernel.ml" 49 1572 1579 "get_kernel.ml" 49 1572 1594
+type(
+  bool
+)
+"get_kernel.ml" 50 1600 1606 "get_kernel.ml" 50 1600 1611
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"get_kernel.ml" 50 1600 1613 "get_kernel.ml" 50 1600 1615
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 50 1600 1615 "get_kernel.ml" 50 1600 1655
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"get_kernel.ml" 50 1600 1612 "get_kernel.ml" 50 1600 1656
+type(
+  (unit, unit, string, unit) format4
+)
+"get_kernel.ml" 50 1600 1606 "get_kernel.ml" 50 1600 1656
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 49 1572 1576 "get_kernel.ml" 50 1600 1656
+type(
+  unit
+)
+"get_kernel.ml" 51 1658 1662 "get_kernel.ml" 51 1658 1668
+type(
+  string option ref
+)
+ident(
+  int_ref prefix "get_kernel.ml" 34 1089 1095 "get_kernel.ml" 34 1089 1101
+)
+"get_kernel.ml" 51 1658 1669 "get_kernel.ml" 51 1658 1671
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"get_kernel.ml" 51 1658 1677 "get_kernel.ml" 51 1658 1678
+type(
+  string
+)
+ident(
+  int_ref p "get_kernel.ml" 48 1551 1568 "get_kernel.ml" 48 1551 1569
+)
+"get_kernel.ml" 51 1658 1672 "get_kernel.ml" 51 1658 1678
+type(
+  string option
+)
+"get_kernel.ml" 51 1658 1662 "get_kernel.ml" 51 1658 1678
+type(
+  unit
+)
+"get_kernel.ml" 49 1572 1576 "get_kernel.ml" 51 1658 1678
+type(
+  unit
+)
+"get_kernel.ml" 53 1683 1689 "get_kernel.ml" 53 1683 1694
+type(
+  string
+)
+"get_kernel.ml" 53 1683 1697 "get_kernel.ml" 53 1683 1704
+type(
+  string
+)
+"get_kernel.ml" 54 1708 1714 "get_kernel.ml" 54 1708 1721
+type(
+  (string * Arg.spec * string) list
+)
+"get_kernel.ml" 55 1726 1730 "get_kernel.ml" 55 1726 1734
+type(
+  string
+)
+"get_kernel.ml" 55 1726 1754 "get_kernel.ml" 55 1726 1762
+type(
+  string -> unit
+)
+ident(
+  int_ref set_file "get_kernel.ml" 36 1117 1123 "get_kernel.ml" 36 1117 1131
+)
+"get_kernel.ml" 55 1726 1743 "get_kernel.ml" 55 1726 1762
+type(
+  Arg.spec
+)
+"get_kernel.ml" 55 1726 1770 "get_kernel.ml" 55 1726 1772
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 55 1726 1772 "get_kernel.ml" 55 1726 1778
+type(
+  string
+)
+"get_kernel.ml" 55 1726 1770 "get_kernel.ml" 55 1726 1778
+type(
+  string
+)
+"get_kernel.ml" 55 1726 1779 "get_kernel.ml" 55 1726 1780
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 55 1726 1781 "get_kernel.ml" 55 1726 1784
+type(
+  string
+)
+"get_kernel.ml" 55 1726 1785 "get_kernel.ml" 55 1726 1786
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 55 1726 1787 "get_kernel.ml" 55 1726 1789
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 55 1726 1789 "get_kernel.ml" 55 1726 1810
+type(
+  string
+)
+"get_kernel.ml" 55 1726 1787 "get_kernel.ml" 55 1726 1810
+type(
+  string
+)
+"get_kernel.ml" 55 1726 1781 "get_kernel.ml" 55 1726 1810
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 55 1726 1770 "get_kernel.ml" 55 1726 1810
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 55 1726 1730 "get_kernel.ml" 55 1726 1810
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 56 1812 1816 "get_kernel.ml" 56 1812 1823
+type(
+  string
+)
+"get_kernel.ml" 56 1812 1840 "get_kernel.ml" 56 1812 1848
+type(
+  string -> unit
+)
+ident(
+  int_ref set_file "get_kernel.ml" 36 1117 1123 "get_kernel.ml" 36 1117 1131
+)
+"get_kernel.ml" 56 1812 1829 "get_kernel.ml" 56 1812 1848
+type(
+  Arg.spec
+)
+"get_kernel.ml" 56 1812 1856 "get_kernel.ml" 56 1812 1858
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 56 1812 1858 "get_kernel.ml" 56 1812 1864
+type(
+  string
+)
+"get_kernel.ml" 56 1812 1856 "get_kernel.ml" 56 1812 1864
+type(
+  string
+)
+"get_kernel.ml" 56 1812 1865 "get_kernel.ml" 56 1812 1866
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 56 1812 1867 "get_kernel.ml" 56 1812 1870
+type(
+  string
+)
+"get_kernel.ml" 56 1812 1871 "get_kernel.ml" 56 1812 1872
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 56 1812 1873 "get_kernel.ml" 56 1812 1875
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 56 1812 1875 "get_kernel.ml" 56 1812 1896
+type(
+  string
+)
+"get_kernel.ml" 56 1812 1873 "get_kernel.ml" 56 1812 1896
+type(
+  string
+)
+"get_kernel.ml" 56 1812 1867 "get_kernel.ml" 56 1812 1896
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 56 1812 1856 "get_kernel.ml" 56 1812 1896
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 56 1812 1816 "get_kernel.ml" 56 1812 1896
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 57 1898 1902 "get_kernel.ml" 57 1898 1906
+type(
+  string
+)
+"get_kernel.ml" 57 1898 1930 "get_kernel.ml" 57 1898 1940
+type(
+  string ref
+)
+ident(
+  int_ref libvirturi "get_kernel.ml" 29 939 945 "get_kernel.ml" 29 939 955
+)
+"get_kernel.ml" 57 1898 1915 "get_kernel.ml" 57 1898 1940
+type(
+  Arg.spec
+)
+"get_kernel.ml" 57 1898 1942 "get_kernel.ml" 57 1898 1944
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 57 1898 1944 "get_kernel.ml" 57 1898 1949
+type(
+  string
+)
+"get_kernel.ml" 57 1898 1942 "get_kernel.ml" 57 1898 1949
+type(
+  string
+)
+"get_kernel.ml" 57 1898 1950 "get_kernel.ml" 57 1898 1951
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 57 1898 1952 "get_kernel.ml" 57 1898 1955
+type(
+  string
+)
+"get_kernel.ml" 57 1898 1956 "get_kernel.ml" 57 1898 1957
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 57 1898 1958 "get_kernel.ml" 57 1898 1960
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 57 1898 1960 "get_kernel.ml" 57 1898 1977
+type(
+  string
+)
+"get_kernel.ml" 57 1898 1958 "get_kernel.ml" 57 1898 1977
+type(
+  string
+)
+"get_kernel.ml" 57 1898 1952 "get_kernel.ml" 57 1898 1977
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 57 1898 1942 "get_kernel.ml" 57 1898 1977
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 57 1898 1902 "get_kernel.ml" 57 1898 1977
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 58 1979 1983 "get_kernel.ml" 58 1979 1994
+type(
+  string
+)
+"get_kernel.ml" 58 1979 2011 "get_kernel.ml" 58 1979 2021
+type(
+  string ref
+)
+ident(
+  int_ref libvirturi "get_kernel.ml" 29 939 945 "get_kernel.ml" 29 939 955
+)
+"get_kernel.ml" 58 1979 1996 "get_kernel.ml" 58 1979 2021
+type(
+  Arg.spec
+)
+"get_kernel.ml" 58 1979 2023 "get_kernel.ml" 58 1979 2025
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 58 1979 2025 "get_kernel.ml" 58 1979 2030
+type(
+  string
+)
+"get_kernel.ml" 58 1979 2023 "get_kernel.ml" 58 1979 2030
+type(
+  string
+)
+"get_kernel.ml" 58 1979 2031 "get_kernel.ml" 58 1979 2032
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 58 1979 2033 "get_kernel.ml" 58 1979 2036
+type(
+  string
+)
+"get_kernel.ml" 58 1979 2037 "get_kernel.ml" 58 1979 2038
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 58 1979 2039 "get_kernel.ml" 58 1979 2041
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 58 1979 2041 "get_kernel.ml" 58 1979 2058
+type(
+  string
+)
+"get_kernel.ml" 58 1979 2039 "get_kernel.ml" 58 1979 2058
+type(
+  string
+)
+"get_kernel.ml" 58 1979 2033 "get_kernel.ml" 58 1979 2058
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 58 1979 2023 "get_kernel.ml" 58 1979 2058
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 58 1979 1983 "get_kernel.ml" 58 1979 2058
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 59 2060 2064 "get_kernel.ml" 59 2060 2068
+type(
+  string
+)
+"get_kernel.ml" 59 2060 2088 "get_kernel.ml" 59 2060 2098
+type(
+  string -> unit
+)
+ident(
+  int_ref set_domain "get_kernel.ml" 44 1419 1425 "get_kernel.ml" 44 1419 1435
+)
+"get_kernel.ml" 59 2060 2077 "get_kernel.ml" 59 2060 2098
+type(
+  Arg.spec
+)
+"get_kernel.ml" 59 2060 2104 "get_kernel.ml" 59 2060 2106
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 59 2060 2106 "get_kernel.ml" 59 2060 2114
+type(
+  string
+)
+"get_kernel.ml" 59 2060 2104 "get_kernel.ml" 59 2060 2114
+type(
+  string
+)
+"get_kernel.ml" 59 2060 2115 "get_kernel.ml" 59 2060 2116
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 59 2060 2117 "get_kernel.ml" 59 2060 2120
+type(
+  string
+)
+"get_kernel.ml" 59 2060 2121 "get_kernel.ml" 59 2060 2122
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 59 2060 2123 "get_kernel.ml" 59 2060 2125
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 59 2060 2125 "get_kernel.ml" 59 2060 2149
+type(
+  string
+)
+"get_kernel.ml" 59 2060 2123 "get_kernel.ml" 59 2060 2149
+type(
+  string
+)
+"get_kernel.ml" 59 2060 2117 "get_kernel.ml" 59 2060 2149
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 59 2060 2104 "get_kernel.ml" 59 2060 2149
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 59 2060 2064 "get_kernel.ml" 59 2060 2149
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 60 2151 2155 "get_kernel.ml" 60 2151 2165
+type(
+  string
+)
+"get_kernel.ml" 60 2151 2179 "get_kernel.ml" 60 2151 2189
+type(
+  string -> unit
+)
+ident(
+  int_ref set_domain "get_kernel.ml" 44 1419 1425 "get_kernel.ml" 44 1419 1435
+)
+"get_kernel.ml" 60 2151 2168 "get_kernel.ml" 60 2151 2189
+type(
+  Arg.spec
+)
+"get_kernel.ml" 60 2151 2195 "get_kernel.ml" 60 2151 2197
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 60 2151 2197 "get_kernel.ml" 60 2151 2205
+type(
+  string
+)
+"get_kernel.ml" 60 2151 2195 "get_kernel.ml" 60 2151 2205
+type(
+  string
+)
+"get_kernel.ml" 60 2151 2206 "get_kernel.ml" 60 2151 2207
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 60 2151 2208 "get_kernel.ml" 60 2151 2211
+type(
+  string
+)
+"get_kernel.ml" 60 2151 2212 "get_kernel.ml" 60 2151 2213
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 60 2151 2214 "get_kernel.ml" 60 2151 2216
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 60 2151 2216 "get_kernel.ml" 60 2151 2240
+type(
+  string
+)
+"get_kernel.ml" 60 2151 2214 "get_kernel.ml" 60 2151 2240
+type(
+  string
+)
+"get_kernel.ml" 60 2151 2208 "get_kernel.ml" 60 2151 2240
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 60 2151 2195 "get_kernel.ml" 60 2151 2240
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 60 2151 2155 "get_kernel.ml" 60 2151 2240
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 61 2242 2246 "get_kernel.ml" 61 2242 2256
+type(
+  string
+)
+"get_kernel.ml" 61 2242 2274 "get_kernel.ml" 61 2242 2280
+type(
+  string ref
+)
+ident(
+  int_ref format "get_kernel.ml" 30 968 974 "get_kernel.ml" 30 968 980
+)
+"get_kernel.ml" 61 2242 2259 "get_kernel.ml" 61 2242 2280
+type(
+  Arg.spec
+)
+"get_kernel.ml" 61 2242 2286 "get_kernel.ml" 61 2242 2288
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 61 2242 2288 "get_kernel.ml" 61 2242 2296
+type(
+  string
+)
+"get_kernel.ml" 61 2242 2286 "get_kernel.ml" 61 2242 2296
+type(
+  string
+)
+"get_kernel.ml" 61 2242 2297 "get_kernel.ml" 61 2242 2298
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 61 2242 2299 "get_kernel.ml" 61 2242 2302
+type(
+  string
+)
+"get_kernel.ml" 61 2242 2303 "get_kernel.ml" 61 2242 2304
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 61 2242 2305 "get_kernel.ml" 61 2242 2307
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 61 2242 2307 "get_kernel.ml" 61 2242 2329
+type(
+  string
+)
+"get_kernel.ml" 61 2242 2305 "get_kernel.ml" 61 2242 2329
+type(
+  string
+)
+"get_kernel.ml" 61 2242 2299 "get_kernel.ml" 61 2242 2329
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 61 2242 2286 "get_kernel.ml" 61 2242 2329
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 61 2242 2246 "get_kernel.ml" 61 2242 2329
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 62 2331 2335 "get_kernel.ml" 62 2331 2355
+type(
+  string
+)
+"get_kernel.ml" 62 2331 2365 "get_kernel.ml" 62 2331 2381
+type(
+  bool ref
+)
+ident(
+  int_ref machine_readable "get_kernel.ml" 32 1018 1024 "get_kernel.ml" 32 1018 1040
+)
+"get_kernel.ml" 62 2331 2357 "get_kernel.ml" 62 2331 2381
+type(
+  Arg.spec
+)
+"get_kernel.ml" 62 2331 2383 "get_kernel.ml" 62 2331 2386
+type(
+  string
+)
+"get_kernel.ml" 62 2331 2387 "get_kernel.ml" 62 2331 2388
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 62 2331 2389 "get_kernel.ml" 62 2331 2391
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 62 2331 2391 "get_kernel.ml" 62 2331 2421
+type(
+  string
+)
+"get_kernel.ml" 62 2331 2389 "get_kernel.ml" 62 2331 2421
+type(
+  string
+)
+"get_kernel.ml" 62 2331 2383 "get_kernel.ml" 62 2331 2421
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 62 2331 2335 "get_kernel.ml" 62 2331 2421
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 63 2423 2427 "get_kernel.ml" 63 2423 2431
+type(
+  string
+)
+"get_kernel.ml" 63 2423 2455 "get_kernel.ml" 63 2423 2461
+type(
+  string ref
+)
+ident(
+  int_ref output "get_kernel.ml" 31 993 999 "get_kernel.ml" 31 993 1005
+)
+"get_kernel.ml" 63 2423 2440 "get_kernel.ml" 63 2423 2461
+type(
+  Arg.spec
+)
+"get_kernel.ml" 63 2423 2463 "get_kernel.ml" 63 2423 2465
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 63 2423 2465 "get_kernel.ml" 63 2423 2476
+type(
+  string
+)
+"get_kernel.ml" 63 2423 2463 "get_kernel.ml" 63 2423 2476
+type(
+  string
+)
+"get_kernel.ml" 63 2423 2477 "get_kernel.ml" 63 2423 2478
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 63 2423 2479 "get_kernel.ml" 63 2423 2482
+type(
+  string
+)
+"get_kernel.ml" 63 2423 2483 "get_kernel.ml" 63 2423 2484
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 63 2423 2485 "get_kernel.ml" 63 2423 2487
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 63 2423 2487 "get_kernel.ml" 63 2423 2505
+type(
+  string
+)
+"get_kernel.ml" 63 2423 2485 "get_kernel.ml" 63 2423 2505
+type(
+  string
+)
+"get_kernel.ml" 63 2423 2479 "get_kernel.ml" 63 2423 2505
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 63 2423 2463 "get_kernel.ml" 63 2423 2505
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 63 2423 2427 "get_kernel.ml" 63 2423 2505
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 64 2507 2511 "get_kernel.ml" 64 2507 2521
+type(
+  string
+)
+"get_kernel.ml" 64 2507 2539 "get_kernel.ml" 64 2507 2545
+type(
+  string ref
+)
+ident(
+  int_ref output "get_kernel.ml" 31 993 999 "get_kernel.ml" 31 993 1005
+)
+"get_kernel.ml" 64 2507 2524 "get_kernel.ml" 64 2507 2545
+type(
+  Arg.spec
+)
+"get_kernel.ml" 64 2507 2551 "get_kernel.ml" 64 2507 2556
+type(
+  string
+)
+ident(
+  int_ref ditto "get_kernel.ml" 53 1683 1689 "get_kernel.ml" 53 1683 1694
+)
+"get_kernel.ml" 64 2507 2511 "get_kernel.ml" 64 2507 2556
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 65 2558 2562 "get_kernel.ml" 65 2558 2583
+type(
+  string
+)
+"get_kernel.ml" 65 2558 2593 "get_kernel.ml" 65 2558 2604
+type(
+  bool ref
+)
+ident(
+  int_ref unversioned "get_kernel.ml" 33 1056 1062 "get_kernel.ml" 33 1056 1073
+)
+"get_kernel.ml" 65 2558 2585 "get_kernel.ml" 65 2558 2604
+type(
+  Arg.spec
+)
+"get_kernel.ml" 66 2606 2650 "get_kernel.ml" 66 2606 2653
+type(
+  string
+)
+"get_kernel.ml" 66 2606 2654 "get_kernel.ml" 66 2606 2655
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 66 2606 2656 "get_kernel.ml" 66 2606 2658
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 66 2606 2658 "get_kernel.ml" 66 2606 2691
+type(
+  string
+)
+"get_kernel.ml" 66 2606 2656 "get_kernel.ml" 66 2606 2691
+type(
+  string
+)
+"get_kernel.ml" 66 2606 2650 "get_kernel.ml" 66 2606 2691
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 65 2558 2562 "get_kernel.ml" 66 2606 2691
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 67 2693 2697 "get_kernel.ml" 67 2693 2707
+type(
+  string
+)
+"get_kernel.ml" 67 2693 2721 "get_kernel.ml" 67 2693 2731
+type(
+  string -> unit
+)
+ident(
+  int_ref set_prefix "get_kernel.ml" 48 1551 1557 "get_kernel.ml" 48 1551 1567
+)
+"get_kernel.ml" 67 2693 2710 "get_kernel.ml" 67 2693 2731
+type(
+  Arg.spec
+)
+"get_kernel.ml" 67 2693 2737 "get_kernel.ml" 67 2693 2745
+type(
+  string
+)
+"get_kernel.ml" 67 2693 2746 "get_kernel.ml" 67 2693 2747
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 67 2693 2748 "get_kernel.ml" 67 2693 2751
+type(
+  string
+)
+"get_kernel.ml" 67 2693 2752 "get_kernel.ml" 67 2693 2753
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 67 2693 2754 "get_kernel.ml" 67 2693 2756
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 67 2693 2756 "get_kernel.ml" 67 2693 2774
+type(
+  string
+)
+"get_kernel.ml" 67 2693 2754 "get_kernel.ml" 67 2693 2774
+type(
+  string
+)
+"get_kernel.ml" 67 2693 2748 "get_kernel.ml" 67 2693 2774
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 67 2693 2737 "get_kernel.ml" 67 2693 2774
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 67 2693 2697 "get_kernel.ml" 67 2693 2774
+type(
+  string * Arg.spec * string
+)
+"get_kernel.ml" 54 1708 1724 "get_kernel.ml" 68 2776 2779
+type(
+  (string * Arg.spec * string) list
+)
+"get_kernel.ml" 69 2783 2789 "get_kernel.ml" 69 2783 2796
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"get_kernel.ml" 69 2783 2799 "get_kernel.ml" 69 2783 2819
+type(
+  (Arg.key * Arg.spec * Arg.doc) list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Common_utils.set_standard_options
+)
+"get_kernel.ml" 69 2783 2820 "get_kernel.ml" 69 2783 2827
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref argspec "get_kernel.ml" 54 1708 1714 "get_kernel.ml" 54 1708 1721
+)
+"get_kernel.ml" 69 2783 2799 "get_kernel.ml" 69 2783 2827
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"get_kernel.ml" 70 2831 2837 "get_kernel.ml" 70 2831 2845
+type(
+  'a -> 'b
+)
+"get_kernel.ml" 70 2831 2846 "get_kernel.ml" 70 2831 2847
+type(
+  'a
+)
+"get_kernel.ml" 70 2831 2850 "get_kernel.ml" 70 2831 2855
+type(
+  exn -> 'b
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"get_kernel.ml" 70 2831 2866 "get_kernel.ml" 70 2831 2868
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"get_kernel.ml" 70 2831 2868 "get_kernel.ml" 70 2831 2905
+type(
+  string
+)
+"get_kernel.ml" 70 2831 2865 "get_kernel.ml" 70 2831 2906
+type(
+  string
+)
+"get_kernel.ml" 70 2831 2856 "get_kernel.ml" 70 2831 2907
+type(
+  exn
+)
+"get_kernel.ml" 70 2831 2850 "get_kernel.ml" 70 2831 2907
+type(
+  'b
+)
+"get_kernel.ml" 71 2911 2917 "get_kernel.ml" 71 2911 2926
+type(
+  string
+)
+"get_kernel.ml" 72 2929 2933 "get_kernel.ml" 72 2929 2940
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"get_kernel.ml" 72 2929 2942 "get_kernel.ml" 72 2929 2944
+type(
+  (string -> string, unit, string, string, string, string) format6 ->
+  (string -> string, unit, string) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 72 2929 2944 "get_kernel.ml" 77 3103 3104
+type(
+  (string -> string, unit, string, string, string, string) format6
+)
+"get_kernel.ml" 72 2929 2941 "get_kernel.ml" 77 3103 3105
+type(
+  (string -> string, unit, string) format
+)
+"get_kernel.ml" 78 3106 3112 "get_kernel.ml" 78 3106 3116
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"get_kernel.ml" 72 2929 2933 "get_kernel.ml" 78 3106 3116
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 79 3120 3122 "get_kernel.ml" 79 3120 3131
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  Arg.anon_fun -> Arg.usage_msg -> unit
+)
+ident(
+  ext_ref Arg.parse
+)
+"get_kernel.ml" 79 3120 3132 "get_kernel.ml" 79 3120 3139
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref argspec "get_kernel.ml" 69 2783 2789 "get_kernel.ml" 69 2783 2796
+)
+"get_kernel.ml" 79 3120 3140 "get_kernel.ml" 79 3120 3148
+type(
+  Arg.anon_fun
+)
+ident(
+  int_ref anon_fun "get_kernel.ml" 70 2831 2837 "get_kernel.ml" 70 2831 2845
+)
+"get_kernel.ml" 79 3120 3149 "get_kernel.ml" 79 3120 3158
+type(
+  Arg.usage_msg
+)
+ident(
+  int_ref usage_msg "get_kernel.ml" 71 2911 2917 "get_kernel.ml" 71 2911 2926
+)
+"get_kernel.ml" 79 3120 3122 "get_kernel.ml" 79 3120 3158
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 84 3255 3260 "get_kernel.ml" 84 3255 3261
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"get_kernel.ml" 84 3255 3261 "get_kernel.ml" 84 3255 3277
+type(
+  bool ref
+)
+ident(
+  int_ref machine_readable "get_kernel.ml" 32 1018 1024 "get_kernel.ml" 32 1018 1040
+)
+"get_kernel.ml" 84 3255 3260 "get_kernel.ml" 84 3255 3277
+type(
+  bool
+)
+"get_kernel.ml" 85 3285 3289 "get_kernel.ml" 85 3285 3295
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"get_kernel.ml" 85 3285 3296 "get_kernel.ml" 85 3285 3315
+type(
+  (unit, out_channel, unit) format
+)
+"get_kernel.ml" 85 3285 3289 "get_kernel.ml" 85 3285 3315
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 86 3317 3321 "get_kernel.ml" 86 3317 3325
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.exit
+)
+"get_kernel.ml" 86 3317 3326 "get_kernel.ml" 86 3317 3327
+type(
+  int
+)
+"get_kernel.ml" 86 3317 3321 "get_kernel.ml" 86 3317 3327
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 84 3255 3283 "get_kernel.ml" 87 3328 3331
+type(
+  unit
+)
+"get_kernel.ml" 84 3255 3257 "get_kernel.ml" 87 3328 3331
+type(
+  unit
+)
+"get_kernel.ml" 90 3367 3373 "get_kernel.ml" 90 3367 3377
+type(
+  URI.uri option
+)
+"get_kernel.ml" 90 3367 3380 "get_kernel.ml" 90 3367 3381
+type(
+  URI.uri option ref -> URI.uri option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"get_kernel.ml" 90 3367 3381 "get_kernel.ml" 90 3367 3385
+type(
+  URI.uri option ref
+)
+ident(
+  int_ref file "get_kernel.ml" 28 914 920 "get_kernel.ml" 28 914 924
+)
+"get_kernel.ml" 90 3367 3380 "get_kernel.ml" 90 3367 3385
+type(
+  URI.uri option
+)
+"get_kernel.ml" 91 3389 3395 "get_kernel.ml" 91 3389 3401
+type(
+  string option
+)
+"get_kernel.ml" 91 3389 3404 "get_kernel.ml" 91 3389 3405
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"get_kernel.ml" 91 3389 3405 "get_kernel.ml" 91 3389 3411
+type(
+  string option ref
+)
+ident(
+  int_ref domain "get_kernel.ml" 27 887 893 "get_kernel.ml" 27 887 899
+)
+"get_kernel.ml" 91 3389 3404 "get_kernel.ml" 91 3389 3411
+type(
+  string option
+)
+"get_kernel.ml" 92 3415 3421 "get_kernel.ml" 92 3415 3431
+type(
+  string option
+)
+"get_kernel.ml" 92 3415 3440 "get_kernel.ml" 92 3415 3441
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"get_kernel.ml" 92 3415 3441 "get_kernel.ml" 92 3415 3451
+type(
+  string ref
+)
+ident(
+  int_ref libvirturi "get_kernel.ml" 29 939 945 "get_kernel.ml" 29 939 955
+)
+"get_kernel.ml" 92 3415 3440 "get_kernel.ml" 92 3415 3451
+type(
+  string
+)
+"get_kernel.ml" 92 3415 3457 "get_kernel.ml" 92 3415 3459
+type(
+  string
+)
+"get_kernel.ml" 92 3415 3463 "get_kernel.ml" 92 3415 3467
+type(
+  string option
+)
+"get_kernel.ml" 92 3415 3470 "get_kernel.ml" 92 3415 3471
+type(
+  string
+)
+ident(
+  def s "get_kernel.ml" 92 3415 3475 "get_kernel.ml" 92 3415 3481
+)
+"get_kernel.ml" 92 3415 3480 "get_kernel.ml" 92 3415 3481
+type(
+  string
+)
+ident(
+  int_ref s "get_kernel.ml" 92 3415 3470 "get_kernel.ml" 92 3415 3471
+)
+"get_kernel.ml" 92 3415 3475 "get_kernel.ml" 92 3415 3481
+type(
+  string option
+)
+"get_kernel.ml" 92 3415 3434 "get_kernel.ml" 92 3415 3481
+type(
+  string option
+)
+"get_kernel.ml" 93 3485 3491 "get_kernel.ml" 93 3485 3494
+type(
+  Guestfs.guestfs -> unit
+)
+"get_kernel.ml" 94 3497 3507 "get_kernel.ml" 94 3497 3511
+type(
+  URI.uri option
+)
+ident(
+  int_ref file "get_kernel.ml" 90 3367 3373 "get_kernel.ml" 90 3367 3377
+)
+"get_kernel.ml" 94 3497 3513 "get_kernel.ml" 94 3497 3519
+type(
+  string option
+)
+ident(
+  int_ref domain "get_kernel.ml" 91 3389 3395 "get_kernel.ml" 91 3389 3401
+)
+"get_kernel.ml" 94 3497 3507 "get_kernel.ml" 94 3497 3519
+type(
+  URI.uri option * string option
+)
+"get_kernel.ml" 95 3525 3531 "get_kernel.ml" 95 3525 3535
+type(
+  URI.uri option
+)
+"get_kernel.ml" 95 3525 3537 "get_kernel.ml" 95 3525 3541
+type(
+  string option
+)
+"get_kernel.ml" 95 3525 3531 "get_kernel.ml" 95 3525 3541
+type(
+  URI.uri option * string option
+)
+"get_kernel.ml" 96 3545 3551 "get_kernel.ml" 96 3545 3556
+type(
+  ?exit_code:int ->
+  (Guestfs.guestfs -> unit, unit, string, Guestfs.guestfs -> unit) format4 ->
+  Guestfs.guestfs -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"get_kernel.ml" 96 3545 3558 "get_kernel.ml" 96 3545 3560
+type(
+  (Guestfs.guestfs -> unit, unit, string, string, string,
+   Guestfs.guestfs -> unit)
+  format6 ->
+  (Guestfs.guestfs -> unit, unit, string, Guestfs.guestfs -> unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 96 3545 3560 "get_kernel.ml" 96 3545 3659
+type(
+  (Guestfs.guestfs -> unit, unit, string, string, string,
+   Guestfs.guestfs -> unit)
+  format6
+)
+"get_kernel.ml" 96 3545 3557 "get_kernel.ml" 96 3545 3660
+type(
+  (Guestfs.guestfs -> unit, unit, string, Guestfs.guestfs -> unit) format4
+)
+"get_kernel.ml" 96 3545 3551 "get_kernel.ml" 96 3545 3660
+call(
+  stack
+)
+type(
+  Guestfs.guestfs -> unit
+)
+"get_kernel.ml" 97 3661 3672 "get_kernel.ml" 97 3661 3673
+type(
+  URI.uri
+)
+"get_kernel.ml" 97 3661 3667 "get_kernel.ml" 97 3661 3673
+type(
+  URI.uri option
+)
+"get_kernel.ml" 97 3661 3680 "get_kernel.ml" 97 3661 3681
+type(
+  string
+)
+"get_kernel.ml" 97 3661 3675 "get_kernel.ml" 97 3661 3681
+type(
+  string option
+)
+"get_kernel.ml" 97 3661 3667 "get_kernel.ml" 97 3661 3681
+type(
+  URI.uri option * string option
+)
+"get_kernel.ml" 98 3685 3691 "get_kernel.ml" 98 3685 3696
+type(
+  ?exit_code:int ->
+  (Guestfs.guestfs -> unit, unit, string, Guestfs.guestfs -> unit) format4 ->
+  Guestfs.guestfs -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"get_kernel.ml" 98 3685 3698 "get_kernel.ml" 98 3685 3700
+type(
+  (Guestfs.guestfs -> unit, unit, string, string, string,
+   Guestfs.guestfs -> unit)
+  format6 ->
+  (Guestfs.guestfs -> unit, unit, string, Guestfs.guestfs -> unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 98 3685 3700 "get_kernel.ml" 98 3685 3804
+type(
+  (Guestfs.guestfs -> unit, unit, string, string, string,
+   Guestfs.guestfs -> unit)
+  format6
+)
+"get_kernel.ml" 98 3685 3697 "get_kernel.ml" 98 3685 3805
+type(
+  (Guestfs.guestfs -> unit, unit, string, Guestfs.guestfs -> unit) format4
+)
+"get_kernel.ml" 98 3685 3691 "get_kernel.ml" 98 3685 3805
+call(
+  stack
+)
+type(
+  Guestfs.guestfs -> unit
+)
+"get_kernel.ml" 99 3806 3812 "get_kernel.ml" 99 3806 3816
+type(
+  URI.uri option
+)
+"get_kernel.ml" 99 3806 3823 "get_kernel.ml" 99 3806 3826
+type(
+  string
+)
+ident(
+  def dom "get_kernel.ml" 100 3830 3836 "get_kernel.ml" 104 4026 4060
+)
+"get_kernel.ml" 99 3806 3818 "get_kernel.ml" 99 3806 3826
+type(
+  string option
+)
+"get_kernel.ml" 99 3806 3812 "get_kernel.ml" 99 3806 3826
+type(
+  URI.uri option * string option
+)
+"get_kernel.ml" 100 3830 3841 "get_kernel.ml" 100 3830 3842
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "get_kernel.ml" 101 3865 3873 "get_kernel.ml" 104 4026 4060
+)
+"get_kernel.ml" 101 3865 3877 "get_kernel.ml" 101 3865 3889
+type(
+  string
+)
+"get_kernel.ml" 101 3865 3892 "get_kernel.ml" 101 3865 3900
+type(
+  string
+)
+"get_kernel.ml" 102 3934 3942 "get_kernel.ml" 102 3934 3948
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"get_kernel.ml" 102 3934 3950 "get_kernel.ml" 102 3934 3951
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "get_kernel.ml" 100 3830 3841 "get_kernel.ml" 100 3830 3842
+)
+"get_kernel.ml" 102 3934 3950 "get_kernel.ml" 102 3934 3962
+call(
+  stack
+)
+type(
+  ?libvirturi:string ->
+  ?readonly:bool ->
+  ?iface:string ->
+  ?live:bool ->
+  ?allowuuid:bool ->
+  ?readonlydisk:string ->
+  ?cachemode:string -> ?discard:string -> ?copyonread:bool -> string -> int
+)
+"get_kernel.ml" 103 3963 3991 "get_kernel.ml" 103 3963 3995
+type(
+  bool
+)
+"get_kernel.ml" 103 3963 4007 "get_kernel.ml" 103 3963 4011
+type(
+  bool
+)
+"get_kernel.ml" 103 3963 4013 "get_kernel.ml" 103 3963 4025
+type(
+  string
+)
+ident(
+  int_ref readonlydisk "get_kernel.ml" 101 3865 3877 "get_kernel.ml" 101 3865 3889
+)
+"get_kernel.ml" 104 4026 4045 "get_kernel.ml" 104 4026 4055
+type(
+  string option
+)
+ident(
+  int_ref libvirturi "get_kernel.ml" 92 3415 3421 "get_kernel.ml" 92 3415 3431
+)
+"get_kernel.ml" 104 4026 4056 "get_kernel.ml" 104 4026 4059
+type(
+  string
+)
+ident(
+  int_ref dom "get_kernel.ml" 99 3806 3823 "get_kernel.ml" 99 3806 3826
+)
+"get_kernel.ml" 102 3934 3949 "get_kernel.ml" 104 4026 4060
+type(
+  int
+)
+"get_kernel.ml" 102 3934 3942 "get_kernel.ml" 104 4026 4060
+type(
+  unit
+)
+"get_kernel.ml" 101 3865 3873 "get_kernel.ml" 104 4026 4060
+type(
+  unit
+)
+"get_kernel.ml" 100 3830 3836 "get_kernel.ml" 104 4026 4060
+type(
+  Guestfs.guestfs -> unit
+)
+"get_kernel.ml" 105 4061 4072 "get_kernel.ml" 105 4061 4075
+type(
+  URI.uri
+)
+ident(
+  def uri "get_kernel.ml" 106 4085 4091 "get_kernel.ml" 113 4415 4429
+)
+"get_kernel.ml" 105 4061 4067 "get_kernel.ml" 105 4061 4075
+type(
+  URI.uri option
+)
+"get_kernel.ml" 105 4061 4077 "get_kernel.ml" 105 4061 4081
+type(
+  string option
+)
+"get_kernel.ml" 105 4061 4067 "get_kernel.ml" 105 4061 4081
+type(
+  URI.uri option * string option
+)
+"get_kernel.ml" 106 4085 4095 "get_kernel.ml" 106 4085 4096
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "get_kernel.ml" 107 4100 4108 "get_kernel.ml" 113 4415 4429
+)
+"get_kernel.ml" 107 4100 4125 "get_kernel.ml" 107 4100 4129
+type(
+  string
+)
+"get_kernel.ml" 107 4100 4142 "get_kernel.ml" 107 4100 4150
+type(
+  string
+)
+"get_kernel.ml" 108 4152 4175 "get_kernel.ml" 108 4152 4181
+type(
+  string array option
+)
+"get_kernel.ml" 108 4152 4194 "get_kernel.ml" 108 4152 4202
+type(
+  string option
+)
+"get_kernel.ml" 109 4204 4229 "get_kernel.ml" 109 4204 4237
+type(
+  string option
+)
+"get_kernel.ml" 107 4100 4112 "get_kernel.ml" 109 4204 4239
+type(
+  URI.uri
+)
+"get_kernel.ml" 109 4204 4242 "get_kernel.ml" 109 4204 4245
+type(
+  URI.uri
+)
+ident(
+  int_ref uri "get_kernel.ml" 105 4061 4072 "get_kernel.ml" 105 4061 4075
+)
+"get_kernel.ml" 110 4249 4261 "get_kernel.ml" 110 4249 4267
+type(
+  string option
+)
+"get_kernel.ml" 110 4249 4276 "get_kernel.ml" 110 4249 4277
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"get_kernel.ml" 110 4249 4277 "get_kernel.ml" 110 4249 4283
+type(
+  string ref
+)
+ident(
+  int_ref format "get_kernel.ml" 30 968 974 "get_kernel.ml" 30 968 980
+)
+"get_kernel.ml" 110 4249 4276 "get_kernel.ml" 110 4249 4283
+type(
+  string
+)
+"get_kernel.ml" 110 4249 4289 "get_kernel.ml" 110 4249 4291
+type(
+  string
+)
+"get_kernel.ml" 110 4249 4295 "get_kernel.ml" 110 4249 4299
+type(
+  string option
+)
+"get_kernel.ml" 110 4249 4302 "get_kernel.ml" 110 4249 4303
+type(
+  string
+)
+ident(
+  def s "get_kernel.ml" 110 4249 4307 "get_kernel.ml" 110 4249 4313
+)
+"get_kernel.ml" 110 4249 4312 "get_kernel.ml" 110 4249 4313
+type(
+  string
+)
+ident(
+  int_ref s "get_kernel.ml" 110 4249 4302 "get_kernel.ml" 110 4249 4303
+)
+"get_kernel.ml" 110 4249 4307 "get_kernel.ml" 110 4249 4313
+type(
+  string option
+)
+"get_kernel.ml" 110 4249 4270 "get_kernel.ml" 110 4249 4313
+type(
+  string option
+)
+"get_kernel.ml" 111 4317 4325 "get_kernel.ml" 111 4317 4326
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "get_kernel.ml" 106 4085 4095 "get_kernel.ml" 106 4085 4096
+)
+"get_kernel.ml" 111 4317 4325 "get_kernel.ml" 111 4317 4336
+call(
+  stack
+)
+type(
+  ?readonly:bool ->
+  ?format:string ->
+  ?iface:string ->
+  ?name:string ->
+  ?label:string ->
+  ?protocol:string ->
+  ?server:string array ->
+  ?username:string ->
+  ?secret:string ->
+  ?cachemode:string -> ?discard:string -> ?copyonread:bool -> string -> unit
+)
+"get_kernel.ml" 112 4337 4357 "get_kernel.ml" 112 4337 4361
+type(
+  bool
+)
+"get_kernel.ml" 112 4337 4363 "get_kernel.ml" 112 4337 4369
+type(
+  string option
+)
+ident(
+  int_ref format "get_kernel.ml" 110 4249 4261 "get_kernel.ml" 110 4249 4267
+)
+"get_kernel.ml" 112 4337 4371 "get_kernel.ml" 112 4337 4379
+type(
+  string
+)
+ident(
+  int_ref protocol "get_kernel.ml" 107 4100 4142 "get_kernel.ml" 107 4100 4150
+)
+"get_kernel.ml" 112 4337 4381 "get_kernel.ml" 112 4337 4387
+type(
+  string array option
+)
+ident(
+  int_ref server "get_kernel.ml" 108 4152 4175 "get_kernel.ml" 108 4152 4181
+)
+"get_kernel.ml" 112 4337 4389 "get_kernel.ml" 112 4337 4397
+type(
+  string option
+)
+ident(
+  int_ref username "get_kernel.ml" 108 4152 4194 "get_kernel.ml" 108 4152 4202
+)
+"get_kernel.ml" 112 4337 4406 "get_kernel.ml" 112 4337 4414
+type(
+  string option
+)
+ident(
+  int_ref password "get_kernel.ml" 109 4204 4229 "get_kernel.ml" 109 4204 4237
+)
+"get_kernel.ml" 113 4415 4425 "get_kernel.ml" 113 4415 4429
+type(
+  string
+)
+ident(
+  int_ref path "get_kernel.ml" 107 4100 4125 "get_kernel.ml" 107 4100 4129
+)
+"get_kernel.ml" 111 4317 4325 "get_kernel.ml" 113 4415 4429
+type(
+  unit
+)
+"get_kernel.ml" 110 4249 4257 "get_kernel.ml" 113 4415 4429
+type(
+  unit
+)
+"get_kernel.ml" 107 4100 4108 "get_kernel.ml" 113 4415 4429
+type(
+  unit
+)
+"get_kernel.ml" 106 4085 4091 "get_kernel.ml" 113 4415 4429
+type(
+  Guestfs.guestfs -> unit
+)
+"get_kernel.ml" 94 3497 3501 "get_kernel.ml" 113 4415 4429
+type(
+  Guestfs.guestfs -> unit
+)
+"get_kernel.ml" 117 4478 4484 "get_kernel.ml" 117 4478 4490
+type(
+  string option
+)
+"get_kernel.ml" 117 4478 4499 "get_kernel.ml" 117 4478 4500
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"get_kernel.ml" 117 4478 4500 "get_kernel.ml" 117 4478 4506
+type(
+  string ref
+)
+ident(
+  int_ref output "get_kernel.ml" 31 993 999 "get_kernel.ml" 31 993 1005
+)
+"get_kernel.ml" 117 4478 4499 "get_kernel.ml" 117 4478 4506
+type(
+  string
+)
+"get_kernel.ml" 117 4478 4512 "get_kernel.ml" 117 4478 4514
+type(
+  string
+)
+"get_kernel.ml" 117 4478 4518 "get_kernel.ml" 117 4478 4522
+type(
+  string option
+)
+"get_kernel.ml" 117 4478 4525 "get_kernel.ml" 117 4478 4528
+type(
+  string
+)
+ident(
+  def str "get_kernel.ml" 117 4478 4532 "get_kernel.ml" 117 4478 4540
+)
+"get_kernel.ml" 117 4478 4537 "get_kernel.ml" 117 4478 4540
+type(
+  string
+)
+ident(
+  int_ref str "get_kernel.ml" 117 4478 4525 "get_kernel.ml" 117 4478 4528
+)
+"get_kernel.ml" 117 4478 4532 "get_kernel.ml" 117 4478 4540
+type(
+  string option
+)
+"get_kernel.ml" 117 4478 4493 "get_kernel.ml" 117 4478 4540
+type(
+  string option
+)
+"get_kernel.ml" 118 4544 4550 "get_kernel.ml" 118 4544 4561
+type(
+  bool
+)
+"get_kernel.ml" 118 4544 4564 "get_kernel.ml" 118 4544 4565
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"get_kernel.ml" 118 4544 4565 "get_kernel.ml" 118 4544 4576
+type(
+  bool ref
+)
+ident(
+  int_ref unversioned "get_kernel.ml" 33 1056 1062 "get_kernel.ml" 33 1056 1073
+)
+"get_kernel.ml" 118 4544 4564 "get_kernel.ml" 118 4544 4576
+type(
+  bool
+)
+"get_kernel.ml" 119 4580 4586 "get_kernel.ml" 119 4580 4592
+type(
+  string option
+)
+"get_kernel.ml" 119 4580 4595 "get_kernel.ml" 119 4580 4596
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"get_kernel.ml" 119 4580 4596 "get_kernel.ml" 119 4580 4602
+type(
+  string option ref
+)
+ident(
+  int_ref prefix "get_kernel.ml" 34 1089 1095 "get_kernel.ml" 34 1089 1101
+)
+"get_kernel.ml" 119 4580 4595 "get_kernel.ml" 119 4580 4602
+type(
+  string option
+)
+"get_kernel.ml" 121 4607 4609 "get_kernel.ml" 121 4607 4612
+type(
+  Guestfs.guestfs -> unit
+)
+ident(
+  int_ref add "get_kernel.ml" 93 3485 3491 "get_kernel.ml" 93 3485 3494
+)
+"get_kernel.ml" 121 4607 4614 "get_kernel.ml" 121 4607 4620
+type(
+  string option
+)
+ident(
+  int_ref output "get_kernel.ml" 117 4478 4484 "get_kernel.ml" 117 4478 4490
+)
+"get_kernel.ml" 121 4607 4622 "get_kernel.ml" 121 4607 4633
+type(
+  bool
+)
+ident(
+  int_ref unversioned "get_kernel.ml" 118 4544 4550 "get_kernel.ml" 118 4544 4561
+)
+"get_kernel.ml" 121 4607 4635 "get_kernel.ml" 121 4607 4641
+type(
+  string option
+)
+ident(
+  int_ref prefix "get_kernel.ml" 119 4580 4586 "get_kernel.ml" 119 4580 4592
+)
+"get_kernel.ml" 121 4607 4609 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 119 4580 4582 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 118 4544 4546 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 117 4478 4480 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 93 3485 3487 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 92 3415 3417 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 91 3389 3391 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 90 3367 3369 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 84 3255 3257 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 79 3120 3122 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 71 2911 2913 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 70 2831 2833 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 69 2783 2785 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 54 1708 1710 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 53 1683 1685 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 36 1117 1119 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 34 1089 1091 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 33 1056 1058 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 32 1018 1020 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 31 993 995 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 30 968 970 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 29 939 941 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 28 914 916 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 27 887 889 "get_kernel.ml" 121 4607 4641
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 123 4643 4651 "get_kernel.ml" 123 4643 4659
+type(
+  transform_fn:(string -> string) ->
+  outputdir:string ->
+  < download : string -> string -> unit;
+    glob_expand : string -> string array;
+    inspect_get_mountpoints : string -> (string * 'a) list;
+    inspect_get_type : string -> string; mount_ro : 'a -> string -> unit;
+    umount_all : unit -> 'b; .. > ->
+  string -> 'b
+)
+ident(
+  def do_fetch "get_kernel.ml" 123 4643 4643 --
+)
+"get_kernel.ml" 123 4643 4661 "get_kernel.ml" 123 4643 4673
+type(
+  string -> string
+)
+ident(
+  def transform_fn "get_kernel.ml" 123 4643 4674 "get_kernel.ml" 150 5422 5439
+)
+"get_kernel.ml" 123 4643 4675 "get_kernel.ml" 123 4643 4684
+type(
+  string
+)
+ident(
+  def outputdir "get_kernel.ml" 123 4643 4685 "get_kernel.ml" 150 5422 5439
+)
+"get_kernel.ml" 123 4643 4685 "get_kernel.ml" 123 4643 4686
+type(
+  < download : string -> string -> unit;
+    glob_expand : string -> string array;
+    inspect_get_mountpoints : string -> (string * 'a) list;
+    inspect_get_type : string -> string; mount_ro : 'a -> string -> unit;
+    umount_all : unit -> 'b; .. >
+  as 'c
+)
+ident(
+  def g "get_kernel.ml" 123 4643 4687 "get_kernel.ml" 150 5422 5439
+)
+"get_kernel.ml" 123 4643 4687 "get_kernel.ml" 123 4643 4691
+type(
+  string
+)
+ident(
+  def root "get_kernel.ml" 125 4722 4724 "get_kernel.ml" 150 5422 5439
+)
+"get_kernel.ml" 125 4722 4728 "get_kernel.ml" 125 4722 4731
+type(
+  (string * 'a) list
+)
+"get_kernel.ml" 125 4722 4734 "get_kernel.ml" 125 4722 4735
+type(
+  'c
+)
+ident(
+  int_ref g "get_kernel.ml" 123 4643 4685 "get_kernel.ml" 123 4643 4686
+)
+"get_kernel.ml" 125 4722 4734 "get_kernel.ml" 125 4722 4759
+call(
+  stack
+)
+type(
+  string -> (string * 'a) list
+)
+"get_kernel.ml" 125 4722 4760 "get_kernel.ml" 125 4722 4764
+type(
+  string
+)
+ident(
+  int_ref root "get_kernel.ml" 123 4643 4687 "get_kernel.ml" 123 4643 4691
+)
+"get_kernel.ml" 125 4722 4734 "get_kernel.ml" 125 4722 4764
+type(
+  (string * 'a) list
+)
+"get_kernel.ml" 126 4768 4774 "get_kernel.ml" 126 4768 4777
+type(
+  string * 'd -> string * 'e -> int
+)
+"get_kernel.ml" 126 4768 4779 "get_kernel.ml" 126 4768 4780
+type(
+  string
+)
+ident(
+  def a "get_kernel.ml" 126 4768 4784 "get_kernel.ml" 126 4768 4835
+)
+"get_kernel.ml" 126 4768 4781 "get_kernel.ml" 126 4768 4782
+type(
+  'd
+)
+"get_kernel.ml" 126 4768 4778 "get_kernel.ml" 126 4768 4783
+type(
+  string * 'd
+)
+"get_kernel.ml" 126 4768 4785 "get_kernel.ml" 126 4768 4786
+type(
+  string
+)
+ident(
+  def b "get_kernel.ml" 126 4768 4792 "get_kernel.ml" 126 4768 4835
+)
+"get_kernel.ml" 126 4768 4787 "get_kernel.ml" 126 4768 4788
+type(
+  'e
+)
+"get_kernel.ml" 126 4768 4784 "get_kernel.ml" 126 4768 4789
+type(
+  string * 'e
+)
+"get_kernel.ml" 126 4768 4792 "get_kernel.ml" 126 4768 4799
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"get_kernel.ml" 126 4768 4801 "get_kernel.ml" 126 4768 4814
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"get_kernel.ml" 126 4768 4815 "get_kernel.ml" 126 4768 4816
+type(
+  string
+)
+ident(
+  int_ref a "get_kernel.ml" 126 4768 4779 "get_kernel.ml" 126 4768 4780
+)
+"get_kernel.ml" 126 4768 4800 "get_kernel.ml" 126 4768 4817
+type(
+  int
+)
+"get_kernel.ml" 126 4768 4819 "get_kernel.ml" 126 4768 4832
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"get_kernel.ml" 126 4768 4833 "get_kernel.ml" 126 4768 4834
+type(
+  string
+)
+ident(
+  int_ref b "get_kernel.ml" 126 4768 4785 "get_kernel.ml" 126 4768 4786
+)
+"get_kernel.ml" 126 4768 4818 "get_kernel.ml" 126 4768 4835
+type(
+  int
+)
+"get_kernel.ml" 126 4768 4792 "get_kernel.ml" 126 4768 4835
+type(
+  int
+)
+"get_kernel.ml" 127 4839 4845 "get_kernel.ml" 127 4839 4848
+type(
+  (string * 'a) list
+)
+"get_kernel.ml" 127 4839 4851 "get_kernel.ml" 127 4839 4860
+type(
+  (string * 'a -> string * 'a -> int) ->
+  (string * 'a) list -> (string * 'a) list
+)
+ident(
+  ext_ref List.sort
+)
+"get_kernel.ml" 127 4839 4861 "get_kernel.ml" 127 4839 4864
+type(
+  string * 'a -> string * 'a -> int
+)
+ident(
+  int_ref cmp "get_kernel.ml" 126 4768 4774 "get_kernel.ml" 126 4768 4777
+)
+"get_kernel.ml" 127 4839 4865 "get_kernel.ml" 127 4839 4868
+type(
+  (string * 'a) list
+)
+ident(
+  int_ref mps "get_kernel.ml" 125 4722 4728 "get_kernel.ml" 125 4722 4731
+)
+"get_kernel.ml" 127 4839 4851 "get_kernel.ml" 127 4839 4868
+call(
+  stack
+)
+type(
+  (string * 'a) list
+)
+"get_kernel.ml" 128 4872 4874 "get_kernel.ml" 128 4872 4883
+type(
+  (string * 'a -> unit) -> (string * 'a) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"get_kernel.ml" 129 4886 4895 "get_kernel.ml" 129 4886 4897
+type(
+  string
+)
+ident(
+  def mp "get_kernel.ml" 130 4907 4913 "get_kernel.ml" 131 4935 4997
+)
+"get_kernel.ml" 129 4886 4899 "get_kernel.ml" 129 4886 4902
+type(
+  'a
+)
+ident(
+  def dev "get_kernel.ml" 130 4907 4913 "get_kernel.ml" 131 4935 4997
+)
+"get_kernel.ml" 129 4886 4894 "get_kernel.ml" 129 4886 4903
+type(
+  string * 'a
+)
+"get_kernel.ml" 130 4907 4917 "get_kernel.ml" 130 4907 4918
+type(
+  'c
+)
+ident(
+  int_ref g "get_kernel.ml" 123 4643 4685 "get_kernel.ml" 123 4643 4686
+)
+"get_kernel.ml" 130 4907 4917 "get_kernel.ml" 130 4907 4927
+call(
+  stack
+)
+type(
+  'a -> string -> unit
+)
+"get_kernel.ml" 130 4907 4928 "get_kernel.ml" 130 4907 4931
+type(
+  'a
+)
+ident(
+  int_ref dev "get_kernel.ml" 129 4886 4899 "get_kernel.ml" 129 4886 4902
+)
+"get_kernel.ml" 130 4907 4932 "get_kernel.ml" 130 4907 4934
+type(
+  string
+)
+ident(
+  int_ref mp "get_kernel.ml" 129 4886 4895 "get_kernel.ml" 129 4886 4897
+)
+"get_kernel.ml" 130 4907 4917 "get_kernel.ml" 130 4907 4934
+type(
+  unit
+)
+"get_kernel.ml" 131 4935 4960 "get_kernel.ml" 131 4935 4963
+type(
+  string
+)
+ident(
+  def msg "get_kernel.ml" 131 4935 4967 "get_kernel.ml" 131 4935 4997
+)
+"get_kernel.ml" 131 4935 4946 "get_kernel.ml" 131 4935 4963
+type(
+  exn
+)
+"get_kernel.ml" 131 4935 4967 "get_kernel.ml" 131 4935 4974
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"get_kernel.ml" 131 4935 4976 "get_kernel.ml" 131 4935 4978
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 131 4935 4978 "get_kernel.ml" 131 4935 4992
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"get_kernel.ml" 131 4935 4975 "get_kernel.ml" 131 4935 4993
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"get_kernel.ml" 131 4935 4994 "get_kernel.ml" 131 4935 4997
+type(
+  string
+)
+ident(
+  int_ref msg "get_kernel.ml" 131 4935 4960 "get_kernel.ml" 131 4935 4963
+)
+"get_kernel.ml" 131 4935 4967 "get_kernel.ml" 131 4935 4997
+call(
+  tail
+)
+type(
+  unit
+)
+"get_kernel.ml" 130 4907 4913 "get_kernel.ml" 131 4935 4997
+type(
+  unit
+)
+"get_kernel.ml" 128 4872 4884 "get_kernel.ml" 132 4998 5001
+type(
+  string * 'a -> unit
+)
+"get_kernel.ml" 132 4998 5002 "get_kernel.ml" 132 4998 5005
+type(
+  (string * 'a) list
+)
+ident(
+  int_ref mps "get_kernel.ml" 127 4839 4845 "get_kernel.ml" 127 4839 4848
+)
+"get_kernel.ml" 128 4872 4874 "get_kernel.ml" 132 4998 5005
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 134 5008 5014 "get_kernel.ml" 134 5008 5019
+type(
+  string list
+)
+"get_kernel.ml" 135 5022 5030 "get_kernel.ml" 135 5022 5033
+type(
+  string
+)
+"get_kernel.ml" 135 5022 5036 "get_kernel.ml" 135 5022 5037
+type(
+  'c
+)
+ident(
+  int_ref g "get_kernel.ml" 123 4643 4685 "get_kernel.ml" 123 4643 4686
+)
+"get_kernel.ml" 135 5022 5036 "get_kernel.ml" 135 5022 5054
+call(
+  stack
+)
+type(
+  string -> string
+)
+"get_kernel.ml" 135 5022 5055 "get_kernel.ml" 135 5022 5059
+type(
+  string
+)
+ident(
+  int_ref root "get_kernel.ml" 123 4643 4687 "get_kernel.ml" 123 4643 4691
+)
+"get_kernel.ml" 135 5022 5036 "get_kernel.ml" 135 5022 5059
+type(
+  string
+)
+"get_kernel.ml" 136 5063 5073 "get_kernel.ml" 136 5063 5076
+type(
+  string
+)
+ident(
+  int_ref typ "get_kernel.ml" 135 5022 5030 "get_kernel.ml" 135 5022 5033
+)
+"get_kernel.ml" 137 5082 5088 "get_kernel.ml" 137 5082 5095
+type(
+  string
+)
+"get_kernel.ml" 137 5082 5099 "get_kernel.ml" 137 5082 5122
+type(
+  'c -> string -> string list
+)
+ident(
+  int_ref pick_kernel_files_linux "get_kernel.ml" 152 5441 5445 "get_kernel.ml" 152 5441 5468
+)
+"get_kernel.ml" 137 5082 5123 "get_kernel.ml" 137 5082 5124
+type(
+  'c
+)
+ident(
+  int_ref g "get_kernel.ml" 123 4643 4685 "get_kernel.ml" 123 4643 4686
+)
+"get_kernel.ml" 137 5082 5125 "get_kernel.ml" 137 5082 5129
+type(
+  string
+)
+ident(
+  int_ref root "get_kernel.ml" 123 4643 4687 "get_kernel.ml" 123 4643 4691
+)
+"get_kernel.ml" 137 5082 5099 "get_kernel.ml" 137 5082 5129
+call(
+  stack
+)
+type(
+  string list
+)
+"get_kernel.ml" 138 5130 5136 "get_kernel.ml" 138 5130 5139
+type(
+  string
+)
+ident(
+  def typ "get_kernel.ml" 139 5143 5149 "get_kernel.ml" 139 5143 5200
+)
+"get_kernel.ml" 139 5143 5149 "get_kernel.ml" 139 5143 5154
+type(
+  ?exit_code:int ->
+  (string -> string list, unit, string, string list) format4 ->
+  string -> string list
+)
+ident(
+  ext_ref Common_utils.error
+)
+"get_kernel.ml" 139 5143 5156 "get_kernel.ml" 139 5143 5158
+type(
+  (string -> string list, unit, string, string, string, string list) format6 ->
+  (string -> string list, unit, string, string list) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 139 5143 5158 "get_kernel.ml" 139 5143 5195
+type(
+  (string -> string list, unit, string, string, string, string list) format6
+)
+"get_kernel.ml" 139 5143 5155 "get_kernel.ml" 139 5143 5196
+type(
+  (string -> string list, unit, string, string list) format4
+)
+"get_kernel.ml" 139 5143 5197 "get_kernel.ml" 139 5143 5200
+type(
+  string
+)
+ident(
+  int_ref typ "get_kernel.ml" 138 5130 5136 "get_kernel.ml" 138 5130 5139
+)
+"get_kernel.ml" 139 5143 5149 "get_kernel.ml" 139 5143 5200
+call(
+  stack
+)
+type(
+  string list
+)
+"get_kernel.ml" 136 5063 5067 "get_kernel.ml" 139 5143 5200
+type(
+  string list
+)
+"get_kernel.ml" 135 5022 5026 "get_kernel.ml" 139 5143 5200
+type(
+  string list
+)
+"get_kernel.ml" 142 5233 5235 "get_kernel.ml" 142 5233 5244
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"get_kernel.ml" 143 5247 5255 "get_kernel.ml" 143 5247 5256
+type(
+  string
+)
+ident(
+  def f "get_kernel.ml" 144 5260 5266 "get_kernel.ml" 147 5385 5409
+)
+"get_kernel.ml" 144 5260 5270 "get_kernel.ml" 144 5260 5274
+type(
+  string
+)
+"get_kernel.ml" 144 5260 5277 "get_kernel.ml" 144 5260 5286
+type(
+  string
+)
+ident(
+  int_ref outputdir "get_kernel.ml" 123 4643 4675 "get_kernel.ml" 123 4643 4684
+)
+"get_kernel.ml" 144 5260 5287 "get_kernel.ml" 144 5260 5289
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"get_kernel.ml" 144 5260 5290 "get_kernel.ml" 144 5260 5302
+type(
+  string -> string
+)
+ident(
+  int_ref transform_fn "get_kernel.ml" 123 4643 4661 "get_kernel.ml" 123 4643 4673
+)
+"get_kernel.ml" 144 5260 5303 "get_kernel.ml" 144 5260 5304
+type(
+  string
+)
+ident(
+  int_ref f "get_kernel.ml" 143 5247 5255 "get_kernel.ml" 143 5247 5256
+)
+"get_kernel.ml" 144 5260 5290 "get_kernel.ml" 144 5260 5304
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 144 5260 5277 "get_kernel.ml" 144 5260 5304
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 145 5308 5317 "get_kernel.ml" 145 5308 5320
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"get_kernel.ml" 145 5308 5322 "get_kernel.ml" 145 5308 5327
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.quiet
+)
+"get_kernel.ml" 145 5308 5328 "get_kernel.ml" 145 5308 5330
+type(
+  unit
+)
+"get_kernel.ml" 145 5308 5321 "get_kernel.ml" 145 5308 5331
+call(
+  stack
+)
+type(
+  bool
+)
+"get_kernel.ml" 145 5308 5317 "get_kernel.ml" 145 5308 5331
+type(
+  bool
+)
+"get_kernel.ml" 146 5337 5345 "get_kernel.ml" 146 5337 5351
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"get_kernel.ml" 146 5337 5352 "get_kernel.ml" 146 5337 5376
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"get_kernel.ml" 146 5337 5377 "get_kernel.ml" 146 5337 5378
+type(
+  string
+)
+ident(
+  int_ref f "get_kernel.ml" 143 5247 5255 "get_kernel.ml" 143 5247 5256
+)
+"get_kernel.ml" 146 5337 5379 "get_kernel.ml" 146 5337 5383
+type(
+  string
+)
+ident(
+  int_ref dest "get_kernel.ml" 144 5260 5270 "get_kernel.ml" 144 5260 5274
+)
+"get_kernel.ml" 146 5337 5345 "get_kernel.ml" 146 5337 5383
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 145 5308 5314 "get_kernel.ml" 146 5337 5383
+type(
+  unit
+)
+"get_kernel.ml" 147 5385 5391 "get_kernel.ml" 147 5385 5392
+type(
+  'c
+)
+ident(
+  int_ref g "get_kernel.ml" 123 4643 4685 "get_kernel.ml" 123 4643 4686
+)
+"get_kernel.ml" 147 5385 5391 "get_kernel.ml" 147 5385 5401
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"get_kernel.ml" 147 5385 5402 "get_kernel.ml" 147 5385 5403
+type(
+  string
+)
+ident(
+  int_ref f "get_kernel.ml" 143 5247 5255 "get_kernel.ml" 143 5247 5256
+)
+"get_kernel.ml" 147 5385 5404 "get_kernel.ml" 147 5385 5408
+type(
+  string
+)
+ident(
+  int_ref dest "get_kernel.ml" 144 5260 5270 "get_kernel.ml" 144 5260 5274
+)
+"get_kernel.ml" 147 5385 5391 "get_kernel.ml" 147 5385 5409
+type(
+  unit
+)
+"get_kernel.ml" 145 5308 5314 "get_kernel.ml" 147 5385 5409
+type(
+  unit
+)
+"get_kernel.ml" 144 5260 5266 "get_kernel.ml" 147 5385 5409
+type(
+  unit
+)
+"get_kernel.ml" 142 5233 5245 "get_kernel.ml" 148 5410 5413
+type(
+  string -> unit
+)
+"get_kernel.ml" 148 5410 5414 "get_kernel.ml" 148 5410 5419
+type(
+  string list
+)
+ident(
+  int_ref files "get_kernel.ml" 134 5008 5014 "get_kernel.ml" 134 5008 5019
+)
+"get_kernel.ml" 142 5233 5235 "get_kernel.ml" 148 5410 5419
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 150 5422 5424 "get_kernel.ml" 150 5422 5425
+type(
+  'c
+)
+ident(
+  int_ref g "get_kernel.ml" 123 4643 4685 "get_kernel.ml" 123 4643 4686
+)
+"get_kernel.ml" 150 5422 5424 "get_kernel.ml" 150 5422 5436
+call(
+  tail
+)
+type(
+  unit -> 'b
+)
+"get_kernel.ml" 150 5422 5437 "get_kernel.ml" 150 5422 5439
+type(
+  unit
+)
+"get_kernel.ml" 150 5422 5424 "get_kernel.ml" 150 5422 5439
+type(
+  'b
+)
+"get_kernel.ml" 142 5233 5235 "get_kernel.ml" 150 5422 5439
+type(
+  'b
+)
+"get_kernel.ml" 134 5008 5010 "get_kernel.ml" 150 5422 5439
+type(
+  'b
+)
+"get_kernel.ml" 128 4872 4874 "get_kernel.ml" 150 5422 5439
+type(
+  'b
+)
+"get_kernel.ml" 127 4839 4841 "get_kernel.ml" 150 5422 5439
+type(
+  'b
+)
+"get_kernel.ml" 126 4768 4770 "get_kernel.ml" 150 5422 5439
+type(
+  'b
+)
+"get_kernel.ml" 125 4722 4724 "get_kernel.ml" 150 5422 5439
+type(
+  'b
+)
+"get_kernel.ml" 152 5441 5445 "get_kernel.ml" 152 5441 5468
+type(
+  'c -> string -> string list
+)
+ident(
+  def pick_kernel_files_linux "get_kernel.ml" 123 4643 4643 --
+)
+"get_kernel.ml" 152 5441 5469 "get_kernel.ml" 152 5441 5470
+type(
+  'c
+)
+ident(
+  def g "get_kernel.ml" 152 5441 5471 "get_kernel.ml" 178 6268 6285
+)
+"get_kernel.ml" 152 5441 5471 "get_kernel.ml" 152 5441 5475
+type(
+  string
+)
+ident(
+  def root "get_kernel.ml" 154 5519 5521 "get_kernel.ml" 178 6268 6285
+)
+"get_kernel.ml" 154 5519 5525 "get_kernel.ml" 154 5519 5529
+type(
+  string -> string list
+)
+"get_kernel.ml" 154 5519 5530 "get_kernel.ml" 154 5519 5531
+type(
+  string
+)
+ident(
+  def w "get_kernel.ml" 154 5519 5534 "get_kernel.ml" 154 5519 5565
+)
+"get_kernel.ml" 154 5519 5534 "get_kernel.ml" 154 5519 5547
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"get_kernel.ml" 154 5519 5549 "get_kernel.ml" 154 5519 5550
+type(
+  'c
+)
+ident(
+  int_ref g "get_kernel.ml" 152 5441 5469 "get_kernel.ml" 152 5441 5470
+)
+"get_kernel.ml" 154 5519 5549 "get_kernel.ml" 154 5519 5562
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"get_kernel.ml" 154 5519 5563 "get_kernel.ml" 154 5519 5564
+type(
+  string
+)
+ident(
+  int_ref w "get_kernel.ml" 154 5519 5530 "get_kernel.ml" 154 5519 5531
+)
+"get_kernel.ml" 154 5519 5548 "get_kernel.ml" 154 5519 5565
+type(
+  string array
+)
+"get_kernel.ml" 154 5519 5534 "get_kernel.ml" 154 5519 5565
+call(
+  tail
+)
+type(
+  string list
+)
+"get_kernel.ml" 155 5569 5575 "get_kernel.ml" 155 5569 5582
+type(
+  string list
+)
+"get_kernel.ml" 155 5569 5585 "get_kernel.ml" 155 5569 5589
+type(
+  string -> string list
+)
+ident(
+  int_ref glob "get_kernel.ml" 154 5519 5525 "get_kernel.ml" 154 5519 5529
+)
+"get_kernel.ml" 155 5569 5590 "get_kernel.ml" 155 5569 5607
+type(
+  string
+)
+"get_kernel.ml" 155 5569 5585 "get_kernel.ml" 155 5569 5607
+call(
+  stack
+)
+type(
+  string list
+)
+"get_kernel.ml" 156 5611 5617 "get_kernel.ml" 156 5611 5624
+type(
+  string list
+)
+"get_kernel.ml" 156 5611 5627 "get_kernel.ml" 156 5611 5631
+type(
+  string -> string list
+)
+ident(
+  int_ref glob "get_kernel.ml" 154 5519 5525 "get_kernel.ml" 154 5519 5529
+)
+"get_kernel.ml" 156 5611 5632 "get_kernel.ml" 156 5611 5651
+type(
+  string
+)
+"get_kernel.ml" 156 5611 5627 "get_kernel.ml" 156 5611 5651
+call(
+  stack
+)
+type(
+  string list
+)
+"get_kernel.ml" 159 5674 5680 "get_kernel.ml" 159 5674 5687
+type(
+  string list
+)
+"get_kernel.ml" 159 5674 5693 "get_kernel.ml" 159 5674 5700
+type(
+  string list
+)
+ident(
+  int_ref initrds "get_kernel.ml" 156 5611 5617 "get_kernel.ml" 156 5611 5624
+)
+"get_kernel.ml" 159 5674 5701 "get_kernel.ml" 159 5674 5703
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"get_kernel.ml" 159 5674 5704 "get_kernel.ml" 159 5674 5706
+type(
+  string list
+)
+"get_kernel.ml" 159 5674 5693 "get_kernel.ml" 159 5674 5706
+type(
+  bool
+)
+"get_kernel.ml" 159 5674 5712 "get_kernel.ml" 159 5674 5719
+type(
+  string list
+)
+ident(
+  int_ref initrds "get_kernel.ml" 156 5611 5617 "get_kernel.ml" 156 5611 5624
+)
+"get_kernel.ml" 159 5674 5725 "get_kernel.ml" 159 5674 5729
+type(
+  string -> string list
+)
+ident(
+  int_ref glob "get_kernel.ml" 154 5519 5525 "get_kernel.ml" 154 5519 5529
+)
+"get_kernel.ml" 159 5674 5730 "get_kernel.ml" 159 5674 5746
+type(
+  string
+)
+"get_kernel.ml" 159 5674 5725 "get_kernel.ml" 159 5674 5746
+call(
+  stack
+)
+type(
+  string list
+)
+"get_kernel.ml" 159 5674 5690 "get_kernel.ml" 159 5674 5746
+type(
+  string list
+)
+"get_kernel.ml" 162 5774 5780 "get_kernel.ml" 162 5774 5787
+type(
+  string list
+)
+"get_kernel.ml" 162 5774 5793 "get_kernel.ml" 162 5774 5800
+type(
+  string list
+)
+ident(
+  int_ref initrds "get_kernel.ml" 159 5674 5680 "get_kernel.ml" 159 5674 5687
+)
+"get_kernel.ml" 162 5774 5801 "get_kernel.ml" 162 5774 5803
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"get_kernel.ml" 162 5774 5804 "get_kernel.ml" 162 5774 5806
+type(
+  string list
+)
+"get_kernel.ml" 162 5774 5793 "get_kernel.ml" 162 5774 5806
+type(
+  bool
+)
+"get_kernel.ml" 162 5774 5812 "get_kernel.ml" 162 5774 5819
+type(
+  string list
+)
+ident(
+  int_ref initrds "get_kernel.ml" 159 5674 5680 "get_kernel.ml" 159 5674 5687
+)
+"get_kernel.ml" 162 5774 5825 "get_kernel.ml" 162 5774 5829
+type(
+  string -> string list
+)
+ident(
+  int_ref glob "get_kernel.ml" 154 5519 5525 "get_kernel.ml" 154 5519 5529
+)
+"get_kernel.ml" 162 5774 5830 "get_kernel.ml" 162 5774 5850
+type(
+  string
+)
+"get_kernel.ml" 162 5774 5825 "get_kernel.ml" 162 5774 5850
+call(
+  stack
+)
+type(
+  string list
+)
+"get_kernel.ml" 162 5774 5790 "get_kernel.ml" 162 5774 5850
+type(
+  string list
+)
+"get_kernel.ml" 165 5923 5929 "get_kernel.ml" 165 5923 5936
+type(
+  string list
+)
+"get_kernel.ml" 165 5923 5939 "get_kernel.ml" 165 5923 5947
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"get_kernel.ml" 165 5923 5949 "get_kernel.ml" 165 5923 5958
+type(
+  (string -> string -> int) -> string list -> string list
+)
+ident(
+  ext_ref List.sort
+)
+"get_kernel.ml" 165 5923 5959 "get_kernel.ml" 165 5923 5974
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.compare_version
+)
+"get_kernel.ml" 165 5923 5975 "get_kernel.ml" 165 5923 5982
+type(
+  string list
+)
+ident(
+  int_ref kernels "get_kernel.ml" 155 5569 5575 "get_kernel.ml" 155 5569 5582
+)
+"get_kernel.ml" 165 5923 5948 "get_kernel.ml" 165 5923 5983
+call(
+  stack
+)
+type(
+  string list
+)
+"get_kernel.ml" 165 5923 5939 "get_kernel.ml" 165 5923 5983
+call(
+  stack
+)
+type(
+  string list
+)
+"get_kernel.ml" 166 5987 5993 "get_kernel.ml" 166 5987 6000
+type(
+  string list
+)
+"get_kernel.ml" 166 5987 6003 "get_kernel.ml" 166 5987 6011
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"get_kernel.ml" 166 5987 6013 "get_kernel.ml" 166 5987 6022
+type(
+  (string -> string -> int) -> string list -> string list
+)
+ident(
+  ext_ref List.sort
+)
+"get_kernel.ml" 166 5987 6023 "get_kernel.ml" 166 5987 6038
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.compare_version
+)
+"get_kernel.ml" 166 5987 6039 "get_kernel.ml" 166 5987 6046
+type(
+  string list
+)
+ident(
+  int_ref initrds "get_kernel.ml" 162 5774 5780 "get_kernel.ml" 162 5774 5787
+)
+"get_kernel.ml" 166 5987 6012 "get_kernel.ml" 166 5987 6047
+call(
+  stack
+)
+type(
+  string list
+)
+"get_kernel.ml" 166 5987 6003 "get_kernel.ml" 166 5987 6047
+call(
+  stack
+)
+type(
+  string list
+)
+"get_kernel.ml" 168 6052 6057 "get_kernel.ml" 168 6052 6064
+type(
+  string list
+)
+ident(
+  int_ref kernels "get_kernel.ml" 165 5923 5929 "get_kernel.ml" 165 5923 5936
+)
+"get_kernel.ml" 168 6052 6065 "get_kernel.ml" 168 6052 6066
+type(
+  string list -> string list -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"get_kernel.ml" 168 6052 6067 "get_kernel.ml" 168 6052 6069
+type(
+  string list
+)
+"get_kernel.ml" 168 6052 6057 "get_kernel.ml" 168 6052 6069
+type(
+  bool
+)
+"get_kernel.ml" 169 6075 6079 "get_kernel.ml" 169 6075 6084
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"get_kernel.ml" 169 6075 6086 "get_kernel.ml" 169 6075 6088
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 169 6075 6088 "get_kernel.ml" 169 6075 6111
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"get_kernel.ml" 169 6075 6085 "get_kernel.ml" 169 6075 6112
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"get_kernel.ml" 169 6075 6113 "get_kernel.ml" 169 6075 6117
+type(
+  string
+)
+ident(
+  int_ref root "get_kernel.ml" 152 5441 5471 "get_kernel.ml" 152 5441 5475
+)
+"get_kernel.ml" 169 6075 6079 "get_kernel.ml" 169 6075 6117
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 168 6052 6054 "get_kernel.ml" 169 6075 6117
+type(
+  unit
+)
+"get_kernel.ml" 172 6145 6151 "get_kernel.ml" 172 6145 6157
+type(
+  string list
+)
+"get_kernel.ml" 172 6145 6161 "get_kernel.ml" 172 6145 6168
+type(
+  string list -> string
+)
+ident(
+  ext_ref List.hd
+)
+"get_kernel.ml" 172 6145 6169 "get_kernel.ml" 172 6145 6176
+type(
+  string list
+)
+ident(
+  int_ref kernels "get_kernel.ml" 165 5923 5929 "get_kernel.ml" 165 5923 5936
+)
+"get_kernel.ml" 172 6145 6161 "get_kernel.ml" 172 6145 6176
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 172 6145 6160 "get_kernel.ml" 172 6145 6177
+type(
+  string list
+)
+"get_kernel.ml" 173 6181 6187 "get_kernel.ml" 173 6181 6193
+type(
+  string list
+)
+"get_kernel.ml" 174 6196 6206 "get_kernel.ml" 174 6196 6213
+type(
+  string list
+)
+ident(
+  int_ref initrds "get_kernel.ml" 166 5987 5993 "get_kernel.ml" 166 5987 6000
+)
+"get_kernel.ml" 175 6219 6225 "get_kernel.ml" 175 6219 6227
+type(
+  string list
+)
+"get_kernel.ml" 175 6219 6231 "get_kernel.ml" 175 6219 6233
+type(
+  string list
+)
+"get_kernel.ml" 176 6234 6240 "get_kernel.ml" 176 6234 6246
+type(
+  string
+)
+ident(
+  def initrd "get_kernel.ml" 176 6234 6255 "get_kernel.ml" 176 6234 6263
+)
+"get_kernel.ml" 176 6234 6250 "get_kernel.ml" 176 6234 6251
+type(
+  string list
+)
+"get_kernel.ml" 176 6234 6240 "get_kernel.ml" 176 6234 6251
+type(
+  string list
+)
+"get_kernel.ml" 176 6234 6256 "get_kernel.ml" 176 6234 6262
+type(
+  string
+)
+ident(
+  int_ref initrd "get_kernel.ml" 176 6234 6240 "get_kernel.ml" 176 6234 6246
+)
+"get_kernel.ml" 176 6234 6255 "get_kernel.ml" 176 6234 6263
+type(
+  string list
+)
+"get_kernel.ml" 174 6196 6200 "get_kernel.ml" 176 6234 6263
+type(
+  string list
+)
+"get_kernel.ml" 178 6268 6270 "get_kernel.ml" 178 6268 6276
+type(
+  string list
+)
+ident(
+  int_ref kernel "get_kernel.ml" 172 6145 6151 "get_kernel.ml" 172 6145 6157
+)
+"get_kernel.ml" 178 6268 6277 "get_kernel.ml" 178 6268 6278
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"get_kernel.ml" 178 6268 6279 "get_kernel.ml" 178 6268 6285
+type(
+  string list
+)
+ident(
+  int_ref initrd "get_kernel.ml" 173 6181 6187 "get_kernel.ml" 173 6181 6193
+)
+"get_kernel.ml" 178 6268 6270 "get_kernel.ml" 178 6268 6285
+call(
+  tail
+)
+type(
+  string list
+)
+"get_kernel.ml" 173 6181 6183 "get_kernel.ml" 178 6268 6285
+type(
+  string list
+)
+"get_kernel.ml" 172 6145 6147 "get_kernel.ml" 178 6268 6285
+type(
+  string list
+)
+"get_kernel.ml" 168 6052 6054 "get_kernel.ml" 178 6268 6285
+type(
+  string list
+)
+"get_kernel.ml" 166 5987 5989 "get_kernel.ml" 178 6268 6285
+type(
+  string list
+)
+"get_kernel.ml" 165 5923 5925 "get_kernel.ml" 178 6268 6285
+type(
+  string list
+)
+"get_kernel.ml" 162 5774 5776 "get_kernel.ml" 178 6268 6285
+type(
+  string list
+)
+"get_kernel.ml" 159 5674 5676 "get_kernel.ml" 178 6268 6285
+type(
+  string list
+)
+"get_kernel.ml" 156 5611 5613 "get_kernel.ml" 178 6268 6285
+type(
+  string list
+)
+"get_kernel.ml" 155 5569 5571 "get_kernel.ml" 178 6268 6285
+type(
+  string list
+)
+"get_kernel.ml" 154 5519 5521 "get_kernel.ml" 178 6268 6285
+type(
+  string list
+)
+"get_kernel.ml" 181 6307 6311 "get_kernel.ml" 181 6307 6315
+type(
+  unit -> unit
+)
+ident(
+  def main "get_kernel.ml" 218 7217 7217 --
+)
+"get_kernel.ml" 181 6307 6316 "get_kernel.ml" 181 6307 6318
+type(
+  unit
+)
+"get_kernel.ml" 182 6321 6327 "get_kernel.ml" 182 6321 6330
+type(
+  Guestfs.guestfs -> unit
+)
+"get_kernel.ml" 182 6321 6332 "get_kernel.ml" 182 6321 6338
+type(
+  string option
+)
+"get_kernel.ml" 182 6321 6340 "get_kernel.ml" 182 6321 6351
+type(
+  bool
+)
+"get_kernel.ml" 182 6321 6353 "get_kernel.ml" 182 6321 6359
+type(
+  string option
+)
+"get_kernel.ml" 182 6321 6327 "get_kernel.ml" 182 6321 6359
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 182 6321 6362 "get_kernel.ml" 182 6321 6375
+type(
+  unit -> (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+ident(
+  int_ref parse_cmdline "get_kernel.ml" 26 864 868 "get_kernel.ml" 26 864 881
+)
+"get_kernel.ml" 182 6321 6376 "get_kernel.ml" 182 6321 6378
+type(
+  unit
+)
+"get_kernel.ml" 182 6321 6362 "get_kernel.ml" 182 6321 6378
+call(
+  stack
+)
+type(
+  (Guestfs.guestfs -> unit) * string option * bool * string option
+)
+"get_kernel.ml" 185 6414 6420 "get_kernel.ml" 185 6414 6421
+type(
+  G.guestfs
+)
+"get_kernel.ml" 185 6414 6424 "get_kernel.ml" 185 6414 6437
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> G.guestfs
+)
+"get_kernel.ml" 185 6414 6438 "get_kernel.ml" 185 6414 6440
+type(
+  unit
+)
+"get_kernel.ml" 185 6414 6424 "get_kernel.ml" 185 6414 6440
+call(
+  stack
+)
+type(
+  G.guestfs
+)
+"get_kernel.ml" 186 6444 6449 "get_kernel.ml" 186 6444 6454
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.trace
+)
+"get_kernel.ml" 186 6444 6455 "get_kernel.ml" 186 6444 6457
+type(
+  unit
+)
+"get_kernel.ml" 186 6444 6449 "get_kernel.ml" 186 6444 6457
+call(
+  stack
+)
+type(
+  bool
+)
+"get_kernel.ml" 186 6444 6463 "get_kernel.ml" 186 6444 6464
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "get_kernel.ml" 185 6414 6420 "get_kernel.ml" 185 6414 6421
+)
+"get_kernel.ml" 186 6444 6463 "get_kernel.ml" 186 6444 6474
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"get_kernel.ml" 186 6444 6475 "get_kernel.ml" 186 6444 6479
+type(
+  bool
+)
+"get_kernel.ml" 186 6444 6463 "get_kernel.ml" 186 6444 6479
+type(
+  unit
+)
+"get_kernel.ml" 186 6444 6446 "get_kernel.ml" 186 6444 6479
+type(
+  unit
+)
+"get_kernel.ml" 187 6481 6486 "get_kernel.ml" 187 6481 6493
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"get_kernel.ml" 187 6481 6494 "get_kernel.ml" 187 6481 6496
+type(
+  unit
+)
+"get_kernel.ml" 187 6481 6486 "get_kernel.ml" 187 6481 6496
+call(
+  stack
+)
+type(
+  bool
+)
+"get_kernel.ml" 187 6481 6502 "get_kernel.ml" 187 6481 6503
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "get_kernel.ml" 185 6414 6420 "get_kernel.ml" 185 6414 6421
+)
+"get_kernel.ml" 187 6481 6502 "get_kernel.ml" 187 6481 6515
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"get_kernel.ml" 187 6481 6516 "get_kernel.ml" 187 6481 6520
+type(
+  bool
+)
+"get_kernel.ml" 187 6481 6502 "get_kernel.ml" 187 6481 6520
+type(
+  unit
+)
+"get_kernel.ml" 187 6481 6483 "get_kernel.ml" 187 6481 6520
+type(
+  unit
+)
+"get_kernel.ml" 188 6522 6524 "get_kernel.ml" 188 6522 6527
+type(
+  Guestfs.guestfs -> unit
+)
+ident(
+  int_ref add "get_kernel.ml" 182 6321 6327 "get_kernel.ml" 182 6321 6330
+)
+"get_kernel.ml" 188 6522 6528 "get_kernel.ml" 188 6522 6529
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "get_kernel.ml" 185 6414 6420 "get_kernel.ml" 185 6414 6421
+)
+"get_kernel.ml" 188 6522 6524 "get_kernel.ml" 188 6522 6529
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 189 6531 6533 "get_kernel.ml" 189 6531 6534
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "get_kernel.ml" 185 6414 6420 "get_kernel.ml" 185 6414 6421
+)
+"get_kernel.ml" 189 6531 6533 "get_kernel.ml" 189 6531 6541
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"get_kernel.ml" 189 6531 6542 "get_kernel.ml" 189 6531 6544
+type(
+  unit
+)
+"get_kernel.ml" 189 6531 6533 "get_kernel.ml" 189 6531 6544
+type(
+  unit
+)
+"get_kernel.ml" 191 6547 6553 "get_kernel.ml" 191 6547 6558
+type(
+  string array
+)
+"get_kernel.ml" 191 6547 6561 "get_kernel.ml" 191 6547 6562
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "get_kernel.ml" 185 6414 6420 "get_kernel.ml" 185 6414 6421
+)
+"get_kernel.ml" 191 6547 6561 "get_kernel.ml" 191 6547 6573
+call(
+  stack
+)
+type(
+  unit -> string array
+)
+"get_kernel.ml" 191 6547 6574 "get_kernel.ml" 191 6547 6576
+type(
+  unit
+)
+"get_kernel.ml" 191 6547 6561 "get_kernel.ml" 191 6547 6576
+type(
+  string array
+)
+"get_kernel.ml" 192 6580 6585 "get_kernel.ml" 192 6580 6597
+type(
+  string array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"get_kernel.ml" 192 6580 6598 "get_kernel.ml" 192 6580 6603
+type(
+  string array
+)
+ident(
+  int_ref roots "get_kernel.ml" 191 6547 6553 "get_kernel.ml" 191 6547 6558
+)
+"get_kernel.ml" 192 6580 6585 "get_kernel.ml" 192 6580 6603
+type(
+  int
+)
+"get_kernel.ml" 192 6580 6604 "get_kernel.ml" 192 6580 6605
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"get_kernel.ml" 192 6580 6606 "get_kernel.ml" 192 6580 6607
+type(
+  int
+)
+"get_kernel.ml" 192 6580 6585 "get_kernel.ml" 192 6580 6607
+type(
+  bool
+)
+"get_kernel.ml" 193 6613 6617 "get_kernel.ml" 193 6613 6622
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"get_kernel.ml" 193 6613 6624 "get_kernel.ml" 193 6613 6626
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 193 6613 6626 "get_kernel.ml" 193 6613 6653
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"get_kernel.ml" 193 6613 6623 "get_kernel.ml" 193 6613 6654
+type(
+  (unit, unit, string, unit) format4
+)
+"get_kernel.ml" 193 6613 6617 "get_kernel.ml" 193 6613 6654
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 192 6580 6582 "get_kernel.ml" 193 6613 6654
+type(
+  unit
+)
+"get_kernel.ml" 194 6656 6661 "get_kernel.ml" 194 6656 6673
+type(
+  string array -> int
+)
+ident(
+  ext_ref Array.length
+)
+"get_kernel.ml" 194 6656 6674 "get_kernel.ml" 194 6656 6679
+type(
+  string array
+)
+ident(
+  int_ref roots "get_kernel.ml" 191 6547 6553 "get_kernel.ml" 191 6547 6558
+)
+"get_kernel.ml" 194 6656 6661 "get_kernel.ml" 194 6656 6679
+type(
+  int
+)
+"get_kernel.ml" 194 6656 6680 "get_kernel.ml" 194 6656 6681
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"get_kernel.ml" 194 6656 6682 "get_kernel.ml" 194 6656 6683
+type(
+  int
+)
+"get_kernel.ml" 194 6656 6661 "get_kernel.ml" 194 6656 6683
+type(
+  bool
+)
+"get_kernel.ml" 195 6689 6693 "get_kernel.ml" 195 6689 6698
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"get_kernel.ml" 195 6689 6700 "get_kernel.ml" 195 6689 6702
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"get_kernel.ml" 195 6689 6702 "get_kernel.ml" 195 6689 6757
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"get_kernel.ml" 195 6689 6699 "get_kernel.ml" 195 6689 6758
+type(
+  (unit, unit, string, unit) format4
+)
+"get_kernel.ml" 195 6689 6693 "get_kernel.ml" 195 6689 6758
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 194 6656 6658 "get_kernel.ml" 195 6689 6758
+type(
+  unit
+)
+"get_kernel.ml" 196 6760 6766 "get_kernel.ml" 196 6760 6770
+type(
+  string
+)
+"get_kernel.ml" 196 6760 6773 "get_kernel.ml" 196 6760 6778
+type(
+  string array
+)
+ident(
+  int_ref roots "get_kernel.ml" 191 6547 6553 "get_kernel.ml" 191 6547 6558
+)
+"get_kernel.ml" 196 6760 6780 "get_kernel.ml" 196 6760 6781
+type(
+  int
+)
+"get_kernel.ml" 196 6760 6773 "get_kernel.ml" 196 6760 6782
+type(
+  string
+)
+"get_kernel.ml" 198 6787 6793 "get_kernel.ml" 198 6787 6806
+type(
+  string -> string
+)
+"get_kernel.ml" 198 6787 6807 "get_kernel.ml" 198 6787 6809
+type(
+  string
+)
+ident(
+  def fn "get_kernel.ml" 199 6812 6816 "get_kernel.ml" 205 6970 6998
+)
+"get_kernel.ml" 199 6812 6820 "get_kernel.ml" 199 6812 6822
+type(
+  string
+)
+"get_kernel.ml" 199 6812 6825 "get_kernel.ml" 199 6812 6842
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.basename
+)
+"get_kernel.ml" 199 6812 6843 "get_kernel.ml" 199 6812 6845
+type(
+  string
+)
+ident(
+  int_ref fn "get_kernel.ml" 198 6787 6807 "get_kernel.ml" 198 6787 6809
+)
+"get_kernel.ml" 199 6812 6825 "get_kernel.ml" 199 6812 6845
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 200 6849 6857 "get_kernel.ml" 200 6849 6859
+type(
+  string
+)
+"get_kernel.ml" 201 6862 6871 "get_kernel.ml" 201 6862 6882
+type(
+  bool
+)
+ident(
+  int_ref unversioned "get_kernel.ml" 182 6321 6340 "get_kernel.ml" 182 6321 6351
+)
+"get_kernel.ml" 201 6862 6888 "get_kernel.ml" 201 6862 6891
+type(
+  string * string -> string
+)
+ident(
+  ext_ref Pervasives.fst
+)
+"get_kernel.ml" 201 6862 6893 "get_kernel.ml" 201 6862 6905
+type(
+  string -> string -> string * string
+)
+ident(
+  ext_ref Common_utils.string_split
+)
+"get_kernel.ml" 201 6862 6906 "get_kernel.ml" 201 6862 6909
+type(
+  string
+)
+"get_kernel.ml" 201 6862 6910 "get_kernel.ml" 201 6862 6912
+type(
+  string
+)
+ident(
+  int_ref fn "get_kernel.ml" 199 6812 6820 "get_kernel.ml" 199 6812 6822
+)
+"get_kernel.ml" 201 6862 6892 "get_kernel.ml" 201 6862 6913
+call(
+  stack
+)
+type(
+  string * string
+)
+"get_kernel.ml" 201 6862 6888 "get_kernel.ml" 201 6862 6913
+type(
+  string
+)
+"get_kernel.ml" 202 6914 6925 "get_kernel.ml" 202 6914 6927
+type(
+  string
+)
+ident(
+  int_ref fn "get_kernel.ml" 199 6812 6820 "get_kernel.ml" 199 6812 6822
+)
+"get_kernel.ml" 201 6862 6868 "get_kernel.ml" 202 6914 6927
+type(
+  string
+)
+"get_kernel.ml" 203 6931 6941 "get_kernel.ml" 203 6931 6947
+type(
+  string option
+)
+ident(
+  int_ref prefix "get_kernel.ml" 182 6321 6353 "get_kernel.ml" 182 6321 6359
+)
+"get_kernel.ml" 204 6953 6959 "get_kernel.ml" 204 6953 6963
+type(
+  string option
+)
+"get_kernel.ml" 204 6953 6967 "get_kernel.ml" 204 6953 6969
+type(
+  string
+)
+ident(
+  int_ref fn "get_kernel.ml" 200 6849 6857 "get_kernel.ml" 200 6849 6859
+)
+"get_kernel.ml" 205 6970 6981 "get_kernel.ml" 205 6970 6982
+type(
+  string
+)
+ident(
+  def p "get_kernel.ml" 205 6970 6986 "get_kernel.ml" 205 6970 6998
+)
+"get_kernel.ml" 205 6970 6976 "get_kernel.ml" 205 6970 6982
+type(
+  string option
+)
+"get_kernel.ml" 205 6970 6986 "get_kernel.ml" 205 6970 6987
+type(
+  string
+)
+ident(
+  int_ref p "get_kernel.ml" 205 6970 6981 "get_kernel.ml" 205 6970 6982
+)
+"get_kernel.ml" 205 6970 6988 "get_kernel.ml" 205 6970 6989
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 205 6970 6990 "get_kernel.ml" 205 6970 6993
+type(
+  string
+)
+"get_kernel.ml" 205 6970 6994 "get_kernel.ml" 205 6970 6995
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"get_kernel.ml" 205 6970 6996 "get_kernel.ml" 205 6970 6998
+type(
+  string
+)
+ident(
+  int_ref fn "get_kernel.ml" 200 6849 6857 "get_kernel.ml" 200 6849 6859
+)
+"get_kernel.ml" 205 6970 6990 "get_kernel.ml" 205 6970 6998
+call(
+  stack
+)
+type(
+  string
+)
+"get_kernel.ml" 205 6970 6986 "get_kernel.ml" 205 6970 6998
+call(
+  tail
+)
+type(
+  string
+)
+"get_kernel.ml" 203 6931 6935 "get_kernel.ml" 205 6970 6998
+type(
+  string
+)
+"get_kernel.ml" 200 6849 6853 "get_kernel.ml" 205 6970 6998
+type(
+  string
+)
+"get_kernel.ml" 199 6812 6816 "get_kernel.ml" 205 6970 6998
+type(
+  string
+)
+"get_kernel.ml" 207 7003 7009 "get_kernel.ml" 207 7003 7018
+type(
+  string
+)
+"get_kernel.ml" 208 7021 7031 "get_kernel.ml" 208 7021 7037
+type(
+  string option
+)
+ident(
+  int_ref output "get_kernel.ml" 182 6321 6332 "get_kernel.ml" 182 6321 6338
+)
+"get_kernel.ml" 209 7043 7049 "get_kernel.ml" 209 7043 7053
+type(
+  string option
+)
+"get_kernel.ml" 209 7043 7057 "get_kernel.ml" 209 7043 7082
+type(
+  string
+)
+ident(
+  ext_ref Filename.current_dir_name
+)
+"get_kernel.ml" 210 7083 7094 "get_kernel.ml" 210 7083 7097
+type(
+  string
+)
+ident(
+  def dir "get_kernel.ml" 210 7083 7101 "get_kernel.ml" 210 7083 7104
+)
+"get_kernel.ml" 210 7083 7089 "get_kernel.ml" 210 7083 7097
+type(
+  string option
+)
+"get_kernel.ml" 210 7083 7101 "get_kernel.ml" 210 7083 7104
+type(
+  string
+)
+ident(
+  int_ref dir "get_kernel.ml" 210 7083 7094 "get_kernel.ml" 210 7083 7097
+)
+"get_kernel.ml" 208 7021 7025 "get_kernel.ml" 210 7083 7104
+type(
+  string
+)
+"get_kernel.ml" 212 7109 7111 "get_kernel.ml" 212 7109 7119
+type(
+  transform_fn:(string -> string) ->
+  outputdir:string -> G.guestfs -> string -> unit
+)
+ident(
+  int_ref do_fetch "get_kernel.ml" 123 4643 4651 "get_kernel.ml" 123 4643 4659
+)
+"get_kernel.ml" 212 7109 7134 "get_kernel.ml" 212 7109 7147
+type(
+  string -> string
+)
+ident(
+  int_ref dest_filename "get_kernel.ml" 198 6787 6793 "get_kernel.ml" 198 6787 6806
+)
+"get_kernel.ml" 212 7109 7149 "get_kernel.ml" 212 7109 7158
+type(
+  string
+)
+ident(
+  int_ref outputdir "get_kernel.ml" 207 7003 7009 "get_kernel.ml" 207 7003 7018
+)
+"get_kernel.ml" 212 7109 7159 "get_kernel.ml" 212 7109 7160
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "get_kernel.ml" 185 6414 6420 "get_kernel.ml" 185 6414 6421
+)
+"get_kernel.ml" 212 7109 7161 "get_kernel.ml" 212 7109 7165
+type(
+  string
+)
+ident(
+  int_ref root "get_kernel.ml" 196 6760 6766 "get_kernel.ml" 196 6760 6770
+)
+"get_kernel.ml" 212 7109 7111 "get_kernel.ml" 212 7109 7165
+call(
+  stack
+)
+type(
+  unit
+)
+"get_kernel.ml" 215 7186 7188 "get_kernel.ml" 215 7186 7189
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "get_kernel.ml" 185 6414 6420 "get_kernel.ml" 185 6414 6421
+)
+"get_kernel.ml" 215 7186 7188 "get_kernel.ml" 215 7186 7198
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"get_kernel.ml" 215 7186 7199 "get_kernel.ml" 215 7186 7201
+type(
+  unit
+)
+"get_kernel.ml" 215 7186 7188 "get_kernel.ml" 215 7186 7201
+type(
+  unit
+)
+"get_kernel.ml" 216 7203 7205 "get_kernel.ml" 216 7203 7206
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "get_kernel.ml" 185 6414 6420 "get_kernel.ml" 185 6414 6421
+)
+"get_kernel.ml" 216 7203 7205 "get_kernel.ml" 216 7203 7212
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"get_kernel.ml" 216 7203 7213 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 216 7203 7205 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 215 7186 7188 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 212 7109 7111 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 207 7003 7005 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 198 6787 6789 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 196 6760 6762 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 194 6656 6658 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 192 6580 6582 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 191 6547 6549 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 189 6531 6533 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 188 6522 6524 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 187 6481 6483 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 186 6444 6446 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 185 6414 6416 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 182 6321 6323 "get_kernel.ml" 216 7203 7215
+type(
+  unit
+)
+"get_kernel.ml" 218 7217 7221 "get_kernel.ml" 218 7217 7223
+type(
+  unit
+)
+"get_kernel.ml" 218 7217 7226 "get_kernel.ml" 218 7217 7252
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  ext_ref Common_utils.run_main_and_handle_errors
+)
+"get_kernel.ml" 218 7217 7253 "get_kernel.ml" 218 7217 7257
+type(
+  unit -> unit
+)
+ident(
+  int_ref main "get_kernel.ml" 181 6307 6311 "get_kernel.ml" 181 6307 6315
+)
+"get_kernel.ml" 218 7217 7226 "get_kernel.ml" 218 7217 7257
+call(
+  stack
+)
+type(
+  unit
+)

@@ -1,0 +1,153 @@
+"common_gettext.ml" 39 1357 1363 "common_gettext.ml" 39 1357 1366
+type(
+  string -> string -> int -> string
+)
+ident(
+  def sn_ "common_gettext.ml" 41 1445 1447 "common_gettext.ml" 45 1619 1622
+)
+"common_gettext.ml" 40 1403 1413 "common_gettext.ml" 40 1403 1414
+type(
+  string
+)
+ident(
+  def s "common_gettext.ml" 40 1403 1415 "common_gettext.ml" 40 1403 1444
+)
+"common_gettext.ml" 40 1403 1415 "common_gettext.ml" 40 1403 1416
+type(
+  string
+)
+ident(
+  def p "common_gettext.ml" 40 1403 1417 "common_gettext.ml" 40 1403 1444
+)
+"common_gettext.ml" 40 1403 1417 "common_gettext.ml" 40 1403 1418
+type(
+  int
+)
+ident(
+  def n "common_gettext.ml" 40 1403 1422 "common_gettext.ml" 40 1403 1444
+)
+"common_gettext.ml" 40 1403 1425 "common_gettext.ml" 40 1403 1426
+type(
+  int
+)
+ident(
+  int_ref n "common_gettext.ml" 40 1403 1417 "common_gettext.ml" 40 1403 1418
+)
+"common_gettext.ml" 40 1403 1427 "common_gettext.ml" 40 1403 1428
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"common_gettext.ml" 40 1403 1429 "common_gettext.ml" 40 1403 1430
+type(
+  int
+)
+"common_gettext.ml" 40 1403 1425 "common_gettext.ml" 40 1403 1430
+type(
+  bool
+)
+"common_gettext.ml" 40 1403 1436 "common_gettext.ml" 40 1403 1437
+type(
+  string
+)
+ident(
+  int_ref s "common_gettext.ml" 40 1403 1413 "common_gettext.ml" 40 1403 1414
+)
+"common_gettext.ml" 40 1403 1443 "common_gettext.ml" 40 1403 1444
+type(
+  string
+)
+ident(
+  int_ref p "common_gettext.ml" 40 1403 1415 "common_gettext.ml" 40 1403 1416
+)
+"common_gettext.ml" 40 1403 1422 "common_gettext.ml" 40 1403 1444
+type(
+  string
+)
+"common_gettext.ml" 40 1403 1409 "common_gettext.ml" 40 1403 1444
+type(
+  string -> string -> int -> string
+)
+type(
+  string -> string -> int -> string
+)
+"common_gettext.ml" 41 1445 1451 "common_gettext.ml" 41 1445 1454
+type(
+  ('a, 'b, 'c, 'd, 'e, 'f) format6 ->
+  ('a, 'b, 'c, 'd, 'e, 'f) format6 -> int -> ('a, 'b, 'c, 'd, 'e, 'f) format6
+)
+ident(
+  def fn_ "common_gettext.ml" 44 1577 1618 "common_gettext.ml" 45 1619 1622
+)
+"common_gettext.ml" 44 1577 1587 "common_gettext.ml" 44 1577 1588
+type(
+  ('a, 'b, 'c, 'd, 'e, 'f) format6
+)
+ident(
+  def s "common_gettext.ml" 44 1577 1589 "common_gettext.ml" 44 1577 1618
+)
+"common_gettext.ml" 44 1577 1589 "common_gettext.ml" 44 1577 1590
+type(
+  ('a, 'b, 'c, 'd, 'e, 'f) format6
+)
+ident(
+  def p "common_gettext.ml" 44 1577 1591 "common_gettext.ml" 44 1577 1618
+)
+"common_gettext.ml" 44 1577 1591 "common_gettext.ml" 44 1577 1592
+type(
+  int
+)
+ident(
+  def n "common_gettext.ml" 44 1577 1596 "common_gettext.ml" 44 1577 1618
+)
+"common_gettext.ml" 44 1577 1599 "common_gettext.ml" 44 1577 1600
+type(
+  int
+)
+ident(
+  int_ref n "common_gettext.ml" 44 1577 1591 "common_gettext.ml" 44 1577 1592
+)
+"common_gettext.ml" 44 1577 1601 "common_gettext.ml" 44 1577 1602
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"common_gettext.ml" 44 1577 1603 "common_gettext.ml" 44 1577 1604
+type(
+  int
+)
+"common_gettext.ml" 44 1577 1599 "common_gettext.ml" 44 1577 1604
+type(
+  bool
+)
+"common_gettext.ml" 44 1577 1610 "common_gettext.ml" 44 1577 1611
+type(
+  ('a, 'b, 'c, 'd, 'e, 'f) format6
+)
+ident(
+  int_ref s "common_gettext.ml" 44 1577 1587 "common_gettext.ml" 44 1577 1588
+)
+"common_gettext.ml" 44 1577 1617 "common_gettext.ml" 44 1577 1618
+type(
+  ('a, 'b, 'c, 'd, 'e, 'f) format6
+)
+ident(
+  int_ref p "common_gettext.ml" 44 1577 1589 "common_gettext.ml" 44 1577 1590
+)
+"common_gettext.ml" 44 1577 1596 "common_gettext.ml" 44 1577 1618
+type(
+  ('a, 'b, 'c, 'd, 'e, 'f) format6
+)
+"common_gettext.ml" 44 1577 1583 "common_gettext.ml" 44 1577 1618
+type(
+  ('a, 'b, 'c, 'd, 'e, 'f) format6 ->
+  ('a, 'b, 'c, 'd, 'e, 'f) format6 -> int -> ('a, 'b, 'c, 'd, 'e, 'f) format6
+)
+type(
+  ('a, 'b, 'c, 'd, 'e, 'f) format6 ->
+  ('a, 'b, 'c, 'd, 'e, 'f) format6 -> int -> ('a, 'b, 'c, 'd, 'e, 'f) format6
+)

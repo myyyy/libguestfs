@@ -1,0 +1,224 @@
+"timezone.ml" 25 864 868 "timezone.ml" 25 864 880
+type(
+  Guestfs.guestfs -> string -> string -> bool
+)
+ident(
+  def set_timezone "timezone.ml" 41 1401 1410 --
+)
+"timezone.ml" 25 864 882 "timezone.ml" 25 864 883
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "timezone.ml" 25 864 903 "timezone.ml" 41 1401 1410
+)
+"timezone.ml" 25 864 903 "timezone.ml" 25 864 907
+type(
+  string
+)
+ident(
+  def root "timezone.ml" 25 864 908 "timezone.ml" 41 1401 1410
+)
+"timezone.ml" 25 864 908 "timezone.ml" 25 864 916
+type(
+  string
+)
+ident(
+  def timezone "timezone.ml" 26 919 921 "timezone.ml" 41 1401 1410
+)
+"timezone.ml" 26 919 925 "timezone.ml" 26 919 928
+type(
+  string
+)
+"timezone.ml" 26 919 931 "timezone.ml" 26 919 932
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "timezone.ml" 25 864 882 "timezone.ml" 25 864 883
+)
+"timezone.ml" 26 919 931 "timezone.ml" 26 919 949
+call(
+  stack
+)
+type(
+  string -> string
+)
+"timezone.ml" 26 919 950 "timezone.ml" 26 919 954
+type(
+  string
+)
+ident(
+  int_ref root "timezone.ml" 25 864 903 "timezone.ml" 25 864 907
+)
+"timezone.ml" 26 919 931 "timezone.ml" 26 919 954
+type(
+  string
+)
+"timezone.ml" 28 959 967 "timezone.ml" 28 959 970
+type(
+  string
+)
+ident(
+  int_ref typ "timezone.ml" 26 919 925 "timezone.ml" 26 919 928
+)
+"timezone.ml" 33 1144 1148 "timezone.ml" 33 1144 1155
+type(
+  string
+)
+"timezone.ml" 34 1159 1167 "timezone.ml" 34 1159 1173
+type(
+  string
+)
+"timezone.ml" 34 1159 1176 "timezone.ml" 34 1159 1183
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"timezone.ml" 34 1159 1184 "timezone.ml" 34 1159 1208
+type(
+  (string -> string, unit, string) format
+)
+"timezone.ml" 34 1159 1209 "timezone.ml" 34 1159 1217
+type(
+  string
+)
+ident(
+  int_ref timezone "timezone.ml" 25 864 908 "timezone.ml" 25 864 916
+)
+"timezone.ml" 34 1159 1176 "timezone.ml" 34 1159 1217
+call(
+  stack
+)
+type(
+  string
+)
+"timezone.ml" 35 1221 1228 "timezone.ml" 35 1221 1231
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"timezone.ml" 35 1221 1233 "timezone.ml" 35 1221 1234
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "timezone.ml" 25 864 882 "timezone.ml" 25 864 883
+)
+"timezone.ml" 35 1221 1233 "timezone.ml" 35 1221 1241
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"timezone.ml" 35 1221 1242 "timezone.ml" 35 1221 1248
+type(
+  string
+)
+ident(
+  int_ref target "timezone.ml" 34 1159 1167 "timezone.ml" 34 1159 1173
+)
+"timezone.ml" 35 1221 1232 "timezone.ml" 35 1221 1249
+type(
+  bool
+)
+"timezone.ml" 35 1221 1228 "timezone.ml" 35 1221 1249
+type(
+  bool
+)
+"timezone.ml" 36 1255 1261 "timezone.ml" 36 1255 1266
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"timezone.ml" 36 1255 1267 "timezone.ml" 36 1255 1334
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"timezone.ml" 36 1255 1335 "timezone.ml" 36 1255 1343
+type(
+  string
+)
+ident(
+  int_ref timezone "timezone.ml" 25 864 908 "timezone.ml" 25 864 916
+)
+"timezone.ml" 36 1255 1261 "timezone.ml" 36 1255 1343
+call(
+  stack
+)
+type(
+  unit
+)
+"timezone.ml" 35 1221 1225 "timezone.ml" 36 1255 1343
+type(
+  unit
+)
+"timezone.ml" 37 1345 1349 "timezone.ml" 37 1345 1350
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "timezone.ml" 25 864 882 "timezone.ml" 25 864 883
+)
+"timezone.ml" 37 1345 1349 "timezone.ml" 37 1345 1356
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"timezone.ml" 37 1345 1357 "timezone.ml" 37 1345 1363
+type(
+  string
+)
+ident(
+  int_ref target "timezone.ml" 34 1159 1167 "timezone.ml" 34 1159 1173
+)
+"timezone.ml" 37 1345 1364 "timezone.ml" 37 1345 1380
+type(
+  string
+)
+"timezone.ml" 37 1345 1349 "timezone.ml" 37 1345 1380
+type(
+  unit
+)
+"timezone.ml" 38 1382 1386 "timezone.ml" 38 1382 1390
+type(
+  bool
+)
+"timezone.ml" 37 1345 1349 "timezone.ml" 38 1382 1390
+type(
+  bool
+)
+"timezone.ml" 35 1221 1225 "timezone.ml" 38 1382 1390
+type(
+  bool
+)
+"timezone.ml" 34 1159 1163 "timezone.ml" 38 1382 1390
+type(
+  bool
+)
+"timezone.ml" 40 1392 1396 "timezone.ml" 40 1392 1397
+type(
+  string
+)
+"timezone.ml" 41 1401 1405 "timezone.ml" 41 1401 1410
+type(
+  bool
+)
+"timezone.ml" 28 959 961 "timezone.ml" 41 1401 1410
+type(
+  bool
+)
+"timezone.ml" 26 919 921 "timezone.ml" 41 1401 1410
+type(
+  bool
+)

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>module Guestfs - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script src="./js/jquery.js"></script>
+<script src="./js/darkfish.js"></script>
+
+<link href="./css/fonts.css" rel="stylesheet">
+<link href="./css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="module">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="./index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="./table_of_contents.html#pages">Pages</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="class-metadata">
+    
+    
+    
+    
+    <!-- Method Quickref -->
+<div id="method-list-section" class="nav-section">
+  <h3>Methods</h3>
+
+  <ul class="link-list" role="directory">
+    
+    <li ><a href="#method-c-create">::create</a>
+    
+    <li ><a href="#method-c-event_to_string">::event_to_string</a>
+    
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-labelledby="module-Guestfs">
+  <h1 id="module-Guestfs" class="module">
+    module Guestfs
+  </h1>
+
+  <section class="description">
+    
+  </section>
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <section class="constants-list">
+      <header>
+        <h3>Constants</h3>
+      </header>
+      <dl>
+      
+        <dt id="EVENT_ALL">EVENT_ALL
+        
+        <dd>
+        
+      
+        <dt id="EVENT_APPLIANCE">EVENT_APPLIANCE
+        
+        <dd>
+        
+      
+        <dt id="EVENT_CLOSE">EVENT_CLOSE
+        
+        <dd>
+        
+      
+        <dt id="EVENT_ENTER">EVENT_ENTER
+        
+        <dd>
+        
+      
+        <dt id="EVENT_LAUNCH_DONE">EVENT_LAUNCH_DONE
+        
+        <dd>
+        
+      
+        <dt id="EVENT_LIBRARY">EVENT_LIBRARY
+        
+        <dd>
+        
+      
+        <dt id="EVENT_LIBVIRT_AUTH">EVENT_LIBVIRT_AUTH
+        
+        <dd>
+        
+      
+        <dt id="EVENT_PROGRESS">EVENT_PROGRESS
+        
+        <dd>
+        
+      
+        <dt id="EVENT_SUBPROCESS_QUIT">EVENT_SUBPROCESS_QUIT
+        
+        <dd>
+        
+      
+        <dt id="EVENT_TRACE">EVENT_TRACE
+        
+        <dd>
+        
+      
+        <dt id="EVENT_WARNING">EVENT_WARNING
+        
+        <dd>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section">
+       <header>
+         <h3>Public Class Methods</h3>
+       </header>
+
+    
+      <div id="method-c-create" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">create</span><span
+            class="method-args">(*args)</span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>For backwards compatibility.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="create-source">
+            <pre>static VALUE
+ruby_guestfs_create (int argc, VALUE *argv, VALUE module)
+{
+  guestfs_h *g;
+  unsigned flags;
+
+  if (argc &gt; 1)
+    rb_raise (rb_eArgError, &quot;expecting 0 or 1 arguments&quot;);
+
+  flags = parse_flags (argc, argv);
+
+  g = guestfs_create_flags (flags);
+  if (!g)
+    rb_raise (e_Error, &quot;failed to create guestfs handle&quot;);
+
+  /* Don't print error messages to stderr by default. */
+  guestfs_set_error_handler (g, NULL, NULL);
+
+  return Data_Wrap_Struct (c_guestfs, NULL, ruby_guestfs_free, g);
+}</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+      <div id="method-c-event_to_string" class="method-detail ">
+        
+        
+        <div class="method-heading">
+          <span class="method-callseq">
+            Guestfs::Guestfs.event_to_string(events) &rarr; string
+          </span>
+          
+          <span class="method-click-advice">click to toggle source</span>
+          
+        </div>
+        
+        
+
+        <div class="method-description">
+          
+          <p>Call
+<code>guestfs_event_to_string[http://libguestfs.org/guestfs.3.html#guestfs_event_to_string]</code>
+to convert an event or event bitmask into a printable string.</p>
+          
+          
+
+          
+          <div class="method-source-code" id="event_to_string-source">
+            <pre>static VALUE
+ruby_event_to_string (VALUE modulev, VALUE eventsv)
+{
+  uint64_t events;
+  char *str;
+
+  events = NUM2ULL (eventsv);
+  str = guestfs_event_to_string (events);
+  if (str == NULL)
+    rb_raise (e_Error, &quot;%s&quot;, strerror (errno));
+
+  volatile VALUE rv = rb_str_new2 (str);
+  free (str);
+
+  return rv;
+}</pre>
+          </div>
+          
+        </div>
+
+        
+
+        
+      </div>
+
+    
+    </section>
+  
+  </section>
+</main>
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="http://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="http://docs.seattlerb.org/rdoc/">RDoc</a> 4.2.0.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+

@@ -1,0 +1,6993 @@
+"customize_cmdline.ml" 115 3459 3467 "customize_cmdline.ml" 115 3459 3474
+type(
+  unit ->
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)
+ident(
+  def argspec "customize_cmdline.ml" 115 3459 3459 --
+)
+"customize_cmdline.ml" 115 3459 3475 "customize_cmdline.ml" 115 3459 3477
+type(
+  unit
+)
+"customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+type(
+  op list ref
+)
+"customize_cmdline.ml" 116 3480 3492 "customize_cmdline.ml" 116 3480 3495
+type(
+  op list -> op list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_cmdline.ml" 116 3480 3496 "customize_cmdline.ml" 116 3480 3498
+type(
+  op list
+)
+"customize_cmdline.ml" 116 3480 3492 "customize_cmdline.ml" 116 3480 3498
+type(
+  op list ref
+)
+"customize_cmdline.ml" 117 3502 3508 "customize_cmdline.ml" 117 3502 3521
+type(
+  bool ref
+)
+"customize_cmdline.ml" 117 3502 3524 "customize_cmdline.ml" 117 3502 3527
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_cmdline.ml" 117 3502 3528 "customize_cmdline.ml" 117 3502 3533
+type(
+  bool
+)
+"customize_cmdline.ml" 117 3502 3524 "customize_cmdline.ml" 117 3502 3533
+type(
+  bool ref
+)
+"customize_cmdline.ml" 118 3537 3543 "customize_cmdline.ml" 118 3537 3558
+type(
+  Password.password_crypto option ref
+)
+"customize_cmdline.ml" 118 3537 3561 "customize_cmdline.ml" 118 3537 3564
+type(
+  Password.password_crypto option -> Password.password_crypto option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_cmdline.ml" 118 3537 3565 "customize_cmdline.ml" 118 3537 3569
+type(
+  Password.password_crypto option
+)
+"customize_cmdline.ml" 118 3537 3561 "customize_cmdline.ml" 118 3537 3569
+type(
+  Password.password_crypto option ref
+)
+"customize_cmdline.ml" 119 3573 3579 "customize_cmdline.ml" 119 3573 3594
+type(
+  bool ref
+)
+"customize_cmdline.ml" 119 3573 3597 "customize_cmdline.ml" 119 3573 3600
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_cmdline.ml" 119 3573 3601 "customize_cmdline.ml" 119 3573 3606
+type(
+  bool
+)
+"customize_cmdline.ml" 119 3573 3597 "customize_cmdline.ml" 119 3573 3606
+type(
+  bool ref
+)
+"customize_cmdline.ml" 120 3610 3616 "customize_cmdline.ml" 120 3610 3630
+type(
+  Subscription_manager.sm_credentials option ref
+)
+"customize_cmdline.ml" 120 3610 3633 "customize_cmdline.ml" 120 3610 3636
+type(
+  Subscription_manager.sm_credentials option ->
+  Subscription_manager.sm_credentials option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_cmdline.ml" 120 3610 3637 "customize_cmdline.ml" 120 3610 3641
+type(
+  Subscription_manager.sm_credentials option
+)
+"customize_cmdline.ml" 120 3610 3633 "customize_cmdline.ml" 120 3610 3641
+type(
+  Subscription_manager.sm_credentials option ref
+)
+"customize_cmdline.ml" 122 3646 3656 "customize_cmdline.ml" 122 3646 3663
+type(
+  unit -> ops
+)
+"customize_cmdline.ml" 122 3646 3664 "customize_cmdline.ml" 122 3646 3666
+type(
+  unit
+)
+"customize_cmdline.ml" 123 3671 3681 "customize_cmdline.ml" 123 3671 3689
+type(
+  op list -> op list
+)
+ident(
+  ext_ref List.rev
+)
+"customize_cmdline.ml" 123 3671 3690 "customize_cmdline.ml" 123 3671 3691
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 123 3671 3691 "customize_cmdline.ml" 123 3671 3694
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 123 3671 3690 "customize_cmdline.ml" 123 3671 3694
+type(
+  op list
+)
+"customize_cmdline.ml" 123 3671 3681 "customize_cmdline.ml" 123 3671 3694
+call(
+  stack
+)
+type(
+  op list
+)
+"customize_cmdline.ml" 124 3696 3708 "customize_cmdline.ml" 124 3696 3717
+type(
+  unit -> flags
+)
+ident(
+  int_ref get_flags "customize_cmdline.ml" 126 3726 3732 "customize_cmdline.ml" 126 3726 3741
+)
+"customize_cmdline.ml" 124 3696 3718 "customize_cmdline.ml" 124 3696 3720
+type(
+  unit
+)
+"customize_cmdline.ml" 124 3696 3708 "customize_cmdline.ml" 124 3696 3720
+call(
+  stack
+)
+type(
+  flags
+)
+"customize_cmdline.ml" 122 3646 3669 "customize_cmdline.ml" 125 3722 3725
+type(
+  ops
+)
+"customize_cmdline.ml" 126 3726 3732 "customize_cmdline.ml" 126 3726 3741
+type(
+  unit -> flags
+)
+"customize_cmdline.ml" 126 3726 3742 "customize_cmdline.ml" 126 3726 3744
+type(
+  unit
+)
+"customize_cmdline.ml" 127 3749 3769 "customize_cmdline.ml" 127 3749 3770
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 127 3749 3770 "customize_cmdline.ml" 127 3749 3783
+type(
+  bool ref
+)
+ident(
+  int_ref scrub_logfile "customize_cmdline.ml" 117 3502 3508 "customize_cmdline.ml" 117 3502 3521
+)
+"customize_cmdline.ml" 127 3749 3769 "customize_cmdline.ml" 127 3749 3783
+type(
+  bool
+)
+"customize_cmdline.ml" 128 3785 3807 "customize_cmdline.ml" 128 3785 3808
+type(
+  Password.password_crypto option ref -> Password.password_crypto option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 128 3785 3808 "customize_cmdline.ml" 128 3785 3823
+type(
+  Password.password_crypto option ref
+)
+ident(
+  int_ref password_crypto "customize_cmdline.ml" 118 3537 3543 "customize_cmdline.ml" 118 3537 3558
+)
+"customize_cmdline.ml" 128 3785 3807 "customize_cmdline.ml" 128 3785 3823
+type(
+  Password.password_crypto option
+)
+"customize_cmdline.ml" 129 3825 3847 "customize_cmdline.ml" 129 3825 3848
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 129 3825 3848 "customize_cmdline.ml" 129 3825 3863
+type(
+  bool ref
+)
+ident(
+  int_ref selinux_relabel "customize_cmdline.ml" 119 3573 3579 "customize_cmdline.ml" 119 3573 3594
+)
+"customize_cmdline.ml" 129 3825 3847 "customize_cmdline.ml" 129 3825 3863
+type(
+  bool
+)
+"customize_cmdline.ml" 130 3865 3886 "customize_cmdline.ml" 130 3865 3887
+type(
+  Subscription_manager.sm_credentials option ref ->
+  Subscription_manager.sm_credentials option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 130 3865 3887 "customize_cmdline.ml" 130 3865 3901
+type(
+  Subscription_manager.sm_credentials option ref
+)
+ident(
+  int_ref sm_credentials "customize_cmdline.ml" 120 3610 3616 "customize_cmdline.ml" 120 3610 3630
+)
+"customize_cmdline.ml" 130 3865 3886 "customize_cmdline.ml" 130 3865 3901
+type(
+  Subscription_manager.sm_credentials option
+)
+"customize_cmdline.ml" 126 3726 3747 "customize_cmdline.ml" 131 3903 3906
+type(
+  flags
+)
+"customize_cmdline.ml" 134 3913 3919 "customize_cmdline.ml" 134 3913 3936
+type(
+  string -> string -> string * string
+)
+"customize_cmdline.ml" 134 3913 3937 "customize_cmdline.ml" 134 3913 3948
+type(
+  string
+)
+ident(
+  def option_name "customize_cmdline.ml" 134 3913 3949 "customize_cmdline.ml" 141 4156 4212
+)
+"customize_cmdline.ml" 134 3913 3949 "customize_cmdline.ml" 134 3913 3952
+type(
+  string
+)
+ident(
+  def arg "customize_cmdline.ml" 135 3955 3959 "customize_cmdline.ml" 141 4156 4212
+)
+"customize_cmdline.ml" 135 3955 3963 "customize_cmdline.ml" 135 3955 3964
+type(
+  int
+)
+"customize_cmdline.ml" 136 3967 3977 "customize_cmdline.ml" 136 3967 3989
+type(
+  string -> char -> int
+)
+ident(
+  ext_ref String.index
+)
+"customize_cmdline.ml" 136 3967 3990 "customize_cmdline.ml" 136 3967 3993
+type(
+  string
+)
+ident(
+  int_ref arg "customize_cmdline.ml" 134 3913 3949 "customize_cmdline.ml" 134 3913 3952
+)
+"customize_cmdline.ml" 136 3967 3994 "customize_cmdline.ml" 136 3967 3997
+type(
+  char
+)
+"customize_cmdline.ml" 136 3967 3977 "customize_cmdline.ml" 136 3967 3997
+call(
+  stack
+)
+type(
+  int
+)
+"customize_cmdline.ml" 137 3998 4009 "customize_cmdline.ml" 137 3998 4018
+type(
+  exn
+)
+"customize_cmdline.ml" 138 4022 4030 "customize_cmdline.ml" 138 4022 4035
+type(
+  ?exit_code:int ->
+  (string -> int, unit, string, int) format4 -> string -> int
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_cmdline.ml" 138 4022 4037 "customize_cmdline.ml" 138 4022 4039
+type(
+  (string -> int, unit, string, string, string, int) format6 ->
+  (string -> int, unit, string, int) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_cmdline.ml" 138 4022 4039 "customize_cmdline.ml" 138 4022 4094
+type(
+  (string -> int, unit, string, string, string, int) format6
+)
+"customize_cmdline.ml" 138 4022 4036 "customize_cmdline.ml" 138 4022 4095
+type(
+  (string -> int, unit, string, int) format4
+)
+"customize_cmdline.ml" 139 4096 4106 "customize_cmdline.ml" 139 4096 4117
+type(
+  string
+)
+ident(
+  int_ref option_name "customize_cmdline.ml" 134 3913 3937 "customize_cmdline.ml" 134 3913 3948
+)
+"customize_cmdline.ml" 138 4022 4030 "customize_cmdline.ml" 139 4096 4117
+call(
+  stack
+)
+type(
+  int
+)
+"customize_cmdline.ml" 136 3967 3973 "customize_cmdline.ml" 139 4096 4117
+type(
+  int
+)
+"customize_cmdline.ml" 140 4121 4129 "customize_cmdline.ml" 140 4121 4132
+type(
+  int
+)
+"customize_cmdline.ml" 140 4121 4135 "customize_cmdline.ml" 140 4121 4148
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"customize_cmdline.ml" 140 4121 4149 "customize_cmdline.ml" 140 4121 4152
+type(
+  string
+)
+ident(
+  int_ref arg "customize_cmdline.ml" 134 3913 3949 "customize_cmdline.ml" 134 3913 3952
+)
+"customize_cmdline.ml" 140 4121 4135 "customize_cmdline.ml" 140 4121 4152
+type(
+  int
+)
+"customize_cmdline.ml" 141 4156 4160 "customize_cmdline.ml" 141 4156 4170
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"customize_cmdline.ml" 141 4156 4171 "customize_cmdline.ml" 141 4156 4174
+type(
+  string
+)
+ident(
+  int_ref arg "customize_cmdline.ml" 134 3913 3949 "customize_cmdline.ml" 134 3913 3952
+)
+"customize_cmdline.ml" 141 4156 4175 "customize_cmdline.ml" 141 4156 4176
+type(
+  int
+)
+"customize_cmdline.ml" 141 4156 4177 "customize_cmdline.ml" 141 4156 4178
+type(
+  int
+)
+ident(
+  int_ref i "customize_cmdline.ml" 135 3955 3963 "customize_cmdline.ml" 135 3955 3964
+)
+"customize_cmdline.ml" 141 4156 4160 "customize_cmdline.ml" 141 4156 4178
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 141 4156 4180 "customize_cmdline.ml" 141 4156 4190
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"customize_cmdline.ml" 141 4156 4191 "customize_cmdline.ml" 141 4156 4194
+type(
+  string
+)
+ident(
+  int_ref arg "customize_cmdline.ml" 134 3913 3949 "customize_cmdline.ml" 134 3913 3952
+)
+"customize_cmdline.ml" 141 4156 4196 "customize_cmdline.ml" 141 4156 4197
+type(
+  int
+)
+ident(
+  int_ref i "customize_cmdline.ml" 135 3955 3963 "customize_cmdline.ml" 135 3955 3964
+)
+"customize_cmdline.ml" 141 4156 4197 "customize_cmdline.ml" 141 4156 4198
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"customize_cmdline.ml" 141 4156 4198 "customize_cmdline.ml" 141 4156 4199
+type(
+  int
+)
+"customize_cmdline.ml" 141 4156 4195 "customize_cmdline.ml" 141 4156 4200
+type(
+  int
+)
+"customize_cmdline.ml" 141 4156 4202 "customize_cmdline.ml" 141 4156 4205
+type(
+  int
+)
+ident(
+  int_ref len "customize_cmdline.ml" 140 4121 4129 "customize_cmdline.ml" 140 4121 4132
+)
+"customize_cmdline.ml" 141 4156 4205 "customize_cmdline.ml" 141 4156 4206
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"customize_cmdline.ml" 141 4156 4207 "customize_cmdline.ml" 141 4156 4208
+type(
+  int
+)
+ident(
+  int_ref i "customize_cmdline.ml" 135 3955 3963 "customize_cmdline.ml" 135 3955 3964
+)
+"customize_cmdline.ml" 141 4156 4208 "customize_cmdline.ml" 141 4156 4209
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"customize_cmdline.ml" 141 4156 4209 "customize_cmdline.ml" 141 4156 4210
+type(
+  int
+)
+"customize_cmdline.ml" 141 4156 4206 "customize_cmdline.ml" 141 4156 4211
+type(
+  int
+)
+"customize_cmdline.ml" 141 4156 4201 "customize_cmdline.ml" 141 4156 4212
+type(
+  int
+)
+"customize_cmdline.ml" 141 4156 4180 "customize_cmdline.ml" 141 4156 4212
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 141 4156 4160 "customize_cmdline.ml" 141 4156 4212
+type(
+  string * string
+)
+"customize_cmdline.ml" 140 4121 4125 "customize_cmdline.ml" 141 4156 4212
+type(
+  string * string
+)
+"customize_cmdline.ml" 135 3955 3959 "customize_cmdline.ml" 141 4156 4212
+type(
+  string * string
+)
+"customize_cmdline.ml" 143 4218 4224 "customize_cmdline.ml" 143 4218 4241
+type(
+  string -> string list
+)
+"customize_cmdline.ml" 143 4218 4242 "customize_cmdline.ml" 143 4218 4245
+type(
+  string
+)
+ident(
+  def arg "customize_cmdline.ml" 144 4248 4252 "customize_cmdline.ml" 144 4248 4273
+)
+"customize_cmdline.ml" 144 4248 4252 "customize_cmdline.ml" 144 4248 4265
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"customize_cmdline.ml" 144 4248 4266 "customize_cmdline.ml" 144 4248 4269
+type(
+  string
+)
+"customize_cmdline.ml" 144 4248 4270 "customize_cmdline.ml" 144 4248 4273
+type(
+  string
+)
+ident(
+  int_ref arg "customize_cmdline.ml" 143 4218 4242 "customize_cmdline.ml" 143 4218 4245
+)
+"customize_cmdline.ml" 144 4248 4252 "customize_cmdline.ml" 144 4248 4273
+call(
+  tail
+)
+type(
+  string list
+)
+"customize_cmdline.ml" 146 4279 4285 "customize_cmdline.ml" 146 4279 4301
+type(
+  string -> string -> string * string list
+)
+"customize_cmdline.ml" 146 4279 4302 "customize_cmdline.ml" 146 4279 4313
+type(
+  string
+)
+ident(
+  def option_name "customize_cmdline.ml" 146 4279 4314 "customize_cmdline.ml" 151 4467 4501
+)
+"customize_cmdline.ml" 146 4279 4314 "customize_cmdline.ml" 146 4279 4317
+type(
+  string
+)
+ident(
+  def arg "customize_cmdline.ml" 147 4320 4324 "customize_cmdline.ml" 151 4467 4501
+)
+"customize_cmdline.ml" 147 4320 4330 "customize_cmdline.ml" 147 4320 4343
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"customize_cmdline.ml" 147 4320 4344 "customize_cmdline.ml" 147 4320 4347
+type(
+  string
+)
+"customize_cmdline.ml" 147 4320 4348 "customize_cmdline.ml" 147 4320 4351
+type(
+  string
+)
+ident(
+  int_ref arg "customize_cmdline.ml" 146 4279 4314 "customize_cmdline.ml" 146 4279 4317
+)
+"customize_cmdline.ml" 147 4320 4330 "customize_cmdline.ml" 147 4320 4351
+call(
+  stack
+)
+type(
+  string list
+)
+"customize_cmdline.ml" 148 4357 4363 "customize_cmdline.ml" 148 4357 4365
+type(
+  string list
+)
+"customize_cmdline.ml" 148 4357 4369 "customize_cmdline.ml" 148 4357 4370
+type(
+  string
+)
+"customize_cmdline.ml" 148 4357 4368 "customize_cmdline.ml" 148 4357 4371
+type(
+  string list
+)
+"customize_cmdline.ml" 148 4357 4363 "customize_cmdline.ml" 148 4357 4371
+type(
+  string list
+)
+"customize_cmdline.ml" 149 4375 4381 "customize_cmdline.ml" 149 4375 4386
+type(
+  ?exit_code:int ->
+  (string -> string * string list, unit, string, string * string list)
+  format4 -> string -> string * string list
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_cmdline.ml" 149 4375 4388 "customize_cmdline.ml" 149 4375 4390
+type(
+  (string -> string * string list, unit, string, string, string,
+   string * string list)
+  format6 ->
+  (string -> string * string list, unit, string, string * string list)
+  format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_cmdline.ml" 149 4375 4390 "customize_cmdline.ml" 149 4375 4445
+type(
+  (string -> string * string list, unit, string, string, string,
+   string * string list)
+  format6
+)
+"customize_cmdline.ml" 149 4375 4387 "customize_cmdline.ml" 149 4375 4446
+type(
+  (string -> string * string list, unit, string, string * string list)
+  format4
+)
+"customize_cmdline.ml" 150 4447 4455 "customize_cmdline.ml" 150 4447 4466
+type(
+  string
+)
+ident(
+  int_ref option_name "customize_cmdline.ml" 146 4279 4302 "customize_cmdline.ml" 146 4279 4313
+)
+"customize_cmdline.ml" 149 4375 4381 "customize_cmdline.ml" 150 4447 4466
+call(
+  tail
+)
+type(
+  string * string list
+)
+"customize_cmdline.ml" 151 4467 4473 "customize_cmdline.ml" 151 4467 4479
+type(
+  string
+)
+ident(
+  def target "customize_cmdline.ml" 151 4467 4490 "customize_cmdline.ml" 151 4467 4501
+)
+"customize_cmdline.ml" 151 4467 4483 "customize_cmdline.ml" 151 4467 4486
+type(
+  string list
+)
+ident(
+  def lns "customize_cmdline.ml" 151 4467 4490 "customize_cmdline.ml" 151 4467 4501
+)
+"customize_cmdline.ml" 151 4467 4473 "customize_cmdline.ml" 151 4467 4486
+type(
+  string list
+)
+"customize_cmdline.ml" 151 4467 4490 "customize_cmdline.ml" 151 4467 4496
+type(
+  string
+)
+ident(
+  int_ref target "customize_cmdline.ml" 151 4467 4473 "customize_cmdline.ml" 151 4467 4479
+)
+"customize_cmdline.ml" 151 4467 4498 "customize_cmdline.ml" 151 4467 4501
+type(
+  string list
+)
+ident(
+  int_ref lns "customize_cmdline.ml" 151 4467 4483 "customize_cmdline.ml" 151 4467 4486
+)
+"customize_cmdline.ml" 151 4467 4490 "customize_cmdline.ml" 151 4467 4501
+type(
+  string * string list
+)
+"customize_cmdline.ml" 147 4320 4324 "customize_cmdline.ml" 151 4467 4501
+type(
+  string * string list
+)
+"customize_cmdline.ml" 154 4508 4518 "customize_cmdline.ml" 154 4508 4525
+type(
+  ((string * Arg.spec * string) * string option * string) list
+)
+"customize_cmdline.ml" 156 4536 4542 "customize_cmdline.ml" 156 4536 4551
+type(
+  string
+)
+"customize_cmdline.ml" 158 4572 4584 "customize_cmdline.ml" 158 4572 4585
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 159 4589 4599 "customize_cmdline.ml" 160 4638 4671
+)
+"customize_cmdline.ml" 159 4589 4603 "customize_cmdline.ml" 159 4589 4604
+type(
+  string * string
+)
+"customize_cmdline.ml" 159 4589 4607 "customize_cmdline.ml" 159 4589 4624
+type(
+  string -> string -> string * string
+)
+ident(
+  int_ref split_string_pair "customize_cmdline.ml" 134 3913 3919 "customize_cmdline.ml" 134 3913 3936
+)
+"customize_cmdline.ml" 159 4589 4625 "customize_cmdline.ml" 159 4589 4632
+type(
+  string
+)
+"customize_cmdline.ml" 159 4589 4633 "customize_cmdline.ml" 159 4589 4634
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 158 4572 4584 "customize_cmdline.ml" 158 4572 4585
+)
+"customize_cmdline.ml" 159 4589 4607 "customize_cmdline.ml" 159 4589 4634
+call(
+  stack
+)
+type(
+  string * string
+)
+"customize_cmdline.ml" 160 4638 4648 "customize_cmdline.ml" 160 4638 4651
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 160 4638 4652 "customize_cmdline.ml" 160 4638 4654
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 160 4638 4662 "customize_cmdline.ml" 160 4638 4663
+type(
+  string * string
+)
+ident(
+  int_ref p "customize_cmdline.ml" 159 4589 4603 "customize_cmdline.ml" 159 4589 4604
+)
+"customize_cmdline.ml" 160 4638 4655 "customize_cmdline.ml" 160 4638 4663
+type(
+  op
+)
+"customize_cmdline.ml" 160 4638 4667 "customize_cmdline.ml" 160 4638 4668
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 160 4638 4668 "customize_cmdline.ml" 160 4638 4671
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 160 4638 4667 "customize_cmdline.ml" 160 4638 4671
+type(
+  op list
+)
+"customize_cmdline.ml" 160 4638 4655 "customize_cmdline.ml" 160 4638 4671
+type(
+  op list
+)
+"customize_cmdline.ml" 160 4638 4648 "customize_cmdline.ml" 160 4638 4671
+type(
+  unit
+)
+"customize_cmdline.ml" 159 4589 4599 "customize_cmdline.ml" 160 4638 4671
+type(
+  unit
+)
+"customize_cmdline.ml" 157 4553 4570 "customize_cmdline.ml" 161 4672 4679
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 157 4553 4559 "customize_cmdline.ml" 161 4672 4679
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 162 4681 4687 "customize_cmdline.ml" 162 4681 4689
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 162 4681 4689 "customize_cmdline.ml" 162 4681 4707
+type(
+  string
+)
+"customize_cmdline.ml" 162 4681 4687 "customize_cmdline.ml" 162 4681 4707
+type(
+  string
+)
+"customize_cmdline.ml" 162 4681 4708 "customize_cmdline.ml" 162 4681 4709
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 162 4681 4710 "customize_cmdline.ml" 162 4681 4713
+type(
+  string
+)
+"customize_cmdline.ml" 162 4681 4714 "customize_cmdline.ml" 162 4681 4715
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 162 4681 4716 "customize_cmdline.ml" 162 4681 4718
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 162 4681 4718 "customize_cmdline.ml" 162 4681 4752
+type(
+  string
+)
+"customize_cmdline.ml" 162 4681 4716 "customize_cmdline.ml" 162 4681 4752
+type(
+  string
+)
+"customize_cmdline.ml" 162 4681 4710 "customize_cmdline.ml" 162 4681 4752
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 162 4681 4687 "customize_cmdline.ml" 162 4681 4752
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 155 4530 4534 "customize_cmdline.ml" 163 4753 4758
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 164 4760 4769 "customize_cmdline.ml" 164 4760 4787
+type(
+  string
+)
+"customize_cmdline.ml" 164 4760 4764 "customize_cmdline.ml" 164 4760 4787
+type(
+  string option
+)
+"customize_cmdline.ml" 164 4760 4789 "customize_cmdline.ml" 164 4760 4973
+type(
+  string
+)
+"customize_cmdline.ml" 155 4530 4534 "customize_cmdline.ml" 164 4760 4973
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 166 4981 4987 "customize_cmdline.ml" 166 4981 5009
+type(
+  string
+)
+"customize_cmdline.ml" 168 5030 5042 "customize_cmdline.ml" 168 5030 5043
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 169 5047 5057 "customize_cmdline.ml" 170 5085 5129
+)
+"customize_cmdline.ml" 169 5047 5057 "customize_cmdline.ml" 169 5047 5081
+type(
+  string -> unit
+)
+ident(
+  int_ref customize_read_from_file "customize_cmdline.ml" 434 20588 20594 "customize_cmdline.ml" 434 20588 20618
+)
+"customize_cmdline.ml" 169 5047 5082 "customize_cmdline.ml" 169 5047 5083
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 168 5030 5042 "customize_cmdline.ml" 168 5030 5043
+)
+"customize_cmdline.ml" 169 5047 5057 "customize_cmdline.ml" 169 5047 5083
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_cmdline.ml" 170 5085 5095 "customize_cmdline.ml" 170 5085 5098
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 170 5085 5099 "customize_cmdline.ml" 170 5085 5101
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 170 5085 5120 "customize_cmdline.ml" 170 5085 5121
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 168 5030 5042 "customize_cmdline.ml" 168 5030 5043
+)
+"customize_cmdline.ml" 170 5085 5102 "customize_cmdline.ml" 170 5085 5121
+type(
+  op
+)
+"customize_cmdline.ml" 170 5085 5125 "customize_cmdline.ml" 170 5085 5126
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 170 5085 5126 "customize_cmdline.ml" 170 5085 5129
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 170 5085 5125 "customize_cmdline.ml" 170 5085 5129
+type(
+  op list
+)
+"customize_cmdline.ml" 170 5085 5102 "customize_cmdline.ml" 170 5085 5129
+type(
+  op list
+)
+"customize_cmdline.ml" 170 5085 5095 "customize_cmdline.ml" 170 5085 5129
+type(
+  unit
+)
+"customize_cmdline.ml" 169 5047 5057 "customize_cmdline.ml" 170 5085 5129
+type(
+  unit
+)
+"customize_cmdline.ml" 167 5011 5028 "customize_cmdline.ml" 171 5130 5137
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 167 5011 5017 "customize_cmdline.ml" 171 5130 5137
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 172 5139 5145 "customize_cmdline.ml" 172 5139 5147
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 172 5139 5147 "customize_cmdline.ml" 172 5139 5157
+type(
+  string
+)
+"customize_cmdline.ml" 172 5139 5145 "customize_cmdline.ml" 172 5139 5157
+type(
+  string
+)
+"customize_cmdline.ml" 172 5139 5158 "customize_cmdline.ml" 172 5139 5159
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 172 5139 5160 "customize_cmdline.ml" 172 5139 5163
+type(
+  string
+)
+"customize_cmdline.ml" 172 5139 5164 "customize_cmdline.ml" 172 5139 5165
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 172 5139 5166 "customize_cmdline.ml" 172 5139 5168
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 172 5139 5168 "customize_cmdline.ml" 172 5139 5203
+type(
+  string
+)
+"customize_cmdline.ml" 172 5139 5166 "customize_cmdline.ml" 172 5139 5203
+type(
+  string
+)
+"customize_cmdline.ml" 172 5139 5160 "customize_cmdline.ml" 172 5139 5203
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 172 5139 5145 "customize_cmdline.ml" 172 5139 5203
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 165 4975 4979 "customize_cmdline.ml" 173 5204 5209
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 174 5211 5220 "customize_cmdline.ml" 174 5211 5230
+type(
+  string
+)
+"customize_cmdline.ml" 174 5211 5215 "customize_cmdline.ml" 174 5211 5230
+type(
+  string option
+)
+"customize_cmdline.ml" 174 5211 5232 "customize_cmdline.ml" 174 5211 5911
+type(
+  string
+)
+"customize_cmdline.ml" 165 4975 4979 "customize_cmdline.ml" 174 5211 5911
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 176 5919 5925 "customize_cmdline.ml" 176 5919 5933
+type(
+  string
+)
+"customize_cmdline.ml" 178 5954 5966 "customize_cmdline.ml" 178 5954 5967
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 179 5971 5981 "customize_cmdline.ml" 180 6019 6051
+)
+"customize_cmdline.ml" 179 5971 5985 "customize_cmdline.ml" 179 5971 5986
+type(
+  string * string
+)
+"customize_cmdline.ml" 179 5971 5989 "customize_cmdline.ml" 179 5971 6006
+type(
+  string -> string -> string * string
+)
+ident(
+  int_ref split_string_pair "customize_cmdline.ml" 134 3913 3919 "customize_cmdline.ml" 134 3913 3936
+)
+"customize_cmdline.ml" 179 5971 6007 "customize_cmdline.ml" 179 5971 6013
+type(
+  string
+)
+"customize_cmdline.ml" 179 5971 6014 "customize_cmdline.ml" 179 5971 6015
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 178 5954 5966 "customize_cmdline.ml" 178 5954 5967
+)
+"customize_cmdline.ml" 179 5971 5989 "customize_cmdline.ml" 179 5971 6015
+call(
+  stack
+)
+type(
+  string * string
+)
+"customize_cmdline.ml" 180 6019 6029 "customize_cmdline.ml" 180 6019 6032
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 180 6019 6033 "customize_cmdline.ml" 180 6019 6035
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 180 6019 6042 "customize_cmdline.ml" 180 6019 6043
+type(
+  string * string
+)
+ident(
+  int_ref p "customize_cmdline.ml" 179 5971 5985 "customize_cmdline.ml" 179 5971 5986
+)
+"customize_cmdline.ml" 180 6019 6036 "customize_cmdline.ml" 180 6019 6043
+type(
+  op
+)
+"customize_cmdline.ml" 180 6019 6047 "customize_cmdline.ml" 180 6019 6048
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 180 6019 6048 "customize_cmdline.ml" 180 6019 6051
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 180 6019 6047 "customize_cmdline.ml" 180 6019 6051
+type(
+  op list
+)
+"customize_cmdline.ml" 180 6019 6036 "customize_cmdline.ml" 180 6019 6051
+type(
+  op list
+)
+"customize_cmdline.ml" 180 6019 6029 "customize_cmdline.ml" 180 6019 6051
+type(
+  unit
+)
+"customize_cmdline.ml" 179 5971 5981 "customize_cmdline.ml" 180 6019 6051
+type(
+  unit
+)
+"customize_cmdline.ml" 177 5935 5952 "customize_cmdline.ml" 181 6052 6059
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 177 5935 5941 "customize_cmdline.ml" 181 6052 6059
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 182 6061 6067 "customize_cmdline.ml" 182 6061 6069
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 182 6061 6069 "customize_cmdline.ml" 182 6061 6082
+type(
+  string
+)
+"customize_cmdline.ml" 182 6061 6067 "customize_cmdline.ml" 182 6061 6082
+type(
+  string
+)
+"customize_cmdline.ml" 182 6061 6083 "customize_cmdline.ml" 182 6061 6084
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 182 6061 6085 "customize_cmdline.ml" 182 6061 6088
+type(
+  string
+)
+"customize_cmdline.ml" 182 6061 6089 "customize_cmdline.ml" 182 6061 6090
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 182 6061 6091 "customize_cmdline.ml" 182 6061 6093
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 182 6061 6093 "customize_cmdline.ml" 182 6061 6119
+type(
+  string
+)
+"customize_cmdline.ml" 182 6061 6091 "customize_cmdline.ml" 182 6061 6119
+type(
+  string
+)
+"customize_cmdline.ml" 182 6061 6085 "customize_cmdline.ml" 182 6061 6119
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 182 6061 6067 "customize_cmdline.ml" 182 6061 6119
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 175 5913 5917 "customize_cmdline.ml" 183 6120 6125
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 184 6127 6136 "customize_cmdline.ml" 184 6127 6149
+type(
+  string
+)
+"customize_cmdline.ml" 184 6127 6131 "customize_cmdline.ml" 184 6127 6149
+type(
+  string option
+)
+"customize_cmdline.ml" 184 6127 6151 "customize_cmdline.ml" 184 6127 6237
+type(
+  string
+)
+"customize_cmdline.ml" 175 5913 5917 "customize_cmdline.ml" 184 6127 6237
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 186 6245 6251 "customize_cmdline.ml" 186 6245 6262
+type(
+  string
+)
+"customize_cmdline.ml" 188 6283 6295 "customize_cmdline.ml" 188 6283 6296
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 189 6300 6310 "customize_cmdline.ml" 190 6351 6385
+)
+"customize_cmdline.ml" 189 6300 6314 "customize_cmdline.ml" 189 6300 6315
+type(
+  string * string
+)
+"customize_cmdline.ml" 189 6300 6318 "customize_cmdline.ml" 189 6300 6335
+type(
+  string -> string -> string * string
+)
+ident(
+  int_ref split_string_pair "customize_cmdline.ml" 134 3913 3919 "customize_cmdline.ml" 134 3913 3936
+)
+"customize_cmdline.ml" 189 6300 6336 "customize_cmdline.ml" 189 6300 6345
+type(
+  string
+)
+"customize_cmdline.ml" 189 6300 6346 "customize_cmdline.ml" 189 6300 6347
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 188 6283 6295 "customize_cmdline.ml" 188 6283 6296
+)
+"customize_cmdline.ml" 189 6300 6318 "customize_cmdline.ml" 189 6300 6347
+call(
+  stack
+)
+type(
+  string * string
+)
+"customize_cmdline.ml" 190 6351 6361 "customize_cmdline.ml" 190 6351 6364
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 190 6351 6365 "customize_cmdline.ml" 190 6351 6367
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 190 6351 6376 "customize_cmdline.ml" 190 6351 6377
+type(
+  string * string
+)
+ident(
+  int_ref p "customize_cmdline.ml" 189 6300 6314 "customize_cmdline.ml" 189 6300 6315
+)
+"customize_cmdline.ml" 190 6351 6368 "customize_cmdline.ml" 190 6351 6377
+type(
+  op
+)
+"customize_cmdline.ml" 190 6351 6381 "customize_cmdline.ml" 190 6351 6382
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 190 6351 6382 "customize_cmdline.ml" 190 6351 6385
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 190 6351 6381 "customize_cmdline.ml" 190 6351 6385
+type(
+  op list
+)
+"customize_cmdline.ml" 190 6351 6368 "customize_cmdline.ml" 190 6351 6385
+type(
+  op list
+)
+"customize_cmdline.ml" 190 6351 6361 "customize_cmdline.ml" 190 6351 6385
+type(
+  unit
+)
+"customize_cmdline.ml" 189 6300 6310 "customize_cmdline.ml" 190 6351 6385
+type(
+  unit
+)
+"customize_cmdline.ml" 187 6264 6281 "customize_cmdline.ml" 191 6386 6393
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 187 6264 6270 "customize_cmdline.ml" 191 6386 6393
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 192 6395 6401 "customize_cmdline.ml" 192 6395 6403
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 192 6395 6403 "customize_cmdline.ml" 192 6395 6424
+type(
+  string
+)
+"customize_cmdline.ml" 192 6395 6401 "customize_cmdline.ml" 192 6395 6424
+type(
+  string
+)
+"customize_cmdline.ml" 192 6395 6425 "customize_cmdline.ml" 192 6395 6426
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 192 6395 6427 "customize_cmdline.ml" 192 6395 6430
+type(
+  string
+)
+"customize_cmdline.ml" 192 6395 6431 "customize_cmdline.ml" 192 6395 6432
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 192 6395 6433 "customize_cmdline.ml" 192 6395 6435
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 192 6395 6435 "customize_cmdline.ml" 192 6395 6479
+type(
+  string
+)
+"customize_cmdline.ml" 192 6395 6433 "customize_cmdline.ml" 192 6395 6479
+type(
+  string
+)
+"customize_cmdline.ml" 192 6395 6427 "customize_cmdline.ml" 192 6395 6479
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 192 6395 6401 "customize_cmdline.ml" 192 6395 6479
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 185 6239 6243 "customize_cmdline.ml" 193 6480 6485
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 194 6487 6496 "customize_cmdline.ml" 194 6487 6517
+type(
+  string
+)
+"customize_cmdline.ml" 194 6487 6491 "customize_cmdline.ml" 194 6487 6517
+type(
+  string option
+)
+"customize_cmdline.ml" 194 6487 6519 "customize_cmdline.ml" 194 6487 6678
+type(
+  string
+)
+"customize_cmdline.ml" 185 6239 6243 "customize_cmdline.ml" 194 6487 6678
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 196 6686 6692 "customize_cmdline.ml" 196 6686 6702
+type(
+  string
+)
+"customize_cmdline.ml" 197 6704 6726 "customize_cmdline.ml" 197 6704 6727
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 197 6704 6731 "customize_cmdline.ml" 197 6704 6755
+)
+"customize_cmdline.ml" 197 6704 6731 "customize_cmdline.ml" 197 6704 6734
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 197 6704 6735 "customize_cmdline.ml" 197 6704 6737
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 197 6704 6746 "customize_cmdline.ml" 197 6704 6747
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 197 6704 6726 "customize_cmdline.ml" 197 6704 6727
+)
+"customize_cmdline.ml" 197 6704 6738 "customize_cmdline.ml" 197 6704 6747
+type(
+  op
+)
+"customize_cmdline.ml" 197 6704 6751 "customize_cmdline.ml" 197 6704 6752
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 197 6704 6752 "customize_cmdline.ml" 197 6704 6755
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 197 6704 6751 "customize_cmdline.ml" 197 6704 6755
+type(
+  op list
+)
+"customize_cmdline.ml" 197 6704 6738 "customize_cmdline.ml" 197 6704 6755
+type(
+  op list
+)
+"customize_cmdline.ml" 197 6704 6731 "customize_cmdline.ml" 197 6704 6755
+type(
+  unit
+)
+"customize_cmdline.ml" 197 6704 6721 "customize_cmdline.ml" 197 6704 6756
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 197 6704 6710 "customize_cmdline.ml" 197 6704 6756
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 198 6758 6764 "customize_cmdline.ml" 198 6758 6766
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 198 6758 6766 "customize_cmdline.ml" 198 6758 6772
+type(
+  string
+)
+"customize_cmdline.ml" 198 6758 6764 "customize_cmdline.ml" 198 6758 6772
+type(
+  string
+)
+"customize_cmdline.ml" 198 6758 6773 "customize_cmdline.ml" 198 6758 6774
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 198 6758 6775 "customize_cmdline.ml" 198 6758 6778
+type(
+  string
+)
+"customize_cmdline.ml" 198 6758 6779 "customize_cmdline.ml" 198 6758 6780
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 198 6758 6781 "customize_cmdline.ml" 198 6758 6783
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 198 6758 6783 "customize_cmdline.ml" 198 6758 6811
+type(
+  string
+)
+"customize_cmdline.ml" 198 6758 6781 "customize_cmdline.ml" 198 6758 6811
+type(
+  string
+)
+"customize_cmdline.ml" 198 6758 6775 "customize_cmdline.ml" 198 6758 6811
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 198 6758 6764 "customize_cmdline.ml" 198 6758 6811
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 195 6680 6684 "customize_cmdline.ml" 199 6812 6817
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 200 6819 6828 "customize_cmdline.ml" 200 6819 6834
+type(
+  string
+)
+"customize_cmdline.ml" 200 6819 6823 "customize_cmdline.ml" 200 6819 6834
+type(
+  string option
+)
+"customize_cmdline.ml" 200 6819 6836 "customize_cmdline.ml" 200 6819 6966
+type(
+  string
+)
+"customize_cmdline.ml" 195 6680 6684 "customize_cmdline.ml" 200 6819 6966
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 202 6974 6980 "customize_cmdline.ml" 202 6974 6988
+type(
+  string
+)
+"customize_cmdline.ml" 204 7009 7021 "customize_cmdline.ml" 204 7009 7022
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 205 7026 7036 "customize_cmdline.ml" 206 7074 7106
+)
+"customize_cmdline.ml" 205 7026 7040 "customize_cmdline.ml" 205 7026 7041
+type(
+  string * string
+)
+"customize_cmdline.ml" 205 7026 7044 "customize_cmdline.ml" 205 7026 7061
+type(
+  string -> string -> string * string
+)
+ident(
+  int_ref split_string_pair "customize_cmdline.ml" 134 3913 3919 "customize_cmdline.ml" 134 3913 3936
+)
+"customize_cmdline.ml" 205 7026 7062 "customize_cmdline.ml" 205 7026 7068
+type(
+  string
+)
+"customize_cmdline.ml" 205 7026 7069 "customize_cmdline.ml" 205 7026 7070
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 204 7009 7021 "customize_cmdline.ml" 204 7009 7022
+)
+"customize_cmdline.ml" 205 7026 7044 "customize_cmdline.ml" 205 7026 7070
+call(
+  stack
+)
+type(
+  string * string
+)
+"customize_cmdline.ml" 206 7074 7084 "customize_cmdline.ml" 206 7074 7087
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 206 7074 7088 "customize_cmdline.ml" 206 7074 7090
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 206 7074 7097 "customize_cmdline.ml" 206 7074 7098
+type(
+  string * string
+)
+ident(
+  int_ref p "customize_cmdline.ml" 205 7026 7040 "customize_cmdline.ml" 205 7026 7041
+)
+"customize_cmdline.ml" 206 7074 7091 "customize_cmdline.ml" 206 7074 7098
+type(
+  op
+)
+"customize_cmdline.ml" 206 7074 7102 "customize_cmdline.ml" 206 7074 7103
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 206 7074 7103 "customize_cmdline.ml" 206 7074 7106
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 206 7074 7102 "customize_cmdline.ml" 206 7074 7106
+type(
+  op list
+)
+"customize_cmdline.ml" 206 7074 7091 "customize_cmdline.ml" 206 7074 7106
+type(
+  op list
+)
+"customize_cmdline.ml" 206 7074 7084 "customize_cmdline.ml" 206 7074 7106
+type(
+  unit
+)
+"customize_cmdline.ml" 205 7026 7036 "customize_cmdline.ml" 206 7074 7106
+type(
+  unit
+)
+"customize_cmdline.ml" 203 6990 7007 "customize_cmdline.ml" 207 7107 7114
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 203 6990 6996 "customize_cmdline.ml" 207 7107 7114
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 208 7116 7122 "customize_cmdline.ml" 208 7116 7124
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 208 7116 7124 "customize_cmdline.ml" 208 7116 7135
+type(
+  string
+)
+"customize_cmdline.ml" 208 7116 7122 "customize_cmdline.ml" 208 7116 7135
+type(
+  string
+)
+"customize_cmdline.ml" 208 7116 7136 "customize_cmdline.ml" 208 7116 7137
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 208 7116 7138 "customize_cmdline.ml" 208 7116 7141
+type(
+  string
+)
+"customize_cmdline.ml" 208 7116 7142 "customize_cmdline.ml" 208 7116 7143
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 208 7116 7144 "customize_cmdline.ml" 208 7116 7146
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 208 7116 7146 "customize_cmdline.ml" 208 7116 7179
+type(
+  string
+)
+"customize_cmdline.ml" 208 7116 7144 "customize_cmdline.ml" 208 7116 7179
+type(
+  string
+)
+"customize_cmdline.ml" 208 7116 7138 "customize_cmdline.ml" 208 7116 7179
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 208 7116 7122 "customize_cmdline.ml" 208 7116 7179
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 201 6968 6972 "customize_cmdline.ml" 209 7180 7185
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 210 7187 7196 "customize_cmdline.ml" 210 7187 7207
+type(
+  string
+)
+"customize_cmdline.ml" 210 7187 7191 "customize_cmdline.ml" 210 7187 7207
+type(
+  string option
+)
+"customize_cmdline.ml" 210 7187 7209 "customize_cmdline.ml" 210 7187 7470
+type(
+  string
+)
+"customize_cmdline.ml" 201 6968 6972 "customize_cmdline.ml" 210 7187 7470
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 212 7478 7484 "customize_cmdline.ml" 212 7478 7497
+type(
+  string
+)
+"customize_cmdline.ml" 213 7499 7521 "customize_cmdline.ml" 213 7499 7522
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 213 7499 7526 "customize_cmdline.ml" 213 7499 7559
+)
+"customize_cmdline.ml" 213 7499 7526 "customize_cmdline.ml" 213 7499 7529
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 213 7499 7530 "customize_cmdline.ml" 213 7499 7532
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 213 7499 7550 "customize_cmdline.ml" 213 7499 7551
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 213 7499 7521 "customize_cmdline.ml" 213 7499 7522
+)
+"customize_cmdline.ml" 213 7499 7533 "customize_cmdline.ml" 213 7499 7551
+type(
+  op
+)
+"customize_cmdline.ml" 213 7499 7555 "customize_cmdline.ml" 213 7499 7556
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 213 7499 7556 "customize_cmdline.ml" 213 7499 7559
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 213 7499 7555 "customize_cmdline.ml" 213 7499 7559
+type(
+  op list
+)
+"customize_cmdline.ml" 213 7499 7533 "customize_cmdline.ml" 213 7499 7559
+type(
+  op list
+)
+"customize_cmdline.ml" 213 7499 7526 "customize_cmdline.ml" 213 7499 7559
+type(
+  unit
+)
+"customize_cmdline.ml" 213 7499 7516 "customize_cmdline.ml" 213 7499 7560
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 213 7499 7505 "customize_cmdline.ml" 213 7499 7560
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 214 7562 7568 "customize_cmdline.ml" 214 7562 7570
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 214 7562 7570 "customize_cmdline.ml" 214 7562 7578
+type(
+  string
+)
+"customize_cmdline.ml" 214 7562 7568 "customize_cmdline.ml" 214 7562 7578
+type(
+  string
+)
+"customize_cmdline.ml" 214 7562 7579 "customize_cmdline.ml" 214 7562 7580
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 214 7562 7581 "customize_cmdline.ml" 214 7562 7584
+type(
+  string
+)
+"customize_cmdline.ml" 214 7562 7585 "customize_cmdline.ml" 214 7562 7586
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 214 7562 7587 "customize_cmdline.ml" 214 7562 7589
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 214 7562 7589 "customize_cmdline.ml" 214 7562 7621
+type(
+  string
+)
+"customize_cmdline.ml" 214 7562 7587 "customize_cmdline.ml" 214 7562 7621
+type(
+  string
+)
+"customize_cmdline.ml" 214 7562 7581 "customize_cmdline.ml" 214 7562 7621
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 214 7562 7568 "customize_cmdline.ml" 214 7562 7621
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 211 7472 7476 "customize_cmdline.ml" 215 7622 7627
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 216 7629 7638 "customize_cmdline.ml" 216 7629 7646
+type(
+  string
+)
+"customize_cmdline.ml" 216 7629 7633 "customize_cmdline.ml" 216 7629 7646
+type(
+  string option
+)
+"customize_cmdline.ml" 216 7629 7648 "customize_cmdline.ml" 216 7629 8254
+type(
+  string
+)
+"customize_cmdline.ml" 211 7472 7476 "customize_cmdline.ml" 216 7629 8254
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 218 8262 8268 "customize_cmdline.ml" 218 8262 8289
+type(
+  string
+)
+"customize_cmdline.ml" 219 8291 8313 "customize_cmdline.ml" 219 8291 8314
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 219 8291 8318 "customize_cmdline.ml" 219 8291 8352
+)
+"customize_cmdline.ml" 219 8291 8318 "customize_cmdline.ml" 219 8291 8321
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 219 8291 8322 "customize_cmdline.ml" 219 8291 8324
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 219 8291 8343 "customize_cmdline.ml" 219 8291 8344
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 219 8291 8313 "customize_cmdline.ml" 219 8291 8314
+)
+"customize_cmdline.ml" 219 8291 8325 "customize_cmdline.ml" 219 8291 8344
+type(
+  op
+)
+"customize_cmdline.ml" 219 8291 8348 "customize_cmdline.ml" 219 8291 8349
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 219 8291 8349 "customize_cmdline.ml" 219 8291 8352
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 219 8291 8348 "customize_cmdline.ml" 219 8291 8352
+type(
+  op list
+)
+"customize_cmdline.ml" 219 8291 8325 "customize_cmdline.ml" 219 8291 8352
+type(
+  op list
+)
+"customize_cmdline.ml" 219 8291 8318 "customize_cmdline.ml" 219 8291 8352
+type(
+  unit
+)
+"customize_cmdline.ml" 219 8291 8308 "customize_cmdline.ml" 219 8291 8353
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 219 8291 8297 "customize_cmdline.ml" 219 8291 8353
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 220 8355 8361 "customize_cmdline.ml" 220 8355 8363
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 220 8355 8363 "customize_cmdline.ml" 220 8355 8375
+type(
+  string
+)
+"customize_cmdline.ml" 220 8355 8361 "customize_cmdline.ml" 220 8355 8375
+type(
+  string
+)
+"customize_cmdline.ml" 220 8355 8376 "customize_cmdline.ml" 220 8355 8377
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 220 8355 8378 "customize_cmdline.ml" 220 8355 8381
+type(
+  string
+)
+"customize_cmdline.ml" 220 8355 8382 "customize_cmdline.ml" 220 8355 8383
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 220 8355 8384 "customize_cmdline.ml" 220 8355 8386
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 220 8355 8386 "customize_cmdline.ml" 220 8355 8419
+type(
+  string
+)
+"customize_cmdline.ml" 220 8355 8384 "customize_cmdline.ml" 220 8355 8419
+type(
+  string
+)
+"customize_cmdline.ml" 220 8355 8378 "customize_cmdline.ml" 220 8355 8419
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 220 8355 8361 "customize_cmdline.ml" 220 8355 8419
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 217 8256 8260 "customize_cmdline.ml" 221 8420 8425
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 222 8427 8436 "customize_cmdline.ml" 222 8427 8448
+type(
+  string
+)
+"customize_cmdline.ml" 222 8427 8431 "customize_cmdline.ml" 222 8427 8448
+type(
+  string option
+)
+"customize_cmdline.ml" 222 8427 8450 "customize_cmdline.ml" 222 8427 8829
+type(
+  string
+)
+"customize_cmdline.ml" 217 8256 8260 "customize_cmdline.ml" 222 8427 8829
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 224 8837 8843 "customize_cmdline.ml" 224 8837 8864
+type(
+  string
+)
+"customize_cmdline.ml" 226 8885 8897 "customize_cmdline.ml" 226 8885 8898
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 227 8902 8912 "customize_cmdline.ml" 228 8944 8990
+)
+"customize_cmdline.ml" 227 8902 8916 "customize_cmdline.ml" 227 8902 8918
+type(
+  string list
+)
+"customize_cmdline.ml" 227 8902 8921 "customize_cmdline.ml" 227 8902 8938
+type(
+  string -> string list
+)
+ident(
+  int_ref split_string_list "customize_cmdline.ml" 143 4218 4224 "customize_cmdline.ml" 143 4218 4241
+)
+"customize_cmdline.ml" 227 8902 8939 "customize_cmdline.ml" 227 8902 8940
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 226 8885 8897 "customize_cmdline.ml" 226 8885 8898
+)
+"customize_cmdline.ml" 227 8902 8921 "customize_cmdline.ml" 227 8902 8940
+call(
+  stack
+)
+type(
+  string list
+)
+"customize_cmdline.ml" 228 8944 8954 "customize_cmdline.ml" 228 8944 8957
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 228 8944 8958 "customize_cmdline.ml" 228 8944 8960
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 228 8944 8980 "customize_cmdline.ml" 228 8944 8982
+type(
+  string list
+)
+ident(
+  int_ref ss "customize_cmdline.ml" 227 8902 8916 "customize_cmdline.ml" 227 8902 8918
+)
+"customize_cmdline.ml" 228 8944 8961 "customize_cmdline.ml" 228 8944 8982
+type(
+  op
+)
+"customize_cmdline.ml" 228 8944 8986 "customize_cmdline.ml" 228 8944 8987
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 228 8944 8987 "customize_cmdline.ml" 228 8944 8990
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 228 8944 8986 "customize_cmdline.ml" 228 8944 8990
+type(
+  op list
+)
+"customize_cmdline.ml" 228 8944 8961 "customize_cmdline.ml" 228 8944 8990
+type(
+  op list
+)
+"customize_cmdline.ml" 228 8944 8954 "customize_cmdline.ml" 228 8944 8990
+type(
+  unit
+)
+"customize_cmdline.ml" 227 8902 8912 "customize_cmdline.ml" 228 8944 8990
+type(
+  unit
+)
+"customize_cmdline.ml" 225 8866 8883 "customize_cmdline.ml" 229 8991 8998
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 225 8866 8872 "customize_cmdline.ml" 229 8991 8998
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 230 9000 9006 "customize_cmdline.ml" 230 9000 9008
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 230 9000 9008 "customize_cmdline.ml" 230 9000 9019
+type(
+  string
+)
+"customize_cmdline.ml" 230 9000 9006 "customize_cmdline.ml" 230 9000 9019
+type(
+  string
+)
+"customize_cmdline.ml" 230 9000 9020 "customize_cmdline.ml" 230 9000 9021
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 230 9000 9022 "customize_cmdline.ml" 230 9000 9025
+type(
+  string
+)
+"customize_cmdline.ml" 230 9000 9026 "customize_cmdline.ml" 230 9000 9027
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 230 9000 9028 "customize_cmdline.ml" 230 9000 9030
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 230 9000 9030 "customize_cmdline.ml" 230 9000 9071
+type(
+  string
+)
+"customize_cmdline.ml" 230 9000 9028 "customize_cmdline.ml" 230 9000 9071
+type(
+  string
+)
+"customize_cmdline.ml" 230 9000 9022 "customize_cmdline.ml" 230 9000 9071
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 230 9000 9006 "customize_cmdline.ml" 230 9000 9071
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 223 8831 8835 "customize_cmdline.ml" 231 9072 9077
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 232 9079 9088 "customize_cmdline.ml" 232 9079 9099
+type(
+  string
+)
+"customize_cmdline.ml" 232 9079 9083 "customize_cmdline.ml" 232 9079 9099
+type(
+  string option
+)
+"customize_cmdline.ml" 232 9079 9101 "customize_cmdline.ml" 232 9079 9403
+type(
+  string
+)
+"customize_cmdline.ml" 223 8831 8835 "customize_cmdline.ml" 232 9079 9403
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 234 9411 9417 "customize_cmdline.ml" 234 9411 9429
+type(
+  string
+)
+"customize_cmdline.ml" 235 9431 9453 "customize_cmdline.ml" 235 9431 9454
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 235 9431 9458 "customize_cmdline.ml" 235 9431 9484
+)
+"customize_cmdline.ml" 235 9431 9458 "customize_cmdline.ml" 235 9431 9461
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 235 9431 9462 "customize_cmdline.ml" 235 9431 9464
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 235 9431 9475 "customize_cmdline.ml" 235 9431 9476
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 235 9431 9453 "customize_cmdline.ml" 235 9431 9454
+)
+"customize_cmdline.ml" 235 9431 9465 "customize_cmdline.ml" 235 9431 9476
+type(
+  op
+)
+"customize_cmdline.ml" 235 9431 9480 "customize_cmdline.ml" 235 9431 9481
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 235 9431 9481 "customize_cmdline.ml" 235 9431 9484
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 235 9431 9480 "customize_cmdline.ml" 235 9431 9484
+type(
+  op list
+)
+"customize_cmdline.ml" 235 9431 9465 "customize_cmdline.ml" 235 9431 9484
+type(
+  op list
+)
+"customize_cmdline.ml" 235 9431 9458 "customize_cmdline.ml" 235 9431 9484
+type(
+  unit
+)
+"customize_cmdline.ml" 235 9431 9448 "customize_cmdline.ml" 235 9431 9485
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 235 9431 9437 "customize_cmdline.ml" 235 9431 9485
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 236 9487 9493 "customize_cmdline.ml" 236 9487 9495
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 236 9487 9495 "customize_cmdline.ml" 236 9487 9505
+type(
+  string
+)
+"customize_cmdline.ml" 236 9487 9493 "customize_cmdline.ml" 236 9487 9505
+type(
+  string
+)
+"customize_cmdline.ml" 236 9487 9506 "customize_cmdline.ml" 236 9487 9507
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 236 9487 9508 "customize_cmdline.ml" 236 9487 9511
+type(
+  string
+)
+"customize_cmdline.ml" 236 9487 9512 "customize_cmdline.ml" 236 9487 9513
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 236 9487 9514 "customize_cmdline.ml" 236 9487 9516
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 236 9487 9516 "customize_cmdline.ml" 236 9487 9534
+type(
+  string
+)
+"customize_cmdline.ml" 236 9487 9514 "customize_cmdline.ml" 236 9487 9534
+type(
+  string
+)
+"customize_cmdline.ml" 236 9487 9508 "customize_cmdline.ml" 236 9487 9534
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 236 9487 9493 "customize_cmdline.ml" 236 9487 9534
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 233 9405 9409 "customize_cmdline.ml" 237 9535 9540
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 238 9542 9551 "customize_cmdline.ml" 238 9542 9561
+type(
+  string
+)
+"customize_cmdline.ml" 238 9542 9546 "customize_cmdline.ml" 238 9542 9561
+type(
+  string option
+)
+"customize_cmdline.ml" 238 9542 9563 "customize_cmdline.ml" 238 9542 9673
+type(
+  string
+)
+"customize_cmdline.ml" 233 9405 9409 "customize_cmdline.ml" 238 9542 9673
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 240 9681 9687 "customize_cmdline.ml" 240 9681 9698
+type(
+  string
+)
+"customize_cmdline.ml" 242 9719 9731 "customize_cmdline.ml" 242 9719 9732
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 243 9736 9746 "customize_cmdline.ml" 244 9778 9822
+)
+"customize_cmdline.ml" 243 9736 9750 "customize_cmdline.ml" 243 9736 9752
+type(
+  string list
+)
+"customize_cmdline.ml" 243 9736 9755 "customize_cmdline.ml" 243 9736 9772
+type(
+  string -> string list
+)
+ident(
+  int_ref split_string_list "customize_cmdline.ml" 143 4218 4224 "customize_cmdline.ml" 143 4218 4241
+)
+"customize_cmdline.ml" 243 9736 9773 "customize_cmdline.ml" 243 9736 9774
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 242 9719 9731 "customize_cmdline.ml" 242 9719 9732
+)
+"customize_cmdline.ml" 243 9736 9755 "customize_cmdline.ml" 243 9736 9774
+call(
+  stack
+)
+type(
+  string list
+)
+"customize_cmdline.ml" 244 9778 9788 "customize_cmdline.ml" 244 9778 9791
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 244 9778 9792 "customize_cmdline.ml" 244 9778 9794
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 244 9778 9812 "customize_cmdline.ml" 244 9778 9814
+type(
+  string list
+)
+ident(
+  int_ref ss "customize_cmdline.ml" 243 9736 9750 "customize_cmdline.ml" 243 9736 9752
+)
+"customize_cmdline.ml" 244 9778 9795 "customize_cmdline.ml" 244 9778 9814
+type(
+  op
+)
+"customize_cmdline.ml" 244 9778 9818 "customize_cmdline.ml" 244 9778 9819
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 244 9778 9819 "customize_cmdline.ml" 244 9778 9822
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 244 9778 9818 "customize_cmdline.ml" 244 9778 9822
+type(
+  op list
+)
+"customize_cmdline.ml" 244 9778 9795 "customize_cmdline.ml" 244 9778 9822
+type(
+  op list
+)
+"customize_cmdline.ml" 244 9778 9788 "customize_cmdline.ml" 244 9778 9822
+type(
+  unit
+)
+"customize_cmdline.ml" 243 9736 9746 "customize_cmdline.ml" 244 9778 9822
+type(
+  unit
+)
+"customize_cmdline.ml" 241 9700 9717 "customize_cmdline.ml" 245 9823 9830
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 241 9700 9706 "customize_cmdline.ml" 245 9823 9830
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 246 9832 9838 "customize_cmdline.ml" 246 9832 9840
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 246 9832 9840 "customize_cmdline.ml" 246 9832 9851
+type(
+  string
+)
+"customize_cmdline.ml" 246 9832 9838 "customize_cmdline.ml" 246 9832 9851
+type(
+  string
+)
+"customize_cmdline.ml" 246 9832 9852 "customize_cmdline.ml" 246 9832 9853
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 246 9832 9854 "customize_cmdline.ml" 246 9832 9857
+type(
+  string
+)
+"customize_cmdline.ml" 246 9832 9858 "customize_cmdline.ml" 246 9832 9859
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 246 9832 9860 "customize_cmdline.ml" 246 9832 9862
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 246 9832 9862 "customize_cmdline.ml" 246 9832 9889
+type(
+  string
+)
+"customize_cmdline.ml" 246 9832 9860 "customize_cmdline.ml" 246 9832 9889
+type(
+  string
+)
+"customize_cmdline.ml" 246 9832 9854 "customize_cmdline.ml" 246 9832 9889
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 246 9832 9838 "customize_cmdline.ml" 246 9832 9889
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 239 9675 9679 "customize_cmdline.ml" 247 9890 9895
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 248 9897 9906 "customize_cmdline.ml" 248 9897 9917
+type(
+  string
+)
+"customize_cmdline.ml" 248 9897 9901 "customize_cmdline.ml" 248 9897 9917
+type(
+  string option
+)
+"customize_cmdline.ml" 248 9897 9919 "customize_cmdline.ml" 248 9897 10241
+type(
+  string
+)
+"customize_cmdline.ml" 239 9675 9679 "customize_cmdline.ml" 248 9897 10241
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 250 10249 10255 "customize_cmdline.ml" 250 10249 10263
+type(
+  string
+)
+"customize_cmdline.ml" 252 10284 10296 "customize_cmdline.ml" 252 10284 10297
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 253 10301 10311 "customize_cmdline.ml" 254 10349 10382
+)
+"customize_cmdline.ml" 253 10301 10315 "customize_cmdline.ml" 253 10301 10317
+type(
+  string * string list
+)
+"customize_cmdline.ml" 253 10301 10320 "customize_cmdline.ml" 253 10301 10336
+type(
+  string -> string -> string * string list
+)
+ident(
+  int_ref split_links_list "customize_cmdline.ml" 146 4279 4285 "customize_cmdline.ml" 146 4279 4301
+)
+"customize_cmdline.ml" 253 10301 10337 "customize_cmdline.ml" 253 10301 10343
+type(
+  string
+)
+"customize_cmdline.ml" 253 10301 10344 "customize_cmdline.ml" 253 10301 10345
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 252 10284 10296 "customize_cmdline.ml" 252 10284 10297
+)
+"customize_cmdline.ml" 253 10301 10320 "customize_cmdline.ml" 253 10301 10345
+call(
+  stack
+)
+type(
+  string * string list
+)
+"customize_cmdline.ml" 254 10349 10359 "customize_cmdline.ml" 254 10349 10362
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 254 10349 10363 "customize_cmdline.ml" 254 10349 10365
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 254 10349 10372 "customize_cmdline.ml" 254 10349 10374
+type(
+  string * string list
+)
+ident(
+  int_ref ss "customize_cmdline.ml" 253 10301 10315 "customize_cmdline.ml" 253 10301 10317
+)
+"customize_cmdline.ml" 254 10349 10366 "customize_cmdline.ml" 254 10349 10374
+type(
+  op
+)
+"customize_cmdline.ml" 254 10349 10378 "customize_cmdline.ml" 254 10349 10379
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 254 10349 10379 "customize_cmdline.ml" 254 10349 10382
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 254 10349 10378 "customize_cmdline.ml" 254 10349 10382
+type(
+  op list
+)
+"customize_cmdline.ml" 254 10349 10366 "customize_cmdline.ml" 254 10349 10382
+type(
+  op list
+)
+"customize_cmdline.ml" 254 10349 10359 "customize_cmdline.ml" 254 10349 10382
+type(
+  unit
+)
+"customize_cmdline.ml" 253 10301 10311 "customize_cmdline.ml" 254 10349 10382
+type(
+  unit
+)
+"customize_cmdline.ml" 251 10265 10282 "customize_cmdline.ml" 255 10383 10390
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 251 10265 10271 "customize_cmdline.ml" 255 10383 10390
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 256 10392 10398 "customize_cmdline.ml" 256 10392 10400
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 256 10392 10400 "customize_cmdline.ml" 256 10392 10422
+type(
+  string
+)
+"customize_cmdline.ml" 256 10392 10398 "customize_cmdline.ml" 256 10392 10422
+type(
+  string
+)
+"customize_cmdline.ml" 256 10392 10423 "customize_cmdline.ml" 256 10392 10424
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 256 10392 10425 "customize_cmdline.ml" 256 10392 10428
+type(
+  string
+)
+"customize_cmdline.ml" 256 10392 10429 "customize_cmdline.ml" 256 10392 10430
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 256 10392 10431 "customize_cmdline.ml" 256 10392 10433
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 256 10392 10433 "customize_cmdline.ml" 256 10392 10456
+type(
+  string
+)
+"customize_cmdline.ml" 256 10392 10431 "customize_cmdline.ml" 256 10392 10456
+type(
+  string
+)
+"customize_cmdline.ml" 256 10392 10425 "customize_cmdline.ml" 256 10392 10456
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 256 10392 10398 "customize_cmdline.ml" 256 10392 10456
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 249 10243 10247 "customize_cmdline.ml" 257 10457 10462
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 258 10464 10473 "customize_cmdline.ml" 258 10464 10495
+type(
+  string
+)
+"customize_cmdline.ml" 258 10464 10468 "customize_cmdline.ml" 258 10464 10495
+type(
+  string option
+)
+"customize_cmdline.ml" 258 10464 10497 "customize_cmdline.ml" 258 10464 10584
+type(
+  string
+)
+"customize_cmdline.ml" 249 10243 10247 "customize_cmdline.ml" 258 10464 10584
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 260 10592 10598 "customize_cmdline.ml" 260 10592 10607
+type(
+  string
+)
+"customize_cmdline.ml" 261 10609 10631 "customize_cmdline.ml" 261 10609 10632
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 261 10609 10636 "customize_cmdline.ml" 261 10609 10659
+)
+"customize_cmdline.ml" 261 10609 10636 "customize_cmdline.ml" 261 10609 10639
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 261 10609 10640 "customize_cmdline.ml" 261 10609 10642
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 261 10609 10650 "customize_cmdline.ml" 261 10609 10651
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 261 10609 10631 "customize_cmdline.ml" 261 10609 10632
+)
+"customize_cmdline.ml" 261 10609 10643 "customize_cmdline.ml" 261 10609 10651
+type(
+  op
+)
+"customize_cmdline.ml" 261 10609 10655 "customize_cmdline.ml" 261 10609 10656
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 261 10609 10656 "customize_cmdline.ml" 261 10609 10659
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 261 10609 10655 "customize_cmdline.ml" 261 10609 10659
+type(
+  op list
+)
+"customize_cmdline.ml" 261 10609 10643 "customize_cmdline.ml" 261 10609 10659
+type(
+  op list
+)
+"customize_cmdline.ml" 261 10609 10636 "customize_cmdline.ml" 261 10609 10659
+type(
+  unit
+)
+"customize_cmdline.ml" 261 10609 10626 "customize_cmdline.ml" 261 10609 10660
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 261 10609 10615 "customize_cmdline.ml" 261 10609 10660
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 262 10662 10668 "customize_cmdline.ml" 262 10662 10670
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 262 10662 10670 "customize_cmdline.ml" 262 10662 10675
+type(
+  string
+)
+"customize_cmdline.ml" 262 10662 10668 "customize_cmdline.ml" 262 10662 10675
+type(
+  string
+)
+"customize_cmdline.ml" 262 10662 10676 "customize_cmdline.ml" 262 10662 10677
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 262 10662 10678 "customize_cmdline.ml" 262 10662 10681
+type(
+  string
+)
+"customize_cmdline.ml" 262 10662 10682 "customize_cmdline.ml" 262 10662 10683
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 262 10662 10684 "customize_cmdline.ml" 262 10662 10686
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 262 10662 10686 "customize_cmdline.ml" 262 10662 10706
+type(
+  string
+)
+"customize_cmdline.ml" 262 10662 10684 "customize_cmdline.ml" 262 10662 10706
+type(
+  string
+)
+"customize_cmdline.ml" 262 10662 10678 "customize_cmdline.ml" 262 10662 10706
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 262 10662 10668 "customize_cmdline.ml" 262 10662 10706
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 259 10586 10590 "customize_cmdline.ml" 263 10707 10712
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 264 10714 10723 "customize_cmdline.ml" 264 10714 10728
+type(
+  string
+)
+"customize_cmdline.ml" 264 10714 10718 "customize_cmdline.ml" 264 10714 10728
+type(
+  string option
+)
+"customize_cmdline.ml" 264 10714 10730 "customize_cmdline.ml" 264 10714 10889
+type(
+  string
+)
+"customize_cmdline.ml" 259 10586 10590 "customize_cmdline.ml" 264 10714 10889
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 266 10897 10903 "customize_cmdline.ml" 266 10897 10911
+type(
+  string
+)
+"customize_cmdline.ml" 268 10932 10944 "customize_cmdline.ml" 268 10932 10945
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 269 10949 10959 "customize_cmdline.ml" 270 10997 11029
+)
+"customize_cmdline.ml" 269 10949 10963 "customize_cmdline.ml" 269 10949 10964
+type(
+  string * string
+)
+"customize_cmdline.ml" 269 10949 10967 "customize_cmdline.ml" 269 10949 10984
+type(
+  string -> string -> string * string
+)
+ident(
+  int_ref split_string_pair "customize_cmdline.ml" 134 3913 3919 "customize_cmdline.ml" 134 3913 3936
+)
+"customize_cmdline.ml" 269 10949 10985 "customize_cmdline.ml" 269 10949 10991
+type(
+  string
+)
+"customize_cmdline.ml" 269 10949 10992 "customize_cmdline.ml" 269 10949 10993
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 268 10932 10944 "customize_cmdline.ml" 268 10932 10945
+)
+"customize_cmdline.ml" 269 10949 10967 "customize_cmdline.ml" 269 10949 10993
+call(
+  stack
+)
+type(
+  string * string
+)
+"customize_cmdline.ml" 270 10997 11007 "customize_cmdline.ml" 270 10997 11010
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 270 10997 11011 "customize_cmdline.ml" 270 10997 11013
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 270 10997 11020 "customize_cmdline.ml" 270 10997 11021
+type(
+  string * string
+)
+ident(
+  int_ref p "customize_cmdline.ml" 269 10949 10963 "customize_cmdline.ml" 269 10949 10964
+)
+"customize_cmdline.ml" 270 10997 11014 "customize_cmdline.ml" 270 10997 11021
+type(
+  op
+)
+"customize_cmdline.ml" 270 10997 11025 "customize_cmdline.ml" 270 10997 11026
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 270 10997 11026 "customize_cmdline.ml" 270 10997 11029
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 270 10997 11025 "customize_cmdline.ml" 270 10997 11029
+type(
+  op list
+)
+"customize_cmdline.ml" 270 10997 11014 "customize_cmdline.ml" 270 10997 11029
+type(
+  op list
+)
+"customize_cmdline.ml" 270 10997 11007 "customize_cmdline.ml" 270 10997 11029
+type(
+  unit
+)
+"customize_cmdline.ml" 269 10949 10959 "customize_cmdline.ml" 270 10997 11029
+type(
+  unit
+)
+"customize_cmdline.ml" 267 10913 10930 "customize_cmdline.ml" 271 11030 11037
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 267 10913 10919 "customize_cmdline.ml" 271 11030 11037
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 272 11039 11045 "customize_cmdline.ml" 272 11039 11047
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 272 11039 11047 "customize_cmdline.ml" 272 11039 11060
+type(
+  string
+)
+"customize_cmdline.ml" 272 11039 11045 "customize_cmdline.ml" 272 11039 11060
+type(
+  string
+)
+"customize_cmdline.ml" 272 11039 11061 "customize_cmdline.ml" 272 11039 11062
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 272 11039 11063 "customize_cmdline.ml" 272 11039 11066
+type(
+  string
+)
+"customize_cmdline.ml" 272 11039 11067 "customize_cmdline.ml" 272 11039 11068
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 272 11039 11069 "customize_cmdline.ml" 272 11039 11071
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 272 11039 11071 "customize_cmdline.ml" 272 11039 11097
+type(
+  string
+)
+"customize_cmdline.ml" 272 11039 11069 "customize_cmdline.ml" 272 11039 11097
+type(
+  string
+)
+"customize_cmdline.ml" 272 11039 11063 "customize_cmdline.ml" 272 11039 11097
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 272 11039 11045 "customize_cmdline.ml" 272 11039 11097
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 265 10891 10895 "customize_cmdline.ml" 273 11098 11103
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 274 11105 11114 "customize_cmdline.ml" 274 11105 11127
+type(
+  string
+)
+"customize_cmdline.ml" 274 11105 11109 "customize_cmdline.ml" 274 11105 11127
+type(
+  string option
+)
+"customize_cmdline.ml" 274 11105 11129 "customize_cmdline.ml" 274 11105 11203
+type(
+  string
+)
+"customize_cmdline.ml" 265 10891 10895 "customize_cmdline.ml" 274 11105 11203
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 276 11211 11217 "customize_cmdline.ml" 276 11211 11229
+type(
+  string
+)
+"customize_cmdline.ml" 278 11250 11262 "customize_cmdline.ml" 278 11250 11263
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 279 11267 11277 "customize_cmdline.ml" 281 11378 11424
+)
+"customize_cmdline.ml" 279 11267 11281 "customize_cmdline.ml" 279 11267 11285
+type(
+  string
+)
+"customize_cmdline.ml" 279 11267 11287 "customize_cmdline.ml" 279 11267 11290
+type(
+  string
+)
+"customize_cmdline.ml" 279 11267 11281 "customize_cmdline.ml" 279 11267 11290
+type(
+  string * string
+)
+"customize_cmdline.ml" 279 11267 11293 "customize_cmdline.ml" 279 11267 11310
+type(
+  string -> string -> string * string
+)
+ident(
+  int_ref split_string_pair "customize_cmdline.ml" 134 3913 3919 "customize_cmdline.ml" 134 3913 3936
+)
+"customize_cmdline.ml" 279 11267 11311 "customize_cmdline.ml" 279 11267 11321
+type(
+  string
+)
+"customize_cmdline.ml" 279 11267 11322 "customize_cmdline.ml" 279 11267 11323
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 278 11250 11262 "customize_cmdline.ml" 278 11250 11263
+)
+"customize_cmdline.ml" 279 11267 11293 "customize_cmdline.ml" 279 11267 11323
+call(
+  stack
+)
+type(
+  string * string
+)
+"customize_cmdline.ml" 280 11327 11341 "customize_cmdline.ml" 280 11327 11344
+type(
+  Password.password_selector
+)
+"customize_cmdline.ml" 280 11327 11347 "customize_cmdline.ml" 280 11327 11370
+type(
+  string -> Password.password_selector
+)
+ident(
+  ext_ref Password.parse_selector
+)
+"customize_cmdline.ml" 280 11327 11371 "customize_cmdline.ml" 280 11327 11374
+type(
+  string
+)
+ident(
+  int_ref sel "customize_cmdline.ml" 279 11267 11287 "customize_cmdline.ml" 279 11267 11290
+)
+"customize_cmdline.ml" 280 11327 11347 "customize_cmdline.ml" 280 11327 11374
+call(
+  stack
+)
+type(
+  Password.password_selector
+)
+"customize_cmdline.ml" 281 11378 11388 "customize_cmdline.ml" 281 11378 11391
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 281 11378 11392 "customize_cmdline.ml" 281 11378 11394
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 281 11378 11406 "customize_cmdline.ml" 281 11378 11410
+type(
+  string
+)
+ident(
+  int_ref user "customize_cmdline.ml" 279 11267 11281 "customize_cmdline.ml" 279 11267 11285
+)
+"customize_cmdline.ml" 281 11378 11412 "customize_cmdline.ml" 281 11378 11415
+type(
+  Password.password_selector
+)
+ident(
+  int_ref sel "customize_cmdline.ml" 280 11327 11341 "customize_cmdline.ml" 280 11327 11344
+)
+"customize_cmdline.ml" 281 11378 11405 "customize_cmdline.ml" 281 11378 11416
+type(
+  string * Password.password_selector
+)
+"customize_cmdline.ml" 281 11378 11395 "customize_cmdline.ml" 281 11378 11416
+type(
+  op
+)
+"customize_cmdline.ml" 281 11378 11420 "customize_cmdline.ml" 281 11378 11421
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 281 11378 11421 "customize_cmdline.ml" 281 11378 11424
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 281 11378 11420 "customize_cmdline.ml" 281 11378 11424
+type(
+  op list
+)
+"customize_cmdline.ml" 281 11378 11395 "customize_cmdline.ml" 281 11378 11424
+type(
+  op list
+)
+"customize_cmdline.ml" 281 11378 11388 "customize_cmdline.ml" 281 11378 11424
+type(
+  unit
+)
+"customize_cmdline.ml" 280 11327 11337 "customize_cmdline.ml" 281 11378 11424
+type(
+  unit
+)
+"customize_cmdline.ml" 279 11267 11277 "customize_cmdline.ml" 281 11378 11424
+type(
+  unit
+)
+"customize_cmdline.ml" 277 11231 11248 "customize_cmdline.ml" 282 11425 11432
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 277 11231 11237 "customize_cmdline.ml" 282 11425 11432
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 283 11434 11440 "customize_cmdline.ml" 283 11434 11442
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 283 11434 11442 "customize_cmdline.ml" 283 11434 11457
+type(
+  string
+)
+"customize_cmdline.ml" 283 11434 11440 "customize_cmdline.ml" 283 11434 11457
+type(
+  string
+)
+"customize_cmdline.ml" 283 11434 11458 "customize_cmdline.ml" 283 11434 11459
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 283 11434 11460 "customize_cmdline.ml" 283 11434 11463
+type(
+  string
+)
+"customize_cmdline.ml" 283 11434 11464 "customize_cmdline.ml" 283 11434 11465
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 283 11434 11466 "customize_cmdline.ml" 283 11434 11468
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 283 11434 11468 "customize_cmdline.ml" 283 11434 11487
+type(
+  string
+)
+"customize_cmdline.ml" 283 11434 11466 "customize_cmdline.ml" 283 11434 11487
+type(
+  string
+)
+"customize_cmdline.ml" 283 11434 11460 "customize_cmdline.ml" 283 11434 11487
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 283 11434 11440 "customize_cmdline.ml" 283 11434 11487
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 275 11205 11209 "customize_cmdline.ml" 284 11488 11493
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 285 11495 11504 "customize_cmdline.ml" 285 11495 11519
+type(
+  string
+)
+"customize_cmdline.ml" 285 11495 11499 "customize_cmdline.ml" 285 11495 11519
+type(
+  string option
+)
+"customize_cmdline.ml" 285 11495 11521 "customize_cmdline.ml" 285 11495 11736
+type(
+  string
+)
+"customize_cmdline.ml" 275 11205 11209 "customize_cmdline.ml" 285 11495 11736
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 287 11744 11750 "customize_cmdline.ml" 287 11744 11767
+type(
+  string
+)
+"customize_cmdline.ml" 289 11788 11800 "customize_cmdline.ml" 289 11788 11801
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 290 11805 11815 "customize_cmdline.ml" 291 11854 11896
+)
+"customize_cmdline.ml" 290 11805 11819 "customize_cmdline.ml" 290 11805 11822
+type(
+  Password.password_selector
+)
+"customize_cmdline.ml" 290 11805 11825 "customize_cmdline.ml" 290 11805 11848
+type(
+  string -> Password.password_selector
+)
+ident(
+  ext_ref Password.parse_selector
+)
+"customize_cmdline.ml" 290 11805 11849 "customize_cmdline.ml" 290 11805 11850
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 289 11788 11800 "customize_cmdline.ml" 289 11788 11801
+)
+"customize_cmdline.ml" 290 11805 11825 "customize_cmdline.ml" 290 11805 11850
+call(
+  stack
+)
+type(
+  Password.password_selector
+)
+"customize_cmdline.ml" 291 11854 11864 "customize_cmdline.ml" 291 11854 11867
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 291 11854 11868 "customize_cmdline.ml" 291 11854 11870
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 291 11854 11885 "customize_cmdline.ml" 291 11854 11888
+type(
+  Password.password_selector
+)
+ident(
+  int_ref sel "customize_cmdline.ml" 290 11805 11819 "customize_cmdline.ml" 290 11805 11822
+)
+"customize_cmdline.ml" 291 11854 11871 "customize_cmdline.ml" 291 11854 11888
+type(
+  op
+)
+"customize_cmdline.ml" 291 11854 11892 "customize_cmdline.ml" 291 11854 11893
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 291 11854 11893 "customize_cmdline.ml" 291 11854 11896
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 291 11854 11892 "customize_cmdline.ml" 291 11854 11896
+type(
+  op list
+)
+"customize_cmdline.ml" 291 11854 11871 "customize_cmdline.ml" 291 11854 11896
+type(
+  op list
+)
+"customize_cmdline.ml" 291 11854 11864 "customize_cmdline.ml" 291 11854 11896
+type(
+  unit
+)
+"customize_cmdline.ml" 290 11805 11815 "customize_cmdline.ml" 291 11854 11896
+type(
+  unit
+)
+"customize_cmdline.ml" 288 11769 11786 "customize_cmdline.ml" 292 11897 11904
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 288 11769 11775 "customize_cmdline.ml" 292 11897 11904
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 293 11906 11912 "customize_cmdline.ml" 293 11906 11914
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 293 11906 11914 "customize_cmdline.ml" 293 11906 11924
+type(
+  string
+)
+"customize_cmdline.ml" 293 11906 11912 "customize_cmdline.ml" 293 11906 11924
+type(
+  string
+)
+"customize_cmdline.ml" 293 11906 11925 "customize_cmdline.ml" 293 11906 11926
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 293 11906 11927 "customize_cmdline.ml" 293 11906 11930
+type(
+  string
+)
+"customize_cmdline.ml" 293 11906 11931 "customize_cmdline.ml" 293 11906 11932
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 293 11906 11933 "customize_cmdline.ml" 293 11906 11935
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 293 11906 11935 "customize_cmdline.ml" 293 11906 11954
+type(
+  string
+)
+"customize_cmdline.ml" 293 11906 11933 "customize_cmdline.ml" 293 11906 11954
+type(
+  string
+)
+"customize_cmdline.ml" 293 11906 11927 "customize_cmdline.ml" 293 11906 11954
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 293 11906 11912 "customize_cmdline.ml" 293 11906 11954
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 286 11738 11742 "customize_cmdline.ml" 294 11955 11960
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 295 11962 11971 "customize_cmdline.ml" 295 11962 11981
+type(
+  string
+)
+"customize_cmdline.ml" 295 11962 11966 "customize_cmdline.ml" 295 11962 11981
+type(
+  string option
+)
+"customize_cmdline.ml" 295 11962 11983 "customize_cmdline.ml" 295 11962 12250
+type(
+  string
+)
+"customize_cmdline.ml" 286 11738 11742 "customize_cmdline.ml" 295 11962 12250
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 297 12258 12264 "customize_cmdline.ml" 297 12258 12271
+type(
+  string
+)
+"customize_cmdline.ml" 298 12273 12295 "customize_cmdline.ml" 298 12273 12296
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 298 12273 12300 "customize_cmdline.ml" 298 12273 12324
+)
+"customize_cmdline.ml" 298 12273 12300 "customize_cmdline.ml" 298 12273 12303
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 298 12273 12304 "customize_cmdline.ml" 298 12273 12306
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 298 12273 12315 "customize_cmdline.ml" 298 12273 12316
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 298 12273 12295 "customize_cmdline.ml" 298 12273 12296
+)
+"customize_cmdline.ml" 298 12273 12307 "customize_cmdline.ml" 298 12273 12316
+type(
+  op
+)
+"customize_cmdline.ml" 298 12273 12320 "customize_cmdline.ml" 298 12273 12321
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 298 12273 12321 "customize_cmdline.ml" 298 12273 12324
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 298 12273 12320 "customize_cmdline.ml" 298 12273 12324
+type(
+  op list
+)
+"customize_cmdline.ml" 298 12273 12307 "customize_cmdline.ml" 298 12273 12324
+type(
+  op list
+)
+"customize_cmdline.ml" 298 12273 12300 "customize_cmdline.ml" 298 12273 12324
+type(
+  unit
+)
+"customize_cmdline.ml" 298 12273 12290 "customize_cmdline.ml" 298 12273 12325
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 298 12273 12279 "customize_cmdline.ml" 298 12273 12325
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 299 12327 12333 "customize_cmdline.ml" 299 12327 12335
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 299 12327 12335 "customize_cmdline.ml" 299 12327 12343
+type(
+  string
+)
+"customize_cmdline.ml" 299 12327 12333 "customize_cmdline.ml" 299 12327 12343
+type(
+  string
+)
+"customize_cmdline.ml" 299 12327 12344 "customize_cmdline.ml" 299 12327 12345
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 299 12327 12346 "customize_cmdline.ml" 299 12327 12349
+type(
+  string
+)
+"customize_cmdline.ml" 299 12327 12350 "customize_cmdline.ml" 299 12327 12351
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 299 12327 12352 "customize_cmdline.ml" 299 12327 12354
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 299 12327 12354 "customize_cmdline.ml" 299 12327 12380
+type(
+  string
+)
+"customize_cmdline.ml" 299 12327 12352 "customize_cmdline.ml" 299 12327 12380
+type(
+  string
+)
+"customize_cmdline.ml" 299 12327 12346 "customize_cmdline.ml" 299 12327 12380
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 299 12327 12333 "customize_cmdline.ml" 299 12327 12380
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 296 12252 12256 "customize_cmdline.ml" 300 12381 12386
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 301 12388 12397 "customize_cmdline.ml" 301 12388 12405
+type(
+  string
+)
+"customize_cmdline.ml" 301 12388 12392 "customize_cmdline.ml" 301 12388 12405
+type(
+  string option
+)
+"customize_cmdline.ml" 301 12388 12407 "customize_cmdline.ml" 301 12388 13126
+type(
+  string
+)
+"customize_cmdline.ml" 296 12252 12256 "customize_cmdline.ml" 301 12388 13126
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 303 13134 13140 "customize_cmdline.ml" 303 13134 13155
+type(
+  string
+)
+"customize_cmdline.ml" 304 13157 13179 "customize_cmdline.ml" 304 13157 13180
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 304 13157 13184 "customize_cmdline.ml" 304 13157 13209
+)
+"customize_cmdline.ml" 304 13157 13184 "customize_cmdline.ml" 304 13157 13187
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 304 13157 13188 "customize_cmdline.ml" 304 13157 13190
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 304 13157 13200 "customize_cmdline.ml" 304 13157 13201
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 304 13157 13179 "customize_cmdline.ml" 304 13157 13180
+)
+"customize_cmdline.ml" 304 13157 13191 "customize_cmdline.ml" 304 13157 13201
+type(
+  op
+)
+"customize_cmdline.ml" 304 13157 13205 "customize_cmdline.ml" 304 13157 13206
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 304 13157 13206 "customize_cmdline.ml" 304 13157 13209
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 304 13157 13205 "customize_cmdline.ml" 304 13157 13209
+type(
+  op list
+)
+"customize_cmdline.ml" 304 13157 13191 "customize_cmdline.ml" 304 13157 13209
+type(
+  op list
+)
+"customize_cmdline.ml" 304 13157 13184 "customize_cmdline.ml" 304 13157 13209
+type(
+  unit
+)
+"customize_cmdline.ml" 304 13157 13174 "customize_cmdline.ml" 304 13157 13210
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 304 13157 13163 "customize_cmdline.ml" 304 13157 13210
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 305 13212 13218 "customize_cmdline.ml" 305 13212 13220
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 305 13212 13220 "customize_cmdline.ml" 305 13212 13232
+type(
+  string
+)
+"customize_cmdline.ml" 305 13212 13218 "customize_cmdline.ml" 305 13212 13232
+type(
+  string
+)
+"customize_cmdline.ml" 305 13212 13233 "customize_cmdline.ml" 305 13212 13234
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 305 13212 13235 "customize_cmdline.ml" 305 13212 13238
+type(
+  string
+)
+"customize_cmdline.ml" 305 13212 13239 "customize_cmdline.ml" 305 13212 13240
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 305 13212 13241 "customize_cmdline.ml" 305 13212 13243
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 305 13212 13243 "customize_cmdline.ml" 305 13212 13270
+type(
+  string
+)
+"customize_cmdline.ml" 305 13212 13241 "customize_cmdline.ml" 305 13212 13270
+type(
+  string
+)
+"customize_cmdline.ml" 305 13212 13235 "customize_cmdline.ml" 305 13212 13270
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 305 13212 13218 "customize_cmdline.ml" 305 13212 13270
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 302 13128 13132 "customize_cmdline.ml" 306 13271 13276
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 307 13278 13287 "customize_cmdline.ml" 307 13278 13299
+type(
+  string
+)
+"customize_cmdline.ml" 307 13278 13282 "customize_cmdline.ml" 307 13278 13299
+type(
+  string option
+)
+"customize_cmdline.ml" 307 13278 13301 "customize_cmdline.ml" 307 13278 13962
+type(
+  string
+)
+"customize_cmdline.ml" 302 13128 13132 "customize_cmdline.ml" 307 13278 13962
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 309 13970 13976 "customize_cmdline.ml" 309 13970 13985
+type(
+  string
+)
+"customize_cmdline.ml" 310 13987 14009 "customize_cmdline.ml" 310 13987 14010
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 310 13987 14014 "customize_cmdline.ml" 310 13987 14037
+)
+"customize_cmdline.ml" 310 13987 14014 "customize_cmdline.ml" 310 13987 14017
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 310 13987 14018 "customize_cmdline.ml" 310 13987 14020
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 310 13987 14028 "customize_cmdline.ml" 310 13987 14029
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 310 13987 14009 "customize_cmdline.ml" 310 13987 14010
+)
+"customize_cmdline.ml" 310 13987 14021 "customize_cmdline.ml" 310 13987 14029
+type(
+  op
+)
+"customize_cmdline.ml" 310 13987 14033 "customize_cmdline.ml" 310 13987 14034
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 310 13987 14034 "customize_cmdline.ml" 310 13987 14037
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 310 13987 14033 "customize_cmdline.ml" 310 13987 14037
+type(
+  op list
+)
+"customize_cmdline.ml" 310 13987 14021 "customize_cmdline.ml" 310 13987 14037
+type(
+  op list
+)
+"customize_cmdline.ml" 310 13987 14014 "customize_cmdline.ml" 310 13987 14037
+type(
+  unit
+)
+"customize_cmdline.ml" 310 13987 14004 "customize_cmdline.ml" 310 13987 14038
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 310 13987 13993 "customize_cmdline.ml" 310 13987 14038
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 311 14040 14046 "customize_cmdline.ml" 311 14040 14048
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 311 14040 14048 "customize_cmdline.ml" 311 14040 14054
+type(
+  string
+)
+"customize_cmdline.ml" 311 14040 14046 "customize_cmdline.ml" 311 14040 14054
+type(
+  string
+)
+"customize_cmdline.ml" 311 14040 14055 "customize_cmdline.ml" 311 14040 14056
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 311 14040 14057 "customize_cmdline.ml" 311 14040 14060
+type(
+  string
+)
+"customize_cmdline.ml" 311 14040 14061 "customize_cmdline.ml" 311 14040 14062
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 311 14040 14063 "customize_cmdline.ml" 311 14040 14065
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 311 14040 14065 "customize_cmdline.ml" 311 14040 14079
+type(
+  string
+)
+"customize_cmdline.ml" 311 14040 14063 "customize_cmdline.ml" 311 14040 14079
+type(
+  string
+)
+"customize_cmdline.ml" 311 14040 14057 "customize_cmdline.ml" 311 14040 14079
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 311 14040 14046 "customize_cmdline.ml" 311 14040 14079
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 308 13964 13968 "customize_cmdline.ml" 312 14080 14085
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 313 14087 14096 "customize_cmdline.ml" 313 14087 14102
+type(
+  string
+)
+"customize_cmdline.ml" 313 14087 14091 "customize_cmdline.ml" 313 14087 14102
+type(
+  string option
+)
+"customize_cmdline.ml" 313 14087 14104 "customize_cmdline.ml" 313 14087 14323
+type(
+  string
+)
+"customize_cmdline.ml" 308 13964 13968 "customize_cmdline.ml" 313 14087 14323
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 315 14331 14337 "customize_cmdline.ml" 315 14331 14350
+type(
+  string
+)
+"customize_cmdline.ml" 317 14371 14383 "customize_cmdline.ml" 317 14371 14384
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 318 14388 14398 "customize_cmdline.ml" 319 14454 14492
+)
+"customize_cmdline.ml" 318 14388 14402 "customize_cmdline.ml" 318 14388 14405
+type(
+  Subscription_manager.sm_pool
+)
+"customize_cmdline.ml" 318 14388 14408 "customize_cmdline.ml" 318 14388 14448
+type(
+  string -> Subscription_manager.sm_pool
+)
+ident(
+  ext_ref Subscription_manager.parse_pool_selector
+)
+"customize_cmdline.ml" 318 14388 14449 "customize_cmdline.ml" 318 14388 14450
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 317 14371 14383 "customize_cmdline.ml" 317 14371 14384
+)
+"customize_cmdline.ml" 318 14388 14408 "customize_cmdline.ml" 318 14388 14450
+call(
+  stack
+)
+type(
+  Subscription_manager.sm_pool
+)
+"customize_cmdline.ml" 319 14454 14464 "customize_cmdline.ml" 319 14454 14467
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 319 14454 14468 "customize_cmdline.ml" 319 14454 14470
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 319 14454 14481 "customize_cmdline.ml" 319 14454 14484
+type(
+  Subscription_manager.sm_pool
+)
+ident(
+  int_ref sel "customize_cmdline.ml" 318 14388 14402 "customize_cmdline.ml" 318 14388 14405
+)
+"customize_cmdline.ml" 319 14454 14471 "customize_cmdline.ml" 319 14454 14484
+type(
+  op
+)
+"customize_cmdline.ml" 319 14454 14488 "customize_cmdline.ml" 319 14454 14489
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 319 14454 14489 "customize_cmdline.ml" 319 14454 14492
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 319 14454 14488 "customize_cmdline.ml" 319 14454 14492
+type(
+  op list
+)
+"customize_cmdline.ml" 319 14454 14471 "customize_cmdline.ml" 319 14454 14492
+type(
+  op list
+)
+"customize_cmdline.ml" 319 14454 14464 "customize_cmdline.ml" 319 14454 14492
+type(
+  unit
+)
+"customize_cmdline.ml" 318 14388 14398 "customize_cmdline.ml" 319 14454 14492
+type(
+  unit
+)
+"customize_cmdline.ml" 316 14352 14369 "customize_cmdline.ml" 320 14493 14500
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 316 14352 14358 "customize_cmdline.ml" 320 14493 14500
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 321 14502 14508 "customize_cmdline.ml" 321 14502 14510
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 321 14502 14510 "customize_cmdline.ml" 321 14502 14520
+type(
+  string
+)
+"customize_cmdline.ml" 321 14502 14508 "customize_cmdline.ml" 321 14502 14520
+type(
+  string
+)
+"customize_cmdline.ml" 321 14502 14521 "customize_cmdline.ml" 321 14502 14522
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 321 14502 14523 "customize_cmdline.ml" 321 14502 14526
+type(
+  string
+)
+"customize_cmdline.ml" 321 14502 14527 "customize_cmdline.ml" 321 14502 14528
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 321 14502 14529 "customize_cmdline.ml" 321 14502 14531
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 321 14502 14531 "customize_cmdline.ml" 321 14502 14570
+type(
+  string
+)
+"customize_cmdline.ml" 321 14502 14529 "customize_cmdline.ml" 321 14502 14570
+type(
+  string
+)
+"customize_cmdline.ml" 321 14502 14523 "customize_cmdline.ml" 321 14502 14570
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 321 14502 14508 "customize_cmdline.ml" 321 14502 14570
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 314 14325 14329 "customize_cmdline.ml" 322 14571 14576
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 323 14578 14587 "customize_cmdline.ml" 323 14578 14597
+type(
+  string
+)
+"customize_cmdline.ml" 323 14578 14582 "customize_cmdline.ml" 323 14578 14597
+type(
+  string option
+)
+"customize_cmdline.ml" 323 14578 14599 "customize_cmdline.ml" 323 14578 14737
+type(
+  string
+)
+"customize_cmdline.ml" 314 14325 14329 "customize_cmdline.ml" 323 14578 14737
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 325 14745 14751 "customize_cmdline.ml" 325 14745 14766
+type(
+  string
+)
+"customize_cmdline.ml" 326 14768 14788 "customize_cmdline.ml" 326 14768 14790
+type(
+  unit
+)
+"customize_cmdline.ml" 326 14768 14794 "customize_cmdline.ml" 326 14768 14797
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 326 14768 14798 "customize_cmdline.ml" 326 14768 14800
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 326 14768 14801 "customize_cmdline.ml" 326 14768 14812
+type(
+  op
+)
+"customize_cmdline.ml" 326 14768 14816 "customize_cmdline.ml" 326 14768 14817
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 326 14768 14817 "customize_cmdline.ml" 326 14768 14820
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 326 14768 14816 "customize_cmdline.ml" 326 14768 14820
+type(
+  op list
+)
+"customize_cmdline.ml" 326 14768 14801 "customize_cmdline.ml" 326 14768 14820
+type(
+  op list
+)
+"customize_cmdline.ml" 326 14768 14794 "customize_cmdline.ml" 326 14768 14820
+type(
+  unit
+)
+"customize_cmdline.ml" 326 14768 14783 "customize_cmdline.ml" 326 14768 14821
+type(
+  unit -> unit
+)
+"customize_cmdline.ml" 326 14768 14774 "customize_cmdline.ml" 326 14768 14821
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 327 14823 14829 "customize_cmdline.ml" 327 14823 14832
+type(
+  string
+)
+"customize_cmdline.ml" 327 14823 14833 "customize_cmdline.ml" 327 14823 14834
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 327 14823 14835 "customize_cmdline.ml" 327 14823 14837
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 327 14823 14837 "customize_cmdline.ml" 327 14823 14874
+type(
+  string
+)
+"customize_cmdline.ml" 327 14823 14835 "customize_cmdline.ml" 327 14823 14874
+type(
+  string
+)
+"customize_cmdline.ml" 327 14823 14829 "customize_cmdline.ml" 327 14823 14874
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 324 14739 14743 "customize_cmdline.ml" 328 14875 14880
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 329 14882 14886 "customize_cmdline.ml" 329 14882 14890
+type(
+  string option
+)
+"customize_cmdline.ml" 329 14882 14892 "customize_cmdline.ml" 329 14882 15009
+type(
+  string
+)
+"customize_cmdline.ml" 324 14739 14743 "customize_cmdline.ml" 329 14882 15009
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 331 15017 15023 "customize_cmdline.ml" 331 15017 15036
+type(
+  string
+)
+"customize_cmdline.ml" 332 15038 15058 "customize_cmdline.ml" 332 15038 15060
+type(
+  unit
+)
+"customize_cmdline.ml" 332 15038 15064 "customize_cmdline.ml" 332 15038 15067
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 332 15038 15068 "customize_cmdline.ml" 332 15038 15070
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 332 15038 15071 "customize_cmdline.ml" 332 15038 15080
+type(
+  op
+)
+"customize_cmdline.ml" 332 15038 15084 "customize_cmdline.ml" 332 15038 15085
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 332 15038 15085 "customize_cmdline.ml" 332 15038 15088
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 332 15038 15084 "customize_cmdline.ml" 332 15038 15088
+type(
+  op list
+)
+"customize_cmdline.ml" 332 15038 15071 "customize_cmdline.ml" 332 15038 15088
+type(
+  op list
+)
+"customize_cmdline.ml" 332 15038 15064 "customize_cmdline.ml" 332 15038 15088
+type(
+  unit
+)
+"customize_cmdline.ml" 332 15038 15053 "customize_cmdline.ml" 332 15038 15089
+type(
+  unit -> unit
+)
+"customize_cmdline.ml" 332 15038 15044 "customize_cmdline.ml" 332 15038 15089
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 333 15091 15097 "customize_cmdline.ml" 333 15091 15100
+type(
+  string
+)
+"customize_cmdline.ml" 333 15091 15101 "customize_cmdline.ml" 333 15091 15102
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 333 15091 15103 "customize_cmdline.ml" 333 15091 15105
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 333 15091 15105 "customize_cmdline.ml" 333 15091 15135
+type(
+  string
+)
+"customize_cmdline.ml" 333 15091 15103 "customize_cmdline.ml" 333 15091 15135
+type(
+  string
+)
+"customize_cmdline.ml" 333 15091 15097 "customize_cmdline.ml" 333 15091 15135
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 330 15011 15015 "customize_cmdline.ml" 334 15136 15141
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 335 15143 15147 "customize_cmdline.ml" 335 15143 15151
+type(
+  string option
+)
+"customize_cmdline.ml" 335 15143 15153 "customize_cmdline.ml" 335 15143 15230
+type(
+  string
+)
+"customize_cmdline.ml" 330 15011 15015 "customize_cmdline.ml" 335 15143 15230
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 337 15238 15244 "customize_cmdline.ml" 337 15238 15261
+type(
+  string
+)
+"customize_cmdline.ml" 338 15263 15283 "customize_cmdline.ml" 338 15263 15285
+type(
+  unit
+)
+"customize_cmdline.ml" 338 15263 15289 "customize_cmdline.ml" 338 15263 15292
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 338 15263 15293 "customize_cmdline.ml" 338 15263 15295
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 338 15263 15296 "customize_cmdline.ml" 338 15263 15309
+type(
+  op
+)
+"customize_cmdline.ml" 338 15263 15313 "customize_cmdline.ml" 338 15263 15314
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 338 15263 15314 "customize_cmdline.ml" 338 15263 15317
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 338 15263 15313 "customize_cmdline.ml" 338 15263 15317
+type(
+  op list
+)
+"customize_cmdline.ml" 338 15263 15296 "customize_cmdline.ml" 338 15263 15317
+type(
+  op list
+)
+"customize_cmdline.ml" 338 15263 15289 "customize_cmdline.ml" 338 15263 15317
+type(
+  unit
+)
+"customize_cmdline.ml" 338 15263 15278 "customize_cmdline.ml" 338 15263 15318
+type(
+  unit -> unit
+)
+"customize_cmdline.ml" 338 15263 15269 "customize_cmdline.ml" 338 15263 15318
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 339 15320 15326 "customize_cmdline.ml" 339 15320 15329
+type(
+  string
+)
+"customize_cmdline.ml" 339 15320 15330 "customize_cmdline.ml" 339 15320 15331
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 339 15320 15332 "customize_cmdline.ml" 339 15320 15334
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 339 15320 15334 "customize_cmdline.ml" 339 15320 15373
+type(
+  string
+)
+"customize_cmdline.ml" 339 15320 15332 "customize_cmdline.ml" 339 15320 15373
+type(
+  string
+)
+"customize_cmdline.ml" 339 15320 15326 "customize_cmdline.ml" 339 15320 15373
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 336 15232 15236 "customize_cmdline.ml" 340 15374 15379
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 341 15381 15385 "customize_cmdline.ml" 341 15381 15389
+type(
+  string option
+)
+"customize_cmdline.ml" 341 15381 15391 "customize_cmdline.ml" 341 15381 15444
+type(
+  string
+)
+"customize_cmdline.ml" 336 15232 15236 "customize_cmdline.ml" 341 15381 15444
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 343 15452 15458 "customize_cmdline.ml" 343 15452 15472
+type(
+  string
+)
+"customize_cmdline.ml" 345 15493 15505 "customize_cmdline.ml" 345 15493 15506
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 346 15510 15520 "customize_cmdline.ml" 348 15614 15661
+)
+"customize_cmdline.ml" 346 15510 15524 "customize_cmdline.ml" 346 15510 15528
+type(
+  string
+)
+"customize_cmdline.ml" 346 15510 15530 "customize_cmdline.ml" 346 15510 15536
+type(
+  string
+)
+"customize_cmdline.ml" 346 15510 15524 "customize_cmdline.ml" 346 15510 15536
+type(
+  string * string
+)
+"customize_cmdline.ml" 346 15510 15539 "customize_cmdline.ml" 346 15510 15551
+type(
+  string -> string -> string * string
+)
+ident(
+  ext_ref Common_utils.string_split
+)
+"customize_cmdline.ml" 346 15510 15552 "customize_cmdline.ml" 346 15510 15555
+type(
+  string
+)
+"customize_cmdline.ml" 346 15510 15556 "customize_cmdline.ml" 346 15510 15557
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 345 15493 15505 "customize_cmdline.ml" 345 15493 15506
+)
+"customize_cmdline.ml" 346 15510 15539 "customize_cmdline.ml" 346 15510 15557
+call(
+  stack
+)
+type(
+  string * string
+)
+"customize_cmdline.ml" 347 15561 15575 "customize_cmdline.ml" 347 15561 15578
+type(
+  Ssh_key.ssh_key_selector
+)
+"customize_cmdline.ml" 347 15561 15581 "customize_cmdline.ml" 347 15561 15603
+type(
+  string -> Ssh_key.ssh_key_selector
+)
+ident(
+  ext_ref Ssh_key.parse_selector
+)
+"customize_cmdline.ml" 347 15561 15604 "customize_cmdline.ml" 347 15561 15610
+type(
+  string
+)
+ident(
+  int_ref selstr "customize_cmdline.ml" 346 15510 15530 "customize_cmdline.ml" 346 15510 15536
+)
+"customize_cmdline.ml" 347 15561 15581 "customize_cmdline.ml" 347 15561 15610
+call(
+  stack
+)
+type(
+  Ssh_key.ssh_key_selector
+)
+"customize_cmdline.ml" 348 15614 15624 "customize_cmdline.ml" 348 15614 15627
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 348 15614 15628 "customize_cmdline.ml" 348 15614 15630
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 348 15614 15643 "customize_cmdline.ml" 348 15614 15647
+type(
+  string
+)
+ident(
+  int_ref user "customize_cmdline.ml" 346 15510 15524 "customize_cmdline.ml" 346 15510 15528
+)
+"customize_cmdline.ml" 348 15614 15649 "customize_cmdline.ml" 348 15614 15652
+type(
+  Ssh_key.ssh_key_selector
+)
+ident(
+  int_ref sel "customize_cmdline.ml" 347 15561 15575 "customize_cmdline.ml" 347 15561 15578
+)
+"customize_cmdline.ml" 348 15614 15642 "customize_cmdline.ml" 348 15614 15653
+type(
+  string * Ssh_key.ssh_key_selector
+)
+"customize_cmdline.ml" 348 15614 15631 "customize_cmdline.ml" 348 15614 15653
+type(
+  op
+)
+"customize_cmdline.ml" 348 15614 15657 "customize_cmdline.ml" 348 15614 15658
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 348 15614 15658 "customize_cmdline.ml" 348 15614 15661
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 348 15614 15657 "customize_cmdline.ml" 348 15614 15661
+type(
+  op list
+)
+"customize_cmdline.ml" 348 15614 15631 "customize_cmdline.ml" 348 15614 15661
+type(
+  op list
+)
+"customize_cmdline.ml" 348 15614 15624 "customize_cmdline.ml" 348 15614 15661
+type(
+  unit
+)
+"customize_cmdline.ml" 347 15561 15571 "customize_cmdline.ml" 348 15614 15661
+type(
+  unit
+)
+"customize_cmdline.ml" 346 15510 15520 "customize_cmdline.ml" 348 15614 15661
+type(
+  unit
+)
+"customize_cmdline.ml" 344 15474 15491 "customize_cmdline.ml" 349 15662 15669
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 344 15474 15480 "customize_cmdline.ml" 349 15662 15669
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 350 15671 15677 "customize_cmdline.ml" 350 15671 15679
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 350 15671 15679 "customize_cmdline.ml" 350 15671 15696
+type(
+  string
+)
+"customize_cmdline.ml" 350 15671 15677 "customize_cmdline.ml" 350 15671 15696
+type(
+  string
+)
+"customize_cmdline.ml" 350 15671 15697 "customize_cmdline.ml" 350 15671 15698
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 350 15671 15699 "customize_cmdline.ml" 350 15671 15702
+type(
+  string
+)
+"customize_cmdline.ml" 350 15671 15703 "customize_cmdline.ml" 350 15671 15704
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 350 15671 15705 "customize_cmdline.ml" 350 15671 15707
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 350 15671 15707 "customize_cmdline.ml" 350 15671 15743
+type(
+  string
+)
+"customize_cmdline.ml" 350 15671 15705 "customize_cmdline.ml" 350 15671 15743
+type(
+  string
+)
+"customize_cmdline.ml" 350 15671 15699 "customize_cmdline.ml" 350 15671 15743
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 350 15671 15677 "customize_cmdline.ml" 350 15671 15743
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 342 15446 15450 "customize_cmdline.ml" 351 15744 15749
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 352 15751 15760 "customize_cmdline.ml" 352 15751 15777
+type(
+  string
+)
+"customize_cmdline.ml" 352 15751 15755 "customize_cmdline.ml" 352 15751 15777
+type(
+  string option
+)
+"customize_cmdline.ml" 352 15751 15779 "customize_cmdline.ml" 352 15751 16115
+type(
+  string
+)
+"customize_cmdline.ml" 342 15446 15450 "customize_cmdline.ml" 352 15751 16115
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 354 16123 16129 "customize_cmdline.ml" 354 16123 16141
+type(
+  string
+)
+"customize_cmdline.ml" 355 16143 16165 "customize_cmdline.ml" 355 16143 16166
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 355 16143 16170 "customize_cmdline.ml" 355 16143 16196
+)
+"customize_cmdline.ml" 355 16143 16170 "customize_cmdline.ml" 355 16143 16173
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 355 16143 16174 "customize_cmdline.ml" 355 16143 16176
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 355 16143 16187 "customize_cmdline.ml" 355 16143 16188
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 355 16143 16165 "customize_cmdline.ml" 355 16143 16166
+)
+"customize_cmdline.ml" 355 16143 16177 "customize_cmdline.ml" 355 16143 16188
+type(
+  op
+)
+"customize_cmdline.ml" 355 16143 16192 "customize_cmdline.ml" 355 16143 16193
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 355 16143 16193 "customize_cmdline.ml" 355 16143 16196
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 355 16143 16192 "customize_cmdline.ml" 355 16143 16196
+type(
+  op list
+)
+"customize_cmdline.ml" 355 16143 16177 "customize_cmdline.ml" 355 16143 16196
+type(
+  op list
+)
+"customize_cmdline.ml" 355 16143 16170 "customize_cmdline.ml" 355 16143 16196
+type(
+  unit
+)
+"customize_cmdline.ml" 355 16143 16160 "customize_cmdline.ml" 355 16143 16197
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 355 16143 16149 "customize_cmdline.ml" 355 16143 16197
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 356 16199 16205 "customize_cmdline.ml" 356 16199 16207
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 356 16199 16207 "customize_cmdline.ml" 356 16199 16213
+type(
+  string
+)
+"customize_cmdline.ml" 356 16199 16205 "customize_cmdline.ml" 356 16199 16213
+type(
+  string
+)
+"customize_cmdline.ml" 356 16199 16214 "customize_cmdline.ml" 356 16199 16215
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 356 16199 16216 "customize_cmdline.ml" 356 16199 16219
+type(
+  string
+)
+"customize_cmdline.ml" 356 16199 16220 "customize_cmdline.ml" 356 16199 16221
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 356 16199 16222 "customize_cmdline.ml" 356 16199 16224
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 356 16199 16224 "customize_cmdline.ml" 356 16199 16254
+type(
+  string
+)
+"customize_cmdline.ml" 356 16199 16222 "customize_cmdline.ml" 356 16199 16254
+type(
+  string
+)
+"customize_cmdline.ml" 356 16199 16216 "customize_cmdline.ml" 356 16199 16254
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 356 16199 16205 "customize_cmdline.ml" 356 16199 16254
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 353 16117 16121 "customize_cmdline.ml" 357 16255 16260
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 358 16262 16271 "customize_cmdline.ml" 358 16262 16277
+type(
+  string
+)
+"customize_cmdline.ml" 358 16262 16266 "customize_cmdline.ml" 358 16262 16277
+type(
+  string option
+)
+"customize_cmdline.ml" 358 16262 16279 "customize_cmdline.ml" 358 16262 16365
+type(
+  string
+)
+"customize_cmdline.ml" 353 16117 16121 "customize_cmdline.ml" 358 16262 16365
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 360 16373 16379 "customize_cmdline.ml" 360 16373 16401
+type(
+  string
+)
+"customize_cmdline.ml" 361 16403 16425 "customize_cmdline.ml" 361 16403 16426
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 361 16403 16430 "customize_cmdline.ml" 361 16403 16465
+)
+"customize_cmdline.ml" 361 16403 16430 "customize_cmdline.ml" 361 16403 16433
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 361 16403 16434 "customize_cmdline.ml" 361 16403 16436
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 361 16403 16456 "customize_cmdline.ml" 361 16403 16457
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 361 16403 16425 "customize_cmdline.ml" 361 16403 16426
+)
+"customize_cmdline.ml" 361 16403 16437 "customize_cmdline.ml" 361 16403 16457
+type(
+  op
+)
+"customize_cmdline.ml" 361 16403 16461 "customize_cmdline.ml" 361 16403 16462
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 361 16403 16462 "customize_cmdline.ml" 361 16403 16465
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 361 16403 16461 "customize_cmdline.ml" 361 16403 16465
+type(
+  op list
+)
+"customize_cmdline.ml" 361 16403 16437 "customize_cmdline.ml" 361 16403 16465
+type(
+  op list
+)
+"customize_cmdline.ml" 361 16403 16430 "customize_cmdline.ml" 361 16403 16465
+type(
+  unit
+)
+"customize_cmdline.ml" 361 16403 16420 "customize_cmdline.ml" 361 16403 16466
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 361 16403 16409 "customize_cmdline.ml" 361 16403 16466
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 362 16468 16474 "customize_cmdline.ml" 362 16468 16476
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 362 16468 16476 "customize_cmdline.ml" 362 16468 16482
+type(
+  string
+)
+"customize_cmdline.ml" 362 16468 16474 "customize_cmdline.ml" 362 16468 16482
+type(
+  string
+)
+"customize_cmdline.ml" 362 16468 16483 "customize_cmdline.ml" 362 16468 16484
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 362 16468 16485 "customize_cmdline.ml" 362 16468 16488
+type(
+  string
+)
+"customize_cmdline.ml" 362 16468 16489 "customize_cmdline.ml" 362 16468 16490
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 362 16468 16491 "customize_cmdline.ml" 362 16468 16493
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 362 16468 16493 "customize_cmdline.ml" 362 16468 16538
+type(
+  string
+)
+"customize_cmdline.ml" 362 16468 16491 "customize_cmdline.ml" 362 16468 16538
+type(
+  string
+)
+"customize_cmdline.ml" 362 16468 16485 "customize_cmdline.ml" 362 16468 16538
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 362 16468 16474 "customize_cmdline.ml" 362 16468 16538
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 359 16367 16371 "customize_cmdline.ml" 363 16539 16544
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 364 16546 16555 "customize_cmdline.ml" 364 16546 16561
+type(
+  string
+)
+"customize_cmdline.ml" 364 16546 16550 "customize_cmdline.ml" 364 16546 16561
+type(
+  string option
+)
+"customize_cmdline.ml" 364 16546 16563 "customize_cmdline.ml" 364 16546 16640
+type(
+  string
+)
+"customize_cmdline.ml" 359 16367 16371 "customize_cmdline.ml" 364 16546 16640
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 366 16648 16654 "customize_cmdline.ml" 366 16648 16666
+type(
+  string
+)
+"customize_cmdline.ml" 367 16668 16690 "customize_cmdline.ml" 367 16668 16691
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 367 16668 16695 "customize_cmdline.ml" 367 16668 16721
+)
+"customize_cmdline.ml" 367 16668 16695 "customize_cmdline.ml" 367 16668 16698
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 367 16668 16699 "customize_cmdline.ml" 367 16668 16701
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 367 16668 16712 "customize_cmdline.ml" 367 16668 16713
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 367 16668 16690 "customize_cmdline.ml" 367 16668 16691
+)
+"customize_cmdline.ml" 367 16668 16702 "customize_cmdline.ml" 367 16668 16713
+type(
+  op
+)
+"customize_cmdline.ml" 367 16668 16717 "customize_cmdline.ml" 367 16668 16718
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 367 16668 16718 "customize_cmdline.ml" 367 16668 16721
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 367 16668 16717 "customize_cmdline.ml" 367 16668 16721
+type(
+  op list
+)
+"customize_cmdline.ml" 367 16668 16702 "customize_cmdline.ml" 367 16668 16721
+type(
+  op list
+)
+"customize_cmdline.ml" 367 16668 16695 "customize_cmdline.ml" 367 16668 16721
+type(
+  unit
+)
+"customize_cmdline.ml" 367 16668 16685 "customize_cmdline.ml" 367 16668 16722
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 367 16668 16674 "customize_cmdline.ml" 367 16668 16722
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 368 16724 16730 "customize_cmdline.ml" 368 16724 16732
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 368 16724 16732 "customize_cmdline.ml" 368 16724 16742
+type(
+  string
+)
+"customize_cmdline.ml" 368 16724 16730 "customize_cmdline.ml" 368 16724 16742
+type(
+  string
+)
+"customize_cmdline.ml" 368 16724 16743 "customize_cmdline.ml" 368 16724 16744
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 368 16724 16745 "customize_cmdline.ml" 368 16724 16748
+type(
+  string
+)
+"customize_cmdline.ml" 368 16724 16749 "customize_cmdline.ml" 368 16724 16750
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 368 16724 16751 "customize_cmdline.ml" 368 16724 16753
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 368 16724 16753 "customize_cmdline.ml" 368 16724 16779
+type(
+  string
+)
+"customize_cmdline.ml" 368 16724 16751 "customize_cmdline.ml" 368 16724 16779
+type(
+  string
+)
+"customize_cmdline.ml" 368 16724 16745 "customize_cmdline.ml" 368 16724 16779
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 368 16724 16730 "customize_cmdline.ml" 368 16724 16779
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 365 16642 16646 "customize_cmdline.ml" 369 16780 16785
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 370 16787 16796 "customize_cmdline.ml" 370 16787 16806
+type(
+  string
+)
+"customize_cmdline.ml" 370 16787 16791 "customize_cmdline.ml" 370 16787 16806
+type(
+  string option
+)
+"customize_cmdline.ml" 370 16787 16808 "customize_cmdline.ml" 370 16787 16909
+type(
+  string
+)
+"customize_cmdline.ml" 365 16642 16646 "customize_cmdline.ml" 370 16787 16909
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 372 16917 16923 "customize_cmdline.ml" 372 16917 16932
+type(
+  string
+)
+"customize_cmdline.ml" 373 16934 16956 "customize_cmdline.ml" 373 16934 16957
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 373 16934 16961 "customize_cmdline.ml" 373 16934 16984
+)
+"customize_cmdline.ml" 373 16934 16961 "customize_cmdline.ml" 373 16934 16964
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 373 16934 16965 "customize_cmdline.ml" 373 16934 16967
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 373 16934 16975 "customize_cmdline.ml" 373 16934 16976
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 373 16934 16956 "customize_cmdline.ml" 373 16934 16957
+)
+"customize_cmdline.ml" 373 16934 16968 "customize_cmdline.ml" 373 16934 16976
+type(
+  op
+)
+"customize_cmdline.ml" 373 16934 16980 "customize_cmdline.ml" 373 16934 16981
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 373 16934 16981 "customize_cmdline.ml" 373 16934 16984
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 373 16934 16980 "customize_cmdline.ml" 373 16934 16984
+type(
+  op list
+)
+"customize_cmdline.ml" 373 16934 16968 "customize_cmdline.ml" 373 16934 16984
+type(
+  op list
+)
+"customize_cmdline.ml" 373 16934 16961 "customize_cmdline.ml" 373 16934 16984
+type(
+  unit
+)
+"customize_cmdline.ml" 373 16934 16951 "customize_cmdline.ml" 373 16934 16985
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 373 16934 16940 "customize_cmdline.ml" 373 16934 16985
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 374 16987 16993 "customize_cmdline.ml" 374 16987 16995
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 374 16987 16995 "customize_cmdline.ml" 374 16987 17001
+type(
+  string
+)
+"customize_cmdline.ml" 374 16987 16993 "customize_cmdline.ml" 374 16987 17001
+type(
+  string
+)
+"customize_cmdline.ml" 374 16987 17002 "customize_cmdline.ml" 374 16987 17003
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 374 16987 17004 "customize_cmdline.ml" 374 16987 17007
+type(
+  string
+)
+"customize_cmdline.ml" 374 16987 17008 "customize_cmdline.ml" 374 16987 17009
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 374 16987 17010 "customize_cmdline.ml" 374 16987 17012
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 374 16987 17012 "customize_cmdline.ml" 374 16987 17033
+type(
+  string
+)
+"customize_cmdline.ml" 374 16987 17010 "customize_cmdline.ml" 374 16987 17033
+type(
+  string
+)
+"customize_cmdline.ml" 374 16987 17004 "customize_cmdline.ml" 374 16987 17033
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 374 16987 16993 "customize_cmdline.ml" 374 16987 17033
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 371 16911 16915 "customize_cmdline.ml" 375 17034 17039
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 376 17041 17050 "customize_cmdline.ml" 376 17041 17056
+type(
+  string
+)
+"customize_cmdline.ml" 376 17041 17045 "customize_cmdline.ml" 376 17041 17056
+type(
+  string option
+)
+"customize_cmdline.ml" 376 17041 17058 "customize_cmdline.ml" 376 17041 17122
+type(
+  string
+)
+"customize_cmdline.ml" 371 16911 16915 "customize_cmdline.ml" 376 17041 17122
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 378 17130 17136 "customize_cmdline.ml" 378 17130 17146
+type(
+  string
+)
+"customize_cmdline.ml" 379 17148 17168 "customize_cmdline.ml" 379 17148 17170
+type(
+  unit
+)
+"customize_cmdline.ml" 379 17148 17174 "customize_cmdline.ml" 379 17148 17177
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 379 17148 17178 "customize_cmdline.ml" 379 17148 17180
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 379 17148 17181 "customize_cmdline.ml" 379 17148 17188
+type(
+  op
+)
+"customize_cmdline.ml" 379 17148 17192 "customize_cmdline.ml" 379 17148 17193
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 379 17148 17193 "customize_cmdline.ml" 379 17148 17196
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 379 17148 17192 "customize_cmdline.ml" 379 17148 17196
+type(
+  op list
+)
+"customize_cmdline.ml" 379 17148 17181 "customize_cmdline.ml" 379 17148 17196
+type(
+  op list
+)
+"customize_cmdline.ml" 379 17148 17174 "customize_cmdline.ml" 379 17148 17196
+type(
+  unit
+)
+"customize_cmdline.ml" 379 17148 17163 "customize_cmdline.ml" 379 17148 17197
+type(
+  unit -> unit
+)
+"customize_cmdline.ml" 379 17148 17154 "customize_cmdline.ml" 379 17148 17197
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 380 17199 17205 "customize_cmdline.ml" 380 17199 17208
+type(
+  string
+)
+"customize_cmdline.ml" 380 17199 17209 "customize_cmdline.ml" 380 17199 17210
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 380 17199 17211 "customize_cmdline.ml" 380 17199 17213
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 380 17199 17213 "customize_cmdline.ml" 380 17199 17235
+type(
+  string
+)
+"customize_cmdline.ml" 380 17199 17211 "customize_cmdline.ml" 380 17199 17235
+type(
+  string
+)
+"customize_cmdline.ml" 380 17199 17205 "customize_cmdline.ml" 380 17199 17235
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 377 17124 17128 "customize_cmdline.ml" 381 17236 17241
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 382 17243 17247 "customize_cmdline.ml" 382 17243 17251
+type(
+  string option
+)
+"customize_cmdline.ml" 382 17243 17253 "customize_cmdline.ml" 382 17243 17453
+type(
+  string
+)
+"customize_cmdline.ml" 377 17124 17128 "customize_cmdline.ml" 382 17243 17453
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 384 17461 17467 "customize_cmdline.ml" 384 17461 17477
+type(
+  string
+)
+"customize_cmdline.ml" 386 17498 17510 "customize_cmdline.ml" 386 17498 17511
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 387 17515 17525 "customize_cmdline.ml" 388 17565 17599
+)
+"customize_cmdline.ml" 387 17515 17529 "customize_cmdline.ml" 387 17515 17530
+type(
+  string * string
+)
+"customize_cmdline.ml" 387 17515 17533 "customize_cmdline.ml" 387 17515 17550
+type(
+  string -> string -> string * string
+)
+ident(
+  int_ref split_string_pair "customize_cmdline.ml" 134 3913 3919 "customize_cmdline.ml" 134 3913 3936
+)
+"customize_cmdline.ml" 387 17515 17551 "customize_cmdline.ml" 387 17515 17559
+type(
+  string
+)
+"customize_cmdline.ml" 387 17515 17560 "customize_cmdline.ml" 387 17515 17561
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 386 17498 17510 "customize_cmdline.ml" 386 17498 17511
+)
+"customize_cmdline.ml" 387 17515 17533 "customize_cmdline.ml" 387 17515 17561
+call(
+  stack
+)
+type(
+  string * string
+)
+"customize_cmdline.ml" 388 17565 17575 "customize_cmdline.ml" 388 17565 17578
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 388 17565 17579 "customize_cmdline.ml" 388 17565 17581
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 388 17565 17590 "customize_cmdline.ml" 388 17565 17591
+type(
+  string * string
+)
+ident(
+  int_ref p "customize_cmdline.ml" 387 17515 17529 "customize_cmdline.ml" 387 17515 17530
+)
+"customize_cmdline.ml" 388 17565 17582 "customize_cmdline.ml" 388 17565 17591
+type(
+  op
+)
+"customize_cmdline.ml" 388 17565 17595 "customize_cmdline.ml" 388 17565 17596
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 388 17565 17596 "customize_cmdline.ml" 388 17565 17599
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 388 17565 17595 "customize_cmdline.ml" 388 17565 17599
+type(
+  op list
+)
+"customize_cmdline.ml" 388 17565 17582 "customize_cmdline.ml" 388 17565 17599
+type(
+  op list
+)
+"customize_cmdline.ml" 388 17565 17575 "customize_cmdline.ml" 388 17565 17599
+type(
+  unit
+)
+"customize_cmdline.ml" 387 17515 17525 "customize_cmdline.ml" 388 17565 17599
+type(
+  unit
+)
+"customize_cmdline.ml" 385 17479 17496 "customize_cmdline.ml" 389 17600 17607
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 385 17479 17485 "customize_cmdline.ml" 389 17600 17607
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 390 17609 17615 "customize_cmdline.ml" 390 17609 17617
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 390 17609 17617 "customize_cmdline.ml" 390 17609 17628
+type(
+  string
+)
+"customize_cmdline.ml" 390 17609 17615 "customize_cmdline.ml" 390 17609 17628
+type(
+  string
+)
+"customize_cmdline.ml" 390 17609 17629 "customize_cmdline.ml" 390 17609 17630
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 390 17609 17631 "customize_cmdline.ml" 390 17609 17634
+type(
+  string
+)
+"customize_cmdline.ml" 390 17609 17635 "customize_cmdline.ml" 390 17609 17636
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 390 17609 17637 "customize_cmdline.ml" 390 17609 17639
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 390 17609 17639 "customize_cmdline.ml" 390 17609 17673
+type(
+  string
+)
+"customize_cmdline.ml" 390 17609 17637 "customize_cmdline.ml" 390 17609 17673
+type(
+  string
+)
+"customize_cmdline.ml" 390 17609 17631 "customize_cmdline.ml" 390 17609 17673
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 390 17609 17615 "customize_cmdline.ml" 390 17609 17673
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 383 17455 17459 "customize_cmdline.ml" 391 17674 17679
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 392 17681 17690 "customize_cmdline.ml" 392 17681 17701
+type(
+  string
+)
+"customize_cmdline.ml" 392 17681 17685 "customize_cmdline.ml" 392 17681 17701
+type(
+  string option
+)
+"customize_cmdline.ml" 392 17681 17703 "customize_cmdline.ml" 392 17681 18221
+type(
+  string
+)
+"customize_cmdline.ml" 383 17455 17459 "customize_cmdline.ml" 392 17681 18221
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 394 18229 18235 "customize_cmdline.ml" 394 18229 18244
+type(
+  string
+)
+"customize_cmdline.ml" 396 18265 18277 "customize_cmdline.ml" 396 18265 18278
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 397 18282 18292 "customize_cmdline.ml" 398 18331 18364
+)
+"customize_cmdline.ml" 397 18282 18296 "customize_cmdline.ml" 397 18282 18297
+type(
+  string * string
+)
+"customize_cmdline.ml" 397 18282 18300 "customize_cmdline.ml" 397 18282 18317
+type(
+  string -> string -> string * string
+)
+ident(
+  int_ref split_string_pair "customize_cmdline.ml" 134 3913 3919 "customize_cmdline.ml" 134 3913 3936
+)
+"customize_cmdline.ml" 397 18282 18318 "customize_cmdline.ml" 397 18282 18325
+type(
+  string
+)
+"customize_cmdline.ml" 397 18282 18326 "customize_cmdline.ml" 397 18282 18327
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 396 18265 18277 "customize_cmdline.ml" 396 18265 18278
+)
+"customize_cmdline.ml" 397 18282 18300 "customize_cmdline.ml" 397 18282 18327
+call(
+  stack
+)
+type(
+  string * string
+)
+"customize_cmdline.ml" 398 18331 18341 "customize_cmdline.ml" 398 18331 18344
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 398 18331 18345 "customize_cmdline.ml" 398 18331 18347
+type(
+  op list ref -> op list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 398 18331 18355 "customize_cmdline.ml" 398 18331 18356
+type(
+  string * string
+)
+ident(
+  int_ref p "customize_cmdline.ml" 397 18282 18296 "customize_cmdline.ml" 397 18282 18297
+)
+"customize_cmdline.ml" 398 18331 18348 "customize_cmdline.ml" 398 18331 18356
+type(
+  op
+)
+"customize_cmdline.ml" 398 18331 18360 "customize_cmdline.ml" 398 18331 18361
+type(
+  op list ref -> op list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_cmdline.ml" 398 18331 18361 "customize_cmdline.ml" 398 18331 18364
+type(
+  op list ref
+)
+ident(
+  int_ref ops "customize_cmdline.ml" 116 3480 3486 "customize_cmdline.ml" 116 3480 3489
+)
+"customize_cmdline.ml" 398 18331 18360 "customize_cmdline.ml" 398 18331 18364
+type(
+  op list
+)
+"customize_cmdline.ml" 398 18331 18348 "customize_cmdline.ml" 398 18331 18364
+type(
+  op list
+)
+"customize_cmdline.ml" 398 18331 18341 "customize_cmdline.ml" 398 18331 18364
+type(
+  unit
+)
+"customize_cmdline.ml" 397 18282 18292 "customize_cmdline.ml" 398 18331 18364
+type(
+  unit
+)
+"customize_cmdline.ml" 395 18246 18263 "customize_cmdline.ml" 399 18365 18372
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 395 18246 18252 "customize_cmdline.ml" 399 18365 18372
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 400 18374 18380 "customize_cmdline.ml" 400 18374 18382
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 400 18374 18382 "customize_cmdline.ml" 400 18374 18396
+type(
+  string
+)
+"customize_cmdline.ml" 400 18374 18380 "customize_cmdline.ml" 400 18374 18396
+type(
+  string
+)
+"customize_cmdline.ml" 400 18374 18397 "customize_cmdline.ml" 400 18374 18398
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 400 18374 18399 "customize_cmdline.ml" 400 18374 18402
+type(
+  string
+)
+"customize_cmdline.ml" 400 18374 18403 "customize_cmdline.ml" 400 18374 18404
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 400 18374 18405 "customize_cmdline.ml" 400 18374 18407
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 400 18374 18407 "customize_cmdline.ml" 400 18374 18419
+type(
+  string
+)
+"customize_cmdline.ml" 400 18374 18405 "customize_cmdline.ml" 400 18374 18419
+type(
+  string
+)
+"customize_cmdline.ml" 400 18374 18399 "customize_cmdline.ml" 400 18374 18419
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 400 18374 18380 "customize_cmdline.ml" 400 18374 18419
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 393 18223 18227 "customize_cmdline.ml" 401 18420 18425
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 402 18427 18436 "customize_cmdline.ml" 402 18427 18450
+type(
+  string
+)
+"customize_cmdline.ml" 402 18427 18431 "customize_cmdline.ml" 402 18427 18450
+type(
+  string option
+)
+"customize_cmdline.ml" 402 18427 18452 "customize_cmdline.ml" 402 18427 18482
+type(
+  string
+)
+"customize_cmdline.ml" 393 18223 18227 "customize_cmdline.ml" 402 18427 18482
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 404 18490 18496 "customize_cmdline.ml" 404 18490 18510
+type(
+  string
+)
+"customize_cmdline.ml" 405 18512 18526 "customize_cmdline.ml" 405 18512 18539
+type(
+  bool ref
+)
+ident(
+  int_ref scrub_logfile "customize_cmdline.ml" 117 3502 3508 "customize_cmdline.ml" 117 3502 3521
+)
+"customize_cmdline.ml" 405 18512 18518 "customize_cmdline.ml" 405 18512 18539
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 406 18541 18547 "customize_cmdline.ml" 406 18541 18550
+type(
+  string
+)
+"customize_cmdline.ml" 406 18541 18551 "customize_cmdline.ml" 406 18541 18552
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 406 18541 18553 "customize_cmdline.ml" 406 18541 18555
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 406 18541 18555 "customize_cmdline.ml" 406 18541 18577
+type(
+  string
+)
+"customize_cmdline.ml" 406 18541 18553 "customize_cmdline.ml" 406 18541 18577
+type(
+  string
+)
+"customize_cmdline.ml" 406 18541 18547 "customize_cmdline.ml" 406 18541 18577
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 403 18484 18488 "customize_cmdline.ml" 407 18578 18583
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 408 18585 18589 "customize_cmdline.ml" 408 18585 18593
+type(
+  string option
+)
+"customize_cmdline.ml" 408 18585 18595 "customize_cmdline.ml" 408 18585 18801
+type(
+  string
+)
+"customize_cmdline.ml" 403 18484 18488 "customize_cmdline.ml" 408 18585 18801
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 410 18809 18815 "customize_cmdline.ml" 410 18809 18834
+type(
+  string
+)
+"customize_cmdline.ml" 412 18855 18867 "customize_cmdline.ml" 412 18855 18868
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 413 18872 18882 "customize_cmdline.ml" 413 18872 18944
+)
+"customize_cmdline.ml" 413 18872 18882 "customize_cmdline.ml" 413 18872 18897
+type(
+  Password.password_crypto option ref
+)
+ident(
+  int_ref password_crypto "customize_cmdline.ml" 118 3537 3543 "customize_cmdline.ml" 118 3537 3558
+)
+"customize_cmdline.ml" 413 18872 18898 "customize_cmdline.ml" 413 18872 18900
+type(
+  Password.password_crypto option ref ->
+  Password.password_crypto option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 413 18872 18907 "customize_cmdline.ml" 413 18872 18941
+type(
+  string -> Password.password_crypto
+)
+ident(
+  ext_ref Password.password_crypto_of_string
+)
+"customize_cmdline.ml" 413 18872 18942 "customize_cmdline.ml" 413 18872 18943
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 412 18855 18867 "customize_cmdline.ml" 412 18855 18868
+)
+"customize_cmdline.ml" 413 18872 18906 "customize_cmdline.ml" 413 18872 18944
+call(
+  stack
+)
+type(
+  Password.password_crypto
+)
+"customize_cmdline.ml" 413 18872 18901 "customize_cmdline.ml" 413 18872 18944
+type(
+  Password.password_crypto option
+)
+"customize_cmdline.ml" 413 18872 18882 "customize_cmdline.ml" 413 18872 18944
+type(
+  unit
+)
+"customize_cmdline.ml" 411 18836 18853 "customize_cmdline.ml" 414 18945 18952
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 411 18836 18842 "customize_cmdline.ml" 414 18945 18952
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 415 18954 18960 "customize_cmdline.ml" 415 18954 18979
+type(
+  string
+)
+"customize_cmdline.ml" 415 18954 18980 "customize_cmdline.ml" 415 18954 18981
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 415 18954 18982 "customize_cmdline.ml" 415 18954 18985
+type(
+  string
+)
+"customize_cmdline.ml" 415 18954 18986 "customize_cmdline.ml" 415 18954 18987
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 415 18954 18988 "customize_cmdline.ml" 415 18954 18990
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 415 18954 18990 "customize_cmdline.ml" 415 18954 19011
+type(
+  string
+)
+"customize_cmdline.ml" 415 18954 18988 "customize_cmdline.ml" 415 18954 19011
+type(
+  string
+)
+"customize_cmdline.ml" 415 18954 18982 "customize_cmdline.ml" 415 18954 19011
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 415 18954 18960 "customize_cmdline.ml" 415 18954 19011
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 409 18803 18807 "customize_cmdline.ml" 416 19012 19017
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 417 19019 19028 "customize_cmdline.ml" 417 19019 19047
+type(
+  string
+)
+"customize_cmdline.ml" 417 19019 19023 "customize_cmdline.ml" 417 19019 19047
+type(
+  string option
+)
+"customize_cmdline.ml" 417 19019 19049 "customize_cmdline.ml" 417 19019 19902
+type(
+  string
+)
+"customize_cmdline.ml" 409 18803 18807 "customize_cmdline.ml" 417 19019 19902
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 419 19910 19916 "customize_cmdline.ml" 419 19910 19935
+type(
+  string
+)
+"customize_cmdline.ml" 420 19937 19951 "customize_cmdline.ml" 420 19937 19966
+type(
+  bool ref
+)
+ident(
+  int_ref selinux_relabel "customize_cmdline.ml" 119 3573 3579 "customize_cmdline.ml" 119 3573 3594
+)
+"customize_cmdline.ml" 420 19937 19943 "customize_cmdline.ml" 420 19937 19966
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 421 19968 19974 "customize_cmdline.ml" 421 19968 19977
+type(
+  string
+)
+"customize_cmdline.ml" 421 19968 19978 "customize_cmdline.ml" 421 19968 19979
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 421 19968 19980 "customize_cmdline.ml" 421 19968 19982
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 421 19968 19982 "customize_cmdline.ml" 421 19968 20025
+type(
+  string
+)
+"customize_cmdline.ml" 421 19968 19980 "customize_cmdline.ml" 421 19968 20025
+type(
+  string
+)
+"customize_cmdline.ml" 421 19968 19974 "customize_cmdline.ml" 421 19968 20025
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 418 19904 19908 "customize_cmdline.ml" 422 20026 20031
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 423 20033 20037 "customize_cmdline.ml" 423 20033 20041
+type(
+  string option
+)
+"customize_cmdline.ml" 423 20033 20043 "customize_cmdline.ml" 423 20033 20185
+type(
+  string
+)
+"customize_cmdline.ml" 418 19904 19908 "customize_cmdline.ml" 423 20033 20185
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 425 20193 20199 "customize_cmdline.ml" 425 20193 20217
+type(
+  string
+)
+"customize_cmdline.ml" 427 20238 20250 "customize_cmdline.ml" 427 20238 20251
+type(
+  string
+)
+ident(
+  def s "customize_cmdline.ml" 428 20255 20265 "customize_cmdline.ml" 428 20255 20339
+)
+"customize_cmdline.ml" 428 20255 20265 "customize_cmdline.ml" 428 20255 20279
+type(
+  Subscription_manager.sm_credentials option ref
+)
+ident(
+  int_ref sm_credentials "customize_cmdline.ml" 120 3610 3616 "customize_cmdline.ml" 120 3610 3630
+)
+"customize_cmdline.ml" 428 20255 20280 "customize_cmdline.ml" 428 20255 20282
+type(
+  Subscription_manager.sm_credentials option ref ->
+  Subscription_manager.sm_credentials option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 428 20255 20289 "customize_cmdline.ml" 428 20255 20336
+type(
+  string -> Subscription_manager.sm_credentials
+)
+ident(
+  ext_ref Subscription_manager.parse_credentials_selector
+)
+"customize_cmdline.ml" 428 20255 20337 "customize_cmdline.ml" 428 20255 20338
+type(
+  string
+)
+ident(
+  int_ref s "customize_cmdline.ml" 427 20238 20250 "customize_cmdline.ml" 427 20238 20251
+)
+"customize_cmdline.ml" 428 20255 20288 "customize_cmdline.ml" 428 20255 20339
+call(
+  stack
+)
+type(
+  Subscription_manager.sm_credentials
+)
+"customize_cmdline.ml" 428 20255 20283 "customize_cmdline.ml" 428 20255 20339
+type(
+  Subscription_manager.sm_credentials option
+)
+"customize_cmdline.ml" 428 20255 20265 "customize_cmdline.ml" 428 20255 20339
+type(
+  unit
+)
+"customize_cmdline.ml" 426 20219 20236 "customize_cmdline.ml" 429 20340 20347
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 426 20219 20225 "customize_cmdline.ml" 429 20340 20347
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 430 20349 20355 "customize_cmdline.ml" 430 20349 20365
+type(
+  string
+)
+"customize_cmdline.ml" 430 20349 20366 "customize_cmdline.ml" 430 20349 20367
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 430 20349 20368 "customize_cmdline.ml" 430 20349 20371
+type(
+  string
+)
+"customize_cmdline.ml" 430 20349 20372 "customize_cmdline.ml" 430 20349 20373
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 430 20349 20374 "customize_cmdline.ml" 430 20349 20376
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_cmdline.ml" 430 20349 20376 "customize_cmdline.ml" 430 20349 20414
+type(
+  string
+)
+"customize_cmdline.ml" 430 20349 20374 "customize_cmdline.ml" 430 20349 20414
+type(
+  string
+)
+"customize_cmdline.ml" 430 20349 20368 "customize_cmdline.ml" 430 20349 20414
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 430 20349 20355 "customize_cmdline.ml" 430 20349 20414
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 424 20187 20191 "customize_cmdline.ml" 431 20415 20420
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 432 20422 20431 "customize_cmdline.ml" 432 20422 20441
+type(
+  string
+)
+"customize_cmdline.ml" 432 20422 20426 "customize_cmdline.ml" 432 20422 20441
+type(
+  string option
+)
+"customize_cmdline.ml" 432 20422 20443 "customize_cmdline.ml" 432 20422 20582
+type(
+  string
+)
+"customize_cmdline.ml" 424 20187 20191 "customize_cmdline.ml" 432 20422 20582
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 154 4508 4528 "customize_cmdline.ml" 433 20584 20587
+type(
+  ((string * Arg.spec * string) * string option * string) list
+)
+"customize_cmdline.ml" 434 20588 20594 "customize_cmdline.ml" 434 20588 20618
+type(
+  string -> unit
+)
+"customize_cmdline.ml" 434 20588 20619 "customize_cmdline.ml" 434 20588 20627
+type(
+  string
+)
+ident(
+  def filename "customize_cmdline.ml" 435 20630 20634 "customize_cmdline.ml" 468 21759 21769
+)
+"customize_cmdline.ml" 435 20630 20638 "customize_cmdline.ml" 435 20630 20656
+type(
+  string list
+)
+"customize_cmdline.ml" 436 20661 20667 "customize_cmdline.ml" 436 20661 20687
+type(
+  string
+)
+"customize_cmdline.ml" 435 20630 20659 "customize_cmdline.ml" 437 20689 20694
+type(
+  string list
+)
+"customize_cmdline.ml" 438 20698 20706 "customize_cmdline.ml" 438 20698 20711
+type(
+  string
+)
+"customize_cmdline.ml" 438 20698 20714 "customize_cmdline.ml" 438 20698 20729
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.read_whole_file
+)
+"customize_cmdline.ml" 438 20698 20730 "customize_cmdline.ml" 438 20698 20738
+type(
+  string
+)
+ident(
+  int_ref filename "customize_cmdline.ml" 434 20588 20619 "customize_cmdline.ml" 434 20588 20627
+)
+"customize_cmdline.ml" 438 20698 20714 "customize_cmdline.ml" 438 20698 20738
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 439 20742 20750 "customize_cmdline.ml" 439 20742 20755
+type(
+  string list
+)
+"customize_cmdline.ml" 439 20742 20758 "customize_cmdline.ml" 439 20742 20776
+type(
+  string -> string list
+)
+ident(
+  ext_ref Common_utils.string_lines_split
+)
+"customize_cmdline.ml" 439 20742 20777 "customize_cmdline.ml" 439 20742 20782
+type(
+  string
+)
+ident(
+  int_ref lines "customize_cmdline.ml" 438 20698 20706 "customize_cmdline.ml" 438 20698 20711
+)
+"customize_cmdline.ml" 439 20742 20758 "customize_cmdline.ml" 439 20742 20782
+call(
+  stack
+)
+type(
+  string list
+)
+"customize_cmdline.ml" 440 20786 20794 "customize_cmdline.ml" 440 20786 20799
+type(
+  string list
+)
+"customize_cmdline.ml" 440 20786 20802 "customize_cmdline.ml" 440 20786 20813
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"customize_cmdline.ml" 441 20816 20826 "customize_cmdline.ml" 441 20816 20830
+type(
+  string
+)
+ident(
+  def line "customize_cmdline.ml" 442 20834 20842 "customize_cmdline.ml" 442 20834 20883
+)
+"customize_cmdline.ml" 442 20834 20842 "customize_cmdline.ml" 442 20834 20855
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"customize_cmdline.ml" 442 20834 20856 "customize_cmdline.ml" 442 20834 20860
+type(
+  string
+)
+ident(
+  int_ref line "customize_cmdline.ml" 441 20816 20826 "customize_cmdline.ml" 441 20816 20830
+)
+"customize_cmdline.ml" 442 20834 20842 "customize_cmdline.ml" 442 20834 20860
+type(
+  int
+)
+"customize_cmdline.ml" 442 20834 20861 "customize_cmdline.ml" 442 20834 20862
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( > )
+)
+"customize_cmdline.ml" 442 20834 20863 "customize_cmdline.ml" 442 20834 20864
+type(
+  int
+)
+"customize_cmdline.ml" 442 20834 20842 "customize_cmdline.ml" 442 20834 20864
+type(
+  bool
+)
+"customize_cmdline.ml" 442 20834 20865 "customize_cmdline.ml" 442 20834 20867
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"customize_cmdline.ml" 442 20834 20868 "customize_cmdline.ml" 442 20834 20872
+type(
+  string
+)
+ident(
+  int_ref line "customize_cmdline.ml" 441 20816 20826 "customize_cmdline.ml" 441 20816 20830
+)
+"customize_cmdline.ml" 442 20834 20874 "customize_cmdline.ml" 442 20834 20875
+type(
+  int
+)
+"customize_cmdline.ml" 442 20834 20868 "customize_cmdline.ml" 442 20834 20876
+type(
+  char
+)
+"customize_cmdline.ml" 442 20834 20877 "customize_cmdline.ml" 442 20834 20879
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"customize_cmdline.ml" 442 20834 20880 "customize_cmdline.ml" 442 20834 20883
+type(
+  char
+)
+"customize_cmdline.ml" 442 20834 20868 "customize_cmdline.ml" 442 20834 20883
+type(
+  bool
+)
+"customize_cmdline.ml" 442 20834 20842 "customize_cmdline.ml" 442 20834 20883
+type(
+  bool
+)
+"customize_cmdline.ml" 440 20786 20814 "customize_cmdline.ml" 443 20884 20889
+type(
+  string -> bool
+)
+"customize_cmdline.ml" 443 20884 20890 "customize_cmdline.ml" 443 20884 20895
+type(
+  string list
+)
+ident(
+  int_ref lines "customize_cmdline.ml" 439 20742 20750 "customize_cmdline.ml" 439 20742 20755
+)
+"customize_cmdline.ml" 440 20786 20802 "customize_cmdline.ml" 443 20884 20895
+call(
+  stack
+)
+type(
+  string list
+)
+"customize_cmdline.ml" 444 20899 20907 "customize_cmdline.ml" 444 20899 20911
+type(
+  (string * string) list
+)
+"customize_cmdline.ml" 444 20899 20914 "customize_cmdline.ml" 444 20899 20922
+type(
+  (string -> string * string) -> string list -> (string * string) list
+)
+ident(
+  ext_ref List.map
+)
+"customize_cmdline.ml" 444 20899 20928 "customize_cmdline.ml" 444 20899 20932
+type(
+  string
+)
+ident(
+  def line "customize_cmdline.ml" 444 20899 20936 "customize_cmdline.ml" 444 20899 20957
+)
+"customize_cmdline.ml" 444 20899 20936 "customize_cmdline.ml" 444 20899 20948
+type(
+  string -> string -> string * string
+)
+ident(
+  ext_ref Common_utils.string_split
+)
+"customize_cmdline.ml" 444 20899 20949 "customize_cmdline.ml" 444 20899 20952
+type(
+  string
+)
+"customize_cmdline.ml" 444 20899 20953 "customize_cmdline.ml" 444 20899 20957
+type(
+  string
+)
+ident(
+  int_ref line "customize_cmdline.ml" 444 20899 20928 "customize_cmdline.ml" 444 20899 20932
+)
+"customize_cmdline.ml" 444 20899 20936 "customize_cmdline.ml" 444 20899 20957
+call(
+  tail
+)
+type(
+  string * string
+)
+"customize_cmdline.ml" 444 20899 20923 "customize_cmdline.ml" 444 20899 20958
+type(
+  string -> string * string
+)
+"customize_cmdline.ml" 444 20899 20959 "customize_cmdline.ml" 444 20899 20964
+type(
+  string list
+)
+ident(
+  int_ref lines "customize_cmdline.ml" 440 20786 20794 "customize_cmdline.ml" 440 20786 20799
+)
+"customize_cmdline.ml" 444 20899 20914 "customize_cmdline.ml" 444 20899 20964
+call(
+  stack
+)
+type(
+  (string * string) list
+)
+"customize_cmdline.ml" 446 21039 21043 "customize_cmdline.ml" 446 21039 21052
+type(
+  (string * string -> unit) -> (string * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"customize_cmdline.ml" 447 21055 21066 "customize_cmdline.ml" 447 21055 21069
+type(
+  string
+)
+ident(
+  def cmd "customize_cmdline.ml" 448 21077 21085 "customize_cmdline.ml" 450 21210 21225
+)
+"customize_cmdline.ml" 447 21055 21071 "customize_cmdline.ml" 447 21055 21072
+type(
+  string
+)
+"customize_cmdline.ml" 447 21055 21065 "customize_cmdline.ml" 447 21055 21073
+type(
+  string * string
+)
+"customize_cmdline.ml" 448 21077 21088 "customize_cmdline.ml" 448 21077 21096
+type(
+  string -> string list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"customize_cmdline.ml" 448 21077 21097 "customize_cmdline.ml" 448 21077 21100
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_cmdline.ml" 447 21055 21066 "customize_cmdline.ml" 447 21055 21069
+)
+"customize_cmdline.ml" 448 21077 21101 "customize_cmdline.ml" 448 21077 21119
+type(
+  string list
+)
+ident(
+  int_ref forbidden_commands "customize_cmdline.ml" 435 20630 20638 "customize_cmdline.ml" 435 20630 20656
+)
+"customize_cmdline.ml" 448 21077 21088 "customize_cmdline.ml" 448 21077 21119
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_cmdline.ml" 449 21125 21135 "customize_cmdline.ml" 449 21125 21140
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_cmdline.ml" 449 21125 21142 "customize_cmdline.ml" 449 21125 21144
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_cmdline.ml" 449 21125 21144 "customize_cmdline.ml" 449 21125 21208
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_cmdline.ml" 449 21125 21141 "customize_cmdline.ml" 449 21125 21209
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_cmdline.ml" 450 21210 21222 "customize_cmdline.ml" 450 21210 21225
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_cmdline.ml" 447 21055 21066 "customize_cmdline.ml" 447 21055 21069
+)
+"customize_cmdline.ml" 449 21125 21135 "customize_cmdline.ml" 450 21210 21225
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_cmdline.ml" 448 21077 21085 "customize_cmdline.ml" 450 21210 21225
+type(
+  unit
+)
+"customize_cmdline.ml" 446 21039 21053 "customize_cmdline.ml" 451 21226 21231
+type(
+  string * string -> unit
+)
+"customize_cmdline.ml" 451 21226 21232 "customize_cmdline.ml" 451 21226 21236
+type(
+  (string * string) list
+)
+ident(
+  int_ref cmds "customize_cmdline.ml" 444 20899 20907 "customize_cmdline.ml" 444 20899 20911
+)
+"customize_cmdline.ml" 446 21039 21043 "customize_cmdline.ml" 451 21226 21236
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_cmdline.ml" 452 21238 21242 "customize_cmdline.ml" 452 21238 21251
+type(
+  (string * string -> unit) -> (string * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"customize_cmdline.ml" 453 21254 21265 "customize_cmdline.ml" 453 21254 21268
+type(
+  string
+)
+ident(
+  def cmd "customize_cmdline.ml" 454 21278 21286 "customize_cmdline.ml" 467 21743 21758
+)
+"customize_cmdline.ml" 453 21254 21270 "customize_cmdline.ml" 453 21254 21273
+type(
+  string
+)
+ident(
+  def arg "customize_cmdline.ml" 454 21278 21286 "customize_cmdline.ml" 467 21743 21758
+)
+"customize_cmdline.ml" 453 21254 21264 "customize_cmdline.ml" 453 21254 21274
+type(
+  string * string
+)
+"customize_cmdline.ml" 455 21290 21306 "customize_cmdline.ml" 455 21290 21307
+type(
+  string
+)
+"customize_cmdline.ml" 455 21290 21309 "customize_cmdline.ml" 455 21290 21313
+type(
+  Arg.spec
+)
+ident(
+  def spec "customize_cmdline.ml" 459 21432 21442 "customize_cmdline.ml" 464 21642 21653
+)
+"customize_cmdline.ml" 455 21290 21315 "customize_cmdline.ml" 455 21290 21316
+type(
+  string
+)
+"customize_cmdline.ml" 455 21290 21305 "customize_cmdline.ml" 455 21290 21317
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 455 21290 21319 "customize_cmdline.ml" 455 21290 21320
+type(
+  string option
+)
+"customize_cmdline.ml" 455 21290 21322 "customize_cmdline.ml" 455 21290 21323
+type(
+  string
+)
+"customize_cmdline.ml" 455 21290 21304 "customize_cmdline.ml" 455 21290 21324
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 455 21290 21327 "customize_cmdline.ml" 455 21290 21336
+type(
+  ((string * Arg.spec * string) * string option * string -> bool) ->
+  ((string * Arg.spec * string) * string option * string) list ->
+  (string * Arg.spec * string) * string option * string
+)
+ident(
+  ext_ref List.find
+)
+"customize_cmdline.ml" 456 21339 21357 "customize_cmdline.ml" 456 21339 21360
+type(
+  string
+)
+ident(
+  def key "customize_cmdline.ml" 457 21378 21392 "customize_cmdline.ml" 457 21378 21408
+)
+"customize_cmdline.ml" 456 21339 21362 "customize_cmdline.ml" 456 21339 21363
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 456 21339 21365 "customize_cmdline.ml" 456 21339 21366
+type(
+  string
+)
+"customize_cmdline.ml" 456 21339 21356 "customize_cmdline.ml" 456 21339 21367
+type(
+  string * Arg.spec * string
+)
+"customize_cmdline.ml" 456 21339 21369 "customize_cmdline.ml" 456 21339 21370
+type(
+  string option
+)
+"customize_cmdline.ml" 456 21339 21372 "customize_cmdline.ml" 456 21339 21373
+type(
+  string
+)
+"customize_cmdline.ml" 456 21339 21355 "customize_cmdline.ml" 456 21339 21374
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 457 21378 21392 "customize_cmdline.ml" 457 21378 21395
+type(
+  string
+)
+ident(
+  int_ref key "customize_cmdline.ml" 456 21339 21357 "customize_cmdline.ml" 456 21339 21360
+)
+"customize_cmdline.ml" 457 21378 21396 "customize_cmdline.ml" 457 21378 21397
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"customize_cmdline.ml" 457 21378 21398 "customize_cmdline.ml" 457 21378 21402
+type(
+  string
+)
+"customize_cmdline.ml" 457 21378 21403 "customize_cmdline.ml" 457 21378 21404
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_cmdline.ml" 457 21378 21405 "customize_cmdline.ml" 457 21378 21408
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_cmdline.ml" 453 21254 21265 "customize_cmdline.ml" 453 21254 21268
+)
+"customize_cmdline.ml" 457 21378 21398 "customize_cmdline.ml" 457 21378 21408
+call(
+  stack
+)
+type(
+  string
+)
+"customize_cmdline.ml" 457 21378 21392 "customize_cmdline.ml" 457 21378 21408
+type(
+  bool
+)
+"customize_cmdline.ml" 455 21290 21337 "customize_cmdline.ml" 458 21409 21420
+type(
+  (string * Arg.spec * string) * string option * string -> bool
+)
+"customize_cmdline.ml" 458 21409 21421 "customize_cmdline.ml" 458 21409 21428
+type(
+  ((string * Arg.spec * string) * string option * string) list
+)
+ident(
+  int_ref argspec "customize_cmdline.ml" 154 4508 4518 "customize_cmdline.ml" 154 4508 4525
+)
+"customize_cmdline.ml" 455 21290 21327 "customize_cmdline.ml" 458 21409 21428
+call(
+  stack
+)
+type(
+  (string * Arg.spec * string) * string option * string
+)
+"customize_cmdline.ml" 459 21432 21449 "customize_cmdline.ml" 459 21432 21453
+type(
+  Arg.spec
+)
+ident(
+  int_ref spec "customize_cmdline.ml" 455 21290 21309 "customize_cmdline.ml" 455 21290 21313
+)
+"customize_cmdline.ml" 460 21459 21480 "customize_cmdline.ml" 460 21459 21482
+type(
+  unit -> unit
+)
+ident(
+  def fn "customize_cmdline.ml" 460 21459 21486 "customize_cmdline.ml" 460 21459 21491
+)
+"customize_cmdline.ml" 460 21459 21471 "customize_cmdline.ml" 460 21459 21482
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 460 21459 21486 "customize_cmdline.ml" 460 21459 21488
+type(
+  unit -> unit
+)
+ident(
+  int_ref fn "customize_cmdline.ml" 460 21459 21480 "customize_cmdline.ml" 460 21459 21482
+)
+"customize_cmdline.ml" 460 21459 21489 "customize_cmdline.ml" 460 21459 21491
+type(
+  unit
+)
+"customize_cmdline.ml" 460 21459 21486 "customize_cmdline.ml" 460 21459 21491
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_cmdline.ml" 461 21492 21515 "customize_cmdline.ml" 461 21492 21517
+type(
+  string -> unit
+)
+ident(
+  def fn "customize_cmdline.ml" 461 21492 21521 "customize_cmdline.ml" 461 21492 21527
+)
+"customize_cmdline.ml" 461 21492 21504 "customize_cmdline.ml" 461 21492 21517
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 461 21492 21521 "customize_cmdline.ml" 461 21492 21523
+type(
+  string -> unit
+)
+ident(
+  int_ref fn "customize_cmdline.ml" 461 21492 21515 "customize_cmdline.ml" 461 21492 21517
+)
+"customize_cmdline.ml" 461 21492 21524 "customize_cmdline.ml" 461 21492 21527
+type(
+  string
+)
+ident(
+  int_ref arg "customize_cmdline.ml" 453 21254 21270 "customize_cmdline.ml" 453 21254 21273
+)
+"customize_cmdline.ml" 461 21492 21521 "customize_cmdline.ml" 461 21492 21527
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_cmdline.ml" 462 21528 21548 "customize_cmdline.ml" 462 21528 21554
+type(
+  bool ref
+)
+ident(
+  def varref "customize_cmdline.ml" 462 21528 21558 "customize_cmdline.ml" 462 21528 21572
+)
+"customize_cmdline.ml" 462 21528 21540 "customize_cmdline.ml" 462 21528 21554
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 462 21528 21558 "customize_cmdline.ml" 462 21528 21564
+type(
+  bool ref
+)
+ident(
+  int_ref varref "customize_cmdline.ml" 462 21528 21548 "customize_cmdline.ml" 462 21528 21554
+)
+"customize_cmdline.ml" 462 21528 21565 "customize_cmdline.ml" 462 21528 21567
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_cmdline.ml" 462 21528 21568 "customize_cmdline.ml" 462 21528 21572
+type(
+  bool
+)
+"customize_cmdline.ml" 462 21528 21558 "customize_cmdline.ml" 462 21528 21572
+type(
+  unit
+)
+"customize_cmdline.ml" 463 21573 21585 "customize_cmdline.ml" 463 21573 21586
+type(
+  Arg.spec
+)
+"customize_cmdline.ml" 463 21573 21590 "customize_cmdline.ml" 463 21573 21595
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_cmdline.ml" 463 21573 21596 "customize_cmdline.ml" 463 21573 21637
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_cmdline.ml" 463 21573 21638 "customize_cmdline.ml" 463 21573 21641
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_cmdline.ml" 453 21254 21265 "customize_cmdline.ml" 453 21254 21268
+)
+"customize_cmdline.ml" 463 21573 21590 "customize_cmdline.ml" 463 21573 21641
+type(
+  unit
+)
+"customize_cmdline.ml" 459 21432 21442 "customize_cmdline.ml" 464 21642 21653
+type(
+  unit
+)
+"customize_cmdline.ml" 455 21290 21300 "customize_cmdline.ml" 464 21642 21653
+type(
+  unit
+)
+"customize_cmdline.ml" 465 21654 21667 "customize_cmdline.ml" 465 21654 21676
+type(
+  exn
+)
+"customize_cmdline.ml" 466 21680 21690 "customize_cmdline.ml" 466 21680 21695
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_cmdline.ml" 466 21680 21697 "customize_cmdline.ml" 466 21680 21699
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_cmdline.ml" 466 21680 21699 "customize_cmdline.ml" 466 21680 21741
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_cmdline.ml" 466 21680 21696 "customize_cmdline.ml" 466 21680 21742
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_cmdline.ml" 467 21743 21755 "customize_cmdline.ml" 467 21743 21758
+type(
+  string
+)
+ident(
+  int_ref cmd "customize_cmdline.ml" 453 21254 21265 "customize_cmdline.ml" 453 21254 21268
+)
+"customize_cmdline.ml" 466 21680 21690 "customize_cmdline.ml" 467 21743 21758
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_cmdline.ml" 454 21278 21286 "customize_cmdline.ml" 467 21743 21758
+type(
+  unit
+)
+"customize_cmdline.ml" 452 21238 21252 "customize_cmdline.ml" 468 21759 21764
+type(
+  string * string -> unit
+)
+"customize_cmdline.ml" 468 21759 21765 "customize_cmdline.ml" 468 21759 21769
+type(
+  (string * string) list
+)
+ident(
+  int_ref cmds "customize_cmdline.ml" 444 20899 20907 "customize_cmdline.ml" 444 20899 20911
+)
+"customize_cmdline.ml" 452 21238 21242 "customize_cmdline.ml" 468 21759 21769
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_cmdline.ml" 446 21039 21043 "customize_cmdline.ml" 468 21759 21769
+type(
+  unit
+)
+"customize_cmdline.ml" 444 20899 20903 "customize_cmdline.ml" 468 21759 21769
+type(
+  unit
+)
+"customize_cmdline.ml" 440 20786 20790 "customize_cmdline.ml" 468 21759 21769
+type(
+  unit
+)
+"customize_cmdline.ml" 439 20742 20746 "customize_cmdline.ml" 468 21759 21769
+type(
+  unit
+)
+"customize_cmdline.ml" 438 20698 20702 "customize_cmdline.ml" 468 21759 21769
+type(
+  unit
+)
+"customize_cmdline.ml" 435 20630 20634 "customize_cmdline.ml" 468 21759 21769
+type(
+  unit
+)
+"customize_cmdline.ml" 471 21776 21778 "customize_cmdline.ml" 471 21776 21785
+type(
+  ((string * Arg.spec * string) * string option * string) list
+)
+ident(
+  int_ref argspec "customize_cmdline.ml" 154 4508 4518 "customize_cmdline.ml" 154 4508 4525
+)
+"customize_cmdline.ml" 471 21776 21787 "customize_cmdline.ml" 471 21776 21794
+type(
+  unit -> ops
+)
+ident(
+  int_ref get_ops "customize_cmdline.ml" 122 3646 3656 "customize_cmdline.ml" 122 3646 3663
+)
+"customize_cmdline.ml" 471 21776 21778 "customize_cmdline.ml" 471 21776 21794
+type(
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)
+"customize_cmdline.ml" 154 4508 4510 "customize_cmdline.ml" 471 21776 21794
+type(
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)
+"customize_cmdline.ml" 146 4279 4281 "customize_cmdline.ml" 471 21776 21794
+type(
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)
+"customize_cmdline.ml" 143 4218 4220 "customize_cmdline.ml" 471 21776 21794
+type(
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)
+"customize_cmdline.ml" 134 3913 3915 "customize_cmdline.ml" 471 21776 21794
+type(
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)
+"customize_cmdline.ml" 122 3646 3648 "customize_cmdline.ml" 471 21776 21794
+type(
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)
+"customize_cmdline.ml" 120 3610 3612 "customize_cmdline.ml" 471 21776 21794
+type(
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)
+"customize_cmdline.ml" 119 3573 3575 "customize_cmdline.ml" 471 21776 21794
+type(
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)
+"customize_cmdline.ml" 118 3537 3539 "customize_cmdline.ml" 471 21776 21794
+type(
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)
+"customize_cmdline.ml" 117 3502 3504 "customize_cmdline.ml" 471 21776 21794
+type(
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)
+"customize_cmdline.ml" 116 3480 3482 "customize_cmdline.ml" 471 21776 21794
+type(
+  ((string * Arg.spec * string) * string option * string) list *
+  (unit -> ops)
+)

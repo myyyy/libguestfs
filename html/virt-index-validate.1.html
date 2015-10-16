@@ -1,0 +1,146 @@
+
+<html>
+<head>
+<title>virt-index-validate</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-index-validate - Validate virt-builder index file</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-index-validate index</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><a href="virt-builder.1.html">virt-builder(1)</a> uses an index file to store metadata about templates that it knows how to use. This index file has a specific format which virt-index-validate knows how to validate.</p>
+
+<p>Note that virt-index-validate can validate either the signed or unsigned index file (ie. either <i>index</i> or <i>index.asc</i>). It can only validate a local file, not a URL.</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--compat-1.24.0</b></dt>
+<dd>
+
+<p>Check for compatibility with virt-builder 1.24.0. (Using this option implies <i>--compat-1.24.1</i>, so you don&#39;t need to use both.)</p>
+
+<p>In particular:</p>
+
+<ul>
+
+<li><p>This version of virt-builder could not handle <code>[...]</code> (square brackets) in field names (eg. <code>checksum[sha512]=...</code>).</p>
+
+</li>
+<li><p>It required detached signatures (<code>sig=...</code>).</p>
+
+</li>
+</ul>
+
+</dd>
+<dt><b>--compat-1.24.1</b></dt>
+<dd>
+
+<p>Check for compatibility with virt-builder &ge; 1.24.1.</p>
+
+<p>In particular:</p>
+
+<ul>
+
+<li><p>This version of virt-builder could not handle <code>.</code> (period) in field names or <code>,</code> (comma) in subfield names.</p>
+
+</li>
+<li><p>It could not handle comments appearing in the file.</p>
+
+</li>
+</ul>
+
+</dd>
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display help.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+</dl>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>This program returns 0 if the index file validates, or non-zero if there was an error.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="virt-builder.1.html">virt-builder(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2013 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

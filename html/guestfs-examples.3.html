@@ -1,0 +1,1577 @@
+
+<html>
+<head>
+<title>guestfs-examples</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#example:-create-a-disk-image">EXAMPLE: CREATE A DISK IMAGE</a></li>
+  <li><a href="#example:-inspect-a-virtual-machine-disk-image">EXAMPLE: INSPECT A VIRTUAL MACHINE DISK IMAGE</a></li>
+  <li><a href="#example:-enable-debugging-and-logging">EXAMPLE: ENABLE DEBUGGING AND LOGGING</a></li>
+  <li><a href="#example:-display-the-operating-system-icon-of-a-guest">EXAMPLE: DISPLAY THE OPERATING SYSTEM ICON OF A GUEST</a></li>
+  <li><a href="#example:-the-libvirt-authentication-api">EXAMPLE: THE LIBVIRT AUTHENTICATION API</a></li>
+  <li><a href="#example:-the-mount-local-api">EXAMPLE: THE MOUNT LOCAL API</a></li>
+  <li><a href="#example:-multiple-handles-and-threads">EXAMPLE: MULTIPLE HANDLES AND THREADS</a></li>
+  <li><a href="#example:-fetch-dhcp-address-from-a-guest">EXAMPLE: FETCH DHCP ADDRESS FROM A GUEST</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>guestfs-examples - Examples of using libguestfs from C</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> #include &lt;guestfs.h&gt;
+ 
+ guestfs_h *g = guestfs_create ();
+ guestfs_add_drive_ro (g, &quot;disk.img&quot;);
+ guestfs_launch (g);
+
+ cc prog.c -o prog -lguestfs
+or:
+ cc prog.c -o prog `pkg-config libguestfs --cflags --libs`</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>This manual page contains examples of calling libguestfs from the C programming language. If you are not familiar with using libguestfs, you also need to read <a href="guestfs.3.html">guestfs(3)</a>.</p>
+
+<h1 id="example:-create-a-disk-image">EXAMPLE: CREATE A DISK IMAGE</h1>
+
+<pre><code> /* Example showing how to create a disk image. */
+ 
+ #include &lt;stdio.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;string.h&gt;
+ #include &lt;fcntl.h&gt;
+ #include &lt;unistd.h&gt;
+ #include &lt;guestfs.h&gt;
+ 
+ int
+ main (int argc, char *argv[])
+ {
+   guestfs_h *g;
+   size_t i;
+ 
+   g = guestfs_create ();
+   if (g == NULL) {
+     perror (&quot;failed to create libguestfs handle&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Set the trace flag so that we can see each libguestfs call. */
+   guestfs_set_trace (g, 1);
+ 
+   /* Create a raw-format sparse disk image, 512 MB in size. */
+   if (guestfs_disk_create (g, &quot;disk.img&quot;, &quot;raw&quot;, UINT64_C(512)*1024*1024,
+                            -1) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Add the disk image to libguestfs. */
+   if (guestfs_add_drive_opts (g, &quot;disk.img&quot;,
+         GUESTFS_ADD_DRIVE_OPTS_FORMAT, &quot;raw&quot;, /* raw format */
+         GUESTFS_ADD_DRIVE_OPTS_READONLY, 0, /* for write */
+         -1) /* this marks end of optional arguments */
+       == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Run the libguestfs back-end. */
+   if (guestfs_launch (g) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Get the list of devices.  Because we only added one drive
+    * above, we expect that this list should contain a single
+    * element.
+    */
+   char **devices = guestfs_list_devices (g);
+   if (devices == NULL)
+     exit (EXIT_FAILURE);
+   if (devices[0] == NULL || devices[1] != NULL) {
+     fprintf (stderr, &quot;error: expected a single device from list-devices\n&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Partition the disk as one single MBR partition. */
+   if (guestfs_part_disk (g, devices[0], &quot;mbr&quot;) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Get the list of partitions.  We expect a single element, which
+    * is the partition we have just created.
+    */
+   char **partitions = guestfs_list_partitions (g);
+   if (partitions == NULL)
+     exit (EXIT_FAILURE);
+   if (partitions[0] == NULL || partitions[1] != NULL) {
+     fprintf (stderr, &quot;error: expected a single partition from list-partitions\n&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Create a filesystem on the partition. */
+   if (guestfs_mkfs (g, &quot;ext4&quot;, partitions[0]) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Now mount the filesystem so that we can add files. */
+   if (guestfs_mount (g, partitions[0], &quot;/&quot;) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Create some files and directories. */
+   if (guestfs_touch (g, &quot;/empty&quot;) == -1)
+     exit (EXIT_FAILURE);
+   const char *message = &quot;Hello, world\n&quot;;
+   if (guestfs_write (g, &quot;/hello&quot;, message, strlen (message)) == -1)
+     exit (EXIT_FAILURE);
+   if (guestfs_mkdir (g, &quot;/foo&quot;) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* This one uploads the local file /etc/resolv.conf into
+    * the disk image.
+    */
+   if (guestfs_upload (g, &quot;/etc/resolv.conf&quot;, &quot;/foo/resolv.conf&quot;) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Because we wrote to the disk and we want to detect write
+    * errors, call guestfs_shutdown.  You don&#39;t need to do this:
+    * guestfs_close will do it implicitly.
+    */
+   if (guestfs_shutdown (g) == -1)
+     exit (EXIT_FAILURE);
+ 
+   guestfs_close (g);
+ 
+   /* Free up the lists. */
+   for (i = 0; devices[i] != NULL; ++i)
+     free (devices[i]);
+   free (devices);
+   for (i = 0; partitions[i] != NULL; ++i)
+     free (partitions[i]);
+   free (partitions);
+ 
+   exit (EXIT_SUCCESS);
+ }</code></pre>
+
+<h1 id="example:-inspect-a-virtual-machine-disk-image">EXAMPLE: INSPECT A VIRTUAL MACHINE DISK IMAGE</h1>
+
+<pre><code> /* Inspect a disk image and display operating systems it may contain. */
+ 
+ #include &lt;stdio.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;string.h&gt;
+ #include &lt;guestfs.h&gt;
+ 
+ static int
+ compare_keys_len (const void *p1, const void *p2)
+ {
+   const char *key1 = * (char * const *) p1;
+   const char *key2 = * (char * const *) p2;
+   return strlen (key1) - strlen (key2);
+ }
+ 
+ static size_t
+ count_strings (char *const *argv)
+ {
+   size_t c;
+ 
+   for (c = 0; argv[c]; ++c)
+     ;
+   return c;
+ }
+ 
+ int
+ main (int argc, char *argv[])
+ {
+   guestfs_h *g;
+   const char *disk;
+   char **roots, *root, *str, **mountpoints, **lines;
+   size_t i, j;
+ 
+   if (argc != 2) {
+     fprintf (stderr, &quot;usage: inspect_vm disk.img\n&quot;);
+     exit (EXIT_FAILURE);
+   }
+   disk = argv[1];
+ 
+   g = guestfs_create ();
+   if (g == NULL) {
+     perror (&quot;failed to create libguestfs handle&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Attach the disk image read-only to libguestfs. */
+   if (guestfs_add_drive_opts (g, disk,
+      /* GUESTFS_ADD_DRIVE_OPTS_FORMAT, &quot;raw&quot;, */
+         GUESTFS_ADD_DRIVE_OPTS_READONLY, 1,
+         -1) /* this marks end of optional arguments */
+       == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Run the libguestfs back-end. */
+   if (guestfs_launch (g) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Ask libguestfs to inspect for operating systems. */
+   roots = guestfs_inspect_os (g);
+   if (roots == NULL)
+     exit (EXIT_FAILURE);
+   if (roots[0] == NULL) {
+     fprintf (stderr, &quot;inspect_vm: no operating systems found\n&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   for (j = 0; roots[j] != NULL; ++j) {
+     root = roots[j];
+ 
+     printf (&quot;Root device: %s\n&quot;, root);
+ 
+     /* Print basic information about the operating system. */
+     str = guestfs_inspect_get_product_name (g, root);
+     if (str)
+       printf (&quot;  Product name: %s\n&quot;, str);
+     free (str);
+ 
+     printf (&quot;  Version:      %d.%d\n&quot;,
+             guestfs_inspect_get_major_version (g, root),
+             guestfs_inspect_get_minor_version (g, root));
+ 
+     str = guestfs_inspect_get_type (g, root);
+     if (str)
+       printf (&quot;  Type:         %s\n&quot;, str);
+     free (str);
+     str = guestfs_inspect_get_distro (g, root);
+     if (str)
+       printf (&quot;  Distro:       %s\n&quot;, str);
+     free (str);
+ 
+     /* Mount up the disks, like guestfish -i.
+      *
+      * Sort keys by length, shortest first, so that we end up
+      * mounting the filesystems in the correct order.
+      */
+     mountpoints = guestfs_inspect_get_mountpoints (g, root);
+     if (mountpoints == NULL)
+       exit (EXIT_FAILURE);
+ 
+     qsort (mountpoints, count_strings (mountpoints) / 2, 2 * sizeof (char *),
+            compare_keys_len);
+     for (i = 0; mountpoints[i] != NULL; i += 2) {
+       /* Ignore failures from this call, since bogus entries can
+        * appear in the guest&#39;s /etc/fstab.
+        */
+       guestfs_mount_ro (g, mountpoints[i+1], mountpoints[i]);
+       free (mountpoints[i]);
+       free (mountpoints[i+1]);
+     }
+     free (mountpoints);
+ 
+     /* If /etc/issue.net file exists, print up to 3 lines. */
+     if (guestfs_is_file (g, &quot;/etc/issue.net&quot;) &gt; 0) {
+       printf (&quot;--- /etc/issue.net ---\n&quot;);
+       lines = guestfs_head_n (g, 3, &quot;/etc/issue.net&quot;);
+       if (lines == NULL)
+         exit (EXIT_FAILURE);
+       for (i = 0; lines[i] != NULL; ++i) {
+         printf (&quot;%s\n&quot;, lines[i]);
+         free (lines[i]);
+       }
+       free (lines);
+     }
+ 
+     /* Unmount everything. */
+     if (guestfs_umount_all (g) == -1)
+       exit (EXIT_FAILURE);
+ 
+     free (root);
+   }
+   free (roots);
+ 
+   guestfs_close (g);
+ 
+   exit (EXIT_SUCCESS);
+ }</code></pre>
+
+<h1 id="example:-enable-debugging-and-logging">EXAMPLE: ENABLE DEBUGGING AND LOGGING</h1>
+
+<pre><code> /* Example showing how to enable debugging, and capture it into any
+  * custom logging system (syslog in this example, but any could be
+  * used).  Note this uses the event API which is also available in
+  * non-C language bindings.
+  */
+ 
+ #include &lt;stdio.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;string.h&gt;
+ #include &lt;unistd.h&gt;
+ #include &lt;syslog.h&gt;
+ #include &lt;guestfs.h&gt;
+ 
+ static void message_callback (guestfs_h *g, void *opaque, uint64_t event, int event_handle, int flags, const char *buf, size_t buf_len, const uint64_t *array, size_t array_len);
+ 
+ /* Events we are interested in.  This bitmask covers all trace and
+  * debug messages.
+  */
+ static const uint64_t event_bitmask =
+   GUESTFS_EVENT_LIBRARY |
+   GUESTFS_EVENT_WARNING |
+   GUESTFS_EVENT_APPLIANCE |
+   GUESTFS_EVENT_TRACE;
+ 
+ int
+ main (int argc, char *argv[])
+ {
+   guestfs_h *g;
+ 
+   g = guestfs_create ();
+   if (g == NULL) {
+     perror (&quot;failed to create libguestfs handle&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* By default, debugging information is printed on stderr.  To
+    * capture it somewhere else you have to set up an event handler
+    * which will be called back as debug messages are generated.  To do
+    * this use the event API.
+    *
+    * For more information see EVENTS in guestfs(3).
+    */
+   if (guestfs_set_event_callback (g, message_callback,
+                                   event_bitmask, 0, NULL) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* This is how debugging is enabled:
+    *
+    * Setting the &#39;trace&#39; flag in the handle means that each libguestfs
+    * call is logged (name, parameters, return).  This flag is useful
+    * to see how libguestfs is being used by a program.
+    *
+    * Setting the &#39;verbose&#39; flag enables a great deal of extra
+    * debugging throughout the system.  This is useful if there is a
+    * libguestfs error which you don&#39;t understand.
+    *
+    * Note that you should set the flags early on after creating the
+    * handle.  In particular if you set the verbose flag after launch
+    * then you won&#39;t see all messages.
+    *
+    * For more information see:
+    * http://libguestfs.org/guestfs-faq.1.html#debugging-libguestfs
+    *
+    * Error messages raised by APIs are *not* debugging information,
+    * and they are not affected by any of this.  You may have to log
+    * them separately.
+    */
+   guestfs_set_trace (g, 1);
+   guestfs_set_verbose (g, 1);
+ 
+   /* Do some operations which will generate plenty of trace and debug
+    * messages.
+    */
+   if (guestfs_add_drive (g, &quot;/dev/null&quot;) == -1)
+     exit (EXIT_FAILURE);
+ 
+   printf (&quot;There is no output from this program.  &quot;
+           &quot;Take a look in your system log file,\n&quot;
+           &quot;eg. /var/log/messages.\n&quot;);
+ 
+   if (guestfs_launch (g) == -1)
+     exit (EXIT_FAILURE);
+ 
+   guestfs_close (g);
+ 
+   exit (EXIT_SUCCESS);
+ }
+ 
+ /* This function is called back by libguestfs whenever a trace or
+  * debug message is generated.
+  *
+  * For the classes of events we have registered above, &#39;array&#39; and
+  * &#39;array_len&#39; will not be meaningful.  Only &#39;buf&#39; and &#39;buf_len&#39; will
+  * be interesting and these will contain the trace or debug message.
+  *
+  * This example simply redirects these messages to syslog, but
+  * obviously you could do something more advanced here.
+  */
+ static void
+ message_callback (guestfs_h *g, void *opaque,
+                   uint64_t event, int event_handle,
+                   int flags,
+                   const char *buf, size_t buf_len,
+                   const uint64_t *array, size_t array_len)
+ {
+   const int priority = LOG_USER|LOG_INFO;
+   char *event_name, *msg;
+ 
+   if (buf_len &gt; 0) {
+     event_name = guestfs_event_to_string (event);
+     msg = strndup (buf, buf_len);
+     syslog (priority, &quot;[%s] %s&quot;, event_name, msg);
+     free (msg);
+     free (event_name);
+   }
+ }</code></pre>
+
+<h1 id="example:-display-the-operating-system-icon-of-a-guest">EXAMPLE: DISPLAY THE OPERATING SYSTEM ICON OF A GUEST</h1>
+
+<pre><code> /* This example inspects a guest using libguestfs inspection (see
+  * &quot;INSPECTION&quot; in guestfs(3)), and if possible displays a
+  * representative icon or logo for the guest&#39;s operating system.
+  */
+ 
+ #include &lt;stdio.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;string.h&gt;
+ #include &lt;guestfs.h&gt;
+ 
+ static int
+ compare_keys_len (const void *p1, const void *p2)
+ {
+   const char *key1 = * (char * const *) p1;
+   const char *key2 = * (char * const *) p2;
+   return strlen (key1) - strlen (key2);
+ }
+ 
+ static size_t
+ count_strings (char *const *argv)
+ {
+   size_t c;
+ 
+   for (c = 0; argv[c]; ++c)
+     ;
+   return c;
+ }
+ 
+ int
+ main (int argc, char *argv[])
+ {
+   guestfs_h *g;
+   const char *disk;
+   char **roots, *root, **mountpoints, *icon;
+   size_t i, j, icon_size;
+   FILE *fp;
+ 
+   if (argc != 2) {
+     fprintf (stderr, &quot;usage: display-icon disk.img\n&quot;);
+     exit (EXIT_FAILURE);
+   }
+   disk = argv[1];
+ 
+   g = guestfs_create ();
+   if (g == NULL) {
+     perror (&quot;failed to create libguestfs handle&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Attach the disk image read-only to libguestfs. */
+   if (guestfs_add_drive_opts (g, disk,
+      /* GUESTFS_ADD_DRIVE_OPTS_FORMAT, &quot;raw&quot;, */
+         GUESTFS_ADD_DRIVE_OPTS_READONLY, 1,
+         -1) /* this marks end of optional arguments */
+       == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Run the libguestfs back-end. */
+   if (guestfs_launch (g) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Ask libguestfs to inspect for operating systems. */
+   roots = guestfs_inspect_os (g);
+   if (roots == NULL)
+     exit (EXIT_FAILURE);
+   if (roots[0] == NULL) {
+     fprintf (stderr, &quot;display-icon: no operating systems found\n&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   for (j = 0; roots[j] != NULL; ++j) {
+     root = roots[j];
+ 
+     /* Mount up the disks, like guestfish -i.
+      *
+      * Sort keys by length, shortest first, so that we end up
+      * mounting the filesystems in the correct order.
+      */
+     mountpoints = guestfs_inspect_get_mountpoints (g, root);
+     if (mountpoints == NULL)
+       exit (EXIT_FAILURE);
+ 
+     qsort (mountpoints, count_strings (mountpoints) / 2, 2 * sizeof (char *),
+            compare_keys_len);
+     for (i = 0; mountpoints[i] != NULL; i += 2) {
+       /* Ignore failures from this call, since bogus entries can
+        * appear in the guest&#39;s /etc/fstab.
+        */
+       guestfs_mount_ro (g, mountpoints[i+1], mountpoints[i]);
+       free (mountpoints[i]);
+       free (mountpoints[i+1]);
+     }
+     free (mountpoints);
+ 
+     /* Get the icon.
+      * This function returns a buffer (&#39;icon&#39;).  Normally it is a png
+      * file, returned as a string, but it can also be a zero length
+      * buffer which has a special meaning, or NULL which means there
+      * was an error.
+      */
+     icon = guestfs_inspect_get_icon (g, root, &amp;icon_size, -1);
+     if (!icon)                  /* actual libguestfs error */
+       exit (EXIT_FAILURE);
+     if (icon_size == 0)         /* no icon available */
+       fprintf (stderr, &quot;%s: %s: no icon available for this operating system\n&quot;,
+                disk, root);
+     else {
+       /* Display the icon. */
+       fp = popen (&quot;display -&quot;, &quot;w&quot;);
+       if (fp == NULL) {
+         perror (&quot;display&quot;);
+         exit (EXIT_FAILURE);
+       }
+       if (fwrite (icon, 1, icon_size, fp) != icon_size) {
+         perror (&quot;write&quot;);
+         exit (EXIT_FAILURE);
+       }
+       if (pclose (fp) == -1) {
+         perror (&quot;pclose&quot;);
+         exit (EXIT_FAILURE);
+       }
+     }
+     free (icon);
+ 
+     /* Unmount everything. */
+     if (guestfs_umount_all (g) == -1)
+       exit (EXIT_FAILURE);
+ 
+     free (root);
+   }
+   free (roots);
+ 
+   guestfs_close (g);
+ 
+   exit (EXIT_SUCCESS);
+ }</code></pre>
+
+<h1 id="example:-the-libvirt-authentication-api">EXAMPLE: THE LIBVIRT AUTHENTICATION API</h1>
+
+<pre><code> /* Example of using the libvirt authentication event-driven API.
+  *
+  * See &quot;LIBVIRT AUTHENTICATION&quot; in guestfs(3).
+  */
+ 
+ #include &lt;stdio.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;string.h&gt;
+ #include &lt;unistd.h&gt;
+ 
+ #include &lt;guestfs.h&gt;
+ 
+ static void
+ usage (void)
+ {
+   fprintf (stderr,
+     &quot;Usage:\n&quot;
+     &quot;\n&quot;
+     &quot;  libvirt-auth URI domain\n&quot;
+     &quot;\n&quot;
+     &quot;where:\n&quot;
+     &quot;\n&quot;
+     &quot;  URI     is the libvirt URI, eg. qemu+libssh2://USER@localhost/system\n&quot;
+     &quot;  domain  is the name of the guest\n&quot;
+     &quot;\n&quot;
+     &quot;Example:\n&quot;
+     &quot;\n&quot;
+     &quot;  libvirt-auth &#39;qemu+libssh2://USER@localhost/system&#39; &#39;foo&#39;\n&quot;
+     &quot;\n&quot;
+     &quot;would connect (read-only) to libvirt URI given and open the guest\n&quot;
+     &quot;called &#39;foo&#39; and list some information about its filesystems.\n&quot;
+     &quot;\n&quot;
+     &quot;The important point of this example is that any libvirt authentication\n&quot;
+     &quot;required to connect to the server should be done.\n&quot;
+     &quot;\n&quot;);
+ }
+ 
+ static void auth_callback (guestfs_h *g, void *opaque, uint64_t event, int event_handle, int flags, const char *buf, size_t buf_len, const uint64_t *array, size_t array_len);
+ 
+ int
+ main (int argc, char *argv[])
+ {
+   const char *uri, *dom;
+   guestfs_h *g;
+   const char *creds[] = { &quot;authname&quot;, &quot;passphrase&quot;,
+                           &quot;echoprompt&quot;, &quot;noechoprompt&quot;, NULL };
+   int r, eh;
+   char **filesystems;
+   size_t i;
+ 
+   if (argc != 3) {
+     usage ();
+     exit (EXIT_FAILURE);
+   }
+   uri = argv[1];
+   dom = argv[2];
+ 
+   g = guestfs_create ();
+   if (!g)
+     exit (EXIT_FAILURE);
+ 
+   r = guestfs_set_libvirt_supported_credentials (g, (char **) creds);
+   if (r == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Set up the event handler. */
+   eh = guestfs_set_event_callback (g, auth_callback,
+                                    GUESTFS_EVENT_LIBVIRT_AUTH, 0, NULL);
+   if (eh == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Add the named domain. */
+   r = guestfs_add_domain (g, dom,
+                           GUESTFS_ADD_DOMAIN_LIBVIRTURI, uri,
+                           -1);
+   if (r == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Launch and do some simple inspection. */
+   r = guestfs_launch (g);
+   if (r == -1)
+     exit (EXIT_FAILURE);
+ 
+   filesystems = guestfs_list_filesystems (g);
+   if (filesystems == NULL)
+     exit (EXIT_FAILURE);
+ 
+   for (i = 0; filesystems[i] != NULL; i += 2) {
+     printf (&quot;%s:%s is a %s filesystem\n&quot;,
+             dom, filesystems[i], filesystems[i+1]);
+     free (filesystems[i]);
+     free (filesystems[i+1]);
+   }
+   free (filesystems);
+ 
+   exit (EXIT_SUCCESS);
+ }
+ 
+ static void
+ auth_callback (guestfs_h *g,
+                void *opaque,
+                uint64_t event,
+                int event_handle,
+                int flags,
+                const char *buf, size_t buf_len,
+                const uint64_t *array, size_t array_len)
+ {
+   char **creds;
+   size_t i;
+   char *prompt;
+   char *reply = NULL;
+   size_t allocsize = 0;
+   char *pass;
+   ssize_t len;
+   int r;
+ 
+   printf (&quot;libvirt-auth.c: authentication required for libvirt URI &#39;%s&#39;\n\n&quot;,
+           buf);
+ 
+   /* Ask libguestfs what credentials libvirt is demanding. */
+   creds = guestfs_get_libvirt_requested_credentials (g);
+   if (creds == NULL)
+     exit (EXIT_FAILURE);
+ 
+   /* Now ask the user for answers. */
+   for (i = 0; creds[i] != NULL; ++i)
+   {
+     printf (&quot;libvirt-auth.c: credential &#39;%s&#39;\n&quot;, creds[i]);
+ 
+     if (strcmp (creds[i], &quot;authname&quot;) == 0 ||
+         strcmp (creds[i], &quot;echoprompt&quot;) == 0) {
+       prompt = guestfs_get_libvirt_requested_credential_prompt (g, i);
+       if (prompt &amp;&amp; strcmp (prompt, &quot;&quot;) != 0)
+         printf (&quot;%s: &quot;, prompt);
+       free (prompt);
+ 
+       len = getline (&amp;reply, &amp;allocsize, stdin);
+       if (len == -1) {
+         perror (&quot;getline&quot;);
+         exit (EXIT_FAILURE);
+       }
+       if (len &gt; 0 &amp;&amp; reply[len-1] == &#39;\n&#39;)
+         reply[--len] = &#39;\0&#39;;
+ 
+       r = guestfs_set_libvirt_requested_credential (g, i, reply, len);
+       if (r == -1)
+         exit (EXIT_FAILURE);
+     } else if (strcmp (creds[i], &quot;passphrase&quot;) == 0 ||
+                strcmp (creds[i], &quot;noechoprompt&quot;) == 0) {
+       prompt = guestfs_get_libvirt_requested_credential_prompt (g, i);
+       if (prompt &amp;&amp; strcmp (prompt, &quot;&quot;) != 0)
+         printf (&quot;%s: &quot;, prompt);
+       free (prompt);
+ 
+       pass = getpass (&quot;&quot;);
+       if (pass == NULL) {
+         perror (&quot;getpass&quot;);
+         exit (EXIT_FAILURE);
+       }
+       len = strlen (pass);
+ 
+       r = guestfs_set_libvirt_requested_credential (g, i, pass, len);
+       if (r == -1)
+         exit (EXIT_FAILURE);
+     }
+ 
+     free (creds[i]);
+   }
+ 
+   free (reply);
+   free (creds);
+ }</code></pre>
+
+<h1 id="example:-the-mount-local-api">EXAMPLE: THE MOUNT LOCAL API</h1>
+
+<pre><code> /* Demonstrate the use of the &#39;mount-local&#39; API.
+  *
+  * Run this program as (eg) mount-local /tmp/test.img.  Note that
+  * &#39;/tmp/test.img&#39; is created or overwritten.  Follow the instructions
+  * on screen.
+  *
+  * See &quot;MOUNT LOCAL&quot; in guestfs(3).
+  */
+ 
+ #include &lt;stdio.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;string.h&gt;
+ #include &lt;unistd.h&gt;
+ #include &lt;fcntl.h&gt;
+ #include &lt;sys/wait.h&gt;
+ 
+ #include &lt;guestfs.h&gt;
+ 
+ #ifndef O_CLOEXEC
+ #define O_CLOEXEC 0
+ #endif
+ 
+ /* Define a list of filesystem mount options (used on the libguestfs
+  * side, nothing to do with FUSE).  An empty string may be used here
+  * instead.
+  */
+ #define MOUNT_OPTIONS &quot;acl,user_xattr&quot;
+ 
+ /* Size of the disk (megabytes). */
+ #define SIZE_MB 512
+ 
+ static void
+ usage (void)
+ {
+   fprintf (stderr,
+            &quot;Usage: mount-local disk.img\n&quot;
+            &quot;\n&quot;
+            &quot;NOTE: disk.img will be created or overwritten.\n&quot;
+            &quot;\n&quot;);
+ }
+ 
+ int
+ main (int argc, char *argv[])
+ {
+   guestfs_h *g;
+   int r;
+   char tempdir[] = &quot;/tmp/mlXXXXXX&quot;;
+   pid_t pid;
+   char *shell, *p;
+ 
+   if (argc != 2) {
+     usage ();
+     exit (EXIT_FAILURE);
+   }
+ 
+   if (argv[1][0] == &#39;-&#39;) {
+     usage ();
+     exit (EXIT_FAILURE);
+   }
+ 
+   printf (&quot;\n&quot;
+           &quot;This is the &#39;mount-local&#39; demonstration program.  Follow the\n&quot;
+           &quot;instructions on screen.\n&quot;
+           &quot;\n&quot;
+           &quot;Creating and formatting the disk image, please wait a moment ...\n&quot;);
+   fflush (stdout);
+ 
+   /* Guestfs handle. */
+   g = guestfs_create ();
+   if (g == NULL) {
+     perror (&quot;could not create libguestfs handle&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Create the output disk image: raw sparse. */
+   if (guestfs_disk_create (g, argv[1], &quot;raw&quot;, SIZE_MB * 1024 * 1024, -1) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Create the disk image and format it with a partition and a filesystem. */
+   if (guestfs_add_drive_opts (g, argv[1],
+                               GUESTFS_ADD_DRIVE_OPTS_FORMAT, &quot;raw&quot;,
+                               -1) == -1)
+     exit (EXIT_FAILURE);
+ 
+   if (guestfs_launch (g) == -1)
+     exit (EXIT_FAILURE);
+ 
+   if (guestfs_part_disk (g, &quot;/dev/sda&quot;, &quot;mbr&quot;) == -1)
+     exit (EXIT_FAILURE);
+ 
+   if (guestfs_mkfs (g, &quot;ext2&quot;, &quot;/dev/sda1&quot;) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Mount the empty filesystem. */
+   if (guestfs_mount_options (g, MOUNT_OPTIONS, &quot;/dev/sda1&quot;, &quot;/&quot;) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Create a file in the new filesystem. */
+   if (guestfs_touch (g, &quot;/PUT_FILES_AND_DIRECTORIES_HERE&quot;) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Create a temporary mount directory. */
+   if (mkdtemp (tempdir) == NULL) {
+     perror (&quot;mkdtemp&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Mount the filesystem. */
+   if (guestfs_mount_local (g, tempdir, -1) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Fork the shell for the user. */
+   pid = fork ();
+   if (pid == -1) {
+     perror (&quot;fork&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   if (pid == 0) {               /* Child. */
+     if (chdir (tempdir) == -1) {
+       perror (tempdir);
+       _exit (EXIT_FAILURE);
+     }
+ 
+     printf (&quot;\n&quot;
+             &quot;The *current directory* is a FUSE filesystem backed by the disk\n&quot;
+             &quot;image which is managed by libguestfs.  Any files or directories\n&quot;
+             &quot;you copy into here (up to %d MB) will be saved into the disk\n&quot;
+             &quot;image.  You can also delete files, create certain special files\n&quot;
+             &quot;and so on.\n&quot;
+             &quot;\n&quot;
+             &quot;When you have finished adding files, hit ^D or type &#39;exit&#39; to\n&quot;
+             &quot;exit the shell and return to the mount-local program.\n&quot;
+             &quot;\n&quot;,
+             SIZE_MB);
+ 
+     shell = getenv (&quot;SHELL&quot;);
+     if (!shell)
+       r = system (&quot;/bin/sh&quot;);
+     else {
+       /* Set a magic prompt.  We only know how to do this for bash. */
+       p = strrchr (shell, &#39;/&#39;);
+       if (p &amp;&amp; strcmp (p+1, &quot;bash&quot;) == 0) {
+         size_t len = 64 + strlen (shell);
+         char buf[len];
+ 
+         snprintf (buf, len, &quot;PS1=&#39;mount-local-shell&gt; &#39; %s --norc -i&quot;, shell);
+         r = system (buf);
+       } else
+         r = system (shell);
+     }
+     if (r == -1) {
+       fprintf (stderr, &quot;error: failed to run sub-shell (%s) &quot;
+                &quot;(is $SHELL set correctly?)\n&quot;,
+                shell);
+       //FALLTHROUGH
+     }
+ 
+     if (chdir (&quot;/&quot;) == -1)
+       perror (&quot;chdir: /&quot;);
+     guestfs_umount_local (g, GUESTFS_UMOUNT_LOCAL_RETRY, 1, -1);
+     _exit (EXIT_SUCCESS);
+   }
+ 
+   /* Note that we are *not* waiting for the child yet.  We want to
+    * run the FUSE code in parallel with the subshell.
+    */
+ 
+   /* We&#39;re going to hide libguestfs errors here, but in a real program
+    * you would probably want to log them somewhere.
+    */
+   guestfs_push_error_handler (g, NULL, NULL);
+ 
+   /* Now run the FUSE thread. */
+   if (guestfs_mount_local_run (g) == -1)
+     exit (EXIT_FAILURE);
+ 
+   guestfs_pop_error_handler (g);
+ 
+   waitpid (pid, NULL, 0);
+ 
+   /* Shutdown the handle explicitly so write errors can be detected. */
+   if (guestfs_shutdown (g) == -1)
+     exit (EXIT_FAILURE);
+ 
+   guestfs_close (g);
+ 
+   printf (&quot;\n&quot;
+           &quot;Any files or directories that you copied in have been saved into\n&quot;
+           &quot;the disk image called &#39;%s&#39;.\n&quot;
+           &quot;\n&quot;
+           &quot;Try opening the disk image with guestfish to see those files:\n&quot;
+           &quot;\n&quot;
+           &quot;  guestfish -a %s -m /dev/sda1\n&quot;
+           &quot;\n&quot;,
+           argv[1], argv[1]);
+ 
+   exit (EXIT_SUCCESS);
+ }</code></pre>
+
+<h1 id="example:-multiple-handles-and-threads">EXAMPLE: MULTIPLE HANDLES AND THREADS</h1>
+
+<pre><code> /* Copy a directory from one libvirt guest to another.
+  *
+  * This is a more substantial example of using the libguestfs API,
+  * demonstrating amongst other things:
+  *
+  * - using multiple handles with threads
+  * - upload and downloading (using a pipe between handles)
+  * - inspection
+  */
+ 
+ #include &lt;stdio.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;stdint.h&gt;
+ #include &lt;inttypes.h&gt;
+ #include &lt;string.h&gt;
+ #include &lt;unistd.h&gt;
+ #include &lt;fcntl.h&gt;
+ #include &lt;errno.h&gt;
+ #include &lt;sys/time.h&gt;
+ 
+ #include &lt;pthread.h&gt;
+ 
+ #include &lt;guestfs.h&gt;
+ 
+ struct threaddata {
+   const char *src;
+   const char *srcdir;
+   int fd;
+   pthread_t mainthread;
+ };
+ 
+ static void *start_srcthread (void *);
+ static int open_guest (guestfs_h *g, const char *dom, int readonly);
+ static int64_t timeval_diff (const struct timeval *x, const struct timeval *y);
+ static int compare_keys_len (const void *p1, const void *p2);
+ static size_t count_strings (char *const *argv);
+ 
+ static void
+ usage (void)
+ {
+   fprintf (stderr,
+     &quot;Usage: copy-over source srcdir dest destdir\n&quot;
+     &quot;\n&quot;
+     &quot;  source  : the source domain (a libvirt guest name)\n&quot;
+     &quot;  srcdir  : the directory to copy from the source guest\n&quot;
+     &quot;  dest    : the destination domain (a libvirt guest name)\n&quot;
+     &quot;  destdir : the destination directory (must exist at destination)\n&quot;
+     &quot;\n&quot;
+     &quot;eg: copy-over Src /home/rjones Dest /tmp/dir\n&quot;
+     &quot;would copy /home/rjones from Src to /tmp/dir on Dest\n&quot;
+     &quot;\n&quot;
+     &quot;The destination guest cannot be running.\n&quot;);
+ }
+ 
+ int
+ main (int argc, char *argv[])
+ {
+   const char *src, *srcdir, *dest, *destdir;
+   guestfs_h *destg;
+   int fd[2];
+   pthread_t srcthread;
+   struct threaddata threaddata;
+   int err;
+   char fdname[128];
+   struct timeval start_t, end_t;
+   int64_t ms;
+ 
+   if (argc != 5) {
+     usage ();
+     exit (EXIT_FAILURE);
+   }
+ 
+   src = argv[1];
+   srcdir = argv[2];
+   dest = argv[3];
+   destdir = argv[4];
+ 
+   /* Instead of downloading to local disk and uploading, we are going
+    * to connect the source download and destination upload using a
+    * pipe.  Create that pipe.
+    */
+   if (pipe (fd) == -1) {
+     perror (&quot;pipe&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* We don&#39;t want the pipe to be passed to subprocesses. */
+   if (fcntl (fd[0], F_SETFD, FD_CLOEXEC) == -1 ||
+       fcntl (fd[1], F_SETFD, FD_CLOEXEC) == -1) {
+     perror (&quot;fcntl&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* The libguestfs API is synchronous, so if we want to use two
+    * handles concurrently, then we have to have two threads.  In this
+    * case the main thread (this one) is handling the destination
+    * domain (uploading), and we create one more thread to handle the
+    * source domain (downloading).
+    */
+   threaddata.src = src;
+   threaddata.srcdir = srcdir;
+   threaddata.fd = fd[1];
+   threaddata.mainthread = pthread_self ();
+   err = pthread_create (&amp;srcthread, NULL, start_srcthread, &amp;threaddata);
+   if (err != 0) {
+     fprintf (stderr, &quot;pthread_create: %s\n&quot;, strerror (err));
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Open the destination domain. */
+   destg = guestfs_create ();
+   if (!destg) {
+     perror (&quot;failed to create libguestfs handle&quot;);
+     pthread_cancel (srcthread);
+     exit (EXIT_FAILURE);
+   }
+   if (open_guest (destg, dest, 0) == -1) {
+     pthread_cancel (srcthread);
+     exit (EXIT_FAILURE);
+   }
+ 
+   gettimeofday (&amp;start_t, NULL);
+ 
+   /* Begin the upload. */
+   snprintf (fdname, sizeof fdname, &quot;/dev/fd/%d&quot;, fd[0]);
+   if (guestfs_tar_in (destg, fdname, destdir) == -1) {
+     pthread_cancel (srcthread);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Close our end of the pipe.  The other thread will close the
+    * other side of the pipe.
+    */
+   close (fd[0]);
+ 
+   /* Wait for the other thread to finish. */
+   err = pthread_join (srcthread, NULL);
+   if (err != 0) {
+     fprintf (stderr, &quot;pthread_join: %s\n&quot;, strerror (err));
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Clean up. */
+   if (guestfs_shutdown (destg) == -1)
+     exit (EXIT_FAILURE);
+   guestfs_close (destg);
+ 
+   gettimeofday (&amp;end_t, NULL);
+ 
+   /* Print the elapsed time. */
+   ms = timeval_diff (&amp;start_t, &amp;end_t);
+   printf (&quot;copy finished, elapsed time (excluding launch) was &quot;
+           &quot;%&quot; PRIi64 &quot;.%03&quot; PRIi64 &quot; s\n&quot;,
+           ms / 1000, ms % 1000);
+ 
+   exit (EXIT_SUCCESS);
+ }
+ 
+ static void *
+ start_srcthread (void *arg)
+ {
+   struct threaddata *threaddata = arg;
+   guestfs_h *srcg;
+   char fdname[128];
+ 
+   /* Open the source domain. */
+   srcg = guestfs_create ();
+   if (!srcg) {
+     perror (&quot;failed to create libguestfs handle&quot;);
+     pthread_cancel (threaddata-&gt;mainthread);
+     exit (EXIT_FAILURE);
+   }
+   if (open_guest (srcg, threaddata-&gt;src, 1) == -1) {
+     pthread_cancel (threaddata-&gt;mainthread);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Begin the download. */
+   snprintf (fdname, sizeof fdname, &quot;/dev/fd/%d&quot;, threaddata-&gt;fd);
+   if (guestfs_tar_out (srcg, threaddata-&gt;srcdir, fdname) == -1) {
+     pthread_cancel (threaddata-&gt;mainthread);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Close the pipe; this will cause the receiver to finish the upload. */
+   if (close (threaddata-&gt;fd) == -1) {
+     pthread_cancel (threaddata-&gt;mainthread);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Clean up. */
+   guestfs_close (srcg);
+ 
+   return NULL;
+ }
+ 
+ /* This function deals with the complexity of adding the domain,
+  * launching the handle, and mounting up filesystems.  See
+  * &#39;examples/inspect-vm.c&#39; to understand how this works.
+  */
+ static int
+ open_guest (guestfs_h *g, const char *dom, int readonly)
+ {
+   char **roots, *root, **mountpoints;
+   size_t i;
+ 
+   /* Use libvirt to find the guest disks and add them to the handle. */
+   if (guestfs_add_domain (g, dom,
+                           GUESTFS_ADD_DOMAIN_READONLY, readonly,
+                           -1) == -1)
+     return -1;
+ 
+   if (guestfs_launch (g) == -1)
+     return -1;
+ 
+   /* Inspect the guest, looking for operating systems. */
+   roots = guestfs_inspect_os (g);
+   if (roots == NULL)
+     return -1;
+ 
+   if (roots[0] == NULL || roots[1] != NULL) {
+     fprintf (stderr, &quot;copy-over: %s: no operating systems or multiple operating systems found\n&quot;, dom);
+     return -1;
+   }
+ 
+   root = roots[0];
+ 
+   /* Mount up the filesystems (like &#39;guestfish -i&#39;). */
+   mountpoints = guestfs_inspect_get_mountpoints (g, root);
+   if (mountpoints == NULL)
+     return -1;
+ 
+   qsort (mountpoints, count_strings (mountpoints) / 2, 2 * sizeof (char *),
+          compare_keys_len);
+   for (i = 0; mountpoints[i] != NULL; i += 2) {
+     /* Ignore failures from this call, since bogus entries can
+      * appear in the guest&#39;s /etc/fstab.
+      */
+     (readonly ? guestfs_mount_ro : guestfs_mount)
+       (g, mountpoints[i+1], mountpoints[i]);
+     free (mountpoints[i]);
+     free (mountpoints[i+1]);
+   }
+ 
+   free (mountpoints);
+ 
+   free (root);
+   free (roots);
+ 
+   /* Everything ready, no error. */
+   return 0;
+ }
+ 
+ /* Compute Y - X and return the result in milliseconds.
+  * Approximately the same as this code:
+  * http://www.mpp.mpg.de/~huber/util/timevaldiff.c
+  */
+ static int64_t
+ timeval_diff (const struct timeval *x, const struct timeval *y)
+ {
+   int64_t msec;
+ 
+   msec = (y-&gt;tv_sec - x-&gt;tv_sec) * 1000;
+   msec += (y-&gt;tv_usec - x-&gt;tv_usec) / 1000;
+   return msec;
+ }
+ 
+ static int
+ compare_keys_len (const void *p1, const void *p2)
+ {
+   const char *key1 = * (char * const *) p1;
+   const char *key2 = * (char * const *) p2;
+   return strlen (key1) - strlen (key2);
+ }
+ 
+ static size_t
+ count_strings (char *const *argv)
+ {
+   size_t c;
+ 
+   for (c = 0; argv[c]; ++c)
+     ;
+   return c;
+ }</code></pre>
+
+<h1 id="example:-fetch-dhcp-address-from-a-guest">EXAMPLE: FETCH DHCP ADDRESS FROM A GUEST</h1>
+
+<pre><code> /* This is a more significant example of a tool which can grab the
+  * DHCP address from some types of virtual machine.  Since there are
+  * so many possible ways to do this, without clarity on which is the
+  * best way, I don&#39;t want to make this into an official virt tool.
+  *
+  * For more information, see:
+  *
+  * https://rwmj.wordpress.com/2010/10/26/tip-find-the-ip-address-of-a-virtual-machine/
+  * https://rwmj.wordpress.com/2011/03/30/tip-another-way-to-get-the-ip-address-of-a-virtual-machine/
+  */
+ 
+ #include &lt;stdio.h&gt;
+ #include &lt;stdlib.h&gt;
+ #include &lt;string.h&gt;
+ #include &lt;errno.h&gt;
+ #include &lt;unistd.h&gt;
+ #include &lt;assert.h&gt;
+ 
+ #include &lt;guestfs.h&gt;
+ 
+ static int compare_keys_len (const void *p1, const void *p2);
+ static size_t count_strings (char *const *argv);
+ static void free_strings (char **argv);
+ static void mount_disks (guestfs_h *g, char *root);
+ static void print_dhcp_address (guestfs_h *g, char *root);
+ static void print_dhcp_address_linux (guestfs_h *g, char *root, const char *logfile);
+ static void print_dhcp_address_windows (guestfs_h *g, char *root);
+ 
+ int
+ main (int argc, char *argv[])
+ {
+   guestfs_h *g;
+   size_t i;
+   char **roots, *root;
+ 
+   if (argc &lt; 2) {
+     fprintf (stderr,
+              &quot;Usage: virt-dhcp-address disk.img [disk.img [...]]\n&quot;
+              &quot;Note that all disks must come from a single virtual machine.\n&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   g = guestfs_create ();
+   if (g == NULL) {
+     perror (&quot;failed to create libguestfs handle&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   for (i = 1; i &lt; (size_t) argc; ++i) {
+     /* Attach the disk image(s) read-only to libguestfs. */
+     if (guestfs_add_drive_opts (g, argv[i],
+                                 /* GUESTFS_ADD_DRIVE_OPTS_FORMAT, &quot;raw&quot;, */
+                                 GUESTFS_ADD_DRIVE_OPTS_READONLY, 1,
+                                 -1) /* this marks end of optional arguments */
+         == -1)
+       exit (EXIT_FAILURE);
+   }
+ 
+   /* Run the libguestfs back-end. */
+   if (guestfs_launch (g) == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Ask libguestfs to inspect for operating systems. */
+   roots = guestfs_inspect_os (g);
+   if (roots == NULL)
+     exit (EXIT_FAILURE);
+   if (roots[0] == NULL) {
+     fprintf (stderr, &quot;virt-dhcp-address: no operating systems found\n&quot;);
+     exit (EXIT_FAILURE);
+   }
+   if (count_strings (roots) &gt; 1) {
+     fprintf (stderr, &quot;virt-dhcp-address: multi-boot operating system\n&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   root = roots[0];
+ 
+   /* Mount up the guest&#39;s disks. */
+   mount_disks (g, root);
+ 
+   /* Print DHCP address. */
+   print_dhcp_address (g, root);
+ 
+   /* Close handle and exit. */
+   guestfs_close (g);
+   free_strings (roots);
+ 
+   exit (EXIT_SUCCESS);
+ }
+ 
+ static void
+ mount_disks (guestfs_h *g, char *root)
+ {
+   char **mountpoints;
+   size_t i;
+ 
+   /* Mount up the disks, like guestfish -i.
+    *
+    * Sort keys by length, shortest first, so that we end up
+    * mounting the filesystems in the correct order.
+    */
+   mountpoints = guestfs_inspect_get_mountpoints (g, root);
+   if (mountpoints == NULL)
+     exit (EXIT_FAILURE);
+ 
+   qsort (mountpoints, count_strings (mountpoints) / 2, 2 * sizeof (char *),
+          compare_keys_len);
+ 
+   for (i = 0; mountpoints[i] != NULL; i += 2) {
+     /* Ignore failures from this call, since bogus entries can
+      * appear in the guest&#39;s /etc/fstab.
+      */
+     guestfs_mount_ro (g, mountpoints[i+1], mountpoints[i]);
+   }
+ 
+   free_strings (mountpoints);
+ }
+ 
+ static void
+ print_dhcp_address (guestfs_h *g, char *root)
+ {
+   char *guest_type, *guest_distro;
+ 
+   /* Depending on the guest type, try to get the DHCP address. */
+   guest_type = guestfs_inspect_get_type (g, root);
+   if (guest_type == NULL)
+     exit (EXIT_FAILURE);
+ 
+   if (strcmp (guest_type, &quot;linux&quot;) == 0) {
+     guest_distro = guestfs_inspect_get_distro (g, root);
+     if (guest_distro == NULL)
+       exit (EXIT_FAILURE);
+ 
+     if (strcmp (guest_distro, &quot;fedora&quot;) == 0 ||
+         strcmp (guest_distro, &quot;rhel&quot;) == 0 ||
+         strcmp (guest_distro, &quot;redhat-based&quot;) == 0) {
+       print_dhcp_address_linux (g, root, &quot;/var/log/messages&quot;);
+     }
+     else if (strcmp (guest_distro, &quot;debian&quot;) == 0 ||
+              strcmp (guest_distro, &quot;ubuntu&quot;) == 0) {
+       print_dhcp_address_linux (g, root, &quot;/var/log/syslog&quot;);
+     }
+     else {
+       fprintf (stderr, &quot;virt-dhcp-address: don&#39;t know how to get DHCP address from &#39;%s&#39;\n&quot;,
+                guest_distro);
+       exit (EXIT_FAILURE);
+     }
+ 
+     free (guest_distro);
+   }
+   else if (strcmp (guest_type, &quot;windows&quot;) == 0) {
+     print_dhcp_address_windows (g, root);
+   }
+   else {
+     fprintf (stderr, &quot;virt-dhcp-address: don&#39;t know how to get DHCP address from &#39;%s&#39;\n&quot;,
+              guest_type);
+     exit (EXIT_FAILURE);
+   }
+ 
+   free (guest_type);
+ }
+ 
+ /* Look for dhclient messages in logfile.
+  */
+ static void
+ print_dhcp_address_linux (guestfs_h *g, char *root, const char *logfile)
+ {
+   char **lines, *p;
+   size_t len;
+ 
+   lines = guestfs_grep_opts (g, &quot;dhclient.*: bound to &quot;, logfile,
+                              GUESTFS_GREP_OPTS_EXTENDED, 1,
+                              -1);
+   if (lines == NULL)
+     exit (EXIT_FAILURE);
+ 
+   len = count_strings (lines);
+   if (len == 0) {
+     fprintf (stderr, &quot;virt-dhcp-address: cannot find DHCP address for this guest.\n&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   /* Only want the last message. */
+   p = strstr (lines[len-1], &quot;bound to &quot;);
+   assert (p);
+   p += 9;
+   len = strcspn (p, &quot; &quot;);
+   p[len] = &#39;\0&#39;;
+ 
+   printf (&quot;%s\n&quot;, p);
+ 
+   free_strings (lines);
+ }
+ 
+ /* Download the Windows SYSTEM hive and find DHCP configuration in there. */
+ static void
+ print_dhcp_address_windows (guestfs_h *g, char *root_fs)
+ {
+   char *system_path;
+   int64_t root, node, value;
+   struct guestfs_hivex_node_list *nodes;
+   char *controlset;
+   size_t i;
+   char *p;
+ 
+   /* Locate the SYSTEM hive case-sensitive path. */
+   system_path =
+     guestfs_case_sensitive_path (g, &quot;/windows/system32/config/system&quot;);
+   if (!system_path)
+     exit (EXIT_FAILURE);
+ 
+   /* Open the hive to parse it.  Note that before libguestfs 1.19.35
+    * you had to download the file and parse it using hivex(3).  Since
+    * libguestfs 1.19.35, parts of the hivex(3) API are now exposed
+    * through libguestfs, and that is what we&#39;ll use here because it is
+    * more convenient and avoids having to download the hive.
+    */
+   if (guestfs_hivex_open (g, system_path, -1) == -1)
+     exit (EXIT_FAILURE);
+ 
+   free (system_path);
+ 
+   root = guestfs_hivex_root (g);
+   if (root == -1)
+     exit (EXIT_FAILURE);
+ 
+   /* Get ControlSetXXX\Services\Tcpip\Parameters\Interfaces. */
+   controlset = guestfs_inspect_get_windows_current_control_set (g, root_fs);
+   if (controlset == NULL)
+     exit (EXIT_FAILURE);
+   const char *path[] = { controlset, &quot;Services&quot;, &quot;Tcpip&quot;, &quot;Parameters&quot;,
+                          &quot;Interfaces&quot; };
+   node = root;
+   for (i = 0; node &gt; 0 &amp;&amp; i &lt; sizeof path / sizeof path[0]; ++i)
+     node = guestfs_hivex_node_get_child (g, node, path[i]);
+ 
+   if (node == -1)
+     exit (EXIT_FAILURE);
+ 
+   if (node == 0) {
+     fprintf (stderr, &quot;virt-dhcp-address: HKLM\\System\\%s\\Services\\Tcpip\\Parameters\\Interfaces not found.&quot;, controlset);
+     exit (EXIT_FAILURE);
+   }
+ 
+   free (controlset);
+ 
+   /* Look for a node under here which has a &quot;DhcpIPAddress&quot; entry in it. */
+   nodes = guestfs_hivex_node_children (g, node);
+   if (nodes == NULL)
+     exit (EXIT_FAILURE);
+ 
+   value = 0;
+   for (i = 0; value == 0 &amp;&amp; i &lt; nodes-&gt;len; ++i) {
+     value = guestfs_hivex_node_get_value (g, nodes-&gt;val[i].hivex_node_h,
+                                           &quot;DhcpIPAddress&quot;);
+     if (value == -1)
+       exit (EXIT_FAILURE);
+   }
+ 
+   if (value == 0) {
+     fprintf (stderr, &quot;virt-dhcp-address: cannot find DHCP address for this guest.\n&quot;);
+     exit (EXIT_FAILURE);
+   }
+ 
+   guestfs_free_hivex_node_list (nodes);
+ 
+   /* Get the string and use libguestfs&#39;s auto-conversion to convert it
+    * to UTF-8 for output.
+    */
+   p = guestfs_hivex_value_utf8 (g, value);
+   if (!p)
+     exit (EXIT_FAILURE);
+ 
+   printf (&quot;%s\n&quot;, p);
+ 
+   free (p);
+ 
+   /* Close the hive handle. */
+   guestfs_hivex_close (g);
+ }
+ 
+ static int
+ compare_keys_len (const void *p1, const void *p2)
+ {
+   const char *key1 = * (char * const *) p1;
+   const char *key2 = * (char * const *) p2;
+   return strlen (key1) - strlen (key2);
+ }
+ 
+ static size_t
+ count_strings (char *const *argv)
+ {
+   size_t c;
+ 
+   for (c = 0; argv[c]; ++c)
+     ;
+   return c;
+ }
+ 
+ static void
+ free_strings (char **argv)
+ {
+   size_t i;
+ 
+   for (i = 0; argv[i]; ++i)
+     free (argv[i]);
+   free (argv);
+ }</code></pre>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfs-erlang.3.html">guestfs-erlang(3)</a>, <a href="guestfs-golang.3.html">guestfs-golang(3)</a>, <a href="guestfs-java.3.html">guestfs-java(3)</a>, <a href="guestfs-lua.3.html">guestfs-lua(3)</a>, <a href="guestfs-ocaml.3.html">guestfs-ocaml(3)</a>, <a href="guestfs-perl.3.html">guestfs-perl(3)</a>, <a href="guestfs-python.3.html">guestfs-python(3)</a>, <a href="guestfs-recipes.1.html">guestfs-recipes(1)</a>, <a href="guestfs-ruby.3.html">guestfs-ruby(3)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones (<code>rjones at redhat dot com</code>)</p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2010-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This manual page contains examples which we hope you will use in your programs. The examples may be freely copied, modified and distributed for any purpose without any restrictions.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

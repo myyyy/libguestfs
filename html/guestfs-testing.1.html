@@ -1,0 +1,414 @@
+
+<html>
+<head>
+<title>guestfs-testing</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#tests">TESTS</a>
+    <ul>
+      <li><a href="#run-libguestfs-test-tool">Run libguestfs-test-tool</a></li>
+      <li><a href="#check-kvm-acceleration-is-being-used.">Check KVM acceleration is being used.</a></li>
+      <li><a href="#check-which-version-of-libguestfs-qemu-libvirt-etc-is-being-used.">Check which version of libguestfs, qemu, libvirt, etc is being used.</a></li>
+      <li><a href="#try-to-open-a-local-guest-image-with-guestfish.">Try to open a local guest image with guestfish.</a></li>
+      <li><a href="#try-to-open-a-remote-guest-image-with-guestfish.">Try to open a remote guest image with guestfish.</a></li>
+      <li><a href="#run-virt-alignment-scan-on-all-your-guests.">Run virt-alignment-scan on all your guests.</a></li>
+      <li><a href="#run-virt-cat-on-some-files-in-guests.">Run virt-cat on some files in guests.</a></li>
+      <li><a href="#copy-some-files-into-a-shut-off-guest."><b>*</b> Copy some files into a <b>shut off</b> guest.</a></li>
+      <li><a href="#copy-some-files-out-of-a-guest.">Copy some files out of a guest.</a></li>
+      <li><a href="#run-virt-df.">Run virt-df.</a></li>
+      <li><a href="#try-importing-virt-df-csv-output-into-a-spreadsheet-or-database.">Try importing virt-df CSV output into a spreadsheet or database.</a></li>
+      <li><a href="#edit-a-file-in-a-shut-off-guest."><b>*</b> Edit a file in a <b>shut off</b> guest.</a></li>
+      <li><a href="#display-the-filesystems-partitions-lvs-in-a-guest.">Display the filesystems / partitions / LVs in a guest.</a></li>
+      <li><a href="#run-virt-inspector-on-all-your-guests.">Run virt-inspector on all your guests.</a></li>
+      <li><a href="#try-the-auditing-features-of-virt-ls-on-all-your-guests.">Try the auditing features of virt-ls on all your guests.</a></li>
+      <li><a href="#create-a-disk-image-from-a-tarball.">Create a disk image from a tarball.</a></li>
+      <li><a href="#run-virt-rescue-on-a-shut-off-disk-image-or-guest."><b>*</b> Run virt-rescue on a <b>shut off</b> disk image or guest.</a></li>
+      <li><a href="#resize-your-guests."><b>*</b> Resize your guests.</a></li>
+      <li><a href="#sparsify-a-guest-disk."><b>*</b> Sparsify a guest disk.</a></li>
+      <li><a href="#sysprep-a-shut-off-linux-guest."><b>*</b> &quot;sysprep&quot; a <b>shut off</b> Linux guest.</a></li>
+      <li><a href="#dump-the-windows-registry-from-your-windows-guests.">Dump the Windows Registry from your Windows guests.</a></li>
+    </ul>
+  </li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>guestfs-testing - manual testing of libguestfs, you can help!</p>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>This page has manual tests you can try on libguestfs. Everyone has a slightly different combination of platform, hardware and guests, so this testing is very valuable. Thanks for helping out!</p>
+
+<p>Tests marked with a <b>*</b> (asterisk) can <b>destroy data</b> if you&#39;re not careful. The others are safe and won&#39;t modify anything.</p>
+
+<p>Most of these tests will work with any libguestfs &ge; 1.14. Some of these tests (marked) require libguestfs &ge; 1.22.</p>
+
+<p>You can report bugs you find through this link:</p>
+
+<p><a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>or post on the mailing list (registration is <b>not</b> required, but if you&#39;re not registered then you&#39;ll have to wait for a moderator to manually approve your message):</p>
+
+<p><a href="https://www.redhat.com/mailman/listinfo/libguestfs">https://www.redhat.com/mailman/listinfo/libguestfs</a></p>
+
+<h1 id="tests">TESTS</h1>
+
+<h2 id="run-libguestfs-test-tool">Run libguestfs-test-tool</h2>
+
+<p>Run:</p>
+
+<pre><code> libguestfs-test-tool</code></pre>
+
+<p>This command does a very simple, non-destructive test that basic libguestfs is functioning. You don&#39;t need to run it as root.</p>
+
+<p>If it <i>doesn&#39;t</i> print <code>===== TEST FINISHED OK =====</code>, report it as a bug. It is very important that you include the <b>complete, unedited</b> output of <code>libguestfs-test-tool</code> in your bug report. See the <a href="#bugs">&quot;BUGS&quot;</a> section at the end of this page.</p>
+
+<h2 id="check-kvm-acceleration-is-being-used.">Check KVM acceleration is being used.</h2>
+
+<p>If your host has hardware virt acceleration, then with a hot cache libguestfs should be able to start up in a few seconds. Run the following command a few times:</p>
+
+<pre><code> time guestfish -a /dev/null run</code></pre>
+
+<p>After a few runs, the time should settle down to a few seconds (under 5 seconds on fast 64 bit hardware).</p>
+
+<p>How to check for hardware virt:</p>
+
+<p><a href="http://virt-tools.org/learning/check-hardware-virt/">http://virt-tools.org/learning/check-hardware-virt/</a></p>
+
+<p>If the command above does not work at all, use <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a>.</p>
+
+<h2 id="check-which-version-of-libguestfs-qemu-libvirt-etc-is-being-used.">Check which version of libguestfs, qemu, libvirt, etc is being used.</h2>
+
+<p>Look at the output of <code>libguestfs-test-tool</code> and check:</p>
+
+<ul>
+
+<li><p>Which version of libguestfs is being used? Near the beginning of the output you&#39;ll see a line like:</p>
+
+<pre><code> library version: 1.22.0fedora=19,release=1.fc19,libvirt</code></pre>
+
+</li>
+<li><p>Is libvirt being used? You can tell the difference by looking for the backend:</p>
+
+<pre><code> guestfs_get_backend: direct</code></pre>
+
+<p>or:</p>
+
+<pre><code> guestfs_get_backend: libvirt</code></pre>
+
+</li>
+<li><p>Which version of qemu is being used? It may be printed out:</p>
+
+<pre><code> libguestfs: qemu version 1.5</code></pre>
+
+<p>but note that if you&#39;re using libvirt then libguestfs doesn&#39;t have this information.</p>
+
+</li>
+<li><p>Which kernel is being used? <a href="supermin.1.html">supermin(1)</a> will try to pick the latest kernel installed on your machine. You can see the version in the appliance output, eg:</p>
+
+<pre><code> [    0.000000] Linux version 3.9.2-200.fc18.x86_64 [...]</code></pre>
+
+</li>
+</ul>
+
+<h2 id="try-to-open-a-local-guest-image-with-guestfish.">Try to open a local guest image with guestfish.</h2>
+
+<p>You can use any guest disk image for this test. Make sure you use the <code>--ro</code> flag so that <a href="guestfish.1.html">guestfish(1)</a> will open the disk image read-only.</p>
+
+<pre><code> guestfish --ro -a /path/to/disk.img -i</code></pre>
+
+<p>If the command is successful, it should print out the guest operating system name and put you at the guestfish <code>&gt;&lt;fs&gt;</code> prompt. You can use guestfish commands like <span style="white-space: nowrap;"><code>ll /</code></span> to look inside the disk image. To exit, type <code>exit</code>.</p>
+
+<p>If you get an error, try enabling debugging (add <code>-v</code> to the command line). Also make sure that <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> succeeds.</p>
+
+<h2 id="try-to-open-a-remote-guest-image-with-guestfish.">Try to open a remote guest image with guestfish.</h2>
+
+<p><b>Note</b> this test requires <span style="white-space: nowrap;">libguestfs &ge; 1.22</span> and <span style="white-space: nowrap;">qemu &ge; 1.5</span>. You may also have to disable libvirt by setting this:</p>
+
+<pre><code> export LIBGUESTFS_BACKEND=direct</code></pre>
+
+<p>If you have a disk image available over HTTP/FTP, try to open it.</p>
+
+<pre><code> guestfish --ro -i --format=raw -a http://www.example.com/disk.img</code></pre>
+
+<p>For SSH you will need to make sure that ssh-agent is set up so you don&#39;t need a password to log in to the remote machine. Then a command similar to this should work:</p>
+
+<pre><code> guestfish --ro -i --format=raw \
+   -a ssh://remote.example.com/path/to/disk.img</code></pre>
+
+<p>If you get an error, try enabling debugging (add <code>-v</code> to the command line). Also make sure that <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> succeeds.</p>
+
+<h2 id="run-virt-alignment-scan-on-all-your-guests.">Run virt-alignment-scan on all your guests.</h2>
+
+<p>Run <a href="virt-alignment-scan.1.html">virt-alignment-scan(1)</a> on guests or disk images:</p>
+
+<pre><code> virt-alignment-scan -a /path/to/disk.img</code></pre>
+
+<p>or:</p>
+
+<pre><code> virt-alignment-scan -d Guest</code></pre>
+
+<p>Does the alignment report match how the guest partitions are aligned?</p>
+
+<h2 id="run-virt-cat-on-some-files-in-guests.">Run virt-cat on some files in guests.</h2>
+
+<p><a href="virt-cat.1.html">virt-cat(1)</a> can display files from guests. For a Linux guest, try:</p>
+
+<pre><code> virt-cat LinuxGuest /etc/passwd</code></pre>
+
+<p>A recent feature is support for Windows paths, for example:</p>
+
+<pre><code> virt-cat WindowsGuest &#39;c:\windows\win.ini&#39;</code></pre>
+
+<p>An even better test is if you have a Windows guest with multiple drives. Do <code>D:</code>, <code>E:</code> etc paths work correctly?</p>
+
+<h2 id="copy-some-files-into-a-shut-off-guest."><b>*</b> Copy some files into a <b>shut off</b> guest.</h2>
+
+<p><a href="virt-copy-in.1.html">virt-copy-in(1)</a> can recursively copy files and directories into a guest or disk image.</p>
+
+<pre><code> virt-copy-in -d Guest /etc /tmp</code></pre>
+
+<p>This should copy local directory <i>/etc</i> to <i>/tmp/etc</i> in the guest (recursively). If you boot the guest, can you see all of the copied files and directories?</p>
+
+<p>Shut the guest down and try copying multiple files and directories:</p>
+
+<pre><code> virt-copy-in -d Guest /home /etc/issue /tmp</code></pre>
+
+<h2 id="copy-some-files-out-of-a-guest.">Copy some files out of a guest.</h2>
+
+<p><a href="virt-copy-out.1.html">virt-copy-out(1)</a> can recursively copy files and directories out of a guest or disk image.</p>
+
+<pre><code> virt-copy-out -d Guest /home .</code></pre>
+
+<p>Note the final space and period in the command is not a typo.</p>
+
+<p>This should copy <i>/home</i> from the guest into the current directory.</p>
+
+<h2 id="run-virt-df.">Run virt-df.</h2>
+
+<p><a href="virt-df.1.html">virt-df(1)</a> lists disk space. Run:</p>
+
+<pre><code> virt-df</code></pre>
+
+<p>You can try comparing this to the results from <a href="http://man.he.net/man1/df">df(1)</a> inside the guest, but there are some provisos:</p>
+
+<ul>
+
+<li><p>The guest must be idle.</p>
+
+</li>
+<li><p>The guest disks must be synched using <a href="http://man.he.net/man1/sync">sync(1)</a>.</p>
+
+</li>
+<li><p>Any action such as booting the guest will write log files causing the numbers to change.</p>
+
+</li>
+</ul>
+
+<p>We don&#39;t guarantee that the numbers will be identical even under these circumstances. They should be similar. It would indicate a bug if you saw greatly differing numbers.</p>
+
+<h2 id="try-importing-virt-df-csv-output-into-a-spreadsheet-or-database.">Try importing virt-df CSV output into a spreadsheet or database.</h2>
+
+<p>Run:</p>
+
+<pre><code> virt-df --csv &gt; /tmp/report.csv</code></pre>
+
+<p>Now try to load this into your favorite spreadsheet or database. Are the results reproduced faithfully in the spreadsheet/database?</p>
+
+<p><a href="http://www.postgresql.org/docs/8.1/static/sql-copy.html">http://www.postgresql.org/docs/8.1/static/sql-copy.html</a> <a href="http://dev.mysql.com/doc/refman/5.1/en/load-data.html">http://dev.mysql.com/doc/refman/5.1/en/load-data.html</a></p>
+
+<h2 id="edit-a-file-in-a-shut-off-guest."><b>*</b> Edit a file in a <b>shut off</b> guest.</h2>
+
+<p><a href="virt-edit.1.html">virt-edit(1)</a> can edit files in guests. Try this command on a RHEL or Fedora guest:</p>
+
+<pre><code> virt-edit LinuxGuest /etc/sysconfig/network</code></pre>
+
+<p>On other Linux guests try editing other files such as:</p>
+
+<pre><code> virt-edit LinuxGuest /etc/motd</code></pre>
+
+<p>Are the changes seen inside the guest when it is booted?</p>
+
+<h2 id="display-the-filesystems-partitions-lvs-in-a-guest.">Display the filesystems / partitions / LVs in a guest.</h2>
+
+<p><a href="virt-filesystems.1.html">virt-filesystems(1)</a> can be used to display filesystems in a guest. Try this command on any disk image or guest:</p>
+
+<pre><code> virt-filesystems -a /path/to/disk.img --all --long -h</code></pre>
+
+<p>or:</p>
+
+<pre><code> virt-filesystems -d Guest --all --long -h</code></pre>
+
+<p>Do the results match what is seen in the guest?</p>
+
+<h2 id="run-virt-inspector-on-all-your-guests.">Run virt-inspector on all your guests.</h2>
+
+<p>Use <a href="virt-inspector.1.html">virt-inspector(1)</a> to get a report on all of your guests or disk images:</p>
+
+<pre><code> virt-inspector -a /path/to/disk.img | less</code></pre>
+
+<p>or:</p>
+
+<pre><code> virt-inspector -d Guest | less</code></pre>
+
+<p>Do the results match what is actually in the guest?</p>
+
+<h2 id="try-the-auditing-features-of-virt-ls-on-all-your-guests.">Try the auditing features of virt-ls on all your guests.</h2>
+
+<p>List all setuid or setgid programs in a Linux virtual machine:</p>
+
+<pre><code> virt-ls -lR -d Guest / | grep &#39;^- [42]&#39;</code></pre>
+
+<p>List all public-writable directories in a Linux virtual machine:</p>
+
+<pre><code> virt-ls -lR -d Guest / | grep &#39;^d ...7&#39;</code></pre>
+
+<p>List all Unix domain sockets in a Linux virtual machine:</p>
+
+<pre><code> virt-ls -lR -d Guest / | grep &#39;^s&#39;</code></pre>
+
+<p>List all regular files with filenames ending in &#39;.png&#39;:</p>
+
+<pre><code> virt-ls -lR -d Guest / | grep -i &#39;^-.*\.png$&#39;</code></pre>
+
+<p>Display files larger than 10MB in home directories:</p>
+
+<pre><code> virt-ls -lR -d Guest /home | awk &#39;$3 &gt; 10*1024*1024&#39;</code></pre>
+
+<p>Find everything modified in the last 7 days:</p>
+
+<pre><code> virt-ls -lR -d Guest --time-days / | awk &#39;$6 &lt;= 7&#39;</code></pre>
+
+<p>Find regular files modified in the last 24 hours:</p>
+
+<pre><code> virt-ls -lR -d Guest --time-days / | grep &#39;^-&#39; | awk &#39;$6 &lt; 1&#39;</code></pre>
+
+<p>Do the results match what is in the guest?</p>
+
+<h2 id="create-a-disk-image-from-a-tarball.">Create a disk image from a tarball.</h2>
+
+<p>Use <a href="virt-make-fs.1.html">virt-make-fs(1)</a> to create a disk image from any tarball that you happen to have:</p>
+
+<pre><code> virt-make-fs --partition=mbr --type=vfat /any/tarball.tar.gz output.img</code></pre>
+
+<p>Add &#39;output.img&#39; as a raw disk to an existing guest. Check the guest can see the files. This test is particularly useful if you try it with a Windows guest.</p>
+
+<p>Try other partitioning schemes, eg. <i>--partition=gpt</i>.</p>
+
+<p>Try other filesystem formats, eg. <i>--type=ntfs</i>, <i>--type=ext2</i>.</p>
+
+<h2 id="run-virt-rescue-on-a-shut-off-disk-image-or-guest."><b>*</b> Run virt-rescue on a <b>shut off</b> disk image or guest.</h2>
+
+<p>Use <a href="virt-rescue.1.html">virt-rescue(1)</a> to examine, rescue or repair a <b>shut off</b> guest or disk image:</p>
+
+<pre><code> virt-rescue -a /path/to/disk.img</code></pre>
+
+<p>or:</p>
+
+<pre><code> virt-rescue -d Guest</code></pre>
+
+<p>Can you use ordinary shell commands to examine the guest?</p>
+
+<h2 id="resize-your-guests."><b>*</b> Resize your guests.</h2>
+
+<p>Use <a href="virt-resize.1.html">virt-resize(1)</a> to give a guest some more disk space. For example, if you have a disk image that is smaller than 30G, increase it to 30G by doing:</p>
+
+<pre><code> truncate -s 30G newdisk.img
+ virt-filesystems -a /path/to/olddisk.img --all --long -h
+ virt-resize /path/to/olddisk.img newdisk.img --expand /dev/sda1
+ qemu-kvm -m 1024 -hda newdisk.img</code></pre>
+
+<p>Does the guest still boot? Try expanding other partitions.</p>
+
+<h2 id="sparsify-a-guest-disk."><b>*</b> Sparsify a guest disk.</h2>
+
+<p>Using <a href="virt-sparsify.1.html">virt-sparsify(1)</a>, make a disk image more sparse:</p>
+
+<pre><code> virt-sparsify /path/to/olddisk.img newdisk.img</code></pre>
+
+<p>Is <i>newdisk.img</i> still bootable after sparsifying? Is the resulting disk image smaller (use <code>du</code> to check)?</p>
+
+<h2 id="sysprep-a-shut-off-linux-guest."><b>*</b> &quot;sysprep&quot; a <b>shut off</b> Linux guest.</h2>
+
+<p><b>Note</b> that this really will mess up an existing guest, so it&#39;s better to clone the guest before trying this.</p>
+
+<pre><code> virt-sysprep --hostname newhost.example.com -a /path/to/disk.img</code></pre>
+
+<p>Was the sysprep successful? After booting, what changes were made and were they successful?</p>
+
+<h2 id="dump-the-windows-registry-from-your-windows-guests.">Dump the Windows Registry from your Windows guests.</h2>
+
+<p>Use <a href="virt-win-reg.1.html">virt-win-reg(1)</a> to dump out the Windows Registry from any Windows guests that you have.</p>
+
+<pre><code> virt-win-reg --unsafe-printable-strings WindowsGuest &#39;HKLM\Software&#39; |
+   less
+
+ virt-win-reg --unsafe-printable-strings WindowsGuest &#39;HKLM\System&#39; |
+   less</code></pre>
+
+<p>Does the output match running <code>regedit</code> inside the guest?</p>
+
+<p>A recent feature is the ability to dump user registries, so try this, replacing <i>username</i> with the name of a local user in the guest:</p>
+
+<pre><code> virt-win-reg --unsafe-printable-strings WindowsGuest &#39;HKEY_USERS\username&#39; |
+   less</code></pre>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="guestfs-examples.3.html">guestfs-examples(3)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones (<code>rjones at redhat dot com</code>)</p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2011-2012 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

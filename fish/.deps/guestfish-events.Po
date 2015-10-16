@@ -62,8 +62,7 @@ guestfish-events.o: events.c ../config.h ../gnulib/lib/stdio.h \
  ../gnulib/lib/hash.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h \
  ../gnulib/lib/hash-pjw.h fish.h ../src/guestfs-internal-frontend.h \
  ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h fish-cmds.h
+ ../src/guestfs-internal-frontend-cleanups.h fish-cmds.h
 
 ../config.h:
 
@@ -254,7 +253,5 @@ fish.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 fish-cmds.h:

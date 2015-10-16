@@ -1,0 +1,523 @@
+"sysprep_operation_cron_spool.ml" 25 866 870 "sysprep_operation_cron_spool.ml" 25 866 888
+type(
+  Guestfs.guestfs -> 'a -> 'b -> unit
+)
+ident(
+  def cron_spool_perform "sysprep_operation_cron_spool.ml" 49 1700 1700 --
+)
+"sysprep_operation_cron_spool.ml" 25 866 890 "sysprep_operation_cron_spool.ml" 25 866 891
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "sysprep_operation_cron_spool.ml" 25 866 911 "sysprep_operation_cron_spool.ml" 47 1670 1698
+)
+"sysprep_operation_cron_spool.ml" 25 866 911 "sysprep_operation_cron_spool.ml" 25 866 915
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_cron_spool.ml" 25 866 916 "sysprep_operation_cron_spool.ml" 47 1670 1698
+)
+"sysprep_operation_cron_spool.ml" 25 866 916 "sysprep_operation_cron_spool.ml" 25 866 928
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_cron_spool.ml" 26 931 933 "sysprep_operation_cron_spool.ml" 47 1670 1698
+)
+"sysprep_operation_cron_spool.ml" 26 931 937 "sysprep_operation_cron_spool.ml" 26 931 943
+type(
+  string -> bool
+)
+"sysprep_operation_cron_spool.ml" 26 931 944 "sysprep_operation_cron_spool.ml" 26 931 948
+type(
+  string
+)
+ident(
+  def path "sysprep_operation_cron_spool.ml" 27 951 955 "sysprep_operation_cron_spool.ml" 31 1053 1074
+)
+"sysprep_operation_cron_spool.ml" 27 951 959 "sysprep_operation_cron_spool.ml" 27 951 967
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 28 970 982 "sysprep_operation_cron_spool.ml" 28 970 994
+type(
+  string -> char -> string option
+)
+ident(
+  ext_ref Common_utils.last_part_of
+)
+"sysprep_operation_cron_spool.ml" 28 970 995 "sysprep_operation_cron_spool.ml" 28 970 999
+type(
+  string
+)
+ident(
+  int_ref path "sysprep_operation_cron_spool.ml" 26 931 944 "sysprep_operation_cron_spool.ml" 26 931 948
+)
+"sysprep_operation_cron_spool.ml" 28 970 1000 "sysprep_operation_cron_spool.ml" 28 970 1003
+type(
+  char
+)
+"sysprep_operation_cron_spool.ml" 28 970 982 "sysprep_operation_cron_spool.ml" 28 970 1003
+call(
+  stack
+)
+type(
+  string option
+)
+"sysprep_operation_cron_spool.ml" 29 1009 1022 "sysprep_operation_cron_spool.ml" 29 1009 1023
+type(
+  string
+)
+ident(
+  def x "sysprep_operation_cron_spool.ml" 29 1009 1027 "sysprep_operation_cron_spool.ml" 29 1009 1028
+)
+"sysprep_operation_cron_spool.ml" 29 1009 1017 "sysprep_operation_cron_spool.ml" 29 1009 1023
+type(
+  string option
+)
+"sysprep_operation_cron_spool.ml" 29 1009 1027 "sysprep_operation_cron_spool.ml" 29 1009 1028
+type(
+  string
+)
+ident(
+  int_ref x "sysprep_operation_cron_spool.ml" 29 1009 1022 "sysprep_operation_cron_spool.ml" 29 1009 1023
+)
+"sysprep_operation_cron_spool.ml" 30 1029 1037 "sysprep_operation_cron_spool.ml" 30 1029 1041
+type(
+  string option
+)
+"sysprep_operation_cron_spool.ml" 30 1029 1045 "sysprep_operation_cron_spool.ml" 30 1029 1049
+type(
+  string
+)
+ident(
+  int_ref path "sysprep_operation_cron_spool.ml" 26 931 944 "sysprep_operation_cron_spool.ml" 26 931 948
+)
+"sysprep_operation_cron_spool.ml" 28 970 976 "sysprep_operation_cron_spool.ml" 30 1029 1049
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 31 1053 1057 "sysprep_operation_cron_spool.ml" 31 1053 1065
+type(
+  string
+)
+ident(
+  int_ref basename "sysprep_operation_cron_spool.ml" 27 951 959 "sysprep_operation_cron_spool.ml" 27 951 967
+)
+"sysprep_operation_cron_spool.ml" 31 1053 1066 "sysprep_operation_cron_spool.ml" 31 1053 1067
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation_cron_spool.ml" 31 1053 1068 "sysprep_operation_cron_spool.ml" 31 1053 1074
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 31 1053 1057 "sysprep_operation_cron_spool.ml" 31 1053 1074
+type(
+  bool
+)
+"sysprep_operation_cron_spool.ml" 27 951 955 "sysprep_operation_cron_spool.ml" 31 1053 1074
+type(
+  bool
+)
+"sysprep_operation_cron_spool.ml" 32 1078 1084 "sysprep_operation_cron_spool.ml" 32 1078 1089
+type(
+  string -> unit
+)
+"sysprep_operation_cron_spool.ml" 32 1078 1090 "sysprep_operation_cron_spool.ml" 32 1078 1091
+type(
+  string
+)
+ident(
+  def f "sysprep_operation_cron_spool.ml" 33 1094 1098 "sysprep_operation_cron_spool.ml" 39 1342 1367
+)
+"sysprep_operation_cron_spool.ml" 33 1094 1101 "sysprep_operation_cron_spool.ml" 33 1094 1102
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_cron_spool.ml" 25 866 890 "sysprep_operation_cron_spool.ml" 25 866 891
+)
+"sysprep_operation_cron_spool.ml" 33 1094 1101 "sysprep_operation_cron_spool.ml" 33 1094 1110
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"sysprep_operation_cron_spool.ml" 33 1094 1111 "sysprep_operation_cron_spool.ml" 33 1094 1112
+type(
+  string
+)
+ident(
+  int_ref f "sysprep_operation_cron_spool.ml" 32 1078 1090 "sysprep_operation_cron_spool.ml" 32 1078 1091
+)
+"sysprep_operation_cron_spool.ml" 33 1094 1101 "sysprep_operation_cron_spool.ml" 33 1094 1112
+type(
+  bool
+)
+"sysprep_operation_cron_spool.ml" 39 1342 1348 "sysprep_operation_cron_spool.ml" 39 1342 1349
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_cron_spool.ml" 25 866 890 "sysprep_operation_cron_spool.ml" 25 866 891
+)
+"sysprep_operation_cron_spool.ml" 39 1342 1348 "sysprep_operation_cron_spool.ml" 39 1342 1355
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"sysprep_operation_cron_spool.ml" 39 1342 1356 "sysprep_operation_cron_spool.ml" 39 1342 1357
+type(
+  string
+)
+ident(
+  int_ref f "sysprep_operation_cron_spool.ml" 32 1078 1090 "sysprep_operation_cron_spool.ml" 32 1078 1091
+)
+"sysprep_operation_cron_spool.ml" 39 1342 1358 "sysprep_operation_cron_spool.ml" 39 1342 1367
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 39 1342 1348 "sysprep_operation_cron_spool.ml" 39 1342 1367
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 33 1094 1098 "sysprep_operation_cron_spool.ml" 39 1342 1367
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 41 1372 1374 "sysprep_operation_cron_spool.ml" 41 1372 1390
+type(
+  Guestfs.guestfs -> ?filter:(string -> bool) -> string -> unit
+)
+ident(
+  ext_ref Common_utils.rm_rf_only_files
+)
+"sysprep_operation_cron_spool.ml" 41 1372 1391 "sysprep_operation_cron_spool.ml" 41 1372 1392
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_cron_spool.ml" 25 866 890 "sysprep_operation_cron_spool.ml" 25 866 891
+)
+"sysprep_operation_cron_spool.ml" 41 1372 1401 "sysprep_operation_cron_spool.ml" 41 1372 1407
+type(
+  string -> bool
+)
+ident(
+  int_ref is_seq "sysprep_operation_cron_spool.ml" 26 931 937 "sysprep_operation_cron_spool.ml" 26 931 943
+)
+"sysprep_operation_cron_spool.ml" 41 1372 1408 "sysprep_operation_cron_spool.ml" 41 1372 1426
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 41 1372 1374 "sysprep_operation_cron_spool.ml" 41 1372 1426
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 42 1428 1430 "sysprep_operation_cron_spool.ml" 42 1428 1435
+type(
+  string -> unit
+)
+ident(
+  int_ref reset "sysprep_operation_cron_spool.ml" 32 1078 1084 "sysprep_operation_cron_spool.ml" 32 1078 1089
+)
+"sysprep_operation_cron_spool.ml" 42 1428 1436 "sysprep_operation_cron_spool.ml" 42 1428 1465
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 42 1428 1430 "sysprep_operation_cron_spool.ml" 42 1428 1465
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 43 1467 1469 "sysprep_operation_cron_spool.ml" 43 1467 1479
+type(
+  (string -> unit) -> string array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_cron_spool.ml" 43 1467 1480 "sysprep_operation_cron_spool.ml" 43 1467 1481
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_cron_spool.ml" 25 866 890 "sysprep_operation_cron_spool.ml" 25 866 891
+)
+"sysprep_operation_cron_spool.ml" 43 1467 1480 "sysprep_operation_cron_spool.ml" 43 1467 1484
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_cron_spool.ml" 43 1467 1486 "sysprep_operation_cron_spool.ml" 43 1467 1487
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_cron_spool.ml" 25 866 890 "sysprep_operation_cron_spool.ml" 25 866 891
+)
+"sysprep_operation_cron_spool.ml" 43 1467 1486 "sysprep_operation_cron_spool.ml" 43 1467 1499
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"sysprep_operation_cron_spool.ml" 43 1467 1500 "sysprep_operation_cron_spool.ml" 43 1467 1521
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 43 1467 1485 "sysprep_operation_cron_spool.ml" 43 1467 1522
+type(
+  string array
+)
+"sysprep_operation_cron_spool.ml" 43 1467 1469 "sysprep_operation_cron_spool.ml" 43 1467 1522
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 44 1524 1526 "sysprep_operation_cron_spool.ml" 44 1524 1531
+type(
+  string -> unit
+)
+ident(
+  int_ref reset "sysprep_operation_cron_spool.ml" 32 1078 1084 "sysprep_operation_cron_spool.ml" 32 1078 1089
+)
+"sysprep_operation_cron_spool.ml" 44 1524 1532 "sysprep_operation_cron_spool.ml" 44 1524 1556
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 44 1524 1526 "sysprep_operation_cron_spool.ml" 44 1524 1556
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 45 1558 1560 "sysprep_operation_cron_spool.ml" 45 1558 1570
+type(
+  (string -> unit) -> string array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_cron_spool.ml" 45 1558 1571 "sysprep_operation_cron_spool.ml" 45 1558 1572
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_cron_spool.ml" 25 866 890 "sysprep_operation_cron_spool.ml" 25 866 891
+)
+"sysprep_operation_cron_spool.ml" 45 1558 1571 "sysprep_operation_cron_spool.ml" 45 1558 1575
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_cron_spool.ml" 45 1558 1577 "sysprep_operation_cron_spool.ml" 45 1558 1578
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_cron_spool.ml" 25 866 890 "sysprep_operation_cron_spool.ml" 25 866 891
+)
+"sysprep_operation_cron_spool.ml" 45 1558 1577 "sysprep_operation_cron_spool.ml" 45 1558 1590
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"sysprep_operation_cron_spool.ml" 45 1558 1591 "sysprep_operation_cron_spool.ml" 45 1558 1613
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 45 1558 1576 "sysprep_operation_cron_spool.ml" 45 1558 1614
+type(
+  string array
+)
+"sysprep_operation_cron_spool.ml" 45 1558 1560 "sysprep_operation_cron_spool.ml" 45 1558 1614
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 46 1616 1618 "sysprep_operation_cron_spool.ml" 46 1616 1634
+type(
+  Guestfs.guestfs -> ?filter:(string -> bool) -> string -> unit
+)
+ident(
+  ext_ref Common_utils.rm_rf_only_files
+)
+"sysprep_operation_cron_spool.ml" 46 1616 1635 "sysprep_operation_cron_spool.ml" 46 1616 1636
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_cron_spool.ml" 25 866 890 "sysprep_operation_cron_spool.ml" 25 866 891
+)
+"sysprep_operation_cron_spool.ml" 46 1616 1645 "sysprep_operation_cron_spool.ml" 46 1616 1651
+type(
+  string -> bool
+)
+ident(
+  int_ref is_seq "sysprep_operation_cron_spool.ml" 26 931 937 "sysprep_operation_cron_spool.ml" 26 931 943
+)
+"sysprep_operation_cron_spool.ml" 46 1616 1652 "sysprep_operation_cron_spool.ml" 46 1616 1668
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 46 1616 1618 "sysprep_operation_cron_spool.ml" 46 1616 1668
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 47 1670 1672 "sysprep_operation_cron_spool.ml" 47 1670 1677
+type(
+  string -> unit
+)
+ident(
+  int_ref reset "sysprep_operation_cron_spool.ml" 32 1078 1084 "sysprep_operation_cron_spool.ml" 32 1078 1089
+)
+"sysprep_operation_cron_spool.ml" 47 1670 1678 "sysprep_operation_cron_spool.ml" 47 1670 1698
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 47 1670 1672 "sysprep_operation_cron_spool.ml" 47 1670 1698
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 46 1616 1618 "sysprep_operation_cron_spool.ml" 47 1670 1698
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 45 1558 1560 "sysprep_operation_cron_spool.ml" 47 1670 1698
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 44 1524 1526 "sysprep_operation_cron_spool.ml" 47 1670 1698
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 43 1467 1469 "sysprep_operation_cron_spool.ml" 47 1670 1698
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 42 1428 1430 "sysprep_operation_cron_spool.ml" 47 1670 1698
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 41 1372 1374 "sysprep_operation_cron_spool.ml" 47 1670 1698
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 32 1078 1080 "sysprep_operation_cron_spool.ml" 47 1670 1698
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 26 931 933 "sysprep_operation_cron_spool.ml" 47 1670 1698
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 49 1700 1704 "sysprep_operation_cron_spool.ml" 49 1700 1706
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_cron_spool.ml" 57 1893 1893 --
+)
+"sysprep_operation_cron_spool.ml" 50 1711 1713 "sysprep_operation_cron_spool.ml" 50 1711 1721
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_cron_spool.ml" 51 1727 1738 "sysprep_operation_cron_spool.ml" 51 1727 1750
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 52 1752 1777 "sysprep_operation_cron_spool.ml" 52 1752 1781
+type(
+  bool
+)
+"sysprep_operation_cron_spool.ml" 53 1783 1797 "sysprep_operation_cron_spool.ml" 53 1783 1799
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_cron_spool.ml" 53 1783 1799 "sysprep_operation_cron_spool.ml" 53 1783 1834
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 53 1783 1797 "sysprep_operation_cron_spool.ml" 53 1783 1834
+type(
+  string
+)
+"sysprep_operation_cron_spool.ml" 54 1836 1870 "sysprep_operation_cron_spool.ml" 54 1836 1888
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref cron_spool_perform "sysprep_operation_cron_spool.ml" 25 866 870 "sysprep_operation_cron_spool.ml" 25 866 888
+)
+"sysprep_operation_cron_spool.ml" 54 1836 1865 "sysprep_operation_cron_spool.ml" 54 1836 1888
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_cron_spool.ml" 49 1700 1709 "sysprep_operation_cron_spool.ml" 55 1890 1891
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_cron_spool.ml" 57 1893 1897 "sysprep_operation_cron_spool.ml" 57 1893 1899
+type(
+  unit
+)
+"sysprep_operation_cron_spool.ml" 57 1893 1902 "sysprep_operation_cron_spool.ml" 57 1893 1920
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_cron_spool.ml" 57 1893 1921 "sysprep_operation_cron_spool.ml" 57 1893 1923
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_cron_spool.ml" 49 1700 1704 "sysprep_operation_cron_spool.ml" 49 1700 1706
+)
+"sysprep_operation_cron_spool.ml" 57 1893 1902 "sysprep_operation_cron_spool.ml" 57 1893 1923
+call(
+  stack
+)
+type(
+  unit
+)

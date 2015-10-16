@@ -1,0 +1,1706 @@
+"hostname.ml" 23 813 821 "hostname.ml" 23 813 833
+type(
+  Guestfs.guestfs -> string -> string -> bool
+)
+ident(
+  def set_hostname "hostname.ml" 23 813 813 --
+)
+"hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "hostname.ml" 23 813 856 "hostname.ml" 62 2052 2061
+)
+"hostname.ml" 23 813 856 "hostname.ml" 23 813 860
+type(
+  string
+)
+ident(
+  def root "hostname.ml" 23 813 861 "hostname.ml" 62 2052 2061
+)
+"hostname.ml" 23 813 861 "hostname.ml" 23 813 869
+type(
+  string
+)
+ident(
+  def hostname "hostname.ml" 24 872 874 "hostname.ml" 62 2052 2061
+)
+"hostname.ml" 24 872 878 "hostname.ml" 24 872 881
+type(
+  string
+)
+"hostname.ml" 24 872 884 "hostname.ml" 24 872 885
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 24 872 884 "hostname.ml" 24 872 902
+call(
+  stack
+)
+type(
+  string -> string
+)
+"hostname.ml" 24 872 903 "hostname.ml" 24 872 907
+type(
+  string
+)
+ident(
+  int_ref root "hostname.ml" 23 813 856 "hostname.ml" 23 813 860
+)
+"hostname.ml" 24 872 884 "hostname.ml" 24 872 907
+type(
+  string
+)
+"hostname.ml" 25 911 917 "hostname.ml" 25 911 923
+type(
+  string
+)
+"hostname.ml" 25 911 926 "hostname.ml" 25 911 927
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 25 911 926 "hostname.ml" 25 911 946
+call(
+  stack
+)
+type(
+  string -> string
+)
+"hostname.ml" 25 911 947 "hostname.ml" 25 911 951
+type(
+  string
+)
+ident(
+  int_ref root "hostname.ml" 23 813 856 "hostname.ml" 23 813 860
+)
+"hostname.ml" 25 911 926 "hostname.ml" 25 911 951
+type(
+  string
+)
+"hostname.ml" 26 955 961 "hostname.ml" 26 955 974
+type(
+  int
+)
+"hostname.ml" 26 955 977 "hostname.ml" 26 955 978
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 26 955 977 "hostname.ml" 26 955 1004
+call(
+  stack
+)
+type(
+  string -> int
+)
+"hostname.ml" 26 955 1005 "hostname.ml" 26 955 1009
+type(
+  string
+)
+ident(
+  int_ref root "hostname.ml" 23 813 856 "hostname.ml" 23 813 860
+)
+"hostname.ml" 26 955 977 "hostname.ml" 26 955 1009
+type(
+  int
+)
+"hostname.ml" 28 1014 1022 "hostname.ml" 28 1014 1025
+type(
+  string
+)
+ident(
+  int_ref typ "hostname.ml" 24 872 878 "hostname.ml" 24 872 881
+)
+"hostname.ml" 28 1014 1027 "hostname.ml" 28 1014 1033
+type(
+  string
+)
+ident(
+  int_ref distro "hostname.ml" 25 911 917 "hostname.ml" 25 911 923
+)
+"hostname.ml" 28 1014 1035 "hostname.ml" 28 1014 1048
+type(
+  int
+)
+ident(
+  int_ref major_version "hostname.ml" 26 955 961 "hostname.ml" 26 955 974
+)
+"hostname.ml" 28 1014 1022 "hostname.ml" 28 1014 1048
+type(
+  string * string * int
+)
+"hostname.ml" 33 1221 1225 "hostname.ml" 33 1221 1232
+type(
+  string
+)
+"hostname.ml" 33 1221 1234 "hostname.ml" 33 1221 1242
+type(
+  string
+)
+"hostname.ml" 33 1221 1244 "hostname.ml" 33 1221 1245
+type(
+  int
+)
+ident(
+  def v "hostname.ml" 33 1221 1246 "hostname.ml" 36 1338 1346
+)
+"hostname.ml" 33 1221 1225 "hostname.ml" 33 1221 1245
+type(
+  string * string * int
+)
+"hostname.ml" 33 1221 1251 "hostname.ml" 33 1221 1252
+type(
+  int
+)
+ident(
+  int_ref v "hostname.ml" 33 1221 1244 "hostname.ml" 33 1221 1245
+)
+"hostname.ml" 33 1221 1253 "hostname.ml" 33 1221 1255
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"hostname.ml" 33 1221 1256 "hostname.ml" 33 1221 1258
+type(
+  int
+)
+"hostname.ml" 33 1221 1251 "hostname.ml" 33 1221 1258
+type(
+  bool
+)
+"hostname.ml" 34 1262 1266 "hostname.ml" 34 1262 1285
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  int_ref update_etc_hostname "hostname.ml" 81 2596 2600 "hostname.ml" 81 2596 2619
+)
+"hostname.ml" 34 1262 1286 "hostname.ml" 34 1262 1287
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 34 1262 1288 "hostname.ml" 34 1262 1296
+type(
+  string
+)
+ident(
+  int_ref hostname "hostname.ml" 23 813 861 "hostname.ml" 23 813 869
+)
+"hostname.ml" 34 1262 1266 "hostname.ml" 34 1262 1296
+call(
+  stack
+)
+type(
+  unit
+)
+"hostname.ml" 35 1298 1302 "hostname.ml" 35 1298 1325
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  int_ref update_etc_machine_info "hostname.ml" 84 2678 2682 "hostname.ml" 84 2678 2705
+)
+"hostname.ml" 35 1298 1326 "hostname.ml" 35 1298 1327
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 35 1298 1328 "hostname.ml" 35 1298 1336
+type(
+  string
+)
+ident(
+  int_ref hostname "hostname.ml" 23 813 861 "hostname.ml" 23 813 869
+)
+"hostname.ml" 35 1298 1302 "hostname.ml" 35 1298 1336
+call(
+  stack
+)
+type(
+  unit
+)
+"hostname.ml" 36 1338 1342 "hostname.ml" 36 1338 1346
+type(
+  bool
+)
+"hostname.ml" 35 1298 1302 "hostname.ml" 36 1338 1346
+type(
+  bool
+)
+"hostname.ml" 34 1262 1266 "hostname.ml" 36 1338 1346
+type(
+  bool
+)
+"hostname.ml" 33 1221 1246 "hostname.ml" 36 1338 1346
+type(
+  bool
+)
+"hostname.ml" 38 1348 1352 "hostname.ml" 38 1348 1359
+type(
+  string
+)
+"hostname.ml" 38 1348 1362 "hostname.ml" 38 1348 1368
+type(
+  string
+)
+"hostname.ml" 38 1348 1369 "hostname.ml" 38 1348 1377
+type(
+  string
+)
+"hostname.ml" 38 1348 1362 "hostname.ml" 38 1348 1377
+type(
+  string
+)
+"hostname.ml" 38 1348 1378 "hostname.ml" 38 1348 1395
+type(
+  string
+)
+"hostname.ml" 38 1348 1362 "hostname.ml" 38 1348 1395
+type(
+  string
+)
+"hostname.ml" 38 1348 1396 "hostname.ml" 38 1348 1410
+type(
+  string
+)
+"hostname.ml" 38 1348 1361 "hostname.ml" 38 1348 1411
+type(
+  string
+)
+"hostname.ml" 38 1348 1413 "hostname.ml" 38 1348 1414
+type(
+  int
+)
+ident(
+  def v "hostname.ml" 39 1415 1419 "hostname.ml" 42 1510 1518
+)
+"hostname.ml" 38 1348 1352 "hostname.ml" 38 1348 1414
+type(
+  string * string * int
+)
+"hostname.ml" 39 1415 1424 "hostname.ml" 39 1415 1425
+type(
+  int
+)
+ident(
+  int_ref v "hostname.ml" 38 1348 1413 "hostname.ml" 38 1348 1414
+)
+"hostname.ml" 39 1415 1426 "hostname.ml" 39 1415 1428
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"hostname.ml" 39 1415 1429 "hostname.ml" 39 1415 1430
+type(
+  int
+)
+"hostname.ml" 39 1415 1424 "hostname.ml" 39 1415 1430
+type(
+  bool
+)
+"hostname.ml" 40 1434 1438 "hostname.ml" 40 1434 1457
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  int_ref update_etc_hostname "hostname.ml" 81 2596 2600 "hostname.ml" 81 2596 2619
+)
+"hostname.ml" 40 1434 1458 "hostname.ml" 40 1434 1459
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 40 1434 1460 "hostname.ml" 40 1434 1468
+type(
+  string
+)
+ident(
+  int_ref hostname "hostname.ml" 23 813 861 "hostname.ml" 23 813 869
+)
+"hostname.ml" 40 1434 1438 "hostname.ml" 40 1434 1468
+call(
+  stack
+)
+type(
+  unit
+)
+"hostname.ml" 41 1470 1474 "hostname.ml" 41 1470 1497
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  int_ref update_etc_machine_info "hostname.ml" 84 2678 2682 "hostname.ml" 84 2678 2705
+)
+"hostname.ml" 41 1470 1498 "hostname.ml" 41 1470 1499
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 41 1470 1500 "hostname.ml" 41 1470 1508
+type(
+  string
+)
+ident(
+  int_ref hostname "hostname.ml" 23 813 861 "hostname.ml" 23 813 869
+)
+"hostname.ml" 41 1470 1474 "hostname.ml" 41 1470 1508
+call(
+  stack
+)
+type(
+  unit
+)
+"hostname.ml" 42 1510 1514 "hostname.ml" 42 1510 1518
+type(
+  bool
+)
+"hostname.ml" 41 1470 1474 "hostname.ml" 42 1510 1518
+type(
+  bool
+)
+"hostname.ml" 40 1434 1438 "hostname.ml" 42 1510 1518
+type(
+  bool
+)
+"hostname.ml" 39 1415 1419 "hostname.ml" 42 1510 1518
+type(
+  bool
+)
+"hostname.ml" 44 1520 1524 "hostname.ml" 44 1520 1531
+type(
+  string
+)
+"hostname.ml" 44 1520 1534 "hostname.ml" 44 1520 1542
+type(
+  string
+)
+"hostname.ml" 44 1520 1543 "hostname.ml" 44 1520 1551
+type(
+  string
+)
+"hostname.ml" 44 1520 1533 "hostname.ml" 44 1520 1552
+type(
+  string
+)
+"hostname.ml" 44 1520 1554 "hostname.ml" 44 1520 1555
+type(
+  int
+)
+"hostname.ml" 44 1520 1524 "hostname.ml" 44 1520 1555
+type(
+  string * string * int
+)
+"hostname.ml" 45 1559 1567 "hostname.ml" 45 1559 1579
+type(
+  string option
+)
+"hostname.ml" 45 1559 1582 "hostname.ml" 45 1559 1599
+type(
+  Guestfs.guestfs -> string option
+)
+ident(
+  int_ref read_etc_hostname "hostname.ml" 87 2792 2796 "hostname.ml" 87 2792 2813
+)
+"hostname.ml" 45 1559 1600 "hostname.ml" 45 1559 1601
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 45 1559 1582 "hostname.ml" 45 1559 1601
+call(
+  stack
+)
+type(
+  string option
+)
+"hostname.ml" 46 1605 1609 "hostname.ml" 46 1605 1628
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  int_ref update_etc_hostname "hostname.ml" 81 2596 2600 "hostname.ml" 81 2596 2619
+)
+"hostname.ml" 46 1605 1629 "hostname.ml" 46 1605 1630
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 46 1605 1631 "hostname.ml" 46 1605 1639
+type(
+  string
+)
+ident(
+  int_ref hostname "hostname.ml" 23 813 861 "hostname.ml" 23 813 869
+)
+"hostname.ml" 46 1605 1609 "hostname.ml" 46 1605 1639
+call(
+  stack
+)
+type(
+  unit
+)
+"hostname.ml" 47 1641 1652 "hostname.ml" 47 1641 1664
+type(
+  string option
+)
+ident(
+  int_ref old_hostname "hostname.ml" 45 1559 1567 "hostname.ml" 45 1559 1579
+)
+"hostname.ml" 48 1670 1681 "hostname.ml" 48 1670 1693
+type(
+  string
+)
+ident(
+  def old_hostname "hostname.ml" 48 1670 1697 "hostname.ml" 48 1670 1746
+)
+"hostname.ml" 48 1670 1676 "hostname.ml" 48 1670 1693
+type(
+  string option
+)
+"hostname.ml" 48 1670 1697 "hostname.ml" 48 1670 1722
+type(
+  Guestfs.guestfs -> string -> string -> unit
+)
+ident(
+  int_ref replace_host_in_etc_hosts "hostname.ml" 97 3024 3028 "hostname.ml" 97 3024 3053
+)
+"hostname.ml" 48 1670 1723 "hostname.ml" 48 1670 1724
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 48 1670 1725 "hostname.ml" 48 1670 1737
+type(
+  string
+)
+ident(
+  int_ref old_hostname "hostname.ml" 48 1670 1681 "hostname.ml" 48 1670 1693
+)
+"hostname.ml" 48 1670 1738 "hostname.ml" 48 1670 1746
+type(
+  string
+)
+ident(
+  int_ref hostname "hostname.ml" 23 813 861 "hostname.ml" 23 813 869
+)
+"hostname.ml" 48 1670 1697 "hostname.ml" 48 1670 1746
+call(
+  stack
+)
+type(
+  unit
+)
+"hostname.ml" 49 1747 1753 "hostname.ml" 49 1747 1757
+type(
+  string option
+)
+"hostname.ml" 49 1747 1761 "hostname.ml" 49 1747 1763
+type(
+  unit
+)
+"hostname.ml" 47 1641 1645 "hostname.ml" 50 1764 1769
+type(
+  unit
+)
+"hostname.ml" 51 1771 1775 "hostname.ml" 51 1771 1779
+type(
+  bool
+)
+"hostname.ml" 47 1641 1645 "hostname.ml" 51 1771 1779
+type(
+  bool
+)
+"hostname.ml" 46 1605 1609 "hostname.ml" 51 1771 1779
+type(
+  bool
+)
+"hostname.ml" 45 1559 1563 "hostname.ml" 51 1771 1779
+type(
+  bool
+)
+"hostname.ml" 53 1781 1785 "hostname.ml" 53 1781 1792
+type(
+  string
+)
+"hostname.ml" 53 1781 1795 "hostname.ml" 53 1781 1803
+type(
+  string
+)
+"hostname.ml" 53 1781 1804 "hostname.ml" 53 1781 1810
+type(
+  string
+)
+"hostname.ml" 53 1781 1795 "hostname.ml" 53 1781 1810
+type(
+  string
+)
+"hostname.ml" 53 1781 1811 "hostname.ml" 53 1781 1819
+type(
+  string
+)
+"hostname.ml" 53 1781 1795 "hostname.ml" 53 1781 1819
+type(
+  string
+)
+"hostname.ml" 53 1781 1820 "hostname.ml" 53 1781 1837
+type(
+  string
+)
+"hostname.ml" 53 1781 1795 "hostname.ml" 53 1781 1837
+type(
+  string
+)
+"hostname.ml" 53 1781 1838 "hostname.ml" 53 1781 1852
+type(
+  string
+)
+"hostname.ml" 53 1781 1794 "hostname.ml" 53 1781 1853
+type(
+  string
+)
+"hostname.ml" 53 1781 1855 "hostname.ml" 53 1781 1856
+type(
+  int
+)
+"hostname.ml" 53 1781 1785 "hostname.ml" 53 1781 1856
+type(
+  string * string * int
+)
+"hostname.ml" 54 1860 1864 "hostname.ml" 54 1860 1884
+type(
+  Guestfs.guestfs -> string -> string -> string -> unit
+)
+ident(
+  int_ref replace_line_in_file "hostname.ml" 67 2155 2159 "hostname.ml" 67 2155 2179
+)
+"hostname.ml" 54 1860 1885 "hostname.ml" 54 1860 1886
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 54 1860 1887 "hostname.ml" 54 1860 1911
+type(
+  string
+)
+"hostname.ml" 54 1860 1912 "hostname.ml" 54 1860 1922
+type(
+  string
+)
+"hostname.ml" 54 1860 1923 "hostname.ml" 54 1860 1931
+type(
+  string
+)
+ident(
+  int_ref hostname "hostname.ml" 23 813 861 "hostname.ml" 23 813 869
+)
+"hostname.ml" 54 1860 1864 "hostname.ml" 54 1860 1931
+call(
+  stack
+)
+type(
+  unit
+)
+"hostname.ml" 55 1933 1937 "hostname.ml" 55 1933 1941
+type(
+  bool
+)
+"hostname.ml" 54 1860 1864 "hostname.ml" 55 1933 1941
+type(
+  bool
+)
+"hostname.ml" 57 1943 1947 "hostname.ml" 57 1943 1954
+type(
+  string
+)
+"hostname.ml" 57 1943 1957 "hostname.ml" 57 1943 1967
+type(
+  string
+)
+"hostname.ml" 57 1943 1968 "hostname.ml" 57 1943 1974
+type(
+  string
+)
+"hostname.ml" 57 1943 1957 "hostname.ml" 57 1943 1974
+type(
+  string
+)
+"hostname.ml" 57 1943 1975 "hostname.ml" 57 1943 1987
+type(
+  string
+)
+"hostname.ml" 57 1943 1956 "hostname.ml" 57 1943 1988
+type(
+  string
+)
+"hostname.ml" 57 1943 1990 "hostname.ml" 57 1943 1991
+type(
+  int
+)
+"hostname.ml" 57 1943 1947 "hostname.ml" 57 1943 1991
+type(
+  string * string * int
+)
+"hostname.ml" 58 1995 1999 "hostname.ml" 58 1995 2000
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 23 813 835 "hostname.ml" 23 813 836
+)
+"hostname.ml" 58 1995 1999 "hostname.ml" 58 1995 2006
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"hostname.ml" 58 1995 2007 "hostname.ml" 58 1995 2022
+type(
+  string
+)
+"hostname.ml" 58 1995 2023 "hostname.ml" 58 1995 2031
+type(
+  string
+)
+ident(
+  int_ref hostname "hostname.ml" 23 813 861 "hostname.ml" 23 813 869
+)
+"hostname.ml" 58 1995 1999 "hostname.ml" 58 1995 2031
+type(
+  unit
+)
+"hostname.ml" 59 2033 2037 "hostname.ml" 59 2033 2041
+type(
+  bool
+)
+"hostname.ml" 58 1995 1999 "hostname.ml" 59 2033 2041
+type(
+  bool
+)
+"hostname.ml" 61 2043 2047 "hostname.ml" 61 2043 2048
+type(
+  string * string * int
+)
+"hostname.ml" 62 2052 2056 "hostname.ml" 62 2052 2061
+type(
+  bool
+)
+"hostname.ml" 28 1014 1016 "hostname.ml" 62 2052 2061
+type(
+  bool
+)
+"hostname.ml" 26 955 957 "hostname.ml" 62 2052 2061
+type(
+  bool
+)
+"hostname.ml" 25 911 913 "hostname.ml" 62 2052 2061
+type(
+  bool
+)
+"hostname.ml" 24 872 874 "hostname.ml" 62 2052 2061
+type(
+  bool
+)
+"hostname.ml" 67 2155 2159 "hostname.ml" 67 2155 2179
+type(
+  Guestfs.guestfs -> string -> string -> string -> unit
+)
+ident(
+  def replace_line_in_file "hostname.ml" 23 813 813 --
+)
+"hostname.ml" 67 2155 2180 "hostname.ml" 67 2155 2181
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "hostname.ml" 67 2155 2182 "hostname.ml" 79 2568 2594
+)
+"hostname.ml" 67 2155 2182 "hostname.ml" 67 2155 2190
+type(
+  string
+)
+ident(
+  def filename "hostname.ml" 67 2155 2191 "hostname.ml" 79 2568 2594
+)
+"hostname.ml" 67 2155 2191 "hostname.ml" 67 2155 2194
+type(
+  string
+)
+ident(
+  def key "hostname.ml" 67 2155 2195 "hostname.ml" 79 2568 2594
+)
+"hostname.ml" 67 2155 2195 "hostname.ml" 67 2155 2200
+type(
+  string
+)
+ident(
+  def value "hostname.ml" 68 2203 2205 "hostname.ml" 79 2568 2594
+)
+"hostname.ml" 68 2203 2209 "hostname.ml" 68 2203 2216
+type(
+  string
+)
+"hostname.ml" 69 2219 2226 "hostname.ml" 69 2219 2227
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 67 2155 2180 "hostname.ml" 67 2155 2181
+)
+"hostname.ml" 69 2219 2226 "hostname.ml" 69 2219 2235
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"hostname.ml" 69 2219 2236 "hostname.ml" 69 2219 2244
+type(
+  string
+)
+ident(
+  int_ref filename "hostname.ml" 67 2155 2182 "hostname.ml" 67 2155 2190
+)
+"hostname.ml" 69 2219 2226 "hostname.ml" 69 2219 2244
+type(
+  bool
+)
+"hostname.ml" 70 2252 2262 "hostname.ml" 70 2252 2267
+type(
+  string list
+)
+ident(
+  def lines "hostname.ml" 71 2311 2317 "hostname.ml" 75 2474 2511
+)
+"hostname.ml" 70 2252 2270 "hostname.ml" 70 2252 2283
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"hostname.ml" 70 2252 2285 "hostname.ml" 70 2252 2286
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 67 2155 2180 "hostname.ml" 67 2155 2181
+)
+"hostname.ml" 70 2252 2285 "hostname.ml" 70 2252 2297
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"hostname.ml" 70 2252 2298 "hostname.ml" 70 2252 2306
+type(
+  string
+)
+ident(
+  int_ref filename "hostname.ml" 67 2155 2182 "hostname.ml" 67 2155 2190
+)
+"hostname.ml" 70 2252 2284 "hostname.ml" 70 2252 2307
+type(
+  string array
+)
+"hostname.ml" 70 2252 2270 "hostname.ml" 70 2252 2307
+call(
+  stack
+)
+type(
+  string list
+)
+"hostname.ml" 71 2311 2321 "hostname.ml" 71 2311 2326
+type(
+  string list
+)
+ident(
+  def lines "hostname.ml" 74 2417 2423 "hostname.ml" 75 2474 2511
+)
+"hostname.ml" 71 2311 2329 "hostname.ml" 71 2311 2340
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"hostname.ml" 72 2343 2355 "hostname.ml" 72 2343 2359
+type(
+  string
+)
+ident(
+  def line "hostname.ml" 72 2343 2363 "hostname.ml" 72 2343 2399
+)
+"hostname.ml" 72 2343 2363 "hostname.ml" 72 2343 2366
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"hostname.ml" 72 2343 2368 "hostname.ml" 72 2343 2381
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Common_utils.string_prefix
+)
+"hostname.ml" 72 2343 2382 "hostname.ml" 72 2343 2386
+type(
+  string
+)
+ident(
+  int_ref line "hostname.ml" 72 2343 2355 "hostname.ml" 72 2343 2359
+)
+"hostname.ml" 72 2343 2388 "hostname.ml" 72 2343 2391
+type(
+  string
+)
+ident(
+  int_ref key "hostname.ml" 67 2155 2191 "hostname.ml" 67 2155 2194
+)
+"hostname.ml" 72 2343 2392 "hostname.ml" 72 2343 2393
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"hostname.ml" 72 2343 2394 "hostname.ml" 72 2343 2397
+type(
+  string
+)
+"hostname.ml" 72 2343 2387 "hostname.ml" 72 2343 2398
+call(
+  stack
+)
+type(
+  string
+)
+"hostname.ml" 72 2343 2367 "hostname.ml" 72 2343 2399
+call(
+  stack
+)
+type(
+  bool
+)
+"hostname.ml" 72 2343 2363 "hostname.ml" 72 2343 2399
+type(
+  bool
+)
+"hostname.ml" 71 2311 2341 "hostname.ml" 73 2400 2407
+type(
+  string -> bool
+)
+"hostname.ml" 73 2400 2408 "hostname.ml" 73 2400 2413
+type(
+  string list
+)
+ident(
+  int_ref lines "hostname.ml" 70 2252 2262 "hostname.ml" 70 2252 2267
+)
+"hostname.ml" 71 2311 2329 "hostname.ml" 73 2400 2413
+call(
+  stack
+)
+type(
+  string list
+)
+"hostname.ml" 74 2417 2427 "hostname.ml" 74 2417 2432
+type(
+  string list
+)
+ident(
+  def lines "hostname.ml" 75 2474 2480 "hostname.ml" 75 2474 2511
+)
+"hostname.ml" 74 2417 2435 "hostname.ml" 74 2417 2440
+type(
+  string list
+)
+ident(
+  int_ref lines "hostname.ml" 71 2311 2321 "hostname.ml" 71 2311 2326
+)
+"hostname.ml" 74 2417 2441 "hostname.ml" 74 2417 2442
+type(
+  string list -> string list -> string list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"hostname.ml" 74 2417 2444 "hostname.ml" 74 2417 2451
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"hostname.ml" 74 2417 2452 "hostname.ml" 74 2417 2459
+type(
+  (string -> string -> string, unit, string) format
+)
+"hostname.ml" 74 2417 2460 "hostname.ml" 74 2417 2463
+type(
+  string
+)
+ident(
+  int_ref key "hostname.ml" 67 2155 2191 "hostname.ml" 67 2155 2194
+)
+"hostname.ml" 74 2417 2464 "hostname.ml" 74 2417 2469
+type(
+  string
+)
+ident(
+  int_ref value "hostname.ml" 67 2155 2195 "hostname.ml" 67 2155 2200
+)
+"hostname.ml" 74 2417 2444 "hostname.ml" 74 2417 2469
+call(
+  stack
+)
+type(
+  string
+)
+"hostname.ml" 74 2417 2443 "hostname.ml" 74 2417 2470
+type(
+  string list
+)
+"hostname.ml" 74 2417 2435 "hostname.ml" 74 2417 2470
+call(
+  stack
+)
+type(
+  string list
+)
+"hostname.ml" 75 2474 2480 "hostname.ml" 75 2474 2493
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"hostname.ml" 75 2474 2494 "hostname.ml" 75 2474 2498
+type(
+  string
+)
+"hostname.ml" 75 2474 2499 "hostname.ml" 75 2474 2504
+type(
+  string list
+)
+ident(
+  int_ref lines "hostname.ml" 74 2417 2427 "hostname.ml" 74 2417 2432
+)
+"hostname.ml" 75 2474 2480 "hostname.ml" 75 2474 2504
+call(
+  stack
+)
+type(
+  string
+)
+"hostname.ml" 75 2474 2505 "hostname.ml" 75 2474 2506
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"hostname.ml" 75 2474 2507 "hostname.ml" 75 2474 2511
+type(
+  string
+)
+"hostname.ml" 75 2474 2480 "hostname.ml" 75 2474 2511
+call(
+  stack
+)
+type(
+  string
+)
+"hostname.ml" 74 2417 2423 "hostname.ml" 75 2474 2511
+type(
+  string
+)
+"hostname.ml" 71 2311 2317 "hostname.ml" 75 2474 2511
+type(
+  string
+)
+"hostname.ml" 69 2219 2250 "hostname.ml" 76 2512 2517
+type(
+  string
+)
+"hostname.ml" 77 2525 2531 "hostname.ml" 77 2525 2538
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"hostname.ml" 77 2525 2539 "hostname.ml" 77 2525 2548
+type(
+  (string -> string -> string, unit, string) format
+)
+"hostname.ml" 77 2525 2549 "hostname.ml" 77 2525 2552
+type(
+  string
+)
+ident(
+  int_ref key "hostname.ml" 67 2155 2191 "hostname.ml" 67 2155 2194
+)
+"hostname.ml" 77 2525 2553 "hostname.ml" 77 2525 2558
+type(
+  string
+)
+ident(
+  int_ref value "hostname.ml" 67 2155 2195 "hostname.ml" 67 2155 2200
+)
+"hostname.ml" 76 2512 2523 "hostname.ml" 78 2559 2564
+call(
+  stack
+)
+type(
+  string
+)
+"hostname.ml" 69 2219 2223 "hostname.ml" 78 2559 2564
+type(
+  string
+)
+"hostname.ml" 79 2568 2570 "hostname.ml" 79 2568 2571
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 67 2155 2180 "hostname.ml" 67 2155 2181
+)
+"hostname.ml" 79 2568 2570 "hostname.ml" 79 2568 2577
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"hostname.ml" 79 2568 2578 "hostname.ml" 79 2568 2586
+type(
+  string
+)
+ident(
+  int_ref filename "hostname.ml" 67 2155 2182 "hostname.ml" 67 2155 2190
+)
+"hostname.ml" 79 2568 2587 "hostname.ml" 79 2568 2594
+type(
+  string
+)
+ident(
+  int_ref content "hostname.ml" 68 2203 2209 "hostname.ml" 68 2203 2216
+)
+"hostname.ml" 79 2568 2570 "hostname.ml" 79 2568 2594
+type(
+  unit
+)
+"hostname.ml" 68 2203 2205 "hostname.ml" 79 2568 2594
+type(
+  unit
+)
+"hostname.ml" 81 2596 2600 "hostname.ml" 81 2596 2619
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  def update_etc_hostname "hostname.ml" 23 813 813 --
+)
+"hostname.ml" 81 2596 2620 "hostname.ml" 81 2596 2621
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "hostname.ml" 81 2596 2622 "hostname.ml" 82 2633 2676
+)
+"hostname.ml" 81 2596 2622 "hostname.ml" 81 2596 2630
+type(
+  string
+)
+ident(
+  def hostname "hostname.ml" 82 2633 2635 "hostname.ml" 82 2633 2676
+)
+"hostname.ml" 82 2633 2635 "hostname.ml" 82 2633 2636
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 81 2596 2620 "hostname.ml" 81 2596 2621
+)
+"hostname.ml" 82 2633 2635 "hostname.ml" 82 2633 2642
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"hostname.ml" 82 2633 2643 "hostname.ml" 82 2633 2658
+type(
+  string
+)
+"hostname.ml" 82 2633 2660 "hostname.ml" 82 2633 2668
+type(
+  string
+)
+ident(
+  int_ref hostname "hostname.ml" 81 2596 2622 "hostname.ml" 81 2596 2630
+)
+"hostname.ml" 82 2633 2669 "hostname.ml" 82 2633 2670
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"hostname.ml" 82 2633 2671 "hostname.ml" 82 2633 2675
+type(
+  string
+)
+"hostname.ml" 82 2633 2659 "hostname.ml" 82 2633 2676
+call(
+  stack
+)
+type(
+  string
+)
+"hostname.ml" 82 2633 2635 "hostname.ml" 82 2633 2676
+type(
+  unit
+)
+"hostname.ml" 84 2678 2682 "hostname.ml" 84 2678 2705
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  def update_etc_machine_info "hostname.ml" 23 813 813 --
+)
+"hostname.ml" 84 2678 2706 "hostname.ml" 84 2678 2707
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "hostname.ml" 84 2678 2708 "hostname.ml" 85 2719 2790
+)
+"hostname.ml" 84 2678 2708 "hostname.ml" 84 2678 2716
+type(
+  string
+)
+ident(
+  def hostname "hostname.ml" 85 2719 2721 "hostname.ml" 85 2719 2790
+)
+"hostname.ml" 85 2719 2721 "hostname.ml" 85 2719 2741
+type(
+  Guestfs.guestfs -> string -> string -> string -> unit
+)
+ident(
+  int_ref replace_line_in_file "hostname.ml" 67 2155 2159 "hostname.ml" 67 2155 2179
+)
+"hostname.ml" 85 2719 2742 "hostname.ml" 85 2719 2743
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 84 2678 2706 "hostname.ml" 84 2678 2707
+)
+"hostname.ml" 85 2719 2744 "hostname.ml" 85 2719 2763
+type(
+  string
+)
+"hostname.ml" 85 2719 2764 "hostname.ml" 85 2719 2781
+type(
+  string
+)
+"hostname.ml" 85 2719 2782 "hostname.ml" 85 2719 2790
+type(
+  string
+)
+ident(
+  int_ref hostname "hostname.ml" 84 2678 2708 "hostname.ml" 84 2678 2716
+)
+"hostname.ml" 85 2719 2721 "hostname.ml" 85 2719 2790
+call(
+  tail
+)
+type(
+  unit
+)
+"hostname.ml" 87 2792 2796 "hostname.ml" 87 2792 2813
+type(
+  Guestfs.guestfs -> string option
+)
+ident(
+  def read_etc_hostname "hostname.ml" 23 813 813 --
+)
+"hostname.ml" 87 2792 2814 "hostname.ml" 87 2792 2815
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "hostname.ml" 88 2818 2820 "hostname.ml" 95 3014 3022
+)
+"hostname.ml" 88 2818 2824 "hostname.ml" 88 2818 2832
+type(
+  string
+)
+"hostname.ml" 88 2818 2835 "hostname.ml" 88 2818 2850
+type(
+  string
+)
+"hostname.ml" 89 2854 2859 "hostname.ml" 89 2854 2860
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 87 2792 2814 "hostname.ml" 87 2792 2815
+)
+"hostname.ml" 89 2854 2859 "hostname.ml" 89 2854 2868
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"hostname.ml" 89 2854 2869 "hostname.ml" 89 2854 2877
+type(
+  string
+)
+ident(
+  int_ref filename "hostname.ml" 88 2818 2824 "hostname.ml" 88 2818 2832
+)
+"hostname.ml" 89 2854 2859 "hostname.ml" 89 2854 2877
+type(
+  bool
+)
+"hostname.ml" 90 2885 2893 "hostname.ml" 90 2885 2898
+type(
+  string list
+)
+ident(
+  def lines "hostname.ml" 91 2942 2946 "hostname.ml" 93 2988 3004
+)
+"hostname.ml" 90 2885 2901 "hostname.ml" 90 2885 2914
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"hostname.ml" 90 2885 2916 "hostname.ml" 90 2885 2917
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 87 2792 2814 "hostname.ml" 87 2792 2815
+)
+"hostname.ml" 90 2885 2916 "hostname.ml" 90 2885 2928
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"hostname.ml" 90 2885 2929 "hostname.ml" 90 2885 2937
+type(
+  string
+)
+ident(
+  int_ref filename "hostname.ml" 88 2818 2824 "hostname.ml" 88 2818 2832
+)
+"hostname.ml" 90 2885 2915 "hostname.ml" 90 2885 2938
+type(
+  string array
+)
+"hostname.ml" 90 2885 2901 "hostname.ml" 90 2885 2938
+call(
+  stack
+)
+type(
+  string list
+)
+"hostname.ml" 91 2942 2952 "hostname.ml" 91 2942 2957
+type(
+  string list
+)
+ident(
+  int_ref lines "hostname.ml" 90 2885 2893 "hostname.ml" 90 2885 2898
+)
+"hostname.ml" 92 2963 2969 "hostname.ml" 92 2963 2971
+type(
+  string
+)
+ident(
+  def hd "hostname.ml" 92 2963 2980 "hostname.ml" 92 2963 2987
+)
+"hostname.ml" 92 2963 2975 "hostname.ml" 92 2963 2976
+type(
+  string list
+)
+"hostname.ml" 92 2963 2969 "hostname.ml" 92 2963 2976
+type(
+  string list
+)
+"hostname.ml" 92 2963 2985 "hostname.ml" 92 2963 2987
+type(
+  string
+)
+ident(
+  int_ref hd "hostname.ml" 92 2963 2969 "hostname.ml" 92 2963 2971
+)
+"hostname.ml" 92 2963 2980 "hostname.ml" 92 2963 2987
+type(
+  string option
+)
+"hostname.ml" 93 2988 2994 "hostname.ml" 93 2988 2996
+type(
+  string list
+)
+"hostname.ml" 93 2988 3000 "hostname.ml" 93 2988 3004
+type(
+  string option
+)
+"hostname.ml" 91 2942 2946 "hostname.ml" 93 2988 3004
+type(
+  string option
+)
+"hostname.ml" 89 2854 2883 "hostname.ml" 94 3005 3008
+type(
+  string option
+)
+"hostname.ml" 95 3014 3018 "hostname.ml" 95 3014 3022
+type(
+  string option
+)
+"hostname.ml" 89 2854 2856 "hostname.ml" 95 3014 3022
+type(
+  string option
+)
+"hostname.ml" 88 2818 2820 "hostname.ml" 95 3014 3022
+type(
+  string option
+)
+"hostname.ml" 97 3024 3028 "hostname.ml" 97 3024 3053
+type(
+  Guestfs.guestfs -> string -> string -> unit
+)
+ident(
+  def replace_host_in_etc_hosts "hostname.ml" 23 813 813 --
+)
+"hostname.ml" 97 3024 3054 "hostname.ml" 97 3024 3055
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "hostname.ml" 97 3024 3056 "hostname.ml" 110 3443 3446
+)
+"hostname.ml" 97 3024 3056 "hostname.ml" 97 3024 3063
+type(
+  string
+)
+ident(
+  def oldhost "hostname.ml" 97 3024 3064 "hostname.ml" 110 3443 3446
+)
+"hostname.ml" 97 3024 3064 "hostname.ml" 97 3024 3071
+type(
+  string
+)
+ident(
+  def newhost "hostname.ml" 98 3074 3076 "hostname.ml" 110 3443 3446
+)
+"hostname.ml" 98 3074 3079 "hostname.ml" 98 3074 3080
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 97 3024 3054 "hostname.ml" 97 3024 3055
+)
+"hostname.ml" 98 3074 3079 "hostname.ml" 98 3074 3088
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"hostname.ml" 98 3074 3089 "hostname.ml" 98 3074 3101
+type(
+  string
+)
+"hostname.ml" 98 3074 3079 "hostname.ml" 98 3074 3101
+type(
+  bool
+)
+"hostname.ml" 99 3109 3117 "hostname.ml" 99 3109 3121
+type(
+  string
+)
+"hostname.ml" 99 3109 3124 "hostname.ml" 99 3109 3190
+type(
+  string
+)
+"hostname.ml" 100 3194 3198 "hostname.ml" 100 3194 3199
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 97 3024 3054 "hostname.ml" 97 3024 3055
+)
+"hostname.ml" 100 3194 3198 "hostname.ml" 100 3194 3208
+call(
+  stack
+)
+type(
+  string -> int -> unit
+)
+"hostname.ml" 100 3194 3209 "hostname.ml" 100 3194 3212
+type(
+  string
+)
+"hostname.ml" 100 3194 3213 "hostname.ml" 100 3194 3214
+type(
+  int
+)
+"hostname.ml" 100 3194 3198 "hostname.ml" 100 3194 3214
+type(
+  unit
+)
+"hostname.ml" 101 3216 3224 "hostname.ml" 101 3216 3231
+type(
+  string list
+)
+"hostname.ml" 101 3216 3234 "hostname.ml" 101 3216 3247
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"hostname.ml" 101 3216 3249 "hostname.ml" 101 3216 3250
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 97 3024 3054 "hostname.ml" 97 3024 3055
+)
+"hostname.ml" 101 3216 3249 "hostname.ml" 101 3216 3260
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"hostname.ml" 101 3216 3261 "hostname.ml" 101 3216 3265
+type(
+  string
+)
+ident(
+  int_ref expr "hostname.ml" 99 3109 3117 "hostname.ml" 99 3109 3121
+)
+"hostname.ml" 101 3216 3248 "hostname.ml" 101 3216 3266
+type(
+  string array
+)
+"hostname.ml" 101 3216 3234 "hostname.ml" 101 3216 3266
+call(
+  stack
+)
+type(
+  string list
+)
+"hostname.ml" 102 3270 3274 "hostname.ml" 102 3270 3283
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"hostname.ml" 103 3286 3296 "hostname.ml" 103 3286 3297
+type(
+  string
+)
+ident(
+  def m "hostname.ml" 104 3301 3309 "hostname.ml" 107 3400 3409
+)
+"hostname.ml" 104 3301 3313 "hostname.ml" 104 3301 3318
+type(
+  string
+)
+"hostname.ml" 104 3301 3321 "hostname.ml" 104 3301 3322
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 97 3024 3054 "hostname.ml" 97 3024 3055
+)
+"hostname.ml" 104 3301 3321 "hostname.ml" 104 3301 3330
+call(
+  stack
+)
+type(
+  string -> string
+)
+"hostname.ml" 104 3301 3331 "hostname.ml" 104 3301 3332
+type(
+  string
+)
+ident(
+  int_ref m "hostname.ml" 103 3286 3296 "hostname.ml" 103 3286 3297
+)
+"hostname.ml" 104 3301 3321 "hostname.ml" 104 3301 3332
+type(
+  string
+)
+"hostname.ml" 105 3336 3347 "hostname.ml" 105 3336 3352
+type(
+  string
+)
+ident(
+  int_ref value "hostname.ml" 104 3301 3313 "hostname.ml" 104 3301 3318
+)
+"hostname.ml" 105 3336 3353 "hostname.ml" 105 3336 3354
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"hostname.ml" 105 3336 3355 "hostname.ml" 105 3336 3362
+type(
+  string
+)
+ident(
+  int_ref oldhost "hostname.ml" 97 3024 3056 "hostname.ml" 97 3024 3063
+)
+"hostname.ml" 105 3336 3347 "hostname.ml" 105 3336 3362
+type(
+  bool
+)
+"hostname.ml" 106 3370 3380 "hostname.ml" 106 3370 3381
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 97 3024 3054 "hostname.ml" 97 3024 3055
+)
+"hostname.ml" 106 3370 3380 "hostname.ml" 106 3370 3389
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"hostname.ml" 106 3370 3390 "hostname.ml" 106 3370 3391
+type(
+  string
+)
+ident(
+  int_ref m "hostname.ml" 103 3286 3296 "hostname.ml" 103 3286 3297
+)
+"hostname.ml" 106 3370 3392 "hostname.ml" 106 3370 3399
+type(
+  string
+)
+ident(
+  int_ref newhost "hostname.ml" 97 3024 3064 "hostname.ml" 97 3024 3071
+)
+"hostname.ml" 105 3336 3368 "hostname.ml" 107 3400 3409
+type(
+  unit
+)
+"hostname.ml" 105 3336 3344 "hostname.ml" 107 3400 3409
+type(
+  unit
+)
+"hostname.ml" 104 3301 3309 "hostname.ml" 107 3400 3409
+type(
+  unit
+)
+"hostname.ml" 102 3270 3284 "hostname.ml" 108 3410 3415
+type(
+  string -> unit
+)
+"hostname.ml" 108 3410 3416 "hostname.ml" 108 3410 3423
+type(
+  string list
+)
+ident(
+  int_ref matches "hostname.ml" 101 3216 3224 "hostname.ml" 101 3216 3231
+)
+"hostname.ml" 102 3270 3274 "hostname.ml" 108 3410 3423
+call(
+  stack
+)
+type(
+  unit
+)
+"hostname.ml" 109 3425 3429 "hostname.ml" 109 3425 3430
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "hostname.ml" 97 3024 3054 "hostname.ml" 97 3024 3055
+)
+"hostname.ml" 109 3425 3429 "hostname.ml" 109 3425 3439
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"hostname.ml" 109 3425 3440 "hostname.ml" 109 3425 3442
+type(
+  unit
+)
+"hostname.ml" 109 3425 3429 "hostname.ml" 109 3425 3442
+type(
+  unit
+)
+"hostname.ml" 102 3270 3274 "hostname.ml" 109 3425 3442
+type(
+  unit
+)
+"hostname.ml" 101 3216 3220 "hostname.ml" 109 3425 3442
+type(
+  unit
+)
+"hostname.ml" 100 3194 3198 "hostname.ml" 109 3425 3442
+type(
+  unit
+)
+"hostname.ml" 98 3074 3107 "hostname.ml" 110 3443 3446
+type(
+  unit
+)
+"hostname.ml" 98 3074 3076 "hostname.ml" 110 3443 3446
+type(
+  unit
+)

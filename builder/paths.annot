@@ -1,0 +1,449 @@
+"paths.ml" 21 795 799 "paths.ml" 21 795 813
+type(
+  string option
+)
+ident(
+  def xdg_cache_home "paths.ml" 28 1017 1017 --
+)
+"paths.ml" 22 816 828 "paths.ml" 22 816 838
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"paths.ml" 22 816 839 "paths.ml" 22 816 855
+type(
+  string
+)
+"paths.ml" 22 816 828 "paths.ml" 22 816 855
+type(
+  string
+)
+"paths.ml" 22 816 856 "paths.ml" 22 816 858
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"paths.ml" 22 816 859 "paths.ml" 22 816 873
+type(
+  string
+)
+"paths.ml" 22 816 827 "paths.ml" 22 816 874
+call(
+  stack
+)
+type(
+  string
+)
+"paths.ml" 22 816 822 "paths.ml" 22 816 874
+type(
+  string option
+)
+"paths.ml" 23 875 882 "paths.ml" 23 875 891
+type(
+  exn
+)
+"paths.ml" 24 895 909 "paths.ml" 24 895 919
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"paths.ml" 24 895 920 "paths.ml" 24 895 926
+type(
+  string
+)
+"paths.ml" 24 895 909 "paths.ml" 24 895 926
+type(
+  string
+)
+"paths.ml" 24 895 927 "paths.ml" 24 895 929
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"paths.ml" 24 895 930 "paths.ml" 24 895 938
+type(
+  string
+)
+"paths.ml" 24 895 909 "paths.ml" 24 895 938
+call(
+  stack
+)
+type(
+  string
+)
+"paths.ml" 24 895 939 "paths.ml" 24 895 941
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"paths.ml" 24 895 942 "paths.ml" 24 895 956
+type(
+  string
+)
+"paths.ml" 24 895 908 "paths.ml" 24 895 957
+call(
+  stack
+)
+type(
+  string
+)
+"paths.ml" 24 895 903 "paths.ml" 24 895 957
+type(
+  string option
+)
+"paths.ml" 25 958 967 "paths.ml" 25 958 976
+type(
+  exn
+)
+"paths.ml" 26 980 986 "paths.ml" 26 980 990
+type(
+  string option
+)
+"paths.ml" 24 895 899 "paths.ml" 26 980 990
+type(
+  string option
+)
+"paths.ml" 22 816 818 "paths.ml" 26 980 990
+type(
+  string option
+)
+"paths.ml" 28 1017 1021 "paths.ml" 28 1017 1036
+type(
+  unit -> string option
+)
+ident(
+  def xdg_config_home "paths.ml" 35 1226 1226 --
+)
+"paths.ml" 28 1017 1037 "paths.ml" 28 1017 1039
+type(
+  unit
+)
+"paths.ml" 29 1042 1054 "paths.ml" 29 1042 1064
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"paths.ml" 29 1042 1065 "paths.ml" 29 1042 1082
+type(
+  string
+)
+"paths.ml" 29 1042 1054 "paths.ml" 29 1042 1082
+type(
+  string
+)
+"paths.ml" 29 1042 1083 "paths.ml" 29 1042 1085
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"paths.ml" 29 1042 1086 "paths.ml" 29 1042 1090
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"paths.ml" 29 1042 1053 "paths.ml" 29 1042 1091
+call(
+  stack
+)
+type(
+  string
+)
+"paths.ml" 29 1042 1048 "paths.ml" 29 1042 1091
+type(
+  string option
+)
+"paths.ml" 30 1092 1099 "paths.ml" 30 1092 1108
+type(
+  exn
+)
+"paths.ml" 31 1112 1126 "paths.ml" 31 1112 1136
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"paths.ml" 31 1112 1137 "paths.ml" 31 1112 1143
+type(
+  string
+)
+"paths.ml" 31 1112 1126 "paths.ml" 31 1112 1143
+type(
+  string
+)
+"paths.ml" 31 1112 1144 "paths.ml" 31 1112 1146
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"paths.ml" 31 1112 1147 "paths.ml" 31 1112 1156
+type(
+  string
+)
+"paths.ml" 31 1112 1126 "paths.ml" 31 1112 1156
+call(
+  stack
+)
+type(
+  string
+)
+"paths.ml" 31 1112 1157 "paths.ml" 31 1112 1159
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"paths.ml" 31 1112 1160 "paths.ml" 31 1112 1164
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"paths.ml" 31 1112 1125 "paths.ml" 31 1112 1165
+call(
+  stack
+)
+type(
+  string
+)
+"paths.ml" 31 1112 1120 "paths.ml" 31 1112 1165
+type(
+  string option
+)
+"paths.ml" 32 1166 1175 "paths.ml" 32 1166 1184
+type(
+  exn
+)
+"paths.ml" 33 1188 1194 "paths.ml" 33 1188 1198
+type(
+  string option
+)
+"paths.ml" 31 1112 1116 "paths.ml" 33 1188 1198
+type(
+  string option
+)
+"paths.ml" 29 1042 1044 "paths.ml" 33 1188 1198
+type(
+  string option
+)
+"paths.ml" 35 1226 1230 "paths.ml" 35 1226 1245
+type(
+  unit -> string list
+)
+ident(
+  def xdg_config_dirs "paths.ml" 41 1428 1464 --
+)
+"paths.ml" 35 1226 1246 "paths.ml" 35 1226 1248
+type(
+  unit
+)
+"paths.ml" 36 1251 1257 "paths.ml" 36 1251 1261
+type(
+  string
+)
+"paths.ml" 37 1264 1272 "paths.ml" 37 1264 1282
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"paths.ml" 37 1264 1283 "paths.ml" 37 1264 1300
+type(
+  string
+)
+"paths.ml" 37 1264 1272 "paths.ml" 37 1264 1300
+type(
+  string
+)
+"paths.ml" 38 1301 1310 "paths.ml" 38 1301 1319
+type(
+  exn
+)
+"paths.ml" 38 1301 1323 "paths.ml" 38 1301 1333
+type(
+  string
+)
+"paths.ml" 37 1264 1268 "paths.ml" 38 1301 1333
+type(
+  string
+)
+"paths.ml" 39 1337 1343 "paths.ml" 39 1337 1347
+type(
+  string list
+)
+"paths.ml" 39 1337 1350 "paths.ml" 39 1337 1363
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"paths.ml" 39 1337 1364 "paths.ml" 39 1337 1367
+type(
+  string
+)
+"paths.ml" 39 1337 1368 "paths.ml" 39 1337 1372
+type(
+  string
+)
+ident(
+  int_ref dirs "paths.ml" 36 1251 1257 "paths.ml" 36 1251 1261
+)
+"paths.ml" 39 1337 1350 "paths.ml" 39 1337 1372
+call(
+  stack
+)
+type(
+  string list
+)
+"paths.ml" 40 1376 1382 "paths.ml" 40 1376 1386
+type(
+  string list
+)
+"paths.ml" 40 1376 1389 "paths.ml" 40 1376 1400
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"paths.ml" 40 1376 1406 "paths.ml" 40 1376 1407
+type(
+  string
+)
+ident(
+  def x "paths.ml" 40 1376 1411 "paths.ml" 40 1376 1418
+)
+"paths.ml" 40 1376 1411 "paths.ml" 40 1376 1412
+type(
+  string
+)
+ident(
+  int_ref x "paths.ml" 40 1376 1406 "paths.ml" 40 1376 1407
+)
+"paths.ml" 40 1376 1413 "paths.ml" 40 1376 1415
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"paths.ml" 40 1376 1416 "paths.ml" 40 1376 1418
+type(
+  string
+)
+"paths.ml" 40 1376 1411 "paths.ml" 40 1376 1418
+type(
+  bool
+)
+"paths.ml" 40 1376 1401 "paths.ml" 40 1376 1419
+type(
+  string -> bool
+)
+"paths.ml" 40 1376 1420 "paths.ml" 40 1376 1424
+type(
+  string list
+)
+ident(
+  int_ref dirs "paths.ml" 39 1337 1343 "paths.ml" 39 1337 1347
+)
+"paths.ml" 40 1376 1389 "paths.ml" 40 1376 1424
+call(
+  stack
+)
+type(
+  string list
+)
+"paths.ml" 41 1428 1430 "paths.ml" 41 1428 1438
+type(
+  (string -> string) -> string list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"paths.ml" 41 1428 1444 "paths.ml" 41 1428 1445
+type(
+  string
+)
+ident(
+  def x "paths.ml" 41 1428 1449 "paths.ml" 41 1428 1458
+)
+"paths.ml" 41 1428 1449 "paths.ml" 41 1428 1450
+type(
+  string
+)
+ident(
+  int_ref x "paths.ml" 41 1428 1444 "paths.ml" 41 1428 1445
+)
+"paths.ml" 41 1428 1451 "paths.ml" 41 1428 1453
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"paths.ml" 41 1428 1454 "paths.ml" 41 1428 1458
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"paths.ml" 41 1428 1449 "paths.ml" 41 1428 1458
+call(
+  tail
+)
+type(
+  string
+)
+"paths.ml" 41 1428 1439 "paths.ml" 41 1428 1459
+type(
+  string -> string
+)
+"paths.ml" 41 1428 1460 "paths.ml" 41 1428 1464
+type(
+  string list
+)
+ident(
+  int_ref dirs "paths.ml" 40 1376 1382 "paths.ml" 40 1376 1386
+)
+"paths.ml" 41 1428 1430 "paths.ml" 41 1428 1464
+call(
+  tail
+)
+type(
+  string list
+)
+"paths.ml" 40 1376 1378 "paths.ml" 41 1428 1464
+type(
+  string list
+)
+"paths.ml" 39 1337 1339 "paths.ml" 41 1428 1464
+type(
+  string list
+)
+"paths.ml" 36 1251 1253 "paths.ml" 41 1428 1464
+type(
+  string list
+)

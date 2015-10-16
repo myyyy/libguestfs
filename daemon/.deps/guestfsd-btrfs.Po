@@ -45,8 +45,8 @@ guestfsd-btrfs.o: btrfs.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h daemon.h \
- /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h /usr/include/assert.h \
+ daemon.h /usr/include/errno.h /usr/include/x86_64-linux-gnu/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/x86_64-linux-gnu/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/rpc/types.h ../gnulib/lib/sys/time.h \
@@ -71,7 +71,8 @@ guestfsd-btrfs.o: btrfs.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/rpc/auth_des.h /usr/include/rpc/svc.h \
  /usr/include/rpc/svc_auth.h /usr/include/rpc/netdb.h \
  ../src/guestfs-internal-all.h actions.h optgroups.h \
- ../gnulib/lib/xstrtol.h
+ ../gnulib/lib/xstrtol.h ../gnulib/lib/c-ctype.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h
 
 ../config.h:
 
@@ -213,6 +214,8 @@ guestfsd-btrfs.o: btrfs.c ../config.h ../gnulib/lib/stdio.h \
 
 /usr/include/x86_64-linux-gnu/bits/unistd.h:
 
+/usr/include/assert.h:
+
 daemon.h:
 
 /usr/include/errno.h:
@@ -300,3 +303,7 @@ actions.h:
 optgroups.h:
 
 ../gnulib/lib/xstrtol.h:
+
+../gnulib/lib/c-ctype.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h:

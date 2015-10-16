@@ -65,8 +65,7 @@ guestfish-uri.o: uri.c ../config.h ../gnulib/lib/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h uri.h
+ ../src/guestfs-internal-frontend-cleanups.h uri.h
 
 ../config.h:
 
@@ -263,7 +262,5 @@ guestfish-uri.o: uri.c ../config.h ../gnulib/lib/stdio.h \
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 uri.h:

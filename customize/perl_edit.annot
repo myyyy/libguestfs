@@ -1,0 +1,75 @@
+"perl_edit.ml" 23 908 912 "perl_edit.ml" 23 908 921
+type(
+  Guestfs.t -> string -> string -> unit
+)
+ident(
+  def edit_file "perl_edit.ml" 23 908 972 --
+)
+"perl_edit.ml" 23 908 922 "perl_edit.ml" 23 908 923
+type(
+  Guestfs.t
+)
+ident(
+  def g "perl_edit.ml" 23 908 924 "perl_edit.ml" 23 908 972
+)
+"perl_edit.ml" 23 908 924 "perl_edit.ml" 23 908 928
+type(
+  string
+)
+ident(
+  def file "perl_edit.ml" 23 908 929 "perl_edit.ml" 23 908 972
+)
+"perl_edit.ml" 23 908 929 "perl_edit.ml" 23 908 933
+type(
+  string
+)
+ident(
+  def expr "perl_edit.ml" 23 908 936 "perl_edit.ml" 23 908 972
+)
+"perl_edit.ml" 23 908 936 "perl_edit.ml" 23 908 947
+type(
+  verbose:bool -> Guestfs.t -> string -> string -> unit
+)
+"perl_edit.ml" 23 908 949 "perl_edit.ml" 23 908 956
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"perl_edit.ml" 23 908 957 "perl_edit.ml" 23 908 959
+type(
+  unit
+)
+"perl_edit.ml" 23 908 948 "perl_edit.ml" 23 908 960
+call(
+  stack
+)
+type(
+  bool
+)
+"perl_edit.ml" 23 908 961 "perl_edit.ml" 23 908 962
+type(
+  Guestfs.t
+)
+ident(
+  int_ref g "perl_edit.ml" 23 908 922 "perl_edit.ml" 23 908 923
+)
+"perl_edit.ml" 23 908 963 "perl_edit.ml" 23 908 967
+type(
+  string
+)
+ident(
+  int_ref file "perl_edit.ml" 23 908 924 "perl_edit.ml" 23 908 928
+)
+"perl_edit.ml" 23 908 968 "perl_edit.ml" 23 908 972
+type(
+  string
+)
+ident(
+  int_ref expr "perl_edit.ml" 23 908 929 "perl_edit.ml" 23 908 933
+)
+"perl_edit.ml" 23 908 936 "perl_edit.ml" 23 908 972
+type(
+  unit
+)

@@ -1,0 +1,473 @@
+
+<html>
+<head>
+<title>virt-sparsify</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a>
+    <ul>
+      <li><a href="#important-note-about-sparse-output-images">IMPORTANT NOTE ABOUT SPARSE OUTPUT IMAGES</a></li>
+      <li><a href="#important-limitations">IMPORTANT LIMITATIONS</a></li>
+    </ul>
+  </li>
+  <li><a href="#examples">EXAMPLES</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#in-place-sparsification">IN-PLACE SPARSIFICATION</a></li>
+  <li><a href="#machine-readable-output">MACHINE READABLE OUTPUT</a></li>
+  <li><a href="#windows-8">WINDOWS 8</a></li>
+  <li><a href="#environment-variables">ENVIRONMENT VARIABLES</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-sparsify - Make a virtual machine disk sparse</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-sparsify [--options] indisk outdisk
+
+ virt-sparsify [--options] --in-place disk</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>Virt-sparsify is a tool which can make a virtual machine disk (or any disk image) sparse a.k.a. thin-provisioned. This means that free space within the disk image can be converted back to free space on the host.</p>
+
+<p>Virt-sparsify can locate and sparsify free space in most filesystems (eg. ext2/3/4, btrfs, NTFS, etc.), and also in LVM physical volumes.</p>
+
+<p>Virt-sparsify can also convert between some disk formats, for example converting a raw disk image to a thin-provisioned qcow2 image.</p>
+
+<p>Virt-sparsify can operate on any disk image, not just ones from virtual machines. However if a virtual machine has multiple disks and uses volume management, then virt-sparsify will work but not be very effective (<a href="http://bugzilla.redhat.com/887826">http://bugzilla.redhat.com/887826</a>).</p>
+
+<h2 id="important-note-about-sparse-output-images">IMPORTANT NOTE ABOUT SPARSE OUTPUT IMAGES</h2>
+
+<p>If the input is raw, then the default output is raw sparse. <b>You must check the output size using a tool that understands sparseness</b> such as <code>du -sh</code>. It can make a huge difference:</p>
+
+<pre><code> $ ls -lh test1.img
+ -rw-rw-r--. 1 rjones rjones 100M Aug  8 08:08 test1.img
+ $ du -sh test1.img
+ 3.6M   test1.img</code></pre>
+
+<p>(Compare the apparent size <b>100M</b> vs the actual size <b>3.6M</b>)</p>
+
+<h2 id="important-limitations">IMPORTANT LIMITATIONS</h2>
+
+<ul>
+
+<li><p>The virtual machine <i>must be shut down</i> before using this tool.</p>
+
+</li>
+<li><p>Virt-sparsify may require up to 2x the virtual size of the source disk image (1 temporary copy + 1 destination image). This is in the worst case and usually much less space is required.</p>
+
+<p>If you are using the <i>--in-place</i> option, then large amounts of temporary space are <b>not</b> required.</p>
+
+</li>
+<li><p>Virt-sparsify cannot resize disk images. To do that, use <a href="virt-resize.1.html">virt-resize(1)</a>.</p>
+
+</li>
+<li><p>Virt-sparsify cannot handle encrypted disks. Libguestfs supports encrypted disks, but encrypted disks themselves cannot be sparsified.</p>
+
+</li>
+<li><p>Virt-sparsify cannot yet sparsify the space between partitions. Note that this space is often used for critical items like bootloaders so it&#39;s not really unused.</p>
+
+</li>
+<li><p>In copy mode, qcow2 internal snapshots are not copied over to the destination image.</p>
+
+</li>
+</ul>
+
+<p>You may also want to read the manual pages for the associated tools <a href="virt-filesystems.1.html">virt-filesystems(1)</a> and <a href="virt-df.1.html">virt-df(1)</a> before starting.</p>
+
+<h1 id="examples">EXAMPLES</h1>
+
+<p>Typical usage is:</p>
+
+<pre><code> virt-sparsify indisk outdisk</code></pre>
+
+<p>which copies <code>indisk</code> to <code>outdisk</code>, making the output sparse. <code>outdisk</code> is created, or overwritten if it already exists. The format of the input disk is detected (eg. qcow2) and the same format is used for the output disk.</p>
+
+<p>To convert between formats, use the <i>--convert</i> option:</p>
+
+<pre><code> virt-sparsify disk.raw --convert qcow2 disk.qcow2</code></pre>
+
+<p>Virt-sparsify tries to zero and sparsify free space on every filesystem it can find within the source disk image. You can get it to ignore (don&#39;t zero free space on) certain filesystems by doing:</p>
+
+<pre><code> virt-sparsify --ignore /dev/sda1 indisk outdisk</code></pre>
+
+<p>See <a href="virt-filesystems.1.html">virt-filesystems(1)</a> to get a list of filesystems within a disk image.</p>
+
+<p>Since virt-sparsify &ge; 1.26, you can now sparsify a disk image in place by doing:</p>
+
+<pre><code> virt-sparsify --in-place disk.img</code></pre>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display help.</p>
+
+</dd>
+<dt><b>--check-tmpdir ignore</b></dt>
+<dd>
+
+</dd>
+<dt><b>--check-tmpdir continue</b></dt>
+<dd>
+
+</dd>
+<dt><b>--check-tmpdir warn</b></dt>
+<dd>
+
+</dd>
+<dt><b>--check-tmpdir fail</b></dt>
+<dd>
+
+<p>Check if <a href="#tmpdir">&quot;TMPDIR&quot;</a> or <i>--tmp</i> directory has enough space to complete the operation. This is just an estimate.</p>
+
+<p>If the check indicates a problem, then you can either:</p>
+
+<ul>
+
+<li><p><b>ignore</b> it,</p>
+
+</li>
+<li><p>print a warning and <b>continue</b>,</p>
+
+</li>
+<li><p><b>warn</b> and wait for the user to press the Return key (this is the default), or:</p>
+
+</li>
+<li><p><b>fail</b> and exit.</p>
+
+</li>
+</ul>
+
+<p>You cannot use this option and <i>--in-place</i> together.</p>
+
+</dd>
+<dt><b>--compress</b></dt>
+<dd>
+
+<p>Compress the output file. This <i>only</i> works if the output format is <code>qcow2</code>.</p>
+
+<p>You cannot use this option and <i>--in-place</i> together.</p>
+
+</dd>
+<dt><b>--convert</b> raw</dt>
+<dd>
+
+</dd>
+<dt><b>--convert</b> qcow2</dt>
+<dd>
+
+</dd>
+<dt><b>--convert</b> [other formats]</dt>
+<dd>
+
+<p>Use <code>output-format</code> as the format for the destination image. If this is not specified, then the input format is used.</p>
+
+<p>Supported and known-working output formats are: <code>raw</code>, <code>qcow2</code>, <code>vdi</code>.</p>
+
+<p>You can also use any format supported by the <a href="http://man.he.net/man1/qemu-img">qemu-img(1)</a> program, eg. <code>vmdk</code>, but support for other formats is reliant on qemu.</p>
+
+<p>Specifying the <i>--convert</i> option is usually a good idea, because then virt-sparsify doesn&#39;t need to try to guess the input format.</p>
+
+<p>For fine-tuning the output format, see: <i>--compress</i>, <i>-o</i>.</p>
+
+<p>You cannot use this option and <i>--in-place</i> together.</p>
+
+</dd>
+<dt><b>--debug-gc</b></dt>
+<dd>
+
+<p>Debug garbage collection and memory allocation. This is only useful when debugging memory problems in virt-sparsify or the OCaml libguestfs bindings.</p>
+
+</dd>
+<dt><b>--format</b> raw</dt>
+<dd>
+
+</dd>
+<dt><b>--format</b> qcow2</dt>
+<dd>
+
+<p>Specify the format of the input disk image. If this flag is not given then it is auto-detected from the image itself.</p>
+
+<p>If working with untrusted raw-format guest disk images, you should ensure the format is always specified.</p>
+
+</dd>
+<dt><b>--ignore</b> filesystem</dt>
+<dd>
+
+</dd>
+<dt><b>--ignore</b> volgroup</dt>
+<dd>
+
+<p>Ignore the named filesystem.</p>
+
+<p>When not using <i>--in-place</i>: Free space on the filesystem will not be zeroed, but existing blocks of zeroes will still be sparsified.</p>
+
+<p>When using <i>--in-place</i>, the filesystem is ignored completely.</p>
+
+<p>In the second form, this ignores the named volume group. Use the volume group name without the <i>/dev/</i> prefix, eg. <i>--ignore vg_foo</i></p>
+
+<p>You can give this option multiple times.</p>
+
+</dd>
+<dt><b>--in-place</b></dt>
+<dd>
+
+<p>Do in-place sparsification instead of copying sparsification. See <a href="#in-place-sparsification">&quot;IN-PLACE SPARSIFICATION&quot;</a> below.</p>
+
+</dd>
+<dt><b>--machine-readable</b></dt>
+<dd>
+
+<p>This option is used to make the output more machine friendly when being parsed by other programs. See <a href="#machine-readable-output">&quot;MACHINE READABLE OUTPUT&quot;</a> below.</p>
+
+</dd>
+<dt><b>-o</b> option[,option,...]</dt>
+<dd>
+
+<p>Pass <i>-o</i> option(s) to the <a href="http://man.he.net/man1/qemu-img">qemu-img(1)</a> command to fine-tune the output format. Options available depend on the output format (see <i>--convert</i>) and the installed version of the qemu-img program.</p>
+
+<p>You should use <i>-o</i> at most once. To pass multiple options, separate them with commas, eg:</p>
+
+<pre><code> virt-sparsify --convert qcow2 \
+   -o cluster_size=512,preallocation=metadata ...</code></pre>
+
+<p>You cannot use this option and <i>--in-place</i> together.</p>
+
+</dd>
+<dt><b>-q</b></dt>
+<dd>
+
+</dd>
+<dt><b>--quiet</b></dt>
+<dd>
+
+<p>This disables progress bars and other unnecessary output.</p>
+
+</dd>
+<dt><b>--tmp</b> block_device</dt>
+<dd>
+
+</dd>
+<dt><b>--tmp</b> dir</dt>
+<dd>
+
+<p>In copying mode only, use the named device or directory as the location of the temporary overlay (see also <a href="#tmpdir">&quot;TMPDIR&quot;</a> below).</p>
+
+<p>If the parameter given is a block device, then the block device is written to directly. <b>Note this erases the existing contents of the block device</b>.</p>
+
+<p>If the parameter is a directory, then this is the same as setting the <a href="#tmpdir">&quot;TMPDIR&quot;</a> environment variable.</p>
+
+<p>You cannot use this option and <i>--in-place</i> together.</p>
+
+</dd>
+<dt><b>--tmp</b> prebuilt:file</dt>
+<dd>
+
+<p>In copying mode only, the specialized option <i>--tmp prebuilt:file</i> (where <code>prebuilt:</code> is a literal string) causes virt-sparsify to use the qcow2 <code>file</code> as temporary space.</p>
+
+<ul>
+
+<li><p>The file <b>must</b> be freshly formatted as qcow2, with indisk as the backing file.</p>
+
+</li>
+<li><p>If you rerun virt-sparsify, you <b>must</b> recreate the file before each run.</p>
+
+</li>
+<li><p>Virt-sparsify does not delete the file.</p>
+
+</li>
+</ul>
+
+<p>This option is used by oVirt which requires a specially formatted temporary file.</p>
+
+</dd>
+<dt><b>-v</b></dt>
+<dd>
+
+</dd>
+<dt><b>--verbose</b></dt>
+<dd>
+
+<p>Enable verbose messages for debugging.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+<dt><b>-x</b></dt>
+<dd>
+
+<p>Enable tracing of libguestfs API calls.</p>
+
+</dd>
+<dt><b>--zero</b> partition</dt>
+<dd>
+
+</dd>
+<dt><b>--zero</b> logvol</dt>
+<dd>
+
+<p>Zero the contents of the named partition or logical volume in the guest. All data on the device is lost, but sparsification is excellent! You can give this option multiple times.</p>
+
+</dd>
+</dl>
+
+<h1 id="in-place-sparsification">IN-PLACE SPARSIFICATION</h1>
+
+<p>Since virt-sparsify &ge; 1.26, the tool is able to do in-place sparsification (instead of copying from an input disk to an output disk). This is more efficient. However it requires special support in libguestfs, the kernel and qemu, and it is not able to recover quite as much space as copying sparsification. So in-place sparsification is considered to be experimental at this time.</p>
+
+<p>To use this mode, specify a disk image which will be modified in place:</p>
+
+<pre><code> virt-sparsify --in-place disk.img</code></pre>
+
+<p>Some options are not compatible with this mode: <i>--convert</i>, <i>--compress</i> and <i>-o</i> because they require wholesale disk format changes; <i>--check-tmpdir</i> because large amounts of temporary space are not required.</p>
+
+<p>In-place sparsification works using discard (a.k.a trim or unmap) support.</p>
+
+<h1 id="machine-readable-output">MACHINE READABLE OUTPUT</h1>
+
+<p>The <i>--machine-readable</i> option can be used to make the output more machine friendly, which is useful when calling virt-sparsify from other programs, GUIs etc.</p>
+
+<p>There are two ways to use this option.</p>
+
+<p>Firstly use the option on its own to query the capabilities of the virt-sparsify binary. Typical output looks like this:</p>
+
+<pre><code> $ virt-sparsify --machine-readable
+ virt-sparsify
+ ntfs
+ btrfs</code></pre>
+
+<p>A list of features is printed, one per line, and the program exits with status 0.</p>
+
+<p>Secondly use the option in conjunction with other options to make the regular program output more machine friendly.</p>
+
+<p>At the moment this means:</p>
+
+<ol>
+
+<li><p>Progress bar messages can be parsed from stdout by looking for this regular expression:</p>
+
+<pre><code> ^[0-9]+/[0-9]+$</code></pre>
+
+</li>
+<li><p>The calling program should treat messages sent to stdout (except for progress bar messages) as status messages. They can be logged and/or displayed to the user.</p>
+
+</li>
+<li><p>The calling program should treat messages sent to stderr as error messages. In addition, virt-sparsify exits with a non-zero status code if there was a fatal error.</p>
+
+</li>
+</ol>
+
+<p>All versions of virt-sparsify have supported the <i>--machine-readable</i> option.</p>
+
+<h1 id="windows-8">WINDOWS 8</h1>
+
+<p>Windows 8 &quot;fast startup&quot; can prevent virt-sparsify from working. See <a href="guestfs.3.html#windows-hibernation-and-windows-8-fast-startup">&quot;WINDOWS HIBERNATION AND WINDOWS 8 FAST STARTUP&quot; in guestfs(3)</a>.</p>
+
+<h1 id="environment-variables">ENVIRONMENT VARIABLES</h1>
+
+<dl>
+
+<dt>TMPDIR</dt>
+<dd>
+
+<p>Location of the temporary directory used for the potentially large temporary overlay file.</p>
+
+<p>In virt-sparsify &ge; 1.28, you can override this environment variable using the <i>--tmp</i> option.</p>
+
+<p>You should ensure there is enough free space in the worst case for a full copy of the source disk (<i>virtual</i> size), or else set <code>$TMPDIR</code> to point to another directory that has enough space.</p>
+
+<p>This defaults to <i>/tmp</i>.</p>
+
+<p>Note that if <code>$TMPDIR</code> is a tmpfs (eg. if <i>/tmp</i> is on tmpfs, or if you use <code>TMPDIR=/dev/shm</code>), tmpfs defaults to a maximum size of <i>half</i> of physical RAM. If virt-sparsify exceeds this, it will hang. The solution is either to use a real disk, or to increase the maximum size of the tmpfs mountpoint, eg:</p>
+
+<pre><code> mount -o remount,size=10G /tmp</code></pre>
+
+<p>If you are using the <i>--in-place</i> option, then large amounts of temporary space are <b>not</b> required.</p>
+
+</dd>
+</dl>
+
+<p>For other environment variables, see <a href="guestfs.3.html#environment-variables">&quot;ENVIRONMENT VARIABLES&quot; in guestfs(3)</a>.</p>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>This program returns 0 if the operation completed without errors. (This doesn&#39;t necessarily mean that space could be freed up.)</p>
+
+<p>A non-zero exit code indicates an error.</p>
+
+<p>If the exit code is <code>3</code> and the <i>--in-place</i> option was used, that indicates that discard support is not available in libguestfs, so copying mode must be used instead.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="virt-df.1.html">virt-df(1)</a>, <a href="virt-filesystems.1.html">virt-filesystems(1)</a>, <a href="virt-resize.1.html">virt-resize(1)</a>, <a href="virt-rescue.1.html">virt-rescue(1)</a>, <a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="http://man.he.net/man1/truncate">truncate(1)</a>, <a href="http://man.he.net/man1/fallocate">fallocate(1)</a>, <a href="http://man.he.net/man1/qemu-img">qemu-img(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2011-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

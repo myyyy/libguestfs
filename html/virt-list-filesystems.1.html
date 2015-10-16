@@ -1,0 +1,150 @@
+
+<html>
+<head>
+<title>virt-list-filesystems</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#obsolete">OBSOLETE</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-list-filesystems - List filesystems in a virtual machine or disk image</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-list-filesystems [--options] domname
+
+ virt-list-filesystems [--options] disk.img [disk.img ...]</code></pre>
+
+<h1 id="obsolete">OBSOLETE</h1>
+
+<p>This tool is obsolete. Use <a href="virt-filesystems.1.html">virt-filesystems(1)</a> as a more flexible replacement.</p>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><code>virt-list-filesystems</code> is a command line tool to list the filesystems that are contained in a virtual machine or disk image.</p>
+
+<p><code>virt-list-filesystems</code> is just a simple wrapper around <a href="libguestfs.3.html">libguestfs(3)</a> functionality. For more complex cases you should look at the <a href="guestfish.1.html">guestfish(1)</a> tool.</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display brief help.</p>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+<dt><b>-c URI</b></dt>
+<dd>
+
+</dd>
+<dt><b>--connect URI</b></dt>
+<dd>
+
+<p>If using libvirt, connect to the given <i>URI</i>. If omitted, then we connect to the default libvirt hypervisor.</p>
+
+<p>If you specify guest block devices directly, then libvirt is not used at all.</p>
+
+</dd>
+<dt><b>--format</b> raw</dt>
+<dd>
+
+<p>Specify the format of disk images given on the command line. If this is omitted then the format is autodetected from the content of the disk image.</p>
+
+<p>If disk images are requested from libvirt, then this program asks libvirt for this information. In this case, the value of the format parameter is ignored.</p>
+
+<p>If working with untrusted raw-format guest disk images, you should ensure the format is always specified.</p>
+
+</dd>
+<dt><b>-l</b></dt>
+<dd>
+
+</dd>
+<dt><b>--long</b></dt>
+<dd>
+
+<p>With this option, <code>virt-list-filesystems</code> displays the type of each filesystem too (where &quot;type&quot; means <code>ext3</code>, <code>xfs</code> etc.)</p>
+
+</dd>
+<dt><b>-a</b></dt>
+<dd>
+
+</dd>
+<dt><b>--all</b></dt>
+<dd>
+
+<p>Normally we only show mountable filesystems. If this option is given then swap devices are shown too.</p>
+
+</dd>
+</dl>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="virt-cat.1.html">virt-cat(1)</a>, <a href="virt-tar.1.html">virt-tar(1)</a>, <a href="virt-filesystems.1.html">virt-filesystems(1)</a>, <a href="virt-list-partitions.1.html">virt-list-partitions(1)</a>, <a href="Sys::Guestfs(3).3.html">Sys::Guestfs(3)</a>, <a href="http://search.cpan.org/perldoc?Sys::Virt(3)">Sys::Virt(3)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2009 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

@@ -1,0 +1,327 @@
+"utils.ml" 27 896 900 "utils.ml" 27 896 905
+type(
+  string -> string
+)
+ident(
+  def quote "utils.ml" 30 994 994 --
+)
+"utils.ml" 27 896 908 "utils.ml" 27 896 922
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.quote
+)
+"utils.ml" 30 994 998 "utils.ml" 30 994 1013
+type(
+  G.guestfs -> string -> bool
+)
+ident(
+  def is_read_only_lv "utils.ml" 41 1370 1384 --
+)
+"utils.ml" 30 994 1015 "utils.ml" 30 994 1016
+type(
+  G.guestfs
+)
+ident(
+  def g "utils.ml" 31 1032 1034 "utils.ml" 41 1370 1384
+)
+"utils.ml" 31 1032 1038 "utils.ml" 31 1032 1041
+type(
+  G.lvm_lv list
+)
+"utils.ml" 31 1032 1044 "utils.ml" 31 1032 1057
+type(
+  G.lvm_lv array -> G.lvm_lv list
+)
+ident(
+  ext_ref Array.to_list
+)
+"utils.ml" 31 1032 1059 "utils.ml" 31 1032 1060
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "utils.ml" 30 994 1015 "utils.ml" 30 994 1016
+)
+"utils.ml" 31 1032 1059 "utils.ml" 31 1032 1069
+call(
+  stack
+)
+type(
+  unit -> G.lvm_lv array
+)
+"utils.ml" 31 1032 1070 "utils.ml" 31 1032 1072
+type(
+  unit
+)
+"utils.ml" 31 1032 1058 "utils.ml" 31 1032 1073
+type(
+  G.lvm_lv array
+)
+"utils.ml" 31 1032 1044 "utils.ml" 31 1032 1073
+call(
+  stack
+)
+type(
+  G.lvm_lv list
+)
+"utils.ml" 32 1077 1083 "utils.ml" 32 1077 1091
+type(
+  string list
+)
+"utils.ml" 32 1077 1094 "utils.ml" 32 1077 1104
+type(
+  (G.lvm_lv -> string option) -> G.lvm_lv list -> string list
+)
+ident(
+  ext_ref Common_utils.filter_map
+)
+"utils.ml" 33 1107 1129 "utils.ml" 33 1107 1136
+type(
+  string
+)
+ident(
+  def lv_uuid "utils.ml" 34 1161 1167 "utils.ml" 34 1161 1215
+)
+"utils.ml" 33 1107 1148 "utils.ml" 33 1107 1155
+type(
+  string
+)
+ident(
+  def lv_attr "utils.ml" 34 1161 1167 "utils.ml" 34 1161 1215
+)
+"utils.ml" 33 1107 1115 "utils.ml" 33 1107 1157
+type(
+  G.lvm_lv
+)
+"utils.ml" 34 1161 1170 "utils.ml" 34 1161 1177
+type(
+  string
+)
+ident(
+  int_ref lv_attr "utils.ml" 33 1107 1148 "utils.ml" 33 1107 1155
+)
+"utils.ml" 34 1161 1179 "utils.ml" 34 1161 1180
+type(
+  int
+)
+"utils.ml" 34 1161 1170 "utils.ml" 34 1161 1181
+type(
+  char
+)
+"utils.ml" 34 1161 1182 "utils.ml" 34 1161 1183
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"utils.ml" 34 1161 1184 "utils.ml" 34 1161 1187
+type(
+  char
+)
+"utils.ml" 34 1161 1170 "utils.ml" 34 1161 1187
+type(
+  bool
+)
+"utils.ml" 34 1161 1198 "utils.ml" 34 1161 1205
+type(
+  string
+)
+ident(
+  int_ref lv_uuid "utils.ml" 33 1107 1129 "utils.ml" 33 1107 1136
+)
+"utils.ml" 34 1161 1193 "utils.ml" 34 1161 1205
+type(
+  string option
+)
+"utils.ml" 34 1161 1211 "utils.ml" 34 1161 1215
+type(
+  string option
+)
+"utils.ml" 34 1161 1167 "utils.ml" 34 1161 1215
+type(
+  string option
+)
+"utils.ml" 32 1077 1105 "utils.ml" 35 1216 1219
+type(
+  G.lvm_lv -> string option
+)
+"utils.ml" 35 1216 1220 "utils.ml" 35 1216 1223
+type(
+  G.lvm_lv list
+)
+ident(
+  int_ref lvs "utils.ml" 31 1032 1038 "utils.ml" 31 1032 1041
+)
+"utils.ml" 32 1077 1094 "utils.ml" 35 1216 1223
+call(
+  stack
+)
+type(
+  string list
+)
+"utils.ml" 36 1227 1233 "utils.ml" 36 1227 1235
+type(
+  string
+)
+ident(
+  def fs "utils.ml" 37 1239 1243 "utils.ml" 41 1370 1384
+)
+"utils.ml" 37 1239 1246 "utils.ml" 37 1239 1247
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "utils.ml" 30 994 1015 "utils.ml" 30 994 1016
+)
+"utils.ml" 37 1239 1246 "utils.ml" 37 1239 1253
+call(
+  stack
+)
+type(
+  string -> bool
+)
+"utils.ml" 37 1239 1254 "utils.ml" 37 1239 1256
+type(
+  string
+)
+ident(
+  int_ref fs "utils.ml" 36 1227 1233 "utils.ml" 36 1227 1235
+)
+"utils.ml" 37 1239 1246 "utils.ml" 37 1239 1256
+type(
+  bool
+)
+"utils.ml" 38 1264 1274 "utils.ml" 38 1264 1278
+type(
+  string
+)
+ident(
+  def uuid "utils.ml" 39 1296 1302 "utils.ml" 39 1296 1363
+)
+"utils.ml" 38 1264 1281 "utils.ml" 38 1264 1282
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "utils.ml" 30 994 1015 "utils.ml" 30 994 1016
+)
+"utils.ml" 38 1264 1281 "utils.ml" 38 1264 1289
+call(
+  stack
+)
+type(
+  string -> string
+)
+"utils.ml" 38 1264 1290 "utils.ml" 38 1264 1292
+type(
+  string
+)
+ident(
+  int_ref fs "utils.ml" 36 1227 1233 "utils.ml" 36 1227 1235
+)
+"utils.ml" 38 1264 1281 "utils.ml" 38 1264 1292
+type(
+  string
+)
+"utils.ml" 39 1296 1302 "utils.ml" 39 1296 1313
+type(
+  (string -> bool) -> string list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"utils.ml" 39 1296 1319 "utils.ml" 39 1296 1320
+type(
+  string
+)
+ident(
+  def u "utils.ml" 39 1296 1324 "utils.ml" 39 1296 1353
+)
+"utils.ml" 39 1296 1324 "utils.ml" 39 1296 1342
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Common_utils.compare_lvm2_uuids
+)
+"utils.ml" 39 1296 1343 "utils.ml" 39 1296 1347
+type(
+  string
+)
+ident(
+  int_ref uuid "utils.ml" 38 1264 1274 "utils.ml" 38 1264 1278
+)
+"utils.ml" 39 1296 1348 "utils.ml" 39 1296 1349
+type(
+  string
+)
+ident(
+  int_ref u "utils.ml" 39 1296 1319 "utils.ml" 39 1296 1320
+)
+"utils.ml" 39 1296 1324 "utils.ml" 39 1296 1349
+call(
+  stack
+)
+type(
+  int
+)
+"utils.ml" 39 1296 1350 "utils.ml" 39 1296 1351
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"utils.ml" 39 1296 1352 "utils.ml" 39 1296 1353
+type(
+  int
+)
+"utils.ml" 39 1296 1324 "utils.ml" 39 1296 1353
+type(
+  bool
+)
+"utils.ml" 39 1296 1314 "utils.ml" 39 1296 1354
+type(
+  string -> bool
+)
+"utils.ml" 39 1296 1355 "utils.ml" 39 1296 1363
+type(
+  string list
+)
+ident(
+  int_ref ro_uuids "utils.ml" 32 1077 1083 "utils.ml" 32 1077 1091
+)
+"utils.ml" 39 1296 1302 "utils.ml" 39 1296 1363
+call(
+  tail
+)
+type(
+  bool
+)
+"utils.ml" 37 1239 1262 "utils.ml" 40 1364 1369
+type(
+  bool
+)
+"utils.ml" 41 1370 1379 "utils.ml" 41 1370 1384
+type(
+  bool
+)
+"utils.ml" 37 1239 1243 "utils.ml" 41 1370 1384
+type(
+  bool
+)
+"utils.ml" 36 1227 1229 "utils.ml" 41 1370 1384
+type(
+  string -> bool
+)
+"utils.ml" 32 1077 1079 "utils.ml" 41 1370 1384
+type(
+  string -> bool
+)
+"utils.ml" 31 1032 1034 "utils.ml" 41 1370 1384
+type(
+  string -> bool
+)

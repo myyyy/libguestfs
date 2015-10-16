@@ -1,0 +1,29 @@
+
+  pcre
+  libxml2
+  gtk2
+
+    /usr/bin/ssh
+  /usr/bin/qemu-nbd
+
+      hwdata
+
+    /usr/bin/xinit
+  /usr/bin/Xorg
+  xorg-x11-drivers
+  xorg-x11-fonts-Type1
+  mesa-dri-drivers
+  metacity
+
+  NetworkManager
+  nm-connection-editor
+  network-manager-applet
+  dbus-x11        
+    @hardware-support
+
+
+
+
+
+
+

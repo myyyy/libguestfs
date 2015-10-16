@@ -1,0 +1,507 @@
+"input_libvirt_other.ml" 30 1000 1004 "input_libvirt_other.ml" 30 1000 1028
+type(
+  unit -> unit
+)
+ident(
+  def error_if_libvirt_backend "input_libvirt_other.ml" 40 1527 1527 --
+)
+"input_libvirt_other.ml" 30 1000 1029 "input_libvirt_other.ml" 30 1000 1031
+type(
+  unit
+)
+"input_libvirt_other.ml" 31 1034 1040 "input_libvirt_other.ml" 31 1034 1058
+type(
+  string
+)
+"input_libvirt_other.ml" 31 1034 1062 "input_libvirt_other.ml" 31 1034 1081
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> Guestfs.guestfs
+)
+"input_libvirt_other.ml" 31 1034 1082 "input_libvirt_other.ml" 31 1034 1084
+type(
+  unit
+)
+"input_libvirt_other.ml" 31 1034 1061 "input_libvirt_other.ml" 31 1034 1085
+call(
+  stack
+)
+type(
+  Guestfs.guestfs
+)
+"input_libvirt_other.ml" 31 1034 1061 "input_libvirt_other.ml" 31 1034 1097
+call(
+  stack
+)
+type(
+  unit -> string
+)
+"input_libvirt_other.ml" 31 1034 1098 "input_libvirt_other.ml" 31 1034 1100
+type(
+  unit
+)
+"input_libvirt_other.ml" 31 1034 1061 "input_libvirt_other.ml" 31 1034 1100
+type(
+  string
+)
+"input_libvirt_other.ml" 32 1104 1109 "input_libvirt_other.ml" 32 1104 1127
+type(
+  string
+)
+ident(
+  int_ref libguestfs_backend "input_libvirt_other.ml" 31 1034 1040 "input_libvirt_other.ml" 31 1034 1058
+)
+"input_libvirt_other.ml" 32 1104 1128 "input_libvirt_other.ml" 32 1104 1129
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"input_libvirt_other.ml" 32 1104 1130 "input_libvirt_other.ml" 32 1104 1139
+type(
+  string
+)
+"input_libvirt_other.ml" 32 1104 1109 "input_libvirt_other.ml" 32 1104 1139
+type(
+  bool
+)
+"input_libvirt_other.ml" 33 1147 1151 "input_libvirt_other.ml" 33 1147 1156
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_libvirt_other.ml" 33 1147 1158 "input_libvirt_other.ml" 33 1147 1160
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_other.ml" 33 1147 1160 "input_libvirt_other.ml" 33 1147 1352
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_other.ml" 33 1147 1157 "input_libvirt_other.ml" 33 1147 1353
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirt_other.ml" 32 1104 1145 "input_libvirt_other.ml" 34 1354 1357
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_other.ml" 32 1104 1106 "input_libvirt_other.ml" 34 1354 1357
+type(
+  unit
+)
+"input_libvirt_other.ml" 31 1034 1036 "input_libvirt_other.ml" 34 1354 1357
+type(
+  unit
+)
+"input_libvirt_other.ml" 40 1527 1531 "input_libvirt_other.ml" 40 1527 1552
+type(
+  unit -> unit
+)
+ident(
+  def error_if_no_ssh_agent "input_libvirt_other.ml" 46 1797 1797 --
+)
+"input_libvirt_other.ml" 40 1527 1553 "input_libvirt_other.ml" 40 1527 1555
+type(
+  unit
+)
+"input_libvirt_other.ml" 41 1558 1564 "input_libvirt_other.ml" 41 1558 1570
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"input_libvirt_other.ml" 41 1558 1572 "input_libvirt_other.ml" 41 1558 1582
+type(
+  string -> string
+)
+ident(
+  ext_ref Sys.getenv
+)
+"input_libvirt_other.ml" 41 1558 1583 "input_libvirt_other.ml" 41 1558 1598
+type(
+  string
+)
+"input_libvirt_other.ml" 41 1558 1571 "input_libvirt_other.ml" 41 1558 1599
+type(
+  string
+)
+"input_libvirt_other.ml" 41 1558 1564 "input_libvirt_other.ml" 41 1558 1599
+type(
+  unit
+)
+"input_libvirt_other.ml" 42 1600 1607 "input_libvirt_other.ml" 42 1600 1616
+type(
+  exn
+)
+"input_libvirt_other.ml" 43 1620 1624 "input_libvirt_other.ml" 43 1620 1629
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"input_libvirt_other.ml" 43 1620 1631 "input_libvirt_other.ml" 43 1620 1633
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"input_libvirt_other.ml" 43 1620 1633 "input_libvirt_other.ml" 43 1620 1776
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"input_libvirt_other.ml" 43 1620 1630 "input_libvirt_other.ml" 43 1620 1777
+type(
+  (unit, unit, string, unit) format4
+)
+"input_libvirt_other.ml" 43 1620 1624 "input_libvirt_other.ml" 43 1620 1777
+call(
+  tail
+)
+type(
+  unit
+)
+"input_libvirt_other.ml" 41 1558 1560 "input_libvirt_other.ml" 43 1620 1777
+type(
+  unit
+)
+"input_libvirt_other.ml" 46 1797 1826 "input_libvirt_other.ml" 46 1797 1834
+type(
+  string option
+)
+"input_libvirt_other.ml" 46 1797 1852 "input_libvirt_other.ml" 46 1797 1863
+type(
+  string option
+)
+"input_libvirt_other.ml" 46 1797 1864 "input_libvirt_other.ml" 46 1797 1869
+type(
+  string
+)
+"input_libvirt_other.ml" 51 1918 1922 "input_libvirt_other.ml" 51 1918 1929
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"input_libvirt_other.ml" 51 1918 1930 "input_libvirt_other.ml" 51 1918 1947
+type(
+  (string -> string -> string, unit, string) format
+)
+"input_libvirt_other.ml" 52 1948 1961 "input_libvirt_other.ml" 52 1948 1972
+type(
+  string option
+)
+"input_libvirt_other.ml" 53 1978 1986 "input_libvirt_other.ml" 53 1978 1990
+type(
+  string option
+)
+"input_libvirt_other.ml" 53 1978 1994 "input_libvirt_other.ml" 53 1978 1996
+type(
+  string
+)
+"input_libvirt_other.ml" 54 1997 2010 "input_libvirt_other.ml" 54 1997 2013
+type(
+  string
+)
+ident(
+  def uri "input_libvirt_other.ml" 54 1997 2017 "input_libvirt_other.ml" 54 1997 2030
+)
+"input_libvirt_other.ml" 54 1997 2005 "input_libvirt_other.ml" 54 1997 2013
+type(
+  string option
+)
+"input_libvirt_other.ml" 54 1997 2017 "input_libvirt_other.ml" 54 1997 2024
+type(
+  string
+)
+"input_libvirt_other.ml" 54 1997 2025 "input_libvirt_other.ml" 54 1997 2026
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"input_libvirt_other.ml" 54 1997 2027 "input_libvirt_other.ml" 54 1997 2030
+type(
+  string
+)
+ident(
+  int_ref uri "input_libvirt_other.ml" 54 1997 2010 "input_libvirt_other.ml" 54 1997 2013
+)
+"input_libvirt_other.ml" 54 1997 2017 "input_libvirt_other.ml" 54 1997 2030
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_other.ml" 52 1948 1954 "input_libvirt_other.ml" 54 1997 2031
+type(
+  string
+)
+"input_libvirt_other.ml" 55 2032 2038 "input_libvirt_other.ml" 55 2032 2043
+type(
+  string
+)
+"input_libvirt_other.ml" 51 1918 1922 "input_libvirt_other.ml" 55 2032 2043
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"input_libvirt_other.ml" 61 2138 2164 "input_libvirt_other.ml" 61 2138 2172
+type(
+  string option
+)
+"input_libvirt_other.ml" 61 2138 2173 "input_libvirt_other.ml" 61 2138 2184
+type(
+  string option
+)
+"input_libvirt_other.ml" 61 2138 2185 "input_libvirt_other.ml" 61 2138 2190
+type(
+  string
+)
+"input_libvirt_other.ml" 63 2200 2224 "input_libvirt_other.ml" 63 2200 2232
+type(
+  string option
+)
+ident(
+  int_ref password "input_libvirt_other.ml" 61 2138 2164 "input_libvirt_other.ml" 61 2138 2172
+)
+"input_libvirt_other.ml" 63 2200 2233 "input_libvirt_other.ml" 63 2200 2244
+type(
+  string option
+)
+ident(
+  int_ref libvirt_uri "input_libvirt_other.ml" 61 2138 2173 "input_libvirt_other.ml" 61 2138 2184
+)
+"input_libvirt_other.ml" 63 2200 2245 "input_libvirt_other.ml" 63 2200 2250
+type(
+  string
+)
+ident(
+  int_ref guest "input_libvirt_other.ml" 61 2138 2185 "input_libvirt_other.ml" 61 2138 2190
+)
+"input_libvirt_other.ml" 65 2252 2268 "input_libvirt_other.ml" 65 2252 2270
+type(
+  unit
+)
+"input_libvirt_other.ml" 66 2273 2280 "input_libvirt_other.ml" 66 2273 2287
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"input_libvirt_other.ml" 66 2273 2288 "input_libvirt_other.ml" 66 2273 2290
+type(
+  unit
+)
+"input_libvirt_other.ml" 66 2273 2280 "input_libvirt_other.ml" 66 2273 2290
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirt_other.ml" 66 2273 2296 "input_libvirt_other.ml" 66 2273 2302
+type(
+  (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"input_libvirt_other.ml" 66 2273 2303 "input_libvirt_other.ml" 66 2273 2338
+type(
+  (unit, out_channel, unit) format
+)
+"input_libvirt_other.ml" 66 2273 2296 "input_libvirt_other.ml" 66 2273 2338
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_other.ml" 66 2273 2277 "input_libvirt_other.ml" 66 2273 2338
+type(
+  unit
+)
+"input_libvirt_other.ml" 71 2469 2477 "input_libvirt_other.ml" 71 2469 2480
+type(
+  string
+)
+"input_libvirt_other.ml" 71 2469 2483 "input_libvirt_other.ml" 71 2469 2500
+type(
+  ?password:string -> ?conn:string -> string -> string
+)
+ident(
+  ext_ref Domainxml.dumpxml
+)
+"input_libvirt_other.ml" 71 2469 2502 "input_libvirt_other.ml" 71 2469 2510
+type(
+  string option
+)
+"input_libvirt_other.ml" 71 2469 2517 "input_libvirt_other.ml" 71 2469 2528
+type(
+  string option
+)
+"input_libvirt_other.ml" 71 2469 2529 "input_libvirt_other.ml" 71 2469 2534
+type(
+  string
+)
+"input_libvirt_other.ml" 71 2469 2483 "input_libvirt_other.ml" 71 2469 2534
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_other.ml" 73 2539 2547 "input_libvirt_other.ml" 73 2539 2553
+type(
+  Types.source
+)
+"input_libvirt_other.ml" 73 2539 2555 "input_libvirt_other.ml" 73 2539 2560
+type(
+  Input_libvirtxml.parsed_disk list
+)
+"input_libvirt_other.ml" 73 2539 2547 "input_libvirt_other.ml" 73 2539 2560
+type(
+  Types.source * Input_libvirtxml.parsed_disk list
+)
+"input_libvirt_other.ml" 74 2563 2569 "input_libvirt_other.ml" 74 2563 2603
+type(
+  ?conn:string -> string -> Types.source * Input_libvirtxml.parsed_disk list
+)
+ident(
+  ext_ref Input_libvirtxml.parse_libvirt_xml
+)
+"input_libvirt_other.ml" 74 2563 2610 "input_libvirt_other.ml" 74 2563 2621
+type(
+  string option
+)
+"input_libvirt_other.ml" 74 2563 2622 "input_libvirt_other.ml" 74 2563 2625
+type(
+  string
+)
+ident(
+  int_ref xml "input_libvirt_other.ml" 71 2469 2477 "input_libvirt_other.ml" 71 2469 2480
+)
+"input_libvirt_other.ml" 74 2563 2569 "input_libvirt_other.ml" 74 2563 2625
+call(
+  stack
+)
+type(
+  Types.source * Input_libvirtxml.parsed_disk list
+)
+"input_libvirt_other.ml" 75 2629 2637 "input_libvirt_other.ml" 75 2629 2642
+type(
+  Types.source_disk list
+)
+"input_libvirt_other.ml" 76 2645 2651 "input_libvirt_other.ml" 76 2645 2659
+type(
+  (Input_libvirtxml.parsed_disk -> Types.source_disk) ->
+  Input_libvirtxml.parsed_disk list -> Types.source_disk list
+)
+ident(
+  ext_ref List.map
+)
+"input_libvirt_other.ml" 76 2645 2700 "input_libvirt_other.ml" 76 2645 2704
+type(
+  Types.source_disk
+)
+ident(
+  def disk "input_libvirt_other.ml" 76 2645 2710 "input_libvirt_other.ml" 76 2645 2714
+)
+"input_libvirt_other.ml" 76 2645 2665 "input_libvirt_other.ml" 76 2645 2706
+type(
+  Input_libvirtxml.parsed_disk
+)
+"input_libvirt_other.ml" 76 2645 2710 "input_libvirt_other.ml" 76 2645 2714
+type(
+  Types.source_disk
+)
+ident(
+  int_ref disk "input_libvirt_other.ml" 76 2645 2700 "input_libvirt_other.ml" 76 2645 2704
+)
+"input_libvirt_other.ml" 76 2645 2660 "input_libvirt_other.ml" 76 2645 2715
+type(
+  Input_libvirtxml.parsed_disk -> Types.source_disk
+)
+"input_libvirt_other.ml" 76 2645 2716 "input_libvirt_other.ml" 76 2645 2721
+type(
+  Input_libvirtxml.parsed_disk list
+)
+ident(
+  int_ref disks "input_libvirt_other.ml" 73 2539 2555 "input_libvirt_other.ml" 73 2539 2560
+)
+"input_libvirt_other.ml" 76 2645 2651 "input_libvirt_other.ml" 76 2645 2721
+call(
+  stack
+)
+type(
+  Types.source_disk list
+)
+"input_libvirt_other.ml" 77 2725 2731 "input_libvirt_other.ml" 77 2725 2737
+type(
+  Types.source
+)
+ident(
+  int_ref source "input_libvirt_other.ml" 73 2539 2547 "input_libvirt_other.ml" 73 2539 2553
+)
+"input_libvirt_other.ml" 77 2725 2753 "input_libvirt_other.ml" 77 2725 2758
+type(
+  Types.source_disk list
+)
+ident(
+  int_ref disks "input_libvirt_other.ml" 75 2629 2637 "input_libvirt_other.ml" 75 2629 2642
+)
+"input_libvirt_other.ml" 77 2725 2729 "input_libvirt_other.ml" 77 2725 2760
+type(
+  Types.source
+)
+"input_libvirt_other.ml" 75 2629 2633 "input_libvirt_other.ml" 77 2725 2760
+type(
+  Types.source
+)
+"input_libvirt_other.ml" 73 2539 2543 "input_libvirt_other.ml" 77 2725 2760
+type(
+  Types.source
+)
+"input_libvirt_other.ml" 71 2469 2473 "input_libvirt_other.ml" 77 2725 2760
+type(
+  Types.source
+)
+"input_libvirt_other.ml" 66 2273 2277 "input_libvirt_other.ml" 77 2725 2760
+type(
+  Types.source
+)
+"input_libvirt_other.ml" 80 2766 2770 "input_libvirt_other.ml" 80 2766 2789
+type(
+  string option -> string option -> string -> input_libvirt_other
+)
+ident(
+  def input_libvirt_other "input_libvirt_other.ml" 80 2766 2815 --
+)
+"input_libvirt_other.ml" 80 2766 2792 "input_libvirt_other.ml" 80 2766 2815
+type(
+  string option -> string option -> string -> input_libvirt_other
+)

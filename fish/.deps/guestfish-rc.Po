@@ -81,8 +81,7 @@ guestfish-rc.o: rc.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/rpc/xdr.h fish.h \
  ../src/guestfs.h ../src/guestfs-internal-frontend.h \
  ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h fish-cmds.h rc_protocol.h \
+ ../src/guestfs-internal-frontend-cleanups.h fish-cmds.h rc_protocol.h \
  /usr/include/rpc/rpc.h /usr/include/rpc/auth.h /usr/include/rpc/clnt.h \
  /usr/include/rpc/rpc_msg.h /usr/include/rpc/auth_unix.h \
  /usr/include/rpc/auth_des.h /usr/include/rpc/svc.h \
@@ -331,8 +330,6 @@ fish.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 fish-cmds.h:
 

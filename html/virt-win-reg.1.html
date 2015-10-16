@@ -1,0 +1,397 @@
+
+<html>
+<head>
+<title>virt-win-reg</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#warning">WARNING</a></li>
+  <li><a href="#description">DESCRIPTION</a>
+    <ul>
+      <li><a href="#note">NOTE</a></li>
+    </ul>
+  </li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#supported-systems">SUPPORTED SYSTEMS</a>
+    <ul>
+      <li><a href="#windows-8">WINDOWS 8</a></li>
+    </ul>
+  </li>
+  <li><a href="#encoding">ENCODING</a></li>
+  <li><a href="#currentcontrolset-etc.">CurrentControlSet etc.</a></li>
+  <li><a href="#deleting-registry-keys-and-values">DELETING REGISTRY KEYS AND VALUES</a></li>
+  <li><a href="#windows-tips">WINDOWS TIPS</a>
+    <ul>
+      <li><a href="#running-a-batch-script-when-a-user-logs-in">RUNNING A BATCH SCRIPT WHEN A USER LOGS IN</a></li>
+      <li><a href="#installing-a-service">INSTALLING A SERVICE</a></li>
+    </ul>
+  </li>
+  <li><a href="#shell-quoting">SHELL QUOTING</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-win-reg - Export and merge Windows Registry entries from a Windows guest</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-win-reg domname &#39;HKLM\Path\To\Subkey&#39;
+
+ virt-win-reg domname &#39;HKLM\Path\To\Subkey&#39; name
+
+ virt-win-reg domname &#39;HKLM\Path\To\Subkey&#39; @
+
+ virt-win-reg --merge domname [input.reg ...]
+
+ virt-win-reg [--options] disk.img ... # instead of domname</code></pre>
+
+<h1 id="warning">WARNING</h1>
+
+<p>You must <i>not</i> use <code>virt-win-reg</code> with the <i>--merge</i> option on live virtual machines. If you do this, you <i>will</i> get irreversible disk corruption in the VM. <code>virt-win-reg</code> tries to stop you from doing this, but doesn&#39;t catch all cases.</p>
+
+<p>Modifying the Windows Registry is an inherently risky operation. The format is deliberately obscure and undocumented, and Registry changes can leave the system unbootable. Therefore when using the <i>--merge</i> option, make sure you have a reliable backup first.</p>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>This program can export and merge Windows Registry entries from a Windows guest.</p>
+
+<p>The first parameter is the libvirt guest name or the raw disk image of a Windows guest.</p>
+
+<p>If <i>--merge</i> is <i>not</i> specified, then the chosen registry key is displayed/exported (recursively). For example:</p>
+
+<pre><code> $ virt-win-reg Windows7 &#39;HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft&#39;</code></pre>
+
+<p>You can also display single values from within registry keys, for example:</p>
+
+<pre><code> $ cvkey=&#39;HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion&#39;
+ $ virt-win-reg Windows7 $cvkey ProductName
+ Windows 7 Enterprise</code></pre>
+
+<p>With <i>--merge</i>, you can merge a textual regedit file into the Windows Registry:</p>
+
+<pre><code> $ virt-win-reg --merge Windows7 changes.reg</code></pre>
+
+<h2 id="note">NOTE</h2>
+
+<p>This program is only meant for simple access to the registry. If you want to do complicated things with the registry, we suggest you download the Registry hive files from the guest using <a href="libguestfs.3.html">libguestfs(3)</a> or <a href="guestfish.1.html">guestfish(1)</a> and access them locally, eg. using <a href="hivex.3.html">hivex(3)</a>, <a href="hivexsh.1.html">hivexsh(1)</a> or <a href="hivexregedit.1.html">hivexregedit(1)</a>.</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display brief help.</p>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+<dt><b>--debug</b></dt>
+<dd>
+
+<p>Enable debugging messages.</p>
+
+</dd>
+<dt><b>-c URI</b></dt>
+<dd>
+
+</dd>
+<dt><b>--connect URI</b></dt>
+<dd>
+
+<p>If using libvirt, connect to the given <i>URI</i>. If omitted, then we connect to the default libvirt hypervisor.</p>
+
+<p>If you specify guest block devices directly, then libvirt is not used at all.</p>
+
+</dd>
+<dt><b>--format</b> raw</dt>
+<dd>
+
+<p>Specify the format of disk images given on the command line. If this is omitted then the format is autodetected from the content of the disk image.</p>
+
+<p>If disk images are requested from libvirt, then this program asks libvirt for this information. In this case, the value of the format parameter is ignored.</p>
+
+<p>If working with untrusted raw-format guest disk images, you should ensure the format is always specified.</p>
+
+</dd>
+<dt><b>--merge</b></dt>
+<dd>
+
+<p>In merge mode, this merges a textual regedit file into the Windows Registry of the virtual machine. If this flag is <i>not</i> given then virt-win-reg displays or exports Registry entries instead.</p>
+
+<p>Note that <i>--merge</i> is <i>unsafe</i> to use on live virtual machines, and will result in disk corruption. However exporting (without this flag) is always safe.</p>
+
+</dd>
+<dt><b>--encoding</b> UTF-16LE|ASCII</dt>
+<dd>
+
+<p>When merging (only), you may need to specify the encoding for strings to be used in the hive file. This is explained in detail in <a href="http://search.cpan.org/perldoc?Win::Hivex::Regedit(3)#encoding-strings">&quot;ENCODING STRINGS&quot; in Win::Hivex::Regedit(3)</a>.</p>
+
+<p>The default is to use UTF-16LE, which should work with recent versions of Windows.</p>
+
+</dd>
+<dt><b>--unsafe-printable-strings</b></dt>
+<dd>
+
+<p>When exporting (only), assume strings are UTF-16LE and print them as strings instead of hex sequences. Remove the final zero codepoint from strings if present.</p>
+
+<p>This is unsafe and does not preserve the fidelity of strings in the original Registry for various reasons:</p>
+
+<ul>
+
+<li><p>Assumes the original encoding is UTF-16LE. ASCII strings and strings in other encodings will be corrupted by this transformation.</p>
+
+</li>
+<li><p>Assumes that everything which has type 1 or 2 is really a string and that everything else is not a string, but the type field in real Registries is not reliable.</p>
+
+</li>
+<li><p>Loses information about whether a zero codepoint followed the string in the Registry or not.</p>
+
+</li>
+</ul>
+
+<p>This all happens because the Registry itself contains no information about how strings are encoded (see <a href="http://search.cpan.org/perldoc?Win::Hivex::Regedit(3)#encoding-strings">&quot;ENCODING STRINGS&quot; in Win::Hivex::Regedit(3)</a>).</p>
+
+<p>You should only use this option for quick hacking and debugging of the Registry contents, and <i>never</i> use it if the output is going to be passed into another program or stored in another Registry.</p>
+
+</dd>
+</dl>
+
+<h1 id="supported-systems">SUPPORTED SYSTEMS</h1>
+
+<p>The program currently supports Windows NT-derived guests starting with Windows XP through to at least Windows 8.</p>
+
+<p>The following Registry keys are supported:</p>
+
+<dl>
+
+<dt><code>HKEY_LOCAL_MACHINE\SAM</code></dt>
+<dd>
+
+</dd>
+<dt><code>HKEY_LOCAL_MACHINE\SECURITY</code></dt>
+<dd>
+
+</dd>
+<dt><code>HKEY_LOCAL_MACHINE\SOFTWARE</code></dt>
+<dd>
+
+</dd>
+<dt><code>HKEY_LOCAL_MACHINE\SYSTEM</code></dt>
+<dd>
+
+</dd>
+<dt><code>HKEY_USERS\.DEFAULT</code></dt>
+<dd>
+
+</dd>
+<dt><code>HKEY_USERS\<i>SID</i></code></dt>
+<dd>
+
+<p>where <i>SID</i> is a Windows User SID (eg. <code>S-1-5-18</code>).</p>
+
+</dd>
+<dt><code>HKEY_USERS\<i>username</i></code></dt>
+<dd>
+
+<p>where <i>username</i> is a local user name (this is a libguestfs extension).</p>
+
+</dd>
+</dl>
+
+<p>You can use <code>HKLM</code> as a shorthand for <code>HKEY_LOCAL_MACHINE</code>, and <code>HKU</code> for <code>HKEY_USERS</code>.</p>
+
+<p>The literal keys <code>HKEY_USERS\$SID</code> and <code>HKEY_CURRENT_USER</code> are not supported (there is no &quot;current user&quot;).</p>
+
+<h2 id="windows-8">WINDOWS 8</h2>
+
+<p>Windows 8 &quot;fast startup&quot; can prevent virt-win-reg from being able to edit the Registry. See <a href="guestfs.3.html#windows-hibernation-and-windows-8-fast-startup">&quot;WINDOWS HIBERNATION AND WINDOWS 8 FAST STARTUP&quot; in guestfs(3)</a>.</p>
+
+<h1 id="encoding">ENCODING</h1>
+
+<p><code>virt-win-reg</code> expects that regedit files have already been reencoded in the local encoding. Usually on Linux hosts, this means UTF-8 with Unix-style line endings. Since Windows regedit files are often in UTF-16LE with Windows-style line endings, you may need to reencode the whole file before or after processing.</p>
+
+<p>To reencode a file from Windows format to Linux (before processing it with the <i>--merge</i> option), you would do something like this:</p>
+
+<pre><code> iconv -f utf-16le -t utf-8 &lt; win.reg | dos2unix &gt; linux.reg</code></pre>
+
+<p>To go in the opposite direction, after exporting and before sending the file to a Windows user, do something like this:</p>
+
+<pre><code> unix2dos linux.reg | iconv -f utf-8 -t utf-16le &gt; win.reg</code></pre>
+
+<p>For more information about encoding, see <a href="http://search.cpan.org/perldoc?Win::Hivex::Regedit(3)">Win::Hivex::Regedit(3)</a>.</p>
+
+<p>If you are unsure about the current encoding, use the <a href="http://man.he.net/man1/file">file(1)</a> command. Recent versions of Windows regedit.exe produce a UTF-16LE file with Windows-style (CRLF) line endings, like this:</p>
+
+<pre><code> $ file software.reg
+ software.reg: Little-endian UTF-16 Unicode text, with very long lines,
+ with CRLF line terminators</code></pre>
+
+<p>This file would need conversion before you could <i>--merge</i> it.</p>
+
+<h1 id="currentcontrolset-etc.">CurrentControlSet etc.</h1>
+
+<p>Registry keys like <code>CurrentControlSet</code> don&#39;t really exist in the Windows Registry at the level of the hive file, and therefore you cannot modify these.</p>
+
+<p><code>CurrentControlSet</code> is usually an alias for <code>ControlSet001</code>. In some circumstances it might refer to another control set. The way to find out is to look at the <code>HKLM\SYSTEM\Select</code> key:</p>
+
+<pre><code> # virt-win-reg WindowsGuest &#39;HKLM\SYSTEM\Select&#39;
+ [HKEY_LOCAL_MACHINE\SYSTEM\Select]
+ &quot;Current&quot;=dword:00000001
+ &quot;Default&quot;=dword:00000001
+ &quot;Failed&quot;=dword:00000000
+ &quot;LastKnownGood&quot;=dword:00000002</code></pre>
+
+<p>&quot;Current&quot; is the one which Windows will choose when it boots.</p>
+
+<p>Similarly, other <code>Current...</code> keys in the path may need to be replaced.</p>
+
+<h1 id="deleting-registry-keys-and-values">DELETING REGISTRY KEYS AND VALUES</h1>
+
+<p>To delete a whole registry key, use the syntax:</p>
+
+<pre><code> [-HKEY_LOCAL_MACHINE\Foo]</code></pre>
+
+<p>To delete a single value within a key, use the syntax:</p>
+
+<pre><code> [HKEY_LOCAL_MACHINE\Foo]
+ &quot;Value&quot;=-</code></pre>
+
+<h1 id="windows-tips">WINDOWS TIPS</h1>
+
+<p>Note that some of these tips modify the guest disk image. The guest <i>must</i> be shut off, else you will get disk corruption.</p>
+
+<h2 id="running-a-batch-script-when-a-user-logs-in">RUNNING A BATCH SCRIPT WHEN A USER LOGS IN</h2>
+
+<p>Prepare a DOS batch script, VBScript or executable. Upload this using <a href="guestfish.1.html">guestfish(1)</a>. For this example the script is called <code>test.bat</code> and it is uploaded into <code>C:\</code>:</p>
+
+<pre><code> guestfish -i -d WindowsGuest upload test.bat /test.bat</code></pre>
+
+<p>Prepare a regedit file containing the registry change:</p>
+
+<pre><code> cat &gt; test.reg &lt;&lt;&#39;EOF&#39;
+ [HKLM\Software\Microsoft\Windows\CurrentVersion\RunOnce]
+ &quot;Test&quot;=&quot;c:\\test.bat&quot;
+ EOF</code></pre>
+
+<p>In this example we use the key <code>RunOnce</code> which means that the script will run precisely once when the first user logs in. If you want it to run every time a user logs in, replace <code>RunOnce</code> with <code>Run</code>.</p>
+
+<p>Now update the registry:</p>
+
+<pre><code> virt-win-reg --merge WindowsGuest test.reg</code></pre>
+
+<h2 id="installing-a-service">INSTALLING A SERVICE</h2>
+
+<p>This section assumes you are familiar with Windows services, and you either have a program which handles the Windows Service Control Protocol directly or you want to run any program using a service wrapper like SrvAny or the free RHSrvAny.</p>
+
+<p>First upload the program and optionally the service wrapper. In this case the test program is called <code>test.exe</code> and we are using the RHSrvAny wrapper:</p>
+
+<pre><code> guestfish -i -d WindowsGuest &lt;&lt;EOF
+   upload rhsrvany.exe /rhsrvany.exe
+   upload test.exe /test.exe
+ EOF</code></pre>
+
+<p>Prepare a regedit file containing the registry changes. In this example, the first registry change is needed for the service itself or the service wrapper (if used). The second registry change is only needed because I am using the RHSrvAny service wrapper.</p>
+
+<pre><code> cat &gt; service.reg &lt;&lt;&#39;EOF&#39;
+ [HKLM\SYSTEM\ControlSet001\services\RHSrvAny]
+ &quot;Type&quot;=dword:00000010
+ &quot;Start&quot;=dword:00000002
+ &quot;ErrorControl&quot;=dword:00000001
+ &quot;ImagePath&quot;=&quot;c:\\rhsrvany.exe&quot;
+ &quot;DisplayName&quot;=&quot;RHSrvAny&quot;
+ &quot;ObjectName&quot;=&quot;NetworkService&quot;
+ 
+ [HKLM\SYSTEM\ControlSet001\services\RHSrvAny\Parameters]
+ &quot;CommandLine&quot;=&quot;c:\\test.exe&quot;
+ &quot;PWD&quot;=&quot;c:\\Temp&quot;
+ EOF</code></pre>
+
+<p>Notes:</p>
+
+<ul>
+
+<li><p>For use of <code>ControlSet001</code> see the section above in this manual page. You may need to adjust this according to the control set that is in use by the guest.</p>
+
+</li>
+<li><p><code>&quot;ObjectName&quot;</code> controls the privileges that the service will have. An alternative is <code>&quot;ObjectName&quot;=&quot;LocalSystem&quot;</code> which would be the most privileged account.</p>
+
+</li>
+<li><p>For the meaning of the magic numbers, see this Microsoft KB article: <a href="http://support.microsoft.com/kb/103000">http://support.microsoft.com/kb/103000</a>.</p>
+
+</li>
+</ul>
+
+<p>Update the registry:</p>
+
+<pre><code> virt-win-reg --merge WindowsGuest service.reg</code></pre>
+
+<h1 id="shell-quoting">SHELL QUOTING</h1>
+
+<p>Be careful when passing parameters containing <code>\</code> (backslash) in the shell. Usually you will have to use &#39;single quotes&#39; or double backslashes (but not both) to protect them from the shell.</p>
+
+<p>Paths and value names are case-insensitive.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="hivex.3.html">hivex(3)</a>, <a href="hivexsh.1.html">hivexsh(1)</a>, <a href="hivexregedit.1.html">hivexregedit(1)</a>, <a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="virt-cat.1.html">virt-cat(1)</a>, <a href="Sys::Guestfs(3).3.html">Sys::Guestfs(3)</a>, <a href="http://search.cpan.org/perldoc?Win::Hivex(3)">Win::Hivex(3)</a>, <a href="http://search.cpan.org/perldoc?Win::Hivex::Regedit(3)">Win::Hivex::Regedit(3)</a>, <a href="http://search.cpan.org/perldoc?Sys::Virt(3)">Sys::Virt(3)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2010 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

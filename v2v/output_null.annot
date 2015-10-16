@@ -1,0 +1,303 @@
+"output_null.ml" 32 1070 1076 "output_null.ml" 32 1070 1082
+type(
+  string
+)
+"output_null.ml" 33 1085 1093 "output_null.ml" 33 1085 1101
+type(
+  string
+)
+"output_null.ml" 33 1085 1105 "output_null.ml" 33 1085 1124
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> Guestfs.guestfs
+)
+"output_null.ml" 33 1085 1125 "output_null.ml" 33 1085 1127
+type(
+  unit
+)
+"output_null.ml" 33 1085 1104 "output_null.ml" 33 1085 1128
+call(
+  stack
+)
+type(
+  Guestfs.guestfs
+)
+"output_null.ml" 33 1085 1104 "output_null.ml" 33 1085 1141
+call(
+  stack
+)
+type(
+  unit -> string
+)
+"output_null.ml" 33 1085 1142 "output_null.ml" 33 1085 1144
+type(
+  unit
+)
+"output_null.ml" 33 1085 1104 "output_null.ml" 33 1085 1144
+type(
+  string
+)
+"output_null.ml" 34 1148 1156 "output_null.ml" 34 1148 1157
+type(
+  string
+)
+"output_null.ml" 34 1148 1160 "output_null.ml" 34 1148 1176
+type(
+  ?base_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Mkdtemp.temp_dir
+)
+"output_null.ml" 34 1148 1178 "output_null.ml" 34 1148 1186
+type(
+  string
+)
+ident(
+  int_ref base_dir "output_null.ml" 33 1085 1093 "output_null.ml" 33 1085 1101
+)
+"output_null.ml" 34 1148 1187 "output_null.ml" 34 1148 1194
+type(
+  string
+)
+"output_null.ml" 34 1148 1195 "output_null.ml" 34 1148 1197
+type(
+  string
+)
+"output_null.ml" 34 1148 1160 "output_null.ml" 34 1148 1197
+call(
+  stack
+)
+type(
+  string
+)
+"output_null.ml" 35 1201 1205 "output_null.ml" 35 1201 1218
+type(
+  string -> unit
+)
+ident(
+  ext_ref Common_utils.rmdir_on_exit
+)
+"output_null.ml" 35 1201 1219 "output_null.ml" 35 1201 1220
+type(
+  string
+)
+ident(
+  int_ref t "output_null.ml" 34 1148 1156 "output_null.ml" 34 1148 1157
+)
+"output_null.ml" 35 1201 1205 "output_null.ml" 35 1201 1220
+call(
+  stack
+)
+type(
+  unit
+)
+"output_null.ml" 36 1222 1226 "output_null.ml" 36 1222 1227
+type(
+  string
+)
+ident(
+  int_ref t "output_null.ml" 34 1148 1156 "output_null.ml" 34 1148 1157
+)
+"output_null.ml" 35 1201 1205 "output_null.ml" 36 1222 1227
+type(
+  string
+)
+"output_null.ml" 34 1148 1152 "output_null.ml" 36 1222 1227
+type(
+  string
+)
+"output_null.ml" 33 1085 1089 "output_null.ml" 36 1222 1227
+type(
+  string
+)
+"output_null.ml" 40 1256 1278 "output_null.ml" 40 1256 1287
+type(
+  string
+)
+type(
+  string
+)
+"output_null.ml" 42 1289 1321 "output_null.ml" 42 1289 1331
+type(
+  Types.target_firmware
+)
+"output_null.ml" 42 1289 1333 "output_null.ml" 42 1289 1343
+type(
+  Types.target_firmware
+)
+"output_null.ml" 42 1289 1319 "output_null.ml" 42 1289 1345
+type(
+  Types.target_firmware list
+)
+type(
+  Types.target_firmware list
+)
+"output_null.ml" 44 1347 1372 "output_null.ml" 44 1347 1378
+type(
+  Types.source
+)
+ident(
+  def source "output_null.ml" 44 1347 1379 "output_null.ml" 49 1526 1539
+)
+"output_null.ml" 44 1347 1379 "output_null.ml" 44 1347 1386
+type(
+  Types.target list
+)
+ident(
+  def targets "output_null.ml" 45 1389 1393 "output_null.ml" 49 1526 1539
+)
+"output_null.ml" 45 1389 1393 "output_null.ml" 45 1389 1401
+type(
+  (Types.target -> Types.target) -> Types.target list -> Types.target list
+)
+ident(
+  ext_ref List.map
+)
+"output_null.ml" 46 1404 1414 "output_null.ml" 46 1404 1415
+type(
+  Types.target
+)
+ident(
+  def t "output_null.ml" 47 1419 1427 "output_null.ml" 48 1481 1525
+)
+"output_null.ml" 47 1419 1431 "output_null.ml" 47 1419 1442
+type(
+  string
+)
+"output_null.ml" 47 1419 1445 "output_null.ml" 47 1419 1451
+type(
+  string
+)
+"output_null.ml" 47 1419 1452 "output_null.ml" 47 1419 1454
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_null.ml" 47 1419 1455 "output_null.ml" 47 1419 1456
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_null.ml" 46 1404 1414 "output_null.ml" 46 1404 1415
+)
+"output_null.ml" 47 1419 1455 "output_null.ml" 47 1419 1471
+type(
+  Types.overlay
+)
+"output_null.ml" 47 1419 1455 "output_null.ml" 47 1419 1477
+type(
+  string
+)
+"output_null.ml" 47 1419 1445 "output_null.ml" 47 1419 1477
+call(
+  stack
+)
+type(
+  string
+)
+"output_null.ml" 48 1481 1491 "output_null.ml" 48 1481 1492
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_null.ml" 46 1404 1414 "output_null.ml" 46 1404 1415
+)
+"output_null.ml" 48 1481 1512 "output_null.ml" 48 1481 1523
+type(
+  string
+)
+ident(
+  int_ref target_file "output_null.ml" 47 1419 1431 "output_null.ml" 47 1419 1442
+)
+"output_null.ml" 48 1481 1489 "output_null.ml" 48 1481 1525
+type(
+  Types.target
+)
+"output_null.ml" 47 1419 1427 "output_null.ml" 48 1481 1525
+type(
+  Types.target
+)
+"output_null.ml" 45 1389 1402 "output_null.ml" 49 1526 1531
+type(
+  Types.target -> Types.target
+)
+"output_null.ml" 49 1526 1532 "output_null.ml" 49 1526 1539
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_null.ml" 44 1347 1379 "output_null.ml" 44 1347 1386
+)
+"output_null.ml" 45 1389 1393 "output_null.ml" 49 1526 1539
+call(
+  tail
+)
+type(
+  Types.target list
+)
+"output_null.ml" 51 1541 1566 "output_null.ml" 51 1541 1567
+type(
+  Types.source
+)
+"output_null.ml" 51 1541 1568 "output_null.ml" 51 1541 1569
+type(
+  Types.target list
+)
+"output_null.ml" 51 1541 1570 "output_null.ml" 51 1541 1571
+type(
+  Types.target_buses
+)
+"output_null.ml" 51 1541 1572 "output_null.ml" 51 1541 1573
+type(
+  Types.guestcaps
+)
+"output_null.ml" 51 1541 1574 "output_null.ml" 51 1541 1575
+type(
+  Types.inspect
+)
+"output_null.ml" 51 1541 1576 "output_null.ml" 51 1541 1577
+type(
+  Types.target_firmware
+)
+"output_null.ml" 51 1541 1580 "output_null.ml" 51 1541 1582
+type(
+  unit
+)
+"output_null.ml" 54 1588 1592 "output_null.ml" 54 1588 1603
+type(
+  unit -> output_null
+)
+ident(
+  def output_null "output_null.ml" 55 1625 1625 --
+)
+"output_null.ml" 54 1588 1604 "output_null.ml" 54 1588 1606
+type(
+  unit
+)
+"output_null.ml" 54 1588 1609 "output_null.ml" 54 1588 1624
+type(
+  output_null
+)
+"output_null.ml" 55 1625 1629 "output_null.ml" 55 1625 1631
+type(
+  unit
+)
+"output_null.ml" 55 1625 1634 "output_null.ml" 55 1625 1669
+type(
+  string -> unit
+)
+ident(
+  ext_ref Modules_list.register_output_module
+)
+"output_null.ml" 55 1625 1670 "output_null.ml" 55 1625 1676
+type(
+  string
+)
+"output_null.ml" 55 1625 1634 "output_null.ml" 55 1625 1676
+call(
+  stack
+)
+type(
+  unit
+)

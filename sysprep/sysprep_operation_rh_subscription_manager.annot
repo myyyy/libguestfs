@@ -1,0 +1,321 @@
+"sysprep_operation_rh_subscription_manager.ml" 24 848 852 "sysprep_operation_rh_subscription_manager.ml" 24 848 883
+type(
+  < glob_expand : string -> 'a array; inspect_get_distro : 'b -> string;
+    inspect_get_type : 'b -> string; rm_rf : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def rh_subscription_manager_perform "sysprep_operation_rh_subscription_manager.ml" 34 1177 1177 --
+)
+"sysprep_operation_rh_subscription_manager.ml" 24 848 884 "sysprep_operation_rh_subscription_manager.ml" 24 848 885
+type(
+  < glob_expand : string -> 'a array; inspect_get_distro : 'b -> string;
+    inspect_get_type : 'b -> string; rm_rf : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_rh_subscription_manager.ml" 24 848 886 "sysprep_operation_rh_subscription_manager.ml" 32 1164 1175
+)
+"sysprep_operation_rh_subscription_manager.ml" 24 848 886 "sysprep_operation_rh_subscription_manager.ml" 24 848 890
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_rh_subscription_manager.ml" 24 848 891 "sysprep_operation_rh_subscription_manager.ml" 32 1164 1175
+)
+"sysprep_operation_rh_subscription_manager.ml" 24 848 891 "sysprep_operation_rh_subscription_manager.ml" 24 848 903
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_rh_subscription_manager.ml" 25 906 908 "sysprep_operation_rh_subscription_manager.ml" 32 1164 1175
+)
+"sysprep_operation_rh_subscription_manager.ml" 25 906 912 "sysprep_operation_rh_subscription_manager.ml" 25 906 915
+type(
+  string
+)
+"sysprep_operation_rh_subscription_manager.ml" 25 906 918 "sysprep_operation_rh_subscription_manager.ml" 25 906 919
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_rh_subscription_manager.ml" 24 848 884 "sysprep_operation_rh_subscription_manager.ml" 24 848 885
+)
+"sysprep_operation_rh_subscription_manager.ml" 25 906 918 "sysprep_operation_rh_subscription_manager.ml" 25 906 936
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_rh_subscription_manager.ml" 25 906 937 "sysprep_operation_rh_subscription_manager.ml" 25 906 941
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_rh_subscription_manager.ml" 24 848 886 "sysprep_operation_rh_subscription_manager.ml" 24 848 890
+)
+"sysprep_operation_rh_subscription_manager.ml" 25 906 918 "sysprep_operation_rh_subscription_manager.ml" 25 906 941
+type(
+  string
+)
+"sysprep_operation_rh_subscription_manager.ml" 26 945 951 "sysprep_operation_rh_subscription_manager.ml" 26 945 957
+type(
+  string
+)
+"sysprep_operation_rh_subscription_manager.ml" 26 945 960 "sysprep_operation_rh_subscription_manager.ml" 26 945 961
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_rh_subscription_manager.ml" 24 848 884 "sysprep_operation_rh_subscription_manager.ml" 24 848 885
+)
+"sysprep_operation_rh_subscription_manager.ml" 26 945 960 "sysprep_operation_rh_subscription_manager.ml" 26 945 980
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_rh_subscription_manager.ml" 26 945 981 "sysprep_operation_rh_subscription_manager.ml" 26 945 985
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_rh_subscription_manager.ml" 24 848 886 "sysprep_operation_rh_subscription_manager.ml" 24 848 890
+)
+"sysprep_operation_rh_subscription_manager.ml" 26 945 960 "sysprep_operation_rh_subscription_manager.ml" 26 945 985
+type(
+  string
+)
+"sysprep_operation_rh_subscription_manager.ml" 28 990 998 "sysprep_operation_rh_subscription_manager.ml" 28 990 1001
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_rh_subscription_manager.ml" 25 906 912 "sysprep_operation_rh_subscription_manager.ml" 25 906 915
+)
+"sysprep_operation_rh_subscription_manager.ml" 28 990 1003 "sysprep_operation_rh_subscription_manager.ml" 28 990 1009
+type(
+  string
+)
+ident(
+  int_ref distro "sysprep_operation_rh_subscription_manager.ml" 26 945 951 "sysprep_operation_rh_subscription_manager.ml" 26 945 957
+)
+"sysprep_operation_rh_subscription_manager.ml" 28 990 998 "sysprep_operation_rh_subscription_manager.ml" 28 990 1009
+type(
+  string * string
+)
+"sysprep_operation_rh_subscription_manager.ml" 29 1015 1019 "sysprep_operation_rh_subscription_manager.ml" 29 1015 1026
+type(
+  string
+)
+"sysprep_operation_rh_subscription_manager.ml" 29 1015 1028 "sysprep_operation_rh_subscription_manager.ml" 29 1015 1034
+type(
+  string
+)
+"sysprep_operation_rh_subscription_manager.ml" 29 1015 1019 "sysprep_operation_rh_subscription_manager.ml" 29 1015 1034
+type(
+  string * string
+)
+"sysprep_operation_rh_subscription_manager.ml" 30 1038 1042 "sysprep_operation_rh_subscription_manager.ml" 30 1038 1052
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_rh_subscription_manager.ml" 30 1038 1053 "sysprep_operation_rh_subscription_manager.ml" 30 1038 1054
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_rh_subscription_manager.ml" 24 848 884 "sysprep_operation_rh_subscription_manager.ml" 24 848 885
+)
+"sysprep_operation_rh_subscription_manager.ml" 30 1038 1053 "sysprep_operation_rh_subscription_manager.ml" 30 1038 1060
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_rh_subscription_manager.ml" 30 1038 1062 "sysprep_operation_rh_subscription_manager.ml" 30 1038 1063
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_rh_subscription_manager.ml" 24 848 884 "sysprep_operation_rh_subscription_manager.ml" 24 848 885
+)
+"sysprep_operation_rh_subscription_manager.ml" 30 1038 1062 "sysprep_operation_rh_subscription_manager.ml" 30 1038 1075
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_rh_subscription_manager.ml" 30 1038 1076 "sysprep_operation_rh_subscription_manager.ml" 30 1038 1097
+type(
+  string
+)
+"sysprep_operation_rh_subscription_manager.ml" 30 1038 1061 "sysprep_operation_rh_subscription_manager.ml" 30 1038 1098
+type(
+  'a array
+)
+"sysprep_operation_rh_subscription_manager.ml" 30 1038 1042 "sysprep_operation_rh_subscription_manager.ml" 30 1038 1098
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_rh_subscription_manager.ml" 31 1100 1104 "sysprep_operation_rh_subscription_manager.ml" 31 1100 1114
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_rh_subscription_manager.ml" 31 1100 1115 "sysprep_operation_rh_subscription_manager.ml" 31 1100 1116
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_rh_subscription_manager.ml" 24 848 884 "sysprep_operation_rh_subscription_manager.ml" 24 848 885
+)
+"sysprep_operation_rh_subscription_manager.ml" 31 1100 1115 "sysprep_operation_rh_subscription_manager.ml" 31 1100 1122
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_rh_subscription_manager.ml" 31 1100 1124 "sysprep_operation_rh_subscription_manager.ml" 31 1100 1125
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_rh_subscription_manager.ml" 24 848 884 "sysprep_operation_rh_subscription_manager.ml" 24 848 885
+)
+"sysprep_operation_rh_subscription_manager.ml" 31 1100 1124 "sysprep_operation_rh_subscription_manager.ml" 31 1100 1137
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_rh_subscription_manager.ml" 31 1100 1138 "sysprep_operation_rh_subscription_manager.ml" 31 1100 1162
+type(
+  string
+)
+"sysprep_operation_rh_subscription_manager.ml" 31 1100 1123 "sysprep_operation_rh_subscription_manager.ml" 31 1100 1163
+type(
+  'a array
+)
+"sysprep_operation_rh_subscription_manager.ml" 31 1100 1104 "sysprep_operation_rh_subscription_manager.ml" 31 1100 1163
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_rh_subscription_manager.ml" 30 1038 1042 "sysprep_operation_rh_subscription_manager.ml" 31 1100 1163
+type(
+  unit
+)
+"sysprep_operation_rh_subscription_manager.ml" 32 1164 1168 "sysprep_operation_rh_subscription_manager.ml" 32 1164 1169
+type(
+  string * string
+)
+"sysprep_operation_rh_subscription_manager.ml" 32 1164 1173 "sysprep_operation_rh_subscription_manager.ml" 32 1164 1175
+type(
+  unit
+)
+"sysprep_operation_rh_subscription_manager.ml" 28 990 992 "sysprep_operation_rh_subscription_manager.ml" 32 1164 1175
+type(
+  unit
+)
+"sysprep_operation_rh_subscription_manager.ml" 26 945 947 "sysprep_operation_rh_subscription_manager.ml" 32 1164 1175
+type(
+  unit
+)
+"sysprep_operation_rh_subscription_manager.ml" 25 906 908 "sysprep_operation_rh_subscription_manager.ml" 32 1164 1175
+type(
+  unit
+)
+"sysprep_operation_rh_subscription_manager.ml" 34 1177 1181 "sysprep_operation_rh_subscription_manager.ml" 34 1177 1183
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_rh_subscription_manager.ml" 42 1403 1403 --
+)
+"sysprep_operation_rh_subscription_manager.ml" 35 1188 1190 "sysprep_operation_rh_subscription_manager.ml" 35 1188 1198
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_rh_subscription_manager.ml" 36 1204 1215 "sysprep_operation_rh_subscription_manager.ml" 36 1204 1240
+type(
+  string
+)
+"sysprep_operation_rh_subscription_manager.ml" 37 1242 1267 "sysprep_operation_rh_subscription_manager.ml" 37 1242 1271
+type(
+  bool
+)
+"sysprep_operation_rh_subscription_manager.ml" 38 1273 1287 "sysprep_operation_rh_subscription_manager.ml" 38 1273 1289
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_rh_subscription_manager.ml" 38 1273 1289 "sysprep_operation_rh_subscription_manager.ml" 38 1273 1331
+type(
+  string
+)
+"sysprep_operation_rh_subscription_manager.ml" 38 1273 1287 "sysprep_operation_rh_subscription_manager.ml" 38 1273 1331
+type(
+  string
+)
+"sysprep_operation_rh_subscription_manager.ml" 39 1333 1367 "sysprep_operation_rh_subscription_manager.ml" 39 1333 1398
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref rh_subscription_manager_perform "sysprep_operation_rh_subscription_manager.ml" 24 848 852 "sysprep_operation_rh_subscription_manager.ml" 24 848 883
+)
+"sysprep_operation_rh_subscription_manager.ml" 39 1333 1362 "sysprep_operation_rh_subscription_manager.ml" 39 1333 1398
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_rh_subscription_manager.ml" 34 1177 1186 "sysprep_operation_rh_subscription_manager.ml" 40 1400 1401
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_rh_subscription_manager.ml" 42 1403 1407 "sysprep_operation_rh_subscription_manager.ml" 42 1403 1409
+type(
+  unit
+)
+"sysprep_operation_rh_subscription_manager.ml" 42 1403 1412 "sysprep_operation_rh_subscription_manager.ml" 42 1403 1430
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_rh_subscription_manager.ml" 42 1403 1431 "sysprep_operation_rh_subscription_manager.ml" 42 1403 1433
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_rh_subscription_manager.ml" 34 1177 1181 "sysprep_operation_rh_subscription_manager.ml" 34 1177 1183
+)
+"sysprep_operation_rh_subscription_manager.ml" 42 1403 1412 "sysprep_operation_rh_subscription_manager.ml" 42 1403 1433
+call(
+  stack
+)
+type(
+  unit
+)

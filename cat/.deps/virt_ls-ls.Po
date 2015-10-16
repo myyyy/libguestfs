@@ -59,8 +59,7 @@ virt_ls-ls.o: ls.c ../config.h ../gnulib/lib/stdio.h /usr/include/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h \
  ../gnulib/lib/xstrtol.h ../src/guestfs.h ../fish/options.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h visit.h
+ ../src/guestfs-internal-frontend-cleanups.h visit.h
 
 ../config.h:
 
@@ -251,7 +250,5 @@ virt_ls-ls.o: ls.c ../config.h ../gnulib/lib/stdio.h /usr/include/stdio.h \
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 visit.h:

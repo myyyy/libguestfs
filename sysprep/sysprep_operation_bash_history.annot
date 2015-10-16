@@ -1,0 +1,351 @@
+"sysprep_operation_bash_history.ml" 24 851 855 "sysprep_operation_bash_history.ml" 24 851 875
+type(
+  < glob_expand : string -> string array; inspect_get_type : 'a -> string;
+    rm : string -> unit; .. > ->
+  'a -> 'b -> unit
+)
+ident(
+  def bash_history_perform "sysprep_operation_bash_history.ml" 34 1171 1171 --
+)
+"sysprep_operation_bash_history.ml" 24 851 876 "sysprep_operation_bash_history.ml" 24 851 877
+type(
+  < glob_expand : string -> string array; inspect_get_type : 'a -> string;
+    rm : string -> unit; .. >
+  as 'c
+)
+ident(
+  def g "sysprep_operation_bash_history.ml" 24 851 878 "sysprep_operation_bash_history.ml" 32 1166 1169
+)
+"sysprep_operation_bash_history.ml" 24 851 878 "sysprep_operation_bash_history.ml" 24 851 882
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_bash_history.ml" 24 851 883 "sysprep_operation_bash_history.ml" 32 1166 1169
+)
+"sysprep_operation_bash_history.ml" 24 851 883 "sysprep_operation_bash_history.ml" 24 851 895
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_bash_history.ml" 25 898 900 "sysprep_operation_bash_history.ml" 32 1166 1169
+)
+"sysprep_operation_bash_history.ml" 25 898 904 "sysprep_operation_bash_history.ml" 25 898 907
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 25 898 910 "sysprep_operation_bash_history.ml" 25 898 911
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_bash_history.ml" 24 851 876 "sysprep_operation_bash_history.ml" 24 851 877
+)
+"sysprep_operation_bash_history.ml" 25 898 910 "sysprep_operation_bash_history.ml" 25 898 928
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_bash_history.ml" 25 898 929 "sysprep_operation_bash_history.ml" 25 898 933
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_bash_history.ml" 24 851 878 "sysprep_operation_bash_history.ml" 24 851 882
+)
+"sysprep_operation_bash_history.ml" 25 898 910 "sysprep_operation_bash_history.ml" 25 898 933
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 26 937 942 "sysprep_operation_bash_history.ml" 26 937 945
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_bash_history.ml" 25 898 904 "sysprep_operation_bash_history.ml" 25 898 907
+)
+"sysprep_operation_bash_history.ml" 26 937 946 "sysprep_operation_bash_history.ml" 26 937 948
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_bash_history.ml" 26 937 949 "sysprep_operation_bash_history.ml" 26 937 958
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 26 937 942 "sysprep_operation_bash_history.ml" 26 937 958
+type(
+  bool
+)
+"sysprep_operation_bash_history.ml" 27 966 974 "sysprep_operation_bash_history.ml" 27 966 979
+type(
+  string array
+)
+"sysprep_operation_bash_history.ml" 27 966 982 "sysprep_operation_bash_history.ml" 27 966 983
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_bash_history.ml" 24 851 876 "sysprep_operation_bash_history.ml" 24 851 877
+)
+"sysprep_operation_bash_history.ml" 27 966 982 "sysprep_operation_bash_history.ml" 27 966 995
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"sysprep_operation_bash_history.ml" 27 966 996 "sysprep_operation_bash_history.ml" 27 966 1019
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 27 966 982 "sysprep_operation_bash_history.ml" 27 966 1019
+type(
+  string array
+)
+"sysprep_operation_bash_history.ml" 28 1023 1027 "sysprep_operation_bash_history.ml" 28 1023 1037
+type(
+  (string -> unit) -> string array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_bash_history.ml" 29 1040 1050 "sysprep_operation_bash_history.ml" 29 1040 1054
+type(
+  string
+)
+ident(
+  def file "sysprep_operation_bash_history.ml" 29 1040 1058 "sysprep_operation_bash_history.ml" 29 1040 1093
+)
+"sysprep_operation_bash_history.ml" 29 1040 1062 "sysprep_operation_bash_history.ml" 29 1040 1063
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_bash_history.ml" 24 851 876 "sysprep_operation_bash_history.ml" 24 851 877
+)
+"sysprep_operation_bash_history.ml" 29 1040 1062 "sysprep_operation_bash_history.ml" 29 1040 1066
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_bash_history.ml" 29 1040 1067 "sysprep_operation_bash_history.ml" 29 1040 1071
+type(
+  string
+)
+ident(
+  int_ref file "sysprep_operation_bash_history.ml" 29 1040 1050 "sysprep_operation_bash_history.ml" 29 1040 1054
+)
+"sysprep_operation_bash_history.ml" 29 1040 1062 "sysprep_operation_bash_history.ml" 29 1040 1071
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 29 1040 1085 "sysprep_operation_bash_history.ml" 29 1040 1086
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 29 1040 1077 "sysprep_operation_bash_history.ml" 29 1040 1086
+type(
+  exn
+)
+"sysprep_operation_bash_history.ml" 29 1040 1090 "sysprep_operation_bash_history.ml" 29 1040 1093
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 29 1040 1058 "sysprep_operation_bash_history.ml" 29 1040 1093
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 28 1023 1038 "sysprep_operation_bash_history.ml" 30 1094 1099
+type(
+  string -> unit
+)
+"sysprep_operation_bash_history.ml" 30 1094 1100 "sysprep_operation_bash_history.ml" 30 1094 1105
+type(
+  string array
+)
+ident(
+  int_ref files "sysprep_operation_bash_history.ml" 27 966 974 "sysprep_operation_bash_history.ml" 27 966 979
+)
+"sysprep_operation_bash_history.ml" 28 1023 1027 "sysprep_operation_bash_history.ml" 30 1094 1105
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 31 1107 1116 "sysprep_operation_bash_history.ml" 31 1107 1117
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_bash_history.ml" 24 851 876 "sysprep_operation_bash_history.ml" 24 851 877
+)
+"sysprep_operation_bash_history.ml" 31 1107 1116 "sysprep_operation_bash_history.ml" 31 1107 1120
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_bash_history.ml" 31 1107 1121 "sysprep_operation_bash_history.ml" 31 1107 1142
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 31 1107 1116 "sysprep_operation_bash_history.ml" 31 1107 1142
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 31 1107 1156 "sysprep_operation_bash_history.ml" 31 1107 1157
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 31 1107 1148 "sysprep_operation_bash_history.ml" 31 1107 1157
+type(
+  exn
+)
+"sysprep_operation_bash_history.ml" 31 1107 1161 "sysprep_operation_bash_history.ml" 31 1107 1163
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 31 1107 1111 "sysprep_operation_bash_history.ml" 31 1107 1165
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 28 1023 1027 "sysprep_operation_bash_history.ml" 31 1107 1165
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 26 937 964 "sysprep_operation_bash_history.ml" 32 1166 1169
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 26 937 939 "sysprep_operation_bash_history.ml" 32 1166 1169
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 25 898 900 "sysprep_operation_bash_history.ml" 32 1166 1169
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 34 1171 1175 "sysprep_operation_bash_history.ml" 34 1171 1177
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_bash_history.ml" 49 1718 1718 --
+)
+"sysprep_operation_bash_history.ml" 35 1182 1184 "sysprep_operation_bash_history.ml" 35 1182 1192
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_bash_history.ml" 36 1198 1209 "sysprep_operation_bash_history.ml" 36 1198 1223
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 37 1225 1250 "sysprep_operation_bash_history.ml" 37 1225 1254
+type(
+  bool
+)
+"sysprep_operation_bash_history.ml" 38 1256 1270 "sysprep_operation_bash_history.ml" 38 1256 1272
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_bash_history.ml" 38 1256 1272 "sysprep_operation_bash_history.ml" 38 1256 1310
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 38 1256 1270 "sysprep_operation_bash_history.ml" 38 1256 1310
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 39 1312 1340 "sysprep_operation_bash_history.ml" 39 1312 1342
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_bash_history.ml" 39 1312 1342 "sysprep_operation_bash_history.ml" 41 1406 1464
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 39 1312 1339 "sysprep_operation_bash_history.ml" 41 1406 1465
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 39 1312 1334 "sysprep_operation_bash_history.ml" 41 1406 1465
+type(
+  string option
+)
+"sysprep_operation_bash_history.ml" 42 1467 1489 "sysprep_operation_bash_history.ml" 42 1467 1491
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_bash_history.ml" 42 1467 1491 "sysprep_operation_bash_history.ml" 45 1609 1656
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 42 1467 1488 "sysprep_operation_bash_history.ml" 45 1609 1657
+type(
+  string
+)
+"sysprep_operation_bash_history.ml" 42 1467 1483 "sysprep_operation_bash_history.ml" 45 1609 1657
+type(
+  string option
+)
+"sysprep_operation_bash_history.ml" 46 1659 1693 "sysprep_operation_bash_history.ml" 46 1659 1713
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref bash_history_perform "sysprep_operation_bash_history.ml" 24 851 855 "sysprep_operation_bash_history.ml" 24 851 875
+)
+"sysprep_operation_bash_history.ml" 46 1659 1688 "sysprep_operation_bash_history.ml" 46 1659 1713
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_bash_history.ml" 34 1171 1180 "sysprep_operation_bash_history.ml" 47 1715 1716
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_bash_history.ml" 49 1718 1722 "sysprep_operation_bash_history.ml" 49 1718 1724
+type(
+  unit
+)
+"sysprep_operation_bash_history.ml" 49 1718 1727 "sysprep_operation_bash_history.ml" 49 1718 1745
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_bash_history.ml" 49 1718 1746 "sysprep_operation_bash_history.ml" 49 1718 1748
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_bash_history.ml" 34 1171 1175 "sysprep_operation_bash_history.ml" 34 1171 1177
+)
+"sysprep_operation_bash_history.ml" 49 1718 1727 "sysprep_operation_bash_history.ml" 49 1718 1748
+call(
+  stack
+)
+type(
+  unit
+)

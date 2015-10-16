@@ -1,0 +1,3806 @@
+"output_rhev.ml" 29 879 887 "output_rhev.ml" 29 879 917
+type(
+  string -> string -> string * string
+)
+ident(
+  def mount_and_check_storage_domain "output_rhev.ml" 29 879 879 --
+)
+"output_rhev.ml" 29 879 918 "output_rhev.ml" 29 879 930
+type(
+  string
+)
+ident(
+  def domain_class "output_rhev.ml" 29 879 931 "output_rhev.ml" 60 2097 2140
+)
+"output_rhev.ml" 29 879 931 "output_rhev.ml" 29 879 933
+type(
+  string
+)
+ident(
+  def os "output_rhev.ml" 33 1073 1075 "output_rhev.ml" 60 2097 2140
+)
+"output_rhev.ml" 33 1073 1081 "output_rhev.ml" 33 1073 1093
+type(
+  string -> string -> string * string
+)
+ident(
+  ext_ref Common_utils.string_split
+)
+"output_rhev.ml" 33 1073 1094 "output_rhev.ml" 33 1073 1098
+type(
+  string
+)
+"output_rhev.ml" 33 1073 1099 "output_rhev.ml" 33 1073 1101
+type(
+  string
+)
+ident(
+  int_ref os "output_rhev.ml" 29 879 931 "output_rhev.ml" 29 879 933
+)
+"output_rhev.ml" 33 1073 1081 "output_rhev.ml" 33 1073 1101
+call(
+  stack
+)
+type(
+  string * string
+)
+"output_rhev.ml" 34 1107 1111 "output_rhev.ml" 34 1107 1113
+type(
+  string
+)
+ident(
+  def mp "output_rhev.ml" 35 1178 1182 "output_rhev.ml" 35 1178 1221
+)
+"output_rhev.ml" 34 1107 1115 "output_rhev.ml" 34 1107 1117
+type(
+  string
+)
+"output_rhev.ml" 34 1107 1111 "output_rhev.ml" 34 1107 1117
+type(
+  string * string
+)
+"output_rhev.ml" 35 1178 1182 "output_rhev.ml" 35 1178 1202
+type(
+  string -> string -> string -> string * string
+)
+ident(
+  int_ref check_storage_domain "output_rhev.ml" 62 2142 2146 "output_rhev.ml" 62 2142 2166
+)
+"output_rhev.ml" 35 1178 1203 "output_rhev.ml" 35 1178 1215
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 29 879 918 "output_rhev.ml" 29 879 930
+)
+"output_rhev.ml" 35 1178 1216 "output_rhev.ml" 35 1178 1218
+type(
+  string
+)
+ident(
+  int_ref os "output_rhev.ml" 29 879 931 "output_rhev.ml" 29 879 933
+)
+"output_rhev.ml" 35 1178 1219 "output_rhev.ml" 35 1178 1221
+type(
+  string
+)
+ident(
+  int_ref mp "output_rhev.ml" 34 1107 1111 "output_rhev.ml" 34 1107 1113
+)
+"output_rhev.ml" 35 1178 1182 "output_rhev.ml" 35 1178 1221
+call(
+  tail
+)
+type(
+  string * string
+)
+"output_rhev.ml" 36 1222 1226 "output_rhev.ml" 36 1222 1232
+type(
+  string
+)
+ident(
+  def server "output_rhev.ml" 37 1244 1248 "output_rhev.ml" 60 2097 2140
+)
+"output_rhev.ml" 36 1222 1234 "output_rhev.ml" 36 1222 1240
+type(
+  string
+)
+ident(
+  def export "output_rhev.ml" 37 1244 1248 "output_rhev.ml" 60 2097 2140
+)
+"output_rhev.ml" 36 1222 1226 "output_rhev.ml" 36 1222 1240
+type(
+  string * string
+)
+"output_rhev.ml" 37 1244 1252 "output_rhev.ml" 37 1244 1258
+type(
+  string
+)
+"output_rhev.ml" 37 1244 1261 "output_rhev.ml" 37 1244 1264
+type(
+  string
+)
+"output_rhev.ml" 37 1244 1265 "output_rhev.ml" 37 1244 1266
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_rhev.ml" 37 1244 1267 "output_rhev.ml" 37 1244 1273
+type(
+  string
+)
+ident(
+  int_ref export "output_rhev.ml" 36 1222 1234 "output_rhev.ml" 36 1222 1240
+)
+"output_rhev.ml" 37 1244 1261 "output_rhev.ml" 37 1244 1273
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 42 1412 1420 "output_rhev.ml" 42 1412 1422
+type(
+  string
+)
+"output_rhev.ml" 42 1412 1425 "output_rhev.ml" 42 1412 1441
+type(
+  ?base_dir:string -> string -> string -> string
+)
+ident(
+  ext_ref Mkdtemp.temp_dir
+)
+"output_rhev.ml" 42 1412 1442 "output_rhev.ml" 42 1412 1448
+type(
+  string
+)
+"output_rhev.ml" 42 1412 1449 "output_rhev.ml" 42 1412 1451
+type(
+  string
+)
+"output_rhev.ml" 42 1412 1425 "output_rhev.ml" 42 1412 1451
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 43 1455 1459 "output_rhev.ml" 43 1455 1464
+type(
+  string -> Unix.file_perm -> unit
+)
+ident(
+  ext_ref Unix.chmod
+)
+"output_rhev.ml" 43 1455 1465 "output_rhev.ml" 43 1455 1467
+type(
+  string
+)
+ident(
+  int_ref mp "output_rhev.ml" 42 1412 1420 "output_rhev.ml" 42 1412 1422
+)
+"output_rhev.ml" 43 1455 1468 "output_rhev.ml" 43 1455 1473
+type(
+  Unix.file_perm
+)
+"output_rhev.ml" 43 1455 1459 "output_rhev.ml" 43 1455 1473
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 46 1503 1511 "output_rhev.ml" 46 1503 1514
+type(
+  string
+)
+"output_rhev.ml" 47 1517 1523 "output_rhev.ml" 47 1517 1530
+type(
+  (string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_rhev.ml" 47 1517 1531 "output_rhev.ml" 47 1517 1547
+type(
+  (string -> string -> string -> string, unit, string) format
+)
+"output_rhev.ml" 47 1517 1549 "output_rhev.ml" 47 1517 1554
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_rhev.ml" 47 1517 1555 "output_rhev.ml" 47 1517 1561
+type(
+  string
+)
+ident(
+  int_ref server "output_rhev.ml" 36 1222 1226 "output_rhev.ml" 36 1222 1232
+)
+"output_rhev.ml" 47 1517 1548 "output_rhev.ml" 47 1517 1562
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 47 1517 1564 "output_rhev.ml" 47 1517 1569
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_rhev.ml" 47 1517 1570 "output_rhev.ml" 47 1517 1576
+type(
+  string
+)
+ident(
+  int_ref export "output_rhev.ml" 37 1244 1252 "output_rhev.ml" 37 1244 1258
+)
+"output_rhev.ml" 47 1517 1563 "output_rhev.ml" 47 1517 1577
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 47 1517 1579 "output_rhev.ml" 47 1517 1584
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_rhev.ml" 47 1517 1585 "output_rhev.ml" 47 1517 1587
+type(
+  string
+)
+ident(
+  int_ref mp "output_rhev.ml" 42 1412 1420 "output_rhev.ml" 42 1412 1422
+)
+"output_rhev.ml" 47 1517 1578 "output_rhev.ml" 47 1517 1588
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 47 1517 1523 "output_rhev.ml" 47 1517 1588
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 48 1592 1599 "output_rhev.ml" 48 1592 1606
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_rhev.ml" 48 1592 1607 "output_rhev.ml" 48 1592 1609
+type(
+  unit
+)
+"output_rhev.ml" 48 1592 1599 "output_rhev.ml" 48 1592 1609
+call(
+  stack
+)
+type(
+  bool
+)
+"output_rhev.ml" 48 1592 1615 "output_rhev.ml" 48 1592 1621
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"output_rhev.ml" 48 1592 1622 "output_rhev.ml" 48 1592 1630
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_rhev.ml" 48 1592 1631 "output_rhev.ml" 48 1592 1634
+type(
+  string
+)
+ident(
+  int_ref cmd "output_rhev.ml" 46 1503 1511 "output_rhev.ml" 46 1503 1514
+)
+"output_rhev.ml" 48 1592 1615 "output_rhev.ml" 48 1592 1634
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 48 1592 1596 "output_rhev.ml" 48 1592 1634
+type(
+  unit
+)
+"output_rhev.ml" 49 1636 1643 "output_rhev.ml" 49 1636 1654
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"output_rhev.ml" 49 1636 1655 "output_rhev.ml" 49 1636 1658
+type(
+  string
+)
+ident(
+  int_ref cmd "output_rhev.ml" 46 1503 1511 "output_rhev.ml" 46 1503 1514
+)
+"output_rhev.ml" 49 1636 1643 "output_rhev.ml" 49 1636 1658
+type(
+  int
+)
+"output_rhev.ml" 49 1636 1659 "output_rhev.ml" 49 1636 1661
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_rhev.ml" 49 1636 1662 "output_rhev.ml" 49 1636 1663
+type(
+  int
+)
+"output_rhev.ml" 49 1636 1643 "output_rhev.ml" 49 1636 1663
+type(
+  bool
+)
+"output_rhev.ml" 50 1669 1675 "output_rhev.ml" 50 1669 1680
+type(
+  ?exit_code:int ->
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_rhev.ml" 50 1669 1682 "output_rhev.ml" 50 1669 1684
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_rhev.ml" 50 1669 1684 "output_rhev.ml" 50 1669 1841
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"output_rhev.ml" 50 1669 1681 "output_rhev.ml" 50 1669 1842
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"output_rhev.ml" 50 1669 1843 "output_rhev.ml" 50 1669 1855
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 29 879 918 "output_rhev.ml" 29 879 930
+)
+"output_rhev.ml" 50 1669 1856 "output_rhev.ml" 50 1669 1858
+type(
+  string
+)
+ident(
+  int_ref os "output_rhev.ml" 29 879 931 "output_rhev.ml" 29 879 933
+)
+"output_rhev.ml" 50 1669 1675 "output_rhev.ml" 50 1669 1858
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 49 1636 1640 "output_rhev.ml" 50 1669 1858
+type(
+  unit
+)
+"output_rhev.ml" 53 1906 1910 "output_rhev.ml" 53 1906 1917
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  ext_ref Pervasives.at_exit
+)
+"output_rhev.ml" 53 1906 1923 "output_rhev.ml" 53 1906 1925
+type(
+  unit
+)
+"output_rhev.ml" 54 1929 1939 "output_rhev.ml" 54 1929 1942
+type(
+  string
+)
+"output_rhev.ml" 54 1929 1945 "output_rhev.ml" 54 1929 1952
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_rhev.ml" 54 1929 1953 "output_rhev.ml" 54 1929 1964
+type(
+  (string -> string, unit, string) format
+)
+"output_rhev.ml" 54 1929 1966 "output_rhev.ml" 54 1929 1971
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_rhev.ml" 54 1929 1972 "output_rhev.ml" 54 1929 1974
+type(
+  string
+)
+ident(
+  int_ref mp "output_rhev.ml" 42 1412 1420 "output_rhev.ml" 42 1412 1422
+)
+"output_rhev.ml" 54 1929 1965 "output_rhev.ml" 54 1929 1975
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 54 1929 1945 "output_rhev.ml" 54 1929 1975
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 55 1979 1988 "output_rhev.ml" 55 1979 1995
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_rhev.ml" 55 1979 1996 "output_rhev.ml" 55 1979 1998
+type(
+  unit
+)
+"output_rhev.ml" 55 1979 1988 "output_rhev.ml" 55 1979 1998
+call(
+  stack
+)
+type(
+  bool
+)
+"output_rhev.ml" 55 1979 2004 "output_rhev.ml" 55 1979 2010
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"output_rhev.ml" 55 1979 2011 "output_rhev.ml" 55 1979 2019
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_rhev.ml" 55 1979 2020 "output_rhev.ml" 55 1979 2023
+type(
+  string
+)
+ident(
+  int_ref cmd "output_rhev.ml" 54 1929 1939 "output_rhev.ml" 54 1929 1942
+)
+"output_rhev.ml" 55 1979 2004 "output_rhev.ml" 55 1979 2023
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 55 1979 1985 "output_rhev.ml" 55 1979 2023
+type(
+  unit
+)
+"output_rhev.ml" 56 2025 2031 "output_rhev.ml" 56 2025 2037
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"output_rhev.ml" 56 2025 2039 "output_rhev.ml" 56 2025 2050
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"output_rhev.ml" 56 2025 2051 "output_rhev.ml" 56 2025 2054
+type(
+  string
+)
+ident(
+  int_ref cmd "output_rhev.ml" 54 1929 1939 "output_rhev.ml" 54 1929 1942
+)
+"output_rhev.ml" 56 2025 2038 "output_rhev.ml" 56 2025 2055
+type(
+  int
+)
+"output_rhev.ml" 56 2025 2031 "output_rhev.ml" 56 2025 2055
+type(
+  unit
+)
+"output_rhev.ml" 57 2057 2067 "output_rhev.ml" 57 2057 2072
+type(
+  string -> unit
+)
+ident(
+  ext_ref Unix.rmdir
+)
+"output_rhev.ml" 57 2057 2073 "output_rhev.ml" 57 2057 2075
+type(
+  string
+)
+ident(
+  int_ref mp "output_rhev.ml" 42 1412 1420 "output_rhev.ml" 42 1412 1422
+)
+"output_rhev.ml" 57 2057 2067 "output_rhev.ml" 57 2057 2075
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 57 2057 2081 "output_rhev.ml" 57 2057 2082
+type(
+  exn
+)
+"output_rhev.ml" 57 2057 2086 "output_rhev.ml" 57 2057 2088
+type(
+  unit
+)
+"output_rhev.ml" 57 2057 2063 "output_rhev.ml" 57 2057 2088
+type(
+  unit
+)
+"output_rhev.ml" 56 2025 2031 "output_rhev.ml" 57 2057 2088
+type(
+  unit
+)
+"output_rhev.ml" 55 1979 1985 "output_rhev.ml" 57 2057 2088
+type(
+  unit
+)
+"output_rhev.ml" 54 1929 1935 "output_rhev.ml" 57 2057 2088
+type(
+  unit
+)
+"output_rhev.ml" 53 1906 1918 "output_rhev.ml" 58 2089 2094
+type(
+  unit -> unit
+)
+"output_rhev.ml" 53 1906 1910 "output_rhev.ml" 58 2089 2094
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 60 2097 2101 "output_rhev.ml" 60 2097 2121
+type(
+  string -> string -> string -> string * string
+)
+ident(
+  int_ref check_storage_domain "output_rhev.ml" 62 2142 2146 "output_rhev.ml" 62 2142 2166
+)
+"output_rhev.ml" 60 2097 2122 "output_rhev.ml" 60 2097 2134
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 29 879 918 "output_rhev.ml" 29 879 930
+)
+"output_rhev.ml" 60 2097 2135 "output_rhev.ml" 60 2097 2137
+type(
+  string
+)
+ident(
+  int_ref os "output_rhev.ml" 29 879 931 "output_rhev.ml" 29 879 933
+)
+"output_rhev.ml" 60 2097 2138 "output_rhev.ml" 60 2097 2140
+type(
+  string
+)
+ident(
+  int_ref mp "output_rhev.ml" 42 1412 1420 "output_rhev.ml" 42 1412 1422
+)
+"output_rhev.ml" 60 2097 2101 "output_rhev.ml" 60 2097 2140
+call(
+  tail
+)
+type(
+  string * string
+)
+"output_rhev.ml" 53 1906 1910 "output_rhev.ml" 60 2097 2140
+type(
+  string * string
+)
+"output_rhev.ml" 49 1636 1640 "output_rhev.ml" 60 2097 2140
+type(
+  string * string
+)
+"output_rhev.ml" 48 1592 1596 "output_rhev.ml" 60 2097 2140
+type(
+  string * string
+)
+"output_rhev.ml" 46 1503 1507 "output_rhev.ml" 60 2097 2140
+type(
+  string * string
+)
+"output_rhev.ml" 43 1455 1459 "output_rhev.ml" 60 2097 2140
+type(
+  string * string
+)
+"output_rhev.ml" 42 1412 1416 "output_rhev.ml" 60 2097 2140
+type(
+  string * string
+)
+"output_rhev.ml" 37 1244 1248 "output_rhev.ml" 60 2097 2140
+type(
+  string * string
+)
+"output_rhev.ml" 33 1073 1075 "output_rhev.ml" 60 2097 2140
+type(
+  string * string
+)
+"output_rhev.ml" 62 2142 2146 "output_rhev.ml" 62 2142 2166
+type(
+  string -> string -> string -> string * string
+)
+ident(
+  def check_storage_domain "output_rhev.ml" 29 879 879 --
+)
+"output_rhev.ml" 62 2142 2167 "output_rhev.ml" 62 2142 2179
+type(
+  string
+)
+ident(
+  def domain_class "output_rhev.ml" 62 2142 2180 "output_rhev.ml" 100 4072 4084
+)
+"output_rhev.ml" 62 2142 2180 "output_rhev.ml" 62 2142 2182
+type(
+  string
+)
+ident(
+  def os "output_rhev.ml" 62 2142 2183 "output_rhev.ml" 100 4072 4084
+)
+"output_rhev.ml" 62 2142 2183 "output_rhev.ml" 62 2142 2185
+type(
+  string
+)
+ident(
+  def mp "output_rhev.ml" 70 2464 2466 "output_rhev.ml" 100 4072 4084
+)
+"output_rhev.ml" 70 2464 2470 "output_rhev.ml" 70 2464 2477
+type(
+  string array
+)
+"output_rhev.ml" 71 2480 2488 "output_rhev.ml" 71 2480 2499
+type(
+  string -> string array
+)
+ident(
+  ext_ref Sys.readdir
+)
+"output_rhev.ml" 71 2480 2500 "output_rhev.ml" 71 2480 2502
+type(
+  string
+)
+ident(
+  int_ref mp "output_rhev.ml" 62 2142 2183 "output_rhev.ml" 62 2142 2185
+)
+"output_rhev.ml" 71 2480 2488 "output_rhev.ml" 71 2480 2502
+type(
+  string array
+)
+"output_rhev.ml" 72 2503 2522 "output_rhev.ml" 72 2503 2525
+type(
+  string
+)
+ident(
+  def msg "output_rhev.ml" 73 2529 2535 "output_rhev.ml" 73 2529 2722
+)
+"output_rhev.ml" 72 2503 2512 "output_rhev.ml" 72 2503 2525
+type(
+  exn
+)
+"output_rhev.ml" 73 2529 2535 "output_rhev.ml" 73 2529 2540
+type(
+  ?exit_code:int ->
+  (string -> string -> string -> string -> string array, unit, string,
+   string array)
+  format4 -> string -> string -> string -> string -> string array
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_rhev.ml" 73 2529 2542 "output_rhev.ml" 73 2529 2544
+type(
+  (string -> string -> string -> string -> string array, unit, string,
+   string, string, string array)
+  format6 ->
+  (string -> string -> string -> string -> string array, unit, string,
+   string array)
+  format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_rhev.ml" 73 2529 2544 "output_rhev.ml" 73 2529 2688
+type(
+  (string -> string -> string -> string -> string array, unit, string,
+   string, string, string array)
+  format6
+)
+"output_rhev.ml" 73 2529 2541 "output_rhev.ml" 73 2529 2689
+type(
+  (string -> string -> string -> string -> string array, unit, string,
+   string array)
+  format4
+)
+"output_rhev.ml" 73 2529 2690 "output_rhev.ml" 73 2529 2702
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 62 2142 2167 "output_rhev.ml" 62 2142 2179
+)
+"output_rhev.ml" 73 2529 2703 "output_rhev.ml" 73 2529 2705
+type(
+  string
+)
+ident(
+  int_ref os "output_rhev.ml" 62 2142 2180 "output_rhev.ml" 62 2142 2182
+)
+"output_rhev.ml" 73 2529 2706 "output_rhev.ml" 73 2529 2718
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 62 2142 2167 "output_rhev.ml" 62 2142 2179
+)
+"output_rhev.ml" 73 2529 2719 "output_rhev.ml" 73 2529 2722
+type(
+  string
+)
+ident(
+  int_ref msg "output_rhev.ml" 72 2503 2522 "output_rhev.ml" 72 2503 2525
+)
+"output_rhev.ml" 73 2529 2535 "output_rhev.ml" 73 2529 2722
+call(
+  stack
+)
+type(
+  string array
+)
+"output_rhev.ml" 71 2480 2484 "output_rhev.ml" 73 2529 2722
+type(
+  string array
+)
+"output_rhev.ml" 74 2726 2732 "output_rhev.ml" 74 2726 2739
+type(
+  string list
+)
+"output_rhev.ml" 74 2726 2742 "output_rhev.ml" 74 2726 2755
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"output_rhev.ml" 74 2726 2756 "output_rhev.ml" 74 2726 2763
+type(
+  string array
+)
+ident(
+  int_ref entries "output_rhev.ml" 70 2464 2470 "output_rhev.ml" 70 2464 2477
+)
+"output_rhev.ml" 74 2726 2742 "output_rhev.ml" 74 2726 2763
+call(
+  stack
+)
+type(
+  string list
+)
+"output_rhev.ml" 75 2767 2773 "output_rhev.ml" 75 2767 2778
+type(
+  string list
+)
+"output_rhev.ml" 75 2767 2781 "output_rhev.ml" 75 2767 2792
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"output_rhev.ml" 76 2795 2803 "output_rhev.ml" 76 2795 2808
+type(
+  string
+)
+ident(
+  def entry "output_rhev.ml" 77 2812 2818 "output_rhev.ml" 79 2911 2933
+)
+"output_rhev.ml" 77 2812 2818 "output_rhev.ml" 77 2812 2831
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"output_rhev.ml" 77 2812 2832 "output_rhev.ml" 77 2812 2837
+type(
+  string
+)
+ident(
+  int_ref entry "output_rhev.ml" 76 2795 2803 "output_rhev.ml" 76 2795 2808
+)
+"output_rhev.ml" 77 2812 2818 "output_rhev.ml" 77 2812 2837
+type(
+  int
+)
+"output_rhev.ml" 77 2812 2838 "output_rhev.ml" 77 2812 2839
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_rhev.ml" 77 2812 2840 "output_rhev.ml" 77 2812 2842
+type(
+  int
+)
+"output_rhev.ml" 77 2812 2818 "output_rhev.ml" 77 2812 2842
+type(
+  bool
+)
+"output_rhev.ml" 77 2812 2843 "output_rhev.ml" 77 2812 2845
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"output_rhev.ml" 78 2846 2852 "output_rhev.ml" 78 2846 2857
+type(
+  string
+)
+ident(
+  int_ref entry "output_rhev.ml" 76 2795 2803 "output_rhev.ml" 76 2795 2808
+)
+"output_rhev.ml" 78 2846 2859 "output_rhev.ml" 78 2846 2860
+type(
+  int
+)
+"output_rhev.ml" 78 2846 2852 "output_rhev.ml" 78 2846 2861
+type(
+  char
+)
+"output_rhev.ml" 78 2846 2862 "output_rhev.ml" 78 2846 2863
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_rhev.ml" 78 2846 2864 "output_rhev.ml" 78 2846 2867
+type(
+  char
+)
+"output_rhev.ml" 78 2846 2852 "output_rhev.ml" 78 2846 2867
+type(
+  bool
+)
+"output_rhev.ml" 78 2846 2868 "output_rhev.ml" 78 2846 2870
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"output_rhev.ml" 78 2846 2871 "output_rhev.ml" 78 2846 2876
+type(
+  string
+)
+ident(
+  int_ref entry "output_rhev.ml" 76 2795 2803 "output_rhev.ml" 76 2795 2808
+)
+"output_rhev.ml" 78 2846 2878 "output_rhev.ml" 78 2846 2880
+type(
+  int
+)
+"output_rhev.ml" 78 2846 2871 "output_rhev.ml" 78 2846 2881
+type(
+  char
+)
+"output_rhev.ml" 78 2846 2882 "output_rhev.ml" 78 2846 2883
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_rhev.ml" 78 2846 2884 "output_rhev.ml" 78 2846 2887
+type(
+  char
+)
+"output_rhev.ml" 78 2846 2871 "output_rhev.ml" 78 2846 2887
+type(
+  bool
+)
+"output_rhev.ml" 78 2846 2888 "output_rhev.ml" 78 2846 2890
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"output_rhev.ml" 78 2846 2891 "output_rhev.ml" 78 2846 2896
+type(
+  string
+)
+ident(
+  int_ref entry "output_rhev.ml" 76 2795 2803 "output_rhev.ml" 76 2795 2808
+)
+"output_rhev.ml" 78 2846 2898 "output_rhev.ml" 78 2846 2900
+type(
+  int
+)
+"output_rhev.ml" 78 2846 2891 "output_rhev.ml" 78 2846 2901
+type(
+  char
+)
+"output_rhev.ml" 78 2846 2902 "output_rhev.ml" 78 2846 2903
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_rhev.ml" 78 2846 2904 "output_rhev.ml" 78 2846 2907
+type(
+  char
+)
+"output_rhev.ml" 78 2846 2891 "output_rhev.ml" 78 2846 2907
+type(
+  bool
+)
+"output_rhev.ml" 78 2846 2908 "output_rhev.ml" 78 2846 2910
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"output_rhev.ml" 79 2911 2917 "output_rhev.ml" 79 2911 2922
+type(
+  string
+)
+ident(
+  int_ref entry "output_rhev.ml" 76 2795 2803 "output_rhev.ml" 76 2795 2808
+)
+"output_rhev.ml" 79 2911 2924 "output_rhev.ml" 79 2911 2926
+type(
+  int
+)
+"output_rhev.ml" 79 2911 2917 "output_rhev.ml" 79 2911 2927
+type(
+  char
+)
+"output_rhev.ml" 79 2911 2928 "output_rhev.ml" 79 2911 2929
+type(
+  char -> char -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_rhev.ml" 79 2911 2930 "output_rhev.ml" 79 2911 2933
+type(
+  char
+)
+"output_rhev.ml" 79 2911 2917 "output_rhev.ml" 79 2911 2933
+type(
+  bool
+)
+"output_rhev.ml" 78 2846 2891 "output_rhev.ml" 79 2911 2933
+type(
+  bool
+)
+"output_rhev.ml" 78 2846 2871 "output_rhev.ml" 79 2911 2933
+type(
+  bool
+)
+"output_rhev.ml" 78 2846 2852 "output_rhev.ml" 79 2911 2933
+type(
+  bool
+)
+"output_rhev.ml" 77 2812 2818 "output_rhev.ml" 79 2911 2933
+type(
+  bool
+)
+"output_rhev.ml" 75 2767 2793 "output_rhev.ml" 80 2934 2937
+type(
+  string -> bool
+)
+"output_rhev.ml" 80 2934 2938 "output_rhev.ml" 80 2934 2945
+type(
+  string list
+)
+ident(
+  int_ref entries "output_rhev.ml" 74 2726 2732 "output_rhev.ml" 74 2726 2739
+)
+"output_rhev.ml" 75 2767 2781 "output_rhev.ml" 80 2934 2945
+call(
+  stack
+)
+type(
+  string list
+)
+"output_rhev.ml" 81 2949 2955 "output_rhev.ml" 81 2949 2959
+type(
+  string
+)
+"output_rhev.ml" 82 2962 2972 "output_rhev.ml" 82 2962 2977
+type(
+  string list
+)
+ident(
+  int_ref uuids "output_rhev.ml" 75 2767 2773 "output_rhev.ml" 75 2767 2778
+)
+"output_rhev.ml" 83 2983 2990 "output_rhev.ml" 83 2983 2994
+type(
+  string
+)
+ident(
+  def uuid "output_rhev.ml" 83 2983 2999 "output_rhev.ml" 83 2983 3003
+)
+"output_rhev.ml" 83 2983 2989 "output_rhev.ml" 83 2983 2995
+type(
+  string list
+)
+"output_rhev.ml" 83 2983 2999 "output_rhev.ml" 83 2983 3003
+type(
+  string
+)
+ident(
+  int_ref uuid "output_rhev.ml" 83 2983 2990 "output_rhev.ml" 83 2983 2994
+)
+"output_rhev.ml" 84 3004 3010 "output_rhev.ml" 84 3004 3012
+type(
+  string list
+)
+"output_rhev.ml" 85 3016 3022 "output_rhev.ml" 85 3016 3027
+type(
+  ?exit_code:int ->
+  (string -> string -> string -> string, unit, string, string) format4 ->
+  string -> string -> string -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_rhev.ml" 85 3016 3029 "output_rhev.ml" 85 3016 3031
+type(
+  (string -> string -> string -> string, unit, string, string, string,
+   string)
+  format6 ->
+  (string -> string -> string -> string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_rhev.ml" 85 3016 3031 "output_rhev.ml" 85 3016 3104
+type(
+  (string -> string -> string -> string, unit, string, string, string,
+   string)
+  format6
+)
+"output_rhev.ml" 85 3016 3028 "output_rhev.ml" 85 3016 3105
+type(
+  (string -> string -> string -> string, unit, string, string) format4
+)
+"output_rhev.ml" 85 3016 3106 "output_rhev.ml" 85 3016 3118
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 62 2142 2167 "output_rhev.ml" 62 2142 2179
+)
+"output_rhev.ml" 85 3016 3119 "output_rhev.ml" 85 3016 3121
+type(
+  string
+)
+ident(
+  int_ref os "output_rhev.ml" 62 2142 2180 "output_rhev.ml" 62 2142 2182
+)
+"output_rhev.ml" 85 3016 3122 "output_rhev.ml" 85 3016 3134
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 62 2142 2167 "output_rhev.ml" 62 2142 2179
+)
+"output_rhev.ml" 85 3016 3022 "output_rhev.ml" 85 3016 3134
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 86 3135 3141 "output_rhev.ml" 86 3135 3142
+type(
+  string
+)
+"output_rhev.ml" 86 3135 3144 "output_rhev.ml" 86 3135 3145
+type(
+  string list
+)
+"output_rhev.ml" 86 3135 3141 "output_rhev.ml" 86 3135 3145
+type(
+  string list
+)
+"output_rhev.ml" 87 3149 3155 "output_rhev.ml" 87 3149 3160
+type(
+  ?exit_code:int ->
+  (string -> string -> string, unit, string, string) format4 ->
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_rhev.ml" 87 3149 3162 "output_rhev.ml" 87 3149 3164
+type(
+  (string -> string -> string, unit, string, string, string, string) format6 ->
+  (string -> string -> string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_rhev.ml" 87 3149 3164 "output_rhev.ml" 87 3149 3266
+type(
+  (string -> string -> string, unit, string, string, string, string) format6
+)
+"output_rhev.ml" 87 3149 3161 "output_rhev.ml" 87 3149 3267
+type(
+  (string -> string -> string, unit, string, string) format4
+)
+"output_rhev.ml" 87 3149 3268 "output_rhev.ml" 87 3149 3280
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 62 2142 2167 "output_rhev.ml" 62 2142 2179
+)
+"output_rhev.ml" 87 3149 3281 "output_rhev.ml" 87 3149 3283
+type(
+  string
+)
+ident(
+  int_ref os "output_rhev.ml" 62 2142 2180 "output_rhev.ml" 62 2142 2182
+)
+"output_rhev.ml" 87 3149 3155 "output_rhev.ml" 87 3149 3283
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 82 2962 2966 "output_rhev.ml" 87 3149 3283
+type(
+  string
+)
+"output_rhev.ml" 92 3411 3417 "output_rhev.ml" 92 3411 3419
+type(
+  unit
+)
+"output_rhev.ml" 93 3422 3430 "output_rhev.ml" 93 3422 3444
+type(
+  string
+)
+"output_rhev.ml" 93 3422 3447 "output_rhev.ml" 93 3422 3449
+type(
+  string
+)
+ident(
+  int_ref mp "output_rhev.ml" 62 2142 2183 "output_rhev.ml" 62 2142 2185
+)
+"output_rhev.ml" 93 3422 3450 "output_rhev.ml" 93 3422 3452
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 93 3422 3453 "output_rhev.ml" 93 3422 3457
+type(
+  string
+)
+ident(
+  int_ref uuid "output_rhev.ml" 81 2949 2955 "output_rhev.ml" 81 2949 2959
+)
+"output_rhev.ml" 93 3422 3447 "output_rhev.ml" 93 3422 3457
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 93 3422 3458 "output_rhev.ml" 93 3422 3460
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 93 3422 3461 "output_rhev.ml" 93 3422 3469
+type(
+  string
+)
+"output_rhev.ml" 93 3422 3447 "output_rhev.ml" 93 3422 3469
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 93 3422 3470 "output_rhev.ml" 93 3422 3472
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 93 3422 3473 "output_rhev.ml" 93 3422 3478
+type(
+  string
+)
+"output_rhev.ml" 93 3422 3447 "output_rhev.ml" 93 3422 3478
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 94 3482 3489 "output_rhev.ml" 94 3482 3492
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"output_rhev.ml" 94 3482 3494 "output_rhev.ml" 94 3482 3506
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_directory
+)
+"output_rhev.ml" 94 3482 3507 "output_rhev.ml" 94 3482 3521
+type(
+  string
+)
+ident(
+  int_ref master_vms_dir "output_rhev.ml" 93 3422 3430 "output_rhev.ml" 93 3422 3444
+)
+"output_rhev.ml" 94 3482 3493 "output_rhev.ml" 94 3482 3522
+call(
+  stack
+)
+type(
+  bool
+)
+"output_rhev.ml" 94 3482 3489 "output_rhev.ml" 94 3482 3522
+type(
+  bool
+)
+"output_rhev.ml" 95 3528 3534 "output_rhev.ml" 95 3528 3539
+type(
+  ?exit_code:int ->
+  (string -> string -> string -> string -> string -> string -> string -> unit,
+   unit, string, unit)
+  format4 ->
+  string -> string -> string -> string -> string -> string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_rhev.ml" 95 3528 3541 "output_rhev.ml" 95 3528 3543
+type(
+  (string -> string -> string -> string -> string -> string -> string -> unit,
+   unit, string, string, string, unit)
+  format6 ->
+  (string -> string -> string -> string -> string -> string -> string -> unit,
+   unit, string, unit)
+  format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_rhev.ml" 95 3528 3543 "output_rhev.ml" 95 3528 3919
+type(
+  (string -> string -> string -> string -> string -> string -> string -> unit,
+   unit, string, string, string, unit)
+  format6
+)
+"output_rhev.ml" 95 3528 3540 "output_rhev.ml" 95 3528 3920
+type(
+  (string -> string -> string -> string -> string -> string -> string -> unit,
+   unit, string, unit)
+  format4
+)
+"output_rhev.ml" 96 3921 3929 "output_rhev.ml" 96 3921 3943
+type(
+  string
+)
+ident(
+  int_ref master_vms_dir "output_rhev.ml" 93 3422 3430 "output_rhev.ml" 93 3422 3444
+)
+"output_rhev.ml" 96 3921 3944 "output_rhev.ml" 96 3921 3956
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 62 2142 2167 "output_rhev.ml" 62 2142 2179
+)
+"output_rhev.ml" 96 3921 3957 "output_rhev.ml" 96 3921 3959
+type(
+  string
+)
+ident(
+  int_ref os "output_rhev.ml" 62 2142 2180 "output_rhev.ml" 62 2142 2182
+)
+"output_rhev.ml" 96 3921 3960 "output_rhev.ml" 96 3921 3962
+type(
+  string
+)
+ident(
+  int_ref os "output_rhev.ml" 62 2142 2180 "output_rhev.ml" 62 2142 2182
+)
+"output_rhev.ml" 97 3963 3971 "output_rhev.ml" 97 3963 3983
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 62 2142 2167 "output_rhev.ml" 62 2142 2179
+)
+"output_rhev.ml" 97 3963 3984 "output_rhev.ml" 97 3963 3996
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 62 2142 2167 "output_rhev.ml" 62 2142 2179
+)
+"output_rhev.ml" 97 3963 3997 "output_rhev.ml" 97 3963 4009
+type(
+  string
+)
+ident(
+  int_ref domain_class "output_rhev.ml" 62 2142 2167 "output_rhev.ml" 62 2142 2179
+)
+"output_rhev.ml" 95 3528 3534 "output_rhev.ml" 97 3963 4009
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 94 3482 3486 "output_rhev.ml" 97 3963 4009
+type(
+  unit
+)
+"output_rhev.ml" 93 3422 3426 "output_rhev.ml" 97 3963 4009
+type(
+  unit
+)
+"output_rhev.ml" 100 4072 4075 "output_rhev.ml" 100 4072 4077
+type(
+  string
+)
+ident(
+  int_ref mp "output_rhev.ml" 62 2142 2183 "output_rhev.ml" 62 2142 2185
+)
+"output_rhev.ml" 100 4072 4079 "output_rhev.ml" 100 4072 4083
+type(
+  string
+)
+ident(
+  int_ref uuid "output_rhev.ml" 81 2949 2955 "output_rhev.ml" 81 2949 2959
+)
+"output_rhev.ml" 100 4072 4074 "output_rhev.ml" 100 4072 4084
+type(
+  string * string
+)
+"output_rhev.ml" 92 3411 3413 "output_rhev.ml" 100 4072 4084
+type(
+  string * string
+)
+"output_rhev.ml" 81 2949 2951 "output_rhev.ml" 100 4072 4084
+type(
+  string * string
+)
+"output_rhev.ml" 75 2767 2769 "output_rhev.ml" 100 4072 4084
+type(
+  string * string
+)
+"output_rhev.ml" 74 2726 2728 "output_rhev.ml" 100 4072 4084
+type(
+  string * string
+)
+"output_rhev.ml" 70 2464 2466 "output_rhev.ml" 100 4072 4084
+type(
+  string * string
+)
+"output_rhev.ml" 103 4156 4160 "output_rhev.ml" 103 4156 4163
+type(
+  int
+)
+ident(
+  def uid "output_rhev.ml" 105 4183 4183 --
+)
+"output_rhev.ml" 103 4156 4166 "output_rhev.ml" 103 4156 4168
+type(
+  int
+)
+"output_rhev.ml" 103 4156 4173 "output_rhev.ml" 103 4156 4176
+type(
+  int
+)
+ident(
+  def gid "output_rhev.ml" 105 4183 4183 --
+)
+"output_rhev.ml" 103 4156 4179 "output_rhev.ml" 103 4156 4181
+type(
+  int
+)
+"output_rhev.ml" 105 4183 4201 "output_rhev.ml" 105 4183 4203
+type(
+  string
+)
+"output_rhev.ml" 105 4183 4204 "output_rhev.ml" 105 4183 4210
+type(
+  Types.vmtype option
+)
+"output_rhev.ml" 105 4183 4211 "output_rhev.ml" 105 4183 4223
+type(
+  Types.output_allocation
+)
+"output_rhev.ml" 109 4343 4349 "output_rhev.ml" 109 4343 4364
+type(
+  bool
+)
+"output_rhev.ml" 109 4343 4367 "output_rhev.ml" 109 4343 4374
+type(
+  unit -> int
+)
+ident(
+  ext_ref Unix.geteuid
+)
+"output_rhev.ml" 109 4343 4375 "output_rhev.ml" 109 4343 4377
+type(
+  unit
+)
+"output_rhev.ml" 109 4343 4367 "output_rhev.ml" 109 4343 4377
+call(
+  stack
+)
+type(
+  int
+)
+"output_rhev.ml" 109 4343 4378 "output_rhev.ml" 109 4343 4379
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_rhev.ml" 109 4343 4380 "output_rhev.ml" 109 4343 4381
+type(
+  int
+)
+"output_rhev.ml" 109 4343 4367 "output_rhev.ml" 109 4343 4381
+type(
+  bool
+)
+"output_rhev.ml" 110 4385 4391 "output_rhev.ml" 110 4385 4399
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 111 4402 4409 "output_rhev.ml" 111 4402 4424
+type(
+  bool
+)
+ident(
+  int_ref running_as_root "output_rhev.ml" 109 4343 4349 "output_rhev.ml" 109 4343 4364
+)
+"output_rhev.ml" 112 4430 4436 "output_rhev.ml" 112 4430 4449
+type(
+  ?uid:int -> ?gid:int -> unit -> Kvmuid.t
+)
+ident(
+  ext_ref Kvmuid.create
+)
+"output_rhev.ml" 112 4430 4451 "output_rhev.ml" 112 4430 4454
+type(
+  int
+)
+ident(
+  int_ref uid "output_rhev.ml" 103 4156 4160 "output_rhev.ml" 103 4156 4163
+)
+"output_rhev.ml" 112 4430 4456 "output_rhev.ml" 112 4430 4459
+type(
+  int
+)
+ident(
+  int_ref gid "output_rhev.ml" 103 4156 4173 "output_rhev.ml" 103 4156 4176
+)
+"output_rhev.ml" 112 4430 4460 "output_rhev.ml" 112 4430 4462
+type(
+  unit
+)
+"output_rhev.ml" 112 4430 4436 "output_rhev.ml" 112 4430 4462
+call(
+  stack
+)
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 114 4472 4478 "output_rhev.ml" 114 4472 4491
+type(
+  ?uid:int -> ?gid:int -> unit -> Kvmuid.t
+)
+ident(
+  ext_ref Kvmuid.create
+)
+"output_rhev.ml" 114 4472 4492 "output_rhev.ml" 114 4472 4494
+type(
+  unit
+)
+"output_rhev.ml" 114 4472 4478 "output_rhev.ml" 114 4472 4494
+call(
+  stack
+)
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 111 4402 4406 "output_rhev.ml" 114 4472 4494
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 119 4545 4549 "output_rhev.ml" 119 4545 4556
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_rhev.ml" 119 4545 4557 "output_rhev.ml" 119 4545 4575
+type(
+  (string -> string -> string, unit, string) format
+)
+"output_rhev.ml" 119 4545 4576 "output_rhev.ml" 119 4545 4578
+type(
+  string
+)
+"output_rhev.ml" 120 4579 4592 "output_rhev.ml" 120 4579 4598
+type(
+  Types.vmtype option
+)
+"output_rhev.ml" 121 4604 4612 "output_rhev.ml" 121 4604 4616
+type(
+  Types.vmtype option
+)
+"output_rhev.ml" 121 4604 4620 "output_rhev.ml" 121 4604 4622
+type(
+  string
+)
+"output_rhev.ml" 122 4623 4636 "output_rhev.ml" 122 4623 4642
+type(
+  Types.vmtype
+)
+"output_rhev.ml" 122 4623 4631 "output_rhev.ml" 122 4623 4642
+type(
+  Types.vmtype option
+)
+"output_rhev.ml" 122 4623 4646 "output_rhev.ml" 122 4623 4664
+type(
+  string
+)
+"output_rhev.ml" 123 4665 4678 "output_rhev.ml" 123 4665 4685
+type(
+  Types.vmtype
+)
+"output_rhev.ml" 123 4665 4673 "output_rhev.ml" 123 4665 4685
+type(
+  Types.vmtype option
+)
+"output_rhev.ml" 123 4665 4689 "output_rhev.ml" 123 4665 4708
+type(
+  string
+)
+"output_rhev.ml" 120 4579 4585 "output_rhev.ml" 123 4665 4709
+type(
+  string
+)
+"output_rhev.ml" 119 4545 4549 "output_rhev.ml" 123 4665 4709
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"output_rhev.ml" 125 4711 4743 "output_rhev.ml" 125 4711 4753
+type(
+  Types.target_firmware
+)
+"output_rhev.ml" 125 4711 4741 "output_rhev.ml" 125 4711 4755
+type(
+  Types.target_firmware list
+)
+type(
+  Types.target_firmware list
+)
+"output_rhev.ml" 130 4858 4889 "output_rhev.ml" 130 4858 4894
+type(
+  bool
+)
+type(
+  bool
+)
+"output_rhev.ml" 133 4947 4970 "output_rhev.ml" 133 4947 4972
+type(
+  string
+)
+"output_rhev.ml" 134 4973 4998 "output_rhev.ml" 134 4973 5000
+type(
+  string
+)
+"output_rhev.ml" 137 5026 5050 "output_rhev.ml" 137 5026 5052
+type(
+  string
+)
+"output_rhev.ml" 142 5162 5190 "output_rhev.ml" 142 5162 5192
+type(
+  string list
+)
+"output_rhev.ml" 143 5193 5219 "output_rhev.ml" 143 5193 5221
+type(
+  string list
+)
+"output_rhev.ml" 149 5372 5412 "output_rhev.ml" 149 5372 5416
+type(
+  bool
+)
+"output_rhev.ml" 164 6030 6055 "output_rhev.ml" 164 6030 6056
+type(
+  Types.source
+)
+"output_rhev.ml" 164 6030 6057 "output_rhev.ml" 164 6030 6064
+type(
+  Types.target list
+)
+ident(
+  def targets "output_rhev.ml" 165 6067 6071 "output_rhev.ml" 259 9740 9751
+)
+"output_rhev.ml" 165 6067 6075 "output_rhev.ml" 165 6067 6077
+type(
+  string
+)
+"output_rhev.ml" 165 6067 6079 "output_rhev.ml" 165 6067 6083
+type(
+  string
+)
+"output_rhev.ml" 165 6067 6075 "output_rhev.ml" 165 6067 6083
+type(
+  string * string
+)
+"output_rhev.ml" 166 6086 6092 "output_rhev.ml" 166 6086 6122
+type(
+  string -> string -> string * string
+)
+ident(
+  int_ref mount_and_check_storage_domain "output_rhev.ml" 29 879 887 "output_rhev.ml" 29 879 917
+)
+"output_rhev.ml" 166 6086 6124 "output_rhev.ml" 166 6086 6126
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"output_rhev.ml" 166 6086 6126 "output_rhev.ml" 166 6086 6149
+type(
+  string
+)
+"output_rhev.ml" 166 6086 6123 "output_rhev.ml" 166 6086 6150
+type(
+  string
+)
+"output_rhev.ml" 166 6086 6151 "output_rhev.ml" 166 6086 6153
+type(
+  string
+)
+"output_rhev.ml" 166 6086 6092 "output_rhev.ml" 166 6086 6153
+call(
+  stack
+)
+type(
+  string * string
+)
+"output_rhev.ml" 167 6157 6171 "output_rhev.ml" 167 6157 6173
+type(
+  string
+)
+ident(
+  int_ref mp "output_rhev.ml" 165 6067 6075 "output_rhev.ml" 165 6067 6077
+)
+"output_rhev.ml" 167 6157 6161 "output_rhev.ml" 167 6157 6173
+type(
+  unit
+)
+"output_rhev.ml" 168 6175 6191 "output_rhev.ml" 168 6175 6195
+type(
+  string
+)
+ident(
+  int_ref uuid "output_rhev.ml" 165 6067 6079 "output_rhev.ml" 165 6067 6083
+)
+"output_rhev.ml" 168 6175 6179 "output_rhev.ml" 168 6175 6195
+type(
+  unit
+)
+"output_rhev.ml" 169 6197 6204 "output_rhev.ml" 169 6197 6211
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_rhev.ml" 169 6197 6212 "output_rhev.ml" 169 6197 6214
+type(
+  unit
+)
+"output_rhev.ml" 169 6197 6204 "output_rhev.ml" 169 6197 6214
+call(
+  stack
+)
+type(
+  bool
+)
+"output_rhev.ml" 170 6220 6226 "output_rhev.ml" 170 6220 6233
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"output_rhev.ml" 170 6220 6234 "output_rhev.ml" 170 6220 6284
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_rhev.ml" 171 6285 6293 "output_rhev.ml" 171 6285 6299
+type(
+  string
+)
+"output_rhev.ml" 171 6285 6300 "output_rhev.ml" 171 6285 6308
+type(
+  string
+)
+"output_rhev.ml" 170 6220 6226 "output_rhev.ml" 171 6285 6308
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 169 6197 6201 "output_rhev.ml" 171 6285 6308
+type(
+  unit
+)
+"output_rhev.ml" 174 6365 6373 "output_rhev.ml" 174 6365 6375
+type(
+  unit
+)
+"output_rhev.ml" 175 6378 6388 "output_rhev.ml" 175 6378 6396
+type(
+  string
+)
+"output_rhev.ml" 175 6378 6399 "output_rhev.ml" 175 6378 6405
+type(
+  string
+)
+"output_rhev.ml" 175 6378 6406 "output_rhev.ml" 175 6378 6408
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 175 6378 6409 "output_rhev.ml" 175 6378 6417
+type(
+  string
+)
+"output_rhev.ml" 175 6378 6399 "output_rhev.ml" 175 6378 6417
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 175 6378 6418 "output_rhev.ml" 175 6378 6420
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 175 6378 6421 "output_rhev.ml" 175 6378 6435
+type(
+  unit -> string
+)
+ident(
+  ext_ref Common_utils.string_random8
+)
+"output_rhev.ml" 175 6378 6436 "output_rhev.ml" 175 6378 6438
+type(
+  unit
+)
+"output_rhev.ml" 175 6378 6421 "output_rhev.ml" 175 6378 6438
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 175 6378 6399 "output_rhev.ml" 175 6378 6438
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 176 6442 6448 "output_rhev.ml" 176 6442 6464
+type(
+  Kvmuid.t -> string -> string -> unit
+)
+ident(
+  ext_ref Kvmuid.make_file
+)
+"output_rhev.ml" 176 6442 6465 "output_rhev.ml" 176 6442 6473
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 176 6442 6474 "output_rhev.ml" 176 6442 6482
+type(
+  string
+)
+ident(
+  int_ref testfile "output_rhev.ml" 175 6378 6388 "output_rhev.ml" 175 6378 6396
+)
+"output_rhev.ml" 176 6442 6483 "output_rhev.ml" 176 6442 6485
+type(
+  string
+)
+"output_rhev.ml" 176 6442 6448 "output_rhev.ml" 176 6442 6485
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 177 6487 6497 "output_rhev.ml" 177 6487 6501
+type(
+  Unix.stats
+)
+"output_rhev.ml" 177 6487 6504 "output_rhev.ml" 177 6487 6508
+type(
+  string -> Unix.stats
+)
+ident(
+  ext_ref Unix.stat
+)
+"output_rhev.ml" 177 6487 6509 "output_rhev.ml" 177 6487 6517
+type(
+  string
+)
+ident(
+  int_ref testfile "output_rhev.ml" 175 6378 6388 "output_rhev.ml" 175 6378 6396
+)
+"output_rhev.ml" 177 6487 6504 "output_rhev.ml" 177 6487 6517
+call(
+  stack
+)
+type(
+  Unix.stats
+)
+"output_rhev.ml" 178 6521 6527 "output_rhev.ml" 178 6521 6540
+type(
+  Kvmuid.t -> string -> unit
+)
+ident(
+  ext_ref Kvmuid.unlink
+)
+"output_rhev.ml" 178 6521 6541 "output_rhev.ml" 178 6521 6549
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 178 6521 6550 "output_rhev.ml" 178 6521 6558
+type(
+  string
+)
+ident(
+  int_ref testfile "output_rhev.ml" 175 6378 6388 "output_rhev.ml" 175 6378 6396
+)
+"output_rhev.ml" 178 6521 6527 "output_rhev.ml" 178 6521 6558
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 179 6560 6570 "output_rhev.ml" 179 6560 6580
+type(
+  int
+)
+"output_rhev.ml" 179 6560 6583 "output_rhev.ml" 179 6560 6587
+type(
+  Unix.stats
+)
+ident(
+  int_ref stat "output_rhev.ml" 177 6487 6497 "output_rhev.ml" 177 6487 6501
+)
+"output_rhev.ml" 179 6560 6583 "output_rhev.ml" 179 6560 6594
+type(
+  int
+)
+"output_rhev.ml" 179 6560 6599 "output_rhev.ml" 179 6560 6609
+type(
+  int
+)
+"output_rhev.ml" 179 6560 6612 "output_rhev.ml" 179 6560 6616
+type(
+  Unix.stats
+)
+ident(
+  int_ref stat "output_rhev.ml" 177 6487 6497 "output_rhev.ml" 177 6487 6501
+)
+"output_rhev.ml" 179 6560 6612 "output_rhev.ml" 179 6560 6623
+type(
+  int
+)
+"output_rhev.ml" 180 6627 6636 "output_rhev.ml" 180 6627 6643
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_rhev.ml" 180 6627 6644 "output_rhev.ml" 180 6627 6646
+type(
+  unit
+)
+"output_rhev.ml" 180 6627 6636 "output_rhev.ml" 180 6627 6646
+call(
+  stack
+)
+type(
+  bool
+)
+"output_rhev.ml" 181 6652 6660 "output_rhev.ml" 181 6652 6667
+type(
+  (int -> int -> unit, out_channel, unit) format -> int -> int -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"output_rhev.ml" 181 6652 6668 "output_rhev.ml" 181 6652 6714
+type(
+  (int -> int -> unit, out_channel, unit) format
+)
+"output_rhev.ml" 182 6715 6725 "output_rhev.ml" 182 6715 6735
+type(
+  int
+)
+ident(
+  int_ref actual_uid "output_rhev.ml" 179 6560 6570 "output_rhev.ml" 179 6560 6580
+)
+"output_rhev.ml" 182 6715 6736 "output_rhev.ml" 182 6715 6746
+type(
+  int
+)
+ident(
+  int_ref actual_gid "output_rhev.ml" 179 6560 6599 "output_rhev.ml" 179 6560 6609
+)
+"output_rhev.ml" 181 6652 6660 "output_rhev.ml" 182 6715 6746
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 180 6627 6633 "output_rhev.ml" 182 6715 6746
+type(
+  unit
+)
+"output_rhev.ml" 183 6748 6757 "output_rhev.ml" 183 6748 6760
+type(
+  int
+)
+ident(
+  int_ref uid "output_rhev.ml" 103 4156 4160 "output_rhev.ml" 103 4156 4163
+)
+"output_rhev.ml" 183 6748 6761 "output_rhev.ml" 183 6748 6763
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_rhev.ml" 183 6748 6764 "output_rhev.ml" 183 6748 6774
+type(
+  int
+)
+ident(
+  int_ref actual_uid "output_rhev.ml" 179 6560 6570 "output_rhev.ml" 179 6560 6580
+)
+"output_rhev.ml" 183 6748 6757 "output_rhev.ml" 183 6748 6774
+type(
+  bool
+)
+"output_rhev.ml" 183 6748 6775 "output_rhev.ml" 183 6748 6777
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"output_rhev.ml" 183 6748 6778 "output_rhev.ml" 183 6748 6781
+type(
+  int
+)
+ident(
+  int_ref gid "output_rhev.ml" 103 4156 4173 "output_rhev.ml" 103 4156 4176
+)
+"output_rhev.ml" 183 6748 6782 "output_rhev.ml" 183 6748 6784
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_rhev.ml" 183 6748 6785 "output_rhev.ml" 183 6748 6795
+type(
+  int
+)
+ident(
+  int_ref actual_gid "output_rhev.ml" 179 6560 6599 "output_rhev.ml" 179 6560 6609
+)
+"output_rhev.ml" 183 6748 6778 "output_rhev.ml" 183 6748 6795
+type(
+  bool
+)
+"output_rhev.ml" 183 6748 6757 "output_rhev.ml" 183 6748 6795
+type(
+  bool
+)
+"output_rhev.ml" 184 6803 6814 "output_rhev.ml" 184 6803 6829
+type(
+  bool
+)
+"output_rhev.ml" 185 6835 6845 "output_rhev.ml" 185 6835 6852
+type(
+  (int -> int -> unit, unit, string, unit) format4 -> int -> int -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"output_rhev.ml" 185 6835 6854 "output_rhev.ml" 185 6835 6856
+type(
+  (int -> int -> unit, unit, string, string, string, unit) format6 ->
+  (int -> int -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_rhev.ml" 185 6835 6856 "output_rhev.ml" 185 6835 7147
+type(
+  (int -> int -> unit, unit, string, string, string, unit) format6
+)
+"output_rhev.ml" 185 6835 6853 "output_rhev.ml" 185 6835 7148
+type(
+  (int -> int -> unit, unit, string, unit) format4
+)
+"output_rhev.ml" 185 6835 7149 "output_rhev.ml" 185 6835 7152
+type(
+  int
+)
+ident(
+  int_ref uid "output_rhev.ml" 103 4156 4160 "output_rhev.ml" 103 4156 4163
+)
+"output_rhev.ml" 185 6835 7153 "output_rhev.ml" 185 6835 7156
+type(
+  int
+)
+ident(
+  int_ref gid "output_rhev.ml" 103 4156 4173 "output_rhev.ml" 103 4156 4176
+)
+"output_rhev.ml" 185 6835 6845 "output_rhev.ml" 185 6835 7156
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 187 7170 7180 "output_rhev.ml" 187 7170 7187
+type(
+  (int -> int -> unit, unit, string, unit) format4 -> int -> int -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"output_rhev.ml" 187 7170 7189 "output_rhev.ml" 187 7170 7191
+type(
+  (int -> int -> unit, unit, string, string, string, unit) format6 ->
+  (int -> int -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_rhev.ml" 187 7170 7191 "output_rhev.ml" 187 7170 7298
+type(
+  (int -> int -> unit, unit, string, string, string, unit) format6
+)
+"output_rhev.ml" 187 7170 7188 "output_rhev.ml" 187 7170 7299
+type(
+  (int -> int -> unit, unit, string, unit) format4
+)
+"output_rhev.ml" 187 7170 7300 "output_rhev.ml" 187 7170 7303
+type(
+  int
+)
+ident(
+  int_ref uid "output_rhev.ml" 103 4156 4160 "output_rhev.ml" 103 4156 4163
+)
+"output_rhev.ml" 187 7170 7304 "output_rhev.ml" 187 7170 7307
+type(
+  int
+)
+ident(
+  int_ref gid "output_rhev.ml" 103 4156 4173 "output_rhev.ml" 103 4156 4176
+)
+"output_rhev.ml" 187 7170 7180 "output_rhev.ml" 187 7170 7307
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 183 6748 6801 "output_rhev.ml" 188 7308 7315
+type(
+  unit
+)
+"output_rhev.ml" 183 6748 6754 "output_rhev.ml" 188 7308 7315
+type(
+  unit
+)
+"output_rhev.ml" 180 6627 6633 "output_rhev.ml" 188 7308 7315
+type(
+  unit
+)
+"output_rhev.ml" 179 6560 6566 "output_rhev.ml" 188 7308 7315
+type(
+  unit
+)
+"output_rhev.ml" 178 6521 6527 "output_rhev.ml" 188 7308 7315
+type(
+  unit
+)
+"output_rhev.ml" 177 6487 6493 "output_rhev.ml" 188 7308 7315
+type(
+  unit
+)
+"output_rhev.ml" 176 6442 6448 "output_rhev.ml" 188 7308 7315
+type(
+  unit
+)
+"output_rhev.ml" 175 6378 6384 "output_rhev.ml" 188 7308 7315
+type(
+  unit
+)
+"output_rhev.ml" 191 7365 7380 "output_rhev.ml" 191 7365 7387
+type(
+  unit -> string
+)
+ident(
+  ext_ref Common_utils.uuidgen
+)
+"output_rhev.ml" 191 7365 7388 "output_rhev.ml" 191 7365 7390
+type(
+  unit
+)
+"output_rhev.ml" 191 7365 7380 "output_rhev.ml" 191 7365 7390
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 191 7365 7369 "output_rhev.ml" 191 7365 7390
+type(
+  unit
+)
+"output_rhev.ml" 194 7477 7483 "output_rhev.ml" 194 7477 7491
+type(
+  (Types.target -> string) -> Types.target list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"output_rhev.ml" 195 7494 7506 "output_rhev.ml" 195 7494 7507
+type(
+  Types.target
+)
+"output_rhev.ml" 195 7494 7511 "output_rhev.ml" 195 7494 7518
+type(
+  unit -> string
+)
+ident(
+  ext_ref Common_utils.uuidgen
+)
+"output_rhev.ml" 195 7494 7519 "output_rhev.ml" 195 7494 7521
+type(
+  unit
+)
+"output_rhev.ml" 195 7494 7511 "output_rhev.ml" 195 7494 7521
+call(
+  tail
+)
+type(
+  string
+)
+"output_rhev.ml" 194 7477 7492 "output_rhev.ml" 196 7522 7529
+type(
+  Types.target -> string
+)
+"output_rhev.ml" 196 7522 7530 "output_rhev.ml" 196 7522 7537
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_rhev.ml" 164 6030 6057 "output_rhev.ml" 164 6030 6064
+)
+"output_rhev.ml" 194 7477 7483 "output_rhev.ml" 196 7522 7537
+call(
+  stack
+)
+type(
+  string list
+)
+"output_rhev.ml" 193 7458 7462 "output_rhev.ml" 196 7522 7537
+type(
+  unit
+)
+"output_rhev.ml" 198 7556 7562 "output_rhev.ml" 198 7556 7570
+type(
+  (Types.target -> string) -> Types.target list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"output_rhev.ml" 199 7573 7585 "output_rhev.ml" 199 7573 7586
+type(
+  Types.target
+)
+"output_rhev.ml" 199 7573 7590 "output_rhev.ml" 199 7573 7597
+type(
+  unit -> string
+)
+ident(
+  ext_ref Common_utils.uuidgen
+)
+"output_rhev.ml" 199 7573 7598 "output_rhev.ml" 199 7573 7600
+type(
+  unit
+)
+"output_rhev.ml" 199 7573 7590 "output_rhev.ml" 199 7573 7600
+call(
+  tail
+)
+type(
+  string
+)
+"output_rhev.ml" 198 7556 7571 "output_rhev.ml" 200 7601 7608
+type(
+  Types.target -> string
+)
+"output_rhev.ml" 200 7601 7609 "output_rhev.ml" 200 7601 7616
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_rhev.ml" 164 6030 6057 "output_rhev.ml" 164 6030 6064
+)
+"output_rhev.ml" 198 7556 7562 "output_rhev.ml" 200 7601 7616
+call(
+  stack
+)
+type(
+  string list
+)
+"output_rhev.ml" 197 7539 7543 "output_rhev.ml" 200 7601 7616
+type(
+  unit
+)
+"output_rhev.ml" 206 7841 7849 "output_rhev.ml" 206 7841 7859
+type(
+  string
+)
+"output_rhev.ml" 206 7841 7862 "output_rhev.ml" 206 7841 7868
+type(
+  string
+)
+"output_rhev.ml" 206 7841 7869 "output_rhev.ml" 206 7841 7871
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 206 7841 7872 "output_rhev.ml" 206 7841 7880
+type(
+  string
+)
+"output_rhev.ml" 206 7841 7862 "output_rhev.ml" 206 7841 7880
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 206 7841 7881 "output_rhev.ml" 206 7841 7883
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 206 7841 7884 "output_rhev.ml" 206 7841 7892
+type(
+  string
+)
+"output_rhev.ml" 206 7841 7862 "output_rhev.ml" 206 7841 7892
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 207 7896 7900 "output_rhev.ml" 207 7896 7909
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"output_rhev.ml" 208 7912 7922 "output_rhev.ml" 208 7912 7932
+type(
+  string
+)
+ident(
+  def image_uuid "output_rhev.ml" 209 7936 7944 "output_rhev.ml" 210 7980 8017
+)
+"output_rhev.ml" 209 7936 7948 "output_rhev.ml" 209 7936 7949
+type(
+  string
+)
+"output_rhev.ml" 209 7936 7952 "output_rhev.ml" 209 7936 7962
+type(
+  string
+)
+ident(
+  int_ref images_dir "output_rhev.ml" 206 7841 7849 "output_rhev.ml" 206 7841 7859
+)
+"output_rhev.ml" 209 7936 7963 "output_rhev.ml" 209 7936 7965
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 209 7936 7966 "output_rhev.ml" 209 7936 7976
+type(
+  string
+)
+ident(
+  int_ref image_uuid "output_rhev.ml" 208 7912 7922 "output_rhev.ml" 208 7912 7932
+)
+"output_rhev.ml" 209 7936 7952 "output_rhev.ml" 209 7936 7976
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 210 7980 7988 "output_rhev.ml" 210 7980 8000
+type(
+  Kvmuid.t -> string -> int -> unit
+)
+ident(
+  ext_ref Kvmuid.mkdir
+)
+"output_rhev.ml" 210 7980 8001 "output_rhev.ml" 210 7980 8009
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 210 7980 8010 "output_rhev.ml" 210 7980 8011
+type(
+  string
+)
+ident(
+  int_ref d "output_rhev.ml" 209 7936 7948 "output_rhev.ml" 209 7936 7949
+)
+"output_rhev.ml" 210 7980 8012 "output_rhev.ml" 210 7980 8017
+type(
+  int
+)
+"output_rhev.ml" 210 7980 7988 "output_rhev.ml" 210 7980 8017
+call(
+  tail
+)
+type(
+  unit
+)
+"output_rhev.ml" 209 7936 7944 "output_rhev.ml" 210 7980 8017
+type(
+  unit
+)
+"output_rhev.ml" 207 7896 7910 "output_rhev.ml" 211 8018 8023
+type(
+  string -> unit
+)
+"output_rhev.ml" 211 8018 8024 "output_rhev.ml" 211 8018 8035
+type(
+  string list
+)
+"output_rhev.ml" 207 7896 7900 "output_rhev.ml" 211 8018 8035
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 212 8037 8041 "output_rhev.ml" 212 8037 8048
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  ext_ref Pervasives.at_exit
+)
+"output_rhev.ml" 212 8037 8054 "output_rhev.ml" 212 8037 8056
+type(
+  unit
+)
+"output_rhev.ml" 213 8060 8069 "output_rhev.ml" 213 8060 8092
+type(
+  bool
+)
+"output_rhev.ml" 214 8100 8108 "output_rhev.ml" 214 8100 8117
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"output_rhev.ml" 215 8120 8134 "output_rhev.ml" 215 8120 8144
+type(
+  string
+)
+ident(
+  def image_uuid "output_rhev.ml" 216 8148 8160 "output_rhev.ml" 218 8243 8282
+)
+"output_rhev.ml" 216 8148 8164 "output_rhev.ml" 216 8148 8165
+type(
+  string
+)
+"output_rhev.ml" 216 8148 8168 "output_rhev.ml" 216 8148 8178
+type(
+  string
+)
+ident(
+  int_ref images_dir "output_rhev.ml" 206 7841 7849 "output_rhev.ml" 206 7841 7859
+)
+"output_rhev.ml" 216 8148 8179 "output_rhev.ml" 216 8148 8181
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 216 8148 8182 "output_rhev.ml" 216 8148 8192
+type(
+  string
+)
+ident(
+  int_ref image_uuid "output_rhev.ml" 215 8120 8134 "output_rhev.ml" 215 8120 8144
+)
+"output_rhev.ml" 216 8148 8168 "output_rhev.ml" 216 8148 8192
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 217 8196 8212 "output_rhev.ml" 217 8196 8215
+type(
+  string
+)
+"output_rhev.ml" 217 8196 8218 "output_rhev.ml" 217 8196 8225
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_rhev.ml" 217 8196 8226 "output_rhev.ml" 217 8196 8237
+type(
+  (string -> string, unit, string) format
+)
+"output_rhev.ml" 217 8196 8238 "output_rhev.ml" 217 8196 8239
+type(
+  string
+)
+ident(
+  int_ref d "output_rhev.ml" 216 8148 8164 "output_rhev.ml" 216 8148 8165
+)
+"output_rhev.ml" 217 8196 8218 "output_rhev.ml" 217 8196 8239
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 218 8243 8255 "output_rhev.ml" 218 8243 8269
+type(
+  Kvmuid.t -> string -> unit
+)
+ident(
+  ext_ref Kvmuid.command
+)
+"output_rhev.ml" 218 8243 8270 "output_rhev.ml" 218 8243 8278
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 218 8243 8279 "output_rhev.ml" 218 8243 8282
+type(
+  string
+)
+ident(
+  int_ref cmd "output_rhev.ml" 217 8196 8212 "output_rhev.ml" 217 8196 8215
+)
+"output_rhev.ml" 218 8243 8255 "output_rhev.ml" 218 8243 8282
+call(
+  tail
+)
+type(
+  unit
+)
+"output_rhev.ml" 217 8196 8208 "output_rhev.ml" 218 8243 8282
+type(
+  unit
+)
+"output_rhev.ml" 216 8148 8160 "output_rhev.ml" 218 8243 8282
+type(
+  unit
+)
+"output_rhev.ml" 214 8100 8118 "output_rhev.ml" 219 8283 8292
+type(
+  string -> unit
+)
+"output_rhev.ml" 219 8283 8293 "output_rhev.ml" 219 8283 8304
+type(
+  string list
+)
+"output_rhev.ml" 213 8060 8098 "output_rhev.ml" 220 8305 8312
+call(
+  tail
+)
+type(
+  unit
+)
+"output_rhev.ml" 213 8060 8066 "output_rhev.ml" 220 8305 8312
+type(
+  unit
+)
+"output_rhev.ml" 212 8037 8049 "output_rhev.ml" 221 8313 8318
+type(
+  unit -> unit
+)
+"output_rhev.ml" 212 8037 8041 "output_rhev.ml" 221 8313 8318
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 236 8924 8932 "output_rhev.ml" 236 8924 8939
+type(
+  Types.target list
+)
+"output_rhev.ml" 237 8942 8948 "output_rhev.ml" 237 8942 8956
+type(
+  (Types.target * string * string -> Types.target) ->
+  (Types.target * string * string) list -> Types.target list
+)
+ident(
+  ext_ref List.map
+)
+"output_rhev.ml" 238 8959 8991 "output_rhev.ml" 238 8959 8993
+type(
+  Types.overlay
+)
+ident(
+  def ov "output_rhev.ml" 239 9027 9037 "output_rhev.ml" 245 9232 9278
+)
+"output_rhev.ml" 238 8959 8972 "output_rhev.ml" 238 8959 8995
+type(
+  Types.target
+)
+"output_rhev.ml" 238 8959 8972 "output_rhev.ml" 238 8959 9000
+type(
+  Types.target
+)
+ident(
+  def t "output_rhev.ml" 239 9027 9037 "output_rhev.ml" 245 9232 9278
+)
+"output_rhev.ml" 238 8959 9002 "output_rhev.ml" 238 8959 9012
+type(
+  string
+)
+ident(
+  def image_uuid "output_rhev.ml" 239 9027 9037 "output_rhev.ml" 245 9232 9278
+)
+"output_rhev.ml" 238 8959 9014 "output_rhev.ml" 238 8959 9022
+type(
+  string
+)
+ident(
+  def vol_uuid "output_rhev.ml" 239 9027 9037 "output_rhev.ml" 245 9232 9278
+)
+"output_rhev.ml" 238 8959 8971 "output_rhev.ml" 238 8959 9023
+type(
+  Types.target * string * string
+)
+"output_rhev.ml" 239 9027 9041 "output_rhev.ml" 239 9027 9046
+type(
+  string
+)
+"output_rhev.ml" 239 9027 9049 "output_rhev.ml" 239 9027 9051
+type(
+  Types.overlay
+)
+ident(
+  int_ref ov "output_rhev.ml" 238 8959 8991 "output_rhev.ml" 238 8959 8993
+)
+"output_rhev.ml" 239 9027 9049 "output_rhev.ml" 239 9027 9057
+type(
+  string
+)
+"output_rhev.ml" 240 9061 9075 "output_rhev.ml" 240 9061 9086
+type(
+  string
+)
+"output_rhev.ml" 240 9061 9089 "output_rhev.ml" 240 9061 9099
+type(
+  string
+)
+ident(
+  int_ref images_dir "output_rhev.ml" 206 7841 7849 "output_rhev.ml" 206 7841 7859
+)
+"output_rhev.ml" 240 9061 9100 "output_rhev.ml" 240 9061 9102
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 240 9061 9103 "output_rhev.ml" 240 9061 9113
+type(
+  string
+)
+ident(
+  int_ref image_uuid "output_rhev.ml" 238 8959 9002 "output_rhev.ml" 238 8959 9012
+)
+"output_rhev.ml" 240 9061 9089 "output_rhev.ml" 240 9061 9113
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 240 9061 9114 "output_rhev.ml" 240 9061 9116
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 240 9061 9117 "output_rhev.ml" 240 9061 9125
+type(
+  string
+)
+ident(
+  int_ref vol_uuid "output_rhev.ml" 238 8959 9014 "output_rhev.ml" 238 8959 9022
+)
+"output_rhev.ml" 240 9061 9089 "output_rhev.ml" 240 9061 9125
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 242 9130 9143 "output_rhev.ml" 242 9130 9150
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_rhev.ml" 242 9130 9151 "output_rhev.ml" 242 9130 9153
+type(
+  unit
+)
+"output_rhev.ml" 242 9130 9143 "output_rhev.ml" 242 9130 9153
+call(
+  stack
+)
+type(
+  bool
+)
+"output_rhev.ml" 243 9159 9171 "output_rhev.ml" 243 9159 9178
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"output_rhev.ml" 243 9159 9179 "output_rhev.ml" 243 9159 9211
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_rhev.ml" 243 9159 9212 "output_rhev.ml" 243 9159 9217
+type(
+  string
+)
+ident(
+  int_ref ov_sd "output_rhev.ml" 239 9027 9041 "output_rhev.ml" 239 9027 9046
+)
+"output_rhev.ml" 243 9159 9218 "output_rhev.ml" 243 9159 9229
+type(
+  string
+)
+ident(
+  int_ref target_file "output_rhev.ml" 240 9061 9075 "output_rhev.ml" 240 9061 9086
+)
+"output_rhev.ml" 243 9159 9171 "output_rhev.ml" 243 9159 9229
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 242 9130 9140 "output_rhev.ml" 243 9159 9229
+type(
+  unit
+)
+"output_rhev.ml" 245 9232 9244 "output_rhev.ml" 245 9232 9245
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_rhev.ml" 238 8959 8972 "output_rhev.ml" 238 8959 9000
+)
+"output_rhev.ml" 245 9232 9265 "output_rhev.ml" 245 9232 9276
+type(
+  string
+)
+ident(
+  int_ref target_file "output_rhev.ml" 240 9061 9075 "output_rhev.ml" 240 9061 9086
+)
+"output_rhev.ml" 245 9232 9242 "output_rhev.ml" 245 9232 9278
+type(
+  Types.target
+)
+"output_rhev.ml" 242 9130 9140 "output_rhev.ml" 245 9232 9278
+type(
+  Types.target
+)
+"output_rhev.ml" 240 9061 9071 "output_rhev.ml" 245 9232 9278
+type(
+  Types.target
+)
+"output_rhev.ml" 239 9027 9037 "output_rhev.ml" 245 9232 9278
+type(
+  Types.target
+)
+"output_rhev.ml" 237 8942 8957 "output_rhev.ml" 246 9279 9286
+type(
+  Types.target * string * string -> Types.target
+)
+"output_rhev.ml" 246 9279 9288 "output_rhev.ml" 246 9279 9296
+type(
+  Types.target list ->
+  string list -> string list -> (Types.target * string * string) list
+)
+ident(
+  ext_ref Common_utils.combine3
+)
+"output_rhev.ml" 246 9279 9297 "output_rhev.ml" 246 9279 9304
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_rhev.ml" 164 6030 6057 "output_rhev.ml" 164 6030 6064
+)
+"output_rhev.ml" 246 9279 9305 "output_rhev.ml" 246 9279 9316
+type(
+  string list
+)
+"output_rhev.ml" 246 9279 9317 "output_rhev.ml" 246 9279 9326
+type(
+  string list
+)
+"output_rhev.ml" 246 9279 9287 "output_rhev.ml" 246 9279 9327
+call(
+  stack
+)
+type(
+  (Types.target * string * string) list
+)
+"output_rhev.ml" 237 8942 8948 "output_rhev.ml" 246 9279 9327
+call(
+  stack
+)
+type(
+  Types.target list
+)
+"output_rhev.ml" 249 9395 9403 "output_rhev.ml" 249 9395 9408
+type(
+  string list
+)
+"output_rhev.ml" 250 9411 9417 "output_rhev.ml" 250 9411 9438
+type(
+  Types.output_allocation ->
+  string -> string list -> Types.target list -> string list
+)
+ident(
+  ext_ref OVF.create_meta_files
+)
+"output_rhev.ml" 250 9411 9439 "output_rhev.ml" 250 9411 9451
+type(
+  Types.output_allocation
+)
+"output_rhev.ml" 250 9411 9452 "output_rhev.ml" 250 9411 9460
+type(
+  string
+)
+"output_rhev.ml" 250 9411 9461 "output_rhev.ml" 250 9411 9472
+type(
+  string list
+)
+"output_rhev.ml" 251 9473 9481 "output_rhev.ml" 251 9473 9488
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_rhev.ml" 236 8924 8932 "output_rhev.ml" 236 8924 8939
+)
+"output_rhev.ml" 250 9411 9417 "output_rhev.ml" 251 9473 9488
+call(
+  stack
+)
+type(
+  string list
+)
+"output_rhev.ml" 252 9492 9496 "output_rhev.ml" 252 9492 9505
+type(
+  (Types.target * string -> unit) -> (Types.target * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"output_rhev.ml" 253 9508 9535 "output_rhev.ml" 253 9508 9546
+type(
+  string
+)
+ident(
+  def target_file "output_rhev.ml" 254 9559 9567 "output_rhev.ml" 255 9612 9664
+)
+"output_rhev.ml" 253 9508 9519 "output_rhev.ml" 253 9508 9548
+type(
+  Types.target
+)
+"output_rhev.ml" 253 9508 9550 "output_rhev.ml" 253 9508 9554
+type(
+  string
+)
+ident(
+  def meta "output_rhev.ml" 254 9559 9567 "output_rhev.ml" 255 9612 9664
+)
+"output_rhev.ml" 253 9508 9518 "output_rhev.ml" 253 9508 9555
+type(
+  Types.target * string
+)
+"output_rhev.ml" 254 9559 9571 "output_rhev.ml" 254 9559 9584
+type(
+  string
+)
+"output_rhev.ml" 254 9559 9587 "output_rhev.ml" 254 9559 9598
+type(
+  string
+)
+ident(
+  int_ref target_file "output_rhev.ml" 253 9508 9535 "output_rhev.ml" 253 9508 9546
+)
+"output_rhev.ml" 254 9559 9599 "output_rhev.ml" 254 9559 9600
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_rhev.ml" 254 9559 9601 "output_rhev.ml" 254 9559 9608
+type(
+  string
+)
+"output_rhev.ml" 254 9559 9587 "output_rhev.ml" 254 9559 9608
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 255 9612 9620 "output_rhev.ml" 255 9612 9636
+type(
+  Kvmuid.t -> string -> string -> unit
+)
+ident(
+  ext_ref Kvmuid.make_file
+)
+"output_rhev.ml" 255 9612 9637 "output_rhev.ml" 255 9612 9645
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 255 9612 9646 "output_rhev.ml" 255 9612 9659
+type(
+  string
+)
+ident(
+  int_ref meta_filename "output_rhev.ml" 254 9559 9571 "output_rhev.ml" 254 9559 9584
+)
+"output_rhev.ml" 255 9612 9660 "output_rhev.ml" 255 9612 9664
+type(
+  string
+)
+ident(
+  int_ref meta "output_rhev.ml" 253 9508 9550 "output_rhev.ml" 253 9508 9554
+)
+"output_rhev.ml" 255 9612 9620 "output_rhev.ml" 255 9612 9664
+call(
+  tail
+)
+type(
+  unit
+)
+"output_rhev.ml" 254 9559 9567 "output_rhev.ml" 255 9612 9664
+type(
+  unit
+)
+"output_rhev.ml" 252 9492 9506 "output_rhev.ml" 256 9665 9670
+type(
+  Types.target * string -> unit
+)
+"output_rhev.ml" 256 9665 9672 "output_rhev.ml" 256 9665 9684
+type(
+  Types.target list -> string list -> (Types.target * string) list
+)
+ident(
+  ext_ref List.combine
+)
+"output_rhev.ml" 256 9665 9685 "output_rhev.ml" 256 9665 9692
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_rhev.ml" 236 8924 8932 "output_rhev.ml" 236 8924 8939
+)
+"output_rhev.ml" 256 9665 9693 "output_rhev.ml" 256 9665 9698
+type(
+  string list
+)
+ident(
+  int_ref metas "output_rhev.ml" 249 9395 9403 "output_rhev.ml" 249 9395 9408
+)
+"output_rhev.ml" 256 9665 9671 "output_rhev.ml" 256 9665 9699
+call(
+  stack
+)
+type(
+  (Types.target * string) list
+)
+"output_rhev.ml" 252 9492 9496 "output_rhev.ml" 256 9665 9699
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 259 9740 9744 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_rhev.ml" 236 8924 8932 "output_rhev.ml" 236 8924 8939
+)
+"output_rhev.ml" 252 9492 9496 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 249 9395 9399 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 236 8924 8928 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 212 8037 8041 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 207 7896 7900 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 206 7841 7845 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 197 7539 7543 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 193 7458 7462 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 191 7365 7369 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 174 6365 6369 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 169 6197 6201 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 168 6175 6179 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 167 6157 6161 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 165 6067 6071 "output_rhev.ml" 259 9740 9751
+type(
+  Types.target list
+)
+"output_rhev.ml" 261 9753 9775 "output_rhev.ml" 261 9753 9786
+type(
+  string option
+)
+ident(
+  def backingfile "output_rhev.ml" 261 9753 9787 "output_rhev.ml" 278 10542 10547
+)
+"output_rhev.ml" 261 9753 9788 "output_rhev.ml" 261 9753 9801
+type(
+  string option
+)
+ident(
+  def backingformat "output_rhev.ml" 261 9753 9802 "output_rhev.ml" 278 10542 10547
+)
+"output_rhev.ml" 261 9753 9803 "output_rhev.ml" 261 9753 9816
+type(
+  string option
+)
+ident(
+  def preallocation "output_rhev.ml" 261 9753 9817 "output_rhev.ml" 278 10542 10547
+)
+"output_rhev.ml" 261 9753 9818 "output_rhev.ml" 261 9753 9824
+type(
+  string option
+)
+ident(
+  def compat "output_rhev.ml" 262 9825 9829 "output_rhev.ml" 278 10542 10547
+)
+"output_rhev.ml" 262 9825 9830 "output_rhev.ml" 262 9825 9841
+type(
+  int option
+)
+ident(
+  def clustersize "output_rhev.ml" 262 9825 9842 "output_rhev.ml" 278 10542 10547
+)
+"output_rhev.ml" 262 9825 9842 "output_rhev.ml" 262 9825 9846
+type(
+  string
+)
+ident(
+  def path "output_rhev.ml" 262 9825 9847 "output_rhev.ml" 278 10542 10547
+)
+"output_rhev.ml" 262 9825 9847 "output_rhev.ml" 262 9825 9853
+type(
+  string
+)
+ident(
+  def format "output_rhev.ml" 262 9825 9854 "output_rhev.ml" 278 10542 10547
+)
+"output_rhev.ml" 262 9825 9854 "output_rhev.ml" 262 9825 9858
+type(
+  int64
+)
+ident(
+  def size "output_rhev.ml" 263 9861 9865 "output_rhev.ml" 278 10542 10547
+)
+"output_rhev.ml" 263 9861 9865 "output_rhev.ml" 263 9861 9876
+type(
+  Kvmuid.t -> (unit -> unit) -> unit
+)
+ident(
+  ext_ref Kvmuid.func
+)
+"output_rhev.ml" 263 9861 9877 "output_rhev.ml" 263 9861 9885
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 264 9888 9898 "output_rhev.ml" 264 9888 9900
+type(
+  unit
+)
+"output_rhev.ml" 265 9904 9916 "output_rhev.ml" 265 9904 9917
+type(
+  Guestfs.guestfs
+)
+"output_rhev.ml" 265 9904 9920 "output_rhev.ml" 265 9904 9939
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> Guestfs.guestfs
+)
+"output_rhev.ml" 265 9904 9940 "output_rhev.ml" 265 9904 9942
+type(
+  unit
+)
+"output_rhev.ml" 265 9904 9920 "output_rhev.ml" 265 9904 9942
+call(
+  stack
+)
+type(
+  Guestfs.guestfs
+)
+"output_rhev.ml" 269 10088 10100 "output_rhev.ml" 269 10088 10106
+type(
+  string option
+)
+"output_rhev.ml" 269 10088 10112 "output_rhev.ml" 269 10088 10118
+type(
+  string
+)
+ident(
+  int_ref format "output_rhev.ml" 262 9825 9847 "output_rhev.ml" 262 9825 9853
+)
+"output_rhev.ml" 269 10088 10119 "output_rhev.ml" 269 10088 10121
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_rhev.ml" 269 10088 10122 "output_rhev.ml" 269 10088 10129
+type(
+  string
+)
+"output_rhev.ml" 269 10088 10112 "output_rhev.ml" 269 10088 10129
+type(
+  bool
+)
+"output_rhev.ml" 269 10088 10135 "output_rhev.ml" 269 10088 10141
+type(
+  string option
+)
+ident(
+  int_ref compat "output_rhev.ml" 261 9753 9818 "output_rhev.ml" 261 9753 9824
+)
+"output_rhev.ml" 269 10088 10152 "output_rhev.ml" 269 10088 10158
+type(
+  string
+)
+"output_rhev.ml" 269 10088 10147 "output_rhev.ml" 269 10088 10158
+type(
+  string option
+)
+"output_rhev.ml" 269 10088 10109 "output_rhev.ml" 269 10088 10158
+type(
+  string option
+)
+"output_rhev.ml" 270 10162 10170 "output_rhev.ml" 270 10162 10171
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "output_rhev.ml" 265 9904 9916 "output_rhev.ml" 265 9904 9917
+)
+"output_rhev.ml" 270 10162 10170 "output_rhev.ml" 270 10162 10183
+call(
+  stack
+)
+type(
+  ?backingfile:string ->
+  ?backingformat:string ->
+  ?preallocation:string ->
+  ?compat:string -> ?clustersize:int -> string -> string -> int64 -> unit
+)
+"output_rhev.ml" 270 10162 10185 "output_rhev.ml" 270 10162 10196
+type(
+  string option
+)
+ident(
+  int_ref backingfile "output_rhev.ml" 261 9753 9775 "output_rhev.ml" 261 9753 9786
+)
+"output_rhev.ml" 270 10162 10198 "output_rhev.ml" 270 10162 10211
+type(
+  string option
+)
+ident(
+  int_ref backingformat "output_rhev.ml" 261 9753 9788 "output_rhev.ml" 261 9753 9801
+)
+"output_rhev.ml" 270 10162 10213 "output_rhev.ml" 270 10162 10226
+type(
+  string option
+)
+ident(
+  int_ref preallocation "output_rhev.ml" 261 9753 9803 "output_rhev.ml" 261 9753 9816
+)
+"output_rhev.ml" 270 10162 10228 "output_rhev.ml" 270 10162 10234
+type(
+  string option
+)
+ident(
+  int_ref compat "output_rhev.ml" 269 10088 10100 "output_rhev.ml" 269 10088 10106
+)
+"output_rhev.ml" 271 10235 10246 "output_rhev.ml" 271 10235 10257
+type(
+  int option
+)
+ident(
+  int_ref clustersize "output_rhev.ml" 262 9825 9830 "output_rhev.ml" 262 9825 9841
+)
+"output_rhev.ml" 271 10235 10258 "output_rhev.ml" 271 10235 10262
+type(
+  string
+)
+ident(
+  int_ref path "output_rhev.ml" 262 9825 9842 "output_rhev.ml" 262 9825 9846
+)
+"output_rhev.ml" 271 10235 10263 "output_rhev.ml" 271 10235 10269
+type(
+  string
+)
+ident(
+  int_ref format "output_rhev.ml" 262 9825 9847 "output_rhev.ml" 262 9825 9853
+)
+"output_rhev.ml" 271 10235 10270 "output_rhev.ml" 271 10235 10274
+type(
+  int64
+)
+ident(
+  int_ref size "output_rhev.ml" 262 9825 9854 "output_rhev.ml" 262 9825 9858
+)
+"output_rhev.ml" 270 10162 10170 "output_rhev.ml" 271 10235 10274
+type(
+  unit
+)
+"output_rhev.ml" 277 10517 10525 "output_rhev.ml" 277 10517 10530
+type(
+  string -> Unix.file_perm -> unit
+)
+ident(
+  ext_ref Unix.chmod
+)
+"output_rhev.ml" 277 10517 10531 "output_rhev.ml" 277 10517 10535
+type(
+  string
+)
+ident(
+  int_ref path "output_rhev.ml" 262 9825 9842 "output_rhev.ml" 262 9825 9846
+)
+"output_rhev.ml" 277 10517 10536 "output_rhev.ml" 277 10517 10541
+type(
+  Unix.file_perm
+)
+"output_rhev.ml" 277 10517 10525 "output_rhev.ml" 277 10517 10541
+call(
+  tail
+)
+type(
+  unit
+)
+"output_rhev.ml" 270 10162 10170 "output_rhev.ml" 277 10517 10541
+type(
+  unit
+)
+"output_rhev.ml" 269 10088 10096 "output_rhev.ml" 277 10517 10541
+type(
+  unit
+)
+"output_rhev.ml" 265 9904 9912 "output_rhev.ml" 277 10517 10541
+type(
+  unit
+)
+"output_rhev.ml" 263 9861 9886 "output_rhev.ml" 278 10542 10547
+type(
+  unit -> unit
+)
+"output_rhev.ml" 263 9861 9865 "output_rhev.ml" 278 10542 10547
+call(
+  tail
+)
+type(
+  unit
+)
+"output_rhev.ml" 281 10616 10641 "output_rhev.ml" 281 10616 10647
+type(
+  Types.source
+)
+ident(
+  def source "output_rhev.ml" 281 10616 10648 "output_rhev.ml" 296 11264 11300
+)
+"output_rhev.ml" 281 10616 10648 "output_rhev.ml" 281 10616 10655
+type(
+  Types.target list
+)
+ident(
+  def targets "output_rhev.ml" 281 10616 10656 "output_rhev.ml" 296 11264 11300
+)
+"output_rhev.ml" 281 10616 10656 "output_rhev.ml" 281 10616 10657
+type(
+  Types.target_buses
+)
+"output_rhev.ml" 281 10616 10658 "output_rhev.ml" 281 10616 10667
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "output_rhev.ml" 281 10616 10668 "output_rhev.ml" 296 11264 11300
+)
+"output_rhev.ml" 281 10616 10668 "output_rhev.ml" 281 10616 10675
+type(
+  Types.inspect
+)
+ident(
+  def inspect "output_rhev.ml" 281 10616 10676 "output_rhev.ml" 296 11264 11300
+)
+"output_rhev.ml" 281 10616 10676 "output_rhev.ml" 281 10616 10691
+type(
+  Types.target_firmware
+)
+ident(
+  def target_firmware "output_rhev.ml" 283 10735 10739 "output_rhev.ml" 296 11264 11300
+)
+"output_rhev.ml" 283 10735 10747 "output_rhev.ml" 283 10735 10762
+type(
+  Types.target_firmware
+)
+ident(
+  int_ref target_firmware "output_rhev.ml" 281 10616 10676 "output_rhev.ml" 281 10616 10691
+)
+"output_rhev.ml" 283 10735 10763 "output_rhev.ml" 283 10735 10764
+type(
+  Types.target_firmware -> Types.target_firmware -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_rhev.ml" 283 10735 10765 "output_rhev.ml" 283 10735 10775
+type(
+  Types.target_firmware
+)
+"output_rhev.ml" 283 10735 10746 "output_rhev.ml" 283 10735 10776
+type(
+  bool
+)
+"output_rhev.ml" 283 10735 10739 "output_rhev.ml" 283 10735 10776
+type(
+  unit
+)
+"output_rhev.ml" 286 10810 10818 "output_rhev.ml" 286 10810 10821
+type(
+  DOM.doc
+)
+"output_rhev.ml" 286 10810 10824 "output_rhev.ml" 286 10810 10838
+type(
+  Types.source ->
+  Types.target list ->
+  Types.guestcaps ->
+  Types.inspect ->
+  Types.output_allocation ->
+  Types.vmtype option ->
+  string -> string list -> string list -> string -> DOM.doc
+)
+ident(
+  ext_ref OVF.create_ovf
+)
+"output_rhev.ml" 286 10810 10839 "output_rhev.ml" 286 10810 10845
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_rhev.ml" 281 10616 10641 "output_rhev.ml" 281 10616 10647
+)
+"output_rhev.ml" 286 10810 10846 "output_rhev.ml" 286 10810 10853
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_rhev.ml" 281 10616 10648 "output_rhev.ml" 281 10616 10655
+)
+"output_rhev.ml" 286 10810 10854 "output_rhev.ml" 286 10810 10863
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_rhev.ml" 281 10616 10658 "output_rhev.ml" 281 10616 10667
+)
+"output_rhev.ml" 286 10810 10864 "output_rhev.ml" 286 10810 10871
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "output_rhev.ml" 281 10616 10668 "output_rhev.ml" 281 10616 10675
+)
+"output_rhev.ml" 287 10872 10878 "output_rhev.ml" 287 10872 10890
+type(
+  Types.output_allocation
+)
+"output_rhev.ml" 287 10872 10891 "output_rhev.ml" 287 10872 10897
+type(
+  Types.vmtype option
+)
+"output_rhev.ml" 287 10872 10898 "output_rhev.ml" 287 10872 10906
+type(
+  string
+)
+"output_rhev.ml" 287 10872 10907 "output_rhev.ml" 287 10872 10918
+type(
+  string list
+)
+"output_rhev.ml" 287 10872 10919 "output_rhev.ml" 287 10872 10928
+type(
+  string list
+)
+"output_rhev.ml" 287 10872 10929 "output_rhev.ml" 287 10872 10936
+type(
+  string
+)
+"output_rhev.ml" 286 10810 10824 "output_rhev.ml" 287 10872 10936
+call(
+  stack
+)
+type(
+  DOM.doc
+)
+"output_rhev.ml" 290 10982 10990 "output_rhev.ml" 290 10982 10993
+type(
+  string
+)
+"output_rhev.ml" 290 10982 10996 "output_rhev.ml" 290 10982 11002
+type(
+  string
+)
+"output_rhev.ml" 290 10982 11003 "output_rhev.ml" 290 10982 11005
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 290 10982 11006 "output_rhev.ml" 290 10982 11014
+type(
+  string
+)
+"output_rhev.ml" 290 10982 10996 "output_rhev.ml" 290 10982 11014
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 290 10982 11015 "output_rhev.ml" 290 10982 11017
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 290 10982 11018 "output_rhev.ml" 290 10982 11026
+type(
+  string
+)
+"output_rhev.ml" 290 10982 10996 "output_rhev.ml" 290 10982 11026
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 290 10982 11027 "output_rhev.ml" 290 10982 11029
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 290 10982 11030 "output_rhev.ml" 290 10982 11035
+type(
+  string
+)
+"output_rhev.ml" 290 10982 10996 "output_rhev.ml" 290 10982 11035
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 290 10982 11036 "output_rhev.ml" 290 10982 11038
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 290 10982 11039 "output_rhev.ml" 290 10982 11046
+type(
+  string
+)
+"output_rhev.ml" 290 10982 10996 "output_rhev.ml" 290 10982 11046
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 291 11050 11054 "output_rhev.ml" 291 11050 11066
+type(
+  Kvmuid.t -> string -> int -> unit
+)
+ident(
+  ext_ref Kvmuid.mkdir
+)
+"output_rhev.ml" 291 11050 11067 "output_rhev.ml" 291 11050 11075
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 291 11050 11076 "output_rhev.ml" 291 11050 11079
+type(
+  string
+)
+ident(
+  int_ref dir "output_rhev.ml" 290 10982 10990 "output_rhev.ml" 290 10982 10993
+)
+"output_rhev.ml" 291 11050 11080 "output_rhev.ml" 291 11050 11085
+type(
+  int
+)
+"output_rhev.ml" 291 11050 11054 "output_rhev.ml" 291 11050 11085
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 292 11087 11095 "output_rhev.ml" 292 11087 11099
+type(
+  string
+)
+"output_rhev.ml" 292 11087 11102 "output_rhev.ml" 292 11087 11105
+type(
+  string
+)
+ident(
+  int_ref dir "output_rhev.ml" 290 10982 10990 "output_rhev.ml" 290 10982 10993
+)
+"output_rhev.ml" 292 11087 11106 "output_rhev.ml" 292 11087 11108
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_rhev.ml" 292 11087 11109 "output_rhev.ml" 292 11087 11116
+type(
+  string
+)
+"output_rhev.ml" 292 11087 11102 "output_rhev.ml" 292 11087 11116
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 292 11087 11117 "output_rhev.ml" 292 11087 11118
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_rhev.ml" 292 11087 11119 "output_rhev.ml" 292 11087 11125
+type(
+  string
+)
+"output_rhev.ml" 292 11087 11102 "output_rhev.ml" 292 11087 11125
+call(
+  stack
+)
+type(
+  string
+)
+"output_rhev.ml" 293 11129 11133 "output_rhev.ml" 293 11129 11146
+type(
+  Kvmuid.t -> string -> (out_channel -> unit) -> unit
+)
+ident(
+  ext_ref Kvmuid.output
+)
+"output_rhev.ml" 293 11129 11147 "output_rhev.ml" 293 11129 11155
+type(
+  Kvmuid.t
+)
+"output_rhev.ml" 293 11129 11156 "output_rhev.ml" 293 11129 11160
+type(
+  string
+)
+ident(
+  int_ref file "output_rhev.ml" 292 11087 11095 "output_rhev.ml" 292 11087 11099
+)
+"output_rhev.ml" 293 11129 11166 "output_rhev.ml" 293 11129 11170
+type(
+  out_channel
+)
+ident(
+  def chan "output_rhev.ml" 293 11129 11174 "output_rhev.ml" 293 11129 11194
+)
+"output_rhev.ml" 293 11129 11174 "output_rhev.ml" 293 11129 11185
+type(
+  out_channel -> DOM.doc -> unit
+)
+ident(
+  ext_ref DOM.doc_to_chan
+)
+"output_rhev.ml" 293 11129 11186 "output_rhev.ml" 293 11129 11190
+type(
+  out_channel
+)
+ident(
+  int_ref chan "output_rhev.ml" 293 11129 11166 "output_rhev.ml" 293 11129 11170
+)
+"output_rhev.ml" 293 11129 11191 "output_rhev.ml" 293 11129 11194
+type(
+  DOM.doc
+)
+ident(
+  int_ref ovf "output_rhev.ml" 286 10810 10818 "output_rhev.ml" 286 10810 10821
+)
+"output_rhev.ml" 293 11129 11174 "output_rhev.ml" 293 11129 11194
+call(
+  tail
+)
+type(
+  unit
+)
+"output_rhev.ml" 293 11129 11161 "output_rhev.ml" 293 11129 11195
+type(
+  out_channel -> unit
+)
+"output_rhev.ml" 293 11129 11133 "output_rhev.ml" 293 11129 11195
+call(
+  stack
+)
+type(
+  unit
+)
+"output_rhev.ml" 296 11264 11295 "output_rhev.ml" 296 11264 11300
+type(
+  bool
+)
+"output_rhev.ml" 296 11264 11268 "output_rhev.ml" 296 11264 11300
+type(
+  unit
+)
+"output_rhev.ml" 293 11129 11133 "output_rhev.ml" 296 11264 11300
+type(
+  unit
+)
+"output_rhev.ml" 292 11087 11091 "output_rhev.ml" 296 11264 11300
+type(
+  unit
+)
+"output_rhev.ml" 291 11050 11054 "output_rhev.ml" 296 11264 11300
+type(
+  unit
+)
+"output_rhev.ml" 290 10982 10986 "output_rhev.ml" 296 11264 11300
+type(
+  unit
+)
+"output_rhev.ml" 286 10810 10814 "output_rhev.ml" 296 11264 11300
+type(
+  unit
+)
+"output_rhev.ml" 283 10735 10739 "output_rhev.ml" 296 11264 11300
+type(
+  unit
+)
+"output_rhev.ml" 299 11306 11310 "output_rhev.ml" 299 11306 11321
+type(
+  string -> Types.vmtype option -> Types.output_allocation -> output_rhev
+)
+ident(
+  def output_rhev "output_rhev.ml" 300 11340 11340 --
+)
+"output_rhev.ml" 299 11306 11324 "output_rhev.ml" 299 11306 11339
+type(
+  string -> Types.vmtype option -> Types.output_allocation -> output_rhev
+)
+"output_rhev.ml" 300 11340 11344 "output_rhev.ml" 300 11340 11346
+type(
+  unit
+)
+"output_rhev.ml" 300 11340 11349 "output_rhev.ml" 300 11340 11384
+type(
+  string -> unit
+)
+ident(
+  ext_ref Modules_list.register_output_module
+)
+"output_rhev.ml" 300 11340 11385 "output_rhev.ml" 300 11340 11391
+type(
+  string
+)
+"output_rhev.ml" 300 11340 11349 "output_rhev.ml" 300 11340 11391
+call(
+  stack
+)
+type(
+  unit
+)

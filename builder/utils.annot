@@ -1,0 +1,14 @@
+"utils.ml" 30 953 957 "utils.ml" 30 953 962
+type(
+  string -> string
+)
+ident(
+  def quote "utils.ml" 30 953 979 --
+)
+"utils.ml" 30 953 965 "utils.ml" 30 953 979
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.quote
+)

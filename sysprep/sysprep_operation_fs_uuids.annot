@@ -1,0 +1,362 @@
+"sysprep_operation_fs_uuids.ml" 28 880 888 "sysprep_operation_fs_uuids.ml" 28 880 904
+type(
+  < list_filesystems : unit -> (string * string) list;
+    set_uuid : string -> string -> unit; .. > ->
+  'a -> 'b -> unit
+)
+ident(
+  def fs_uuids_perform "sysprep_operation_fs_uuids.ml" 28 880 880 --
+)
+"sysprep_operation_fs_uuids.ml" 28 880 905 "sysprep_operation_fs_uuids.ml" 28 880 906
+type(
+  < list_filesystems : unit -> (string * string) list;
+    set_uuid : string -> string -> unit; .. >
+  as 'c
+)
+ident(
+  def g "sysprep_operation_fs_uuids.ml" 28 880 907 "sysprep_operation_fs_uuids.ml" 40 1236 1244
+)
+"sysprep_operation_fs_uuids.ml" 28 880 907 "sysprep_operation_fs_uuids.ml" 28 880 911
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_fs_uuids.ml" 28 880 912 "sysprep_operation_fs_uuids.ml" 40 1236 1244
+)
+"sysprep_operation_fs_uuids.ml" 28 880 912 "sysprep_operation_fs_uuids.ml" 28 880 924
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_fs_uuids.ml" 29 927 929 "sysprep_operation_fs_uuids.ml" 40 1236 1244
+)
+"sysprep_operation_fs_uuids.ml" 29 927 933 "sysprep_operation_fs_uuids.ml" 29 927 937
+type(
+  (string * string) list
+)
+"sysprep_operation_fs_uuids.ml" 29 927 940 "sysprep_operation_fs_uuids.ml" 29 927 941
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_fs_uuids.ml" 28 880 905 "sysprep_operation_fs_uuids.ml" 28 880 906
+)
+"sysprep_operation_fs_uuids.ml" 29 927 940 "sysprep_operation_fs_uuids.ml" 29 927 958
+call(
+  stack
+)
+type(
+  unit -> (string * string) list
+)
+"sysprep_operation_fs_uuids.ml" 29 927 959 "sysprep_operation_fs_uuids.ml" 29 927 961
+type(
+  unit
+)
+"sysprep_operation_fs_uuids.ml" 29 927 940 "sysprep_operation_fs_uuids.ml" 29 927 961
+type(
+  (string * string) list
+)
+"sysprep_operation_fs_uuids.ml" 30 965 967 "sysprep_operation_fs_uuids.ml" 30 965 976
+type(
+  (string * string -> unit) -> (string * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_fs_uuids.ml" 31 987 991 "sysprep_operation_fs_uuids.ml" 31 987 992
+type(
+  string
+)
+"sysprep_operation_fs_uuids.ml" 31 987 994 "sysprep_operation_fs_uuids.ml" 31 987 1003
+type(
+  string
+)
+"sysprep_operation_fs_uuids.ml" 31 987 991 "sysprep_operation_fs_uuids.ml" 31 987 1003
+type(
+  string * string
+)
+"sysprep_operation_fs_uuids.ml" 31 987 1007 "sysprep_operation_fs_uuids.ml" 31 987 1009
+type(
+  unit
+)
+"sysprep_operation_fs_uuids.ml" 32 1010 1014 "sysprep_operation_fs_uuids.ml" 32 1010 1017
+type(
+  string
+)
+ident(
+  def dev "sysprep_operation_fs_uuids.ml" 33 1026 1030 "sysprep_operation_fs_uuids.ml" 39 1214 1235
+)
+"sysprep_operation_fs_uuids.ml" 32 1010 1019 "sysprep_operation_fs_uuids.ml" 32 1010 1022
+type(
+  string
+)
+ident(
+  def typ "sysprep_operation_fs_uuids.ml" 33 1026 1030 "sysprep_operation_fs_uuids.ml" 39 1214 1235
+)
+"sysprep_operation_fs_uuids.ml" 32 1010 1014 "sysprep_operation_fs_uuids.ml" 32 1010 1022
+type(
+  string * string
+)
+"sysprep_operation_fs_uuids.ml" 33 1026 1034 "sysprep_operation_fs_uuids.ml" 33 1026 1042
+type(
+  string
+)
+"sysprep_operation_fs_uuids.ml" 33 1026 1045 "sysprep_operation_fs_uuids.ml" 33 1026 1065
+type(
+  unit -> string
+)
+ident(
+  ext_ref Common_utils.uuidgen
+)
+"sysprep_operation_fs_uuids.ml" 33 1026 1066 "sysprep_operation_fs_uuids.ml" 33 1026 1068
+type(
+  unit
+)
+"sysprep_operation_fs_uuids.ml" 33 1026 1045 "sysprep_operation_fs_uuids.ml" 33 1026 1068
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_fs_uuids.ml" 35 1080 1086 "sysprep_operation_fs_uuids.ml" 35 1080 1087
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_fs_uuids.ml" 28 880 905 "sysprep_operation_fs_uuids.ml" 28 880 906
+)
+"sysprep_operation_fs_uuids.ml" 35 1080 1086 "sysprep_operation_fs_uuids.ml" 35 1080 1096
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"sysprep_operation_fs_uuids.ml" 35 1080 1097 "sysprep_operation_fs_uuids.ml" 35 1080 1100
+type(
+  string
+)
+ident(
+  int_ref dev "sysprep_operation_fs_uuids.ml" 32 1010 1014 "sysprep_operation_fs_uuids.ml" 32 1010 1017
+)
+"sysprep_operation_fs_uuids.ml" 35 1080 1101 "sysprep_operation_fs_uuids.ml" 35 1080 1109
+type(
+  string
+)
+ident(
+  int_ref new_uuid "sysprep_operation_fs_uuids.ml" 33 1026 1034 "sysprep_operation_fs_uuids.ml" 33 1026 1042
+)
+"sysprep_operation_fs_uuids.ml" 35 1080 1086 "sysprep_operation_fs_uuids.ml" 35 1080 1109
+type(
+  unit
+)
+"sysprep_operation_fs_uuids.ml" 37 1119 1133 "sysprep_operation_fs_uuids.ml" 37 1119 1136
+type(
+  string
+)
+ident(
+  def msg "sysprep_operation_fs_uuids.ml" 38 1140 1148 "sysprep_operation_fs_uuids.ml" 39 1214 1235
+)
+"sysprep_operation_fs_uuids.ml" 37 1119 1125 "sysprep_operation_fs_uuids.ml" 37 1119 1136
+type(
+  exn
+)
+"sysprep_operation_fs_uuids.ml" 38 1140 1148 "sysprep_operation_fs_uuids.ml" 38 1140 1155
+type(
+  (string -> string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"sysprep_operation_fs_uuids.ml" 38 1140 1157 "sysprep_operation_fs_uuids.ml" 38 1140 1159
+type(
+  (string -> string -> string -> unit, unit, string, string, string, unit)
+  format6 -> (string -> string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation_fs_uuids.ml" 38 1140 1159 "sysprep_operation_fs_uuids.ml" 38 1140 1212
+type(
+  (string -> string -> string -> unit, unit, string, string, string, unit)
+  format6
+)
+"sysprep_operation_fs_uuids.ml" 38 1140 1156 "sysprep_operation_fs_uuids.ml" 38 1140 1213
+type(
+  (string -> string -> string -> unit, unit, string, unit) format4
+)
+"sysprep_operation_fs_uuids.ml" 39 1214 1224 "sysprep_operation_fs_uuids.ml" 39 1214 1227
+type(
+  string
+)
+ident(
+  int_ref dev "sysprep_operation_fs_uuids.ml" 32 1010 1014 "sysprep_operation_fs_uuids.ml" 32 1010 1017
+)
+"sysprep_operation_fs_uuids.ml" 39 1214 1228 "sysprep_operation_fs_uuids.ml" 39 1214 1231
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_fs_uuids.ml" 32 1010 1019 "sysprep_operation_fs_uuids.ml" 32 1010 1022
+)
+"sysprep_operation_fs_uuids.ml" 39 1214 1232 "sysprep_operation_fs_uuids.ml" 39 1214 1235
+type(
+  string
+)
+ident(
+  int_ref msg "sysprep_operation_fs_uuids.ml" 37 1119 1133 "sysprep_operation_fs_uuids.ml" 37 1119 1136
+)
+"sysprep_operation_fs_uuids.ml" 38 1140 1148 "sysprep_operation_fs_uuids.ml" 39 1214 1235
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_fs_uuids.ml" 34 1072 1076 "sysprep_operation_fs_uuids.ml" 39 1214 1235
+type(
+  unit
+)
+"sysprep_operation_fs_uuids.ml" 33 1026 1030 "sysprep_operation_fs_uuids.ml" 39 1214 1235
+type(
+  unit
+)
+"sysprep_operation_fs_uuids.ml" 30 965 977 "sysprep_operation_fs_uuids.ml" 40 1236 1239
+type(
+  string * string -> unit
+)
+"sysprep_operation_fs_uuids.ml" 40 1236 1240 "sysprep_operation_fs_uuids.ml" 40 1236 1244
+type(
+  (string * string) list
+)
+ident(
+  int_ref fses "sysprep_operation_fs_uuids.ml" 29 927 933 "sysprep_operation_fs_uuids.ml" 29 927 937
+)
+"sysprep_operation_fs_uuids.ml" 30 965 967 "sysprep_operation_fs_uuids.ml" 40 1236 1244
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_fs_uuids.ml" 29 927 929 "sysprep_operation_fs_uuids.ml" 40 1236 1244
+type(
+  unit
+)
+"sysprep_operation_fs_uuids.ml" 42 1246 1250 "sysprep_operation_fs_uuids.ml" 42 1246 1252
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_fs_uuids.ml" 61 1923 1923 --
+)
+"sysprep_operation_fs_uuids.ml" 43 1257 1259 "sysprep_operation_fs_uuids.ml" 43 1257 1267
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_fs_uuids.ml" 44 1273 1284 "sysprep_operation_fs_uuids.ml" 44 1273 1294
+type(
+  string
+)
+"sysprep_operation_fs_uuids.ml" 45 1296 1321 "sysprep_operation_fs_uuids.ml" 45 1296 1326
+type(
+  bool
+)
+"sysprep_operation_fs_uuids.ml" 46 1328 1342 "sysprep_operation_fs_uuids.ml" 46 1328 1344
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_fs_uuids.ml" 46 1328 1344 "sysprep_operation_fs_uuids.ml" 46 1328 1369
+type(
+  string
+)
+"sysprep_operation_fs_uuids.ml" 46 1328 1342 "sysprep_operation_fs_uuids.ml" 46 1328 1369
+type(
+  string
+)
+"sysprep_operation_fs_uuids.ml" 47 1371 1399 "sysprep_operation_fs_uuids.ml" 47 1371 1401
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_fs_uuids.ml" 47 1371 1401 "sysprep_operation_fs_uuids.ml" 49 1460 1520
+type(
+  string
+)
+"sysprep_operation_fs_uuids.ml" 47 1371 1398 "sysprep_operation_fs_uuids.ml" 49 1460 1521
+type(
+  string
+)
+"sysprep_operation_fs_uuids.ml" 47 1371 1393 "sysprep_operation_fs_uuids.ml" 49 1460 1521
+type(
+  string option
+)
+"sysprep_operation_fs_uuids.ml" 50 1523 1545 "sysprep_operation_fs_uuids.ml" 50 1523 1547
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_fs_uuids.ml" 50 1523 1547 "sysprep_operation_fs_uuids.ml" 57 1810 1869
+type(
+  string
+)
+"sysprep_operation_fs_uuids.ml" 50 1523 1544 "sysprep_operation_fs_uuids.ml" 57 1810 1870
+type(
+  string
+)
+"sysprep_operation_fs_uuids.ml" 50 1523 1539 "sysprep_operation_fs_uuids.ml" 57 1810 1870
+type(
+  string option
+)
+"sysprep_operation_fs_uuids.ml" 58 1872 1902 "sysprep_operation_fs_uuids.ml" 58 1872 1918
+type(
+  Sysprep_operation.device_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref fs_uuids_perform "sysprep_operation_fs_uuids.ml" 28 880 888 "sysprep_operation_fs_uuids.ml" 28 880 904
+)
+"sysprep_operation_fs_uuids.ml" 58 1872 1897 "sysprep_operation_fs_uuids.ml" 58 1872 1918
+type(
+  Sysprep_operation.device_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_fs_uuids.ml" 42 1246 1255 "sysprep_operation_fs_uuids.ml" 59 1920 1921
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_fs_uuids.ml" 61 1923 1927 "sysprep_operation_fs_uuids.ml" 61 1923 1929
+type(
+  unit
+)
+"sysprep_operation_fs_uuids.ml" 61 1923 1932 "sysprep_operation_fs_uuids.ml" 61 1923 1950
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_fs_uuids.ml" 61 1923 1951 "sysprep_operation_fs_uuids.ml" 61 1923 1953
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_fs_uuids.ml" 42 1246 1250 "sysprep_operation_fs_uuids.ml" 42 1246 1252
+)
+"sysprep_operation_fs_uuids.ml" 61 1923 1932 "sysprep_operation_fs_uuids.ml" 61 1923 1953
+call(
+  stack
+)
+type(
+  unit
+)

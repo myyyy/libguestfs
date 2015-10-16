@@ -55,8 +55,19 @@ virt_df-output.o: output.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
- /usr/include/libvirt/libvirt.h /usr/include/libvirt/virterror.h \
- ../gnulib/lib/human.h \
+ /usr/local/include/libvirt/libvirt.h \
+ /usr/local/include/libvirt/libvirt-host.h \
+ /usr/local/include/libvirt/libvirt-domain.h \
+ /usr/local/include/libvirt/libvirt-domain-snapshot.h \
+ /usr/local/include/libvirt/libvirt-event.h \
+ /usr/local/include/libvirt/libvirt-interface.h \
+ /usr/local/include/libvirt/libvirt-network.h \
+ /usr/local/include/libvirt/libvirt-nodedev.h \
+ /usr/local/include/libvirt/libvirt-nwfilter.h \
+ /usr/local/include/libvirt/libvirt-secret.h \
+ /usr/local/include/libvirt/libvirt-storage.h \
+ /usr/local/include/libvirt/libvirt-stream.h \
+ /usr/local/include/libvirt/virterror.h ../gnulib/lib/human.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h \
  ../gnulib/lib/unistd.h /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
@@ -231,9 +242,31 @@ virt_df-output.o: output.c ../config.h ../gnulib/lib/stdio.h \
 
 /usr/include/x86_64-linux-gnu/bits/mathinline.h:
 
-/usr/include/libvirt/libvirt.h:
+/usr/local/include/libvirt/libvirt.h:
 
-/usr/include/libvirt/virterror.h:
+/usr/local/include/libvirt/libvirt-host.h:
+
+/usr/local/include/libvirt/libvirt-domain.h:
+
+/usr/local/include/libvirt/libvirt-domain-snapshot.h:
+
+/usr/local/include/libvirt/libvirt-event.h:
+
+/usr/local/include/libvirt/libvirt-interface.h:
+
+/usr/local/include/libvirt/libvirt-network.h:
+
+/usr/local/include/libvirt/libvirt-nodedev.h:
+
+/usr/local/include/libvirt/libvirt-nwfilter.h:
+
+/usr/local/include/libvirt/libvirt-secret.h:
+
+/usr/local/include/libvirt/libvirt-storage.h:
+
+/usr/local/include/libvirt/libvirt-stream.h:
+
+/usr/local/include/libvirt/virterror.h:
 
 ../gnulib/lib/human.h:
 

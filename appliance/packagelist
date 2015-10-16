@@ -33,6 +33,7 @@ bsdmainutils
   vim-tiny
   xz-utils
   zfs-fuse
+  uuid-runtime
 acl
 attr
 bash
@@ -74,3 +75,6 @@ util-linux
 util-linux-ng
 xfsprogs
 zerofree
+qemu-utils
+curl
+debootstrap

@@ -1,0 +1,222 @@
+"sysprep_operation_udev_persistent_net.ml" 24 848 852 "sysprep_operation_udev_persistent_net.ml" 24 848 879
+type(
+  < inspect_get_type : 'a -> string; rm : string -> unit; .. > ->
+  'a -> 'b -> unit
+)
+ident(
+  def udev_persistent_net_perform "sysprep_operation_udev_persistent_net.ml" 31 1054 1054 --
+)
+"sysprep_operation_udev_persistent_net.ml" 24 848 880 "sysprep_operation_udev_persistent_net.ml" 24 848 881
+type(
+  < inspect_get_type : 'a -> string; rm : string -> unit; .. > as 'c
+)
+ident(
+  def g "sysprep_operation_udev_persistent_net.ml" 24 848 882 "sysprep_operation_udev_persistent_net.ml" 29 1049 1052
+)
+"sysprep_operation_udev_persistent_net.ml" 24 848 882 "sysprep_operation_udev_persistent_net.ml" 24 848 886
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_udev_persistent_net.ml" 24 848 887 "sysprep_operation_udev_persistent_net.ml" 29 1049 1052
+)
+"sysprep_operation_udev_persistent_net.ml" 24 848 887 "sysprep_operation_udev_persistent_net.ml" 24 848 899
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_udev_persistent_net.ml" 25 902 904 "sysprep_operation_udev_persistent_net.ml" 29 1049 1052
+)
+"sysprep_operation_udev_persistent_net.ml" 25 902 908 "sysprep_operation_udev_persistent_net.ml" 25 902 911
+type(
+  string
+)
+"sysprep_operation_udev_persistent_net.ml" 25 902 914 "sysprep_operation_udev_persistent_net.ml" 25 902 915
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_udev_persistent_net.ml" 24 848 880 "sysprep_operation_udev_persistent_net.ml" 24 848 881
+)
+"sysprep_operation_udev_persistent_net.ml" 25 902 914 "sysprep_operation_udev_persistent_net.ml" 25 902 932
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_udev_persistent_net.ml" 25 902 933 "sysprep_operation_udev_persistent_net.ml" 25 902 937
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_udev_persistent_net.ml" 24 848 882 "sysprep_operation_udev_persistent_net.ml" 24 848 886
+)
+"sysprep_operation_udev_persistent_net.ml" 25 902 914 "sysprep_operation_udev_persistent_net.ml" 25 902 937
+type(
+  string
+)
+"sysprep_operation_udev_persistent_net.ml" 26 941 946 "sysprep_operation_udev_persistent_net.ml" 26 941 949
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_udev_persistent_net.ml" 25 902 908 "sysprep_operation_udev_persistent_net.ml" 25 902 911
+)
+"sysprep_operation_udev_persistent_net.ml" 26 941 950 "sysprep_operation_udev_persistent_net.ml" 26 941 951
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation_udev_persistent_net.ml" 26 941 952 "sysprep_operation_udev_persistent_net.ml" 26 941 959
+type(
+  string
+)
+"sysprep_operation_udev_persistent_net.ml" 26 941 946 "sysprep_operation_udev_persistent_net.ml" 26 941 959
+type(
+  bool
+)
+"sysprep_operation_udev_persistent_net.ml" 27 967 975 "sysprep_operation_udev_persistent_net.ml" 27 967 976
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_udev_persistent_net.ml" 24 848 880 "sysprep_operation_udev_persistent_net.ml" 24 848 881
+)
+"sysprep_operation_udev_persistent_net.ml" 27 967 975 "sysprep_operation_udev_persistent_net.ml" 27 967 979
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_udev_persistent_net.ml" 27 967 980 "sysprep_operation_udev_persistent_net.ml" 27 967 1023
+type(
+  string
+)
+"sysprep_operation_udev_persistent_net.ml" 27 967 975 "sysprep_operation_udev_persistent_net.ml" 27 967 1023
+type(
+  unit
+)
+"sysprep_operation_udev_persistent_net.ml" 28 1024 1041 "sysprep_operation_udev_persistent_net.ml" 28 1024 1042
+type(
+  string
+)
+"sysprep_operation_udev_persistent_net.ml" 28 1024 1033 "sysprep_operation_udev_persistent_net.ml" 28 1024 1042
+type(
+  exn
+)
+"sysprep_operation_udev_persistent_net.ml" 28 1024 1046 "sysprep_operation_udev_persistent_net.ml" 28 1024 1048
+type(
+  unit
+)
+"sysprep_operation_udev_persistent_net.ml" 26 941 965 "sysprep_operation_udev_persistent_net.ml" 29 1049 1052
+type(
+  unit
+)
+"sysprep_operation_udev_persistent_net.ml" 26 941 943 "sysprep_operation_udev_persistent_net.ml" 29 1049 1052
+type(
+  unit
+)
+"sysprep_operation_udev_persistent_net.ml" 25 902 904 "sysprep_operation_udev_persistent_net.ml" 29 1049 1052
+type(
+  unit
+)
+"sysprep_operation_udev_persistent_net.ml" 31 1054 1058 "sysprep_operation_udev_persistent_net.ml" 31 1054 1060
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_udev_persistent_net.ml" 47 1690 1690 --
+)
+"sysprep_operation_udev_persistent_net.ml" 32 1065 1067 "sysprep_operation_udev_persistent_net.ml" 32 1065 1075
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_udev_persistent_net.ml" 33 1081 1092 "sysprep_operation_udev_persistent_net.ml" 33 1081 1113
+type(
+  string
+)
+"sysprep_operation_udev_persistent_net.ml" 34 1115 1140 "sysprep_operation_udev_persistent_net.ml" 34 1115 1144
+type(
+  bool
+)
+"sysprep_operation_udev_persistent_net.ml" 35 1146 1160 "sysprep_operation_udev_persistent_net.ml" 35 1146 1162
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_udev_persistent_net.ml" 35 1146 1162 "sysprep_operation_udev_persistent_net.ml" 35 1146 1196
+type(
+  string
+)
+"sysprep_operation_udev_persistent_net.ml" 35 1146 1160 "sysprep_operation_udev_persistent_net.ml" 35 1146 1196
+type(
+  string
+)
+"sysprep_operation_udev_persistent_net.ml" 36 1198 1226 "sysprep_operation_udev_persistent_net.ml" 36 1198 1228
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_udev_persistent_net.ml" 36 1198 1228 "sysprep_operation_udev_persistent_net.ml" 43 1556 1621
+type(
+  string
+)
+"sysprep_operation_udev_persistent_net.ml" 36 1198 1225 "sysprep_operation_udev_persistent_net.ml" 43 1556 1622
+type(
+  string
+)
+"sysprep_operation_udev_persistent_net.ml" 36 1198 1220 "sysprep_operation_udev_persistent_net.ml" 43 1556 1622
+type(
+  string option
+)
+"sysprep_operation_udev_persistent_net.ml" 44 1624 1658 "sysprep_operation_udev_persistent_net.ml" 44 1624 1685
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref udev_persistent_net_perform "sysprep_operation_udev_persistent_net.ml" 24 848 852 "sysprep_operation_udev_persistent_net.ml" 24 848 879
+)
+"sysprep_operation_udev_persistent_net.ml" 44 1624 1653 "sysprep_operation_udev_persistent_net.ml" 44 1624 1685
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_udev_persistent_net.ml" 31 1054 1063 "sysprep_operation_udev_persistent_net.ml" 45 1687 1688
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_udev_persistent_net.ml" 47 1690 1694 "sysprep_operation_udev_persistent_net.ml" 47 1690 1696
+type(
+  unit
+)
+"sysprep_operation_udev_persistent_net.ml" 47 1690 1699 "sysprep_operation_udev_persistent_net.ml" 47 1690 1717
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_udev_persistent_net.ml" 47 1690 1718 "sysprep_operation_udev_persistent_net.ml" 47 1690 1720
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_udev_persistent_net.ml" 31 1054 1058 "sysprep_operation_udev_persistent_net.ml" 31 1054 1060
+)
+"sysprep_operation_udev_persistent_net.ml" 47 1690 1699 "sysprep_operation_udev_persistent_net.ml" 47 1690 1720
+call(
+  stack
+)
+type(
+  unit
+)

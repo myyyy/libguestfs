@@ -1,0 +1,198 @@
+
+<html>
+<head>
+<title>virt-tar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#obsolete">OBSOLETE</a></li>
+  <li><a href="#examples">EXAMPLES</a></li>
+  <li><a href="#warning">WARNING</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>virt-tar - Extract or upload files to a virtual machine</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-tar [--options] -x domname directory tarball
+
+ virt-tar [--options] -u domname tarball directory
+
+ virt-tar [--options] disk.img [disk.img ...] -x directory tarball
+
+ virt-tar [--options] disk.img [disk.img ...] -u tarball directory</code></pre>
+
+<h1 id="obsolete">OBSOLETE</h1>
+
+<p>This tool is obsolete. Use <a href="virt-copy-in.1.html">virt-copy-in(1)</a>, <a href="virt-copy-out.1.html">virt-copy-out(1)</a>, <a href="virt-tar-in.1.html">virt-tar-in(1)</a>, <a href="virt-tar-out.1.html">virt-tar-out(1)</a> as replacements.</p>
+
+<h1 id="examples">EXAMPLES</h1>
+
+<p>Download <code>/home</code> from the VM into a local tarball:</p>
+
+<pre><code> virt-tar -x domname /home home.tar
+
+ virt-tar -zx domname /home home.tar.gz</code></pre>
+
+<p>Upload a local tarball and unpack it inside <code>/tmp</code> in the VM:</p>
+
+<pre><code> virt-tar -u domname uploadstuff.tar /tmp
+
+ virt-tar -zu domname uploadstuff.tar.gz /tmp</code></pre>
+
+<h1 id="warning">WARNING</h1>
+
+<p>You must <i>not</i> use <code>virt-tar</code> with the <i>-u</i> option (upload) on live virtual machines. If you do this, you risk disk corruption in the VM. <code>virt-tar</code> tries to stop you from doing this, but doesn&#39;t catch all cases.</p>
+
+<p>You can use <i>-x</i> (extract) on live virtual machines, but you might get inconsistent results or errors if there is filesystem activity inside the VM. If the live VM is synched and quiescent, then <code>virt-tar</code> will usually work, but the only way to guarantee consistent results is if the virtual machine is shut down.</p>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><code>virt-tar</code> is a general purpose archive tool for downloading and uploading parts of a guest filesystem. There are many possibilities: making backups, uploading data files, snooping on guest activity, fixing or customizing guests, etc.</p>
+
+<p>If you want to just view a single file, use <a href="virt-cat.1.html">virt-cat(1)</a>. If you just want to edit a single file, use <a href="virt-edit.1.html">virt-edit(1)</a>. For more complex cases you should look at the <a href="guestfish.1.html">guestfish(1)</a> tool.</p>
+
+<p>There are two modes of operation: <i>-x</i> (eXtract) downloads a directory and its contents (recursively) from the virtual machine into a local tarball. <i>-u</i> uploads from a local tarball, unpacking it into a directory inside the virtual machine. You cannot use these two options together.</p>
+
+<p>In addition, you may need to use the <i>-z</i> (gZip) option to enable compression. When uploading, you have to specify <i>-z</i> if the upload file is compressed because virt-tar won&#39;t detect this on its own.</p>
+
+<p><code>virt-tar</code> can only handle tar (optionally gzipped) format tarballs. For example it cannot do PKZip files or bzip2 compression. If you want that then you&#39;ll have to rebuild the tarballs yourself. (This is a limitation of the <a href="libguestfs.3.html">libguestfs(3)</a> API).</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display brief help.</p>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+<dt><b>-c URI</b></dt>
+<dd>
+
+</dd>
+<dt><b>--connect URI</b></dt>
+<dd>
+
+<p>If using libvirt, connect to the given <i>URI</i>. If omitted, then we connect to the default libvirt hypervisor.</p>
+
+<p>If you specify guest block devices directly, then libvirt is not used at all.</p>
+
+</dd>
+<dt><b>--format</b> raw</dt>
+<dd>
+
+<p>Specify the format of disk images given on the command line. If this is omitted then the format is autodetected from the content of the disk image.</p>
+
+<p>If disk images are requested from libvirt, then this program asks libvirt for this information. In this case, the value of the format parameter is ignored.</p>
+
+<p>If working with untrusted raw-format guest disk images, you should ensure the format is always specified.</p>
+
+</dd>
+<dt><b>-x</b></dt>
+<dd>
+
+</dd>
+<dt><b>--extract</b></dt>
+<dd>
+
+</dd>
+<dt><b>--download</b></dt>
+<dd>
+
+</dd>
+<dt><b>-u</b></dt>
+<dd>
+
+</dd>
+<dt><b>--upload</b></dt>
+<dd>
+
+<p>Use <i>-x</i> to extract (download) a directory from a virtual machine to a local tarball.</p>
+
+<p>Use <i>-u</i> to upload and unpack from a local tarball into a virtual machine. Please read the <a href="#warning">&quot;WARNING&quot;</a> section above before using this option.</p>
+
+<p>You must specify exactly one of these options.</p>
+
+</dd>
+<dt><b>-z</b></dt>
+<dd>
+
+</dd>
+<dt><b>--gzip</b></dt>
+<dd>
+
+<p>Specify that the input or output tarball is gzip-compressed.</p>
+
+</dd>
+</dl>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="virt-cat.1.html">virt-cat(1)</a>, <a href="virt-edit.1.html">virt-edit(1)</a>, <a href="virt-copy-in.1.html">virt-copy-in(1)</a>, <a href="virt-copy-out.1.html">virt-copy-out(1)</a>, <a href="virt-tar-in.1.html">virt-tar-in(1)</a>, <a href="virt-tar-out.1.html">virt-tar-out(1)</a>, <a href="Sys::Guestfs(3).3.html">Sys::Guestfs(3)</a>, <a href="http://search.cpan.org/perldoc?Sys::Virt(3)">Sys::Virt(3)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2009 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

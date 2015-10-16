@@ -1,0 +1,349 @@
+"sysprep_operation_firewall_rules.ml" 24 852 856 "sysprep_operation_firewall_rules.ml" 24 852 878
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def firewall_rules_perform "sysprep_operation_firewall_rules.ml" 40 1310 1310 --
+)
+"sysprep_operation_firewall_rules.ml" 24 852 879 "sysprep_operation_firewall_rules.ml" 24 852 880
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_firewall_rules.ml" 24 852 881 "sysprep_operation_firewall_rules.ml" 38 1305 1308
+)
+"sysprep_operation_firewall_rules.ml" 24 852 881 "sysprep_operation_firewall_rules.ml" 24 852 885
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_firewall_rules.ml" 24 852 886 "sysprep_operation_firewall_rules.ml" 38 1305 1308
+)
+"sysprep_operation_firewall_rules.ml" 24 852 886 "sysprep_operation_firewall_rules.ml" 24 852 898
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_firewall_rules.ml" 25 901 903 "sysprep_operation_firewall_rules.ml" 38 1305 1308
+)
+"sysprep_operation_firewall_rules.ml" 25 901 907 "sysprep_operation_firewall_rules.ml" 25 901 910
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 25 901 913 "sysprep_operation_firewall_rules.ml" 25 901 914
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_firewall_rules.ml" 24 852 879 "sysprep_operation_firewall_rules.ml" 24 852 880
+)
+"sysprep_operation_firewall_rules.ml" 25 901 913 "sysprep_operation_firewall_rules.ml" 25 901 931
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_firewall_rules.ml" 25 901 932 "sysprep_operation_firewall_rules.ml" 25 901 936
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_firewall_rules.ml" 24 852 881 "sysprep_operation_firewall_rules.ml" 24 852 885
+)
+"sysprep_operation_firewall_rules.ml" 25 901 913 "sysprep_operation_firewall_rules.ml" 25 901 936
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 26 940 945 "sysprep_operation_firewall_rules.ml" 26 940 948
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_firewall_rules.ml" 25 901 907 "sysprep_operation_firewall_rules.ml" 25 901 910
+)
+"sysprep_operation_firewall_rules.ml" 26 940 949 "sysprep_operation_firewall_rules.ml" 26 940 951
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_firewall_rules.ml" 26 940 952 "sysprep_operation_firewall_rules.ml" 26 940 961
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 26 940 945 "sysprep_operation_firewall_rules.ml" 26 940 961
+type(
+  bool
+)
+"sysprep_operation_firewall_rules.ml" 27 969 977 "sysprep_operation_firewall_rules.ml" 27 969 982
+type(
+  string list
+)
+"sysprep_operation_firewall_rules.ml" 27 969 987 "sysprep_operation_firewall_rules.ml" 27 969 1012
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 28 1014 1032 "sysprep_operation_firewall_rules.ml" 28 1014 1059
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 29 1061 1079 "sysprep_operation_firewall_rules.ml" 29 1061 1103
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 27 969 985 "sysprep_operation_firewall_rules.ml" 29 1061 1106
+type(
+  string list
+)
+"sysprep_operation_firewall_rules.ml" 30 1110 1114 "sysprep_operation_firewall_rules.ml" 30 1110 1123
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_firewall_rules.ml" 31 1126 1136 "sysprep_operation_firewall_rules.ml" 31 1126 1140
+type(
+  string
+)
+ident(
+  def path "sysprep_operation_firewall_rules.ml" 32 1144 1152 "sysprep_operation_firewall_rules.ml" 36 1276 1292
+)
+"sysprep_operation_firewall_rules.ml" 32 1144 1156 "sysprep_operation_firewall_rules.ml" 32 1144 1161
+type(
+  'a array
+)
+"sysprep_operation_firewall_rules.ml" 32 1144 1164 "sysprep_operation_firewall_rules.ml" 32 1144 1165
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_firewall_rules.ml" 24 852 879 "sysprep_operation_firewall_rules.ml" 24 852 880
+)
+"sysprep_operation_firewall_rules.ml" 32 1144 1164 "sysprep_operation_firewall_rules.ml" 32 1144 1177
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_firewall_rules.ml" 32 1144 1178 "sysprep_operation_firewall_rules.ml" 32 1144 1182
+type(
+  string
+)
+ident(
+  int_ref path "sysprep_operation_firewall_rules.ml" 31 1126 1136 "sysprep_operation_firewall_rules.ml" 31 1126 1140
+)
+"sysprep_operation_firewall_rules.ml" 32 1144 1164 "sysprep_operation_firewall_rules.ml" 32 1144 1182
+type(
+  'a array
+)
+"sysprep_operation_firewall_rules.ml" 33 1186 1194 "sysprep_operation_firewall_rules.ml" 33 1186 1204
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_firewall_rules.ml" 34 1207 1221 "sysprep_operation_firewall_rules.ml" 34 1207 1225
+type(
+  'a
+)
+ident(
+  def file "sysprep_operation_firewall_rules.ml" 35 1229 1241 "sysprep_operation_firewall_rules.ml" 35 1229 1275
+)
+"sysprep_operation_firewall_rules.ml" 35 1229 1245 "sysprep_operation_firewall_rules.ml" 35 1229 1246
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_firewall_rules.ml" 24 852 879 "sysprep_operation_firewall_rules.ml" 24 852 880
+)
+"sysprep_operation_firewall_rules.ml" 35 1229 1245 "sysprep_operation_firewall_rules.ml" 35 1229 1249
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_firewall_rules.ml" 35 1229 1250 "sysprep_operation_firewall_rules.ml" 35 1229 1254
+type(
+  'a
+)
+ident(
+  int_ref file "sysprep_operation_firewall_rules.ml" 34 1207 1221 "sysprep_operation_firewall_rules.ml" 34 1207 1225
+)
+"sysprep_operation_firewall_rules.ml" 35 1229 1245 "sysprep_operation_firewall_rules.ml" 35 1229 1254
+type(
+  unit
+)
+"sysprep_operation_firewall_rules.ml" 35 1229 1268 "sysprep_operation_firewall_rules.ml" 35 1229 1269
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 35 1229 1260 "sysprep_operation_firewall_rules.ml" 35 1229 1269
+type(
+  exn
+)
+"sysprep_operation_firewall_rules.ml" 35 1229 1273 "sysprep_operation_firewall_rules.ml" 35 1229 1275
+type(
+  unit
+)
+"sysprep_operation_firewall_rules.ml" 35 1229 1241 "sysprep_operation_firewall_rules.ml" 35 1229 1275
+type(
+  unit
+)
+"sysprep_operation_firewall_rules.ml" 33 1186 1205 "sysprep_operation_firewall_rules.ml" 36 1276 1285
+type(
+  'a -> unit
+)
+"sysprep_operation_firewall_rules.ml" 36 1276 1286 "sysprep_operation_firewall_rules.ml" 36 1276 1291
+type(
+  'a array
+)
+ident(
+  int_ref files "sysprep_operation_firewall_rules.ml" 32 1144 1156 "sysprep_operation_firewall_rules.ml" 32 1144 1161
+)
+"sysprep_operation_firewall_rules.ml" 33 1186 1194 "sysprep_operation_firewall_rules.ml" 36 1276 1292
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_firewall_rules.ml" 32 1144 1152 "sysprep_operation_firewall_rules.ml" 36 1276 1292
+type(
+  unit
+)
+"sysprep_operation_firewall_rules.ml" 30 1110 1124 "sysprep_operation_firewall_rules.ml" 37 1293 1298
+type(
+  string -> unit
+)
+"sysprep_operation_firewall_rules.ml" 37 1293 1299 "sysprep_operation_firewall_rules.ml" 37 1293 1304
+type(
+  string list
+)
+ident(
+  int_ref paths "sysprep_operation_firewall_rules.ml" 27 969 977 "sysprep_operation_firewall_rules.ml" 27 969 982
+)
+"sysprep_operation_firewall_rules.ml" 30 1110 1114 "sysprep_operation_firewall_rules.ml" 37 1293 1304
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_firewall_rules.ml" 26 940 967 "sysprep_operation_firewall_rules.ml" 38 1305 1308
+type(
+  unit
+)
+"sysprep_operation_firewall_rules.ml" 26 940 942 "sysprep_operation_firewall_rules.ml" 38 1305 1308
+type(
+  unit
+)
+"sysprep_operation_firewall_rules.ml" 25 901 903 "sysprep_operation_firewall_rules.ml" 38 1305 1308
+type(
+  unit
+)
+"sysprep_operation_firewall_rules.ml" 40 1310 1314 "sysprep_operation_firewall_rules.ml" 40 1310 1316
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_firewall_rules.ml" 54 1770 1770 --
+)
+"sysprep_operation_firewall_rules.ml" 41 1321 1323 "sysprep_operation_firewall_rules.ml" 41 1321 1331
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_firewall_rules.ml" 42 1337 1348 "sysprep_operation_firewall_rules.ml" 42 1337 1364
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 43 1366 1391 "sysprep_operation_firewall_rules.ml" 43 1366 1396
+type(
+  bool
+)
+"sysprep_operation_firewall_rules.ml" 44 1398 1412 "sysprep_operation_firewall_rules.ml" 44 1398 1414
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_firewall_rules.ml" 44 1398 1414 "sysprep_operation_firewall_rules.ml" 44 1398 1441
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 44 1398 1412 "sysprep_operation_firewall_rules.ml" 44 1398 1441
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 45 1443 1471 "sysprep_operation_firewall_rules.ml" 45 1443 1473
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_firewall_rules.ml" 45 1443 1473 "sysprep_operation_firewall_rules.ml" 50 1680 1706
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 45 1443 1470 "sysprep_operation_firewall_rules.ml" 50 1680 1707
+type(
+  string
+)
+"sysprep_operation_firewall_rules.ml" 45 1443 1465 "sysprep_operation_firewall_rules.ml" 50 1680 1707
+type(
+  string option
+)
+"sysprep_operation_firewall_rules.ml" 51 1709 1743 "sysprep_operation_firewall_rules.ml" 51 1709 1765
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref firewall_rules_perform "sysprep_operation_firewall_rules.ml" 24 852 856 "sysprep_operation_firewall_rules.ml" 24 852 878
+)
+"sysprep_operation_firewall_rules.ml" 51 1709 1738 "sysprep_operation_firewall_rules.ml" 51 1709 1765
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_firewall_rules.ml" 40 1310 1319 "sysprep_operation_firewall_rules.ml" 52 1767 1768
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_firewall_rules.ml" 54 1770 1774 "sysprep_operation_firewall_rules.ml" 54 1770 1776
+type(
+  unit
+)
+"sysprep_operation_firewall_rules.ml" 54 1770 1779 "sysprep_operation_firewall_rules.ml" 54 1770 1797
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_firewall_rules.ml" 54 1770 1798 "sysprep_operation_firewall_rules.ml" 54 1770 1800
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_firewall_rules.ml" 40 1310 1314 "sysprep_operation_firewall_rules.ml" 40 1310 1316
+)
+"sysprep_operation_firewall_rules.ml" 54 1770 1779 "sysprep_operation_firewall_rules.ml" 54 1770 1800
+call(
+  stack
+)
+type(
+  unit
+)

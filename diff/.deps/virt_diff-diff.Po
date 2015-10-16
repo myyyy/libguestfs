@@ -71,8 +71,7 @@ virt_diff-diff.o: diff.c ../config.h ../gnulib/lib/stdio.h \
  ../gnulib/lib/human.h ../gnulib/lib/xstrtol.h ../src/guestfs.h \
  ../fish/options.h ../src/guestfs-internal-frontend.h \
  ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h ../cat/visit.h
+ ../src/guestfs-internal-frontend-cleanups.h ../cat/visit.h
 
 ../config.h:
 
@@ -291,7 +290,5 @@ virt_diff-diff.o: diff.c ../config.h ../gnulib/lib/stdio.h \
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 ../cat/visit.h:

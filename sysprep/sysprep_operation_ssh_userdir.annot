@@ -1,0 +1,319 @@
+"sysprep_operation_ssh_userdir.ml" 24 851 855 "sysprep_operation_ssh_userdir.ml" 24 851 874
+type(
+  < glob_expand : string -> string array; inspect_get_type : 'a -> string;
+    rm_rf : string -> unit; .. > ->
+  'a -> 'b -> unit
+)
+ident(
+  def ssh_userdir_perform "sysprep_operation_ssh_userdir.ml" 34 1101 1101 --
+)
+"sysprep_operation_ssh_userdir.ml" 24 851 875 "sysprep_operation_ssh_userdir.ml" 24 851 876
+type(
+  < glob_expand : string -> string array; inspect_get_type : 'a -> string;
+    rm_rf : string -> unit; .. >
+  as 'c
+)
+ident(
+  def g "sysprep_operation_ssh_userdir.ml" 24 851 877 "sysprep_operation_ssh_userdir.ml" 32 1096 1099
+)
+"sysprep_operation_ssh_userdir.ml" 24 851 877 "sysprep_operation_ssh_userdir.ml" 24 851 881
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_ssh_userdir.ml" 24 851 882 "sysprep_operation_ssh_userdir.ml" 32 1096 1099
+)
+"sysprep_operation_ssh_userdir.ml" 24 851 882 "sysprep_operation_ssh_userdir.ml" 24 851 894
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_ssh_userdir.ml" 25 897 899 "sysprep_operation_ssh_userdir.ml" 32 1096 1099
+)
+"sysprep_operation_ssh_userdir.ml" 25 897 903 "sysprep_operation_ssh_userdir.ml" 25 897 906
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 25 897 909 "sysprep_operation_ssh_userdir.ml" 25 897 910
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_ssh_userdir.ml" 24 851 875 "sysprep_operation_ssh_userdir.ml" 24 851 876
+)
+"sysprep_operation_ssh_userdir.ml" 25 897 909 "sysprep_operation_ssh_userdir.ml" 25 897 927
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_ssh_userdir.ml" 25 897 928 "sysprep_operation_ssh_userdir.ml" 25 897 932
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_ssh_userdir.ml" 24 851 877 "sysprep_operation_ssh_userdir.ml" 24 851 881
+)
+"sysprep_operation_ssh_userdir.ml" 25 897 909 "sysprep_operation_ssh_userdir.ml" 25 897 932
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 26 936 941 "sysprep_operation_ssh_userdir.ml" 26 936 944
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_ssh_userdir.ml" 25 897 903 "sysprep_operation_ssh_userdir.ml" 25 897 906
+)
+"sysprep_operation_ssh_userdir.ml" 26 936 945 "sysprep_operation_ssh_userdir.ml" 26 936 947
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_ssh_userdir.ml" 26 936 948 "sysprep_operation_ssh_userdir.ml" 26 936 957
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 26 936 941 "sysprep_operation_ssh_userdir.ml" 26 936 957
+type(
+  bool
+)
+"sysprep_operation_ssh_userdir.ml" 27 965 973 "sysprep_operation_ssh_userdir.ml" 27 965 977
+type(
+  string array
+)
+"sysprep_operation_ssh_userdir.ml" 27 965 980 "sysprep_operation_ssh_userdir.ml" 27 965 981
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_ssh_userdir.ml" 24 851 875 "sysprep_operation_ssh_userdir.ml" 24 851 876
+)
+"sysprep_operation_ssh_userdir.ml" 27 965 980 "sysprep_operation_ssh_userdir.ml" 27 965 993
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"sysprep_operation_ssh_userdir.ml" 27 965 994 "sysprep_operation_ssh_userdir.ml" 27 965 1008
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 27 965 980 "sysprep_operation_ssh_userdir.ml" 27 965 1008
+type(
+  string array
+)
+"sysprep_operation_ssh_userdir.ml" 28 1012 1016 "sysprep_operation_ssh_userdir.ml" 28 1012 1026
+type(
+  (string -> unit) -> string array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_ssh_userdir.ml" 29 1029 1039 "sysprep_operation_ssh_userdir.ml" 29 1029 1042
+type(
+  string
+)
+ident(
+  def dir "sysprep_operation_ssh_userdir.ml" 29 1029 1046 "sysprep_operation_ssh_userdir.ml" 29 1029 1058
+)
+"sysprep_operation_ssh_userdir.ml" 29 1029 1046 "sysprep_operation_ssh_userdir.ml" 29 1029 1047
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_ssh_userdir.ml" 24 851 875 "sysprep_operation_ssh_userdir.ml" 24 851 876
+)
+"sysprep_operation_ssh_userdir.ml" 29 1029 1046 "sysprep_operation_ssh_userdir.ml" 29 1029 1053
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"sysprep_operation_ssh_userdir.ml" 29 1029 1054 "sysprep_operation_ssh_userdir.ml" 29 1029 1057
+type(
+  string
+)
+ident(
+  int_ref dir "sysprep_operation_ssh_userdir.ml" 29 1029 1039 "sysprep_operation_ssh_userdir.ml" 29 1029 1042
+)
+"sysprep_operation_ssh_userdir.ml" 29 1029 1046 "sysprep_operation_ssh_userdir.ml" 29 1029 1058
+type(
+  unit
+)
+"sysprep_operation_ssh_userdir.ml" 28 1012 1027 "sysprep_operation_ssh_userdir.ml" 30 1059 1064
+type(
+  string -> unit
+)
+"sysprep_operation_ssh_userdir.ml" 30 1059 1065 "sysprep_operation_ssh_userdir.ml" 30 1059 1069
+type(
+  string array
+)
+ident(
+  int_ref dirs "sysprep_operation_ssh_userdir.ml" 27 965 973 "sysprep_operation_ssh_userdir.ml" 27 965 977
+)
+"sysprep_operation_ssh_userdir.ml" 28 1012 1016 "sysprep_operation_ssh_userdir.ml" 30 1059 1069
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_ssh_userdir.ml" 31 1071 1075 "sysprep_operation_ssh_userdir.ml" 31 1071 1076
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_ssh_userdir.ml" 24 851 875 "sysprep_operation_ssh_userdir.ml" 24 851 876
+)
+"sysprep_operation_ssh_userdir.ml" 31 1071 1075 "sysprep_operation_ssh_userdir.ml" 31 1071 1082
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"sysprep_operation_ssh_userdir.ml" 31 1071 1083 "sysprep_operation_ssh_userdir.ml" 31 1071 1095
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 31 1071 1075 "sysprep_operation_ssh_userdir.ml" 31 1071 1095
+type(
+  unit
+)
+"sysprep_operation_ssh_userdir.ml" 28 1012 1016 "sysprep_operation_ssh_userdir.ml" 31 1071 1095
+type(
+  unit
+)
+"sysprep_operation_ssh_userdir.ml" 26 936 963 "sysprep_operation_ssh_userdir.ml" 32 1096 1099
+type(
+  unit
+)
+"sysprep_operation_ssh_userdir.ml" 26 936 938 "sysprep_operation_ssh_userdir.ml" 32 1096 1099
+type(
+  unit
+)
+"sysprep_operation_ssh_userdir.ml" 25 897 899 "sysprep_operation_ssh_userdir.ml" 32 1096 1099
+type(
+  unit
+)
+"sysprep_operation_ssh_userdir.ml" 34 1101 1105 "sysprep_operation_ssh_userdir.ml" 34 1101 1107
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_ssh_userdir.ml" 49 1648 1648 --
+)
+"sysprep_operation_ssh_userdir.ml" 35 1112 1114 "sysprep_operation_ssh_userdir.ml" 35 1112 1122
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_ssh_userdir.ml" 36 1128 1139 "sysprep_operation_ssh_userdir.ml" 36 1128 1152
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 37 1154 1179 "sysprep_operation_ssh_userdir.ml" 37 1154 1183
+type(
+  bool
+)
+"sysprep_operation_ssh_userdir.ml" 38 1185 1199 "sysprep_operation_ssh_userdir.ml" 38 1185 1201
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_ssh_userdir.ml" 38 1185 1201 "sysprep_operation_ssh_userdir.ml" 38 1185 1243
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 38 1185 1199 "sysprep_operation_ssh_userdir.ml" 38 1185 1243
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 39 1245 1273 "sysprep_operation_ssh_userdir.ml" 39 1245 1275
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_ssh_userdir.ml" 39 1245 1275 "sysprep_operation_ssh_userdir.ml" 41 1338 1398
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 39 1245 1272 "sysprep_operation_ssh_userdir.ml" 41 1338 1399
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 39 1245 1267 "sysprep_operation_ssh_userdir.ml" 41 1338 1399
+type(
+  string option
+)
+"sysprep_operation_ssh_userdir.ml" 42 1401 1423 "sysprep_operation_ssh_userdir.ml" 42 1401 1425
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_ssh_userdir.ml" 42 1401 1425 "sysprep_operation_ssh_userdir.ml" 45 1543 1587
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 42 1401 1422 "sysprep_operation_ssh_userdir.ml" 45 1543 1588
+type(
+  string
+)
+"sysprep_operation_ssh_userdir.ml" 42 1401 1417 "sysprep_operation_ssh_userdir.ml" 45 1543 1588
+type(
+  string option
+)
+"sysprep_operation_ssh_userdir.ml" 46 1590 1624 "sysprep_operation_ssh_userdir.ml" 46 1590 1643
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref ssh_userdir_perform "sysprep_operation_ssh_userdir.ml" 24 851 855 "sysprep_operation_ssh_userdir.ml" 24 851 874
+)
+"sysprep_operation_ssh_userdir.ml" 46 1590 1619 "sysprep_operation_ssh_userdir.ml" 46 1590 1643
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_ssh_userdir.ml" 34 1101 1110 "sysprep_operation_ssh_userdir.ml" 47 1645 1646
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_ssh_userdir.ml" 49 1648 1652 "sysprep_operation_ssh_userdir.ml" 49 1648 1654
+type(
+  unit
+)
+"sysprep_operation_ssh_userdir.ml" 49 1648 1657 "sysprep_operation_ssh_userdir.ml" 49 1648 1675
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_ssh_userdir.ml" 49 1648 1676 "sysprep_operation_ssh_userdir.ml" 49 1648 1678
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_ssh_userdir.ml" 34 1101 1105 "sysprep_operation_ssh_userdir.ml" 34 1101 1107
+)
+"sysprep_operation_ssh_userdir.ml" 49 1648 1657 "sysprep_operation_ssh_userdir.ml" 49 1648 1678
+call(
+  stack
+)
+type(
+  unit
+)

@@ -1,0 +1,952 @@
+"planner.ml" 29 1095 1099 "planner.ml" 29 1095 1103
+type(
+  ?max_depth:int ->
+  (('a * 'b) list -> ('c * int * ('a * 'b) list) list) ->
+  ('a * 'b) list ->
+  ('a * 'b) list * ('a * 'b) list ->
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+ident(
+  def plan "planner.ml" 81 2757 2782 --
+)
+"planner.ml" 29 1095 1106 "planner.ml" 29 1095 1115
+type(
+  int
+)
+"planner.ml" 29 1095 1118 "planner.ml" 29 1095 1120
+type(
+  int
+)
+type(
+  int
+)
+ident(
+  int_ref *sth* "planner.ml" 29 1095 1118 "planner.ml" 29 1095 1120
+)
+type(
+  int option
+)
+type(
+  int option
+)
+type(
+  int
+)
+ident(
+  def *sth* "planner.ml" 29 1095 1118 "planner.ml" 29 1095 1120
+)
+"planner.ml" 29 1095 1122 "planner.ml" 29 1095 1133
+type(
+  ('a * 'b) list -> ('c * int * ('a * 'b) list) list
+)
+ident(
+  def transitions "planner.ml" 29 1095 1134 "planner.ml" 81 2757 2782
+)
+"planner.ml" 29 1095 1134 "planner.ml" 29 1095 1139
+type(
+  ('a * 'b) list
+)
+ident(
+  def itags "planner.ml" 29 1095 1140 "planner.ml" 81 2757 2782
+)
+"planner.ml" 29 1095 1141 "planner.ml" 29 1095 1150
+type(
+  ('a * 'b) list
+)
+ident(
+  def goal_must "planner.ml" 31 1230 1232 "planner.ml" 81 2757 2782
+)
+"planner.ml" 29 1095 1152 "planner.ml" 29 1095 1165
+type(
+  ('a * 'b) list
+)
+ident(
+  def goal_must_not "planner.ml" 31 1230 1232 "planner.ml" 81 2757 2782
+)
+"planner.ml" 29 1095 1140 "planner.ml" 29 1095 1166
+type(
+  ('a * 'b) list * ('a * 'b) list
+)
+"planner.ml" 31 1230 1236 "planner.ml" 31 1230 1244
+type(
+  ('a * 'b) list * 'd * 'e -> bool
+)
+"planner.ml" 31 1230 1246 "planner.ml" 31 1230 1251
+type(
+  ('a * 'b) list
+)
+ident(
+  def otags "planner.ml" 32 1261 1265 "planner.ml" 46 1712 1732
+)
+"planner.ml" 31 1230 1253 "planner.ml" 31 1230 1254
+type(
+  'd
+)
+"planner.ml" 31 1230 1256 "planner.ml" 31 1230 1257
+type(
+  'e
+)
+"planner.ml" 31 1230 1245 "planner.ml" 31 1230 1258
+type(
+  ('a * 'b) list * 'd * 'e
+)
+"planner.ml" 32 1261 1269 "planner.ml" 32 1261 1273
+type(
+  bool
+)
+"planner.ml" 34 1355 1361 "planner.ml" 34 1355 1373
+type(
+  ('a * 'b -> bool) -> ('a * 'b) list -> bool
+)
+ident(
+  ext_ref List.for_all
+)
+"planner.ml" 35 1376 1389 "planner.ml" 35 1376 1393
+type(
+  'a
+)
+ident(
+  def name "planner.ml" 36 1405 1415 "planner.ml" 36 1405 1472
+)
+"planner.ml" 35 1376 1395 "planner.ml" 35 1376 1400
+type(
+  'b
+)
+ident(
+  def value "planner.ml" 36 1405 1415 "planner.ml" 36 1405 1472
+)
+"planner.ml" 35 1376 1388 "planner.ml" 35 1376 1401
+type(
+  'a * 'b
+)
+"planner.ml" 36 1405 1419 "planner.ml" 36 1405 1429
+type(
+  'a -> ('a * 'b) list -> 'b
+)
+ident(
+  ext_ref List.assoc
+)
+"planner.ml" 36 1405 1430 "planner.ml" 36 1405 1434
+type(
+  'a
+)
+ident(
+  int_ref name "planner.ml" 35 1376 1389 "planner.ml" 35 1376 1393
+)
+"planner.ml" 36 1405 1435 "planner.ml" 36 1405 1440
+type(
+  ('a * 'b) list
+)
+ident(
+  int_ref otags "planner.ml" 31 1230 1246 "planner.ml" 31 1230 1251
+)
+"planner.ml" 36 1405 1419 "planner.ml" 36 1405 1440
+call(
+  stack
+)
+type(
+  'b
+)
+"planner.ml" 36 1405 1441 "planner.ml" 36 1405 1442
+type(
+  'b -> 'b -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"planner.ml" 36 1405 1443 "planner.ml" 36 1405 1448
+type(
+  'b
+)
+ident(
+  int_ref value "planner.ml" 35 1376 1395 "planner.ml" 35 1376 1400
+)
+"planner.ml" 36 1405 1419 "planner.ml" 36 1405 1448
+type(
+  bool
+)
+"planner.ml" 36 1405 1454 "planner.ml" 36 1405 1463
+type(
+  exn
+)
+"planner.ml" 36 1405 1467 "planner.ml" 36 1405 1472
+type(
+  bool
+)
+"planner.ml" 36 1405 1415 "planner.ml" 36 1405 1472
+type(
+  bool
+)
+"planner.ml" 34 1355 1374 "planner.ml" 37 1473 1480
+type(
+  'a * 'b -> bool
+)
+"planner.ml" 37 1473 1481 "planner.ml" 37 1473 1490
+type(
+  ('a * 'b) list
+)
+ident(
+  int_ref goal_must "planner.ml" 29 1095 1141 "planner.ml" 29 1095 1150
+)
+"planner.ml" 34 1355 1361 "planner.ml" 37 1473 1490
+call(
+  stack
+)
+type(
+  bool
+)
+"planner.ml" 39 1495 1503 "planner.ml" 39 1495 1511
+type(
+  bool
+)
+"planner.ml" 41 1568 1574 "planner.ml" 41 1568 1586
+type(
+  ('a * 'b -> bool) -> ('a * 'b) list -> bool
+)
+ident(
+  ext_ref List.for_all
+)
+"planner.ml" 42 1589 1602 "planner.ml" 42 1589 1606
+type(
+  'a
+)
+ident(
+  def name "planner.ml" 43 1618 1628 "planner.ml" 43 1618 1685
+)
+"planner.ml" 42 1589 1608 "planner.ml" 42 1589 1613
+type(
+  'b
+)
+ident(
+  def value "planner.ml" 43 1618 1628 "planner.ml" 43 1618 1685
+)
+"planner.ml" 42 1589 1601 "planner.ml" 42 1589 1614
+type(
+  'a * 'b
+)
+"planner.ml" 43 1618 1632 "planner.ml" 43 1618 1642
+type(
+  'a -> ('a * 'b) list -> 'b
+)
+ident(
+  ext_ref List.assoc
+)
+"planner.ml" 43 1618 1643 "planner.ml" 43 1618 1647
+type(
+  'a
+)
+ident(
+  int_ref name "planner.ml" 42 1589 1602 "planner.ml" 42 1589 1606
+)
+"planner.ml" 43 1618 1648 "planner.ml" 43 1618 1653
+type(
+  ('a * 'b) list
+)
+ident(
+  int_ref otags "planner.ml" 31 1230 1246 "planner.ml" 31 1230 1251
+)
+"planner.ml" 43 1618 1632 "planner.ml" 43 1618 1653
+call(
+  stack
+)
+type(
+  'b
+)
+"planner.ml" 43 1618 1654 "planner.ml" 43 1618 1656
+type(
+  'b -> 'b -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"planner.ml" 43 1618 1657 "planner.ml" 43 1618 1662
+type(
+  'b
+)
+ident(
+  int_ref value "planner.ml" 42 1589 1608 "planner.ml" 42 1589 1613
+)
+"planner.ml" 43 1618 1632 "planner.ml" 43 1618 1662
+type(
+  bool
+)
+"planner.ml" 43 1618 1668 "planner.ml" 43 1618 1677
+type(
+  exn
+)
+"planner.ml" 43 1618 1681 "planner.ml" 43 1618 1685
+type(
+  bool
+)
+"planner.ml" 43 1618 1628 "planner.ml" 43 1618 1685
+type(
+  bool
+)
+"planner.ml" 41 1568 1587 "planner.ml" 44 1686 1693
+type(
+  'a * 'b -> bool
+)
+"planner.ml" 44 1686 1694 "planner.ml" 44 1686 1707
+type(
+  ('a * 'b) list
+)
+ident(
+  int_ref goal_must_not "planner.ml" 29 1095 1152 "planner.ml" 29 1095 1165
+)
+"planner.ml" 41 1568 1574 "planner.ml" 44 1686 1707
+call(
+  stack
+)
+type(
+  bool
+)
+"planner.ml" 46 1712 1716 "planner.ml" 46 1712 1720
+type(
+  bool
+)
+ident(
+  int_ref must "planner.ml" 32 1261 1269 "planner.ml" 32 1261 1273
+)
+"planner.ml" 46 1712 1721 "planner.ml" 46 1712 1723
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( && )
+)
+"planner.ml" 46 1712 1724 "planner.ml" 46 1712 1732
+type(
+  bool
+)
+ident(
+  int_ref must_not "planner.ml" 39 1495 1503 "planner.ml" 39 1495 1511
+)
+"planner.ml" 46 1712 1716 "planner.ml" 46 1712 1732
+type(
+  bool
+)
+"planner.ml" 39 1495 1499 "planner.ml" 46 1712 1732
+type(
+  bool
+)
+"planner.ml" 32 1261 1265 "planner.ml" 46 1712 1732
+type(
+  bool
+)
+"planner.ml" 50 1769 1779 "planner.ml" 50 1769 1785
+type(
+  int ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list ->
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 50 1769 1786 "planner.ml" 50 1769 1791
+type(
+  int
+)
+ident(
+  def depth "planner.ml" 50 1769 1792 "planner.ml" 78 2745 2750
+)
+"planner.ml" 50 1769 1792 "planner.ml" 50 1769 1797
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+ident(
+  def paths "planner.ml" 51 1800 1804 "planner.ml" 78 2745 2750
+)
+"planner.ml" 51 1800 1807 "planner.ml" 51 1800 1812
+type(
+  int
+)
+ident(
+  int_ref depth "planner.ml" 50 1769 1786 "planner.ml" 50 1769 1791
+)
+"planner.ml" 51 1800 1813 "planner.ml" 51 1800 1815
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( >= )
+)
+"planner.ml" 51 1800 1816 "planner.ml" 51 1800 1825
+type(
+  int
+)
+ident(
+  int_ref max_depth "planner.ml" 29 1095 1106 "planner.ml" 29 1095 1115
+)
+"planner.ml" 51 1800 1807 "planner.ml" 51 1800 1825
+type(
+  bool
+)
+"planner.ml" 51 1800 1831 "planner.ml" 51 1800 1839
+type(
+  string -> (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+ident(
+  ext_ref Pervasives.failwith
+)
+"planner.ml" 51 1800 1840 "planner.ml" 51 1800 1846
+type(
+  string
+)
+"planner.ml" 51 1800 1831 "planner.ml" 51 1800 1846
+call(
+  tail
+)
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 53 1858 1868 "planner.ml" 53 1858 1873
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+  list
+)
+"planner.ml" 54 1876 1884 "planner.ml" 54 1876 1892
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list ->
+   (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list) ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+  list
+)
+ident(
+  ext_ref List.map
+)
+"planner.ml" 55 1895 1910 "planner.ml" 55 1895 1915
+type(
+  ('a * 'b) list
+)
+ident(
+  def itags "planner.ml" 56 1935 1947 "planner.ml" 59 2086 2102
+)
+"planner.ml" 55 1895 1917 "planner.ml" 55 1895 1923
+type(
+  int
+)
+ident(
+  def weight "planner.ml" 56 1935 1947 "planner.ml" 59 2086 2102
+)
+"planner.ml" 55 1895 1925 "planner.ml" 55 1895 1930
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+ident(
+  def preds "planner.ml" 56 1935 1947 "planner.ml" 59 2086 2102
+)
+"planner.ml" 55 1895 1909 "planner.ml" 55 1895 1931
+type(
+  ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 56 1935 1951 "planner.ml" 56 1935 1953
+type(
+  ('c * int * ('a * 'b) list) list
+)
+"planner.ml" 56 1935 1956 "planner.ml" 56 1935 1967
+type(
+  ('a * 'b) list -> ('c * int * ('a * 'b) list) list
+)
+ident(
+  int_ref transitions "planner.ml" 29 1095 1122 "planner.ml" 29 1095 1133
+)
+"planner.ml" 56 1935 1968 "planner.ml" 56 1935 1973
+type(
+  ('a * 'b) list
+)
+ident(
+  int_ref itags "planner.ml" 55 1895 1910 "planner.ml" 55 1895 1915
+)
+"planner.ml" 56 1935 1956 "planner.ml" 56 1935 1973
+call(
+  stack
+)
+type(
+  ('c * int * ('a * 'b) list) list
+)
+"planner.ml" 57 1977 1989 "planner.ml" 57 1977 1997
+type(
+  ('c * int * ('a * 'b) list ->
+   ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) ->
+  ('c * int * ('a * 'b) list) list ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+ident(
+  ext_ref List.map
+)
+"planner.ml" 57 1977 2004 "planner.ml" 57 1977 2008
+type(
+  'c
+)
+ident(
+  def task "planner.ml" 58 2023 2037 "planner.ml" 58 2023 2085
+)
+"planner.ml" 57 1977 2010 "planner.ml" 57 1977 2011
+type(
+  int
+)
+ident(
+  def w "planner.ml" 58 2023 2037 "planner.ml" 58 2023 2085
+)
+"planner.ml" 57 1977 2013 "planner.ml" 57 1977 2018
+type(
+  ('a * 'b) list
+)
+ident(
+  def otags "planner.ml" 58 2023 2037 "planner.ml" 58 2023 2085
+)
+"planner.ml" 57 1977 2003 "planner.ml" 57 1977 2019
+type(
+  'c * int * ('a * 'b) list
+)
+"planner.ml" 58 2023 2037 "planner.ml" 58 2023 2042
+type(
+  ('a * 'b) list
+)
+ident(
+  int_ref otags "planner.ml" 57 1977 2013 "planner.ml" 57 1977 2018
+)
+"planner.ml" 58 2023 2044 "planner.ml" 58 2023 2050
+type(
+  int
+)
+ident(
+  int_ref weight "planner.ml" 55 1895 1917 "planner.ml" 55 1895 1923
+)
+"planner.ml" 58 2023 2051 "planner.ml" 58 2023 2052
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"planner.ml" 58 2023 2053 "planner.ml" 58 2023 2054
+type(
+  int
+)
+ident(
+  int_ref w "planner.ml" 57 1977 2010 "planner.ml" 57 1977 2011
+)
+"planner.ml" 58 2023 2044 "planner.ml" 58 2023 2054
+type(
+  int
+)
+"planner.ml" 58 2023 2057 "planner.ml" 58 2023 2062
+type(
+  ('a * 'b) list
+)
+ident(
+  int_ref itags "planner.ml" 55 1895 1910 "planner.ml" 55 1895 1915
+)
+"planner.ml" 58 2023 2064 "planner.ml" 58 2023 2068
+type(
+  'c
+)
+ident(
+  int_ref task "planner.ml" 57 1977 2004 "planner.ml" 57 1977 2008
+)
+"planner.ml" 58 2023 2070 "planner.ml" 58 2023 2075
+type(
+  ('a * 'b) list
+)
+ident(
+  int_ref otags "planner.ml" 57 1977 2013 "planner.ml" 57 1977 2018
+)
+"planner.ml" 58 2023 2056 "planner.ml" 58 2023 2076
+type(
+  ('a * 'b) list * 'c * ('a * 'b) list
+)
+"planner.ml" 58 2023 2080 "planner.ml" 58 2023 2085
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+ident(
+  int_ref preds "planner.ml" 55 1895 1925 "planner.ml" 55 1895 1930
+)
+"planner.ml" 58 2023 2056 "planner.ml" 58 2023 2085
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 58 2023 2037 "planner.ml" 58 2023 2085
+type(
+  ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 57 1977 1998 "planner.ml" 59 2086 2099
+type(
+  'c * int * ('a * 'b) list ->
+  ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 59 2086 2100 "planner.ml" 59 2086 2102
+type(
+  ('c * int * ('a * 'b) list) list
+)
+ident(
+  int_ref ts "planner.ml" 56 1935 1951 "planner.ml" 56 1935 1953
+)
+"planner.ml" 57 1977 1989 "planner.ml" 59 2086 2102
+call(
+  tail
+)
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 56 1935 1947 "planner.ml" 59 2086 2102
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 54 1876 1893 "planner.ml" 60 2103 2112
+type(
+  ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 60 2103 2113 "planner.ml" 60 2103 2118
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+ident(
+  int_ref paths "planner.ml" 50 1769 1792 "planner.ml" 50 1769 1797
+)
+"planner.ml" 54 1876 1884 "planner.ml" 60 2103 2118
+call(
+  stack
+)
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+  list
+)
+"planner.ml" 61 2122 2132 "planner.ml" 61 2122 2137
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 61 2122 2140 "planner.ml" 61 2122 2152
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+  list ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+ident(
+  ext_ref List.flatten
+)
+"planner.ml" 61 2122 2153 "planner.ml" 61 2122 2158
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+  list
+)
+ident(
+  int_ref paths "planner.ml" 53 1858 1868 "planner.ml" 53 1858 1873
+)
+"planner.ml" 61 2122 2140 "planner.ml" 61 2122 2158
+call(
+  stack
+)
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 66 2285 2295 "planner.ml" 66 2285 2309
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 66 2285 2312 "planner.ml" 66 2285 2323
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list -> bool) ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+ident(
+  ext_ref List.filter
+)
+"planner.ml" 66 2285 2324 "planner.ml" 66 2285 2332
+type(
+  ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list -> bool
+)
+ident(
+  int_ref finished "planner.ml" 31 1230 1236 "planner.ml" 31 1230 1244
+)
+"planner.ml" 66 2285 2333 "planner.ml" 66 2285 2338
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+ident(
+  int_ref paths "planner.ml" 61 2122 2132 "planner.ml" 61 2122 2137
+)
+"planner.ml" 66 2285 2312 "planner.ml" 66 2285 2338
+call(
+  stack
+)
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 67 2342 2352 "planner.ml" 67 2342 2366
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 68 2369 2377 "planner.ml" 68 2369 2386
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list ->
+   ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list -> int) ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+ident(
+  ext_ref List.sort
+)
+"planner.ml" 68 2369 2393 "planner.ml" 68 2369 2394
+type(
+  ('a * 'b) list
+)
+"planner.ml" 68 2369 2395 "planner.ml" 68 2369 2397
+type(
+  int
+)
+ident(
+  def w1 "planner.ml" 68 2369 2401 "planner.ml" 68 2369 2426
+)
+"planner.ml" 68 2369 2398 "planner.ml" 68 2369 2399
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 68 2369 2392 "planner.ml" 68 2369 2400
+type(
+  ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 68 2369 2402 "planner.ml" 68 2369 2403
+type(
+  ('a * 'b) list
+)
+"planner.ml" 68 2369 2404 "planner.ml" 68 2369 2406
+type(
+  int
+)
+ident(
+  def w2 "planner.ml" 68 2369 2413 "planner.ml" 68 2369 2426
+)
+"planner.ml" 68 2369 2407 "planner.ml" 68 2369 2408
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 68 2369 2401 "planner.ml" 68 2369 2409
+type(
+  ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 68 2369 2413 "planner.ml" 68 2369 2420
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"planner.ml" 68 2369 2421 "planner.ml" 68 2369 2423
+type(
+  int
+)
+ident(
+  int_ref w1 "planner.ml" 68 2369 2395 "planner.ml" 68 2369 2397
+)
+"planner.ml" 68 2369 2424 "planner.ml" 68 2369 2426
+type(
+  int
+)
+ident(
+  int_ref w2 "planner.ml" 68 2369 2404 "planner.ml" 68 2369 2406
+)
+"planner.ml" 68 2369 2413 "planner.ml" 68 2369 2426
+type(
+  int
+)
+"planner.ml" 68 2369 2387 "planner.ml" 68 2369 2427
+type(
+  ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list ->
+  ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list -> int
+)
+"planner.ml" 68 2369 2428 "planner.ml" 68 2369 2442
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+ident(
+  int_ref finished_paths "planner.ml" 66 2285 2295 "planner.ml" 66 2285 2309
+)
+"planner.ml" 68 2369 2377 "planner.ml" 68 2369 2442
+call(
+  stack
+)
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 69 2446 2458 "planner.ml" 69 2446 2472
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+ident(
+  int_ref finished_paths "planner.ml" 67 2342 2352 "planner.ml" 67 2342 2366
+)
+"planner.ml" 70 2478 2486 "planner.ml" 70 2478 2488
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 72 2548 2556 "planner.ml" 72 2548 2562
+type(
+  int ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list ->
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+ident(
+  int_ref search "planner.ml" 50 1769 1779 "planner.ml" 50 1769 1785
+)
+"planner.ml" 72 2548 2564 "planner.ml" 72 2548 2569
+type(
+  int
+)
+ident(
+  int_ref depth "planner.ml" 50 1769 1786 "planner.ml" 50 1769 1791
+)
+"planner.ml" 72 2548 2569 "planner.ml" 72 2548 2570
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"planner.ml" 72 2548 2570 "planner.ml" 72 2548 2571
+type(
+  int
+)
+"planner.ml" 72 2548 2563 "planner.ml" 72 2548 2572
+type(
+  int
+)
+"planner.ml" 72 2548 2573 "planner.ml" 72 2548 2578
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+ident(
+  int_ref paths "planner.ml" 61 2122 2132 "planner.ml" 61 2122 2137
+)
+"planner.ml" 72 2548 2556 "planner.ml" 72 2548 2578
+call(
+  tail
+)
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 73 2579 2588 "planner.ml" 73 2579 2589
+type(
+  ('a * 'b) list
+)
+"planner.ml" 73 2579 2591 "planner.ml" 73 2579 2592
+type(
+  int
+)
+"planner.ml" 73 2579 2594 "planner.ml" 73 2579 2597
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+ident(
+  def ret "planner.ml" 77 2724 2732 "planner.ml" 77 2724 2744
+)
+"planner.ml" 73 2579 2587 "planner.ml" 73 2579 2598
+type(
+  ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 73 2579 2602 "planner.ml" 73 2579 2603
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 73 2579 2587 "planner.ml" 73 2579 2603
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 77 2724 2732 "planner.ml" 77 2724 2740
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list ->
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+ident(
+  ext_ref List.rev
+)
+"planner.ml" 77 2724 2741 "planner.ml" 77 2724 2744
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+ident(
+  int_ref ret "planner.ml" 73 2579 2594 "planner.ml" 73 2579 2597
+)
+"planner.ml" 77 2724 2732 "planner.ml" 77 2724 2744
+call(
+  tail
+)
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 69 2446 2452 "planner.ml" 77 2724 2744
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 67 2342 2348 "planner.ml" 77 2724 2744
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 66 2285 2291 "planner.ml" 77 2724 2744
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 61 2122 2128 "planner.ml" 77 2724 2744
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 52 1847 1856 "planner.ml" 78 2745 2750
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 51 1800 1804 "planner.ml" 78 2745 2750
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 81 2757 2759 "planner.ml" 81 2757 2765
+type(
+  int ->
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list ->
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+ident(
+  int_ref search "planner.ml" 50 1769 1779 "planner.ml" 50 1769 1785
+)
+"planner.ml" 81 2757 2766 "planner.ml" 81 2757 2767
+type(
+  int
+)
+"planner.ml" 81 2757 2769 "planner.ml" 81 2757 2774
+type(
+  ('a * 'b) list
+)
+ident(
+  int_ref itags "planner.ml" 29 1095 1134 "planner.ml" 29 1095 1139
+)
+"planner.ml" 81 2757 2776 "planner.ml" 81 2757 2777
+type(
+  int
+)
+"planner.ml" 81 2757 2779 "planner.ml" 81 2757 2781
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 81 2757 2769 "planner.ml" 81 2757 2781
+type(
+  ('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 81 2757 2768 "planner.ml" 81 2757 2782
+type(
+  (('a * 'b) list * int * (('a * 'b) list * 'c * ('a * 'b) list) list) list
+)
+"planner.ml" 81 2757 2759 "planner.ml" 81 2757 2782
+call(
+  tail
+)
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 50 1769 1771 "planner.ml" 81 2757 2782
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)
+"planner.ml" 31 1230 1232 "planner.ml" 81 2757 2782
+type(
+  (('a * 'b) list * 'c * ('a * 'b) list) list
+)

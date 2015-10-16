@@ -1,17 +1,19 @@
-virt_p2v-about-license.o: about-license.c ../config.h p2v.h miniexpect.h \
- ../gnulib/lib/unistd.h /usr/include/unistd.h /usr/include/features.h \
+virt_p2v-about-license.o: about-license.c ../config.h p2v.h \
+ ../gnulib/lib/stdio.h /usr/include/stdio.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/bits/predefs.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
- /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h ../gnulib/lib/stddef.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h ../gnulib/lib/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h ../gnulib/lib/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
+ /usr/include/_G_config.h ../gnulib/lib/wchar.h /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h ../gnulib/lib/sys/types.h \
  /usr/include/x86_64-linux-gnu/sys/types.h ../gnulib/lib/time.h \
  /usr/include/time.h /usr/include/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endian.h \
@@ -22,27 +24,28 @@ virt_p2v-about-license.o: about-license.c ../config.h p2v.h miniexpect.h \
  /usr/include/x86_64-linux-gnu/bits/time.h \
  /usr/include/x86_64-linux-gnu/bits/select2.h \
  /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
- /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/pcre.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h miniexpect.h \
+ ../gnulib/lib/unistd.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h /usr/include/pcre.h \
  ../gnulib/lib/stdlib.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/xlocale.h \
  ../gnulib/lib/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  ../src/guestfs.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h \
  /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h
+ ../src/guestfs-internal-frontend-cleanups.h
 
 ../config.h:
 
 p2v.h:
 
-miniexpect.h:
+../gnulib/lib/stdio.h:
 
-../gnulib/lib/unistd.h:
-
-/usr/include/unistd.h:
+/usr/include/stdio.h:
 
 /usr/include/features.h:
 
@@ -56,23 +59,31 @@ miniexpect.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+../gnulib/lib/stddef.h:
 
-/usr/include/x86_64-linux-gnu/bits/environments.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
-../gnulib/lib/stddef.h:
+/usr/include/libio.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stddef.h:
+/usr/include/_G_config.h:
 
-/usr/include/x86_64-linux-gnu/bits/confname.h:
+../gnulib/lib/wchar.h:
 
-/usr/include/getopt.h:
+/usr/include/wchar.h:
 
-/usr/include/x86_64-linux-gnu/bits/unistd.h:
+/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
 
 ../gnulib/lib/sys/types.h:
 
@@ -104,6 +115,22 @@ miniexpect.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
+miniexpect.h:
+
+../gnulib/lib/unistd.h:
+
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
 /usr/include/pcre.h:
 
 ../gnulib/lib/stdlib.h:
@@ -128,12 +155,8 @@ miniexpect.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdarg.h:
-
 ../src/guestfs-internal-frontend.h:
 
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:

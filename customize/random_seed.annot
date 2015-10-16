@@ -1,0 +1,1072 @@
+"random_seed.ml" 23 989 997 "random_seed.ml" 23 989 1012
+type(
+  Guestfs.guestfs -> string -> bool
+)
+ident(
+  def set_random_seed "random_seed.ml" 23 989 989 --
+)
+"random_seed.ml" 23 989 1014 "random_seed.ml" 23 989 1015
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "random_seed.ml" 23 989 1035 "random_seed.ml" 72 2389 2399
+)
+"random_seed.ml" 23 989 1035 "random_seed.ml" 23 989 1039
+type(
+  string
+)
+ident(
+  def root "random_seed.ml" 24 1042 1044 "random_seed.ml" 72 2389 2399
+)
+"random_seed.ml" 24 1042 1048 "random_seed.ml" 24 1042 1051
+type(
+  string
+)
+"random_seed.ml" 24 1042 1054 "random_seed.ml" 24 1042 1055
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 23 989 1014 "random_seed.ml" 23 989 1015
+)
+"random_seed.ml" 24 1042 1054 "random_seed.ml" 24 1042 1072
+call(
+  stack
+)
+type(
+  string -> string
+)
+"random_seed.ml" 24 1042 1073 "random_seed.ml" 24 1042 1077
+type(
+  string
+)
+ident(
+  int_ref root "random_seed.ml" 23 989 1035 "random_seed.ml" 23 989 1039
+)
+"random_seed.ml" 24 1042 1054 "random_seed.ml" 24 1042 1077
+type(
+  string
+)
+"random_seed.ml" 25 1081 1087 "random_seed.ml" 25 1081 1094
+type(
+  bool ref
+)
+"random_seed.ml" 25 1081 1097 "random_seed.ml" 25 1081 1100
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"random_seed.ml" 25 1081 1101 "random_seed.ml" 25 1081 1106
+type(
+  bool
+)
+"random_seed.ml" 25 1081 1097 "random_seed.ml" 25 1081 1106
+type(
+  bool ref
+)
+"random_seed.ml" 27 1111 1116 "random_seed.ml" 27 1111 1119
+type(
+  string
+)
+ident(
+  int_ref typ "random_seed.ml" 24 1042 1048 "random_seed.ml" 24 1042 1051
+)
+"random_seed.ml" 27 1111 1120 "random_seed.ml" 27 1111 1121
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"random_seed.ml" 27 1111 1122 "random_seed.ml" 27 1111 1129
+type(
+  string
+)
+"random_seed.ml" 27 1111 1116 "random_seed.ml" 27 1111 1129
+type(
+  bool
+)
+"random_seed.ml" 28 1137 1145 "random_seed.ml" 28 1137 1150
+type(
+  string list
+)
+"random_seed.ml" 29 1155 1161 "random_seed.ml" 29 1155 1183
+type(
+  string
+)
+"random_seed.ml" 30 1206 1212 "random_seed.ml" 30 1206 1242
+type(
+  string
+)
+"random_seed.ml" 31 1268 1274 "random_seed.ml" 31 1268 1304
+type(
+  string
+)
+"random_seed.ml" 32 1319 1325 "random_seed.ml" 32 1319 1352
+type(
+  string
+)
+"random_seed.ml" 33 1368 1374 "random_seed.ml" 33 1368 1392
+type(
+  string
+)
+"random_seed.ml" 28 1137 1153 "random_seed.ml" 34 1419 1424
+type(
+  string list
+)
+"random_seed.ml" 35 1428 1432 "random_seed.ml" 35 1428 1441
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"random_seed.ml" 36 1444 1454 "random_seed.ml" 36 1444 1458
+type(
+  string
+)
+ident(
+  def file "random_seed.ml" 37 1462 1470 "random_seed.ml" 40 1561 1570
+)
+"random_seed.ml" 37 1462 1473 "random_seed.ml" 37 1462 1474
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 23 989 1014 "random_seed.ml" 23 989 1015
+)
+"random_seed.ml" 37 1462 1473 "random_seed.ml" 37 1462 1482
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"random_seed.ml" 37 1462 1483 "random_seed.ml" 37 1462 1487
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 36 1444 1454 "random_seed.ml" 36 1444 1458
+)
+"random_seed.ml" 37 1462 1473 "random_seed.ml" 37 1462 1487
+type(
+  bool
+)
+"random_seed.ml" 38 1495 1505 "random_seed.ml" 38 1495 1526
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  int_ref make_random_seed_file "random_seed.ml" 74 2401 2405 "random_seed.ml" 74 2401 2426
+)
+"random_seed.ml" 38 1495 1527 "random_seed.ml" 38 1495 1528
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 23 989 1014 "random_seed.ml" 23 989 1015
+)
+"random_seed.ml" 38 1495 1529 "random_seed.ml" 38 1495 1533
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 36 1444 1454 "random_seed.ml" 36 1444 1458
+)
+"random_seed.ml" 38 1495 1505 "random_seed.ml" 38 1495 1533
+call(
+  stack
+)
+type(
+  unit
+)
+"random_seed.ml" 39 1535 1545 "random_seed.ml" 39 1535 1552
+type(
+  bool ref
+)
+ident(
+  int_ref created "random_seed.ml" 25 1081 1087 "random_seed.ml" 25 1081 1094
+)
+"random_seed.ml" 39 1535 1553 "random_seed.ml" 39 1535 1555
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"random_seed.ml" 39 1535 1556 "random_seed.ml" 39 1535 1560
+type(
+  bool
+)
+"random_seed.ml" 39 1535 1545 "random_seed.ml" 39 1535 1560
+type(
+  unit
+)
+"random_seed.ml" 37 1462 1493 "random_seed.ml" 40 1561 1570
+type(
+  unit
+)
+"random_seed.ml" 37 1462 1470 "random_seed.ml" 40 1561 1570
+type(
+  unit
+)
+"random_seed.ml" 35 1428 1442 "random_seed.ml" 41 1571 1576
+type(
+  string -> unit
+)
+"random_seed.ml" 41 1571 1577 "random_seed.ml" 41 1571 1582
+type(
+  string list
+)
+ident(
+  int_ref files "random_seed.ml" 28 1137 1145 "random_seed.ml" 28 1137 1150
+)
+"random_seed.ml" 35 1428 1432 "random_seed.ml" 41 1571 1583
+call(
+  stack
+)
+type(
+  unit
+)
+"random_seed.ml" 27 1111 1135 "random_seed.ml" 42 1584 1587
+type(
+  unit
+)
+"random_seed.ml" 27 1111 1113 "random_seed.ml" 42 1584 1587
+type(
+  unit
+)
+"random_seed.ml" 44 1590 1595 "random_seed.ml" 44 1590 1598
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"random_seed.ml" 44 1590 1599 "random_seed.ml" 44 1590 1600
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"random_seed.ml" 44 1590 1600 "random_seed.ml" 44 1590 1607
+type(
+  bool ref
+)
+ident(
+  int_ref created "random_seed.ml" 25 1081 1087 "random_seed.ml" 25 1081 1094
+)
+"random_seed.ml" 44 1590 1599 "random_seed.ml" 44 1590 1607
+type(
+  bool
+)
+"random_seed.ml" 44 1590 1595 "random_seed.ml" 44 1590 1607
+type(
+  bool
+)
+"random_seed.ml" 47 1665 1673 "random_seed.ml" 47 1665 1679
+type(
+  string
+)
+"random_seed.ml" 47 1665 1682 "random_seed.ml" 47 1665 1683
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 23 989 1014 "random_seed.ml" 23 989 1015
+)
+"random_seed.ml" 47 1665 1682 "random_seed.ml" 47 1665 1702
+call(
+  stack
+)
+type(
+  string -> string
+)
+"random_seed.ml" 47 1665 1703 "random_seed.ml" 47 1665 1707
+type(
+  string
+)
+ident(
+  int_ref root "random_seed.ml" 23 989 1035 "random_seed.ml" 23 989 1039
+)
+"random_seed.ml" 47 1665 1682 "random_seed.ml" 47 1665 1707
+type(
+  string
+)
+"random_seed.ml" 48 1711 1719 "random_seed.ml" 48 1711 1723
+type(
+  string option
+)
+"random_seed.ml" 49 1726 1738 "random_seed.ml" 49 1726 1741
+type(
+  string
+)
+ident(
+  int_ref typ "random_seed.ml" 24 1042 1048 "random_seed.ml" 24 1042 1051
+)
+"random_seed.ml" 49 1726 1743 "random_seed.ml" 49 1726 1749
+type(
+  string
+)
+ident(
+  int_ref distro "random_seed.ml" 47 1665 1673 "random_seed.ml" 47 1665 1679
+)
+"random_seed.ml" 49 1726 1738 "random_seed.ml" 49 1726 1749
+type(
+  string * string
+)
+"random_seed.ml" 50 1755 1763 "random_seed.ml" 50 1755 1770
+type(
+  string
+)
+"random_seed.ml" 50 1755 1773 "random_seed.ml" 50 1755 1781
+type(
+  string
+)
+"random_seed.ml" 50 1755 1782 "random_seed.ml" 50 1755 1788
+type(
+  string
+)
+"random_seed.ml" 50 1755 1773 "random_seed.ml" 50 1755 1788
+type(
+  string
+)
+"random_seed.ml" 50 1755 1789 "random_seed.ml" 50 1755 1797
+type(
+  string
+)
+"random_seed.ml" 50 1755 1773 "random_seed.ml" 50 1755 1797
+type(
+  string
+)
+"random_seed.ml" 50 1755 1798 "random_seed.ml" 50 1755 1815
+type(
+  string
+)
+"random_seed.ml" 50 1755 1773 "random_seed.ml" 50 1755 1815
+type(
+  string
+)
+"random_seed.ml" 50 1755 1816 "random_seed.ml" 50 1755 1830
+type(
+  string
+)
+"random_seed.ml" 50 1755 1772 "random_seed.ml" 50 1755 1831
+type(
+  string
+)
+"random_seed.ml" 50 1755 1763 "random_seed.ml" 50 1755 1831
+type(
+  string * string
+)
+"random_seed.ml" 51 1835 1848 "random_seed.ml" 51 1835 1870
+type(
+  string
+)
+"random_seed.ml" 51 1835 1843 "random_seed.ml" 51 1835 1870
+type(
+  string option
+)
+"random_seed.ml" 52 1871 1879 "random_seed.ml" 52 1871 1886
+type(
+  string
+)
+"random_seed.ml" 52 1871 1889 "random_seed.ml" 52 1871 1897
+type(
+  string
+)
+"random_seed.ml" 52 1871 1898 "random_seed.ml" 52 1871 1906
+type(
+  string
+)
+"random_seed.ml" 52 1871 1888 "random_seed.ml" 52 1871 1907
+type(
+  string
+)
+"random_seed.ml" 52 1871 1879 "random_seed.ml" 52 1871 1907
+type(
+  string * string
+)
+"random_seed.ml" 53 1911 1924 "random_seed.ml" 53 1911 1954
+type(
+  string
+)
+"random_seed.ml" 53 1911 1919 "random_seed.ml" 53 1911 1954
+type(
+  string option
+)
+"random_seed.ml" 54 1955 1963 "random_seed.ml" 54 1955 1970
+type(
+  string
+)
+"random_seed.ml" 54 1955 1973 "random_seed.ml" 54 1955 1983
+type(
+  string
+)
+"random_seed.ml" 54 1955 1984 "random_seed.ml" 54 1955 1990
+type(
+  string
+)
+"random_seed.ml" 54 1955 1973 "random_seed.ml" 54 1955 1990
+type(
+  string
+)
+"random_seed.ml" 54 1955 1991 "random_seed.ml" 54 1955 2003
+type(
+  string
+)
+"random_seed.ml" 54 1955 1972 "random_seed.ml" 54 1955 2004
+type(
+  string
+)
+"random_seed.ml" 54 1955 1963 "random_seed.ml" 54 1955 2004
+type(
+  string * string
+)
+"random_seed.ml" 55 2008 2021 "random_seed.ml" 55 2008 2048
+type(
+  string
+)
+"random_seed.ml" 55 2008 2016 "random_seed.ml" 55 2008 2048
+type(
+  string option
+)
+"random_seed.ml" 56 2049 2057 "random_seed.ml" 56 2049 2064
+type(
+  string
+)
+"random_seed.ml" 56 2049 2066 "random_seed.ml" 56 2049 2074
+type(
+  string
+)
+"random_seed.ml" 56 2049 2057 "random_seed.ml" 56 2049 2074
+type(
+  string * string
+)
+"random_seed.ml" 57 2078 2091 "random_seed.ml" 57 2078 2109
+type(
+  string
+)
+"random_seed.ml" 57 2078 2086 "random_seed.ml" 57 2078 2109
+type(
+  string option
+)
+"random_seed.ml" 58 2110 2118 "random_seed.ml" 58 2110 2119
+type(
+  string * string
+)
+"random_seed.ml" 59 2123 2131 "random_seed.ml" 59 2123 2135
+type(
+  string option
+)
+"random_seed.ml" 49 1726 1732 "random_seed.ml" 59 2123 2135
+type(
+  string option
+)
+"random_seed.ml" 60 2139 2149 "random_seed.ml" 60 2139 2153
+type(
+  string option
+)
+ident(
+  int_ref file "random_seed.ml" 48 1711 1719 "random_seed.ml" 48 1711 1723
+)
+"random_seed.ml" 61 2159 2170 "random_seed.ml" 61 2159 2174
+type(
+  string
+)
+ident(
+  def file "random_seed.ml" 62 2178 2184 "random_seed.ml" 68 2358 2365
+)
+"random_seed.ml" 61 2159 2165 "random_seed.ml" 61 2159 2174
+type(
+  string option
+)
+"random_seed.ml" 62 2178 2188 "random_seed.ml" 62 2178 2191
+type(
+  string
+)
+"random_seed.ml" 63 2194 2206 "random_seed.ml" 63 2194 2207
+type(
+  int
+)
+"random_seed.ml" 63 2194 2210 "random_seed.ml" 63 2194 2223
+type(
+  string -> char -> int
+)
+ident(
+  ext_ref String.rindex
+)
+"random_seed.ml" 63 2194 2224 "random_seed.ml" 63 2194 2228
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 61 2159 2170 "random_seed.ml" 61 2159 2174
+)
+"random_seed.ml" 63 2194 2229 "random_seed.ml" 63 2194 2232
+type(
+  char
+)
+"random_seed.ml" 63 2194 2210 "random_seed.ml" 63 2194 2232
+call(
+  stack
+)
+type(
+  int
+)
+"random_seed.ml" 64 2236 2244 "random_seed.ml" 64 2236 2254
+type(
+  string -> int -> int -> string
+)
+ident(
+  ext_ref String.sub
+)
+"random_seed.ml" 64 2236 2255 "random_seed.ml" 64 2236 2259
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 61 2159 2170 "random_seed.ml" 61 2159 2174
+)
+"random_seed.ml" 64 2236 2260 "random_seed.ml" 64 2236 2261
+type(
+  int
+)
+"random_seed.ml" 64 2236 2262 "random_seed.ml" 64 2236 2263
+type(
+  int
+)
+ident(
+  int_ref i "random_seed.ml" 63 2194 2206 "random_seed.ml" 63 2194 2207
+)
+"random_seed.ml" 64 2236 2244 "random_seed.ml" 64 2236 2263
+call(
+  stack
+)
+type(
+  string
+)
+"random_seed.ml" 63 2194 2202 "random_seed.ml" 64 2236 2263
+type(
+  string
+)
+"random_seed.ml" 65 2267 2276 "random_seed.ml" 65 2267 2277
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 23 989 1014 "random_seed.ml" 23 989 1015
+)
+"random_seed.ml" 65 2267 2276 "random_seed.ml" 65 2267 2284
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"random_seed.ml" 65 2267 2285 "random_seed.ml" 65 2267 2288
+type(
+  string
+)
+ident(
+  int_ref dir "random_seed.ml" 62 2178 2188 "random_seed.ml" 62 2178 2191
+)
+"random_seed.ml" 65 2267 2276 "random_seed.ml" 65 2267 2288
+type(
+  bool
+)
+"random_seed.ml" 66 2296 2304 "random_seed.ml" 66 2296 2325
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  int_ref make_random_seed_file "random_seed.ml" 74 2401 2405 "random_seed.ml" 74 2401 2426
+)
+"random_seed.ml" 66 2296 2326 "random_seed.ml" 66 2296 2327
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 23 989 1014 "random_seed.ml" 23 989 1015
+)
+"random_seed.ml" 66 2296 2328 "random_seed.ml" 66 2296 2332
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 61 2159 2170 "random_seed.ml" 61 2159 2174
+)
+"random_seed.ml" 66 2296 2304 "random_seed.ml" 66 2296 2332
+call(
+  stack
+)
+type(
+  unit
+)
+"random_seed.ml" 67 2334 2342 "random_seed.ml" 67 2334 2349
+type(
+  bool ref
+)
+ident(
+  int_ref created "random_seed.ml" 25 1081 1087 "random_seed.ml" 25 1081 1094
+)
+"random_seed.ml" 67 2334 2350 "random_seed.ml" 67 2334 2352
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"random_seed.ml" 67 2334 2353 "random_seed.ml" 67 2334 2357
+type(
+  bool
+)
+"random_seed.ml" 67 2334 2342 "random_seed.ml" 67 2334 2357
+type(
+  unit
+)
+"random_seed.ml" 65 2267 2294 "random_seed.ml" 68 2358 2365
+type(
+  unit
+)
+"random_seed.ml" 65 2267 2273 "random_seed.ml" 68 2358 2365
+type(
+  unit
+)
+"random_seed.ml" 62 2178 2184 "random_seed.ml" 68 2358 2365
+type(
+  unit
+)
+"random_seed.ml" 69 2366 2372 "random_seed.ml" 69 2366 2376
+type(
+  string option
+)
+"random_seed.ml" 69 2366 2380 "random_seed.ml" 69 2366 2382
+type(
+  unit
+)
+"random_seed.ml" 60 2139 2143 "random_seed.ml" 69 2366 2382
+type(
+  unit
+)
+"random_seed.ml" 48 1711 1715 "random_seed.ml" 69 2366 2382
+type(
+  unit
+)
+"random_seed.ml" 44 1590 1613 "random_seed.ml" 70 2383 2386
+type(
+  unit
+)
+"random_seed.ml" 44 1590 1592 "random_seed.ml" 70 2383 2386
+type(
+  unit
+)
+"random_seed.ml" 72 2389 2391 "random_seed.ml" 72 2389 2392
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"random_seed.ml" 72 2389 2392 "random_seed.ml" 72 2389 2399
+type(
+  bool ref
+)
+ident(
+  int_ref created "random_seed.ml" 25 1081 1087 "random_seed.ml" 25 1081 1094
+)
+"random_seed.ml" 72 2389 2391 "random_seed.ml" 72 2389 2399
+type(
+  bool
+)
+"random_seed.ml" 44 1590 1592 "random_seed.ml" 72 2389 2399
+type(
+  bool
+)
+"random_seed.ml" 27 1111 1113 "random_seed.ml" 72 2389 2399
+type(
+  bool
+)
+"random_seed.ml" 25 1081 1083 "random_seed.ml" 72 2389 2399
+type(
+  bool
+)
+"random_seed.ml" 24 1042 1044 "random_seed.ml" 72 2389 2399
+type(
+  bool
+)
+"random_seed.ml" 74 2401 2405 "random_seed.ml" 74 2401 2426
+type(
+  Guestfs.guestfs -> string -> unit
+)
+ident(
+  def make_random_seed_file "random_seed.ml" 23 989 989 --
+)
+"random_seed.ml" 74 2401 2427 "random_seed.ml" 74 2401 2428
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "random_seed.ml" 74 2401 2429 "random_seed.ml" 105 3277 3280
+)
+"random_seed.ml" 74 2401 2429 "random_seed.ml" 74 2401 2433
+type(
+  string
+)
+ident(
+  def file "random_seed.ml" 75 2436 2438 "random_seed.ml" 105 3277 3280
+)
+"random_seed.ml" 75 2436 2442 "random_seed.ml" 75 2436 2453
+type(
+  bool
+)
+"random_seed.ml" 75 2436 2456 "random_seed.ml" 75 2436 2457
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 74 2401 2427 "random_seed.ml" 74 2401 2428
+)
+"random_seed.ml" 75 2436 2456 "random_seed.ml" 75 2436 2465
+call(
+  stack
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"random_seed.ml" 75 2436 2466 "random_seed.ml" 75 2436 2470
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 74 2401 2429 "random_seed.ml" 74 2401 2433
+)
+"random_seed.ml" 75 2436 2456 "random_seed.ml" 75 2436 2470
+type(
+  bool
+)
+"random_seed.ml" 76 2474 2480 "random_seed.ml" 76 2474 2481
+type(
+  int
+)
+"random_seed.ml" 77 2484 2491 "random_seed.ml" 77 2484 2502
+type(
+  bool
+)
+ident(
+  int_ref file_exists "random_seed.ml" 75 2436 2442 "random_seed.ml" 75 2436 2453
+)
+"random_seed.ml" 78 2510 2520 "random_seed.ml" 78 2510 2521
+type(
+  int
+)
+ident(
+  def n "random_seed.ml" 84 2751 2757 "random_seed.ml" 84 2751 2777
+)
+"random_seed.ml" 78 2510 2524 "random_seed.ml" 78 2510 2536
+type(
+  int64 -> int
+)
+ident(
+  ext_ref Int64.to_int
+)
+"random_seed.ml" 78 2510 2538 "random_seed.ml" 78 2510 2539
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 74 2401 2427 "random_seed.ml" 74 2401 2428
+)
+"random_seed.ml" 78 2510 2538 "random_seed.ml" 78 2510 2548
+call(
+  stack
+)
+type(
+  string -> int64
+)
+"random_seed.ml" 78 2510 2549 "random_seed.ml" 78 2510 2553
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 74 2401 2429 "random_seed.ml" 74 2401 2433
+)
+"random_seed.ml" 78 2510 2537 "random_seed.ml" 78 2510 2554
+type(
+  int64
+)
+"random_seed.ml" 78 2510 2524 "random_seed.ml" 78 2510 2554
+type(
+  int
+)
+"random_seed.ml" 84 2751 2757 "random_seed.ml" 84 2751 2760
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.min
+)
+"random_seed.ml" 84 2751 2762 "random_seed.ml" 84 2751 2765
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.max
+)
+"random_seed.ml" 84 2751 2766 "random_seed.ml" 84 2751 2767
+type(
+  int
+)
+ident(
+  int_ref n "random_seed.ml" 78 2510 2520 "random_seed.ml" 78 2510 2521
+)
+"random_seed.ml" 84 2751 2768 "random_seed.ml" 84 2751 2771
+type(
+  int
+)
+"random_seed.ml" 84 2751 2761 "random_seed.ml" 84 2751 2772
+call(
+  stack
+)
+type(
+  int
+)
+"random_seed.ml" 84 2751 2773 "random_seed.ml" 84 2751 2777
+type(
+  int
+)
+"random_seed.ml" 84 2751 2757 "random_seed.ml" 84 2751 2777
+call(
+  stack
+)
+type(
+  int
+)
+"random_seed.ml" 77 2484 2508 "random_seed.ml" 85 2778 2783
+type(
+  int
+)
+"random_seed.ml" 88 2841 2847 "random_seed.ml" 88 2841 2850
+type(
+  int
+)
+"random_seed.ml" 77 2484 2488 "random_seed.ml" 88 2841 2850
+type(
+  int
+)
+"random_seed.ml" 91 2904 2910 "random_seed.ml" 91 2904 2917
+type(
+  string
+)
+"random_seed.ml" 91 2904 2920 "random_seed.ml" 91 2904 2941
+type(
+  int -> string
+)
+ident(
+  ext_ref Urandom.urandom_bytes
+)
+"random_seed.ml" 91 2904 2942 "random_seed.ml" 91 2904 2943
+type(
+  int
+)
+ident(
+  int_ref n "random_seed.ml" 76 2474 2480 "random_seed.ml" 76 2474 2481
+)
+"random_seed.ml" 91 2904 2920 "random_seed.ml" 91 2904 2943
+call(
+  stack
+)
+type(
+  string
+)
+"random_seed.ml" 93 2948 2953 "random_seed.ml" 93 2948 2964
+type(
+  bool
+)
+ident(
+  int_ref file_exists "random_seed.ml" 75 2436 2442 "random_seed.ml" 75 2436 2453
+)
+"random_seed.ml" 97 3076 3080 "random_seed.ml" 97 3076 3081
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 74 2401 2427 "random_seed.ml" 74 2401 2428
+)
+"random_seed.ml" 97 3076 3080 "random_seed.ml" 97 3076 3090
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"random_seed.ml" 97 3076 3091 "random_seed.ml" 97 3076 3095
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 74 2401 2429 "random_seed.ml" 74 2401 2433
+)
+"random_seed.ml" 97 3076 3080 "random_seed.ml" 97 3076 3095
+type(
+  unit
+)
+"random_seed.ml" 98 3097 3101 "random_seed.ml" 98 3097 3102
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 74 2401 2427 "random_seed.ml" 74 2401 2428
+)
+"random_seed.ml" 98 3097 3101 "random_seed.ml" 98 3097 3115
+call(
+  tail
+)
+type(
+  string -> string -> unit
+)
+"random_seed.ml" 98 3097 3116 "random_seed.ml" 98 3097 3120
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 74 2401 2429 "random_seed.ml" 74 2401 2433
+)
+"random_seed.ml" 98 3097 3121 "random_seed.ml" 98 3097 3128
+type(
+  string
+)
+ident(
+  int_ref entropy "random_seed.ml" 91 2904 2910 "random_seed.ml" 91 2904 2917
+)
+"random_seed.ml" 98 3097 3101 "random_seed.ml" 98 3097 3128
+type(
+  unit
+)
+"random_seed.ml" 93 2948 2970 "random_seed.ml" 99 3129 3132
+type(
+  unit
+)
+"random_seed.ml" 102 3206 3210 "random_seed.ml" 102 3206 3211
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 74 2401 2427 "random_seed.ml" 74 2401 2428
+)
+"random_seed.ml" 102 3206 3210 "random_seed.ml" 102 3206 3217
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"random_seed.ml" 102 3206 3218 "random_seed.ml" 102 3206 3222
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 74 2401 2429 "random_seed.ml" 74 2401 2433
+)
+"random_seed.ml" 102 3206 3223 "random_seed.ml" 102 3206 3230
+type(
+  string
+)
+ident(
+  int_ref entropy "random_seed.ml" 91 2904 2910 "random_seed.ml" 91 2904 2917
+)
+"random_seed.ml" 102 3206 3210 "random_seed.ml" 102 3206 3230
+type(
+  unit
+)
+"random_seed.ml" 103 3232 3236 "random_seed.ml" 103 3232 3237
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 74 2401 2427 "random_seed.ml" 74 2401 2428
+)
+"random_seed.ml" 103 3232 3236 "random_seed.ml" 103 3232 3243
+call(
+  stack
+)
+type(
+  int -> int -> string -> unit
+)
+"random_seed.ml" 103 3232 3244 "random_seed.ml" 103 3232 3245
+type(
+  int
+)
+"random_seed.ml" 103 3232 3246 "random_seed.ml" 103 3232 3247
+type(
+  int
+)
+"random_seed.ml" 103 3232 3248 "random_seed.ml" 103 3232 3252
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 74 2401 2429 "random_seed.ml" 74 2401 2433
+)
+"random_seed.ml" 103 3232 3236 "random_seed.ml" 103 3232 3252
+type(
+  unit
+)
+"random_seed.ml" 104 3254 3258 "random_seed.ml" 104 3254 3259
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "random_seed.ml" 74 2401 2427 "random_seed.ml" 74 2401 2428
+)
+"random_seed.ml" 104 3254 3258 "random_seed.ml" 104 3254 3265
+call(
+  tail
+)
+type(
+  int -> string -> unit
+)
+"random_seed.ml" 104 3254 3266 "random_seed.ml" 104 3254 3271
+type(
+  int
+)
+"random_seed.ml" 104 3254 3272 "random_seed.ml" 104 3254 3276
+type(
+  string
+)
+ident(
+  int_ref file "random_seed.ml" 74 2401 2429 "random_seed.ml" 74 2401 2433
+)
+"random_seed.ml" 104 3254 3258 "random_seed.ml" 104 3254 3276
+type(
+  unit
+)
+"random_seed.ml" 103 3232 3236 "random_seed.ml" 104 3254 3276
+type(
+  unit
+)
+"random_seed.ml" 100 3133 3140 "random_seed.ml" 105 3277 3280
+type(
+  unit
+)
+"random_seed.ml" 93 2948 2950 "random_seed.ml" 105 3277 3280
+type(
+  unit
+)
+"random_seed.ml" 91 2904 2906 "random_seed.ml" 105 3277 3280
+type(
+  unit
+)
+"random_seed.ml" 76 2474 2476 "random_seed.ml" 105 3277 3280
+type(
+  unit
+)
+"random_seed.ml" 75 2436 2438 "random_seed.ml" 105 3277 3280
+type(
+  unit
+)

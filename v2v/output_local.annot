@@ -1,0 +1,540 @@
+"output_local.ml" 27 860 879 "output_local.ml" 27 860 882
+type(
+  string
+)
+"output_local.ml" 30 910 932 "output_local.ml" 30 910 939
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_local.ml" 30 910 940 "output_local.ml" 30 910 957
+type(
+  (string -> string, unit, string) format
+)
+"output_local.ml" 30 910 958 "output_local.ml" 30 910 961
+type(
+  string
+)
+"output_local.ml" 30 910 932 "output_local.ml" 30 910 961
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"output_local.ml" 32 963 995 "output_local.ml" 32 963 1005
+type(
+  Types.target_firmware
+)
+"output_local.ml" 32 963 1007 "output_local.ml" 32 963 1017
+type(
+  Types.target_firmware
+)
+"output_local.ml" 32 963 993 "output_local.ml" 32 963 1019
+type(
+  Types.target_firmware list
+)
+type(
+  Types.target_firmware list
+)
+"output_local.ml" 34 1021 1046 "output_local.ml" 34 1021 1052
+type(
+  Types.source
+)
+ident(
+  def source "output_local.ml" 34 1021 1053 "output_local.ml" 39 1219 1232
+)
+"output_local.ml" 34 1021 1053 "output_local.ml" 34 1021 1060
+type(
+  Types.target list
+)
+ident(
+  def targets "output_local.ml" 35 1063 1067 "output_local.ml" 39 1219 1232
+)
+"output_local.ml" 35 1063 1067 "output_local.ml" 35 1063 1075
+type(
+  (Types.target -> Types.target) -> Types.target list -> Types.target list
+)
+ident(
+  ext_ref List.map
+)
+"output_local.ml" 36 1078 1088 "output_local.ml" 36 1078 1089
+type(
+  Types.target
+)
+ident(
+  def t "output_local.ml" 37 1093 1101 "output_local.ml" 38 1174 1218
+)
+"output_local.ml" 37 1093 1105 "output_local.ml" 37 1093 1116
+type(
+  string
+)
+"output_local.ml" 37 1093 1119 "output_local.ml" 37 1093 1122
+type(
+  string
+)
+"output_local.ml" 37 1093 1123 "output_local.ml" 37 1093 1125
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_local.ml" 37 1093 1126 "output_local.ml" 37 1093 1132
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_local.ml" 34 1021 1046 "output_local.ml" 34 1021 1052
+)
+"output_local.ml" 37 1093 1126 "output_local.ml" 37 1093 1139
+type(
+  string
+)
+"output_local.ml" 37 1093 1119 "output_local.ml" 37 1093 1139
+call(
+  stack
+)
+type(
+  string
+)
+"output_local.ml" 37 1093 1140 "output_local.ml" 37 1093 1141
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_local.ml" 37 1093 1142 "output_local.ml" 37 1093 1145
+type(
+  string
+)
+"output_local.ml" 37 1093 1146 "output_local.ml" 37 1093 1147
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_local.ml" 37 1093 1148 "output_local.ml" 37 1093 1149
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_local.ml" 36 1078 1088 "output_local.ml" 36 1078 1089
+)
+"output_local.ml" 37 1093 1148 "output_local.ml" 37 1093 1164
+type(
+  Types.overlay
+)
+"output_local.ml" 37 1093 1148 "output_local.ml" 37 1093 1170
+type(
+  string
+)
+"output_local.ml" 37 1093 1142 "output_local.ml" 37 1093 1170
+call(
+  stack
+)
+type(
+  string
+)
+"output_local.ml" 37 1093 1119 "output_local.ml" 37 1093 1170
+call(
+  stack
+)
+type(
+  string
+)
+"output_local.ml" 38 1174 1184 "output_local.ml" 38 1174 1185
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_local.ml" 36 1078 1088 "output_local.ml" 36 1078 1089
+)
+"output_local.ml" 38 1174 1205 "output_local.ml" 38 1174 1216
+type(
+  string
+)
+ident(
+  int_ref target_file "output_local.ml" 37 1093 1105 "output_local.ml" 37 1093 1116
+)
+"output_local.ml" 38 1174 1182 "output_local.ml" 38 1174 1218
+type(
+  Types.target
+)
+"output_local.ml" 37 1093 1101 "output_local.ml" 38 1174 1218
+type(
+  Types.target
+)
+"output_local.ml" 35 1063 1076 "output_local.ml" 39 1219 1224
+type(
+  Types.target -> Types.target
+)
+"output_local.ml" 39 1219 1225 "output_local.ml" 39 1219 1232
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_local.ml" 34 1021 1053 "output_local.ml" 34 1021 1060
+)
+"output_local.ml" 35 1063 1067 "output_local.ml" 39 1219 1232
+call(
+  tail
+)
+type(
+  Types.target list
+)
+"output_local.ml" 41 1234 1259 "output_local.ml" 41 1234 1265
+type(
+  Types.source
+)
+ident(
+  def source "output_local.ml" 41 1234 1266 "output_local.ml" 60 1869 1887
+)
+"output_local.ml" 41 1234 1266 "output_local.ml" 41 1234 1267
+type(
+  Types.target list
+)
+"output_local.ml" 41 1234 1268 "output_local.ml" 41 1234 1280
+type(
+  Types.target_buses
+)
+ident(
+  def target_buses "output_local.ml" 41 1234 1281 "output_local.ml" 60 1869 1887
+)
+"output_local.ml" 41 1234 1281 "output_local.ml" 41 1234 1290
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "output_local.ml" 41 1234 1291 "output_local.ml" 60 1869 1887
+)
+"output_local.ml" 41 1234 1291 "output_local.ml" 41 1234 1292
+type(
+  Types.inspect
+)
+"output_local.ml" 41 1234 1293 "output_local.ml" 41 1234 1308
+type(
+  Types.target_firmware
+)
+ident(
+  def target_firmware "output_local.ml" 45 1440 1444 "output_local.ml" 60 1869 1887
+)
+"output_local.ml" 45 1440 1448 "output_local.ml" 45 1440 1463
+type(
+  string list
+)
+"output_local.ml" 46 1466 1478 "output_local.ml" 46 1466 1487
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_local.ml" 41 1234 1281 "output_local.ml" 41 1234 1290
+)
+"output_local.ml" 46 1466 1478 "output_local.ml" 46 1466 1498
+type(
+  string
+)
+"output_local.ml" 47 1504 1512 "output_local.ml" 47 1504 1518
+type(
+  string
+)
+"output_local.ml" 47 1504 1524 "output_local.ml" 47 1504 1530
+type(
+  string
+)
+"output_local.ml" 47 1504 1532 "output_local.ml" 47 1504 1538
+type(
+  string
+)
+"output_local.ml" 47 1504 1540 "output_local.ml" 47 1504 1545
+type(
+  string
+)
+"output_local.ml" 47 1504 1522 "output_local.ml" 47 1504 1547
+type(
+  string list
+)
+"output_local.ml" 48 1548 1556 "output_local.ml" 48 1548 1564
+type(
+  string
+)
+"output_local.ml" 48 1548 1570 "output_local.ml" 48 1548 1576
+type(
+  string
+)
+"output_local.ml" 48 1548 1578 "output_local.ml" 48 1548 1584
+type(
+  string
+)
+"output_local.ml" 48 1548 1568 "output_local.ml" 48 1548 1586
+type(
+  string list
+)
+"output_local.ml" 49 1587 1595 "output_local.ml" 49 1587 1596
+type(
+  string
+)
+"output_local.ml" 49 1587 1600 "output_local.ml" 49 1587 1602
+type(
+  string list
+)
+"output_local.ml" 46 1466 1472 "output_local.ml" 49 1587 1602
+type(
+  string list
+)
+"output_local.ml" 51 1607 1615 "output_local.ml" 51 1607 1618
+type(
+  DOM.doc
+)
+"output_local.ml" 52 1621 1627 "output_local.ml" 52 1621 1660
+type(
+  ?pool:string ->
+  Types.source ->
+  Types.target_buses ->
+  Types.guestcaps -> string list -> Types.target_firmware -> DOM.doc
+)
+ident(
+  ext_ref Output_libvirt.create_libvirt_xml
+)
+"output_local.ml" 52 1621 1661 "output_local.ml" 52 1621 1667
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_local.ml" 41 1234 1259 "output_local.ml" 41 1234 1265
+)
+"output_local.ml" 52 1621 1668 "output_local.ml" 52 1621 1680
+type(
+  Types.target_buses
+)
+ident(
+  int_ref target_buses "output_local.ml" 41 1234 1268 "output_local.ml" 41 1234 1280
+)
+"output_local.ml" 53 1681 1689 "output_local.ml" 53 1681 1698
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_local.ml" 41 1234 1281 "output_local.ml" 41 1234 1290
+)
+"output_local.ml" 53 1681 1699 "output_local.ml" 53 1681 1714
+type(
+  string list
+)
+ident(
+  int_ref target_features "output_local.ml" 45 1440 1448 "output_local.ml" 45 1440 1463
+)
+"output_local.ml" 53 1681 1715 "output_local.ml" 53 1681 1730
+type(
+  Types.target_firmware
+)
+ident(
+  int_ref target_firmware "output_local.ml" 41 1234 1293 "output_local.ml" 41 1234 1308
+)
+"output_local.ml" 52 1621 1627 "output_local.ml" 53 1681 1730
+call(
+  stack
+)
+type(
+  DOM.doc
+)
+"output_local.ml" 55 1735 1743 "output_local.ml" 55 1735 1747
+type(
+  string
+)
+"output_local.ml" 55 1735 1750 "output_local.ml" 55 1735 1756
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_local.ml" 41 1234 1259 "output_local.ml" 41 1234 1265
+)
+"output_local.ml" 55 1735 1750 "output_local.ml" 55 1735 1763
+type(
+  string
+)
+"output_local.ml" 56 1767 1775 "output_local.ml" 56 1767 1779
+type(
+  string
+)
+"output_local.ml" 56 1767 1782 "output_local.ml" 56 1767 1785
+type(
+  string
+)
+"output_local.ml" 56 1767 1786 "output_local.ml" 56 1767 1788
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_local.ml" 56 1767 1789 "output_local.ml" 56 1767 1793
+type(
+  string
+)
+ident(
+  int_ref name "output_local.ml" 55 1735 1743 "output_local.ml" 55 1735 1747
+)
+"output_local.ml" 56 1767 1782 "output_local.ml" 56 1767 1793
+call(
+  stack
+)
+type(
+  string
+)
+"output_local.ml" 56 1767 1794 "output_local.ml" 56 1767 1795
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_local.ml" 56 1767 1796 "output_local.ml" 56 1767 1802
+type(
+  string
+)
+"output_local.ml" 56 1767 1782 "output_local.ml" 56 1767 1802
+call(
+  stack
+)
+type(
+  string
+)
+"output_local.ml" 58 1807 1815 "output_local.ml" 58 1807 1819
+type(
+  out_channel
+)
+"output_local.ml" 58 1807 1822 "output_local.ml" 58 1807 1830
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out
+)
+"output_local.ml" 58 1807 1831 "output_local.ml" 58 1807 1835
+type(
+  string
+)
+ident(
+  int_ref file "output_local.ml" 56 1767 1775 "output_local.ml" 56 1767 1779
+)
+"output_local.ml" 58 1807 1822 "output_local.ml" 58 1807 1835
+call(
+  stack
+)
+type(
+  out_channel
+)
+"output_local.ml" 59 1839 1843 "output_local.ml" 59 1839 1858
+type(
+  out_channel -> DOM.doc -> unit
+)
+ident(
+  ext_ref DOM.doc_to_chan
+)
+"output_local.ml" 59 1839 1859 "output_local.ml" 59 1839 1863
+type(
+  out_channel
+)
+ident(
+  int_ref chan "output_local.ml" 58 1807 1815 "output_local.ml" 58 1807 1819
+)
+"output_local.ml" 59 1839 1864 "output_local.ml" 59 1839 1867
+type(
+  DOM.doc
+)
+ident(
+  int_ref doc "output_local.ml" 51 1607 1615 "output_local.ml" 51 1607 1618
+)
+"output_local.ml" 59 1839 1843 "output_local.ml" 59 1839 1867
+call(
+  stack
+)
+type(
+  unit
+)
+"output_local.ml" 60 1869 1873 "output_local.ml" 60 1869 1882
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"output_local.ml" 60 1869 1883 "output_local.ml" 60 1869 1887
+type(
+  out_channel
+)
+ident(
+  int_ref chan "output_local.ml" 58 1807 1815 "output_local.ml" 58 1807 1819
+)
+"output_local.ml" 60 1869 1873 "output_local.ml" 60 1869 1887
+call(
+  tail
+)
+type(
+  unit
+)
+"output_local.ml" 59 1839 1843 "output_local.ml" 60 1869 1887
+type(
+  unit
+)
+"output_local.ml" 58 1807 1811 "output_local.ml" 60 1869 1887
+type(
+  unit
+)
+"output_local.ml" 56 1767 1771 "output_local.ml" 60 1869 1887
+type(
+  unit
+)
+"output_local.ml" 55 1735 1739 "output_local.ml" 60 1869 1887
+type(
+  unit
+)
+"output_local.ml" 51 1607 1611 "output_local.ml" 60 1869 1887
+type(
+  unit
+)
+"output_local.ml" 45 1440 1444 "output_local.ml" 60 1869 1887
+type(
+  unit
+)
+"output_local.ml" 63 1893 1897 "output_local.ml" 63 1893 1909
+type(
+  string -> output_local
+)
+ident(
+  def output_local "output_local.ml" 64 1929 1929 --
+)
+"output_local.ml" 63 1893 1912 "output_local.ml" 63 1893 1928
+type(
+  string -> output_local
+)
+"output_local.ml" 64 1929 1933 "output_local.ml" 64 1929 1935
+type(
+  unit
+)
+"output_local.ml" 64 1929 1938 "output_local.ml" 64 1929 1973
+type(
+  string -> unit
+)
+ident(
+  ext_ref Modules_list.register_output_module
+)
+"output_local.ml" 64 1929 1974 "output_local.ml" 64 1929 1981
+type(
+  string
+)
+"output_local.ml" 64 1929 1938 "output_local.ml" 64 1929 1981
+call(
+  stack
+)
+type(
+  unit
+)

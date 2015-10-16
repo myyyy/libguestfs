@@ -37,8 +37,7 @@ guestfish-domain.o: domain.c ../config.h ../gnulib/lib/stdio.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h \
  /usr/include/getopt.h ../src/guestfs-internal-frontend.h \
  ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h
+ ../src/guestfs-internal-frontend-cleanups.h
 
 ../config.h:
 
@@ -157,5 +156,3 @@ options.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:

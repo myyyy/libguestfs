@@ -1,0 +1,258 @@
+"sysprep_operation_dhcp_client_state.ml" 24 848 852 "sysprep_operation_dhcp_client_state.ml" 24 848 877
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm_rf : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def dhcp_client_state_perform "sysprep_operation_dhcp_client_state.ml" 32 1108 1108 --
+)
+"sysprep_operation_dhcp_client_state.ml" 24 848 878 "sysprep_operation_dhcp_client_state.ml" 24 848 879
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm_rf : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_dhcp_client_state.ml" 24 848 880 "sysprep_operation_dhcp_client_state.ml" 30 1103 1106
+)
+"sysprep_operation_dhcp_client_state.ml" 24 848 880 "sysprep_operation_dhcp_client_state.ml" 24 848 884
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_dhcp_client_state.ml" 24 848 885 "sysprep_operation_dhcp_client_state.ml" 30 1103 1106
+)
+"sysprep_operation_dhcp_client_state.ml" 24 848 885 "sysprep_operation_dhcp_client_state.ml" 24 848 897
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_dhcp_client_state.ml" 25 900 902 "sysprep_operation_dhcp_client_state.ml" 30 1103 1106
+)
+"sysprep_operation_dhcp_client_state.ml" 25 900 906 "sysprep_operation_dhcp_client_state.ml" 25 900 909
+type(
+  string
+)
+"sysprep_operation_dhcp_client_state.ml" 25 900 912 "sysprep_operation_dhcp_client_state.ml" 25 900 913
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_dhcp_client_state.ml" 24 848 878 "sysprep_operation_dhcp_client_state.ml" 24 848 879
+)
+"sysprep_operation_dhcp_client_state.ml" 25 900 912 "sysprep_operation_dhcp_client_state.ml" 25 900 930
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_dhcp_client_state.ml" 25 900 931 "sysprep_operation_dhcp_client_state.ml" 25 900 935
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_dhcp_client_state.ml" 24 848 880 "sysprep_operation_dhcp_client_state.ml" 24 848 884
+)
+"sysprep_operation_dhcp_client_state.ml" 25 900 912 "sysprep_operation_dhcp_client_state.ml" 25 900 935
+type(
+  string
+)
+"sysprep_operation_dhcp_client_state.ml" 26 939 944 "sysprep_operation_dhcp_client_state.ml" 26 939 947
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_dhcp_client_state.ml" 25 900 906 "sysprep_operation_dhcp_client_state.ml" 25 900 909
+)
+"sysprep_operation_dhcp_client_state.ml" 26 939 948 "sysprep_operation_dhcp_client_state.ml" 26 939 949
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation_dhcp_client_state.ml" 26 939 950 "sysprep_operation_dhcp_client_state.ml" 26 939 957
+type(
+  string
+)
+"sysprep_operation_dhcp_client_state.ml" 26 939 944 "sysprep_operation_dhcp_client_state.ml" 26 939 957
+type(
+  bool
+)
+"sysprep_operation_dhcp_client_state.ml" 27 965 969 "sysprep_operation_dhcp_client_state.ml" 27 965 978
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_dhcp_client_state.ml" 28 981 991 "sysprep_operation_dhcp_client_state.ml" 28 981 995
+type(
+  string
+)
+ident(
+  def glob "sysprep_operation_dhcp_client_state.ml" 28 981 999 "sysprep_operation_dhcp_client_state.ml" 28 981 1038
+)
+"sysprep_operation_dhcp_client_state.ml" 28 981 999 "sysprep_operation_dhcp_client_state.ml" 28 981 1009
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_dhcp_client_state.ml" 28 981 1010 "sysprep_operation_dhcp_client_state.ml" 28 981 1011
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_dhcp_client_state.ml" 24 848 878 "sysprep_operation_dhcp_client_state.ml" 24 848 879
+)
+"sysprep_operation_dhcp_client_state.ml" 28 981 1010 "sysprep_operation_dhcp_client_state.ml" 28 981 1017
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_dhcp_client_state.ml" 28 981 1019 "sysprep_operation_dhcp_client_state.ml" 28 981 1020
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_dhcp_client_state.ml" 24 848 878 "sysprep_operation_dhcp_client_state.ml" 24 848 879
+)
+"sysprep_operation_dhcp_client_state.ml" 28 981 1019 "sysprep_operation_dhcp_client_state.ml" 28 981 1032
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_dhcp_client_state.ml" 28 981 1033 "sysprep_operation_dhcp_client_state.ml" 28 981 1037
+type(
+  string
+)
+ident(
+  int_ref glob "sysprep_operation_dhcp_client_state.ml" 28 981 991 "sysprep_operation_dhcp_client_state.ml" 28 981 995
+)
+"sysprep_operation_dhcp_client_state.ml" 28 981 1018 "sysprep_operation_dhcp_client_state.ml" 28 981 1038
+type(
+  'a array
+)
+"sysprep_operation_dhcp_client_state.ml" 28 981 999 "sysprep_operation_dhcp_client_state.ml" 28 981 1038
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_dhcp_client_state.ml" 27 965 979 "sysprep_operation_dhcp_client_state.ml" 29 1039 1044
+type(
+  string -> unit
+)
+"sysprep_operation_dhcp_client_state.ml" 29 1039 1047 "sysprep_operation_dhcp_client_state.ml" 29 1039 1068
+type(
+  string
+)
+"sysprep_operation_dhcp_client_state.ml" 29 1039 1070 "sysprep_operation_dhcp_client_state.ml" 29 1039 1087
+type(
+  string
+)
+"sysprep_operation_dhcp_client_state.ml" 29 1039 1045 "sysprep_operation_dhcp_client_state.ml" 29 1039 1102
+type(
+  string list
+)
+"sysprep_operation_dhcp_client_state.ml" 26 939 963 "sysprep_operation_dhcp_client_state.ml" 30 1103 1106
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_dhcp_client_state.ml" 26 939 941 "sysprep_operation_dhcp_client_state.ml" 30 1103 1106
+type(
+  unit
+)
+"sysprep_operation_dhcp_client_state.ml" 25 900 902 "sysprep_operation_dhcp_client_state.ml" 30 1103 1106
+type(
+  unit
+)
+"sysprep_operation_dhcp_client_state.ml" 32 1108 1112 "sysprep_operation_dhcp_client_state.ml" 32 1108 1114
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_dhcp_client_state.ml" 40 1307 1307 --
+)
+"sysprep_operation_dhcp_client_state.ml" 33 1119 1121 "sysprep_operation_dhcp_client_state.ml" 33 1119 1129
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_dhcp_client_state.ml" 34 1135 1146 "sysprep_operation_dhcp_client_state.ml" 34 1135 1165
+type(
+  string
+)
+"sysprep_operation_dhcp_client_state.ml" 35 1167 1192 "sysprep_operation_dhcp_client_state.ml" 35 1167 1196
+type(
+  bool
+)
+"sysprep_operation_dhcp_client_state.ml" 36 1198 1212 "sysprep_operation_dhcp_client_state.ml" 36 1198 1214
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_dhcp_client_state.ml" 36 1198 1214 "sysprep_operation_dhcp_client_state.ml" 36 1198 1241
+type(
+  string
+)
+"sysprep_operation_dhcp_client_state.ml" 36 1198 1212 "sysprep_operation_dhcp_client_state.ml" 36 1198 1241
+type(
+  string
+)
+"sysprep_operation_dhcp_client_state.ml" 37 1243 1277 "sysprep_operation_dhcp_client_state.ml" 37 1243 1302
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref dhcp_client_state_perform "sysprep_operation_dhcp_client_state.ml" 24 848 852 "sysprep_operation_dhcp_client_state.ml" 24 848 877
+)
+"sysprep_operation_dhcp_client_state.ml" 37 1243 1272 "sysprep_operation_dhcp_client_state.ml" 37 1243 1302
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_dhcp_client_state.ml" 32 1108 1117 "sysprep_operation_dhcp_client_state.ml" 38 1304 1305
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_dhcp_client_state.ml" 40 1307 1311 "sysprep_operation_dhcp_client_state.ml" 40 1307 1313
+type(
+  unit
+)
+"sysprep_operation_dhcp_client_state.ml" 40 1307 1316 "sysprep_operation_dhcp_client_state.ml" 40 1307 1334
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_dhcp_client_state.ml" 40 1307 1335 "sysprep_operation_dhcp_client_state.ml" 40 1307 1337
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_dhcp_client_state.ml" 32 1108 1112 "sysprep_operation_dhcp_client_state.ml" 32 1108 1114
+)
+"sysprep_operation_dhcp_client_state.ml" 40 1307 1316 "sysprep_operation_dhcp_client_state.ml" 40 1307 1337
+call(
+  stack
+)
+type(
+  unit
+)

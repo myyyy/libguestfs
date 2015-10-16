@@ -1,0 +1,297 @@
+
+<html>
+<head>
+<title>guestfs-erlang</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a>
+    <ul>
+      <li><a href="#opening-and-closing-the-handle">OPENING AND CLOSING THE HANDLE</a></li>
+      <li><a href="#functions-with-optional-arguments">FUNCTIONS WITH OPTIONAL ARGUMENTS</a></li>
+      <li><a href="#return-values-and-errors">RETURN VALUES AND ERRORS</a></li>
+    </ul>
+  </li>
+  <li><a href="#example-1:-create-a-disk-image">EXAMPLE 1: CREATE A DISK IMAGE</a></li>
+  <li><a href="#example-2:-inspect-a-virtual-machine-disk-image">EXAMPLE 2: INSPECT A VIRTUAL MACHINE DISK IMAGE</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>guestfs-erlang - How to use libguestfs from Erlang</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> {ok, G} = guestfs:create(),
+ ok = guestfs:add_drive_opts(G, Disk,
+                             [{format, &quot;raw&quot;}, {readonly, true}]),
+ ok = guestfs:launch(G),
+ [Device] = guestfs:list_devices(G),
+ ok = guestfs:close(G).</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>This manual page documents how to call libguestfs from the Erlang programming language. This page just documents the differences from the C API and gives some examples. If you are not familiar with using libguestfs, you also need to read <a href="guestfs.3.html">guestfs(3)</a>.</p>
+
+<h2 id="opening-and-closing-the-handle">OPENING AND CLOSING THE HANDLE</h2>
+
+<p>The Erlang bindings are implemented using an external program called <code>erl-guestfs</code>. This program must be on the current PATH, or else you should specify the full path to the program:</p>
+
+<pre><code> {ok, G} = guestfs:create().
+
+ {ok, G} = guestfs:create(&quot;/path/to/erl-guestfs&quot;).</code></pre>
+
+<p><code>G</code> is the libguestfs handle which you should pass to other functions.</p>
+
+<p>To close the handle:</p>
+
+<pre><code> ok = guestfs:close(G).</code></pre>
+
+<h2 id="functions-with-optional-arguments">FUNCTIONS WITH OPTIONAL ARGUMENTS</h2>
+
+<p>For functions that take optional arguments, the first arguments are the non-optional ones. The last argument is a list of tuples supplying the remaining optional arguments.</p>
+
+<pre><code> ok = guestfs:add_drive_opts(G, Disk,
+                             [{format, &quot;raw&quot;}, {readonly, true}]).</code></pre>
+
+<p>If the last argument would be an empty list, you can also omit it:</p>
+
+<pre><code> ok = guestfs:add_drive_opts(G, Disk).</code></pre>
+
+<h2 id="return-values-and-errors">RETURN VALUES AND ERRORS</h2>
+
+<p>On success, most functions return a <code>Result</code> term (which could be a list, string, tuple etc.). If there is nothing for the function to return, then the atom <code>ok</code> is returned.</p>
+
+<p>On error, you would see one of the following tuples:</p>
+
+<dl>
+
+<dt><code>{error, Msg, Errno}</code></dt>
+<dd>
+
+<p>This indicates an ordinary error from the function.</p>
+
+<p><code>Msg</code> is the error message (string) and <code>Errno</code> is the Unix error (integer).</p>
+
+<p><code>Errno</code> can be zero. See <a href="guestfs.3.html#guestfs_last_errno">&quot;guestfs_last_errno&quot; in guestfs(3)</a>.</p>
+
+</dd>
+<dt><code>{unknown, Function}</code></dt>
+<dd>
+
+<p>This indicates that the function you called is not known. Generally this means you are mixing <code>erl-guestfs</code> from another version of libguestfs, which you should not do.</p>
+
+<p><code>Function</code> is the name of the unknown function.</p>
+
+</dd>
+<dt><code>{unknownarg, Arg}</code></dt>
+<dd>
+
+<p>This indicates that you called a function with optional arguments, with an unknown argument name.</p>
+
+<p><code>Arg</code> is the name of the unknown argument.</p>
+
+</dd>
+</dl>
+
+<h1 id="example-1:-create-a-disk-image">EXAMPLE 1: CREATE A DISK IMAGE</h1>
+
+<pre><code> #!/usr/bin/env escript
+ %%! -smp enable -sname create_disk debug verbose
+ % Example showing how to create a disk image.
+ 
+ main(_) -&gt;
+     Output = &quot;disk.img&quot;,
+ 
+     {ok, G} = guestfs:create(),
+ 
+     % Create a raw-format sparse disk image, 512 MB in size.
+     {ok, File} = file:open(Output, [raw, write, binary]),
+     {ok, _} = file:position(File, 512 * 1024 * 1024 - 1),
+     ok = file:write(File, &quot; &quot;),
+     ok = file:close(File),
+ 
+     % Set the trace flag so that we can see each libguestfs call.
+     ok = guestfs:set_trace(G, true),
+ 
+     % Attach the disk image to libguestfs.
+     ok = guestfs:add_drive_opts(G, Output,
+                                 [{format, &quot;raw&quot;}, {readonly, false}]),
+ 
+     % Run the libguestfs back-end.
+     ok = guestfs:launch(G),
+ 
+     % Get the list of devices.  Because we only added one drive
+     % above, we expect that this list should contain a single
+     % element.
+     [Device] = guestfs:list_devices(G),
+ 
+     % Partition the disk as one single MBR partition.
+     ok = guestfs:part_disk(G, Device, &quot;mbr&quot;),
+ 
+     % Get the list of partitions.  We expect a single element, which
+     % is the partition we have just created.
+     [Partition] = guestfs:list_partitions(G),
+ 
+     % Create a filesystem on the partition.
+     ok = guestfs:mkfs(G, &quot;ext4&quot;, Partition),
+ 
+     % Now mount the filesystem so that we can add files. *)
+     ok = guestfs:mount(G, Partition, &quot;/&quot;),
+ 
+     % Create some files and directories. *)
+     ok = guestfs:touch(G, &quot;/empty&quot;),
+     Message = &quot;Hello, world\n&quot;,
+     ok = guestfs:write(G, &quot;/hello&quot;, Message),
+     ok = guestfs:mkdir(G, &quot;/foo&quot;),
+ 
+     % This one uploads the local file /etc/resolv.conf into
+     % the disk image.
+     ok = guestfs:upload(G, &quot;/etc/resolv.conf&quot;, &quot;/foo/resolv.conf&quot;),
+ 
+     % Because we wrote to the disk and we want to detect write
+     % errors, call guestfs:shutdown.  You don&#39;t need to do this:
+     % guestfs:close will do it implicitly.
+     ok = guestfs:shutdown(G),
+ 
+     % Note also that handles are automatically closed if they are
+     % reaped by the garbage collector.  You only need to call close
+     % if you want to close the handle right away.
+     ok = guestfs:close(G).</code></pre>
+
+<h1 id="example-2:-inspect-a-virtual-machine-disk-image">EXAMPLE 2: INSPECT A VIRTUAL MACHINE DISK IMAGE</h1>
+
+<pre><code> #!/usr/bin/env escript
+ %%! -smp enable -sname inspect_vm debug verbose
+ % Example showing how to inspect a virtual machine disk.
+ 
+ main([Disk]) -&gt;
+     {ok, G} = guestfs:create(),
+ 
+     % Attach the disk image read-only to libguestfs.
+     ok = guestfs:add_drive_opts(G, Disk, [{readonly, true}]),
+ 
+     % Run the libguestfs back-end.
+     ok = guestfs:launch(G),
+ 
+     % Ask libguestfs to inspect for operating systems.
+     case guestfs:inspect_os(G) of
+         [] -&gt;
+             io:fwrite(&quot;inspect_vm: no operating systems found~n&quot;),
+             exit(no_operating_system);
+         Roots -&gt;
+             list_os(G, Roots)
+     end.
+ 
+ list_os(_, []) -&gt;
+     ok;
+ list_os(G, [Root|Roots]) -&gt;
+     io:fwrite(&quot;Root device: ~s~n&quot;, [Root]),
+ 
+     % Print basic information about the operating system.
+     Product_name = guestfs:inspect_get_product_name(G, Root),
+     io:fwrite(&quot;  Product name: ~s~n&quot;, [Product_name]),
+     Major = guestfs:inspect_get_major_version(G, Root),
+     Minor = guestfs:inspect_get_minor_version(G, Root),
+     io:fwrite(&quot;  Version:      ~w.~w~n&quot;, [Major, Minor]),
+     Type = guestfs:inspect_get_type(G, Root),
+     io:fwrite(&quot;  Type:         ~s~n&quot;, [Type]),
+     Distro = guestfs:inspect_get_distro(G, Root),
+     io:fwrite(&quot;  Distro:       ~s~n&quot;, [Distro]),
+ 
+     % Mount up the disks, like guestfish -i.
+     Mps = sort_mps(guestfs:inspect_get_mountpoints(G, Root)),
+     mount_mps(G, Mps),
+ 
+     % If /etc/issue.net file exists, print up to 3 lines. *)
+     Filename = &quot;/etc/issue.net&quot;,
+     Is_file = guestfs:is_file(G, Filename),
+     if Is_file -&gt;
+             io:fwrite(&quot;--- ~s ---~n&quot;, [Filename]),
+             Lines = guestfs:head_n(G, 3, Filename),
+             write_lines(Lines);
+        true -&gt; ok
+     end,
+ 
+     % Unmount everything.
+     ok = guestfs:umount_all(G),
+ 
+     list_os(G, Roots).
+ 
+ % Sort keys by length, shortest first, so that we end up
+ % mounting the filesystems in the correct order.
+ sort_mps(Mps) -&gt;
+     Cmp = fun ({A,_}, {B,_}) -&gt;
+                   length(A) =&lt; length(B) end,
+     lists:sort(Cmp, Mps).
+ 
+ mount_mps(_, []) -&gt;
+     ok;
+ mount_mps(G, [{Mp, Dev}|Mps]) -&gt;
+     case guestfs:mount_ro(G, Dev, Mp) of
+         ok -&gt; ok;
+         { error, Msg, _ } -&gt;
+             io:fwrite(&quot;~s (ignored)~n&quot;, [Msg])
+     end,
+     mount_mps(G, Mps).
+ 
+ write_lines([]) -&gt;
+     ok;
+ write_lines([Line|Lines]) -&gt;
+     io:fwrite(&quot;~s~n&quot;, [Line]),
+     write_lines(Lines).</code></pre>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfs-examples.3.html">guestfs-examples(3)</a>, <a href="guestfs-golang.3.html">guestfs-golang(3)</a>, <a href="guestfs-java.3.html">guestfs-java(3)</a>, <a href="guestfs-lua.3.html">guestfs-lua(3)</a>, <a href="guestfs-ocaml.3.html">guestfs-ocaml(3)</a>, <a href="guestfs-perl.3.html">guestfs-perl(3)</a>, <a href="guestfs-python.3.html">guestfs-python(3)</a>, <a href="guestfs-recipes.1.html">guestfs-recipes(1)</a>, <a href="guestfs-ruby.3.html">guestfs-ruby(3)</a>, <a href="http://www.erlang.org/">http://www.erlang.org/</a>. <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones (<code>rjones at redhat dot com</code>)</p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2011-2012 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This manual page contains examples which we hope you will use in your programs. The examples may be freely copied, modified and distributed for any purpose without any restrictions.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

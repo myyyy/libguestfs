@@ -1,0 +1,330 @@
+"sysprep_operation_puppet_data_log.ml" 24 851 855 "sysprep_operation_puppet_data_log.ml" 24 851 878
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def puppet_data_log_perform "sysprep_operation_puppet_data_log.ml" 40 1296 1296 --
+)
+"sysprep_operation_puppet_data_log.ml" 24 851 879 "sysprep_operation_puppet_data_log.ml" 24 851 880
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_puppet_data_log.ml" 24 851 881 "sysprep_operation_puppet_data_log.ml" 38 1291 1294
+)
+"sysprep_operation_puppet_data_log.ml" 24 851 881 "sysprep_operation_puppet_data_log.ml" 24 851 885
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_puppet_data_log.ml" 24 851 886 "sysprep_operation_puppet_data_log.ml" 38 1291 1294
+)
+"sysprep_operation_puppet_data_log.ml" 24 851 886 "sysprep_operation_puppet_data_log.ml" 24 851 898
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_puppet_data_log.ml" 25 901 903 "sysprep_operation_puppet_data_log.ml" 38 1291 1294
+)
+"sysprep_operation_puppet_data_log.ml" 25 901 907 "sysprep_operation_puppet_data_log.ml" 25 901 910
+type(
+  string
+)
+"sysprep_operation_puppet_data_log.ml" 25 901 913 "sysprep_operation_puppet_data_log.ml" 25 901 914
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_puppet_data_log.ml" 24 851 879 "sysprep_operation_puppet_data_log.ml" 24 851 880
+)
+"sysprep_operation_puppet_data_log.ml" 25 901 913 "sysprep_operation_puppet_data_log.ml" 25 901 931
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_puppet_data_log.ml" 25 901 932 "sysprep_operation_puppet_data_log.ml" 25 901 936
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_puppet_data_log.ml" 24 851 881 "sysprep_operation_puppet_data_log.ml" 24 851 885
+)
+"sysprep_operation_puppet_data_log.ml" 25 901 913 "sysprep_operation_puppet_data_log.ml" 25 901 936
+type(
+  string
+)
+"sysprep_operation_puppet_data_log.ml" 26 940 945 "sysprep_operation_puppet_data_log.ml" 26 940 948
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_puppet_data_log.ml" 25 901 907 "sysprep_operation_puppet_data_log.ml" 25 901 910
+)
+"sysprep_operation_puppet_data_log.ml" 26 940 949 "sysprep_operation_puppet_data_log.ml" 26 940 951
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_puppet_data_log.ml" 26 940 952 "sysprep_operation_puppet_data_log.ml" 26 940 961
+type(
+  string
+)
+"sysprep_operation_puppet_data_log.ml" 26 940 945 "sysprep_operation_puppet_data_log.ml" 26 940 961
+type(
+  bool
+)
+"sysprep_operation_puppet_data_log.ml" 27 969 977 "sysprep_operation_puppet_data_log.ml" 27 969 982
+type(
+  string list
+)
+"sysprep_operation_puppet_data_log.ml" 27 969 987 "sysprep_operation_puppet_data_log.ml" 27 969 1006
+type(
+  string
+)
+"sysprep_operation_puppet_data_log.ml" 28 1008 1026 "sysprep_operation_puppet_data_log.ml" 28 1008 1047
+type(
+  string
+)
+"sysprep_operation_puppet_data_log.ml" 29 1049 1067 "sysprep_operation_puppet_data_log.ml" 29 1049 1090
+type(
+  string
+)
+"sysprep_operation_puppet_data_log.ml" 27 969 985 "sysprep_operation_puppet_data_log.ml" 29 1049 1092
+type(
+  string list
+)
+"sysprep_operation_puppet_data_log.ml" 30 1096 1100 "sysprep_operation_puppet_data_log.ml" 30 1096 1109
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_puppet_data_log.ml" 31 1112 1122 "sysprep_operation_puppet_data_log.ml" 31 1112 1126
+type(
+  string
+)
+ident(
+  def path "sysprep_operation_puppet_data_log.ml" 32 1130 1138 "sysprep_operation_puppet_data_log.ml" 36 1262 1278
+)
+"sysprep_operation_puppet_data_log.ml" 32 1130 1142 "sysprep_operation_puppet_data_log.ml" 32 1130 1147
+type(
+  'a array
+)
+"sysprep_operation_puppet_data_log.ml" 32 1130 1150 "sysprep_operation_puppet_data_log.ml" 32 1130 1151
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_puppet_data_log.ml" 24 851 879 "sysprep_operation_puppet_data_log.ml" 24 851 880
+)
+"sysprep_operation_puppet_data_log.ml" 32 1130 1150 "sysprep_operation_puppet_data_log.ml" 32 1130 1163
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_puppet_data_log.ml" 32 1130 1164 "sysprep_operation_puppet_data_log.ml" 32 1130 1168
+type(
+  string
+)
+ident(
+  int_ref path "sysprep_operation_puppet_data_log.ml" 31 1112 1122 "sysprep_operation_puppet_data_log.ml" 31 1112 1126
+)
+"sysprep_operation_puppet_data_log.ml" 32 1130 1150 "sysprep_operation_puppet_data_log.ml" 32 1130 1168
+type(
+  'a array
+)
+"sysprep_operation_puppet_data_log.ml" 33 1172 1180 "sysprep_operation_puppet_data_log.ml" 33 1172 1190
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_puppet_data_log.ml" 34 1193 1207 "sysprep_operation_puppet_data_log.ml" 34 1193 1211
+type(
+  'a
+)
+ident(
+  def file "sysprep_operation_puppet_data_log.ml" 35 1215 1227 "sysprep_operation_puppet_data_log.ml" 35 1215 1261
+)
+"sysprep_operation_puppet_data_log.ml" 35 1215 1231 "sysprep_operation_puppet_data_log.ml" 35 1215 1232
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_puppet_data_log.ml" 24 851 879 "sysprep_operation_puppet_data_log.ml" 24 851 880
+)
+"sysprep_operation_puppet_data_log.ml" 35 1215 1231 "sysprep_operation_puppet_data_log.ml" 35 1215 1235
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_puppet_data_log.ml" 35 1215 1236 "sysprep_operation_puppet_data_log.ml" 35 1215 1240
+type(
+  'a
+)
+ident(
+  int_ref file "sysprep_operation_puppet_data_log.ml" 34 1193 1207 "sysprep_operation_puppet_data_log.ml" 34 1193 1211
+)
+"sysprep_operation_puppet_data_log.ml" 35 1215 1231 "sysprep_operation_puppet_data_log.ml" 35 1215 1240
+type(
+  unit
+)
+"sysprep_operation_puppet_data_log.ml" 35 1215 1254 "sysprep_operation_puppet_data_log.ml" 35 1215 1255
+type(
+  string
+)
+"sysprep_operation_puppet_data_log.ml" 35 1215 1246 "sysprep_operation_puppet_data_log.ml" 35 1215 1255
+type(
+  exn
+)
+"sysprep_operation_puppet_data_log.ml" 35 1215 1259 "sysprep_operation_puppet_data_log.ml" 35 1215 1261
+type(
+  unit
+)
+"sysprep_operation_puppet_data_log.ml" 35 1215 1227 "sysprep_operation_puppet_data_log.ml" 35 1215 1261
+type(
+  unit
+)
+"sysprep_operation_puppet_data_log.ml" 33 1172 1191 "sysprep_operation_puppet_data_log.ml" 36 1262 1271
+type(
+  'a -> unit
+)
+"sysprep_operation_puppet_data_log.ml" 36 1262 1272 "sysprep_operation_puppet_data_log.ml" 36 1262 1277
+type(
+  'a array
+)
+ident(
+  int_ref files "sysprep_operation_puppet_data_log.ml" 32 1130 1142 "sysprep_operation_puppet_data_log.ml" 32 1130 1147
+)
+"sysprep_operation_puppet_data_log.ml" 33 1172 1180 "sysprep_operation_puppet_data_log.ml" 36 1262 1278
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_puppet_data_log.ml" 32 1130 1138 "sysprep_operation_puppet_data_log.ml" 36 1262 1278
+type(
+  unit
+)
+"sysprep_operation_puppet_data_log.ml" 30 1096 1110 "sysprep_operation_puppet_data_log.ml" 37 1279 1284
+type(
+  string -> unit
+)
+"sysprep_operation_puppet_data_log.ml" 37 1279 1285 "sysprep_operation_puppet_data_log.ml" 37 1279 1290
+type(
+  string list
+)
+ident(
+  int_ref paths "sysprep_operation_puppet_data_log.ml" 27 969 977 "sysprep_operation_puppet_data_log.ml" 27 969 982
+)
+"sysprep_operation_puppet_data_log.ml" 30 1096 1100 "sysprep_operation_puppet_data_log.ml" 37 1279 1290
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_puppet_data_log.ml" 26 940 967 "sysprep_operation_puppet_data_log.ml" 38 1291 1294
+type(
+  unit
+)
+"sysprep_operation_puppet_data_log.ml" 26 940 942 "sysprep_operation_puppet_data_log.ml" 38 1291 1294
+type(
+  unit
+)
+"sysprep_operation_puppet_data_log.ml" 25 901 903 "sysprep_operation_puppet_data_log.ml" 38 1291 1294
+type(
+  unit
+)
+"sysprep_operation_puppet_data_log.ml" 40 1296 1300 "sysprep_operation_puppet_data_log.ml" 40 1296 1302
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_puppet_data_log.ml" 48 1505 1505 --
+)
+"sysprep_operation_puppet_data_log.ml" 41 1307 1309 "sysprep_operation_puppet_data_log.ml" 41 1307 1317
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_puppet_data_log.ml" 42 1323 1334 "sysprep_operation_puppet_data_log.ml" 42 1323 1351
+type(
+  string
+)
+"sysprep_operation_puppet_data_log.ml" 43 1353 1378 "sysprep_operation_puppet_data_log.ml" 43 1353 1382
+type(
+  bool
+)
+"sysprep_operation_puppet_data_log.ml" 44 1384 1398 "sysprep_operation_puppet_data_log.ml" 44 1384 1400
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_puppet_data_log.ml" 44 1384 1400 "sysprep_operation_puppet_data_log.ml" 44 1384 1441
+type(
+  string
+)
+"sysprep_operation_puppet_data_log.ml" 44 1384 1398 "sysprep_operation_puppet_data_log.ml" 44 1384 1441
+type(
+  string
+)
+"sysprep_operation_puppet_data_log.ml" 45 1443 1477 "sysprep_operation_puppet_data_log.ml" 45 1443 1500
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref puppet_data_log_perform "sysprep_operation_puppet_data_log.ml" 24 851 855 "sysprep_operation_puppet_data_log.ml" 24 851 878
+)
+"sysprep_operation_puppet_data_log.ml" 45 1443 1472 "sysprep_operation_puppet_data_log.ml" 45 1443 1500
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_puppet_data_log.ml" 40 1296 1305 "sysprep_operation_puppet_data_log.ml" 46 1502 1503
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_puppet_data_log.ml" 48 1505 1509 "sysprep_operation_puppet_data_log.ml" 48 1505 1511
+type(
+  unit
+)
+"sysprep_operation_puppet_data_log.ml" 48 1505 1514 "sysprep_operation_puppet_data_log.ml" 48 1505 1532
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_puppet_data_log.ml" 48 1505 1533 "sysprep_operation_puppet_data_log.ml" 48 1505 1535
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_puppet_data_log.ml" 40 1296 1300 "sysprep_operation_puppet_data_log.ml" 40 1296 1302
+)
+"sysprep_operation_puppet_data_log.ml" 48 1505 1514 "sysprep_operation_puppet_data_log.ml" 48 1505 1535
+call(
+  stack
+)
+type(
+  unit
+)

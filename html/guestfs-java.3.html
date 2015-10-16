@@ -1,0 +1,401 @@
+
+<html>
+<head>
+<title>guestfs-java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a>
+    <ul>
+      <li><a href="#closing-the-handle">CLOSING THE HANDLE</a></li>
+      <li><a href="#exceptions">EXCEPTIONS</a></li>
+      <li><a href="#events">EVENTS</a></li>
+      <li><a href="#optional-arguments">OPTIONAL ARGUMENTS</a>
+        <ul>
+          <li><a href="#optional-handle-parameters">Optional handle parameters</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><a href="#compiling-and-running">COMPILING AND RUNNING</a></li>
+  <li><a href="#example-1:-create-a-disk-image">EXAMPLE 1: CREATE A DISK IMAGE</a></li>
+  <li><a href="#example-2:-inspect-a-virtual-machine-disk-image">EXAMPLE 2: INSPECT A VIRTUAL MACHINE DISK IMAGE</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>guestfs-java - How to use libguestfs from Java</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> import com.redhat.et.libguestfs.*;
+ 
+ GuestFS g = new GuestFS ();
+ g.add_drive (&quot;disk.img&quot;,
+              new HashMap&lt;String,Object&gt;() {
+                {
+                    put (&quot;readonly&quot;, Boolean.TRUE);
+                    put (&quot;format&quot;, &quot;raw&quot;);
+                }
+              });
+ g.launch ();</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>This manual page documents how to call libguestfs from the Java programming language. This page just documents the differences from the C API and gives some examples. If you are not familiar with using libguestfs, you also need to read <a href="guestfs.3.html">guestfs(3)</a>.</p>
+
+<h2 id="closing-the-handle">CLOSING THE HANDLE</h2>
+
+<p>The handle is closed when it is reaped by the garbage collector. Because libguestfs handles include a lot of state, it is also possible to close (and hence free) them explicitly by calling the <code>close</code> method.</p>
+
+<h2 id="exceptions">EXCEPTIONS</h2>
+
+<p>Errors from libguestfs functions are mapped into the <code>LibGuestFSException</code> exception. This has a single parameter which is the error message (a <code>String</code>).</p>
+
+<p>Calling any method on a closed handle raises the same exception.</p>
+
+<h2 id="events">EVENTS</h2>
+
+<p>The <a href="guestfs.3.html#events">libguestfs event API</a> is fully supported from Java. Create a class which implements the <code>EventCallback</code> interface, create an instance of this class, and then call the <code>GuestFS#set_event_callback</code> method to register this instance. The <code>event</code> method of the class is called when libguestfs generates an event.</p>
+
+<p>For example, this will print all trace events:</p>
+
+<pre><code> GuestFS g = new GuestFS ();
+ g.set_trace (true);
+ g.set_event_callback (
+   new EventCallback () {
+     public void event (long event, int eh,
+                        String buffer, long[] array) {
+       System.out.println (GuestFS.eventToString (event) +
+                           &quot;: &quot; + buffer);
+     }
+   },
+   GuestFS.EVENT_TRACE);
+ g.add_drive_ro (&quot;disk.img&quot;);
+ // etc.</code></pre>
+
+<p>The output looks similar to this:</p>
+
+<pre><code> EVENT_TRACE: add_drive_ro &quot;disk.img&quot;
+ EVENT_TRACE: add_drive_ro = 0
+ // etc.</code></pre>
+
+<h2 id="optional-arguments">OPTIONAL ARGUMENTS</h2>
+
+<p>Some methods take an optional map of optional parameters. An example of this is <code>g.add_drive</code> which can be called in one of two ways:</p>
+
+<pre><code> g.add_drive (&quot;disk.img&quot;);</code></pre>
+
+<p>or with optional arguments:</p>
+
+<pre><code> Map&lt;String, Object&gt; optargs =
+   new HashMap&lt;String, Object&gt;() {
+   {
+     put (&quot;readonly&quot;, Boolean.TRUE);
+     put (&quot;format&quot;, &quot;raw&quot;);
+   }
+ };
+ g.add_drive (&quot;disk.img&quot;, optargs);</code></pre>
+
+<p>For more information on this topic, see <a href="guestfs.3.html#calls-with-optional-arguments">&quot;CALLS WITH OPTIONAL ARGUMENTS&quot; in guestfs(3)</a>.</p>
+
+<h3 id="optional-handle-parameters">Optional handle parameters</h3>
+
+<p>When creating the handle you can also pass a map of optional parameters:</p>
+
+<pre><code> Map&lt;String, Object&gt; optargs =
+   new HashMap&lt;String, Object&gt;() {
+   {
+     put (&quot;close_on_exit&quot;, Boolean.FALSE);
+     put (&quot;environment&quot;, Boolean.TRUE);
+   }
+ };
+ GuestFS g = new GuestFS (optargs);</code></pre>
+
+<p>For more information, see <a href="guestfs.3.html#guestfs_create_flags">&quot;guestfs_create_flags&quot; in guestfs(3)</a>.</p>
+
+<h1 id="compiling-and-running">COMPILING AND RUNNING</h1>
+
+<p>Libguestfs for Java is a Java Native Interface (JNI) extension, supplied in three parts:</p>
+
+<dl>
+
+<dt><i>libguestfs.jar</i></dt>
+<dd>
+
+</dd>
+<dt><i>libguestfs-<i>VERSION</i>.jar</i></dt>
+<dd>
+
+<p>The pure Java JAR file which contains several classes, the primary one being <code>com.redhat.et.libguestfs.GuestFS</code>. Upstream, the JAR file contains a version number in the filename, but some Linux distros may rename it without the version number.</p>
+
+</dd>
+<dt><i>libguestfs_jni.so</i></dt>
+<dd>
+
+<p>The JNI code (written in C). This contains private native functions that interface between Java code and the regular libguestfs C library. You should <b>not</b> call these directly.</p>
+
+</dd>
+<dt><i>libguestfs.so</i></dt>
+<dd>
+
+<p>The regular libguestfs C library.</p>
+
+</dd>
+</dl>
+
+<p>To compile your Java program, you need to locate the JAR file and add it to the class path. For example:</p>
+
+<pre><code> export CLASSPATH=/usr/share/java/libguestfs.jar
+ javac MyProgram.java</code></pre>
+
+<p>To run your Java program, you also need to ensure that the JAR file is on the class path, as well as the path of your program. For example:</p>
+
+<pre><code> export CLASSPATH=.:/usr/share/java/libguestfs.jar
+ java MyProgram</code></pre>
+
+<h1 id="example-1:-create-a-disk-image">EXAMPLE 1: CREATE A DISK IMAGE</h1>
+
+<pre><code> // Example showing how to create a disk image.
+ 
+ import java.io.*;
+ import java.util.Map;
+ import java.util.HashMap;
+ import com.redhat.et.libguestfs.*;
+ 
+ public class CreateDisk
+ {
+     static String output = &quot;disk.img&quot;;
+ 
+     public static void main (String[] argv)
+     {
+         try {
+             GuestFS g = new GuestFS ();
+ 
+             // Create a raw-format sparse disk image, 512 MB in size.
+             RandomAccessFile f = new RandomAccessFile (output, &quot;rw&quot;);
+             f.setLength (512 * 1024 * 1024);
+             f.close ();
+ 
+             // Set the trace flag so that we can see each libguestfs call.
+             g.set_trace (true);
+ 
+             // Attach the disk image to libguestfs.
+             @SuppressWarnings(&quot;serial&quot;) Map&lt;String, Object&gt; optargs =
+                 new HashMap&lt;String, Object&gt;() {
+                 {
+                     put (&quot;format&quot;, &quot;raw&quot;);
+                     put (&quot;readonly&quot;, Boolean.FALSE);
+                 }
+             };
+             g.add_drive_opts (output, optargs);
+ 
+             // Run the libguestfs back-end.
+             g.launch ();
+ 
+             // Get the list of devices.  Because we only added one drive
+             // above, we expect that this list should contain a single
+             // element.
+             String[] devices = g.list_devices ();
+             if (devices.length != 1)
+                 throw new Error (&quot;expected a single device from list-devices&quot;);
+ 
+             // Partition the disk as one single MBR partition.
+             g.part_disk (devices[0], &quot;mbr&quot;);
+ 
+             // Get the list of partitions.  We expect a single element, which
+             // is the partition we have just created.
+             String[] partitions = g.list_partitions ();
+             if (partitions.length != 1)
+                 throw new Error (&quot;expected a single partition from list-partitions&quot;);
+ 
+             // Create a filesystem on the partition.
+             g.mkfs (&quot;ext4&quot;, partitions[0]);
+ 
+             // Now mount the filesystem so that we can add files.
+             g.mount (partitions[0], &quot;/&quot;);
+ 
+             // Create some files and directories.
+             g.touch (&quot;/empty&quot;);
+             String message = &quot;Hello, world\n&quot;;
+             g.write (&quot;/hello&quot;, message.getBytes());
+             g.mkdir (&quot;/foo&quot;);
+ 
+             // This one uploads the local file /etc/resolv.conf into
+             // the disk image.
+             g.upload (&quot;/etc/resolv.conf&quot;, &quot;/foo/resolv.conf&quot;);
+ 
+             // Because we wrote to the disk and we want to detect write
+             // errors, call g.shutdown.  You don&#39;t need to do this:
+             // g.close will do it implicitly.
+             g.shutdown ();
+ 
+             // Note also that handles are automatically closed if they are
+             // reaped by the garbage collector.  You only need to call close
+             // if you want to close the handle right away.
+             g.close ();
+         }
+         catch (Exception exn) {
+             System.err.println (exn);
+             System.exit (1);
+         }
+     }
+ }</code></pre>
+
+<h1 id="example-2:-inspect-a-virtual-machine-disk-image">EXAMPLE 2: INSPECT A VIRTUAL MACHINE DISK IMAGE</h1>
+
+<pre><code> // Example showing how to inspect a virtual machine disk.
+ 
+ import java.util.ArrayList;
+ import java.util.Collections;
+ import java.util.Comparator;
+ import java.util.HashMap;
+ import java.util.List;
+ import java.util.Map;
+ import com.redhat.et.libguestfs.*;
+ 
+ public class InspectVM
+ {
+     static final Comparator&lt;String&gt; COMPARE_KEYS_LEN =
+         new Comparator&lt;String&gt;() {
+         public int compare (String k1, String k2) {
+             return k1.length() - k2.length();
+         }
+     };
+ 
+     public static void main (String[] argv)
+     {
+         try {
+             if (argv.length != 1)
+                 throw new Error (&quot;usage: InspectVM disk.img&quot;);
+ 
+             String disk = argv[0];
+ 
+             GuestFS g = new GuestFS ();
+ 
+             // Attach the disk image read-only to libguestfs.
+             @SuppressWarnings(&quot;serial&quot;) Map&lt;String, Object&gt; optargs =
+                 new HashMap&lt;String, Object&gt;() {
+                 {
+                     //put (&quot;format&quot;, &quot;raw&quot;);
+                     put (&quot;readonly&quot;, Boolean.TRUE);
+                 }
+             };
+ 
+             g.add_drive_opts (disk, optargs);
+ 
+             // Run the libguestfs back-end.
+             g.launch ();
+ 
+             // Ask libguestfs to inspect for operating systems.
+             String roots[] = g.inspect_os ();
+             if (roots.length == 0)
+                 throw new Error (&quot;inspect_vm: no operating systems found&quot;);
+ 
+             for (String root : roots) {
+                 System.out.println (&quot;Root device: &quot; + root);
+ 
+                 // Print basic information about the operating system.
+                 System.out.println (&quot;  Product name: &quot; +
+                                     g.inspect_get_product_name (root));
+                 System.out.println (&quot;  Version:      &quot; +
+                                     g.inspect_get_major_version (root) +
+                                     &quot;.&quot; +
+                                     g.inspect_get_minor_version (root));
+                 System.out.println (&quot;  Type:         &quot; +
+                                     g.inspect_get_type (root));
+                 System.out.println (&quot;  Distro:       &quot; +
+                                     g.inspect_get_distro (root));
+ 
+                 // Mount up the disks, like guestfish -i.
+                 //
+                 // Sort keys by length, shortest first, so that we end up
+                 // mounting the filesystems in the correct order.
+                 Map&lt;String,String&gt; mps = g.inspect_get_mountpoints (root);
+                 List&lt;String&gt; mps_keys = new ArrayList&lt;String&gt; (mps.keySet ());
+                 Collections.sort (mps_keys, COMPARE_KEYS_LEN);
+ 
+                 for (String mp : mps_keys) {
+                     String dev = mps.get (mp);
+                     try {
+                         g.mount_ro (dev, mp);
+                     }
+                     catch (Exception exn) {
+                         System.err.println (exn + &quot; (ignored)&quot;);
+                     }
+                 }
+ 
+                 // If /etc/issue.net file exists, print up to 3 lines.
+                 String filename = &quot;/etc/issue.net&quot;;
+                 if (g.is_file (filename)) {
+                     System.out.println (&quot;--- &quot; + filename + &quot; ---&quot;);
+                     String[] lines = g.head_n (3, filename);
+                     for (String line : lines)
+                         System.out.println (line);
+                 }
+ 
+                 // Unmount everything.
+                 g.umount_all ();
+             }
+         }
+         catch (Exception exn) {
+             System.err.println (exn);
+             System.exit (1);
+         }
+     }
+ }</code></pre>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfs-examples.3.html">guestfs-examples(3)</a>, <a href="guestfs-erlang.3.html">guestfs-erlang(3)</a>, <a href="guestfs-golang.3.html">guestfs-golang(3)</a>, <a href="guestfs-lua.3.html">guestfs-lua(3)</a>, <a href="guestfs-ocaml.3.html">guestfs-ocaml(3)</a>, <a href="guestfs-perl.3.html">guestfs-perl(3)</a>, <a href="guestfs-python.3.html">guestfs-python(3)</a>, <a href="guestfs-recipes.1.html">guestfs-recipes(1)</a>, <a href="guestfs-ruby.3.html">guestfs-ruby(3)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>, <a href="http://caml.inria.fr/">http://caml.inria.fr/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones (<code>rjones at redhat dot com</code>)</p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2011-2012 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This manual page contains examples which we hope you will use in your programs. The examples may be freely copied, modified and distributed for any purpose without any restrictions.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

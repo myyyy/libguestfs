@@ -1,0 +1,2242 @@
+"DOM.ml" 38 1206 1210 "DOM.ml" 38 1206 1213
+type(
+  string -> attr list -> node list -> element
+)
+ident(
+  def doc "DOM.ml" 41 1297 1297 --
+)
+"DOM.ml" 38 1206 1214 "DOM.ml" 38 1206 1218
+type(
+  string
+)
+ident(
+  def name "DOM.ml" 38 1206 1219 "DOM.ml" 39 1236 1295
+)
+"DOM.ml" 38 1206 1219 "DOM.ml" 38 1206 1224
+type(
+  attr list
+)
+ident(
+  def attrs "DOM.ml" 38 1206 1225 "DOM.ml" 39 1236 1295
+)
+"DOM.ml" 38 1206 1225 "DOM.ml" 38 1206 1233
+type(
+  node list
+)
+ident(
+  def children "DOM.ml" 39 1236 1238 "DOM.ml" 39 1236 1295
+)
+"DOM.ml" 39 1236 1249 "DOM.ml" 39 1236 1253
+type(
+  string
+)
+ident(
+  int_ref name "DOM.ml" 38 1206 1214 "DOM.ml" 38 1206 1218
+)
+"DOM.ml" 39 1236 1265 "DOM.ml" 39 1236 1270
+type(
+  attr list
+)
+ident(
+  int_ref attrs "DOM.ml" 38 1206 1219 "DOM.ml" 38 1206 1224
+)
+"DOM.ml" 39 1236 1285 "DOM.ml" 39 1236 1293
+type(
+  node list
+)
+ident(
+  int_ref children "DOM.ml" 38 1206 1225 "DOM.ml" 38 1206 1233
+)
+"DOM.ml" 39 1236 1238 "DOM.ml" 39 1236 1295
+type(
+  element
+)
+"DOM.ml" 41 1297 1301 "DOM.ml" 41 1297 1302
+type(
+  string -> attr list -> node list -> node
+)
+ident(
+  def e "DOM.ml" 49 1672 1672 --
+)
+"DOM.ml" 41 1297 1303 "DOM.ml" 41 1297 1307
+type(
+  string
+)
+ident(
+  def name "DOM.ml" 41 1297 1308 "DOM.ml" 42 1325 1392
+)
+"DOM.ml" 41 1297 1308 "DOM.ml" 41 1297 1313
+type(
+  attr list
+)
+ident(
+  def attrs "DOM.ml" 41 1297 1314 "DOM.ml" 42 1325 1392
+)
+"DOM.ml" 41 1297 1314 "DOM.ml" 41 1297 1322
+type(
+  node list
+)
+ident(
+  def children "DOM.ml" 42 1325 1327 "DOM.ml" 42 1325 1392
+)
+"DOM.ml" 42 1325 1346 "DOM.ml" 42 1325 1350
+type(
+  string
+)
+ident(
+  int_ref name "DOM.ml" 41 1297 1303 "DOM.ml" 41 1297 1307
+)
+"DOM.ml" 42 1325 1362 "DOM.ml" 42 1325 1367
+type(
+  attr list
+)
+ident(
+  int_ref attrs "DOM.ml" 41 1297 1308 "DOM.ml" 41 1297 1313
+)
+"DOM.ml" 42 1325 1382 "DOM.ml" 42 1325 1390
+type(
+  node list
+)
+ident(
+  int_ref children "DOM.ml" 41 1297 1314 "DOM.ml" 41 1297 1322
+)
+"DOM.ml" 42 1325 1335 "DOM.ml" 42 1325 1392
+type(
+  element
+)
+"DOM.ml" 42 1325 1327 "DOM.ml" 42 1325 1392
+type(
+  node
+)
+"DOM.ml" 49 1672 1680 "DOM.ml" 49 1672 1692
+type(
+  ?indent:int -> out_channel -> node -> unit
+)
+ident(
+  def node_to_chan "DOM.ml" 49 1672 1672 --
+)
+"DOM.ml" 49 1672 1695 "DOM.ml" 49 1672 1701
+type(
+  int
+)
+"DOM.ml" 49 1672 1704 "DOM.ml" 49 1672 1705
+type(
+  int
+)
+type(
+  int
+)
+ident(
+  int_ref *sth* "DOM.ml" 49 1672 1704 "DOM.ml" 49 1672 1705
+)
+type(
+  int option
+)
+type(
+  int option
+)
+type(
+  int
+)
+ident(
+  def *sth* "DOM.ml" 49 1672 1704 "DOM.ml" 49 1672 1705
+)
+"DOM.ml" 49 1672 1707 "DOM.ml" 49 1672 1711
+type(
+  out_channel
+)
+ident(
+  def chan "DOM.ml" 49 1672 1714 "DOM.ml" 54 1887 1934
+)
+"DOM.ml" 50 1723 1734 "DOM.ml" 50 1723 1737
+type(
+  string
+)
+ident(
+  def str "DOM.ml" 50 1723 1741 "DOM.ml" 50 1723 1782
+)
+"DOM.ml" 50 1723 1727 "DOM.ml" 50 1723 1737
+type(
+  node
+)
+"DOM.ml" 50 1723 1741 "DOM.ml" 50 1723 1754
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"DOM.ml" 50 1723 1755 "DOM.ml" 50 1723 1759
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 49 1672 1707 "DOM.ml" 49 1672 1711
+)
+"DOM.ml" 50 1723 1761 "DOM.ml" 50 1723 1777
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.xml_quote_pcdata
+)
+"DOM.ml" 50 1723 1778 "DOM.ml" 50 1723 1781
+type(
+  string
+)
+ident(
+  int_ref str "DOM.ml" 50 1723 1734 "DOM.ml" 50 1723 1737
+)
+"DOM.ml" 50 1723 1760 "DOM.ml" 50 1723 1782
+call(
+  stack
+)
+type(
+  string
+)
+"DOM.ml" 50 1723 1741 "DOM.ml" 50 1723 1782
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 51 1783 1795 "DOM.ml" 51 1783 1798
+type(
+  string
+)
+ident(
+  def str "DOM.ml" 52 1802 1806 "DOM.ml" 53 1833 1886
+)
+"DOM.ml" 51 1783 1787 "DOM.ml" 51 1783 1798
+type(
+  node
+)
+"DOM.ml" 52 1802 1806 "DOM.ml" 52 1802 1819
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Common_utils.output_spaces
+)
+"DOM.ml" 52 1802 1820 "DOM.ml" 52 1802 1824
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 49 1672 1707 "DOM.ml" 49 1672 1711
+)
+"DOM.ml" 52 1802 1825 "DOM.ml" 52 1802 1831
+type(
+  int
+)
+ident(
+  int_ref indent "DOM.ml" 49 1672 1695 "DOM.ml" 49 1672 1701
+)
+"DOM.ml" 52 1802 1806 "DOM.ml" 52 1802 1831
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 53 1833 1837 "DOM.ml" 53 1833 1844
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"DOM.ml" 53 1833 1845 "DOM.ml" 53 1833 1849
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 49 1672 1707 "DOM.ml" 49 1672 1711
+)
+"DOM.ml" 53 1833 1850 "DOM.ml" 53 1833 1863
+type(
+  (string -> unit, out_channel, unit) format
+)
+"DOM.ml" 53 1833 1865 "DOM.ml" 53 1833 1881
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.xml_quote_pcdata
+)
+"DOM.ml" 53 1833 1882 "DOM.ml" 53 1833 1885
+type(
+  string
+)
+ident(
+  int_ref str "DOM.ml" 51 1783 1795 "DOM.ml" 51 1783 1798
+)
+"DOM.ml" 53 1833 1864 "DOM.ml" 53 1833 1886
+call(
+  stack
+)
+type(
+  string
+)
+"DOM.ml" 53 1833 1837 "DOM.ml" 53 1833 1886
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 52 1802 1806 "DOM.ml" 53 1833 1886
+type(
+  unit
+)
+"DOM.ml" 54 1887 1899 "DOM.ml" 54 1887 1900
+type(
+  element
+)
+ident(
+  def e "DOM.ml" 54 1887 1904 "DOM.ml" 54 1887 1934
+)
+"DOM.ml" 54 1887 1891 "DOM.ml" 54 1887 1900
+type(
+  node
+)
+"DOM.ml" 54 1887 1904 "DOM.ml" 54 1887 1919
+type(
+  ?indent:int -> out_channel -> element -> unit
+)
+ident(
+  int_ref element_to_chan "DOM.ml" 55 1935 1939 "DOM.ml" 55 1935 1954
+)
+"DOM.ml" 54 1887 1921 "DOM.ml" 54 1887 1927
+type(
+  int
+)
+ident(
+  int_ref indent "DOM.ml" 49 1672 1695 "DOM.ml" 49 1672 1701
+)
+"DOM.ml" 54 1887 1928 "DOM.ml" 54 1887 1932
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 49 1672 1707 "DOM.ml" 49 1672 1711
+)
+"DOM.ml" 54 1887 1933 "DOM.ml" 54 1887 1934
+type(
+  element
+)
+ident(
+  int_ref e "DOM.ml" 54 1887 1899 "DOM.ml" 54 1887 1900
+)
+"DOM.ml" 54 1887 1904 "DOM.ml" 54 1887 1934
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 49 1672 1714 "DOM.ml" 54 1887 1934
+type(
+  node -> unit
+)
+"DOM.ml" 55 1935 1939 "DOM.ml" 55 1935 1954
+type(
+  ?indent:int -> out_channel -> element -> unit
+)
+ident(
+  def element_to_chan "DOM.ml" 49 1672 1672 --
+)
+"DOM.ml" 55 1935 1957 "DOM.ml" 55 1935 1963
+type(
+  int
+)
+"DOM.ml" 55 1935 1966 "DOM.ml" 55 1935 1967
+type(
+  int
+)
+type(
+  int
+)
+ident(
+  int_ref *sth* "DOM.ml" 55 1935 1966 "DOM.ml" 55 1935 1967
+)
+type(
+  int option
+)
+type(
+  int option
+)
+type(
+  int
+)
+ident(
+  def *sth* "DOM.ml" 55 1935 1966 "DOM.ml" 55 1935 1967
+)
+"DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+type(
+  out_channel
+)
+ident(
+  def chan "DOM.ml" 56 1974 1978 "DOM.ml" 84 2925 2928
+)
+"DOM.ml" 56 1974 1989 "DOM.ml" 56 1974 1993
+type(
+  string
+)
+ident(
+  def name "DOM.ml" 57 2038 2040 "DOM.ml" 84 2925 2928
+)
+"DOM.ml" 56 1974 2005 "DOM.ml" 56 1974 2010
+type(
+  attr list
+)
+ident(
+  def attrs "DOM.ml" 57 2038 2040 "DOM.ml" 84 2925 2928
+)
+"DOM.ml" 56 1974 2025 "DOM.ml" 56 1974 2033
+type(
+  node list
+)
+ident(
+  def children "DOM.ml" 57 2038 2040 "DOM.ml" 84 2925 2928
+)
+"DOM.ml" 56 1974 1978 "DOM.ml" 56 1974 2035
+type(
+  element
+)
+"DOM.ml" 57 2038 2040 "DOM.ml" 57 2038 2053
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Common_utils.output_spaces
+)
+"DOM.ml" 57 2038 2054 "DOM.ml" 57 2038 2058
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 57 2038 2059 "DOM.ml" 57 2038 2065
+type(
+  int
+)
+ident(
+  int_ref indent "DOM.ml" 55 1935 1957 "DOM.ml" 55 1935 1963
+)
+"DOM.ml" 57 2038 2040 "DOM.ml" 57 2038 2065
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 58 2067 2069 "DOM.ml" 58 2067 2076
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"DOM.ml" 58 2067 2077 "DOM.ml" 58 2067 2081
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 58 2067 2082 "DOM.ml" 58 2067 2087
+type(
+  (string -> unit, out_channel, unit) format
+)
+"DOM.ml" 58 2067 2088 "DOM.ml" 58 2067 2092
+type(
+  string
+)
+ident(
+  int_ref name "DOM.ml" 56 1974 1989 "DOM.ml" 56 1974 1993
+)
+"DOM.ml" 58 2067 2069 "DOM.ml" 58 2067 2092
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 59 2094 2096 "DOM.ml" 59 2094 2105
+type(
+  (attr -> unit) -> attr list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"DOM.ml" 59 2094 2112 "DOM.ml" 59 2094 2113
+type(
+  string
+)
+ident(
+  def n "DOM.ml" 59 2094 2121 "DOM.ml" 59 2094 2165
+)
+"DOM.ml" 59 2094 2115 "DOM.ml" 59 2094 2116
+type(
+  string
+)
+ident(
+  def v "DOM.ml" 59 2094 2121 "DOM.ml" 59 2094 2165
+)
+"DOM.ml" 59 2094 2111 "DOM.ml" 59 2094 2117
+type(
+  attr
+)
+"DOM.ml" 59 2094 2121 "DOM.ml" 59 2094 2128
+type(
+  out_channel ->
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"DOM.ml" 59 2094 2129 "DOM.ml" 59 2094 2133
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 59 2094 2134 "DOM.ml" 59 2094 2144
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"DOM.ml" 59 2094 2145 "DOM.ml" 59 2094 2146
+type(
+  string
+)
+ident(
+  int_ref n "DOM.ml" 59 2094 2112 "DOM.ml" 59 2094 2113
+)
+"DOM.ml" 59 2094 2148 "DOM.ml" 59 2094 2162
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.xml_quote_attr
+)
+"DOM.ml" 59 2094 2163 "DOM.ml" 59 2094 2164
+type(
+  string
+)
+ident(
+  int_ref v "DOM.ml" 59 2094 2115 "DOM.ml" 59 2094 2116
+)
+"DOM.ml" 59 2094 2147 "DOM.ml" 59 2094 2165
+call(
+  stack
+)
+type(
+  string
+)
+"DOM.ml" 59 2094 2121 "DOM.ml" 59 2094 2165
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 59 2094 2106 "DOM.ml" 59 2094 2166
+type(
+  attr -> unit
+)
+"DOM.ml" 59 2094 2167 "DOM.ml" 59 2094 2172
+type(
+  attr list
+)
+ident(
+  int_ref attrs "DOM.ml" 56 1974 2005 "DOM.ml" 56 1974 2010
+)
+"DOM.ml" 59 2094 2096 "DOM.ml" 59 2094 2172
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 60 2174 2179 "DOM.ml" 60 2174 2187
+type(
+  node list
+)
+ident(
+  int_ref children "DOM.ml" 56 1974 2025 "DOM.ml" 56 1974 2033
+)
+"DOM.ml" 60 2174 2188 "DOM.ml" 60 2174 2190
+type(
+  node list -> node list -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"DOM.ml" 60 2174 2191 "DOM.ml" 60 2174 2193
+type(
+  node list
+)
+"DOM.ml" 60 2174 2179 "DOM.ml" 60 2174 2193
+type(
+  bool
+)
+"DOM.ml" 61 2201 2205 "DOM.ml" 61 2201 2218
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"DOM.ml" 61 2201 2219 "DOM.ml" 61 2201 2223
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 61 2201 2224 "DOM.ml" 61 2201 2227
+type(
+  string
+)
+"DOM.ml" 61 2201 2205 "DOM.ml" 61 2201 2227
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 62 2229 2237 "DOM.ml" 62 2229 2259
+type(
+  bool ref
+)
+ident(
+  def last_child_was_element "DOM.ml" 63 2275 2279 "DOM.ml" 81 2856 2885
+)
+"DOM.ml" 62 2229 2262 "DOM.ml" 62 2229 2265
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"DOM.ml" 62 2229 2266 "DOM.ml" 62 2229 2271
+type(
+  bool
+)
+"DOM.ml" 62 2229 2262 "DOM.ml" 62 2229 2271
+type(
+  bool ref
+)
+"DOM.ml" 63 2275 2279 "DOM.ml" 63 2275 2288
+type(
+  (node -> unit) -> node list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"DOM.ml" 65 2306 2322 "DOM.ml" 65 2306 2323
+type(
+  element
+)
+"DOM.ml" 65 2306 2314 "DOM.ml" 65 2306 2323
+type(
+  node
+)
+"DOM.ml" 65 2306 2314 "DOM.ml" 65 2306 2332
+type(
+  node
+)
+ident(
+  def child "DOM.ml" 66 2336 2344 "DOM.ml" 68 2407 2458
+)
+"DOM.ml" 66 2336 2344 "DOM.ml" 66 2336 2366
+type(
+  bool ref
+)
+ident(
+  int_ref last_child_was_element "DOM.ml" 62 2229 2237 "DOM.ml" 62 2229 2259
+)
+"DOM.ml" 66 2336 2367 "DOM.ml" 66 2336 2369
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"DOM.ml" 66 2336 2370 "DOM.ml" 66 2336 2374
+type(
+  bool
+)
+"DOM.ml" 66 2336 2344 "DOM.ml" 66 2336 2374
+type(
+  unit
+)
+"DOM.ml" 67 2376 2384 "DOM.ml" 67 2376 2395
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"DOM.ml" 67 2376 2396 "DOM.ml" 67 2376 2400
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 67 2376 2401 "DOM.ml" 67 2376 2405
+type(
+  char
+)
+"DOM.ml" 67 2376 2384 "DOM.ml" 67 2376 2405
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 68 2407 2415 "DOM.ml" 68 2407 2427
+type(
+  ?indent:int -> out_channel -> node -> unit
+)
+ident(
+  int_ref node_to_chan "DOM.ml" 49 1672 1680 "DOM.ml" 49 1672 1692
+)
+"DOM.ml" 68 2407 2437 "DOM.ml" 68 2407 2443
+type(
+  int
+)
+ident(
+  int_ref indent "DOM.ml" 55 1935 1957 "DOM.ml" 55 1935 1963
+)
+"DOM.ml" 68 2407 2443 "DOM.ml" 68 2407 2444
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"DOM.ml" 68 2407 2444 "DOM.ml" 68 2407 2445
+type(
+  int
+)
+"DOM.ml" 68 2407 2436 "DOM.ml" 68 2407 2446
+type(
+  int
+)
+"DOM.ml" 68 2407 2447 "DOM.ml" 68 2407 2451
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 68 2407 2452 "DOM.ml" 68 2407 2457
+type(
+  node
+)
+ident(
+  int_ref child "DOM.ml" 65 2306 2314 "DOM.ml" 65 2306 2332
+)
+"DOM.ml" 68 2407 2415 "DOM.ml" 68 2407 2458
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 67 2376 2384 "DOM.ml" 68 2407 2458
+type(
+  unit
+)
+"DOM.ml" 66 2336 2344 "DOM.ml" 68 2407 2458
+type(
+  unit
+)
+"DOM.ml" 69 2459 2474 "DOM.ml" 69 2459 2475
+type(
+  string
+)
+"DOM.ml" 69 2459 2467 "DOM.ml" 69 2459 2475
+type(
+  node
+)
+"DOM.ml" 69 2459 2467 "DOM.ml" 69 2459 2484
+type(
+  node
+)
+ident(
+  def child "DOM.ml" 70 2488 2496 "DOM.ml" 71 2529 2580
+)
+"DOM.ml" 70 2488 2496 "DOM.ml" 70 2488 2518
+type(
+  bool ref
+)
+ident(
+  int_ref last_child_was_element "DOM.ml" 62 2229 2237 "DOM.ml" 62 2229 2259
+)
+"DOM.ml" 70 2488 2519 "DOM.ml" 70 2488 2521
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"DOM.ml" 70 2488 2522 "DOM.ml" 70 2488 2527
+type(
+  bool
+)
+"DOM.ml" 70 2488 2496 "DOM.ml" 70 2488 2527
+type(
+  unit
+)
+"DOM.ml" 71 2529 2537 "DOM.ml" 71 2529 2549
+type(
+  ?indent:int -> out_channel -> node -> unit
+)
+ident(
+  int_ref node_to_chan "DOM.ml" 49 1672 1680 "DOM.ml" 49 1672 1692
+)
+"DOM.ml" 71 2529 2559 "DOM.ml" 71 2529 2565
+type(
+  int
+)
+ident(
+  int_ref indent "DOM.ml" 55 1935 1957 "DOM.ml" 55 1935 1963
+)
+"DOM.ml" 71 2529 2565 "DOM.ml" 71 2529 2566
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"DOM.ml" 71 2529 2566 "DOM.ml" 71 2529 2567
+type(
+  int
+)
+"DOM.ml" 71 2529 2558 "DOM.ml" 71 2529 2568
+type(
+  int
+)
+"DOM.ml" 71 2529 2569 "DOM.ml" 71 2529 2573
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 71 2529 2574 "DOM.ml" 71 2529 2579
+type(
+  node
+)
+ident(
+  int_ref child "DOM.ml" 69 2459 2467 "DOM.ml" 69 2459 2484
+)
+"DOM.ml" 71 2529 2537 "DOM.ml" 71 2529 2580
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 70 2488 2496 "DOM.ml" 71 2529 2580
+type(
+  unit
+)
+"DOM.ml" 72 2581 2597 "DOM.ml" 72 2581 2598
+type(
+  string
+)
+"DOM.ml" 72 2581 2589 "DOM.ml" 72 2581 2598
+type(
+  node
+)
+"DOM.ml" 72 2581 2589 "DOM.ml" 72 2581 2607
+type(
+  node
+)
+ident(
+  def child "DOM.ml" 73 2611 2619 "DOM.ml" 75 2682 2733
+)
+"DOM.ml" 73 2611 2619 "DOM.ml" 73 2611 2641
+type(
+  bool ref
+)
+ident(
+  int_ref last_child_was_element "DOM.ml" 62 2229 2237 "DOM.ml" 62 2229 2259
+)
+"DOM.ml" 73 2611 2642 "DOM.ml" 73 2611 2644
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"DOM.ml" 73 2611 2645 "DOM.ml" 73 2611 2649
+type(
+  bool
+)
+"DOM.ml" 73 2611 2619 "DOM.ml" 73 2611 2649
+type(
+  unit
+)
+"DOM.ml" 74 2651 2659 "DOM.ml" 74 2651 2670
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"DOM.ml" 74 2651 2671 "DOM.ml" 74 2651 2675
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 74 2651 2676 "DOM.ml" 74 2651 2680
+type(
+  char
+)
+"DOM.ml" 74 2651 2659 "DOM.ml" 74 2651 2680
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 75 2682 2690 "DOM.ml" 75 2682 2702
+type(
+  ?indent:int -> out_channel -> node -> unit
+)
+ident(
+  int_ref node_to_chan "DOM.ml" 49 1672 1680 "DOM.ml" 49 1672 1692
+)
+"DOM.ml" 75 2682 2712 "DOM.ml" 75 2682 2718
+type(
+  int
+)
+ident(
+  int_ref indent "DOM.ml" 55 1935 1957 "DOM.ml" 55 1935 1963
+)
+"DOM.ml" 75 2682 2718 "DOM.ml" 75 2682 2719
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"DOM.ml" 75 2682 2719 "DOM.ml" 75 2682 2720
+type(
+  int
+)
+"DOM.ml" 75 2682 2711 "DOM.ml" 75 2682 2721
+type(
+  int
+)
+"DOM.ml" 75 2682 2722 "DOM.ml" 75 2682 2726
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 75 2682 2727 "DOM.ml" 75 2682 2732
+type(
+  node
+)
+ident(
+  int_ref child "DOM.ml" 72 2581 2589 "DOM.ml" 72 2581 2607
+)
+"DOM.ml" 75 2682 2690 "DOM.ml" 75 2682 2733
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 74 2651 2659 "DOM.ml" 75 2682 2733
+type(
+  unit
+)
+"DOM.ml" 73 2611 2619 "DOM.ml" 75 2682 2733
+type(
+  unit
+)
+"DOM.ml" 63 2275 2289 "DOM.ml" 76 2734 2739
+type(
+  node -> unit
+)
+"DOM.ml" 76 2734 2740 "DOM.ml" 76 2734 2748
+type(
+  node list
+)
+ident(
+  int_ref children "DOM.ml" 56 1974 2025 "DOM.ml" 56 1974 2033
+)
+"DOM.ml" 63 2275 2279 "DOM.ml" 76 2734 2748
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 77 2750 2757 "DOM.ml" 77 2750 2758
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"DOM.ml" 77 2750 2758 "DOM.ml" 77 2750 2780
+type(
+  bool ref
+)
+ident(
+  int_ref last_child_was_element "DOM.ml" 62 2229 2237 "DOM.ml" 62 2229 2259
+)
+"DOM.ml" 77 2750 2757 "DOM.ml" 77 2750 2780
+type(
+  bool
+)
+"DOM.ml" 78 2788 2794 "DOM.ml" 78 2788 2805
+type(
+  out_channel -> char -> unit
+)
+ident(
+  ext_ref Pervasives.output_char
+)
+"DOM.ml" 78 2788 2806 "DOM.ml" 78 2788 2810
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 78 2788 2811 "DOM.ml" 78 2788 2815
+type(
+  char
+)
+"DOM.ml" 78 2788 2794 "DOM.ml" 78 2788 2815
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 79 2817 2823 "DOM.ml" 79 2817 2836
+type(
+  out_channel -> int -> unit
+)
+ident(
+  ext_ref Common_utils.output_spaces
+)
+"DOM.ml" 79 2817 2837 "DOM.ml" 79 2817 2841
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 79 2817 2842 "DOM.ml" 79 2817 2848
+type(
+  int
+)
+ident(
+  int_ref indent "DOM.ml" 55 1935 1957 "DOM.ml" 55 1935 1963
+)
+"DOM.ml" 79 2817 2823 "DOM.ml" 79 2817 2848
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 77 2750 2786 "DOM.ml" 80 2849 2854
+type(
+  unit
+)
+"DOM.ml" 77 2750 2754 "DOM.ml" 80 2849 2854
+type(
+  unit
+)
+"DOM.ml" 81 2856 2860 "DOM.ml" 81 2856 2867
+type(
+  out_channel -> (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"DOM.ml" 81 2856 2868 "DOM.ml" 81 2856 2872
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 81 2856 2873 "DOM.ml" 81 2856 2880
+type(
+  (string -> unit, out_channel, unit) format
+)
+"DOM.ml" 81 2856 2881 "DOM.ml" 81 2856 2885
+type(
+  string
+)
+ident(
+  int_ref name "DOM.ml" 56 1974 1989 "DOM.ml" 56 1974 1993
+)
+"DOM.ml" 81 2856 2860 "DOM.ml" 81 2856 2885
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 77 2750 2754 "DOM.ml" 81 2856 2885
+type(
+  unit
+)
+"DOM.ml" 63 2275 2279 "DOM.ml" 81 2856 2885
+type(
+  unit
+)
+"DOM.ml" 62 2229 2233 "DOM.ml" 81 2856 2885
+type(
+  unit
+)
+"DOM.ml" 60 2174 2199 "DOM.ml" 82 2886 2889
+type(
+  unit
+)
+"DOM.ml" 83 2897 2901 "DOM.ml" 83 2897 2914
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"DOM.ml" 83 2897 2915 "DOM.ml" 83 2897 2919
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 55 1935 1969 "DOM.ml" 55 1935 1973
+)
+"DOM.ml" 83 2897 2920 "DOM.ml" 83 2897 2924
+type(
+  string
+)
+"DOM.ml" 82 2886 2895 "DOM.ml" 84 2925 2928
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 60 2174 2176 "DOM.ml" 84 2925 2928
+type(
+  unit
+)
+"DOM.ml" 59 2094 2096 "DOM.ml" 84 2925 2928
+type(
+  unit
+)
+"DOM.ml" 58 2067 2069 "DOM.ml" 84 2925 2928
+type(
+  unit
+)
+"DOM.ml" 57 2038 2040 "DOM.ml" 84 2925 2928
+type(
+  unit
+)
+"DOM.ml" 86 2930 2934 "DOM.ml" 86 2930 2945
+type(
+  out_channel -> element -> unit
+)
+ident(
+  def doc_to_chan "DOM.ml" 91 3065 3065 --
+)
+"DOM.ml" 86 2930 2946 "DOM.ml" 86 2930 2950
+type(
+  out_channel
+)
+ident(
+  def chan "DOM.ml" 86 2930 2951 "DOM.ml" 89 3044 3063
+)
+"DOM.ml" 86 2930 2951 "DOM.ml" 86 2930 2954
+type(
+  element
+)
+ident(
+  def doc "DOM.ml" 87 2957 2959 "DOM.ml" 89 3044 3063
+)
+"DOM.ml" 87 2957 2959 "DOM.ml" 87 2957 2966
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"DOM.ml" 87 2957 2967 "DOM.ml" 87 2957 2971
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 86 2930 2946 "DOM.ml" 86 2930 2950
+)
+"DOM.ml" 87 2957 2972 "DOM.ml" 87 2957 3014
+type(
+  (unit, out_channel, unit) format
+)
+"DOM.ml" 87 2957 2959 "DOM.ml" 87 2957 3014
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 88 3016 3018 "DOM.ml" 88 3016 3033
+type(
+  ?indent:int -> out_channel -> element -> unit
+)
+ident(
+  int_ref element_to_chan "DOM.ml" 55 1935 1939 "DOM.ml" 55 1935 1954
+)
+"DOM.ml" 88 3016 3034 "DOM.ml" 88 3016 3038
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 86 2930 2946 "DOM.ml" 86 2930 2950
+)
+"DOM.ml" 88 3016 3039 "DOM.ml" 88 3016 3042
+type(
+  element
+)
+ident(
+  int_ref doc "DOM.ml" 86 2930 2951 "DOM.ml" 86 2930 2954
+)
+"DOM.ml" 88 3016 3018 "DOM.ml" 88 3016 3042
+call(
+  stack
+)
+type(
+  unit
+)
+"DOM.ml" 89 3044 3046 "DOM.ml" 89 3044 3053
+type(
+  out_channel -> (unit, out_channel, unit) format -> unit
+)
+ident(
+  ext_ref Printf.fprintf
+)
+"DOM.ml" 89 3044 3054 "DOM.ml" 89 3044 3058
+type(
+  out_channel
+)
+ident(
+  int_ref chan "DOM.ml" 86 2930 2946 "DOM.ml" 86 2930 2950
+)
+"DOM.ml" 89 3044 3059 "DOM.ml" 89 3044 3063
+type(
+  (unit, out_channel, unit) format
+)
+"DOM.ml" 89 3044 3046 "DOM.ml" 89 3044 3063
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 88 3016 3018 "DOM.ml" 89 3044 3063
+type(
+  unit
+)
+"DOM.ml" 87 2957 2959 "DOM.ml" 89 3044 3063
+type(
+  unit
+)
+"DOM.ml" 91 3065 3069 "DOM.ml" 91 3065 3082
+type(
+  element -> string list -> node list
+)
+ident(
+  def path_to_nodes "DOM.ml" 122 3939 3939 --
+)
+"DOM.ml" 91 3065 3083 "DOM.ml" 91 3065 3086
+type(
+  element
+)
+ident(
+  def doc "DOM.ml" 91 3065 3087 "DOM.ml" 120 3932 3937
+)
+"DOM.ml" 91 3065 3087 "DOM.ml" 91 3065 3091
+type(
+  string list
+)
+ident(
+  def path "DOM.ml" 92 3094 3096 "DOM.ml" 120 3932 3937
+)
+"DOM.ml" 92 3094 3102 "DOM.ml" 92 3094 3106
+type(
+  string list
+)
+ident(
+  int_ref path "DOM.ml" 91 3065 3087 "DOM.ml" 91 3065 3091
+)
+"DOM.ml" 93 3112 3116 "DOM.ml" 93 3112 3118
+type(
+  string list
+)
+"DOM.ml" 93 3112 3122 "DOM.ml" 93 3112 3133
+type(
+  string -> node list
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"DOM.ml" 93 3112 3134 "DOM.ml" 93 3112 3161
+type(
+  string
+)
+"DOM.ml" 93 3112 3122 "DOM.ml" 93 3112 3161
+call(
+  tail
+)
+type(
+  node list
+)
+"DOM.ml" 94 3162 3166 "DOM.ml" 94 3162 3174
+type(
+  string
+)
+ident(
+  def top_name "DOM.ml" 95 3186 3190 "DOM.ml" 120 3932 3937
+)
+"DOM.ml" 94 3162 3178 "DOM.ml" 94 3162 3182
+type(
+  string list
+)
+ident(
+  def path "DOM.ml" 95 3186 3190 "DOM.ml" 120 3932 3937
+)
+"DOM.ml" 94 3162 3166 "DOM.ml" 94 3162 3182
+type(
+  string list
+)
+"DOM.ml" 95 3186 3193 "DOM.ml" 95 3186 3196
+type(
+  element
+)
+ident(
+  int_ref doc "DOM.ml" 91 3065 3083 "DOM.ml" 91 3065 3086
+)
+"DOM.ml" 95 3186 3193 "DOM.ml" 95 3186 3203
+type(
+  string
+)
+"DOM.ml" 95 3186 3204 "DOM.ml" 95 3186 3206
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"DOM.ml" 95 3186 3207 "DOM.ml" 95 3186 3215
+type(
+  string
+)
+ident(
+  int_ref top_name "DOM.ml" 94 3162 3166 "DOM.ml" 94 3162 3174
+)
+"DOM.ml" 95 3186 3193 "DOM.ml" 95 3186 3215
+type(
+  bool
+)
+"DOM.ml" 95 3186 3221 "DOM.ml" 95 3186 3223
+type(
+  node list
+)
+"DOM.ml" 97 3235 3249 "DOM.ml" 97 3235 3253
+type(
+  node list -> string list -> node list
+)
+"DOM.ml" 97 3235 3254 "DOM.ml" 97 3235 3259
+type(
+  node list
+)
+ident(
+  def nodes "DOM.ml" 97 3235 3260 "DOM.ml" 117 3821 3891
+)
+"DOM.ml" 97 3235 3260 "DOM.ml" 97 3235 3264
+type(
+  string list
+)
+ident(
+  def path "DOM.ml" 98 3267 3275 "DOM.ml" 117 3821 3891
+)
+"DOM.ml" 98 3267 3281 "DOM.ml" 98 3267 3285
+type(
+  string list
+)
+ident(
+  int_ref path "DOM.ml" 97 3235 3260 "DOM.ml" 97 3235 3264
+)
+"DOM.ml" 99 3291 3301 "DOM.ml" 99 3291 3303
+type(
+  string list
+)
+"DOM.ml" 99 3291 3307 "DOM.ml" 99 3291 3309
+type(
+  node list
+)
+"DOM.ml" 100 3310 3321 "DOM.ml" 100 3310 3322
+type(
+  string
+)
+ident(
+  def p "DOM.ml" 101 3327 3337 "DOM.ml" 107 3520 3537
+)
+"DOM.ml" 100 3310 3320 "DOM.ml" 100 3310 3323
+type(
+  string list
+)
+"DOM.ml" 101 3327 3337 "DOM.ml" 101 3327 3348
+type(
+  (node -> bool) -> node list -> node list
+)
+ident(
+  ext_ref List.filter
+)
+"DOM.ml" 103 3372 3393 "DOM.ml" 103 3372 3394
+type(
+  string
+)
+"DOM.ml" 103 3372 3386 "DOM.ml" 103 3372 3394
+type(
+  node
+)
+"DOM.ml" 103 3372 3398 "DOM.ml" 103 3372 3403
+type(
+  bool
+)
+"DOM.ml" 104 3404 3426 "DOM.ml" 104 3404 3427
+type(
+  string
+)
+"DOM.ml" 104 3404 3418 "DOM.ml" 104 3404 3427
+type(
+  node
+)
+"DOM.ml" 104 3404 3431 "DOM.ml" 104 3404 3436
+type(
+  bool
+)
+"DOM.ml" 105 3437 3459 "DOM.ml" 105 3437 3460
+type(
+  element
+)
+ident(
+  def e "DOM.ml" 105 3437 3461 "DOM.ml" 105 3437 3486
+)
+"DOM.ml" 105 3437 3451 "DOM.ml" 105 3437 3460
+type(
+  node
+)
+"DOM.ml" 105 3437 3466 "DOM.ml" 105 3437 3467
+type(
+  element
+)
+ident(
+  int_ref e "DOM.ml" 105 3437 3459 "DOM.ml" 105 3437 3460
+)
+"DOM.ml" 105 3437 3466 "DOM.ml" 105 3437 3474
+type(
+  string
+)
+"DOM.ml" 105 3437 3475 "DOM.ml" 105 3437 3476
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"DOM.ml" 105 3437 3477 "DOM.ml" 105 3437 3478
+type(
+  string
+)
+ident(
+  int_ref p "DOM.ml" 100 3310 3321 "DOM.ml" 100 3310 3322
+)
+"DOM.ml" 105 3437 3466 "DOM.ml" 105 3437 3478
+type(
+  bool
+)
+"DOM.ml" 105 3437 3482 "DOM.ml" 105 3437 3486
+type(
+  bool
+)
+"DOM.ml" 105 3437 3461 "DOM.ml" 105 3437 3486
+type(
+  bool
+)
+"DOM.ml" 106 3487 3509 "DOM.ml" 106 3487 3510
+type(
+  element
+)
+"DOM.ml" 106 3487 3501 "DOM.ml" 106 3487 3510
+type(
+  node
+)
+"DOM.ml" 106 3487 3514 "DOM.ml" 106 3487 3519
+type(
+  bool
+)
+"DOM.ml" 101 3327 3349 "DOM.ml" 107 3520 3531
+type(
+  node -> bool
+)
+"DOM.ml" 107 3520 3532 "DOM.ml" 107 3520 3537
+type(
+  node list
+)
+ident(
+  int_ref nodes "DOM.ml" 97 3235 3254 "DOM.ml" 97 3235 3259
+)
+"DOM.ml" 101 3327 3337 "DOM.ml" 107 3520 3537
+call(
+  tail
+)
+type(
+  node list
+)
+"DOM.ml" 108 3538 3548 "DOM.ml" 108 3538 3549
+type(
+  string
+)
+ident(
+  def p "DOM.ml" 109 3559 3569 "DOM.ml" 117 3821 3891
+)
+"DOM.ml" 108 3538 3553 "DOM.ml" 108 3538 3555
+type(
+  string list
+)
+ident(
+  def ps "DOM.ml" 109 3559 3569 "DOM.ml" 117 3821 3891
+)
+"DOM.ml" 108 3538 3548 "DOM.ml" 108 3538 3555
+type(
+  string list
+)
+"DOM.ml" 109 3559 3573 "DOM.ml" 109 3559 3581
+type(
+  node list list
+)
+"DOM.ml" 110 3584 3596 "DOM.ml" 110 3584 3606
+type(
+  (node -> node list option) -> node list -> node list list
+)
+ident(
+  ext_ref Common_utils.filter_map
+)
+"DOM.ml" 112 3632 3655 "DOM.ml" 112 3632 3656
+type(
+  string
+)
+"DOM.ml" 112 3632 3648 "DOM.ml" 112 3632 3656
+type(
+  node
+)
+"DOM.ml" 112 3632 3660 "DOM.ml" 112 3632 3664
+type(
+  node list option
+)
+"DOM.ml" 113 3665 3689 "DOM.ml" 113 3665 3690
+type(
+  string
+)
+"DOM.ml" 113 3665 3681 "DOM.ml" 113 3665 3690
+type(
+  node
+)
+"DOM.ml" 113 3665 3694 "DOM.ml" 113 3665 3698
+type(
+  node list option
+)
+"DOM.ml" 114 3699 3723 "DOM.ml" 114 3699 3724
+type(
+  element
+)
+ident(
+  def e "DOM.ml" 114 3699 3725 "DOM.ml" 114 3699 3763
+)
+"DOM.ml" 114 3699 3715 "DOM.ml" 114 3699 3724
+type(
+  node
+)
+"DOM.ml" 114 3699 3730 "DOM.ml" 114 3699 3731
+type(
+  element
+)
+ident(
+  int_ref e "DOM.ml" 114 3699 3723 "DOM.ml" 114 3699 3724
+)
+"DOM.ml" 114 3699 3730 "DOM.ml" 114 3699 3738
+type(
+  string
+)
+"DOM.ml" 114 3699 3739 "DOM.ml" 114 3699 3740
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"DOM.ml" 114 3699 3741 "DOM.ml" 114 3699 3742
+type(
+  string
+)
+ident(
+  int_ref p "DOM.ml" 108 3538 3548 "DOM.ml" 108 3538 3549
+)
+"DOM.ml" 114 3699 3730 "DOM.ml" 114 3699 3742
+type(
+  bool
+)
+"DOM.ml" 114 3699 3751 "DOM.ml" 114 3699 3752
+type(
+  element
+)
+ident(
+  int_ref e "DOM.ml" 114 3699 3723 "DOM.ml" 114 3699 3724
+)
+"DOM.ml" 114 3699 3751 "DOM.ml" 114 3699 3763
+type(
+  node list
+)
+"DOM.ml" 114 3699 3746 "DOM.ml" 114 3699 3763
+type(
+  node list option
+)
+"DOM.ml" 114 3699 3725 "DOM.ml" 114 3699 3763
+type(
+  node list option
+)
+"DOM.ml" 115 3764 3788 "DOM.ml" 115 3764 3789
+type(
+  element
+)
+"DOM.ml" 115 3764 3780 "DOM.ml" 115 3764 3789
+type(
+  node
+)
+"DOM.ml" 115 3764 3793 "DOM.ml" 115 3764 3797
+type(
+  node list option
+)
+"DOM.ml" 110 3584 3607 "DOM.ml" 116 3798 3811
+type(
+  node -> node list option
+)
+"DOM.ml" 116 3798 3812 "DOM.ml" 116 3798 3817
+type(
+  node list
+)
+ident(
+  int_ref nodes "DOM.ml" 97 3235 3254 "DOM.ml" 97 3235 3259
+)
+"DOM.ml" 110 3584 3596 "DOM.ml" 116 3798 3817
+call(
+  stack
+)
+type(
+  node list list
+)
+"DOM.ml" 117 3821 3831 "DOM.ml" 117 3821 3842
+type(
+  node list list -> node list
+)
+ident(
+  ext_ref List.concat
+)
+"DOM.ml" 117 3821 3844 "DOM.ml" 117 3821 3852
+type(
+  (node list -> node list) -> node list list -> node list list
+)
+ident(
+  ext_ref List.map
+)
+"DOM.ml" 117 3821 3858 "DOM.ml" 117 3821 3863
+type(
+  node list
+)
+ident(
+  def nodes "DOM.ml" 117 3821 3867 "DOM.ml" 117 3821 3880
+)
+"DOM.ml" 117 3821 3867 "DOM.ml" 117 3821 3871
+type(
+  node list -> string list -> node list
+)
+ident(
+  int_ref loop "DOM.ml" 97 3235 3249 "DOM.ml" 97 3235 3253
+)
+"DOM.ml" 117 3821 3872 "DOM.ml" 117 3821 3877
+type(
+  node list
+)
+ident(
+  int_ref nodes "DOM.ml" 117 3821 3858 "DOM.ml" 117 3821 3863
+)
+"DOM.ml" 117 3821 3878 "DOM.ml" 117 3821 3880
+type(
+  string list
+)
+ident(
+  int_ref ps "DOM.ml" 108 3538 3553 "DOM.ml" 108 3538 3555
+)
+"DOM.ml" 117 3821 3867 "DOM.ml" 117 3821 3880
+call(
+  tail
+)
+type(
+  node list
+)
+"DOM.ml" 117 3821 3853 "DOM.ml" 117 3821 3881
+type(
+  node list -> node list
+)
+"DOM.ml" 117 3821 3882 "DOM.ml" 117 3821 3890
+type(
+  node list list
+)
+ident(
+  int_ref children "DOM.ml" 109 3559 3573 "DOM.ml" 109 3559 3581
+)
+"DOM.ml" 117 3821 3843 "DOM.ml" 117 3821 3891
+call(
+  stack
+)
+type(
+  node list list
+)
+"DOM.ml" 117 3821 3831 "DOM.ml" 117 3821 3891
+call(
+  tail
+)
+type(
+  node list
+)
+"DOM.ml" 109 3559 3569 "DOM.ml" 117 3821 3891
+type(
+  node list
+)
+"DOM.ml" 98 3267 3275 "DOM.ml" 117 3821 3891
+type(
+  node list
+)
+"DOM.ml" 119 3901 3907 "DOM.ml" 119 3901 3911
+type(
+  node list -> string list -> node list
+)
+ident(
+  int_ref loop "DOM.ml" 97 3235 3249 "DOM.ml" 97 3235 3253
+)
+"DOM.ml" 119 3901 3912 "DOM.ml" 119 3901 3915
+type(
+  element
+)
+ident(
+  int_ref doc "DOM.ml" 91 3065 3083 "DOM.ml" 91 3065 3086
+)
+"DOM.ml" 119 3901 3912 "DOM.ml" 119 3901 3926
+type(
+  node list
+)
+"DOM.ml" 119 3901 3927 "DOM.ml" 119 3901 3931
+type(
+  string list
+)
+ident(
+  int_ref path "DOM.ml" 94 3162 3178 "DOM.ml" 94 3162 3182
+)
+"DOM.ml" 119 3901 3907 "DOM.ml" 119 3901 3931
+call(
+  tail
+)
+type(
+  node list
+)
+"DOM.ml" 96 3224 3233 "DOM.ml" 120 3932 3937
+type(
+  node list
+)
+"DOM.ml" 95 3186 3190 "DOM.ml" 120 3932 3937
+type(
+  node list
+)
+"DOM.ml" 92 3094 3096 "DOM.ml" 120 3932 3937
+type(
+  node list
+)
+"DOM.ml" 122 3939 3943 "DOM.ml" 122 3939 3967
+type(
+  node list -> attr -> node list
+)
+ident(
+  def filter_node_list_by_attr "DOM.ml" 129 4136 4136 --
+)
+"DOM.ml" 122 3939 3968 "DOM.ml" 122 3939 3973
+type(
+  node list
+)
+ident(
+  def nodes "DOM.ml" 122 3939 3974 "DOM.ml" 127 4125 4134
+)
+"DOM.ml" 122 3939 3974 "DOM.ml" 122 3939 3978
+type(
+  attr
+)
+ident(
+  def attr "DOM.ml" 123 3981 3983 "DOM.ml" 127 4125 4134
+)
+"DOM.ml" 123 3981 3983 "DOM.ml" 123 3981 3994
+type(
+  (node -> bool) -> node list -> node list
+)
+ident(
+  ext_ref List.filter
+)
+"DOM.ml" 125 4010 4036 "DOM.ml" 125 4010 4041
+type(
+  attr list
+)
+ident(
+  def attrs "DOM.ml" 125 4010 4044 "DOM.ml" 125 4010 4076
+)
+"DOM.ml" 125 4010 4024 "DOM.ml" 125 4010 4043
+type(
+  element
+)
+"DOM.ml" 125 4010 4016 "DOM.ml" 125 4010 4043
+type(
+  node
+)
+"DOM.ml" 125 4010 4049 "DOM.ml" 125 4010 4057
+type(
+  attr -> attr list -> bool
+)
+ident(
+  ext_ref List.mem
+)
+"DOM.ml" 125 4010 4058 "DOM.ml" 125 4010 4062
+type(
+  attr
+)
+ident(
+  int_ref attr "DOM.ml" 122 3939 3974 "DOM.ml" 122 3939 3978
+)
+"DOM.ml" 125 4010 4063 "DOM.ml" 125 4010 4068
+type(
+  attr list
+)
+ident(
+  int_ref attrs "DOM.ml" 125 4010 4036 "DOM.ml" 125 4010 4041
+)
+"DOM.ml" 125 4010 4049 "DOM.ml" 125 4010 4068
+call(
+  stack
+)
+type(
+  bool
+)
+"DOM.ml" 125 4010 4072 "DOM.ml" 125 4010 4076
+type(
+  bool
+)
+"DOM.ml" 125 4010 4044 "DOM.ml" 125 4010 4076
+type(
+  bool
+)
+"DOM.ml" 126 4077 4091 "DOM.ml" 126 4077 4092
+type(
+  element
+)
+"DOM.ml" 126 4077 4083 "DOM.ml" 126 4077 4092
+type(
+  node
+)
+"DOM.ml" 126 4077 4102 "DOM.ml" 126 4077 4103
+type(
+  string
+)
+"DOM.ml" 126 4077 4095 "DOM.ml" 126 4077 4103
+type(
+  node
+)
+"DOM.ml" 126 4077 4083 "DOM.ml" 126 4077 4103
+type(
+  node
+)
+"DOM.ml" 126 4077 4114 "DOM.ml" 126 4077 4115
+type(
+  string
+)
+"DOM.ml" 126 4077 4106 "DOM.ml" 126 4077 4115
+type(
+  node
+)
+"DOM.ml" 126 4077 4083 "DOM.ml" 126 4077 4115
+type(
+  node
+)
+"DOM.ml" 126 4077 4119 "DOM.ml" 126 4077 4124
+type(
+  bool
+)
+"DOM.ml" 123 3981 3995 "DOM.ml" 127 4125 4128
+type(
+  node -> bool
+)
+"DOM.ml" 127 4125 4129 "DOM.ml" 127 4125 4134
+type(
+  node list
+)
+ident(
+  int_ref nodes "DOM.ml" 122 3939 3968 "DOM.ml" 122 3939 3973
+)
+"DOM.ml" 123 3981 3983 "DOM.ml" 127 4125 4134
+call(
+  tail
+)
+type(
+  node list
+)
+"DOM.ml" 129 4136 4140 "DOM.ml" 129 4136 4157
+type(
+  node list -> attr -> node
+)
+ident(
+  def find_node_by_attr "DOM.ml" 134 4261 4261 --
+)
+"DOM.ml" 129 4136 4158 "DOM.ml" 129 4136 4163
+type(
+  node list
+)
+ident(
+  def nodes "DOM.ml" 129 4136 4164 "DOM.ml" 132 4246 4259
+)
+"DOM.ml" 129 4136 4164 "DOM.ml" 129 4136 4168
+type(
+  attr
+)
+ident(
+  def attr "DOM.ml" 130 4171 4173 "DOM.ml" 132 4246 4259
+)
+"DOM.ml" 130 4171 4179 "DOM.ml" 130 4171 4203
+type(
+  node list -> attr -> node list
+)
+ident(
+  int_ref filter_node_list_by_attr "DOM.ml" 122 3939 3943 "DOM.ml" 122 3939 3967
+)
+"DOM.ml" 130 4171 4204 "DOM.ml" 130 4171 4209
+type(
+  node list
+)
+ident(
+  int_ref nodes "DOM.ml" 129 4136 4158 "DOM.ml" 129 4136 4163
+)
+"DOM.ml" 130 4171 4210 "DOM.ml" 130 4171 4214
+type(
+  attr
+)
+ident(
+  int_ref attr "DOM.ml" 129 4136 4164 "DOM.ml" 129 4136 4168
+)
+"DOM.ml" 130 4171 4179 "DOM.ml" 130 4171 4214
+call(
+  stack
+)
+type(
+  node list
+)
+"DOM.ml" 131 4220 4224 "DOM.ml" 131 4220 4226
+type(
+  node list
+)
+"DOM.ml" 131 4220 4230 "DOM.ml" 131 4220 4235
+type(
+  exn -> node
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"DOM.ml" 131 4220 4236 "DOM.ml" 131 4220 4245
+type(
+  exn
+)
+"DOM.ml" 131 4220 4230 "DOM.ml" 131 4220 4245
+type(
+  node
+)
+"DOM.ml" 132 4246 4250 "DOM.ml" 132 4246 4251
+type(
+  node
+)
+ident(
+  def x "DOM.ml" 132 4246 4258 "DOM.ml" 132 4246 4259
+)
+"DOM.ml" 132 4246 4253 "DOM.ml" 132 4246 4254
+type(
+  node list
+)
+"DOM.ml" 132 4246 4250 "DOM.ml" 132 4246 4254
+type(
+  node list
+)
+"DOM.ml" 132 4246 4258 "DOM.ml" 132 4246 4259
+type(
+  node
+)
+ident(
+  int_ref x "DOM.ml" 132 4246 4250 "DOM.ml" 132 4246 4251
+)
+"DOM.ml" 130 4171 4173 "DOM.ml" 132 4246 4259
+type(
+  node
+)
+"DOM.ml" 134 4261 4265 "DOM.ml" 134 4261 4276
+type(
+  attr -> node -> unit
+)
+ident(
+  def append_attr "DOM.ml" 138 4397 4397 --
+)
+"DOM.ml" 134 4261 4277 "DOM.ml" 134 4261 4281
+type(
+  attr
+)
+ident(
+  def attr "DOM.ml" 134 4261 4284 "DOM.ml" 136 4347 4395
+)
+"DOM.ml" 135 4293 4304 "DOM.ml" 135 4293 4305
+type(
+  string
+)
+"DOM.ml" 135 4293 4297 "DOM.ml" 135 4293 4305
+type(
+  node
+)
+"DOM.ml" 135 4293 4316 "DOM.ml" 135 4293 4317
+type(
+  string
+)
+"DOM.ml" 135 4293 4308 "DOM.ml" 135 4293 4317
+type(
+  node
+)
+"DOM.ml" 135 4293 4297 "DOM.ml" 135 4293 4317
+type(
+  node
+)
+"DOM.ml" 135 4293 4321 "DOM.ml" 135 4293 4332
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"DOM.ml" 135 4293 4333 "DOM.ml" 135 4293 4346
+type(
+  string
+)
+"DOM.ml" 135 4293 4321 "DOM.ml" 135 4293 4346
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 136 4347 4359 "DOM.ml" 136 4347 4360
+type(
+  element
+)
+ident(
+  def e "DOM.ml" 136 4347 4364 "DOM.ml" 136 4347 4395
+)
+"DOM.ml" 136 4347 4351 "DOM.ml" 136 4347 4360
+type(
+  node
+)
+"DOM.ml" 136 4347 4364 "DOM.ml" 136 4347 4365
+type(
+  element
+)
+ident(
+  int_ref e "DOM.ml" 136 4347 4359 "DOM.ml" 136 4347 4360
+)
+"DOM.ml" 136 4347 4377 "DOM.ml" 136 4347 4378
+type(
+  element
+)
+ident(
+  int_ref e "DOM.ml" 136 4347 4359 "DOM.ml" 136 4347 4360
+)
+"DOM.ml" 136 4347 4377 "DOM.ml" 136 4347 4386
+type(
+  attr list
+)
+"DOM.ml" 136 4347 4387 "DOM.ml" 136 4347 4388
+type(
+  attr list -> attr list -> attr list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"DOM.ml" 136 4347 4390 "DOM.ml" 136 4347 4394
+type(
+  attr
+)
+ident(
+  int_ref attr "DOM.ml" 134 4261 4277 "DOM.ml" 134 4261 4281
+)
+"DOM.ml" 136 4347 4389 "DOM.ml" 136 4347 4395
+type(
+  attr list
+)
+"DOM.ml" 136 4347 4377 "DOM.ml" 136 4347 4395
+call(
+  stack
+)
+type(
+  attr list
+)
+"DOM.ml" 136 4347 4364 "DOM.ml" 136 4347 4395
+type(
+  unit
+)
+"DOM.ml" 134 4261 4284 "DOM.ml" 136 4347 4395
+type(
+  node -> unit
+)
+"DOM.ml" 138 4397 4401 "DOM.ml" 138 4397 4413
+type(
+  node -> node -> unit
+)
+ident(
+  def append_child "DOM.ml" 140 4486 4541 --
+)
+"DOM.ml" 138 4397 4414 "DOM.ml" 138 4397 4419
+type(
+  node
+)
+ident(
+  def child "DOM.ml" 138 4397 4422 "DOM.ml" 140 4486 4541
+)
+"DOM.ml" 139 4431 4442 "DOM.ml" 139 4431 4443
+type(
+  string
+)
+"DOM.ml" 139 4431 4435 "DOM.ml" 139 4431 4443
+type(
+  node
+)
+"DOM.ml" 139 4431 4454 "DOM.ml" 139 4431 4455
+type(
+  string
+)
+"DOM.ml" 139 4431 4446 "DOM.ml" 139 4431 4455
+type(
+  node
+)
+"DOM.ml" 139 4431 4435 "DOM.ml" 139 4431 4455
+type(
+  node
+)
+"DOM.ml" 139 4431 4459 "DOM.ml" 139 4431 4470
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.invalid_arg
+)
+"DOM.ml" 139 4431 4471 "DOM.ml" 139 4431 4485
+type(
+  string
+)
+"DOM.ml" 139 4431 4459 "DOM.ml" 139 4431 4485
+call(
+  tail
+)
+type(
+  unit
+)
+"DOM.ml" 140 4486 4498 "DOM.ml" 140 4486 4499
+type(
+  element
+)
+ident(
+  def e "DOM.ml" 140 4486 4503 "DOM.ml" 140 4486 4541
+)
+"DOM.ml" 140 4486 4490 "DOM.ml" 140 4486 4499
+type(
+  node
+)
+"DOM.ml" 140 4486 4503 "DOM.ml" 140 4486 4504
+type(
+  element
+)
+ident(
+  int_ref e "DOM.ml" 140 4486 4498 "DOM.ml" 140 4486 4499
+)
+"DOM.ml" 140 4486 4519 "DOM.ml" 140 4486 4520
+type(
+  element
+)
+ident(
+  int_ref e "DOM.ml" 140 4486 4498 "DOM.ml" 140 4486 4499
+)
+"DOM.ml" 140 4486 4519 "DOM.ml" 140 4486 4531
+type(
+  node list
+)
+"DOM.ml" 140 4486 4532 "DOM.ml" 140 4486 4533
+type(
+  node list -> node list -> node list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"DOM.ml" 140 4486 4535 "DOM.ml" 140 4486 4540
+type(
+  node
+)
+ident(
+  int_ref child "DOM.ml" 138 4397 4414 "DOM.ml" 138 4397 4419
+)
+"DOM.ml" 140 4486 4534 "DOM.ml" 140 4486 4541
+type(
+  node list
+)
+"DOM.ml" 140 4486 4519 "DOM.ml" 140 4486 4541
+call(
+  stack
+)
+type(
+  node list
+)
+"DOM.ml" 140 4486 4503 "DOM.ml" 140 4486 4541
+type(
+  unit
+)
+"DOM.ml" 138 4397 4422 "DOM.ml" 140 4486 4541
+type(
+  node -> unit
+)

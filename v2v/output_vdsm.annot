@@ -1,0 +1,2156 @@
+"output_vdsm.ml" 36 1002 1020 "output_vdsm.ml" 36 1002 1022
+type(
+  string
+)
+"output_vdsm.ml" 36 1002 1023 "output_vdsm.ml" 36 1002 1034
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 36 1002 1035 "output_vdsm.ml" 36 1002 1041
+type(
+  Types.vmtype option
+)
+"output_vdsm.ml" 36 1002 1042 "output_vdsm.ml" 36 1002 1054
+type(
+  Types.output_allocation
+)
+"output_vdsm.ml" 41 1104 1108 "output_vdsm.ml" 41 1104 1115
+type(
+  (string -> string -> string -> string -> string -> string -> string, 
+   unit, string)
+  format ->
+  string -> string -> string -> string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_vdsm.ml" 41 1104 1116 "output_vdsm.ml" 41 1104 1177
+type(
+  (string -> string -> string -> string -> string -> string -> string, 
+   unit, string)
+  format
+)
+"output_vdsm.ml" 41 1104 1178 "output_vdsm.ml" 41 1104 1180
+type(
+  string
+)
+"output_vdsm.ml" 42 1181 1188 "output_vdsm.ml" 42 1181 1201
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"output_vdsm.ml" 42 1181 1202 "output_vdsm.ml" 42 1181 1204
+type(
+  string
+)
+"output_vdsm.ml" 43 1205 1215 "output_vdsm.ml" 43 1205 1223
+type(
+  (string -> string) -> string list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"output_vdsm.ml" 43 1205 1225 "output_vdsm.ml" 43 1205 1232
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_vdsm.ml" 43 1205 1233 "output_vdsm.ml" 43 1205 1256
+type(
+  (string -> string, unit, string) format
+)
+"output_vdsm.ml" 43 1205 1224 "output_vdsm.ml" 43 1205 1257
+call(
+  stack
+)
+type(
+  string -> string
+)
+"output_vdsm.ml" 43 1205 1258 "output_vdsm.ml" 43 1205 1269
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 43 1205 1258 "output_vdsm.ml" 43 1205 1281
+type(
+  string list
+)
+"output_vdsm.ml" 43 1205 1214 "output_vdsm.ml" 43 1205 1282
+call(
+  stack
+)
+type(
+  string list
+)
+"output_vdsm.ml" 42 1181 1187 "output_vdsm.ml" 43 1205 1283
+call(
+  stack
+)
+type(
+  string
+)
+"output_vdsm.ml" 44 1284 1291 "output_vdsm.ml" 44 1284 1304
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"output_vdsm.ml" 44 1284 1305 "output_vdsm.ml" 44 1284 1307
+type(
+  string
+)
+"output_vdsm.ml" 45 1308 1318 "output_vdsm.ml" 45 1308 1326
+type(
+  (string -> string) -> string list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"output_vdsm.ml" 45 1308 1328 "output_vdsm.ml" 45 1308 1335
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_vdsm.ml" 45 1308 1336 "output_vdsm.ml" 45 1308 1357
+type(
+  (string -> string, unit, string) format
+)
+"output_vdsm.ml" 45 1308 1327 "output_vdsm.ml" 45 1308 1358
+call(
+  stack
+)
+type(
+  string -> string
+)
+"output_vdsm.ml" 45 1308 1359 "output_vdsm.ml" 45 1308 1370
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 45 1308 1359 "output_vdsm.ml" 45 1308 1380
+type(
+  string list
+)
+"output_vdsm.ml" 45 1308 1317 "output_vdsm.ml" 45 1308 1381
+call(
+  stack
+)
+type(
+  string list
+)
+"output_vdsm.ml" 44 1284 1290 "output_vdsm.ml" 45 1308 1382
+call(
+  stack
+)
+type(
+  string
+)
+"output_vdsm.ml" 46 1383 1389 "output_vdsm.ml" 46 1383 1400
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 46 1383 1389 "output_vdsm.ml" 46 1383 1408
+type(
+  string
+)
+"output_vdsm.ml" 47 1409 1415 "output_vdsm.ml" 47 1409 1426
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 47 1409 1415 "output_vdsm.ml" 47 1409 1437
+type(
+  string
+)
+"output_vdsm.ml" 48 1438 1451 "output_vdsm.ml" 48 1438 1457
+type(
+  Types.vmtype option
+)
+"output_vdsm.ml" 49 1463 1471 "output_vdsm.ml" 49 1463 1475
+type(
+  Types.vmtype option
+)
+"output_vdsm.ml" 49 1463 1479 "output_vdsm.ml" 49 1463 1481
+type(
+  string
+)
+"output_vdsm.ml" 50 1482 1495 "output_vdsm.ml" 50 1482 1501
+type(
+  Types.vmtype
+)
+"output_vdsm.ml" 50 1482 1490 "output_vdsm.ml" 50 1482 1501
+type(
+  Types.vmtype option
+)
+"output_vdsm.ml" 50 1482 1505 "output_vdsm.ml" 50 1482 1523
+type(
+  string
+)
+"output_vdsm.ml" 51 1524 1537 "output_vdsm.ml" 51 1524 1544
+type(
+  Types.vmtype
+)
+"output_vdsm.ml" 51 1524 1532 "output_vdsm.ml" 51 1524 1544
+type(
+  Types.vmtype option
+)
+"output_vdsm.ml" 51 1524 1548 "output_vdsm.ml" 51 1524 1567
+type(
+  string
+)
+"output_vdsm.ml" 48 1438 1444 "output_vdsm.ml" 51 1524 1568
+type(
+  string
+)
+"output_vdsm.ml" 41 1104 1108 "output_vdsm.ml" 51 1524 1568
+call(
+  tail
+)
+type(
+  string
+)
+type(
+  string
+)
+"output_vdsm.ml" 53 1570 1602 "output_vdsm.ml" 53 1570 1612
+type(
+  Types.target_firmware
+)
+"output_vdsm.ml" 53 1570 1600 "output_vdsm.ml" 53 1570 1614
+type(
+  Types.target_firmware list
+)
+type(
+  Types.target_firmware list
+)
+"output_vdsm.ml" 58 1717 1748 "output_vdsm.ml" 58 1717 1753
+type(
+  bool
+)
+type(
+  bool
+)
+"output_vdsm.ml" 61 1787 1809 "output_vdsm.ml" 61 1787 1811
+type(
+  string
+)
+"output_vdsm.ml" 62 1812 1836 "output_vdsm.ml" 62 1812 1838
+type(
+  string
+)
+"output_vdsm.ml" 76 2370 2395 "output_vdsm.ml" 76 2370 2396
+type(
+  Types.source
+)
+"output_vdsm.ml" 76 2370 2397 "output_vdsm.ml" 76 2370 2404
+type(
+  Types.target list
+)
+ident(
+  def targets "output_vdsm.ml" 77 2407 2411 "output_vdsm.ml" 155 5517 5528
+)
+"output_vdsm.ml" 77 2407 2414 "output_vdsm.ml" 77 2407 2425
+type(
+  string list -> int
+)
+ident(
+  ext_ref List.length
+)
+"output_vdsm.ml" 77 2407 2426 "output_vdsm.ml" 77 2407 2437
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 77 2407 2426 "output_vdsm.ml" 77 2407 2449
+type(
+  string list
+)
+"output_vdsm.ml" 77 2407 2414 "output_vdsm.ml" 77 2407 2449
+call(
+  stack
+)
+type(
+  int
+)
+"output_vdsm.ml" 77 2407 2450 "output_vdsm.ml" 77 2407 2452
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_vdsm.ml" 77 2407 2453 "output_vdsm.ml" 77 2407 2464
+type(
+  Types.target list -> int
+)
+ident(
+  ext_ref List.length
+)
+"output_vdsm.ml" 77 2407 2465 "output_vdsm.ml" 77 2407 2472
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_vdsm.ml" 76 2370 2397 "output_vdsm.ml" 76 2370 2404
+)
+"output_vdsm.ml" 77 2407 2453 "output_vdsm.ml" 77 2407 2472
+call(
+  stack
+)
+type(
+  int
+)
+"output_vdsm.ml" 77 2407 2414 "output_vdsm.ml" 77 2407 2472
+type(
+  bool
+)
+"output_vdsm.ml" 77 2407 2473 "output_vdsm.ml" 77 2407 2475
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( || )
+)
+"output_vdsm.ml" 78 2476 2482 "output_vdsm.ml" 78 2476 2493
+type(
+  string list -> int
+)
+ident(
+  ext_ref List.length
+)
+"output_vdsm.ml" 78 2476 2494 "output_vdsm.ml" 78 2476 2505
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 78 2476 2494 "output_vdsm.ml" 78 2476 2515
+type(
+  string list
+)
+"output_vdsm.ml" 78 2476 2482 "output_vdsm.ml" 78 2476 2515
+call(
+  stack
+)
+type(
+  int
+)
+"output_vdsm.ml" 78 2476 2516 "output_vdsm.ml" 78 2476 2518
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_vdsm.ml" 78 2476 2519 "output_vdsm.ml" 78 2476 2530
+type(
+  Types.target list -> int
+)
+ident(
+  ext_ref List.length
+)
+"output_vdsm.ml" 78 2476 2531 "output_vdsm.ml" 78 2476 2538
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_vdsm.ml" 76 2370 2397 "output_vdsm.ml" 76 2370 2404
+)
+"output_vdsm.ml" 78 2476 2519 "output_vdsm.ml" 78 2476 2538
+call(
+  stack
+)
+type(
+  int
+)
+"output_vdsm.ml" 78 2476 2482 "output_vdsm.ml" 78 2476 2538
+type(
+  bool
+)
+"output_vdsm.ml" 77 2407 2414 "output_vdsm.ml" 78 2476 2538
+type(
+  bool
+)
+"output_vdsm.ml" 79 2544 2550 "output_vdsm.ml" 79 2544 2555
+type(
+  ?exit_code:int -> (int -> unit, unit, string, unit) format4 -> int -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_vdsm.ml" 79 2544 2557 "output_vdsm.ml" 79 2544 2559
+type(
+  (int -> unit, unit, string, string, string, unit) format6 ->
+  (int -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_vdsm.ml" 79 2544 2559 "output_vdsm.ml" 79 2544 2720
+type(
+  (int -> unit, unit, string, string, string, unit) format6
+)
+"output_vdsm.ml" 79 2544 2556 "output_vdsm.ml" 79 2544 2721
+type(
+  (int -> unit, unit, string, unit) format4
+)
+"output_vdsm.ml" 80 2722 2731 "output_vdsm.ml" 80 2722 2742
+type(
+  Types.target list -> int
+)
+ident(
+  ext_ref List.length
+)
+"output_vdsm.ml" 80 2722 2743 "output_vdsm.ml" 80 2722 2750
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_vdsm.ml" 76 2370 2397 "output_vdsm.ml" 76 2370 2404
+)
+"output_vdsm.ml" 80 2722 2730 "output_vdsm.ml" 80 2722 2751
+call(
+  stack
+)
+type(
+  int
+)
+"output_vdsm.ml" 79 2544 2550 "output_vdsm.ml" 80 2722 2751
+call(
+  stack
+)
+type(
+  unit
+)
+"output_vdsm.ml" 77 2407 2411 "output_vdsm.ml" 80 2722 2751
+type(
+  unit
+)
+"output_vdsm.ml" 82 2754 2762 "output_vdsm.ml" 82 2754 2764
+type(
+  string
+)
+"output_vdsm.ml" 82 2754 2766 "output_vdsm.ml" 82 2754 2770
+type(
+  string
+)
+"output_vdsm.ml" 82 2754 2762 "output_vdsm.ml" 82 2754 2770
+type(
+  string * string
+)
+"output_vdsm.ml" 83 2773 2783 "output_vdsm.ml" 83 2773 2789
+type(
+  string list
+)
+"output_vdsm.ml" 83 2773 2792 "output_vdsm.ml" 83 2773 2805
+type(
+  string -> string -> string list
+)
+ident(
+  ext_ref Common_utils.string_nsplit
+)
+"output_vdsm.ml" 83 2773 2806 "output_vdsm.ml" 83 2773 2809
+type(
+  string
+)
+"output_vdsm.ml" 83 2773 2810 "output_vdsm.ml" 83 2773 2812
+type(
+  string
+)
+"output_vdsm.ml" 83 2773 2792 "output_vdsm.ml" 83 2773 2812
+call(
+  stack
+)
+type(
+  string list
+)
+"output_vdsm.ml" 84 2847 2857 "output_vdsm.ml" 84 2847 2863
+type(
+  string list
+)
+"output_vdsm.ml" 84 2847 2866 "output_vdsm.ml" 84 2847 2874
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"output_vdsm.ml" 84 2847 2875 "output_vdsm.ml" 84 2847 2881
+type(
+  string list
+)
+ident(
+  int_ref fields "output_vdsm.ml" 83 2773 2783 "output_vdsm.ml" 83 2773 2789
+)
+"output_vdsm.ml" 84 2847 2866 "output_vdsm.ml" 84 2847 2881
+call(
+  stack
+)
+type(
+  string list
+)
+"output_vdsm.ml" 85 2921 2933 "output_vdsm.ml" 85 2921 2939
+type(
+  string list
+)
+ident(
+  int_ref fields "output_vdsm.ml" 84 2847 2857 "output_vdsm.ml" 84 2847 2863
+)
+"output_vdsm.ml" 86 2945 2953 "output_vdsm.ml" 86 2945 2955
+type(
+  string
+)
+"output_vdsm.ml" 86 2945 2959 "output_vdsm.ml" 86 2945 2963
+type(
+  string
+)
+ident(
+  def uuid "output_vdsm.ml" 88 3041 3051 "output_vdsm.ml" 90 3137 3153
+)
+"output_vdsm.ml" 86 2945 2967 "output_vdsm.ml" 86 2945 2971
+type(
+  string list
+)
+ident(
+  def rest "output_vdsm.ml" 88 3041 3051 "output_vdsm.ml" 90 3137 3153
+)
+"output_vdsm.ml" 86 2945 2959 "output_vdsm.ml" 86 2945 2971
+type(
+  string list
+)
+"output_vdsm.ml" 86 2945 2953 "output_vdsm.ml" 86 2945 2971
+type(
+  string list
+)
+"output_vdsm.ml" 87 3020 3028 "output_vdsm.ml" 87 3020 3032
+type(
+  string
+)
+ident(
+  def uuid "output_vdsm.ml" 88 3041 3051 "output_vdsm.ml" 90 3137 3153
+)
+"output_vdsm.ml" 87 3020 3036 "output_vdsm.ml" 87 3020 3040
+type(
+  string list
+)
+ident(
+  def rest "output_vdsm.ml" 88 3041 3051 "output_vdsm.ml" 90 3137 3153
+)
+"output_vdsm.ml" 87 3020 3028 "output_vdsm.ml" 87 3020 3040
+type(
+  string list
+)
+"output_vdsm.ml" 86 2945 2953 "output_vdsm.ml" 87 3020 3040
+type(
+  string list
+)
+"output_vdsm.ml" 88 3041 3056 "output_vdsm.ml" 88 3041 3069
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"output_vdsm.ml" 88 3041 3070 "output_vdsm.ml" 88 3041 3074
+type(
+  string
+)
+ident(
+  int_ref uuid "output_vdsm.ml" 86 2945 2959 "output_vdsm.ml" 86 2945 2963
+)
+"output_vdsm.ml" 88 3041 3056 "output_vdsm.ml" 88 3041 3074
+type(
+  int
+)
+"output_vdsm.ml" 88 3041 3075 "output_vdsm.ml" 88 3041 3076
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_vdsm.ml" 88 3041 3077 "output_vdsm.ml" 88 3041 3079
+type(
+  int
+)
+"output_vdsm.ml" 88 3041 3056 "output_vdsm.ml" 88 3041 3079
+type(
+  bool
+)
+"output_vdsm.ml" 89 3083 3095 "output_vdsm.ml" 89 3083 3097
+type(
+  string
+)
+"output_vdsm.ml" 89 3083 3100 "output_vdsm.ml" 89 3083 3113
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"output_vdsm.ml" 89 3083 3114 "output_vdsm.ml" 89 3083 3117
+type(
+  string
+)
+"output_vdsm.ml" 89 3083 3119 "output_vdsm.ml" 89 3083 3127
+type(
+  string list -> string list
+)
+ident(
+  ext_ref List.rev
+)
+"output_vdsm.ml" 89 3083 3128 "output_vdsm.ml" 89 3083 3132
+type(
+  string list
+)
+ident(
+  int_ref rest "output_vdsm.ml" 86 2945 2967 "output_vdsm.ml" 86 2945 2971
+)
+"output_vdsm.ml" 89 3083 3118 "output_vdsm.ml" 89 3083 3133
+call(
+  stack
+)
+type(
+  string list
+)
+"output_vdsm.ml" 89 3083 3100 "output_vdsm.ml" 89 3083 3133
+call(
+  stack
+)
+type(
+  string
+)
+"output_vdsm.ml" 90 3137 3145 "output_vdsm.ml" 90 3137 3147
+type(
+  string
+)
+ident(
+  int_ref mp "output_vdsm.ml" 89 3083 3095 "output_vdsm.ml" 89 3083 3097
+)
+"output_vdsm.ml" 90 3137 3149 "output_vdsm.ml" 90 3137 3153
+type(
+  string
+)
+ident(
+  int_ref uuid "output_vdsm.ml" 86 2945 2959 "output_vdsm.ml" 86 2945 2963
+)
+"output_vdsm.ml" 90 3137 3145 "output_vdsm.ml" 90 3137 3153
+type(
+  string * string
+)
+"output_vdsm.ml" 89 3083 3091 "output_vdsm.ml" 90 3137 3153
+type(
+  string * string
+)
+"output_vdsm.ml" 88 3041 3051 "output_vdsm.ml" 90 3137 3153
+type(
+  string * string
+)
+"output_vdsm.ml" 91 3154 3162 "output_vdsm.ml" 91 3154 3163
+type(
+  string list
+)
+"output_vdsm.ml" 92 3167 3175 "output_vdsm.ml" 92 3167 3180
+type(
+  ?exit_code:int ->
+  (string -> string * string, unit, string, string * string) format4 ->
+  string -> string * string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_vdsm.ml" 92 3167 3182 "output_vdsm.ml" 92 3167 3184
+type(
+  (string -> string * string, unit, string, string, string, string * string)
+  format6 ->
+  (string -> string * string, unit, string, string * string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_vdsm.ml" 92 3167 3184 "output_vdsm.ml" 92 3167 3247
+type(
+  (string -> string * string, unit, string, string, string, string * string)
+  format6
+)
+"output_vdsm.ml" 92 3167 3181 "output_vdsm.ml" 92 3167 3248
+type(
+  (string -> string * string, unit, string, string * string) format4
+)
+"output_vdsm.ml" 93 3249 3259 "output_vdsm.ml" 93 3249 3261
+type(
+  string
+)
+"output_vdsm.ml" 92 3167 3175 "output_vdsm.ml" 93 3249 3261
+call(
+  stack
+)
+type(
+  string * string
+)
+"output_vdsm.ml" 85 2921 2927 "output_vdsm.ml" 93 3249 3261
+type(
+  string * string
+)
+"output_vdsm.ml" 84 2847 2853 "output_vdsm.ml" 93 3249 3261
+type(
+  string * string
+)
+"output_vdsm.ml" 83 2773 2779 "output_vdsm.ml" 93 3249 3261
+type(
+  string * string
+)
+"output_vdsm.ml" 95 3266 3279 "output_vdsm.ml" 95 3266 3281
+type(
+  string
+)
+ident(
+  int_ref mp "output_vdsm.ml" 82 2754 2762 "output_vdsm.ml" 82 2754 2764
+)
+"output_vdsm.ml" 95 3266 3270 "output_vdsm.ml" 95 3266 3281
+type(
+  unit
+)
+"output_vdsm.ml" 96 3283 3298 "output_vdsm.ml" 96 3283 3302
+type(
+  string
+)
+ident(
+  int_ref uuid "output_vdsm.ml" 82 2754 2766 "output_vdsm.ml" 82 2754 2770
+)
+"output_vdsm.ml" 96 3283 3287 "output_vdsm.ml" 96 3283 3302
+type(
+  unit
+)
+"output_vdsm.ml" 97 3304 3311 "output_vdsm.ml" 97 3304 3318
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_vdsm.ml" 97 3304 3319 "output_vdsm.ml" 97 3304 3321
+type(
+  unit
+)
+"output_vdsm.ml" 97 3304 3311 "output_vdsm.ml" 97 3304 3321
+call(
+  stack
+)
+type(
+  bool
+)
+"output_vdsm.ml" 98 3327 3333 "output_vdsm.ml" 98 3327 3340
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"output_vdsm.ml" 98 3327 3341 "output_vdsm.ml" 98 3327 3389
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_vdsm.ml" 99 3390 3398 "output_vdsm.ml" 99 3390 3403
+type(
+  string
+)
+"output_vdsm.ml" 99 3390 3404 "output_vdsm.ml" 99 3390 3411
+type(
+  string
+)
+"output_vdsm.ml" 98 3327 3333 "output_vdsm.ml" 99 3390 3411
+call(
+  stack
+)
+type(
+  unit
+)
+"output_vdsm.ml" 97 3304 3308 "output_vdsm.ml" 99 3390 3411
+type(
+  unit
+)
+"output_vdsm.ml" 102 3476 3484 "output_vdsm.ml" 102 3476 3494
+type(
+  string
+)
+"output_vdsm.ml" 102 3476 3497 "output_vdsm.ml" 102 3476 3502
+type(
+  string
+)
+"output_vdsm.ml" 102 3476 3503 "output_vdsm.ml" 102 3476 3505
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_vdsm.ml" 102 3476 3506 "output_vdsm.ml" 102 3476 3513
+type(
+  string
+)
+"output_vdsm.ml" 102 3476 3497 "output_vdsm.ml" 102 3476 3513
+call(
+  stack
+)
+type(
+  string
+)
+"output_vdsm.ml" 102 3476 3514 "output_vdsm.ml" 102 3476 3516
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_vdsm.ml" 102 3476 3517 "output_vdsm.ml" 102 3476 3525
+type(
+  string
+)
+"output_vdsm.ml" 102 3476 3497 "output_vdsm.ml" 102 3476 3525
+call(
+  stack
+)
+type(
+  string
+)
+"output_vdsm.ml" 103 3529 3533 "output_vdsm.ml" 103 3529 3542
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"output_vdsm.ml" 104 3545 3555 "output_vdsm.ml" 104 3545 3565
+type(
+  string
+)
+ident(
+  def image_uuid "output_vdsm.ml" 105 3569 3577 "output_vdsm.ml" 108 3730 3743
+)
+"output_vdsm.ml" 105 3569 3581 "output_vdsm.ml" 105 3569 3582
+type(
+  string
+)
+"output_vdsm.ml" 105 3569 3585 "output_vdsm.ml" 105 3569 3595
+type(
+  string
+)
+ident(
+  int_ref images_dir "output_vdsm.ml" 102 3476 3484 "output_vdsm.ml" 102 3476 3494
+)
+"output_vdsm.ml" 105 3569 3596 "output_vdsm.ml" 105 3569 3598
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_vdsm.ml" 105 3569 3599 "output_vdsm.ml" 105 3569 3609
+type(
+  string
+)
+ident(
+  int_ref image_uuid "output_vdsm.ml" 104 3545 3555 "output_vdsm.ml" 104 3545 3565
+)
+"output_vdsm.ml" 105 3569 3585 "output_vdsm.ml" 105 3569 3609
+call(
+  stack
+)
+type(
+  string
+)
+"output_vdsm.ml" 106 3613 3624 "output_vdsm.ml" 106 3613 3627
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"output_vdsm.ml" 106 3613 3629 "output_vdsm.ml" 106 3613 3641
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_directory
+)
+"output_vdsm.ml" 106 3613 3642 "output_vdsm.ml" 106 3613 3643
+type(
+  string
+)
+ident(
+  int_ref d "output_vdsm.ml" 105 3569 3581 "output_vdsm.ml" 105 3569 3582
+)
+"output_vdsm.ml" 106 3613 3628 "output_vdsm.ml" 106 3613 3644
+call(
+  stack
+)
+type(
+  bool
+)
+"output_vdsm.ml" 106 3613 3624 "output_vdsm.ml" 106 3613 3644
+type(
+  bool
+)
+"output_vdsm.ml" 107 3650 3660 "output_vdsm.ml" 107 3650 3665
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_vdsm.ml" 107 3650 3667 "output_vdsm.ml" 107 3650 3669
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_vdsm.ml" 107 3650 3669 "output_vdsm.ml" 107 3650 3728
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"output_vdsm.ml" 107 3650 3666 "output_vdsm.ml" 107 3650 3729
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"output_vdsm.ml" 108 3730 3742 "output_vdsm.ml" 108 3730 3743
+type(
+  string
+)
+ident(
+  int_ref d "output_vdsm.ml" 105 3569 3581 "output_vdsm.ml" 105 3569 3582
+)
+"output_vdsm.ml" 107 3650 3660 "output_vdsm.ml" 108 3730 3743
+call(
+  tail
+)
+type(
+  unit
+)
+"output_vdsm.ml" 106 3613 3621 "output_vdsm.ml" 108 3730 3743
+type(
+  unit
+)
+"output_vdsm.ml" 105 3569 3577 "output_vdsm.ml" 108 3730 3743
+type(
+  unit
+)
+"output_vdsm.ml" 103 3529 3543 "output_vdsm.ml" 109 3744 3749
+type(
+  string -> unit
+)
+"output_vdsm.ml" 109 3744 3750 "output_vdsm.ml" 109 3744 3761
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 109 3744 3750 "output_vdsm.ml" 109 3744 3773
+type(
+  string list
+)
+"output_vdsm.ml" 103 3529 3533 "output_vdsm.ml" 109 3744 3773
+call(
+  stack
+)
+type(
+  unit
+)
+"output_vdsm.ml" 112 3835 3842 "output_vdsm.ml" 112 3835 3845
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"output_vdsm.ml" 112 3835 3847 "output_vdsm.ml" 112 3835 3859
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_directory
+)
+"output_vdsm.ml" 112 3835 3860 "output_vdsm.ml" 112 3835 3871
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 112 3835 3860 "output_vdsm.ml" 112 3835 3882
+type(
+  string
+)
+"output_vdsm.ml" 112 3835 3846 "output_vdsm.ml" 112 3835 3883
+call(
+  stack
+)
+type(
+  bool
+)
+"output_vdsm.ml" 112 3835 3842 "output_vdsm.ml" 112 3835 3883
+type(
+  bool
+)
+"output_vdsm.ml" 113 3889 3895 "output_vdsm.ml" 113 3889 3900
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_vdsm.ml" 113 3889 3902 "output_vdsm.ml" 113 3889 3904
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_vdsm.ml" 113 3889 3904 "output_vdsm.ml" 113 3889 3972
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"output_vdsm.ml" 113 3889 3901 "output_vdsm.ml" 113 3889 3973
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"output_vdsm.ml" 114 3974 3982 "output_vdsm.ml" 114 3974 3993
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 114 3974 3982 "output_vdsm.ml" 114 3974 4004
+type(
+  string
+)
+"output_vdsm.ml" 113 3889 3895 "output_vdsm.ml" 114 3974 4004
+call(
+  stack
+)
+type(
+  unit
+)
+"output_vdsm.ml" 112 3835 3839 "output_vdsm.ml" 114 3974 4004
+type(
+  unit
+)
+"output_vdsm.ml" 116 4007 4014 "output_vdsm.ml" 116 4007 4021
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_vdsm.ml" 116 4007 4022 "output_vdsm.ml" 116 4007 4024
+type(
+  unit
+)
+"output_vdsm.ml" 116 4007 4014 "output_vdsm.ml" 116 4007 4024
+call(
+  stack
+)
+type(
+  bool
+)
+"output_vdsm.ml" 117 4030 4036 "output_vdsm.ml" 117 4030 4043
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"output_vdsm.ml" 117 4030 4044 "output_vdsm.ml" 117 4030 4084
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_vdsm.ml" 117 4030 4085 "output_vdsm.ml" 117 4030 4096
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 117 4030 4085 "output_vdsm.ml" 117 4030 4107
+type(
+  string
+)
+"output_vdsm.ml" 117 4030 4036 "output_vdsm.ml" 117 4030 4107
+call(
+  stack
+)
+type(
+  unit
+)
+"output_vdsm.ml" 116 4007 4011 "output_vdsm.ml" 117 4030 4107
+type(
+  unit
+)
+"output_vdsm.ml" 130 4617 4625 "output_vdsm.ml" 130 4617 4632
+type(
+  Types.target list
+)
+"output_vdsm.ml" 131 4635 4641 "output_vdsm.ml" 131 4635 4649
+type(
+  (Types.target * string * string -> Types.target) ->
+  (Types.target * string * string) list -> Types.target list
+)
+ident(
+  ext_ref List.map
+)
+"output_vdsm.ml" 132 4652 4684 "output_vdsm.ml" 132 4652 4686
+type(
+  Types.overlay
+)
+ident(
+  def ov "output_vdsm.ml" 133 4720 4730 "output_vdsm.ml" 139 4925 4971
+)
+"output_vdsm.ml" 132 4652 4665 "output_vdsm.ml" 132 4652 4688
+type(
+  Types.target
+)
+"output_vdsm.ml" 132 4652 4665 "output_vdsm.ml" 132 4652 4693
+type(
+  Types.target
+)
+ident(
+  def t "output_vdsm.ml" 133 4720 4730 "output_vdsm.ml" 139 4925 4971
+)
+"output_vdsm.ml" 132 4652 4695 "output_vdsm.ml" 132 4652 4705
+type(
+  string
+)
+ident(
+  def image_uuid "output_vdsm.ml" 133 4720 4730 "output_vdsm.ml" 139 4925 4971
+)
+"output_vdsm.ml" 132 4652 4707 "output_vdsm.ml" 132 4652 4715
+type(
+  string
+)
+ident(
+  def vol_uuid "output_vdsm.ml" 133 4720 4730 "output_vdsm.ml" 139 4925 4971
+)
+"output_vdsm.ml" 132 4652 4664 "output_vdsm.ml" 132 4652 4716
+type(
+  Types.target * string * string
+)
+"output_vdsm.ml" 133 4720 4734 "output_vdsm.ml" 133 4720 4739
+type(
+  string
+)
+"output_vdsm.ml" 133 4720 4742 "output_vdsm.ml" 133 4720 4744
+type(
+  Types.overlay
+)
+ident(
+  int_ref ov "output_vdsm.ml" 132 4652 4684 "output_vdsm.ml" 132 4652 4686
+)
+"output_vdsm.ml" 133 4720 4742 "output_vdsm.ml" 133 4720 4750
+type(
+  string
+)
+"output_vdsm.ml" 134 4754 4768 "output_vdsm.ml" 134 4754 4779
+type(
+  string
+)
+"output_vdsm.ml" 134 4754 4782 "output_vdsm.ml" 134 4754 4792
+type(
+  string
+)
+ident(
+  int_ref images_dir "output_vdsm.ml" 102 3476 3484 "output_vdsm.ml" 102 3476 3494
+)
+"output_vdsm.ml" 134 4754 4793 "output_vdsm.ml" 134 4754 4795
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_vdsm.ml" 134 4754 4796 "output_vdsm.ml" 134 4754 4806
+type(
+  string
+)
+ident(
+  int_ref image_uuid "output_vdsm.ml" 132 4652 4695 "output_vdsm.ml" 132 4652 4705
+)
+"output_vdsm.ml" 134 4754 4782 "output_vdsm.ml" 134 4754 4806
+call(
+  stack
+)
+type(
+  string
+)
+"output_vdsm.ml" 134 4754 4807 "output_vdsm.ml" 134 4754 4809
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_vdsm.ml" 134 4754 4810 "output_vdsm.ml" 134 4754 4818
+type(
+  string
+)
+ident(
+  int_ref vol_uuid "output_vdsm.ml" 132 4652 4707 "output_vdsm.ml" 132 4652 4715
+)
+"output_vdsm.ml" 134 4754 4782 "output_vdsm.ml" 134 4754 4818
+call(
+  stack
+)
+type(
+  string
+)
+"output_vdsm.ml" 136 4823 4836 "output_vdsm.ml" 136 4823 4843
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_vdsm.ml" 136 4823 4844 "output_vdsm.ml" 136 4823 4846
+type(
+  unit
+)
+"output_vdsm.ml" 136 4823 4836 "output_vdsm.ml" 136 4823 4846
+call(
+  stack
+)
+type(
+  bool
+)
+"output_vdsm.ml" 137 4852 4864 "output_vdsm.ml" 137 4852 4871
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"output_vdsm.ml" 137 4852 4872 "output_vdsm.ml" 137 4852 4904
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"output_vdsm.ml" 137 4852 4905 "output_vdsm.ml" 137 4852 4910
+type(
+  string
+)
+ident(
+  int_ref ov_sd "output_vdsm.ml" 133 4720 4734 "output_vdsm.ml" 133 4720 4739
+)
+"output_vdsm.ml" 137 4852 4911 "output_vdsm.ml" 137 4852 4922
+type(
+  string
+)
+ident(
+  int_ref target_file "output_vdsm.ml" 134 4754 4768 "output_vdsm.ml" 134 4754 4779
+)
+"output_vdsm.ml" 137 4852 4864 "output_vdsm.ml" 137 4852 4922
+call(
+  stack
+)
+type(
+  unit
+)
+"output_vdsm.ml" 136 4823 4833 "output_vdsm.ml" 137 4852 4922
+type(
+  unit
+)
+"output_vdsm.ml" 139 4925 4937 "output_vdsm.ml" 139 4925 4938
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_vdsm.ml" 132 4652 4665 "output_vdsm.ml" 132 4652 4693
+)
+"output_vdsm.ml" 139 4925 4958 "output_vdsm.ml" 139 4925 4969
+type(
+  string
+)
+ident(
+  int_ref target_file "output_vdsm.ml" 134 4754 4768 "output_vdsm.ml" 134 4754 4779
+)
+"output_vdsm.ml" 139 4925 4935 "output_vdsm.ml" 139 4925 4971
+type(
+  Types.target
+)
+"output_vdsm.ml" 136 4823 4833 "output_vdsm.ml" 139 4925 4971
+type(
+  Types.target
+)
+"output_vdsm.ml" 134 4754 4764 "output_vdsm.ml" 139 4925 4971
+type(
+  Types.target
+)
+"output_vdsm.ml" 133 4720 4730 "output_vdsm.ml" 139 4925 4971
+type(
+  Types.target
+)
+"output_vdsm.ml" 131 4635 4650 "output_vdsm.ml" 140 4972 4979
+type(
+  Types.target * string * string -> Types.target
+)
+"output_vdsm.ml" 140 4972 4981 "output_vdsm.ml" 140 4972 4989
+type(
+  Types.target list ->
+  string list -> string list -> (Types.target * string * string) list
+)
+ident(
+  ext_ref Common_utils.combine3
+)
+"output_vdsm.ml" 140 4972 4990 "output_vdsm.ml" 140 4972 4997
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_vdsm.ml" 76 2370 2397 "output_vdsm.ml" 76 2370 2404
+)
+"output_vdsm.ml" 140 4972 4998 "output_vdsm.ml" 140 4972 5009
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 140 4972 4998 "output_vdsm.ml" 140 4972 5021
+type(
+  string list
+)
+"output_vdsm.ml" 140 4972 5022 "output_vdsm.ml" 140 4972 5033
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 140 4972 5022 "output_vdsm.ml" 140 4972 5043
+type(
+  string list
+)
+"output_vdsm.ml" 140 4972 4980 "output_vdsm.ml" 140 4972 5044
+call(
+  stack
+)
+type(
+  (Types.target * string * string) list
+)
+"output_vdsm.ml" 131 4635 4641 "output_vdsm.ml" 140 4972 5044
+call(
+  stack
+)
+type(
+  Types.target list
+)
+"output_vdsm.ml" 143 5113 5121 "output_vdsm.ml" 143 5113 5126
+type(
+  string list
+)
+"output_vdsm.ml" 144 5129 5135 "output_vdsm.ml" 144 5129 5156
+type(
+  Types.output_allocation ->
+  string -> string list -> Types.target list -> string list
+)
+ident(
+  ext_ref OVF.create_meta_files
+)
+"output_vdsm.ml" 144 5129 5157 "output_vdsm.ml" 144 5129 5169
+type(
+  Types.output_allocation
+)
+"output_vdsm.ml" 144 5129 5170 "output_vdsm.ml" 144 5129 5177
+type(
+  string
+)
+"output_vdsm.ml" 145 5178 5186 "output_vdsm.ml" 145 5178 5197
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 145 5178 5186 "output_vdsm.ml" 145 5178 5209
+type(
+  string list
+)
+"output_vdsm.ml" 145 5178 5210 "output_vdsm.ml" 145 5178 5217
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_vdsm.ml" 130 4617 4625 "output_vdsm.ml" 130 4617 4632
+)
+"output_vdsm.ml" 144 5129 5135 "output_vdsm.ml" 145 5178 5217
+call(
+  stack
+)
+type(
+  string list
+)
+"output_vdsm.ml" 146 5221 5225 "output_vdsm.ml" 146 5221 5234
+type(
+  (Types.target * string -> unit) -> (Types.target * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"output_vdsm.ml" 147 5237 5264 "output_vdsm.ml" 147 5237 5275
+type(
+  string
+)
+ident(
+  def target_file "output_vdsm.ml" 148 5288 5296 "output_vdsm.ml" 151 5419 5441
+)
+"output_vdsm.ml" 147 5237 5248 "output_vdsm.ml" 147 5237 5277
+type(
+  Types.target
+)
+"output_vdsm.ml" 147 5237 5279 "output_vdsm.ml" 147 5237 5283
+type(
+  string
+)
+ident(
+  def meta "output_vdsm.ml" 148 5288 5296 "output_vdsm.ml" 151 5419 5441
+)
+"output_vdsm.ml" 147 5237 5247 "output_vdsm.ml" 147 5237 5284
+type(
+  Types.target * string
+)
+"output_vdsm.ml" 148 5288 5300 "output_vdsm.ml" 148 5288 5313
+type(
+  string
+)
+"output_vdsm.ml" 148 5288 5316 "output_vdsm.ml" 148 5288 5327
+type(
+  string
+)
+ident(
+  int_ref target_file "output_vdsm.ml" 147 5237 5264 "output_vdsm.ml" 147 5237 5275
+)
+"output_vdsm.ml" 148 5288 5328 "output_vdsm.ml" 148 5288 5329
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_vdsm.ml" 148 5288 5330 "output_vdsm.ml" 148 5288 5337
+type(
+  string
+)
+"output_vdsm.ml" 148 5288 5316 "output_vdsm.ml" 148 5288 5337
+call(
+  stack
+)
+type(
+  string
+)
+"output_vdsm.ml" 149 5341 5353 "output_vdsm.ml" 149 5341 5357
+type(
+  out_channel
+)
+"output_vdsm.ml" 149 5341 5360 "output_vdsm.ml" 149 5341 5368
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out
+)
+"output_vdsm.ml" 149 5341 5369 "output_vdsm.ml" 149 5341 5382
+type(
+  string
+)
+ident(
+  int_ref meta_filename "output_vdsm.ml" 148 5288 5300 "output_vdsm.ml" 148 5288 5313
+)
+"output_vdsm.ml" 149 5341 5360 "output_vdsm.ml" 149 5341 5382
+call(
+  stack
+)
+type(
+  out_channel
+)
+"output_vdsm.ml" 150 5386 5394 "output_vdsm.ml" 150 5386 5407
+type(
+  out_channel -> string -> unit
+)
+ident(
+  ext_ref Pervasives.output_string
+)
+"output_vdsm.ml" 150 5386 5408 "output_vdsm.ml" 150 5386 5412
+type(
+  out_channel
+)
+ident(
+  int_ref chan "output_vdsm.ml" 149 5341 5353 "output_vdsm.ml" 149 5341 5357
+)
+"output_vdsm.ml" 150 5386 5413 "output_vdsm.ml" 150 5386 5417
+type(
+  string
+)
+ident(
+  int_ref meta "output_vdsm.ml" 147 5237 5279 "output_vdsm.ml" 147 5237 5283
+)
+"output_vdsm.ml" 150 5386 5394 "output_vdsm.ml" 150 5386 5417
+call(
+  stack
+)
+type(
+  unit
+)
+"output_vdsm.ml" 151 5419 5427 "output_vdsm.ml" 151 5419 5436
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"output_vdsm.ml" 151 5419 5437 "output_vdsm.ml" 151 5419 5441
+type(
+  out_channel
+)
+ident(
+  int_ref chan "output_vdsm.ml" 149 5341 5353 "output_vdsm.ml" 149 5341 5357
+)
+"output_vdsm.ml" 151 5419 5427 "output_vdsm.ml" 151 5419 5441
+call(
+  tail
+)
+type(
+  unit
+)
+"output_vdsm.ml" 150 5386 5394 "output_vdsm.ml" 151 5419 5441
+type(
+  unit
+)
+"output_vdsm.ml" 149 5341 5349 "output_vdsm.ml" 151 5419 5441
+type(
+  unit
+)
+"output_vdsm.ml" 148 5288 5296 "output_vdsm.ml" 151 5419 5441
+type(
+  unit
+)
+"output_vdsm.ml" 146 5221 5235 "output_vdsm.ml" 152 5442 5447
+type(
+  Types.target * string -> unit
+)
+"output_vdsm.ml" 152 5442 5449 "output_vdsm.ml" 152 5442 5461
+type(
+  Types.target list -> string list -> (Types.target * string) list
+)
+ident(
+  ext_ref List.combine
+)
+"output_vdsm.ml" 152 5442 5462 "output_vdsm.ml" 152 5442 5469
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_vdsm.ml" 130 4617 4625 "output_vdsm.ml" 130 4617 4632
+)
+"output_vdsm.ml" 152 5442 5470 "output_vdsm.ml" 152 5442 5475
+type(
+  string list
+)
+ident(
+  int_ref metas "output_vdsm.ml" 143 5113 5121 "output_vdsm.ml" 143 5113 5126
+)
+"output_vdsm.ml" 152 5442 5448 "output_vdsm.ml" 152 5442 5476
+call(
+  stack
+)
+type(
+  (Types.target * string) list
+)
+"output_vdsm.ml" 146 5221 5225 "output_vdsm.ml" 152 5442 5476
+call(
+  stack
+)
+type(
+  unit
+)
+"output_vdsm.ml" 155 5517 5521 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_vdsm.ml" 130 4617 4625 "output_vdsm.ml" 130 4617 4632
+)
+"output_vdsm.ml" 146 5221 5225 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 143 5113 5117 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 130 4617 4621 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 116 4007 4011 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 112 3835 3839 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 103 3529 3533 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 102 3476 3480 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 97 3304 3308 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 96 3283 3287 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 95 3266 3270 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 82 2754 2758 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 77 2407 2411 "output_vdsm.ml" 155 5517 5528
+type(
+  Types.target list
+)
+"output_vdsm.ml" 157 5530 5552 "output_vdsm.ml" 157 5530 5563
+type(
+  string option
+)
+ident(
+  def backingfile "output_vdsm.ml" 157 5530 5564 "output_vdsm.ml" 165 5945 5980
+)
+"output_vdsm.ml" 157 5530 5565 "output_vdsm.ml" 157 5530 5578
+type(
+  string option
+)
+ident(
+  def backingformat "output_vdsm.ml" 157 5530 5579 "output_vdsm.ml" 165 5945 5980
+)
+"output_vdsm.ml" 157 5530 5580 "output_vdsm.ml" 157 5530 5593
+type(
+  string option
+)
+ident(
+  def preallocation "output_vdsm.ml" 157 5530 5594 "output_vdsm.ml" 165 5945 5980
+)
+"output_vdsm.ml" 157 5530 5595 "output_vdsm.ml" 157 5530 5601
+type(
+  string option
+)
+ident(
+  def compat "output_vdsm.ml" 158 5602 5606 "output_vdsm.ml" 165 5945 5980
+)
+"output_vdsm.ml" 158 5602 5607 "output_vdsm.ml" 158 5602 5618
+type(
+  int option
+)
+ident(
+  def clustersize "output_vdsm.ml" 158 5602 5619 "output_vdsm.ml" 165 5945 5980
+)
+"output_vdsm.ml" 158 5602 5619 "output_vdsm.ml" 158 5602 5623
+type(
+  string
+)
+ident(
+  def path "output_vdsm.ml" 158 5602 5624 "output_vdsm.ml" 165 5945 5980
+)
+"output_vdsm.ml" 158 5602 5624 "output_vdsm.ml" 158 5602 5630
+type(
+  string
+)
+ident(
+  def format "output_vdsm.ml" 158 5602 5631 "output_vdsm.ml" 165 5945 5980
+)
+"output_vdsm.ml" 158 5602 5631 "output_vdsm.ml" 158 5602 5635
+type(
+  int64
+)
+ident(
+  def size "output_vdsm.ml" 159 5638 5642 "output_vdsm.ml" 165 5945 5980
+)
+"output_vdsm.ml" 159 5638 5646 "output_vdsm.ml" 159 5638 5647
+type(
+  Guestfs.guestfs
+)
+"output_vdsm.ml" 159 5638 5650 "output_vdsm.ml" 159 5638 5669
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> Guestfs.guestfs
+)
+"output_vdsm.ml" 159 5638 5670 "output_vdsm.ml" 159 5638 5672
+type(
+  unit
+)
+"output_vdsm.ml" 159 5638 5650 "output_vdsm.ml" 159 5638 5672
+call(
+  stack
+)
+type(
+  Guestfs.guestfs
+)
+"output_vdsm.ml" 163 5806 5814 "output_vdsm.ml" 163 5806 5820
+type(
+  string option
+)
+"output_vdsm.ml" 163 5806 5826 "output_vdsm.ml" 163 5806 5832
+type(
+  string
+)
+ident(
+  int_ref format "output_vdsm.ml" 158 5602 5624 "output_vdsm.ml" 158 5602 5630
+)
+"output_vdsm.ml" 163 5806 5833 "output_vdsm.ml" 163 5806 5835
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_vdsm.ml" 163 5806 5836 "output_vdsm.ml" 163 5806 5843
+type(
+  string
+)
+"output_vdsm.ml" 163 5806 5826 "output_vdsm.ml" 163 5806 5843
+type(
+  bool
+)
+"output_vdsm.ml" 163 5806 5849 "output_vdsm.ml" 163 5806 5855
+type(
+  string option
+)
+ident(
+  int_ref compat "output_vdsm.ml" 157 5530 5595 "output_vdsm.ml" 157 5530 5601
+)
+"output_vdsm.ml" 163 5806 5866 "output_vdsm.ml" 163 5806 5872
+type(
+  string
+)
+"output_vdsm.ml" 163 5806 5861 "output_vdsm.ml" 163 5806 5872
+type(
+  string option
+)
+"output_vdsm.ml" 163 5806 5823 "output_vdsm.ml" 163 5806 5872
+type(
+  string option
+)
+"output_vdsm.ml" 164 5876 5880 "output_vdsm.ml" 164 5876 5881
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "output_vdsm.ml" 159 5638 5646 "output_vdsm.ml" 159 5638 5647
+)
+"output_vdsm.ml" 164 5876 5880 "output_vdsm.ml" 164 5876 5893
+call(
+  stack
+)
+type(
+  ?backingfile:string ->
+  ?backingformat:string ->
+  ?preallocation:string ->
+  ?compat:string -> ?clustersize:int -> string -> string -> int64 -> unit
+)
+"output_vdsm.ml" 164 5876 5895 "output_vdsm.ml" 164 5876 5906
+type(
+  string option
+)
+ident(
+  int_ref backingfile "output_vdsm.ml" 157 5530 5552 "output_vdsm.ml" 157 5530 5563
+)
+"output_vdsm.ml" 164 5876 5908 "output_vdsm.ml" 164 5876 5921
+type(
+  string option
+)
+ident(
+  int_ref backingformat "output_vdsm.ml" 157 5530 5565 "output_vdsm.ml" 157 5530 5578
+)
+"output_vdsm.ml" 164 5876 5923 "output_vdsm.ml" 164 5876 5936
+type(
+  string option
+)
+ident(
+  int_ref preallocation "output_vdsm.ml" 157 5530 5580 "output_vdsm.ml" 157 5530 5593
+)
+"output_vdsm.ml" 164 5876 5938 "output_vdsm.ml" 164 5876 5944
+type(
+  string option
+)
+ident(
+  int_ref compat "output_vdsm.ml" 163 5806 5814 "output_vdsm.ml" 163 5806 5820
+)
+"output_vdsm.ml" 165 5945 5952 "output_vdsm.ml" 165 5945 5963
+type(
+  int option
+)
+ident(
+  int_ref clustersize "output_vdsm.ml" 158 5602 5607 "output_vdsm.ml" 158 5602 5618
+)
+"output_vdsm.ml" 165 5945 5964 "output_vdsm.ml" 165 5945 5968
+type(
+  string
+)
+ident(
+  int_ref path "output_vdsm.ml" 158 5602 5619 "output_vdsm.ml" 158 5602 5623
+)
+"output_vdsm.ml" 165 5945 5969 "output_vdsm.ml" 165 5945 5975
+type(
+  string
+)
+ident(
+  int_ref format "output_vdsm.ml" 158 5602 5624 "output_vdsm.ml" 158 5602 5630
+)
+"output_vdsm.ml" 165 5945 5976 "output_vdsm.ml" 165 5945 5980
+type(
+  int64
+)
+ident(
+  int_ref size "output_vdsm.ml" 158 5602 5631 "output_vdsm.ml" 158 5602 5635
+)
+"output_vdsm.ml" 164 5876 5880 "output_vdsm.ml" 165 5945 5980
+type(
+  unit
+)
+"output_vdsm.ml" 163 5806 5810 "output_vdsm.ml" 165 5945 5980
+type(
+  unit
+)
+"output_vdsm.ml" 159 5638 5642 "output_vdsm.ml" 165 5945 5980
+type(
+  unit
+)
+"output_vdsm.ml" 168 6049 6074 "output_vdsm.ml" 168 6049 6080
+type(
+  Types.source
+)
+ident(
+  def source "output_vdsm.ml" 168 6049 6081 "output_vdsm.ml" 183 6599 6617
+)
+"output_vdsm.ml" 168 6049 6081 "output_vdsm.ml" 168 6049 6088
+type(
+  Types.target list
+)
+ident(
+  def targets "output_vdsm.ml" 168 6049 6089 "output_vdsm.ml" 183 6599 6617
+)
+"output_vdsm.ml" 168 6049 6089 "output_vdsm.ml" 168 6049 6090
+type(
+  Types.target_buses
+)
+"output_vdsm.ml" 168 6049 6091 "output_vdsm.ml" 168 6049 6100
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "output_vdsm.ml" 168 6049 6101 "output_vdsm.ml" 183 6599 6617
+)
+"output_vdsm.ml" 168 6049 6101 "output_vdsm.ml" 168 6049 6108
+type(
+  Types.inspect
+)
+ident(
+  def inspect "output_vdsm.ml" 168 6049 6109 "output_vdsm.ml" 183 6599 6617
+)
+"output_vdsm.ml" 168 6049 6109 "output_vdsm.ml" 168 6049 6124
+type(
+  Types.target_firmware
+)
+ident(
+  def target_firmware "output_vdsm.ml" 170 6168 6172 "output_vdsm.ml" 183 6599 6617
+)
+"output_vdsm.ml" 170 6168 6180 "output_vdsm.ml" 170 6168 6195
+type(
+  Types.target_firmware
+)
+ident(
+  int_ref target_firmware "output_vdsm.ml" 168 6049 6109 "output_vdsm.ml" 168 6049 6124
+)
+"output_vdsm.ml" 170 6168 6196 "output_vdsm.ml" 170 6168 6197
+type(
+  Types.target_firmware -> Types.target_firmware -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_vdsm.ml" 170 6168 6198 "output_vdsm.ml" 170 6168 6208
+type(
+  Types.target_firmware
+)
+"output_vdsm.ml" 170 6168 6179 "output_vdsm.ml" 170 6168 6209
+type(
+  bool
+)
+"output_vdsm.ml" 170 6168 6172 "output_vdsm.ml" 170 6168 6209
+type(
+  unit
+)
+"output_vdsm.ml" 173 6243 6251 "output_vdsm.ml" 173 6243 6254
+type(
+  DOM.doc
+)
+"output_vdsm.ml" 173 6243 6257 "output_vdsm.ml" 173 6243 6271
+type(
+  Types.source ->
+  Types.target list ->
+  Types.guestcaps ->
+  Types.inspect ->
+  Types.output_allocation ->
+  Types.vmtype option ->
+  string -> string list -> string list -> string -> DOM.doc
+)
+ident(
+  ext_ref OVF.create_ovf
+)
+"output_vdsm.ml" 173 6243 6272 "output_vdsm.ml" 173 6243 6278
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_vdsm.ml" 168 6049 6074 "output_vdsm.ml" 168 6049 6080
+)
+"output_vdsm.ml" 173 6243 6279 "output_vdsm.ml" 173 6243 6286
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_vdsm.ml" 168 6049 6081 "output_vdsm.ml" 168 6049 6088
+)
+"output_vdsm.ml" 173 6243 6287 "output_vdsm.ml" 173 6243 6296
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_vdsm.ml" 168 6049 6091 "output_vdsm.ml" 168 6049 6100
+)
+"output_vdsm.ml" 173 6243 6297 "output_vdsm.ml" 173 6243 6304
+type(
+  Types.inspect
+)
+ident(
+  int_ref inspect "output_vdsm.ml" 168 6049 6101 "output_vdsm.ml" 168 6049 6108
+)
+"output_vdsm.ml" 174 6305 6311 "output_vdsm.ml" 174 6305 6323
+type(
+  Types.output_allocation
+)
+"output_vdsm.ml" 174 6305 6324 "output_vdsm.ml" 174 6305 6330
+type(
+  Types.vmtype option
+)
+"output_vdsm.ml" 174 6305 6331 "output_vdsm.ml" 174 6305 6338
+type(
+  string
+)
+"output_vdsm.ml" 175 6339 6345 "output_vdsm.ml" 175 6339 6356
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 175 6339 6345 "output_vdsm.ml" 175 6339 6368
+type(
+  string list
+)
+"output_vdsm.ml" 176 6369 6375 "output_vdsm.ml" 176 6369 6386
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 176 6369 6375 "output_vdsm.ml" 176 6369 6396
+type(
+  string list
+)
+"output_vdsm.ml" 177 6397 6403 "output_vdsm.ml" 177 6397 6414
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 177 6397 6403 "output_vdsm.ml" 177 6397 6422
+type(
+  string
+)
+"output_vdsm.ml" 173 6243 6257 "output_vdsm.ml" 177 6397 6422
+call(
+  stack
+)
+type(
+  DOM.doc
+)
+"output_vdsm.ml" 180 6468 6476 "output_vdsm.ml" 180 6468 6480
+type(
+  string
+)
+"output_vdsm.ml" 180 6468 6483 "output_vdsm.ml" 180 6468 6494
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 180 6468 6483 "output_vdsm.ml" 180 6468 6505
+type(
+  string
+)
+"output_vdsm.ml" 180 6468 6506 "output_vdsm.ml" 180 6468 6508
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_vdsm.ml" 180 6468 6509 "output_vdsm.ml" 180 6468 6520
+type(
+  vdsm_params
+)
+"output_vdsm.ml" 180 6468 6509 "output_vdsm.ml" 180 6468 6528
+type(
+  string
+)
+"output_vdsm.ml" 180 6468 6483 "output_vdsm.ml" 180 6468 6528
+call(
+  stack
+)
+type(
+  string
+)
+"output_vdsm.ml" 180 6468 6529 "output_vdsm.ml" 180 6468 6530
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_vdsm.ml" 180 6468 6531 "output_vdsm.ml" 180 6468 6537
+type(
+  string
+)
+"output_vdsm.ml" 180 6468 6483 "output_vdsm.ml" 180 6468 6537
+call(
+  stack
+)
+type(
+  string
+)
+"output_vdsm.ml" 181 6541 6549 "output_vdsm.ml" 181 6541 6553
+type(
+  out_channel
+)
+"output_vdsm.ml" 181 6541 6556 "output_vdsm.ml" 181 6541 6564
+type(
+  string -> out_channel
+)
+ident(
+  ext_ref Pervasives.open_out
+)
+"output_vdsm.ml" 181 6541 6565 "output_vdsm.ml" 181 6541 6569
+type(
+  string
+)
+ident(
+  int_ref file "output_vdsm.ml" 180 6468 6476 "output_vdsm.ml" 180 6468 6480
+)
+"output_vdsm.ml" 181 6541 6556 "output_vdsm.ml" 181 6541 6569
+call(
+  stack
+)
+type(
+  out_channel
+)
+"output_vdsm.ml" 182 6573 6577 "output_vdsm.ml" 182 6573 6588
+type(
+  out_channel -> DOM.doc -> unit
+)
+ident(
+  ext_ref DOM.doc_to_chan
+)
+"output_vdsm.ml" 182 6573 6589 "output_vdsm.ml" 182 6573 6593
+type(
+  out_channel
+)
+ident(
+  int_ref chan "output_vdsm.ml" 181 6541 6549 "output_vdsm.ml" 181 6541 6553
+)
+"output_vdsm.ml" 182 6573 6594 "output_vdsm.ml" 182 6573 6597
+type(
+  DOM.doc
+)
+ident(
+  int_ref ovf "output_vdsm.ml" 173 6243 6251 "output_vdsm.ml" 173 6243 6254
+)
+"output_vdsm.ml" 182 6573 6577 "output_vdsm.ml" 182 6573 6597
+call(
+  stack
+)
+type(
+  unit
+)
+"output_vdsm.ml" 183 6599 6603 "output_vdsm.ml" 183 6599 6612
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"output_vdsm.ml" 183 6599 6613 "output_vdsm.ml" 183 6599 6617
+type(
+  out_channel
+)
+ident(
+  int_ref chan "output_vdsm.ml" 181 6541 6549 "output_vdsm.ml" 181 6541 6553
+)
+"output_vdsm.ml" 183 6599 6603 "output_vdsm.ml" 183 6599 6617
+call(
+  tail
+)
+type(
+  unit
+)
+"output_vdsm.ml" 182 6573 6577 "output_vdsm.ml" 183 6599 6617
+type(
+  unit
+)
+"output_vdsm.ml" 181 6541 6545 "output_vdsm.ml" 183 6599 6617
+type(
+  unit
+)
+"output_vdsm.ml" 180 6468 6472 "output_vdsm.ml" 183 6599 6617
+type(
+  unit
+)
+"output_vdsm.ml" 173 6243 6247 "output_vdsm.ml" 183 6599 6617
+type(
+  unit
+)
+"output_vdsm.ml" 170 6168 6172 "output_vdsm.ml" 183 6599 6617
+type(
+  unit
+)
+"output_vdsm.ml" 186 6623 6627 "output_vdsm.ml" 186 6623 6638
+type(
+  string ->
+  vdsm_params ->
+  Types.vmtype option -> Types.output_allocation -> output_vdsm
+)
+ident(
+  def output_vdsm "output_vdsm.ml" 187 6657 6657 --
+)
+"output_vdsm.ml" 186 6623 6641 "output_vdsm.ml" 186 6623 6656
+type(
+  string ->
+  vdsm_params ->
+  Types.vmtype option -> Types.output_allocation -> output_vdsm
+)
+"output_vdsm.ml" 187 6657 6661 "output_vdsm.ml" 187 6657 6663
+type(
+  unit
+)
+"output_vdsm.ml" 187 6657 6666 "output_vdsm.ml" 187 6657 6701
+type(
+  string -> unit
+)
+ident(
+  ext_ref Modules_list.register_output_module
+)
+"output_vdsm.ml" 187 6657 6702 "output_vdsm.ml" 187 6657 6708
+type(
+  string
+)
+"output_vdsm.ml" 187 6657 6666 "output_vdsm.ml" 187 6657 6708
+call(
+  stack
+)
+type(
+  unit
+)

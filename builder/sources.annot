@@ -1,0 +1,2062 @@
+"sources.ml" 32 961 980 "sources.ml" 32 961 997
+call(
+  stack
+)
+"sources.ml" 34 999 1003 "sources.ml" 34 999 1013
+type(
+  string -> source list
+)
+ident(
+  def parse_conf "sources.ml" 92 2907 2907 --
+)
+"sources.ml" 34 999 1014 "sources.ml" 34 999 1018
+type(
+  string
+)
+ident(
+  def file "sources.ml" 35 1021 1023 "sources.ml" 90 2896 2905
+)
+"sources.ml" 35 1021 1026 "sources.ml" 35 1021 1033
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sources.ml" 35 1021 1034 "sources.ml" 35 1021 1036
+type(
+  unit
+)
+"sources.ml" 35 1021 1026 "sources.ml" 35 1021 1036
+call(
+  stack
+)
+type(
+  bool
+)
+"sources.ml" 36 1044 1048 "sources.ml" 36 1044 1054
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sources.ml" 36 1044 1056 "sources.ml" 36 1044 1058
+type(
+  (string -> string -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sources.ml" 36 1044 1058 "sources.ml" 36 1044 1083
+type(
+  (string -> string -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"sources.ml" 36 1044 1055 "sources.ml" 36 1044 1084
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"sources.ml" 36 1044 1085 "sources.ml" 36 1044 1089
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"sources.ml" 36 1044 1090 "sources.ml" 36 1044 1094
+type(
+  string
+)
+ident(
+  int_ref file "sources.ml" 34 999 1014 "sources.ml" 34 999 1018
+)
+"sources.ml" 35 1021 1042 "sources.ml" 37 1096 1099
+call(
+  stack
+)
+type(
+  unit
+)
+"sources.ml" 35 1021 1023 "sources.ml" 37 1096 1099
+type(
+  unit
+)
+"sources.ml" 38 1101 1107 "sources.ml" 38 1101 1115
+type(
+  Ini_reader.sections
+)
+"sources.ml" 38 1101 1118 "sources.ml" 38 1101 1137
+type(
+  ?error_suffix:string -> string -> Ini_reader.sections
+)
+ident(
+  ext_ref Ini_reader.read_ini
+)
+"sources.ml" 38 1101 1152 "sources.ml" 38 1101 1163
+type(
+  string
+)
+"sources.ml" 38 1101 1164 "sources.ml" 38 1101 1168
+type(
+  string
+)
+ident(
+  int_ref file "sources.ml" 34 999 1014 "sources.ml" 34 999 1018
+)
+"sources.ml" 38 1101 1118 "sources.ml" 38 1101 1168
+call(
+  stack
+)
+type(
+  Ini_reader.sections
+)
+"sources.ml" 40 1173 1179 "sources.ml" 40 1173 1186
+type(
+  source list
+)
+"sources.ml" 40 1173 1189 "sources.ml" 40 1173 1204
+type(
+  (Ini_reader.section -> source list -> source list) ->
+  Ini_reader.sections -> source list -> source list
+)
+ident(
+  ext_ref List.fold_right
+)
+"sources.ml" 41 1207 1216 "sources.ml" 41 1207 1217
+type(
+  string
+)
+ident(
+  def n "sources.ml" 41 1207 1227 "sources.ml" 83 2727 2775
+)
+"sources.ml" 41 1207 1219 "sources.ml" 41 1207 1225
+type(
+  Ini_reader.fields
+)
+ident(
+  def fields "sources.ml" 41 1207 1227 "sources.ml" 83 2727 2775
+)
+"sources.ml" 41 1207 1215 "sources.ml" 41 1207 1226
+type(
+  Ini_reader.section
+)
+"sources.ml" 41 1207 1227 "sources.ml" 41 1207 1230
+type(
+  source list
+)
+ident(
+  def acc "sources.ml" 42 1234 1240 "sources.ml" 83 2727 2775
+)
+"sources.ml" 42 1234 1244 "sources.ml" 42 1234 1255
+type(
+  string -> (string * 'a option * string) list -> source
+)
+"sources.ml" 42 1234 1256 "sources.ml" 42 1234 1257
+type(
+  string
+)
+ident(
+  def n "sources.ml" 42 1234 1258 "sources.ml" 80 2668 2677
+)
+"sources.ml" 42 1234 1258 "sources.ml" 42 1234 1264
+type(
+  (string * 'a option * string) list
+)
+ident(
+  def fields "sources.ml" 43 1267 1275 "sources.ml" 80 2668 2677
+)
+"sources.ml" 43 1267 1279 "sources.ml" 43 1267 1285
+type(
+  ((string * 'a option) * string) list
+)
+"sources.ml" 43 1267 1288 "sources.ml" 43 1267 1296
+type(
+  (string * 'a option * string -> (string * 'a option) * string) ->
+  (string * 'a option * string) list -> ((string * 'a option) * string) list
+)
+ident(
+  ext_ref List.map
+)
+"sources.ml" 43 1267 1303 "sources.ml" 43 1267 1304
+type(
+  string
+)
+ident(
+  def k "sources.ml" 43 1267 1316 "sources.ml" 43 1267 1326
+)
+"sources.ml" 43 1267 1306 "sources.ml" 43 1267 1308
+type(
+  'a option
+)
+ident(
+  def sk "sources.ml" 43 1267 1316 "sources.ml" 43 1267 1326
+)
+"sources.ml" 43 1267 1310 "sources.ml" 43 1267 1311
+type(
+  string
+)
+ident(
+  def v "sources.ml" 43 1267 1316 "sources.ml" 43 1267 1326
+)
+"sources.ml" 43 1267 1302 "sources.ml" 43 1267 1312
+type(
+  string * 'a option * string
+)
+"sources.ml" 43 1267 1317 "sources.ml" 43 1267 1318
+type(
+  string
+)
+ident(
+  int_ref k "sources.ml" 43 1267 1303 "sources.ml" 43 1267 1304
+)
+"sources.ml" 43 1267 1320 "sources.ml" 43 1267 1322
+type(
+  'a option
+)
+ident(
+  int_ref sk "sources.ml" 43 1267 1306 "sources.ml" 43 1267 1308
+)
+"sources.ml" 43 1267 1316 "sources.ml" 43 1267 1323
+type(
+  string * 'a option
+)
+"sources.ml" 43 1267 1325 "sources.ml" 43 1267 1326
+type(
+  string
+)
+ident(
+  int_ref v "sources.ml" 43 1267 1310 "sources.ml" 43 1267 1311
+)
+"sources.ml" 43 1267 1316 "sources.ml" 43 1267 1326
+type(
+  (string * 'a option) * string
+)
+"sources.ml" 43 1267 1297 "sources.ml" 43 1267 1327
+type(
+  string * 'a option * string -> (string * 'a option) * string
+)
+"sources.ml" 43 1267 1328 "sources.ml" 43 1267 1334
+type(
+  (string * 'a option * string) list
+)
+ident(
+  int_ref fields "sources.ml" 42 1234 1258 "sources.ml" 42 1234 1264
+)
+"sources.ml" 43 1267 1288 "sources.ml" 43 1267 1334
+call(
+  stack
+)
+type(
+  ((string * 'a option) * string) list
+)
+"sources.ml" 44 1338 1350 "sources.ml" 44 1338 1353
+type(
+  string
+)
+"sources.ml" 45 1356 1370 "sources.ml" 45 1356 1380
+type(
+  string * 'a option -> ((string * 'a option) * string) list -> string
+)
+ident(
+  ext_ref List.assoc
+)
+"sources.ml" 45 1356 1382 "sources.ml" 45 1356 1387
+type(
+  string
+)
+"sources.ml" 45 1356 1389 "sources.ml" 45 1356 1393
+type(
+  'a option
+)
+"sources.ml" 45 1356 1381 "sources.ml" 45 1356 1394
+type(
+  string * 'a option
+)
+"sources.ml" 45 1356 1395 "sources.ml" 45 1356 1401
+type(
+  ((string * 'a option) * string) list
+)
+ident(
+  int_ref fields "sources.ml" 43 1267 1279 "sources.ml" 43 1267 1285
+)
+"sources.ml" 45 1356 1370 "sources.ml" 45 1356 1401
+call(
+  stack
+)
+type(
+  string
+)
+"sources.ml" 46 1402 1417 "sources.ml" 46 1402 1426
+type(
+  exn
+)
+"sources.ml" 46 1402 1417 "sources.ml" 46 1402 1432
+type(
+  exn
+)
+ident(
+  def ex "sources.ml" 47 1436 1448 "sources.ml" 48 1524 1544
+)
+"sources.ml" 47 1436 1448 "sources.ml" 47 1436 1455
+type(
+  (string -> string -> string -> unit, out_channel, unit) format ->
+  string -> string -> string -> unit
+)
+ident(
+  ext_ref Printf.eprintf
+)
+"sources.ml" 47 1436 1457 "sources.ml" 47 1436 1459
+type(
+  (string -> string -> string -> unit, out_channel, unit, unit, unit, unit)
+  format6 -> (string -> string -> string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sources.ml" 47 1436 1459 "sources.ml" 47 1436 1509
+type(
+  (string -> string -> string -> unit, out_channel, unit, unit, unit, unit)
+  format6
+)
+"sources.ml" 47 1436 1456 "sources.ml" 47 1436 1510
+type(
+  (string -> string -> string -> unit, out_channel, unit) format
+)
+"sources.ml" 47 1436 1511 "sources.ml" 47 1436 1515
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"sources.ml" 47 1436 1516 "sources.ml" 47 1436 1517
+type(
+  string
+)
+ident(
+  int_ref n "sources.ml" 42 1234 1256 "sources.ml" 42 1234 1257
+)
+"sources.ml" 47 1436 1518 "sources.ml" 47 1436 1522
+type(
+  string
+)
+ident(
+  int_ref file "sources.ml" 34 999 1014 "sources.ml" 34 999 1018
+)
+"sources.ml" 47 1436 1448 "sources.ml" 47 1436 1522
+call(
+  stack
+)
+type(
+  unit
+)
+"sources.ml" 48 1524 1536 "sources.ml" 48 1524 1541
+type(
+  exn -> string
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"sources.ml" 48 1524 1542 "sources.ml" 48 1524 1544
+type(
+  exn
+)
+ident(
+  int_ref ex "sources.ml" 46 1402 1417 "sources.ml" 46 1402 1432
+)
+"sources.ml" 48 1524 1536 "sources.ml" 48 1524 1544
+type(
+  string
+)
+"sources.ml" 47 1436 1448 "sources.ml" 48 1524 1544
+type(
+  string
+)
+"sources.ml" 45 1356 1366 "sources.ml" 48 1524 1544
+type(
+  string
+)
+"sources.ml" 49 1548 1560 "sources.ml" 49 1548 1566
+type(
+  Utils.gpgkey_type
+)
+"sources.ml" 50 1569 1583 "sources.ml" 50 1569 1584
+type(
+  URI.uri option
+)
+"sources.ml" 51 1587 1609 "sources.ml" 51 1587 1622
+type(
+  string -> URI.uri
+)
+ident(
+  ext_ref URI.parse_uri
+)
+"sources.ml" 51 1587 1624 "sources.ml" 51 1587 1634
+type(
+  string * 'a option -> ((string * 'a option) * string) list -> string
+)
+ident(
+  ext_ref List.assoc
+)
+"sources.ml" 51 1587 1636 "sources.ml" 51 1587 1644
+type(
+  string
+)
+"sources.ml" 51 1587 1646 "sources.ml" 51 1587 1650
+type(
+  'a option
+)
+"sources.ml" 51 1587 1635 "sources.ml" 51 1587 1651
+type(
+  string * 'a option
+)
+"sources.ml" 51 1587 1652 "sources.ml" 51 1587 1658
+type(
+  ((string * 'a option) * string) list
+)
+ident(
+  int_ref fields "sources.ml" 43 1267 1279 "sources.ml" 43 1267 1285
+)
+"sources.ml" 51 1587 1623 "sources.ml" 51 1587 1659
+call(
+  stack
+)
+type(
+  string
+)
+"sources.ml" 51 1587 1608 "sources.ml" 51 1587 1660
+call(
+  stack
+)
+type(
+  URI.uri
+)
+"sources.ml" 51 1587 1603 "sources.ml" 51 1587 1660
+type(
+  URI.uri option
+)
+"sources.ml" 52 1666 1680 "sources.ml" 52 1666 1689
+type(
+  exn
+)
+"sources.ml" 52 1666 1693 "sources.ml" 52 1666 1697
+type(
+  URI.uri option
+)
+"sources.ml" 53 1698 1729 "sources.ml" 53 1698 1744
+type(
+  string
+)
+"sources.ml" 53 1698 1712 "sources.ml" 53 1698 1744
+type(
+  exn
+)
+"sources.ml" 53 1698 1712 "sources.ml" 53 1698 1750
+type(
+  exn
+)
+ident(
+  def ex "sources.ml" 54 1754 1768 "sources.ml" 57 1877 1899
+)
+"sources.ml" 54 1754 1771 "sources.ml" 54 1754 1778
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sources.ml" 54 1754 1779 "sources.ml" 54 1754 1781
+type(
+  unit
+)
+"sources.ml" 54 1754 1771 "sources.ml" 54 1754 1781
+call(
+  stack
+)
+type(
+  bool
+)
+"sources.ml" 55 1789 1805 "sources.ml" 55 1789 1811
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sources.ml" 55 1789 1813 "sources.ml" 55 1789 1815
+type(
+  (string -> string -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sources.ml" 55 1789 1815 "sources.ml" 55 1789 1850
+type(
+  (string -> string -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"sources.ml" 55 1789 1812 "sources.ml" 55 1789 1851
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"sources.ml" 55 1789 1852 "sources.ml" 55 1789 1856
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"sources.ml" 55 1789 1857 "sources.ml" 55 1789 1858
+type(
+  string
+)
+ident(
+  int_ref n "sources.ml" 42 1234 1256 "sources.ml" 42 1234 1257
+)
+"sources.ml" 54 1754 1787 "sources.ml" 56 1860 1875
+call(
+  stack
+)
+type(
+  unit
+)
+"sources.ml" 54 1754 1768 "sources.ml" 56 1860 1875
+type(
+  unit
+)
+"sources.ml" 57 1877 1891 "sources.ml" 57 1877 1896
+type(
+  exn -> URI.uri option
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"sources.ml" 57 1877 1897 "sources.ml" 57 1877 1899
+type(
+  exn
+)
+ident(
+  int_ref ex "sources.ml" 53 1698 1712 "sources.ml" 53 1698 1750
+)
+"sources.ml" 57 1877 1891 "sources.ml" 57 1877 1899
+type(
+  URI.uri option
+)
+"sources.ml" 54 1754 1768 "sources.ml" 57 1877 1899
+type(
+  URI.uri option
+)
+"sources.ml" 51 1587 1599 "sources.ml" 57 1877 1899
+type(
+  URI.uri option
+)
+"sources.ml" 58 1903 1919 "sources.ml" 58 1903 1920
+type(
+  URI.uri option
+)
+ident(
+  int_ref k "sources.ml" 50 1569 1583 "sources.ml" 50 1569 1584
+)
+"sources.ml" 59 1926 1938 "sources.ml" 59 1926 1942
+type(
+  URI.uri option
+)
+"sources.ml" 59 1926 1946 "sources.ml" 59 1926 1958
+type(
+  Utils.gpgkey_type
+)
+"sources.ml" 60 1959 1976 "sources.ml" 60 1959 1979
+type(
+  URI.uri
+)
+ident(
+  def uri "sources.ml" 61 1983 1995 "sources.ml" 68 2246 2259
+)
+"sources.ml" 60 1959 1971 "sources.ml" 60 1959 1979
+type(
+  URI.uri option
+)
+"sources.ml" 61 1983 2002 "sources.ml" 61 1983 2005
+type(
+  URI.uri
+)
+ident(
+  int_ref uri "sources.ml" 60 1959 1976 "sources.ml" 60 1959 1979
+)
+"sources.ml" 61 1983 2002 "sources.ml" 61 1983 2018
+type(
+  string
+)
+"sources.ml" 62 2024 2038 "sources.ml" 62 2024 2044
+type(
+  string
+)
+"sources.ml" 62 2024 2062 "sources.ml" 62 2024 2065
+type(
+  URI.uri
+)
+ident(
+  int_ref uri "sources.ml" 60 1959 1976 "sources.ml" 60 1959 1979
+)
+"sources.ml" 62 2024 2062 "sources.ml" 62 2024 2074
+type(
+  string
+)
+"sources.ml" 62 2024 2048 "sources.ml" 62 2024 2074
+type(
+  Utils.gpgkey_type
+)
+"sources.ml" 63 2075 2089 "sources.ml" 63 2075 2090
+type(
+  string
+)
+"sources.ml" 64 2094 2111 "sources.ml" 64 2094 2118
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sources.ml" 64 2094 2119 "sources.ml" 64 2094 2121
+type(
+  unit
+)
+"sources.ml" 64 2094 2111 "sources.ml" 64 2094 2121
+call(
+  stack
+)
+type(
+  bool
+)
+"sources.ml" 65 2129 2145 "sources.ml" 65 2129 2151
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sources.ml" 65 2129 2153 "sources.ml" 65 2129 2155
+type(
+  (string -> string -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sources.ml" 65 2129 2155 "sources.ml" 65 2129 2192
+type(
+  (string -> string -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"sources.ml" 65 2129 2152 "sources.ml" 65 2129 2193
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"sources.ml" 65 2129 2194 "sources.ml" 65 2129 2198
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"sources.ml" 65 2129 2199 "sources.ml" 65 2129 2200
+type(
+  string
+)
+ident(
+  int_ref n "sources.ml" 42 1234 1256 "sources.ml" 42 1234 1257
+)
+"sources.ml" 64 2094 2127 "sources.ml" 66 2202 2217
+call(
+  stack
+)
+type(
+  unit
+)
+"sources.ml" 64 2094 2108 "sources.ml" 66 2202 2217
+type(
+  unit
+)
+"sources.ml" 67 2219 2233 "sources.ml" 67 2219 2245
+type(
+  Utils.gpgkey_type
+)
+"sources.ml" 64 2094 2108 "sources.ml" 67 2219 2245
+type(
+  Utils.gpgkey_type
+)
+"sources.ml" 61 1983 1995 "sources.ml" 68 2246 2259
+type(
+  Utils.gpgkey_type
+)
+"sources.ml" 58 1903 1913 "sources.ml" 68 2246 2259
+type(
+  Utils.gpgkey_type
+)
+"sources.ml" 50 1569 1579 "sources.ml" 68 2246 2259
+type(
+  Utils.gpgkey_type
+)
+"sources.ml" 69 2263 2275 "sources.ml" 69 2263 2280
+type(
+  Downloader.proxy_mode
+)
+"sources.ml" 71 2297 2317 "sources.ml" 71 2297 2327
+type(
+  string * 'a option -> ((string * 'a option) * string) list -> string
+)
+ident(
+  ext_ref List.assoc
+)
+"sources.ml" 71 2297 2329 "sources.ml" 71 2297 2336
+type(
+  string
+)
+"sources.ml" 71 2297 2338 "sources.ml" 71 2297 2342
+type(
+  'a option
+)
+"sources.ml" 71 2297 2328 "sources.ml" 71 2297 2343
+type(
+  string * 'a option
+)
+"sources.ml" 71 2297 2344 "sources.ml" 71 2297 2350
+type(
+  ((string * 'a option) * string) list
+)
+ident(
+  int_ref fields "sources.ml" 43 1267 1279 "sources.ml" 43 1267 1285
+)
+"sources.ml" 71 2297 2316 "sources.ml" 71 2297 2351
+call(
+  stack
+)
+type(
+  string
+)
+"sources.ml" 72 2357 2371 "sources.ml" 72 2357 2375
+type(
+  string
+)
+"sources.ml" 72 2357 2378 "sources.ml" 72 2357 2383
+type(
+  string
+)
+"sources.ml" 72 2357 2371 "sources.ml" 72 2357 2383
+type(
+  string
+)
+"sources.ml" 72 2357 2387 "sources.ml" 72 2357 2408
+type(
+  Downloader.proxy_mode
+)
+"sources.ml" 73 2409 2423 "sources.ml" 73 2409 2431
+type(
+  string
+)
+"sources.ml" 73 2409 2435 "sources.ml" 73 2409 2457
+type(
+  Downloader.proxy_mode
+)
+"sources.ml" 74 2458 2472 "sources.ml" 74 2458 2473
+type(
+  string
+)
+"sources.ml" 74 2458 2472 "sources.ml" 74 2458 2482
+type(
+  string
+)
+ident(
+  def proxy "sources.ml" 74 2458 2486 "sources.ml" 74 2458 2514
+)
+"sources.ml" 74 2458 2509 "sources.ml" 74 2458 2514
+type(
+  string
+)
+ident(
+  int_ref proxy "sources.ml" 74 2458 2472 "sources.ml" 74 2458 2482
+)
+"sources.ml" 74 2458 2486 "sources.ml" 74 2458 2514
+type(
+  Downloader.proxy_mode
+)
+"sources.ml" 71 2297 2309 "sources.ml" 75 2515 2528
+type(
+  Downloader.proxy_mode
+)
+"sources.ml" 77 2544 2556 "sources.ml" 77 2544 2565
+type(
+  exn
+)
+"sources.ml" 77 2544 2569 "sources.ml" 77 2544 2591
+type(
+  Downloader.proxy_mode
+)
+"sources.ml" 70 2283 2293 "sources.ml" 77 2544 2591
+type(
+  Downloader.proxy_mode
+)
+"sources.ml" 79 2605 2622 "sources.ml" 79 2605 2623
+type(
+  string
+)
+ident(
+  int_ref n "sources.ml" 42 1234 1256 "sources.ml" 42 1234 1257
+)
+"sources.ml" 79 2605 2631 "sources.ml" 79 2605 2634
+type(
+  string
+)
+ident(
+  int_ref uri "sources.ml" 44 1338 1350 "sources.ml" 44 1338 1353
+)
+"sources.ml" 79 2605 2645 "sources.ml" 79 2605 2651
+type(
+  Utils.gpgkey_type
+)
+ident(
+  int_ref gpgkey "sources.ml" 49 1548 1560 "sources.ml" 49 1548 1566
+)
+"sources.ml" 79 2605 2661 "sources.ml" 79 2605 2666
+type(
+  Downloader.proxy_mode
+)
+ident(
+  int_ref proxy "sources.ml" 69 2263 2275 "sources.ml" 69 2263 2280
+)
+"sources.ml" 78 2595 2603 "sources.ml" 80 2668 2677
+type(
+  source
+)
+"sources.ml" 69 2263 2271 "sources.ml" 80 2668 2677
+type(
+  source
+)
+"sources.ml" 49 1548 1556 "sources.ml" 80 2668 2677
+type(
+  source
+)
+"sources.ml" 44 1338 1346 "sources.ml" 80 2668 2677
+type(
+  source
+)
+"sources.ml" 43 1267 1275 "sources.ml" 80 2668 2677
+type(
+  source
+)
+"sources.ml" 82 2687 2698 "sources.ml" 82 2687 2709
+type(
+  string -> Ini_reader.fields -> source
+)
+ident(
+  int_ref give_source "sources.ml" 42 1234 1244 "sources.ml" 42 1234 1255
+)
+"sources.ml" 82 2687 2710 "sources.ml" 82 2687 2711
+type(
+  string
+)
+ident(
+  int_ref n "sources.ml" 41 1207 1216 "sources.ml" 41 1207 1217
+)
+"sources.ml" 82 2687 2712 "sources.ml" 82 2687 2718
+type(
+  Ini_reader.fields
+)
+ident(
+  int_ref fields "sources.ml" 41 1207 1219 "sources.ml" 41 1207 1225
+)
+"sources.ml" 82 2687 2697 "sources.ml" 82 2687 2719
+call(
+  stack
+)
+type(
+  source
+)
+"sources.ml" 82 2687 2723 "sources.ml" 82 2687 2726
+type(
+  source list
+)
+ident(
+  int_ref acc "sources.ml" 41 1207 1227 "sources.ml" 41 1207 1230
+)
+"sources.ml" 82 2687 2697 "sources.ml" 82 2687 2726
+type(
+  source list
+)
+"sources.ml" 83 2727 2738 "sources.ml" 83 2727 2747
+type(
+  exn
+)
+"sources.ml" 83 2727 2767 "sources.ml" 83 2727 2768
+type(
+  string
+)
+"sources.ml" 83 2727 2750 "sources.ml" 83 2727 2768
+type(
+  exn
+)
+"sources.ml" 83 2727 2738 "sources.ml" 83 2727 2768
+type(
+  exn
+)
+"sources.ml" 83 2727 2772 "sources.ml" 83 2727 2775
+type(
+  source list
+)
+ident(
+  int_ref acc "sources.ml" 41 1207 1227 "sources.ml" 41 1207 1230
+)
+"sources.ml" 82 2687 2693 "sources.ml" 83 2727 2775
+type(
+  source list
+)
+"sources.ml" 42 1234 1240 "sources.ml" 83 2727 2775
+type(
+  source list
+)
+"sources.ml" 40 1173 1205 "sources.ml" 84 2776 2779
+type(
+  Ini_reader.section -> source list -> source list
+)
+"sources.ml" 84 2776 2780 "sources.ml" 84 2776 2788
+type(
+  Ini_reader.sections
+)
+ident(
+  int_ref sections "sources.ml" 38 1101 1107 "sources.ml" 38 1101 1115
+)
+"sources.ml" 84 2776 2789 "sources.ml" 84 2776 2791
+type(
+  source list
+)
+"sources.ml" 40 1173 1189 "sources.ml" 84 2776 2791
+call(
+  stack
+)
+type(
+  source list
+)
+"sources.ml" 86 2796 2801 "sources.ml" 86 2796 2808
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sources.ml" 86 2796 2809 "sources.ml" 86 2796 2811
+type(
+  unit
+)
+"sources.ml" 86 2796 2801 "sources.ml" 86 2796 2811
+call(
+  stack
+)
+type(
+  bool
+)
+"sources.ml" 87 2819 2823 "sources.ml" 87 2819 2829
+type(
+  (string -> int -> unit, out_channel, unit) format -> string -> int -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sources.ml" 87 2819 2831 "sources.ml" 87 2819 2833
+type(
+  (string -> int -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> int -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sources.ml" 87 2819 2833 "sources.ml" 87 2819 2860
+type(
+  (string -> int -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"sources.ml" 87 2819 2830 "sources.ml" 87 2819 2861
+type(
+  (string -> int -> unit, out_channel, unit) format
+)
+"sources.ml" 87 2819 2862 "sources.ml" 87 2819 2866
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"sources.ml" 87 2819 2868 "sources.ml" 87 2819 2879
+type(
+  source list -> int
+)
+ident(
+  ext_ref List.length
+)
+"sources.ml" 87 2819 2880 "sources.ml" 87 2819 2887
+type(
+  source list
+)
+ident(
+  int_ref sources "sources.ml" 40 1173 1179 "sources.ml" 40 1173 1186
+)
+"sources.ml" 87 2819 2867 "sources.ml" 87 2819 2888
+call(
+  stack
+)
+type(
+  int
+)
+"sources.ml" 86 2796 2817 "sources.ml" 88 2890 2893
+call(
+  stack
+)
+type(
+  unit
+)
+"sources.ml" 86 2796 2798 "sources.ml" 88 2890 2893
+type(
+  unit
+)
+"sources.ml" 90 2896 2898 "sources.ml" 90 2896 2905
+type(
+  source list
+)
+ident(
+  int_ref sources "sources.ml" 40 1173 1179 "sources.ml" 40 1173 1186
+)
+"sources.ml" 86 2796 2798 "sources.ml" 90 2896 2905
+type(
+  source list
+)
+"sources.ml" 40 1173 1175 "sources.ml" 90 2896 2905
+type(
+  source list
+)
+"sources.ml" 38 1101 1103 "sources.ml" 90 2896 2905
+type(
+  source list
+)
+"sources.ml" 35 1021 1023 "sources.ml" 90 2896 2905
+type(
+  source list
+)
+"sources.ml" 92 2907 2911 "sources.ml" 92 2907 2924
+type(
+  source list -> source list -> source list
+)
+ident(
+  def merge_sources "sources.ml" 101 3143 3143 --
+)
+"sources.ml" 92 2907 2925 "sources.ml" 92 2907 2940
+type(
+  source list
+)
+ident(
+  def current_sources "sources.ml" 92 2907 2941 "sources.ml" 99 3110 3141
+)
+"sources.ml" 92 2907 2941 "sources.ml" 92 2907 2952
+type(
+  source list
+)
+ident(
+  def new_sources "sources.ml" 93 2955 2957 "sources.ml" 99 3110 3141
+)
+"sources.ml" 93 2955 2957 "sources.ml" 93 2955 2972
+type(
+  (source -> source list -> source list) ->
+  source list -> source list -> source list
+)
+ident(
+  ext_ref List.fold_right
+)
+"sources.ml" 94 2975 2983 "sources.ml" 94 2975 2989
+type(
+  source
+)
+ident(
+  def source "sources.ml" 94 2975 2990 "sources.ml" 98 3088 3109
+)
+"sources.ml" 94 2975 2990 "sources.ml" 94 2975 2993
+type(
+  source list
+)
+ident(
+  def acc "sources.ml" 95 2997 3003 "sources.ml" 98 3088 3109
+)
+"sources.ml" 95 2997 3006 "sources.ml" 95 2997 3017
+type(
+  (source -> bool) -> source list -> bool
+)
+ident(
+  ext_ref List.exists
+)
+"sources.ml" 95 2997 3032 "sources.ml" 95 2997 3033
+type(
+  string
+)
+ident(
+  def n "sources.ml" 95 2997 3039 "sources.ml" 95 2997 3054
+)
+"sources.ml" 95 2997 3023 "sources.ml" 95 2997 3035
+type(
+  source
+)
+"sources.ml" 95 2997 3039 "sources.ml" 95 2997 3040
+type(
+  string
+)
+ident(
+  int_ref n "sources.ml" 95 2997 3032 "sources.ml" 95 2997 3033
+)
+"sources.ml" 95 2997 3041 "sources.ml" 95 2997 3042
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sources.ml" 95 2997 3043 "sources.ml" 95 2997 3049
+type(
+  source
+)
+ident(
+  int_ref source "sources.ml" 94 2975 2983 "sources.ml" 94 2975 2989
+)
+"sources.ml" 95 2997 3043 "sources.ml" 95 2997 3054
+type(
+  string
+)
+"sources.ml" 95 2997 3039 "sources.ml" 95 2997 3054
+type(
+  bool
+)
+"sources.ml" 95 2997 3018 "sources.ml" 95 2997 3055
+type(
+  source -> bool
+)
+"sources.ml" 95 2997 3056 "sources.ml" 95 2997 3059
+type(
+  source list
+)
+ident(
+  int_ref acc "sources.ml" 94 2975 2990 "sources.ml" 94 2975 2993
+)
+"sources.ml" 95 2997 3006 "sources.ml" 95 2997 3059
+call(
+  stack
+)
+type(
+  bool
+)
+"sources.ml" 96 3065 3073 "sources.ml" 96 3065 3076
+type(
+  source list
+)
+ident(
+  int_ref acc "sources.ml" 94 2975 2990 "sources.ml" 94 2975 2993
+)
+"sources.ml" 98 3088 3096 "sources.ml" 98 3088 3102
+type(
+  source
+)
+ident(
+  int_ref source "sources.ml" 94 2975 2983 "sources.ml" 94 2975 2989
+)
+"sources.ml" 98 3088 3106 "sources.ml" 98 3088 3109
+type(
+  source list
+)
+ident(
+  int_ref acc "sources.ml" 94 2975 2990 "sources.ml" 94 2975 2993
+)
+"sources.ml" 98 3088 3096 "sources.ml" 98 3088 3109
+type(
+  source list
+)
+"sources.ml" 95 2997 3003 "sources.ml" 98 3088 3109
+type(
+  source list
+)
+"sources.ml" 93 2955 2973 "sources.ml" 99 3110 3113
+type(
+  source -> source list -> source list
+)
+"sources.ml" 99 3110 3114 "sources.ml" 99 3110 3125
+type(
+  source list
+)
+ident(
+  int_ref new_sources "sources.ml" 92 2907 2941 "sources.ml" 92 2907 2952
+)
+"sources.ml" 99 3110 3126 "sources.ml" 99 3110 3141
+type(
+  source list
+)
+ident(
+  int_ref current_sources "sources.ml" 92 2907 2925 "sources.ml" 92 2907 2940
+)
+"sources.ml" 93 2955 2957 "sources.ml" 99 3110 3141
+call(
+  tail
+)
+type(
+  source list
+)
+"sources.ml" 101 3143 3147 "sources.ml" 101 3143 3163
+type(
+  string -> bool
+)
+ident(
+  def filter_filenames "sources.ml" 104 3217 3217 --
+)
+"sources.ml" 101 3143 3164 "sources.ml" 101 3143 3172
+type(
+  string
+)
+ident(
+  def filename "sources.ml" 102 3175 3177 "sources.ml" 102 3175 3215
+)
+"sources.ml" 102 3175 3177 "sources.ml" 102 3175 3198
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Filename.check_suffix
+)
+"sources.ml" 102 3175 3199 "sources.ml" 102 3175 3207
+type(
+  string
+)
+ident(
+  int_ref filename "sources.ml" 101 3143 3164 "sources.ml" 101 3143 3172
+)
+"sources.ml" 102 3175 3208 "sources.ml" 102 3175 3215
+type(
+  string
+)
+"sources.ml" 102 3175 3177 "sources.ml" 102 3175 3215
+call(
+  tail
+)
+type(
+  bool
+)
+"sources.ml" 104 3217 3221 "sources.ml" 104 3217 3233
+type(
+  unit -> source list
+)
+ident(
+  def read_sources "sources.ml" 139 4445 4456 --
+)
+"sources.ml" 104 3217 3234 "sources.ml" 104 3217 3236
+type(
+  unit
+)
+"sources.ml" 105 3239 3245 "sources.ml" 105 3239 3249
+type(
+  string list
+)
+"sources.ml" 105 3239 3252 "sources.ml" 105 3239 3273
+type(
+  unit -> string list
+)
+ident(
+  ext_ref Paths.xdg_config_dirs
+)
+"sources.ml" 105 3239 3274 "sources.ml" 105 3239 3276
+type(
+  unit
+)
+"sources.ml" 105 3239 3252 "sources.ml" 105 3239 3276
+call(
+  stack
+)
+type(
+  string list
+)
+"sources.ml" 106 3280 3286 "sources.ml" 106 3280 3290
+type(
+  string list
+)
+"sources.ml" 107 3293 3303 "sources.ml" 107 3293 3324
+type(
+  unit -> string option
+)
+ident(
+  ext_ref Paths.xdg_config_home
+)
+"sources.ml" 107 3293 3325 "sources.ml" 107 3293 3327
+type(
+  unit
+)
+"sources.ml" 107 3293 3303 "sources.ml" 107 3293 3327
+call(
+  stack
+)
+type(
+  string option
+)
+"sources.ml" 108 3333 3339 "sources.ml" 108 3333 3343
+type(
+  string option
+)
+"sources.ml" 108 3333 3347 "sources.ml" 108 3333 3351
+type(
+  string list
+)
+ident(
+  int_ref dirs "sources.ml" 105 3239 3245 "sources.ml" 105 3239 3249
+)
+"sources.ml" 109 3352 3363 "sources.ml" 109 3352 3366
+type(
+  string
+)
+ident(
+  def dir "sources.ml" 109 3352 3370 "sources.ml" 109 3352 3381
+)
+"sources.ml" 109 3352 3358 "sources.ml" 109 3352 3366
+type(
+  string option
+)
+"sources.ml" 109 3352 3370 "sources.ml" 109 3352 3373
+type(
+  string
+)
+ident(
+  int_ref dir "sources.ml" 109 3352 3363 "sources.ml" 109 3352 3366
+)
+"sources.ml" 109 3352 3377 "sources.ml" 109 3352 3381
+type(
+  string list
+)
+ident(
+  int_ref dirs "sources.ml" 105 3239 3245 "sources.ml" 105 3239 3249
+)
+"sources.ml" 109 3352 3370 "sources.ml" 109 3352 3381
+type(
+  string list
+)
+"sources.ml" 107 3293 3297 "sources.ml" 109 3352 3381
+type(
+  string list
+)
+"sources.ml" 110 3385 3391 "sources.ml" 110 3385 3395
+type(
+  string list
+)
+"sources.ml" 110 3385 3398 "sources.ml" 110 3385 3406
+type(
+  (string -> string) -> string list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"sources.ml" 110 3385 3412 "sources.ml" 110 3385 3413
+type(
+  string
+)
+ident(
+  def x "sources.ml" 110 3385 3417 "sources.ml" 110 3385 3431
+)
+"sources.ml" 110 3385 3417 "sources.ml" 110 3385 3418
+type(
+  string
+)
+ident(
+  int_ref x "sources.ml" 110 3385 3412 "sources.ml" 110 3385 3413
+)
+"sources.ml" 110 3385 3419 "sources.ml" 110 3385 3421
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"sources.ml" 110 3385 3422 "sources.ml" 110 3385 3431
+type(
+  string
+)
+"sources.ml" 110 3385 3417 "sources.ml" 110 3385 3431
+call(
+  tail
+)
+type(
+  string
+)
+"sources.ml" 110 3385 3407 "sources.ml" 110 3385 3432
+type(
+  string -> string
+)
+"sources.ml" 110 3385 3433 "sources.ml" 110 3385 3437
+type(
+  string list
+)
+ident(
+  int_ref dirs "sources.ml" 106 3280 3286 "sources.ml" 106 3280 3290
+)
+"sources.ml" 110 3385 3398 "sources.ml" 110 3385 3437
+call(
+  stack
+)
+type(
+  string list
+)
+"sources.ml" 111 3441 3447 "sources.ml" 111 3441 3453
+type(
+  StringSet.t ref
+)
+"sources.ml" 111 3441 3456 "sources.ml" 111 3441 3459
+type(
+  StringSet.t -> StringSet.t ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"sources.ml" 111 3441 3460 "sources.ml" 111 3441 3475
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"sources.ml" 111 3441 3456 "sources.ml" 111 3441 3475
+type(
+  StringSet.t ref
+)
+"sources.ml" 112 3479 3481 "sources.ml" 112 3479 3495
+type(
+  (source list -> string -> source list) ->
+  source list -> string list -> source list
+)
+ident(
+  ext_ref List.fold_left
+)
+"sources.ml" 113 3498 3506 "sources.ml" 113 3498 3509
+type(
+  source list
+)
+ident(
+  def acc "sources.ml" 113 3498 3510 "sources.ml" 138 4427 4444
+)
+"sources.ml" 113 3498 3510 "sources.ml" 113 3498 3513
+type(
+  string
+)
+ident(
+  def dir "sources.ml" 114 3517 3523 "sources.ml" 138 4427 4444
+)
+"sources.ml" 114 3517 3527 "sources.ml" 114 3517 3532
+type(
+  string list
+)
+"sources.ml" 115 3535 3547 "sources.ml" 115 3535 3558
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"sources.ml" 115 3535 3559 "sources.ml" 115 3535 3575
+type(
+  string -> bool
+)
+ident(
+  int_ref filter_filenames "sources.ml" 101 3143 3147 "sources.ml" 101 3143 3163
+)
+"sources.ml" 115 3535 3577 "sources.ml" 115 3535 3590
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"sources.ml" 115 3535 3592 "sources.ml" 115 3535 3603
+type(
+  string -> string array
+)
+ident(
+  ext_ref Sys.readdir
+)
+"sources.ml" 115 3535 3604 "sources.ml" 115 3535 3607
+type(
+  string
+)
+ident(
+  int_ref dir "sources.ml" 113 3498 3510 "sources.ml" 113 3498 3513
+)
+"sources.ml" 115 3535 3591 "sources.ml" 115 3535 3608
+type(
+  string array
+)
+"sources.ml" 115 3535 3576 "sources.ml" 115 3535 3609
+call(
+  stack
+)
+type(
+  string list
+)
+"sources.ml" 115 3535 3547 "sources.ml" 115 3535 3609
+call(
+  stack
+)
+type(
+  string list
+)
+"sources.ml" 116 3610 3633 "sources.ml" 116 3610 3634
+type(
+  string
+)
+"sources.ml" 116 3610 3623 "sources.ml" 116 3610 3634
+type(
+  exn
+)
+"sources.ml" 116 3610 3638 "sources.ml" 116 3610 3640
+type(
+  string list
+)
+"sources.ml" 115 3535 3543 "sources.ml" 116 3610 3640
+type(
+  string list
+)
+"sources.ml" 117 3644 3654 "sources.ml" 117 3644 3659
+type(
+  StringSet.elt list
+)
+"sources.ml" 117 3644 3662 "sources.ml" 117 3644 3673
+type(
+  (StringSet.elt -> bool) -> StringSet.elt list -> StringSet.elt list
+)
+ident(
+  ext_ref List.filter
+)
+"sources.ml" 117 3644 3679 "sources.ml" 117 3644 3680
+type(
+  StringSet.elt
+)
+ident(
+  def x "sources.ml" 117 3644 3684 "sources.ml" 117 3644 3715
+)
+"sources.ml" 117 3644 3684 "sources.ml" 117 3644 3697
+type(
+  StringSet.elt -> StringSet.t -> bool
+)
+ident(
+  ext_ref StringSet.mem
+)
+"sources.ml" 117 3644 3698 "sources.ml" 117 3644 3699
+type(
+  StringSet.elt
+)
+ident(
+  int_ref x "sources.ml" 117 3644 3679 "sources.ml" 117 3644 3680
+)
+"sources.ml" 117 3644 3700 "sources.ml" 117 3644 3701
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sources.ml" 117 3644 3701 "sources.ml" 117 3644 3707
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref fnseen "sources.ml" 111 3441 3447 "sources.ml" 111 3441 3453
+)
+"sources.ml" 117 3644 3700 "sources.ml" 117 3644 3707
+type(
+  StringSet.t
+)
+"sources.ml" 117 3644 3684 "sources.ml" 117 3644 3707
+call(
+  stack
+)
+type(
+  bool
+)
+"sources.ml" 117 3644 3708 "sources.ml" 117 3644 3710
+type(
+  bool -> bool -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sources.ml" 117 3644 3711 "sources.ml" 117 3644 3715
+type(
+  bool
+)
+"sources.ml" 117 3644 3684 "sources.ml" 117 3644 3715
+type(
+  bool
+)
+"sources.ml" 117 3644 3674 "sources.ml" 117 3644 3716
+type(
+  StringSet.elt -> bool
+)
+"sources.ml" 117 3644 3717 "sources.ml" 117 3644 3722
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref files "sources.ml" 114 3517 3527 "sources.ml" 114 3517 3532
+)
+"sources.ml" 117 3644 3662 "sources.ml" 117 3644 3722
+call(
+  stack
+)
+type(
+  StringSet.elt list
+)
+"sources.ml" 118 3726 3732 "sources.ml" 118 3726 3746
+type(
+  (source list -> StringSet.elt -> source list) ->
+  source list -> StringSet.elt list -> source list
+)
+ident(
+  ext_ref List.fold_left
+)
+"sources.ml" 119 3749 3761 "sources.ml" 119 3749 3764
+type(
+  source list
+)
+ident(
+  def acc "sources.ml" 119 3749 3765 "sources.ml" 137 4411 4426
+)
+"sources.ml" 119 3749 3765 "sources.ml" 119 3749 3769
+type(
+  StringSet.elt
+)
+ident(
+  def file "sources.ml" 120 3773 3783 "sources.ml" 137 4411 4426
+)
+"sources.ml" 121 3789 3805 "sources.ml" 121 3789 3806
+type(
+  source list
+)
+ident(
+  def s "sources.ml" 125 3976 3988 "sources.ml" 126 4026 4039
+)
+"sources.ml" 121 3789 3809 "sources.ml" 121 3789 3822
+type(
+  source list -> source list -> source list
+)
+ident(
+  int_ref merge_sources "sources.ml" 92 2907 2911 "sources.ml" 92 2907 2924
+)
+"sources.ml" 121 3789 3823 "sources.ml" 121 3789 3826
+type(
+  source list
+)
+ident(
+  int_ref acc "sources.ml" 119 3749 3761 "sources.ml" 119 3749 3764
+)
+"sources.ml" 121 3789 3828 "sources.ml" 121 3789 3838
+type(
+  string -> source list
+)
+ident(
+  int_ref parse_conf "sources.ml" 34 999 1003 "sources.ml" 34 999 1013
+)
+"sources.ml" 121 3789 3840 "sources.ml" 121 3789 3843
+type(
+  string
+)
+ident(
+  int_ref dir "sources.ml" 113 3498 3510 "sources.ml" 113 3498 3513
+)
+"sources.ml" 121 3789 3844 "sources.ml" 121 3789 3846
+type(
+  string -> StringSet.elt -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"sources.ml" 121 3789 3847 "sources.ml" 121 3789 3851
+type(
+  StringSet.elt
+)
+ident(
+  int_ref file "sources.ml" 119 3749 3765 "sources.ml" 119 3749 3769
+)
+"sources.ml" 121 3789 3839 "sources.ml" 121 3789 3852
+call(
+  stack
+)
+type(
+  string
+)
+"sources.ml" 121 3789 3827 "sources.ml" 121 3789 3853
+call(
+  stack
+)
+type(
+  source list
+)
+"sources.ml" 121 3789 3809 "sources.ml" 121 3789 3853
+call(
+  stack
+)
+type(
+  source list
+)
+"sources.ml" 125 3976 3988 "sources.ml" 125 3976 3994
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref fnseen "sources.ml" 111 3441 3447 "sources.ml" 111 3441 3453
+)
+"sources.ml" 125 3976 3995 "sources.ml" 125 3976 3997
+type(
+  StringSet.t ref -> StringSet.t -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"sources.ml" 125 3976 3998 "sources.ml" 125 3976 4011
+type(
+  StringSet.elt -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.add
+)
+"sources.ml" 125 3976 4012 "sources.ml" 125 3976 4016
+type(
+  StringSet.elt
+)
+ident(
+  int_ref file "sources.ml" 119 3749 3765 "sources.ml" 119 3749 3769
+)
+"sources.ml" 125 3976 4017 "sources.ml" 125 3976 4018
+type(
+  StringSet.t ref -> StringSet.t
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"sources.ml" 125 3976 4018 "sources.ml" 125 3976 4024
+type(
+  StringSet.t ref
+)
+ident(
+  int_ref fnseen "sources.ml" 111 3441 3447 "sources.ml" 111 3441 3453
+)
+"sources.ml" 125 3976 4017 "sources.ml" 125 3976 4024
+type(
+  StringSet.t
+)
+"sources.ml" 125 3976 3998 "sources.ml" 125 3976 4024
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"sources.ml" 125 3976 3988 "sources.ml" 125 3976 4024
+type(
+  unit
+)
+"sources.ml" 126 4026 4038 "sources.ml" 126 4026 4039
+type(
+  source list
+)
+ident(
+  int_ref s "sources.ml" 121 3789 3805 "sources.ml" 121 3789 3806
+)
+"sources.ml" 125 3976 3988 "sources.ml" 126 4026 4039
+type(
+  source list
+)
+"sources.ml" 120 3773 3787 "sources.ml" 127 4040 4051
+type(
+  source list
+)
+"sources.ml" 128 4057 4081 "sources.ml" 128 4057 4085
+type(
+  Unix.error
+)
+ident(
+  def code "sources.ml" 129 4100 4112 "sources.ml" 132 4232 4247
+)
+"sources.ml" 128 4057 4087 "sources.ml" 128 4057 4092
+type(
+  string
+)
+ident(
+  def fname "sources.ml" 129 4100 4112 "sources.ml" 132 4232 4247
+)
+"sources.ml" 128 4057 4094 "sources.ml" 128 4057 4095
+type(
+  string
+)
+"sources.ml" 128 4057 4069 "sources.ml" 128 4057 4096
+type(
+  exn
+)
+"sources.ml" 129 4100 4115 "sources.ml" 129 4100 4122
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sources.ml" 129 4100 4123 "sources.ml" 129 4100 4125
+type(
+  unit
+)
+"sources.ml" 129 4100 4115 "sources.ml" 129 4100 4125
+call(
+  stack
+)
+type(
+  bool
+)
+"sources.ml" 130 4133 4147 "sources.ml" 130 4133 4153
+type(
+  (string -> string -> string -> unit, out_channel, unit) format ->
+  string -> string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sources.ml" 130 4133 4155 "sources.ml" 130 4133 4157
+type(
+  (string -> string -> string -> unit, out_channel, unit, unit, unit, unit)
+  format6 -> (string -> string -> string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sources.ml" 130 4133 4157 "sources.ml" 130 4133 4183
+type(
+  (string -> string -> string -> unit, out_channel, unit, unit, unit, unit)
+  format6
+)
+"sources.ml" 130 4133 4154 "sources.ml" 130 4133 4184
+type(
+  (string -> string -> string -> unit, out_channel, unit) format
+)
+"sources.ml" 130 4133 4185 "sources.ml" 130 4133 4189
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"sources.ml" 130 4133 4190 "sources.ml" 130 4133 4195
+type(
+  string
+)
+ident(
+  int_ref fname "sources.ml" 128 4057 4087 "sources.ml" 128 4057 4092
+)
+"sources.ml" 130 4133 4197 "sources.ml" 130 4133 4210
+type(
+  Unix.error -> string
+)
+ident(
+  ext_ref Unix.error_message
+)
+"sources.ml" 130 4133 4211 "sources.ml" 130 4133 4215
+type(
+  Unix.error
+)
+ident(
+  int_ref code "sources.ml" 128 4057 4081 "sources.ml" 128 4057 4085
+)
+"sources.ml" 130 4133 4196 "sources.ml" 130 4133 4216
+call(
+  stack
+)
+type(
+  string
+)
+"sources.ml" 129 4100 4131 "sources.ml" 131 4217 4230
+call(
+  stack
+)
+type(
+  unit
+)
+"sources.ml" 129 4100 4112 "sources.ml" 131 4217 4230
+type(
+  unit
+)
+"sources.ml" 132 4232 4244 "sources.ml" 132 4232 4247
+type(
+  source list
+)
+ident(
+  int_ref acc "sources.ml" 119 3749 3761 "sources.ml" 119 3749 3764
+)
+"sources.ml" 129 4100 4112 "sources.ml" 132 4232 4247
+type(
+  source list
+)
+"sources.ml" 133 4248 4277 "sources.ml" 133 4248 4280
+type(
+  string
+)
+ident(
+  def msg "sources.ml" 134 4284 4296 "sources.ml" 137 4411 4426
+)
+"sources.ml" 133 4248 4260 "sources.ml" 133 4248 4280
+type(
+  exn
+)
+"sources.ml" 134 4284 4299 "sources.ml" 134 4284 4306
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"sources.ml" 134 4284 4307 "sources.ml" 134 4284 4309
+type(
+  unit
+)
+"sources.ml" 134 4284 4299 "sources.ml" 134 4284 4309
+call(
+  stack
+)
+type(
+  bool
+)
+"sources.ml" 135 4317 4331 "sources.ml" 135 4317 4337
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"sources.ml" 135 4317 4339 "sources.ml" 135 4317 4341
+type(
+  (string -> string -> unit, out_channel, unit, unit, unit, unit) format6 ->
+  (string -> string -> unit, out_channel, unit) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sources.ml" 135 4317 4341 "sources.ml" 135 4317 4385
+type(
+  (string -> string -> unit, out_channel, unit, unit, unit, unit) format6
+)
+"sources.ml" 135 4317 4338 "sources.ml" 135 4317 4386
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"sources.ml" 135 4317 4387 "sources.ml" 135 4317 4391
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"sources.ml" 135 4317 4392 "sources.ml" 135 4317 4395
+type(
+  string
+)
+ident(
+  int_ref msg "sources.ml" 133 4248 4277 "sources.ml" 133 4248 4280
+)
+"sources.ml" 134 4284 4315 "sources.ml" 136 4396 4409
+call(
+  stack
+)
+type(
+  unit
+)
+"sources.ml" 134 4284 4296 "sources.ml" 136 4396 4409
+type(
+  unit
+)
+"sources.ml" 137 4411 4423 "sources.ml" 137 4411 4426
+type(
+  source list
+)
+ident(
+  int_ref acc "sources.ml" 119 3749 3761 "sources.ml" 119 3749 3764
+)
+"sources.ml" 134 4284 4296 "sources.ml" 137 4411 4426
+type(
+  source list
+)
+"sources.ml" 120 3773 3783 "sources.ml" 137 4411 4426
+type(
+  source list
+)
+"sources.ml" 118 3726 3747 "sources.ml" 138 4427 4434
+type(
+  source list -> StringSet.elt -> source list
+)
+"sources.ml" 138 4427 4435 "sources.ml" 138 4427 4438
+type(
+  source list
+)
+ident(
+  int_ref acc "sources.ml" 113 3498 3506 "sources.ml" 113 3498 3509
+)
+"sources.ml" 138 4427 4439 "sources.ml" 138 4427 4444
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref files "sources.ml" 117 3644 3654 "sources.ml" 117 3644 3659
+)
+"sources.ml" 118 3726 3732 "sources.ml" 138 4427 4444
+call(
+  tail
+)
+type(
+  source list
+)
+"sources.ml" 117 3644 3650 "sources.ml" 138 4427 4444
+type(
+  source list
+)
+"sources.ml" 114 3517 3523 "sources.ml" 138 4427 4444
+type(
+  source list
+)
+"sources.ml" 112 3479 3496 "sources.ml" 139 4445 4448
+type(
+  source list -> string -> source list
+)
+"sources.ml" 139 4445 4449 "sources.ml" 139 4445 4451
+type(
+  source list
+)
+"sources.ml" 139 4445 4452 "sources.ml" 139 4445 4456
+type(
+  string list
+)
+ident(
+  int_ref dirs "sources.ml" 110 3385 3391 "sources.ml" 110 3385 3395
+)
+"sources.ml" 112 3479 3481 "sources.ml" 139 4445 4456
+call(
+  tail
+)
+type(
+  source list
+)
+"sources.ml" 111 3441 3443 "sources.ml" 139 4445 4456
+type(
+  source list
+)
+"sources.ml" 110 3385 3387 "sources.ml" 139 4445 4456
+type(
+  source list
+)
+"sources.ml" 106 3280 3282 "sources.ml" 139 4445 4456
+type(
+  source list
+)
+"sources.ml" 105 3239 3241 "sources.ml" 139 4445 4456
+type(
+  source list
+)

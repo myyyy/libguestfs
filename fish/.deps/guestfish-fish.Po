@@ -70,8 +70,7 @@ guestfish-fish.o: fish.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/readline/tilde.h /usr/include/readline/history.h \
  /usr/include/x86_64-linux-gnu/bits/timex.h ../src/guestfs.h fish.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h fish-cmds.h options.h \
+ ../src/guestfs-internal-frontend-cleanups.h fish-cmds.h options.h \
  /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdbool.h progress.h \
  ../gnulib/lib/c-ctype.h ../gnulib/lib/closeout.h \
  ../gnulib/lib/ignore-value.h
@@ -303,8 +302,6 @@ fish.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:
 
 fish-cmds.h:
 

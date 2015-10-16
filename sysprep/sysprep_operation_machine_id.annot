@@ -1,0 +1,284 @@
+"sysprep_operation_machine_id.ml" 24 852 856 "sysprep_operation_machine_id.ml" 24 852 874
+type(
+  Guestfs.guestfs -> string -> 'a -> unit
+)
+ident(
+  def machine_id_perform "sysprep_operation_machine_id.ml" 33 1156 1156 --
+)
+"sysprep_operation_machine_id.ml" 24 852 876 "sysprep_operation_machine_id.ml" 24 852 877
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "sysprep_operation_machine_id.ml" 24 852 897 "sysprep_operation_machine_id.ml" 31 1151 1154
+)
+"sysprep_operation_machine_id.ml" 24 852 897 "sysprep_operation_machine_id.ml" 24 852 901
+type(
+  string
+)
+ident(
+  def root "sysprep_operation_machine_id.ml" 24 852 902 "sysprep_operation_machine_id.ml" 31 1151 1154
+)
+"sysprep_operation_machine_id.ml" 24 852 902 "sysprep_operation_machine_id.ml" 24 852 914
+type(
+  'a
+)
+ident(
+  def side_effects "sysprep_operation_machine_id.ml" 25 917 919 "sysprep_operation_machine_id.ml" 31 1151 1154
+)
+"sysprep_operation_machine_id.ml" 25 917 923 "sysprep_operation_machine_id.ml" 25 917 926
+type(
+  string
+)
+"sysprep_operation_machine_id.ml" 25 917 929 "sysprep_operation_machine_id.ml" 25 917 930
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_machine_id.ml" 24 852 876 "sysprep_operation_machine_id.ml" 24 852 877
+)
+"sysprep_operation_machine_id.ml" 25 917 929 "sysprep_operation_machine_id.ml" 25 917 947
+call(
+  stack
+)
+type(
+  string -> string
+)
+"sysprep_operation_machine_id.ml" 25 917 948 "sysprep_operation_machine_id.ml" 25 917 952
+type(
+  string
+)
+ident(
+  int_ref root "sysprep_operation_machine_id.ml" 24 852 897 "sysprep_operation_machine_id.ml" 24 852 901
+)
+"sysprep_operation_machine_id.ml" 25 917 929 "sysprep_operation_machine_id.ml" 25 917 952
+type(
+  string
+)
+"sysprep_operation_machine_id.ml" 26 956 961 "sysprep_operation_machine_id.ml" 26 956 964
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_machine_id.ml" 25 917 923 "sysprep_operation_machine_id.ml" 25 917 926
+)
+"sysprep_operation_machine_id.ml" 26 956 965 "sysprep_operation_machine_id.ml" 26 956 967
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_machine_id.ml" 26 956 968 "sysprep_operation_machine_id.ml" 26 956 977
+type(
+  string
+)
+"sysprep_operation_machine_id.ml" 26 956 961 "sysprep_operation_machine_id.ml" 26 956 977
+type(
+  bool
+)
+"sysprep_operation_machine_id.ml" 27 985 993 "sysprep_operation_machine_id.ml" 27 985 998
+type(
+  string list
+)
+"sysprep_operation_machine_id.ml" 27 985 1003 "sysprep_operation_machine_id.ml" 27 985 1020
+type(
+  string
+)
+"sysprep_operation_machine_id.ml" 28 1022 1040 "sysprep_operation_machine_id.ml" 28 1022 1066
+type(
+  string
+)
+"sysprep_operation_machine_id.ml" 27 985 1001 "sysprep_operation_machine_id.ml" 28 1022 1069
+type(
+  string list
+)
+"sysprep_operation_machine_id.ml" 29 1073 1081 "sysprep_operation_machine_id.ml" 29 1073 1086
+type(
+  string list
+)
+"sysprep_operation_machine_id.ml" 29 1073 1089 "sysprep_operation_machine_id.ml" 29 1073 1100
+type(
+  (string -> bool) -> string list -> string list
+)
+ident(
+  ext_ref List.filter
+)
+"sysprep_operation_machine_id.ml" 29 1073 1101 "sysprep_operation_machine_id.ml" 29 1073 1102
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_machine_id.ml" 24 852 876 "sysprep_operation_machine_id.ml" 24 852 877
+)
+"sysprep_operation_machine_id.ml" 29 1073 1101 "sysprep_operation_machine_id.ml" 29 1073 1110
+call(
+  stack
+)
+type(
+  string -> bool
+)
+type(
+  ?followsymlinks:bool -> string -> bool
+)
+"sysprep_operation_machine_id.ml" 29 1073 1111 "sysprep_operation_machine_id.ml" 29 1073 1116
+type(
+  string list
+)
+ident(
+  int_ref paths "sysprep_operation_machine_id.ml" 27 985 993 "sysprep_operation_machine_id.ml" 27 985 998
+)
+"sysprep_operation_machine_id.ml" 29 1073 1089 "sysprep_operation_machine_id.ml" 29 1073 1116
+call(
+  stack
+)
+type(
+  string list
+)
+"sysprep_operation_machine_id.ml" 30 1120 1124 "sysprep_operation_machine_id.ml" 30 1120 1133
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_machine_id.ml" 30 1120 1134 "sysprep_operation_machine_id.ml" 30 1120 1135
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_machine_id.ml" 24 852 876 "sysprep_operation_machine_id.ml" 24 852 877
+)
+"sysprep_operation_machine_id.ml" 30 1120 1134 "sysprep_operation_machine_id.ml" 30 1120 1144
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_machine_id.ml" 30 1120 1145 "sysprep_operation_machine_id.ml" 30 1120 1150
+type(
+  string list
+)
+ident(
+  int_ref paths "sysprep_operation_machine_id.ml" 29 1073 1081 "sysprep_operation_machine_id.ml" 29 1073 1086
+)
+"sysprep_operation_machine_id.ml" 30 1120 1124 "sysprep_operation_machine_id.ml" 30 1120 1150
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_machine_id.ml" 29 1073 1077 "sysprep_operation_machine_id.ml" 30 1120 1150
+type(
+  unit
+)
+"sysprep_operation_machine_id.ml" 26 956 983 "sysprep_operation_machine_id.ml" 31 1151 1154
+type(
+  unit
+)
+"sysprep_operation_machine_id.ml" 26 956 958 "sysprep_operation_machine_id.ml" 31 1151 1154
+type(
+  unit
+)
+"sysprep_operation_machine_id.ml" 25 917 919 "sysprep_operation_machine_id.ml" 31 1151 1154
+type(
+  unit
+)
+"sysprep_operation_machine_id.ml" 33 1156 1160 "sysprep_operation_machine_id.ml" 33 1156 1162
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_machine_id.ml" 46 1610 1610 --
+)
+"sysprep_operation_machine_id.ml" 34 1167 1169 "sysprep_operation_machine_id.ml" 34 1167 1177
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_machine_id.ml" 35 1183 1194 "sysprep_operation_machine_id.ml" 35 1183 1206
+type(
+  string
+)
+"sysprep_operation_machine_id.ml" 36 1208 1233 "sysprep_operation_machine_id.ml" 36 1208 1237
+type(
+  bool
+)
+"sysprep_operation_machine_id.ml" 37 1239 1253 "sysprep_operation_machine_id.ml" 37 1239 1255
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_machine_id.ml" 37 1239 1255 "sysprep_operation_machine_id.ml" 37 1239 1284
+type(
+  string
+)
+"sysprep_operation_machine_id.ml" 37 1239 1253 "sysprep_operation_machine_id.ml" 37 1239 1284
+type(
+  string
+)
+"sysprep_operation_machine_id.ml" 38 1286 1314 "sysprep_operation_machine_id.ml" 38 1286 1316
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_machine_id.ml" 38 1286 1316 "sysprep_operation_machine_id.ml" 42 1531 1550
+type(
+  string
+)
+"sysprep_operation_machine_id.ml" 38 1286 1313 "sysprep_operation_machine_id.ml" 42 1531 1551
+type(
+  string
+)
+"sysprep_operation_machine_id.ml" 38 1286 1308 "sysprep_operation_machine_id.ml" 42 1531 1551
+type(
+  string option
+)
+"sysprep_operation_machine_id.ml" 43 1553 1587 "sysprep_operation_machine_id.ml" 43 1553 1605
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref machine_id_perform "sysprep_operation_machine_id.ml" 24 852 856 "sysprep_operation_machine_id.ml" 24 852 874
+)
+"sysprep_operation_machine_id.ml" 43 1553 1582 "sysprep_operation_machine_id.ml" 43 1553 1605
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_machine_id.ml" 33 1156 1165 "sysprep_operation_machine_id.ml" 44 1607 1608
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_machine_id.ml" 46 1610 1614 "sysprep_operation_machine_id.ml" 46 1610 1616
+type(
+  unit
+)
+"sysprep_operation_machine_id.ml" 46 1610 1619 "sysprep_operation_machine_id.ml" 46 1610 1637
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_machine_id.ml" 46 1610 1638 "sysprep_operation_machine_id.ml" 46 1610 1640
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_machine_id.ml" 33 1156 1160 "sysprep_operation_machine_id.ml" 33 1156 1162
+)
+"sysprep_operation_machine_id.ml" 46 1610 1619 "sysprep_operation_machine_id.ml" 46 1610 1640
+call(
+  stack
+)
+type(
+  unit
+)

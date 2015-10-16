@@ -1,0 +1,499 @@
+"sysprep_operation_tmp_files.ml" 24 852 856 "sysprep_operation_tmp_files.ml" 24 852 873
+type(
+  < glob_expand : string -> string array; inspect_get_type : 'a -> string;
+    ls : string -> string array; rm_rf : string -> unit; .. > ->
+  'a -> 'b -> unit
+)
+ident(
+  def tmp_files_perform "sysprep_operation_tmp_files.ml" 46 1400 1400 --
+)
+"sysprep_operation_tmp_files.ml" 24 852 874 "sysprep_operation_tmp_files.ml" 24 852 875
+type(
+  < glob_expand : string -> string array; inspect_get_type : 'a -> string;
+    ls : string -> string array; rm_rf : string -> unit; .. >
+  as 'c
+)
+ident(
+  def g "sysprep_operation_tmp_files.ml" 24 852 876 "sysprep_operation_tmp_files.ml" 44 1395 1398
+)
+"sysprep_operation_tmp_files.ml" 24 852 876 "sysprep_operation_tmp_files.ml" 24 852 880
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_tmp_files.ml" 24 852 881 "sysprep_operation_tmp_files.ml" 44 1395 1398
+)
+"sysprep_operation_tmp_files.ml" 24 852 881 "sysprep_operation_tmp_files.ml" 24 852 893
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_tmp_files.ml" 25 896 898 "sysprep_operation_tmp_files.ml" 44 1395 1398
+)
+"sysprep_operation_tmp_files.ml" 25 896 902 "sysprep_operation_tmp_files.ml" 25 896 905
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 25 896 908 "sysprep_operation_tmp_files.ml" 25 896 909
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_tmp_files.ml" 24 852 874 "sysprep_operation_tmp_files.ml" 24 852 875
+)
+"sysprep_operation_tmp_files.ml" 25 896 908 "sysprep_operation_tmp_files.ml" 25 896 926
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_tmp_files.ml" 25 896 927 "sysprep_operation_tmp_files.ml" 25 896 931
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_tmp_files.ml" 24 852 876 "sysprep_operation_tmp_files.ml" 24 852 880
+)
+"sysprep_operation_tmp_files.ml" 25 896 908 "sysprep_operation_tmp_files.ml" 25 896 931
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 26 935 940 "sysprep_operation_tmp_files.ml" 26 935 943
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_tmp_files.ml" 25 896 902 "sysprep_operation_tmp_files.ml" 25 896 905
+)
+"sysprep_operation_tmp_files.ml" 26 935 944 "sysprep_operation_tmp_files.ml" 26 935 946
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_tmp_files.ml" 26 935 947 "sysprep_operation_tmp_files.ml" 26 935 956
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 26 935 940 "sysprep_operation_tmp_files.ml" 26 935 956
+type(
+  bool
+)
+"sysprep_operation_tmp_files.ml" 27 964 972 "sysprep_operation_tmp_files.ml" 27 964 977
+type(
+  string list
+)
+"sysprep_operation_tmp_files.ml" 27 964 982 "sysprep_operation_tmp_files.ml" 27 964 988
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 28 990 1008 "sysprep_operation_tmp_files.ml" 28 990 1018
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 27 964 980 "sysprep_operation_tmp_files.ml" 28 990 1021
+type(
+  string list
+)
+"sysprep_operation_tmp_files.ml" 29 1025 1029 "sysprep_operation_tmp_files.ml" 29 1025 1038
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_tmp_files.ml" 30 1041 1051 "sysprep_operation_tmp_files.ml" 30 1041 1055
+type(
+  string
+)
+ident(
+  def path "sysprep_operation_tmp_files.ml" 31 1059 1067 "sysprep_operation_tmp_files.ml" 42 1352 1382
+)
+"sysprep_operation_tmp_files.ml" 31 1059 1071 "sysprep_operation_tmp_files.ml" 31 1059 1076
+type(
+  string array
+)
+"sysprep_operation_tmp_files.ml" 31 1059 1079 "sysprep_operation_tmp_files.ml" 31 1059 1080
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_tmp_files.ml" 24 852 874 "sysprep_operation_tmp_files.ml" 24 852 875
+)
+"sysprep_operation_tmp_files.ml" 31 1059 1079 "sysprep_operation_tmp_files.ml" 31 1059 1092
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"sysprep_operation_tmp_files.ml" 31 1059 1094 "sysprep_operation_tmp_files.ml" 31 1059 1098
+type(
+  string
+)
+ident(
+  int_ref path "sysprep_operation_tmp_files.ml" 30 1041 1051 "sysprep_operation_tmp_files.ml" 30 1041 1055
+)
+"sysprep_operation_tmp_files.ml" 31 1059 1099 "sysprep_operation_tmp_files.ml" 31 1059 1100
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_tmp_files.ml" 31 1059 1101 "sysprep_operation_tmp_files.ml" 31 1059 1105
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 31 1059 1093 "sysprep_operation_tmp_files.ml" 31 1059 1106
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 31 1059 1079 "sysprep_operation_tmp_files.ml" 31 1059 1106
+type(
+  string array
+)
+"sysprep_operation_tmp_files.ml" 32 1110 1118 "sysprep_operation_tmp_files.ml" 32 1110 1128
+type(
+  (string -> unit) -> string array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_tmp_files.ml" 33 1131 1145 "sysprep_operation_tmp_files.ml" 33 1131 1149
+type(
+  string
+)
+ident(
+  def file "sysprep_operation_tmp_files.ml" 34 1153 1165 "sysprep_operation_tmp_files.ml" 34 1153 1178
+)
+"sysprep_operation_tmp_files.ml" 34 1153 1165 "sysprep_operation_tmp_files.ml" 34 1153 1166
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_tmp_files.ml" 24 852 874 "sysprep_operation_tmp_files.ml" 24 852 875
+)
+"sysprep_operation_tmp_files.ml" 34 1153 1165 "sysprep_operation_tmp_files.ml" 34 1153 1172
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"sysprep_operation_tmp_files.ml" 34 1153 1173 "sysprep_operation_tmp_files.ml" 34 1153 1177
+type(
+  string
+)
+ident(
+  int_ref file "sysprep_operation_tmp_files.ml" 33 1131 1145 "sysprep_operation_tmp_files.ml" 33 1131 1149
+)
+"sysprep_operation_tmp_files.ml" 34 1153 1165 "sysprep_operation_tmp_files.ml" 34 1153 1178
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 32 1110 1129 "sysprep_operation_tmp_files.ml" 35 1179 1188
+type(
+  string -> unit
+)
+"sysprep_operation_tmp_files.ml" 35 1179 1189 "sysprep_operation_tmp_files.ml" 35 1179 1194
+type(
+  string array
+)
+ident(
+  int_ref files "sysprep_operation_tmp_files.ml" 31 1059 1071 "sysprep_operation_tmp_files.ml" 31 1059 1076
+)
+"sysprep_operation_tmp_files.ml" 32 1110 1118 "sysprep_operation_tmp_files.ml" 35 1179 1194
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 37 1209 1223 "sysprep_operation_tmp_files.ml" 37 1209 1228
+type(
+  string array
+)
+ident(
+  def files "sysprep_operation_tmp_files.ml" 38 1244 1254 "sysprep_operation_tmp_files.ml" 41 1334 1351
+)
+"sysprep_operation_tmp_files.ml" 37 1209 1231 "sysprep_operation_tmp_files.ml" 37 1209 1232
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_tmp_files.ml" 24 852 874 "sysprep_operation_tmp_files.ml" 24 852 875
+)
+"sysprep_operation_tmp_files.ml" 37 1209 1231 "sysprep_operation_tmp_files.ml" 37 1209 1235
+call(
+  stack
+)
+type(
+  string -> string array
+)
+"sysprep_operation_tmp_files.ml" 37 1209 1236 "sysprep_operation_tmp_files.ml" 37 1209 1240
+type(
+  string
+)
+ident(
+  int_ref path "sysprep_operation_tmp_files.ml" 30 1041 1051 "sysprep_operation_tmp_files.ml" 30 1041 1055
+)
+"sysprep_operation_tmp_files.ml" 37 1209 1231 "sysprep_operation_tmp_files.ml" 37 1209 1240
+type(
+  string array
+)
+"sysprep_operation_tmp_files.ml" 38 1244 1254 "sysprep_operation_tmp_files.ml" 38 1244 1264
+type(
+  (string -> unit) -> string array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_tmp_files.ml" 39 1267 1283 "sysprep_operation_tmp_files.ml" 39 1267 1287
+type(
+  string
+)
+ident(
+  def file "sysprep_operation_tmp_files.ml" 40 1291 1305 "sysprep_operation_tmp_files.ml" 40 1291 1333
+)
+"sysprep_operation_tmp_files.ml" 40 1291 1305 "sysprep_operation_tmp_files.ml" 40 1291 1306
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_tmp_files.ml" 24 852 874 "sysprep_operation_tmp_files.ml" 24 852 875
+)
+"sysprep_operation_tmp_files.ml" 40 1291 1305 "sysprep_operation_tmp_files.ml" 40 1291 1312
+call(
+  tail
+)
+type(
+  string -> unit
+)
+"sysprep_operation_tmp_files.ml" 40 1291 1314 "sysprep_operation_tmp_files.ml" 40 1291 1318
+type(
+  string
+)
+ident(
+  int_ref path "sysprep_operation_tmp_files.ml" 30 1041 1051 "sysprep_operation_tmp_files.ml" 30 1041 1055
+)
+"sysprep_operation_tmp_files.ml" 40 1291 1319 "sysprep_operation_tmp_files.ml" 40 1291 1320
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_tmp_files.ml" 40 1291 1321 "sysprep_operation_tmp_files.ml" 40 1291 1324
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 40 1291 1325 "sysprep_operation_tmp_files.ml" 40 1291 1326
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_tmp_files.ml" 40 1291 1327 "sysprep_operation_tmp_files.ml" 40 1291 1331
+type(
+  string
+)
+ident(
+  int_ref file "sysprep_operation_tmp_files.ml" 39 1267 1283 "sysprep_operation_tmp_files.ml" 39 1267 1287
+)
+"sysprep_operation_tmp_files.ml" 40 1291 1321 "sysprep_operation_tmp_files.ml" 40 1291 1331
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 40 1291 1313 "sysprep_operation_tmp_files.ml" 40 1291 1332
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 40 1291 1305 "sysprep_operation_tmp_files.ml" 40 1291 1333
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 38 1244 1265 "sysprep_operation_tmp_files.ml" 41 1334 1345
+type(
+  string -> unit
+)
+"sysprep_operation_tmp_files.ml" 41 1334 1346 "sysprep_operation_tmp_files.ml" 41 1334 1351
+type(
+  string array
+)
+ident(
+  int_ref files "sysprep_operation_tmp_files.ml" 37 1209 1223 "sysprep_operation_tmp_files.ml" 37 1209 1228
+)
+"sysprep_operation_tmp_files.ml" 38 1244 1254 "sysprep_operation_tmp_files.ml" 41 1334 1351
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 37 1209 1219 "sysprep_operation_tmp_files.ml" 41 1334 1351
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 42 1352 1373 "sysprep_operation_tmp_files.ml" 42 1352 1374
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 42 1352 1365 "sysprep_operation_tmp_files.ml" 42 1352 1374
+type(
+  exn
+)
+"sysprep_operation_tmp_files.ml" 42 1352 1378 "sysprep_operation_tmp_files.ml" 42 1352 1380
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 36 1196 1204 "sysprep_operation_tmp_files.ml" 42 1352 1382
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 32 1110 1118 "sysprep_operation_tmp_files.ml" 42 1352 1382
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 31 1059 1067 "sysprep_operation_tmp_files.ml" 42 1352 1382
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 29 1025 1039 "sysprep_operation_tmp_files.ml" 43 1383 1388
+type(
+  string -> unit
+)
+"sysprep_operation_tmp_files.ml" 43 1383 1389 "sysprep_operation_tmp_files.ml" 43 1383 1394
+type(
+  string list
+)
+ident(
+  int_ref paths "sysprep_operation_tmp_files.ml" 27 964 972 "sysprep_operation_tmp_files.ml" 27 964 977
+)
+"sysprep_operation_tmp_files.ml" 29 1025 1029 "sysprep_operation_tmp_files.ml" 43 1383 1394
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 26 935 962 "sysprep_operation_tmp_files.ml" 44 1395 1398
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 26 935 937 "sysprep_operation_tmp_files.ml" 44 1395 1398
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 25 896 898 "sysprep_operation_tmp_files.ml" 44 1395 1398
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 46 1400 1404 "sysprep_operation_tmp_files.ml" 46 1400 1406
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_tmp_files.ml" 56 1676 1676 --
+)
+"sysprep_operation_tmp_files.ml" 47 1411 1413 "sysprep_operation_tmp_files.ml" 47 1411 1421
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_tmp_files.ml" 48 1427 1438 "sysprep_operation_tmp_files.ml" 48 1427 1449
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 49 1451 1476 "sysprep_operation_tmp_files.ml" 49 1451 1480
+type(
+  bool
+)
+"sysprep_operation_tmp_files.ml" 50 1482 1496 "sysprep_operation_tmp_files.ml" 50 1482 1498
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_tmp_files.ml" 50 1482 1498 "sysprep_operation_tmp_files.ml" 50 1482 1522
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 50 1482 1496 "sysprep_operation_tmp_files.ml" 50 1482 1522
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 51 1524 1552 "sysprep_operation_tmp_files.ml" 51 1524 1554
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_tmp_files.ml" 51 1524 1554 "sysprep_operation_tmp_files.ml" 52 1557 1617
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 51 1524 1551 "sysprep_operation_tmp_files.ml" 52 1557 1618
+type(
+  string
+)
+"sysprep_operation_tmp_files.ml" 51 1524 1546 "sysprep_operation_tmp_files.ml" 52 1557 1618
+type(
+  string option
+)
+"sysprep_operation_tmp_files.ml" 53 1620 1654 "sysprep_operation_tmp_files.ml" 53 1620 1671
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref tmp_files_perform "sysprep_operation_tmp_files.ml" 24 852 856 "sysprep_operation_tmp_files.ml" 24 852 873
+)
+"sysprep_operation_tmp_files.ml" 53 1620 1649 "sysprep_operation_tmp_files.ml" 53 1620 1671
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_tmp_files.ml" 46 1400 1409 "sysprep_operation_tmp_files.ml" 54 1673 1674
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_tmp_files.ml" 56 1676 1680 "sysprep_operation_tmp_files.ml" 56 1676 1682
+type(
+  unit
+)
+"sysprep_operation_tmp_files.ml" 56 1676 1685 "sysprep_operation_tmp_files.ml" 56 1676 1703
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_tmp_files.ml" 56 1676 1704 "sysprep_operation_tmp_files.ml" 56 1676 1706
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_tmp_files.ml" 46 1400 1404 "sysprep_operation_tmp_files.ml" 46 1400 1406
+)
+"sysprep_operation_tmp_files.ml" 56 1676 1685 "sysprep_operation_tmp_files.ml" 56 1676 1706
+call(
+  stack
+)
+type(
+  unit
+)

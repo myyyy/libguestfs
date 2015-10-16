@@ -1,0 +1,6581 @@
+"output_libvirt.ml" 28 869 888 "output_libvirt.ml" 28 869 905
+call(
+  stack
+)
+"output_libvirt.ml" 30 907 911 "output_libvirt.ml" 30 907 929
+type(
+  StringSet.elt list -> StringSet.t
+)
+ident(
+  def string_set_of_list "output_libvirt.ml" 33 1001 1001 --
+)
+"output_libvirt.ml" 31 932 934 "output_libvirt.ml" 31 932 948
+type(
+  (StringSet.t -> StringSet.elt -> StringSet.t) ->
+  StringSet.t -> StringSet.elt list -> StringSet.t
+)
+ident(
+  ext_ref List.fold_left
+)
+"output_libvirt.ml" 31 932 954 "output_libvirt.ml" 31 932 957
+type(
+  StringSet.t
+)
+ident(
+  def set "output_libvirt.ml" 31 932 958 "output_libvirt.ml" 31 932 982
+)
+"output_libvirt.ml" 31 932 958 "output_libvirt.ml" 31 932 959
+type(
+  StringSet.elt
+)
+ident(
+  def x "output_libvirt.ml" 31 932 963 "output_libvirt.ml" 31 932 982
+)
+"output_libvirt.ml" 31 932 963 "output_libvirt.ml" 31 932 976
+type(
+  StringSet.elt -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.add
+)
+"output_libvirt.ml" 31 932 977 "output_libvirt.ml" 31 932 978
+type(
+  StringSet.elt
+)
+ident(
+  int_ref x "output_libvirt.ml" 31 932 958 "output_libvirt.ml" 31 932 959
+)
+"output_libvirt.ml" 31 932 979 "output_libvirt.ml" 31 932 982
+type(
+  StringSet.t
+)
+ident(
+  int_ref set "output_libvirt.ml" 31 932 954 "output_libvirt.ml" 31 932 957
+)
+"output_libvirt.ml" 31 932 963 "output_libvirt.ml" 31 932 982
+call(
+  tail
+)
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 31 932 949 "output_libvirt.ml" 31 932 983
+type(
+  StringSet.t -> StringSet.elt -> StringSet.t
+)
+"output_libvirt.ml" 31 932 984 "output_libvirt.ml" 31 932 999
+type(
+  StringSet.t
+)
+ident(
+  ext_ref StringSet.empty
+)
+"output_libvirt.ml" 31 932 934 "output_libvirt.ml" 31 932 999
+call(
+  stack
+)
+type(
+  StringSet.elt list -> StringSet.t
+)
+"output_libvirt.ml" 33 1001 1005 "output_libvirt.ml" 33 1001 1024
+type(
+  string -> unit
+)
+ident(
+  def arch_is_sane_or_die "output_libvirt.ml" 37 1124 1124 --
+)
+"output_libvirt.ml" 34 1027 1033 "output_libvirt.ml" 34 1027 1036
+type(
+  Str.regexp
+)
+"output_libvirt.ml" 34 1027 1039 "output_libvirt.ml" 34 1027 1049
+type(
+  string -> Str.regexp
+)
+ident(
+  ext_ref Str.regexp
+)
+"output_libvirt.ml" 34 1027 1050 "output_libvirt.ml" 34 1027 1068
+type(
+  string
+)
+"output_libvirt.ml" 34 1027 1039 "output_libvirt.ml" 34 1027 1068
+call(
+  stack
+)
+type(
+  Str.regexp
+)
+"output_libvirt.ml" 35 1072 1078 "output_libvirt.ml" 35 1072 1082
+type(
+  string
+)
+ident(
+  def arch "output_libvirt.ml" 35 1072 1086 "output_libvirt.ml" 35 1072 1122
+)
+"output_libvirt.ml" 35 1072 1094 "output_libvirt.ml" 35 1072 1110
+type(
+  Str.regexp -> string -> int -> bool
+)
+ident(
+  ext_ref Str.string_match
+)
+"output_libvirt.ml" 35 1072 1111 "output_libvirt.ml" 35 1072 1114
+type(
+  Str.regexp
+)
+ident(
+  int_ref rex "output_libvirt.ml" 34 1027 1033 "output_libvirt.ml" 34 1027 1036
+)
+"output_libvirt.ml" 35 1072 1115 "output_libvirt.ml" 35 1072 1119
+type(
+  string
+)
+ident(
+  int_ref arch "output_libvirt.ml" 35 1072 1078 "output_libvirt.ml" 35 1072 1082
+)
+"output_libvirt.ml" 35 1072 1120 "output_libvirt.ml" 35 1072 1121
+type(
+  int
+)
+"output_libvirt.ml" 35 1072 1093 "output_libvirt.ml" 35 1072 1122
+call(
+  stack
+)
+type(
+  bool
+)
+"output_libvirt.ml" 35 1072 1086 "output_libvirt.ml" 35 1072 1122
+type(
+  unit
+)
+"output_libvirt.ml" 35 1072 1074 "output_libvirt.ml" 35 1072 1122
+type(
+  string -> unit
+)
+"output_libvirt.ml" 34 1027 1029 "output_libvirt.ml" 35 1072 1122
+type(
+  string -> unit
+)
+"output_libvirt.ml" 37 1124 1128 "output_libvirt.ml" 37 1124 1163
+type(
+  Xml.doc -> string -> string list
+)
+ident(
+  def target_features_of_capabilities_doc "output_libvirt.ml" 72 2375 2375 --
+)
+"output_libvirt.ml" 37 1124 1164 "output_libvirt.ml" 37 1124 1167
+type(
+  Xml.doc
+)
+ident(
+  def doc "output_libvirt.ml" 37 1124 1168 "output_libvirt.ml" 70 2370 2373
+)
+"output_libvirt.ml" 37 1124 1168 "output_libvirt.ml" 37 1124 1172
+type(
+  string
+)
+ident(
+  def arch "output_libvirt.ml" 38 1175 1177 "output_libvirt.ml" 70 2370 2373
+)
+"output_libvirt.ml" 38 1175 1181 "output_libvirt.ml" 38 1175 1189
+type(
+  Xml.xpathctx
+)
+"output_libvirt.ml" 38 1175 1192 "output_libvirt.ml" 38 1175 1213
+type(
+  Xml.doc -> Xml.xpathctx
+)
+ident(
+  ext_ref Xml.xpath_new_context
+)
+"output_libvirt.ml" 38 1175 1214 "output_libvirt.ml" 38 1175 1217
+type(
+  Xml.doc
+)
+ident(
+  int_ref doc "output_libvirt.ml" 37 1124 1164 "output_libvirt.ml" 37 1124 1167
+)
+"output_libvirt.ml" 38 1175 1192 "output_libvirt.ml" 38 1175 1217
+call(
+  stack
+)
+type(
+  Xml.xpathctx
+)
+"output_libvirt.ml" 39 1221 1227 "output_libvirt.ml" 39 1221 1231
+type(
+  string
+)
+"output_libvirt.ml" 43 1348 1352 "output_libvirt.ml" 43 1348 1371
+type(
+  string -> unit
+)
+ident(
+  int_ref arch_is_sane_or_die "output_libvirt.ml" 33 1001 1005 "output_libvirt.ml" 33 1001 1024
+)
+"output_libvirt.ml" 43 1348 1372 "output_libvirt.ml" 43 1348 1376
+type(
+  string
+)
+ident(
+  int_ref arch "output_libvirt.ml" 37 1124 1168 "output_libvirt.ml" 37 1124 1172
+)
+"output_libvirt.ml" 43 1348 1352 "output_libvirt.ml" 43 1348 1376
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 47 1475 1479 "output_libvirt.ml" 47 1475 1486
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_libvirt.ml" 47 1475 1487 "output_libvirt.ml" 47 1475 1545
+type(
+  (string -> string, unit, string) format
+)
+"output_libvirt.ml" 47 1475 1546 "output_libvirt.ml" 47 1475 1550
+type(
+  string
+)
+ident(
+  int_ref arch "output_libvirt.ml" 37 1124 1168 "output_libvirt.ml" 37 1124 1172
+)
+"output_libvirt.ml" 47 1475 1479 "output_libvirt.ml" 47 1475 1550
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 43 1348 1352 "output_libvirt.ml" 47 1475 1550
+type(
+  string
+)
+"output_libvirt.ml" 48 1554 1560 "output_libvirt.ml" 48 1554 1563
+type(
+  Xml.xpathobj
+)
+"output_libvirt.ml" 48 1554 1566 "output_libvirt.ml" 48 1554 1591
+type(
+  Xml.xpathctx -> string -> Xml.xpathobj
+)
+ident(
+  ext_ref Xml.xpath_eval_expression
+)
+"output_libvirt.ml" 48 1554 1592 "output_libvirt.ml" 48 1554 1600
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "output_libvirt.ml" 38 1175 1181 "output_libvirt.ml" 38 1175 1189
+)
+"output_libvirt.ml" 48 1554 1601 "output_libvirt.ml" 48 1554 1605
+type(
+  string
+)
+ident(
+  int_ref expr "output_libvirt.ml" 39 1221 1227 "output_libvirt.ml" 39 1221 1231
+)
+"output_libvirt.ml" 48 1554 1566 "output_libvirt.ml" 48 1554 1605
+call(
+  stack
+)
+type(
+  Xml.xpathobj
+)
+"output_libvirt.ml" 50 1610 1615 "output_libvirt.ml" 50 1610 1636
+type(
+  Xml.xpathobj -> int
+)
+ident(
+  ext_ref Xml.xpathobj_nr_nodes
+)
+"output_libvirt.ml" 50 1610 1637 "output_libvirt.ml" 50 1610 1640
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "output_libvirt.ml" 48 1554 1560 "output_libvirt.ml" 48 1554 1563
+)
+"output_libvirt.ml" 50 1610 1615 "output_libvirt.ml" 50 1610 1640
+call(
+  stack
+)
+type(
+  int
+)
+"output_libvirt.ml" 50 1610 1641 "output_libvirt.ml" 50 1610 1642
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( < )
+)
+"output_libvirt.ml" 50 1610 1643 "output_libvirt.ml" 50 1610 1644
+type(
+  int
+)
+"output_libvirt.ml" 50 1610 1615 "output_libvirt.ml" 50 1610 1644
+type(
+  bool
+)
+"output_libvirt.ml" 54 1792 1796 "output_libvirt.ml" 54 1792 1803
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"output_libvirt.ml" 54 1792 1805 "output_libvirt.ml" 54 1792 1807
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_libvirt.ml" 54 1792 1807 "output_libvirt.ml" 54 1792 1862
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"output_libvirt.ml" 54 1792 1804 "output_libvirt.ml" 54 1792 1863
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"output_libvirt.ml" 54 1792 1864 "output_libvirt.ml" 54 1792 1868
+type(
+  string
+)
+ident(
+  int_ref arch "output_libvirt.ml" 37 1124 1168 "output_libvirt.ml" 37 1124 1172
+)
+"output_libvirt.ml" 54 1792 1796 "output_libvirt.ml" 54 1792 1868
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 55 1870 1874 "output_libvirt.ml" 55 1870 1876
+type(
+  string list
+)
+"output_libvirt.ml" 50 1610 1650 "output_libvirt.ml" 56 1877 1880
+type(
+  string list
+)
+"output_libvirt.ml" 57 1888 1896 "output_libvirt.ml" 57 1888 1900
+type(
+  Xml.node
+)
+"output_libvirt.ml" 57 1888 1932 "output_libvirt.ml" 57 1888 1949
+type(
+  Xml.xpathobj -> int -> Xml.node
+)
+ident(
+  ext_ref Xml.xpathobj_node
+)
+"output_libvirt.ml" 57 1888 1950 "output_libvirt.ml" 57 1888 1953
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "output_libvirt.ml" 48 1554 1560 "output_libvirt.ml" 48 1554 1563
+)
+"output_libvirt.ml" 57 1888 1954 "output_libvirt.ml" 57 1888 1955
+type(
+  int
+)
+"output_libvirt.ml" 57 1888 1932 "output_libvirt.ml" 57 1888 1955
+call(
+  stack
+)
+type(
+  Xml.node
+)
+"output_libvirt.ml" 58 1959 1963 "output_libvirt.ml" 58 1959 1995
+type(
+  Xml.xpathctx -> Xml.node -> unit
+)
+ident(
+  ext_ref Xml.xpathctx_set_current_context
+)
+"output_libvirt.ml" 58 1959 1996 "output_libvirt.ml" 58 1959 2004
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "output_libvirt.ml" 38 1175 1181 "output_libvirt.ml" 38 1175 1189
+)
+"output_libvirt.ml" 58 1959 2005 "output_libvirt.ml" 58 1959 2009
+type(
+  Xml.node
+)
+ident(
+  int_ref node "output_libvirt.ml" 57 1888 1896 "output_libvirt.ml" 57 1888 1900
+)
+"output_libvirt.ml" 58 1959 1963 "output_libvirt.ml" 58 1959 2009
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 61 2050 2058 "output_libvirt.ml" 61 2050 2061
+type(
+  Xml.xpathobj
+)
+"output_libvirt.ml" 61 2050 2064 "output_libvirt.ml" 61 2050 2089
+type(
+  Xml.xpathctx -> string -> Xml.xpathobj
+)
+ident(
+  ext_ref Xml.xpath_eval_expression
+)
+"output_libvirt.ml" 61 2050 2090 "output_libvirt.ml" 61 2050 2098
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "output_libvirt.ml" 38 1175 1181 "output_libvirt.ml" 38 1175 1189
+)
+"output_libvirt.ml" 61 2050 2099 "output_libvirt.ml" 61 2050 2111
+type(
+  string
+)
+"output_libvirt.ml" 61 2050 2064 "output_libvirt.ml" 61 2050 2111
+call(
+  stack
+)
+type(
+  Xml.xpathobj
+)
+"output_libvirt.ml" 63 2116 2124 "output_libvirt.ml" 63 2116 2132
+type(
+  string list ref
+)
+"output_libvirt.ml" 63 2116 2135 "output_libvirt.ml" 63 2116 2138
+type(
+  string list -> string list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"output_libvirt.ml" 63 2116 2139 "output_libvirt.ml" 63 2116 2141
+type(
+  string list
+)
+"output_libvirt.ml" 63 2116 2135 "output_libvirt.ml" 63 2116 2141
+type(
+  string list ref
+)
+"output_libvirt.ml" 64 2145 2157 "output_libvirt.ml" 64 2145 2158
+type(
+  int
+)
+"output_libvirt.ml" 64 2145 2162 "output_libvirt.ml" 64 2145 2183
+type(
+  Xml.xpathobj -> int
+)
+ident(
+  ext_ref Xml.xpathobj_nr_nodes
+)
+"output_libvirt.ml" 64 2145 2184 "output_libvirt.ml" 64 2145 2187
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "output_libvirt.ml" 61 2050 2058 "output_libvirt.ml" 61 2050 2061
+)
+"output_libvirt.ml" 64 2145 2162 "output_libvirt.ml" 64 2145 2187
+call(
+  stack
+)
+type(
+  int
+)
+"output_libvirt.ml" 64 2145 2188 "output_libvirt.ml" 64 2145 2189
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( - )
+)
+"output_libvirt.ml" 64 2145 2190 "output_libvirt.ml" 64 2145 2191
+type(
+  int
+)
+"output_libvirt.ml" 64 2145 2162 "output_libvirt.ml" 64 2145 2191
+type(
+  int
+)
+"output_libvirt.ml" 65 2195 2205 "output_libvirt.ml" 65 2195 2217
+type(
+  Xml.node
+)
+ident(
+  def feature_node "output_libvirt.ml" 66 2247 2253 "output_libvirt.ml" 67 2302 2345
+)
+"output_libvirt.ml" 65 2195 2220 "output_libvirt.ml" 65 2195 2237
+type(
+  Xml.xpathobj -> int -> Xml.node
+)
+ident(
+  ext_ref Xml.xpathobj_node
+)
+"output_libvirt.ml" 65 2195 2238 "output_libvirt.ml" 65 2195 2241
+type(
+  Xml.xpathobj
+)
+ident(
+  int_ref obj "output_libvirt.ml" 61 2050 2058 "output_libvirt.ml" 61 2050 2061
+)
+"output_libvirt.ml" 65 2195 2242 "output_libvirt.ml" 65 2195 2243
+type(
+  int
+)
+"output_libvirt.ml" 65 2195 2220 "output_libvirt.ml" 65 2195 2243
+call(
+  stack
+)
+type(
+  Xml.node
+)
+"output_libvirt.ml" 66 2247 2257 "output_libvirt.ml" 66 2247 2269
+type(
+  string
+)
+ident(
+  def feature_name "output_libvirt.ml" 67 2302 2308 "output_libvirt.ml" 67 2302 2345
+)
+"output_libvirt.ml" 66 2247 2272 "output_libvirt.ml" 66 2247 2285
+type(
+  Xml.node -> string
+)
+ident(
+  ext_ref Xml.node_name
+)
+"output_libvirt.ml" 66 2247 2286 "output_libvirt.ml" 66 2247 2298
+type(
+  Xml.node
+)
+ident(
+  int_ref feature_node "output_libvirt.ml" 65 2195 2205 "output_libvirt.ml" 65 2195 2217
+)
+"output_libvirt.ml" 66 2247 2272 "output_libvirt.ml" 66 2247 2298
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 67 2302 2308 "output_libvirt.ml" 67 2302 2316
+type(
+  string list ref
+)
+ident(
+  int_ref features "output_libvirt.ml" 63 2116 2124 "output_libvirt.ml" 63 2116 2132
+)
+"output_libvirt.ml" 67 2302 2317 "output_libvirt.ml" 67 2302 2319
+type(
+  string list ref -> string list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"output_libvirt.ml" 67 2302 2320 "output_libvirt.ml" 67 2302 2332
+type(
+  string
+)
+ident(
+  int_ref feature_name "output_libvirt.ml" 66 2247 2257 "output_libvirt.ml" 66 2247 2269
+)
+"output_libvirt.ml" 67 2302 2336 "output_libvirt.ml" 67 2302 2337
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"output_libvirt.ml" 67 2302 2337 "output_libvirt.ml" 67 2302 2345
+type(
+  string list ref
+)
+ident(
+  int_ref features "output_libvirt.ml" 63 2116 2124 "output_libvirt.ml" 63 2116 2132
+)
+"output_libvirt.ml" 67 2302 2336 "output_libvirt.ml" 67 2302 2345
+type(
+  string list
+)
+"output_libvirt.ml" 67 2302 2320 "output_libvirt.ml" 67 2302 2345
+type(
+  string list
+)
+"output_libvirt.ml" 67 2302 2308 "output_libvirt.ml" 67 2302 2345
+type(
+  unit
+)
+"output_libvirt.ml" 66 2247 2253 "output_libvirt.ml" 67 2302 2345
+type(
+  unit
+)
+"output_libvirt.ml" 65 2195 2201 "output_libvirt.ml" 67 2302 2345
+type(
+  unit
+)
+"output_libvirt.ml" 64 2145 2149 "output_libvirt.ml" 68 2346 2354
+type(
+  unit
+)
+"output_libvirt.ml" 69 2356 2360 "output_libvirt.ml" 69 2356 2361
+type(
+  string list ref -> string list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"output_libvirt.ml" 69 2356 2361 "output_libvirt.ml" 69 2356 2369
+type(
+  string list ref
+)
+ident(
+  int_ref features "output_libvirt.ml" 63 2116 2124 "output_libvirt.ml" 63 2116 2132
+)
+"output_libvirt.ml" 69 2356 2360 "output_libvirt.ml" 69 2356 2369
+type(
+  string list
+)
+"output_libvirt.ml" 64 2145 2149 "output_libvirt.ml" 69 2356 2369
+type(
+  string list
+)
+"output_libvirt.ml" 63 2116 2120 "output_libvirt.ml" 69 2356 2369
+type(
+  string list
+)
+"output_libvirt.ml" 61 2050 2054 "output_libvirt.ml" 69 2356 2369
+type(
+  string list
+)
+"output_libvirt.ml" 58 1959 1963 "output_libvirt.ml" 69 2356 2369
+type(
+  string list
+)
+"output_libvirt.ml" 56 1877 1886 "output_libvirt.ml" 70 2370 2373
+type(
+  string list
+)
+"output_libvirt.ml" 50 1610 1612 "output_libvirt.ml" 70 2370 2373
+type(
+  string list
+)
+"output_libvirt.ml" 48 1554 1556 "output_libvirt.ml" 70 2370 2373
+type(
+  string list
+)
+"output_libvirt.ml" 39 1221 1223 "output_libvirt.ml" 70 2370 2373
+type(
+  string list
+)
+"output_libvirt.ml" 38 1175 1177 "output_libvirt.ml" 70 2370 2373
+type(
+  string list
+)
+"output_libvirt.ml" 72 2375 2379 "output_libvirt.ml" 72 2375 2397
+type(
+  ?pool:string ->
+  Types.source ->
+  Types.target_buses ->
+  Types.guestcaps -> StringSet.elt list -> Types.target_firmware -> DOM.doc
+)
+ident(
+  def create_libvirt_xml "output_libvirt.ml" 301 10013 10013 --
+)
+"output_libvirt.ml" 72 2375 2399 "output_libvirt.ml" 72 2375 2403
+type(
+  string option
+)
+ident(
+  def pool "output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 299 10006 10011
+)
+"output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 72 2375 2410
+type(
+  Types.source
+)
+ident(
+  def source "output_libvirt.ml" 72 2375 2411 "output_libvirt.ml" 299 10006 10011
+)
+"output_libvirt.ml" 72 2375 2411 "output_libvirt.ml" 72 2375 2423
+type(
+  Types.target_buses
+)
+ident(
+  def target_buses "output_libvirt.ml" 72 2375 2424 "output_libvirt.ml" 299 10006 10011
+)
+"output_libvirt.ml" 72 2375 2424 "output_libvirt.ml" 72 2375 2433
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "output_libvirt.ml" 73 2434 2457 "output_libvirt.ml" 299 10006 10011
+)
+"output_libvirt.ml" 73 2434 2457 "output_libvirt.ml" 73 2434 2472
+type(
+  StringSet.elt list
+)
+ident(
+  def target_features "output_libvirt.ml" 73 2434 2473 "output_libvirt.ml" 299 10006 10011
+)
+"output_libvirt.ml" 73 2434 2473 "output_libvirt.ml" 73 2434 2488
+type(
+  Types.target_firmware
+)
+ident(
+  def target_firmware "output_libvirt.ml" 74 2491 2493 "output_libvirt.ml" 299 10006 10011
+)
+"output_libvirt.ml" 74 2491 2497 "output_libvirt.ml" 74 2491 2505
+type(
+  int64
+)
+"output_libvirt.ml" 74 2491 2508 "output_libvirt.ml" 74 2491 2514
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 72 2375 2410
+)
+"output_libvirt.ml" 74 2491 2508 "output_libvirt.ml" 74 2491 2523
+type(
+  int64
+)
+"output_libvirt.ml" 74 2491 2524 "output_libvirt.ml" 74 2491 2526
+type(
+  int64 -> int64 -> int64
+)
+ident(
+  ext_ref Common_utils.( /^ )
+)
+"output_libvirt.ml" 74 2491 2527 "output_libvirt.ml" 74 2491 2532
+type(
+  int64
+)
+"output_libvirt.ml" 74 2491 2508 "output_libvirt.ml" 74 2491 2532
+call(
+  stack
+)
+type(
+  int64
+)
+"output_libvirt.ml" 83 2910 2916 "output_libvirt.ml" 83 2910 2924
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 83 2910 2927 "output_libvirt.ml" 83 2910 2945
+type(
+  StringSet.elt list -> StringSet.t
+)
+ident(
+  int_ref string_set_of_list "output_libvirt.ml" 30 907 911 "output_libvirt.ml" 30 907 929
+)
+"output_libvirt.ml" 83 2910 2946 "output_libvirt.ml" 83 2910 2952
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 72 2375 2410
+)
+"output_libvirt.ml" 83 2910 2946 "output_libvirt.ml" 83 2910 2963
+type(
+  StringSet.elt list
+)
+"output_libvirt.ml" 83 2910 2927 "output_libvirt.ml" 83 2910 2963
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 84 2967 2973 "output_libvirt.ml" 84 2967 2988
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 84 2967 2991 "output_libvirt.ml" 84 2967 3009
+type(
+  StringSet.elt list -> StringSet.t
+)
+ident(
+  int_ref string_set_of_list "output_libvirt.ml" 30 907 911 "output_libvirt.ml" 30 907 929
+)
+"output_libvirt.ml" 84 2967 3010 "output_libvirt.ml" 84 2967 3025
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref target_features "output_libvirt.ml" 73 2434 2457 "output_libvirt.ml" 73 2434 2472
+)
+"output_libvirt.ml" 84 2967 2991 "output_libvirt.ml" 84 2967 3025
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 90 3190 3196 "output_libvirt.ml" 90 3190 3204
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 91 3207 3214 "output_libvirt.ml" 91 3207 3223
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_libvirt.ml" 72 2375 2424 "output_libvirt.ml" 72 2375 2433
+)
+"output_libvirt.ml" 91 3207 3214 "output_libvirt.ml" 91 3207 3234
+type(
+  bool
+)
+"output_libvirt.ml" 92 3240 3246 "output_libvirt.ml" 92 3240 3259
+type(
+  StringSet.elt -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.add
+)
+"output_libvirt.ml" 92 3240 3260 "output_libvirt.ml" 92 3240 3266
+type(
+  StringSet.elt
+)
+"output_libvirt.ml" 92 3240 3267 "output_libvirt.ml" 92 3240 3275
+type(
+  StringSet.t
+)
+ident(
+  int_ref features "output_libvirt.ml" 83 2910 2916 "output_libvirt.ml" 83 2910 2924
+)
+"output_libvirt.ml" 92 3240 3246 "output_libvirt.ml" 92 3240 3275
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 94 3285 3291 "output_libvirt.ml" 94 3285 3307
+type(
+  StringSet.elt -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.remove
+)
+"output_libvirt.ml" 94 3285 3308 "output_libvirt.ml" 94 3285 3314
+type(
+  StringSet.elt
+)
+"output_libvirt.ml" 94 3285 3315 "output_libvirt.ml" 94 3285 3323
+type(
+  StringSet.t
+)
+ident(
+  int_ref features "output_libvirt.ml" 83 2910 2916 "output_libvirt.ml" 83 2910 2924
+)
+"output_libvirt.ml" 94 3285 3291 "output_libvirt.ml" 94 3285 3323
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 91 3207 3211 "output_libvirt.ml" 94 3285 3323
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 99 3430 3436 "output_libvirt.ml" 99 3430 3444
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 99 3430 3447 "output_libvirt.ml" 99 3430 3462
+type(
+  StringSet.t -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.inter
+)
+"output_libvirt.ml" 99 3430 3474 "output_libvirt.ml" 99 3430 3482
+type(
+  StringSet.t
+)
+ident(
+  int_ref features "output_libvirt.ml" 90 3190 3196 "output_libvirt.ml" 90 3190 3204
+)
+"output_libvirt.ml" 99 3430 3483 "output_libvirt.ml" 99 3430 3498
+type(
+  StringSet.t
+)
+ident(
+  int_ref target_features "output_libvirt.ml" 84 2967 2973 "output_libvirt.ml" 84 2967 2988
+)
+"output_libvirt.ml" 99 3430 3447 "output_libvirt.ml" 99 3430 3498
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 104 3614 3620 "output_libvirt.ml" 104 3614 3634
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 104 3614 3637 "output_libvirt.ml" 104 3614 3655
+type(
+  StringSet.elt list -> StringSet.t
+)
+ident(
+  int_ref string_set_of_list "output_libvirt.ml" 30 907 911 "output_libvirt.ml" 30 907 929
+)
+"output_libvirt.ml" 104 3614 3657 "output_libvirt.ml" 104 3614 3663
+type(
+  StringSet.elt
+)
+"output_libvirt.ml" 104 3614 3665 "output_libvirt.ml" 104 3614 3670
+type(
+  StringSet.elt
+)
+"output_libvirt.ml" 104 3614 3656 "output_libvirt.ml" 104 3614 3671
+type(
+  StringSet.elt list
+)
+"output_libvirt.ml" 104 3614 3637 "output_libvirt.ml" 104 3614 3671
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 105 3675 3681 "output_libvirt.ml" 105 3675 3695
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 106 3698 3702 "output_libvirt.ml" 106 3698 3717
+type(
+  StringSet.t -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.inter
+)
+"output_libvirt.ml" 106 3698 3729 "output_libvirt.ml" 106 3698 3743
+type(
+  StringSet.t
+)
+ident(
+  int_ref force_features "output_libvirt.ml" 104 3614 3620 "output_libvirt.ml" 104 3614 3634
+)
+"output_libvirt.ml" 106 3698 3744 "output_libvirt.ml" 106 3698 3759
+type(
+  StringSet.t
+)
+ident(
+  int_ref target_features "output_libvirt.ml" 84 2967 2973 "output_libvirt.ml" 84 2967 2988
+)
+"output_libvirt.ml" 106 3698 3702 "output_libvirt.ml" 106 3698 3759
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 107 3763 3769 "output_libvirt.ml" 107 3763 3777
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 107 3763 3780 "output_libvirt.ml" 107 3763 3795
+type(
+  StringSet.t -> StringSet.t -> StringSet.t
+)
+ident(
+  ext_ref StringSet.union
+)
+"output_libvirt.ml" 107 3763 3796 "output_libvirt.ml" 107 3763 3804
+type(
+  StringSet.t
+)
+ident(
+  int_ref features "output_libvirt.ml" 99 3430 3436 "output_libvirt.ml" 99 3430 3444
+)
+"output_libvirt.ml" 107 3763 3805 "output_libvirt.ml" 107 3763 3819
+type(
+  StringSet.t
+)
+ident(
+  int_ref force_features "output_libvirt.ml" 105 3675 3681 "output_libvirt.ml" 105 3675 3695
+)
+"output_libvirt.ml" 107 3763 3780 "output_libvirt.ml" 107 3763 3819
+call(
+  stack
+)
+type(
+  StringSet.t
+)
+"output_libvirt.ml" 109 3824 3830 "output_libvirt.ml" 109 3824 3838
+type(
+  StringSet.elt list
+)
+"output_libvirt.ml" 109 3824 3841 "output_libvirt.ml" 109 3824 3850
+type(
+  (StringSet.elt -> StringSet.elt -> int) ->
+  StringSet.elt list -> StringSet.elt list
+)
+ident(
+  ext_ref List.sort
+)
+"output_libvirt.ml" 109 3824 3851 "output_libvirt.ml" 109 3824 3858
+type(
+  StringSet.elt -> StringSet.elt -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"output_libvirt.ml" 109 3824 3860 "output_libvirt.ml" 109 3824 3878
+type(
+  StringSet.t -> StringSet.elt list
+)
+ident(
+  ext_ref StringSet.elements
+)
+"output_libvirt.ml" 109 3824 3879 "output_libvirt.ml" 109 3824 3887
+type(
+  StringSet.t
+)
+ident(
+  int_ref features "output_libvirt.ml" 107 3763 3769 "output_libvirt.ml" 107 3763 3777
+)
+"output_libvirt.ml" 109 3824 3859 "output_libvirt.ml" 109 3824 3888
+call(
+  stack
+)
+type(
+  StringSet.elt list
+)
+"output_libvirt.ml" 109 3824 3841 "output_libvirt.ml" 109 3824 3888
+call(
+  stack
+)
+type(
+  StringSet.elt list
+)
+"output_libvirt.ml" 112 3931 3937 "output_libvirt.ml" 112 3931 3947
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 113 3950 3958 "output_libvirt.ml" 113 3950 3964
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 114 3967 3979 "output_libvirt.ml" 114 3967 3994
+type(
+  Types.target_firmware
+)
+ident(
+  int_ref target_firmware "output_libvirt.ml" 73 2434 2473 "output_libvirt.ml" 73 2434 2488
+)
+"output_libvirt.ml" 115 4000 4008 "output_libvirt.ml" 115 4000 4018
+type(
+  Types.target_firmware
+)
+"output_libvirt.ml" 115 4000 4022 "output_libvirt.ml" 115 4000 4024
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 116 4025 4033 "output_libvirt.ml" 116 4025 4043
+type(
+  Types.target_firmware
+)
+"output_libvirt.ml" 121 4277 4290 "output_libvirt.ml" 121 4277 4294
+type(
+  string
+)
+"output_libvirt.ml" 121 4277 4296 "output_libvirt.ml" 121 4277 4309
+type(
+  string
+)
+"output_libvirt.ml" 121 4277 4290 "output_libvirt.ml" 121 4277 4309
+type(
+  string * string
+)
+"output_libvirt.ml" 121 4277 4312 "output_libvirt.ml" 121 4277 4330
+type(
+  string -> string * string
+)
+ident(
+  ext_ref Utils.find_uefi_firmware
+)
+"output_libvirt.ml" 121 4277 4331 "output_libvirt.ml" 121 4277 4340
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_libvirt.ml" 72 2375 2424 "output_libvirt.ml" 72 2375 2433
+)
+"output_libvirt.ml" 121 4277 4331 "output_libvirt.ml" 121 4277 4351
+type(
+  string
+)
+"output_libvirt.ml" 121 4277 4312 "output_libvirt.ml" 121 4277 4351
+call(
+  stack
+)
+type(
+  string * string
+)
+"output_libvirt.ml" 122 4355 4366 "output_libvirt.ml" 122 4355 4367
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 122 4355 4368 "output_libvirt.ml" 122 4355 4376
+type(
+  string
+)
+"output_libvirt.ml" 122 4355 4378 "output_libvirt.ml" 122 4355 4388
+type(
+  string
+)
+"output_libvirt.ml" 122 4355 4390 "output_libvirt.ml" 122 4355 4395
+type(
+  string
+)
+"output_libvirt.ml" 122 4355 4378 "output_libvirt.ml" 122 4355 4395
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 122 4355 4397 "output_libvirt.ml" 122 4355 4403
+type(
+  string
+)
+"output_libvirt.ml" 122 4355 4405 "output_libvirt.ml" 122 4355 4413
+type(
+  string
+)
+"output_libvirt.ml" 122 4355 4397 "output_libvirt.ml" 122 4355 4413
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 122 4355 4377 "output_libvirt.ml" 122 4355 4414
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 122 4355 4424 "output_libvirt.ml" 122 4355 4428
+type(
+  string
+)
+ident(
+  int_ref code "output_libvirt.ml" 121 4277 4290 "output_libvirt.ml" 121 4277 4294
+)
+"output_libvirt.ml" 122 4355 4417 "output_libvirt.ml" 122 4355 4428
+type(
+  DOM.node
+)
+"output_libvirt.ml" 122 4355 4415 "output_libvirt.ml" 122 4355 4430
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 122 4355 4366 "output_libvirt.ml" 122 4355 4430
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 123 4432 4443 "output_libvirt.ml" 123 4432 4444
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 123 4432 4445 "output_libvirt.ml" 123 4432 4452
+type(
+  string
+)
+"output_libvirt.ml" 123 4432 4454 "output_libvirt.ml" 123 4432 4464
+type(
+  string
+)
+"output_libvirt.ml" 123 4432 4466 "output_libvirt.ml" 123 4432 4479
+type(
+  string
+)
+ident(
+  int_ref vars_template "output_libvirt.ml" 121 4277 4296 "output_libvirt.ml" 121 4277 4309
+)
+"output_libvirt.ml" 123 4432 4454 "output_libvirt.ml" 123 4432 4479
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 123 4432 4453 "output_libvirt.ml" 123 4432 4480
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 123 4432 4481 "output_libvirt.ml" 123 4432 4483
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 123 4432 4443 "output_libvirt.ml" 123 4432 4483
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 122 4355 4364 "output_libvirt.ml" 123 4432 4485
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 121 4277 4286 "output_libvirt.ml" 123 4432 4485
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 114 3967 3973 "output_libvirt.ml" 123 4432 4485
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 125 4490 4495 "output_libvirt.ml" 125 4490 4496
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 125 4490 4497 "output_libvirt.ml" 125 4490 4503
+type(
+  string
+)
+"output_libvirt.ml" 125 4490 4505 "output_libvirt.ml" 125 4490 4511
+type(
+  string
+)
+"output_libvirt.ml" 125 4490 4513 "output_libvirt.ml" 125 4490 4522
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_libvirt.ml" 72 2375 2424 "output_libvirt.ml" 72 2375 2433
+)
+"output_libvirt.ml" 125 4490 4513 "output_libvirt.ml" 125 4490 4533
+type(
+  string
+)
+"output_libvirt.ml" 125 4490 4505 "output_libvirt.ml" 125 4490 4533
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 125 4490 4504 "output_libvirt.ml" 125 4490 4534
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 125 4490 4543 "output_libvirt.ml" 125 4490 4548
+type(
+  string
+)
+"output_libvirt.ml" 125 4490 4536 "output_libvirt.ml" 125 4490 4548
+type(
+  DOM.node
+)
+"output_libvirt.ml" 125 4490 4535 "output_libvirt.ml" 125 4490 4549
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 125 4490 4494 "output_libvirt.ml" 125 4490 4550
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 125 4490 4554 "output_libvirt.ml" 125 4490 4560
+type(
+  DOM.node list
+)
+ident(
+  int_ref loader "output_libvirt.ml" 113 3950 3958 "output_libvirt.ml" 113 3950 3964
+)
+"output_libvirt.ml" 125 4490 4494 "output_libvirt.ml" 125 4490 4560
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 113 3950 3954 "output_libvirt.ml" 125 4490 4560
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 128 4600 4606 "output_libvirt.ml" 128 4600 4611
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 129 4614 4622 "output_libvirt.ml" 129 4614 4631
+type(
+  string -> string -> int -> Types.target_bus_slot -> DOM.node
+)
+"output_libvirt.ml" 129 4614 4632 "output_libvirt.ml" 129 4614 4640
+type(
+  string
+)
+ident(
+  def bus_name "output_libvirt.ml" 129 4614 4641 "output_libvirt.ml" 175 6031 6040
+)
+"output_libvirt.ml" 129 4614 4641 "output_libvirt.ml" 129 4614 4653
+type(
+  string
+)
+ident(
+  def drive_prefix "output_libvirt.ml" 129 4614 4654 "output_libvirt.ml" 175 6031 6040
+)
+"output_libvirt.ml" 129 4614 4654 "output_libvirt.ml" 129 4614 4655
+type(
+  int
+)
+ident(
+  def i "output_libvirt.ml" 129 4614 4658 "output_libvirt.ml" 175 6031 6040
+)
+"output_libvirt.ml" 130 4667 4673 "output_libvirt.ml" 130 4667 4685
+type(
+  Types.target_bus_slot
+)
+"output_libvirt.ml" 130 4667 4698 "output_libvirt.ml" 130 4667 4705
+type(
+  (string -> int -> string, unit, string) format -> string -> int -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_libvirt.ml" 130 4667 4706 "output_libvirt.ml" 130 4667 4727
+type(
+  (string -> int -> string, unit, string) format
+)
+"output_libvirt.ml" 130 4667 4728 "output_libvirt.ml" 130 4667 4736
+type(
+  string
+)
+ident(
+  int_ref bus_name "output_libvirt.ml" 129 4614 4632 "output_libvirt.ml" 129 4614 4640
+)
+"output_libvirt.ml" 130 4667 4737 "output_libvirt.ml" 130 4667 4738
+type(
+  int
+)
+ident(
+  int_ref i "output_libvirt.ml" 129 4614 4654 "output_libvirt.ml" 129 4614 4655
+)
+"output_libvirt.ml" 130 4667 4697 "output_libvirt.ml" 130 4667 4739
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 130 4667 4689 "output_libvirt.ml" 130 4667 4739
+type(
+  DOM.node
+)
+"output_libvirt.ml" 132 4741 4761 "output_libvirt.ml" 132 4741 4762
+type(
+  Types.target
+)
+ident(
+  def t "output_libvirt.ml" 133 4766 4774 "output_libvirt.ml" 157 5437 5446
+)
+"output_libvirt.ml" 132 4741 4747 "output_libvirt.ml" 132 4741 4762
+type(
+  Types.target_bus_slot
+)
+"output_libvirt.ml" 133 4766 4774 "output_libvirt.ml" 133 4766 4775
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 133 4766 4776 "output_libvirt.ml" 133 4766 4782
+type(
+  string
+)
+"output_libvirt.ml" 134 4785 4795 "output_libvirt.ml" 134 4785 4801
+type(
+  string
+)
+"output_libvirt.ml" 134 4785 4806 "output_libvirt.ml" 134 4785 4810
+type(
+  string option
+)
+ident(
+  int_ref pool "output_libvirt.ml" 72 2375 2399 "output_libvirt.ml" 72 2375 2403
+)
+"output_libvirt.ml" 134 4785 4811 "output_libvirt.ml" 134 4785 4812
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_libvirt.ml" 134 4785 4813 "output_libvirt.ml" 134 4785 4817
+type(
+  string option
+)
+"output_libvirt.ml" 134 4785 4806 "output_libvirt.ml" 134 4785 4817
+type(
+  bool
+)
+"output_libvirt.ml" 134 4785 4823 "output_libvirt.ml" 134 4785 4829
+type(
+  string
+)
+"output_libvirt.ml" 134 4785 4835 "output_libvirt.ml" 134 4785 4843
+type(
+  string
+)
+"output_libvirt.ml" 134 4785 4803 "output_libvirt.ml" 134 4785 4843
+type(
+  string
+)
+"output_libvirt.ml" 134 4785 4795 "output_libvirt.ml" 134 4785 4843
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 135 4845 4855 "output_libvirt.ml" 135 4845 4863
+type(
+  string
+)
+"output_libvirt.ml" 135 4845 4865 "output_libvirt.ml" 135 4845 4871
+type(
+  string
+)
+"output_libvirt.ml" 135 4845 4855 "output_libvirt.ml" 135 4845 4871
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 133 4766 4783 "output_libvirt.ml" 136 4872 4881
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 137 4884 4894 "output_libvirt.ml" 137 4884 4895
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 137 4884 4896 "output_libvirt.ml" 137 4884 4904
+type(
+  string
+)
+"output_libvirt.ml" 138 4907 4919 "output_libvirt.ml" 138 4907 4925
+type(
+  string
+)
+"output_libvirt.ml" 138 4907 4927 "output_libvirt.ml" 138 4907 4933
+type(
+  string
+)
+"output_libvirt.ml" 138 4907 4919 "output_libvirt.ml" 138 4907 4933
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 139 4935 4947 "output_libvirt.ml" 139 4935 4953
+type(
+  string
+)
+"output_libvirt.ml" 139 4935 4955 "output_libvirt.ml" 139 4935 4956
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_libvirt.ml" 132 4741 4761 "output_libvirt.ml" 132 4741 4762
+)
+"output_libvirt.ml" 139 4935 4955 "output_libvirt.ml" 139 4935 4970
+type(
+  string
+)
+"output_libvirt.ml" 139 4935 4947 "output_libvirt.ml" 139 4935 4970
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 140 4972 4984 "output_libvirt.ml" 140 4972 4991
+type(
+  string
+)
+"output_libvirt.ml" 140 4972 4993 "output_libvirt.ml" 140 4972 4999
+type(
+  string
+)
+"output_libvirt.ml" 140 4972 4984 "output_libvirt.ml" 140 4972 4999
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 137 4884 4905 "output_libvirt.ml" 141 5000 5011
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 141 5000 5012 "output_libvirt.ml" 141 5000 5014
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 137 4884 4894 "output_libvirt.ml" 141 5000 5014
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 142 5016 5033 "output_libvirt.ml" 142 5016 5037
+type(
+  string option
+)
+ident(
+  int_ref pool "output_libvirt.ml" 72 2375 2399 "output_libvirt.ml" 72 2375 2403
+)
+"output_libvirt.ml" 143 5043 5055 "output_libvirt.ml" 143 5043 5059
+type(
+  string option
+)
+"output_libvirt.ml" 144 5063 5075 "output_libvirt.ml" 144 5063 5076
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 144 5063 5077 "output_libvirt.ml" 144 5063 5085
+type(
+  string
+)
+"output_libvirt.ml" 145 5088 5102 "output_libvirt.ml" 145 5088 5108
+type(
+  string
+)
+"output_libvirt.ml" 145 5088 5110 "output_libvirt.ml" 145 5088 5123
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_utils.absolute_path
+)
+"output_libvirt.ml" 145 5088 5124 "output_libvirt.ml" 145 5088 5125
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_libvirt.ml" 132 4741 4761 "output_libvirt.ml" 132 4741 4762
+)
+"output_libvirt.ml" 145 5088 5124 "output_libvirt.ml" 145 5088 5137
+type(
+  string
+)
+"output_libvirt.ml" 145 5088 5110 "output_libvirt.ml" 145 5088 5137
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 145 5088 5102 "output_libvirt.ml" 145 5088 5137
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 144 5063 5086 "output_libvirt.ml" 146 5139 5152
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 146 5139 5153 "output_libvirt.ml" 146 5139 5155
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 144 5063 5075 "output_libvirt.ml" 146 5139 5155
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 147 5156 5173 "output_libvirt.ml" 147 5156 5177
+type(
+  string
+)
+ident(
+  def pool "output_libvirt.ml" 148 5181 5193 "output_libvirt.ml" 151 5291 5307
+)
+"output_libvirt.ml" 147 5156 5168 "output_libvirt.ml" 147 5156 5177
+type(
+  string option
+)
+"output_libvirt.ml" 148 5181 5193 "output_libvirt.ml" 148 5181 5194
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 148 5181 5195 "output_libvirt.ml" 148 5181 5203
+type(
+  string
+)
+"output_libvirt.ml" 149 5206 5220 "output_libvirt.ml" 149 5206 5226
+type(
+  string
+)
+"output_libvirt.ml" 149 5206 5228 "output_libvirt.ml" 149 5206 5232
+type(
+  string
+)
+ident(
+  int_ref pool "output_libvirt.ml" 147 5156 5173 "output_libvirt.ml" 147 5156 5177
+)
+"output_libvirt.ml" 149 5206 5220 "output_libvirt.ml" 149 5206 5232
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 150 5234 5248 "output_libvirt.ml" 150 5234 5256
+type(
+  string
+)
+"output_libvirt.ml" 150 5234 5258 "output_libvirt.ml" 150 5234 5275
+type(
+  string -> string
+)
+ident(
+  ext_ref Filename.basename
+)
+"output_libvirt.ml" 150 5234 5276 "output_libvirt.ml" 150 5234 5277
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_libvirt.ml" 132 4741 4761 "output_libvirt.ml" 132 4741 4762
+)
+"output_libvirt.ml" 150 5234 5276 "output_libvirt.ml" 150 5234 5289
+type(
+  string
+)
+"output_libvirt.ml" 150 5234 5258 "output_libvirt.ml" 150 5234 5289
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 150 5234 5248 "output_libvirt.ml" 150 5234 5289
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 148 5181 5204 "output_libvirt.ml" 151 5291 5304
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 151 5291 5305 "output_libvirt.ml" 151 5291 5307
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 148 5181 5193 "output_libvirt.ml" 151 5291 5307
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 142 5016 5026 "output_libvirt.ml" 152 5308 5319
+type(
+  DOM.node
+)
+"output_libvirt.ml" 153 5321 5331 "output_libvirt.ml" 153 5321 5332
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 153 5321 5333 "output_libvirt.ml" 153 5321 5341
+type(
+  string
+)
+"output_libvirt.ml" 154 5344 5356 "output_libvirt.ml" 154 5344 5361
+type(
+  string
+)
+"output_libvirt.ml" 154 5344 5363 "output_libvirt.ml" 154 5344 5375
+type(
+  string
+)
+ident(
+  int_ref drive_prefix "output_libvirt.ml" 129 4614 4641 "output_libvirt.ml" 129 4614 4653
+)
+"output_libvirt.ml" 154 5344 5376 "output_libvirt.ml" 154 5344 5377
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_libvirt.ml" 154 5344 5378 "output_libvirt.ml" 154 5344 5388
+type(
+  int -> string
+)
+ident(
+  ext_ref Utils.drive_name
+)
+"output_libvirt.ml" 154 5344 5389 "output_libvirt.ml" 154 5344 5390
+type(
+  int
+)
+ident(
+  int_ref i "output_libvirt.ml" 129 4614 4654 "output_libvirt.ml" 129 4614 4655
+)
+"output_libvirt.ml" 154 5344 5378 "output_libvirt.ml" 154 5344 5390
+type(
+  string
+)
+"output_libvirt.ml" 154 5344 5363 "output_libvirt.ml" 154 5344 5390
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 154 5344 5356 "output_libvirt.ml" 154 5344 5390
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 155 5392 5404 "output_libvirt.ml" 155 5392 5409
+type(
+  string
+)
+"output_libvirt.ml" 155 5392 5411 "output_libvirt.ml" 155 5392 5419
+type(
+  string
+)
+ident(
+  int_ref bus_name "output_libvirt.ml" 129 4614 4632 "output_libvirt.ml" 129 4614 4640
+)
+"output_libvirt.ml" 155 5392 5404 "output_libvirt.ml" 155 5392 5419
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 153 5321 5342 "output_libvirt.ml" 156 5421 5432
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 156 5421 5433 "output_libvirt.ml" 156 5421 5435
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 153 5321 5331 "output_libvirt.ml" 156 5421 5435
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 136 4872 4882 "output_libvirt.ml" 157 5437 5446
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 133 4766 4774 "output_libvirt.ml" 157 5437 5446
+call(
+  tail
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 159 5448 5492 "output_libvirt.ml" 159 5448 5497
+type(
+  Types.s_removable_type
+)
+"output_libvirt.ml" 159 5448 5471 "output_libvirt.ml" 159 5448 5499
+type(
+  Types.source_removable
+)
+"output_libvirt.ml" 159 5448 5454 "output_libvirt.ml" 159 5448 5499
+type(
+  Types.target_bus_slot
+)
+"output_libvirt.ml" 160 5503 5511 "output_libvirt.ml" 160 5503 5512
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 160 5503 5513 "output_libvirt.ml" 160 5503 5519
+type(
+  string
+)
+"output_libvirt.ml" 160 5503 5522 "output_libvirt.ml" 160 5503 5530
+type(
+  string
+)
+"output_libvirt.ml" 160 5503 5532 "output_libvirt.ml" 160 5503 5539
+type(
+  string
+)
+"output_libvirt.ml" 160 5503 5522 "output_libvirt.ml" 160 5503 5539
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 160 5503 5541 "output_libvirt.ml" 160 5503 5547
+type(
+  string
+)
+"output_libvirt.ml" 160 5503 5549 "output_libvirt.ml" 160 5503 5555
+type(
+  string
+)
+"output_libvirt.ml" 160 5503 5541 "output_libvirt.ml" 160 5503 5555
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 160 5503 5520 "output_libvirt.ml" 160 5503 5557
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 161 5560 5570 "output_libvirt.ml" 161 5560 5571
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 161 5560 5572 "output_libvirt.ml" 161 5560 5580
+type(
+  string
+)
+"output_libvirt.ml" 161 5560 5583 "output_libvirt.ml" 161 5560 5589
+type(
+  string
+)
+"output_libvirt.ml" 161 5560 5591 "output_libvirt.ml" 161 5560 5597
+type(
+  string
+)
+"output_libvirt.ml" 161 5560 5583 "output_libvirt.ml" 161 5560 5597
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 161 5560 5599 "output_libvirt.ml" 161 5560 5605
+type(
+  string
+)
+"output_libvirt.ml" 161 5560 5607 "output_libvirt.ml" 161 5560 5612
+type(
+  string
+)
+"output_libvirt.ml" 161 5560 5599 "output_libvirt.ml" 161 5560 5612
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 161 5560 5581 "output_libvirt.ml" 161 5560 5614
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 161 5560 5615 "output_libvirt.ml" 161 5560 5617
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 161 5560 5570 "output_libvirt.ml" 161 5560 5617
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 162 5619 5629 "output_libvirt.ml" 162 5619 5630
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 162 5619 5631 "output_libvirt.ml" 162 5619 5639
+type(
+  string
+)
+"output_libvirt.ml" 163 5642 5654 "output_libvirt.ml" 163 5642 5659
+type(
+  string
+)
+"output_libvirt.ml" 163 5642 5661 "output_libvirt.ml" 163 5642 5673
+type(
+  string
+)
+ident(
+  int_ref drive_prefix "output_libvirt.ml" 129 4614 4641 "output_libvirt.ml" 129 4614 4653
+)
+"output_libvirt.ml" 163 5642 5674 "output_libvirt.ml" 163 5642 5675
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_libvirt.ml" 163 5642 5676 "output_libvirt.ml" 163 5642 5686
+type(
+  int -> string
+)
+ident(
+  ext_ref Utils.drive_name
+)
+"output_libvirt.ml" 163 5642 5687 "output_libvirt.ml" 163 5642 5688
+type(
+  int
+)
+ident(
+  int_ref i "output_libvirt.ml" 129 4614 4654 "output_libvirt.ml" 129 4614 4655
+)
+"output_libvirt.ml" 163 5642 5676 "output_libvirt.ml" 163 5642 5688
+type(
+  string
+)
+"output_libvirt.ml" 163 5642 5661 "output_libvirt.ml" 163 5642 5688
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 163 5642 5654 "output_libvirt.ml" 163 5642 5688
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 164 5690 5702 "output_libvirt.ml" 164 5690 5707
+type(
+  string
+)
+"output_libvirt.ml" 164 5690 5709 "output_libvirt.ml" 164 5690 5717
+type(
+  string
+)
+ident(
+  int_ref bus_name "output_libvirt.ml" 129 4614 4632 "output_libvirt.ml" 129 4614 4640
+)
+"output_libvirt.ml" 164 5690 5702 "output_libvirt.ml" 164 5690 5717
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 162 5619 5640 "output_libvirt.ml" 165 5718 5729
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 165 5718 5730 "output_libvirt.ml" 165 5718 5732
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 162 5619 5629 "output_libvirt.ml" 165 5718 5732
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 160 5503 5558 "output_libvirt.ml" 166 5733 5742
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 160 5503 5511 "output_libvirt.ml" 166 5733 5742
+call(
+  tail
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 168 5744 5788 "output_libvirt.ml" 168 5744 5794
+type(
+  Types.s_removable_type
+)
+"output_libvirt.ml" 168 5744 5767 "output_libvirt.ml" 168 5744 5796
+type(
+  Types.source_removable
+)
+"output_libvirt.ml" 168 5744 5750 "output_libvirt.ml" 168 5744 5796
+type(
+  Types.target_bus_slot
+)
+"output_libvirt.ml" 169 5800 5808 "output_libvirt.ml" 169 5800 5809
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 169 5800 5810 "output_libvirt.ml" 169 5800 5816
+type(
+  string
+)
+"output_libvirt.ml" 169 5800 5819 "output_libvirt.ml" 169 5800 5827
+type(
+  string
+)
+"output_libvirt.ml" 169 5800 5829 "output_libvirt.ml" 169 5800 5837
+type(
+  string
+)
+"output_libvirt.ml" 169 5800 5819 "output_libvirt.ml" 169 5800 5837
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 169 5800 5839 "output_libvirt.ml" 169 5800 5845
+type(
+  string
+)
+"output_libvirt.ml" 169 5800 5847 "output_libvirt.ml" 169 5800 5853
+type(
+  string
+)
+"output_libvirt.ml" 169 5800 5839 "output_libvirt.ml" 169 5800 5853
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 169 5800 5817 "output_libvirt.ml" 169 5800 5855
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 170 5858 5868 "output_libvirt.ml" 170 5858 5869
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 170 5858 5870 "output_libvirt.ml" 170 5858 5878
+type(
+  string
+)
+"output_libvirt.ml" 170 5858 5881 "output_libvirt.ml" 170 5858 5887
+type(
+  string
+)
+"output_libvirt.ml" 170 5858 5889 "output_libvirt.ml" 170 5858 5895
+type(
+  string
+)
+"output_libvirt.ml" 170 5858 5881 "output_libvirt.ml" 170 5858 5895
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 170 5858 5897 "output_libvirt.ml" 170 5858 5903
+type(
+  string
+)
+"output_libvirt.ml" 170 5858 5905 "output_libvirt.ml" 170 5858 5910
+type(
+  string
+)
+"output_libvirt.ml" 170 5858 5897 "output_libvirt.ml" 170 5858 5910
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 170 5858 5879 "output_libvirt.ml" 170 5858 5912
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 170 5858 5913 "output_libvirt.ml" 170 5858 5915
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 170 5858 5868 "output_libvirt.ml" 170 5858 5915
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 171 5917 5927 "output_libvirt.ml" 171 5917 5928
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 171 5917 5929 "output_libvirt.ml" 171 5917 5937
+type(
+  string
+)
+"output_libvirt.ml" 172 5940 5952 "output_libvirt.ml" 172 5940 5957
+type(
+  string
+)
+"output_libvirt.ml" 172 5940 5959 "output_libvirt.ml" 172 5940 5971
+type(
+  string
+)
+ident(
+  int_ref drive_prefix "output_libvirt.ml" 129 4614 4641 "output_libvirt.ml" 129 4614 4653
+)
+"output_libvirt.ml" 172 5940 5972 "output_libvirt.ml" 172 5940 5973
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_libvirt.ml" 172 5940 5974 "output_libvirt.ml" 172 5940 5984
+type(
+  int -> string
+)
+ident(
+  ext_ref Utils.drive_name
+)
+"output_libvirt.ml" 172 5940 5985 "output_libvirt.ml" 172 5940 5986
+type(
+  int
+)
+ident(
+  int_ref i "output_libvirt.ml" 129 4614 4654 "output_libvirt.ml" 129 4614 4655
+)
+"output_libvirt.ml" 172 5940 5974 "output_libvirt.ml" 172 5940 5986
+type(
+  string
+)
+"output_libvirt.ml" 172 5940 5959 "output_libvirt.ml" 172 5940 5986
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 172 5940 5952 "output_libvirt.ml" 172 5940 5986
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 173 5988 6000 "output_libvirt.ml" 173 5988 6005
+type(
+  string
+)
+"output_libvirt.ml" 173 5988 6007 "output_libvirt.ml" 173 5988 6015
+type(
+  string
+)
+ident(
+  int_ref bus_name "output_libvirt.ml" 129 4614 4632 "output_libvirt.ml" 129 4614 4640
+)
+"output_libvirt.ml" 173 5988 6000 "output_libvirt.ml" 173 5988 6015
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 171 5917 5938 "output_libvirt.ml" 174 6016 6027
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 174 6016 6028 "output_libvirt.ml" 174 6016 6030
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 171 5917 5927 "output_libvirt.ml" 174 6016 6030
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 169 5800 5856 "output_libvirt.ml" 175 6031 6040
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 169 5800 5808 "output_libvirt.ml" 175 6031 6040
+call(
+  tail
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 129 4614 4658 "output_libvirt.ml" 175 6031 6040
+type(
+  Types.target_bus_slot -> DOM.node
+)
+"output_libvirt.ml" 178 6049 6053 "output_libvirt.ml" 178 6049 6065
+type(
+  DOM.node list list -> DOM.node list
+)
+ident(
+  ext_ref List.flatten
+)
+"output_libvirt.ml" 179 6068 6074 "output_libvirt.ml" 179 6068 6087
+type(
+  DOM.node array -> DOM.node list
+)
+ident(
+  ext_ref Array.to_list
+)
+"output_libvirt.ml" 180 6088 6097 "output_libvirt.ml" 180 6088 6107
+type(
+  (int -> Types.target_bus_slot -> DOM.node) ->
+  Types.target_bus_slot array -> DOM.node array
+)
+ident(
+  ext_ref Array.mapi
+)
+"output_libvirt.ml" 180 6088 6109 "output_libvirt.ml" 180 6088 6118
+type(
+  string -> string -> int -> Types.target_bus_slot -> DOM.node
+)
+ident(
+  int_ref make_disk "output_libvirt.ml" 129 4614 4622 "output_libvirt.ml" 129 4614 4631
+)
+"output_libvirt.ml" 180 6088 6119 "output_libvirt.ml" 180 6088 6127
+type(
+  string
+)
+"output_libvirt.ml" 180 6088 6128 "output_libvirt.ml" 180 6088 6132
+type(
+  string
+)
+"output_libvirt.ml" 180 6088 6108 "output_libvirt.ml" 180 6088 6133
+call(
+  stack
+)
+type(
+  int -> Types.target_bus_slot -> DOM.node
+)
+"output_libvirt.ml" 181 6134 6154 "output_libvirt.ml" 181 6134 6166
+type(
+  Types.target_buses
+)
+ident(
+  int_ref target_buses "output_libvirt.ml" 72 2375 2411 "output_libvirt.ml" 72 2375 2423
+)
+"output_libvirt.ml" 181 6134 6154 "output_libvirt.ml" 181 6134 6188
+type(
+  Types.target_bus_slot array
+)
+"output_libvirt.ml" 180 6088 6096 "output_libvirt.ml" 181 6134 6189
+call(
+  stack
+)
+type(
+  DOM.node array
+)
+"output_libvirt.ml" 179 6068 6074 "output_libvirt.ml" 181 6134 6189
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 182 6191 6197 "output_libvirt.ml" 182 6191 6210
+type(
+  DOM.node array -> DOM.node list
+)
+ident(
+  ext_ref Array.to_list
+)
+"output_libvirt.ml" 183 6211 6220 "output_libvirt.ml" 183 6211 6230
+type(
+  (int -> Types.target_bus_slot -> DOM.node) ->
+  Types.target_bus_slot array -> DOM.node array
+)
+ident(
+  ext_ref Array.mapi
+)
+"output_libvirt.ml" 183 6211 6232 "output_libvirt.ml" 183 6211 6241
+type(
+  string -> string -> int -> Types.target_bus_slot -> DOM.node
+)
+ident(
+  int_ref make_disk "output_libvirt.ml" 129 4614 4622 "output_libvirt.ml" 129 4614 4631
+)
+"output_libvirt.ml" 183 6211 6242 "output_libvirt.ml" 183 6211 6247
+type(
+  string
+)
+"output_libvirt.ml" 183 6211 6248 "output_libvirt.ml" 183 6211 6252
+type(
+  string
+)
+"output_libvirt.ml" 183 6211 6231 "output_libvirt.ml" 183 6211 6253
+call(
+  stack
+)
+type(
+  int -> Types.target_bus_slot -> DOM.node
+)
+"output_libvirt.ml" 184 6254 6274 "output_libvirt.ml" 184 6254 6286
+type(
+  Types.target_buses
+)
+ident(
+  int_ref target_buses "output_libvirt.ml" 72 2375 2411 "output_libvirt.ml" 72 2375 2423
+)
+"output_libvirt.ml" 184 6254 6274 "output_libvirt.ml" 184 6254 6301
+type(
+  Types.target_bus_slot array
+)
+"output_libvirt.ml" 183 6211 6219 "output_libvirt.ml" 184 6254 6302
+call(
+  stack
+)
+type(
+  DOM.node array
+)
+"output_libvirt.ml" 182 6191 6197 "output_libvirt.ml" 184 6254 6302
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 185 6304 6310 "output_libvirt.ml" 185 6304 6323
+type(
+  DOM.node array -> DOM.node list
+)
+ident(
+  ext_ref Array.to_list
+)
+"output_libvirt.ml" 186 6324 6333 "output_libvirt.ml" 186 6324 6343
+type(
+  (int -> Types.target_bus_slot -> DOM.node) ->
+  Types.target_bus_slot array -> DOM.node array
+)
+ident(
+  ext_ref Array.mapi
+)
+"output_libvirt.ml" 186 6324 6345 "output_libvirt.ml" 186 6324 6354
+type(
+  string -> string -> int -> Types.target_bus_slot -> DOM.node
+)
+ident(
+  int_ref make_disk "output_libvirt.ml" 129 4614 4622 "output_libvirt.ml" 129 4614 4631
+)
+"output_libvirt.ml" 186 6324 6355 "output_libvirt.ml" 186 6324 6361
+type(
+  string
+)
+"output_libvirt.ml" 186 6324 6362 "output_libvirt.ml" 186 6324 6366
+type(
+  string
+)
+"output_libvirt.ml" 186 6324 6344 "output_libvirt.ml" 186 6324 6367
+call(
+  stack
+)
+type(
+  int -> Types.target_bus_slot -> DOM.node
+)
+"output_libvirt.ml" 187 6368 6388 "output_libvirt.ml" 187 6368 6400
+type(
+  Types.target_buses
+)
+ident(
+  int_ref target_buses "output_libvirt.ml" 72 2375 2411 "output_libvirt.ml" 72 2375 2423
+)
+"output_libvirt.ml" 187 6368 6388 "output_libvirt.ml" 187 6368 6416
+type(
+  Types.target_bus_slot array
+)
+"output_libvirt.ml" 186 6324 6332 "output_libvirt.ml" 187 6368 6417
+call(
+  stack
+)
+type(
+  DOM.node array
+)
+"output_libvirt.ml" 185 6304 6310 "output_libvirt.ml" 187 6368 6417
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 178 6049 6066 "output_libvirt.ml" 188 6418 6423
+type(
+  DOM.node list list
+)
+"output_libvirt.ml" 178 6049 6053 "output_libvirt.ml" 188 6418 6423
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 129 4614 4618 "output_libvirt.ml" 188 6418 6423
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 190 6428 6434 "output_libvirt.ml" 190 6428 6438
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 191 6441 6449 "output_libvirt.ml" 191 6441 6458
+type(
+  string
+)
+"output_libvirt.ml" 192 6461 6473 "output_libvirt.ml" 192 6461 6482
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_libvirt.ml" 72 2375 2424 "output_libvirt.ml" 72 2375 2433
+)
+"output_libvirt.ml" 192 6461 6473 "output_libvirt.ml" 192 6461 6496
+type(
+  Types.guestcaps_net_type
+)
+"output_libvirt.ml" 193 6502 6510 "output_libvirt.ml" 193 6502 6520
+type(
+  Types.guestcaps_net_type
+)
+"output_libvirt.ml" 193 6502 6524 "output_libvirt.ml" 193 6502 6532
+type(
+  string
+)
+"output_libvirt.ml" 193 6502 6535 "output_libvirt.ml" 193 6502 6540
+type(
+  Types.guestcaps_net_type
+)
+"output_libvirt.ml" 193 6502 6544 "output_libvirt.ml" 193 6502 6551
+type(
+  string
+)
+"output_libvirt.ml" 193 6502 6554 "output_libvirt.ml" 193 6502 6561
+type(
+  Types.guestcaps_net_type
+)
+"output_libvirt.ml" 193 6502 6565 "output_libvirt.ml" 193 6502 6574
+type(
+  string
+)
+"output_libvirt.ml" 192 6461 6467 "output_libvirt.ml" 193 6502 6574
+type(
+  string
+)
+"output_libvirt.ml" 194 6578 6582 "output_libvirt.ml" 194 6578 6590
+type(
+  (Types.source_nic -> DOM.node) -> Types.source_nic list -> DOM.node list
+)
+ident(
+  ext_ref List.map
+)
+"output_libvirt.ml" 195 6593 6613 "output_libvirt.ml" 195 6593 6616
+type(
+  string option
+)
+ident(
+  def mac "output_libvirt.ml" 197 6699 6707 "output_libvirt.ml" 219 7405 7416
+)
+"output_libvirt.ml" 195 6593 6632 "output_libvirt.ml" 195 6593 6641
+type(
+  Types.vnet_type
+)
+ident(
+  def vnet_type "output_libvirt.ml" 197 6699 6707 "output_libvirt.ml" 219 7405 7416
+)
+"output_libvirt.ml" 196 6643 6664 "output_libvirt.ml" 196 6643 6668
+type(
+  string
+)
+ident(
+  def vnet "output_libvirt.ml" 197 6699 6707 "output_libvirt.ml" 219 7405 7416
+)
+"output_libvirt.ml" 196 6643 6684 "output_libvirt.ml" 196 6643 6693
+type(
+  string
+)
+ident(
+  def vnet_orig "output_libvirt.ml" 197 6699 6707 "output_libvirt.ml" 219 7405 7416
+)
+"output_libvirt.ml" 195 6593 6603 "output_libvirt.ml" 196 6643 6695
+type(
+  Types.source_nic
+)
+"output_libvirt.ml" 197 6699 6711 "output_libvirt.ml" 197 6699 6724
+type(
+  string
+)
+"output_libvirt.ml" 198 6727 6743 "output_libvirt.ml" 198 6727 6752
+type(
+  Types.vnet_type
+)
+ident(
+  int_ref vnet_type "output_libvirt.ml" 195 6593 6632 "output_libvirt.ml" 195 6593 6641
+)
+"output_libvirt.ml" 199 6758 6770 "output_libvirt.ml" 199 6758 6776
+type(
+  Types.vnet_type
+)
+"output_libvirt.ml" 199 6758 6780 "output_libvirt.ml" 199 6758 6788
+type(
+  string
+)
+"output_libvirt.ml" 199 6758 6791 "output_libvirt.ml" 199 6758 6798
+type(
+  Types.vnet_type
+)
+"output_libvirt.ml" 199 6758 6802 "output_libvirt.ml" 199 6758 6811
+type(
+  string
+)
+"output_libvirt.ml" 198 6727 6737 "output_libvirt.ml" 199 6758 6811
+type(
+  string
+)
+"output_libvirt.ml" 201 6816 6828 "output_libvirt.ml" 201 6816 6831
+type(
+  DOM.node
+)
+"output_libvirt.ml" 202 6834 6848 "output_libvirt.ml" 202 6834 6856
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 203 6861 6873 "output_libvirt.ml" 203 6861 6874
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 203 6861 6875 "output_libvirt.ml" 203 6861 6883
+type(
+  string
+)
+"output_libvirt.ml" 203 6861 6886 "output_libvirt.ml" 203 6861 6899
+type(
+  string
+)
+ident(
+  int_ref vnet_type_str "output_libvirt.ml" 197 6699 6711 "output_libvirt.ml" 197 6699 6724
+)
+"output_libvirt.ml" 203 6861 6901 "output_libvirt.ml" 203 6861 6905
+type(
+  string
+)
+ident(
+  int_ref vnet "output_libvirt.ml" 196 6643 6664 "output_libvirt.ml" 196 6643 6668
+)
+"output_libvirt.ml" 203 6861 6886 "output_libvirt.ml" 203 6861 6905
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 203 6861 6884 "output_libvirt.ml" 203 6861 6907
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 203 6861 6908 "output_libvirt.ml" 203 6861 6910
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 203 6861 6873 "output_libvirt.ml" 203 6861 6910
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 204 6912 6924 "output_libvirt.ml" 204 6912 6925
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 204 6912 6926 "output_libvirt.ml" 204 6912 6933
+type(
+  string
+)
+"output_libvirt.ml" 204 6912 6936 "output_libvirt.ml" 204 6912 6942
+type(
+  string
+)
+"output_libvirt.ml" 204 6912 6944 "output_libvirt.ml" 204 6912 6953
+type(
+  string
+)
+ident(
+  int_ref net_model "output_libvirt.ml" 191 6441 6449 "output_libvirt.ml" 191 6441 6458
+)
+"output_libvirt.ml" 204 6912 6936 "output_libvirt.ml" 204 6912 6953
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 204 6912 6934 "output_libvirt.ml" 204 6912 6955
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 204 6912 6956 "output_libvirt.ml" 204 6912 6958
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 204 6912 6924 "output_libvirt.ml" 204 6912 6958
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 202 6834 6859 "output_libvirt.ml" 205 6960 6971
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 206 6975 6989 "output_libvirt.ml" 206 6975 6997
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 207 7000 7015 "output_libvirt.ml" 207 7000 7024
+type(
+  string
+)
+ident(
+  int_ref vnet_orig "output_libvirt.ml" 196 6643 6684 "output_libvirt.ml" 196 6643 6693
+)
+"output_libvirt.ml" 207 7000 7025 "output_libvirt.ml" 207 7000 7027
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_libvirt.ml" 207 7000 7028 "output_libvirt.ml" 207 7000 7032
+type(
+  string
+)
+ident(
+  int_ref vnet "output_libvirt.ml" 196 6643 6664 "output_libvirt.ml" 196 6643 6668
+)
+"output_libvirt.ml" 207 7000 7015 "output_libvirt.ml" 207 7000 7032
+type(
+  bool
+)
+"output_libvirt.ml" 208 7038 7061 "output_libvirt.ml" 208 7038 7068
+type(
+  (string -> string -> string -> string, unit, string) format ->
+  string -> string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_libvirt.ml" 208 7038 7069 "output_libvirt.ml" 208 7038 7102
+type(
+  (string -> string -> string -> string, unit, string) format
+)
+"output_libvirt.ml" 209 7103 7128 "output_libvirt.ml" 209 7103 7141
+type(
+  string
+)
+ident(
+  int_ref vnet_type_str "output_libvirt.ml" 197 6699 6711 "output_libvirt.ml" 197 6699 6724
+)
+"output_libvirt.ml" 209 7103 7142 "output_libvirt.ml" 209 7103 7151
+type(
+  string
+)
+ident(
+  int_ref vnet_orig "output_libvirt.ml" 196 6643 6684 "output_libvirt.ml" 196 6643 6693
+)
+"output_libvirt.ml" 209 7103 7152 "output_libvirt.ml" 209 7103 7156
+type(
+  string
+)
+ident(
+  int_ref vnet "output_libvirt.ml" 196 6643 6664 "output_libvirt.ml" 196 6643 6668
+)
+"output_libvirt.ml" 208 7038 7060 "output_libvirt.ml" 209 7103 7157
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 208 7038 7052 "output_libvirt.ml" 209 7103 7157
+type(
+  DOM.node
+)
+"output_libvirt.ml" 209 7103 7161 "output_libvirt.ml" 209 7103 7169
+type(
+  DOM.node list
+)
+ident(
+  int_ref children "output_libvirt.ml" 202 6834 6848 "output_libvirt.ml" 202 6834 6856
+)
+"output_libvirt.ml" 208 7038 7052 "output_libvirt.ml" 209 7103 7169
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 211 7187 7201 "output_libvirt.ml" 211 7187 7209
+type(
+  DOM.node list
+)
+ident(
+  int_ref children "output_libvirt.ml" 202 6834 6848 "output_libvirt.ml" 202 6834 6856
+)
+"output_libvirt.ml" 207 7000 7012 "output_libvirt.ml" 211 7187 7209
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 212 7213 7223 "output_libvirt.ml" 212 7213 7224
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 212 7213 7225 "output_libvirt.ml" 212 7213 7236
+type(
+  string
+)
+"output_libvirt.ml" 212 7213 7239 "output_libvirt.ml" 212 7213 7245
+type(
+  string
+)
+"output_libvirt.ml" 212 7213 7247 "output_libvirt.ml" 212 7213 7260
+type(
+  string
+)
+ident(
+  int_ref vnet_type_str "output_libvirt.ml" 197 6699 6711 "output_libvirt.ml" 197 6699 6724
+)
+"output_libvirt.ml" 212 7213 7239 "output_libvirt.ml" 212 7213 7260
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 212 7213 7237 "output_libvirt.ml" 212 7213 7262
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 212 7213 7263 "output_libvirt.ml" 212 7213 7271
+type(
+  DOM.node list
+)
+ident(
+  int_ref children "output_libvirt.ml" 206 6975 6989 "output_libvirt.ml" 206 6975 6997
+)
+"output_libvirt.ml" 212 7213 7223 "output_libvirt.ml" 212 7213 7271
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 206 6975 6985 "output_libvirt.ml" 212 7213 7271
+type(
+  DOM.node
+)
+"output_libvirt.ml" 202 6834 6844 "output_libvirt.ml" 212 7213 7271
+type(
+  DOM.node
+)
+"output_libvirt.ml" 214 7276 7291 "output_libvirt.ml" 214 7276 7294
+type(
+  string option
+)
+ident(
+  int_ref mac "output_libvirt.ml" 195 6593 6613 "output_libvirt.ml" 195 6593 6616
+)
+"output_libvirt.ml" 215 7300 7310 "output_libvirt.ml" 215 7300 7314
+type(
+  string option
+)
+"output_libvirt.ml" 215 7300 7318 "output_libvirt.ml" 215 7300 7320
+type(
+  unit
+)
+"output_libvirt.ml" 216 7321 7336 "output_libvirt.ml" 216 7321 7339
+type(
+  string
+)
+ident(
+  def mac "output_libvirt.ml" 217 7343 7353 "output_libvirt.ml" 217 7343 7401
+)
+"output_libvirt.ml" 216 7321 7331 "output_libvirt.ml" 216 7321 7339
+type(
+  string option
+)
+"output_libvirt.ml" 217 7343 7353 "output_libvirt.ml" 217 7343 7365
+type(
+  DOM.node -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_child
+)
+"output_libvirt.ml" 217 7343 7367 "output_libvirt.ml" 217 7343 7368
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 217 7343 7369 "output_libvirt.ml" 217 7343 7374
+type(
+  string
+)
+"output_libvirt.ml" 217 7343 7377 "output_libvirt.ml" 217 7343 7386
+type(
+  string
+)
+"output_libvirt.ml" 217 7343 7388 "output_libvirt.ml" 217 7343 7391
+type(
+  string
+)
+ident(
+  int_ref mac "output_libvirt.ml" 216 7321 7336 "output_libvirt.ml" 216 7321 7339
+)
+"output_libvirt.ml" 217 7343 7377 "output_libvirt.ml" 217 7343 7391
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 217 7343 7375 "output_libvirt.ml" 217 7343 7393
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 217 7343 7394 "output_libvirt.ml" 217 7343 7396
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 217 7343 7366 "output_libvirt.ml" 217 7343 7397
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 217 7343 7398 "output_libvirt.ml" 217 7343 7401
+type(
+  DOM.node
+)
+ident(
+  int_ref nic "output_libvirt.ml" 201 6816 6828 "output_libvirt.ml" 201 6816 6831
+)
+"output_libvirt.ml" 217 7343 7353 "output_libvirt.ml" 217 7343 7401
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 214 7276 7284 "output_libvirt.ml" 217 7343 7402
+type(
+  unit
+)
+"output_libvirt.ml" 219 7405 7413 "output_libvirt.ml" 219 7405 7416
+type(
+  DOM.node
+)
+ident(
+  int_ref nic "output_libvirt.ml" 201 6816 6828 "output_libvirt.ml" 201 6816 6831
+)
+"output_libvirt.ml" 214 7276 7284 "output_libvirt.ml" 219 7405 7416
+type(
+  DOM.node
+)
+"output_libvirt.ml" 201 6816 6824 "output_libvirt.ml" 219 7405 7416
+type(
+  DOM.node
+)
+"output_libvirt.ml" 197 6699 6707 "output_libvirt.ml" 219 7405 7416
+type(
+  DOM.node
+)
+"output_libvirt.ml" 194 6578 6591 "output_libvirt.ml" 220 7417 7422
+type(
+  Types.source_nic -> DOM.node
+)
+"output_libvirt.ml" 220 7417 7423 "output_libvirt.ml" 220 7417 7429
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 72 2375 2410
+)
+"output_libvirt.ml" 220 7417 7423 "output_libvirt.ml" 220 7417 7436
+type(
+  Types.source_nic list
+)
+"output_libvirt.ml" 194 6578 6582 "output_libvirt.ml" 220 7417 7436
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 191 6441 6445 "output_libvirt.ml" 220 7417 7436
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 225 7554 7560 "output_libvirt.ml" 225 7554 7565
+type(
+  DOM.node
+)
+"output_libvirt.ml" 225 7554 7567 "output_libvirt.ml" 225 7554 7575
+type(
+  DOM.node
+)
+"output_libvirt.ml" 225 7554 7560 "output_libvirt.ml" 225 7554 7575
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 226 7578 7586 "output_libvirt.ml" 226 7578 7591
+type(
+  DOM.node
+)
+"output_libvirt.ml" 226 7578 7593 "output_libvirt.ml" 226 7578 7601
+type(
+  DOM.node
+)
+"output_libvirt.ml" 226 7578 7586 "output_libvirt.ml" 226 7578 7601
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 227 7604 7616 "output_libvirt.ml" 227 7604 7625
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_libvirt.ml" 72 2375 2424 "output_libvirt.ml" 72 2375 2433
+)
+"output_libvirt.ml" 227 7604 7616 "output_libvirt.ml" 227 7604 7637
+type(
+  Types.guestcaps_video_type
+)
+"output_libvirt.ml" 228 7643 7651 "output_libvirt.ml" 228 7643 7654
+type(
+  Types.guestcaps_video_type
+)
+"output_libvirt.ml" 229 7658 7666 "output_libvirt.ml" 229 7658 7667
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 229 7658 7668 "output_libvirt.ml" 229 7658 7675
+type(
+  string
+)
+"output_libvirt.ml" 229 7658 7678 "output_libvirt.ml" 229 7658 7684
+type(
+  string
+)
+"output_libvirt.ml" 229 7658 7686 "output_libvirt.ml" 229 7658 7691
+type(
+  string
+)
+"output_libvirt.ml" 229 7658 7678 "output_libvirt.ml" 229 7658 7691
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 229 7658 7693 "output_libvirt.ml" 229 7658 7698
+type(
+  string
+)
+"output_libvirt.ml" 229 7658 7700 "output_libvirt.ml" 229 7658 7707
+type(
+  string
+)
+"output_libvirt.ml" 229 7658 7693 "output_libvirt.ml" 229 7658 7707
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 229 7658 7676 "output_libvirt.ml" 229 7658 7709
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 229 7658 7710 "output_libvirt.ml" 229 7658 7712
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 229 7658 7666 "output_libvirt.ml" 229 7658 7712
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 230 7714 7722 "output_libvirt.ml" 230 7714 7723
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 230 7714 7724 "output_libvirt.ml" 230 7714 7734
+type(
+  string
+)
+"output_libvirt.ml" 230 7714 7737 "output_libvirt.ml" 230 7714 7743
+type(
+  string
+)
+"output_libvirt.ml" 230 7714 7745 "output_libvirt.ml" 230 7714 7750
+type(
+  string
+)
+"output_libvirt.ml" 230 7714 7737 "output_libvirt.ml" 230 7714 7750
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 230 7714 7735 "output_libvirt.ml" 230 7714 7752
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 230 7714 7753 "output_libvirt.ml" 230 7714 7755
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 230 7714 7722 "output_libvirt.ml" 230 7714 7755
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 229 7658 7666 "output_libvirt.ml" 230 7714 7755
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 231 7756 7764 "output_libvirt.ml" 231 7756 7770
+type(
+  Types.guestcaps_video_type
+)
+"output_libvirt.ml" 232 7774 7782 "output_libvirt.ml" 232 7774 7783
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 232 7774 7784 "output_libvirt.ml" 232 7774 7791
+type(
+  string
+)
+"output_libvirt.ml" 232 7774 7794 "output_libvirt.ml" 232 7774 7800
+type(
+  string
+)
+"output_libvirt.ml" 232 7774 7802 "output_libvirt.ml" 232 7774 7810
+type(
+  string
+)
+"output_libvirt.ml" 232 7774 7794 "output_libvirt.ml" 232 7774 7810
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 232 7774 7812 "output_libvirt.ml" 232 7774 7818
+type(
+  string
+)
+"output_libvirt.ml" 232 7774 7820 "output_libvirt.ml" 232 7774 7826
+type(
+  string
+)
+"output_libvirt.ml" 232 7774 7812 "output_libvirt.ml" 232 7774 7826
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 232 7774 7792 "output_libvirt.ml" 232 7774 7828
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 232 7774 7829 "output_libvirt.ml" 232 7774 7831
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 232 7774 7782 "output_libvirt.ml" 232 7774 7831
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 233 7833 7841 "output_libvirt.ml" 233 7833 7842
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 233 7833 7843 "output_libvirt.ml" 233 7833 7853
+type(
+  string
+)
+"output_libvirt.ml" 233 7833 7856 "output_libvirt.ml" 233 7833 7862
+type(
+  string
+)
+"output_libvirt.ml" 233 7833 7864 "output_libvirt.ml" 233 7833 7871
+type(
+  string
+)
+"output_libvirt.ml" 233 7833 7856 "output_libvirt.ml" 233 7833 7871
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 233 7833 7854 "output_libvirt.ml" 233 7833 7873
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 233 7833 7874 "output_libvirt.ml" 233 7833 7876
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 233 7833 7841 "output_libvirt.ml" 233 7833 7876
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 232 7774 7782 "output_libvirt.ml" 233 7833 7876
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 227 7604 7610 "output_libvirt.ml" 233 7833 7876
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 235 7881 7885 "output_libvirt.ml" 235 7881 7896
+type(
+  DOM.attr -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_attr
+)
+"output_libvirt.ml" 235 7881 7898 "output_libvirt.ml" 235 7881 7905
+type(
+  string
+)
+"output_libvirt.ml" 235 7881 7907 "output_libvirt.ml" 235 7881 7910
+type(
+  string
+)
+"output_libvirt.ml" 235 7881 7897 "output_libvirt.ml" 235 7881 7911
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 235 7881 7912 "output_libvirt.ml" 235 7881 7917
+type(
+  DOM.node
+)
+ident(
+  int_ref video "output_libvirt.ml" 226 7578 7586 "output_libvirt.ml" 226 7578 7591
+)
+"output_libvirt.ml" 235 7881 7885 "output_libvirt.ml" 235 7881 7917
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 237 7920 7931 "output_libvirt.ml" 237 7920 7937
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 72 2375 2410
+)
+"output_libvirt.ml" 237 7920 7931 "output_libvirt.ml" 237 7920 7947
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 238 7953 7982 "output_libvirt.ml" 238 7953 7984
+type(
+  string
+)
+ident(
+  def km "output_libvirt.ml" 238 7953 7990 "output_libvirt.ml" 238 7953 8025
+)
+"output_libvirt.ml" 238 7953 7977 "output_libvirt.ml" 238 7953 7984
+type(
+  string option
+)
+"output_libvirt.ml" 238 7953 7964 "output_libvirt.ml" 238 7953 7986
+type(
+  Types.source_display
+)
+"output_libvirt.ml" 238 7953 7959 "output_libvirt.ml" 238 7953 7986
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 238 7953 7990 "output_libvirt.ml" 238 7953 8001
+type(
+  DOM.attr -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_attr
+)
+"output_libvirt.ml" 238 7953 8003 "output_libvirt.ml" 238 7953 8011
+type(
+  string
+)
+"output_libvirt.ml" 238 7953 8013 "output_libvirt.ml" 238 7953 8015
+type(
+  string
+)
+ident(
+  int_ref km "output_libvirt.ml" 238 7953 7982 "output_libvirt.ml" 238 7953 7984
+)
+"output_libvirt.ml" 238 7953 8002 "output_libvirt.ml" 238 7953 8016
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 238 7953 8017 "output_libvirt.ml" 238 7953 8025
+type(
+  DOM.node
+)
+ident(
+  int_ref graphics "output_libvirt.ml" 226 7578 7593 "output_libvirt.ml" 226 7578 7601
+)
+"output_libvirt.ml" 238 7953 7990 "output_libvirt.ml" 238 7953 8025
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 239 8026 8032 "output_libvirt.ml" 239 8026 8033
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 239 8026 8037 "output_libvirt.ml" 239 8026 8039
+type(
+  unit
+)
+"output_libvirt.ml" 237 7920 7924 "output_libvirt.ml" 239 8026 8040
+type(
+  unit
+)
+"output_libvirt.ml" 240 8042 8053 "output_libvirt.ml" 240 8042 8059
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 72 2375 2410
+)
+"output_libvirt.ml" 240 8042 8053 "output_libvirt.ml" 240 8042 8069
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 241 8075 8106 "output_libvirt.ml" 241 8075 8108
+type(
+  string
+)
+ident(
+  def pw "output_libvirt.ml" 241 8075 8114 "output_libvirt.ml" 241 8075 8149
+)
+"output_libvirt.ml" 241 8075 8101 "output_libvirt.ml" 241 8075 8108
+type(
+  string option
+)
+"output_libvirt.ml" 241 8075 8086 "output_libvirt.ml" 241 8075 8110
+type(
+  Types.source_display
+)
+"output_libvirt.ml" 241 8075 8081 "output_libvirt.ml" 241 8075 8110
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 241 8075 8114 "output_libvirt.ml" 241 8075 8125
+type(
+  DOM.attr -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_attr
+)
+"output_libvirt.ml" 241 8075 8127 "output_libvirt.ml" 241 8075 8135
+type(
+  string
+)
+"output_libvirt.ml" 241 8075 8137 "output_libvirt.ml" 241 8075 8139
+type(
+  string
+)
+ident(
+  int_ref pw "output_libvirt.ml" 241 8075 8106 "output_libvirt.ml" 241 8075 8108
+)
+"output_libvirt.ml" 241 8075 8126 "output_libvirt.ml" 241 8075 8140
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 241 8075 8141 "output_libvirt.ml" 241 8075 8149
+type(
+  DOM.node
+)
+ident(
+  int_ref graphics "output_libvirt.ml" 226 7578 7593 "output_libvirt.ml" 226 7578 7601
+)
+"output_libvirt.ml" 241 8075 8114 "output_libvirt.ml" 241 8075 8149
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 242 8150 8156 "output_libvirt.ml" 242 8150 8157
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 242 8150 8161 "output_libvirt.ml" 242 8150 8163
+type(
+  unit
+)
+"output_libvirt.ml" 240 8042 8046 "output_libvirt.ml" 242 8150 8164
+type(
+  unit
+)
+"output_libvirt.ml" 243 8166 8177 "output_libvirt.ml" 243 8166 8183
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 72 2375 2410
+)
+"output_libvirt.ml" 243 8166 8177 "output_libvirt.ml" 243 8166 8193
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 244 8199 8223 "output_libvirt.ml" 244 8199 8229
+type(
+  Types.s_display_listen
+)
+ident(
+  def listen "output_libvirt.ml" 245 8235 8241 "output_libvirt.ml" 252 8514 8534
+)
+"output_libvirt.ml" 244 8199 8210 "output_libvirt.ml" 244 8199 8231
+type(
+  Types.source_display
+)
+"output_libvirt.ml" 244 8199 8205 "output_libvirt.ml" 244 8199 8231
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 245 8235 8248 "output_libvirt.ml" 245 8235 8254
+type(
+  Types.s_display_listen
+)
+ident(
+  int_ref listen "output_libvirt.ml" 244 8199 8223 "output_libvirt.ml" 244 8199 8229
+)
+"output_libvirt.ml" 246 8260 8277 "output_libvirt.ml" 246 8260 8278
+type(
+  string
+)
+ident(
+  def a "output_libvirt.ml" 247 8282 8290 "output_libvirt.ml" 248 8353 8386
+)
+"output_libvirt.ml" 246 8260 8268 "output_libvirt.ml" 246 8260 8278
+type(
+  Types.s_display_listen
+)
+"output_libvirt.ml" 247 8282 8294 "output_libvirt.ml" 247 8282 8297
+type(
+  DOM.node
+)
+"output_libvirt.ml" 247 8282 8300 "output_libvirt.ml" 247 8282 8301
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 247 8282 8302 "output_libvirt.ml" 247 8282 8310
+type(
+  string
+)
+"output_libvirt.ml" 247 8282 8313 "output_libvirt.ml" 247 8282 8319
+type(
+  string
+)
+"output_libvirt.ml" 247 8282 8321 "output_libvirt.ml" 247 8282 8330
+type(
+  string
+)
+"output_libvirt.ml" 247 8282 8313 "output_libvirt.ml" 247 8282 8330
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 247 8282 8332 "output_libvirt.ml" 247 8282 8341
+type(
+  string
+)
+"output_libvirt.ml" 247 8282 8343 "output_libvirt.ml" 247 8282 8344
+type(
+  string
+)
+ident(
+  int_ref a "output_libvirt.ml" 246 8260 8277 "output_libvirt.ml" 246 8260 8278
+)
+"output_libvirt.ml" 247 8282 8332 "output_libvirt.ml" 247 8282 8344
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 247 8282 8311 "output_libvirt.ml" 247 8282 8346
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 247 8282 8347 "output_libvirt.ml" 247 8282 8349
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 247 8282 8300 "output_libvirt.ml" 247 8282 8349
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 248 8353 8361 "output_libvirt.ml" 248 8353 8373
+type(
+  DOM.node -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_child
+)
+"output_libvirt.ml" 248 8353 8374 "output_libvirt.ml" 248 8353 8377
+type(
+  DOM.node
+)
+ident(
+  int_ref sub "output_libvirt.ml" 247 8282 8294 "output_libvirt.ml" 247 8282 8297
+)
+"output_libvirt.ml" 248 8353 8378 "output_libvirt.ml" 248 8353 8386
+type(
+  DOM.node
+)
+ident(
+  int_ref graphics "output_libvirt.ml" 226 7578 7593 "output_libvirt.ml" 226 7578 7601
+)
+"output_libvirt.ml" 248 8353 8361 "output_libvirt.ml" 248 8353 8386
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 247 8282 8290 "output_libvirt.ml" 248 8353 8386
+type(
+  unit
+)
+"output_libvirt.ml" 249 8387 8404 "output_libvirt.ml" 249 8387 8405
+type(
+  string
+)
+ident(
+  def n "output_libvirt.ml" 250 8409 8417 "output_libvirt.ml" 251 8480 8513
+)
+"output_libvirt.ml" 249 8387 8395 "output_libvirt.ml" 249 8387 8405
+type(
+  Types.s_display_listen
+)
+"output_libvirt.ml" 250 8409 8421 "output_libvirt.ml" 250 8409 8424
+type(
+  DOM.node
+)
+"output_libvirt.ml" 250 8409 8427 "output_libvirt.ml" 250 8409 8428
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 250 8409 8429 "output_libvirt.ml" 250 8409 8437
+type(
+  string
+)
+"output_libvirt.ml" 250 8409 8440 "output_libvirt.ml" 250 8409 8446
+type(
+  string
+)
+"output_libvirt.ml" 250 8409 8448 "output_libvirt.ml" 250 8409 8457
+type(
+  string
+)
+"output_libvirt.ml" 250 8409 8440 "output_libvirt.ml" 250 8409 8457
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 250 8409 8459 "output_libvirt.ml" 250 8409 8468
+type(
+  string
+)
+"output_libvirt.ml" 250 8409 8470 "output_libvirt.ml" 250 8409 8471
+type(
+  string
+)
+ident(
+  int_ref n "output_libvirt.ml" 249 8387 8404 "output_libvirt.ml" 249 8387 8405
+)
+"output_libvirt.ml" 250 8409 8459 "output_libvirt.ml" 250 8409 8471
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 250 8409 8438 "output_libvirt.ml" 250 8409 8473
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 250 8409 8474 "output_libvirt.ml" 250 8409 8476
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 250 8409 8427 "output_libvirt.ml" 250 8409 8476
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 251 8480 8488 "output_libvirt.ml" 251 8480 8500
+type(
+  DOM.node -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_child
+)
+"output_libvirt.ml" 251 8480 8501 "output_libvirt.ml" 251 8480 8504
+type(
+  DOM.node
+)
+ident(
+  int_ref sub "output_libvirt.ml" 250 8409 8421 "output_libvirt.ml" 250 8409 8424
+)
+"output_libvirt.ml" 251 8480 8505 "output_libvirt.ml" 251 8480 8513
+type(
+  DOM.node
+)
+ident(
+  int_ref graphics "output_libvirt.ml" 226 7578 7593 "output_libvirt.ml" 226 7578 7601
+)
+"output_libvirt.ml" 251 8480 8488 "output_libvirt.ml" 251 8480 8513
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 250 8409 8417 "output_libvirt.ml" 251 8480 8513
+type(
+  unit
+)
+"output_libvirt.ml" 252 8514 8522 "output_libvirt.ml" 252 8514 8527
+type(
+  Types.s_display_listen
+)
+"output_libvirt.ml" 252 8514 8531 "output_libvirt.ml" 252 8514 8533
+type(
+  unit
+)
+"output_libvirt.ml" 245 8235 8241 "output_libvirt.ml" 252 8514 8534
+type(
+  unit
+)
+"output_libvirt.ml" 253 8535 8541 "output_libvirt.ml" 253 8535 8542
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 253 8535 8546 "output_libvirt.ml" 253 8535 8548
+type(
+  unit
+)
+"output_libvirt.ml" 243 8166 8170 "output_libvirt.ml" 253 8535 8549
+type(
+  unit
+)
+"output_libvirt.ml" 254 8551 8562 "output_libvirt.ml" 254 8551 8568
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 72 2375 2410
+)
+"output_libvirt.ml" 254 8551 8562 "output_libvirt.ml" 254 8551 8578
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 255 8584 8611 "output_libvirt.ml" 255 8584 8612
+type(
+  int
+)
+ident(
+  def p "output_libvirt.ml" 256 8618 8624 "output_libvirt.ml" 257 8665 8717
+)
+"output_libvirt.ml" 255 8584 8606 "output_libvirt.ml" 255 8584 8612
+type(
+  int option
+)
+"output_libvirt.ml" 255 8584 8595 "output_libvirt.ml" 255 8584 8614
+type(
+  Types.source_display
+)
+"output_libvirt.ml" 255 8584 8590 "output_libvirt.ml" 255 8584 8614
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 256 8618 8624 "output_libvirt.ml" 256 8618 8635
+type(
+  DOM.attr -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_attr
+)
+"output_libvirt.ml" 256 8618 8637 "output_libvirt.ml" 256 8618 8647
+type(
+  string
+)
+"output_libvirt.ml" 256 8618 8649 "output_libvirt.ml" 256 8618 8653
+type(
+  string
+)
+"output_libvirt.ml" 256 8618 8636 "output_libvirt.ml" 256 8618 8654
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 256 8618 8655 "output_libvirt.ml" 256 8618 8663
+type(
+  DOM.node
+)
+ident(
+  int_ref graphics "output_libvirt.ml" 226 7578 7593 "output_libvirt.ml" 226 7578 7601
+)
+"output_libvirt.ml" 256 8618 8624 "output_libvirt.ml" 256 8618 8663
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 257 8665 8671 "output_libvirt.ml" 257 8665 8682
+type(
+  DOM.attr -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_attr
+)
+"output_libvirt.ml" 257 8665 8684 "output_libvirt.ml" 257 8665 8690
+type(
+  string
+)
+"output_libvirt.ml" 257 8665 8692 "output_libvirt.ml" 257 8665 8705
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"output_libvirt.ml" 257 8665 8706 "output_libvirt.ml" 257 8665 8707
+type(
+  int
+)
+ident(
+  int_ref p "output_libvirt.ml" 255 8584 8611 "output_libvirt.ml" 255 8584 8612
+)
+"output_libvirt.ml" 257 8665 8692 "output_libvirt.ml" 257 8665 8707
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 257 8665 8683 "output_libvirt.ml" 257 8665 8708
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 257 8665 8709 "output_libvirt.ml" 257 8665 8717
+type(
+  DOM.node
+)
+ident(
+  int_ref graphics "output_libvirt.ml" 226 7578 7593 "output_libvirt.ml" 226 7578 7601
+)
+"output_libvirt.ml" 257 8665 8671 "output_libvirt.ml" 257 8665 8717
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 256 8618 8624 "output_libvirt.ml" 257 8665 8717
+type(
+  unit
+)
+"output_libvirt.ml" 258 8718 8724 "output_libvirt.ml" 258 8718 8725
+type(
+  Types.source_display option
+)
+"output_libvirt.ml" 259 8729 8735 "output_libvirt.ml" 259 8729 8746
+type(
+  DOM.attr -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_attr
+)
+"output_libvirt.ml" 259 8729 8748 "output_libvirt.ml" 259 8729 8758
+type(
+  string
+)
+"output_libvirt.ml" 259 8729 8760 "output_libvirt.ml" 259 8729 8765
+type(
+  string
+)
+"output_libvirt.ml" 259 8729 8747 "output_libvirt.ml" 259 8729 8766
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 259 8729 8767 "output_libvirt.ml" 259 8729 8775
+type(
+  DOM.node
+)
+ident(
+  int_ref graphics "output_libvirt.ml" 226 7578 7593 "output_libvirt.ml" 226 7578 7601
+)
+"output_libvirt.ml" 259 8729 8735 "output_libvirt.ml" 259 8729 8775
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 260 8777 8783 "output_libvirt.ml" 260 8777 8794
+type(
+  DOM.attr -> DOM.node -> unit
+)
+ident(
+  ext_ref DOM.append_attr
+)
+"output_libvirt.ml" 260 8777 8796 "output_libvirt.ml" 260 8777 8802
+type(
+  string
+)
+"output_libvirt.ml" 260 8777 8804 "output_libvirt.ml" 260 8777 8808
+type(
+  string
+)
+"output_libvirt.ml" 260 8777 8795 "output_libvirt.ml" 260 8777 8809
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 260 8777 8810 "output_libvirt.ml" 260 8777 8818
+type(
+  DOM.node
+)
+ident(
+  int_ref graphics "output_libvirt.ml" 226 7578 7593 "output_libvirt.ml" 226 7578 7601
+)
+"output_libvirt.ml" 260 8777 8783 "output_libvirt.ml" 260 8777 8818
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 259 8729 8735 "output_libvirt.ml" 260 8777 8818
+type(
+  unit
+)
+"output_libvirt.ml" 254 8551 8555 "output_libvirt.ml" 260 8777 8819
+type(
+  unit
+)
+"output_libvirt.ml" 262 8822 8826 "output_libvirt.ml" 262 8822 8831
+type(
+  DOM.node
+)
+ident(
+  int_ref video "output_libvirt.ml" 226 7578 7586 "output_libvirt.ml" 226 7578 7591
+)
+"output_libvirt.ml" 262 8822 8833 "output_libvirt.ml" 262 8822 8841
+type(
+  DOM.node
+)
+ident(
+  int_ref graphics "output_libvirt.ml" 226 7578 7593 "output_libvirt.ml" 226 7578 7601
+)
+"output_libvirt.ml" 262 8822 8826 "output_libvirt.ml" 262 8822 8841
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 254 8551 8555 "output_libvirt.ml" 262 8822 8841
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 243 8166 8170 "output_libvirt.ml" 262 8822 8841
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 240 8042 8046 "output_libvirt.ml" 262 8822 8841
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 237 7920 7924 "output_libvirt.ml" 262 8822 8841
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 235 7881 7885 "output_libvirt.ml" 262 8822 8841
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 226 7578 7582 "output_libvirt.ml" 262 8822 8841
+type(
+  DOM.node * DOM.node
+)
+"output_libvirt.ml" 264 8846 8852 "output_libvirt.ml" 264 8846 8857
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 265 8860 8870 "output_libvirt.ml" 265 8860 8876
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 72 2375 2410
+)
+"output_libvirt.ml" 265 8860 8870 "output_libvirt.ml" 265 8860 8884
+type(
+  Types.source_sound option
+)
+"output_libvirt.ml" 266 8890 8896 "output_libvirt.ml" 266 8890 8900
+type(
+  Types.source_sound option
+)
+"output_libvirt.ml" 266 8890 8904 "output_libvirt.ml" 266 8890 8906
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 267 8907 8936 "output_libvirt.ml" 267 8907 8941
+type(
+  Types.source_sound_model
+)
+ident(
+  def model "output_libvirt.ml" 268 8947 8954 "output_libvirt.ml" 271 9079 9090
+)
+"output_libvirt.ml" 267 8907 8918 "output_libvirt.ml" 267 8907 8943
+type(
+  Types.source_sound
+)
+"output_libvirt.ml" 267 8907 8913 "output_libvirt.ml" 267 8907 8943
+type(
+  Types.source_sound option
+)
+"output_libvirt.ml" 268 8947 8957 "output_libvirt.ml" 268 8947 8981
+type(
+  Types.source_sound_model -> bool
+)
+ident(
+  ext_ref Utils.qemu_supports_sound_card
+)
+"output_libvirt.ml" 268 8947 8982 "output_libvirt.ml" 268 8947 8987
+type(
+  Types.source_sound_model
+)
+ident(
+  int_ref model "output_libvirt.ml" 267 8907 8936 "output_libvirt.ml" 267 8907 8941
+)
+"output_libvirt.ml" 268 8947 8957 "output_libvirt.ml" 268 8947 8987
+call(
+  stack
+)
+type(
+  bool
+)
+"output_libvirt.ml" 269 8993 9004 "output_libvirt.ml" 269 8993 9005
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 269 8993 9006 "output_libvirt.ml" 269 8993 9013
+type(
+  string
+)
+"output_libvirt.ml" 269 8993 9016 "output_libvirt.ml" 269 8993 9023
+type(
+  string
+)
+"output_libvirt.ml" 269 8993 9025 "output_libvirt.ml" 269 8993 9053
+type(
+  Types.source_sound_model -> string
+)
+ident(
+  ext_ref Types.string_of_source_sound_model
+)
+"output_libvirt.ml" 269 8993 9054 "output_libvirt.ml" 269 8993 9059
+type(
+  Types.source_sound_model
+)
+ident(
+  int_ref model "output_libvirt.ml" 267 8907 8936 "output_libvirt.ml" 267 8907 8941
+)
+"output_libvirt.ml" 269 8993 9025 "output_libvirt.ml" 269 8993 9059
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 269 8993 9016 "output_libvirt.ml" 269 8993 9059
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 269 8993 9014 "output_libvirt.ml" 269 8993 9061
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 269 8993 9062 "output_libvirt.ml" 269 8993 9064
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 269 8993 9004 "output_libvirt.ml" 269 8993 9064
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 269 8993 9002 "output_libvirt.ml" 269 8993 9066
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 271 9079 9088 "output_libvirt.ml" 271 9079 9090
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 268 8947 8954 "output_libvirt.ml" 271 9079 9090
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 265 8860 8864 "output_libvirt.ml" 271 9079 9090
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 273 9095 9101 "output_libvirt.ml" 273 9095 9108
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 273 9095 9111 "output_libvirt.ml" 273 9095 9116
+type(
+  DOM.node list
+)
+ident(
+  int_ref disks "output_libvirt.ml" 128 4600 4606 "output_libvirt.ml" 128 4600 4611
+)
+"output_libvirt.ml" 273 9095 9117 "output_libvirt.ml" 273 9095 9118
+type(
+  DOM.node list -> DOM.node list -> DOM.node list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"output_libvirt.ml" 273 9095 9119 "output_libvirt.ml" 273 9095 9123
+type(
+  DOM.node list
+)
+ident(
+  int_ref nics "output_libvirt.ml" 190 6428 6434 "output_libvirt.ml" 190 6428 6438
+)
+"output_libvirt.ml" 273 9095 9124 "output_libvirt.ml" 273 9095 9125
+type(
+  DOM.node list -> DOM.node list -> DOM.node list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"output_libvirt.ml" 273 9095 9127 "output_libvirt.ml" 273 9095 9132
+type(
+  DOM.node
+)
+ident(
+  int_ref video "output_libvirt.ml" 225 7554 7560 "output_libvirt.ml" 225 7554 7565
+)
+"output_libvirt.ml" 273 9095 9126 "output_libvirt.ml" 273 9095 9133
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 273 9095 9134 "output_libvirt.ml" 273 9095 9135
+type(
+  DOM.node list -> DOM.node list -> DOM.node list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"output_libvirt.ml" 273 9095 9137 "output_libvirt.ml" 273 9095 9145
+type(
+  DOM.node
+)
+ident(
+  int_ref graphics "output_libvirt.ml" 225 7554 7567 "output_libvirt.ml" 225 7554 7575
+)
+"output_libvirt.ml" 273 9095 9136 "output_libvirt.ml" 273 9095 9146
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 273 9095 9147 "output_libvirt.ml" 273 9095 9148
+type(
+  DOM.node list -> DOM.node list -> DOM.node list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"output_libvirt.ml" 273 9095 9149 "output_libvirt.ml" 273 9095 9154
+type(
+  DOM.node list
+)
+ident(
+  int_ref sound "output_libvirt.ml" 264 8846 8852 "output_libvirt.ml" 264 8846 8857
+)
+"output_libvirt.ml" 273 9095 9155 "output_libvirt.ml" 273 9095 9156
+type(
+  DOM.node list -> DOM.node list -> DOM.node list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"output_libvirt.ml" 275 9206 9210 "output_libvirt.ml" 275 9206 9211
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 275 9206 9212 "output_libvirt.ml" 275 9206 9219
+type(
+  string
+)
+"output_libvirt.ml" 275 9206 9221 "output_libvirt.ml" 275 9206 9227
+type(
+  string
+)
+"output_libvirt.ml" 275 9206 9229 "output_libvirt.ml" 275 9206 9237
+type(
+  string
+)
+"output_libvirt.ml" 275 9206 9221 "output_libvirt.ml" 275 9206 9237
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 275 9206 9239 "output_libvirt.ml" 275 9206 9244
+type(
+  string
+)
+"output_libvirt.ml" 275 9206 9246 "output_libvirt.ml" 275 9206 9251
+type(
+  string
+)
+"output_libvirt.ml" 275 9206 9239 "output_libvirt.ml" 275 9206 9251
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 275 9206 9220 "output_libvirt.ml" 275 9206 9252
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 275 9206 9253 "output_libvirt.ml" 275 9206 9255
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 275 9206 9210 "output_libvirt.ml" 275 9206 9255
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 276 9257 9261 "output_libvirt.ml" 276 9257 9262
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 276 9257 9263 "output_libvirt.ml" 276 9257 9270
+type(
+  string
+)
+"output_libvirt.ml" 276 9257 9272 "output_libvirt.ml" 276 9257 9278
+type(
+  string
+)
+"output_libvirt.ml" 276 9257 9280 "output_libvirt.ml" 276 9257 9287
+type(
+  string
+)
+"output_libvirt.ml" 276 9257 9272 "output_libvirt.ml" 276 9257 9287
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 276 9257 9289 "output_libvirt.ml" 276 9257 9294
+type(
+  string
+)
+"output_libvirt.ml" 276 9257 9296 "output_libvirt.ml" 276 9257 9301
+type(
+  string
+)
+"output_libvirt.ml" 276 9257 9289 "output_libvirt.ml" 276 9257 9301
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 276 9257 9271 "output_libvirt.ml" 276 9257 9302
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 276 9257 9303 "output_libvirt.ml" 276 9257 9305
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 276 9257 9261 "output_libvirt.ml" 276 9257 9305
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 277 9307 9311 "output_libvirt.ml" 277 9307 9312
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 277 9307 9313 "output_libvirt.ml" 277 9307 9322
+type(
+  string
+)
+"output_libvirt.ml" 277 9307 9324 "output_libvirt.ml" 277 9307 9330
+type(
+  string
+)
+"output_libvirt.ml" 277 9307 9332 "output_libvirt.ml" 277 9307 9337
+type(
+  string
+)
+"output_libvirt.ml" 277 9307 9324 "output_libvirt.ml" 277 9307 9337
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 277 9307 9323 "output_libvirt.ml" 277 9307 9338
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 277 9307 9339 "output_libvirt.ml" 277 9307 9341
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 277 9307 9311 "output_libvirt.ml" 277 9307 9341
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 274 9157 9204 "output_libvirt.ml" 278 9343 9346
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 273 9095 9149 "output_libvirt.ml" 278 9343 9346
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 273 9095 9136 "output_libvirt.ml" 278 9343 9346
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 273 9095 9126 "output_libvirt.ml" 278 9343 9346
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 273 9095 9119 "output_libvirt.ml" 278 9343 9346
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 273 9095 9111 "output_libvirt.ml" 278 9343 9346
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 280 9351 9357 "output_libvirt.ml" 280 9351 9360
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 281 9369 9373 "output_libvirt.ml" 281 9369 9376
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.doc
+)
+ident(
+  ext_ref DOM.doc
+)
+"output_libvirt.ml" 281 9369 9377 "output_libvirt.ml" 281 9369 9385
+type(
+  string
+)
+"output_libvirt.ml" 282 9388 9394 "output_libvirt.ml" 282 9388 9400
+type(
+  string
+)
+"output_libvirt.ml" 282 9388 9402 "output_libvirt.ml" 282 9388 9407
+type(
+  string
+)
+"output_libvirt.ml" 282 9388 9394 "output_libvirt.ml" 282 9388 9407
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 281 9369 9386 "output_libvirt.ml" 283 9459 9464
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 284 9467 9481 "output_libvirt.ml" 284 9467 9493
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.generated_by
+)
+"output_libvirt.ml" 284 9467 9473 "output_libvirt.ml" 284 9467 9493
+type(
+  DOM.node
+)
+"output_libvirt.ml" 285 9495 9501 "output_libvirt.ml" 285 9495 9502
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 285 9495 9503 "output_libvirt.ml" 285 9495 9509
+type(
+  string
+)
+"output_libvirt.ml" 285 9495 9510 "output_libvirt.ml" 285 9495 9512
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 285 9495 9521 "output_libvirt.ml" 285 9495 9527
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 72 2375 2410
+)
+"output_libvirt.ml" 285 9495 9521 "output_libvirt.ml" 285 9495 9534
+type(
+  string
+)
+"output_libvirt.ml" 285 9495 9514 "output_libvirt.ml" 285 9495 9534
+type(
+  DOM.node
+)
+"output_libvirt.ml" 285 9495 9513 "output_libvirt.ml" 285 9495 9535
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 285 9495 9501 "output_libvirt.ml" 285 9495 9535
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 286 9537 9543 "output_libvirt.ml" 286 9537 9544
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 286 9537 9545 "output_libvirt.ml" 286 9537 9553
+type(
+  string
+)
+"output_libvirt.ml" 286 9537 9555 "output_libvirt.ml" 286 9537 9561
+type(
+  string
+)
+"output_libvirt.ml" 286 9537 9563 "output_libvirt.ml" 286 9537 9568
+type(
+  string
+)
+"output_libvirt.ml" 286 9537 9555 "output_libvirt.ml" 286 9537 9568
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 286 9537 9554 "output_libvirt.ml" 286 9537 9569
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 286 9537 9579 "output_libvirt.ml" 286 9537 9594
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Int64.to_string
+)
+"output_libvirt.ml" 286 9537 9595 "output_libvirt.ml" 286 9537 9603
+type(
+  int64
+)
+ident(
+  int_ref memory_k "output_libvirt.ml" 74 2491 2497 "output_libvirt.ml" 74 2491 2505
+)
+"output_libvirt.ml" 286 9537 9578 "output_libvirt.ml" 286 9537 9604
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 286 9537 9571 "output_libvirt.ml" 286 9537 9604
+type(
+  DOM.node
+)
+"output_libvirt.ml" 286 9537 9570 "output_libvirt.ml" 286 9537 9605
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 286 9537 9543 "output_libvirt.ml" 286 9537 9605
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 287 9607 9613 "output_libvirt.ml" 287 9607 9614
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 287 9607 9615 "output_libvirt.ml" 287 9607 9630
+type(
+  string
+)
+"output_libvirt.ml" 287 9607 9632 "output_libvirt.ml" 287 9607 9638
+type(
+  string
+)
+"output_libvirt.ml" 287 9607 9640 "output_libvirt.ml" 287 9607 9645
+type(
+  string
+)
+"output_libvirt.ml" 287 9607 9632 "output_libvirt.ml" 287 9607 9645
+type(
+  DOM.attr
+)
+"output_libvirt.ml" 287 9607 9631 "output_libvirt.ml" 287 9607 9646
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 287 9607 9656 "output_libvirt.ml" 287 9607 9671
+type(
+  int64 -> string
+)
+ident(
+  ext_ref Int64.to_string
+)
+"output_libvirt.ml" 287 9607 9672 "output_libvirt.ml" 287 9607 9680
+type(
+  int64
+)
+ident(
+  int_ref memory_k "output_libvirt.ml" 74 2491 2497 "output_libvirt.ml" 74 2491 2505
+)
+"output_libvirt.ml" 287 9607 9655 "output_libvirt.ml" 287 9607 9681
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 287 9607 9648 "output_libvirt.ml" 287 9607 9681
+type(
+  DOM.node
+)
+"output_libvirt.ml" 287 9607 9647 "output_libvirt.ml" 287 9607 9682
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 287 9607 9613 "output_libvirt.ml" 287 9607 9682
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 288 9684 9690 "output_libvirt.ml" 288 9684 9691
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 288 9684 9692 "output_libvirt.ml" 288 9684 9698
+type(
+  string
+)
+"output_libvirt.ml" 288 9684 9699 "output_libvirt.ml" 288 9684 9701
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 288 9684 9711 "output_libvirt.ml" 288 9684 9724
+type(
+  int -> string
+)
+ident(
+  ext_ref Pervasives.string_of_int
+)
+"output_libvirt.ml" 288 9684 9725 "output_libvirt.ml" 288 9684 9731
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 72 2375 2404 "output_libvirt.ml" 72 2375 2410
+)
+"output_libvirt.ml" 288 9684 9725 "output_libvirt.ml" 288 9684 9738
+type(
+  int
+)
+"output_libvirt.ml" 288 9684 9710 "output_libvirt.ml" 288 9684 9739
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 288 9684 9703 "output_libvirt.ml" 288 9684 9739
+type(
+  DOM.node
+)
+"output_libvirt.ml" 288 9684 9702 "output_libvirt.ml" 288 9684 9740
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 288 9684 9690 "output_libvirt.ml" 288 9684 9740
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 289 9742 9748 "output_libvirt.ml" 289 9742 9749
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 289 9742 9750 "output_libvirt.ml" 289 9742 9754
+type(
+  string
+)
+"output_libvirt.ml" 289 9742 9755 "output_libvirt.ml" 289 9742 9757
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 289 9742 9758 "output_libvirt.ml" 289 9742 9768
+type(
+  DOM.node list
+)
+ident(
+  int_ref os_section "output_libvirt.ml" 112 3931 3937 "output_libvirt.ml" 112 3931 3947
+)
+"output_libvirt.ml" 289 9742 9748 "output_libvirt.ml" 289 9742 9768
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 290 9770 9776 "output_libvirt.ml" 290 9770 9777
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 290 9770 9778 "output_libvirt.ml" 290 9770 9788
+type(
+  string
+)
+"output_libvirt.ml" 290 9770 9789 "output_libvirt.ml" 290 9770 9791
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 290 9770 9793 "output_libvirt.ml" 290 9770 9801
+type(
+  (StringSet.elt -> DOM.node) -> StringSet.elt list -> DOM.node list
+)
+ident(
+  ext_ref List.map
+)
+"output_libvirt.ml" 290 9770 9807 "output_libvirt.ml" 290 9770 9808
+type(
+  StringSet.elt
+)
+ident(
+  def s "output_libvirt.ml" 290 9770 9812 "output_libvirt.ml" 290 9770 9821
+)
+"output_libvirt.ml" 290 9770 9812 "output_libvirt.ml" 290 9770 9813
+type(
+  StringSet.elt -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 290 9770 9814 "output_libvirt.ml" 290 9770 9815
+type(
+  StringSet.elt
+)
+ident(
+  int_ref s "output_libvirt.ml" 290 9770 9807 "output_libvirt.ml" 290 9770 9808
+)
+"output_libvirt.ml" 290 9770 9816 "output_libvirt.ml" 290 9770 9818
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 290 9770 9819 "output_libvirt.ml" 290 9770 9821
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 290 9770 9812 "output_libvirt.ml" 290 9770 9821
+call(
+  tail
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 290 9770 9802 "output_libvirt.ml" 290 9770 9822
+type(
+  StringSet.elt -> DOM.node
+)
+"output_libvirt.ml" 290 9770 9823 "output_libvirt.ml" 290 9770 9831
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref features "output_libvirt.ml" 109 3824 3830 "output_libvirt.ml" 109 3824 3838
+)
+"output_libvirt.ml" 290 9770 9792 "output_libvirt.ml" 290 9770 9832
+call(
+  stack
+)
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 290 9770 9776 "output_libvirt.ml" 290 9770 9832
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 292 9835 9841 "output_libvirt.ml" 292 9835 9842
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 292 9835 9843 "output_libvirt.ml" 292 9835 9856
+type(
+  string
+)
+"output_libvirt.ml" 292 9835 9857 "output_libvirt.ml" 292 9835 9859
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 292 9835 9868 "output_libvirt.ml" 292 9835 9877
+type(
+  string
+)
+"output_libvirt.ml" 292 9835 9861 "output_libvirt.ml" 292 9835 9877
+type(
+  DOM.node
+)
+"output_libvirt.ml" 292 9835 9860 "output_libvirt.ml" 292 9835 9878
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 292 9835 9841 "output_libvirt.ml" 292 9835 9878
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 293 9880 9886 "output_libvirt.ml" 293 9880 9887
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 293 9880 9888 "output_libvirt.ml" 293 9880 9899
+type(
+  string
+)
+"output_libvirt.ml" 293 9880 9900 "output_libvirt.ml" 293 9880 9902
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 293 9880 9911 "output_libvirt.ml" 293 9880 9920
+type(
+  string
+)
+"output_libvirt.ml" 293 9880 9904 "output_libvirt.ml" 293 9880 9920
+type(
+  DOM.node
+)
+"output_libvirt.ml" 293 9880 9903 "output_libvirt.ml" 293 9880 9921
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 293 9880 9886 "output_libvirt.ml" 293 9880 9921
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 294 9923 9929 "output_libvirt.ml" 294 9923 9930
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 294 9923 9931 "output_libvirt.ml" 294 9923 9941
+type(
+  string
+)
+"output_libvirt.ml" 294 9923 9942 "output_libvirt.ml" 294 9923 9944
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 294 9923 9953 "output_libvirt.ml" 294 9923 9962
+type(
+  string
+)
+"output_libvirt.ml" 294 9923 9946 "output_libvirt.ml" 294 9923 9962
+type(
+  DOM.node
+)
+"output_libvirt.ml" 294 9923 9945 "output_libvirt.ml" 294 9923 9963
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 294 9923 9929 "output_libvirt.ml" 294 9923 9963
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 296 9966 9972 "output_libvirt.ml" 296 9966 9973
+type(
+  string -> DOM.attr list -> DOM.node list -> DOM.node
+)
+ident(
+  ext_ref DOM.e
+)
+"output_libvirt.ml" 296 9966 9974 "output_libvirt.ml" 296 9966 9983
+type(
+  string
+)
+"output_libvirt.ml" 296 9966 9984 "output_libvirt.ml" 296 9966 9986
+type(
+  DOM.attr list
+)
+"output_libvirt.ml" 296 9966 9987 "output_libvirt.ml" 296 9966 9994
+type(
+  DOM.node list
+)
+ident(
+  int_ref devices "output_libvirt.ml" 273 9095 9101 "output_libvirt.ml" 273 9095 9108
+)
+"output_libvirt.ml" 296 9966 9972 "output_libvirt.ml" 296 9966 9994
+call(
+  stack
+)
+type(
+  DOM.node
+)
+"output_libvirt.ml" 283 9459 9465 "output_libvirt.ml" 297 9996 10001
+type(
+  DOM.node list
+)
+"output_libvirt.ml" 281 9369 9373 "output_libvirt.ml" 297 9996 10001
+call(
+  stack
+)
+type(
+  DOM.doc
+)
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 299 10006 10008 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+ident(
+  int_ref doc "output_libvirt.ml" 280 9351 9357 "output_libvirt.ml" 280 9351 9360
+)
+"output_libvirt.ml" 280 9351 9353 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 273 9095 9097 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 264 8846 8848 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 225 7554 7556 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 190 6428 6430 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 128 4600 4602 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 112 3931 3933 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 109 3824 3826 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 107 3763 3765 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 105 3675 3677 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 104 3614 3616 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 99 3430 3432 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 90 3190 3192 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 84 2967 2969 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 83 2910 2912 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 74 2491 2493 "output_libvirt.ml" 299 10006 10011
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 301 10013 10034 "output_libvirt.ml" 301 10013 10036
+type(
+  string option
+)
+"output_libvirt.ml" 301 10013 10037 "output_libvirt.ml" 301 10013 10048
+type(
+  string
+)
+"output_libvirt.ml" 304 10076 10109 "output_libvirt.ml" 304 10076 10113
+type(
+  Xml.doc option
+)
+"output_libvirt.ml" 307 10137 10147 "output_libvirt.ml" 307 10137 10149
+type(
+  string option
+)
+"output_libvirt.ml" 308 10155 10161 "output_libvirt.ml" 308 10155 10165
+type(
+  string option
+)
+"output_libvirt.ml" 308 10155 10169 "output_libvirt.ml" 308 10155 10176
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_libvirt.ml" 308 10155 10177 "output_libvirt.ml" 308 10155 10196
+type(
+  (string -> string, unit, string) format
+)
+"output_libvirt.ml" 308 10155 10197 "output_libvirt.ml" 308 10155 10208
+type(
+  string
+)
+"output_libvirt.ml" 308 10155 10169 "output_libvirt.ml" 308 10155 10208
+call(
+  tail
+)
+type(
+  string
+)
+"output_libvirt.ml" 309 10209 10220 "output_libvirt.ml" 309 10209 10223
+type(
+  string
+)
+ident(
+  def uri "output_libvirt.ml" 309 10209 10227 "output_libvirt.ml" 309 10209 10277
+)
+"output_libvirt.ml" 309 10209 10215 "output_libvirt.ml" 309 10209 10223
+type(
+  string option
+)
+"output_libvirt.ml" 309 10209 10227 "output_libvirt.ml" 309 10209 10234
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_libvirt.ml" 309 10209 10235 "output_libvirt.ml" 309 10209 10261
+type(
+  (string -> string -> string, unit, string) format
+)
+"output_libvirt.ml" 309 10209 10262 "output_libvirt.ml" 309 10209 10265
+type(
+  string
+)
+ident(
+  int_ref uri "output_libvirt.ml" 309 10209 10220 "output_libvirt.ml" 309 10209 10223
+)
+"output_libvirt.ml" 309 10209 10266 "output_libvirt.ml" 309 10209 10277
+type(
+  string
+)
+"output_libvirt.ml" 309 10209 10227 "output_libvirt.ml" 309 10209 10277
+call(
+  tail
+)
+type(
+  string
+)
+"output_libvirt.ml" 307 10137 10141 "output_libvirt.ml" 309 10209 10277
+type(
+  string
+)
+type(
+  string
+)
+"output_libvirt.ml" 311 10279 10311 "output_libvirt.ml" 311 10279 10321
+type(
+  Types.target_firmware
+)
+"output_libvirt.ml" 311 10279 10323 "output_libvirt.ml" 311 10279 10333
+type(
+  Types.target_firmware
+)
+"output_libvirt.ml" 311 10279 10309 "output_libvirt.ml" 311 10279 10335
+type(
+  Types.target_firmware list
+)
+type(
+  Types.target_firmware list
+)
+"output_libvirt.ml" 313 10337 10362 "output_libvirt.ml" 313 10337 10368
+type(
+  Types.source
+)
+ident(
+  def source "output_libvirt.ml" 313 10337 10369 "output_libvirt.ml" 364 12988 13001
+)
+"output_libvirt.ml" 313 10337 10369 "output_libvirt.ml" 313 10337 10376
+type(
+  Types.target list
+)
+ident(
+  def targets "output_libvirt.ml" 315 10424 10428 "output_libvirt.ml" 364 12988 13001
+)
+"output_libvirt.ml" 315 10424 10432 "output_libvirt.ml" 315 10424 10435
+type(
+  string
+)
+"output_libvirt.ml" 315 10424 10438 "output_libvirt.ml" 315 10424 10460
+type(
+  ?conn:string -> unit -> string
+)
+ident(
+  ext_ref Domainxml.capabilities
+)
+"output_libvirt.ml" 315 10424 10467 "output_libvirt.ml" 315 10424 10469
+type(
+  string option
+)
+"output_libvirt.ml" 315 10424 10470 "output_libvirt.ml" 315 10424 10472
+type(
+  unit
+)
+"output_libvirt.ml" 315 10424 10438 "output_libvirt.ml" 315 10424 10472
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 316 10476 10483 "output_libvirt.ml" 316 10476 10490
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_libvirt.ml" 316 10476 10491 "output_libvirt.ml" 316 10476 10493
+type(
+  unit
+)
+"output_libvirt.ml" 316 10476 10483 "output_libvirt.ml" 316 10476 10493
+call(
+  stack
+)
+type(
+  bool
+)
+"output_libvirt.ml" 316 10476 10499 "output_libvirt.ml" 316 10476 10505
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"output_libvirt.ml" 316 10476 10506 "output_libvirt.ml" 316 10476 10541
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_libvirt.ml" 316 10476 10542 "output_libvirt.ml" 316 10476 10545
+type(
+  string
+)
+ident(
+  int_ref xml "output_libvirt.ml" 315 10424 10432 "output_libvirt.ml" 315 10424 10435
+)
+"output_libvirt.ml" 316 10476 10499 "output_libvirt.ml" 316 10476 10545
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 316 10476 10480 "output_libvirt.ml" 316 10476 10545
+type(
+  unit
+)
+"output_libvirt.ml" 321 10686 10694 "output_libvirt.ml" 321 10686 10697
+type(
+  Xml.doc
+)
+"output_libvirt.ml" 321 10686 10700 "output_libvirt.ml" 321 10686 10716
+type(
+  string -> Xml.doc
+)
+ident(
+  ext_ref Xml.parse_memory
+)
+"output_libvirt.ml" 321 10686 10717 "output_libvirt.ml" 321 10686 10720
+type(
+  string
+)
+ident(
+  int_ref xml "output_libvirt.ml" 315 10424 10432 "output_libvirt.ml" 315 10424 10435
+)
+"output_libvirt.ml" 321 10686 10700 "output_libvirt.ml" 321 10686 10720
+call(
+  stack
+)
+type(
+  Xml.doc
+)
+"output_libvirt.ml" 327 10897 10926 "output_libvirt.ml" 327 10897 10929
+type(
+  Xml.doc
+)
+ident(
+  int_ref doc "output_libvirt.ml" 321 10686 10694 "output_libvirt.ml" 321 10686 10697
+)
+"output_libvirt.ml" 327 10897 10921 "output_libvirt.ml" 327 10897 10929
+type(
+  Xml.doc option
+)
+"output_libvirt.ml" 327 10897 10901 "output_libvirt.ml" 327 10897 10929
+type(
+  unit
+)
+"output_libvirt.ml" 330 11002 11009 "output_libvirt.ml" 330 11002 11032
+type(
+  ?conn:string -> string -> bool
+)
+ident(
+  ext_ref Domainxml.domain_exists
+)
+"output_libvirt.ml" 330 11002 11039 "output_libvirt.ml" 330 11002 11041
+type(
+  string option
+)
+"output_libvirt.ml" 330 11002 11042 "output_libvirt.ml" 330 11002 11048
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 313 10337 10362 "output_libvirt.ml" 313 10337 10368
+)
+"output_libvirt.ml" 330 11002 11042 "output_libvirt.ml" 330 11002 11055
+type(
+  string
+)
+"output_libvirt.ml" 330 11002 11009 "output_libvirt.ml" 330 11002 11055
+call(
+  stack
+)
+type(
+  bool
+)
+"output_libvirt.ml" 331 11063 11072 "output_libvirt.ml" 331 11063 11078
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 313 10337 10362 "output_libvirt.ml" 313 10337 10368
+)
+"output_libvirt.ml" 331 11063 11072 "output_libvirt.ml" 331 11063 11091
+type(
+  Types.source_hypervisor
+)
+"output_libvirt.ml" 331 11063 11092 "output_libvirt.ml" 331 11063 11093
+type(
+  Types.source_hypervisor -> Types.source_hypervisor -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_libvirt.ml" 331 11063 11094 "output_libvirt.ml" 331 11063 11102
+type(
+  Types.source_hypervisor
+)
+"output_libvirt.ml" 331 11063 11072 "output_libvirt.ml" 331 11063 11102
+type(
+  bool
+)
+"output_libvirt.ml" 332 11128 11136 "output_libvirt.ml" 332 11128 11141
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_libvirt.ml" 332 11128 11143 "output_libvirt.ml" 332 11128 11145
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_libvirt.ml" 332 11128 11145 "output_libvirt.ml" 332 11128 11361
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"output_libvirt.ml" 332 11128 11142 "output_libvirt.ml" 332 11128 11362
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"output_libvirt.ml" 333 11363 11377 "output_libvirt.ml" 333 11363 11383
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 313 10337 10362 "output_libvirt.ml" 313 10337 10368
+)
+"output_libvirt.ml" 333 11363 11377 "output_libvirt.ml" 333 11363 11390
+type(
+  string
+)
+"output_libvirt.ml" 332 11128 11136 "output_libvirt.ml" 333 11363 11390
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 335 11439 11447 "output_libvirt.ml" 335 11439 11452
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_libvirt.ml" 335 11439 11454 "output_libvirt.ml" 335 11439 11456
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_libvirt.ml" 335 11439 11456 "output_libvirt.ml" 335 11439 11676
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"output_libvirt.ml" 335 11439 11453 "output_libvirt.ml" 335 11439 11677
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"output_libvirt.ml" 336 11678 11692 "output_libvirt.ml" 336 11678 11698
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 313 10337 10362 "output_libvirt.ml" 313 10337 10368
+)
+"output_libvirt.ml" 336 11678 11692 "output_libvirt.ml" 336 11678 11705
+type(
+  string
+)
+"output_libvirt.ml" 335 11439 11447 "output_libvirt.ml" 336 11678 11705
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 330 11002 11061 "output_libvirt.ml" 337 11706 11711
+type(
+  unit
+)
+"output_libvirt.ml" 330 11002 11006 "output_libvirt.ml" 337 11706 11711
+type(
+  unit
+)
+"output_libvirt.ml" 342 11824 11832 "output_libvirt.ml" 342 11824 11835
+type(
+  string
+)
+"output_libvirt.ml" 342 11824 11838 "output_libvirt.ml" 342 11824 11860
+type(
+  ?conn:string -> string -> string
+)
+ident(
+  ext_ref Domainxml.pool_dumpxml
+)
+"output_libvirt.ml" 342 11824 11867 "output_libvirt.ml" 342 11824 11869
+type(
+  string option
+)
+"output_libvirt.ml" 342 11824 11870 "output_libvirt.ml" 342 11824 11881
+type(
+  string
+)
+"output_libvirt.ml" 342 11824 11838 "output_libvirt.ml" 342 11824 11881
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 343 11885 11893 "output_libvirt.ml" 343 11885 11896
+type(
+  Xml.doc
+)
+"output_libvirt.ml" 343 11885 11899 "output_libvirt.ml" 343 11885 11915
+type(
+  string -> Xml.doc
+)
+ident(
+  ext_ref Xml.parse_memory
+)
+"output_libvirt.ml" 343 11885 11916 "output_libvirt.ml" 343 11885 11919
+type(
+  string
+)
+ident(
+  int_ref xml "output_libvirt.ml" 342 11824 11832 "output_libvirt.ml" 342 11824 11835
+)
+"output_libvirt.ml" 343 11885 11899 "output_libvirt.ml" 343 11885 11919
+call(
+  stack
+)
+type(
+  Xml.doc
+)
+"output_libvirt.ml" 344 11923 11931 "output_libvirt.ml" 344 11923 11939
+type(
+  Xml.xpathctx
+)
+"output_libvirt.ml" 344 11923 11942 "output_libvirt.ml" 344 11923 11963
+type(
+  Xml.doc -> Xml.xpathctx
+)
+ident(
+  ext_ref Xml.xpath_new_context
+)
+"output_libvirt.ml" 344 11923 11964 "output_libvirt.ml" 344 11923 11967
+type(
+  Xml.doc
+)
+ident(
+  int_ref doc "output_libvirt.ml" 343 11885 11893 "output_libvirt.ml" 343 11885 11896
+)
+"output_libvirt.ml" 344 11923 11942 "output_libvirt.ml" 344 11923 11967
+call(
+  stack
+)
+type(
+  Xml.xpathctx
+)
+"output_libvirt.ml" 345 11971 11979 "output_libvirt.ml" 345 11971 11991
+type(
+  string -> string option
+)
+"output_libvirt.ml" 345 11971 11994 "output_libvirt.ml" 345 11971 12006
+type(
+  Xml.xpathctx -> string -> string option
+)
+ident(
+  ext_ref Utils.xpath_string
+)
+"output_libvirt.ml" 345 11971 12007 "output_libvirt.ml" 345 11971 12015
+type(
+  Xml.xpathctx
+)
+ident(
+  int_ref xpathctx "output_libvirt.ml" 344 11923 11931 "output_libvirt.ml" 344 11923 11939
+)
+"output_libvirt.ml" 345 11971 11994 "output_libvirt.ml" 345 11971 12015
+call(
+  stack
+)
+type(
+  string -> string option
+)
+"output_libvirt.ml" 348 12086 12093 "output_libvirt.ml" 348 12086 12105
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "output_libvirt.ml" 345 11971 11979 "output_libvirt.ml" 345 11971 11991
+)
+"output_libvirt.ml" 348 12086 12106 "output_libvirt.ml" 348 12086 12119
+type(
+  string
+)
+"output_libvirt.ml" 348 12086 12093 "output_libvirt.ml" 348 12086 12119
+call(
+  stack
+)
+type(
+  string option
+)
+"output_libvirt.ml" 348 12086 12120 "output_libvirt.ml" 348 12086 12122
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_libvirt.ml" 348 12086 12128 "output_libvirt.ml" 348 12086 12133
+type(
+  string
+)
+"output_libvirt.ml" 348 12086 12123 "output_libvirt.ml" 348 12086 12133
+type(
+  string option
+)
+"output_libvirt.ml" 348 12086 12093 "output_libvirt.ml" 348 12086 12133
+type(
+  bool
+)
+"output_libvirt.ml" 349 12139 12145 "output_libvirt.ml" 349 12139 12150
+type(
+  ?exit_code:int ->
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_libvirt.ml" 349 12139 12152 "output_libvirt.ml" 349 12139 12154
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_libvirt.ml" 349 12139 12154 "output_libvirt.ml" 349 12139 12264
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"output_libvirt.ml" 349 12139 12151 "output_libvirt.ml" 349 12139 12265
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"output_libvirt.ml" 349 12139 12266 "output_libvirt.ml" 349 12139 12277
+type(
+  string
+)
+"output_libvirt.ml" 349 12139 12145 "output_libvirt.ml" 349 12139 12277
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 348 12086 12090 "output_libvirt.ml" 349 12139 12277
+type(
+  unit
+)
+"output_libvirt.ml" 350 12279 12287 "output_libvirt.ml" 350 12279 12298
+type(
+  string
+)
+"output_libvirt.ml" 351 12301 12313 "output_libvirt.ml" 351 12301 12325
+type(
+  string -> string option
+)
+ident(
+  int_ref xpath_string "output_libvirt.ml" 345 11971 11979 "output_libvirt.ml" 345 11971 11991
+)
+"output_libvirt.ml" 351 12301 12326 "output_libvirt.ml" 351 12301 12352
+type(
+  string
+)
+"output_libvirt.ml" 351 12301 12313 "output_libvirt.ml" 351 12301 12352
+call(
+  stack
+)
+type(
+  string option
+)
+"output_libvirt.ml" 352 12358 12366 "output_libvirt.ml" 352 12358 12370
+type(
+  string option
+)
+"output_libvirt.ml" 353 12374 12383 "output_libvirt.ml" 353 12374 12388
+type(
+  ?exit_code:int ->
+  (string -> string, unit, string, string) format4 -> string -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_libvirt.ml" 353 12374 12390 "output_libvirt.ml" 353 12374 12392
+type(
+  (string -> string, unit, string, string, string, string) format6 ->
+  (string -> string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_libvirt.ml" 353 12374 12392 "output_libvirt.ml" 353 12374 12510
+type(
+  (string -> string, unit, string, string, string, string) format6
+)
+"output_libvirt.ml" 353 12374 12389 "output_libvirt.ml" 353 12374 12511
+type(
+  (string -> string, unit, string, string) format4
+)
+"output_libvirt.ml" 353 12374 12512 "output_libvirt.ml" 353 12374 12523
+type(
+  string
+)
+"output_libvirt.ml" 353 12374 12383 "output_libvirt.ml" 353 12374 12523
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 354 12524 12537 "output_libvirt.ml" 354 12524 12540
+type(
+  string
+)
+ident(
+  def dir "output_libvirt.ml" 354 12524 12541 "output_libvirt.ml" 355 12572 12755
+)
+"output_libvirt.ml" 354 12524 12532 "output_libvirt.ml" 354 12524 12540
+type(
+  string option
+)
+"output_libvirt.ml" 354 12524 12546 "output_libvirt.ml" 354 12524 12549
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"output_libvirt.ml" 354 12524 12551 "output_libvirt.ml" 354 12524 12563
+type(
+  string -> bool
+)
+ident(
+  ext_ref Common_utils.is_directory
+)
+"output_libvirt.ml" 354 12524 12564 "output_libvirt.ml" 354 12524 12567
+type(
+  string
+)
+ident(
+  int_ref dir "output_libvirt.ml" 354 12524 12537 "output_libvirt.ml" 354 12524 12540
+)
+"output_libvirt.ml" 354 12524 12550 "output_libvirt.ml" 354 12524 12568
+call(
+  stack
+)
+type(
+  bool
+)
+"output_libvirt.ml" 354 12524 12546 "output_libvirt.ml" 354 12524 12568
+type(
+  bool
+)
+"output_libvirt.ml" 355 12572 12581 "output_libvirt.ml" 355 12572 12586
+type(
+  ?exit_code:int ->
+  (string -> string, unit, string, string) format4 -> string -> string
+)
+ident(
+  ext_ref Common_utils.error
+)
+"output_libvirt.ml" 355 12572 12588 "output_libvirt.ml" 355 12572 12590
+type(
+  (string -> string, unit, string, string, string, string) format6 ->
+  (string -> string, unit, string, string) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_libvirt.ml" 355 12572 12590 "output_libvirt.ml" 355 12572 12742
+type(
+  (string -> string, unit, string, string, string, string) format6
+)
+"output_libvirt.ml" 355 12572 12587 "output_libvirt.ml" 355 12572 12743
+type(
+  (string -> string, unit, string, string) format4
+)
+"output_libvirt.ml" 355 12572 12744 "output_libvirt.ml" 355 12572 12755
+type(
+  string
+)
+"output_libvirt.ml" 355 12572 12581 "output_libvirt.ml" 355 12572 12755
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 354 12524 12541 "output_libvirt.ml" 355 12572 12755
+type(
+  string
+)
+"output_libvirt.ml" 356 12756 12769 "output_libvirt.ml" 356 12756 12772
+type(
+  string
+)
+ident(
+  def dir "output_libvirt.ml" 356 12756 12776 "output_libvirt.ml" 356 12756 12779
+)
+"output_libvirt.ml" 356 12756 12764 "output_libvirt.ml" 356 12756 12772
+type(
+  string option
+)
+"output_libvirt.ml" 356 12756 12776 "output_libvirt.ml" 356 12756 12779
+type(
+  string
+)
+ident(
+  int_ref dir "output_libvirt.ml" 356 12756 12769 "output_libvirt.ml" 356 12756 12772
+)
+"output_libvirt.ml" 351 12301 12307 "output_libvirt.ml" 356 12756 12779
+type(
+  string
+)
+"output_libvirt.ml" 359 12814 12818 "output_libvirt.ml" 359 12814 12826
+type(
+  (Types.target -> Types.target) -> Types.target list -> Types.target list
+)
+ident(
+  ext_ref List.map
+)
+"output_libvirt.ml" 360 12829 12839 "output_libvirt.ml" 360 12829 12840
+type(
+  Types.target
+)
+ident(
+  def t "output_libvirt.ml" 361 12844 12852 "output_libvirt.ml" 363 12943 12987
+)
+"output_libvirt.ml" 361 12844 12856 "output_libvirt.ml" 361 12844 12867
+type(
+  string
+)
+"output_libvirt.ml" 362 12870 12880 "output_libvirt.ml" 362 12870 12891
+type(
+  string
+)
+ident(
+  int_ref target_path "output_libvirt.ml" 350 12279 12287 "output_libvirt.ml" 350 12279 12298
+)
+"output_libvirt.ml" 362 12870 12892 "output_libvirt.ml" 362 12870 12894
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Common_utils.( // )
+)
+"output_libvirt.ml" 362 12870 12895 "output_libvirt.ml" 362 12870 12901
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 313 10337 10362 "output_libvirt.ml" 313 10337 10368
+)
+"output_libvirt.ml" 362 12870 12895 "output_libvirt.ml" 362 12870 12908
+type(
+  string
+)
+"output_libvirt.ml" 362 12870 12880 "output_libvirt.ml" 362 12870 12908
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 362 12870 12909 "output_libvirt.ml" 362 12870 12910
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_libvirt.ml" 362 12870 12911 "output_libvirt.ml" 362 12870 12914
+type(
+  string
+)
+"output_libvirt.ml" 362 12870 12915 "output_libvirt.ml" 362 12870 12916
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"output_libvirt.ml" 362 12870 12917 "output_libvirt.ml" 362 12870 12918
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_libvirt.ml" 360 12829 12839 "output_libvirt.ml" 360 12829 12840
+)
+"output_libvirt.ml" 362 12870 12917 "output_libvirt.ml" 362 12870 12933
+type(
+  Types.overlay
+)
+"output_libvirt.ml" 362 12870 12917 "output_libvirt.ml" 362 12870 12939
+type(
+  string
+)
+"output_libvirt.ml" 362 12870 12911 "output_libvirt.ml" 362 12870 12939
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 362 12870 12880 "output_libvirt.ml" 362 12870 12939
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 363 12943 12953 "output_libvirt.ml" 363 12943 12954
+type(
+  Types.target
+)
+ident(
+  int_ref t "output_libvirt.ml" 360 12829 12839 "output_libvirt.ml" 360 12829 12840
+)
+"output_libvirt.ml" 363 12943 12974 "output_libvirt.ml" 363 12943 12985
+type(
+  string
+)
+ident(
+  int_ref target_file "output_libvirt.ml" 361 12844 12856 "output_libvirt.ml" 361 12844 12867
+)
+"output_libvirt.ml" 363 12943 12951 "output_libvirt.ml" 363 12943 12987
+type(
+  Types.target
+)
+"output_libvirt.ml" 361 12844 12852 "output_libvirt.ml" 363 12943 12987
+type(
+  Types.target
+)
+"output_libvirt.ml" 359 12814 12827 "output_libvirt.ml" 364 12988 12993
+type(
+  Types.target -> Types.target
+)
+"output_libvirt.ml" 364 12988 12994 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+ident(
+  int_ref targets "output_libvirt.ml" 313 10337 10369 "output_libvirt.ml" 313 10337 10376
+)
+"output_libvirt.ml" 359 12814 12818 "output_libvirt.ml" 364 12988 13001
+call(
+  tail
+)
+type(
+  Types.target list
+)
+"output_libvirt.ml" 350 12279 12283 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+"output_libvirt.ml" 348 12086 12090 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+"output_libvirt.ml" 345 11971 11975 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+"output_libvirt.ml" 344 11923 11927 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+"output_libvirt.ml" 343 11885 11889 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+"output_libvirt.ml" 342 11824 11828 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+"output_libvirt.ml" 330 11002 11006 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+"output_libvirt.ml" 327 10897 10901 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+"output_libvirt.ml" 321 10686 10690 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+"output_libvirt.ml" 316 10476 10480 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+"output_libvirt.ml" 315 10424 10428 "output_libvirt.ml" 364 12988 13001
+type(
+  Types.target list
+)
+"output_libvirt.ml" 366 13003 13034 "output_libvirt.ml" 366 13003 13043
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "output_libvirt.ml" 366 13003 13044 "output_libvirt.ml" 376 13400 13455
+)
+"output_libvirt.ml" 366 13003 13044 "output_libvirt.ml" 366 13003 13059
+type(
+  Types.target_firmware
+)
+ident(
+  def target_firmware "output_libvirt.ml" 367 13062 13066 "output_libvirt.ml" 376 13400 13455
+)
+"output_libvirt.ml" 367 13062 13072 "output_libvirt.ml" 367 13062 13087
+type(
+  Types.target_firmware
+)
+ident(
+  int_ref target_firmware "output_libvirt.ml" 366 13003 13044 "output_libvirt.ml" 366 13003 13059
+)
+"output_libvirt.ml" 368 13093 13099 "output_libvirt.ml" 368 13093 13109
+type(
+  Types.target_firmware
+)
+"output_libvirt.ml" 368 13093 13113 "output_libvirt.ml" 368 13093 13115
+type(
+  unit
+)
+"output_libvirt.ml" 369 13116 13122 "output_libvirt.ml" 369 13116 13132
+type(
+  Types.target_firmware
+)
+"output_libvirt.ml" 376 13400 13407 "output_libvirt.ml" 376 13400 13413
+type(
+  string * string -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"output_libvirt.ml" 376 13400 13415 "output_libvirt.ml" 376 13400 13433
+type(
+  string -> string * string
+)
+ident(
+  ext_ref Utils.find_uefi_firmware
+)
+"output_libvirt.ml" 376 13400 13434 "output_libvirt.ml" 376 13400 13443
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_libvirt.ml" 366 13003 13034 "output_libvirt.ml" 366 13003 13043
+)
+"output_libvirt.ml" 376 13400 13434 "output_libvirt.ml" 376 13400 13454
+type(
+  string
+)
+"output_libvirt.ml" 376 13400 13414 "output_libvirt.ml" 376 13400 13455
+call(
+  stack
+)
+type(
+  string * string
+)
+"output_libvirt.ml" 376 13400 13407 "output_libvirt.ml" 376 13400 13455
+type(
+  unit
+)
+"output_libvirt.ml" 367 13062 13066 "output_libvirt.ml" 376 13400 13455
+type(
+  unit
+)
+"output_libvirt.ml" 378 13457 13482 "output_libvirt.ml" 378 13457 13488
+type(
+  Types.source
+)
+ident(
+  def source "output_libvirt.ml" 378 13457 13489 "output_libvirt.ml" 420 15044 15050
+)
+"output_libvirt.ml" 378 13457 13489 "output_libvirt.ml" 378 13457 13490
+type(
+  Types.target list
+)
+"output_libvirt.ml" 378 13457 13491 "output_libvirt.ml" 378 13457 13503
+type(
+  Types.target_buses
+)
+ident(
+  def target_buses "output_libvirt.ml" 378 13457 13504 "output_libvirt.ml" 420 15044 15050
+)
+"output_libvirt.ml" 378 13457 13504 "output_libvirt.ml" 378 13457 13513
+type(
+  Types.guestcaps
+)
+ident(
+  def guestcaps "output_libvirt.ml" 378 13457 13514 "output_libvirt.ml" 420 15044 15050
+)
+"output_libvirt.ml" 378 13457 13514 "output_libvirt.ml" 378 13457 13515
+type(
+  Types.inspect
+)
+"output_libvirt.ml" 378 13457 13516 "output_libvirt.ml" 378 13457 13531
+type(
+  Types.target_firmware
+)
+ident(
+  def target_firmware "output_libvirt.ml" 382 13640 13644 "output_libvirt.ml" 420 15044 15050
+)
+"output_libvirt.ml" 382 13640 13648 "output_libvirt.ml" 382 13640 13651
+type(
+  string
+)
+"output_libvirt.ml" 383 13654 13666 "output_libvirt.ml" 383 13654 13668
+type(
+  string option
+)
+"output_libvirt.ml" 384 13674 13682 "output_libvirt.ml" 384 13674 13686
+type(
+  string option
+)
+"output_libvirt.ml" 384 13674 13690 "output_libvirt.ml" 384 13674 13697
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_libvirt.ml" 384 13674 13698 "output_libvirt.ml" 384 13674 13721
+type(
+  (string -> string, unit, string) format
+)
+"output_libvirt.ml" 384 13674 13723 "output_libvirt.ml" 384 13674 13728
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_libvirt.ml" 384 13674 13729 "output_libvirt.ml" 384 13674 13740
+type(
+  string
+)
+"output_libvirt.ml" 384 13674 13722 "output_libvirt.ml" 384 13674 13741
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 384 13674 13690 "output_libvirt.ml" 384 13674 13741
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 385 13742 13755 "output_libvirt.ml" 385 13742 13758
+type(
+  string
+)
+ident(
+  def uri "output_libvirt.ml" 386 13762 13770 "output_libvirt.ml" 387 13808 13849
+)
+"output_libvirt.ml" 385 13742 13750 "output_libvirt.ml" 385 13742 13758
+type(
+  string option
+)
+"output_libvirt.ml" 386 13762 13770 "output_libvirt.ml" 386 13762 13777
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_libvirt.ml" 386 13762 13778 "output_libvirt.ml" 386 13762 13807
+type(
+  (string -> string -> string, unit, string) format
+)
+"output_libvirt.ml" 387 13808 13819 "output_libvirt.ml" 387 13808 13824
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_libvirt.ml" 387 13808 13825 "output_libvirt.ml" 387 13808 13828
+type(
+  string
+)
+ident(
+  int_ref uri "output_libvirt.ml" 385 13742 13755 "output_libvirt.ml" 385 13742 13758
+)
+"output_libvirt.ml" 387 13808 13818 "output_libvirt.ml" 387 13808 13829
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 387 13808 13831 "output_libvirt.ml" 387 13808 13836
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_libvirt.ml" 387 13808 13837 "output_libvirt.ml" 387 13808 13848
+type(
+  string
+)
+"output_libvirt.ml" 387 13808 13830 "output_libvirt.ml" 387 13808 13849
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 386 13762 13770 "output_libvirt.ml" 387 13808 13849
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 383 13654 13660 "output_libvirt.ml" 387 13808 13849
+type(
+  string
+)
+"output_libvirt.ml" 388 13853 13860 "output_libvirt.ml" 388 13853 13867
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"output_libvirt.ml" 388 13853 13868 "output_libvirt.ml" 388 13853 13870
+type(
+  unit
+)
+"output_libvirt.ml" 388 13853 13860 "output_libvirt.ml" 388 13853 13870
+call(
+  stack
+)
+type(
+  bool
+)
+"output_libvirt.ml" 388 13853 13876 "output_libvirt.ml" 388 13853 13882
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"output_libvirt.ml" 388 13853 13883 "output_libvirt.ml" 388 13853 13891
+type(
+  (string -> unit, out_channel, unit) format
+)
+"output_libvirt.ml" 388 13853 13892 "output_libvirt.ml" 388 13853 13895
+type(
+  string
+)
+ident(
+  int_ref cmd "output_libvirt.ml" 382 13640 13648 "output_libvirt.ml" 382 13640 13651
+)
+"output_libvirt.ml" 388 13853 13876 "output_libvirt.ml" 388 13853 13895
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 388 13853 13857 "output_libvirt.ml" 388 13853 13895
+type(
+  unit
+)
+"output_libvirt.ml" 389 13897 13904 "output_libvirt.ml" 389 13897 13915
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"output_libvirt.ml" 389 13897 13916 "output_libvirt.ml" 389 13897 13919
+type(
+  string
+)
+ident(
+  int_ref cmd "output_libvirt.ml" 382 13640 13648 "output_libvirt.ml" 382 13640 13651
+)
+"output_libvirt.ml" 389 13897 13904 "output_libvirt.ml" 389 13897 13919
+type(
+  int
+)
+"output_libvirt.ml" 389 13897 13920 "output_libvirt.ml" 389 13897 13922
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"output_libvirt.ml" 389 13897 13923 "output_libvirt.ml" 389 13897 13924
+type(
+  int
+)
+"output_libvirt.ml" 389 13897 13904 "output_libvirt.ml" 389 13897 13924
+type(
+  bool
+)
+"output_libvirt.ml" 390 13930 13936 "output_libvirt.ml" 390 13930 13943
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"output_libvirt.ml" 390 13930 13945 "output_libvirt.ml" 390 13930 13947
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_libvirt.ml" 390 13930 13947 "output_libvirt.ml" 390 13930 13982
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"output_libvirt.ml" 390 13930 13944 "output_libvirt.ml" 390 13930 13983
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"output_libvirt.ml" 390 13930 13984 "output_libvirt.ml" 390 13930 13995
+type(
+  string
+)
+"output_libvirt.ml" 390 13930 13936 "output_libvirt.ml" 390 13930 13995
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 389 13897 13901 "output_libvirt.ml" 390 13930 13995
+type(
+  unit
+)
+"output_libvirt.ml" 393 14075 14083 "output_libvirt.ml" 393 14075 14086
+type(
+  Xml.doc
+)
+"output_libvirt.ml" 394 14089 14101 "output_libvirt.ml" 394 14089 14117
+type(
+  Xml.doc option
+)
+"output_libvirt.ml" 395 14123 14131 "output_libvirt.ml" 395 14123 14135
+type(
+  Xml.doc option
+)
+"output_libvirt.ml" 395 14123 14139 "output_libvirt.ml" 395 14123 14151
+type(
+  Xml.doc
+)
+"output_libvirt.ml" 396 14152 14165 "output_libvirt.ml" 396 14152 14168
+type(
+  Xml.doc
+)
+ident(
+  def doc "output_libvirt.ml" 396 14152 14172 "output_libvirt.ml" 396 14152 14175
+)
+"output_libvirt.ml" 396 14152 14160 "output_libvirt.ml" 396 14152 14168
+type(
+  Xml.doc option
+)
+"output_libvirt.ml" 396 14152 14172 "output_libvirt.ml" 396 14152 14175
+type(
+  Xml.doc
+)
+ident(
+  int_ref doc "output_libvirt.ml" 396 14152 14165 "output_libvirt.ml" 396 14152 14168
+)
+"output_libvirt.ml" 394 14089 14095 "output_libvirt.ml" 396 14152 14175
+type(
+  Xml.doc
+)
+"output_libvirt.ml" 397 14179 14187 "output_libvirt.ml" 397 14179 14202
+type(
+  string list
+)
+"output_libvirt.ml" 398 14205 14211 "output_libvirt.ml" 398 14205 14246
+type(
+  Xml.doc -> string -> string list
+)
+ident(
+  int_ref target_features_of_capabilities_doc "output_libvirt.ml" 37 1124 1128 "output_libvirt.ml" 37 1124 1163
+)
+"output_libvirt.ml" 398 14205 14247 "output_libvirt.ml" 398 14205 14250
+type(
+  Xml.doc
+)
+ident(
+  int_ref doc "output_libvirt.ml" 393 14075 14083 "output_libvirt.ml" 393 14075 14086
+)
+"output_libvirt.ml" 398 14205 14251 "output_libvirt.ml" 398 14205 14260
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_libvirt.ml" 378 13457 13504 "output_libvirt.ml" 378 13457 13513
+)
+"output_libvirt.ml" 398 14205 14251 "output_libvirt.ml" 398 14205 14271
+type(
+  string
+)
+"output_libvirt.ml" 398 14205 14211 "output_libvirt.ml" 398 14205 14271
+call(
+  stack
+)
+type(
+  string list
+)
+"output_libvirt.ml" 401 14307 14315 "output_libvirt.ml" 401 14307 14318
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 402 14321 14327 "output_libvirt.ml" 402 14321 14345
+type(
+  ?pool:string ->
+  Types.source ->
+  Types.target_buses ->
+  Types.guestcaps -> StringSet.elt list -> Types.target_firmware -> DOM.doc
+)
+ident(
+  int_ref create_libvirt_xml "output_libvirt.ml" 72 2375 2379 "output_libvirt.ml" 72 2375 2397
+)
+"output_libvirt.ml" 402 14321 14352 "output_libvirt.ml" 402 14321 14363
+type(
+  string
+)
+"output_libvirt.ml" 402 14321 14364 "output_libvirt.ml" 402 14321 14370
+type(
+  Types.source
+)
+ident(
+  int_ref source "output_libvirt.ml" 378 13457 13482 "output_libvirt.ml" 378 13457 13488
+)
+"output_libvirt.ml" 402 14321 14371 "output_libvirt.ml" 402 14321 14383
+type(
+  Types.target_buses
+)
+ident(
+  int_ref target_buses "output_libvirt.ml" 378 13457 13491 "output_libvirt.ml" 378 13457 13503
+)
+"output_libvirt.ml" 403 14384 14392 "output_libvirt.ml" 403 14384 14401
+type(
+  Types.guestcaps
+)
+ident(
+  int_ref guestcaps "output_libvirt.ml" 378 13457 13504 "output_libvirt.ml" 378 13457 13513
+)
+"output_libvirt.ml" 403 14384 14402 "output_libvirt.ml" 403 14384 14417
+type(
+  StringSet.elt list
+)
+ident(
+  int_ref target_features "output_libvirt.ml" 397 14179 14187 "output_libvirt.ml" 397 14179 14202
+)
+"output_libvirt.ml" 403 14384 14418 "output_libvirt.ml" 403 14384 14433
+type(
+  Types.target_firmware
+)
+ident(
+  int_ref target_firmware "output_libvirt.ml" 378 13457 13516 "output_libvirt.ml" 378 13457 13531
+)
+"output_libvirt.ml" 402 14321 14327 "output_libvirt.ml" 403 14384 14433
+call(
+  stack
+)
+type(
+  DOM.doc
+)
+"output_libvirt.ml" 405 14438 14446 "output_libvirt.ml" 405 14438 14453
+type(
+  string
+)
+"output_libvirt.ml" 405 14438 14455 "output_libvirt.ml" 405 14438 14459
+type(
+  out_channel
+)
+"output_libvirt.ml" 405 14438 14446 "output_libvirt.ml" 405 14438 14459
+type(
+  string * out_channel
+)
+"output_libvirt.ml" 405 14438 14462 "output_libvirt.ml" 405 14438 14485
+type(
+  ?mode:open_flag list ->
+  ?temp_dir:string -> string -> string -> string * out_channel
+)
+ident(
+  ext_ref Filename.open_temp_file
+)
+"output_libvirt.ml" 405 14438 14486 "output_libvirt.ml" 405 14438 14498
+type(
+  string
+)
+"output_libvirt.ml" 405 14438 14499 "output_libvirt.ml" 405 14438 14505
+type(
+  string
+)
+"output_libvirt.ml" 405 14438 14462 "output_libvirt.ml" 405 14438 14505
+call(
+  stack
+)
+type(
+  string * out_channel
+)
+"output_libvirt.ml" 406 14509 14513 "output_libvirt.ml" 406 14509 14528
+type(
+  out_channel -> DOM.doc -> unit
+)
+ident(
+  ext_ref DOM.doc_to_chan
+)
+"output_libvirt.ml" 406 14509 14529 "output_libvirt.ml" 406 14509 14533
+type(
+  out_channel
+)
+ident(
+  int_ref chan "output_libvirt.ml" 405 14438 14455 "output_libvirt.ml" 405 14438 14459
+)
+"output_libvirt.ml" 406 14509 14534 "output_libvirt.ml" 406 14509 14537
+type(
+  DOM.doc
+)
+ident(
+  int_ref doc "output_libvirt.ml" 401 14307 14315 "output_libvirt.ml" 401 14307 14318
+)
+"output_libvirt.ml" 406 14509 14513 "output_libvirt.ml" 406 14509 14537
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 407 14539 14543 "output_libvirt.ml" 407 14539 14552
+type(
+  out_channel -> unit
+)
+ident(
+  ext_ref Pervasives.close_out
+)
+"output_libvirt.ml" 407 14539 14553 "output_libvirt.ml" 407 14539 14557
+type(
+  out_channel
+)
+ident(
+  int_ref chan "output_libvirt.ml" 405 14438 14455 "output_libvirt.ml" 405 14438 14459
+)
+"output_libvirt.ml" 407 14539 14543 "output_libvirt.ml" 407 14539 14557
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 410 14600 14608 "output_libvirt.ml" 410 14600 14611
+type(
+  string
+)
+"output_libvirt.ml" 411 14614 14626 "output_libvirt.ml" 411 14614 14628
+type(
+  string option
+)
+"output_libvirt.ml" 412 14634 14642 "output_libvirt.ml" 412 14634 14646
+type(
+  string option
+)
+"output_libvirt.ml" 412 14634 14650 "output_libvirt.ml" 412 14634 14657
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_libvirt.ml" 412 14634 14658 "output_libvirt.ml" 412 14634 14675
+type(
+  (string -> string, unit, string) format
+)
+"output_libvirt.ml" 412 14634 14677 "output_libvirt.ml" 412 14634 14682
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_libvirt.ml" 412 14634 14683 "output_libvirt.ml" 412 14634 14690
+type(
+  string
+)
+ident(
+  int_ref tmpfile "output_libvirt.ml" 405 14438 14446 "output_libvirt.ml" 405 14438 14453
+)
+"output_libvirt.ml" 412 14634 14676 "output_libvirt.ml" 412 14634 14691
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 412 14634 14650 "output_libvirt.ml" 412 14634 14691
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 413 14692 14705 "output_libvirt.ml" 413 14692 14708
+type(
+  string
+)
+ident(
+  def uri "output_libvirt.ml" 414 14712 14720 "output_libvirt.ml" 414 14712 14779
+)
+"output_libvirt.ml" 413 14692 14700 "output_libvirt.ml" 413 14692 14708
+type(
+  string option
+)
+"output_libvirt.ml" 414 14712 14720 "output_libvirt.ml" 414 14712 14727
+type(
+  (string -> string -> string, unit, string) format ->
+  string -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"output_libvirt.ml" 414 14712 14728 "output_libvirt.ml" 414 14712 14751
+type(
+  (string -> string -> string, unit, string) format
+)
+"output_libvirt.ml" 414 14712 14753 "output_libvirt.ml" 414 14712 14758
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_libvirt.ml" 414 14712 14759 "output_libvirt.ml" 414 14712 14762
+type(
+  string
+)
+ident(
+  int_ref uri "output_libvirt.ml" 413 14692 14705 "output_libvirt.ml" 413 14692 14708
+)
+"output_libvirt.ml" 414 14712 14752 "output_libvirt.ml" 414 14712 14763
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 414 14712 14765 "output_libvirt.ml" 414 14712 14770
+type(
+  string -> string
+)
+ident(
+  ext_ref Utils.quote
+)
+"output_libvirt.ml" 414 14712 14771 "output_libvirt.ml" 414 14712 14778
+type(
+  string
+)
+ident(
+  int_ref tmpfile "output_libvirt.ml" 405 14438 14446 "output_libvirt.ml" 405 14438 14453
+)
+"output_libvirt.ml" 414 14712 14764 "output_libvirt.ml" 414 14712 14779
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 414 14712 14720 "output_libvirt.ml" 414 14712 14779
+call(
+  stack
+)
+type(
+  string
+)
+"output_libvirt.ml" 411 14614 14620 "output_libvirt.ml" 414 14712 14779
+type(
+  string
+)
+"output_libvirt.ml" 415 14783 14790 "output_libvirt.ml" 415 14783 14801
+type(
+  string -> int
+)
+ident(
+  ext_ref Sys.command
+)
+"output_libvirt.ml" 415 14783 14802 "output_libvirt.ml" 415 14783 14805
+type(
+  string
+)
+ident(
+  int_ref cmd "output_libvirt.ml" 410 14600 14608 "output_libvirt.ml" 410 14600 14611
+)
+"output_libvirt.ml" 415 14783 14790 "output_libvirt.ml" 415 14783 14805
+type(
+  int
+)
+"output_libvirt.ml" 415 14783 14806 "output_libvirt.ml" 415 14783 14807
+type(
+  int -> int -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"output_libvirt.ml" 415 14783 14808 "output_libvirt.ml" 415 14783 14809
+type(
+  int
+)
+"output_libvirt.ml" 415 14783 14790 "output_libvirt.ml" 415 14783 14809
+type(
+  bool
+)
+"output_libvirt.ml" 416 14817 14827 "output_libvirt.ml" 416 14817 14838
+type(
+  string -> unit
+)
+ident(
+  ext_ref Unix.unlink
+)
+"output_libvirt.ml" 416 14817 14839 "output_libvirt.ml" 416 14817 14846
+type(
+  string
+)
+ident(
+  int_ref tmpfile "output_libvirt.ml" 405 14438 14446 "output_libvirt.ml" 405 14438 14453
+)
+"output_libvirt.ml" 416 14817 14827 "output_libvirt.ml" 416 14817 14846
+call(
+  stack
+)
+type(
+  unit
+)
+"output_libvirt.ml" 416 14817 14852 "output_libvirt.ml" 416 14817 14853
+type(
+  exn
+)
+"output_libvirt.ml" 416 14817 14857 "output_libvirt.ml" 416 14817 14859
+type(
+  unit
+)
+"output_libvirt.ml" 415 14783 14815 "output_libvirt.ml" 417 14860 14865
+type(
+  unit
+)
+"output_libvirt.ml" 418 14873 14879 "output_libvirt.ml" 418 14873 14886
+type(
+  (string -> string -> unit, unit, string, unit) format4 ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"output_libvirt.ml" 418 14873 14888 "output_libvirt.ml" 418 14873 14890
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"output_libvirt.ml" 418 14873 14890 "output_libvirt.ml" 418 14873 15018
+type(
+  (string -> string -> unit, unit, string, string, string, unit) format6
+)
+"output_libvirt.ml" 418 14873 14887 "output_libvirt.ml" 418 14873 15019
+type(
+  (string -> string -> unit, unit, string, unit) format4
+)
+"output_libvirt.ml" 419 15020 15028 "output_libvirt.ml" 419 15020 15035
+type(
+  string
+)
+ident(
+  int_ref tmpfile "output_libvirt.ml" 405 14438 14446 "output_libvirt.ml" 405 14438 14453
+)
+"output_libvirt.ml" 419 15020 15036 "output_libvirt.ml" 419 15020 15043
+type(
+  string
+)
+ident(
+  int_ref tmpfile "output_libvirt.ml" 405 14438 14446 "output_libvirt.ml" 405 14438 14453
+)
+"output_libvirt.ml" 417 14860 14871 "output_libvirt.ml" 420 15044 15049
+call(
+  tail
+)
+type(
+  unit
+)
+"output_libvirt.ml" 415 14783 14787 "output_libvirt.ml" 420 15044 15050
+type(
+  unit
+)
+"output_libvirt.ml" 410 14600 14604 "output_libvirt.ml" 420 15044 15050
+type(
+  unit
+)
+"output_libvirt.ml" 407 14539 14543 "output_libvirt.ml" 420 15044 15050
+type(
+  unit
+)
+"output_libvirt.ml" 406 14509 14513 "output_libvirt.ml" 420 15044 15050
+type(
+  unit
+)
+"output_libvirt.ml" 405 14438 14442 "output_libvirt.ml" 420 15044 15050
+type(
+  unit
+)
+"output_libvirt.ml" 401 14307 14311 "output_libvirt.ml" 420 15044 15050
+type(
+  unit
+)
+"output_libvirt.ml" 397 14179 14183 "output_libvirt.ml" 420 15044 15050
+type(
+  unit
+)
+"output_libvirt.ml" 393 14075 14079 "output_libvirt.ml" 420 15044 15050
+type(
+  unit
+)
+"output_libvirt.ml" 389 13897 13901 "output_libvirt.ml" 420 15044 15050
+type(
+  unit
+)
+"output_libvirt.ml" 388 13853 13857 "output_libvirt.ml" 420 15044 15050
+type(
+  unit
+)
+"output_libvirt.ml" 382 13640 13644 "output_libvirt.ml" 420 15044 15050
+type(
+  unit
+)
+"output_libvirt.ml" 423 15056 15060 "output_libvirt.ml" 423 15056 15074
+type(
+  string option -> string -> output_libvirt
+)
+ident(
+  def output_libvirt "output_libvirt.ml" 424 15096 15096 --
+)
+"output_libvirt.ml" 423 15056 15077 "output_libvirt.ml" 423 15056 15095
+type(
+  string option -> string -> output_libvirt
+)
+"output_libvirt.ml" 424 15096 15100 "output_libvirt.ml" 424 15096 15102
+type(
+  unit
+)
+"output_libvirt.ml" 424 15096 15105 "output_libvirt.ml" 424 15096 15140
+type(
+  string -> unit
+)
+ident(
+  ext_ref Modules_list.register_output_module
+)
+"output_libvirt.ml" 424 15096 15141 "output_libvirt.ml" 424 15096 15150
+type(
+  string
+)
+"output_libvirt.ml" 424 15096 15105 "output_libvirt.ml" 424 15096 15150
+call(
+  stack
+)
+type(
+  unit
+)

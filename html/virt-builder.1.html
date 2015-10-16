@@ -1,0 +1,2094 @@
+
+<html>
+<head>
+<title>virt-builder</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#examples">EXAMPLES</a>
+    <ul>
+      <li><a href="#list-the-virtual-machines-available">List the virtual machines available</a></li>
+      <li><a href="#build-a-virtual-machine">Build a virtual machine</a></li>
+      <li><a href="#setting-the-root-password">Setting the root password</a></li>
+      <li><a href="#set-the-hostname">Set the hostname</a></li>
+      <li><a href="#installing-software">Installing software</a></li>
+      <li><a href="#customizing-the-installation">Customizing the installation</a></li>
+    </ul>
+  </li>
+  <li><a href="#options">OPTIONS</a>
+    <ul>
+      <li><a href="#customization-options">Customization options</a></li>
+    </ul>
+  </li>
+  <li><a href="#reference">REFERENCE</a>
+    <ul>
+      <li><a href="#installing-packages">INSTALLING PACKAGES</a>
+        <ul>
+          <li><a href="#installing-packages-at-build-time">Installing packages at build time</a></li>
+          <li><a href="#updating-packages-at-build-time">Updating packages at build time</a></li>
+          <li><a href="#installing-packages-at-first-boot">Installing packages at first boot</a></li>
+          <li><a href="#installing-packages-at-build-time-from-a-side-repository">Installing packages at build time from a side repository</a></li>
+        </ul>
+      </li>
+      <li><a href="#users-and-passwords">USERS AND PASSWORDS</a>
+        <ul>
+          <li><a href="#creating-user-accounts">Creating user accounts</a></li>
+        </ul>
+      </li>
+      <li><a href="#keyboard-layout">KEYBOARD LAYOUT</a>
+        <ul>
+          <li><a href="#keyboard-layout-with-systemd">Keyboard layout with systemd</a></li>
+          <li><a href="#keyboard-layout-using-etc-sysconfig-keyboard">Keyboard layout using <i>/etc/sysconfig/keyboard</i></a></li>
+          <li><a href="#keyboard-layout-with-debian-derived-distros">Keyboard layout with Debian-derived distros</a></li>
+        </ul>
+      </li>
+      <li><a href="#language">LANGUAGE</a>
+        <ul>
+          <li><a href="#setting-japanese-in-fedora-20">Setting Japanese in Fedora 20</a></li>
+          <li><a href="#setting-japanese-in-debian-7-wheezy-">Setting Japanese in Debian 7 (Wheezy)</a></li>
+        </ul>
+      </li>
+      <li><a href="#log-file">LOG FILE</a></li>
+      <li><a href="#ssh-keys">SSH KEYS</a></li>
+      <li><a href="#first-boot-scripts">FIRST BOOT SCRIPTS</a></li>
+      <li><a href="#subscription-manager">SUBSCRIPTION-MANAGER</a></li>
+      <li><a href="#installation-process">INSTALLATION PROCESS</a></li>
+      <li><a href="#importing-the-disk-image">IMPORTING THE DISK IMAGE</a>
+        <ul>
+          <li><a href="#importing-into-libvirt">Importing into libvirt</a></li>
+          <li><a href="#importing-into-openstack">Importing into OpenStack</a></li>
+          <li><a href="#booting-directly-using-qemu-or-kvm">Booting directly using qemu or KVM</a></li>
+        </ul>
+      </li>
+      <li><a href="#configuration-management">CONFIGURATION MANAGEMENT</a>
+        <ul>
+          <li><a href="#puppet">Puppet</a></li>
+        </ul>
+      </li>
+      <li><a href="#debugging-builds">DEBUGGING BUILDS</a></li>
+      <li><a href="#sources-of-templates">SOURCES OF TEMPLATES</a>
+        <ul>
+          <li><a href="#libguestfs.org-repository">Libguestfs.org repository</a></li>
+          <li><a href="#setting-up-the-repository">Setting up the repository</a></li>
+          <li><a href="#setting-up-a-gpg-key">Setting up a GPG key</a></li>
+          <li><a href="#create-the-templates">Create the templates</a></li>
+          <li><a href="#creating-and-signing-the-index-file">Creating and signing the index file</a></li>
+          <li><a href="#running-virt-builder-against-multiple-sources">Running virt-builder against multiple sources</a></li>
+          <li><a href="#licensing-of-templates">Licensing of templates</a></li>
+          <li><a href="#formal-specification-of-the-index-file">Formal specification of the index file</a></li>
+        </ul>
+      </li>
+      <li><a href="#caching">CACHING</a>
+        <ul>
+          <li><a href="#caching-templates">Caching templates</a></li>
+          <li><a href="#caching-packages">Caching packages</a></li>
+          <li><a href="#local-mirrors">Local mirrors</a>
+            <ul>
+              <li><a href="#using-a-local-mirror-with-fedora">Using a local mirror with Fedora</a></li>
+              <li><a href="#using-a-local-mirror-with-debian">Using a local mirror with Debian</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#digital-signatures">DIGITAL SIGNATURES</a></li>
+      <li><a href="#architecture">ARCHITECTURE</a></li>
+      <li><a href="#security">SECURITY</a></li>
+      <li><a href="#clones">CLONES</a></li>
+      <li><a href="#performance">PERFORMANCE</a>
+        <ul>
+          <li><a href="#using---no-sync">Using <i>--no-sync</i></a></li>
+          <li><a href="#skipping-virt-resize">Skipping virt-resize</a></li>
+          <li><a href="#pxzcat">pxzcat</a></li>
+          <li><a href="#user-mode-linux">User-Mode Linux</a></li>
+        </ul>
+      </li>
+      <li><a href="#selinux">SELINUX</a></li>
+    </ul>
+  </li>
+  <li><a href="#machine-readable-output">MACHINE READABLE OUTPUT</a></li>
+  <li><a href="#environment-variables">ENVIRONMENT VARIABLES</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+
+
+<img src="virt-builder.svg" width="250"
+  style="float: right; clear: right;" />
+
+<h1 id="name">NAME</h1>
+
+<p>virt-builder - Build virtual machine images quickly</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> virt-builder os-version
+    [-o|--output DISKIMAGE] [--size SIZE] [--format raw|qcow2]
+    [--arch ARCHITECTURE] [--attach ISOFILE]
+    [--chmod PERMISSIONS:FILE] [--commands-from-file FILENAME]
+    [--copy SOURCE:DEST] [--copy-in LOCALPATH:REMOTEDIR]
+    [--delete PATH] [--edit FILE:EXPR] [--firstboot SCRIPT]
+    [--firstboot-command &#39;CMD+ARGS&#39;] [--firstboot-install PKG,PKG..]
+    [--hostname HOSTNAME] [--install PKG,PKG..]
+    [--link TARGET:LINK[:LINK..]] [--mkdir DIR] [--move SOURCE:DEST]
+    [--password USER:SELECTOR] [--root-password SELECTOR]
+    [--run SCRIPT] [--run-command &#39;CMD+ARGS&#39;] [--scrub FILE]
+    [--sm-attach SELECTOR] [--sm-register] [--sm-remove]
+    [--sm-unregister] [--ssh-inject USER[:SELECTOR]] [--truncate FILE]
+    [--truncate-recursive PATH] [--timezone TIMEZONE] [--touch FILE]
+    [--update] [--upload FILE:DEST] [--write FILE:CONTENT]
+    [--no-logfile] [--password-crypto md5|sha256|sha512]
+    [--selinux-relabel] [--sm-credentials SELECTOR]
+
+
+ virt-builder -l|--list [--long] [--list-format short|long|json]
+
+ virt-builder --notes os-version
+
+ virt-builder --print-cache
+
+ virt-builder --cache-all-templates
+
+ virt-builder --delete-cache
+
+ virt-builder --get-kernel DISKIMAGE
+    [--format raw|qcow2] [--output OUTPUTDIR]</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>Virt-builder is a tool for quickly building new virtual machines. You can build a variety of VMs for local or cloud use, usually within a few minutes or less. Virt-builder also has many ways to customize these VMs. Everything is run from the command line and nothing requires root privileges, so automation and scripting is simple.</p>
+
+<p>Note that virt-builder does not install guests from scratch. It takes cleanly prepared, digitally signed OS templates and customizes them. This approach is used because it is much faster, but if you need to do fresh installs you may want to look at <a href="http://man.he.net/man1/virt-install">virt-install(1)</a> and <a href="http://man.he.net/man1/oz-install">oz-install(1)</a>.</p>
+
+<p>The easiest way to get started is by looking at the examples in the next section.</p>
+
+<h1 id="examples">EXAMPLES</h1>
+
+<h2 id="list-the-virtual-machines-available">List the virtual machines available</h2>
+
+<pre><code> virt-builder --list</code></pre>
+
+<p>will list out the operating systems available to install. A selection of freely redistributable OSes is available as standard. You can add your own too (see below).</p>
+
+<p>After choosing a guest from the list, you may want to see if there are any installation notes:</p>
+
+<pre><code> virt-builder --notes fedora-20</code></pre>
+
+<h2 id="build-a-virtual-machine">Build a virtual machine</h2>
+
+<pre><code> virt-builder fedora-20</code></pre>
+
+<p>will build a Fedora 20 image for the same architecture as virt-builder (so running it from an i386 installation will try to build an i386 image, if available). This will have all default configuration (minimal size, no user accounts, random root password, only the bare minimum installed software, etc.).</p>
+
+<p>You <i>do not</i> need to run this command as root.</p>
+
+<p>The first time this runs it has to download the template over the network, but this gets cached (see <a href="#caching">&quot;CACHING&quot;</a>).</p>
+
+<p>The name of the output file is derived from the template name, so above it will be <i>fedora-20.img</i>. You can change the output filename using the <i>-o</i> option:</p>
+
+<pre><code> virt-builder fedora-20 -o mydisk.img</code></pre>
+
+<p>You can also use the <i>-o</i> option to write to existing devices or logical volumes.</p>
+
+<pre><code> virt-builder fedora-20 --format qcow2</code></pre>
+
+<p>As above, but write the output in qcow2 format to <i>fedora-20.qcow2</i>.</p>
+
+<pre><code> virt-builder fedora-20 --size 20G</code></pre>
+
+<p>As above, but the output size will be 20 GB. The guest OS is resized as it is copied to the output (automatically, using <a href="virt-resize.1.html">virt-resize(1)</a>).</p>
+
+<pre><code> virt-builder fedora-20 --arch i386</code></pre>
+
+<p>As above, but using an i386 template, if available.</p>
+
+<h2 id="setting-the-root-password">Setting the root password</h2>
+
+<pre><code> virt-builder fedora-20 --root-password file:/tmp/rootpw</code></pre>
+
+<p>Create a Fedora 20 image. The root password is taken from the file <i>/tmp/rootpw</i>.</p>
+
+<p>Note if you <i>don&#39;t</i> set <i>--root-password</i> then the guest is given a <i>random</i> root password.</p>
+
+<p>You can also create user accounts. See <a href="#users-and-passwords">&quot;USERS AND PASSWORDS&quot;</a> below.</p>
+
+<h2 id="set-the-hostname">Set the hostname</h2>
+
+<pre><code> virt-builder fedora-20 --hostname virt.example.com</code></pre>
+
+<p>Set the hostname to <code>virt.example.com</code>.</p>
+
+<h2 id="installing-software">Installing software</h2>
+
+<p>To install packages from the ordinary (guest) software repository (eg. yum or apt):</p>
+
+<pre><code> virt-builder fedora-20 --install &quot;inkscape,@Xfce Desktop&quot;</code></pre>
+
+<p>(In Fedora, <code>@</code> is used to install groups of packages. On Debian you would install a meta-package instead.)</p>
+
+<p>To update the core packages to the latest version:</p>
+
+<pre><code> virt-builder debian-7 --update</code></pre>
+
+<p>For guests which use SELinux, like Fedora and Red Hat Enterprise Linux, you may need to do SELinux relabelling after installing or updating packages (see <a href="#selinux">&quot;SELINUX&quot;</a> below):</p>
+
+<pre><code> virt-builder fedora-20 --update --selinux-relabel</code></pre>
+
+<h2 id="customizing-the-installation">Customizing the installation</h2>
+
+<p>There are many options that let you customize the installation. These include: <i>--run</i>/<i>--run-command</i>, which run a shell script or command while the disk image is being generated and lets you add or edit files that go into the disk image. <i>--firstboot</i>/<i>--firstboot-command</i>, which let you add scripts/commands that are run the first time the guest boots. <i>--edit</i> to edit files. <i>--upload</i> to upload files.</p>
+
+<p>For example:</p>
+
+<pre><code> cat &lt;&lt;&#39;EOF&#39; &gt; /tmp/yum-update.sh
+ yum -y update
+ EOF
+ 
+ virt-builder fedora-20 --firstboot /tmp/yum-update.sh</code></pre>
+
+<p>or simply:</p>
+
+<pre><code> virt-builder fedora-20 --firstboot-command &#39;yum -y update&#39;</code></pre>
+
+<p>which makes the <a href="http://man.he.net/man8/yum">yum(8)</a> <code>update</code> command run once the first time the guest boots.</p>
+
+<p>Or:</p>
+
+<pre><code> virt-builder fedora-20 \
+   --edit &#39;/etc/yum.conf:
+             s/gpgcheck=1/gpgcheck=0/&#39;</code></pre>
+
+<p>which edits <i>/etc/yum.conf</i> inside the disk image (during disk image creation, long before boot).</p>
+
+<p>You can combine these options, and have multiple options of all types.</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display help.</p>
+
+</dd>
+<dt><b>--arch</b> ARCHITECTURE</dt>
+<dd>
+
+<p>Use the specified architecture for the output image. This means there must be sources providing the requested template for the requested architecture.</p>
+
+<p>See also <a href="#architecture">&quot;ARCHITECTURE&quot;</a>.</p>
+
+</dd>
+<dt><b>--attach</b> ISOFILE</dt>
+<dd>
+
+<p>During the customization phase, the given disk is attached to the libguestfs appliance. This is used to provide extra software repositories or other data for customization.</p>
+
+<p>You probably want to ensure the volume(s) or filesystems in the attached disks are labelled (or use an ISO volume name) so that you can mount them by label in your run-scripts:</p>
+
+<pre><code> mkdir /tmp/mount
+ mount LABEL=EXTRA /tmp/mount</code></pre>
+
+<p>You can have multiple <i>--attach</i> options, and the format can be any disk format (not just an ISO).</p>
+
+<p>See also: <i>--run</i>, <a href="#installing-packages-at-build-time-from-a-side-repository">&quot;Installing packages at build time from a side repository&quot;</a>, <a href="http://man.he.net/man1/genisoimage">genisoimage(1)</a>, <a href="virt-make-fs.1.html">virt-make-fs(1)</a>.</p>
+
+</dd>
+<dt><b>--attach-format</b> FORMAT</dt>
+<dd>
+
+<p>Specify the disk format for the next <i>--attach</i> option. The <code>FORMAT</code> is usually <code>raw</code> or <code>qcow2</code>. Use <code>raw</code> for ISOs.</p>
+
+</dd>
+<dt><b>--cache</b> DIR</dt>
+<dd>
+
+</dd>
+<dt><b>--no-cache</b></dt>
+<dd>
+
+<p><i>--cache</i> DIR sets the directory to use/check for cached template files. If not set, defaults to either <i>$XDG_CACHE_HOME/virt-builder/</i> or <i>$HOME/.cache/virt-builder/</i>.</p>
+
+<p><i>--no-cache</i> disables template caching.</p>
+
+</dd>
+<dt><b>--cache-all-templates</b></dt>
+<dd>
+
+<p>Download all templates to the cache and then exit. See <a href="#caching">&quot;CACHING&quot;</a>.</p>
+
+<p>Note this doesn&#39;t cache everything. More templates might be uploaded. Also this doesn&#39;t cache packages (the <i>--install</i>, <i>--update</i> options).</p>
+
+</dd>
+<dt><b>--check-signature</b></dt>
+<dd>
+
+</dd>
+<dt><b>--no-check-signature</b></dt>
+<dd>
+
+<p>Check/don&#39;t check the digital signature of the OS template. The default is to check the signature and exit if it is not correct. Using <i>--no-check-signature</i> bypasses this check.</p>
+
+<p>See also <i>--fingerprint</i>.</p>
+
+</dd>
+<dt><b>--curl</b> CURL</dt>
+<dd>
+
+<p>Specify an alternate <a href="http://man.he.net/man1/curl">curl(1)</a> binary. You can also use this to add curl parameters, for example to disable https certificate checks:</p>
+
+<pre><code> virt-builder --curl &quot;curl --insecure&quot; [...]</code></pre>
+
+</dd>
+<dt><b>--delete-cache</b></dt>
+<dd>
+
+<p>Delete the template cache. See <a href="#caching">&quot;CACHING&quot;</a>.</p>
+
+</dd>
+<dt><b>--no-delete-on-failure</b></dt>
+<dd>
+
+<p>Don&#39;t delete the output file on failure to build. You can use this to debug failures to run scripts. See <a href="#debugging-builds">&quot;DEBUGGING BUILDS&quot;</a> for ways to debug images.</p>
+
+<p>The default is to delete the output file if virt-builder fails (or, for example, some script that it runs fails).</p>
+
+</dd>
+<dt><b>--fingerprint</b> &#39;AAAA BBBB ...&#39;</dt>
+<dd>
+
+<p>Check that the index and templates are signed by the key with the given fingerprint. (The fingerprint is a long string, usually written as 10 groups of 4 hexadecimal digits).</p>
+
+<p>You can give this option multiple times. If you have multiple source URLs, then you can have either no fingerprint, one fingerprint or multiple fingerprints. If you have multiple, then each must correspond 1-1 with a source URL.</p>
+
+</dd>
+<dt><b>--format</b> qcow2</dt>
+<dd>
+
+</dd>
+<dt><b>--format</b> raw</dt>
+<dd>
+
+<p>For ordinary builds, this selects the output format. The default is <i>raw</i>.</p>
+
+<p>With <i>--get-kernel</i> this specifies the input format.</p>
+
+</dd>
+<dt><b>--get-kernel</b> IMAGE</dt>
+<dd>
+
+<p>This option extracts the kernel and initramfs from a previously built disk image called <code>IMAGE</code> (in fact it works for any VM disk image, not just ones built using virt-builder).</p>
+
+<p>The kernel and initramfs are written to the current directory, unless you also specify the <i>--output</i> <code>outputdir</code> <b>directory</b> name.</p>
+
+<p>The format of the disk image is automatically detected unless you specify it by using the <i>--format</i> option.</p>
+
+<p>In the case where the guest contains multiple kernels, the one with the highest version number is chosen. To extract arbitrary kernels from the disk image, see <a href="guestfish.1.html">guestfish(1)</a>. To extract the entire <i>/boot</i> directory of a guest, see <a href="virt-copy-out.1.html">virt-copy-out(1)</a>.</p>
+
+</dd>
+<dt><b>--gpg</b> GPG</dt>
+<dd>
+
+<p>Specify an alternate <a href="http://man.he.net/man1/gpg">gpg(1)</a> (GNU Privacy Guard) binary. You can also use this to add gpg parameters, for example to specify an alternate home directory:</p>
+
+<pre><code> virt-builder --gpg &quot;gpg --homedir /tmp&quot; [...]</code></pre>
+
+</dd>
+<dt><b>-l</b></dt>
+<dd>
+
+</dd>
+<dt><b>--list</b></dt>
+<dd>
+
+</dd>
+<dt><b>--list --list-format</b> format</dt>
+<dd>
+
+</dd>
+<dt><b>--list --long</b></dt>
+<dd>
+
+<p>List available templates.</p>
+
+<p>It is possible to choose with <i>--list-format</i> the output format for the list templates:</p>
+
+<dl>
+
+<dt><b>short</b></dt>
+<dd>
+
+<p>The default format, prints only the template identifier and, next to it, its short description.</p>
+
+</dd>
+<dt><b>long</b></dt>
+<dd>
+
+<p>Prints a textual list with the details of the available sources, followed by the details of the available templates.</p>
+
+</dd>
+<dt><b>json</b></dt>
+<dd>
+
+<p>Prints a JSON object with the details of the available sources and the details of the available templates.</p>
+
+<p>The <code>version</code> key in the main object represents the &quot;compatibility version&quot;, and it is bumped every time the resulting JSON output is incompatible with the previous versions (for example the structure has changed, or non-optional keys are no more present).</p>
+
+</dd>
+</dl>
+
+<p><i>--long</i> is a shorthand for the <code>long</code> format.</p>
+
+<p>See also: <i>--source</i>, <i>--notes</i>, <a href="#sources-of-templates">&quot;SOURCES OF TEMPLATES&quot;</a>.</p>
+
+</dd>
+<dt><b>--machine-readable</b></dt>
+<dd>
+
+<p>This option is used to make the output more machine friendly when being parsed by other programs. See <a href="#machine-readable-output">&quot;MACHINE READABLE OUTPUT&quot;</a> below.</p>
+
+</dd>
+<dt><b>-m</b> MB</dt>
+<dd>
+
+</dd>
+<dt><b>--memsize</b> MB</dt>
+<dd>
+
+<p>Change the amount of memory allocated to <i>--run</i> scripts. Increase this if you find that <i>--run</i> scripts or the <i>--install</i> option are running out of memory.</p>
+
+<p>The default can be found with this command:</p>
+
+<pre><code> guestfish get-memsize</code></pre>
+
+</dd>
+<dt><b>--network</b></dt>
+<dd>
+
+</dd>
+<dt><b>--no-network</b></dt>
+<dd>
+
+<p>Enable or disable network access from the guest during the installation.</p>
+
+<p>Enabled is the default. Use <i>--no-network</i> to disable access.</p>
+
+<p>The network only allows outgoing connections and has other minor limitations. See <a href="virt-rescue.1.html#network">&quot;NETWORK&quot; in virt-rescue(1)</a>.</p>
+
+<p>If you use <i>--no-network</i> then certain other options such as <i>--install</i> will not work.</p>
+
+<p>This does not affect whether the guest can access the network once it has been booted, because that is controlled by your hypervisor or cloud environment and has nothing to do with virt-builder.</p>
+
+<p>Generally speaking you should <i>not</i> use <i>--no-network</i>. But here are some reasons why you might want to:</p>
+
+<ol>
+
+<li><p>Because the libguestfs backend that you are using doesn&#39;t support the network. (See: <a href="guestfs.3.html#backend">&quot;BACKEND&quot; in guestfs(3)</a>).</p>
+
+</li>
+<li><p>Any software you need to install comes from an attached ISO, so you don&#39;t need the network.</p>
+
+</li>
+<li><p>You don&#39;t want untrusted guest code trying to access your host network when running virt-builder. This is particularly an issue when you don&#39;t trust the source of the operating system templates. (See <a href="#security">&quot;SECURITY&quot;</a> below).</p>
+
+</li>
+<li><p>You don&#39;t have a host network (eg. in secure/restricted environments).</p>
+
+</li>
+</ol>
+
+</dd>
+<dt><b>--no-sync</b></dt>
+<dd>
+
+<p>Do not sync the output file on exit.</p>
+
+<p>Virt-builder fsync&#39;s the output file or disk image when it exits.</p>
+
+<p>The reason is that qemu/KVM&#39;s default caching mode is <code>none</code> or <code>directsync</code>, both of which bypass the host page cache. Therefore these would not work correctly if you immediately started the guest after running virt-builder - they would not see the complete output file. (Note that you should not use these caching modes - they are fundamentally broken for this and other reasons.)</p>
+
+<p>If you are not using these broken caching modes, you can use <i>--no-sync</i> to avoid this unnecessary sync and gain considerable extra performance.</p>
+
+</dd>
+<dt><b>--notes</b> os-version</dt>
+<dd>
+
+<p>List any notes associated with this guest, then exit (this does not do the install).</p>
+
+</dd>
+<dt><b>-o</b> filename</dt>
+<dd>
+
+</dd>
+<dt><b>--output</b> filename</dt>
+<dd>
+
+<p>Write the output to <i>filename</i>. If you don&#39;t specify this option, then the output filename is generated by taking the <code>os-version</code> string and adding <code>.img</code> (for raw format) or <code>.qcow2</code> (for qcow2 format).</p>
+
+<p>Note that the output filename could be a device, partition or logical volume.</p>
+
+<p>When used with <i>--get-kernel</i>, this option specifies the output directory.</p>
+
+</dd>
+<dt><b>--print-cache</b></dt>
+<dd>
+
+<p>Print information about the template cache. See <a href="#caching">&quot;CACHING&quot;</a>.</p>
+
+</dd>
+<dt><b>-q</b></dt>
+<dd>
+
+</dd>
+<dt><b>--quiet</b></dt>
+<dd>
+
+<p>Don&#39;t print ordinary progress messages.</p>
+
+</dd>
+<dt><b>--size</b> SIZE</dt>
+<dd>
+
+<p>Select the size of the output disk, where the size can be specified using common names such as <code>32G</code> (32 gigabytes) etc.</p>
+
+<p>Virt-builder will resize filesystems inside the disk image automatically.</p>
+
+<p>If the size is not specified, then one of two things happens. If the output is a file, then the size is the same as the template. If the output is a device, partition, etc then the size of that device is used.</p>
+
+<p>To specify size in bytes, the number must be followed by the lowercase letter <i>b</i>, eg: <span style="white-space: nowrap;"><code>--size 10737418240b</code></span>.</p>
+
+</dd>
+<dt><b>--smp</b> N</dt>
+<dd>
+
+<p>Enable N &ge; 2 virtual CPUs for <i>--run</i> scripts to use.</p>
+
+</dd>
+<dt><b>--source</b> URL</dt>
+<dd>
+
+<p>Set the source URL to look for indexes.</p>
+
+<p>You can give this option multiple times to specify multiple sources.</p>
+
+<p>See also <a href="#sources-of-templates">&quot;SOURCES OF TEMPLATES&quot;</a> below.</p>
+
+<p>Note that you should not point <i>--source</i> to sources that you don&#39;t trust (unless the source is signed by someone you do trust). See also the <i>--no-network</i> option.</p>
+
+</dd>
+<dt><b>-v</b></dt>
+<dd>
+
+</dd>
+<dt><b>--verbose</b></dt>
+<dd>
+
+<p>Enable debug messages and/or produce verbose output.</p>
+
+<p>When reporting bugs, use this option and attach the complete output to your bug report.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display version number and exit.</p>
+
+</dd>
+<dt><b>-x</b></dt>
+<dd>
+
+<p>Enable tracing of libguestfs API calls.</p>
+
+</dd>
+</dl>
+
+<h2 id="customization-options">Customization options</h2>
+
+<dl>
+
+<dt><b>--chmod</b> PERMISSIONS:FILE</dt>
+<dd>
+
+<p>Change the permissions of <code>FILE</code> to <code>PERMISSIONS</code>.</p>
+
+<p><i>Note</i>: <code>PERMISSIONS</code> by default would be decimal, unless you prefix it with <code>0</code> to get octal, ie. use <code>0700</code> not <code>700</code>.</p>
+
+</dd>
+<dt><b>--commands-from-file</b> FILENAME</dt>
+<dd>
+
+<p>Read the customize commands from a file, one (and its arguments) each line.</p>
+
+<p>Each line contains a single customization command and its arguments, for example:</p>
+
+<pre><code> delete /some/file
+ install some-package
+ password some-user:password:its-new-password</code></pre>
+
+<p>Empty lines are ignored, and lines starting with <code>#</code> are comments and are ignored as well. Furthermore, arguments can be spread across multiple lines, by adding a <code>\</code> (continuation character) at the of a line, for example</p>
+
+<pre><code> edit /some/file:\
+   s/^OPT=.*/OPT=ok/</code></pre>
+
+<p>The commands are handled in the same order as they are in the file, as if they were specified as <i>--delete /some/file</i> on the command line.</p>
+
+</dd>
+<dt><b>--copy</b> SOURCE:DEST</dt>
+<dd>
+
+<p>Copy files or directories recursively inside the guest.</p>
+
+<p>Wildcards cannot be used.</p>
+
+</dd>
+<dt><b>--copy-in</b> LOCALPATH:REMOTEDIR</dt>
+<dd>
+
+<p>Copy local files or directories recursively into the disk image, placing them in the directory <code>REMOTEDIR</code> (which must exist).</p>
+
+<p>Wildcards cannot be used.</p>
+
+</dd>
+<dt><b>--delete</b> PATH</dt>
+<dd>
+
+<p>Delete a file from the guest. Or delete a directory (and all its contents, recursively).</p>
+
+<p>See also: <i>--upload</i>, <i>--scrub</i>.</p>
+
+</dd>
+<dt><b>--edit</b> FILE:EXPR</dt>
+<dd>
+
+<p>Edit <code>FILE</code> using the Perl expression <code>EXPR</code>.</p>
+
+<p>Be careful to properly quote the expression to prevent it from being altered by the shell.</p>
+
+<p>Note that this option is only available when Perl 5 is installed.</p>
+
+<p>See <a href="virt-edit.1.html#non-interactive-editing">&quot;NON-INTERACTIVE EDITING&quot; in virt-edit(1)</a>.</p>
+
+</dd>
+<dt><b>--firstboot</b> SCRIPT</dt>
+<dd>
+
+<p>Install <code>SCRIPT</code> inside the guest, so that when the guest first boots up, the script runs (as root, late in the boot process).</p>
+
+<p>The script is automatically chmod +x after installation in the guest.</p>
+
+<p>The alternative version <i>--firstboot-command</i> is the same, but it conveniently wraps the command up in a single line script for you.</p>
+
+<p>You can have multiple <i>--firstboot</i> options. They run in the same order that they appear on the command line.</p>
+
+<p>Please take a look at <a href="#first-boot-scripts">&quot;FIRST BOOT SCRIPTS&quot;</a> for more information and caveats about the first boot scripts.</p>
+
+<p>See also <i>--run</i>.</p>
+
+</dd>
+<dt><b>--firstboot-command</b> &#39;CMD+ARGS&#39;</dt>
+<dd>
+
+<p>Run command (and arguments) inside the guest when the guest first boots up (as root, late in the boot process).</p>
+
+<p>You can have multiple <i>--firstboot</i> options. They run in the same order that they appear on the command line.</p>
+
+<p>Please take a look at <a href="#first-boot-scripts">&quot;FIRST BOOT SCRIPTS&quot;</a> for more information and caveats about the first boot scripts.</p>
+
+<p>See also <i>--run</i>.</p>
+
+</dd>
+<dt><b>--firstboot-install</b> PKG,PKG..</dt>
+<dd>
+
+<p>Install the named packages (a comma-separated list). These are installed when the guest first boots using the guest&#39;s package manager (eg. apt, yum, etc.) and the guest&#39;s network connection.</p>
+
+<p>For an overview on the different ways to install packages, see <a href="#installing-packages">&quot;INSTALLING PACKAGES&quot;</a>.</p>
+
+</dd>
+<dt><b>--hostname</b> HOSTNAME</dt>
+<dd>
+
+<p>Set the hostname of the guest to <code>HOSTNAME</code>. You can use a dotted hostname.domainname (FQDN) if you want.</p>
+
+</dd>
+<dt><b>--install</b> PKG,PKG..</dt>
+<dd>
+
+<p>Install the named packages (a comma-separated list). These are installed during the image build using the guest&#39;s package manager (eg. apt, yum, etc.) and the host&#39;s network connection.</p>
+
+<p>For an overview on the different ways to install packages, see <a href="#installing-packages">&quot;INSTALLING PACKAGES&quot;</a>.</p>
+
+<p>See also <i>--update</i>.</p>
+
+</dd>
+<dt><b>--link</b> TARGET:LINK[:LINK..]</dt>
+<dd>
+
+<p>Create symbolic link(s) in the guest, starting at <code>LINK</code> and pointing at <code>TARGET</code>.</p>
+
+</dd>
+<dt><b>--mkdir</b> DIR</dt>
+<dd>
+
+<p>Create a directory in the guest.</p>
+
+<p>This uses <span style="white-space: nowrap;"><code>mkdir -p</code></span> so any intermediate directories are created, and it also works if the directory already exists.</p>
+
+</dd>
+<dt><b>--move</b> SOURCE:DEST</dt>
+<dd>
+
+<p>Move files or directories inside the guest.</p>
+
+<p>Wildcards cannot be used.</p>
+
+</dd>
+<dt><b>--no-logfile</b></dt>
+<dd>
+
+<p>Scrub <code>builder.log</code> (log file from build commands) from the image after building is complete. If you don&#39;t want to reveal precisely how the image was built, use this option.</p>
+
+<p>See also: <a href="#log-file">&quot;LOG FILE&quot;</a>.</p>
+
+</dd>
+<dt><b>--password</b> USER:SELECTOR</dt>
+<dd>
+
+<p>Set the password for <code>USER</code>. (Note this option does <i>not</i> create the user account).</p>
+
+<p>See <a href="#users-and-passwords">&quot;USERS AND PASSWORDS&quot;</a> for the format of the <code>SELECTOR</code> field, and also how to set up user accounts.</p>
+
+</dd>
+<dt><b>--password-crypto</b> md5|sha256|sha512</dt>
+<dd>
+
+<p>When the virt tools change or set a password in the guest, this option sets the password encryption of that password to <code>md5</code>, <code>sha256</code> or <code>sha512</code>.</p>
+
+<p><code>sha256</code> and <code>sha512</code> require glibc &ge; 2.7 (check crypt(3) inside the guest).</p>
+
+<p><code>md5</code> will work with relatively old Linux guests (eg. RHEL 3), but is not secure against modern attacks.</p>
+
+<p>The default is <code>sha512</code> unless libguestfs detects an old guest that didn&#39;t have support for SHA-512, in which case it will use <code>md5</code>. You can override libguestfs by specifying this option.</p>
+
+<p>Note this does not change the default password encryption used by the guest when you create new user accounts inside the guest. If you want to do that, then you should use the <i>--edit</i> option to modify <code>/etc/sysconfig/authconfig</code> (Fedora, RHEL) or <code>/etc/pam.d/common-password</code> (Debian, Ubuntu).</p>
+
+</dd>
+<dt><b>--root-password</b> SELECTOR</dt>
+<dd>
+
+<p>Set the root password.</p>
+
+<p>See <a href="#users-and-passwords">&quot;USERS AND PASSWORDS&quot;</a> for the format of the <code>SELECTOR</code> field, and also how to set up user accounts.</p>
+
+<p>Note: In virt-builder, if you <i>don&#39;t</i> set <i>--root-password</i> then the guest is given a <i>random</i> root password.</p>
+
+</dd>
+<dt><b>--run</b> SCRIPT</dt>
+<dd>
+
+<p>Run the shell script (or any program) called <code>SCRIPT</code> on the disk image. The script runs virtualized inside a small appliance, chrooted into the guest filesystem.</p>
+
+<p>The script is automatically chmod +x.</p>
+
+<p>If libguestfs supports it then a limited network connection is available but it only allows outgoing network connections. You can also attach data disks (eg. ISO files) as another way to provide data (eg. software packages) to the script without needing a network connection (<i>--attach</i>). You can also upload data files (<i>--upload</i>).</p>
+
+<p>You can have multiple <i>--run</i> options. They run in the same order that they appear on the command line.</p>
+
+<p>See also: <i>--firstboot</i>, <i>--attach</i>, <i>--upload</i>.</p>
+
+</dd>
+<dt><b>--run-command</b> &#39;CMD+ARGS&#39;</dt>
+<dd>
+
+<p>Run the command and arguments on the disk image. The command runs virtualized inside a small appliance, chrooted into the guest filesystem.</p>
+
+<p>If libguestfs supports it then a limited network connection is available but it only allows outgoing network connections. You can also attach data disks (eg. ISO files) as another way to provide data (eg. software packages) to the script without needing a network connection (<i>--attach</i>). You can also upload data files (<i>--upload</i>).</p>
+
+<p>You can have multiple <i>--run-command</i> options. They run in the same order that they appear on the command line.</p>
+
+<p>See also: <i>--firstboot</i>, <i>--attach</i>, <i>--upload</i>.</p>
+
+</dd>
+<dt><b>--scrub</b> FILE</dt>
+<dd>
+
+<p>Scrub a file from the guest. This is like <i>--delete</i> except that:</p>
+
+<ul>
+
+<li><p>It scrubs the data so a guest could not recover it.</p>
+
+</li>
+<li><p>It cannot delete directories, only regular files.</p>
+
+</li>
+</ul>
+
+</dd>
+<dt><b>--selinux-relabel</b></dt>
+<dd>
+
+<p>Relabel files in the guest so that they have the correct SELinux label.</p>
+
+<p>You should only use this option for guests which support SELinux.</p>
+
+</dd>
+<dt><b>--sm-attach</b> SELECTOR</dt>
+<dd>
+
+<p>Attach to a pool using <code>subscription-manager</code>.</p>
+
+<p>See <a href="#subscription-manager">&quot;SUBSCRIPTION-MANAGER&quot;</a> for the format of the <code>SELECTOR</code> field.</p>
+
+</dd>
+<dt><b>--sm-credentials</b> SELECTOR</dt>
+<dd>
+
+<p>Set the credentials for <code>subscription-manager</code>.</p>
+
+<p>See <a href="#subscription-manager">&quot;SUBSCRIPTION-MANAGER&quot;</a> for the format of the <code>SELECTOR</code> field.</p>
+
+</dd>
+<dt><b>--sm-register</b></dt>
+<dd>
+
+<p>Register the guest using <code>subscription-manager</code>.</p>
+
+<p>This requires credentials being set using <i>--sm-credentials</i>.</p>
+
+</dd>
+<dt><b>--sm-remove</b></dt>
+<dd>
+
+<p>Remove all the subscriptions from the guest using <code>subscription-manager</code>.</p>
+
+</dd>
+<dt><b>--sm-unregister</b></dt>
+<dd>
+
+<p>Unregister the guest using <code>subscription-manager</code>.</p>
+
+</dd>
+<dt><b>--ssh-inject</b> USER[:SELECTOR]</dt>
+<dd>
+
+<p>Inject an ssh key so the given <code>USER</code> will be able to log in over ssh without supplying a password. The <code>USER</code> must exist already in the guest.</p>
+
+<p>See <a href="#ssh-keys">&quot;SSH KEYS&quot;</a> for the format of the <code>SELECTOR</code> field.</p>
+
+<p>You can have multiple <i>--ssh-inject</i> options, for different users and also for more keys for each user.</p>
+
+</dd>
+<dt><b>--timezone</b> TIMEZONE</dt>
+<dd>
+
+<p>Set the default timezone of the guest to <code>TIMEZONE</code>. Use a location string like <code>Europe/London</code></p>
+
+</dd>
+<dt><b>--touch</b> FILE</dt>
+<dd>
+
+<p>This command performs a <a href="http://man.he.net/man1/touch">touch(1)</a>-like operation on <code>FILE</code>.</p>
+
+</dd>
+<dt><b>--truncate</b> FILE</dt>
+<dd>
+
+<p>This command truncates &quot;path&quot; to a zero-length file. The file must exist already.</p>
+
+</dd>
+<dt><b>--truncate-recursive</b> PATH</dt>
+<dd>
+
+<p>This command recursively truncates all files under &quot;path&quot; to zero-length.</p>
+
+</dd>
+<dt><b>--update</b></dt>
+<dd>
+
+<p>Do the equivalent of <code>yum update</code>, <code>apt-get upgrade</code>, or whatever command is required to update the packages already installed in the template to their latest versions.</p>
+
+<p>See also <i>--install</i>.</p>
+
+</dd>
+<dt><b>--upload</b> FILE:DEST</dt>
+<dd>
+
+<p>Upload local file <code>FILE</code> to destination <code>DEST</code> in the disk image. File owner and permissions from the original are preserved, so you should set them to what you want them to be in the disk image.</p>
+
+<p><code>DEST</code> could be the final filename. This can be used to rename the file on upload.</p>
+
+<p>If <code>DEST</code> is a directory name (which must already exist in the guest) then the file is uploaded into that directory, and it keeps the same name as on the local filesystem.</p>
+
+<p>See also: <i>--mkdir</i>, <i>--delete</i>, <i>--scrub</i>.</p>
+
+</dd>
+<dt><b>--write</b> FILE:CONTENT</dt>
+<dd>
+
+<p>Write <code>CONTENT</code> to <code>FILE</code>.</p>
+
+</dd>
+</dl>
+
+<h1 id="reference">REFERENCE</h1>
+
+<h2 id="installing-packages">INSTALLING PACKAGES</h2>
+
+<p>There are several approaches to installing packages or applications in the guest which have different trade-offs.</p>
+
+<h3 id="installing-packages-at-build-time">Installing packages at build time</h3>
+
+<p>If the guest OS you are installing is similar to the host OS (eg. both are Linux), and if libguestfs supports network connections, then you can use <i>--install</i> to install packages like this:</p>
+
+<pre><code> virt-builder fedora-20 --install inkscape</code></pre>
+
+<p>This uses the guest&#39;s package manager and the host&#39;s network connection.</p>
+
+<h3 id="updating-packages-at-build-time">Updating packages at build time</h3>
+
+<p>To update the core set of packages in the template at build time:</p>
+
+<pre><code> virt-builder fedora-20 --update</code></pre>
+
+<p>Most of the templates that ship with virt-builder come with a very minimal selection of packages (known as a &quot;JEOS&quot; or &quot;Just Enough Operating System&quot;), which are up to date at the time the template is created, but could be out of date by the time you come to install an OS from the template. This option updates those template packages.</p>
+
+<h3 id="installing-packages-at-first-boot">Installing packages at first boot</h3>
+
+<p>Another option is to install the packages when the guest first boots:</p>
+
+<pre><code> virt-builder fedora-20 --firstboot-install inkscape</code></pre>
+
+<p>This uses the guest&#39;s package manager and the guest&#39;s network connection.</p>
+
+<p>The downsides are that it will take the guest a lot longer to boot first time, and there&#39;s nothing much you can do if package installation fails (eg. if a network problem means the guest can&#39;t reach the package repositories).</p>
+
+<h3 id="installing-packages-at-build-time-from-a-side-repository">Installing packages at build time from a side repository</h3>
+
+<p>If the software you want to install is not available in the main package repository of the guest, then you can add a side repository. Usually this is presented as an ISO (CD disk image) file containing extra packages.</p>
+
+<p>You can create the disk image using either <a href="http://man.he.net/man1/genisoimage">genisoimage(1)</a> or <a href="virt-make-fs.1.html">virt-make-fs(1)</a>. For genisoimage, use a command like this:</p>
+
+<pre><code> genisoimage -o extra-packages.iso -R -J -V EXTRA cdcontents/</code></pre>
+
+<p>Create a script that mounts the ISO and sets up the repository. For yum, create /tmp/install.sh containing:</p>
+
+<pre><code> mkdir /tmp/mount
+ mount LABEL=EXTRA /tmp/mount
+ 
+ cat &lt;&lt;&#39;EOF&#39; &gt; /etc/yum.repos.d/extra.repo
+ [extra]
+ name=extra
+ baseurl=file:///tmp/mount
+ enabled=1
+ EOF
+ 
+ yum -y install famousdatabase</code></pre>
+
+<p>For apt, create /tmp/install.sh containing:</p>
+
+<pre><code> mkdir /tmp/mount
+ mount LABEL=EXTRA /tmp/mount
+ 
+ apt-cdrom -d=/tmp/mount add
+ apt-get -y install famousdatabase</code></pre>
+
+<p>Use the <i>--attach</i> option to attach the CD / disk image and the <i>--run</i> option to run the script:</p>
+
+<pre><code> virt-builder fedora-20 \
+   --attach extra-packages.iso \
+   --run /tmp/install.sh</code></pre>
+
+<h2 id="users-and-passwords">USERS AND PASSWORDS</h2>
+
+<p>The <i>--root-password</i> option is used to change the root password (otherwise a random password is used). This option takes a password <code>SELECTOR</code> in one of the following formats:</p>
+
+<dl>
+
+<dt><b>--root-password</b> file:FILENAME</dt>
+<dd>
+
+<p>Read the root password from <code>FILENAME</code>. The whole first line of this file is the replacement password. Any other lines are ignored. You should create the file with mode 0600 to ensure no one else can read it.</p>
+
+</dd>
+<dt><b>--root-password</b> password:PASSWORD</dt>
+<dd>
+
+<p>Set the root password to the literal string <code>PASSWORD</code>.</p>
+
+<p><b>Note: this is not secure</b> since any user on the same machine can see the cleartext password using <a href="http://man.he.net/man1/ps">ps(1)</a>.</p>
+
+</dd>
+<dt><b>--root-password</b> random</dt>
+<dd>
+
+<p>Choose a random password, which is printed on stdout. The password has approximately 120 bits of randomness.</p>
+
+<p>This is the default.</p>
+
+</dd>
+<dt><b>--root-password</b> disabled</dt>
+<dd>
+
+<p>The root account password is disabled. This is like putting <code>*</code> in the password field.</p>
+
+</dd>
+<dt><b>--root-password</b> locked:file:FILENAME</dt>
+<dd>
+
+</dd>
+<dt><b>--root-password</b> locked:password:PASSWORD</dt>
+<dd>
+
+</dd>
+<dt><b>--root-password</b> locked:random</dt>
+<dd>
+
+<p>The root account is locked, but a password is placed on the account. If first unlocked (using <code>passwd -u</code>) then logins will use the given password.</p>
+
+</dd>
+<dt><b>--root-password</b> locked</dt>
+<dd>
+
+</dd>
+<dt><b>--root-password</b> locked:disabled</dt>
+<dd>
+
+<p>The root account is locked <i>and</i> password is disabled.</p>
+
+</dd>
+</dl>
+
+<h3 id="creating-user-accounts">Creating user accounts</h3>
+
+<p>To create user accounts, use the <a href="http://man.he.net/man8/useradd">useradd(8)</a> command with <a href="http://search.cpan.org/perldoc?--firstboot-command">--firstboot-command</a> like this:</p>
+
+<pre><code> virt-builder --firstboot-command \
+    &#39;useradd -m -p &quot;&quot; rjones ; chage -d 0 rjones&#39;</code></pre>
+
+<p>The above command will create an <code>rjones</code> account with no password, and force the user to set a password when they first log in. There are other ways to manage passwords, see <a href="http://man.he.net/man8/useradd">useradd(8)</a> for details.</p>
+
+<h2 id="keyboard-layout">KEYBOARD LAYOUT</h2>
+
+<p>Because there are so many different ways to set the keyboard layout in Linux distributions, virt-builder does not yet attempt to have a simple command line option. This section describes how to set the keyboard for some common Linux distributions.</p>
+
+<h3 id="keyboard-layout-with-systemd">Keyboard layout with systemd</h3>
+
+<p>For distros that use systemd <code>localectl</code>, use a command like this:</p>
+
+<pre><code> virt-builder fedora-20 \
+   --firstboot-command &#39;localectl set-keymap uk&#39;</code></pre>
+
+<p>See <a href="http://man.he.net/man1/localectl">localectl(1)</a> and <a href="https://www.happyassassin.net/2013/11/23/keyboard-layouts-in-fedora-20-and-previously/">https://www.happyassassin.net/2013/11/23/keyboard-layouts-in-fedora-20-and-previously/</a> for more details.</p>
+
+<h3 id="keyboard-layout-using-etc-sysconfig-keyboard">Keyboard layout using <i>/etc/sysconfig/keyboard</i></h3>
+
+<p>For RHEL &le; 6, Fedora &le; 18 and similar, upload or modify the keyboard configuration file using the <i>--upload</i>, <i>--write</i> or <i>--edit</i> options. For example:</p>
+
+<pre><code> virt-builder centos-6 \
+   --edit &#39;/etc/sysconfig/keyboard: s/^KEYTABLE=.*/KEYTABLE=&quot;uk&quot;/&#39;</code></pre>
+
+<p>The format of this file can be found documented in many places online.</p>
+
+<h3 id="keyboard-layout-with-debian-derived-distros">Keyboard layout with Debian-derived distros</h3>
+
+<p>For Debian-derived distros using <i>/etc/default/keyboard</i>, upload or modify the keyboard file using the <i>--upload</i>, <i>--write</i> or <i>--edit</i> options. For example:</p>
+
+<pre><code> virt-builder debian-7 \
+   --edit &#39;/etc/default/keyboard: s/^XKBLAYOUT=.*/XKBLAYOUT=&quot;gb&quot;/&#39;</code></pre>
+
+<p>See <a href="https://wiki.debian.org/Keyboard">https://wiki.debian.org/Keyboard</a>.</p>
+
+<h2 id="language">LANGUAGE</h2>
+
+<p>Most Linux distributions support multiple locale settings so that you can have guest messages printed in another language such as Russian.</p>
+
+<p>However there is no single setting which controls this, since extra packages may need to be installed to support console and X fonts, and keyboard input methods. The packages required, and their configuration is highly distro-specific, and it is outside the scope of virt-builder to do this.</p>
+
+<p>This section contains examples for some common Linux distributions.</p>
+
+<h3 id="setting-japanese-in-fedora-20">Setting Japanese in Fedora 20</h3>
+
+<pre><code> virt-builder fedora-20 \
+   --size 20G \
+   --update \
+   --install @japanese-support \
+   --install @xfce \
+   --install xorg-x11-server-Xorg,xorg-x11-drivers,rsyslog \
+   --link /usr/lib/systemd/system/graphical.target:/etc/systemd/system/default.target \
+   --firstboot-command &#39;localectl set-locale LANG=ja_JP.utf8&#39; \
+   --firstboot-command &#39;localectl set-keymap jp&#39; \
+   --firstboot-command &#39;systemctl isolate graphical.target&#39;</code></pre>
+
+<h3 id="setting-japanese-in-debian-7-wheezy-">Setting Japanese in Debian 7 (Wheezy)</h3>
+
+<p>Note that although this enables Japanese in the text console too, it is unlikely that you will see properly rendered Japanese there. However Japanese is properly rendered in X applications and terminals.</p>
+
+<pre><code> pkgs=locales,xfce4,\
+ ibus,ibus-anthy,\
+ ttf-sazanami-gothic,ttf-sazanami-mincho,\
+ fonts-takao-mincho,\
+ xfonts-intl-japanese,xfonts-intl-japanese-big,\
+ iceweasel-l10n-ja,manpages-ja
+ 
+ virt-builder debian-7 \
+   --size 20G \
+   --install $pkgs \
+   --edit &#39;/etc/inittab: s,^#([1-9].*respawn.*/sbin/getty.*),$1,&#39; \
+   --edit &#39;/etc/locale.gen: s,^#\s*ja,ja,&#39; \
+   --write &#39;/etc/default/locale:LANG=&quot;ja_JP.UTF-8&quot;&#39; \
+   --run-command &quot;locale-gen&quot;</code></pre>
+
+<h2 id="log-file">LOG FILE</h2>
+
+<p>Scripts and package installation that runs at build time (<i>--run</i>, <i>--run-command</i>, <i>--install</i>, <i>--update</i>, but <i>not</i> firstboot) is logged in one of the following locations:</p>
+
+<dl>
+
+<dt><i>/tmp/builder.log</i></dt>
+<dd>
+
+<p>On Linux, BSD and other guests.</p>
+
+</dd>
+<dt><i>C:\Temp\builder.log</i></dt>
+<dd>
+
+<p>On Windows, DOS guests.</p>
+
+</dd>
+<dt><i>/builder.log</i></dt>
+<dd>
+
+<p>If <i>/tmp</i> or <i>C:\Temp</i> is missing.</p>
+
+</dd>
+</dl>
+
+<p>If you don&#39;t want the log file to appear in the final image, then use the <i>--no-logfile</i> command line option.</p>
+
+<h2 id="ssh-keys">SSH KEYS</h2>
+
+<p>The <i>--ssh-inject</i> option is used to inject ssh keys for users in the guest, so they can login without supplying a password.</p>
+
+<p>The <code>SELECTOR</code> part of the option value is optional; in this case, <i>--ssh-inject</i> <code>USER</code> means that we look in the <i>current</i> user&#39;s <i>~/.ssh</i> directory to find the default public ID file. That key is uploaded. &quot;default public ID&quot; is the <i>default_ID_file</i> file described in <a href="http://man.he.net/man1/ssh-copy-id">ssh-copy-id(1)</a>.</p>
+
+<p>If specified, the <code>SELECTOR</code> can be in one of the following formats:</p>
+
+<dl>
+
+<dt><b>--ssh-inject</b> USER:file:FILENAME</dt>
+<dd>
+
+<p>Read the ssh key from <i>FILENAME</i>. <i>FILENAME</i> is usually a <i>.pub</i> file.</p>
+
+</dd>
+<dt><b>--ssh-inject</b> USER:string:KEY_STRING</dt>
+<dd>
+
+<p>Use the specified <code>KEY_STRING</code>. <code>KEY_STRING</code> is usually a public string like <i>ssh-rsa AAAA.... user@localhost</i>.</p>
+
+</dd>
+</dl>
+
+<p>In any case, the <i>~USER/.ssh</i> directory and the <i>~USER/.ssh/authorized_keys</i> file will be created if not existing already.</p>
+
+<h2 id="first-boot-scripts">FIRST BOOT SCRIPTS</h2>
+
+<p>The <i>--firstboot</i> and <i>--firstboot-command</i> options allow you to execute commands at the first boot of the guest. To do so, an init script for the guest init system is installed, which takes care of running all the added scripts and commands.</p>
+
+<p>Supported operating systems are:</p>
+
+<dl>
+
+<dt>Linux</dt>
+<dd>
+
+<p>Init systems supported are: systemd, System-V init (known also as sysvinit), and Upstart (using the System-V scripts).</p>
+
+<p>Note that usually init scripts run as root, but with a more limited environment than what could be available from a normal shell: for example, <code>$HOME</code> may be unset or empty.</p>
+
+<p>The output of the first boot scripts is available in the guest as <i>~root/virt-sysprep-firstboot.log</i>.</p>
+
+</dd>
+<dt>Windows</dt>
+<dd>
+
+<p><i>rhsrvany.exe</i>, available from sources at <a href="https://github.com/rwmjones/rhsrvany">https://github.com/rwmjones/rhsrvany</a>, is installed to run the first boot scripts. It is required, and the setup of first boot scripts will fail if it is not present.</p>
+
+<p><i>rhsrvany.exe</i> is copied from the location pointed to by the <code>VIRT_TOOLS_DATA_DIR</code> environment variable; if not set, a compiled-in default will be used (something like <i>/usr/share/virt-tools</i>).</p>
+
+<p>The output of the first boot scripts is available in the guest as <i>C:\Program Files\Red Hat\Firstboot\log.txt</i>.</p>
+
+</dd>
+</dl>
+
+<h2 id="subscription-manager">SUBSCRIPTION-MANAGER</h2>
+
+<p>It is possible to automate the registration and attaching of the system using <code>subscription-manager</code>. This is typical on Red Hat Enterprise Linux guests. There are few options which ease this process, avoid executing commands manually and exposing passwords on command line.</p>
+
+<p><i>--sm-register</i> starts the registration process, and requires <i>--sm-credentials</i> to be specified; the format of the <code>SELECTOR</code> of <i>--sm-credentials</i> is one of the following formats:</p>
+
+<dl>
+
+<dt><b>--sm-credentials</b> USER:file:FILENAME</dt>
+<dd>
+
+<p>Read the password for the specified <code>USER</code> from <i>FILENAME</i>.</p>
+
+</dd>
+<dt><b>--sm-credentials</b> USER:password:PASSWORD</dt>
+<dd>
+
+<p>Use the literal string <code>PASSWORD</code> for the specified <code>USER</code>.</p>
+
+</dd>
+</dl>
+
+<p><i>--sm-attach</i> attaches the system to subscriptions; the format of its <code>SELECTOR</code> is one of the following:</p>
+
+<dl>
+
+<dt><b>--sm-attach</b> auto</dt>
+<dd>
+
+<p><code>subscription-manager</code> attaches to the best-fitting subscriptions for the system.</p>
+
+</dd>
+<dt><b>--sm-attach</b> file:FILENAME</dt>
+<dd>
+
+<p>Read the pool ID from <i>FILENAME</i>.</p>
+
+</dd>
+<dt><b>--sm-attach</b> pool:POOL</dt>
+<dd>
+
+<p>Use the literal string <code>POOL</code> as pool ID.</p>
+
+</dd>
+</dl>
+
+<p><i>--sm-remove</i> removes all the subscriptions from the guest, while <i>--sm-unregister</i> completely unregister the system.</p>
+
+<h2 id="installation-process">INSTALLATION PROCESS</h2>
+
+<p>When you invoke virt-builder, installation proceeds as follows:</p>
+
+<ul>
+
+<li><p>The template image is downloaded.</p>
+
+<p>If the template image is present in the cache, the cached version is used instead. (See <a href="#caching">&quot;CACHING&quot;</a>).</p>
+
+</li>
+<li><p>The template signature is checked.</p>
+
+</li>
+<li><p>The template is uncompressed to a tmp file.</p>
+
+</li>
+<li><p>The template image is resized into the destination, using <a href="virt-resize.1.html">virt-resize(1)</a>.</p>
+
+</li>
+<li><p>Extra disks are attached (<i>--attach</i>).</p>
+
+</li>
+<li><p>A new random seed is generated for the guest.</p>
+
+</li>
+<li><p>Guest customization is performed, in the order specified on the command line.</p>
+
+</li>
+<li><p>SELinux relabelling is done (<i>--selinux-relabel</i>).</p>
+
+</li>
+</ul>
+
+<h2 id="importing-the-disk-image">IMPORTING THE DISK IMAGE</h2>
+
+<h3 id="importing-into-libvirt">Importing into libvirt</h3>
+
+<p>Import the disk image into libvirt using <a href="http://man.he.net/man1/virt-install">virt-install(1)</a> <i>--import</i> option.</p>
+
+<pre><code> virt-install --import \
+   --name guest --ram 2048 \
+   --disk path=disk.img,format=raw --os-variant fedora20</code></pre>
+
+<p>Notes:</p>
+
+<ol>
+
+<li><p>You <i>must</i> specify the correct format. The format is <code>raw</code> unless you used virt-builder&#39;s <i>--format</i> option.</p>
+
+</li>
+<li><p><i>--os-variant</i> is highly recommended, because it will present optimum devices to enable the guest to run most efficiently. To get a list of all variants, do:</p>
+
+<pre><code> osinfo-query os</code></pre>
+
+<p>The above tool is provided by libosinfo package.</p>
+
+</li>
+<li><p>You can run virt-install as root or non-root. Each works slightly differently because libvirt manages a different set of virtual machines for each user. In particular virt-manager normally shows the root-owned VMs, whereas Boxes shows the user-owned VMs, and other tools probably work differently as well.</p>
+
+</li>
+</ol>
+
+<h3 id="importing-into-openstack">Importing into OpenStack</h3>
+
+<p>Import the image into Glance (the OpenStack image store) by doing:</p>
+
+<pre><code> glance image-create --name fedora-20-image --file fedora-20.img \
+   --disk-format raw --container-format bare \
+   --is-public True</code></pre>
+
+<p>The <i>--file</i> parameter is the virt-builder-generated disk image. It should match virt-builder&#39;s <i>--output</i> option. The <i>--disk-format</i> parameter should match virt-builder&#39;s <i>--format</i> option (or <code>raw</code> if you didn&#39;t use that option). The <i>--container-format</i> should always be <code>bare</code> since virt-builder doesn&#39;t put images into containers.</p>
+
+<p>You can use the <span style="white-space: nowrap;"><code>glance image-show <i>fedora-20-image</i></code></span> command to display the properties of the image.</p>
+
+<p>To boot up an instance of your image on a Nova compute node, do:</p>
+
+<pre><code> nova boot fedora-20-server --image fedora-20-image \
+   --flavor m1.medium</code></pre>
+
+<p>Use <span style="white-space: nowrap;"><code>nova flavor-list</code></span> to list possible machine flavors. Use <span style="white-space: nowrap;"><code>nova list</code></span> to list running instances.</p>
+
+<h3 id="booting-directly-using-qemu-or-kvm">Booting directly using qemu or KVM</h3>
+
+<p>The qemu command line is not very stable or easy to use, hence libvirt should be used if possible. However a command line similar to the following could be used to boot the virtual machine:</p>
+
+<pre><code> qemu-system-x86_64 \
+   -machine accel=kvm:tcg \
+   -cpu host \
+   -m 2048 \
+   -drive file=disk.img,format=raw,if=virtio</code></pre>
+
+<p>As with libvirt, it is very important that the correct format is chosen. It will be <code>raw</code> unless the <i>--format</i> option was used.</p>
+
+<h2 id="configuration-management">CONFIGURATION MANAGEMENT</h2>
+
+<h3 id="puppet">Puppet</h3>
+
+<p>To enable the Puppet agent in a guest, install the package, point the configuration at your Puppetmaster, and ensure the agent runs at boot.</p>
+
+<p>A typical virt-builder command would be:</p>
+
+<pre><code> virt-builder fedora-20 \
+   --hostname client.example.com \
+   --update \
+   --install puppet \
+   --edit &#39;/etc/puppet/puppet.conf:
+       s/^\[agent\]/[agent]\n  server = puppetmaster.example.com/&#39; \
+   --run-command &#39;systemctl enable puppet&#39; \
+   --selinux-relabel</code></pre>
+
+<p>The precise instructions vary according to the Linux distro. For further information see: <a href="http://docs.puppetlabs.com/guides/installation.htm">http://docs.puppetlabs.com/guides/installation.htm</a></p>
+
+<h2 id="debugging-builds">DEBUGGING BUILDS</h2>
+
+<p>If virt-builder itself fails, then enable debugging (<i>-v</i>) and report a bug (see <a href="#bugs">&quot;BUGS&quot;</a> below).</p>
+
+<p>If virt-builder fails because some script or package it is installing fails, try using <i>--no-delete-on-failure</i> to preserve the output file, and continue reading this section.</p>
+
+<p>If virt-builder is successful but the image doesn&#39;t work, here are some things to try:</p>
+
+<dl>
+
+<dt>Use virt-rescue</dt>
+<dd>
+
+<p>Run <a href="virt-rescue.1.html">virt-rescue(1)</a> on the disk image:</p>
+
+<pre><code> virt-rescue -a disk.img</code></pre>
+
+<p>This gives you a rescue shell. You can mount the filesystems from the disk image on <i>/sysroot</i> and examine them using ordinary Linux commands. You can also chroot into the guest to reinstall the bootloader. The virt-rescue man page has a lot more information and examples.</p>
+
+</dd>
+<dt>Use guestfish</dt>
+<dd>
+
+<p>Run <a href="guestfish.1.html">guestfish(1)</a> on the disk image:</p>
+
+<pre><code> guestfish -a disk.img -i</code></pre>
+
+<p>Use guestfish commands like <code>ll /directory</code> and <code>cat /file</code> to examine directories and files.</p>
+
+</dd>
+<dt>Use guestmount</dt>
+<dd>
+
+<p>Mount the disk image safely on the host using FUSE and <a href="guestmount.1.html">guestmount(1)</a>:</p>
+
+<pre><code> mkdir /tmp/mp
+ guestmount -a disk.img -i /tmp/mp
+ cd /tmp/mp</code></pre>
+
+<p>To unmount the disk image do:</p>
+
+<pre><code> fusermount -u /tmp/mp</code></pre>
+
+</dd>
+<dt>Add a serial console</dt>
+<dd>
+
+<p>If the guest hangs during boot, it can be helpful to add a serial console to the guest, and direct kernel messages to the serial console. Adding the serial console will involve looking at the documentation for your hypervisor. To direct kernel messages to the serial console, add the following on the kernel command line:</p>
+
+<pre><code> console=tty0 console=ttyS0,115200</code></pre>
+
+</dd>
+</dl>
+
+<h2 id="sources-of-templates">SOURCES OF TEMPLATES</h2>
+
+<p>virt-builder reads the available sources from configuration files, with the <i>.conf</i> extension and located in the following paths:</p>
+
+<ul>
+
+<li><p>$XDG_CONFIG_HOME/virt-builder/repos.d/ (<code>$XDG_CONFIG_HOME</code> is <i>$HOME/.config</i> if not set).</p>
+
+</li>
+<li><p>$XDG_CONFIG_DIRS/virt-builder/repos.d/ (where <code>$XDG_CONFIG_DIRS</code> means any of the directories in that environment variable, or just <i>/etc/xdg</i> if not set)</p>
+
+</li>
+</ul>
+
+<p>Each <i>.conf</i> file in those paths has a simple text format like the following:</p>
+
+<pre><code> [libguestfs.org]
+ uri=http://libguestfs.org/download/builder/index.asc
+ gpgkey=file:///etc/xdg/virt-builder/repos.d/libguestfs.gpg</code></pre>
+
+<p>The part in square brackets is the repository identifier, which is used as unique identifier.</p>
+
+<p>The following fields can appear:</p>
+
+<dl>
+
+<dt><code>uri=URI</code></dt>
+<dd>
+
+<p>The URI of the index file which this repository refers to.</p>
+
+<p>This field is required.</p>
+
+</dd>
+<dt><code>gpgkey=URI</code></dt>
+<dd>
+
+<p>This optional field represents the URI (although only <i>file://</i> URIs are accepted) of the key used to sign the index file. If not present, the index file referred by <i>uri=..</i> is not signed.</p>
+
+</dd>
+<dt><code>proxy=MODE</code></dt>
+<dd>
+
+<p>This optional field specifies the proxy mode, to be used when downloading the index file of this repository. The possible values are:</p>
+
+<dl>
+
+<dt><b>no</b>, <b>off</b></dt>
+<dd>
+
+<p>No proxy is being used at all, even overriding the system configuration.</p>
+
+</dd>
+<dt><b>system</b></dt>
+<dd>
+
+<p>The proxy used is the system one.</p>
+
+</dd>
+<dt><i>anything else</i></dt>
+<dd>
+
+<p>Specifies the actual proxy configuration to be used, overriding the system configuration.</p>
+
+</dd>
+</dl>
+
+<p>If not present, the assumed value is to respect the proxy settings of the system (i.e. as if <b>system</b> would be specified).</p>
+
+</dd>
+</dl>
+
+<p>For serious virt-builder use, you may want to create your own repository of templates.</p>
+
+<h3 id="libguestfs.org-repository">Libguestfs.org repository</h3>
+
+<p>Out of the box, virt-builder downloads the file <a href="http://libguestfs.org/download/builder/index.asc">http://libguestfs.org/download/builder/index.asc</a> which is an index of available templates plus some information about each one, wrapped up in a digital signature. The command <code>virt-builder --list</code> lists out the information in this index file.</p>
+
+<p>The templates hosted on libguestfs.org were created using shell scripts, kickstart files and preseed files which can be found in the libguestfs source tree, in <code>builder/website</code>.</p>
+
+<h3 id="setting-up-the-repository">Setting up the repository</h3>
+
+<p>You can set up your own site containing an index file and some templates, and then point virt-builder at the site by creating a <i>.conf</i> file pointing to it.</p>
+
+<p>Note that if your index is signed, you will need to properly fill <i>gpgkey=..</i> in your <i>.conf</i> file, making sure to deploy also the GPG key file.</p>
+
+<pre><code> virt-builder --source https://example.com/builder/index.asc \
+    --fingerprint &#39;AAAA BBBB ...&#39; \
+    --list</code></pre>
+
+<p>You can host this on any web or FTP server, or a local or network filesystem.</p>
+
+<h3 id="setting-up-a-gpg-key">Setting up a GPG key</h3>
+
+<p>If you don&#39;t have a GnuPG key, you will need to set one up. (Strictly speaking this is optional, but if your index and template files are not signed then virt-builder users will have to use the <i>--no-check-signature</i> flag every time they use virt-builder.)</p>
+
+<p>To create a key, see the GPG manual <a href="http://www.gnupg.org/gph/en/manual.html">http://www.gnupg.org/gph/en/manual.html</a>.</p>
+
+<p>Export your GPG public key:</p>
+
+<pre><code> gpg --export -a &quot;you@example.com&quot; &gt; pubkey
+ </code></pre>
+
+<h3 id="create-the-templates">Create the templates</h3>
+
+<p>There are many ways to create the templates. For example you could clone existing guests (see <a href="virt-sysprep.1.html">virt-sysprep(1)</a>), or you could install a guest by hand (<a href="http://man.he.net/man1/virt-install">virt-install(1)</a>). To see how the templates were created for virt-builder, look at the scripts in <code>builder/website</code></p>
+
+<p>For best results when compressing the templates, use the following xz options (see <a href="http://man.he.net/man1/nbdkit-xz-plugin">nbdkit-xz-plugin(1)</a> for further explanation):</p>
+
+<pre><code> xz --best --block-size=16777216 disk</code></pre>
+
+<h3 id="creating-and-signing-the-index-file">Creating and signing the index file</h3>
+
+<p>The index file has a simple text format (shown here without the digital signature):</p>
+
+<pre><code> [fedora-18]
+ name=Fedora&reg; 18
+ osinfo=fedora18
+ arch=x86_64
+ file=fedora-18.xz
+ checksum[sha512]=...
+ format=raw
+ size=6442450944
+ compressed_size=148947524
+ expand=/dev/sda3
+ 
+ [fedora-19]
+ name=Fedora&reg; 19
+ osinfo=fedora19
+ arch=x86_64
+ file=fedora-19.xz
+ checksum[sha512]=...
+ revision=3
+ format=raw
+ size=4294967296
+ compressed_size=172190964
+ expand=/dev/sda3</code></pre>
+
+<p>The part in square brackets is the <code>os-version</code>, which is the same string that is used on the virt-builder command line to build that OS.</p>
+
+<p>After preparing the <code>index</code> file in the correct format, clearsign it using the following command:</p>
+
+<pre><code> gpg --clearsign --armor index</code></pre>
+
+<p>This will create the final file called <i>index.asc</i> which can be uploaded to the server (and is the <i>uri=..</i> URL). As noted above, signing the index file is optional, but recommended.</p>
+
+<p>The following fields can appear:</p>
+
+<dl>
+
+<dt><code>name=NAME</code></dt>
+<dd>
+
+<p>The user-friendly name of this template. This is displayed in the <i>--list</i> output but is otherwise not significant.</p>
+
+</dd>
+<dt><code>osinfo=ID</code></dt>
+<dd>
+
+<p>This optional field maps the operating system to the associated libosinfo ID. Virt-builder does not use it (yet).</p>
+
+</dd>
+<dt><code>arch=ARCH</code></dt>
+<dd>
+
+<p>The architecture of the operating system installed within the template. This field is required.</p>
+
+</dd>
+<dt><code>file=PATH</code></dt>
+<dd>
+
+<p>The path (relative to the index) of the xz-compressed template.</p>
+
+<p>Note that absolute paths or URIs are <b>not</b> permitted here. This is because virt-builder has a &quot;same origin&quot; policy for templates so they cannot come from other servers.</p>
+
+</dd>
+<dt><code>sig=PATH</code></dt>
+<dd>
+
+<p><b>This option is deprecated</b>. Use the checksum field instead.</p>
+
+<p>The path (relative to the index) of the GPG detached signature of the xz file.</p>
+
+<p>Note that absolute paths or URIs are <b>not</b> permitted here. This is because virt-builder has a &quot;same origin&quot; policy for templates so they cannot come from other servers.</p>
+
+<p>The file can be created as follows:</p>
+
+<pre><code> gpg --detach-sign --armor -o disk.xz.sig disk.xz</code></pre>
+
+</dd>
+<dt><code>checksum[sha512]=7b882fe9b82eb0fef...</code></dt>
+<dd>
+
+<p>The SHA-512 checksum of the <b>compressed</b> file is checked after it is downloaded. To work out the signature, do:</p>
+
+<pre><code> sha512sum disk.xz</code></pre>
+
+<p>Note if you use this, you don&#39;t need to sign the file, ie. don&#39;t use <code>sig</code>. This option overrides <code>sig</code>.</p>
+
+</dd>
+<dt><code>checksum=7b882fe9b82eb0fef...</code></dt>
+<dd>
+
+<p><code>checksum</code> is an alias for <code>checksum[sha512]</code>.</p>
+
+<p>If you need to interoperate with virt-builder = 1.24.0 then you have to use <code>checksum</code> because that version would give a parse error with square brackets and numbers in the key of a field. This is fixed in virt-builder &ge; 1.24.1.</p>
+
+</dd>
+<dt><code>revision=N</code></dt>
+<dd>
+
+<p>The revision is an integer which is used to control the template cache. Increasing the revision number causes clients to download the template again even if they have a copy in the cache.</p>
+
+<p>The revision number is optional. If omitted it defaults to <code>1</code>.</p>
+
+</dd>
+<dt><code>format=raw</code></dt>
+<dd>
+
+</dd>
+<dt><code>format=qcow2</code></dt>
+<dd>
+
+<p>Specify the format of the disk image (before it was compressed). If not given, the format is autodetected, but generally it is better to be explicit about the intended format.</p>
+
+<p>Note this is the source format, which is different from the <i>--format</i> option (requested output format). Virt-builder does on-the-fly conversion from the source format to the requested output format.</p>
+
+</dd>
+<dt><code>size=NNN</code></dt>
+<dd>
+
+<p>The virtual size of the image in bytes. This is the size of the image when uncompressed. If using a non-raw format such as qcow2 then it means the virtual disk size, not the size of the qcow2 file.</p>
+
+<p>This field is required.</p>
+
+<p>Virt-builder also uses this as the minimum size that users can request via the <i>--size</i> option, or as the default size if there is no <i>--size</i> option.</p>
+
+</dd>
+<dt><code>compressed_size=NNN</code></dt>
+<dd>
+
+<p>The compressed size of the disk image in bytes. This is just used for information (when using <i>--list --long</i>).</p>
+
+</dd>
+<dt><code>expand=/dev/sdaX</code></dt>
+<dd>
+
+<p>When expanding the image to its final size, instruct <a href="virt-resize.1.html">virt-resize(1)</a> to expand the named partition in the guest image to fill up all available space. This works like the virt-resize <i>--expand</i> option.</p>
+
+<p>You should usually put the device name of the guest&#39;s root filesystem here.</p>
+
+<p>It&#39;s a good idea to use this, but not required. If the field is omitted then virt-resize will create an extra partition at the end of the disk to cover the free space, which is much less user-friendly.</p>
+
+</dd>
+<dt><code>lvexpand=/dev/VolGroup/LogVol</code></dt>
+<dd>
+
+<p>When expanding the image to its final size, instruct <a href="virt-resize.1.html">virt-resize(1)</a> to expand the named logical volume in the guest image to fill up all available space. This works like the virt-resize <i>--lv-expand</i> option.</p>
+
+<p>If the guest uses LVM2 you should usually put the LV of the guest&#39;s root filesystem here. If the guest does not use LVM2 or its root filesystem is not on an LV, don&#39;t use this option.</p>
+
+</dd>
+<dt><code>notes=NOTES</code></dt>
+<dd>
+
+<p>Any notes that go with this image, especially notes describing what packages are in the image, how the image was prepared, and licensing information.</p>
+
+<p>This information is shown in the <i>--notes</i> and <i>--list</i> <i>--long</i> modes.</p>
+
+<p>You can use multi-line notes here by indenting each new line with at least one character of whitespace (even on blank lines):</p>
+
+<pre><code> notes=This image was prepared using
+  the following kickstart script:
+                                &lt;-- one space at beginning of line
+  part /boot --fstype ext3
+  ...</code></pre>
+
+</dd>
+<dt><code>hidden=true</code></dt>
+<dd>
+
+<p>Using the hidden flag prevents the template from being listed by the <i>--list</i> option (but it is still installable). This is used for test images.</p>
+
+</dd>
+<dt><code>aliases=ALIAS1 ALIAS2 ...</code></dt>
+<dd>
+
+<p>This optional field specifies a list of aliases, separated by spaces, for the image. For example, an alias could be used to always point to the latest version of a certain image, leaving the old versions available in the index instead of updating the same image (see the <code>revision</code> field).</p>
+
+</dd>
+</dl>
+
+<h3 id="running-virt-builder-against-multiple-sources">Running virt-builder against multiple sources</h3>
+
+<p>It is possible to use multiple sources with virt-builder. The recommended way is to deploy <i>.conf</i> files pointing to the index files. Another way is to specify the sources using multiple <i>--source</i> and/or <i>--fingerprint</i> options:</p>
+
+<pre><code> virt-builder \
+   --source http://example.com/s1/index.asc \
+   --source http://example.com/s2/index.asc</code></pre>
+
+<p>You can provide N or 1 fingerprints. In the case where you provide N fingerprints, N = number of sources and there is a 1-1 correspondence between each source and each fingerprint:</p>
+
+<pre><code> virt-builder \
+   --source http://example.com/s1/index.asc --fingerprint &#39;0123 ...&#39; \
+   --source http://example.com/s2/index.asc --fingerprint &#39;9876 ...&#39;</code></pre>
+
+<p>In the case where you provide 1 fingerprint, the same fingerprint is used for all sources.</p>
+
+<p>You <code>must</code> provide at least 1 fingerprint.</p>
+
+<h3 id="licensing-of-templates">Licensing of templates</h3>
+
+<p>You should be aware of the licensing of images that you distribute. For open source guests, provide a link to the source code in the <code>notes</code> field and comply with other requirements (eg. around trademarks).</p>
+
+<h3 id="formal-specification-of-the-index-file">Formal specification of the index file</h3>
+
+<p>The index file format has a formal specification defined by the flex scanner and bison parser used to parse the file. This can be found in the following files in the libguestfs source tree:</p>
+
+<pre><code> builder/index-scan.l
+ builder/index-parse.y</code></pre>
+
+<p>A tool called <a href="virt-index-validate.1.html">virt-index-validate(1)</a> is available to validate the index file to ensure it is correct.</p>
+
+<p>Note that the parser and tool can work on either the signed or unsigned index file (ie. <i>index</i> or <i>index.asc</i>).</p>
+
+<p>The index is always encoded in UTF-8.</p>
+
+<h2 id="caching">CACHING</h2>
+
+<h3 id="caching-templates">Caching templates</h3>
+
+<p>Since the templates are usually very large, downloaded templates are cached in the user&#39;s home directory.</p>
+
+<p>The location of the cache is <i>$XDG_CACHE_HOME/virt-builder/</i> or <i>$HOME/.cache/virt-builder</i>.</p>
+
+<p>You can print out information about the cache directory, including which guests are currently cached, by doing:</p>
+
+<pre><code> virt-builder --print-cache</code></pre>
+
+<p>The cache can be deleted if you want to save space by doing:</p>
+
+<pre><code> virt-builder --delete-cache</code></pre>
+
+<p>You can download all (current) templates to the local cache by doing:</p>
+
+<pre><code> virt-builder --cache-all-templates</code></pre>
+
+<p>To disable the template cache, use <i>--no-cache</i>.</p>
+
+<p>Only templates are cached. The index and detached digital signatures are not cached.</p>
+
+<h3 id="caching-packages">Caching packages</h3>
+
+<p>Virt-builder uses <a href="http://man.he.net/man1/curl">curl(1)</a> to download files and it also uses the current <code>http_proxy</code> (etc) settings when installing packages (<i>--install</i>, <i>--update</i>).</p>
+
+<p>You may therefore want to set those environment variables in order to maximize the amount of local caching that happens. See <a href="#environment-variables">&quot;ENVIRONMENT VARIABLES&quot;</a> and <a href="http://man.he.net/man1/curl">curl(1)</a>.</p>
+
+<h3 id="local-mirrors">Local mirrors</h3>
+
+<p>To increase both speed and reliability of installing packages, you can set up a local mirror of the target distribution, and point the guest package manager at that.</p>
+
+<p>Because of the order in which each phase of installation happens, you cannot use <i>--write</i> (to point the package manager at a repo) followed by <i>--install</i> (to install from that repo). The <i>--write</i> and <i>--install</i> steps run in the opposite order, regardless of their order on the command line. You have to do this using <i>--run-command</i> instead of <i>--install</i>.</p>
+
+<h4 id="using-a-local-mirror-with-fedora">Using a local mirror with Fedora</h4>
+
+<p>To install a Fedora guest using a local mirror:</p>
+
+<pre><code> virt-builder fedora-20 \
+   --edit &#39;/etc/yum.repos.d/fedora.repo:
+       s{.*baseurl=.*}{baseurl=http://example.com/mirror/};
+       s{.*metalink=.*}{};
+   &#39; \
+   --edit &#39;/etc/yum.repos.d/fedora-updates.repo:
+       s{.*baseurl=.*}{baseurl=http://example.com/mirror-updates/};
+       s{.*metalink=.*}{};
+   &#39; \
+   --run-command &#39;yum -y update&#39; \
+   --run-command &#39;yum -y install pkg1 pkg2 ...&#39;</code></pre>
+
+<h4 id="using-a-local-mirror-with-debian">Using a local mirror with Debian</h4>
+
+<p>Assuming that you are using <code>apt-proxy</code> to mirror the repository, you should create a new <i>sources.list</i> file to point to your proxy (see <a href="https://help.ubuntu.com/community/AptProxy">https://help.ubuntu.com/community/AptProxy</a>) and then do:</p>
+
+<pre><code> virt-builder debian-7 \
+   --upload sources.list:/etc/apt/sources.list \
+   --run-command &#39;apt-get -y update&#39; \
+   --run-command &#39;apt-get -y install pkg1 pkg2 ...&#39;</code></pre>
+
+<h2 id="digital-signatures">DIGITAL SIGNATURES</h2>
+
+<p>Virt-builder uses GNU Privacy Guard (GnuPG or gpg) to verify that the index and templates have not been tampered with.</p>
+
+<p>The source points to an index file, which is optionally signed.</p>
+
+<p>Virt-builder downloads the index and checks that the signature is valid and the signer&#39;s fingerprint matches the specified fingerprint (ie. the one specified in <i>gpgkey=..</i> in the <i>.conf</i>, or with <i>--fingerprint</i>, in that order).</p>
+
+<p>For checking against the built-in public key/fingerprint, this requires importing the public key into the user&#39;s local gpg keyring (that&#39;s just the way that gpg works).</p>
+
+<p>When a template is downloaded, its signature is checked in the same way.</p>
+
+<p>Although the signatures are optional, if you don&#39;t have them then virt-builder users will have to use <i>--no-check-signature</i> on the command line. This prevents an attacker from replacing the signed index file with an unsigned index file and having virt-builder silently work without checking the signature. In any case it is highly recommended that you always create signed index and templates.</p>
+
+<h2 id="architecture">ARCHITECTURE</h2>
+
+<p>Virt-builder can build a guest for any architecture no matter what the host architecture is. For example an x86-64 guest on an ARM host.</p>
+
+<p>However certain options may not work, specifically options that require running commands in the guest during the build process: <i>--install</i>, <i>--update</i>, <i>--run</i>, <i>--run-command</i>. You may need to replace these with their firstboot-equivalents.</p>
+
+<p>An x86-64 host building 32 bit i686 guests should work without any special steps.</p>
+
+<h2 id="security">SECURITY</h2>
+
+<p>Virt-builder does not need to run as root (in fact, should not be run as root), and doesn&#39;t use setuid, <code>sudo</code> or any similar mechanism.</p>
+
+<p><i>--install</i>, <i>--update</i>, <i>--run</i> and <i>--run-command</i> are implemented using an appliance (a small virtual machine) so these commands do not run on the host. If you are using the libguestfs libvirt backend and have SELinux enabled then the virtual machine is additionally encapsulated in an SELinux container (sVirt).</p>
+
+<p>However these options will have access to the host&#39;s network and since the template may contain untrusted code, the code might try to access host network resources which it should not. You can use <i>--no-network</i> to prevent this.</p>
+
+<p>Firstboot commands run in the context of the guest when it is booted, and so the security of your hypervisor / cloud should be considered.</p>
+
+<p>Virt-builder injects a random seed into every guest which it builds. This helps to ensure that TCP sequence numbers, UUIDs, ssh host keys etc are truly random when the guest boots.</p>
+
+<p>You should check digital signatures and not ignore any signing errors.</p>
+
+<h2 id="clones">CLONES</h2>
+
+<p>If you wish to create many new guests of the same type, it is tempting to run virt-builder once and then copy the output file. You should <b>not</b> do this. You should run virt-builder once for each new guest you need.</p>
+
+<p>The reason is that each clone needs to have (at least) a separate random seed, and possibly other unique features (such as filesystem UUIDs) in future versions of virt-builder.</p>
+
+<p>Another thing you should <i>not</i> do is to boot the guest, then clone the booted disk image. The reason is that some guests create unique machine IDs, SSH host keys and so on at first boot, and you would not want clones to have duplicate identities.</p>
+
+<p>See also: <a href="virt-sysprep.1.html">virt-sysprep(1)</a>.</p>
+
+<h2 id="performance">PERFORMANCE</h2>
+
+<p>The most important aspect of getting good performance is caching. Templates gets downloaded into the cache the first time they are used, or if you use the <i>--cache-all-templates</i> option. See <a href="#caching">&quot;CACHING&quot;</a> above for further information.</p>
+
+<p>Packages required for the <i>--install</i> and <i>--update</i> options are downloaded using the host network connection. Setting the <code>http_proxy</code>, <code>https_proxy</code> and <code>ftp_proxy</code> environment variables to point to a local web cache may ensure they only need to be downloaded once. You can also try using a local package repository, although this can be complex to set up and varies according to which Linux distro you are trying to install.</p>
+
+<h3 id="using---no-sync">Using <i>--no-sync</i></h3>
+
+<p>Use <i>--no-sync</i>. However read the caveats in the <a href="#options">&quot;OPTIONS&quot;</a> section above, since this can cause disk corruption if not used correctly.</p>
+
+<h3 id="skipping-virt-resize">Skipping virt-resize</h3>
+
+<p>Virt-builder can skip the virt-resize step under certain conditions. This makes virt-builder much faster. The conditions are:</p>
+
+<ul>
+
+<li><p>the output must be a regular file (not a block device), <b>and</b></p>
+
+</li>
+<li><p>the user did <b>not</b> use the <i>--size</i> option, <b>and</b></p>
+
+</li>
+<li><p>the output format is the same as the template format (usually raw).</p>
+
+</li>
+</ul>
+
+<h3 id="pxzcat">pxzcat</h3>
+
+<p>Virt-builder uses an internal implementation of pxzcat (parallel xzcat) if liblzma was found at build time. If liblzma was not found at build time, regular <code>xzcat</code> is used which is single-threaded.</p>
+
+<h3 id="user-mode-linux">User-Mode Linux</h3>
+
+<p>You can use virt-builder with the User-Mode Linux (UML) backend. This may be faster when running virt-builder inside a virtual machine (eg. in the cloud).</p>
+
+<p>To enable the UML backend, read the instructions in <a href="guestfs.3.html#user-mode-linux-backend">&quot;USER-MODE LINUX BACKEND&quot; in guestfs(3)</a>.</p>
+
+<p>Currently you have to use the <i>--no-network</i> option. This should be fixed in a future version.</p>
+
+<p>The qcow2 output format is not supported by UML. You can only create raw-format guests.</p>
+
+<h2 id="selinux">SELINUX</h2>
+
+<p>Guests which use SELinux (such as Fedora and Red Hat Enterprise Linux) require that each file has a correct SELinux label.</p>
+
+<p>Virt-builder does not know how to give new files a label, so there are two possible strategies it can use to ensure correct labelling:</p>
+
+<dl>
+
+<dt>Using <i>--selinux-relabel</i></dt>
+<dd>
+
+<p>This runs <a href="http://man.he.net/man8/fixfiles">fixfiles(8)</a> just before finalizing the guest, which sets SELinux labels correctly in the disk image.</p>
+
+<p>Sometimes fixfiles is not possible during installation, in which case this option falls back on:</p>
+
+</dd>
+<dt>Touching <i>/.autorelabel</i></dt>
+<dd>
+
+<p>Guest templates may already contain a file called <i>/.autorelabel</i>, or it is touched if <i>--selinux-relabel</i> cannot run fixfiles.</p>
+
+<p>For guests that use SELinux, this causes fixfiles to run at first boot. Guests will reboot themselves once the first time you use them, which is normal and harmless.</p>
+
+</dd>
+</dl>
+
+<p>Please note that if your guest uses SELinux, and you are doing operations on it which might create new files or change existing ones, you are recommended to use <i>--selinux-relabel</i>. This will help in making sure that files have the right SELinux labels.</p>
+
+<h1 id="machine-readable-output">MACHINE READABLE OUTPUT</h1>
+
+<p>The <i>--machine-readable</i> option can be used to make the output more machine friendly, which is useful when calling virt-builder from other programs, GUIs etc.</p>
+
+<p>Use the option on its own to query the capabilities of the virt-builder binary. Typical output looks like this:</p>
+
+<pre><code> $ virt-builder --machine-readable
+ virt-builder
+ arch
+ config-file
+ customize
+ json-list
+ pxzcat</code></pre>
+
+<p>A list of features is printed, one per line, and the program exits with status 0.</p>
+
+<h1 id="environment-variables">ENVIRONMENT VARIABLES</h1>
+
+<p>For other environment variables which affect all libguestfs programs, see <a href="guestfs.3.html#environment-variables">&quot;ENVIRONMENT VARIABLES&quot; in guestfs(3)</a>.</p>
+
+<dl>
+
+<dt><code>http_proxy</code></dt>
+<dd>
+
+</dd>
+<dt><code>https_proxy</code></dt>
+<dd>
+
+</dd>
+<dt><code>no_proxy</code></dt>
+<dd>
+
+<p>Set the proxy for downloads. These environment variables (and more) are actually interpreted by <a href="http://man.he.net/man1/curl">curl(1)</a>, not virt-builder.</p>
+
+</dd>
+<dt><code>HOME</code></dt>
+<dd>
+
+<p>Used to determine the location of the template cache, and the location of the user&#39; sources. See <a href="#caching">&quot;CACHING&quot;</a> and <a href="#sources-of-templates">&quot;SOURCES OF TEMPLATES&quot;</a>.</p>
+
+</dd>
+<dt><code>VIRT_TOOLS_DATA_DIR</code></dt>
+<dd>
+
+<p>This can point to the directory containing data files used for Windows firstboot installation.</p>
+
+<p>Normally you do not need to set this. If not set, a compiled-in default will be used (something like <i>/usr/share/virt-tools</i>).</p>
+
+<p>This directory may contain the following files:</p>
+
+<dl>
+
+<dt><i>rhsrvany.exe</i></dt>
+<dd>
+
+<p>This is the RHSrvAny Windows binary, used to install a &quot;firstboot&quot; script in Windows guests. It is required if you intend to use the <i>--firstboot</i> or <i>--firstboot-command</i> options with Windows guests.</p>
+
+<p>See also: <code>https://github.com/rwmjones/rhsrvany</code></p>
+
+</dd>
+</dl>
+
+</dd>
+<dt><code>XDG_CACHE_HOME</code></dt>
+<dd>
+
+<p>Used to determine the location of the template cache. See <a href="#caching">&quot;CACHING&quot;</a>.</p>
+
+</dd>
+<dt><code>XDG_CONFIG_HOME</code></dt>
+<dd>
+
+<p>Used to determine the location of the user&#39; sources. See <a href="#sources-of-templates">&quot;SOURCES OF TEMPLATES&quot;</a>.</p>
+
+</dd>
+<dt><code>XDG_CONFIG_DIRS</code></dt>
+<dd>
+
+<p>Used to determine the location of the system sources. See <a href="#sources-of-templates">&quot;SOURCES OF TEMPLATES&quot;</a>.</p>
+
+</dd>
+</dl>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>This program returns 0 if successful, or non-zero if there was an error.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="guestfish.1.html">guestfish(1)</a>, <a href="guestmount.1.html">guestmount(1)</a>, <a href="virt-copy-out.1.html">virt-copy-out(1)</a>, <a href="virt-customize.1.html">virt-customize(1)</a>, <a href="http://man.he.net/man1/virt-install">virt-install(1)</a>, <a href="virt-rescue.1.html">virt-rescue(1)</a>, <a href="virt-resize.1.html">virt-resize(1)</a>, <a href="virt-sysprep.1.html">virt-sysprep(1)</a>, <a href="http://man.he.net/man1/oz-install">oz-install(1)</a>, <a href="http://man.he.net/man1/gpg">gpg(1)</a>, <a href="http://man.he.net/man1/curl">curl(1)</a>, <a href="virt-make-fs.1.html">virt-make-fs(1)</a>, <a href="http://man.he.net/man1/genisoimage">genisoimage(1)</a>, <a href="http://man.he.net/man8/fixfiles">fixfiles(8)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2013 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

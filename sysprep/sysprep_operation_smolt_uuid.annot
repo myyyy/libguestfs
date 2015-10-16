@@ -1,0 +1,262 @@
+"sysprep_operation_smolt_uuid.ml" 24 848 852 "sysprep_operation_smolt_uuid.ml" 24 848 870
+type(
+  < inspect_get_type : 'a -> string; rm : string -> unit; .. > ->
+  'a -> 'b -> unit
+)
+ident(
+  def smolt_uuid_perform "sysprep_operation_smolt_uuid.ml" 35 1169 1169 --
+)
+"sysprep_operation_smolt_uuid.ml" 24 848 871 "sysprep_operation_smolt_uuid.ml" 24 848 872
+type(
+  < inspect_get_type : 'a -> string; rm : string -> unit; .. > as 'c
+)
+ident(
+  def g "sysprep_operation_smolt_uuid.ml" 24 848 873 "sysprep_operation_smolt_uuid.ml" 33 1164 1167
+)
+"sysprep_operation_smolt_uuid.ml" 24 848 873 "sysprep_operation_smolt_uuid.ml" 24 848 877
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_smolt_uuid.ml" 24 848 878 "sysprep_operation_smolt_uuid.ml" 33 1164 1167
+)
+"sysprep_operation_smolt_uuid.ml" 24 848 878 "sysprep_operation_smolt_uuid.ml" 24 848 890
+type(
+  'b
+)
+ident(
+  def side_effects "sysprep_operation_smolt_uuid.ml" 25 893 895 "sysprep_operation_smolt_uuid.ml" 33 1164 1167
+)
+"sysprep_operation_smolt_uuid.ml" 25 893 899 "sysprep_operation_smolt_uuid.ml" 25 893 902
+type(
+  string
+)
+"sysprep_operation_smolt_uuid.ml" 25 893 905 "sysprep_operation_smolt_uuid.ml" 25 893 906
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_smolt_uuid.ml" 24 848 871 "sysprep_operation_smolt_uuid.ml" 24 848 872
+)
+"sysprep_operation_smolt_uuid.ml" 25 893 905 "sysprep_operation_smolt_uuid.ml" 25 893 923
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_smolt_uuid.ml" 25 893 924 "sysprep_operation_smolt_uuid.ml" 25 893 928
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_smolt_uuid.ml" 24 848 873 "sysprep_operation_smolt_uuid.ml" 24 848 877
+)
+"sysprep_operation_smolt_uuid.ml" 25 893 905 "sysprep_operation_smolt_uuid.ml" 25 893 928
+type(
+  string
+)
+"sysprep_operation_smolt_uuid.ml" 26 932 937 "sysprep_operation_smolt_uuid.ml" 26 932 940
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_smolt_uuid.ml" 25 893 899 "sysprep_operation_smolt_uuid.ml" 25 893 902
+)
+"sysprep_operation_smolt_uuid.ml" 26 932 941 "sysprep_operation_smolt_uuid.ml" 26 932 942
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation_smolt_uuid.ml" 26 932 943 "sysprep_operation_smolt_uuid.ml" 26 932 950
+type(
+  string
+)
+"sysprep_operation_smolt_uuid.ml" 26 932 937 "sysprep_operation_smolt_uuid.ml" 26 932 950
+type(
+  bool
+)
+"sysprep_operation_smolt_uuid.ml" 27 958 966 "sysprep_operation_smolt_uuid.ml" 27 958 971
+type(
+  string list
+)
+"sysprep_operation_smolt_uuid.ml" 27 958 976 "sysprep_operation_smolt_uuid.ml" 27 958 1000
+type(
+  string
+)
+"sysprep_operation_smolt_uuid.ml" 28 1002 1020 "sysprep_operation_smolt_uuid.ml" 28 1002 1037
+type(
+  string
+)
+"sysprep_operation_smolt_uuid.ml" 29 1039 1057 "sysprep_operation_smolt_uuid.ml" 29 1039 1077
+type(
+  string
+)
+"sysprep_operation_smolt_uuid.ml" 27 958 974 "sysprep_operation_smolt_uuid.ml" 29 1039 1079
+type(
+  string list
+)
+"sysprep_operation_smolt_uuid.ml" 30 1083 1087 "sysprep_operation_smolt_uuid.ml" 30 1083 1096
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_smolt_uuid.ml" 31 1099 1109 "sysprep_operation_smolt_uuid.ml" 31 1099 1113
+type(
+  string
+)
+ident(
+  def file "sysprep_operation_smolt_uuid.ml" 31 1099 1117 "sysprep_operation_smolt_uuid.ml" 31 1099 1151
+)
+"sysprep_operation_smolt_uuid.ml" 31 1099 1121 "sysprep_operation_smolt_uuid.ml" 31 1099 1122
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_smolt_uuid.ml" 24 848 871 "sysprep_operation_smolt_uuid.ml" 24 848 872
+)
+"sysprep_operation_smolt_uuid.ml" 31 1099 1121 "sysprep_operation_smolt_uuid.ml" 31 1099 1125
+call(
+  stack
+)
+type(
+  string -> unit
+)
+"sysprep_operation_smolt_uuid.ml" 31 1099 1126 "sysprep_operation_smolt_uuid.ml" 31 1099 1130
+type(
+  string
+)
+ident(
+  int_ref file "sysprep_operation_smolt_uuid.ml" 31 1099 1109 "sysprep_operation_smolt_uuid.ml" 31 1099 1113
+)
+"sysprep_operation_smolt_uuid.ml" 31 1099 1121 "sysprep_operation_smolt_uuid.ml" 31 1099 1130
+type(
+  unit
+)
+"sysprep_operation_smolt_uuid.ml" 31 1099 1144 "sysprep_operation_smolt_uuid.ml" 31 1099 1145
+type(
+  string
+)
+"sysprep_operation_smolt_uuid.ml" 31 1099 1136 "sysprep_operation_smolt_uuid.ml" 31 1099 1145
+type(
+  exn
+)
+"sysprep_operation_smolt_uuid.ml" 31 1099 1149 "sysprep_operation_smolt_uuid.ml" 31 1099 1151
+type(
+  unit
+)
+"sysprep_operation_smolt_uuid.ml" 31 1099 1117 "sysprep_operation_smolt_uuid.ml" 31 1099 1151
+type(
+  unit
+)
+"sysprep_operation_smolt_uuid.ml" 30 1083 1097 "sysprep_operation_smolt_uuid.ml" 32 1152 1157
+type(
+  string -> unit
+)
+"sysprep_operation_smolt_uuid.ml" 32 1152 1158 "sysprep_operation_smolt_uuid.ml" 32 1152 1163
+type(
+  string list
+)
+ident(
+  int_ref files "sysprep_operation_smolt_uuid.ml" 27 958 966 "sysprep_operation_smolt_uuid.ml" 27 958 971
+)
+"sysprep_operation_smolt_uuid.ml" 30 1083 1087 "sysprep_operation_smolt_uuid.ml" 32 1152 1163
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_smolt_uuid.ml" 26 932 956 "sysprep_operation_smolt_uuid.ml" 33 1164 1167
+type(
+  unit
+)
+"sysprep_operation_smolt_uuid.ml" 26 932 934 "sysprep_operation_smolt_uuid.ml" 33 1164 1167
+type(
+  unit
+)
+"sysprep_operation_smolt_uuid.ml" 25 893 895 "sysprep_operation_smolt_uuid.ml" 33 1164 1167
+type(
+  unit
+)
+"sysprep_operation_smolt_uuid.ml" 35 1169 1173 "sysprep_operation_smolt_uuid.ml" 35 1169 1175
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_smolt_uuid.ml" 43 1359 1359 --
+)
+"sysprep_operation_smolt_uuid.ml" 36 1180 1182 "sysprep_operation_smolt_uuid.ml" 36 1180 1190
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_smolt_uuid.ml" 37 1196 1207 "sysprep_operation_smolt_uuid.ml" 37 1196 1219
+type(
+  string
+)
+"sysprep_operation_smolt_uuid.ml" 38 1221 1246 "sysprep_operation_smolt_uuid.ml" 38 1221 1250
+type(
+  bool
+)
+"sysprep_operation_smolt_uuid.ml" 39 1252 1266 "sysprep_operation_smolt_uuid.ml" 39 1252 1268
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_smolt_uuid.ml" 39 1252 1268 "sysprep_operation_smolt_uuid.ml" 39 1252 1300
+type(
+  string
+)
+"sysprep_operation_smolt_uuid.ml" 39 1252 1266 "sysprep_operation_smolt_uuid.ml" 39 1252 1300
+type(
+  string
+)
+"sysprep_operation_smolt_uuid.ml" 40 1302 1336 "sysprep_operation_smolt_uuid.ml" 40 1302 1354
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref smolt_uuid_perform "sysprep_operation_smolt_uuid.ml" 24 848 852 "sysprep_operation_smolt_uuid.ml" 24 848 870
+)
+"sysprep_operation_smolt_uuid.ml" 40 1302 1331 "sysprep_operation_smolt_uuid.ml" 40 1302 1354
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_smolt_uuid.ml" 35 1169 1178 "sysprep_operation_smolt_uuid.ml" 41 1356 1357
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_smolt_uuid.ml" 43 1359 1363 "sysprep_operation_smolt_uuid.ml" 43 1359 1365
+type(
+  unit
+)
+"sysprep_operation_smolt_uuid.ml" 43 1359 1368 "sysprep_operation_smolt_uuid.ml" 43 1359 1386
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_smolt_uuid.ml" 43 1359 1387 "sysprep_operation_smolt_uuid.ml" 43 1359 1389
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_smolt_uuid.ml" 35 1169 1173 "sysprep_operation_smolt_uuid.ml" 35 1169 1175
+)
+"sysprep_operation_smolt_uuid.ml" 43 1359 1368 "sysprep_operation_smolt_uuid.ml" 43 1359 1389
+call(
+  stack
+)
+type(
+  unit
+)

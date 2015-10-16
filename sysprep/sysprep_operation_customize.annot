@@ -1,0 +1,383 @@
+"sysprep_operation_customize.ml" 24 848 852 "sysprep_operation_customize.ml" 24 848 866
+type(
+  Sysprep_operation.extra_arg list
+)
+ident(
+  def customize_args "sysprep_operation_customize.ml" 33 1111 1111 --
+)
+"sysprep_operation_customize.ml" 24 848 868 "sysprep_operation_customize.ml" 24 848 875
+type(
+  unit -> Customize_cmdline.ops
+)
+ident(
+  def get_ops "sysprep_operation_customize.ml" 33 1111 1111 --
+)
+"sysprep_operation_customize.ml" 24 848 852 "sysprep_operation_customize.ml" 24 848 875
+type(
+  Sysprep_operation.extra_arg list * (unit -> Customize_cmdline.ops)
+)
+"sysprep_operation_customize.ml" 25 878 884 "sysprep_operation_customize.ml" 25 878 888
+type(
+  (Customize_cmdline.argspec * string option * string) list
+)
+"sysprep_operation_customize.ml" 25 878 890 "sysprep_operation_customize.ml" 25 878 897
+type(
+  unit -> Customize_cmdline.ops
+)
+"sysprep_operation_customize.ml" 25 878 884 "sysprep_operation_customize.ml" 25 878 897
+type(
+  (Customize_cmdline.argspec * string option * string) list *
+  (unit -> Customize_cmdline.ops)
+)
+"sysprep_operation_customize.ml" 25 878 900 "sysprep_operation_customize.ml" 25 878 925
+type(
+  unit ->
+  (Customize_cmdline.argspec * string option * string) list *
+  (unit -> Customize_cmdline.ops)
+)
+ident(
+  ext_ref Customize_cmdline.argspec
+)
+"sysprep_operation_customize.ml" 25 878 926 "sysprep_operation_customize.ml" 25 878 928
+type(
+  unit
+)
+"sysprep_operation_customize.ml" 25 878 900 "sysprep_operation_customize.ml" 25 878 928
+call(
+  stack
+)
+type(
+  (Customize_cmdline.argspec * string option * string) list *
+  (unit -> Customize_cmdline.ops)
+)
+"sysprep_operation_customize.ml" 26 932 938 "sysprep_operation_customize.ml" 26 932 942
+type(
+  Sysprep_operation.extra_arg list
+)
+"sysprep_operation_customize.ml" 26 932 945 "sysprep_operation_customize.ml" 26 932 953
+type(
+  (Customize_cmdline.argspec * string option * string ->
+   Sysprep_operation.extra_arg) ->
+  (Customize_cmdline.argspec * string option * string) list ->
+  Sysprep_operation.extra_arg list
+)
+ident(
+  ext_ref List.map
+)
+"sysprep_operation_customize.ml" 27 956 965 "sysprep_operation_customize.ml" 27 956 969
+type(
+  Customize_cmdline.argspec
+)
+ident(
+  def spec "sysprep_operation_customize.ml" 28 987 993 "sysprep_operation_customize.ml" 29 1017 1081
+)
+"sysprep_operation_customize.ml" 27 956 971 "sysprep_operation_customize.ml" 27 956 972
+type(
+  string option
+)
+ident(
+  def v "sysprep_operation_customize.ml" 28 987 993 "sysprep_operation_customize.ml" 29 1017 1081
+)
+"sysprep_operation_customize.ml" 27 956 974 "sysprep_operation_customize.ml" 27 956 982
+type(
+  string
+)
+ident(
+  def longdesc "sysprep_operation_customize.ml" 28 987 993 "sysprep_operation_customize.ml" 29 1017 1081
+)
+"sysprep_operation_customize.ml" 27 956 964 "sysprep_operation_customize.ml" 27 956 983
+type(
+  Customize_cmdline.argspec * string option * string
+)
+"sysprep_operation_customize.ml" 28 987 1011 "sysprep_operation_customize.ml" 28 987 1015
+type(
+  Customize_cmdline.argspec
+)
+ident(
+  int_ref spec "sysprep_operation_customize.ml" 27 956 965 "sysprep_operation_customize.ml" 27 956 969
+)
+"sysprep_operation_customize.ml" 29 1017 1044 "sysprep_operation_customize.ml" 29 1017 1045
+type(
+  string option
+)
+ident(
+  int_ref v "sysprep_operation_customize.ml" 27 956 971 "sysprep_operation_customize.ml" 27 956 972
+)
+"sysprep_operation_customize.ml" 29 1017 1071 "sysprep_operation_customize.ml" 29 1017 1079
+type(
+  string
+)
+ident(
+  int_ref longdesc "sysprep_operation_customize.ml" 27 956 974 "sysprep_operation_customize.ml" 27 956 982
+)
+"sysprep_operation_customize.ml" 28 987 993 "sysprep_operation_customize.ml" 29 1017 1081
+type(
+  Sysprep_operation.extra_arg
+)
+"sysprep_operation_customize.ml" 26 932 954 "sysprep_operation_customize.ml" 30 1082 1085
+type(
+  Customize_cmdline.argspec * string option * string ->
+  Sysprep_operation.extra_arg
+)
+"sysprep_operation_customize.ml" 30 1082 1086 "sysprep_operation_customize.ml" 30 1082 1090
+type(
+  (Customize_cmdline.argspec * string option * string) list
+)
+ident(
+  int_ref args "sysprep_operation_customize.ml" 25 878 884 "sysprep_operation_customize.ml" 25 878 888
+)
+"sysprep_operation_customize.ml" 26 932 945 "sysprep_operation_customize.ml" 30 1082 1090
+call(
+  stack
+)
+type(
+  Sysprep_operation.extra_arg list
+)
+"sysprep_operation_customize.ml" 31 1094 1096 "sysprep_operation_customize.ml" 31 1094 1100
+type(
+  Sysprep_operation.extra_arg list
+)
+ident(
+  int_ref args "sysprep_operation_customize.ml" 26 932 938 "sysprep_operation_customize.ml" 26 932 942
+)
+"sysprep_operation_customize.ml" 31 1094 1102 "sysprep_operation_customize.ml" 31 1094 1109
+type(
+  unit -> Customize_cmdline.ops
+)
+ident(
+  int_ref get_ops "sysprep_operation_customize.ml" 25 878 890 "sysprep_operation_customize.ml" 25 878 897
+)
+"sysprep_operation_customize.ml" 31 1094 1096 "sysprep_operation_customize.ml" 31 1094 1109
+type(
+  Sysprep_operation.extra_arg list * (unit -> Customize_cmdline.ops)
+)
+"sysprep_operation_customize.ml" 26 932 934 "sysprep_operation_customize.ml" 31 1094 1109
+type(
+  Sysprep_operation.extra_arg list * (unit -> Customize_cmdline.ops)
+)
+"sysprep_operation_customize.ml" 25 878 880 "sysprep_operation_customize.ml" 31 1094 1109
+type(
+  Sysprep_operation.extra_arg list * (unit -> Customize_cmdline.ops)
+)
+"sysprep_operation_customize.ml" 33 1111 1115 "sysprep_operation_customize.ml" 33 1111 1132
+type(
+  Guestfs.guestfs -> string -> < created_file : unit -> 'a; .. > -> 'a
+)
+ident(
+  def customize_perform "sysprep_operation_customize.ml" 38 1263 1263 --
+)
+"sysprep_operation_customize.ml" 33 1111 1133 "sysprep_operation_customize.ml" 33 1111 1134
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "sysprep_operation_customize.ml" 33 1111 1135 "sysprep_operation_customize.ml" 36 1213 1243
+)
+"sysprep_operation_customize.ml" 33 1111 1135 "sysprep_operation_customize.ml" 33 1111 1139
+type(
+  string
+)
+ident(
+  def root "sysprep_operation_customize.ml" 33 1111 1140 "sysprep_operation_customize.ml" 36 1213 1243
+)
+"sysprep_operation_customize.ml" 33 1111 1140 "sysprep_operation_customize.ml" 33 1111 1152
+type(
+  < created_file : unit -> 'a; .. > as 'b
+)
+ident(
+  def side_effects "sysprep_operation_customize.ml" 34 1155 1157 "sysprep_operation_customize.ml" 36 1213 1243
+)
+"sysprep_operation_customize.ml" 34 1155 1161 "sysprep_operation_customize.ml" 34 1155 1164
+type(
+  Customize_cmdline.ops
+)
+"sysprep_operation_customize.ml" 34 1155 1167 "sysprep_operation_customize.ml" 34 1155 1174
+type(
+  unit -> Customize_cmdline.ops
+)
+ident(
+  int_ref get_ops "sysprep_operation_customize.ml" 24 848 868 "sysprep_operation_customize.ml" 24 848 875
+)
+"sysprep_operation_customize.ml" 34 1155 1175 "sysprep_operation_customize.ml" 34 1155 1177
+type(
+  unit
+)
+"sysprep_operation_customize.ml" 34 1155 1167 "sysprep_operation_customize.ml" 34 1155 1177
+call(
+  stack
+)
+type(
+  Customize_cmdline.ops
+)
+"sysprep_operation_customize.ml" 35 1181 1183 "sysprep_operation_customize.ml" 35 1181 1200
+type(
+  Guestfs.guestfs -> string -> Customize_cmdline.ops -> unit
+)
+ident(
+  ext_ref Customize_run.run
+)
+"sysprep_operation_customize.ml" 35 1181 1201 "sysprep_operation_customize.ml" 35 1181 1202
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "sysprep_operation_customize.ml" 33 1111 1133 "sysprep_operation_customize.ml" 33 1111 1134
+)
+"sysprep_operation_customize.ml" 35 1181 1203 "sysprep_operation_customize.ml" 35 1181 1207
+type(
+  string
+)
+ident(
+  int_ref root "sysprep_operation_customize.ml" 33 1111 1135 "sysprep_operation_customize.ml" 33 1111 1139
+)
+"sysprep_operation_customize.ml" 35 1181 1208 "sysprep_operation_customize.ml" 35 1181 1211
+type(
+  Customize_cmdline.ops
+)
+ident(
+  int_ref ops "sysprep_operation_customize.ml" 34 1155 1161 "sysprep_operation_customize.ml" 34 1155 1164
+)
+"sysprep_operation_customize.ml" 35 1181 1183 "sysprep_operation_customize.ml" 35 1181 1211
+call(
+  stack
+)
+type(
+  unit
+)
+"sysprep_operation_customize.ml" 36 1213 1215 "sysprep_operation_customize.ml" 36 1213 1227
+type(
+  'b
+)
+ident(
+  int_ref side_effects "sysprep_operation_customize.ml" 33 1111 1140 "sysprep_operation_customize.ml" 33 1111 1152
+)
+"sysprep_operation_customize.ml" 36 1213 1215 "sysprep_operation_customize.ml" 36 1213 1240
+call(
+  tail
+)
+type(
+  unit -> 'a
+)
+"sysprep_operation_customize.ml" 36 1213 1241 "sysprep_operation_customize.ml" 36 1213 1243
+type(
+  unit
+)
+"sysprep_operation_customize.ml" 36 1213 1215 "sysprep_operation_customize.ml" 36 1213 1243
+type(
+  'a
+)
+"sysprep_operation_customize.ml" 35 1181 1183 "sysprep_operation_customize.ml" 36 1213 1243
+type(
+  'a
+)
+"sysprep_operation_customize.ml" 34 1155 1157 "sysprep_operation_customize.ml" 36 1213 1243
+type(
+  'a
+)
+"sysprep_operation_customize.ml" 38 1263 1267 "sysprep_operation_customize.ml" 38 1263 1269
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_customize.ml" 51 1692 1692 --
+)
+"sysprep_operation_customize.ml" 39 1274 1276 "sysprep_operation_customize.ml" 39 1274 1284
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_customize.ml" 40 1290 1302 "sysprep_operation_customize.ml" 40 1290 1304
+type(
+  int
+)
+"sysprep_operation_customize.ml" 41 1361 1372 "sysprep_operation_customize.ml" 41 1361 1383
+type(
+  string
+)
+"sysprep_operation_customize.ml" 42 1385 1410 "sysprep_operation_customize.ml" 42 1385 1414
+type(
+  bool
+)
+"sysprep_operation_customize.ml" 43 1416 1430 "sysprep_operation_customize.ml" 43 1416 1432
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_customize.ml" 43 1416 1432 "sysprep_operation_customize.ml" 43 1416 1453
+type(
+  string
+)
+"sysprep_operation_customize.ml" 43 1416 1430 "sysprep_operation_customize.ml" 43 1416 1453
+type(
+  string
+)
+"sysprep_operation_customize.ml" 44 1455 1483 "sysprep_operation_customize.ml" 44 1455 1485
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_customize.ml" 44 1455 1485 "sysprep_operation_customize.ml" 46 1550 1600
+type(
+  string
+)
+"sysprep_operation_customize.ml" 44 1455 1482 "sysprep_operation_customize.ml" 46 1550 1601
+type(
+  string
+)
+"sysprep_operation_customize.ml" 44 1455 1477 "sysprep_operation_customize.ml" 46 1550 1601
+type(
+  string option
+)
+"sysprep_operation_customize.ml" 47 1603 1620 "sysprep_operation_customize.ml" 47 1603 1634
+type(
+  Sysprep_operation.extra_arg list
+)
+ident(
+  int_ref customize_args "sysprep_operation_customize.ml" 24 848 852 "sysprep_operation_customize.ml" 24 848 866
+)
+"sysprep_operation_customize.ml" 48 1636 1670 "sysprep_operation_customize.ml" 48 1636 1687
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref customize_perform "sysprep_operation_customize.ml" 33 1111 1115 "sysprep_operation_customize.ml" 33 1111 1132
+)
+"sysprep_operation_customize.ml" 48 1636 1665 "sysprep_operation_customize.ml" 48 1636 1687
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_customize.ml" 38 1263 1272 "sysprep_operation_customize.ml" 49 1689 1690
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_customize.ml" 51 1692 1696 "sysprep_operation_customize.ml" 51 1692 1698
+type(
+  unit
+)
+"sysprep_operation_customize.ml" 51 1692 1701 "sysprep_operation_customize.ml" 51 1692 1719
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_customize.ml" 51 1692 1720 "sysprep_operation_customize.ml" 51 1692 1722
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_customize.ml" 38 1263 1267 "sysprep_operation_customize.ml" 38 1263 1269
+)
+"sysprep_operation_customize.ml" 51 1692 1701 "sysprep_operation_customize.ml" 51 1692 1722
+call(
+  stack
+)
+type(
+  unit
+)

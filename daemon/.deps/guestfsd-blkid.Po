@@ -69,7 +69,7 @@ guestfsd-blkid.o: blkid.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/rpc/rpc_msg.h /usr/include/rpc/auth_unix.h \
  /usr/include/rpc/auth_des.h /usr/include/rpc/svc.h \
  /usr/include/rpc/svc_auth.h /usr/include/rpc/netdb.h \
- ../src/guestfs-internal-all.h actions.h
+ ../src/guestfs-internal-all.h actions.h optgroups.h
 
 ../config.h:
 
@@ -288,3 +288,5 @@ guestfs_protocol.h:
 ../src/guestfs-internal-all.h:
 
 actions.h:
+
+optgroups.h:

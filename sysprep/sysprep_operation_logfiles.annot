@@ -1,0 +1,666 @@
+"sysprep_operation_logfiles.ml" 26 861 865 "sysprep_operation_logfiles.ml" 26 861 870
+type(
+  string list
+)
+ident(
+  def globs "sysprep_operation_logfiles.ml" 133 3319 3319 --
+)
+"sysprep_operation_logfiles.ml" 26 861 873 "sysprep_operation_logfiles.ml" 26 861 882
+type(
+  (string -> string -> int) -> string list -> string list
+)
+ident(
+  ext_ref List.sort
+)
+"sysprep_operation_logfiles.ml" 26 861 883 "sysprep_operation_logfiles.ml" 26 861 890
+type(
+  string -> string -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"sysprep_operation_logfiles.ml" 28 911 913 "sysprep_operation_logfiles.ml" 28 911 930
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 29 932 934 "sysprep_operation_logfiles.ml" 29 932 952
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 30 954 956 "sysprep_operation_logfiles.ml" 30 954 972
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 31 974 976 "sysprep_operation_logfiles.ml" 31 974 992
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 32 994 996 "sysprep_operation_logfiles.ml" 32 994 1013
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 33 1015 1017 "sysprep_operation_logfiles.ml" 33 1015 1036
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 34 1038 1040 "sysprep_operation_logfiles.ml" 34 1038 1059
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 35 1061 1063 "sysprep_operation_logfiles.ml" 35 1061 1080
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 36 1082 1084 "sysprep_operation_logfiles.ml" 36 1082 1104
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 37 1106 1108 "sysprep_operation_logfiles.ml" 37 1106 1126
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 38 1128 1130 "sysprep_operation_logfiles.ml" 38 1128 1149
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 39 1151 1153 "sysprep_operation_logfiles.ml" 39 1151 1173
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 40 1175 1177 "sysprep_operation_logfiles.ml" 40 1175 1193
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 41 1195 1197 "sysprep_operation_logfiles.ml" 41 1195 1221
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 42 1223 1225 "sysprep_operation_logfiles.ml" 42 1223 1251
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 43 1253 1255 "sysprep_operation_logfiles.ml" 43 1253 1269
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 44 1271 1273 "sysprep_operation_logfiles.ml" 44 1271 1299
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 45 1301 1303 "sysprep_operation_logfiles.ml" 45 1301 1320
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 46 1322 1324 "sysprep_operation_logfiles.ml" 46 1322 1342
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 47 1344 1346 "sysprep_operation_logfiles.ml" 47 1344 1365
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 48 1367 1369 "sysprep_operation_logfiles.ml" 48 1367 1390
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 49 1392 1394 "sysprep_operation_logfiles.ml" 49 1392 1412
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 50 1414 1416 "sysprep_operation_logfiles.ml" 50 1414 1435
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 53 1488 1490 "sysprep_operation_logfiles.ml" 53 1488 1513
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 54 1515 1517 "sysprep_operation_logfiles.ml" 54 1515 1538
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 55 1540 1542 "sysprep_operation_logfiles.ml" 55 1540 1565
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 56 1567 1569 "sysprep_operation_logfiles.ml" 56 1567 1591
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 57 1593 1595 "sysprep_operation_logfiles.ml" 57 1593 1633
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 58 1635 1637 "sysprep_operation_logfiles.ml" 58 1635 1671
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 59 1673 1675 "sysprep_operation_logfiles.ml" 59 1673 1696
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 60 1698 1700 "sysprep_operation_logfiles.ml" 60 1698 1734
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 61 1736 1738 "sysprep_operation_logfiles.ml" 61 1736 1768
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 62 1770 1772 "sysprep_operation_logfiles.ml" 62 1770 1803
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 63 1805 1807 "sysprep_operation_logfiles.ml" 63 1805 1835
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 64 1837 1839 "sysprep_operation_logfiles.ml" 64 1837 1868
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 65 1870 1872 "sysprep_operation_logfiles.ml" 65 1870 1900
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 66 1902 1904 "sysprep_operation_logfiles.ml" 66 1902 1931
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 67 1933 1935 "sysprep_operation_logfiles.ml" 67 1933 1964
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 68 1966 1968 "sysprep_operation_logfiles.ml" 68 1966 1999
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 69 2001 2003 "sysprep_operation_logfiles.ml" 69 2001 2025
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 71 2068 2070 "sysprep_operation_logfiles.ml" 71 2068 2097
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 74 2131 2133 "sysprep_operation_logfiles.ml" 74 2131 2152
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 75 2154 2156 "sysprep_operation_logfiles.ml" 75 2154 2182
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 76 2184 2186 "sysprep_operation_logfiles.ml" 76 2184 2209
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 77 2211 2213 "sysprep_operation_logfiles.ml" 77 2211 2238
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 78 2240 2242 "sysprep_operation_logfiles.ml" 78 2240 2270
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 79 2272 2274 "sysprep_operation_logfiles.ml" 79 2272 2300
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 80 2302 2304 "sysprep_operation_logfiles.ml" 80 2302 2325
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 83 2359 2361 "sysprep_operation_logfiles.ml" 83 2359 2383
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 86 2423 2425 "sysprep_operation_logfiles.ml" 86 2423 2443
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 87 2445 2447 "sysprep_operation_logfiles.ml" 87 2445 2480
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 90 2517 2519 "sysprep_operation_logfiles.ml" 90 2517 2538
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 93 2567 2569 "sysprep_operation_logfiles.ml" 93 2567 2594
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 96 2621 2623 "sysprep_operation_logfiles.ml" 96 2621 2641
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 99 2672 2674 "sysprep_operation_logfiles.ml" 99 2672 2689
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 102 2716 2718 "sysprep_operation_logfiles.ml" 102 2716 2734
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 105 2765 2767 "sysprep_operation_logfiles.ml" 105 2765 2787
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 108 2814 2816 "sysprep_operation_logfiles.ml" 108 2814 2837
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 111 2885 2887 "sysprep_operation_logfiles.ml" 111 2885 2907
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 112 2909 2911 "sysprep_operation_logfiles.ml" 112 2909 2931
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 113 2933 2935 "sysprep_operation_logfiles.ml" 113 2933 2955
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 114 2957 2959 "sysprep_operation_logfiles.ml" 114 2957 2979
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 115 2981 2983 "sysprep_operation_logfiles.ml" 115 2981 3003
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 118 3053 3055 "sysprep_operation_logfiles.ml" 118 3053 3072
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 121 3103 3105 "sysprep_operation_logfiles.ml" 121 3103 3125
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 124 3164 3166 "sysprep_operation_logfiles.ml" 124 3164 3186
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 125 3188 3190 "sysprep_operation_logfiles.ml" 125 3188 3206
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 128 3235 3237 "sysprep_operation_logfiles.ml" 128 3235 3255
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 131 3290 3292 "sysprep_operation_logfiles.ml" 131 3290 3315
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 26 861 891 "sysprep_operation_logfiles.ml" 132 3317 3318
+type(
+  string list
+)
+"sysprep_operation_logfiles.ml" 26 861 873 "sysprep_operation_logfiles.ml" 132 3317 3318
+call(
+  stack
+)
+type(
+  string list
+)
+"sysprep_operation_logfiles.ml" 133 3319 3323 "sysprep_operation_logfiles.ml" 133 3319 3335
+type(
+  string
+)
+ident(
+  def globs_as_pod "sysprep_operation_logfiles.ml" 135 3385 3385 --
+)
+"sysprep_operation_logfiles.ml" 133 3319 3338 "sysprep_operation_logfiles.ml" 133 3319 3351
+type(
+  string -> string list -> string
+)
+ident(
+  ext_ref String.concat
+)
+"sysprep_operation_logfiles.ml" 133 3319 3352 "sysprep_operation_logfiles.ml" 133 3319 3356
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 133 3319 3358 "sysprep_operation_logfiles.ml" 133 3319 3366
+type(
+  (string -> string) -> string list -> string list
+)
+ident(
+  ext_ref List.map
+)
+"sysprep_operation_logfiles.ml" 133 3319 3368 "sysprep_operation_logfiles.ml" 133 3319 3371
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"sysprep_operation_logfiles.ml" 133 3319 3372 "sysprep_operation_logfiles.ml" 133 3319 3375
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 133 3319 3367 "sysprep_operation_logfiles.ml" 133 3319 3376
+call(
+  stack
+)
+type(
+  string -> string
+)
+"sysprep_operation_logfiles.ml" 133 3319 3377 "sysprep_operation_logfiles.ml" 133 3319 3382
+type(
+  string list
+)
+ident(
+  int_ref globs "sysprep_operation_logfiles.ml" 26 861 865 "sysprep_operation_logfiles.ml" 26 861 870
+)
+"sysprep_operation_logfiles.ml" 133 3319 3357 "sysprep_operation_logfiles.ml" 133 3319 3383
+call(
+  stack
+)
+type(
+  string list
+)
+"sysprep_operation_logfiles.ml" 133 3319 3338 "sysprep_operation_logfiles.ml" 133 3319 3383
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 135 3385 3389 "sysprep_operation_logfiles.ml" 135 3385 3405
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm_rf : 'a -> unit; .. > ->
+  'b -> 'c -> unit
+)
+ident(
+  def logfiles_perform "sysprep_operation_logfiles.ml" 141 3572 3572 --
+)
+"sysprep_operation_logfiles.ml" 135 3385 3406 "sysprep_operation_logfiles.ml" 135 3385 3407
+type(
+  < glob_expand : string -> 'a array; inspect_get_type : 'b -> string;
+    rm_rf : 'a -> unit; .. >
+  as 'd
+)
+ident(
+  def g "sysprep_operation_logfiles.ml" 135 3385 3408 "sysprep_operation_logfiles.ml" 139 3567 3570
+)
+"sysprep_operation_logfiles.ml" 135 3385 3408 "sysprep_operation_logfiles.ml" 135 3385 3412
+type(
+  'b
+)
+ident(
+  def root "sysprep_operation_logfiles.ml" 135 3385 3413 "sysprep_operation_logfiles.ml" 139 3567 3570
+)
+"sysprep_operation_logfiles.ml" 135 3385 3413 "sysprep_operation_logfiles.ml" 135 3385 3425
+type(
+  'c
+)
+ident(
+  def side_effects "sysprep_operation_logfiles.ml" 136 3428 3430 "sysprep_operation_logfiles.ml" 139 3567 3570
+)
+"sysprep_operation_logfiles.ml" 136 3428 3434 "sysprep_operation_logfiles.ml" 136 3428 3437
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 136 3428 3440 "sysprep_operation_logfiles.ml" 136 3428 3441
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_logfiles.ml" 135 3385 3406 "sysprep_operation_logfiles.ml" 135 3385 3407
+)
+"sysprep_operation_logfiles.ml" 136 3428 3440 "sysprep_operation_logfiles.ml" 136 3428 3458
+call(
+  stack
+)
+type(
+  'b -> string
+)
+"sysprep_operation_logfiles.ml" 136 3428 3459 "sysprep_operation_logfiles.ml" 136 3428 3463
+type(
+  'b
+)
+ident(
+  int_ref root "sysprep_operation_logfiles.ml" 135 3385 3408 "sysprep_operation_logfiles.ml" 135 3385 3412
+)
+"sysprep_operation_logfiles.ml" 136 3428 3440 "sysprep_operation_logfiles.ml" 136 3428 3463
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 137 3467 3472 "sysprep_operation_logfiles.ml" 137 3467 3475
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_logfiles.ml" 136 3428 3434 "sysprep_operation_logfiles.ml" 136 3428 3437
+)
+"sysprep_operation_logfiles.ml" 137 3467 3476 "sysprep_operation_logfiles.ml" 137 3467 3477
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( = )
+)
+"sysprep_operation_logfiles.ml" 137 3467 3478 "sysprep_operation_logfiles.ml" 137 3467 3485
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 137 3467 3472 "sysprep_operation_logfiles.ml" 137 3467 3485
+type(
+  bool
+)
+"sysprep_operation_logfiles.ml" 138 3493 3497 "sysprep_operation_logfiles.ml" 138 3493 3506
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"sysprep_operation_logfiles.ml" 138 3493 3512 "sysprep_operation_logfiles.ml" 138 3493 3516
+type(
+  string
+)
+ident(
+  def glob "sysprep_operation_logfiles.ml" 138 3493 3520 "sysprep_operation_logfiles.ml" 138 3493 3559
+)
+"sysprep_operation_logfiles.ml" 138 3493 3520 "sysprep_operation_logfiles.ml" 138 3493 3530
+type(
+  ('a -> unit) -> 'a array -> unit
+)
+ident(
+  ext_ref Array.iter
+)
+"sysprep_operation_logfiles.ml" 138 3493 3531 "sysprep_operation_logfiles.ml" 138 3493 3532
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_logfiles.ml" 135 3385 3406 "sysprep_operation_logfiles.ml" 135 3385 3407
+)
+"sysprep_operation_logfiles.ml" 138 3493 3531 "sysprep_operation_logfiles.ml" 138 3493 3538
+call(
+  stack
+)
+type(
+  'a -> unit
+)
+"sysprep_operation_logfiles.ml" 138 3493 3540 "sysprep_operation_logfiles.ml" 138 3493 3541
+type(
+  'd
+)
+ident(
+  int_ref g "sysprep_operation_logfiles.ml" 135 3385 3406 "sysprep_operation_logfiles.ml" 135 3385 3407
+)
+"sysprep_operation_logfiles.ml" 138 3493 3540 "sysprep_operation_logfiles.ml" 138 3493 3553
+call(
+  stack
+)
+type(
+  string -> 'a array
+)
+"sysprep_operation_logfiles.ml" 138 3493 3554 "sysprep_operation_logfiles.ml" 138 3493 3558
+type(
+  string
+)
+ident(
+  int_ref glob "sysprep_operation_logfiles.ml" 138 3493 3512 "sysprep_operation_logfiles.ml" 138 3493 3516
+)
+"sysprep_operation_logfiles.ml" 138 3493 3539 "sysprep_operation_logfiles.ml" 138 3493 3559
+type(
+  'a array
+)
+"sysprep_operation_logfiles.ml" 138 3493 3520 "sysprep_operation_logfiles.ml" 138 3493 3559
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_logfiles.ml" 138 3493 3507 "sysprep_operation_logfiles.ml" 138 3493 3560
+type(
+  string -> unit
+)
+"sysprep_operation_logfiles.ml" 138 3493 3561 "sysprep_operation_logfiles.ml" 138 3493 3566
+type(
+  string list
+)
+ident(
+  int_ref globs "sysprep_operation_logfiles.ml" 26 861 865 "sysprep_operation_logfiles.ml" 26 861 870
+)
+"sysprep_operation_logfiles.ml" 137 3467 3491 "sysprep_operation_logfiles.ml" 139 3567 3570
+call(
+  tail
+)
+type(
+  unit
+)
+"sysprep_operation_logfiles.ml" 137 3467 3469 "sysprep_operation_logfiles.ml" 139 3567 3570
+type(
+  unit
+)
+"sysprep_operation_logfiles.ml" 136 3428 3430 "sysprep_operation_logfiles.ml" 139 3567 3570
+type(
+  unit
+)
+"sysprep_operation_logfiles.ml" 141 3572 3576 "sysprep_operation_logfiles.ml" 141 3572 3578
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_logfiles.ml" 154 3876 3876 --
+)
+"sysprep_operation_logfiles.ml" 142 3583 3585 "sysprep_operation_logfiles.ml" 142 3583 3593
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_logfiles.ml" 143 3599 3610 "sysprep_operation_logfiles.ml" 143 3599 3620
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 144 3622 3647 "sysprep_operation_logfiles.ml" 144 3622 3651
+type(
+  bool
+)
+"sysprep_operation_logfiles.ml" 145 3653 3667 "sysprep_operation_logfiles.ml" 145 3653 3669
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_logfiles.ml" 145 3653 3669 "sysprep_operation_logfiles.ml" 145 3653 3707
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 145 3653 3667 "sysprep_operation_logfiles.ml" 145 3653 3707
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 147 3738 3744 "sysprep_operation_logfiles.ml" 147 3738 3751
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"sysprep_operation_logfiles.ml" 147 3738 3753 "sysprep_operation_logfiles.ml" 147 3738 3755
+type(
+  (string -> string, unit, string, string, string, string) format6 ->
+  (string -> string, unit, string) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"sysprep_operation_logfiles.ml" 147 3738 3755 "sysprep_operation_logfiles.ml" 150 3801 3804
+type(
+  (string -> string, unit, string, string, string, string) format6
+)
+"sysprep_operation_logfiles.ml" 147 3738 3752 "sysprep_operation_logfiles.ml" 150 3801 3805
+type(
+  (string -> string, unit, string) format
+)
+"sysprep_operation_logfiles.ml" 150 3801 3806 "sysprep_operation_logfiles.ml" 150 3801 3818
+type(
+  string
+)
+ident(
+  int_ref globs_as_pod "sysprep_operation_logfiles.ml" 133 3319 3323 "sysprep_operation_logfiles.ml" 133 3319 3335
+)
+"sysprep_operation_logfiles.ml" 146 3709 3736 "sysprep_operation_logfiles.ml" 150 3801 3819
+call(
+  stack
+)
+type(
+  string
+)
+"sysprep_operation_logfiles.ml" 146 3709 3731 "sysprep_operation_logfiles.ml" 150 3801 3819
+type(
+  string option
+)
+"sysprep_operation_logfiles.ml" 151 3821 3855 "sysprep_operation_logfiles.ml" 151 3821 3871
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref logfiles_perform "sysprep_operation_logfiles.ml" 135 3385 3389 "sysprep_operation_logfiles.ml" 135 3385 3405
+)
+"sysprep_operation_logfiles.ml" 151 3821 3850 "sysprep_operation_logfiles.ml" 151 3821 3871
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_logfiles.ml" 141 3572 3581 "sysprep_operation_logfiles.ml" 152 3873 3874
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_logfiles.ml" 154 3876 3880 "sysprep_operation_logfiles.ml" 154 3876 3882
+type(
+  unit
+)
+"sysprep_operation_logfiles.ml" 154 3876 3885 "sysprep_operation_logfiles.ml" 154 3876 3903
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_logfiles.ml" 154 3876 3904 "sysprep_operation_logfiles.ml" 154 3876 3906
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_logfiles.ml" 141 3572 3576 "sysprep_operation_logfiles.ml" 141 3572 3578
+)
+"sysprep_operation_logfiles.ml" 154 3876 3885 "sysprep_operation_logfiles.ml" 154 3876 3906
+call(
+  stack
+)
+type(
+  unit
+)

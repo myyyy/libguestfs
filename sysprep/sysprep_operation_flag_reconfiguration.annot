@@ -1,0 +1,232 @@
+"sysprep_operation_flag_reconfiguration.ml" 24 851 855 "sysprep_operation_flag_reconfiguration.ml" 24 851 875
+type(
+  < inspect_get_type : 'a -> string; touch : string -> 'b; .. > ->
+  'a -> < created_file : unit -> unit; .. > -> unit
+)
+ident(
+  def flag_reconfiguration "sysprep_operation_flag_reconfiguration.ml" 31 1034 1034 --
+)
+"sysprep_operation_flag_reconfiguration.ml" 24 851 876 "sysprep_operation_flag_reconfiguration.ml" 24 851 877
+type(
+  < inspect_get_type : 'a -> string; touch : string -> 'b; .. > as 'c
+)
+ident(
+  def g "sysprep_operation_flag_reconfiguration.ml" 24 851 878 "sysprep_operation_flag_reconfiguration.ml" 29 1029 1032
+)
+"sysprep_operation_flag_reconfiguration.ml" 24 851 878 "sysprep_operation_flag_reconfiguration.ml" 24 851 882
+type(
+  'a
+)
+ident(
+  def root "sysprep_operation_flag_reconfiguration.ml" 24 851 883 "sysprep_operation_flag_reconfiguration.ml" 29 1029 1032
+)
+"sysprep_operation_flag_reconfiguration.ml" 24 851 883 "sysprep_operation_flag_reconfiguration.ml" 24 851 895
+type(
+  < created_file : unit -> unit; .. > as 'd
+)
+ident(
+  def side_effects "sysprep_operation_flag_reconfiguration.ml" 25 898 900 "sysprep_operation_flag_reconfiguration.ml" 29 1029 1032
+)
+"sysprep_operation_flag_reconfiguration.ml" 25 898 904 "sysprep_operation_flag_reconfiguration.ml" 25 898 907
+type(
+  string
+)
+"sysprep_operation_flag_reconfiguration.ml" 25 898 910 "sysprep_operation_flag_reconfiguration.ml" 25 898 911
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_flag_reconfiguration.ml" 24 851 876 "sysprep_operation_flag_reconfiguration.ml" 24 851 877
+)
+"sysprep_operation_flag_reconfiguration.ml" 25 898 910 "sysprep_operation_flag_reconfiguration.ml" 25 898 928
+call(
+  stack
+)
+type(
+  'a -> string
+)
+"sysprep_operation_flag_reconfiguration.ml" 25 898 929 "sysprep_operation_flag_reconfiguration.ml" 25 898 933
+type(
+  'a
+)
+ident(
+  int_ref root "sysprep_operation_flag_reconfiguration.ml" 24 851 878 "sysprep_operation_flag_reconfiguration.ml" 24 851 882
+)
+"sysprep_operation_flag_reconfiguration.ml" 25 898 910 "sysprep_operation_flag_reconfiguration.ml" 25 898 933
+type(
+  string
+)
+"sysprep_operation_flag_reconfiguration.ml" 26 937 942 "sysprep_operation_flag_reconfiguration.ml" 26 937 945
+type(
+  string
+)
+ident(
+  int_ref typ "sysprep_operation_flag_reconfiguration.ml" 25 898 904 "sysprep_operation_flag_reconfiguration.ml" 25 898 907
+)
+"sysprep_operation_flag_reconfiguration.ml" 26 937 946 "sysprep_operation_flag_reconfiguration.ml" 26 937 948
+type(
+  string -> string -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"sysprep_operation_flag_reconfiguration.ml" 26 937 949 "sysprep_operation_flag_reconfiguration.ml" 26 937 958
+type(
+  string
+)
+"sysprep_operation_flag_reconfiguration.ml" 26 937 942 "sysprep_operation_flag_reconfiguration.ml" 26 937 958
+type(
+  bool
+)
+"sysprep_operation_flag_reconfiguration.ml" 27 966 970 "sysprep_operation_flag_reconfiguration.ml" 27 966 971
+type(
+  'c
+)
+ident(
+  int_ref g "sysprep_operation_flag_reconfiguration.ml" 24 851 876 "sysprep_operation_flag_reconfiguration.ml" 24 851 877
+)
+"sysprep_operation_flag_reconfiguration.ml" 27 966 970 "sysprep_operation_flag_reconfiguration.ml" 27 966 977
+call(
+  stack
+)
+type(
+  string -> 'b
+)
+"sysprep_operation_flag_reconfiguration.ml" 27 966 978 "sysprep_operation_flag_reconfiguration.ml" 27 966 994
+type(
+  string
+)
+"sysprep_operation_flag_reconfiguration.ml" 27 966 970 "sysprep_operation_flag_reconfiguration.ml" 27 966 994
+type(
+  'b
+)
+"sysprep_operation_flag_reconfiguration.ml" 28 996 1000 "sysprep_operation_flag_reconfiguration.ml" 28 996 1012
+type(
+  'd
+)
+ident(
+  int_ref side_effects "sysprep_operation_flag_reconfiguration.ml" 24 851 883 "sysprep_operation_flag_reconfiguration.ml" 24 851 895
+)
+"sysprep_operation_flag_reconfiguration.ml" 28 996 1000 "sysprep_operation_flag_reconfiguration.ml" 28 996 1025
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"sysprep_operation_flag_reconfiguration.ml" 28 996 1026 "sysprep_operation_flag_reconfiguration.ml" 28 996 1028
+type(
+  unit
+)
+"sysprep_operation_flag_reconfiguration.ml" 28 996 1000 "sysprep_operation_flag_reconfiguration.ml" 28 996 1028
+type(
+  unit
+)
+"sysprep_operation_flag_reconfiguration.ml" 26 937 964 "sysprep_operation_flag_reconfiguration.ml" 29 1029 1032
+type(
+  unit
+)
+"sysprep_operation_flag_reconfiguration.ml" 26 937 939 "sysprep_operation_flag_reconfiguration.ml" 29 1029 1032
+type(
+  unit
+)
+"sysprep_operation_flag_reconfiguration.ml" 25 898 900 "sysprep_operation_flag_reconfiguration.ml" 29 1029 1032
+type(
+  unit
+)
+"sysprep_operation_flag_reconfiguration.ml" 31 1034 1038 "sysprep_operation_flag_reconfiguration.ml" 31 1034 1040
+type(
+  Sysprep_operation.operation
+)
+ident(
+  def op "sysprep_operation_flag_reconfiguration.ml" 43 1441 1441 --
+)
+"sysprep_operation_flag_reconfiguration.ml" 32 1045 1047 "sysprep_operation_flag_reconfiguration.ml" 32 1045 1055
+type(
+  Sysprep_operation.operation
+)
+ident(
+  ext_ref Sysprep_operation.defaults
+)
+"sysprep_operation_flag_reconfiguration.ml" 33 1061 1072 "sysprep_operation_flag_reconfiguration.ml" 33 1061 1094
+type(
+  string
+)
+"sysprep_operation_flag_reconfiguration.ml" 34 1096 1121 "sysprep_operation_flag_reconfiguration.ml" 34 1096 1126
+type(
+  bool
+)
+"sysprep_operation_flag_reconfiguration.ml" 35 1128 1142 "sysprep_operation_flag_reconfiguration.ml" 35 1128 1144
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_flag_reconfiguration.ml" 35 1128 1144 "sysprep_operation_flag_reconfiguration.ml" 35 1128 1181
+type(
+  string
+)
+"sysprep_operation_flag_reconfiguration.ml" 35 1128 1142 "sysprep_operation_flag_reconfiguration.ml" 35 1128 1181
+type(
+  string
+)
+"sysprep_operation_flag_reconfiguration.ml" 36 1183 1211 "sysprep_operation_flag_reconfiguration.ml" 36 1183 1213
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"sysprep_operation_flag_reconfiguration.ml" 36 1183 1213 "sysprep_operation_flag_reconfiguration.ml" 39 1344 1379
+type(
+  string
+)
+"sysprep_operation_flag_reconfiguration.ml" 36 1183 1210 "sysprep_operation_flag_reconfiguration.ml" 39 1344 1380
+type(
+  string
+)
+"sysprep_operation_flag_reconfiguration.ml" 36 1183 1205 "sysprep_operation_flag_reconfiguration.ml" 39 1344 1380
+type(
+  string option
+)
+"sysprep_operation_flag_reconfiguration.ml" 40 1382 1416 "sysprep_operation_flag_reconfiguration.ml" 40 1382 1436
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback
+)
+ident(
+  int_ref flag_reconfiguration "sysprep_operation_flag_reconfiguration.ml" 24 851 855 "sysprep_operation_flag_reconfiguration.ml" 24 851 875
+)
+"sysprep_operation_flag_reconfiguration.ml" 40 1382 1411 "sysprep_operation_flag_reconfiguration.ml" 40 1382 1436
+type(
+  Sysprep_operation.filesystem_side_effects Sysprep_operation.callback option
+)
+"sysprep_operation_flag_reconfiguration.ml" 31 1034 1043 "sysprep_operation_flag_reconfiguration.ml" 41 1438 1439
+type(
+  Sysprep_operation.operation
+)
+"sysprep_operation_flag_reconfiguration.ml" 43 1441 1445 "sysprep_operation_flag_reconfiguration.ml" 43 1441 1447
+type(
+  unit
+)
+"sysprep_operation_flag_reconfiguration.ml" 43 1441 1450 "sysprep_operation_flag_reconfiguration.ml" 43 1441 1468
+type(
+  Sysprep_operation.operation -> unit
+)
+ident(
+  ext_ref Sysprep_operation.register_operation
+)
+"sysprep_operation_flag_reconfiguration.ml" 43 1441 1469 "sysprep_operation_flag_reconfiguration.ml" 43 1441 1471
+type(
+  Sysprep_operation.operation
+)
+ident(
+  int_ref op "sysprep_operation_flag_reconfiguration.ml" 31 1034 1038 "sysprep_operation_flag_reconfiguration.ml" 31 1034 1040
+)
+"sysprep_operation_flag_reconfiguration.ml" 43 1441 1450 "sysprep_operation_flag_reconfiguration.ml" 43 1441 1472
+call(
+  stack
+)
+type(
+  unit
+)

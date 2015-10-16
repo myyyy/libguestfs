@@ -42,8 +42,7 @@ guestfish-inspect.o: inspect.c ../config.h ../gnulib/lib/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h options.h \
  /usr/include/getopt.h ../src/guestfs-internal-frontend.h \
  ../src/guestfs-internal-all.h \
- ../src/guestfs-internal-frontend-cleanups.h \
- /usr/include/libvirt/libvirt.h
+ ../src/guestfs-internal-frontend-cleanups.h
 
 ../config.h:
 
@@ -184,5 +183,3 @@ options.h:
 ../src/guestfs-internal-all.h:
 
 ../src/guestfs-internal-frontend-cleanups.h:
-
-/usr/include/libvirt/libvirt.h:

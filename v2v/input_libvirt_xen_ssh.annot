@@ -1,0 +1,715 @@
+"input_libvirt_xen_ssh.ml" 33 1014 1042 "input_libvirt_xen_ssh.ml" 33 1014 1050
+type(
+  string option
+)
+"input_libvirt_xen_ssh.ml" 33 1014 1051 "input_libvirt_xen_ssh.ml" 33 1014 1062
+type(
+  string option
+)
+"input_libvirt_xen_ssh.ml" 33 1014 1063 "input_libvirt_xen_ssh.ml" 33 1014 1073
+type(
+  Xml.uri
+)
+"input_libvirt_xen_ssh.ml" 33 1014 1074 "input_libvirt_xen_ssh.ml" 33 1014 1080
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 33 1014 1081 "input_libvirt_xen_ssh.ml" 33 1014 1087
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 33 1014 1088 "input_libvirt_xen_ssh.ml" 33 1014 1093
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 35 1103 1127 "input_libvirt_xen_ssh.ml" 35 1103 1135
+type(
+  string option
+)
+ident(
+  int_ref password "input_libvirt_xen_ssh.ml" 33 1014 1042 "input_libvirt_xen_ssh.ml" 33 1014 1050
+)
+"input_libvirt_xen_ssh.ml" 35 1103 1136 "input_libvirt_xen_ssh.ml" 35 1103 1147
+type(
+  string option
+)
+ident(
+  int_ref libvirt_uri "input_libvirt_xen_ssh.ml" 33 1014 1051 "input_libvirt_xen_ssh.ml" 33 1014 1062
+)
+"input_libvirt_xen_ssh.ml" 35 1103 1148 "input_libvirt_xen_ssh.ml" 35 1103 1153
+type(
+  string
+)
+ident(
+  int_ref guest "input_libvirt_xen_ssh.ml" 33 1014 1088 "input_libvirt_xen_ssh.ml" 33 1014 1093
+)
+"input_libvirt_xen_ssh.ml" 37 1155 1171 "input_libvirt_xen_ssh.ml" 37 1155 1173
+type(
+  unit
+)
+"input_libvirt_xen_ssh.ml" 38 1176 1183 "input_libvirt_xen_ssh.ml" 38 1176 1190
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"input_libvirt_xen_ssh.ml" 38 1176 1191 "input_libvirt_xen_ssh.ml" 38 1176 1193
+type(
+  unit
+)
+"input_libvirt_xen_ssh.ml" 38 1176 1183 "input_libvirt_xen_ssh.ml" 38 1176 1193
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirt_xen_ssh.ml" 39 1199 1205 "input_libvirt_xen_ssh.ml" 39 1199 1211
+type(
+  (string -> string -> unit, out_channel, unit) format ->
+  string -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"input_libvirt_xen_ssh.ml" 39 1199 1212 "input_libvirt_xen_ssh.ml" 39 1199 1268
+type(
+  (string -> string -> unit, out_channel, unit) format
+)
+"input_libvirt_xen_ssh.ml" 40 1269 1277 "input_libvirt_xen_ssh.ml" 40 1269 1283
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 40 1269 1284 "input_libvirt_xen_ssh.ml" 40 1269 1290
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 39 1199 1205 "input_libvirt_xen_ssh.ml" 40 1269 1290
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_xen_ssh.ml" 38 1176 1180 "input_libvirt_xen_ssh.ml" 40 1269 1290
+type(
+  unit
+)
+"input_libvirt_xen_ssh.ml" 42 1293 1297 "input_libvirt_xen_ssh.ml" 42 1293 1321
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Input_libvirt_other.error_if_libvirt_backend
+)
+"input_libvirt_xen_ssh.ml" 42 1293 1322 "input_libvirt_xen_ssh.ml" 42 1293 1324
+type(
+  unit
+)
+"input_libvirt_xen_ssh.ml" 42 1293 1297 "input_libvirt_xen_ssh.ml" 42 1293 1324
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_xen_ssh.ml" 43 1326 1330 "input_libvirt_xen_ssh.ml" 43 1326 1351
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Input_libvirt_other.error_if_no_ssh_agent
+)
+"input_libvirt_xen_ssh.ml" 43 1326 1352 "input_libvirt_xen_ssh.ml" 43 1326 1354
+type(
+  unit
+)
+"input_libvirt_xen_ssh.ml" 43 1326 1330 "input_libvirt_xen_ssh.ml" 43 1326 1354
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_xen_ssh.ml" 48 1485 1493 "input_libvirt_xen_ssh.ml" 48 1485 1496
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 48 1485 1499 "input_libvirt_xen_ssh.ml" 48 1485 1516
+type(
+  ?password:string -> ?conn:string -> string -> string
+)
+ident(
+  ext_ref Domainxml.dumpxml
+)
+"input_libvirt_xen_ssh.ml" 48 1485 1518 "input_libvirt_xen_ssh.ml" 48 1485 1526
+type(
+  string option
+)
+"input_libvirt_xen_ssh.ml" 48 1485 1533 "input_libvirt_xen_ssh.ml" 48 1485 1544
+type(
+  string option
+)
+"input_libvirt_xen_ssh.ml" 48 1485 1545 "input_libvirt_xen_ssh.ml" 48 1485 1550
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 48 1485 1499 "input_libvirt_xen_ssh.ml" 48 1485 1550
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 49 1554 1562 "input_libvirt_xen_ssh.ml" 49 1554 1568
+type(
+  Types.source
+)
+"input_libvirt_xen_ssh.ml" 49 1554 1570 "input_libvirt_xen_ssh.ml" 49 1554 1575
+type(
+  Input_libvirtxml.parsed_disk list
+)
+"input_libvirt_xen_ssh.ml" 49 1554 1562 "input_libvirt_xen_ssh.ml" 49 1554 1575
+type(
+  Types.source * Input_libvirtxml.parsed_disk list
+)
+"input_libvirt_xen_ssh.ml" 49 1554 1578 "input_libvirt_xen_ssh.ml" 49 1554 1595
+type(
+  ?conn:string -> string -> Types.source * Input_libvirtxml.parsed_disk list
+)
+ident(
+  ext_ref Input_libvirtxml.parse_libvirt_xml
+)
+"input_libvirt_xen_ssh.ml" 49 1554 1602 "input_libvirt_xen_ssh.ml" 49 1554 1613
+type(
+  string option
+)
+"input_libvirt_xen_ssh.ml" 49 1554 1614 "input_libvirt_xen_ssh.ml" 49 1554 1617
+type(
+  string
+)
+ident(
+  int_ref xml "input_libvirt_xen_ssh.ml" 48 1485 1493 "input_libvirt_xen_ssh.ml" 48 1485 1496
+)
+"input_libvirt_xen_ssh.ml" 49 1554 1578 "input_libvirt_xen_ssh.ml" 49 1554 1617
+call(
+  stack
+)
+type(
+  Types.source * Input_libvirtxml.parsed_disk list
+)
+"input_libvirt_xen_ssh.ml" 63 2003 2011 "input_libvirt_xen_ssh.ml" 63 2003 2016
+type(
+  Types.source_disk list
+)
+"input_libvirt_xen_ssh.ml" 63 2003 2019 "input_libvirt_xen_ssh.ml" 63 2003 2027
+type(
+  (Input_libvirtxml.parsed_disk -> Types.source_disk) ->
+  Input_libvirtxml.parsed_disk list -> Types.source_disk list
+)
+ident(
+  ext_ref List.map
+)
+"input_libvirt_xen_ssh.ml" 65 2045 2071 "input_libvirt_xen_ssh.ml" 65 2045 2075
+type(
+  Types.source_disk
+)
+ident(
+  def disk "input_libvirt_xen_ssh.ml" 66 2108 2116 "input_libvirt_xen_ssh.ml" 66 2108 2120
+)
+"input_libvirt_xen_ssh.ml" 65 2045 2088 "input_libvirt_xen_ssh.ml" 65 2045 2102
+type(
+  Input_libvirtxml.parsed_source
+)
+"input_libvirt_xen_ssh.ml" 65 2045 2053 "input_libvirt_xen_ssh.ml" 65 2045 2104
+type(
+  Input_libvirtxml.parsed_disk
+)
+"input_libvirt_xen_ssh.ml" 66 2108 2116 "input_libvirt_xen_ssh.ml" 66 2108 2120
+type(
+  Types.source_disk
+)
+ident(
+  int_ref disk "input_libvirt_xen_ssh.ml" 65 2045 2071 "input_libvirt_xen_ssh.ml" 65 2045 2075
+)
+"input_libvirt_xen_ssh.ml" 67 2121 2147 "input_libvirt_xen_ssh.ml" 67 2121 2151
+type(
+  Types.source_disk
+)
+ident(
+  def disk "input_libvirt_xen_ssh.ml" 70 2296 2304 "input_libvirt_xen_ssh.ml" 96 3218 3261
+)
+"input_libvirt_xen_ssh.ml" 67 2121 2177 "input_libvirt_xen_ssh.ml" 67 2121 2181
+type(
+  string
+)
+ident(
+  def path "input_libvirt_xen_ssh.ml" 70 2296 2304 "input_libvirt_xen_ssh.ml" 96 3218 3261
+)
+"input_libvirt_xen_ssh.ml" 67 2121 2164 "input_libvirt_xen_ssh.ml" 67 2121 2181
+type(
+  Input_libvirtxml.parsed_source
+)
+"input_libvirt_xen_ssh.ml" 67 2121 2129 "input_libvirt_xen_ssh.ml" 67 2121 2183
+type(
+  Input_libvirtxml.parsed_disk
+)
+"input_libvirt_xen_ssh.ml" 68 2184 2210 "input_libvirt_xen_ssh.ml" 68 2184 2214
+type(
+  Types.source_disk
+)
+ident(
+  def disk "input_libvirt_xen_ssh.ml" 70 2296 2304 "input_libvirt_xen_ssh.ml" 96 3218 3261
+)
+"input_libvirt_xen_ssh.ml" 68 2184 2241 "input_libvirt_xen_ssh.ml" 68 2184 2245
+type(
+  string
+)
+ident(
+  def path "input_libvirt_xen_ssh.ml" 70 2296 2304 "input_libvirt_xen_ssh.ml" 96 3218 3261
+)
+"input_libvirt_xen_ssh.ml" 68 2184 2227 "input_libvirt_xen_ssh.ml" 68 2184 2245
+type(
+  Input_libvirtxml.parsed_source
+)
+"input_libvirt_xen_ssh.ml" 68 2184 2192 "input_libvirt_xen_ssh.ml" 68 2184 2247
+type(
+  Input_libvirtxml.parsed_disk
+)
+"input_libvirt_xen_ssh.ml" 67 2121 2129 "input_libvirt_xen_ssh.ml" 68 2184 2247
+type(
+  Input_libvirtxml.parsed_disk
+)
+"input_libvirt_xen_ssh.ml" 70 2296 2308 "input_libvirt_xen_ssh.ml" 70 2296 2319
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_xen_ssh.ml" 71 2324 2334 "input_libvirt_xen_ssh.ml" 71 2324 2347
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 71 2324 2361 "input_libvirt_xen_ssh.ml" 71 2324 2366
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 71 2324 2349 "input_libvirt_xen_ssh.ml" 71 2324 2366
+type(
+  JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 71 2324 2334 "input_libvirt_xen_ssh.ml" 71 2324 2366
+type(
+  string * JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 72 2368 2378 "input_libvirt_xen_ssh.ml" 72 2368 2389
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 72 2368 2403 "input_libvirt_xen_ssh.ml" 72 2368 2407
+type(
+  string
+)
+ident(
+  int_ref path "input_libvirt_xen_ssh.ml" 67 2121 2177 "input_libvirt_xen_ssh.ml" 67 2121 2181
+)
+"input_libvirt_xen_ssh.ml" 72 2368 2391 "input_libvirt_xen_ssh.ml" 72 2368 2407
+type(
+  JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 72 2368 2378 "input_libvirt_xen_ssh.ml" 72 2368 2407
+type(
+  string * JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 73 2409 2419 "input_libvirt_xen_ssh.ml" 73 2409 2430
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 73 2409 2444 "input_libvirt_xen_ssh.ml" 73 2409 2450
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 73 2409 2432 "input_libvirt_xen_ssh.ml" 73 2409 2450
+type(
+  JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 73 2409 2419 "input_libvirt_xen_ssh.ml" 73 2409 2450
+type(
+  string * JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 74 2452 2462 "input_libvirt_xen_ssh.ml" 74 2452 2483
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 74 2452 2497 "input_libvirt_xen_ssh.ml" 74 2452 2501
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 74 2452 2485 "input_libvirt_xen_ssh.ml" 74 2452 2501
+type(
+  JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 74 2452 2462 "input_libvirt_xen_ssh.ml" 74 2452 2501
+type(
+  string * JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 70 2296 2322 "input_libvirt_xen_ssh.ml" 75 2503 2512
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_xen_ssh.ml" 77 2517 2529 "input_libvirt_xen_ssh.ml" 77 2517 2540
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_xen_ssh.ml" 78 2543 2559 "input_libvirt_xen_ssh.ml" 78 2543 2569
+type(
+  Xml.uri
+)
+"input_libvirt_xen_ssh.ml" 78 2543 2559 "input_libvirt_xen_ssh.ml" 78 2543 2578
+type(
+  int
+)
+"input_libvirt_xen_ssh.ml" 79 2584 2596 "input_libvirt_xen_ssh.ml" 79 2584 2597
+type(
+  int
+)
+"input_libvirt_xen_ssh.ml" 79 2584 2600 "input_libvirt_xen_ssh.ml" 79 2584 2602
+type(
+  int
+)
+"input_libvirt_xen_ssh.ml" 79 2584 2596 "input_libvirt_xen_ssh.ml" 79 2584 2602
+type(
+  int
+)
+"input_libvirt_xen_ssh.ml" 79 2584 2606 "input_libvirt_xen_ssh.ml" 79 2584 2617
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref json_params "input_libvirt_xen_ssh.ml" 70 2296 2308 "input_libvirt_xen_ssh.ml" 70 2296 2319
+)
+"input_libvirt_xen_ssh.ml" 83 2733 2745 "input_libvirt_xen_ssh.ml" 83 2733 2746
+type(
+  int
+)
+ident(
+  def i "input_libvirt_xen_ssh.ml" 83 2733 2750 "input_libvirt_xen_ssh.ml" 83 2733 2790
+)
+"input_libvirt_xen_ssh.ml" 83 2733 2751 "input_libvirt_xen_ssh.ml" 83 2733 2762
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 83 2733 2773 "input_libvirt_xen_ssh.ml" 83 2733 2774
+type(
+  int
+)
+ident(
+  int_ref i "input_libvirt_xen_ssh.ml" 83 2733 2745 "input_libvirt_xen_ssh.ml" 83 2733 2746
+)
+"input_libvirt_xen_ssh.ml" 83 2733 2764 "input_libvirt_xen_ssh.ml" 83 2733 2774
+type(
+  JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 83 2733 2750 "input_libvirt_xen_ssh.ml" 83 2733 2775
+type(
+  string * JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 83 2733 2779 "input_libvirt_xen_ssh.ml" 83 2733 2790
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref json_params "input_libvirt_xen_ssh.ml" 70 2296 2308 "input_libvirt_xen_ssh.ml" 70 2296 2319
+)
+"input_libvirt_xen_ssh.ml" 83 2733 2750 "input_libvirt_xen_ssh.ml" 83 2733 2790
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_xen_ssh.ml" 78 2543 2553 "input_libvirt_xen_ssh.ml" 83 2733 2790
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_xen_ssh.ml" 85 2795 2807 "input_libvirt_xen_ssh.ml" 85 2795 2818
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_xen_ssh.ml" 86 2821 2837 "input_libvirt_xen_ssh.ml" 86 2821 2847
+type(
+  Xml.uri
+)
+"input_libvirt_xen_ssh.ml" 86 2821 2837 "input_libvirt_xen_ssh.ml" 86 2821 2856
+type(
+  string option
+)
+"input_libvirt_xen_ssh.ml" 87 2862 2874 "input_libvirt_xen_ssh.ml" 87 2862 2878
+type(
+  string option
+)
+"input_libvirt_xen_ssh.ml" 87 2862 2882 "input_libvirt_xen_ssh.ml" 87 2862 2893
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref json_params "input_libvirt_xen_ssh.ml" 77 2517 2529 "input_libvirt_xen_ssh.ml" 77 2517 2540
+)
+"input_libvirt_xen_ssh.ml" 88 2894 2911 "input_libvirt_xen_ssh.ml" 88 2894 2915
+type(
+  string
+)
+ident(
+  def user "input_libvirt_xen_ssh.ml" 88 2894 2919 "input_libvirt_xen_ssh.ml" 88 2894 2965
+)
+"input_libvirt_xen_ssh.ml" 88 2894 2906 "input_libvirt_xen_ssh.ml" 88 2894 2915
+type(
+  string option
+)
+"input_libvirt_xen_ssh.ml" 88 2894 2920 "input_libvirt_xen_ssh.ml" 88 2894 2931
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 88 2894 2945 "input_libvirt_xen_ssh.ml" 88 2894 2949
+type(
+  string
+)
+ident(
+  int_ref user "input_libvirt_xen_ssh.ml" 88 2894 2911 "input_libvirt_xen_ssh.ml" 88 2894 2915
+)
+"input_libvirt_xen_ssh.ml" 88 2894 2933 "input_libvirt_xen_ssh.ml" 88 2894 2949
+type(
+  JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 88 2894 2919 "input_libvirt_xen_ssh.ml" 88 2894 2950
+type(
+  string * JSON.json_t
+)
+"input_libvirt_xen_ssh.ml" 88 2894 2954 "input_libvirt_xen_ssh.ml" 88 2894 2965
+type(
+  (string * JSON.json_t) list
+)
+ident(
+  int_ref json_params "input_libvirt_xen_ssh.ml" 77 2517 2529 "input_libvirt_xen_ssh.ml" 77 2517 2540
+)
+"input_libvirt_xen_ssh.ml" 88 2894 2919 "input_libvirt_xen_ssh.ml" 88 2894 2965
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_xen_ssh.ml" 86 2821 2831 "input_libvirt_xen_ssh.ml" 88 2894 2965
+type(
+  (string * JSON.json_t) list
+)
+"input_libvirt_xen_ssh.ml" 90 2970 2981 "input_libvirt_xen_ssh.ml" 90 2970 2988
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"input_libvirt_xen_ssh.ml" 90 2970 2989 "input_libvirt_xen_ssh.ml" 90 2970 2991
+type(
+  unit
+)
+"input_libvirt_xen_ssh.ml" 90 2970 2981 "input_libvirt_xen_ssh.ml" 90 2970 2991
+call(
+  stack
+)
+type(
+  bool
+)
+"input_libvirt_xen_ssh.ml" 91 2997 3007 "input_libvirt_xen_ssh.ml" 91 2997 3013
+type(
+  (string -> unit, out_channel, unit) format -> string -> unit
+)
+ident(
+  ext_ref Printf.printf
+)
+"input_libvirt_xen_ssh.ml" 91 2997 3014 "input_libvirt_xen_ssh.ml" 91 2997 3042
+type(
+  (string -> unit, out_channel, unit) format
+)
+"input_libvirt_xen_ssh.ml" 91 2997 3044 "input_libvirt_xen_ssh.ml" 91 2997 3062
+type(
+  ?fmt:JSON.output_format -> JSON.doc -> string
+)
+ident(
+  ext_ref JSON.string_of_doc
+)
+"input_libvirt_xen_ssh.ml" 91 2997 3063 "input_libvirt_xen_ssh.ml" 91 2997 3074
+type(
+  JSON.doc
+)
+ident(
+  int_ref json_params "input_libvirt_xen_ssh.ml" 85 2795 2807 "input_libvirt_xen_ssh.ml" 85 2795 2818
+)
+"input_libvirt_xen_ssh.ml" 91 2997 3043 "input_libvirt_xen_ssh.ml" 91 2997 3075
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 91 2997 3007 "input_libvirt_xen_ssh.ml" 91 2997 3075
+call(
+  stack
+)
+type(
+  unit
+)
+"input_libvirt_xen_ssh.ml" 90 2970 2978 "input_libvirt_xen_ssh.ml" 91 2997 3075
+type(
+  unit
+)
+"input_libvirt_xen_ssh.ml" 94 3149 3161 "input_libvirt_xen_ssh.ml" 94 3149 3169
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 94 3149 3172 "input_libvirt_xen_ssh.ml" 94 3149 3180
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 94 3149 3181 "input_libvirt_xen_ssh.ml" 94 3149 3182
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"input_libvirt_xen_ssh.ml" 94 3149 3183 "input_libvirt_xen_ssh.ml" 94 3149 3201
+type(
+  ?fmt:JSON.output_format -> JSON.doc -> string
+)
+ident(
+  ext_ref JSON.string_of_doc
+)
+"input_libvirt_xen_ssh.ml" 94 3149 3202 "input_libvirt_xen_ssh.ml" 94 3149 3213
+type(
+  JSON.doc
+)
+ident(
+  int_ref json_params "input_libvirt_xen_ssh.ml" 85 2795 2807 "input_libvirt_xen_ssh.ml" 85 2795 2818
+)
+"input_libvirt_xen_ssh.ml" 94 3149 3183 "input_libvirt_xen_ssh.ml" 94 3149 3213
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 94 3149 3172 "input_libvirt_xen_ssh.ml" 94 3149 3213
+call(
+  stack
+)
+type(
+  string
+)
+"input_libvirt_xen_ssh.ml" 96 3218 3228 "input_libvirt_xen_ssh.ml" 96 3218 3232
+type(
+  Types.source_disk
+)
+ident(
+  int_ref disk "input_libvirt_xen_ssh.ml" 67 2121 2147 "input_libvirt_xen_ssh.ml" 67 2121 2151
+)
+"input_libvirt_xen_ssh.ml" 96 3218 3251 "input_libvirt_xen_ssh.ml" 96 3218 3259
+type(
+  string
+)
+ident(
+  int_ref qemu_uri "input_libvirt_xen_ssh.ml" 94 3149 3161 "input_libvirt_xen_ssh.ml" 94 3149 3169
+)
+"input_libvirt_xen_ssh.ml" 96 3218 3226 "input_libvirt_xen_ssh.ml" 96 3218 3261
+type(
+  Types.source_disk
+)
+"input_libvirt_xen_ssh.ml" 94 3149 3157 "input_libvirt_xen_ssh.ml" 96 3218 3261
+type(
+  Types.source_disk
+)
+"input_libvirt_xen_ssh.ml" 90 2970 2978 "input_libvirt_xen_ssh.ml" 96 3218 3261
+type(
+  Types.source_disk
+)
+"input_libvirt_xen_ssh.ml" 85 2795 2803 "input_libvirt_xen_ssh.ml" 96 3218 3261
+type(
+  Types.source_disk
+)
+"input_libvirt_xen_ssh.ml" 77 2517 2525 "input_libvirt_xen_ssh.ml" 96 3218 3261
+type(
+  Types.source_disk
+)
+"input_libvirt_xen_ssh.ml" 70 2296 2304 "input_libvirt_xen_ssh.ml" 96 3218 3261
+type(
+  Types.source_disk
+)
+"input_libvirt_xen_ssh.ml" 63 2003 2028 "input_libvirt_xen_ssh.ml" 97 3262 3267
+type(
+  Input_libvirtxml.parsed_disk -> Types.source_disk
+)
+"input_libvirt_xen_ssh.ml" 97 3262 3268 "input_libvirt_xen_ssh.ml" 97 3262 3273
+type(
+  Input_libvirtxml.parsed_disk list
+)
+ident(
+  int_ref disks "input_libvirt_xen_ssh.ml" 49 1554 1570 "input_libvirt_xen_ssh.ml" 49 1554 1575
+)
+"input_libvirt_xen_ssh.ml" 63 2003 2019 "input_libvirt_xen_ssh.ml" 97 3262 3273
+call(
+  stack
+)
+type(
+  Types.source_disk list
+)
+"input_libvirt_xen_ssh.ml" 99 3278 3284 "input_libvirt_xen_ssh.ml" 99 3278 3290
+type(
+  Types.source
+)
+ident(
+  int_ref source "input_libvirt_xen_ssh.ml" 49 1554 1562 "input_libvirt_xen_ssh.ml" 49 1554 1568
+)
+"input_libvirt_xen_ssh.ml" 99 3278 3306 "input_libvirt_xen_ssh.ml" 99 3278 3311
+type(
+  Types.source_disk list
+)
+ident(
+  int_ref disks "input_libvirt_xen_ssh.ml" 63 2003 2011 "input_libvirt_xen_ssh.ml" 63 2003 2016
+)
+"input_libvirt_xen_ssh.ml" 99 3278 3282 "input_libvirt_xen_ssh.ml" 99 3278 3313
+type(
+  Types.source
+)
+"input_libvirt_xen_ssh.ml" 63 2003 2007 "input_libvirt_xen_ssh.ml" 99 3278 3313
+type(
+  Types.source
+)
+"input_libvirt_xen_ssh.ml" 49 1554 1558 "input_libvirt_xen_ssh.ml" 99 3278 3313
+type(
+  Types.source
+)
+"input_libvirt_xen_ssh.ml" 48 1485 1489 "input_libvirt_xen_ssh.ml" 99 3278 3313
+type(
+  Types.source
+)
+"input_libvirt_xen_ssh.ml" 43 1326 1330 "input_libvirt_xen_ssh.ml" 99 3278 3313
+type(
+  Types.source
+)
+"input_libvirt_xen_ssh.ml" 42 1293 1297 "input_libvirt_xen_ssh.ml" 99 3278 3313
+type(
+  Types.source
+)
+"input_libvirt_xen_ssh.ml" 38 1176 1180 "input_libvirt_xen_ssh.ml" 99 3278 3313
+type(
+  Types.source
+)
+"input_libvirt_xen_ssh.ml" 102 3319 3323 "input_libvirt_xen_ssh.ml" 102 3319 3344
+type(
+  string option ->
+  string option ->
+  Xml.uri -> string -> string -> string -> input_libvirt_xen_ssh
+)
+ident(
+  def input_libvirt_xen_ssh "input_libvirt_xen_ssh.ml" 102 3319 3372 --
+)
+"input_libvirt_xen_ssh.ml" 102 3319 3347 "input_libvirt_xen_ssh.ml" 102 3319 3372
+type(
+  string option ->
+  string option ->
+  Xml.uri -> string -> string -> string -> input_libvirt_xen_ssh
+)

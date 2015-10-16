@@ -1,0 +1,4498 @@
+"customize_main.ml" 29 903 907 "customize_main.ml" 29 903 909
+type(
+  unit
+)
+"customize_main.ml" 29 903 912 "customize_main.ml" 29 903 928
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Random.self_init
+)
+"customize_main.ml" 29 903 929 "customize_main.ml" 29 903 931
+type(
+  unit
+)
+"customize_main.ml" 29 903 912 "customize_main.ml" 29 903 931
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 31 933 937 "customize_main.ml" 31 933 941
+type(
+  unit -> unit
+)
+ident(
+  def main "customize_main.ml" 224 7754 7754 --
+)
+"customize_main.ml" 31 933 942 "customize_main.ml" 31 933 944
+type(
+  unit
+)
+"customize_main.ml" 32 947 953 "customize_main.ml" 32 947 959
+type(
+  (string option * string) list ref
+)
+"customize_main.ml" 32 947 962 "customize_main.ml" 32 947 965
+type(
+  (string option * string) list -> (string option * string) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 32 947 966 "customize_main.ml" 32 947 968
+type(
+  (string option * string) list
+)
+"customize_main.ml" 32 947 962 "customize_main.ml" 32 947 968
+type(
+  (string option * string) list ref
+)
+"customize_main.ml" 33 972 978 "customize_main.ml" 33 972 991
+type(
+  string option ref
+)
+"customize_main.ml" 33 972 994 "customize_main.ml" 33 972 997
+type(
+  string option -> string option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 33 972 998 "customize_main.ml" 33 972 1002
+type(
+  string option
+)
+"customize_main.ml" 33 972 994 "customize_main.ml" 33 972 1002
+type(
+  string option ref
+)
+"customize_main.ml" 34 1006 1012 "customize_main.ml" 34 1006 1034
+type(
+  bool ref
+)
+"customize_main.ml" 34 1006 1037 "customize_main.ml" 34 1006 1040
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 34 1006 1041 "customize_main.ml" 34 1006 1045
+type(
+  bool
+)
+"customize_main.ml" 34 1006 1037 "customize_main.ml" 34 1006 1045
+type(
+  bool ref
+)
+"customize_main.ml" 35 1049 1055 "customize_main.ml" 35 1049 1072
+type(
+  string -> unit
+)
+"customize_main.ml" 35 1049 1073 "customize_main.ml" 35 1049 1074
+type(
+  string
+)
+ident(
+  def s "customize_main.ml" 36 1077 1081 "customize_main.ml" 39 1169 1203
+)
+"customize_main.ml" 36 1077 1081 "customize_main.ml" 36 1077 1103
+type(
+  bool ref
+)
+ident(
+  int_ref attach_format_consumed "customize_main.ml" 34 1006 1012 "customize_main.ml" 34 1006 1034
+)
+"customize_main.ml" 36 1077 1104 "customize_main.ml" 36 1077 1106
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_main.ml" 36 1077 1107 "customize_main.ml" 36 1077 1112
+type(
+  bool
+)
+"customize_main.ml" 36 1077 1081 "customize_main.ml" 36 1077 1112
+type(
+  unit
+)
+"customize_main.ml" 37 1114 1124 "customize_main.ml" 37 1114 1125
+type(
+  string
+)
+ident(
+  int_ref s "customize_main.ml" 35 1049 1073 "customize_main.ml" 35 1049 1074
+)
+"customize_main.ml" 38 1131 1137 "customize_main.ml" 38 1131 1143
+type(
+  string
+)
+"customize_main.ml" 38 1131 1147 "customize_main.ml" 38 1131 1160
+type(
+  string option ref
+)
+ident(
+  int_ref attach_format "customize_main.ml" 33 972 978 "customize_main.ml" 33 972 991
+)
+"customize_main.ml" 38 1131 1161 "customize_main.ml" 38 1131 1163
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_main.ml" 38 1131 1164 "customize_main.ml" 38 1131 1168
+type(
+  string option
+)
+"customize_main.ml" 38 1131 1147 "customize_main.ml" 38 1131 1168
+type(
+  unit
+)
+"customize_main.ml" 39 1169 1175 "customize_main.ml" 39 1169 1176
+type(
+  string
+)
+ident(
+  def s "customize_main.ml" 39 1169 1180 "customize_main.ml" 39 1169 1203
+)
+"customize_main.ml" 39 1169 1180 "customize_main.ml" 39 1169 1193
+type(
+  string option ref
+)
+ident(
+  int_ref attach_format "customize_main.ml" 33 972 978 "customize_main.ml" 33 972 991
+)
+"customize_main.ml" 39 1169 1194 "customize_main.ml" 39 1169 1196
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_main.ml" 39 1169 1202 "customize_main.ml" 39 1169 1203
+type(
+  string
+)
+ident(
+  int_ref s "customize_main.ml" 39 1169 1175 "customize_main.ml" 39 1169 1176
+)
+"customize_main.ml" 39 1169 1197 "customize_main.ml" 39 1169 1203
+type(
+  string option
+)
+"customize_main.ml" 39 1169 1180 "customize_main.ml" 39 1169 1203
+type(
+  unit
+)
+"customize_main.ml" 37 1114 1118 "customize_main.ml" 39 1169 1203
+type(
+  unit
+)
+"customize_main.ml" 36 1077 1081 "customize_main.ml" 39 1169 1203
+type(
+  unit
+)
+"customize_main.ml" 41 1209 1215 "customize_main.ml" 41 1209 1226
+type(
+  string -> unit
+)
+"customize_main.ml" 41 1209 1227 "customize_main.ml" 41 1209 1228
+type(
+  string
+)
+ident(
+  def s "customize_main.ml" 41 1209 1231 "customize_main.ml" 41 1209 1271
+)
+"customize_main.ml" 41 1209 1231 "customize_main.ml" 41 1209 1237
+type(
+  (string option * string) list ref
+)
+ident(
+  int_ref attach "customize_main.ml" 32 947 953 "customize_main.ml" 32 947 959
+)
+"customize_main.ml" 41 1209 1238 "customize_main.ml" 41 1209 1240
+type(
+  (string option * string) list ref -> (string option * string) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_main.ml" 41 1209 1242 "customize_main.ml" 41 1209 1243
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 41 1209 1243 "customize_main.ml" 41 1209 1256
+type(
+  string option ref
+)
+ident(
+  int_ref attach_format "customize_main.ml" 33 972 978 "customize_main.ml" 33 972 991
+)
+"customize_main.ml" 41 1209 1242 "customize_main.ml" 41 1209 1256
+type(
+  string option
+)
+"customize_main.ml" 41 1209 1258 "customize_main.ml" 41 1209 1259
+type(
+  string
+)
+ident(
+  int_ref s "customize_main.ml" 41 1209 1227 "customize_main.ml" 41 1209 1228
+)
+"customize_main.ml" 41 1209 1241 "customize_main.ml" 41 1209 1260
+type(
+  string option * string
+)
+"customize_main.ml" 41 1209 1264 "customize_main.ml" 41 1209 1265
+type(
+  (string option * string) list ref -> (string option * string) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 41 1209 1265 "customize_main.ml" 41 1209 1271
+type(
+  (string option * string) list ref
+)
+ident(
+  int_ref attach "customize_main.ml" 32 947 953 "customize_main.ml" 32 947 959
+)
+"customize_main.ml" 41 1209 1264 "customize_main.ml" 41 1209 1271
+type(
+  (string option * string) list
+)
+"customize_main.ml" 41 1209 1241 "customize_main.ml" 41 1209 1271
+type(
+  (string option * string) list
+)
+"customize_main.ml" 41 1209 1231 "customize_main.ml" 41 1209 1271
+type(
+  unit
+)
+"customize_main.ml" 42 1275 1281 "customize_main.ml" 42 1275 1287
+type(
+  string option ref
+)
+"customize_main.ml" 42 1275 1290 "customize_main.ml" 42 1275 1293
+type(
+  string option -> string option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 42 1275 1294 "customize_main.ml" 42 1275 1298
+type(
+  string option
+)
+"customize_main.ml" 42 1275 1290 "customize_main.ml" 42 1275 1298
+type(
+  string option ref
+)
+"customize_main.ml" 43 1302 1308 "customize_main.ml" 43 1302 1314
+type(
+  bool ref
+)
+"customize_main.ml" 43 1302 1317 "customize_main.ml" 43 1302 1320
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 43 1302 1321 "customize_main.ml" 43 1302 1326
+type(
+  bool
+)
+"customize_main.ml" 43 1302 1317 "customize_main.ml" 43 1302 1326
+type(
+  bool ref
+)
+"customize_main.ml" 44 1330 1336 "customize_main.ml" 44 1330 1341
+type(
+  (URI.uri * string option) list ref
+)
+"customize_main.ml" 44 1330 1344 "customize_main.ml" 44 1330 1347
+type(
+  (URI.uri * string option) list -> (URI.uri * string option) list ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 44 1330 1348 "customize_main.ml" 44 1330 1350
+type(
+  (URI.uri * string option) list
+)
+"customize_main.ml" 44 1330 1344 "customize_main.ml" 44 1330 1350
+type(
+  (URI.uri * string option) list ref
+)
+"customize_main.ml" 45 1354 1360 "customize_main.ml" 45 1354 1366
+type(
+  string ref
+)
+"customize_main.ml" 45 1354 1369 "customize_main.ml" 45 1354 1372
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 45 1354 1373 "customize_main.ml" 45 1354 1379
+type(
+  string
+)
+"customize_main.ml" 45 1354 1369 "customize_main.ml" 45 1354 1379
+type(
+  string ref
+)
+"customize_main.ml" 46 1383 1389 "customize_main.ml" 46 1383 1404
+type(
+  bool ref
+)
+"customize_main.ml" 46 1383 1407 "customize_main.ml" 46 1383 1410
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 46 1383 1411 "customize_main.ml" 46 1383 1415
+type(
+  bool
+)
+"customize_main.ml" 46 1383 1407 "customize_main.ml" 46 1383 1415
+type(
+  bool ref
+)
+"customize_main.ml" 47 1419 1425 "customize_main.ml" 47 1419 1435
+type(
+  string -> unit
+)
+"customize_main.ml" 47 1419 1436 "customize_main.ml" 47 1419 1437
+type(
+  string
+)
+ident(
+  def s "customize_main.ml" 48 1440 1444 "customize_main.ml" 49 1457 1485
+)
+"customize_main.ml" 48 1440 1444 "customize_main.ml" 48 1440 1450
+type(
+  string ref
+)
+ident(
+  int_ref format "customize_main.ml" 45 1354 1360 "customize_main.ml" 45 1354 1366
+)
+"customize_main.ml" 48 1440 1451 "customize_main.ml" 48 1440 1453
+type(
+  string ref -> string -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_main.ml" 48 1440 1454 "customize_main.ml" 48 1440 1455
+type(
+  string
+)
+ident(
+  int_ref s "customize_main.ml" 47 1419 1436 "customize_main.ml" 47 1419 1437
+)
+"customize_main.ml" 48 1440 1444 "customize_main.ml" 48 1440 1455
+type(
+  unit
+)
+"customize_main.ml" 49 1457 1461 "customize_main.ml" 49 1457 1476
+type(
+  bool ref
+)
+ident(
+  int_ref format_consumed "customize_main.ml" 46 1383 1389 "customize_main.ml" 46 1383 1404
+)
+"customize_main.ml" 49 1457 1477 "customize_main.ml" 49 1457 1479
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_main.ml" 49 1457 1480 "customize_main.ml" 49 1457 1485
+type(
+  bool
+)
+"customize_main.ml" 49 1457 1461 "customize_main.ml" 49 1457 1485
+type(
+  unit
+)
+"customize_main.ml" 48 1440 1444 "customize_main.ml" 49 1457 1485
+type(
+  unit
+)
+"customize_main.ml" 51 1491 1497 "customize_main.ml" 51 1491 1507
+type(
+  string ref
+)
+"customize_main.ml" 51 1491 1510 "customize_main.ml" 51 1491 1513
+type(
+  string -> string ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 51 1491 1514 "customize_main.ml" 51 1491 1516
+type(
+  string
+)
+"customize_main.ml" 51 1491 1510 "customize_main.ml" 51 1491 1516
+type(
+  string ref
+)
+"customize_main.ml" 52 1520 1526 "customize_main.ml" 52 1520 1533
+type(
+  int option ref
+)
+"customize_main.ml" 52 1520 1536 "customize_main.ml" 52 1520 1539
+type(
+  int option -> int option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 52 1520 1540 "customize_main.ml" 52 1520 1544
+type(
+  int option
+)
+"customize_main.ml" 52 1520 1536 "customize_main.ml" 52 1520 1544
+type(
+  int option ref
+)
+"customize_main.ml" 53 1548 1554 "customize_main.ml" 53 1548 1565
+type(
+  int -> unit
+)
+"customize_main.ml" 53 1548 1566 "customize_main.ml" 53 1548 1569
+type(
+  int
+)
+ident(
+  def arg "customize_main.ml" 53 1548 1572 "customize_main.ml" 53 1548 1591
+)
+"customize_main.ml" 53 1548 1572 "customize_main.ml" 53 1548 1579
+type(
+  int option ref
+)
+ident(
+  int_ref memsize "customize_main.ml" 52 1520 1526 "customize_main.ml" 52 1520 1533
+)
+"customize_main.ml" 53 1548 1580 "customize_main.ml" 53 1548 1582
+type(
+  int option ref -> int option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_main.ml" 53 1548 1588 "customize_main.ml" 53 1548 1591
+type(
+  int
+)
+ident(
+  int_ref arg "customize_main.ml" 53 1548 1566 "customize_main.ml" 53 1548 1569
+)
+"customize_main.ml" 53 1548 1583 "customize_main.ml" 53 1548 1591
+type(
+  int option
+)
+"customize_main.ml" 53 1548 1572 "customize_main.ml" 53 1548 1591
+type(
+  unit
+)
+"customize_main.ml" 54 1595 1601 "customize_main.ml" 54 1595 1608
+type(
+  bool ref
+)
+"customize_main.ml" 54 1595 1611 "customize_main.ml" 54 1595 1614
+type(
+  bool -> bool ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 54 1595 1615 "customize_main.ml" 54 1595 1619
+type(
+  bool
+)
+"customize_main.ml" 54 1595 1611 "customize_main.ml" 54 1595 1619
+type(
+  bool ref
+)
+"customize_main.ml" 55 1623 1629 "customize_main.ml" 55 1623 1632
+type(
+  int option ref
+)
+"customize_main.ml" 55 1623 1635 "customize_main.ml" 55 1623 1638
+type(
+  int option -> int option ref
+)
+ident(
+  ext_ref Pervasives.ref
+)
+"customize_main.ml" 55 1623 1639 "customize_main.ml" 55 1623 1643
+type(
+  int option
+)
+"customize_main.ml" 55 1623 1635 "customize_main.ml" 55 1623 1643
+type(
+  int option ref
+)
+"customize_main.ml" 56 1647 1653 "customize_main.ml" 56 1647 1660
+type(
+  int -> unit
+)
+"customize_main.ml" 56 1647 1661 "customize_main.ml" 56 1647 1664
+type(
+  int
+)
+ident(
+  def arg "customize_main.ml" 56 1647 1667 "customize_main.ml" 56 1647 1682
+)
+"customize_main.ml" 56 1647 1667 "customize_main.ml" 56 1647 1670
+type(
+  int option ref
+)
+ident(
+  int_ref smp "customize_main.ml" 55 1623 1629 "customize_main.ml" 55 1623 1632
+)
+"customize_main.ml" 56 1647 1671 "customize_main.ml" 56 1647 1673
+type(
+  int option ref -> int option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_main.ml" 56 1647 1679 "customize_main.ml" 56 1647 1682
+type(
+  int
+)
+ident(
+  int_ref arg "customize_main.ml" 56 1647 1661 "customize_main.ml" 56 1647 1664
+)
+"customize_main.ml" 56 1647 1674 "customize_main.ml" 56 1647 1682
+type(
+  int option
+)
+"customize_main.ml" 56 1647 1667 "customize_main.ml" 56 1647 1682
+type(
+  unit
+)
+"customize_main.ml" 58 1687 1693 "customize_main.ml" 58 1687 1701
+type(
+  string -> unit
+)
+"customize_main.ml" 58 1687 1702 "customize_main.ml" 58 1687 1705
+type(
+  string
+)
+ident(
+  def arg "customize_main.ml" 59 1708 1712 "customize_main.ml" 66 2007 2034
+)
+"customize_main.ml" 59 1708 1716 "customize_main.ml" 59 1708 1719
+type(
+  URI.uri
+)
+"customize_main.ml" 60 1722 1732 "customize_main.ml" 60 1722 1745
+type(
+  string -> URI.uri
+)
+ident(
+  ext_ref URI.parse_uri
+)
+"customize_main.ml" 60 1722 1746 "customize_main.ml" 60 1722 1749
+type(
+  string
+)
+ident(
+  int_ref arg "customize_main.ml" 58 1687 1702 "customize_main.ml" 58 1687 1705
+)
+"customize_main.ml" 60 1722 1732 "customize_main.ml" 60 1722 1749
+call(
+  stack
+)
+type(
+  URI.uri
+)
+"customize_main.ml" 61 1750 1778 "customize_main.ml" 61 1750 1793
+type(
+  string
+)
+"customize_main.ml" 61 1750 1761 "customize_main.ml" 61 1750 1793
+type(
+  exn
+)
+"customize_main.ml" 62 1797 1805 "customize_main.ml" 62 1797 1810
+type(
+  ?exit_code:int ->
+  (string -> URI.uri, unit, string, URI.uri) format4 -> string -> URI.uri
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_main.ml" 62 1797 1812 "customize_main.ml" 62 1797 1814
+type(
+  (string -> URI.uri, unit, string, string, string, URI.uri) format6 ->
+  (string -> URI.uri, unit, string, URI.uri) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_main.ml" 62 1797 1814 "customize_main.ml" 62 1797 1878
+type(
+  (string -> URI.uri, unit, string, string, string, URI.uri) format6
+)
+"customize_main.ml" 62 1797 1811 "customize_main.ml" 62 1797 1879
+type(
+  (string -> URI.uri, unit, string, URI.uri) format4
+)
+"customize_main.ml" 63 1880 1890 "customize_main.ml" 63 1880 1893
+type(
+  string
+)
+ident(
+  int_ref arg "customize_main.ml" 58 1687 1702 "customize_main.ml" 58 1687 1705
+)
+"customize_main.ml" 62 1797 1805 "customize_main.ml" 63 1880 1893
+call(
+  stack
+)
+type(
+  URI.uri
+)
+"customize_main.ml" 60 1722 1728 "customize_main.ml" 63 1880 1893
+type(
+  URI.uri
+)
+"customize_main.ml" 64 1897 1905 "customize_main.ml" 64 1897 1911
+type(
+  string option
+)
+"customize_main.ml" 64 1897 1920 "customize_main.ml" 64 1897 1921
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 64 1897 1921 "customize_main.ml" 64 1897 1927
+type(
+  string ref
+)
+ident(
+  int_ref format "customize_main.ml" 45 1354 1360 "customize_main.ml" 45 1354 1366
+)
+"customize_main.ml" 64 1897 1920 "customize_main.ml" 64 1897 1927
+type(
+  string
+)
+"customize_main.ml" 64 1897 1933 "customize_main.ml" 64 1897 1939
+type(
+  string
+)
+"customize_main.ml" 64 1897 1943 "customize_main.ml" 64 1897 1947
+type(
+  string option
+)
+"customize_main.ml" 64 1897 1950 "customize_main.ml" 64 1897 1953
+type(
+  string
+)
+ident(
+  def fmt "customize_main.ml" 64 1897 1957 "customize_main.ml" 64 1897 1965
+)
+"customize_main.ml" 64 1897 1962 "customize_main.ml" 64 1897 1965
+type(
+  string
+)
+ident(
+  int_ref fmt "customize_main.ml" 64 1897 1950 "customize_main.ml" 64 1897 1953
+)
+"customize_main.ml" 64 1897 1957 "customize_main.ml" 64 1897 1965
+type(
+  string option
+)
+"customize_main.ml" 64 1897 1914 "customize_main.ml" 64 1897 1965
+type(
+  string option
+)
+"customize_main.ml" 65 1969 1973 "customize_main.ml" 65 1969 1978
+type(
+  (URI.uri * string option) list ref
+)
+ident(
+  int_ref files "customize_main.ml" 44 1330 1336 "customize_main.ml" 44 1330 1341
+)
+"customize_main.ml" 65 1969 1979 "customize_main.ml" 65 1969 1981
+type(
+  (URI.uri * string option) list ref ->
+  (URI.uri * string option) list -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_main.ml" 65 1969 1983 "customize_main.ml" 65 1969 1986
+type(
+  URI.uri
+)
+ident(
+  int_ref uri "customize_main.ml" 59 1708 1716 "customize_main.ml" 59 1708 1719
+)
+"customize_main.ml" 65 1969 1988 "customize_main.ml" 65 1969 1994
+type(
+  string option
+)
+ident(
+  int_ref format "customize_main.ml" 64 1897 1905 "customize_main.ml" 64 1897 1911
+)
+"customize_main.ml" 65 1969 1982 "customize_main.ml" 65 1969 1995
+type(
+  URI.uri * string option
+)
+"customize_main.ml" 65 1969 1999 "customize_main.ml" 65 1969 2000
+type(
+  (URI.uri * string option) list ref -> (URI.uri * string option) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 65 1969 2000 "customize_main.ml" 65 1969 2005
+type(
+  (URI.uri * string option) list ref
+)
+ident(
+  int_ref files "customize_main.ml" 44 1330 1336 "customize_main.ml" 44 1330 1341
+)
+"customize_main.ml" 65 1969 1999 "customize_main.ml" 65 1969 2005
+type(
+  (URI.uri * string option) list
+)
+"customize_main.ml" 65 1969 1982 "customize_main.ml" 65 1969 2005
+type(
+  (URI.uri * string option) list
+)
+"customize_main.ml" 65 1969 1973 "customize_main.ml" 65 1969 2005
+type(
+  unit
+)
+"customize_main.ml" 66 2007 2011 "customize_main.ml" 66 2007 2026
+type(
+  bool ref
+)
+ident(
+  int_ref format_consumed "customize_main.ml" 46 1383 1389 "customize_main.ml" 46 1383 1404
+)
+"customize_main.ml" 66 2007 2027 "customize_main.ml" 66 2007 2029
+type(
+  bool ref -> bool -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_main.ml" 66 2007 2030 "customize_main.ml" 66 2007 2034
+type(
+  bool
+)
+"customize_main.ml" 66 2007 2011 "customize_main.ml" 66 2007 2034
+type(
+  unit
+)
+"customize_main.ml" 65 1969 1973 "customize_main.ml" 66 2007 2034
+type(
+  unit
+)
+"customize_main.ml" 64 1897 1901 "customize_main.ml" 66 2007 2034
+type(
+  unit
+)
+"customize_main.ml" 59 1708 1712 "customize_main.ml" 66 2007 2034
+type(
+  unit
+)
+"customize_main.ml" 67 2035 2041 "customize_main.ml" 67 2035 2051
+type(
+  string -> unit
+)
+"customize_main.ml" 67 2035 2052 "customize_main.ml" 67 2035 2055
+type(
+  string
+)
+ident(
+  def dom "customize_main.ml" 68 2058 2062 "customize_main.ml" 70 2144 2166
+)
+"customize_main.ml" 68 2058 2065 "customize_main.ml" 68 2058 2066
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 68 2058 2066 "customize_main.ml" 68 2058 2072
+type(
+  string option ref
+)
+ident(
+  int_ref domain "customize_main.ml" 42 1275 1281 "customize_main.ml" 42 1275 1287
+)
+"customize_main.ml" 68 2058 2065 "customize_main.ml" 68 2058 2072
+type(
+  string option
+)
+"customize_main.ml" 68 2058 2073 "customize_main.ml" 68 2058 2075
+type(
+  string option -> string option -> bool
+)
+ident(
+  ext_ref Pervasives.( <> )
+)
+"customize_main.ml" 68 2058 2076 "customize_main.ml" 68 2058 2080
+type(
+  string option
+)
+"customize_main.ml" 68 2058 2065 "customize_main.ml" 68 2058 2080
+type(
+  bool
+)
+"customize_main.ml" 69 2086 2092 "customize_main.ml" 69 2086 2097
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_main.ml" 69 2086 2099 "customize_main.ml" 69 2086 2101
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_main.ml" 69 2086 2101 "customize_main.ml" 69 2086 2141
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_main.ml" 69 2086 2098 "customize_main.ml" 69 2086 2142
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_main.ml" 69 2086 2092 "customize_main.ml" 69 2086 2142
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 68 2058 2062 "customize_main.ml" 69 2086 2142
+type(
+  unit
+)
+"customize_main.ml" 70 2144 2148 "customize_main.ml" 70 2144 2154
+type(
+  string option ref
+)
+ident(
+  int_ref domain "customize_main.ml" 42 1275 1281 "customize_main.ml" 42 1275 1287
+)
+"customize_main.ml" 70 2144 2155 "customize_main.ml" 70 2144 2157
+type(
+  string option ref -> string option -> unit
+)
+ident(
+  ext_ref Pervasives.( := )
+)
+"customize_main.ml" 70 2144 2163 "customize_main.ml" 70 2144 2166
+type(
+  string
+)
+ident(
+  int_ref dom "customize_main.ml" 67 2035 2052 "customize_main.ml" 67 2035 2055
+)
+"customize_main.ml" 70 2144 2158 "customize_main.ml" 70 2144 2166
+type(
+  string option
+)
+"customize_main.ml" 70 2144 2148 "customize_main.ml" 70 2144 2166
+type(
+  unit
+)
+"customize_main.ml" 68 2058 2062 "customize_main.ml" 70 2144 2166
+type(
+  unit
+)
+"customize_main.ml" 73 2173 2179 "customize_main.ml" 73 2173 2186
+type(
+  (string * Arg.spec * string) list
+)
+"customize_main.ml" 74 2191 2195 "customize_main.ml" 74 2191 2199
+type(
+  string
+)
+"customize_main.ml" 74 2191 2219 "customize_main.ml" 74 2191 2227
+type(
+  string -> unit
+)
+ident(
+  int_ref add_file "customize_main.ml" 58 1687 1693 "customize_main.ml" 58 1687 1701
+)
+"customize_main.ml" 74 2191 2208 "customize_main.ml" 74 2191 2227
+type(
+  Arg.spec
+)
+"customize_main.ml" 74 2191 2235 "customize_main.ml" 74 2191 2237
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 74 2191 2237 "customize_main.ml" 74 2191 2243
+type(
+  string
+)
+"customize_main.ml" 74 2191 2235 "customize_main.ml" 74 2191 2243
+type(
+  string
+)
+"customize_main.ml" 74 2191 2244 "customize_main.ml" 74 2191 2245
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 74 2191 2246 "customize_main.ml" 74 2191 2249
+type(
+  string
+)
+"customize_main.ml" 74 2191 2250 "customize_main.ml" 74 2191 2251
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 74 2191 2252 "customize_main.ml" 74 2191 2254
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 74 2191 2254 "customize_main.ml" 74 2191 2275
+type(
+  string
+)
+"customize_main.ml" 74 2191 2252 "customize_main.ml" 74 2191 2275
+type(
+  string
+)
+"customize_main.ml" 74 2191 2246 "customize_main.ml" 74 2191 2275
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 74 2191 2235 "customize_main.ml" 74 2191 2275
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 74 2191 2195 "customize_main.ml" 74 2191 2275
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 75 2277 2281 "customize_main.ml" 75 2277 2288
+type(
+  string
+)
+"customize_main.ml" 75 2277 2305 "customize_main.ml" 75 2277 2313
+type(
+  string -> unit
+)
+ident(
+  int_ref add_file "customize_main.ml" 58 1687 1693 "customize_main.ml" 58 1687 1701
+)
+"customize_main.ml" 75 2277 2294 "customize_main.ml" 75 2277 2313
+type(
+  Arg.spec
+)
+"customize_main.ml" 75 2277 2321 "customize_main.ml" 75 2277 2323
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 75 2277 2323 "customize_main.ml" 75 2277 2329
+type(
+  string
+)
+"customize_main.ml" 75 2277 2321 "customize_main.ml" 75 2277 2329
+type(
+  string
+)
+"customize_main.ml" 75 2277 2330 "customize_main.ml" 75 2277 2331
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 75 2277 2332 "customize_main.ml" 75 2277 2335
+type(
+  string
+)
+"customize_main.ml" 75 2277 2336 "customize_main.ml" 75 2277 2337
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 75 2277 2338 "customize_main.ml" 75 2277 2340
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 75 2277 2340 "customize_main.ml" 75 2277 2361
+type(
+  string
+)
+"customize_main.ml" 75 2277 2338 "customize_main.ml" 75 2277 2361
+type(
+  string
+)
+"customize_main.ml" 75 2277 2332 "customize_main.ml" 75 2277 2361
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 75 2277 2321 "customize_main.ml" 75 2277 2361
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 75 2277 2281 "customize_main.ml" 75 2277 2361
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 76 2363 2367 "customize_main.ml" 76 2363 2377
+type(
+  string
+)
+"customize_main.ml" 76 2363 2391 "customize_main.ml" 76 2363 2402
+type(
+  string -> unit
+)
+ident(
+  int_ref attach_disk "customize_main.ml" 41 1209 1215 "customize_main.ml" 41 1209 1226
+)
+"customize_main.ml" 76 2363 2380 "customize_main.ml" 76 2363 2402
+type(
+  Arg.spec
+)
+"customize_main.ml" 76 2363 2407 "customize_main.ml" 76 2363 2412
+type(
+  string
+)
+"customize_main.ml" 76 2363 2413 "customize_main.ml" 76 2363 2414
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 76 2363 2415 "customize_main.ml" 76 2363 2418
+type(
+  string
+)
+"customize_main.ml" 76 2363 2419 "customize_main.ml" 76 2363 2420
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 76 2363 2421 "customize_main.ml" 76 2363 2423
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 76 2363 2423 "customize_main.ml" 76 2363 2460
+type(
+  string
+)
+"customize_main.ml" 76 2363 2421 "customize_main.ml" 76 2363 2460
+type(
+  string
+)
+"customize_main.ml" 76 2363 2415 "customize_main.ml" 76 2363 2460
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 76 2363 2407 "customize_main.ml" 76 2363 2460
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 76 2363 2367 "customize_main.ml" 76 2363 2460
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 77 2462 2466 "customize_main.ml" 77 2462 2483
+type(
+  string
+)
+"customize_main.ml" 77 2462 2497 "customize_main.ml" 77 2462 2514
+type(
+  string -> unit
+)
+ident(
+  int_ref set_attach_format "customize_main.ml" 35 1049 1055 "customize_main.ml" 35 1049 1072
+)
+"customize_main.ml" 77 2462 2486 "customize_main.ml" 77 2462 2514
+type(
+  Arg.spec
+)
+"customize_main.ml" 78 2516 2560 "customize_main.ml" 78 2516 2568
+type(
+  string
+)
+"customize_main.ml" 78 2516 2569 "customize_main.ml" 78 2516 2570
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 78 2516 2571 "customize_main.ml" 78 2516 2574
+type(
+  string
+)
+"customize_main.ml" 78 2516 2575 "customize_main.ml" 78 2516 2576
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 78 2516 2577 "customize_main.ml" 78 2516 2579
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 78 2516 2579 "customize_main.ml" 78 2516 2603
+type(
+  string
+)
+"customize_main.ml" 78 2516 2577 "customize_main.ml" 78 2516 2603
+type(
+  string
+)
+"customize_main.ml" 78 2516 2571 "customize_main.ml" 78 2516 2603
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 78 2516 2560 "customize_main.ml" 78 2516 2603
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 77 2462 2466 "customize_main.ml" 78 2516 2603
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 79 2605 2609 "customize_main.ml" 79 2605 2613
+type(
+  string
+)
+"customize_main.ml" 79 2605 2637 "customize_main.ml" 79 2605 2647
+type(
+  string ref
+)
+ident(
+  int_ref libvirturi "customize_main.ml" 51 1491 1497 "customize_main.ml" 51 1491 1507
+)
+"customize_main.ml" 79 2605 2622 "customize_main.ml" 79 2605 2647
+type(
+  Arg.spec
+)
+"customize_main.ml" 79 2605 2649 "customize_main.ml" 79 2605 2651
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 79 2605 2651 "customize_main.ml" 79 2605 2656
+type(
+  string
+)
+"customize_main.ml" 79 2605 2649 "customize_main.ml" 79 2605 2656
+type(
+  string
+)
+"customize_main.ml" 79 2605 2657 "customize_main.ml" 79 2605 2658
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 79 2605 2659 "customize_main.ml" 79 2605 2662
+type(
+  string
+)
+"customize_main.ml" 79 2605 2663 "customize_main.ml" 79 2605 2664
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 79 2605 2665 "customize_main.ml" 79 2605 2667
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 79 2605 2667 "customize_main.ml" 79 2605 2684
+type(
+  string
+)
+"customize_main.ml" 79 2605 2665 "customize_main.ml" 79 2605 2684
+type(
+  string
+)
+"customize_main.ml" 79 2605 2659 "customize_main.ml" 79 2605 2684
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 79 2605 2649 "customize_main.ml" 79 2605 2684
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 79 2605 2609 "customize_main.ml" 79 2605 2684
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 80 2686 2690 "customize_main.ml" 80 2686 2701
+type(
+  string
+)
+"customize_main.ml" 80 2686 2718 "customize_main.ml" 80 2686 2728
+type(
+  string ref
+)
+ident(
+  int_ref libvirturi "customize_main.ml" 51 1491 1497 "customize_main.ml" 51 1491 1507
+)
+"customize_main.ml" 80 2686 2703 "customize_main.ml" 80 2686 2728
+type(
+  Arg.spec
+)
+"customize_main.ml" 80 2686 2730 "customize_main.ml" 80 2686 2732
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 80 2686 2732 "customize_main.ml" 80 2686 2737
+type(
+  string
+)
+"customize_main.ml" 80 2686 2730 "customize_main.ml" 80 2686 2737
+type(
+  string
+)
+"customize_main.ml" 80 2686 2738 "customize_main.ml" 80 2686 2739
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 80 2686 2740 "customize_main.ml" 80 2686 2743
+type(
+  string
+)
+"customize_main.ml" 80 2686 2744 "customize_main.ml" 80 2686 2745
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 80 2686 2746 "customize_main.ml" 80 2686 2748
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 80 2686 2748 "customize_main.ml" 80 2686 2765
+type(
+  string
+)
+"customize_main.ml" 80 2686 2746 "customize_main.ml" 80 2686 2765
+type(
+  string
+)
+"customize_main.ml" 80 2686 2740 "customize_main.ml" 80 2686 2765
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 80 2686 2730 "customize_main.ml" 80 2686 2765
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 80 2686 2690 "customize_main.ml" 80 2686 2765
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 81 2767 2771 "customize_main.ml" 81 2767 2775
+type(
+  string
+)
+"customize_main.ml" 81 2767 2795 "customize_main.ml" 81 2767 2805
+type(
+  string -> unit
+)
+ident(
+  int_ref set_domain "customize_main.ml" 67 2035 2041 "customize_main.ml" 67 2035 2051
+)
+"customize_main.ml" 81 2767 2784 "customize_main.ml" 81 2767 2805
+type(
+  Arg.spec
+)
+"customize_main.ml" 81 2767 2811 "customize_main.ml" 81 2767 2813
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 81 2767 2813 "customize_main.ml" 81 2767 2821
+type(
+  string
+)
+"customize_main.ml" 81 2767 2811 "customize_main.ml" 81 2767 2821
+type(
+  string
+)
+"customize_main.ml" 81 2767 2822 "customize_main.ml" 81 2767 2823
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 81 2767 2824 "customize_main.ml" 81 2767 2827
+type(
+  string
+)
+"customize_main.ml" 81 2767 2828 "customize_main.ml" 81 2767 2829
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 81 2767 2830 "customize_main.ml" 81 2767 2832
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 81 2767 2832 "customize_main.ml" 81 2767 2856
+type(
+  string
+)
+"customize_main.ml" 81 2767 2830 "customize_main.ml" 81 2767 2856
+type(
+  string
+)
+"customize_main.ml" 81 2767 2824 "customize_main.ml" 81 2767 2856
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 81 2767 2811 "customize_main.ml" 81 2767 2856
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 81 2767 2771 "customize_main.ml" 81 2767 2856
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 82 2858 2862 "customize_main.ml" 82 2858 2872
+type(
+  string
+)
+"customize_main.ml" 82 2858 2886 "customize_main.ml" 82 2858 2896
+type(
+  string -> unit
+)
+ident(
+  int_ref set_domain "customize_main.ml" 67 2035 2041 "customize_main.ml" 67 2035 2051
+)
+"customize_main.ml" 82 2858 2875 "customize_main.ml" 82 2858 2896
+type(
+  Arg.spec
+)
+"customize_main.ml" 82 2858 2902 "customize_main.ml" 82 2858 2904
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 82 2858 2904 "customize_main.ml" 82 2858 2912
+type(
+  string
+)
+"customize_main.ml" 82 2858 2902 "customize_main.ml" 82 2858 2912
+type(
+  string
+)
+"customize_main.ml" 82 2858 2913 "customize_main.ml" 82 2858 2914
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 82 2858 2915 "customize_main.ml" 82 2858 2918
+type(
+  string
+)
+"customize_main.ml" 82 2858 2919 "customize_main.ml" 82 2858 2920
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 82 2858 2921 "customize_main.ml" 82 2858 2923
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 82 2858 2923 "customize_main.ml" 82 2858 2947
+type(
+  string
+)
+"customize_main.ml" 82 2858 2921 "customize_main.ml" 82 2858 2947
+type(
+  string
+)
+"customize_main.ml" 82 2858 2915 "customize_main.ml" 82 2858 2947
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 82 2858 2902 "customize_main.ml" 82 2858 2947
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 82 2858 2862 "customize_main.ml" 82 2858 2947
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 83 2949 2953 "customize_main.ml" 83 2949 2957
+type(
+  string
+)
+"customize_main.ml" 83 2949 2974 "customize_main.ml" 83 2949 2980
+type(
+  bool ref
+)
+ident(
+  int_ref dryrun "customize_main.ml" 43 1302 1308 "customize_main.ml" 43 1302 1314
+)
+"customize_main.ml" 83 2949 2966 "customize_main.ml" 83 2949 2980
+type(
+  Arg.spec
+)
+"customize_main.ml" 83 2949 2993 "customize_main.ml" 83 2949 2996
+type(
+  string
+)
+"customize_main.ml" 83 2949 2997 "customize_main.ml" 83 2949 2998
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 83 2949 2999 "customize_main.ml" 83 2949 3001
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 83 2949 3001 "customize_main.ml" 83 2949 3020
+type(
+  string
+)
+"customize_main.ml" 83 2949 2999 "customize_main.ml" 83 2949 3020
+type(
+  string
+)
+"customize_main.ml" 83 2949 2993 "customize_main.ml" 83 2949 3020
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 83 2949 2953 "customize_main.ml" 83 2949 3020
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 84 3022 3026 "customize_main.ml" 84 3022 3036
+type(
+  string
+)
+"customize_main.ml" 84 3022 3047 "customize_main.ml" 84 3022 3053
+type(
+  bool ref
+)
+ident(
+  int_ref dryrun "customize_main.ml" 43 1302 1308 "customize_main.ml" 43 1302 1314
+)
+"customize_main.ml" 84 3022 3039 "customize_main.ml" 84 3022 3053
+type(
+  Arg.spec
+)
+"customize_main.ml" 84 3022 3066 "customize_main.ml" 84 3022 3069
+type(
+  string
+)
+"customize_main.ml" 84 3022 3070 "customize_main.ml" 84 3022 3071
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 84 3022 3072 "customize_main.ml" 84 3022 3074
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 84 3022 3074 "customize_main.ml" 84 3022 3093
+type(
+  string
+)
+"customize_main.ml" 84 3022 3072 "customize_main.ml" 84 3022 3093
+type(
+  string
+)
+"customize_main.ml" 84 3022 3066 "customize_main.ml" 84 3022 3093
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 84 3022 3026 "customize_main.ml" 84 3022 3093
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 85 3095 3099 "customize_main.ml" 85 3095 3110
+type(
+  string
+)
+"customize_main.ml" 85 3095 3120 "customize_main.ml" 85 3095 3126
+type(
+  bool ref
+)
+ident(
+  int_ref dryrun "customize_main.ml" 43 1302 1308 "customize_main.ml" 43 1302 1314
+)
+"customize_main.ml" 85 3095 3112 "customize_main.ml" 85 3095 3126
+type(
+  Arg.spec
+)
+"customize_main.ml" 85 3095 3139 "customize_main.ml" 85 3095 3142
+type(
+  string
+)
+"customize_main.ml" 85 3095 3143 "customize_main.ml" 85 3095 3144
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 85 3095 3145 "customize_main.ml" 85 3095 3147
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 85 3095 3147 "customize_main.ml" 85 3095 3166
+type(
+  string
+)
+"customize_main.ml" 85 3095 3145 "customize_main.ml" 85 3095 3166
+type(
+  string
+)
+"customize_main.ml" 85 3095 3139 "customize_main.ml" 85 3095 3166
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 85 3095 3099 "customize_main.ml" 85 3095 3166
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 86 3168 3172 "customize_main.ml" 86 3168 3182
+type(
+  string
+)
+"customize_main.ml" 86 3168 3196 "customize_main.ml" 86 3168 3206
+type(
+  string -> unit
+)
+ident(
+  int_ref set_format "customize_main.ml" 47 1419 1425 "customize_main.ml" 47 1419 1435
+)
+"customize_main.ml" 86 3168 3185 "customize_main.ml" 86 3168 3206
+type(
+  Arg.spec
+)
+"customize_main.ml" 86 3168 3212 "customize_main.ml" 86 3168 3214
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 86 3168 3214 "customize_main.ml" 86 3168 3222
+type(
+  string
+)
+"customize_main.ml" 86 3168 3212 "customize_main.ml" 86 3168 3222
+type(
+  string
+)
+"customize_main.ml" 86 3168 3223 "customize_main.ml" 86 3168 3224
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 86 3168 3225 "customize_main.ml" 86 3168 3228
+type(
+  string
+)
+"customize_main.ml" 86 3168 3229 "customize_main.ml" 86 3168 3230
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 86 3168 3231 "customize_main.ml" 86 3168 3233
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 86 3168 3233 "customize_main.ml" 86 3168 3261
+type(
+  string
+)
+"customize_main.ml" 86 3168 3231 "customize_main.ml" 86 3168 3261
+type(
+  string
+)
+"customize_main.ml" 86 3168 3225 "customize_main.ml" 86 3168 3261
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 86 3168 3212 "customize_main.ml" 86 3168 3261
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 86 3168 3172 "customize_main.ml" 86 3168 3261
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 87 3263 3267 "customize_main.ml" 87 3263 3271
+type(
+  string
+)
+"customize_main.ml" 87 3263 3288 "customize_main.ml" 87 3263 3299
+type(
+  int -> unit
+)
+ident(
+  int_ref set_memsize "customize_main.ml" 53 1548 1554 "customize_main.ml" 53 1548 1565
+)
+"customize_main.ml" 87 3263 3280 "customize_main.ml" 87 3263 3299
+type(
+  Arg.spec
+)
+"customize_main.ml" 87 3263 3307 "customize_main.ml" 87 3263 3311
+type(
+  string
+)
+"customize_main.ml" 87 3263 3312 "customize_main.ml" 87 3263 3313
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 87 3263 3314 "customize_main.ml" 87 3263 3317
+type(
+  string
+)
+"customize_main.ml" 87 3263 3318 "customize_main.ml" 87 3263 3319
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 87 3263 3320 "customize_main.ml" 87 3263 3322
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 87 3263 3322 "customize_main.ml" 87 3263 3339
+type(
+  string
+)
+"customize_main.ml" 87 3263 3320 "customize_main.ml" 87 3263 3339
+type(
+  string
+)
+"customize_main.ml" 87 3263 3314 "customize_main.ml" 87 3263 3339
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 87 3263 3307 "customize_main.ml" 87 3263 3339
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 87 3263 3267 "customize_main.ml" 87 3263 3339
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 88 3341 3345 "customize_main.ml" 88 3341 3356
+type(
+  string
+)
+"customize_main.ml" 88 3341 3366 "customize_main.ml" 88 3341 3377
+type(
+  int -> unit
+)
+ident(
+  int_ref set_memsize "customize_main.ml" 53 1548 1554 "customize_main.ml" 53 1548 1565
+)
+"customize_main.ml" 88 3341 3358 "customize_main.ml" 88 3341 3377
+type(
+  Arg.spec
+)
+"customize_main.ml" 88 3341 3385 "customize_main.ml" 88 3341 3389
+type(
+  string
+)
+"customize_main.ml" 88 3341 3390 "customize_main.ml" 88 3341 3391
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 88 3341 3392 "customize_main.ml" 88 3341 3395
+type(
+  string
+)
+"customize_main.ml" 88 3341 3396 "customize_main.ml" 88 3341 3397
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 88 3341 3398 "customize_main.ml" 88 3341 3400
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 88 3341 3400 "customize_main.ml" 88 3341 3417
+type(
+  string
+)
+"customize_main.ml" 88 3341 3398 "customize_main.ml" 88 3341 3417
+type(
+  string
+)
+"customize_main.ml" 88 3341 3392 "customize_main.ml" 88 3341 3417
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 88 3341 3385 "customize_main.ml" 88 3341 3417
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 88 3341 3345 "customize_main.ml" 88 3341 3417
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 89 3419 3423 "customize_main.ml" 89 3419 3434
+type(
+  string
+)
+"customize_main.ml" 89 3419 3444 "customize_main.ml" 89 3419 3451
+type(
+  bool ref
+)
+ident(
+  int_ref network "customize_main.ml" 54 1595 1601 "customize_main.ml" 54 1595 1608
+)
+"customize_main.ml" 89 3419 3436 "customize_main.ml" 89 3419 3451
+type(
+  Arg.spec
+)
+"customize_main.ml" 89 3419 3463 "customize_main.ml" 89 3419 3466
+type(
+  string
+)
+"customize_main.ml" 89 3419 3467 "customize_main.ml" 89 3419 3468
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 89 3419 3469 "customize_main.ml" 89 3419 3471
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 89 3419 3471 "customize_main.ml" 89 3419 3507
+type(
+  string
+)
+"customize_main.ml" 89 3419 3469 "customize_main.ml" 89 3419 3507
+type(
+  string
+)
+"customize_main.ml" 89 3419 3463 "customize_main.ml" 89 3419 3507
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 89 3419 3423 "customize_main.ml" 89 3419 3507
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 90 3509 3513 "customize_main.ml" 90 3509 3527
+type(
+  string
+)
+"customize_main.ml" 90 3509 3539 "customize_main.ml" 90 3509 3546
+type(
+  bool ref
+)
+ident(
+  int_ref network "customize_main.ml" 54 1595 1601 "customize_main.ml" 54 1595 1608
+)
+"customize_main.ml" 90 3509 3529 "customize_main.ml" 90 3509 3546
+type(
+  Arg.spec
+)
+"customize_main.ml" 90 3509 3553 "customize_main.ml" 90 3509 3556
+type(
+  string
+)
+"customize_main.ml" 90 3509 3557 "customize_main.ml" 90 3509 3558
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 90 3509 3559 "customize_main.ml" 90 3509 3561
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 90 3509 3561 "customize_main.ml" 90 3509 3588
+type(
+  string
+)
+"customize_main.ml" 90 3509 3559 "customize_main.ml" 90 3509 3588
+type(
+  string
+)
+"customize_main.ml" 90 3509 3553 "customize_main.ml" 90 3509 3588
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 90 3509 3513 "customize_main.ml" 90 3509 3588
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 91 3590 3594 "customize_main.ml" 91 3590 3601
+type(
+  string
+)
+"customize_main.ml" 91 3590 3615 "customize_main.ml" 91 3590 3622
+type(
+  int -> unit
+)
+ident(
+  int_ref set_smp "customize_main.ml" 56 1647 1653 "customize_main.ml" 56 1647 1660
+)
+"customize_main.ml" 91 3590 3607 "customize_main.ml" 91 3590 3622
+type(
+  Arg.spec
+)
+"customize_main.ml" 91 3590 3634 "customize_main.ml" 91 3590 3641
+type(
+  string
+)
+"customize_main.ml" 91 3590 3642 "customize_main.ml" 91 3590 3643
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 91 3590 3644 "customize_main.ml" 91 3590 3647
+type(
+  string
+)
+"customize_main.ml" 91 3590 3648 "customize_main.ml" 91 3590 3649
+type(
+  string -> string -> string
+)
+ident(
+  ext_ref Pervasives.( ^ )
+)
+"customize_main.ml" 91 3590 3650 "customize_main.ml" 91 3590 3652
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 91 3590 3652 "customize_main.ml" 91 3590 3673
+type(
+  string
+)
+"customize_main.ml" 91 3590 3650 "customize_main.ml" 91 3590 3673
+type(
+  string
+)
+"customize_main.ml" 91 3590 3644 "customize_main.ml" 91 3590 3673
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 91 3590 3634 "customize_main.ml" 91 3590 3673
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 91 3590 3594 "customize_main.ml" 91 3590 3673
+type(
+  string * Arg.spec * string
+)
+"customize_main.ml" 73 2173 2189 "customize_main.ml" 92 3675 3678
+type(
+  (string * Arg.spec * string) list
+)
+"customize_main.ml" 93 3682 3688 "customize_main.ml" 93 3682 3705
+type(
+  (Customize_cmdline.argspec * string option * string) list
+)
+"customize_main.ml" 93 3682 3707 "customize_main.ml" 93 3682 3724
+type(
+  unit -> Customize_cmdline.ops
+)
+"customize_main.ml" 93 3682 3688 "customize_main.ml" 93 3682 3724
+type(
+  (Customize_cmdline.argspec * string option * string) list *
+  (unit -> Customize_cmdline.ops)
+)
+"customize_main.ml" 94 3727 3731 "customize_main.ml" 94 3727 3756
+type(
+  unit ->
+  (Customize_cmdline.argspec * string option * string) list *
+  (unit -> Customize_cmdline.ops)
+)
+ident(
+  ext_ref Customize_cmdline.argspec
+)
+"customize_main.ml" 94 3727 3757 "customize_main.ml" 94 3727 3759
+type(
+  unit
+)
+"customize_main.ml" 94 3727 3731 "customize_main.ml" 94 3727 3759
+call(
+  stack
+)
+type(
+  (Customize_cmdline.argspec * string option * string) list *
+  (unit -> Customize_cmdline.ops)
+)
+"customize_main.ml" 95 3763 3769 "customize_main.ml" 95 3763 3786
+type(
+  Customize_cmdline.argspec list
+)
+"customize_main.ml" 96 3789 3793 "customize_main.ml" 96 3789 3801
+type(
+  (Customize_cmdline.argspec * string option * string ->
+   Customize_cmdline.argspec) ->
+  (Customize_cmdline.argspec * string option * string) list ->
+  Customize_cmdline.argspec list
+)
+ident(
+  ext_ref List.map
+)
+"customize_main.ml" 96 3789 3808 "customize_main.ml" 96 3789 3812
+type(
+  Customize_cmdline.argspec
+)
+ident(
+  def spec "customize_main.ml" 96 3789 3823 "customize_main.ml" 96 3789 3827
+)
+"customize_main.ml" 96 3789 3814 "customize_main.ml" 96 3789 3815
+type(
+  string option
+)
+"customize_main.ml" 96 3789 3817 "customize_main.ml" 96 3789 3818
+type(
+  string
+)
+"customize_main.ml" 96 3789 3807 "customize_main.ml" 96 3789 3819
+type(
+  Customize_cmdline.argspec * string option * string
+)
+"customize_main.ml" 96 3789 3823 "customize_main.ml" 96 3789 3827
+type(
+  Customize_cmdline.argspec
+)
+ident(
+  int_ref spec "customize_main.ml" 96 3789 3808 "customize_main.ml" 96 3789 3812
+)
+"customize_main.ml" 96 3789 3802 "customize_main.ml" 96 3789 3828
+type(
+  Customize_cmdline.argspec * string option * string ->
+  Customize_cmdline.argspec
+)
+"customize_main.ml" 96 3789 3829 "customize_main.ml" 96 3789 3846
+type(
+  (Customize_cmdline.argspec * string option * string) list
+)
+ident(
+  int_ref customize_argspec "customize_main.ml" 93 3682 3688 "customize_main.ml" 93 3682 3705
+)
+"customize_main.ml" 96 3789 3793 "customize_main.ml" 96 3789 3846
+call(
+  stack
+)
+type(
+  Customize_cmdline.argspec list
+)
+"customize_main.ml" 97 3850 3856 "customize_main.ml" 97 3850 3863
+type(
+  Customize_cmdline.argspec list
+)
+"customize_main.ml" 97 3850 3866 "customize_main.ml" 97 3850 3873
+type(
+  Customize_cmdline.argspec list
+)
+ident(
+  int_ref argspec "customize_main.ml" 73 2173 2179 "customize_main.ml" 73 2173 2186
+)
+"customize_main.ml" 97 3850 3874 "customize_main.ml" 97 3850 3875
+type(
+  Customize_cmdline.argspec list ->
+  Customize_cmdline.argspec list -> Customize_cmdline.argspec list
+)
+ident(
+  ext_ref Pervasives.( @ )
+)
+"customize_main.ml" 97 3850 3876 "customize_main.ml" 97 3850 3893
+type(
+  Customize_cmdline.argspec list
+)
+ident(
+  int_ref customize_argspec "customize_main.ml" 95 3763 3769 "customize_main.ml" 95 3763 3786
+)
+"customize_main.ml" 97 3850 3866 "customize_main.ml" 97 3850 3893
+call(
+  stack
+)
+type(
+  Customize_cmdline.argspec list
+)
+"customize_main.ml" 98 3897 3903 "customize_main.ml" 98 3897 3910
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"customize_main.ml" 98 3897 3913 "customize_main.ml" 98 3897 3933
+type(
+  Customize_cmdline.argspec list -> (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  ext_ref Common_utils.set_standard_options
+)
+"customize_main.ml" 98 3897 3934 "customize_main.ml" 98 3897 3941
+type(
+  Customize_cmdline.argspec list
+)
+ident(
+  int_ref argspec "customize_main.ml" 97 3850 3856 "customize_main.ml" 97 3850 3863
+)
+"customize_main.ml" 98 3897 3913 "customize_main.ml" 98 3897 3941
+call(
+  stack
+)
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+"customize_main.ml" 100 3946 3952 "customize_main.ml" 100 3946 3960
+type(
+  'a -> 'b
+)
+"customize_main.ml" 100 3946 3961 "customize_main.ml" 100 3946 3962
+type(
+  'a
+)
+"customize_main.ml" 100 3946 3965 "customize_main.ml" 100 3946 3970
+type(
+  exn -> 'b
+)
+ident(
+  ext_ref Pervasives.raise
+)
+"customize_main.ml" 100 3946 3981 "customize_main.ml" 100 3946 3983
+type(
+  string -> string
+)
+ident(
+  ext_ref Common_gettext.Gettext.s_
+)
+"customize_main.ml" 100 3946 3983 "customize_main.ml" 100 3946 4020
+type(
+  string
+)
+"customize_main.ml" 100 3946 3980 "customize_main.ml" 100 3946 4021
+type(
+  string
+)
+"customize_main.ml" 100 3946 3971 "customize_main.ml" 100 3946 4022
+type(
+  exn
+)
+"customize_main.ml" 100 3946 3965 "customize_main.ml" 100 3946 4022
+type(
+  'b
+)
+"customize_main.ml" 101 4026 4032 "customize_main.ml" 101 4026 4041
+type(
+  string
+)
+"customize_main.ml" 102 4044 4048 "customize_main.ml" 102 4044 4055
+type(
+  (string -> string, unit, string) format -> string -> string
+)
+ident(
+  ext_ref Printf.sprintf
+)
+"customize_main.ml" 102 4044 4057 "customize_main.ml" 102 4044 4059
+type(
+  (string -> string, unit, string, string, string, string) format6 ->
+  (string -> string, unit, string) format
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_main.ml" 102 4044 4059 "customize_main.ml" 111 4304 4305
+type(
+  (string -> string, unit, string, string, string, string) format6
+)
+"customize_main.ml" 102 4044 4056 "customize_main.ml" 111 4304 4306
+type(
+  (string -> string, unit, string) format
+)
+"customize_main.ml" 112 4307 4313 "customize_main.ml" 112 4307 4317
+type(
+  string
+)
+ident(
+  ext_ref Common_utils.prog
+)
+"customize_main.ml" 102 4044 4048 "customize_main.ml" 112 4307 4317
+call(
+  stack
+)
+type(
+  string
+)
+"customize_main.ml" 113 4321 4323 "customize_main.ml" 113 4321 4332
+type(
+  (Arg.key * Arg.spec * Arg.doc) list ->
+  Arg.anon_fun -> Arg.usage_msg -> unit
+)
+ident(
+  ext_ref Arg.parse
+)
+"customize_main.ml" 113 4321 4333 "customize_main.ml" 113 4321 4340
+type(
+  (Arg.key * Arg.spec * Arg.doc) list
+)
+ident(
+  int_ref argspec "customize_main.ml" 98 3897 3903 "customize_main.ml" 98 3897 3910
+)
+"customize_main.ml" 113 4321 4341 "customize_main.ml" 113 4321 4349
+type(
+  Arg.anon_fun
+)
+ident(
+  int_ref anon_fun "customize_main.ml" 100 3946 3952 "customize_main.ml" 100 3946 3960
+)
+"customize_main.ml" 113 4321 4350 "customize_main.ml" 113 4321 4359
+type(
+  Arg.usage_msg
+)
+ident(
+  int_ref usage_msg "customize_main.ml" 101 4026 4032 "customize_main.ml" 101 4026 4041
+)
+"customize_main.ml" 113 4321 4323 "customize_main.ml" 113 4321 4359
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 115 4362 4367 "customize_main.ml" 115 4362 4370
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"customize_main.ml" 115 4362 4371 "customize_main.ml" 115 4362 4372
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 115 4362 4372 "customize_main.ml" 115 4362 4387
+type(
+  bool ref
+)
+ident(
+  int_ref format_consumed "customize_main.ml" 46 1383 1389 "customize_main.ml" 46 1383 1404
+)
+"customize_main.ml" 115 4362 4371 "customize_main.ml" 115 4362 4387
+type(
+  bool
+)
+"customize_main.ml" 115 4362 4367 "customize_main.ml" 115 4362 4387
+type(
+  bool
+)
+"customize_main.ml" 116 4393 4397 "customize_main.ml" 116 4393 4402
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_main.ml" 116 4393 4404 "customize_main.ml" 116 4393 4406
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_main.ml" 116 4393 4406 "customize_main.ml" 116 4393 4458
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_main.ml" 116 4393 4403 "customize_main.ml" 116 4393 4459
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_main.ml" 116 4393 4397 "customize_main.ml" 116 4393 4459
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 115 4362 4364 "customize_main.ml" 116 4393 4459
+type(
+  unit
+)
+"customize_main.ml" 118 4462 4467 "customize_main.ml" 118 4462 4470
+type(
+  bool -> bool
+)
+ident(
+  ext_ref Pervasives.not
+)
+"customize_main.ml" 118 4462 4471 "customize_main.ml" 118 4462 4472
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 118 4462 4472 "customize_main.ml" 118 4462 4494
+type(
+  bool ref
+)
+ident(
+  int_ref attach_format_consumed "customize_main.ml" 34 1006 1012 "customize_main.ml" 34 1006 1034
+)
+"customize_main.ml" 118 4462 4471 "customize_main.ml" 118 4462 4494
+type(
+  bool
+)
+"customize_main.ml" 118 4462 4467 "customize_main.ml" 118 4462 4494
+type(
+  bool
+)
+"customize_main.ml" 119 4500 4504 "customize_main.ml" 119 4500 4509
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_main.ml" 119 4500 4511 "customize_main.ml" 119 4500 4513
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_main.ml" 119 4500 4513 "customize_main.ml" 119 4500 4578
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_main.ml" 119 4500 4510 "customize_main.ml" 119 4500 4579
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_main.ml" 119 4500 4504 "customize_main.ml" 119 4500 4579
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 118 4462 4464 "customize_main.ml" 119 4500 4579
+type(
+  unit
+)
+"customize_main.ml" 122 4615 4621 "customize_main.ml" 122 4615 4626
+type(
+  (URI.uri * string option) list
+)
+"customize_main.ml" 122 4615 4629 "customize_main.ml" 122 4615 4630
+type(
+  (URI.uri * string option) list ref -> (URI.uri * string option) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 122 4615 4630 "customize_main.ml" 122 4615 4635
+type(
+  (URI.uri * string option) list ref
+)
+ident(
+  int_ref files "customize_main.ml" 44 1330 1336 "customize_main.ml" 44 1330 1341
+)
+"customize_main.ml" 122 4615 4629 "customize_main.ml" 122 4615 4635
+type(
+  (URI.uri * string option) list
+)
+"customize_main.ml" 123 4639 4645 "customize_main.ml" 123 4639 4651
+type(
+  string option
+)
+"customize_main.ml" 123 4639 4654 "customize_main.ml" 123 4639 4655
+type(
+  string option ref -> string option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 123 4639 4655 "customize_main.ml" 123 4639 4661
+type(
+  string option ref
+)
+ident(
+  int_ref domain "customize_main.ml" 42 1275 1281 "customize_main.ml" 42 1275 1287
+)
+"customize_main.ml" 123 4639 4654 "customize_main.ml" 123 4639 4661
+type(
+  string option
+)
+"customize_main.ml" 124 4665 4671 "customize_main.ml" 124 4665 4681
+type(
+  string option
+)
+"customize_main.ml" 124 4665 4690 "customize_main.ml" 124 4665 4691
+type(
+  string ref -> string
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 124 4665 4691 "customize_main.ml" 124 4665 4701
+type(
+  string ref
+)
+ident(
+  int_ref libvirturi "customize_main.ml" 51 1491 1497 "customize_main.ml" 51 1491 1507
+)
+"customize_main.ml" 124 4665 4690 "customize_main.ml" 124 4665 4701
+type(
+  string
+)
+"customize_main.ml" 124 4665 4707 "customize_main.ml" 124 4665 4709
+type(
+  string
+)
+"customize_main.ml" 124 4665 4713 "customize_main.ml" 124 4665 4717
+type(
+  string option
+)
+"customize_main.ml" 124 4665 4720 "customize_main.ml" 124 4665 4721
+type(
+  string
+)
+ident(
+  def s "customize_main.ml" 124 4665 4725 "customize_main.ml" 124 4665 4731
+)
+"customize_main.ml" 124 4665 4730 "customize_main.ml" 124 4665 4731
+type(
+  string
+)
+ident(
+  int_ref s "customize_main.ml" 124 4665 4720 "customize_main.ml" 124 4665 4721
+)
+"customize_main.ml" 124 4665 4725 "customize_main.ml" 124 4665 4731
+type(
+  string option
+)
+"customize_main.ml" 124 4665 4684 "customize_main.ml" 124 4665 4731
+type(
+  string option
+)
+"customize_main.ml" 125 4735 4741 "customize_main.ml" 125 4735 4744
+type(
+  Guestfs.guestfs -> bool -> unit
+)
+"customize_main.ml" 126 4747 4757 "customize_main.ml" 126 4747 4762
+type(
+  (URI.uri * string option) list
+)
+ident(
+  int_ref files "customize_main.ml" 122 4615 4621 "customize_main.ml" 122 4615 4626
+)
+"customize_main.ml" 126 4747 4764 "customize_main.ml" 126 4747 4770
+type(
+  string option
+)
+ident(
+  int_ref domain "customize_main.ml" 123 4639 4645 "customize_main.ml" 123 4639 4651
+)
+"customize_main.ml" 126 4747 4757 "customize_main.ml" 126 4747 4770
+type(
+  (URI.uri * string option) list * string option
+)
+"customize_main.ml" 127 4776 4782 "customize_main.ml" 127 4776 4784
+type(
+  (URI.uri * string option) list
+)
+"customize_main.ml" 127 4776 4786 "customize_main.ml" 127 4776 4790
+type(
+  string option
+)
+"customize_main.ml" 127 4776 4782 "customize_main.ml" 127 4776 4790
+type(
+  (URI.uri * string option) list * string option
+)
+"customize_main.ml" 128 4794 4800 "customize_main.ml" 128 4794 4805
+type(
+  ?exit_code:int ->
+  (Guestfs.guestfs -> bool -> unit, unit, string,
+   Guestfs.guestfs -> bool -> unit)
+  format4 -> Guestfs.guestfs -> bool -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_main.ml" 128 4794 4807 "customize_main.ml" 128 4794 4809
+type(
+  (Guestfs.guestfs -> bool -> unit, unit, string, string, string,
+   Guestfs.guestfs -> bool -> unit)
+  format6 ->
+  (Guestfs.guestfs -> bool -> unit, unit, string,
+   Guestfs.guestfs -> bool -> unit)
+  format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_main.ml" 128 4794 4809 "customize_main.ml" 128 4794 4906
+type(
+  (Guestfs.guestfs -> bool -> unit, unit, string, string, string,
+   Guestfs.guestfs -> bool -> unit)
+  format6
+)
+"customize_main.ml" 128 4794 4806 "customize_main.ml" 128 4794 4907
+type(
+  (Guestfs.guestfs -> bool -> unit, unit, string,
+   Guestfs.guestfs -> bool -> unit)
+  format4
+)
+"customize_main.ml" 128 4794 4800 "customize_main.ml" 128 4794 4907
+call(
+  stack
+)
+type(
+  Guestfs.guestfs -> bool -> unit
+)
+"customize_main.ml" 129 4908 4914 "customize_main.ml" 129 4908 4916
+type(
+  (URI.uri * string option) list
+)
+"customize_main.ml" 129 4908 4923 "customize_main.ml" 129 4908 4926
+type(
+  string
+)
+ident(
+  def dom "customize_main.ml" 130 4930 4936 "customize_main.ml" 137 5266 5288
+)
+"customize_main.ml" 129 4908 4918 "customize_main.ml" 129 4908 4926
+type(
+  string option
+)
+"customize_main.ml" 129 4908 4914 "customize_main.ml" 129 4908 4926
+type(
+  (URI.uri * string option) list * string option
+)
+"customize_main.ml" 130 4930 4941 "customize_main.ml" 130 4930 4942
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "customize_main.ml" 130 4930 4962 "customize_main.ml" 137 5266 5288
+)
+"customize_main.ml" 130 4930 4962 "customize_main.ml" 130 4930 4970
+type(
+  bool
+)
+ident(
+  def readonly "customize_main.ml" 131 4974 4982 "customize_main.ml" 137 5266 5288
+)
+"customize_main.ml" 131 4974 4986 "customize_main.ml" 131 4974 4995
+type(
+  bool
+)
+"customize_main.ml" 131 4974 4998 "customize_main.ml" 131 4974 5002
+type(
+  bool
+)
+"customize_main.ml" 132 5006 5018 "customize_main.ml" 132 5006 5030
+type(
+  string
+)
+"customize_main.ml" 132 5006 5033 "customize_main.ml" 132 5006 5041
+type(
+  string
+)
+"customize_main.ml" 133 5075 5087 "customize_main.ml" 133 5075 5094
+type(
+  string option
+)
+"customize_main.ml" 133 5075 5100 "customize_main.ml" 133 5075 5108
+type(
+  bool
+)
+ident(
+  int_ref readonly "customize_main.ml" 130 4930 4962 "customize_main.ml" 130 4930 4970
+)
+"customize_main.ml" 133 5075 5114 "customize_main.ml" 133 5075 5118
+type(
+  string option
+)
+"customize_main.ml" 133 5075 5129 "customize_main.ml" 133 5075 5141
+type(
+  string
+)
+"customize_main.ml" 133 5075 5124 "customize_main.ml" 133 5075 5141
+type(
+  string option
+)
+"customize_main.ml" 133 5075 5097 "customize_main.ml" 133 5075 5141
+type(
+  string option
+)
+"customize_main.ml" 134 5145 5153 "customize_main.ml" 134 5145 5159
+type(
+  int -> unit
+)
+ident(
+  ext_ref Pervasives.ignore
+)
+"customize_main.ml" 134 5145 5161 "customize_main.ml" 134 5145 5162
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 130 4930 4941 "customize_main.ml" 130 4930 4942
+)
+"customize_main.ml" 134 5145 5161 "customize_main.ml" 134 5145 5173
+call(
+  stack
+)
+type(
+  ?libvirturi:string ->
+  ?readonly:bool ->
+  ?iface:string ->
+  ?live:bool ->
+  ?allowuuid:bool ->
+  ?readonlydisk:string ->
+  ?cachemode:string -> ?discard:string -> ?copyonread:bool -> string -> int
+)
+"customize_main.ml" 135 5174 5193 "customize_main.ml" 135 5174 5201
+type(
+  bool
+)
+ident(
+  int_ref readonly "customize_main.ml" 130 4930 4962 "customize_main.ml" 130 4930 4970
+)
+"customize_main.ml" 135 5174 5203 "customize_main.ml" 135 5174 5210
+type(
+  string option
+)
+ident(
+  int_ref discard "customize_main.ml" 133 5075 5087 "customize_main.ml" 133 5075 5094
+)
+"customize_main.ml" 136 5211 5230 "customize_main.ml" 136 5211 5240
+type(
+  string option
+)
+ident(
+  int_ref libvirturi "customize_main.ml" 124 4665 4671 "customize_main.ml" 124 4665 4681
+)
+"customize_main.ml" 136 5211 5242 "customize_main.ml" 136 5211 5251
+type(
+  bool
+)
+ident(
+  int_ref allowuuid "customize_main.ml" 131 4974 4986 "customize_main.ml" 131 4974 4995
+)
+"customize_main.ml" 136 5211 5253 "customize_main.ml" 136 5211 5265
+type(
+  string
+)
+ident(
+  int_ref readonlydisk "customize_main.ml" 132 5006 5018 "customize_main.ml" 132 5006 5030
+)
+"customize_main.ml" 137 5266 5284 "customize_main.ml" 137 5266 5287
+type(
+  string
+)
+ident(
+  int_ref dom "customize_main.ml" 129 4908 4923 "customize_main.ml" 129 4908 4926
+)
+"customize_main.ml" 134 5145 5160 "customize_main.ml" 137 5266 5288
+type(
+  int
+)
+"customize_main.ml" 134 5145 5153 "customize_main.ml" 137 5266 5288
+type(
+  unit
+)
+"customize_main.ml" 133 5075 5083 "customize_main.ml" 137 5266 5288
+type(
+  unit
+)
+"customize_main.ml" 132 5006 5014 "customize_main.ml" 137 5266 5288
+type(
+  unit
+)
+"customize_main.ml" 131 4974 4982 "customize_main.ml" 137 5266 5288
+type(
+  unit
+)
+"customize_main.ml" 130 4930 4936 "customize_main.ml" 137 5266 5288
+type(
+  Guestfs.guestfs -> bool -> unit
+)
+"customize_main.ml" 138 5289 5295 "customize_main.ml" 138 5289 5296
+type(
+  (URI.uri * string option) list
+)
+"customize_main.ml" 138 5289 5303 "customize_main.ml" 138 5289 5304
+type(
+  string
+)
+"customize_main.ml" 138 5289 5298 "customize_main.ml" 138 5289 5304
+type(
+  string option
+)
+"customize_main.ml" 138 5289 5295 "customize_main.ml" 138 5289 5304
+type(
+  (URI.uri * string option) list * string option
+)
+"customize_main.ml" 139 5308 5314 "customize_main.ml" 139 5308 5319
+type(
+  ?exit_code:int ->
+  (Guestfs.guestfs -> bool -> unit, unit, string,
+   Guestfs.guestfs -> bool -> unit)
+  format4 -> Guestfs.guestfs -> bool -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_main.ml" 139 5308 5321 "customize_main.ml" 139 5308 5323
+type(
+  (Guestfs.guestfs -> bool -> unit, unit, string, string, string,
+   Guestfs.guestfs -> bool -> unit)
+  format6 ->
+  (Guestfs.guestfs -> bool -> unit, unit, string,
+   Guestfs.guestfs -> bool -> unit)
+  format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_main.ml" 139 5308 5323 "customize_main.ml" 139 5308 5425
+type(
+  (Guestfs.guestfs -> bool -> unit, unit, string, string, string,
+   Guestfs.guestfs -> bool -> unit)
+  format6
+)
+"customize_main.ml" 139 5308 5320 "customize_main.ml" 139 5308 5426
+type(
+  (Guestfs.guestfs -> bool -> unit, unit, string,
+   Guestfs.guestfs -> bool -> unit)
+  format4
+)
+"customize_main.ml" 139 5308 5314 "customize_main.ml" 139 5308 5426
+call(
+  stack
+)
+type(
+  Guestfs.guestfs -> bool -> unit
+)
+"customize_main.ml" 140 5427 5433 "customize_main.ml" 140 5427 5438
+type(
+  (URI.uri * string option) list
+)
+ident(
+  def files "customize_main.ml" 141 5448 5454 "customize_main.ml" 152 5901 5916
+)
+"customize_main.ml" 140 5427 5440 "customize_main.ml" 140 5427 5444
+type(
+  string option
+)
+"customize_main.ml" 140 5427 5433 "customize_main.ml" 140 5427 5444
+type(
+  (URI.uri * string option) list * string option
+)
+"customize_main.ml" 141 5448 5458 "customize_main.ml" 141 5448 5459
+type(
+  Guestfs.guestfs
+)
+ident(
+  def g "customize_main.ml" 141 5448 5460 "customize_main.ml" 152 5901 5916
+)
+"customize_main.ml" 141 5448 5460 "customize_main.ml" 141 5448 5468
+type(
+  bool
+)
+ident(
+  def readonly "customize_main.ml" 142 5472 5480 "customize_main.ml" 152 5901 5916
+)
+"customize_main.ml" 142 5472 5480 "customize_main.ml" 142 5472 5489
+type(
+  (URI.uri * string option -> unit) -> (URI.uri * string option) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"customize_main.ml" 143 5492 5507 "customize_main.ml" 143 5492 5510
+type(
+  URI.uri
+)
+ident(
+  def uri "customize_main.ml" 144 5523 5535 "customize_main.ml" 151 5882 5900
+)
+"customize_main.ml" 143 5492 5512 "customize_main.ml" 143 5492 5518
+type(
+  string option
+)
+ident(
+  def format "customize_main.ml" 144 5523 5535 "customize_main.ml" 151 5882 5900
+)
+"customize_main.ml" 143 5492 5506 "customize_main.ml" 143 5492 5519
+type(
+  URI.uri * string option
+)
+"customize_main.ml" 144 5523 5552 "customize_main.ml" 144 5523 5556
+type(
+  string
+)
+"customize_main.ml" 144 5523 5569 "customize_main.ml" 144 5523 5577
+type(
+  string
+)
+"customize_main.ml" 145 5579 5606 "customize_main.ml" 145 5579 5612
+type(
+  string array option
+)
+"customize_main.ml" 145 5579 5625 "customize_main.ml" 145 5579 5633
+type(
+  string option
+)
+"customize_main.ml" 146 5635 5664 "customize_main.ml" 146 5635 5672
+type(
+  string option
+)
+"customize_main.ml" 144 5523 5539 "customize_main.ml" 146 5635 5674
+type(
+  URI.uri
+)
+"customize_main.ml" 146 5635 5677 "customize_main.ml" 146 5635 5680
+type(
+  URI.uri
+)
+ident(
+  int_ref uri "customize_main.ml" 143 5492 5507 "customize_main.ml" 143 5492 5510
+)
+"customize_main.ml" 147 5684 5700 "customize_main.ml" 147 5684 5707
+type(
+  string option
+)
+"customize_main.ml" 147 5684 5713 "customize_main.ml" 147 5684 5721
+type(
+  bool
+)
+ident(
+  int_ref readonly "customize_main.ml" 141 5448 5460 "customize_main.ml" 141 5448 5468
+)
+"customize_main.ml" 147 5684 5727 "customize_main.ml" 147 5684 5731
+type(
+  string option
+)
+"customize_main.ml" 147 5684 5742 "customize_main.ml" 147 5684 5754
+type(
+  string
+)
+"customize_main.ml" 147 5684 5737 "customize_main.ml" 147 5684 5754
+type(
+  string option
+)
+"customize_main.ml" 147 5684 5710 "customize_main.ml" 147 5684 5754
+type(
+  string option
+)
+"customize_main.ml" 148 5758 5770 "customize_main.ml" 148 5758 5771
+type(
+  Guestfs.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 141 5448 5458 "customize_main.ml" 141 5448 5459
+)
+"customize_main.ml" 148 5758 5770 "customize_main.ml" 148 5758 5781
+call(
+  stack
+)
+type(
+  ?readonly:bool ->
+  ?format:string ->
+  ?iface:string ->
+  ?name:string ->
+  ?label:string ->
+  ?protocol:string ->
+  ?server:string array ->
+  ?username:string ->
+  ?secret:string ->
+  ?cachemode:string -> ?discard:string -> ?copyonread:bool -> string -> unit
+)
+"customize_main.ml" 149 5782 5797 "customize_main.ml" 149 5782 5805
+type(
+  bool
+)
+ident(
+  int_ref readonly "customize_main.ml" 141 5448 5460 "customize_main.ml" 141 5448 5468
+)
+"customize_main.ml" 149 5782 5807 "customize_main.ml" 149 5782 5814
+type(
+  string option
+)
+ident(
+  int_ref discard "customize_main.ml" 147 5684 5700 "customize_main.ml" 147 5684 5707
+)
+"customize_main.ml" 150 5815 5830 "customize_main.ml" 150 5815 5836
+type(
+  string option
+)
+ident(
+  int_ref format "customize_main.ml" 143 5492 5512 "customize_main.ml" 143 5492 5518
+)
+"customize_main.ml" 150 5815 5838 "customize_main.ml" 150 5815 5846
+type(
+  string
+)
+ident(
+  int_ref protocol "customize_main.ml" 144 5523 5569 "customize_main.ml" 144 5523 5577
+)
+"customize_main.ml" 150 5815 5848 "customize_main.ml" 150 5815 5854
+type(
+  string array option
+)
+ident(
+  int_ref server "customize_main.ml" 145 5579 5606 "customize_main.ml" 145 5579 5612
+)
+"customize_main.ml" 150 5815 5856 "customize_main.ml" 150 5815 5864
+type(
+  string option
+)
+ident(
+  int_ref username "customize_main.ml" 145 5579 5625 "customize_main.ml" 145 5579 5633
+)
+"customize_main.ml" 150 5815 5873 "customize_main.ml" 150 5815 5881
+type(
+  string option
+)
+ident(
+  int_ref password "customize_main.ml" 146 5635 5664 "customize_main.ml" 146 5635 5672
+)
+"customize_main.ml" 151 5882 5896 "customize_main.ml" 151 5882 5900
+type(
+  string
+)
+ident(
+  int_ref path "customize_main.ml" 144 5523 5552 "customize_main.ml" 144 5523 5556
+)
+"customize_main.ml" 148 5758 5770 "customize_main.ml" 151 5882 5900
+type(
+  unit
+)
+"customize_main.ml" 147 5684 5696 "customize_main.ml" 151 5882 5900
+type(
+  unit
+)
+"customize_main.ml" 144 5523 5535 "customize_main.ml" 151 5882 5900
+type(
+  unit
+)
+"customize_main.ml" 142 5472 5490 "customize_main.ml" 152 5901 5910
+type(
+  URI.uri * string option -> unit
+)
+"customize_main.ml" 152 5901 5911 "customize_main.ml" 152 5901 5916
+type(
+  (URI.uri * string option) list
+)
+ident(
+  int_ref files "customize_main.ml" 140 5427 5433 "customize_main.ml" 140 5427 5438
+)
+"customize_main.ml" 142 5472 5480 "customize_main.ml" 152 5901 5916
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_main.ml" 141 5448 5454 "customize_main.ml" 152 5901 5916
+type(
+  Guestfs.guestfs -> bool -> unit
+)
+"customize_main.ml" 126 4747 4751 "customize_main.ml" 152 5901 5916
+type(
+  Guestfs.guestfs -> bool -> unit
+)
+"customize_main.ml" 156 5965 5971 "customize_main.ml" 156 5965 5977
+type(
+  (string option * string) list
+)
+"customize_main.ml" 156 5965 5980 "customize_main.ml" 156 5965 5988
+type(
+  (string option * string) list -> (string option * string) list
+)
+ident(
+  ext_ref List.rev
+)
+"customize_main.ml" 156 5965 5989 "customize_main.ml" 156 5965 5990
+type(
+  (string option * string) list ref -> (string option * string) list
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 156 5965 5990 "customize_main.ml" 156 5965 5996
+type(
+  (string option * string) list ref
+)
+ident(
+  int_ref attach "customize_main.ml" 32 947 953 "customize_main.ml" 32 947 959
+)
+"customize_main.ml" 156 5965 5989 "customize_main.ml" 156 5965 5996
+type(
+  (string option * string) list
+)
+"customize_main.ml" 156 5965 5980 "customize_main.ml" 156 5965 5996
+call(
+  stack
+)
+type(
+  (string option * string) list
+)
+"customize_main.ml" 157 6000 6006 "customize_main.ml" 157 6000 6012
+type(
+  bool
+)
+"customize_main.ml" 157 6000 6015 "customize_main.ml" 157 6000 6016
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 157 6000 6016 "customize_main.ml" 157 6000 6022
+type(
+  bool ref
+)
+ident(
+  int_ref dryrun "customize_main.ml" 43 1302 1308 "customize_main.ml" 43 1302 1314
+)
+"customize_main.ml" 157 6000 6015 "customize_main.ml" 157 6000 6022
+type(
+  bool
+)
+"customize_main.ml" 158 6026 6032 "customize_main.ml" 158 6026 6039
+type(
+  int option
+)
+"customize_main.ml" 158 6026 6042 "customize_main.ml" 158 6026 6043
+type(
+  int option ref -> int option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 158 6026 6043 "customize_main.ml" 158 6026 6050
+type(
+  int option ref
+)
+ident(
+  int_ref memsize "customize_main.ml" 52 1520 1526 "customize_main.ml" 52 1520 1533
+)
+"customize_main.ml" 158 6026 6042 "customize_main.ml" 158 6026 6050
+type(
+  int option
+)
+"customize_main.ml" 159 6054 6060 "customize_main.ml" 159 6054 6067
+type(
+  bool
+)
+"customize_main.ml" 159 6054 6070 "customize_main.ml" 159 6054 6071
+type(
+  bool ref -> bool
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 159 6054 6071 "customize_main.ml" 159 6054 6078
+type(
+  bool ref
+)
+ident(
+  int_ref network "customize_main.ml" 54 1595 1601 "customize_main.ml" 54 1595 1608
+)
+"customize_main.ml" 159 6054 6070 "customize_main.ml" 159 6054 6078
+type(
+  bool
+)
+"customize_main.ml" 160 6082 6088 "customize_main.ml" 160 6082 6091
+type(
+  int option
+)
+"customize_main.ml" 160 6082 6094 "customize_main.ml" 160 6082 6095
+type(
+  int option ref -> int option
+)
+ident(
+  ext_ref Pervasives.( ! )
+)
+"customize_main.ml" 160 6082 6095 "customize_main.ml" 160 6082 6098
+type(
+  int option ref
+)
+ident(
+  int_ref smp "customize_main.ml" 55 1623 1629 "customize_main.ml" 55 1623 1632
+)
+"customize_main.ml" 160 6082 6094 "customize_main.ml" 160 6082 6098
+type(
+  int option
+)
+"customize_main.ml" 162 6103 6109 "customize_main.ml" 162 6103 6112
+type(
+  Customize_cmdline.ops
+)
+"customize_main.ml" 162 6103 6115 "customize_main.ml" 162 6103 6132
+type(
+  unit -> Customize_cmdline.ops
+)
+ident(
+  int_ref get_customize_ops "customize_main.ml" 93 3682 3707 "customize_main.ml" 93 3682 3724
+)
+"customize_main.ml" 162 6103 6133 "customize_main.ml" 162 6103 6135
+type(
+  unit
+)
+"customize_main.ml" 162 6103 6115 "customize_main.ml" 162 6103 6135
+call(
+  stack
+)
+type(
+  Customize_cmdline.ops
+)
+"customize_main.ml" 164 6140 6142 "customize_main.ml" 164 6140 6149
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_main.ml" 164 6140 6151 "customize_main.ml" 164 6140 6153
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_main.ml" 164 6140 6153 "customize_main.ml" 164 6140 6178
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_main.ml" 164 6140 6150 "customize_main.ml" 164 6140 6179
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_main.ml" 164 6140 6142 "customize_main.ml" 164 6140 6179
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 167 6213 6219 "customize_main.ml" 167 6213 6220
+type(
+  G.guestfs
+)
+"customize_main.ml" 168 6223 6231 "customize_main.ml" 168 6223 6232
+type(
+  G.guestfs
+)
+"customize_main.ml" 168 6223 6235 "customize_main.ml" 168 6223 6248
+type(
+  ?environment:bool -> ?close_on_exit:bool -> unit -> G.guestfs
+)
+"customize_main.ml" 168 6223 6249 "customize_main.ml" 168 6223 6251
+type(
+  unit
+)
+"customize_main.ml" 168 6223 6235 "customize_main.ml" 168 6223 6251
+call(
+  stack
+)
+type(
+  G.guestfs
+)
+"customize_main.ml" 169 6255 6262 "customize_main.ml" 169 6255 6267
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.trace
+)
+"customize_main.ml" 169 6255 6268 "customize_main.ml" 169 6255 6270
+type(
+  unit
+)
+"customize_main.ml" 169 6255 6262 "customize_main.ml" 169 6255 6270
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_main.ml" 169 6255 6276 "customize_main.ml" 169 6255 6277
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 168 6223 6231 "customize_main.ml" 168 6223 6232
+)
+"customize_main.ml" 169 6255 6276 "customize_main.ml" 169 6255 6287
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"customize_main.ml" 169 6255 6288 "customize_main.ml" 169 6255 6292
+type(
+  bool
+)
+"customize_main.ml" 169 6255 6276 "customize_main.ml" 169 6255 6292
+type(
+  unit
+)
+"customize_main.ml" 169 6255 6259 "customize_main.ml" 169 6255 6292
+type(
+  unit
+)
+"customize_main.ml" 170 6294 6301 "customize_main.ml" 170 6294 6308
+type(
+  unit -> bool
+)
+ident(
+  ext_ref Common_utils.verbose
+)
+"customize_main.ml" 170 6294 6309 "customize_main.ml" 170 6294 6311
+type(
+  unit
+)
+"customize_main.ml" 170 6294 6301 "customize_main.ml" 170 6294 6311
+call(
+  stack
+)
+type(
+  bool
+)
+"customize_main.ml" 170 6294 6317 "customize_main.ml" 170 6294 6318
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 168 6223 6231 "customize_main.ml" 168 6223 6232
+)
+"customize_main.ml" 170 6294 6317 "customize_main.ml" 170 6294 6330
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"customize_main.ml" 170 6294 6331 "customize_main.ml" 170 6294 6335
+type(
+  bool
+)
+"customize_main.ml" 170 6294 6317 "customize_main.ml" 170 6294 6335
+type(
+  unit
+)
+"customize_main.ml" 170 6294 6298 "customize_main.ml" 170 6294 6335
+type(
+  unit
+)
+"customize_main.ml" 172 6338 6349 "customize_main.ml" 172 6338 6356
+type(
+  int option
+)
+ident(
+  int_ref memsize "customize_main.ml" 158 6026 6032 "customize_main.ml" 158 6026 6039
+)
+"customize_main.ml" 172 6338 6362 "customize_main.ml" 172 6338 6366
+type(
+  int option
+)
+"customize_main.ml" 172 6338 6370 "customize_main.ml" 172 6338 6372
+type(
+  unit
+)
+"customize_main.ml" 172 6338 6380 "customize_main.ml" 172 6338 6387
+type(
+  int
+)
+ident(
+  def memsize "customize_main.ml" 172 6338 6391 "customize_main.ml" 172 6338 6412
+)
+"customize_main.ml" 172 6338 6375 "customize_main.ml" 172 6338 6387
+type(
+  int option
+)
+"customize_main.ml" 172 6338 6391 "customize_main.ml" 172 6338 6392
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 168 6223 6231 "customize_main.ml" 168 6223 6232
+)
+"customize_main.ml" 172 6338 6391 "customize_main.ml" 172 6338 6404
+call(
+  stack
+)
+type(
+  int -> unit
+)
+"customize_main.ml" 172 6338 6405 "customize_main.ml" 172 6338 6412
+type(
+  int
+)
+ident(
+  int_ref memsize "customize_main.ml" 172 6338 6380 "customize_main.ml" 172 6338 6387
+)
+"customize_main.ml" 172 6338 6391 "customize_main.ml" 172 6338 6412
+type(
+  unit
+)
+"customize_main.ml" 172 6338 6342 "customize_main.ml" 172 6338 6413
+type(
+  unit
+)
+"customize_main.ml" 173 6415 6426 "customize_main.ml" 173 6415 6429
+type(
+  int option
+)
+ident(
+  int_ref smp "customize_main.ml" 160 6082 6088 "customize_main.ml" 160 6082 6091
+)
+"customize_main.ml" 173 6415 6435 "customize_main.ml" 173 6415 6439
+type(
+  int option
+)
+"customize_main.ml" 173 6415 6443 "customize_main.ml" 173 6415 6445
+type(
+  unit
+)
+"customize_main.ml" 173 6415 6453 "customize_main.ml" 173 6415 6456
+type(
+  int
+)
+ident(
+  def smp "customize_main.ml" 173 6415 6460 "customize_main.ml" 173 6415 6473
+)
+"customize_main.ml" 173 6415 6448 "customize_main.ml" 173 6415 6456
+type(
+  int option
+)
+"customize_main.ml" 173 6415 6460 "customize_main.ml" 173 6415 6461
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 168 6223 6231 "customize_main.ml" 168 6223 6232
+)
+"customize_main.ml" 173 6415 6460 "customize_main.ml" 173 6415 6469
+call(
+  stack
+)
+type(
+  int -> unit
+)
+"customize_main.ml" 173 6415 6470 "customize_main.ml" 173 6415 6473
+type(
+  int
+)
+ident(
+  int_ref smp "customize_main.ml" 173 6415 6453 "customize_main.ml" 173 6415 6456
+)
+"customize_main.ml" 173 6415 6460 "customize_main.ml" 173 6415 6473
+type(
+  unit
+)
+"customize_main.ml" 173 6415 6419 "customize_main.ml" 173 6415 6474
+type(
+  unit
+)
+"customize_main.ml" 174 6476 6480 "customize_main.ml" 174 6476 6481
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 168 6223 6231 "customize_main.ml" 168 6223 6232
+)
+"customize_main.ml" 174 6476 6480 "customize_main.ml" 174 6476 6493
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"customize_main.ml" 174 6476 6494 "customize_main.ml" 174 6476 6501
+type(
+  bool
+)
+ident(
+  int_ref network "customize_main.ml" 159 6054 6060 "customize_main.ml" 159 6054 6067
+)
+"customize_main.ml" 174 6476 6480 "customize_main.ml" 174 6476 6501
+type(
+  unit
+)
+"customize_main.ml" 179 6681 6685 "customize_main.ml" 179 6681 6686
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 168 6223 6231 "customize_main.ml" 168 6223 6232
+)
+"customize_main.ml" 179 6681 6685 "customize_main.ml" 179 6681 6698
+call(
+  stack
+)
+type(
+  bool -> unit
+)
+"customize_main.ml" 179 6681 6699 "customize_main.ml" 179 6681 6704
+type(
+  bool
+)
+"customize_main.ml" 179 6681 6685 "customize_main.ml" 179 6681 6704
+type(
+  unit
+)
+"customize_main.ml" 182 6728 6732 "customize_main.ml" 182 6728 6735
+type(
+  Guestfs.guestfs -> bool -> unit
+)
+ident(
+  int_ref add "customize_main.ml" 125 4735 4741 "customize_main.ml" 125 4735 4744
+)
+"customize_main.ml" 182 6728 6736 "customize_main.ml" 182 6728 6737
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 168 6223 6231 "customize_main.ml" 168 6223 6232
+)
+"customize_main.ml" 182 6728 6738 "customize_main.ml" 182 6728 6744
+type(
+  bool
+)
+ident(
+  int_ref dryrun "customize_main.ml" 157 6000 6006 "customize_main.ml" 157 6000 6012
+)
+"customize_main.ml" 182 6728 6732 "customize_main.ml" 182 6728 6744
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 185 6786 6790 "customize_main.ml" 185 6786 6799
+type(
+  (string option * string -> unit) -> (string option * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"customize_main.ml" 186 6802 6813 "customize_main.ml" 186 6802 6819
+type(
+  string option
+)
+ident(
+  def format "customize_main.ml" 187 6830 6838 "customize_main.ml" 187 6830 6883
+)
+"customize_main.ml" 186 6802 6821 "customize_main.ml" 186 6802 6825
+type(
+  string
+)
+ident(
+  def file "customize_main.ml" 187 6830 6838 "customize_main.ml" 187 6830 6883
+)
+"customize_main.ml" 186 6802 6812 "customize_main.ml" 186 6802 6826
+type(
+  string option * string
+)
+"customize_main.ml" 187 6830 6838 "customize_main.ml" 187 6830 6839
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 168 6223 6231 "customize_main.ml" 168 6223 6232
+)
+"customize_main.ml" 187 6830 6838 "customize_main.ml" 187 6830 6854
+call(
+  stack
+)
+type(
+  ?readonly:bool ->
+  ?format:string ->
+  ?iface:string ->
+  ?name:string ->
+  ?label:string ->
+  ?protocol:string ->
+  ?server:string array ->
+  ?username:string ->
+  ?secret:string ->
+  ?cachemode:string -> ?discard:string -> ?copyonread:bool -> string -> unit
+)
+"customize_main.ml" 187 6830 6856 "customize_main.ml" 187 6830 6862
+type(
+  string option
+)
+ident(
+  int_ref format "customize_main.ml" 186 6802 6813 "customize_main.ml" 186 6802 6819
+)
+"customize_main.ml" 187 6830 6873 "customize_main.ml" 187 6830 6877
+type(
+  bool
+)
+"customize_main.ml" 187 6830 6878 "customize_main.ml" 187 6830 6882
+type(
+  string
+)
+ident(
+  int_ref file "customize_main.ml" 186 6802 6821 "customize_main.ml" 186 6802 6825
+)
+"customize_main.ml" 187 6830 6838 "customize_main.ml" 187 6830 6883
+type(
+  unit
+)
+"customize_main.ml" 185 6786 6800 "customize_main.ml" 188 6884 6889
+type(
+  string option * string -> unit
+)
+"customize_main.ml" 188 6884 6890 "customize_main.ml" 188 6884 6896
+type(
+  (string option * string) list
+)
+ident(
+  int_ref attach "customize_main.ml" 156 5965 5971 "customize_main.ml" 156 5965 5977
+)
+"customize_main.ml" 185 6786 6790 "customize_main.ml" 188 6884 6896
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 190 6899 6903 "customize_main.ml" 190 6899 6904
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 168 6223 6231 "customize_main.ml" 168 6223 6232
+)
+"customize_main.ml" 190 6899 6903 "customize_main.ml" 190 6899 6911
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"customize_main.ml" 190 6899 6912 "customize_main.ml" 190 6899 6914
+type(
+  unit
+)
+"customize_main.ml" 190 6899 6903 "customize_main.ml" 190 6899 6914
+type(
+  unit
+)
+"customize_main.ml" 191 6916 6920 "customize_main.ml" 191 6916 6921
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 168 6223 6231 "customize_main.ml" 168 6223 6232
+)
+"customize_main.ml" 190 6899 6903 "customize_main.ml" 191 6916 6921
+type(
+  G.guestfs
+)
+"customize_main.ml" 185 6786 6790 "customize_main.ml" 191 6916 6921
+type(
+  G.guestfs
+)
+"customize_main.ml" 182 6728 6732 "customize_main.ml" 191 6916 6921
+type(
+  G.guestfs
+)
+"customize_main.ml" 179 6681 6685 "customize_main.ml" 191 6916 6921
+type(
+  G.guestfs
+)
+"customize_main.ml" 174 6476 6480 "customize_main.ml" 191 6916 6921
+type(
+  G.guestfs
+)
+"customize_main.ml" 173 6415 6419 "customize_main.ml" 191 6916 6921
+type(
+  G.guestfs
+)
+"customize_main.ml" 172 6338 6342 "customize_main.ml" 191 6916 6921
+type(
+  G.guestfs
+)
+"customize_main.ml" 170 6294 6298 "customize_main.ml" 191 6916 6921
+type(
+  G.guestfs
+)
+"customize_main.ml" 169 6255 6259 "customize_main.ml" 191 6916 6921
+type(
+  G.guestfs
+)
+"customize_main.ml" 168 6223 6227 "customize_main.ml" 191 6916 6921
+type(
+  G.guestfs
+)
+"customize_main.ml" 194 6946 6955 "customize_main.ml" 194 6946 6968
+type(
+  string array -> string list
+)
+ident(
+  ext_ref Array.to_list
+)
+"customize_main.ml" 194 6946 6970 "customize_main.ml" 194 6946 6971
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 167 6213 6219 "customize_main.ml" 167 6213 6220
+)
+"customize_main.ml" 194 6946 6970 "customize_main.ml" 194 6946 6982
+call(
+  stack
+)
+type(
+  unit -> string array
+)
+"customize_main.ml" 194 6946 6983 "customize_main.ml" 194 6946 6985
+type(
+  unit
+)
+"customize_main.ml" 194 6946 6969 "customize_main.ml" 194 6946 6986
+type(
+  string array
+)
+"customize_main.ml" 194 6946 6955 "customize_main.ml" 194 6946 6986
+call(
+  stack
+)
+type(
+  string list
+)
+"customize_main.ml" 195 6992 6996 "customize_main.ml" 195 6992 6998
+type(
+  string list
+)
+"customize_main.ml" 196 7002 7006 "customize_main.ml" 196 7002 7011
+type(
+  ?exit_code:int -> (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.error
+)
+"customize_main.ml" 196 7002 7013 "customize_main.ml" 196 7002 7015
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_main.ml" 196 7002 7015 "customize_main.ml" 196 7002 7067
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_main.ml" 196 7002 7012 "customize_main.ml" 196 7002 7068
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_main.ml" 196 7002 7006 "customize_main.ml" 196 7002 7068
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 197 7069 7073 "customize_main.ml" 197 7069 7078
+type(
+  string list
+)
+ident(
+  def roots "customize_main.ml" 198 7082 7086 "customize_main.ml" 216 7657 7669
+)
+"customize_main.ml" 198 7082 7086 "customize_main.ml" 198 7082 7095
+type(
+  (string -> unit) -> string list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"customize_main.ml" 199 7098 7108 "customize_main.ml" 199 7098 7112
+type(
+  string
+)
+ident(
+  def root "customize_main.ml" 203 7225 7233 "customize_main.ml" 215 7632 7656
+)
+"customize_main.ml" 203 7225 7237 "customize_main.ml" 203 7225 7240
+type(
+  (string * string) list
+)
+"customize_main.ml" 203 7225 7243 "customize_main.ml" 203 7225 7244
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 167 6213 6219 "customize_main.ml" 167 6213 6220
+)
+"customize_main.ml" 203 7225 7243 "customize_main.ml" 203 7225 7268
+call(
+  stack
+)
+type(
+  string -> (string * string) list
+)
+"customize_main.ml" 203 7225 7269 "customize_main.ml" 203 7225 7273
+type(
+  string
+)
+ident(
+  int_ref root "customize_main.ml" 199 7098 7108 "customize_main.ml" 199 7098 7112
+)
+"customize_main.ml" 203 7225 7243 "customize_main.ml" 203 7225 7273
+type(
+  (string * string) list
+)
+"customize_main.ml" 204 7277 7289 "customize_main.ml" 204 7277 7292
+type(
+  string * 'c -> string * 'd -> int
+)
+"customize_main.ml" 204 7277 7294 "customize_main.ml" 204 7277 7295
+type(
+  string
+)
+ident(
+  def a "customize_main.ml" 204 7277 7299 "customize_main.ml" 204 7277 7350
+)
+"customize_main.ml" 204 7277 7296 "customize_main.ml" 204 7277 7297
+type(
+  'c
+)
+"customize_main.ml" 204 7277 7293 "customize_main.ml" 204 7277 7298
+type(
+  string * 'c
+)
+"customize_main.ml" 204 7277 7300 "customize_main.ml" 204 7277 7301
+type(
+  string
+)
+ident(
+  def b "customize_main.ml" 204 7277 7307 "customize_main.ml" 204 7277 7350
+)
+"customize_main.ml" 204 7277 7302 "customize_main.ml" 204 7277 7303
+type(
+  'd
+)
+"customize_main.ml" 204 7277 7299 "customize_main.ml" 204 7277 7304
+type(
+  string * 'd
+)
+"customize_main.ml" 204 7277 7307 "customize_main.ml" 204 7277 7314
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.compare
+)
+"customize_main.ml" 204 7277 7316 "customize_main.ml" 204 7277 7329
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"customize_main.ml" 204 7277 7330 "customize_main.ml" 204 7277 7331
+type(
+  string
+)
+ident(
+  int_ref a "customize_main.ml" 204 7277 7294 "customize_main.ml" 204 7277 7295
+)
+"customize_main.ml" 204 7277 7315 "customize_main.ml" 204 7277 7332
+type(
+  int
+)
+"customize_main.ml" 204 7277 7334 "customize_main.ml" 204 7277 7347
+type(
+  string -> int
+)
+ident(
+  ext_ref String.length
+)
+"customize_main.ml" 204 7277 7348 "customize_main.ml" 204 7277 7349
+type(
+  string
+)
+ident(
+  int_ref b "customize_main.ml" 204 7277 7300 "customize_main.ml" 204 7277 7301
+)
+"customize_main.ml" 204 7277 7333 "customize_main.ml" 204 7277 7350
+type(
+  int
+)
+"customize_main.ml" 204 7277 7307 "customize_main.ml" 204 7277 7350
+type(
+  int
+)
+"customize_main.ml" 205 7354 7366 "customize_main.ml" 205 7354 7369
+type(
+  (string * string) list
+)
+"customize_main.ml" 205 7354 7372 "customize_main.ml" 205 7354 7381
+type(
+  (string * string -> string * string -> int) ->
+  (string * string) list -> (string * string) list
+)
+ident(
+  ext_ref List.sort
+)
+"customize_main.ml" 205 7354 7382 "customize_main.ml" 205 7354 7385
+type(
+  string * string -> string * string -> int
+)
+ident(
+  int_ref cmp "customize_main.ml" 204 7277 7289 "customize_main.ml" 204 7277 7292
+)
+"customize_main.ml" 205 7354 7386 "customize_main.ml" 205 7354 7389
+type(
+  (string * string) list
+)
+ident(
+  int_ref mps "customize_main.ml" 203 7225 7237 "customize_main.ml" 203 7225 7240
+)
+"customize_main.ml" 205 7354 7372 "customize_main.ml" 205 7354 7389
+call(
+  stack
+)
+type(
+  (string * string) list
+)
+"customize_main.ml" 206 7393 7401 "customize_main.ml" 206 7393 7410
+type(
+  (string * string -> unit) -> (string * string) list -> unit
+)
+ident(
+  ext_ref List.iter
+)
+"customize_main.ml" 207 7413 7428 "customize_main.ml" 207 7413 7430
+type(
+  string
+)
+ident(
+  def mp "customize_main.ml" 208 7440 7452 "customize_main.ml" 209 7472 7540
+)
+"customize_main.ml" 207 7413 7432 "customize_main.ml" 207 7413 7435
+type(
+  string
+)
+ident(
+  def dev "customize_main.ml" 208 7440 7452 "customize_main.ml" 209 7472 7540
+)
+"customize_main.ml" 207 7413 7427 "customize_main.ml" 207 7413 7436
+type(
+  string * string
+)
+"customize_main.ml" 208 7440 7456 "customize_main.ml" 208 7440 7457
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 167 6213 6219 "customize_main.ml" 167 6213 6220
+)
+"customize_main.ml" 208 7440 7456 "customize_main.ml" 208 7440 7463
+call(
+  stack
+)
+type(
+  string -> string -> unit
+)
+"customize_main.ml" 208 7440 7464 "customize_main.ml" 208 7440 7467
+type(
+  string
+)
+ident(
+  int_ref dev "customize_main.ml" 207 7413 7432 "customize_main.ml" 207 7413 7435
+)
+"customize_main.ml" 208 7440 7468 "customize_main.ml" 208 7440 7470
+type(
+  string
+)
+ident(
+  int_ref mp "customize_main.ml" 207 7413 7428 "customize_main.ml" 207 7413 7430
+)
+"customize_main.ml" 208 7440 7456 "customize_main.ml" 208 7440 7471
+type(
+  unit
+)
+"customize_main.ml" 209 7472 7503 "customize_main.ml" 209 7472 7506
+type(
+  string
+)
+ident(
+  def msg "customize_main.ml" 209 7472 7510 "customize_main.ml" 209 7472 7540
+)
+"customize_main.ml" 209 7472 7489 "customize_main.ml" 209 7472 7506
+type(
+  exn
+)
+"customize_main.ml" 209 7472 7510 "customize_main.ml" 209 7472 7517
+type(
+  (string -> unit, unit, string, unit) format4 -> string -> unit
+)
+ident(
+  ext_ref Common_utils.warning
+)
+"customize_main.ml" 209 7472 7519 "customize_main.ml" 209 7472 7521
+type(
+  (string -> unit, unit, string, string, string, unit) format6 ->
+  (string -> unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_main.ml" 209 7472 7521 "customize_main.ml" 209 7472 7535
+type(
+  (string -> unit, unit, string, string, string, unit) format6
+)
+"customize_main.ml" 209 7472 7518 "customize_main.ml" 209 7472 7536
+type(
+  (string -> unit, unit, string, unit) format4
+)
+"customize_main.ml" 209 7472 7537 "customize_main.ml" 209 7472 7540
+type(
+  string
+)
+ident(
+  int_ref msg "customize_main.ml" 209 7472 7503 "customize_main.ml" 209 7472 7506
+)
+"customize_main.ml" 209 7472 7510 "customize_main.ml" 209 7472 7540
+call(
+  tail
+)
+type(
+  unit
+)
+"customize_main.ml" 208 7440 7452 "customize_main.ml" 209 7472 7540
+type(
+  unit
+)
+"customize_main.ml" 206 7393 7411 "customize_main.ml" 210 7541 7550
+type(
+  string * string -> unit
+)
+"customize_main.ml" 210 7541 7551 "customize_main.ml" 210 7541 7554
+type(
+  (string * string) list
+)
+ident(
+  int_ref mps "customize_main.ml" 205 7354 7366 "customize_main.ml" 205 7354 7369
+)
+"customize_main.ml" 206 7393 7401 "customize_main.ml" 210 7541 7554
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 213 7593 7601 "customize_main.ml" 213 7593 7618
+type(
+  Guestfs.guestfs -> string -> Customize_cmdline.ops -> unit
+)
+ident(
+  ext_ref Customize_run.run
+)
+"customize_main.ml" 213 7593 7619 "customize_main.ml" 213 7593 7620
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 167 6213 6219 "customize_main.ml" 167 6213 6220
+)
+"customize_main.ml" 213 7593 7621 "customize_main.ml" 213 7593 7625
+type(
+  string
+)
+ident(
+  int_ref root "customize_main.ml" 199 7098 7108 "customize_main.ml" 199 7098 7112
+)
+"customize_main.ml" 213 7593 7626 "customize_main.ml" 213 7593 7629
+type(
+  Customize_cmdline.ops
+)
+ident(
+  int_ref ops "customize_main.ml" 162 6103 6109 "customize_main.ml" 162 6103 6112
+)
+"customize_main.ml" 213 7593 7601 "customize_main.ml" 213 7593 7629
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 215 7632 7640 "customize_main.ml" 215 7632 7641
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 167 6213 6219 "customize_main.ml" 167 6213 6220
+)
+"customize_main.ml" 215 7632 7640 "customize_main.ml" 215 7632 7652
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"customize_main.ml" 215 7632 7653 "customize_main.ml" 215 7632 7655
+type(
+  unit
+)
+"customize_main.ml" 215 7632 7640 "customize_main.ml" 215 7632 7656
+type(
+  unit
+)
+"customize_main.ml" 213 7593 7601 "customize_main.ml" 215 7632 7656
+type(
+  unit
+)
+"customize_main.ml" 206 7393 7401 "customize_main.ml" 215 7632 7656
+type(
+  unit
+)
+"customize_main.ml" 205 7354 7362 "customize_main.ml" 215 7632 7656
+type(
+  unit
+)
+"customize_main.ml" 204 7277 7285 "customize_main.ml" 215 7632 7656
+type(
+  unit
+)
+"customize_main.ml" 203 7225 7233 "customize_main.ml" 215 7632 7656
+type(
+  unit
+)
+"customize_main.ml" 198 7082 7096 "customize_main.ml" 216 7657 7662
+type(
+  string -> unit
+)
+"customize_main.ml" 216 7657 7663 "customize_main.ml" 216 7657 7668
+type(
+  string list
+)
+ident(
+  int_ref roots "customize_main.ml" 197 7069 7073 "customize_main.ml" 197 7069 7078
+)
+"customize_main.ml" 198 7082 7086 "customize_main.ml" 216 7657 7669
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 194 6946 6948 "customize_main.ml" 217 7670 7673
+type(
+  unit
+)
+"customize_main.ml" 219 7676 7678 "customize_main.ml" 219 7676 7685
+type(
+  (unit, unit, string, unit) format4 -> unit
+)
+ident(
+  ext_ref Common_utils.message
+)
+"customize_main.ml" 219 7676 7687 "customize_main.ml" 219 7676 7689
+type(
+  (unit, unit, string, string, string, unit) format6 ->
+  (unit, unit, string, unit) format4
+)
+ident(
+  ext_ref Common_gettext.Gettext.f_
+)
+"customize_main.ml" 219 7676 7689 "customize_main.ml" 219 7676 7704
+type(
+  (unit, unit, string, string, string, unit) format6
+)
+"customize_main.ml" 219 7676 7686 "customize_main.ml" 219 7676 7705
+type(
+  (unit, unit, string, unit) format4
+)
+"customize_main.ml" 219 7676 7678 "customize_main.ml" 219 7676 7705
+call(
+  stack
+)
+type(
+  unit
+)
+"customize_main.ml" 220 7707 7709 "customize_main.ml" 220 7707 7710
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 167 6213 6219 "customize_main.ml" 167 6213 6220
+)
+"customize_main.ml" 220 7707 7709 "customize_main.ml" 220 7707 7719
+call(
+  stack
+)
+type(
+  unit -> unit
+)
+"customize_main.ml" 220 7707 7720 "customize_main.ml" 220 7707 7722
+type(
+  unit
+)
+"customize_main.ml" 220 7707 7709 "customize_main.ml" 220 7707 7722
+type(
+  unit
+)
+"customize_main.ml" 221 7724 7726 "customize_main.ml" 221 7724 7727
+type(
+  G.guestfs
+)
+ident(
+  int_ref g "customize_main.ml" 167 6213 6219 "customize_main.ml" 167 6213 6220
+)
+"customize_main.ml" 221 7724 7726 "customize_main.ml" 221 7724 7733
+call(
+  tail
+)
+type(
+  unit -> unit
+)
+"customize_main.ml" 221 7724 7734 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 221 7724 7726 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 220 7707 7709 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 219 7676 7678 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 194 6946 6948 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 167 6213 6215 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 164 6140 6142 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 162 6103 6105 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 160 6082 6084 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 159 6054 6056 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 158 6026 6028 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 157 6000 6002 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 156 5965 5967 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 125 4735 4737 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 124 4665 4667 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 123 4639 4641 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 122 4615 4617 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 118 4462 4464 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 115 4362 4364 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 113 4321 4323 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 101 4026 4028 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 100 3946 3948 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 98 3897 3899 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 97 3850 3852 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 95 3763 3765 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 93 3682 3684 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 73 2173 2175 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 58 1687 1689 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 56 1647 1649 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 55 1623 1625 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 54 1595 1597 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 53 1548 1550 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 52 1520 1522 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 51 1491 1493 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 47 1419 1421 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 46 1383 1385 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 45 1354 1356 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 44 1330 1332 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 43 1302 1304 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 42 1275 1277 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 41 1209 1211 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 35 1049 1051 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 34 1006 1008 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 33 972 974 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 32 947 949 "customize_main.ml" 221 7724 7736
+type(
+  unit
+)
+"customize_main.ml" 224 7754 7758 "customize_main.ml" 224 7754 7760
+type(
+  unit
+)
+"customize_main.ml" 224 7754 7763 "customize_main.ml" 224 7754 7789
+type(
+  (unit -> unit) -> unit
+)
+ident(
+  ext_ref Common_utils.run_main_and_handle_errors
+)
+"customize_main.ml" 224 7754 7790 "customize_main.ml" 224 7754 7794
+type(
+  unit -> unit
+)
+ident(
+  int_ref main "customize_main.ml" 31 933 937 "customize_main.ml" 31 933 941
+)
+"customize_main.ml" 224 7754 7763 "customize_main.ml" 224 7754 7794
+call(
+  stack
+)
+type(
+  unit
+)
