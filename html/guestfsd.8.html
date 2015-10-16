@@ -1,0 +1,214 @@
+
+<html>
+<head>
+<title>guestfsd</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a>
+    <ul>
+      <li><a href="#libguestfs-appliance">LIBGUESTFS APPLIANCE</a></li>
+      <li><a href="#libguestfs-live">LIBGUESTFS LIVE</a></li>
+    </ul>
+  </li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#files">FILES</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#author">AUTHOR</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>guestfsd - guestfs daemon</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> guestfsd [-r] [-v|--verbose]</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p><code>guestfsd</code> is the libguestfs daemon. Normal users never need to run this program explicitly. This man page discusses what <code>guestfsd</code> does in both the libguestfs appliance and when using libguestfs live.</p>
+
+<h2 id="libguestfs-appliance">LIBGUESTFS APPLIANCE</h2>
+
+<p>For the architecture of the libguestfs appliance, see <a href="guestfs.3.html#architecture">&quot;ARCHITECTURE&quot; in guestfs(3)</a>.</p>
+
+<p>After the appliance boots, the <i>/init</i> script in the appliance starts <code>guestfsd</code> with no arguments. <code>guestfsd</code> opens the virtio-serial port on a known path (see <a href="#files">&quot;FILES&quot;</a>). It initiates the protocol (see <a href="guestfs.3.html#communication-protocol">&quot;COMMUNICATION PROTOCOL&quot; in guestfs(3)</a>) and processes requests one at a time from the library until the appliance is destroyed.</p>
+
+<p>Filesystems are mounted under <i>/sysroot</i> and all filesystem operations happen relative to this directory.</p>
+
+<h2 id="libguestfs-live">LIBGUESTFS LIVE</h2>
+
+<p>In the libguestfs live case, <code>guestfsd -r</code> is started from the rc-scripts, systemd, etc.</p>
+
+<p>The <code>-r</code> option causes the daemon to operate on the root filesystem instead of <i>/sysroot</i>.</p>
+
+<p>Currently (because of limitations in virtio-serial) only one client can connect at a time, and <code>guestfsd</code> must be restarted after each client disconnects. If libguestfs live were changed to use a different transport such as TCP/IP then this limitation could be removed.</p>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>-?</b></dt>
+<dd>
+
+</dd>
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display brief help.</p>
+
+</dd>
+<dt><b>-c</b> CHANNEL</dt>
+<dd>
+
+</dd>
+<dt><b>--channel</b> CHANNEL</dt>
+<dd>
+
+<p>Pass the name of the virtio-serial channel, serial port, etc. over which guestfsd will communicate with the library. If this parameter is not given, then an internal default port is used.</p>
+
+</dd>
+<dt><b>-l</b></dt>
+<dd>
+
+</dd>
+<dt><b>--listen</b></dt>
+<dd>
+
+<p>Instead of opening the <code>guestfs_channel</code> and thus expecting that it already exists, create the channel as a Unix domain socket, listen on it, and accept a single connection. This is mainly used for testing the daemon.</p>
+
+</dd>
+<dt><b>-n</b></dt>
+<dd>
+
+</dd>
+<dt><b>--network</b></dt>
+<dd>
+
+<p>Enable network features in the daemon.</p>
+
+</dd>
+<dt><b>-r</b></dt>
+<dd>
+
+<p>Set the root filesystem to be <i>/</i> (instead of the default which is <i>/sysroot</i>). Also do not unmount filesystems when the daemon exits.</p>
+
+<p>This option is used to enable libguestfs live.</p>
+
+</dd>
+<dt><b>-v</b></dt>
+<dd>
+
+</dd>
+<dt><b>--verbose</b></dt>
+<dd>
+
+<p>Enable verbose messages for debugging.</p>
+
+<p>The verbose flag is also set if the Linux command line contains the substring <code>guestfs_verbose=1</code>.</p>
+
+</dd>
+</dl>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>This program returns 0 if successful, or non-zero if there was an error.</p>
+
+<h1 id="files">FILES</h1>
+
+<dl>
+
+<dt><i>/dev/virtio-ports/org.libguestfs.channel.0</i></dt>
+<dd>
+
+<p>The virtio serial port which <code>guestfsd</code> connects to.</p>
+
+</dd>
+<dt><i>/proc/cmdline</i></dt>
+<dd>
+
+<p>The Linux command line is parsed to discover <code>guestfs_*</code> flags. The following flags are understood:</p>
+
+<dl>
+
+<dt><b>guestfs_verbose=1</b></dt>
+<dd>
+
+<p>Enable verbose messages. This flag is passed by the libguestfs library to the appliance to make the daemon more verbose (it acts like the <i>-v</i> flag on the command line). Unrelated to the daemon, it also causes the appliance init script to print out a lot more debugging information.</p>
+
+</dd>
+<dt><b>guestfs_channel=PATH</b></dt>
+<dd>
+
+<p>Set the path to the virtio-serial channel to something other than the default (which is <i>/dev/virtio-ports/org.libguestfs.channel.0</i>). This is used by the User-Mode Linux backend to use a regular emulated serial port instead of virtio-serial.</p>
+
+</dd>
+<dt><b>guestfs_network=1</b></dt>
+<dd>
+
+<p>This is set if the appliance network is enabled (see <code>guestfs_set_network</code>).</p>
+
+</dd>
+</dl>
+
+</dd>
+</dl>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>.</p>
+
+<h1 id="author">AUTHOR</h1>
+
+<p>Richard W.M. Jones <a href="http://people.redhat.com/~rjones/">http://people.redhat.com/~rjones/</a></p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2009-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+

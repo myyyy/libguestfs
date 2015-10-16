@@ -1,0 +1,189 @@
+
+<html>
+<head>
+<title>libguestfs-make-fixed-appliance</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel='stylesheet' href='pod.css' type='text/css' />
+</head>
+<body>
+
+
+<ul id="index">
+  <li><a href="#name">NAME</a></li>
+  <li><a href="#synopsis">SYNOPSIS</a></li>
+  <li><a href="#description">DESCRIPTION</a></li>
+  <li><a href="#options">OPTIONS</a></li>
+  <li><a href="#licensing">LICENSING</a></li>
+  <li><a href="#exit-status">EXIT STATUS</a></li>
+  <li><a href="#environment-variables">ENVIRONMENT VARIABLES</a></li>
+  <li><a href="#see-also">SEE ALSO</a></li>
+  <li><a href="#authors">AUTHORS</a></li>
+  <li><a href="#copyright">COPYRIGHT</a></li>
+  <li><a href="#license">LICENSE</a></li>
+  <li><a href="#bugs">BUGS</a></li>
+</ul>
+
+<h1 id="name">NAME</h1>
+
+<p>libguestfs-make-fixed-appliance - Make a &quot;fixed appliance&quot; for libguestfs</p>
+
+<h1 id="synopsis">SYNOPSIS</h1>
+
+<pre><code> libguestfs-make-fixed-appliance [--options] OUTPUTDIR
+
+ libguestfs-make-fixed-appliance [--options] --xz</code></pre>
+
+<h1 id="description">DESCRIPTION</h1>
+
+<p>libguestfs-make-fixed-appliance lets you make a pre-built binary appliance for libguestfs.</p>
+
+<p><b>Note that ordinary users should not need to run this tool</b>.</p>
+
+<p>Some reasons why you <i>might</i> want to use this include:</p>
+
+<ul>
+
+<li><p>You want to make a self-contained libguestfs appliance that can be copied to another machine or platform that doesn&#39;t support <a href="supermin.1.html">supermin(1)</a>.</p>
+
+</li>
+<li><p>You have multiple users on the same machine and want to avoid the storage duplication and start-up overhead of having multiple cached copies of the appliance.</p>
+
+</li>
+<li><p>You want to have very predictable performance from libguestfs (see <a href="guestfs-performance.1.html">guestfs-performance(1)</a>).</p>
+
+</li>
+</ul>
+
+<p>For deeper understanding of why you might need this tool, read <a href="guestfs.3.html#fixed-appliance">&quot;FIXED APPLIANCE&quot; in guestfs(3)</a>.</p>
+
+<p>Instead of running this tool, you can download fixed appliances from <a href="http://libguestfs.org/download/binaries/appliance/">http://libguestfs.org/download/binaries/appliance/</a>. These appliances were made using this tool.</p>
+
+<p>There are two ways to use this tool.</p>
+
+<ul>
+
+<li><p>Specify an output directory, for example:</p>
+
+<pre><code> libguestfs-make-fixed-appliance /usr/local/lib/guestfs/appliance</code></pre>
+
+<p>The output directory is created if it does not exist. Four files are created in this directory:</p>
+
+<pre><code> &lt;OUTPUTDIR&gt;/kernel
+ &lt;OUTPUTDIR&gt;/initrd
+ &lt;OUTPUTDIR&gt;/root
+ &lt;OUTPUTDIR&gt;/README.fixed</code></pre>
+
+<p>Note that <code><i>OUTPUTDIR</i>/root</code> is a sparse file, so take care when copying it.</p>
+
+<p>You can then run libguestfs (possibly after copying this directory to another machine) by setting the environment variable LIBGUESTFS_PATH to <code>OUTPUTDIR</code>.</p>
+
+</li>
+<li><p>The alternative method is to use the <i>--xz</i> option to create a compressed tarball:</p>
+
+<pre><code> libguestfs-make-fixed-appliance --xz</code></pre>
+
+<p>This creates a tarball in the <i>current</i> directory called:</p>
+
+<pre><code> appliance-&lt;VERSION&gt;.tar.xz</code></pre>
+
+<p>(where <code>VERSION</code> is the version of libguestfs). The tarball contains the four files:</p>
+
+<pre><code> appliance/kernel
+ appliance/initrd
+ appliance/root
+ appliance/README.fixed</code></pre>
+
+<p>Note that <code>appliance/root</code> is a sparse file, so take care when copying it.</p>
+
+</li>
+</ul>
+
+<h1 id="options">OPTIONS</h1>
+
+<dl>
+
+<dt><b>--help</b></dt>
+<dd>
+
+<p>Display short usage information and exit.</p>
+
+</dd>
+<dt><b>-V</b></dt>
+<dd>
+
+</dd>
+<dt><b>--version</b></dt>
+<dd>
+
+<p>Display the version number and exit.</p>
+
+</dd>
+<dt><b>--xz</b></dt>
+<dd>
+
+<p>Instead of creating the appliance in an output directory, create a compressed tarball of the appliance in the current directory called <i>appliance-<i>VERSION</i>.tar.xz</i> where <code>VERSION</code> is the version of libguestfs.</p>
+
+<p>Using <i>--xz</i> can take some time. If working normally, the tool is completely silent when it is running.</p>
+
+</dd>
+</dl>
+
+<h1 id="licensing">LICENSING</h1>
+
+<p>The fixed appliance is a complete Linux binary distro. If you distribute it, you may need to distribute corresponding source files to remain in legal compliance with the licenses of the software in the appliance (such as the GNU General Public License).</p>
+
+<h1 id="exit-status">EXIT STATUS</h1>
+
+<p>libguestfs-make-fixed-appliance returns <i>0</i> if the appliance was built without errors.</p>
+
+<h1 id="environment-variables">ENVIRONMENT VARIABLES</h1>
+
+<p>For the full list of environment variables which may affect libguestfs, please see the <a href="guestfs.3.html">guestfs(3)</a> manual page.</p>
+
+<h1 id="see-also">SEE ALSO</h1>
+
+<p><a href="guestfs.3.html">guestfs(3)</a>, <a href="supermin.1.html">supermin(1)</a>, <a href="http://man.he.net/man1/xz">xz(1)</a>, <a href="http://libguestfs.org/">http://libguestfs.org/</a>, <a href="http://qemu.org/">http://qemu.org/</a>.</p>
+
+<h1 id="authors">AUTHORS</h1>
+
+<p>Richard W.M. Jones (<code>rjones at redhat dot com</code>)</p>
+
+<h1 id="copyright">COPYRIGHT</h1>
+
+<p>Copyright (C) 2009-2015 Red Hat Inc.</p>
+
+<h1 id="license">LICENSE</h1>
+
+<p>This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+
+<h1 id="bugs">BUGS</h1>
+
+<p>To get a list of bugs against libguestfs, use this link: <a href="https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/buglist.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>To report a new bug against libguestfs, use this link: <a href="https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools">https://bugzilla.redhat.com/enter_bug.cgi?component=libguestfs&amp;product=Virtualization+Tools</a></p>
+
+<p>When reporting a bug, please supply:</p>
+
+<ul>
+
+<li><p>The version of libguestfs.</p>
+
+</li>
+<li><p>Where you got libguestfs (eg. which Linux distro, compiled from source, etc)</p>
+
+</li>
+<li><p>Describe the bug accurately and give a way to reproduce it.</p>
+
+</li>
+<li><p>Run <a href="libguestfs-test-tool.1.html">libguestfs-test-tool(1)</a> and paste the <b>complete, unedited</b> output into the bug report.</p>
+
+</li>
+</ul>
+
+</body>
+</html>
+
