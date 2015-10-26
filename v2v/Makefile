@@ -1514,6 +1514,7 @@ SOURCES_MLI = \
 	output_qemu.mli \
 	output_rhev.mli \
 	output_vdsm.mli \
+	output_everrun.mil \
 	OVF.mli \
 	stringMap.mli \
 	types.mli \
@@ -1546,6 +1547,7 @@ SOURCES_ML = \
 	output_qemu.ml \
 	output_rhev.ml \
 	output_vdsm.ml \
+	output_everrun.ml \
 	cmdline.ml \
 	v2v.ml
 
@@ -1772,12 +1774,12 @@ clean-checkPROGRAMS:
 	@: > ../mllib/$(DEPDIR)/$(am__dirstamp)
 ../mllib/v2v_unit_tests-mkdtemp-c.$(OBJEXT): ../mllib/$(am__dirstamp) \
 	../mllib/$(DEPDIR)/$(am__dirstamp)
-v2v_unit_tests$(EXEEXT): $(v2v_unit_tests_OBJECTS) $(v2v_unit_tests_DEPENDENCIES) $(EXTRA_v2v_unit_tests_DEPENDENCIES) 
+v2v_unit_tests$(EXEEXT): $(v2v_unit_tests_OBJECTS) $(v2v_unit_tests_DEPENDENCIES) $(EXTRA_v2v_unit_tests_DEPENDENCIES)
 	@rm -f v2v_unit_tests$(EXEEXT)
 	$(AM_V_GEN)$(v2v_unit_tests_LINK) $(v2v_unit_tests_OBJECTS) $(v2v_unit_tests_LDADD) $(LIBS)
 ../mllib/virt_v2v-mkdtemp-c.$(OBJEXT): ../mllib/$(am__dirstamp) \
 	../mllib/$(DEPDIR)/$(am__dirstamp)
-virt-v2v$(EXEEXT): $(virt_v2v_OBJECTS) $(virt_v2v_DEPENDENCIES) $(EXTRA_virt_v2v_DEPENDENCIES) 
+virt-v2v$(EXEEXT): $(virt_v2v_OBJECTS) $(virt_v2v_DEPENDENCIES) $(EXTRA_virt_v2v_DEPENDENCIES)
 	@rm -f virt-v2v$(EXEEXT)
 	$(AM_V_GEN)$(virt_v2v_LINK) $(virt_v2v_OBJECTS) $(virt_v2v_LDADD) $(LIBS)
 

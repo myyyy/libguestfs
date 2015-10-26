@@ -250,7 +250,7 @@ launch_direct (guestfs_h *g, void *datav, const char *arg)
   bool has_kvm;
   int force_tcg;
   const char *cpu_model;
-
+  printf("%s\n", "[franklin] launch_direct");
   /* At present you must add drives before starting the appliance.  In
    * future when we enable hotplugging you won't need to do this.
    */
@@ -278,6 +278,7 @@ launch_direct (guestfs_h *g, void *datav, const char *arg)
 
   TRACE0 (launch_build_appliance_start);
 
+  printf("%s\n", "[franklin] Locate and/or build the appliance");
   /* Locate and/or build the appliance. */
   if (guestfs_int_build_appliance (g, &kernel, &dtb, &initrd, &appliance) == -1)
     return -1;
@@ -290,6 +291,7 @@ launch_direct (guestfs_h *g, void *datav, const char *arg)
   if (g->verbose)
     guestfs_int_print_timestamped_message (g, "begin testing qemu features");
 
+  printf("%s\n", "[franklin] Get qemu help text and version");
   /* Get qemu help text and version. */
   if (qemu_supports (g, data, NULL) == -1)
     goto cleanup0;
@@ -344,6 +346,7 @@ launch_direct (guestfs_h *g, void *datav, const char *arg)
 
   ADD_CMDLINE (g->hv);
 
+  printf("%s\n", "[franklin] will start to build kvm command");
   /* CVE-2011-4127 mitigation: Disable SCSI ioctls on virtio-blk
    * devices.  The -global option must exist, but you can pass any
    * strings to it so we don't need to check for the specific virtio
@@ -391,6 +394,7 @@ launch_direct (guestfs_h *g, void *datav, const char *arg)
   }
 
   cpu_model = guestfs_int_get_cpu_model (has_kvm && !force_tcg);
+  printf("%s%s\n", "[franklin] cpu_model => ", cpu_model);
   if (cpu_model) {
     ADD_CMDLINE ("-cpu");
     ADD_CMDLINE (cpu_model);
@@ -503,7 +507,7 @@ launch_direct (guestfs_h *g, void *datav, const char *arg)
           discard_mode = ",discard=unmap";
         break;
       }
-
+      printf("%s\n", "[franklin] guestfs_int_drive_source_qemu_param");
       /* Make the file= parameter. */
       file = guestfs_int_drive_source_qemu_param (g, &drv->src);
       escaped_file = qemu_escape_param (g, file);
@@ -511,6 +515,7 @@ launch_direct (guestfs_h *g, void *datav, const char *arg)
       /* Make the first part of the -drive parameter, everything up to
        * the if=... at the end.
        */
+       printf("%s\n", "[franklin] param = safe_asprintf");
       param = safe_asprintf
         (g, "file=%s%s,cache=%s%s%s%s%s%s%s,id=hd%zu",
          escaped_file,
@@ -628,6 +633,7 @@ launch_direct (guestfs_h *g, void *datav, const char *arg)
 
   ADD_CMDLINE ("-append");
   flags = 0;
+  printf("%s\n", "[franklin] ADD_CMDLINE_STRING_NODUP");
   if (!has_kvm || force_tcg)
     flags |= APPLIANCE_COMMAND_LINE_IS_TCG;
   ADD_CMDLINE_STRING_NODUP (guestfs_int_appliance_command_line (g, appliance_dev,

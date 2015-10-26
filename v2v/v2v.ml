@@ -43,12 +43,77 @@ let print_mpstat chan { mp_dev = dev; mp_path = path;
 
 let () = Random.self_init ()
 
+let parse_xml_test xml os host_name =
+  printf "[franklin] begin to parse xml\n";
+  printf "[frankin] get os => %s\n" os;
+  printf "[frankin] get host_name => %s\n" host_name;
+  let doc = Xml.parse_memory xml in
+  let xpathctx = Xml.xpath_new_context doc in
+  let xpath_string = xpath_string xpathctx in
+(*   and xpath_int = xpath_int xpathctx
+  and xpath_int_default = xpath_int_default xpathctx in *)
+  let obj = Xml.xpath_eval_expression xpathctx
+    "/responses/response/output/storagegroup" in
+  let nr_nodes = Xml.xpathobj_nr_nodes obj in
+  if nr_nodes < 1 then
+      error (f_"there is no storage group in the everrun system");
+  let storage_group_name = ref "" in
+  let found_sg = ref false in
+  for i = 0 to nr_nodes-1 do
+    if not !found_sg then (
+      let node = Xml.xpathobj_node obj i in
+      Xml.xpathctx_set_current_context xpathctx node;
+      let storage_group_name_temp =
+        match xpath_string "name" with
+        | None -> ""
+        | Some sname -> (string_trim sname)
+      in
+      let test_name = "    Hello World     " in
+      printf "####%s#####\n" (string_trim test_name);
+      printf "#########################\n";
+      printf "[franklin] current storage name is %s\n" storage_group_name_temp;
+      printf "#########################\n";
+
+      if storage_group_name_temp = os then (
+        storage_group_name := storage_group_name_temp;
+        found_sg := true;
+      )
+    )
+  done;
+  printf "find storage group end\n";
+  printf "The storage_group_name is %s\n" !storage_group_name;
+  if !storage_group_name <> os then
+    error (f_"there is no storage group match name in the everrun system");
+  !storage_group_name;
+  ;;
+
 let rec main () =
+
   (* Handle the command line. *)
   let input, output,
     debug_overlays, do_copy, network_map, no_trim,
     output_alloc, output_format, output_name, print_source, root_choice =
     Cmdline.parse_cmdline () in
+printf "[franklin] get cmd, output type is %s\n" output#get_class_name;
+
+
+printf "[franklin] ========= Test XML BEGIN =========\n";
+let cmd = sprintf "curl http://localhost:8999 > /home/franklin/temp/response.xml" in
+if Sys.command cmd <> 0 then
+  error (f_"get response error");
+let file = "/home/franklin/temp/response.xml" in
+let xml = read_whole_file file in
+let cmd = sprintf "rm -rf /home/franklin/temp/response.xml" in
+if Sys.command cmd <> 0 then
+  error (f_"delete temp response file error");
+(* printf "libvirt xml is:\n%s\n" xml; *)
+let os = "Initial Storage Group" in
+let host_name = "test" in
+let my_result = parse_xml_test xml os host_name in
+printf "[franklin] get the result storage group name %s\n" my_result;
+
+printf "[franklin] ========= Test XML END =========\n";
+
 
   (* Print the version, easier than asking users to tell us. *)
   if verbose () then
@@ -56,7 +121,10 @@ let rec main () =
       prog Config.package_name Config.package_version Config.host_cpu;
 
   message (f_"Opening the source %s") input#as_options;
+  printf "[franklin] Opening the source\n";
   let source = input#source () in
+  printf "[franklin] source => %s\n" (string_of_source source);
+  printf "[franklin] print source finished\n";
 
   (* Print source and stop. *)
   if print_source then (
@@ -123,7 +191,9 @@ let rec main () =
    * data over the wire.
    *)
   message (f_"Creating an overlay to protect the source from being modified");
+  printf "[franklin] Creating an overlay to protect the source from being modified\n";
   let overlay_dir = (new Guestfs.guestfs ())#get_cachedir () in
+  printf "[franklin] overlay_dir => %s\n" overlay_dir;
   let overlays =
     List.map (
       fun ({ s_qemu_uri = qemu_uri; s_format = format } as source) ->
@@ -149,9 +219,15 @@ let rec main () =
         overlay_file, source
     ) source.s_disks in
 
+
   (* Open the guestfs handle. *)
   message (f_"Opening the overlay");
+  printf "[franklin] before new guestfs\n";
+  (* let cmd1 = sprintf "clear" in *)
+  (* Sys.command cmd1; *)
+  (* Sys.command ""; *)
   let g = new G.guestfs () in
+  printf "[franklin] after new guestfs\n";
   if trace () then g#set_trace true;
   if verbose () then g#set_verbose true;
   g#set_network true;
@@ -161,13 +237,14 @@ let rec main () =
         ~format:"qcow2" ~cachemode:"unsafe" ~discard:"besteffort"
         ~copyonread:true
   ) overlays;
-
-  g#launch ();
+printf "[franklin] before g#launch\n";
+   g#launch ();
+printf "[franklin] after g#launch\n";
 
   (* Create the list of overlays structs.  Query each disk for its
    * virtual size, and fill in a few other fields.
    *)
-  let overlays =
+   let overlays =
     mapi (
       fun i (overlay_file, source) ->
         let sd = "sd" ^ drive_name i in
@@ -187,6 +264,7 @@ let rec main () =
     List.map (
       fun ov ->
         (* What output format should we use? *)
+        (* printf "[franklin] output_format => %s" output_format; *)
         let format =
           match output_format, ov.ov_source.s_format with
           | Some format, _ -> format    (* -of overrides everything *)
@@ -213,6 +291,7 @@ let rec main () =
           target_actual_size = None;
           target_overlay = ov }
     ) overlays in
+
   let targets = output#prepare_targets source targets in
 
   (* Inspection - this also mounts up the filesystems. *)
@@ -247,6 +326,7 @@ let rec main () =
   output#check_target_free_space source targets;
 
   (* Conversion. *)
+  (* printf "[franklin] %s" inspect.i_product_name *)
   let guestcaps =
     (match inspect.i_product_name with
     | "unknown" ->

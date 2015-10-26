@@ -407,6 +407,8 @@ guestfs_set_trace (guestfs_h *g,
   struct trace_buffer trace_buffer;
   int r;
 
+  printf("%s\n", "[franklin] set trace");
+
   guestfs_int_call_callbacks_message (g, GUESTFS_EVENT_ENTER,
                                     "set_trace", 9);
   if (trace_flag) {

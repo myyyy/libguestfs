@@ -29,13 +29,16 @@ virt_v2v-utils-c.o: utils-c.c ../config.h /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h /usr/lib/ocaml/caml/alloc.h \
- /usr/lib/ocaml/caml/compatibility.h /usr/lib/ocaml/caml/misc.h \
- /usr/lib/ocaml/caml/config.h /usr/lib/ocaml/caml/mlvalues.h \
- /usr/lib/ocaml/caml/fail.h /usr/lib/ocaml/caml/memory.h \
- /usr/lib/ocaml/caml/mlvalues.h ../src/guestfs.h \
- /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string2.h \
+ /usr/include/x86_64-linux-gnu/bits/string3.h /usr/include/ctype.h \
+ /usr/lib/ocaml/caml/alloc.h /usr/lib/ocaml/caml/compatibility.h \
+ /usr/lib/ocaml/caml/misc.h /usr/lib/ocaml/caml/config.h \
+ /usr/lib/ocaml/caml/mlvalues.h /usr/lib/ocaml/caml/fail.h \
+ /usr/lib/ocaml/caml/memory.h /usr/lib/ocaml/caml/mlvalues.h \
+ ../src/guestfs.h /usr/lib/gcc/x86_64-linux-gnu/4.6/include/stdint.h \
+ /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \
  ../src/guestfs-internal-frontend.h ../src/guestfs-internal-all.h \
  ../src/guestfs-internal-frontend-cleanups.h
 
@@ -124,6 +127,16 @@ virt_v2v-utils-c.o: utils-c.c ../config.h /usr/include/stdio.h \
 /usr/include/getopt.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd.h:
+
+/usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string2.h:
+
+/usr/include/x86_64-linux-gnu/bits/string3.h:
+
+/usr/include/ctype.h:
 
 /usr/lib/ocaml/caml/alloc.h:
 

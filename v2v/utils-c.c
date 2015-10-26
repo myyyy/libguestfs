@@ -21,6 +21,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
+#include <ctype.h>
 
 #include <caml/alloc.h>
 #include <caml/fail.h>
@@ -56,4 +58,39 @@ v2v_utils_drive_index (value strv)
     caml_invalid_argument ("drive_index: invalid parameter");
 
   CAMLreturn (Val_int (r));
+}
+
+value
+v2v_utils_trim (value origin)
+{
+  CAMLparam1 (origin);
+  CAMLlocal1 (modified_str);
+  char result[strlen(String_val (origin))];
+
+  trim(String_val (origin), result);
+  modified_str = caml_copy_string (result);
+
+  CAMLreturn (modified_str);
+}
+
+void
+trim(char* origin, char *result)
+{
+    int i = 0;
+    int len = strlen(origin);
+    int j = len - 1;
+    int pos = 0;
+
+    while (origin[i] != '\0' && isspace(origin[i]))
+    {
+        ++i;
+    }
+    while (origin[j] != '\0' && isspace(origin[j]))
+    {
+        --j;
+    }
+    while (i <= j)
+    {
+        result[pos++] = origin[i++];
+    }
 }

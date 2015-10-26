@@ -19,8 +19,10 @@
 open Printf
 
 (* Types.  See types.mli for documentation. *)
-
-type source = {
+type my_result = {
+  s_storage_group_name : string;
+}
+and source = {
   s_hypervisor : source_hypervisor;
   s_name : string;
   s_orig_name : string;
@@ -387,6 +389,7 @@ end
 
 class virtual output = object
   method virtual as_options : string
+  method get_class_name = ""
   method virtual prepare_targets : source -> target list -> target list
   method virtual supported_firmware : target_firmware list
   method check_target_firmware (_ : guestcaps) (_ : target_firmware) = ()

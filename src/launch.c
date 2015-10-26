@@ -48,6 +48,7 @@ static mode_t get_umask (guestfs_h *g);
 int
 guestfs_impl_launch (guestfs_h *g)
 {
+  printf("%s\n", "[franklin] guestfs_impl_launch");
   /* Configured? */
   if (g->state != CONFIG) {
     error (g, _("the libguestfs handle has already been launched"));
@@ -88,7 +89,7 @@ guestfs_impl_launch (guestfs_h *g)
     debug (g, "launch: umask=0%03o", get_umask (g));
     debug (g, "launch: euid=%ju", (uintmax_t) geteuid ());
   }
-
+  printf("%s\n", "[franklin] will do the launch operation");
   /* Launch the appliance. */
   if (g->backend_ops->launch (g, g->backend_data, g->backend_arg) == -1)
     return -1;
