@@ -1220,287 +1220,287 @@ ident(
 type(
   int
 )
-"utils.ml" 102 3184 3188 "utils.ml" 102 3184 3196
+"utils.ml" 104 3342 3346 "utils.ml" 104 3342 3354
 type(
   string -> string
 )
 ident(
-  def kvm_arch "utils.ml" 109 3379 3379 --
+  def kvm_arch "utils.ml" 111 3537 3537 --
 )
-"utils.ml" 103 3208 3212 "utils.ml" 103 3208 3218
+"utils.ml" 105 3366 3370 "utils.ml" 105 3366 3376
 type(
   string
 )
-"utils.ml" 103 3208 3221 "utils.ml" 103 3208 3227
+"utils.ml" 105 3366 3379 "utils.ml" 105 3366 3385
 type(
   string
 )
-"utils.ml" 103 3208 3212 "utils.ml" 103 3208 3227
+"utils.ml" 105 3366 3370 "utils.ml" 105 3366 3385
 type(
   string
 )
-"utils.ml" 103 3208 3230 "utils.ml" 103 3208 3236
+"utils.ml" 105 3366 3388 "utils.ml" 105 3366 3394
 type(
   string
 )
-"utils.ml" 103 3208 3212 "utils.ml" 103 3208 3236
+"utils.ml" 105 3366 3370 "utils.ml" 105 3366 3394
 type(
   string
 )
-"utils.ml" 103 3208 3239 "utils.ml" 103 3208 3245
+"utils.ml" 105 3366 3397 "utils.ml" 105 3366 3403
 type(
   string
 )
-"utils.ml" 103 3208 3212 "utils.ml" 103 3208 3245
+"utils.ml" 105 3366 3370 "utils.ml" 105 3366 3403
 type(
   string
 )
-"utils.ml" 104 3246 3250 "utils.ml" 104 3246 3258
+"utils.ml" 106 3404 3408 "utils.ml" 106 3404 3416
 type(
   string
 )
-"utils.ml" 103 3208 3212 "utils.ml" 104 3246 3258
+"utils.ml" 105 3366 3370 "utils.ml" 106 3404 3416
 type(
   string
 )
-"utils.ml" 104 3246 3262 "utils.ml" 104 3246 3270
+"utils.ml" 106 3404 3420 "utils.ml" 106 3404 3428
 type(
   string
 )
-"utils.ml" 105 3271 3275 "utils.ml" 105 3271 3284
+"utils.ml" 107 3429 3433 "utils.ml" 107 3429 3442
 type(
   string
 )
-"utils.ml" 105 3271 3288 "utils.ml" 105 3271 3296
+"utils.ml" 107 3429 3446 "utils.ml" 107 3429 3454
 type(
   string
 )
-"utils.ml" 106 3315 3319 "utils.ml" 106 3315 3323
-type(
-  string
-)
-ident(
-  def arch "utils.ml" 106 3315 3327 "utils.ml" 106 3315 3331
-)
-"utils.ml" 106 3315 3327 "utils.ml" 106 3315 3331
+"utils.ml" 108 3473 3477 "utils.ml" 108 3473 3481
 type(
   string
 )
 ident(
-  int_ref arch "utils.ml" 106 3315 3319 "utils.ml" 106 3315 3323
+  def arch "utils.ml" 108 3473 3485 "utils.ml" 108 3473 3489
 )
-"utils.ml" 102 3184 3199 "utils.ml" 106 3315 3331
+"utils.ml" 108 3473 3485 "utils.ml" 108 3473 3489
+type(
+  string
+)
+ident(
+  int_ref arch "utils.ml" 108 3473 3477 "utils.ml" 108 3473 3481
+)
+"utils.ml" 104 3342 3357 "utils.ml" 108 3473 3489
 type(
   string -> string
 )
-"utils.ml" 109 3379 3383 "utils.ml" 109 3379 3407
+"utils.ml" 111 3537 3541 "utils.ml" 111 3537 3565
 type(
   Types.source_sound_model -> bool
 )
 ident(
-  def qemu_supports_sound_card "utils.ml" 120 3536 3536 --
+  def qemu_supports_sound_card "utils.ml" 122 3694 3694 --
 )
-"utils.ml" 110 3419 3423 "utils.ml" 110 3419 3427
+"utils.ml" 112 3577 3581 "utils.ml" 112 3577 3585
 type(
   Types.source_sound_model
 )
-"utils.ml" 111 3428 3432 "utils.ml" 111 3428 3438
+"utils.ml" 113 3586 3590 "utils.ml" 113 3586 3596
 type(
   Types.source_sound_model
 )
-"utils.ml" 110 3419 3423 "utils.ml" 111 3428 3438
+"utils.ml" 112 3577 3581 "utils.ml" 113 3586 3596
 type(
   Types.source_sound_model
 )
-"utils.ml" 112 3439 3443 "utils.ml" 112 3439 3447
+"utils.ml" 114 3597 3601 "utils.ml" 114 3597 3605
 type(
   Types.source_sound_model
 )
-"utils.ml" 110 3419 3423 "utils.ml" 112 3439 3447
+"utils.ml" 112 3577 3581 "utils.ml" 114 3597 3605
 type(
   Types.source_sound_model
 )
-"utils.ml" 113 3448 3452 "utils.ml" 113 3448 3456
+"utils.ml" 115 3606 3610 "utils.ml" 115 3606 3614
 type(
   Types.source_sound_model
 )
-"utils.ml" 110 3419 3423 "utils.ml" 113 3448 3456
+"utils.ml" 112 3577 3581 "utils.ml" 115 3606 3614
 type(
   Types.source_sound_model
 )
-"utils.ml" 114 3457 3461 "utils.ml" 114 3457 3470
+"utils.ml" 116 3615 3619 "utils.ml" 116 3615 3628
 type(
   Types.source_sound_model
 )
-"utils.ml" 110 3419 3423 "utils.ml" 114 3457 3470
+"utils.ml" 112 3577 3581 "utils.ml" 116 3615 3628
 type(
   Types.source_sound_model
 )
-"utils.ml" 115 3471 3475 "utils.ml" 115 3471 3479
+"utils.ml" 117 3629 3633 "utils.ml" 117 3629 3637
 type(
   Types.source_sound_model
 )
-"utils.ml" 110 3419 3423 "utils.ml" 115 3471 3479
+"utils.ml" 112 3577 3581 "utils.ml" 117 3629 3637
 type(
   Types.source_sound_model
 )
-"utils.ml" 116 3480 3484 "utils.ml" 116 3480 3492
+"utils.ml" 118 3638 3642 "utils.ml" 118 3638 3650
 type(
   Types.source_sound_model
 )
-"utils.ml" 110 3419 3423 "utils.ml" 116 3480 3492
+"utils.ml" 112 3577 3581 "utils.ml" 118 3638 3650
 type(
   Types.source_sound_model
 )
-"utils.ml" 117 3493 3500 "utils.ml" 117 3493 3504
+"utils.ml" 119 3651 3658 "utils.ml" 119 3651 3662
 type(
   bool
 )
-"utils.ml" 109 3379 3410 "utils.ml" 117 3493 3504
+"utils.ml" 111 3537 3568 "utils.ml" 119 3651 3662
 type(
   Types.source_sound_model -> bool
 )
-"utils.ml" 120 3536 3540 "utils.ml" 120 3536 3558
+"utils.ml" 122 3694 3698 "utils.ml" 122 3694 3716
 type(
   string -> string * string
 )
 ident(
-  def find_uefi_firmware "utils.ml" 153 4990 4990 --
+  def find_uefi_firmware "utils.ml" 155 5148 5148 --
 )
-"utils.ml" 120 3536 3559 "utils.ml" 120 3536 3569
+"utils.ml" 122 3694 3717 "utils.ml" 122 3694 3727
 type(
   string
 )
 ident(
-  def guest_arch "utils.ml" 121 3572 3574 "utils.ml" 146 4726 4738
+  def guest_arch "utils.ml" 123 3730 3732 "utils.ml" 148 4884 4896
 )
-"utils.ml" 121 3572 3578 "utils.ml" 121 3572 3583
+"utils.ml" 123 3730 3736 "utils.ml" 123 3730 3741
 type(
   (string * string) list
 )
-"utils.ml" 122 3586 3596 "utils.ml" 122 3586 3606
+"utils.ml" 124 3744 3754 "utils.ml" 124 3744 3764
 type(
   string
 )
 ident(
-  int_ref guest_arch "utils.ml" 120 3536 3559 "utils.ml" 120 3536 3569
+  int_ref guest_arch "utils.ml" 122 3694 3717 "utils.ml" 122 3694 3727
 )
-"utils.ml" 123 3612 3618 "utils.ml" 123 3612 3624
+"utils.ml" 125 3770 3776 "utils.ml" 125 3770 3782
 type(
   string
 )
-"utils.ml" 123 3612 3627 "utils.ml" 123 3612 3633
+"utils.ml" 125 3770 3785 "utils.ml" 125 3770 3791
 type(
   string
 )
-"utils.ml" 123 3612 3618 "utils.ml" 123 3612 3633
+"utils.ml" 125 3770 3776 "utils.ml" 125 3770 3791
 type(
   string
 )
-"utils.ml" 123 3612 3636 "utils.ml" 123 3612 3642
+"utils.ml" 125 3770 3794 "utils.ml" 125 3770 3800
 type(
   string
 )
-"utils.ml" 123 3612 3618 "utils.ml" 123 3612 3642
+"utils.ml" 125 3770 3776 "utils.ml" 125 3770 3800
 type(
   string
 )
-"utils.ml" 123 3612 3645 "utils.ml" 123 3612 3651
+"utils.ml" 125 3770 3803 "utils.ml" 125 3770 3809
 type(
   string
 )
-"utils.ml" 123 3612 3618 "utils.ml" 123 3612 3651
+"utils.ml" 125 3770 3776 "utils.ml" 125 3770 3809
 type(
   string
 )
-"utils.ml" 124 3655 3664 "utils.ml" 124 3655 3717
+"utils.ml" 126 3813 3822 "utils.ml" 126 3813 3875
 type(
   string
 )
-"utils.ml" 125 3719 3728 "utils.ml" 125 3719 3781
+"utils.ml" 127 3877 3886 "utils.ml" 127 3877 3939
 type(
   string
 )
-"utils.ml" 124 3655 3664 "utils.ml" 125 3719 3781
+"utils.ml" 126 3813 3822 "utils.ml" 127 3877 3939
 type(
   string * string
 )
-"utils.ml" 124 3655 3662 "utils.ml" 125 3719 3783
+"utils.ml" 126 3813 3820 "utils.ml" 127 3877 3941
 type(
   (string * string) list
 )
-"utils.ml" 126 3784 3790 "utils.ml" 126 3784 3798
+"utils.ml" 128 3942 3948 "utils.ml" 128 3942 3956
 type(
   string
 )
-"utils.ml" 127 3802 3811 "utils.ml" 127 3802 3841
+"utils.ml" 129 3960 3969 "utils.ml" 129 3960 3999
 type(
   string
 )
-"utils.ml" 128 3843 3852 "utils.ml" 128 3843 3882
+"utils.ml" 130 4001 4010 "utils.ml" 130 4001 4040
 type(
   string
 )
-"utils.ml" 127 3802 3811 "utils.ml" 128 3843 3882
+"utils.ml" 129 3960 3969 "utils.ml" 130 4001 4040
 type(
   string * string
 )
-"utils.ml" 129 3884 3893 "utils.ml" 129 3884 3945
+"utils.ml" 131 4042 4051 "utils.ml" 131 4042 4103
 type(
   string
 )
-"utils.ml" 130 3947 3956 "utils.ml" 130 3947 4008
+"utils.ml" 132 4105 4114 "utils.ml" 132 4105 4166
 type(
   string
 )
-"utils.ml" 129 3884 3893 "utils.ml" 130 3947 4008
+"utils.ml" 131 4042 4051 "utils.ml" 132 4105 4166
 type(
   string * string
 )
-"utils.ml" 127 3802 3809 "utils.ml" 130 3947 4010
+"utils.ml" 129 3960 3967 "utils.ml" 132 4105 4168
 type(
   (string * string) list
 )
-"utils.ml" 131 4011 4017 "utils.ml" 131 4011 4026
+"utils.ml" 133 4169 4175 "utils.ml" 133 4169 4184
 type(
   string
 )
-"utils.ml" 132 4030 4039 "utils.ml" 132 4030 4071
+"utils.ml" 134 4188 4197 "utils.ml" 134 4188 4229
 type(
   string
 )
-"utils.ml" 133 4073 4082 "utils.ml" 133 4073 4114
+"utils.ml" 135 4231 4240 "utils.ml" 135 4231 4272
 type(
   string
 )
-"utils.ml" 132 4030 4039 "utils.ml" 133 4073 4114
+"utils.ml" 134 4188 4197 "utils.ml" 135 4231 4272
 type(
   string * string
 )
-"utils.ml" 134 4116 4125 "utils.ml" 134 4116 4174
+"utils.ml" 136 4274 4283 "utils.ml" 136 4274 4332
 type(
   string
 )
-"utils.ml" 135 4176 4185 "utils.ml" 135 4176 4239
+"utils.ml" 137 4334 4343 "utils.ml" 137 4334 4397
 type(
   string
 )
-"utils.ml" 134 4116 4125 "utils.ml" 135 4176 4239
+"utils.ml" 136 4274 4283 "utils.ml" 137 4334 4397
 type(
   string * string
 )
-"utils.ml" 132 4030 4037 "utils.ml" 135 4176 4241
+"utils.ml" 134 4188 4195 "utils.ml" 137 4334 4399
 type(
   (string * string) list
 )
-"utils.ml" 136 4242 4248 "utils.ml" 136 4242 4252
+"utils.ml" 138 4400 4406 "utils.ml" 138 4400 4410
 type(
   string
 )
 ident(
-  def arch "utils.ml" 137 4256 4263 "utils.ml" 138 4333 4356
+  def arch "utils.ml" 139 4414 4421 "utils.ml" 140 4491 4514
 )
-"utils.ml" 137 4256 4263 "utils.ml" 137 4256 4268
+"utils.ml" 139 4414 4421 "utils.ml" 139 4414 4426
 type(
   ?exit_code:int ->
   (string -> (string * string) list, unit, string, (string * string) list)
@@ -1509,7 +1509,7 @@ type(
 ident(
   ext_ref Common_utils.error
 )
-"utils.ml" 137 4256 4270 "utils.ml" 137 4256 4272
+"utils.ml" 139 4414 4428 "utils.ml" 139 4414 4430
 type(
   (string -> (string * string) list, unit, string, string, string,
    (string * string) list)
@@ -1520,44 +1520,44 @@ type(
 ident(
   ext_ref Common_gettext.Gettext.f_
 )
-"utils.ml" 137 4256 4272 "utils.ml" 137 4256 4331
+"utils.ml" 139 4414 4430 "utils.ml" 139 4414 4489
 type(
   (string -> (string * string) list, unit, string, string, string,
    (string * string) list)
   format6
 )
-"utils.ml" 137 4256 4269 "utils.ml" 137 4256 4332
+"utils.ml" 139 4414 4427 "utils.ml" 139 4414 4490
 type(
   (string -> (string * string) list, unit, string, (string * string) list)
   format4
 )
-"utils.ml" 138 4333 4346 "utils.ml" 138 4333 4356
+"utils.ml" 140 4491 4504 "utils.ml" 140 4491 4514
 type(
   string
 )
 ident(
-  int_ref guest_arch "utils.ml" 120 3536 3559 "utils.ml" 120 3536 3569
+  int_ref guest_arch "utils.ml" 122 3694 3717 "utils.ml" 122 3694 3727
 )
-"utils.ml" 137 4256 4263 "utils.ml" 138 4333 4356
+"utils.ml" 139 4414 4421 "utils.ml" 140 4491 4514
 call(
   stack
 )
 type(
   (string * string) list
 )
-"utils.ml" 122 3586 3590 "utils.ml" 138 4333 4356
+"utils.ml" 124 3744 3748 "utils.ml" 140 4491 4514
 type(
   (string * string) list
 )
-"utils.ml" 139 4360 4370 "utils.ml" 139 4360 4374
+"utils.ml" 141 4518 4528 "utils.ml" 141 4518 4532
 type(
   (string * string) list -> string * string
 )
-"utils.ml" 140 4386 4392 "utils.ml" 140 4386 4394
+"utils.ml" 142 4544 4550 "utils.ml" 142 4544 4552
 type(
   (string * string) list
 )
-"utils.ml" 141 4398 4405 "utils.ml" 141 4398 4410
+"utils.ml" 143 4556 4563 "utils.ml" 143 4556 4568
 type(
   ?exit_code:int ->
   (string * string, unit, string, string * string) format4 -> string * string
@@ -1565,7 +1565,7 @@ type(
 ident(
   ext_ref Common_utils.error
 )
-"utils.ml" 141 4398 4412 "utils.ml" 141 4398 4414
+"utils.ml" 143 4556 4570 "utils.ml" 143 4556 4572
 type(
   (string * string, unit, string, string, string, string * string) format6 ->
   (string * string, unit, string, string * string) format4
@@ -1573,184 +1573,184 @@ type(
 ident(
   ext_ref Common_gettext.Gettext.f_
 )
-"utils.ml" 141 4398 4414 "utils.ml" 141 4398 4576
+"utils.ml" 143 4556 4572 "utils.ml" 143 4556 4734
 type(
   (string * string, unit, string, string, string, string * string) format6
 )
-"utils.ml" 141 4398 4411 "utils.ml" 141 4398 4577
+"utils.ml" 143 4556 4569 "utils.ml" 143 4556 4735
 type(
   (string * string, unit, string, string * string) format4
 )
-"utils.ml" 141 4398 4405 "utils.ml" 141 4398 4577
+"utils.ml" 143 4556 4563 "utils.ml" 143 4556 4735
 call(
   tail
 )
 type(
   string * string
 )
-"utils.ml" 142 4578 4586 "utils.ml" 142 4578 4590
+"utils.ml" 144 4736 4744 "utils.ml" 144 4736 4748
 type(
   string
 )
 ident(
-  def code "utils.ml" 143 4626 4633 "utils.ml" 144 4699 4720
+  def code "utils.ml" 145 4784 4791 "utils.ml" 146 4857 4878
 )
-"utils.ml" 142 4578 4592 "utils.ml" 142 4578 4605
+"utils.ml" 144 4736 4750 "utils.ml" 144 4736 4763
 type(
   string
 )
 ident(
-  def vars_template "utils.ml" 143 4626 4633 "utils.ml" 144 4699 4720
+  def vars_template "utils.ml" 145 4784 4791 "utils.ml" 146 4857 4878
 )
-"utils.ml" 142 4578 4585 "utils.ml" 142 4578 4606
+"utils.ml" 144 4736 4743 "utils.ml" 144 4736 4764
 type(
   string * string
 )
-"utils.ml" 142 4578 4584 "utils.ml" 142 4578 4614
+"utils.ml" 144 4736 4742 "utils.ml" 144 4736 4772
 type(
   string * string
 )
 ident(
-  def ret "utils.ml" 143 4626 4633 "utils.ml" 144 4699 4720
+  def ret "utils.ml" 145 4784 4791 "utils.ml" 146 4857 4878
 )
-"utils.ml" 142 4578 4618 "utils.ml" 142 4578 4622
+"utils.ml" 144 4736 4776 "utils.ml" 144 4736 4780
 type(
   (string * string) list
 )
 ident(
-  def rest "utils.ml" 143 4626 4633 "utils.ml" 144 4699 4720
+  def rest "utils.ml" 145 4784 4791 "utils.ml" 146 4857 4878
 )
-"utils.ml" 142 4578 4584 "utils.ml" 142 4578 4622
+"utils.ml" 144 4736 4742 "utils.ml" 144 4736 4780
 type(
   (string * string) list
 )
-"utils.ml" 143 4626 4636 "utils.ml" 143 4626 4651
+"utils.ml" 145 4784 4794 "utils.ml" 145 4784 4809
 type(
   string -> bool
 )
 ident(
   ext_ref Sys.file_exists
 )
-"utils.ml" 143 4626 4652 "utils.ml" 143 4626 4656
+"utils.ml" 145 4784 4810 "utils.ml" 145 4784 4814
 type(
   string
 )
 ident(
-  int_ref code "utils.ml" 142 4578 4586 "utils.ml" 142 4578 4590
+  int_ref code "utils.ml" 144 4736 4744 "utils.ml" 144 4736 4748
 )
-"utils.ml" 143 4626 4636 "utils.ml" 143 4626 4656
+"utils.ml" 145 4784 4794 "utils.ml" 145 4784 4814
 type(
   bool
 )
-"utils.ml" 143 4626 4657 "utils.ml" 143 4626 4659
+"utils.ml" 145 4784 4815 "utils.ml" 145 4784 4817
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"utils.ml" 143 4626 4660 "utils.ml" 143 4626 4675
+"utils.ml" 145 4784 4818 "utils.ml" 145 4784 4833
 type(
   string -> bool
 )
 ident(
   ext_ref Sys.file_exists
 )
-"utils.ml" 143 4626 4676 "utils.ml" 143 4626 4689
+"utils.ml" 145 4784 4834 "utils.ml" 145 4784 4847
 type(
   string
 )
 ident(
-  int_ref vars_template "utils.ml" 142 4578 4592 "utils.ml" 142 4578 4605
+  int_ref vars_template "utils.ml" 144 4736 4750 "utils.ml" 144 4736 4763
 )
-"utils.ml" 143 4626 4660 "utils.ml" 143 4626 4689
+"utils.ml" 145 4784 4818 "utils.ml" 145 4784 4847
 type(
   bool
 )
-"utils.ml" 143 4626 4636 "utils.ml" 143 4626 4689
+"utils.ml" 145 4784 4794 "utils.ml" 145 4784 4847
 type(
   bool
 )
-"utils.ml" 143 4626 4695 "utils.ml" 143 4626 4698
+"utils.ml" 145 4784 4853 "utils.ml" 145 4784 4856
 type(
   string * string
 )
 ident(
-  int_ref ret "utils.ml" 142 4578 4584 "utils.ml" 142 4578 4614
+  int_ref ret "utils.ml" 144 4736 4742 "utils.ml" 144 4736 4772
 )
-"utils.ml" 144 4699 4711 "utils.ml" 144 4699 4715
+"utils.ml" 146 4857 4869 "utils.ml" 146 4857 4873
 type(
   (string * string) list -> string * string
 )
 ident(
-  int_ref loop "utils.ml" 139 4360 4370 "utils.ml" 139 4360 4374
+  int_ref loop "utils.ml" 141 4518 4528 "utils.ml" 141 4518 4532
 )
-"utils.ml" 144 4699 4716 "utils.ml" 144 4699 4720
+"utils.ml" 146 4857 4874 "utils.ml" 146 4857 4878
 type(
   (string * string) list
 )
 ident(
-  int_ref rest "utils.ml" 142 4578 4618 "utils.ml" 142 4578 4622
+  int_ref rest "utils.ml" 144 4736 4776 "utils.ml" 144 4736 4780
 )
-"utils.ml" 144 4699 4711 "utils.ml" 144 4699 4720
+"utils.ml" 146 4857 4869 "utils.ml" 146 4857 4878
 call(
   tail
 )
 type(
   string * string
 )
-"utils.ml" 143 4626 4633 "utils.ml" 144 4699 4720
+"utils.ml" 145 4784 4791 "utils.ml" 146 4857 4878
 type(
   string * string
 )
-"utils.ml" 139 4360 4377 "utils.ml" 144 4699 4720
+"utils.ml" 141 4518 4535 "utils.ml" 146 4857 4878
 type(
   (string * string) list -> string * string
 )
-"utils.ml" 146 4726 4728 "utils.ml" 146 4726 4732
+"utils.ml" 148 4884 4886 "utils.ml" 148 4884 4890
 type(
   (string * string) list -> string * string
 )
 ident(
-  int_ref loop "utils.ml" 139 4360 4370 "utils.ml" 139 4360 4374
+  int_ref loop "utils.ml" 141 4518 4528 "utils.ml" 141 4518 4532
 )
-"utils.ml" 146 4726 4733 "utils.ml" 146 4726 4738
+"utils.ml" 148 4884 4891 "utils.ml" 148 4884 4896
 type(
   (string * string) list
 )
 ident(
-  int_ref files "utils.ml" 121 3572 3578 "utils.ml" 121 3572 3583
+  int_ref files "utils.ml" 123 3730 3736 "utils.ml" 123 3730 3741
 )
-"utils.ml" 146 4726 4728 "utils.ml" 146 4726 4738
+"utils.ml" 148 4884 4886 "utils.ml" 148 4884 4896
 call(
   tail
 )
 type(
   string * string
 )
-"utils.ml" 139 4360 4362 "utils.ml" 146 4726 4738
+"utils.ml" 141 4518 4520 "utils.ml" 148 4884 4896
 type(
   string * string
 )
-"utils.ml" 121 3572 3574 "utils.ml" 146 4726 4738
+"utils.ml" 123 3730 3732 "utils.ml" 148 4884 4896
 type(
   string * string
 )
-"utils.ml" 172 5661 5665 "utils.ml" 172 5661 5693
+"utils.ml" 174 5819 5823 "utils.ml" 174 5819 5851
 type(
   virtio_win_driver_file -> unit
 )
 ident(
-  def print_virtio_win_driver_file "utils.ml" 183 6042 6042 --
+  def print_virtio_win_driver_file "utils.ml" 185 6200 6200 --
 )
-"utils.ml" 172 5661 5694 "utils.ml" 172 5661 5697
+"utils.ml" 174 5819 5852 "utils.ml" 174 5819 5855
 type(
   virtio_win_driver_file
 )
 ident(
-  def vwd "utils.ml" 173 5700 5702 "utils.ml" 181 6008 6040
+  def vwd "utils.ml" 175 5858 5860 "utils.ml" 183 6166 6198
 )
-"utils.ml" 173 5700 5702 "utils.ml" 173 5700 5708
+"utils.ml" 175 5858 5860 "utils.ml" 175 5858 5866
 type(
   (string -> int -> int -> string -> string -> string -> string -> unit,
    out_channel, unit)
@@ -1760,190 +1760,190 @@ type(
 ident(
   ext_ref Printf.printf
 )
-"utils.ml" 173 5700 5709 "utils.ml" 173 5700 5740
+"utils.ml" 175 5858 5867 "utils.ml" 175 5858 5898
 type(
   (string -> int -> int -> string -> string -> string -> string -> unit,
    out_channel, unit)
   format
 )
-"utils.ml" 174 5741 5750 "utils.ml" 174 5741 5753
+"utils.ml" 176 5899 5908 "utils.ml" 176 5899 5911
 type(
   virtio_win_driver_file
 )
 ident(
-  int_ref vwd "utils.ml" 172 5661 5694 "utils.ml" 172 5661 5697
+  int_ref vwd "utils.ml" 174 5819 5852 "utils.ml" 174 5819 5855
 )
-"utils.ml" 174 5741 5750 "utils.ml" 174 5741 5766
+"utils.ml" 176 5899 5908 "utils.ml" 176 5899 5924
 type(
   string
 )
-"utils.ml" 175 5767 5776 "utils.ml" 175 5767 5779
+"utils.ml" 177 5925 5934 "utils.ml" 177 5925 5937
 type(
   virtio_win_driver_file
 )
 ident(
-  int_ref vwd "utils.ml" 172 5661 5694 "utils.ml" 172 5661 5697
+  int_ref vwd "utils.ml" 174 5819 5852 "utils.ml" 174 5819 5855
 )
-"utils.ml" 175 5767 5776 "utils.ml" 175 5767 5792
+"utils.ml" 177 5925 5934 "utils.ml" 177 5925 5950
 type(
   int
 )
-"utils.ml" 175 5767 5793 "utils.ml" 175 5767 5796
+"utils.ml" 177 5925 5951 "utils.ml" 177 5925 5954
 type(
   virtio_win_driver_file
 )
 ident(
-  int_ref vwd "utils.ml" 172 5661 5694 "utils.ml" 172 5661 5697
+  int_ref vwd "utils.ml" 174 5819 5852 "utils.ml" 174 5819 5855
 )
-"utils.ml" 175 5767 5793 "utils.ml" 175 5767 5809
+"utils.ml" 177 5925 5951 "utils.ml" 177 5925 5967
 type(
   int
 )
-"utils.ml" 176 5810 5826 "utils.ml" 176 5810 5829
+"utils.ml" 178 5968 5984 "utils.ml" 178 5968 5987
 type(
   virtio_win_driver_file
 )
 ident(
-  int_ref vwd "utils.ml" 172 5661 5694 "utils.ml" 172 5661 5697
+  int_ref vwd "utils.ml" 174 5819 5852 "utils.ml" 174 5819 5855
 )
-"utils.ml" 176 5810 5826 "utils.ml" 176 5810 5844
+"utils.ml" 178 5968 5984 "utils.ml" 178 5968 6002
 type(
   vwd_os_variant
 )
-"utils.ml" 177 5850 5862 "utils.ml" 177 5850 5872
+"utils.ml" 179 6008 6020 "utils.ml" 179 6008 6030
 type(
   vwd_os_variant
 )
-"utils.ml" 177 5850 5876 "utils.ml" 177 5850 5884
+"utils.ml" 179 6008 6034 "utils.ml" 179 6008 6042
 type(
   string
 )
-"utils.ml" 177 5850 5887 "utils.ml" 177 5850 5901
+"utils.ml" 179 6008 6045 "utils.ml" 179 6008 6059
 type(
   vwd_os_variant
 )
-"utils.ml" 177 5850 5905 "utils.ml" 177 5850 5917
+"utils.ml" 179 6008 6063 "utils.ml" 179 6008 6075
 type(
   string
 )
-"utils.ml" 178 5918 5930 "utils.ml" 178 5918 5945
+"utils.ml" 180 6076 6088 "utils.ml" 180 6076 6103
 type(
   vwd_os_variant
 )
-"utils.ml" 178 5918 5949 "utils.ml" 178 5918 5954
+"utils.ml" 180 6076 6107 "utils.ml" 180 6076 6112
 type(
   string
 )
-"utils.ml" 176 5810 5819 "utils.ml" 178 5918 5955
+"utils.ml" 178 5968 5977 "utils.ml" 180 6076 6113
 type(
   string
 )
-"utils.ml" 179 5956 5965 "utils.ml" 179 5956 5968
+"utils.ml" 181 6114 6123 "utils.ml" 181 6114 6126
 type(
   virtio_win_driver_file
 )
 ident(
-  int_ref vwd "utils.ml" 172 5661 5694 "utils.ml" 172 5661 5697
+  int_ref vwd "utils.ml" 174 5819 5852 "utils.ml" 174 5819 5855
 )
-"utils.ml" 179 5956 5965 "utils.ml" 179 5956 5980
+"utils.ml" 181 6114 6123 "utils.ml" 181 6114 6138
 type(
   string
 )
-"utils.ml" 180 5981 5990 "utils.ml" 180 5981 5993
+"utils.ml" 182 6139 6148 "utils.ml" 182 6139 6151
 type(
   virtio_win_driver_file
 )
 ident(
-  int_ref vwd "utils.ml" 172 5661 5694 "utils.ml" 172 5661 5697
+  int_ref vwd "utils.ml" 174 5819 5852 "utils.ml" 174 5819 5855
 )
-"utils.ml" 180 5981 5990 "utils.ml" 180 5981 6007
+"utils.ml" 182 6139 6148 "utils.ml" 182 6139 6165
 type(
   string
 )
-"utils.ml" 181 6008 6017 "utils.ml" 181 6008 6020
+"utils.ml" 183 6166 6175 "utils.ml" 183 6166 6178
 type(
   virtio_win_driver_file
 )
 ident(
-  int_ref vwd "utils.ml" 172 5661 5694 "utils.ml" 172 5661 5697
+  int_ref vwd "utils.ml" 174 5819 5852 "utils.ml" 174 5819 5855
 )
-"utils.ml" 181 6008 6017 "utils.ml" 181 6008 6040
+"utils.ml" 183 6166 6175 "utils.ml" 183 6166 6198
 type(
   string
 )
-"utils.ml" 173 5700 5702 "utils.ml" 181 6008 6040
+"utils.ml" 175 5858 5860 "utils.ml" 183 6166 6198
 call(
   tail
 )
 type(
   unit
 )
-"utils.ml" 183 6042 6046 "utils.ml" 183 6042 6069
+"utils.ml" 185 6200 6204 "utils.ml" 185 6200 6227
 type(
   string -> virtio_win_driver_file list
 )
 ident(
-  def find_virtio_win_drivers "utils.ml" 304 10504 10504 --
+  def find_virtio_win_drivers "utils.ml" 306 10662 10662 --
 )
-"utils.ml" 183 6042 6070 "utils.ml" 183 6042 6080
+"utils.ml" 185 6200 6228 "utils.ml" 185 6200 6238
 type(
   string
 )
 ident(
-  def virtio_win "utils.ml" 184 6083 6085 "utils.ml" 302 10495 10502
+  def virtio_win "utils.ml" 186 6241 6243 "utils.ml" 304 10653 10660
 )
-"utils.ml" 184 6083 6089 "utils.ml" 184 6083 6104
+"utils.ml" 186 6241 6247 "utils.ml" 186 6241 6262
 type(
   string -> bool
 )
-"utils.ml" 184 6083 6105 "utils.ml" 184 6083 6109
+"utils.ml" 186 6241 6263 "utils.ml" 186 6241 6267
 type(
   string
 )
 ident(
-  def path "utils.ml" 185 6140 6144 "utils.ml" 186 6191 6226
+  def path "utils.ml" 187 6298 6302 "utils.ml" 188 6349 6384
 )
-"utils.ml" 185 6140 6149 "utils.ml" 185 6140 6158
+"utils.ml" 187 6298 6307 "utils.ml" 187 6298 6316
 type(
   string -> Unix.stats
 )
 ident(
   ext_ref Unix.stat
 )
-"utils.ml" 185 6140 6159 "utils.ml" 185 6140 6163
+"utils.ml" 187 6298 6317 "utils.ml" 187 6298 6321
 type(
   string
 )
 ident(
-  int_ref path "utils.ml" 184 6083 6105 "utils.ml" 184 6083 6109
+  int_ref path "utils.ml" 186 6241 6263 "utils.ml" 186 6241 6267
 )
-"utils.ml" 185 6140 6148 "utils.ml" 185 6140 6164
+"utils.ml" 187 6298 6306 "utils.ml" 187 6298 6322
 call(
   stack
 )
 type(
   Unix.stats
 )
-"utils.ml" 185 6140 6148 "utils.ml" 185 6140 6177
+"utils.ml" 187 6298 6306 "utils.ml" 187 6298 6335
 type(
   Unix.file_kind
 )
-"utils.ml" 185 6140 6178 "utils.ml" 185 6140 6179
+"utils.ml" 187 6298 6336 "utils.ml" 187 6298 6337
 type(
   Unix.file_kind -> Unix.file_kind -> bool
 )
 ident(
   ext_ref Pervasives.( = )
 )
-"utils.ml" 185 6140 6180 "utils.ml" 185 6140 6190
+"utils.ml" 187 6298 6338 "utils.ml" 187 6298 6348
 type(
   Unix.file_kind
 )
-"utils.ml" 185 6140 6148 "utils.ml" 185 6140 6190
+"utils.ml" 187 6298 6306 "utils.ml" 187 6298 6348
 type(
   bool
 )
-"utils.ml" 186 6191 6216 "utils.ml" 186 6191 6217
+"utils.ml" 188 6349 6374 "utils.ml" 188 6349 6375
 type(
   string
 )
@@ -1953,118 +1953,118 @@ type(
 type(
   Unix.error
 )
-"utils.ml" 186 6191 6200 "utils.ml" 186 6191 6217
+"utils.ml" 188 6349 6358 "utils.ml" 188 6349 6375
 type(
   exn
 )
-"utils.ml" 186 6191 6221 "utils.ml" 186 6191 6226
+"utils.ml" 188 6349 6379 "utils.ml" 188 6349 6384
 type(
   bool
 )
-"utils.ml" 185 6140 6144 "utils.ml" 186 6191 6226
+"utils.ml" 187 6298 6302 "utils.ml" 188 6349 6384
 type(
   bool
 )
-"utils.ml" 189 6233 6239 "utils.ml" 189 6233 6244
+"utils.ml" 191 6391 6397 "utils.ml" 191 6391 6402
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 190 6247 6254 "utils.ml" 190 6247 6266
+"utils.ml" 192 6405 6412 "utils.ml" 192 6405 6424
 type(
   string -> bool
 )
 ident(
   ext_ref Common_utils.is_directory
 )
-"utils.ml" 190 6247 6267 "utils.ml" 190 6247 6277
+"utils.ml" 192 6405 6425 "utils.ml" 192 6405 6435
 type(
   string
 )
 ident(
-  int_ref virtio_win "utils.ml" 183 6042 6070 "utils.ml" 183 6042 6080
+  int_ref virtio_win "utils.ml" 185 6200 6228 "utils.ml" 185 6200 6238
 )
-"utils.ml" 190 6247 6254 "utils.ml" 190 6247 6277
+"utils.ml" 192 6405 6412 "utils.ml" 192 6405 6435
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 191 6285 6295 "utils.ml" 191 6285 6298
+"utils.ml" 193 6443 6453 "utils.ml" 193 6443 6456
 type(
   string
 )
 ident(
-  def cmd "utils.ml" 192 6355 6361 "utils.ml" 199 6590 6603
+  def cmd "utils.ml" 194 6513 6519 "utils.ml" 201 6748 6761
 )
-"utils.ml" 191 6285 6301 "utils.ml" 191 6285 6308
+"utils.ml" 193 6443 6459 "utils.ml" 193 6443 6466
 type(
   (string -> string, unit, string) format -> string -> string
 )
 ident(
   ext_ref Printf.sprintf
 )
-"utils.ml" 191 6285 6309 "utils.ml" 191 6285 6332
+"utils.ml" 193 6443 6467 "utils.ml" 193 6443 6490
 type(
   (string -> string, unit, string) format
 )
-"utils.ml" 191 6285 6334 "utils.ml" 191 6285 6339
+"utils.ml" 193 6443 6492 "utils.ml" 193 6443 6497
 type(
   string -> string
 )
 ident(
   int_ref quote "utils.ml" 28 889 893 "utils.ml" 28 889 898
 )
-"utils.ml" 191 6285 6340 "utils.ml" 191 6285 6350
+"utils.ml" 193 6443 6498 "utils.ml" 193 6443 6508
 type(
   string
 )
 ident(
-  int_ref virtio_win "utils.ml" 183 6042 6070 "utils.ml" 183 6042 6080
+  int_ref virtio_win "utils.ml" 185 6200 6228 "utils.ml" 185 6200 6238
 )
-"utils.ml" 191 6285 6333 "utils.ml" 191 6285 6351
+"utils.ml" 193 6443 6491 "utils.ml" 193 6443 6509
 call(
   stack
 )
 type(
   string
 )
-"utils.ml" 191 6285 6301 "utils.ml" 191 6285 6351
+"utils.ml" 193 6443 6459 "utils.ml" 193 6443 6509
 call(
   stack
 )
 type(
   string
 )
-"utils.ml" 192 6355 6365 "utils.ml" 192 6355 6370
+"utils.ml" 194 6513 6523 "utils.ml" 194 6513 6528
 type(
   string list
 )
 ident(
-  def paths "utils.ml" 193 6397 6403 "utils.ml" 199 6590 6603
+  def paths "utils.ml" 195 6555 6561 "utils.ml" 201 6748 6761
 )
-"utils.ml" 192 6355 6373 "utils.ml" 192 6355 6389
+"utils.ml" 194 6513 6531 "utils.ml" 194 6513 6547
 type(
   string -> string list
 )
 ident(
   ext_ref Common_utils.external_command
 )
-"utils.ml" 192 6355 6390 "utils.ml" 192 6355 6393
+"utils.ml" 194 6513 6548 "utils.ml" 194 6513 6551
 type(
   string
 )
 ident(
-  int_ref cmd "utils.ml" 191 6285 6295 "utils.ml" 191 6285 6298
+  int_ref cmd "utils.ml" 193 6443 6453 "utils.ml" 193 6443 6456
 )
-"utils.ml" 192 6355 6373 "utils.ml" 192 6355 6393
+"utils.ml" 194 6513 6531 "utils.ml" 194 6513 6551
 call(
   stack
 )
 type(
   string list
 )
-"utils.ml" 193 6397 6403 "utils.ml" 193 6397 6411
+"utils.ml" 195 6555 6561 "utils.ml" 195 6555 6569
 type(
   (string -> string * string * string * (unit -> string)) ->
   string list -> (string * string * string * (unit -> string)) list
@@ -2072,282 +2072,282 @@ type(
 ident(
   ext_ref List.map
 )
-"utils.ml" 194 6414 6426 "utils.ml" 194 6414 6430
+"utils.ml" 196 6572 6584 "utils.ml" 196 6572 6588
 type(
   string
 )
 ident(
-  def path "utils.ml" 195 6434 6444 "utils.ml" 198 6543 6589
+  def path "utils.ml" 197 6592 6602 "utils.ml" 200 6701 6747
 )
-"utils.ml" 195 6434 6448 "utils.ml" 195 6434 6456
+"utils.ml" 197 6592 6606 "utils.ml" 197 6592 6614
 type(
   string
 )
-"utils.ml" 195 6434 6459 "utils.ml" 195 6434 6469
+"utils.ml" 197 6592 6617 "utils.ml" 197 6592 6627
 type(
   string
 )
 ident(
-  int_ref virtio_win "utils.ml" 183 6042 6070 "utils.ml" 183 6042 6080
+  int_ref virtio_win "utils.ml" 185 6200 6228 "utils.ml" 185 6200 6238
 )
-"utils.ml" 195 6434 6470 "utils.ml" 195 6434 6472
+"utils.ml" 197 6592 6628 "utils.ml" 197 6592 6630
 type(
   string -> string -> string
 )
 ident(
   ext_ref Common_utils.( // )
 )
-"utils.ml" 195 6434 6473 "utils.ml" 195 6434 6477
+"utils.ml" 197 6592 6631 "utils.ml" 197 6592 6635
 type(
   string
 )
 ident(
-  int_ref path "utils.ml" 194 6414 6426 "utils.ml" 194 6414 6430
+  int_ref path "utils.ml" 196 6572 6584 "utils.ml" 196 6572 6588
 )
-"utils.ml" 195 6434 6459 "utils.ml" 195 6434 6477
+"utils.ml" 197 6592 6617 "utils.ml" 197 6592 6635
 call(
   stack
 )
 type(
   string
 )
-"utils.ml" 196 6481 6492 "utils.ml" 196 6481 6496
+"utils.ml" 198 6639 6650 "utils.ml" 198 6639 6654
 type(
   string
 )
 ident(
-  int_ref path "utils.ml" 194 6414 6426 "utils.ml" 194 6414 6430
+  int_ref path "utils.ml" 196 6572 6584 "utils.ml" 196 6572 6588
 )
-"utils.ml" 196 6481 6498 "utils.ml" 196 6481 6506
+"utils.ml" 198 6639 6656 "utils.ml" 198 6639 6664
 type(
   string
 )
 ident(
-  int_ref abs_path "utils.ml" 195 6434 6448 "utils.ml" 195 6434 6456
+  int_ref abs_path "utils.ml" 197 6592 6606 "utils.ml" 197 6592 6614
 )
-"utils.ml" 197 6508 6519 "utils.ml" 197 6508 6536
+"utils.ml" 199 6666 6677 "utils.ml" 199 6666 6694
 type(
   string -> string
 )
 ident(
   ext_ref Filename.basename
 )
-"utils.ml" 197 6508 6537 "utils.ml" 197 6508 6541
+"utils.ml" 199 6666 6695 "utils.ml" 199 6666 6699
 type(
   string
 )
 ident(
-  int_ref path "utils.ml" 194 6414 6426 "utils.ml" 194 6414 6430
+  int_ref path "utils.ml" 196 6572 6584 "utils.ml" 196 6572 6588
 )
-"utils.ml" 197 6508 6519 "utils.ml" 197 6508 6541
+"utils.ml" 199 6666 6677 "utils.ml" 199 6666 6699
 call(
   stack
 )
 type(
   string
 )
-"utils.ml" 198 6543 6558 "utils.ml" 198 6543 6560
+"utils.ml" 200 6701 6716 "utils.ml" 200 6701 6718
 type(
   unit
 )
-"utils.ml" 198 6543 6564 "utils.ml" 198 6543 6579
+"utils.ml" 200 6701 6722 "utils.ml" 200 6701 6737
 type(
   string -> string
 )
 ident(
   ext_ref Common_utils.read_whole_file
 )
-"utils.ml" 198 6543 6580 "utils.ml" 198 6543 6588
+"utils.ml" 200 6701 6738 "utils.ml" 200 6701 6746
 type(
   string
 )
 ident(
-  int_ref abs_path "utils.ml" 195 6434 6448 "utils.ml" 195 6434 6456
+  int_ref abs_path "utils.ml" 197 6592 6606 "utils.ml" 197 6592 6614
 )
-"utils.ml" 198 6543 6564 "utils.ml" 198 6543 6588
+"utils.ml" 200 6701 6722 "utils.ml" 200 6701 6746
 call(
   tail
 )
 type(
   string
 )
-"utils.ml" 198 6543 6554 "utils.ml" 198 6543 6588
+"utils.ml" 200 6701 6712 "utils.ml" 200 6701 6746
 type(
   unit -> string
 )
-"utils.ml" 196 6481 6491 "utils.ml" 198 6543 6589
+"utils.ml" 198 6639 6649 "utils.ml" 200 6701 6747
 type(
   string * string * string * (unit -> string)
 )
-"utils.ml" 195 6434 6444 "utils.ml" 198 6543 6589
+"utils.ml" 197 6592 6602 "utils.ml" 200 6701 6747
 type(
   string * string * string * (unit -> string)
 )
-"utils.ml" 193 6397 6412 "utils.ml" 199 6590 6597
+"utils.ml" 195 6555 6570 "utils.ml" 201 6748 6755
 type(
   string -> string * string * string * (unit -> string)
 )
-"utils.ml" 199 6590 6598 "utils.ml" 199 6590 6603
+"utils.ml" 201 6748 6756 "utils.ml" 201 6748 6761
 type(
   string list
 )
 ident(
-  int_ref paths "utils.ml" 192 6355 6365 "utils.ml" 192 6355 6370
+  int_ref paths "utils.ml" 194 6513 6523 "utils.ml" 194 6513 6528
 )
-"utils.ml" 193 6397 6403 "utils.ml" 199 6590 6603
+"utils.ml" 195 6555 6561 "utils.ml" 201 6748 6761
 call(
   stack
 )
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 192 6355 6361 "utils.ml" 199 6590 6603
+"utils.ml" 194 6513 6519 "utils.ml" 201 6748 6761
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 190 6247 6283 "utils.ml" 200 6604 6609
+"utils.ml" 192 6405 6441 "utils.ml" 202 6762 6767
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 201 6610 6622 "utils.ml" 201 6610 6637
+"utils.ml" 203 6768 6780 "utils.ml" 203 6768 6795
 type(
   string -> bool
 )
 ident(
-  int_ref is_regular_file "utils.ml" 184 6083 6089 "utils.ml" 184 6083 6104
+  int_ref is_regular_file "utils.ml" 186 6241 6247 "utils.ml" 186 6241 6262
 )
-"utils.ml" 201 6610 6638 "utils.ml" 201 6610 6648
+"utils.ml" 203 6768 6796 "utils.ml" 203 6768 6806
 type(
   string
 )
 ident(
-  int_ref virtio_win "utils.ml" 183 6042 6070 "utils.ml" 183 6042 6080
+  int_ref virtio_win "utils.ml" 185 6200 6228 "utils.ml" 185 6200 6238
 )
-"utils.ml" 201 6610 6622 "utils.ml" 201 6610 6648
+"utils.ml" 203 6768 6780 "utils.ml" 203 6768 6806
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 203 6666 6678 "utils.ml" 203 6666 6679
+"utils.ml" 205 6824 6836 "utils.ml" 205 6824 6837
 type(
   Guestfs.guestfs
 )
 ident(
-  def g "utils.ml" 204 6708 6716 "utils.ml" 223 7468 7483
+  def g "utils.ml" 206 6866 6874 "utils.ml" 225 7626 7641
 )
-"utils.ml" 203 6666 6682 "utils.ml" 203 6666 6701
+"utils.ml" 205 6824 6840 "utils.ml" 205 6824 6859
 type(
   ?environment:bool -> ?close_on_exit:bool -> unit -> Guestfs.guestfs
 )
-"utils.ml" 203 6666 6702 "utils.ml" 203 6666 6704
+"utils.ml" 205 6824 6860 "utils.ml" 205 6824 6862
 type(
   unit
 )
-"utils.ml" 203 6666 6682 "utils.ml" 203 6666 6704
+"utils.ml" 205 6824 6840 "utils.ml" 205 6824 6862
 call(
   stack
 )
 type(
   Guestfs.guestfs
 )
-"utils.ml" 204 6708 6719 "utils.ml" 204 6708 6724
+"utils.ml" 206 6866 6877 "utils.ml" 206 6866 6882
 type(
   unit -> bool
 )
 ident(
   ext_ref Common_utils.trace
 )
-"utils.ml" 204 6708 6725 "utils.ml" 204 6708 6727
+"utils.ml" 206 6866 6883 "utils.ml" 206 6866 6885
 type(
   unit
 )
-"utils.ml" 204 6708 6719 "utils.ml" 204 6708 6727
+"utils.ml" 206 6866 6877 "utils.ml" 206 6866 6885
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 204 6708 6733 "utils.ml" 204 6708 6734
+"utils.ml" 206 6866 6891 "utils.ml" 206 6866 6892
 type(
   Guestfs.guestfs
 )
 ident(
-  int_ref g "utils.ml" 203 6666 6678 "utils.ml" 203 6666 6679
+  int_ref g "utils.ml" 205 6824 6836 "utils.ml" 205 6824 6837
 )
-"utils.ml" 204 6708 6733 "utils.ml" 204 6708 6744
+"utils.ml" 206 6866 6891 "utils.ml" 206 6866 6902
 call(
   stack
 )
 type(
   bool -> unit
 )
-"utils.ml" 204 6708 6745 "utils.ml" 204 6708 6749
+"utils.ml" 206 6866 6903 "utils.ml" 206 6866 6907
 type(
   bool
 )
-"utils.ml" 204 6708 6733 "utils.ml" 204 6708 6749
+"utils.ml" 206 6866 6891 "utils.ml" 206 6866 6907
 type(
   unit
 )
-"utils.ml" 204 6708 6716 "utils.ml" 204 6708 6749
+"utils.ml" 206 6866 6874 "utils.ml" 206 6866 6907
 type(
   unit
 )
-"utils.ml" 205 6751 6762 "utils.ml" 205 6751 6769
+"utils.ml" 207 6909 6920 "utils.ml" 207 6909 6927
 type(
   unit -> bool
 )
 ident(
   ext_ref Common_utils.verbose
 )
-"utils.ml" 205 6751 6770 "utils.ml" 205 6751 6772
+"utils.ml" 207 6909 6928 "utils.ml" 207 6909 6930
 type(
   unit
 )
-"utils.ml" 205 6751 6762 "utils.ml" 205 6751 6772
+"utils.ml" 207 6909 6920 "utils.ml" 207 6909 6930
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 205 6751 6778 "utils.ml" 205 6751 6779
+"utils.ml" 207 6909 6936 "utils.ml" 207 6909 6937
 type(
   Guestfs.guestfs
 )
 ident(
-  int_ref g "utils.ml" 203 6666 6678 "utils.ml" 203 6666 6679
+  int_ref g "utils.ml" 205 6824 6836 "utils.ml" 205 6824 6837
 )
-"utils.ml" 205 6751 6778 "utils.ml" 205 6751 6791
+"utils.ml" 207 6909 6936 "utils.ml" 207 6909 6949
 call(
   stack
 )
 type(
   bool -> unit
 )
-"utils.ml" 205 6751 6792 "utils.ml" 205 6751 6796
+"utils.ml" 207 6909 6950 "utils.ml" 207 6909 6954
 type(
   bool
 )
-"utils.ml" 205 6751 6778 "utils.ml" 205 6751 6796
+"utils.ml" 207 6909 6936 "utils.ml" 207 6909 6954
 type(
   unit
 )
-"utils.ml" 205 6751 6759 "utils.ml" 205 6751 6796
+"utils.ml" 207 6909 6917 "utils.ml" 207 6909 6954
 type(
   unit
 )
-"utils.ml" 206 6798 6806 "utils.ml" 206 6798 6807
+"utils.ml" 208 6956 6964 "utils.ml" 208 6956 6965
 type(
   Guestfs.guestfs
 )
 ident(
-  int_ref g "utils.ml" 203 6666 6678 "utils.ml" 203 6666 6679
+  int_ref g "utils.ml" 205 6824 6836 "utils.ml" 205 6824 6837
 )
-"utils.ml" 206 6798 6806 "utils.ml" 206 6798 6822
+"utils.ml" 208 6956 6964 "utils.ml" 208 6956 6980
 call(
   stack
 )
@@ -2363,223 +2363,223 @@ type(
   ?secret:string ->
   ?cachemode:string -> ?discard:string -> ?copyonread:bool -> string -> unit
 )
-"utils.ml" 206 6798 6823 "utils.ml" 206 6798 6833
+"utils.ml" 208 6956 6981 "utils.ml" 208 6956 6991
 type(
   string
 )
 ident(
-  int_ref virtio_win "utils.ml" 183 6042 6070 "utils.ml" 183 6042 6080
+  int_ref virtio_win "utils.ml" 185 6200 6228 "utils.ml" 185 6200 6238
 )
-"utils.ml" 206 6798 6844 "utils.ml" 206 6798 6848
+"utils.ml" 208 6956 7002 "utils.ml" 208 6956 7006
 type(
   bool
 )
-"utils.ml" 206 6798 6806 "utils.ml" 206 6798 6848
+"utils.ml" 208 6956 6964 "utils.ml" 208 6956 7006
 type(
   unit
 )
-"utils.ml" 207 6850 6858 "utils.ml" 207 6850 6859
+"utils.ml" 209 7008 7016 "utils.ml" 209 7008 7017
 type(
   Guestfs.guestfs
 )
 ident(
-  int_ref g "utils.ml" 203 6666 6678 "utils.ml" 203 6666 6679
+  int_ref g "utils.ml" 205 6824 6836 "utils.ml" 205 6824 6837
 )
-"utils.ml" 207 6850 6858 "utils.ml" 207 6850 6866
+"utils.ml" 209 7008 7016 "utils.ml" 209 7008 7024
 call(
   stack
 )
 type(
   unit -> unit
 )
-"utils.ml" 207 6850 6867 "utils.ml" 207 6850 6869
+"utils.ml" 209 7008 7025 "utils.ml" 209 7008 7027
 type(
   unit
 )
-"utils.ml" 207 6850 6858 "utils.ml" 207 6850 6869
+"utils.ml" 209 7008 7016 "utils.ml" 209 7008 7027
 type(
   unit
 )
-"utils.ml" 208 6871 6879 "utils.ml" 208 6871 6880
+"utils.ml" 210 7029 7037 "utils.ml" 210 7029 7038
 type(
   Guestfs.guestfs
 )
 ident(
-  int_ref g "utils.ml" 203 6666 6678 "utils.ml" 203 6666 6679
+  int_ref g "utils.ml" 205 6824 6836 "utils.ml" 205 6824 6837
 )
-"utils.ml" 208 6871 6879 "utils.ml" 208 6871 6889
+"utils.ml" 210 7029 7037 "utils.ml" 210 7029 7047
 call(
   stack
 )
 type(
   string -> string -> unit
 )
-"utils.ml" 208 6871 6890 "utils.ml" 208 6871 6900
+"utils.ml" 210 7029 7048 "utils.ml" 210 7029 7058
 type(
   string
 )
-"utils.ml" 208 6871 6901 "utils.ml" 208 6871 6904
+"utils.ml" 210 7029 7059 "utils.ml" 210 7029 7062
 type(
   string
 )
-"utils.ml" 208 6871 6879 "utils.ml" 208 6871 6904
+"utils.ml" 210 7029 7037 "utils.ml" 210 7029 7062
 type(
   unit
 )
-"utils.ml" 209 6906 6918 "utils.ml" 209 6906 6923
+"utils.ml" 211 7064 7076 "utils.ml" 211 7064 7081
 type(
   string array
 )
 ident(
-  def paths "utils.ml" 210 6940 6948 "utils.ml" 223 7468 7483
+  def paths "utils.ml" 212 7098 7106 "utils.ml" 225 7626 7641
 )
-"utils.ml" 209 6906 6926 "utils.ml" 209 6906 6927
+"utils.ml" 211 7064 7084 "utils.ml" 211 7064 7085
 type(
   Guestfs.guestfs
 )
 ident(
-  int_ref g "utils.ml" 203 6666 6678 "utils.ml" 203 6666 6679
+  int_ref g "utils.ml" 205 6824 6836 "utils.ml" 205 6824 6837
 )
-"utils.ml" 209 6906 6926 "utils.ml" 209 6906 6932
+"utils.ml" 211 7064 7084 "utils.ml" 211 7064 7090
 call(
   stack
 )
 type(
   string -> string array
 )
-"utils.ml" 209 6906 6933 "utils.ml" 209 6906 6936
+"utils.ml" 211 7064 7091 "utils.ml" 211 7064 7094
 type(
   string
 )
-"utils.ml" 209 6906 6926 "utils.ml" 209 6906 6936
+"utils.ml" 211 7064 7084 "utils.ml" 211 7064 7094
 type(
   string array
 )
-"utils.ml" 210 6940 6952 "utils.ml" 210 6940 6957
+"utils.ml" 212 7098 7110 "utils.ml" 212 7098 7115
 type(
   string list
 )
 ident(
-  def paths "utils.ml" 211 6983 6991 "utils.ml" 223 7468 7483
+  def paths "utils.ml" 213 7141 7149 "utils.ml" 225 7626 7641
 )
-"utils.ml" 210 6940 6960 "utils.ml" 210 6940 6973
+"utils.ml" 212 7098 7118 "utils.ml" 212 7098 7131
 type(
   string array -> string list
 )
 ident(
   ext_ref Array.to_list
 )
-"utils.ml" 210 6940 6974 "utils.ml" 210 6940 6979
+"utils.ml" 212 7098 7132 "utils.ml" 212 7098 7137
 type(
   string array
 )
 ident(
-  int_ref paths "utils.ml" 209 6906 6918 "utils.ml" 209 6906 6923
+  int_ref paths "utils.ml" 211 7064 7076 "utils.ml" 211 7064 7081
 )
-"utils.ml" 210 6940 6960 "utils.ml" 210 6940 6979
+"utils.ml" 212 7098 7118 "utils.ml" 212 7098 7137
 call(
   stack
 )
 type(
   string list
 )
-"utils.ml" 211 6983 6995 "utils.ml" 211 6983 7000
+"utils.ml" 213 7141 7153 "utils.ml" 213 7141 7158
 type(
   string list
 )
 ident(
-  def paths "utils.ml" 212 7031 7039 "utils.ml" 223 7468 7483
+  def paths "utils.ml" 214 7189 7197 "utils.ml" 225 7626 7641
 )
-"utils.ml" 211 6983 7003 "utils.ml" 211 6983 7011
+"utils.ml" 213 7141 7161 "utils.ml" 213 7141 7169
 type(
   (string -> string) -> string list -> string list
 )
 ident(
   ext_ref List.map
 )
-"utils.ml" 211 6983 7013 "utils.ml" 211 6983 7016
+"utils.ml" 213 7141 7171 "utils.ml" 213 7141 7174
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"utils.ml" 211 6983 7017 "utils.ml" 211 6983 7020
+"utils.ml" 213 7141 7175 "utils.ml" 213 7141 7178
 type(
   string
 )
-"utils.ml" 211 6983 7012 "utils.ml" 211 6983 7021
+"utils.ml" 213 7141 7170 "utils.ml" 213 7141 7179
 call(
   stack
 )
 type(
   string -> string
 )
-"utils.ml" 211 6983 7022 "utils.ml" 211 6983 7027
+"utils.ml" 213 7141 7180 "utils.ml" 213 7141 7185
 type(
   string list
 )
 ident(
-  int_ref paths "utils.ml" 210 6940 6952 "utils.ml" 210 6940 6957
+  int_ref paths "utils.ml" 212 7098 7110 "utils.ml" 212 7098 7115
 )
-"utils.ml" 211 6983 7003 "utils.ml" 211 6983 7027
+"utils.ml" 213 7141 7161 "utils.ml" 213 7141 7185
 call(
   stack
 )
 type(
   string list
 )
-"utils.ml" 212 7031 7043 "utils.ml" 212 7031 7048
+"utils.ml" 214 7189 7201 "utils.ml" 214 7189 7206
 type(
   string list
 )
 ident(
-  def paths "utils.ml" 213 7106 7114 "utils.ml" 223 7468 7483
+  def paths "utils.ml" 215 7264 7272 "utils.ml" 225 7626 7641
 )
-"utils.ml" 212 7031 7051 "utils.ml" 212 7031 7062
+"utils.ml" 214 7189 7209 "utils.ml" 214 7189 7220
 type(
   (string -> bool) -> string list -> string list
 )
 ident(
   ext_ref List.filter
 )
-"utils.ml" 212 7031 7064 "utils.ml" 212 7031 7065
+"utils.ml" 214 7189 7222 "utils.ml" 214 7189 7223
 type(
   Guestfs.guestfs
 )
 ident(
-  int_ref g "utils.ml" 203 6666 6678 "utils.ml" 203 6666 6679
+  int_ref g "utils.ml" 205 6824 6836 "utils.ml" 205 6824 6837
 )
-"utils.ml" 212 7031 7064 "utils.ml" 212 7031 7073
+"utils.ml" 214 7189 7222 "utils.ml" 214 7189 7231
 call(
   stack
 )
 type(
   ?followsymlinks:bool -> string -> bool
 )
-"utils.ml" 212 7031 7090 "utils.ml" 212 7031 7095
+"utils.ml" 214 7189 7248 "utils.ml" 214 7189 7253
 type(
   bool
 )
-"utils.ml" 212 7031 7063 "utils.ml" 212 7031 7096
+"utils.ml" 214 7189 7221 "utils.ml" 214 7189 7254
 type(
   string -> bool
 )
-"utils.ml" 212 7031 7097 "utils.ml" 212 7031 7102
+"utils.ml" 214 7189 7255 "utils.ml" 214 7189 7260
 type(
   string list
 )
 ident(
-  int_ref paths "utils.ml" 211 6983 6995 "utils.ml" 211 6983 7000
+  int_ref paths "utils.ml" 213 7141 7153 "utils.ml" 213 7141 7158
 )
-"utils.ml" 212 7031 7051 "utils.ml" 212 7031 7102
+"utils.ml" 214 7189 7209 "utils.ml" 214 7189 7260
 call(
   stack
 )
 type(
   string list
 )
-"utils.ml" 213 7106 7114 "utils.ml" 213 7106 7122
+"utils.ml" 215 7264 7272 "utils.ml" 215 7264 7280
 type(
   (string -> string * string * string * (unit -> string)) ->
   string list -> (string * string * string * (unit -> string)) list
@@ -2587,65 +2587,65 @@ type(
 ident(
   ext_ref List.map
 )
-"utils.ml" 214 7125 7139 "utils.ml" 214 7125 7143
+"utils.ml" 216 7283 7297 "utils.ml" 216 7283 7301
 type(
   string
 )
 ident(
-  def path "utils.ml" 215 7147 7159 "utils.ml" 222 7427 7467
+  def path "utils.ml" 217 7305 7317 "utils.ml" 224 7585 7625
 )
-"utils.ml" 215 7147 7163 "utils.ml" 215 7147 7171
+"utils.ml" 217 7305 7321 "utils.ml" 217 7305 7329
 type(
   string
 )
-"utils.ml" 216 7174 7194 "utils.ml" 216 7174 7206
+"utils.ml" 218 7332 7352 "utils.ml" 218 7332 7364
 type(
   string -> char -> string option
 )
 ident(
   ext_ref Common_utils.last_part_of
 )
-"utils.ml" 216 7174 7207 "utils.ml" 216 7174 7211
+"utils.ml" 218 7332 7365 "utils.ml" 218 7332 7369
 type(
   string
 )
 ident(
-  int_ref path "utils.ml" 214 7125 7139 "utils.ml" 214 7125 7143
+  int_ref path "utils.ml" 216 7283 7297 "utils.ml" 216 7283 7301
 )
-"utils.ml" 216 7174 7212 "utils.ml" 216 7174 7215
+"utils.ml" 218 7332 7370 "utils.ml" 218 7332 7373
 type(
   char
 )
-"utils.ml" 216 7174 7194 "utils.ml" 216 7174 7215
+"utils.ml" 218 7332 7352 "utils.ml" 218 7332 7373
 call(
   stack
 )
 type(
   string option
 )
-"utils.ml" 217 7221 7242 "utils.ml" 217 7221 7243
+"utils.ml" 219 7379 7400 "utils.ml" 219 7379 7401
 type(
   string
 )
 ident(
-  def x "utils.ml" 217 7221 7247 "utils.ml" 217 7221 7248
+  def x "utils.ml" 219 7379 7405 "utils.ml" 219 7379 7406
 )
-"utils.ml" 217 7221 7237 "utils.ml" 217 7221 7243
+"utils.ml" 219 7379 7395 "utils.ml" 219 7379 7401
 type(
   string option
 )
-"utils.ml" 217 7221 7247 "utils.ml" 217 7221 7248
+"utils.ml" 219 7379 7405 "utils.ml" 219 7379 7406
 type(
   string
 )
 ident(
-  int_ref x "utils.ml" 217 7221 7242 "utils.ml" 217 7221 7243
+  int_ref x "utils.ml" 219 7379 7400 "utils.ml" 219 7379 7401
 )
-"utils.ml" 218 7249 7265 "utils.ml" 218 7249 7269
+"utils.ml" 220 7407 7423 "utils.ml" 220 7407 7427
 type(
   string option
 )
-"utils.ml" 219 7273 7289 "utils.ml" 219 7273 7294
+"utils.ml" 221 7431 7447 "utils.ml" 221 7431 7452
 type(
   ?exit_code:int ->
   (string -> string, unit, string, string) format4 -> string -> string
@@ -2653,36 +2653,36 @@ type(
 ident(
   ext_ref Common_utils.error
 )
-"utils.ml" 219 7273 7295 "utils.ml" 219 7273 7343
+"utils.ml" 221 7431 7453 "utils.ml" 221 7431 7501
 type(
   (string -> string, unit, string, string) format4
 )
-"utils.ml" 219 7273 7344 "utils.ml" 219 7273 7348
+"utils.ml" 221 7431 7502 "utils.ml" 221 7431 7506
 type(
   string
 )
 ident(
-  int_ref path "utils.ml" 214 7125 7139 "utils.ml" 214 7125 7143
+  int_ref path "utils.ml" 216 7283 7297 "utils.ml" 216 7283 7301
 )
-"utils.ml" 219 7273 7289 "utils.ml" 219 7273 7348
+"utils.ml" 221 7431 7447 "utils.ml" 221 7431 7506
 call(
   stack
 )
 type(
   string
 )
-"utils.ml" 216 7174 7188 "utils.ml" 219 7273 7348
+"utils.ml" 218 7332 7346 "utils.ml" 221 7431 7506
 type(
   string
 )
-"utils.ml" 220 7352 7365 "utils.ml" 220 7352 7369
+"utils.ml" 222 7510 7523 "utils.ml" 222 7510 7527
 type(
   string
 )
 ident(
-  int_ref path "utils.ml" 214 7125 7139 "utils.ml" 214 7125 7143
+  int_ref path "utils.ml" 216 7283 7297 "utils.ml" 216 7283 7301
 )
-"utils.ml" 220 7352 7371 "utils.ml" 220 7352 7378
+"utils.ml" 222 7510 7529 "utils.ml" 222 7510 7536
 type(
   (string -> string -> string, unit, string) format ->
   string -> string -> string
@@ -2690,149 +2690,149 @@ type(
 ident(
   ext_ref Printf.sprintf
 )
-"utils.ml" 220 7352 7379 "utils.ml" 220 7352 7386
+"utils.ml" 222 7510 7537 "utils.ml" 222 7510 7544
 type(
   (string -> string -> string, unit, string) format
 )
-"utils.ml" 220 7352 7387 "utils.ml" 220 7352 7397
+"utils.ml" 222 7510 7545 "utils.ml" 222 7510 7555
 type(
   string
 )
 ident(
-  int_ref virtio_win "utils.ml" 183 6042 6070 "utils.ml" 183 6042 6080
+  int_ref virtio_win "utils.ml" 185 6200 6228 "utils.ml" 185 6200 6238
 )
-"utils.ml" 220 7352 7398 "utils.ml" 220 7352 7402
+"utils.ml" 222 7510 7556 "utils.ml" 222 7510 7560
 type(
   string
 )
 ident(
-  int_ref path "utils.ml" 214 7125 7139 "utils.ml" 214 7125 7143
+  int_ref path "utils.ml" 216 7283 7297 "utils.ml" 216 7283 7301
 )
-"utils.ml" 220 7352 7371 "utils.ml" 220 7352 7402
+"utils.ml" 222 7510 7529 "utils.ml" 222 7510 7560
 call(
   stack
 )
 type(
   string
 )
-"utils.ml" 221 7404 7417 "utils.ml" 221 7404 7425
+"utils.ml" 223 7562 7575 "utils.ml" 223 7562 7583
 type(
   string
 )
 ident(
-  int_ref basename "utils.ml" 215 7147 7163 "utils.ml" 215 7147 7171
+  int_ref basename "utils.ml" 217 7305 7321 "utils.ml" 217 7305 7329
 )
-"utils.ml" 222 7427 7444 "utils.ml" 222 7427 7446
+"utils.ml" 224 7585 7602 "utils.ml" 224 7585 7604
 type(
   unit
 )
-"utils.ml" 222 7427 7450 "utils.ml" 222 7427 7451
+"utils.ml" 224 7585 7608 "utils.ml" 224 7585 7609
 type(
   Guestfs.guestfs
 )
 ident(
-  int_ref g "utils.ml" 203 6666 6678 "utils.ml" 203 6666 6679
+  int_ref g "utils.ml" 205 6824 6836 "utils.ml" 205 6824 6837
 )
-"utils.ml" 222 7427 7450 "utils.ml" 222 7427 7461
+"utils.ml" 224 7585 7608 "utils.ml" 224 7585 7619
 call(
   tail
 )
 type(
   string -> string
 )
-"utils.ml" 222 7427 7462 "utils.ml" 222 7427 7466
+"utils.ml" 224 7585 7620 "utils.ml" 224 7585 7624
 type(
   string
 )
 ident(
-  int_ref path "utils.ml" 214 7125 7139 "utils.ml" 214 7125 7143
+  int_ref path "utils.ml" 216 7283 7297 "utils.ml" 216 7283 7301
 )
-"utils.ml" 222 7427 7450 "utils.ml" 222 7427 7466
+"utils.ml" 224 7585 7608 "utils.ml" 224 7585 7624
 type(
   string
 )
-"utils.ml" 222 7427 7440 "utils.ml" 222 7427 7466
+"utils.ml" 224 7585 7598 "utils.ml" 224 7585 7624
 type(
   unit -> string
 )
-"utils.ml" 220 7352 7364 "utils.ml" 222 7427 7467
+"utils.ml" 222 7510 7522 "utils.ml" 224 7585 7625
 type(
   string * string * string * (unit -> string)
 )
-"utils.ml" 215 7147 7159 "utils.ml" 222 7427 7467
+"utils.ml" 217 7305 7317 "utils.ml" 224 7585 7625
 type(
   string * string * string * (unit -> string)
 )
-"utils.ml" 213 7106 7123 "utils.ml" 223 7468 7477
+"utils.ml" 215 7264 7281 "utils.ml" 225 7626 7635
 type(
   string -> string * string * string * (unit -> string)
 )
-"utils.ml" 223 7468 7478 "utils.ml" 223 7468 7483
+"utils.ml" 225 7626 7636 "utils.ml" 225 7626 7641
 type(
   string list
 )
 ident(
-  int_ref paths "utils.ml" 212 7031 7043 "utils.ml" 212 7031 7048
+  int_ref paths "utils.ml" 214 7189 7201 "utils.ml" 214 7189 7206
 )
-"utils.ml" 213 7106 7114 "utils.ml" 223 7468 7483
+"utils.ml" 215 7264 7272 "utils.ml" 225 7626 7641
 call(
   stack
 )
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 212 7031 7039 "utils.ml" 223 7468 7483
+"utils.ml" 214 7189 7197 "utils.ml" 225 7626 7641
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 211 6983 6991 "utils.ml" 223 7468 7483
+"utils.ml" 213 7141 7149 "utils.ml" 225 7626 7641
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 210 6940 6948 "utils.ml" 223 7468 7483
+"utils.ml" 212 7098 7106 "utils.ml" 225 7626 7641
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 209 6906 6914 "utils.ml" 223 7468 7483
+"utils.ml" 211 7064 7072 "utils.ml" 225 7626 7641
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 208 6871 6879 "utils.ml" 223 7468 7483
+"utils.ml" 210 7029 7037 "utils.ml" 225 7626 7641
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 207 6850 6858 "utils.ml" 223 7468 7483
+"utils.ml" 209 7008 7016 "utils.ml" 225 7626 7641
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 206 6798 6806 "utils.ml" 223 7468 7483
+"utils.ml" 208 6956 6964 "utils.ml" 225 7626 7641
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 205 6751 6759 "utils.ml" 223 7468 7483
+"utils.ml" 207 6909 6917 "utils.ml" 225 7626 7641
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 204 6708 6716 "utils.ml" 223 7468 7483
+"utils.ml" 206 6866 6874 "utils.ml" 225 7626 7641
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 203 6666 6674 "utils.ml" 223 7468 7483
+"utils.ml" 205 6824 6832 "utils.ml" 225 7626 7641
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 224 7484 7509 "utils.ml" 224 7484 7512
+"utils.ml" 226 7642 7667 "utils.ml" 226 7642 7670
 type(
   string
 )
 ident(
-  def msg "utils.ml" 225 7516 7524 "utils.ml" 225 7516 7590
+  def msg "utils.ml" 227 7674 7682 "utils.ml" 227 7674 7748
 )
-"utils.ml" 224 7484 7495 "utils.ml" 224 7484 7512
+"utils.ml" 226 7642 7653 "utils.ml" 226 7642 7670
 type(
   exn
 )
-"utils.ml" 225 7516 7524 "utils.ml" 225 7516 7529
+"utils.ml" 227 7674 7682 "utils.ml" 227 7674 7687
 type(
   ?exit_code:int ->
   (string -> string -> (string * string * string * (unit -> string)) list,
@@ -2843,7 +2843,7 @@ type(
 ident(
   ext_ref Common_utils.error
 )
-"utils.ml" 225 7516 7531 "utils.ml" 225 7516 7533
+"utils.ml" 227 7674 7689 "utils.ml" 227 7674 7691
 type(
   (string -> string -> (string * string * string * (unit -> string)) list,
    unit, string, string, string,
@@ -2856,61 +2856,61 @@ type(
 ident(
   ext_ref Common_gettext.Gettext.f_
 )
-"utils.ml" 225 7516 7533 "utils.ml" 225 7516 7574
+"utils.ml" 227 7674 7691 "utils.ml" 227 7674 7732
 type(
   (string -> string -> (string * string * string * (unit -> string)) list,
    unit, string, string, string,
    (string * string * string * (unit -> string)) list)
   format6
 )
-"utils.ml" 225 7516 7530 "utils.ml" 225 7516 7575
+"utils.ml" 227 7674 7688 "utils.ml" 227 7674 7733
 type(
   (string -> string -> (string * string * string * (unit -> string)) list,
    unit, string, (string * string * string * (unit -> string)) list)
   format4
 )
-"utils.ml" 225 7516 7576 "utils.ml" 225 7516 7586
+"utils.ml" 227 7674 7734 "utils.ml" 227 7674 7744
 type(
   string
 )
 ident(
-  int_ref virtio_win "utils.ml" 183 6042 6070 "utils.ml" 183 6042 6080
+  int_ref virtio_win "utils.ml" 185 6200 6228 "utils.ml" 185 6200 6238
 )
-"utils.ml" 225 7516 7587 "utils.ml" 225 7516 7590
+"utils.ml" 227 7674 7745 "utils.ml" 227 7674 7748
 type(
   string
 )
 ident(
-  int_ref msg "utils.ml" 224 7484 7509 "utils.ml" 224 7484 7512
+  int_ref msg "utils.ml" 226 7642 7667 "utils.ml" 226 7642 7670
 )
-"utils.ml" 225 7516 7524 "utils.ml" 225 7516 7590
+"utils.ml" 227 7674 7682 "utils.ml" 227 7674 7748
 call(
   stack
 )
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 201 6610 6654 "utils.ml" 226 7591 7596
+"utils.ml" 203 6768 6812 "utils.ml" 228 7749 7754
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 227 7597 7606 "utils.ml" 227 7597 7608
+"utils.ml" 229 7755 7764 "utils.ml" 229 7755 7766
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 201 6610 6619 "utils.ml" 227 7597 7608
+"utils.ml" 203 6768 6777 "utils.ml" 229 7755 7766
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 190 6247 6251 "utils.ml" 227 7597 7608
+"utils.ml" 192 6405 6409 "utils.ml" 229 7755 7766
 type(
   (string * string * string * (unit -> string)) list
 )
-"utils.ml" 229 7613 7619 "utils.ml" 229 7613 7624
+"utils.ml" 231 7771 7777 "utils.ml" 231 7771 7782
 type(
   virtio_win_driver_file list
 )
-"utils.ml" 230 7627 7631 "utils.ml" 230 7627 7641
+"utils.ml" 232 7785 7789 "utils.ml" 232 7785 7799
 type(
   (string * string * string * (unit -> string) ->
    virtio_win_driver_file option) ->
@@ -2920,149 +2920,149 @@ type(
 ident(
   ext_ref Common_utils.filter_map
 )
-"utils.ml" 231 7644 7655 "utils.ml" 231 7644 7659
+"utils.ml" 233 7802 7813 "utils.ml" 233 7802 7817
 type(
   string
 )
 ident(
-  def path "utils.ml" 232 7705 7713 "utils.ml" 299 10448 10478
+  def path "utils.ml" 234 7863 7871 "utils.ml" 301 10606 10636
 )
-"utils.ml" 231 7644 7661 "utils.ml" 231 7644 7676
+"utils.ml" 233 7802 7819 "utils.ml" 233 7802 7834
 type(
   string
 )
 ident(
-  def original_source "utils.ml" 232 7705 7713 "utils.ml" 299 10448 10478
+  def original_source "utils.ml" 234 7863 7871 "utils.ml" 301 10606 10636
 )
-"utils.ml" 231 7644 7678 "utils.ml" 231 7644 7686
+"utils.ml" 233 7802 7836 "utils.ml" 233 7802 7844
 type(
   string
 )
 ident(
-  def basename "utils.ml" 232 7705 7713 "utils.ml" 299 10448 10478
+  def basename "utils.ml" 234 7863 7871 "utils.ml" 301 10606 10636
 )
-"utils.ml" 231 7644 7688 "utils.ml" 231 7644 7700
+"utils.ml" 233 7802 7846 "utils.ml" 233 7802 7858
 type(
   unit -> string
 )
 ident(
-  def get_contents "utils.ml" 232 7705 7713 "utils.ml" 299 10448 10478
+  def get_contents "utils.ml" 234 7863 7871 "utils.ml" 301 10606 10636
 )
-"utils.ml" 231 7644 7654 "utils.ml" 231 7644 7701
+"utils.ml" 233 7802 7812 "utils.ml" 233 7802 7859
 type(
   string * string * string * (unit -> string)
 )
-"utils.ml" 236 7883 7897 "utils.ml" 236 7883 7904
+"utils.ml" 238 8041 8055 "utils.ml" 238 8041 8062
 type(
   string
 )
 ident(
-  def lc_path "utils.ml" 237 7932 7942 "utils.ml" 297 10435 10446
+  def lc_path "utils.ml" 239 8090 8100 "utils.ml" 299 10593 10604
 )
-"utils.ml" 236 7883 7907 "utils.ml" 236 7883 7923
+"utils.ml" 238 8041 8065 "utils.ml" 238 8041 8081
 type(
   string -> string
 )
 ident(
   ext_ref String.lowercase
 )
-"utils.ml" 236 7883 7924 "utils.ml" 236 7883 7928
+"utils.ml" 238 8041 8082 "utils.ml" 238 8041 8086
 type(
   string
 )
 ident(
-  int_ref path "utils.ml" 231 7644 7655 "utils.ml" 231 7644 7659
+  int_ref path "utils.ml" 233 7802 7813 "utils.ml" 233 7802 7817
 )
-"utils.ml" 236 7883 7907 "utils.ml" 236 7883 7928
+"utils.ml" 238 8041 8065 "utils.ml" 238 8041 8086
 call(
   stack
 )
 type(
   string
 )
-"utils.ml" 237 7932 7946 "utils.ml" 237 7932 7957
+"utils.ml" 239 8090 8104 "utils.ml" 239 8090 8115
 type(
   string
 )
 ident(
-  def lc_basename "utils.ml" 239 7990 8000 "utils.ml" 297 10435 10446
+  def lc_basename "utils.ml" 241 8148 8158 "utils.ml" 299 10593 10604
 )
-"utils.ml" 237 7932 7960 "utils.ml" 237 7932 7976
+"utils.ml" 239 8090 8118 "utils.ml" 239 8090 8134
 type(
   string -> string
 )
 ident(
   ext_ref String.lowercase
 )
-"utils.ml" 237 7932 7977 "utils.ml" 237 7932 7985
+"utils.ml" 239 8090 8135 "utils.ml" 239 8090 8143
 type(
   string
 )
 ident(
-  int_ref basename "utils.ml" 231 7644 7678 "utils.ml" 231 7644 7686
+  int_ref basename "utils.ml" 233 7802 7836 "utils.ml" 233 7802 7844
 )
-"utils.ml" 237 7932 7960 "utils.ml" 237 7932 7985
+"utils.ml" 239 8090 8118 "utils.ml" 239 8090 8143
 call(
   stack
 )
 type(
   string
 )
-"utils.ml" 239 7990 8004 "utils.ml" 239 7990 8013
+"utils.ml" 241 8148 8162 "utils.ml" 241 8148 8171
 type(
   string
 )
 ident(
-  def extension "utils.ml" 247 8273 8283 "utils.ml" 297 10435 10446
+  def extension "utils.ml" 249 8431 8441 "utils.ml" 299 10593 10604
 )
-"utils.ml" 240 8016 8034 "utils.ml" 240 8016 8046
+"utils.ml" 242 8174 8192 "utils.ml" 242 8174 8204
 type(
   string -> char -> string option
 )
 ident(
   ext_ref Common_utils.last_part_of
 )
-"utils.ml" 240 8016 8047 "utils.ml" 240 8016 8058
+"utils.ml" 242 8174 8205 "utils.ml" 242 8174 8216
 type(
   string
 )
 ident(
-  int_ref lc_basename "utils.ml" 237 7932 7946 "utils.ml" 237 7932 7957
+  int_ref lc_basename "utils.ml" 239 8090 8104 "utils.ml" 239 8090 8115
 )
-"utils.ml" 240 8016 8059 "utils.ml" 240 8016 8062
+"utils.ml" 242 8174 8217 "utils.ml" 242 8174 8220
 type(
   char
 )
-"utils.ml" 240 8016 8034 "utils.ml" 240 8016 8062
+"utils.ml" 242 8174 8192 "utils.ml" 242 8174 8220
 call(
   stack
 )
 type(
   string option
 )
-"utils.ml" 241 8068 8087 "utils.ml" 241 8068 8088
+"utils.ml" 243 8226 8245 "utils.ml" 243 8226 8246
 type(
   string
 )
 ident(
-  def x "utils.ml" 241 8068 8092 "utils.ml" 241 8068 8093
+  def x "utils.ml" 243 8226 8250 "utils.ml" 243 8226 8251
 )
-"utils.ml" 241 8068 8082 "utils.ml" 241 8068 8088
+"utils.ml" 243 8226 8240 "utils.ml" 243 8226 8246
 type(
   string option
 )
-"utils.ml" 241 8068 8092 "utils.ml" 241 8068 8093
+"utils.ml" 243 8226 8250 "utils.ml" 243 8226 8251
 type(
   string
 )
 ident(
-  int_ref x "utils.ml" 241 8068 8087 "utils.ml" 241 8068 8088
+  int_ref x "utils.ml" 243 8226 8245 "utils.ml" 243 8226 8246
 )
-"utils.ml" 242 8094 8108 "utils.ml" 242 8094 8112
+"utils.ml" 244 8252 8266 "utils.ml" 244 8252 8270
 type(
   string option
 )
-"utils.ml" 243 8116 8130 "utils.ml" 243 8116 8135
+"utils.ml" 245 8274 8288 "utils.ml" 245 8274 8293
 type(
   ?exit_code:int ->
   (string -> string, unit, string, string) format4 -> string -> string
@@ -3070,1914 +3070,1914 @@ type(
 ident(
   ext_ref Common_utils.error
 )
-"utils.ml" 243 8116 8136 "utils.ml" 243 8116 8184
+"utils.ml" 245 8274 8294 "utils.ml" 245 8274 8342
 type(
   (string -> string, unit, string, string) format4
 )
-"utils.ml" 244 8185 8201 "utils.ml" 244 8185 8212
+"utils.ml" 246 8343 8359 "utils.ml" 246 8343 8370
 type(
   string
 )
 ident(
-  int_ref lc_basename "utils.ml" 237 7932 7946 "utils.ml" 237 7932 7957
+  int_ref lc_basename "utils.ml" 239 8090 8104 "utils.ml" 239 8090 8115
 )
-"utils.ml" 243 8116 8130 "utils.ml" 244 8185 8212
+"utils.ml" 245 8274 8288 "utils.ml" 246 8343 8370
 call(
   stack
 )
 type(
   string
 )
-"utils.ml" 240 8016 8028 "utils.ml" 244 8185 8212
+"utils.ml" 242 8174 8186 "utils.ml" 246 8343 8370
 type(
   string
 )
-"utils.ml" 247 8273 8286 "utils.ml" 247 8273 8295
+"utils.ml" 249 8431 8444 "utils.ml" 249 8431 8453
 type(
   string
 )
 ident(
-  int_ref extension "utils.ml" 239 7990 8004 "utils.ml" 239 7990 8013
+  int_ref extension "utils.ml" 241 8148 8162 "utils.ml" 241 8148 8171
 )
-"utils.ml" 247 8273 8296 "utils.ml" 247 8273 8298
+"utils.ml" 249 8431 8454 "utils.ml" 249 8431 8456
 type(
   string -> string -> bool
 )
 ident(
   ext_ref Pervasives.( <> )
 )
-"utils.ml" 247 8273 8299 "utils.ml" 247 8273 8304
+"utils.ml" 249 8431 8457 "utils.ml" 249 8431 8462
 type(
   string
 )
-"utils.ml" 247 8273 8286 "utils.ml" 247 8273 8304
+"utils.ml" 249 8431 8444 "utils.ml" 249 8431 8462
 type(
   bool
 )
-"utils.ml" 247 8273 8305 "utils.ml" 247 8273 8307
+"utils.ml" 249 8431 8463 "utils.ml" 249 8431 8465
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"utils.ml" 247 8273 8308 "utils.ml" 247 8273 8317
+"utils.ml" 249 8431 8466 "utils.ml" 249 8431 8475
 type(
   string
 )
 ident(
-  int_ref extension "utils.ml" 239 7990 8004 "utils.ml" 239 7990 8013
+  int_ref extension "utils.ml" 241 8148 8162 "utils.ml" 241 8148 8171
 )
-"utils.ml" 247 8273 8318 "utils.ml" 247 8273 8320
+"utils.ml" 249 8431 8476 "utils.ml" 249 8431 8478
 type(
   string -> string -> bool
 )
 ident(
   ext_ref Pervasives.( <> )
 )
-"utils.ml" 247 8273 8321 "utils.ml" 247 8273 8326
+"utils.ml" 249 8431 8479 "utils.ml" 249 8431 8484
 type(
   string
 )
-"utils.ml" 247 8273 8308 "utils.ml" 247 8273 8326
+"utils.ml" 249 8431 8466 "utils.ml" 249 8431 8484
 type(
   bool
 )
-"utils.ml" 247 8273 8327 "utils.ml" 247 8273 8329
+"utils.ml" 249 8431 8485 "utils.ml" 249 8431 8487
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"utils.ml" 248 8330 8345 "utils.ml" 248 8330 8354
+"utils.ml" 250 8488 8503 "utils.ml" 250 8488 8512
 type(
   string
 )
 ident(
-  int_ref extension "utils.ml" 239 7990 8004 "utils.ml" 239 7990 8013
+  int_ref extension "utils.ml" 241 8148 8162 "utils.ml" 241 8148 8171
 )
-"utils.ml" 248 8330 8355 "utils.ml" 248 8330 8357
+"utils.ml" 250 8488 8513 "utils.ml" 250 8488 8515
 type(
   string -> string -> bool
 )
 ident(
   ext_ref Pervasives.( <> )
 )
-"utils.ml" 248 8330 8358 "utils.ml" 248 8330 8363
+"utils.ml" 250 8488 8516 "utils.ml" 250 8488 8521
 type(
   string
 )
-"utils.ml" 248 8330 8345 "utils.ml" 248 8330 8363
+"utils.ml" 250 8488 8503 "utils.ml" 250 8488 8521
 type(
   bool
 )
-"utils.ml" 248 8330 8364 "utils.ml" 248 8330 8366
+"utils.ml" 250 8488 8522 "utils.ml" 250 8488 8524
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( && )
 )
-"utils.ml" 248 8330 8367 "utils.ml" 248 8330 8376
+"utils.ml" 250 8488 8525 "utils.ml" 250 8488 8534
 type(
   string
 )
 ident(
-  int_ref extension "utils.ml" 239 7990 8004 "utils.ml" 239 7990 8013
+  int_ref extension "utils.ml" 241 8148 8162 "utils.ml" 241 8148 8171
 )
-"utils.ml" 248 8330 8377 "utils.ml" 248 8330 8379
+"utils.ml" 250 8488 8535 "utils.ml" 250 8488 8537
 type(
   string -> string -> bool
 )
 ident(
   ext_ref Pervasives.( <> )
 )
-"utils.ml" 248 8330 8380 "utils.ml" 248 8330 8385
+"utils.ml" 250 8488 8538 "utils.ml" 250 8488 8543
 type(
   string
 )
-"utils.ml" 248 8330 8367 "utils.ml" 248 8330 8385
+"utils.ml" 250 8488 8525 "utils.ml" 250 8488 8543
 type(
   bool
 )
-"utils.ml" 248 8330 8345 "utils.ml" 248 8330 8385
+"utils.ml" 250 8488 8503 "utils.ml" 250 8488 8543
 type(
   bool
 )
-"utils.ml" 247 8273 8308 "utils.ml" 248 8330 8385
+"utils.ml" 249 8431 8466 "utils.ml" 250 8488 8543
 type(
   bool
 )
-"utils.ml" 247 8273 8286 "utils.ml" 248 8330 8385
+"utils.ml" 249 8431 8444 "utils.ml" 250 8488 8543
 type(
   bool
 )
-"utils.ml" 249 8391 8403 "utils.ml" 249 8391 8408
+"utils.ml" 251 8549 8561 "utils.ml" 251 8549 8566
 type(
   exn -> unit
 )
 ident(
   ext_ref Pervasives.raise
 )
-"utils.ml" 249 8391 8409 "utils.ml" 249 8391 8418
+"utils.ml" 251 8549 8567 "utils.ml" 251 8549 8576
 type(
   exn
 )
-"utils.ml" 249 8391 8403 "utils.ml" 249 8391 8418
+"utils.ml" 251 8549 8561 "utils.ml" 251 8549 8576
 type(
   unit
 )
-"utils.ml" 247 8273 8283 "utils.ml" 249 8391 8418
+"utils.ml" 249 8431 8441 "utils.ml" 251 8549 8576
 type(
   unit
 )
-"utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+"utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 type(
   string -> bool
 )
 ident(
-  def pathelem "utils.ml" 258 8785 8795 "utils.ml" 297 10435 10446
+  def pathelem "utils.ml" 260 8943 8953 "utils.ml" 299 10593 10604
 )
-"utils.ml" 257 8708 8731 "utils.ml" 257 8708 8735
+"utils.ml" 259 8866 8889 "utils.ml" 259 8866 8893
 type(
   string
 )
 ident(
-  def elem "utils.ml" 257 8708 8738 "utils.ml" 257 8708 8781
+  def elem "utils.ml" 259 8866 8896 "utils.ml" 259 8866 8939
 )
-"utils.ml" 257 8708 8738 "utils.ml" 257 8708 8749
+"utils.ml" 259 8866 8896 "utils.ml" 259 8866 8907
 type(
   string -> string -> int
 )
 ident(
   ext_ref Common_utils.string_find
 )
-"utils.ml" 257 8708 8750 "utils.ml" 257 8708 8757
+"utils.ml" 259 8866 8908 "utils.ml" 259 8866 8915
 type(
   string
 )
 ident(
-  int_ref lc_path "utils.ml" 236 7883 7897 "utils.ml" 236 7883 7904
+  int_ref lc_path "utils.ml" 238 8041 8055 "utils.ml" 238 8041 8062
 )
-"utils.ml" 257 8708 8759 "utils.ml" 257 8708 8762
+"utils.ml" 259 8866 8917 "utils.ml" 259 8866 8920
 type(
   string
 )
-"utils.ml" 257 8708 8763 "utils.ml" 257 8708 8764
+"utils.ml" 259 8866 8921 "utils.ml" 259 8866 8922
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"utils.ml" 257 8708 8765 "utils.ml" 257 8708 8769
+"utils.ml" 259 8866 8923 "utils.ml" 259 8866 8927
 type(
   string
 )
 ident(
-  int_ref elem "utils.ml" 257 8708 8731 "utils.ml" 257 8708 8735
+  int_ref elem "utils.ml" 259 8866 8889 "utils.ml" 259 8866 8893
 )
-"utils.ml" 257 8708 8770 "utils.ml" 257 8708 8771
+"utils.ml" 259 8866 8928 "utils.ml" 259 8866 8929
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"utils.ml" 257 8708 8772 "utils.ml" 257 8708 8775
+"utils.ml" 259 8866 8930 "utils.ml" 259 8866 8933
 type(
   string
 )
-"utils.ml" 257 8708 8765 "utils.ml" 257 8708 8775
+"utils.ml" 259 8866 8923 "utils.ml" 259 8866 8933
 call(
   stack
 )
 type(
   string
 )
-"utils.ml" 257 8708 8758 "utils.ml" 257 8708 8776
+"utils.ml" 259 8866 8916 "utils.ml" 259 8866 8934
 call(
   stack
 )
 type(
   string
 )
-"utils.ml" 257 8708 8738 "utils.ml" 257 8708 8776
+"utils.ml" 259 8866 8896 "utils.ml" 259 8866 8934
 call(
   stack
 )
 type(
   int
 )
-"utils.ml" 257 8708 8777 "utils.ml" 257 8708 8779
+"utils.ml" 259 8866 8935 "utils.ml" 259 8866 8937
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( >= )
 )
-"utils.ml" 257 8708 8780 "utils.ml" 257 8708 8781
+"utils.ml" 259 8866 8938 "utils.ml" 259 8866 8939
 type(
   int
 )
-"utils.ml" 257 8708 8738 "utils.ml" 257 8708 8781
+"utils.ml" 259 8866 8896 "utils.ml" 259 8866 8939
 type(
   bool
 )
-"utils.ml" 258 8785 8799 "utils.ml" 258 8785 8803
+"utils.ml" 260 8943 8957 "utils.ml" 260 8943 8961
 type(
   string
 )
 ident(
-  def arch "utils.ml" 262 8954 8964 "utils.ml" 297 10435 10446
+  def arch "utils.ml" 264 9112 9122 "utils.ml" 299 10593 10604
 )
-"utils.ml" 259 8806 8821 "utils.ml" 259 8806 8829
+"utils.ml" 261 8964 8979 "utils.ml" 261 8964 8987
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 259 8806 8830 "utils.ml" 259 8806 8835
+"utils.ml" 261 8964 8988 "utils.ml" 261 8964 8993
 type(
   string
 )
-"utils.ml" 259 8806 8821 "utils.ml" 259 8806 8835
+"utils.ml" 261 8964 8979 "utils.ml" 261 8964 8993
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 259 8806 8836 "utils.ml" 259 8806 8838
+"utils.ml" 261 8964 8994 "utils.ml" 261 8964 8996
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"utils.ml" 259 8806 8839 "utils.ml" 259 8806 8847
+"utils.ml" 261 8964 8997 "utils.ml" 261 8964 9005
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 259 8806 8848 "utils.ml" 259 8806 8854
+"utils.ml" 261 8964 9006 "utils.ml" 261 8964 9012
 type(
   string
 )
-"utils.ml" 259 8806 8839 "utils.ml" 259 8806 8854
+"utils.ml" 261 8964 8997 "utils.ml" 261 8964 9012
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 259 8806 8821 "utils.ml" 259 8806 8854
+"utils.ml" 261 8964 8979 "utils.ml" 261 8964 9012
 type(
   bool
 )
-"utils.ml" 259 8806 8860 "utils.ml" 259 8806 8866
+"utils.ml" 261 8964 9018 "utils.ml" 261 8964 9024
 type(
   string
 )
-"utils.ml" 260 8867 8887 "utils.ml" 260 8867 8895
+"utils.ml" 262 9025 9045 "utils.ml" 262 9025 9053
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 260 8867 8896 "utils.ml" 260 8867 8903
+"utils.ml" 262 9025 9054 "utils.ml" 262 9025 9061
 type(
   string
 )
-"utils.ml" 260 8867 8887 "utils.ml" 260 8867 8903
+"utils.ml" 262 9025 9045 "utils.ml" 262 9025 9061
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 260 8867 8909 "utils.ml" 260 8867 8917
+"utils.ml" 262 9025 9067 "utils.ml" 262 9025 9075
 type(
   string
 )
-"utils.ml" 261 8918 8935 "utils.ml" 261 8918 8940
+"utils.ml" 263 9076 9093 "utils.ml" 263 9076 9098
 type(
   exn -> string
 )
 ident(
   ext_ref Pervasives.raise
 )
-"utils.ml" 261 8918 8941 "utils.ml" 261 8918 8950
+"utils.ml" 263 9076 9099 "utils.ml" 263 9076 9108
 type(
   exn
 )
-"utils.ml" 261 8918 8935 "utils.ml" 261 8918 8950
+"utils.ml" 263 9076 9093 "utils.ml" 263 9076 9108
 type(
   string
 )
-"utils.ml" 260 8867 8884 "utils.ml" 261 8918 8950
+"utils.ml" 262 9025 9042 "utils.ml" 263 9076 9108
 type(
   string
 )
-"utils.ml" 259 8806 8818 "utils.ml" 261 8918 8950
+"utils.ml" 261 8964 8976 "utils.ml" 263 9076 9108
 type(
   string
 )
-"utils.ml" 262 8954 8968 "utils.ml" 262 8954 8976
+"utils.ml" 264 9112 9126 "utils.ml" 264 9112 9134
 type(
   int
 )
 ident(
-  def os_major "utils.ml" 288 10096 10106 "utils.ml" 297 10435 10446
+  def os_major "utils.ml" 290 10254 10264 "utils.ml" 299 10593 10604
 )
-"utils.ml" 262 8954 8978 "utils.ml" 262 8954 8986
+"utils.ml" 264 9112 9136 "utils.ml" 264 9112 9144
 type(
   int
 )
 ident(
-  def os_minor "utils.ml" 288 10096 10106 "utils.ml" 297 10435 10446
+  def os_minor "utils.ml" 290 10254 10264 "utils.ml" 299 10593 10604
 )
-"utils.ml" 262 8954 8988 "utils.ml" 262 8954 8998
+"utils.ml" 264 9112 9146 "utils.ml" 264 9112 9156
 type(
   vwd_os_variant
 )
 ident(
-  def os_variant "utils.ml" 288 10096 10106 "utils.ml" 297 10435 10446
+  def os_variant "utils.ml" 290 10254 10264 "utils.ml" 299 10593 10604
 )
-"utils.ml" 262 8954 8968 "utils.ml" 262 8954 8998
+"utils.ml" 264 9112 9126 "utils.ml" 264 9112 9156
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 263 9001 9016 "utils.ml" 263 9001 9024
+"utils.ml" 265 9159 9174 "utils.ml" 265 9159 9182
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 263 9001 9025 "utils.ml" 263 9001 9029
+"utils.ml" 265 9159 9183 "utils.ml" 265 9159 9187
 type(
   string
 )
-"utils.ml" 263 9001 9016 "utils.ml" 263 9001 9029
+"utils.ml" 265 9159 9174 "utils.ml" 265 9159 9187
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 263 9001 9030 "utils.ml" 263 9001 9032
+"utils.ml" 265 9159 9188 "utils.ml" 265 9159 9190
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"utils.ml" 263 9001 9033 "utils.ml" 263 9001 9041
+"utils.ml" 265 9159 9191 "utils.ml" 265 9159 9199
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 263 9001 9042 "utils.ml" 263 9001 9049
+"utils.ml" 265 9159 9200 "utils.ml" 265 9159 9207
 type(
   string
 )
-"utils.ml" 263 9001 9033 "utils.ml" 263 9001 9049
+"utils.ml" 265 9159 9191 "utils.ml" 265 9159 9207
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 263 9001 9016 "utils.ml" 263 9001 9049
+"utils.ml" 265 9159 9174 "utils.ml" 265 9159 9207
 type(
   bool
 )
-"utils.ml" 264 9055 9070 "utils.ml" 264 9055 9071
+"utils.ml" 266 9213 9228 "utils.ml" 266 9213 9229
 type(
   int
 )
-"utils.ml" 264 9055 9073 "utils.ml" 264 9055 9074
+"utils.ml" 266 9213 9231 "utils.ml" 266 9213 9232
 type(
   int
 )
-"utils.ml" 264 9055 9076 "utils.ml" 264 9055 9091
+"utils.ml" 266 9213 9234 "utils.ml" 266 9213 9249
 type(
   vwd_os_variant
 )
-"utils.ml" 264 9055 9069 "utils.ml" 264 9055 9092
+"utils.ml" 266 9213 9227 "utils.ml" 266 9213 9250
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 265 9093 9113 "utils.ml" 265 9093 9121
+"utils.ml" 267 9251 9271 "utils.ml" 267 9251 9279
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 265 9093 9122 "utils.ml" 265 9093 9127
+"utils.ml" 267 9251 9280 "utils.ml" 267 9251 9285
 type(
   string
 )
-"utils.ml" 265 9093 9113 "utils.ml" 265 9093 9127
+"utils.ml" 267 9251 9271 "utils.ml" 267 9251 9285
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 265 9093 9128 "utils.ml" 265 9093 9130
+"utils.ml" 267 9251 9286 "utils.ml" 267 9251 9288
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"utils.ml" 265 9093 9131 "utils.ml" 265 9093 9139
+"utils.ml" 267 9251 9289 "utils.ml" 267 9251 9297
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 265 9093 9140 "utils.ml" 265 9093 9149
+"utils.ml" 267 9251 9298 "utils.ml" 267 9251 9307
 type(
   string
 )
-"utils.ml" 265 9093 9131 "utils.ml" 265 9093 9149
+"utils.ml" 267 9251 9289 "utils.ml" 267 9251 9307
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 265 9093 9113 "utils.ml" 265 9093 9149
+"utils.ml" 267 9251 9271 "utils.ml" 267 9251 9307
 type(
   bool
 )
-"utils.ml" 266 9155 9170 "utils.ml" 266 9155 9171
+"utils.ml" 268 9313 9328 "utils.ml" 268 9313 9329
 type(
   int
 )
-"utils.ml" 266 9155 9173 "utils.ml" 266 9155 9174
+"utils.ml" 268 9313 9331 "utils.ml" 268 9313 9332
 type(
   int
 )
-"utils.ml" 266 9155 9176 "utils.ml" 266 9155 9191
+"utils.ml" 268 9313 9334 "utils.ml" 268 9313 9349
 type(
   vwd_os_variant
 )
-"utils.ml" 266 9155 9169 "utils.ml" 266 9155 9192
+"utils.ml" 268 9313 9327 "utils.ml" 268 9313 9350
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 267 9193 9213 "utils.ml" 267 9193 9221
+"utils.ml" 269 9351 9371 "utils.ml" 269 9351 9379
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 267 9193 9222 "utils.ml" 267 9193 9229
+"utils.ml" 269 9351 9380 "utils.ml" 269 9351 9387
 type(
   string
 )
-"utils.ml" 267 9193 9213 "utils.ml" 267 9193 9229
+"utils.ml" 269 9351 9371 "utils.ml" 269 9351 9387
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 268 9235 9250 "utils.ml" 268 9235 9251
+"utils.ml" 270 9393 9408 "utils.ml" 270 9393 9409
 type(
   int
 )
-"utils.ml" 268 9235 9253 "utils.ml" 268 9235 9254
+"utils.ml" 270 9393 9411 "utils.ml" 270 9393 9412
 type(
   int
 )
-"utils.ml" 268 9235 9256 "utils.ml" 268 9235 9266
+"utils.ml" 270 9393 9414 "utils.ml" 270 9393 9424
 type(
   vwd_os_variant
 )
-"utils.ml" 268 9235 9249 "utils.ml" 268 9235 9267
+"utils.ml" 270 9393 9407 "utils.ml" 270 9393 9425
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 269 9268 9288 "utils.ml" 269 9268 9296
+"utils.ml" 271 9426 9446 "utils.ml" 271 9426 9454
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 269 9268 9297 "utils.ml" 269 9268 9302
+"utils.ml" 271 9426 9455 "utils.ml" 271 9426 9460
 type(
   string
 )
-"utils.ml" 269 9268 9288 "utils.ml" 269 9268 9302
+"utils.ml" 271 9426 9446 "utils.ml" 271 9426 9460
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 269 9268 9303 "utils.ml" 269 9268 9305
+"utils.ml" 271 9426 9461 "utils.ml" 271 9426 9463
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"utils.ml" 269 9268 9306 "utils.ml" 269 9268 9314
+"utils.ml" 271 9426 9464 "utils.ml" 271 9426 9472
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 269 9268 9315 "utils.ml" 269 9268 9324
+"utils.ml" 271 9426 9473 "utils.ml" 271 9426 9482
 type(
   string
 )
-"utils.ml" 269 9268 9306 "utils.ml" 269 9268 9324
+"utils.ml" 271 9426 9464 "utils.ml" 271 9426 9482
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 269 9268 9288 "utils.ml" 269 9268 9324
+"utils.ml" 271 9426 9446 "utils.ml" 271 9426 9482
 type(
   bool
 )
-"utils.ml" 270 9330 9345 "utils.ml" 270 9330 9346
+"utils.ml" 272 9488 9503 "utils.ml" 272 9488 9504
 type(
   int
 )
-"utils.ml" 270 9330 9348 "utils.ml" 270 9330 9349
+"utils.ml" 272 9488 9506 "utils.ml" 272 9488 9507
 type(
   int
 )
-"utils.ml" 270 9330 9351 "utils.ml" 270 9330 9365
+"utils.ml" 272 9488 9509 "utils.ml" 272 9488 9523
 type(
   vwd_os_variant
 )
-"utils.ml" 270 9330 9344 "utils.ml" 270 9330 9366
+"utils.ml" 272 9488 9502 "utils.ml" 272 9488 9524
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 271 9367 9387 "utils.ml" 271 9367 9395
+"utils.ml" 273 9525 9545 "utils.ml" 273 9525 9553
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 271 9367 9396 "utils.ml" 271 9367 9400
+"utils.ml" 273 9525 9554 "utils.ml" 273 9525 9558
 type(
   string
 )
-"utils.ml" 271 9367 9387 "utils.ml" 271 9367 9400
+"utils.ml" 273 9525 9545 "utils.ml" 273 9525 9558
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 271 9367 9401 "utils.ml" 271 9367 9403
+"utils.ml" 273 9525 9559 "utils.ml" 273 9525 9561
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"utils.ml" 271 9367 9404 "utils.ml" 271 9367 9412
+"utils.ml" 273 9525 9562 "utils.ml" 273 9525 9570
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 271 9367 9413 "utils.ml" 271 9367 9419
+"utils.ml" 273 9525 9571 "utils.ml" 273 9525 9577
 type(
   string
 )
-"utils.ml" 271 9367 9404 "utils.ml" 271 9367 9419
+"utils.ml" 273 9525 9562 "utils.ml" 273 9525 9577
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 271 9367 9387 "utils.ml" 271 9367 9419
+"utils.ml" 273 9525 9545 "utils.ml" 273 9525 9577
 type(
   bool
 )
-"utils.ml" 272 9425 9440 "utils.ml" 272 9425 9441
+"utils.ml" 274 9583 9598 "utils.ml" 274 9583 9599
 type(
   int
 )
-"utils.ml" 272 9425 9443 "utils.ml" 272 9425 9444
+"utils.ml" 274 9583 9601 "utils.ml" 274 9583 9602
 type(
   int
 )
-"utils.ml" 272 9425 9446 "utils.ml" 272 9425 9456
+"utils.ml" 274 9583 9604 "utils.ml" 274 9583 9614
 type(
   vwd_os_variant
 )
-"utils.ml" 272 9425 9439 "utils.ml" 272 9425 9457
+"utils.ml" 274 9583 9597 "utils.ml" 274 9583 9615
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 273 9458 9478 "utils.ml" 273 9458 9486
+"utils.ml" 275 9616 9636 "utils.ml" 275 9616 9644
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 273 9458 9487 "utils.ml" 273 9458 9494
+"utils.ml" 275 9616 9645 "utils.ml" 275 9616 9652
 type(
   string
 )
-"utils.ml" 273 9458 9478 "utils.ml" 273 9458 9494
+"utils.ml" 275 9616 9636 "utils.ml" 275 9616 9652
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 273 9458 9495 "utils.ml" 273 9458 9497
+"utils.ml" 275 9616 9653 "utils.ml" 275 9616 9655
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"utils.ml" 273 9458 9498 "utils.ml" 273 9458 9506
+"utils.ml" 275 9616 9656 "utils.ml" 275 9616 9664
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 273 9458 9507 "utils.ml" 273 9458 9518
+"utils.ml" 275 9616 9665 "utils.ml" 275 9616 9676
 type(
   string
 )
-"utils.ml" 273 9458 9498 "utils.ml" 273 9458 9518
+"utils.ml" 275 9616 9656 "utils.ml" 275 9616 9676
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 273 9458 9478 "utils.ml" 273 9458 9518
+"utils.ml" 275 9616 9636 "utils.ml" 275 9616 9676
 type(
   bool
 )
-"utils.ml" 274 9524 9539 "utils.ml" 274 9524 9540
+"utils.ml" 276 9682 9697 "utils.ml" 276 9682 9698
 type(
   int
 )
-"utils.ml" 274 9524 9542 "utils.ml" 274 9524 9543
+"utils.ml" 276 9682 9700 "utils.ml" 276 9682 9701
 type(
   int
 )
-"utils.ml" 274 9524 9545 "utils.ml" 274 9524 9559
+"utils.ml" 276 9682 9703 "utils.ml" 276 9682 9717
 type(
   vwd_os_variant
 )
-"utils.ml" 274 9524 9538 "utils.ml" 274 9524 9560
+"utils.ml" 276 9682 9696 "utils.ml" 276 9682 9718
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 275 9561 9581 "utils.ml" 275 9561 9589
+"utils.ml" 277 9719 9739 "utils.ml" 277 9719 9747
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 275 9561 9590 "utils.ml" 275 9561 9594
+"utils.ml" 277 9719 9748 "utils.ml" 277 9719 9752
 type(
   string
 )
-"utils.ml" 275 9561 9581 "utils.ml" 275 9561 9594
+"utils.ml" 277 9719 9739 "utils.ml" 277 9719 9752
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 275 9561 9595 "utils.ml" 275 9561 9597
+"utils.ml" 277 9719 9753 "utils.ml" 277 9719 9755
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"utils.ml" 275 9561 9598 "utils.ml" 275 9561 9606
+"utils.ml" 277 9719 9756 "utils.ml" 277 9719 9764
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 275 9561 9607 "utils.ml" 275 9561 9613
+"utils.ml" 277 9719 9765 "utils.ml" 277 9719 9771
 type(
   string
 )
-"utils.ml" 275 9561 9598 "utils.ml" 275 9561 9613
+"utils.ml" 277 9719 9756 "utils.ml" 277 9719 9771
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 275 9561 9581 "utils.ml" 275 9561 9613
+"utils.ml" 277 9719 9739 "utils.ml" 277 9719 9771
 type(
   bool
 )
-"utils.ml" 276 9619 9634 "utils.ml" 276 9619 9635
+"utils.ml" 278 9777 9792 "utils.ml" 278 9777 9793
 type(
   int
 )
-"utils.ml" 276 9619 9637 "utils.ml" 276 9619 9638
+"utils.ml" 278 9777 9795 "utils.ml" 278 9777 9796
 type(
   int
 )
-"utils.ml" 276 9619 9640 "utils.ml" 276 9619 9650
+"utils.ml" 278 9777 9798 "utils.ml" 278 9777 9808
 type(
   vwd_os_variant
 )
-"utils.ml" 276 9619 9633 "utils.ml" 276 9619 9651
+"utils.ml" 278 9777 9791 "utils.ml" 278 9777 9809
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 277 9652 9672 "utils.ml" 277 9652 9680
+"utils.ml" 279 9810 9830 "utils.ml" 279 9810 9838
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 277 9652 9681 "utils.ml" 277 9652 9687
+"utils.ml" 279 9810 9839 "utils.ml" 279 9810 9845
 type(
   string
 )
-"utils.ml" 277 9652 9672 "utils.ml" 277 9652 9687
+"utils.ml" 279 9810 9830 "utils.ml" 279 9810 9845
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 277 9652 9688 "utils.ml" 277 9652 9690
+"utils.ml" 279 9810 9846 "utils.ml" 279 9810 9848
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"utils.ml" 277 9652 9691 "utils.ml" 277 9652 9699
+"utils.ml" 279 9810 9849 "utils.ml" 279 9810 9857
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 277 9652 9700 "utils.ml" 277 9652 9709
+"utils.ml" 279 9810 9858 "utils.ml" 279 9810 9867
 type(
   string
 )
-"utils.ml" 277 9652 9691 "utils.ml" 277 9652 9709
+"utils.ml" 279 9810 9849 "utils.ml" 279 9810 9867
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 277 9652 9672 "utils.ml" 277 9652 9709
+"utils.ml" 279 9810 9830 "utils.ml" 279 9810 9867
 type(
   bool
 )
-"utils.ml" 278 9715 9730 "utils.ml" 278 9715 9731
+"utils.ml" 280 9873 9888 "utils.ml" 280 9873 9889
 type(
   int
 )
-"utils.ml" 278 9715 9733 "utils.ml" 278 9715 9734
+"utils.ml" 280 9873 9891 "utils.ml" 280 9873 9892
 type(
   int
 )
-"utils.ml" 278 9715 9736 "utils.ml" 278 9715 9750
+"utils.ml" 280 9873 9894 "utils.ml" 280 9873 9908
 type(
   vwd_os_variant
 )
-"utils.ml" 278 9715 9729 "utils.ml" 278 9715 9751
+"utils.ml" 280 9873 9887 "utils.ml" 280 9873 9909
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 279 9752 9772 "utils.ml" 279 9752 9780
+"utils.ml" 281 9910 9930 "utils.ml" 281 9910 9938
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 279 9752 9781 "utils.ml" 279 9752 9787
+"utils.ml" 281 9910 9939 "utils.ml" 281 9910 9945
 type(
   string
 )
-"utils.ml" 279 9752 9772 "utils.ml" 279 9752 9787
+"utils.ml" 281 9910 9930 "utils.ml" 281 9910 9945
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 279 9752 9788 "utils.ml" 279 9752 9790
+"utils.ml" 281 9910 9946 "utils.ml" 281 9910 9948
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"utils.ml" 279 9752 9791 "utils.ml" 279 9752 9799
+"utils.ml" 281 9910 9949 "utils.ml" 281 9910 9957
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 279 9752 9800 "utils.ml" 279 9752 9808
+"utils.ml" 281 9910 9958 "utils.ml" 281 9910 9966
 type(
   string
 )
-"utils.ml" 279 9752 9791 "utils.ml" 279 9752 9808
+"utils.ml" 281 9910 9949 "utils.ml" 281 9910 9966
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 279 9752 9772 "utils.ml" 279 9752 9808
+"utils.ml" 281 9910 9930 "utils.ml" 281 9910 9966
 type(
   bool
 )
-"utils.ml" 280 9814 9829 "utils.ml" 280 9814 9830
+"utils.ml" 282 9972 9987 "utils.ml" 282 9972 9988
 type(
   int
 )
-"utils.ml" 280 9814 9832 "utils.ml" 280 9814 9833
+"utils.ml" 282 9972 9990 "utils.ml" 282 9972 9991
 type(
   int
 )
-"utils.ml" 280 9814 9835 "utils.ml" 280 9814 9845
+"utils.ml" 282 9972 9993 "utils.ml" 282 9972 10003
 type(
   vwd_os_variant
 )
-"utils.ml" 280 9814 9828 "utils.ml" 280 9814 9846
+"utils.ml" 282 9972 9986 "utils.ml" 282 9972 10004
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 281 9847 9867 "utils.ml" 281 9847 9875
+"utils.ml" 283 10005 10025 "utils.ml" 283 10005 10033
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 281 9847 9876 "utils.ml" 281 9847 9884
+"utils.ml" 283 10005 10034 "utils.ml" 283 10005 10042
 type(
   string
 )
-"utils.ml" 281 9847 9867 "utils.ml" 281 9847 9884
+"utils.ml" 283 10005 10025 "utils.ml" 283 10005 10042
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 281 9847 9885 "utils.ml" 281 9847 9887
+"utils.ml" 283 10005 10043 "utils.ml" 283 10005 10045
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"utils.ml" 281 9847 9888 "utils.ml" 281 9847 9896
+"utils.ml" 283 10005 10046 "utils.ml" 283 10005 10054
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 281 9847 9897 "utils.ml" 281 9847 9908
+"utils.ml" 283 10005 10055 "utils.ml" 283 10005 10066
 type(
   string
 )
-"utils.ml" 281 9847 9888 "utils.ml" 281 9847 9908
+"utils.ml" 283 10005 10046 "utils.ml" 283 10005 10066
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 281 9847 9867 "utils.ml" 281 9847 9908
+"utils.ml" 283 10005 10025 "utils.ml" 283 10005 10066
 type(
   bool
 )
-"utils.ml" 282 9914 9929 "utils.ml" 282 9914 9930
+"utils.ml" 284 10072 10087 "utils.ml" 284 10072 10088
 type(
   int
 )
-"utils.ml" 282 9914 9932 "utils.ml" 282 9914 9933
+"utils.ml" 284 10072 10090 "utils.ml" 284 10072 10091
 type(
   int
 )
-"utils.ml" 282 9914 9935 "utils.ml" 282 9914 9949
+"utils.ml" 284 10072 10093 "utils.ml" 284 10072 10107
 type(
   vwd_os_variant
 )
-"utils.ml" 282 9914 9928 "utils.ml" 282 9914 9950
+"utils.ml" 284 10072 10086 "utils.ml" 284 10072 10108
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 283 9951 9971 "utils.ml" 283 9951 9979
+"utils.ml" 285 10109 10129 "utils.ml" 285 10109 10137
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 283 9951 9980 "utils.ml" 283 9951 9985
+"utils.ml" 285 10109 10138 "utils.ml" 285 10109 10143
 type(
   string
 )
-"utils.ml" 283 9951 9971 "utils.ml" 283 9951 9985
+"utils.ml" 285 10109 10129 "utils.ml" 285 10109 10143
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 283 9951 9986 "utils.ml" 283 9951 9988
+"utils.ml" 285 10109 10144 "utils.ml" 285 10109 10146
 type(
   bool -> bool -> bool
 )
 ident(
   ext_ref Pervasives.( || )
 )
-"utils.ml" 283 9951 9989 "utils.ml" 283 9951 9997
+"utils.ml" 285 10109 10147 "utils.ml" 285 10109 10155
 type(
   string -> bool
 )
 ident(
-  int_ref pathelem "utils.ml" 257 8708 8722 "utils.ml" 257 8708 8730
+  int_ref pathelem "utils.ml" 259 8866 8880 "utils.ml" 259 8866 8888
 )
-"utils.ml" 283 9951 9998 "utils.ml" 283 9951 10005
+"utils.ml" 285 10109 10156 "utils.ml" 285 10109 10163
 type(
   string
 )
-"utils.ml" 283 9951 9989 "utils.ml" 283 9951 10005
+"utils.ml" 285 10109 10147 "utils.ml" 285 10109 10163
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 283 9951 9971 "utils.ml" 283 9951 10005
+"utils.ml" 285 10109 10129 "utils.ml" 285 10109 10163
 type(
   bool
 )
-"utils.ml" 284 10011 10026 "utils.ml" 284 10011 10028
+"utils.ml" 286 10169 10184 "utils.ml" 286 10169 10186
 type(
   int
 )
-"utils.ml" 284 10011 10030 "utils.ml" 284 10011 10031
+"utils.ml" 286 10169 10188 "utils.ml" 286 10169 10189
 type(
   int
 )
-"utils.ml" 284 10011 10033 "utils.ml" 284 10011 10043
+"utils.ml" 286 10169 10191 "utils.ml" 286 10169 10201
 type(
   vwd_os_variant
 )
-"utils.ml" 284 10011 10025 "utils.ml" 284 10011 10044
+"utils.ml" 286 10169 10183 "utils.ml" 286 10169 10202
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 286 10062 10076 "utils.ml" 286 10062 10081
+"utils.ml" 288 10220 10234 "utils.ml" 288 10220 10239
 type(
   exn -> int * int * vwd_os_variant
 )
 ident(
   ext_ref Pervasives.raise
 )
-"utils.ml" 286 10062 10082 "utils.ml" 286 10062 10091
+"utils.ml" 288 10220 10240 "utils.ml" 288 10220 10249
 type(
   exn
 )
-"utils.ml" 286 10062 10076 "utils.ml" 286 10062 10091
+"utils.ml" 288 10220 10234 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 283 9951 9968 "utils.ml" 286 10062 10091
+"utils.ml" 285 10109 10126 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 281 9847 9864 "utils.ml" 286 10062 10091
+"utils.ml" 283 10005 10022 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 279 9752 9769 "utils.ml" 286 10062 10091
+"utils.ml" 281 9910 9927 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 277 9652 9669 "utils.ml" 286 10062 10091
+"utils.ml" 279 9810 9827 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 275 9561 9578 "utils.ml" 286 10062 10091
+"utils.ml" 277 9719 9736 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 273 9458 9475 "utils.ml" 286 10062 10091
+"utils.ml" 275 9616 9633 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 271 9367 9384 "utils.ml" 286 10062 10091
+"utils.ml" 273 9525 9542 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 269 9268 9285 "utils.ml" 286 10062 10091
+"utils.ml" 271 9426 9443 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 267 9193 9210 "utils.ml" 286 10062 10091
+"utils.ml" 269 9351 9368 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 265 9093 9110 "utils.ml" 286 10062 10091
+"utils.ml" 267 9251 9268 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 263 9001 9013 "utils.ml" 286 10062 10091
+"utils.ml" 265 9159 9171 "utils.ml" 288 10220 10249
 type(
   int * int * vwd_os_variant
 )
-"utils.ml" 289 10113 10140 "utils.ml" 289 10113 10151
+"utils.ml" 291 10271 10298 "utils.ml" 291 10271 10309
 type(
   string
 )
 ident(
-  int_ref lc_basename "utils.ml" 237 7932 7946 "utils.ml" 237 7932 7957
+  int_ref lc_basename "utils.ml" 239 8090 8104 "utils.ml" 239 8090 8115
 )
-"utils.ml" 290 10153 10184 "utils.ml" 290 10153 10196
+"utils.ml" 292 10311 10342 "utils.ml" 292 10311 10354
 type(
   unit -> string
 )
 ident(
-  int_ref get_contents "utils.ml" 231 7644 7688 "utils.ml" 231 7644 7700
+  int_ref get_contents "utils.ml" 233 7802 7846 "utils.ml" 233 7802 7858
 )
-"utils.ml" 291 10198 10225 "utils.ml" 291 10198 10233
+"utils.ml" 293 10356 10383 "utils.ml" 293 10356 10391
 type(
   int
 )
 ident(
-  int_ref os_major "utils.ml" 262 8954 8968 "utils.ml" 262 8954 8976
+  int_ref os_major "utils.ml" 264 9112 9126 "utils.ml" 264 9112 9134
 )
-"utils.ml" 292 10235 10262 "utils.ml" 292 10235 10270
+"utils.ml" 294 10393 10420 "utils.ml" 294 10393 10428
 type(
   int
 )
 ident(
-  int_ref os_minor "utils.ml" 262 8954 8978 "utils.ml" 262 8954 8986
+  int_ref os_minor "utils.ml" 264 9112 9136 "utils.ml" 264 9112 9144
 )
-"utils.ml" 293 10272 10301 "utils.ml" 293 10272 10311
+"utils.ml" 295 10430 10459 "utils.ml" 295 10430 10469
 type(
   vwd_os_variant
 )
 ident(
-  int_ref os_variant "utils.ml" 262 8954 8988 "utils.ml" 262 8954 8998
+  int_ref os_variant "utils.ml" 264 9112 9146 "utils.ml" 264 9112 9156
 )
-"utils.ml" 294 10313 10339 "utils.ml" 294 10313 10343
+"utils.ml" 296 10471 10497 "utils.ml" 296 10471 10501
 type(
   string
 )
 ident(
-  int_ref arch "utils.ml" 258 8785 8799 "utils.ml" 258 8785 8803
+  int_ref arch "utils.ml" 260 8943 8957 "utils.ml" 260 8943 8961
 )
-"utils.ml" 295 10345 10373 "utils.ml" 295 10345 10382
+"utils.ml" 297 10503 10531 "utils.ml" 297 10503 10540
 type(
   string
 )
 ident(
-  int_ref extension "utils.ml" 239 7990 8004 "utils.ml" 239 7990 8013
+  int_ref extension "utils.ml" 241 8148 8162 "utils.ml" 241 8148 8171
 )
-"utils.ml" 296 10384 10418 "utils.ml" 296 10384 10433
+"utils.ml" 298 10542 10576 "utils.ml" 298 10542 10591
 type(
   string
 )
 ident(
-  int_ref original_source "utils.ml" 231 7644 7661 "utils.ml" 231 7644 7676
+  int_ref original_source "utils.ml" 233 7802 7819 "utils.ml" 233 7802 7834
 )
-"utils.ml" 288 10096 10111 "utils.ml" 297 10435 10446
+"utils.ml" 290 10254 10269 "utils.ml" 299 10593 10604
 type(
   virtio_win_driver_file
 )
-"utils.ml" 288 10096 10106 "utils.ml" 297 10435 10446
+"utils.ml" 290 10254 10264 "utils.ml" 299 10593 10604
 type(
   virtio_win_driver_file option
 )
-"utils.ml" 262 8954 8964 "utils.ml" 297 10435 10446
+"utils.ml" 264 9112 9122 "utils.ml" 299 10593 10604
 type(
   virtio_win_driver_file option
 )
-"utils.ml" 258 8785 8795 "utils.ml" 297 10435 10446
+"utils.ml" 260 8943 8953 "utils.ml" 299 10593 10604
 type(
   virtio_win_driver_file option
 )
-"utils.ml" 257 8708 8718 "utils.ml" 297 10435 10446
+"utils.ml" 259 8866 8876 "utils.ml" 299 10593 10604
 type(
   virtio_win_driver_file option
 )
-"utils.ml" 247 8273 8283 "utils.ml" 297 10435 10446
+"utils.ml" 249 8431 8441 "utils.ml" 299 10593 10604
 type(
   virtio_win_driver_file option
 )
-"utils.ml" 239 7990 8000 "utils.ml" 297 10435 10446
+"utils.ml" 241 8148 8158 "utils.ml" 299 10593 10604
 type(
   virtio_win_driver_file option
 )
-"utils.ml" 237 7932 7942 "utils.ml" 297 10435 10446
+"utils.ml" 239 8090 8100 "utils.ml" 299 10593 10604
 type(
   virtio_win_driver_file option
 )
-"utils.ml" 236 7883 7893 "utils.ml" 297 10435 10446
+"utils.ml" 238 8041 8051 "utils.ml" 299 10593 10604
 type(
   virtio_win_driver_file option
 )
-"utils.ml" 299 10448 10461 "utils.ml" 299 10448 10470
+"utils.ml" 301 10606 10619 "utils.ml" 301 10606 10628
 type(
   exn
 )
-"utils.ml" 299 10448 10474 "utils.ml" 299 10448 10478
+"utils.ml" 301 10606 10632 "utils.ml" 301 10606 10636
 type(
   virtio_win_driver_file option
 )
-"utils.ml" 232 7705 7713 "utils.ml" 299 10448 10478
+"utils.ml" 234 7863 7871 "utils.ml" 301 10606 10636
 type(
   virtio_win_driver_file option
 )
-"utils.ml" 230 7627 7642 "utils.ml" 300 10479 10484
+"utils.ml" 232 7785 7800 "utils.ml" 302 10637 10642
 type(
   string * string * string * (unit -> string) ->
   virtio_win_driver_file option
 )
-"utils.ml" 300 10479 10485 "utils.ml" 300 10479 10490
+"utils.ml" 302 10637 10643 "utils.ml" 302 10637 10648
 type(
   (string * string * string * (unit -> string)) list
 )
 ident(
-  int_ref files "utils.ml" 189 6233 6239 "utils.ml" 189 6233 6244
+  int_ref files "utils.ml" 191 6391 6397 "utils.ml" 191 6391 6402
 )
-"utils.ml" 230 7627 7631 "utils.ml" 300 10479 10490
+"utils.ml" 232 7785 7789 "utils.ml" 302 10637 10648
 call(
   stack
 )
 type(
   virtio_win_driver_file list
 )
-"utils.ml" 302 10495 10497 "utils.ml" 302 10495 10502
+"utils.ml" 304 10653 10655 "utils.ml" 304 10653 10660
 type(
   virtio_win_driver_file list
 )
 ident(
-  int_ref files "utils.ml" 229 7613 7619 "utils.ml" 229 7613 7624
+  int_ref files "utils.ml" 231 7771 7777 "utils.ml" 231 7771 7782
 )
-"utils.ml" 229 7613 7615 "utils.ml" 302 10495 10502
+"utils.ml" 231 7771 7773 "utils.ml" 304 10653 10660
 type(
   virtio_win_driver_file list
 )
-"utils.ml" 189 6233 6235 "utils.ml" 302 10495 10502
+"utils.ml" 191 6391 6393 "utils.ml" 304 10653 10660
 type(
   virtio_win_driver_file list
 )
-"utils.ml" 184 6083 6085 "utils.ml" 302 10495 10502
+"utils.ml" 186 6241 6243 "utils.ml" 304 10653 10660
 type(
   virtio_win_driver_file list
 )
-"utils.ml" 304 10504 10508 "utils.ml" 304 10504 10529
+"utils.ml" 306 10662 10666 "utils.ml" 306 10662 10687
 type(
   Guestfs.application2 -> Guestfs.application2 -> int
 )
 ident(
-  def compare_app2_versions "utils.ml" 325 11158 11158 --
+  def compare_app2_versions "utils.ml" 327 11316 11316 --
 )
-"utils.ml" 304 10504 10530 "utils.ml" 304 10504 10534
+"utils.ml" 306 10662 10688 "utils.ml" 306 10662 10692
 type(
   Guestfs.application2
 )
 ident(
-  def app1 "utils.ml" 304 10504 10535 "utils.ml" 313 10832 10835
+  def app1 "utils.ml" 306 10662 10693 "utils.ml" 315 10990 10993
 )
-"utils.ml" 304 10504 10535 "utils.ml" 304 10504 10539
+"utils.ml" 306 10662 10693 "utils.ml" 306 10662 10697
 type(
   Guestfs.application2
 )
 ident(
-  def app2 "utils.ml" 305 10542 10544 "utils.ml" 313 10832 10835
+  def app2 "utils.ml" 307 10700 10702 "utils.ml" 315 10990 10993
 )
-"utils.ml" 305 10542 10548 "utils.ml" 305 10542 10549
+"utils.ml" 307 10700 10706 "utils.ml" 307 10700 10707
 type(
   int
 )
-"utils.ml" 305 10542 10552 "utils.ml" 305 10542 10559
+"utils.ml" 307 10700 10710 "utils.ml" 307 10700 10717
 type(
   int32 -> int32 -> int
 )
 ident(
   ext_ref Pervasives.compare
 )
-"utils.ml" 305 10542 10560 "utils.ml" 305 10542 10564
+"utils.ml" 307 10700 10718 "utils.ml" 307 10700 10722
 type(
   Guestfs.application2
 )
 ident(
-  int_ref app1 "utils.ml" 304 10504 10530 "utils.ml" 304 10504 10534
+  int_ref app1 "utils.ml" 306 10662 10688 "utils.ml" 306 10662 10692
 )
-"utils.ml" 305 10542 10560 "utils.ml" 305 10542 10583
+"utils.ml" 307 10700 10718 "utils.ml" 307 10700 10741
 type(
   int32
 )
-"utils.ml" 305 10542 10584 "utils.ml" 305 10542 10588
+"utils.ml" 307 10700 10742 "utils.ml" 307 10700 10746
 type(
   Guestfs.application2
 )
 ident(
-  int_ref app2 "utils.ml" 304 10504 10535 "utils.ml" 304 10504 10539
+  int_ref app2 "utils.ml" 306 10662 10693 "utils.ml" 306 10662 10697
 )
-"utils.ml" 305 10542 10584 "utils.ml" 305 10542 10607
+"utils.ml" 307 10700 10742 "utils.ml" 307 10700 10765
 type(
   int32
 )
-"utils.ml" 305 10542 10552 "utils.ml" 305 10542 10607
+"utils.ml" 307 10700 10710 "utils.ml" 307 10700 10765
 type(
   int
 )
-"utils.ml" 306 10611 10616 "utils.ml" 306 10611 10617
+"utils.ml" 308 10769 10774 "utils.ml" 308 10769 10775
 type(
   int
 )
 ident(
-  int_ref i "utils.ml" 305 10542 10548 "utils.ml" 305 10542 10549
+  int_ref i "utils.ml" 307 10700 10706 "utils.ml" 307 10700 10707
 )
-"utils.ml" 306 10611 10618 "utils.ml" 306 10611 10620
+"utils.ml" 308 10769 10776 "utils.ml" 308 10769 10778
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( <> )
 )
-"utils.ml" 306 10611 10621 "utils.ml" 306 10611 10622
+"utils.ml" 308 10769 10779 "utils.ml" 308 10769 10780
 type(
   int
 )
-"utils.ml" 306 10611 10616 "utils.ml" 306 10611 10622
+"utils.ml" 308 10769 10774 "utils.ml" 308 10769 10780
 type(
   bool
 )
-"utils.ml" 306 10611 10628 "utils.ml" 306 10611 10629
+"utils.ml" 308 10769 10786 "utils.ml" 308 10769 10787
 type(
   int
 )
 ident(
-  int_ref i "utils.ml" 305 10542 10548 "utils.ml" 305 10542 10549
+  int_ref i "utils.ml" 307 10700 10706 "utils.ml" 307 10700 10707
 )
-"utils.ml" 308 10639 10647 "utils.ml" 308 10639 10648
+"utils.ml" 310 10797 10805 "utils.ml" 310 10797 10806
 type(
   int
 )
-"utils.ml" 309 10651 10657 "utils.ml" 309 10651 10672
+"utils.ml" 311 10809 10815 "utils.ml" 311 10809 10830
 type(
   string -> string -> int
 )
 ident(
   ext_ref Common_utils.compare_version
 )
-"utils.ml" 309 10651 10673 "utils.ml" 309 10651 10677
+"utils.ml" 311 10809 10831 "utils.ml" 311 10809 10835
 type(
   Guestfs.application2
 )
 ident(
-  int_ref app1 "utils.ml" 304 10504 10530 "utils.ml" 304 10504 10534
+  int_ref app1 "utils.ml" 306 10662 10688 "utils.ml" 306 10662 10692
 )
-"utils.ml" 309 10651 10673 "utils.ml" 309 10651 10698
+"utils.ml" 311 10809 10831 "utils.ml" 311 10809 10856
 type(
   string
 )
-"utils.ml" 309 10651 10699 "utils.ml" 309 10651 10703
+"utils.ml" 311 10809 10857 "utils.ml" 311 10809 10861
 type(
   Guestfs.application2
 )
 ident(
-  int_ref app2 "utils.ml" 304 10504 10535 "utils.ml" 304 10504 10539
+  int_ref app2 "utils.ml" 306 10662 10693 "utils.ml" 306 10662 10697
 )
-"utils.ml" 309 10651 10699 "utils.ml" 309 10651 10724
+"utils.ml" 311 10809 10857 "utils.ml" 311 10809 10882
 type(
   string
 )
-"utils.ml" 309 10651 10657 "utils.ml" 309 10651 10724
+"utils.ml" 311 10809 10815 "utils.ml" 311 10809 10882
 call(
   stack
 )
 type(
   int
 )
-"utils.ml" 310 10728 10735 "utils.ml" 310 10728 10736
+"utils.ml" 312 10886 10893 "utils.ml" 312 10886 10894
 type(
   int
 )
 ident(
-  int_ref i "utils.ml" 308 10639 10647 "utils.ml" 308 10639 10648
+  int_ref i "utils.ml" 310 10797 10805 "utils.ml" 310 10797 10806
 )
-"utils.ml" 310 10728 10737 "utils.ml" 310 10728 10739
+"utils.ml" 312 10886 10895 "utils.ml" 312 10886 10897
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( <> )
 )
-"utils.ml" 310 10728 10740 "utils.ml" 310 10728 10741
+"utils.ml" 312 10886 10898 "utils.ml" 312 10886 10899
 type(
   int
 )
-"utils.ml" 310 10728 10735 "utils.ml" 310 10728 10741
+"utils.ml" 312 10886 10893 "utils.ml" 312 10886 10899
 type(
   bool
 )
-"utils.ml" 310 10728 10747 "utils.ml" 310 10728 10748
+"utils.ml" 312 10886 10905 "utils.ml" 312 10886 10906
 type(
   int
 )
 ident(
-  int_ref i "utils.ml" 308 10639 10647 "utils.ml" 308 10639 10648
+  int_ref i "utils.ml" 310 10797 10805 "utils.ml" 310 10797 10806
 )
-"utils.ml" 312 10758 10764 "utils.ml" 312 10758 10779
+"utils.ml" 314 10916 10922 "utils.ml" 314 10916 10937
 type(
   string -> string -> int
 )
 ident(
   ext_ref Common_utils.compare_version
 )
-"utils.ml" 312 10758 10780 "utils.ml" 312 10758 10784
+"utils.ml" 314 10916 10938 "utils.ml" 314 10916 10942
 type(
   Guestfs.application2
 )
 ident(
-  int_ref app1 "utils.ml" 304 10504 10530 "utils.ml" 304 10504 10534
+  int_ref app1 "utils.ml" 306 10662 10688 "utils.ml" 306 10662 10692
 )
-"utils.ml" 312 10758 10780 "utils.ml" 312 10758 10805
+"utils.ml" 314 10916 10938 "utils.ml" 314 10916 10963
 type(
   string
 )
-"utils.ml" 312 10758 10806 "utils.ml" 312 10758 10810
+"utils.ml" 314 10916 10964 "utils.ml" 314 10916 10968
 type(
   Guestfs.application2
 )
 ident(
-  int_ref app2 "utils.ml" 304 10504 10535 "utils.ml" 304 10504 10539
+  int_ref app2 "utils.ml" 306 10662 10693 "utils.ml" 306 10662 10697
 )
-"utils.ml" 312 10758 10806 "utils.ml" 312 10758 10831
+"utils.ml" 314 10916 10964 "utils.ml" 314 10916 10989
 type(
   string
 )
-"utils.ml" 312 10758 10764 "utils.ml" 312 10758 10831
+"utils.ml" 314 10916 10922 "utils.ml" 314 10916 10989
 call(
   tail
 )
 type(
   int
 )
-"utils.ml" 310 10728 10732 "utils.ml" 312 10758 10831
+"utils.ml" 312 10886 10890 "utils.ml" 314 10916 10989
 type(
   int
 )
-"utils.ml" 307 10630 10637 "utils.ml" 313 10832 10835
+"utils.ml" 309 10788 10795 "utils.ml" 315 10990 10993
 type(
   int
 )
-"utils.ml" 306 10611 10613 "utils.ml" 313 10832 10835
+"utils.ml" 308 10769 10771 "utils.ml" 315 10990 10993
 type(
   int
 )
-"utils.ml" 305 10542 10544 "utils.ml" 313 10832 10835
+"utils.ml" 307 10700 10702 "utils.ml" 315 10990 10993
 type(
   int
 )
-"utils.ml" 315 10837 10841 "utils.ml" 315 10837 10865
+"utils.ml" 317 10995 10999 "utils.ml" 317 10995 11023
 type(
   Guestfs.application2 -> int32 * string * string -> int
 )
 ident(
-  def compare_app2_version_min "utils.ml" 325 11158 11158 --
+  def compare_app2_version_min "utils.ml" 327 11316 11316 --
 )
-"utils.ml" 315 10837 10866 "utils.ml" 315 10837 10870
+"utils.ml" 317 10995 11024 "utils.ml" 317 10995 11028
 type(
   Guestfs.application2
 )
 ident(
-  def app1 "utils.ml" 315 10837 10871 "utils.ml" 323 11153 11156
+  def app1 "utils.ml" 317 10995 11029 "utils.ml" 325 11311 11314
 )
-"utils.ml" 315 10837 10872 "utils.ml" 315 10837 10881
+"utils.ml" 317 10995 11030 "utils.ml" 317 10995 11039
 type(
   int32
 )
 ident(
-  def min_epoch "utils.ml" 316 10911 10913 "utils.ml" 323 11153 11156
+  def min_epoch "utils.ml" 318 11069 11071 "utils.ml" 325 11311 11314
 )
-"utils.ml" 315 10837 10883 "utils.ml" 315 10837 10894
+"utils.ml" 317 10995 11041 "utils.ml" 317 10995 11052
 type(
   string
 )
 ident(
-  def min_version "utils.ml" 316 10911 10913 "utils.ml" 323 11153 11156
+  def min_version "utils.ml" 318 11069 11071 "utils.ml" 325 11311 11314
 )
-"utils.ml" 315 10837 10896 "utils.ml" 315 10837 10907
+"utils.ml" 317 10995 11054 "utils.ml" 317 10995 11065
 type(
   string
 )
 ident(
-  def min_release "utils.ml" 316 10911 10913 "utils.ml" 323 11153 11156
+  def min_release "utils.ml" 318 11069 11071 "utils.ml" 325 11311 11314
 )
-"utils.ml" 315 10837 10871 "utils.ml" 315 10837 10908
+"utils.ml" 317 10995 11029 "utils.ml" 317 10995 11066
 type(
   int32 * string * string
 )
-"utils.ml" 316 10911 10917 "utils.ml" 316 10911 10918
+"utils.ml" 318 11069 11075 "utils.ml" 318 11069 11076
 type(
   int
 )
-"utils.ml" 316 10911 10921 "utils.ml" 316 10911 10928
+"utils.ml" 318 11069 11079 "utils.ml" 318 11069 11086
 type(
   int32 -> int32 -> int
 )
 ident(
   ext_ref Pervasives.compare
 )
-"utils.ml" 316 10911 10929 "utils.ml" 316 10911 10933
+"utils.ml" 318 11069 11087 "utils.ml" 318 11069 11091
 type(
   Guestfs.application2
 )
 ident(
-  int_ref app1 "utils.ml" 315 10837 10866 "utils.ml" 315 10837 10870
+  int_ref app1 "utils.ml" 317 10995 11024 "utils.ml" 317 10995 11028
 )
-"utils.ml" 316 10911 10929 "utils.ml" 316 10911 10952
+"utils.ml" 318 11069 11087 "utils.ml" 318 11069 11110
 type(
   int32
 )
-"utils.ml" 316 10911 10953 "utils.ml" 316 10911 10962
+"utils.ml" 318 11069 11111 "utils.ml" 318 11069 11120
 type(
   int32
 )
 ident(
-  int_ref min_epoch "utils.ml" 315 10837 10872 "utils.ml" 315 10837 10881
+  int_ref min_epoch "utils.ml" 317 10995 11030 "utils.ml" 317 10995 11039
 )
-"utils.ml" 316 10911 10921 "utils.ml" 316 10911 10962
+"utils.ml" 318 11069 11079 "utils.ml" 318 11069 11120
 type(
   int
 )
-"utils.ml" 317 10966 10971 "utils.ml" 317 10966 10972
+"utils.ml" 319 11124 11129 "utils.ml" 319 11124 11130
 type(
   int
 )
 ident(
-  int_ref i "utils.ml" 316 10911 10917 "utils.ml" 316 10911 10918
+  int_ref i "utils.ml" 318 11069 11075 "utils.ml" 318 11069 11076
 )
-"utils.ml" 317 10966 10973 "utils.ml" 317 10966 10975
+"utils.ml" 319 11124 11131 "utils.ml" 319 11124 11133
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( <> )
 )
-"utils.ml" 317 10966 10976 "utils.ml" 317 10966 10977
+"utils.ml" 319 11124 11134 "utils.ml" 319 11124 11135
 type(
   int
 )
-"utils.ml" 317 10966 10971 "utils.ml" 317 10966 10977
+"utils.ml" 319 11124 11129 "utils.ml" 319 11124 11135
 type(
   bool
 )
-"utils.ml" 317 10966 10983 "utils.ml" 317 10966 10984
+"utils.ml" 319 11124 11141 "utils.ml" 319 11124 11142
 type(
   int
 )
 ident(
-  int_ref i "utils.ml" 316 10911 10917 "utils.ml" 316 10911 10918
+  int_ref i "utils.ml" 318 11069 11075 "utils.ml" 318 11069 11076
 )
-"utils.ml" 319 10994 11002 "utils.ml" 319 10994 11003
+"utils.ml" 321 11152 11160 "utils.ml" 321 11152 11161
 type(
   int
 )
-"utils.ml" 319 10994 11006 "utils.ml" 319 10994 11021
+"utils.ml" 321 11152 11164 "utils.ml" 321 11152 11179
 type(
   string -> string -> int
 )
 ident(
   ext_ref Common_utils.compare_version
 )
-"utils.ml" 319 10994 11022 "utils.ml" 319 10994 11026
+"utils.ml" 321 11152 11180 "utils.ml" 321 11152 11184
 type(
   Guestfs.application2
 )
 ident(
-  int_ref app1 "utils.ml" 315 10837 10866 "utils.ml" 315 10837 10870
+  int_ref app1 "utils.ml" 317 10995 11024 "utils.ml" 317 10995 11028
 )
-"utils.ml" 319 10994 11022 "utils.ml" 319 10994 11047
+"utils.ml" 321 11152 11180 "utils.ml" 321 11152 11205
 type(
   string
 )
-"utils.ml" 319 10994 11048 "utils.ml" 319 10994 11059
+"utils.ml" 321 11152 11206 "utils.ml" 321 11152 11217
 type(
   string
 )
 ident(
-  int_ref min_version "utils.ml" 315 10837 10883 "utils.ml" 315 10837 10894
+  int_ref min_version "utils.ml" 317 10995 11041 "utils.ml" 317 10995 11052
 )
-"utils.ml" 319 10994 11006 "utils.ml" 319 10994 11059
+"utils.ml" 321 11152 11164 "utils.ml" 321 11152 11217
 call(
   stack
 )
 type(
   int
 )
-"utils.ml" 320 11063 11070 "utils.ml" 320 11063 11071
+"utils.ml" 322 11221 11228 "utils.ml" 322 11221 11229
 type(
   int
 )
 ident(
-  int_ref i "utils.ml" 319 10994 11002 "utils.ml" 319 10994 11003
+  int_ref i "utils.ml" 321 11152 11160 "utils.ml" 321 11152 11161
 )
-"utils.ml" 320 11063 11072 "utils.ml" 320 11063 11074
+"utils.ml" 322 11221 11230 "utils.ml" 322 11221 11232
 type(
   int -> int -> bool
 )
 ident(
   ext_ref Pervasives.( <> )
 )
-"utils.ml" 320 11063 11075 "utils.ml" 320 11063 11076
+"utils.ml" 322 11221 11233 "utils.ml" 322 11221 11234
 type(
   int
 )
-"utils.ml" 320 11063 11070 "utils.ml" 320 11063 11076
+"utils.ml" 322 11221 11228 "utils.ml" 322 11221 11234
 type(
   bool
 )
-"utils.ml" 320 11063 11082 "utils.ml" 320 11063 11083
+"utils.ml" 322 11221 11240 "utils.ml" 322 11221 11241
 type(
   int
 )
 ident(
-  int_ref i "utils.ml" 319 10994 11002 "utils.ml" 319 10994 11003
+  int_ref i "utils.ml" 321 11152 11160 "utils.ml" 321 11152 11161
 )
-"utils.ml" 322 11093 11099 "utils.ml" 322 11093 11114
+"utils.ml" 324 11251 11257 "utils.ml" 324 11251 11272
 type(
   string -> string -> int
 )
 ident(
   ext_ref Common_utils.compare_version
 )
-"utils.ml" 322 11093 11115 "utils.ml" 322 11093 11119
+"utils.ml" 324 11251 11273 "utils.ml" 324 11251 11277
 type(
   Guestfs.application2
 )
 ident(
-  int_ref app1 "utils.ml" 315 10837 10866 "utils.ml" 315 10837 10870
+  int_ref app1 "utils.ml" 317 10995 11024 "utils.ml" 317 10995 11028
 )
-"utils.ml" 322 11093 11115 "utils.ml" 322 11093 11140
+"utils.ml" 324 11251 11273 "utils.ml" 324 11251 11298
 type(
   string
 )
-"utils.ml" 322 11093 11141 "utils.ml" 322 11093 11152
+"utils.ml" 324 11251 11299 "utils.ml" 324 11251 11310
 type(
   string
 )
 ident(
-  int_ref min_release "utils.ml" 315 10837 10896 "utils.ml" 315 10837 10907
+  int_ref min_release "utils.ml" 317 10995 11054 "utils.ml" 317 10995 11065
 )
-"utils.ml" 322 11093 11099 "utils.ml" 322 11093 11152
+"utils.ml" 324 11251 11257 "utils.ml" 324 11251 11310
 call(
   tail
 )
 type(
   int
 )
-"utils.ml" 320 11063 11067 "utils.ml" 322 11093 11152
+"utils.ml" 322 11221 11225 "utils.ml" 324 11251 11310
 type(
   int
 )
-"utils.ml" 318 10985 10992 "utils.ml" 323 11153 11156
+"utils.ml" 320 11143 11150 "utils.ml" 325 11311 11314
 type(
   int
 )
-"utils.ml" 317 10966 10968 "utils.ml" 323 11153 11156
+"utils.ml" 319 11124 11126 "utils.ml" 325 11311 11314
 type(
   int
 )
-"utils.ml" 316 10911 10913 "utils.ml" 323 11153 11156
+"utils.ml" 318 11069 11071 "utils.ml" 325 11311 11314
 type(
   int
 )
-"utils.ml" 325 11158 11162 "utils.ml" 325 11158 11179
+"utils.ml" 327 11316 11320 "utils.ml" 327 11316 11337
 type(
   'a list -> 'a list
 )
 ident(
-  def remove_duplicates "utils.ml" 332 11369 11378 --
+  def remove_duplicates "utils.ml" 334 11527 11536 --
 )
-"utils.ml" 325 11158 11180 "utils.ml" 325 11158 11182
+"utils.ml" 327 11316 11338 "utils.ml" 327 11316 11340
 type(
   'a list
 )
 ident(
-  def xs "utils.ml" 326 11185 11187 "utils.ml" 332 11369 11378
+  def xs "utils.ml" 328 11343 11345 "utils.ml" 334 11527 11536
 )
-"utils.ml" 326 11185 11191 "utils.ml" 326 11185 11192
+"utils.ml" 328 11343 11349 "utils.ml" 328 11343 11350
 type(
   ('a, bool) Hashtbl.t
 )
-"utils.ml" 326 11185 11195 "utils.ml" 326 11185 11209
+"utils.ml" 328 11343 11353 "utils.ml" 328 11343 11367
 type(
   int -> ('a, bool) Hashtbl.t
 )
 ident(
   ext_ref Hashtbl.create
 )
-"utils.ml" 326 11185 11211 "utils.ml" 326 11185 11222
+"utils.ml" 328 11343 11369 "utils.ml" 328 11343 11380
 type(
   'a list -> int
 )
 ident(
   ext_ref List.length
 )
-"utils.ml" 326 11185 11223 "utils.ml" 326 11185 11225
+"utils.ml" 328 11343 11381 "utils.ml" 328 11343 11383
 type(
   'a list
 )
 ident(
-  int_ref xs "utils.ml" 325 11158 11180 "utils.ml" 325 11158 11182
+  int_ref xs "utils.ml" 327 11316 11338 "utils.ml" 327 11316 11340
 )
-"utils.ml" 326 11185 11210 "utils.ml" 326 11185 11226
+"utils.ml" 328 11343 11368 "utils.ml" 328 11343 11384
 call(
   stack
 )
 type(
   int
 )
-"utils.ml" 326 11185 11195 "utils.ml" 326 11185 11226
+"utils.ml" 328 11343 11353 "utils.ml" 328 11343 11384
 call(
   stack
 )
 type(
   ('a, bool) Hashtbl.t
 )
-"utils.ml" 327 11230 11240 "utils.ml" 327 11230 11244
+"utils.ml" 329 11388 11398 "utils.ml" 329 11388 11402
 type(
   'a list -> 'a list
 )
-"utils.ml" 328 11256 11262 "utils.ml" 328 11256 11264
+"utils.ml" 330 11414 11420 "utils.ml" 330 11414 11422
 type(
   'a list
 )
-"utils.ml" 328 11256 11268 "utils.ml" 328 11256 11270
+"utils.ml" 330 11414 11426 "utils.ml" 330 11414 11428
 type(
   'a list
 )
-"utils.ml" 329 11271 11277 "utils.ml" 329 11271 11278
+"utils.ml" 331 11429 11435 "utils.ml" 331 11429 11436
 type(
   'a
 )
 ident(
-  def x "utils.ml" 329 11271 11285 "utils.ml" 329 11271 11311
+  def x "utils.ml" 331 11429 11443 "utils.ml" 331 11429 11469
 )
-"utils.ml" 329 11271 11282 "utils.ml" 329 11271 11284
+"utils.ml" 331 11429 11440 "utils.ml" 331 11429 11442
 type(
   'a list
 )
 ident(
-  def xs "utils.ml" 329 11271 11285 "utils.ml" 329 11271 11311
+  def xs "utils.ml" 331 11429 11443 "utils.ml" 331 11429 11469
 )
-"utils.ml" 329 11271 11277 "utils.ml" 329 11271 11284
+"utils.ml" 331 11429 11435 "utils.ml" 331 11429 11442
 type(
   'a list
 )
-"utils.ml" 329 11271 11290 "utils.ml" 329 11271 11301
+"utils.ml" 331 11429 11448 "utils.ml" 331 11429 11459
 type(
   ('a, bool) Hashtbl.t -> 'a -> bool
 )
 ident(
   ext_ref Hashtbl.mem
 )
-"utils.ml" 329 11271 11302 "utils.ml" 329 11271 11303
+"utils.ml" 331 11429 11460 "utils.ml" 331 11429 11461
 type(
   ('a, bool) Hashtbl.t
 )
 ident(
-  int_ref h "utils.ml" 326 11185 11191 "utils.ml" 326 11185 11192
+  int_ref h "utils.ml" 328 11343 11349 "utils.ml" 328 11343 11350
 )
-"utils.ml" 329 11271 11304 "utils.ml" 329 11271 11305
+"utils.ml" 331 11429 11462 "utils.ml" 331 11429 11463
 type(
   'a
 )
 ident(
-  int_ref x "utils.ml" 329 11271 11277 "utils.ml" 329 11271 11278
+  int_ref x "utils.ml" 331 11429 11435 "utils.ml" 331 11429 11436
 )
-"utils.ml" 329 11271 11290 "utils.ml" 329 11271 11305
+"utils.ml" 331 11429 11448 "utils.ml" 331 11429 11463
 call(
   stack
 )
 type(
   bool
 )
-"utils.ml" 329 11271 11309 "utils.ml" 329 11271 11311
+"utils.ml" 331 11429 11467 "utils.ml" 331 11429 11469
 type(
   'a list
 )
 ident(
-  int_ref xs "utils.ml" 329 11271 11282 "utils.ml" 329 11271 11284
+  int_ref xs "utils.ml" 331 11429 11440 "utils.ml" 331 11429 11442
 )
-"utils.ml" 329 11271 11285 "utils.ml" 329 11271 11311
+"utils.ml" 331 11429 11443 "utils.ml" 331 11429 11469
 type(
   'a list
 )
-"utils.ml" 330 11312 11318 "utils.ml" 330 11312 11319
+"utils.ml" 332 11470 11476 "utils.ml" 332 11470 11477
 type(
   'a
 )
 ident(
-  def x "utils.ml" 330 11312 11329 "utils.ml" 330 11312 11363
+  def x "utils.ml" 332 11470 11487 "utils.ml" 332 11470 11521
 )
-"utils.ml" 330 11312 11323 "utils.ml" 330 11312 11325
+"utils.ml" 332 11470 11481 "utils.ml" 332 11470 11483
 type(
   'a list
 )
 ident(
-  def xs "utils.ml" 330 11312 11329 "utils.ml" 330 11312 11363
+  def xs "utils.ml" 332 11470 11487 "utils.ml" 332 11470 11521
 )
-"utils.ml" 330 11312 11318 "utils.ml" 330 11312 11325
+"utils.ml" 332 11470 11476 "utils.ml" 332 11470 11483
 type(
   'a list
 )
-"utils.ml" 330 11312 11329 "utils.ml" 330 11312 11340
+"utils.ml" 332 11470 11487 "utils.ml" 332 11470 11498
 type(
   ('a, bool) Hashtbl.t -> 'a -> bool -> unit
 )
 ident(
   ext_ref Hashtbl.add
 )
-"utils.ml" 330 11312 11341 "utils.ml" 330 11312 11342
+"utils.ml" 332 11470 11499 "utils.ml" 332 11470 11500
 type(
   ('a, bool) Hashtbl.t
 )
 ident(
-  int_ref h "utils.ml" 326 11185 11191 "utils.ml" 326 11185 11192
+  int_ref h "utils.ml" 328 11343 11349 "utils.ml" 328 11343 11350
 )
-"utils.ml" 330 11312 11343 "utils.ml" 330 11312 11344
+"utils.ml" 332 11470 11501 "utils.ml" 332 11470 11502
 type(
   'a
 )
 ident(
-  int_ref x "utils.ml" 330 11312 11318 "utils.ml" 330 11312 11319
+  int_ref x "utils.ml" 332 11470 11476 "utils.ml" 332 11470 11477
 )
-"utils.ml" 330 11312 11345 "utils.ml" 330 11312 11349
+"utils.ml" 332 11470 11503 "utils.ml" 332 11470 11507
 type(
   bool
 )
-"utils.ml" 330 11312 11329 "utils.ml" 330 11312 11349
+"utils.ml" 332 11470 11487 "utils.ml" 332 11470 11507
 call(
   stack
 )
 type(
   unit
 )
-"utils.ml" 330 11312 11351 "utils.ml" 330 11312 11352
+"utils.ml" 332 11470 11509 "utils.ml" 332 11470 11510
 type(
   'a
 )
 ident(
-  int_ref x "utils.ml" 330 11312 11318 "utils.ml" 330 11312 11319
+  int_ref x "utils.ml" 332 11470 11476 "utils.ml" 332 11470 11477
 )
-"utils.ml" 330 11312 11356 "utils.ml" 330 11312 11360
+"utils.ml" 332 11470 11514 "utils.ml" 332 11470 11518
 type(
   'a list -> 'a list
 )
 ident(
-  int_ref loop "utils.ml" 327 11230 11240 "utils.ml" 327 11230 11244
+  int_ref loop "utils.ml" 329 11388 11398 "utils.ml" 329 11388 11402
 )
-"utils.ml" 330 11312 11361 "utils.ml" 330 11312 11363
+"utils.ml" 332 11470 11519 "utils.ml" 332 11470 11521
 type(
   'a list
 )
 ident(
-  int_ref xs "utils.ml" 330 11312 11323 "utils.ml" 330 11312 11325
+  int_ref xs "utils.ml" 332 11470 11481 "utils.ml" 332 11470 11483
 )
-"utils.ml" 330 11312 11356 "utils.ml" 330 11312 11363
+"utils.ml" 332 11470 11514 "utils.ml" 332 11470 11521
 call(
   stack
 )
 type(
   'a list
 )
-"utils.ml" 330 11312 11351 "utils.ml" 330 11312 11363
+"utils.ml" 332 11470 11509 "utils.ml" 332 11470 11521
 type(
   'a list
 )
-"utils.ml" 330 11312 11329 "utils.ml" 330 11312 11363
+"utils.ml" 332 11470 11487 "utils.ml" 332 11470 11521
 type(
   'a list
 )
-"utils.ml" 327 11230 11247 "utils.ml" 330 11312 11363
+"utils.ml" 329 11388 11405 "utils.ml" 332 11470 11521
 type(
   'a list -> 'a list
 )
-"utils.ml" 332 11369 11371 "utils.ml" 332 11369 11375
+"utils.ml" 334 11527 11529 "utils.ml" 334 11527 11533
 type(
   'a list -> 'a list
 )
 ident(
-  int_ref loop "utils.ml" 327 11230 11240 "utils.ml" 327 11230 11244
+  int_ref loop "utils.ml" 329 11388 11398 "utils.ml" 329 11388 11402
 )
-"utils.ml" 332 11369 11376 "utils.ml" 332 11369 11378
+"utils.ml" 334 11527 11534 "utils.ml" 334 11527 11536
 type(
   'a list
 )
 ident(
-  int_ref xs "utils.ml" 325 11158 11180 "utils.ml" 325 11158 11182
+  int_ref xs "utils.ml" 327 11316 11338 "utils.ml" 327 11316 11340
 )
-"utils.ml" 332 11369 11371 "utils.ml" 332 11369 11378
+"utils.ml" 334 11527 11529 "utils.ml" 334 11527 11536
 call(
   tail
 )
 type(
   'a list
 )
-"utils.ml" 327 11230 11232 "utils.ml" 332 11369 11378
+"utils.ml" 329 11388 11390 "utils.ml" 334 11527 11536
 type(
   'a list
 )
-"utils.ml" 326 11185 11187 "utils.ml" 332 11369 11378
+"utils.ml" 328 11343 11345 "utils.ml" 334 11527 11536
 type(
   'a list
 )

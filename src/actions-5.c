@@ -149,7 +149,6 @@ guestfs_internal_test_close_output (guestfs_h *g)
 GUESTFS_DLL_PUBLIC int
 guestfs_launch (guestfs_h *g)
 {
-  printf("%s\n", "[franklin] guestfs launch");
   int trace_flag = g->trace;
   struct trace_buffer trace_buffer;
   int r;

@@ -294,7 +294,6 @@ GUESTFS_DLL_PUBLIC int
 guestfs_set_verbose (guestfs_h *g,
                      int verbose)
 {
-  printf("%s\n", "[frankin] set verbose");
   int trace_flag = g->trace;
   struct trace_buffer trace_buffer;
   int r;

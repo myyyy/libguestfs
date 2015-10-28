@@ -24,28 +24,57 @@ open Common_utils
 open Types
 open Utils
 
-class output_everrun domain_path availability = object
+let tmp_output_file = ref "tmp_output.out"
+
+let clean_up () =
+  let cmd = sprintf "rm -rf %s" !tmp_output_file in
+  if Sys.command cmd <> 0 then
+    error (f_"delete temp response file error");
+;;
+
+(* let get_doh_session () =
+  let passwd = match get_everrun_passwd with
+                  | None -> error (f_"No password is found");
+                  | s -> s in
+  let cmd_curl_login = sprintf "curl -s -b cookie_file -c cookie_file -H \"Content-type: text/xml\" -d \"<requests output='XML'><request id='1' target='session'><login><username>root</username><password>%s</password></login></request></requests>\" http://localhost/doh/ > %s" passwd !tmp_output_file in
+  if Sys.command cmd_curl_login <> 0 then
+    error (f_"get doh session failed");
+  let xml = read_whole_file !tmp_output_file in
+  clean_up ();
+  let doc = Xml.parse_memory xml in
+  let xpathctx = Xml.xpath_new_context doc in
+  let xpath_string = xpath_string xpathctx in
+
+  let status = xpath_string "/responses/response/login/@status" in
+  if status <> "ok" then
+    error (f_"login failed");
+;; *)
+
+class output_everrun storage_group availability = object
   inherit output
+
+  val mutable capabilities_doc = None
 
   method as_options =
     printf "[franklin] as options ok";
     match availability with
-    | "FT" -> sprintf "-o everrunft -os %s" domain_path
-    | "HA" -> sprintf "-o everrunha -os %s" domain_path
+    | "FT" -> sprintf "-o everrunft -os %s" storage_group
+    | "HA" -> sprintf "-o everrunha -os %s" storage_group
     | s ->
       error (f_"unknown -os option: %s") s
 
   method supported_firmware = [ TargetBIOS; TargetUEFI ]
-  method get_class_name = "output_everrun"
-  method prepare_targets source targets =
 
-    printf "[franklin] prepare targets ok";
+  method prepare_targets source targets =
+    (* capabilities_doc <- Some doc; *)
+ (*    let cmd = sprintf "curl http://localhost:8999 > /home/franklin/temp/response.xml" in
+    if Sys.command cmd <> 0 then
+      error (f_"get response error"); *)
     List.map (
       fun t ->
-        let target_file = domain_path // source.s_name ^ "-" ^ t.target_overlay.ov_sd in
+        let target_file = source.s_name ^ "-" ^ t.target_overlay.ov_sd in
         { t with target_file = target_file }
     ) targets
-    (* 1. check whether the domain exists *)
 
   method create_metadata source _ target_buses guestcaps _ target_firmware =
     printf "[franklin] create_metadata ok";
@@ -63,7 +92,7 @@ class output_everrun domain_path availability = object
         guestcaps target_features target_firmware in
 
     let name = source.s_name in
-    let file = domain_path // name ^ ".xml" in
+    let file = storage_group // name ^ ".xml" in
 
     let chan = open_out file in
     DOM.doc_to_chan chan doc;

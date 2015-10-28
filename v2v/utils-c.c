@@ -22,7 +22,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-#include <ctype.h>
 
 #include <caml/alloc.h>
 #include <caml/fail.h>
@@ -31,6 +30,7 @@
 
 #include "guestfs.h"
 #include "guestfs-internal-frontend.h"
+#include "everrun_utils.h"
 
 #pragma GCC diagnostic ignored "-Wmissing-prototypes"
 
@@ -67,30 +67,31 @@ v2v_utils_trim (value origin)
   CAMLlocal1 (modified_str);
   char result[strlen(String_val (origin))];
 
-  trim(String_val (origin), result);
+  everrun_trim(String_val (origin), result);
   modified_str = caml_copy_string (result);
 
   CAMLreturn (modified_str);
 }
 
-void
-trim(char* origin, char *result)
+value
+v2v_utils_get_everrun_obj_id (value mixed_id)
 {
-    int i = 0;
-    int len = strlen(origin);
-    int j = len - 1;
-    int pos = 0;
+  CAMLparam1 (mixed_id);
+  CAMLlocal1 (id);
+  char result[strlen(String_val (mixed_id))];
 
-    while (origin[i] != '\0' && isspace(origin[i]))
-    {
-        ++i;
-    }
-    while (origin[j] != '\0' && isspace(origin[j]))
-    {
-        --j;
-    }
-    while (i <= j)
-    {
-        result[pos++] = origin[i++];
-    }
+  get_everrun_obj_id(String_val (mixed_id), result);
+  id = caml_copy_string (result);
+
+  CAMLreturn (id);
+}
+
+value
+v2v_utils_get_everrun_passwd (value unit)
+{
+  CAMLlocal1 (passwd);
+
+  char *passwd_r = get_everrun_passwd();
+  passwd = caml_copy_string (passwd_r);
+  CAMLreturn (passwd);
 }

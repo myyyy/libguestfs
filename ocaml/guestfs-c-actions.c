@@ -1298,8 +1298,6 @@ ocaml_guestfs_add_drive (value gv, value readonlyv, value formatv, value ifacev,
   CAMLxparam4 (cachemodev, discardv, copyonreadv, filenamev);
   CAMLlocal1 (rv);
 
-  printf("%s\n", "[franklin] ocaml add drive");
-
   guestfs_h *g = Guestfs_val (gv);
   if (g == NULL)
     ocaml_guestfs_raise_closed ("add_drive");
@@ -2456,7 +2454,6 @@ value ocaml_guestfs_blockdev_getsize64 (value gv, value devicev);
 value
 ocaml_guestfs_blockdev_getsize64 (value gv, value devicev)
 {
-  printf("%s\n", "[franklin] ocaml_guestfs_blockdev_getsize64");
   CAMLparam2 (gv, devicev);
   CAMLlocal1 (rv);
 
@@ -11345,7 +11342,7 @@ ocaml_guestfs_launch (value gv)
 {
   CAMLparam1 (gv);
   CAMLlocal1 (rv);
-  printf("%s\n", "[franklin] ocaml guestfs launch");
+
   guestfs_h *g = Guestfs_val (gv);
   if (g == NULL)
     ocaml_guestfs_raise_closed ("launch");

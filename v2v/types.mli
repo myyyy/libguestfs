@@ -227,7 +227,6 @@ end
 
 class virtual output : object
   method virtual as_options : string
-  method get_class_name : string
   (** Converts the output object back to the equivalent command line options.
       This is just used for pretty-printing log messages. *)
   method virtual prepare_targets : source -> target list -> target list

@@ -665,7 +665,6 @@ GUESTFS_DLL_PUBLIC int
 guestfs_set_network (guestfs_h *g,
                      int network)
 {
-  printf("%s\n", "[franklin] set network");
   int trace_flag = g->trace;
   struct trace_buffer trace_buffer;
   int r;

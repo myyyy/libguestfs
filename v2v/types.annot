@@ -2735,53 +2735,46 @@ type(
 type(
   unit
 )
-"types.ml" 392 10430 10456 "types.ml" 392 10430 10458
-type(
-  string
-)
-type(
-  string
-)
-"types.ml" 395 10590 10622 "types.ml" 395 10590 10623
+"types.ml" 394 10561 10593 "types.ml" 394 10561 10594
 type(
   guestcaps
 )
-"types.ml" 395 10590 10638 "types.ml" 395 10590 10639
+"types.ml" 394 10561 10609 "types.ml" 394 10561 10610
 type(
   target_firmware
 )
-"types.ml" 395 10590 10661 "types.ml" 395 10590 10663
+"types.ml" 394 10561 10632 "types.ml" 394 10561 10634
 type(
   unit
 )
-"types.ml" 396 10664 10698 "types.ml" 396 10664 10699
+"types.ml" 395 10635 10669 "types.ml" 395 10635 10670
 type(
   source
 )
-"types.ml" 396 10664 10711 "types.ml" 396 10664 10712
+"types.ml" 395 10635 10682 "types.ml" 395 10635 10683
 type(
   target list
 )
-"types.ml" 396 10664 10730 "types.ml" 396 10664 10732
+"types.ml" 395 10635 10701 "types.ml" 395 10635 10703
 type(
   unit
 )
-"types.ml" 397 10733 10757 "types.ml" 397 10733 10776
+"types.ml" 396 10704 10728 "types.ml" 396 10704 10747
 type(
   ?environment:bool -> ?close_on_exit:bool -> unit -> Guestfs.guestfs
 )
-"types.ml" 397 10733 10777 "types.ml" 397 10733 10779
+"types.ml" 396 10704 10748 "types.ml" 396 10704 10750
 type(
   unit
 )
-"types.ml" 397 10733 10756 "types.ml" 397 10733 10780
+"types.ml" 396 10704 10727 "types.ml" 396 10704 10751
 call(
   stack
 )
 type(
   Guestfs.guestfs
 )
-"types.ml" 397 10733 10756 "types.ml" 397 10733 10792
+"types.ml" 396 10704 10727 "types.ml" 396 10704 10763
 call(
   tail
 )
@@ -2797,7 +2790,7 @@ type(
   ?preallocation:string ->
   ?compat:string -> ?clustersize:int -> string -> string -> int64 -> unit
 )
-"types.ml" 399 10917 10948 "types.ml" 399 10917 10952
+"types.ml" 398 10888 10919 "types.ml" 398 10888 10923
 type(
   bool
 )

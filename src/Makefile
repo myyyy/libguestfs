@@ -344,7 +344,8 @@ libprotocol_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
 	$@
 libutils_la_LIBADD =
 am_libutils_la_OBJECTS = libutils_la-cleanup.lo \
-	libutils_la-structs-cleanup.lo libutils_la-utils.lo
+	libutils_la-structs-cleanup.lo libutils_la-utils.lo \
+	libutils_la-everrun_utils.lo
 libutils_la_OBJECTS = $(am_libutils_la_OBJECTS)
 libutils_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(libutils_la_CFLAGS) \
@@ -1575,6 +1576,7 @@ libguestfs_la_SOURCES = \
 	guestfs-internal-frontend.h \
 	guestfs-internal-frontend-cleanups.h \
 	guestfs_protocol.h \
+	everrun_utils.h \
 	actions-0.c \
 	actions-1.c \
 	actions-2.c \
@@ -1681,7 +1683,8 @@ RPCGEN_DEFS = $(am__append_3) $(am__append_4)
 libutils_la_SOURCES = \
 	cleanup.c \
 	structs-cleanup.c \
-	utils.c
+	utils.c \
+	everrun_utils.c
 
 libutils_la_CPPFLAGS = $(libguestfs_la_CPPFLAGS)
 libutils_la_CFLAGS = $(libguestfs_la_CFLAGS)
@@ -1900,6 +1903,7 @@ include ./$(DEPDIR)/libguestfs_la-tmpdirs.Plo
 include ./$(DEPDIR)/libguestfs_la-whole-file.Plo
 include ./$(DEPDIR)/libprotocol_la-guestfs_protocol.Plo
 include ./$(DEPDIR)/libutils_la-cleanup.Plo
+include ./$(DEPDIR)/libutils_la-everrun_utils.Plo
 include ./$(DEPDIR)/libutils_la-structs-cleanup.Plo
 include ./$(DEPDIR)/libutils_la-utils.Plo
 include ./$(DEPDIR)/libvirt_is_version-libvirt-is-version.Po
@@ -2355,6 +2359,13 @@ libutils_la-utils.lo: utils.c
 #	$(AM_V_CC)source='utils.c' object='libutils_la-utils.lo' libtool=yes \
 #	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
 #	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libutils_la_CPPFLAGS) $(CPPFLAGS) $(libutils_la_CFLAGS) $(CFLAGS) -c -o libutils_la-utils.lo `test -f 'utils.c' || echo '$(srcdir)/'`utils.c
+
+libutils_la-everrun_utils.lo: everrun_utils.c
+	$(AM_V_CC)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libutils_la_CPPFLAGS) $(CPPFLAGS) $(libutils_la_CFLAGS) $(CFLAGS) -MT libutils_la-everrun_utils.lo -MD -MP -MF $(DEPDIR)/libutils_la-everrun_utils.Tpo -c -o libutils_la-everrun_utils.lo `test -f 'everrun_utils.c' || echo '$(srcdir)/'`everrun_utils.c
+	$(AM_V_at)$(am__mv) $(DEPDIR)/libutils_la-everrun_utils.Tpo $(DEPDIR)/libutils_la-everrun_utils.Plo
+#	$(AM_V_CC)source='everrun_utils.c' object='libutils_la-everrun_utils.lo' libtool=yes \
+#	DEPDIR=$(DEPDIR) $(CCDEPMODE) $(depcomp) \
+#	$(AM_V_CC_no)$(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=compile $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libutils_la_CPPFLAGS) $(CPPFLAGS) $(libutils_la_CFLAGS) $(CFLAGS) -c -o libutils_la-everrun_utils.lo `test -f 'everrun_utils.c' || echo '$(srcdir)/'`everrun_utils.c
 
 libvirt_is_version-libvirt-is-version.o: libvirt-is-version.c
 	$(AM_V_CC)$(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(libvirt_is_version_CPPFLAGS) $(CPPFLAGS) $(libvirt_is_version_CFLAGS) $(CFLAGS) -MT libvirt_is_version-libvirt-is-version.o -MD -MP -MF $(DEPDIR)/libvirt_is_version-libvirt-is-version.Tpo -c -o libvirt_is_version-libvirt-is-version.o `test -f 'libvirt-is-version.c' || echo '$(srcdir)/'`libvirt-is-version.c

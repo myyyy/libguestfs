@@ -44,14 +44,16 @@ let print_mpstat chan { mp_dev = dev; mp_path = path;
 let () = Random.self_init ()
 
 let parse_xml_test xml os host_name =
-  printf "[franklin] begin to parse xml\n";
-  printf "[frankin] get os => %s\n" os;
-  printf "[frankin] get host_name => %s\n" host_name;
+  printf "[franklin][parse_xml_test] begin to parse xml\n";
+  printf "[franklin][parse_xml_test] get os => %s\n" os;
+  printf "[franklin][parse_xml_test] get host_name => %s\n" host_name;
+
   let doc = Xml.parse_memory xml in
   let xpathctx = Xml.xpath_new_context doc in
   let xpath_string = xpath_string xpathctx in
 (*   and xpath_int = xpath_int xpathctx
   and xpath_int_default = xpath_int_default xpathctx in *)
+  let storage_group_id = ref "" in
   let obj = Xml.xpath_eval_expression xpathctx
     "/responses/response/output/storagegroup" in
   let nr_nodes = Xml.xpathobj_nr_nodes obj in
@@ -68,22 +70,49 @@ let parse_xml_test xml os host_name =
         | None -> ""
         | Some sname -> (string_trim sname)
       in
-      let test_name = "    Hello World     " in
-      printf "####%s#####\n" (string_trim test_name);
       printf "#########################\n";
       printf "[franklin] current storage name is %s\n" storage_group_name_temp;
       printf "#########################\n";
 
       if storage_group_name_temp = os then (
         storage_group_name := storage_group_name_temp;
+        let full_id = match xpath_string "@id" with
+                      | None -> ""
+                      | Some fid -> (string_trim fid) in
+        printf "[franklin] full_id=%s\n" full_id;
+        storage_group_id := get_everrun_obj_id full_id;
         found_sg := true;
       )
     )
   done;
-  printf "find storage group end\n";
-  printf "The storage_group_name is %s\n" !storage_group_name;
+  printf "[franklin] find storage group end\n";
+  printf "[franklin] The storage_group_name is %s\n" !storage_group_name;
   if !storage_group_name <> os then
     error (f_"there is no storage group match name in the everrun system");
+
+  printf "[franklin] storage_group_id=%s\n" !storage_group_id;
+  let obj = Xml.xpath_eval_expression xpathctx
+    "/responses/response/output/localvirtualmachine" in
+  let nr_nodes = Xml.xpathobj_nr_nodes obj in
+  if nr_nodes > 0 then
+    for i = 0 to nr_nodes-1 do
+        let node = Xml.xpathobj_node obj i in
+        Xml.xpathctx_set_current_context xpathctx node;
+        let domain_name =
+          match xpath_string "name" with
+          | None -> ""
+          | Some sname -> (string_trim sname)
+        in
+        printf "#########################\n";
+        printf "[franklin] current domain name is %s\n" domain_name;
+        printf "#########################\n";
+        if domain_name = host_name then (
+
+          error (f_"A domain with the same name has already exist in the system");
+        )
+    done;
+
+
   !storage_group_name;
   ;;
 
@@ -94,21 +123,22 @@ let rec main () =
     debug_overlays, do_copy, network_map, no_trim,
     output_alloc, output_format, output_name, print_source, root_choice =
     Cmdline.parse_cmdline () in
-printf "[franklin] get cmd, output type is %s\n" output#get_class_name;
-
-
+let passwd = match get_everrun_passwd with
+                  | "" -> error (f_"No password is found");
+                  | s -> s in
+printf "[franklin] password is %s\n" passwd;
 printf "[franklin] ========= Test XML BEGIN =========\n";
-let cmd = sprintf "curl http://localhost:8999 > /home/franklin/temp/response.xml" in
+let cmd = sprintf "curl http://localhost:8999 > response.xml" in
 if Sys.command cmd <> 0 then
   error (f_"get response error");
-let file = "/home/franklin/temp/response.xml" in
+let file = "response.xml" in
 let xml = read_whole_file file in
-let cmd = sprintf "rm -rf /home/franklin/temp/response.xml" in
+(* let cmd = sprintf "rm -rf /home/franklin/temp/response.xml" in
 if Sys.command cmd <> 0 then
-  error (f_"delete temp response file error");
+  error (f_"delete temp response file error"); *)
 (* printf "libvirt xml is:\n%s\n" xml; *)
-let os = "Initial Storage Group" in
-let host_name = "test" in
+let os = "test1" in
+let host_name = "myanmar4" in
 let my_result = parse_xml_test xml os host_name in
 printf "[franklin] get the result storage group name %s\n" my_result;
 
@@ -123,7 +153,11 @@ printf "[franklin] ========= Test XML END =========\n";
   message (f_"Opening the source %s") input#as_options;
   printf "[franklin] Opening the source\n";
   let source = input#source () in
-  printf "[franklin] source => %s\n" (string_of_source source);
+  printf "#################print source start######################\n";
+  printf "[franklin] source =>\n%s\n" (string_of_source source);
+  printf "#################print source end######################\n";
+  printf "[franklin] print source detail\n";
+  printf "[franklin] domain name = %s \n" source.s_name;
   printf "[franklin] print source finished\n";
 
   (* Print source and stop. *)

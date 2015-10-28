@@ -389,7 +389,6 @@ end
 
 class virtual output = object
   method virtual as_options : string
-  method get_class_name = ""
   method virtual prepare_targets : source -> target list -> target list
   method virtual supported_firmware : target_firmware list
   method check_target_firmware (_ : guestcaps) (_ : target_firmware) = ()
