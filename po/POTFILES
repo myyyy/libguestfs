@@ -278,6 +278,7 @@ p2v/ssh.c
 p2v/utils.c
 perl/Guestfs.c
 perl/bindtests.pl
+perl/lib/Sys/Guestfs.c
 perl/lib/Sys/Guestfs.pm
 php/extension/guestfs_php.c
 python/guestfs-py-byhand.c

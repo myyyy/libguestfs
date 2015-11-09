@@ -1,0 +1,8 @@
+do{ my $x = {
+  'blib/arch/auto/Sys/Guestfs/Guestfs.bs' => 1,
+  'lib/Sys/Guestfs.o' => 1,
+  'blib/arch/auto/Sys/Guestfs/Guestfs.so' => 1,
+  'lib/Sys/Guestfs.c' => 1,
+  'blib' => 1
+};
+$x; }

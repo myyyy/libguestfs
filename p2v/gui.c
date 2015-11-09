@@ -40,7 +40,7 @@
 #include "p2v.h"
 
 /* Interactive GUI configuration. */
-
+static void group_change();
 static void create_connection_dialog (struct config *);
 static void create_conversion_dialog (struct config *);
 static void create_running_dialog (void);
@@ -49,7 +49,9 @@ static void show_conversion_dialog (void);
 static void show_running_dialog (void);
 
 static void set_info_label (void);
-
+int is_hide = 0;
+static GtkWidget *combo;
+CLEANUP_FREE char *combo_group;
 /* The connection dialog. */
 static GtkWidget *conn_dlg,
   *server_entry, *port_entry,
@@ -310,7 +312,7 @@ test_connection_thread (void *data)
 {
   struct config *copy = data;
   int r;
-
+  // hide port box test [ia]ngtk_widget_hide(port_entry);
   gdk_threads_enter ();
   gtk_label_set_text (GTK_LABEL (spinner_message),
                       _("Testing the connection to the conversion server ..."));
@@ -323,7 +325,7 @@ test_connection_thread (void *data)
 
   gdk_threads_enter ();
   gtk_spinner_stop (GTK_SPINNER (spinner));
-
+  r=1;
   if (r == -1) {
     /* Error testing the connection. */
     const char *err = get_ssh_error ();
@@ -380,7 +382,7 @@ connection_next_clicked (GtkWidget *w, gpointer data)
 
 /*----------------------------------------------------------------------*/
 /* Conversion dialog. */
-
+static void group_clicked (GtkWidget * widget, gchar *path_str, gpointer data);
 static void populate_disks (GtkTreeView *disks_list);
 static void populate_removable (GtkTreeView *removable_list);
 static void populate_interfaces (GtkTreeView *interfaces_list);
@@ -395,6 +397,7 @@ static void vcpus_or_memory_check_callback (GtkWidget *w, gpointer data);
 static void notify_ui_callback (int type, const char *data);
 static int get_vcpus_from_conv_dlg (void);
 static uint64_t get_memory_from_conv_dlg (void);
+static void output_clicked(GtkWidget *w, gpointer data);
 
 enum {
   DISKS_COL_CONVERT = 0,
@@ -402,6 +405,7 @@ enum {
   DISKS_COL_SIZE,
   DISKS_COL_MODEL,
   NUM_DISKS_COLS,
+  DISKS_COL_GROUP,
 };
 
 enum {
@@ -649,8 +653,13 @@ create_conversion_dialog (struct config *config)
   start_button = gtk_dialog_get_widget_for_response (GTK_DIALOG (conv_dlg), 2);
 
   /* Signals. */
+
   g_signal_connect_swapped (G_OBJECT (conv_dlg), "destroy",
                             G_CALLBACK (gtk_main_quit), NULL);
+  /*New signal -> output changed. Author:Ian*/
+  g_signal_connect (G_OBJECT (o_combo), "changed",
+                    G_CALLBACK (output_clicked),config);
+
   g_signal_connect (G_OBJECT (back), "clicked",
                     G_CALLBACK (conversion_back_clicked), NULL);
   g_signal_connect (G_OBJECT (start_button), "clicked",
@@ -660,6 +669,27 @@ create_conversion_dialog (struct config *config)
   g_signal_connect (G_OBJECT (memory_entry), "changed",
                     G_CALLBACK (vcpus_or_memory_check_callback), NULL);
 }
+/*Author:Ian*/
+static void
+output_clicked(GtkWidget *w, gpointer data){
+  struct config *config = data;
+  CLEANUP_FREE char *test;
+
+  test = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (o_combo));
+
+  if (test == NULL || STREQ (test, "everrunft") ||STREQ (test, "everrunha")) {
+
+    gtk_entry_set_text (GTK_ENTRY (os_entry), "");
+    gtk_editable_set_editable(GTK_EDITABLE(os_entry), FALSE);
+    gtk_widget_set_sensitive (os_entry, FALSE);
+  }
+  else {
+    gtk_editable_set_editable(GTK_EDITABLE(os_entry), TRUE);
+    gtk_widget_set_sensitive (os_entry, TRUE);
+    gtk_entry_set_text (GTK_ENTRY (os_entry), config->output_storage);
+  }
+}
+
 
 static void
 show_conversion_dialog (void)
@@ -695,7 +725,6 @@ set_info_label (void)
     perror ("asprintf");
     return;
   }
-
   gtk_label_set_text (GTK_LABEL (info_label), text);
 }
 
@@ -723,13 +752,20 @@ repopulate_output_combo (struct config *config)
     gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (o_combo), "libvirt");
     gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (o_combo), "local");
     gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (o_combo), "rhev");
+    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (o_combo), "everrunha");
+    gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (o_combo), "everrunft");
     if (output == NULL || STREQ (output, "libvirt"))
       gtk_combo_box_set_active (GTK_COMBO_BOX (o_combo), 0);
     else if (STREQ (output, "local"))
       gtk_combo_box_set_active (GTK_COMBO_BOX (o_combo), 1);
     else if (STREQ (output, "rhev"))
       gtk_combo_box_set_active (GTK_COMBO_BOX (o_combo), 2);
-  }
+    else if (STREQ (output, "everRunHA")){
+      gtk_combo_box_set_active (GTK_COMBO_BOX (o_combo), 3);
+    }
+    else if (STREQ (output, "everRunFT"))
+      gtk_combo_box_set_active (GTK_COMBO_BOX (o_combo), 4);
+    }
   /* List of -o options read from remote virt-v2v --machine-readable. */
   else {
     for (i = 0; output_drivers[i] != NULL; ++i)
@@ -743,6 +779,7 @@ repopulate_output_combo (struct config *config)
     else
       gtk_combo_box_set_active (GTK_COMBO_BOX (o_combo), 0);
   }
+
 }
 
 static void
@@ -750,7 +787,7 @@ populate_disks (GtkTreeView *disks_list)
 {
   GtkListStore *disks_store;
   GtkCellRenderer *disks_col_convert, *disks_col_device,
-    *disks_col_size, *disks_col_model;
+    *disks_col_size, *disks_col_model, *disk_col_group;
   GtkTreeIter iter;
   size_t i;
 
@@ -764,6 +801,7 @@ populate_disks (GtkTreeView *disks_list)
       CLEANUP_FREE char *size_str = NULL;
       CLEANUP_FREE char *size_gb = NULL;
       CLEANUP_FREE char *model = NULL;
+      // CLEANUP_FREE char *group = NULL;
       uint64_t size;
 
       if (asprintf (&size_filename, "/sys/block/%s/size",
@@ -800,6 +838,7 @@ populate_disks (GtkTreeView *disks_list)
                           DISKS_COL_DEVICE, all_disks[i],
                           DISKS_COL_SIZE, size_gb,
                           DISKS_COL_MODEL, model,
+                          // DISKS_COL_GROUP, model,
                           -1);
     }
   }
@@ -808,37 +847,129 @@ populate_disks (GtkTreeView *disks_list)
   gtk_tree_view_set_headers_visible (disks_list, TRUE);
   disks_col_convert = gtk_cell_renderer_toggle_new ();
   gtk_tree_view_insert_column_with_attributes (disks_list,
-                                               -1,
+                                               0,
                                                _("Convert"),
                                                disks_col_convert,
                                                "active", DISKS_COL_CONVERT,
                                                NULL);
   disks_col_device = gtk_cell_renderer_text_new ();
   gtk_tree_view_insert_column_with_attributes (disks_list,
-                                               -1,
+                                               1,
                                                _("Device"),
                                                disks_col_device,
                                                "text", DISKS_COL_DEVICE,
                                                NULL);
   disks_col_size = gtk_cell_renderer_text_new ();
   gtk_tree_view_insert_column_with_attributes (disks_list,
-                                               -1,
+                                               2,
                                                _("Size (GB)"),
                                                disks_col_size,
                                                "text", DISKS_COL_SIZE,
                                                NULL);
   disks_col_model = gtk_cell_renderer_text_new ();
   gtk_tree_view_insert_column_with_attributes (disks_list,
-                                               -1,
+                                               3,
                                                _("Model"),
                                                disks_col_model,
                                                "text", DISKS_COL_MODEL,
                                                NULL);
 
+
+   /*New treeList for disk group. Author:Ian*/
+  disk_col_group = gtk_cell_renderer_text_new ();
+  gtk_tree_view_insert_column_with_attributes (disks_list,
+                                               4,
+                                               _("Group"),
+                                               disk_col_group,
+                                               "text", DISKS_COL_MODEL,
+                                               NULL);
+
+  GtkTreeSelection *selection = gtk_tree_view_get_selection(GTK_TREE_VIEW(disks_list));
+  g_signal_connect(G_OBJECT(selection), "changed",G_CALLBACK(group_clicked), disks_list);
+
   g_signal_connect (disks_col_convert, "toggled",
                     G_CALLBACK (toggled), disks_store);
+
 }
 
+/*Author:Ian*/
+static void
+group_clicked (GtkWidget * widget, gchar *path_str, gpointer data)
+{
+    GtkWidget *dialog;
+    GtkWidget *device_name;
+    GtkWidget *table;
+    GtkTreeIter iter;
+    GtkTreeModel *model;
+    gint result;
+    char *value;
+    GtkTreeModel *model_iter = data;
+    GtkTreePath *path;
+    if (gtk_tree_selection_get_selected(GTK_TREE_SELECTION(widget), &model, &iter)) {
+        gtk_tree_model_get(model, &iter, DISKS_COL_DEVICE, &value, -1);
+    }
+
+    dialog = gtk_dialog_new_with_buttons("Choose Storage Group",conv_dlg,
+                                         GTK_DIALOG_MODAL,
+                                         GTK_STOCK_CANCEL,GTK_RESPONSE_CANCEL,
+                                         GTK_STOCK_OK,GTK_RESPONSE_OK,
+                                         NULL);
+    gtk_window_set_position(GTK_WINDOW(dialog),GTK_WIN_POS_CENTER);
+    gtk_window_set_resizable(dialog,FALSE);
+    gtk_dialog_set_default_response(GTK_DIALOG(dialog),GTK_RESPONSE_OK);
+
+    device_name = gtk_label_new (_(value));
+    combo = gtk_combo_box_text_new();
+    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
+                                   "Initial Storage Group");
+    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
+                                   "Initial Storage two");
+    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
+                                   "Initial Storage three");
+
+    gtk_combo_box_set_active(combo, 0);
+    g_signal_connect (G_OBJECT (combo), "changed",
+                    G_CALLBACK (group_change),NULL);
+
+    table = gtk_table_new(4,2,FALSE);
+    gtk_table_attach_defaults(GTK_TABLE(table),device_name,0,1,0,1);
+    gtk_table_attach_defaults(GTK_TABLE(table),combo,1,2,0,1);
+    gtk_table_set_row_spacings(GTK_TABLE(table),5);
+    gtk_table_set_col_spacings(GTK_TABLE(table),5);
+    gtk_container_set_border_width(GTK_CONTAINER(table),5);
+    gtk_box_pack_start_defaults(GTK_BOX(GTK_DIALOG(dialog)->vbox),table);
+    gtk_widget_show_all(dialog);
+    result = gtk_dialog_run(GTK_DIALOG(dialog));
+
+    gtk_widget_destroy(dialog);
+
+    switch(result){
+      case GTK_RESPONSE_CANCEL:
+        break;
+      case GTK_RESPONSE_OK:
+        path = gtk_tree_path_new_from_string (path_str);
+        gtk_tree_model_get_iter (model_iter, &iter, path);
+        if(combo_group == NULL){
+          gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+                      DISKS_COL_MODEL, "Initial Storage Group", 4);
+          combo_group = NULL;
+        }else{
+          gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+                      DISKS_COL_MODEL, combo_group, 4);
+          combo_group = NULL;
+        }
+        break;
+    }
+    g_free(value);
+}
+
+/*Author:Ian*/
+static void
+group_change(){
+  combo_group = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (combo));
+  printf("%s\n",combo_group);
+
+}
 static void
 populate_removable (GtkTreeView *removable_list)
 {
@@ -1359,6 +1490,7 @@ start_conversion_clicked (GtkWidget *w, gpointer data)
 
   /* Unpack dialog fields and check them. */
   free (config->guestname);
+
   config->guestname = strdup (gtk_entry_get_text (GTK_ENTRY (guestname_entry)));
 
   if (STREQ (config->guestname, "")) {
