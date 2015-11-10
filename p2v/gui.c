@@ -382,7 +382,8 @@ connection_next_clicked (GtkWidget *w, gpointer data)
 
 /*----------------------------------------------------------------------*/
 /* Conversion dialog. */
-static void group_clicked (GtkWidget * widget, gchar *path_str, gpointer data);
+static void group_clicked (GtkWidget * widget, GtkTreePath *path,
+                      GtkTreeViewColumn *col, gpointer data);
 static void populate_disks (GtkTreeView *disks_list);
 static void populate_removable (GtkTreeView *removable_list);
 static void populate_interfaces (GtkTreeView *interfaces_list);
@@ -884,9 +885,8 @@ populate_disks (GtkTreeView *disks_list)
                                                "text", DISKS_COL_MODEL,
                                                NULL);
 
-  GtkTreeSelection *selection = gtk_tree_view_get_selection(GTK_TREE_VIEW(disks_list));
-  g_signal_connect(G_OBJECT(selection), "changed",G_CALLBACK(group_clicked), disks_list);
-
+  // GtkTreeSelection *selection = gtk_tree_view_get_selection(GTK_TREE_VIEW(disks_list));
+  g_signal_connect(disks_list, "row-activated",G_CALLBACK(group_clicked), disks_list);
   g_signal_connect (disks_col_convert, "toggled",
                     G_CALLBACK (toggled), disks_store);
 
@@ -894,7 +894,8 @@ populate_disks (GtkTreeView *disks_list)
 
 /*Author:Ian*/
 static void
-group_clicked (GtkWidget * widget, gchar *path_str, gpointer data)
+group_clicked (GtkWidget * widget, GtkTreePath *path,
+                      GtkTreeViewColumn *col, gpointer data)
 {
     GtkWidget *dialog;
     GtkWidget *device_name;
@@ -904,8 +905,8 @@ group_clicked (GtkWidget * widget, gchar *path_str, gpointer data)
     gint result;
     char *value;
     GtkTreeModel *model_iter = data;
-    GtkTreePath *path;
-    if (gtk_tree_selection_get_selected(GTK_TREE_SELECTION(widget), &model, &iter)) {
+    model =  model = gtk_tree_view_get_model(widget);
+    if (gtk_tree_model_get_iter(model, &iter, path)) {
         gtk_tree_model_get(model, &iter, DISKS_COL_DEVICE, &value, -1);
     }
 
@@ -947,15 +948,13 @@ group_clicked (GtkWidget * widget, gchar *path_str, gpointer data)
       case GTK_RESPONSE_CANCEL:
         break;
       case GTK_RESPONSE_OK:
-        path = gtk_tree_path_new_from_string (path_str);
-        gtk_tree_model_get_iter (model_iter, &iter, path);
         if(combo_group == NULL){
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-                      DISKS_COL_MODEL, "Initial Storage Group", 4);
+                      DISKS_COL_MODEL, "Initial Storage Group", -1);
           combo_group = NULL;
         }else{
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-                      DISKS_COL_MODEL, combo_group, 4);
+                      DISKS_COL_MODEL, combo_group, -1);
           combo_group = NULL;
         }
         break;
@@ -967,8 +966,6 @@ group_clicked (GtkWidget * widget, gchar *path_str, gpointer data)
 static void
 group_change(){
   combo_group = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (combo));
-  printf("%s\n",combo_group);
-
 }
 static void
 populate_removable (GtkTreeView *removable_list)
