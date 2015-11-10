@@ -378,6 +378,8 @@ connection_next_clicked (GtkWidget *w, gpointer data)
 {
   /* Switch to the conversion dialog. */
   show_conversion_dialog ();
+  get_group_name();
+  get_network_name();
 }
 
 /*----------------------------------------------------------------------*/

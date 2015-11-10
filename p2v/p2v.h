@@ -51,7 +51,8 @@
 extern char **all_disks;
 extern char **all_removable;
 extern char **all_interfaces;
-
+extern char **group_name;
+extern char **network_name;
 /* config.c */
 struct config {
   int verbose;
@@ -83,6 +84,8 @@ struct config {
 #define OUTPUT_ALLOCATION_SPARSE       1
 #define OUTPUT_ALLOCATION_PREALLOCATED 2
 
+extern void get_group_name(void);
+extern void get_network_name(void);
 extern struct config *new_config (void);
 extern struct config *copy_config (struct config *);
 extern void free_config (struct config *);
