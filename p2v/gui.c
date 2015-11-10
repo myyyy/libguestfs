@@ -40,7 +40,7 @@
 #include "p2v.h"
 
 /* Interactive GUI configuration. */
-static void group_change();
+static void group_or_network_changed();
 static void create_connection_dialog (struct config *);
 static void create_conversion_dialog (struct config *);
 static void create_running_dialog (void);
@@ -388,7 +388,7 @@ static void populate_disks (GtkTreeView *disks_list);
 static void populate_removable (GtkTreeView *removable_list);
 static void populate_interfaces (GtkTreeView *interfaces_list);
 static void toggled (GtkCellRendererToggle *cell, gchar *path_str, gpointer data);
-static void network_edited_callback (GtkCellRendererToggle *cell, gchar *path_str, gchar *new_text, gpointer data);
+static void network_clicked (GtkWidget * widget, GtkTreePath *path,GtkTreeViewColumn *col, gpointer data);
 static void set_disks_from_ui (struct config *);
 static void set_removable_from_ui (struct config *);
 static void set_interfaces_from_ui (struct config *);
@@ -874,8 +874,6 @@ populate_disks (GtkTreeView *disks_list)
                                                disks_col_model,
                                                "text", DISKS_COL_MODEL,
                                                NULL);
-
-
    /*New treeList for disk group. Author:Ian*/
   disk_col_group = gtk_cell_renderer_text_new ();
   gtk_tree_view_insert_column_with_attributes (disks_list,
@@ -885,7 +883,6 @@ populate_disks (GtkTreeView *disks_list)
                                                "text", DISKS_COL_MODEL,
                                                NULL);
 
-  // GtkTreeSelection *selection = gtk_tree_view_get_selection(GTK_TREE_VIEW(disks_list));
   g_signal_connect(disks_list, "row-activated",G_CALLBACK(group_clicked), disks_list);
   g_signal_connect (disks_col_convert, "toggled",
                     G_CALLBACK (toggled), disks_store);
@@ -930,7 +927,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
 
     gtk_combo_box_set_active(combo, 0);
     g_signal_connect (G_OBJECT (combo), "changed",
-                    G_CALLBACK (group_change),NULL);
+                    G_CALLBACK (group_or_network_changed),NULL);
 
     table = gtk_table_new(4,2,FALSE);
     gtk_table_attach_defaults(GTK_TABLE(table),device_name,0,1,0,1);
@@ -962,9 +959,9 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     g_free(value);
 }
 
-/*Author:Ian*/
+/* Author:Ian*/
 static void
-group_change(){
+group_or_network_changed(){
   combo_group = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (combo));
 }
 static void
@@ -1082,10 +1079,9 @@ populate_interfaces (GtkTreeView *interfaces_list)
 
   g_signal_connect (interfaces_col_convert, "toggled",
                     G_CALLBACK (toggled), interfaces_store);
-
-  g_object_set (interfaces_col_network, "editable", TRUE, NULL);
-  g_signal_connect (interfaces_col_network, "edited",
-                    G_CALLBACK (network_edited_callback), interfaces_store);
+  /*Author:Ian*/
+  g_signal_connect(interfaces_list, "row-activated",
+                    G_CALLBACK(network_clicked), interfaces_list);
 }
 
 static void
@@ -1102,24 +1098,77 @@ toggled (GtkCellRendererToggle *cell, gchar *path_str, gpointer data)
   gtk_list_store_set (GTK_LIST_STORE (model), &iter, 0 /* CONVERT */, v, -1);
   gtk_tree_path_free (path);
 }
-
+/*Author:Ian*/
 static void
-network_edited_callback (GtkCellRendererToggle *cell, gchar *path_str,
-                         gchar *new_text, gpointer data)
+network_clicked (GtkWidget * widget, GtkTreePath *path,
+                      GtkTreeViewColumn *col, gpointer data)
 {
-  GtkTreeModel *model = data;
-  GtkTreePath *path;
-  GtkTreeIter iter;
 
-  if (new_text == NULL || STREQ (new_text, ""))
-    return;
+    GtkWidget *dialog;
+    GtkWidget *device_name;
+    GtkWidget *table;
+    GtkTreeIter iter;
+    GtkTreeModel *model;
+    gint result;
+    char *value;
+    GtkTreeModel *model_iter = data;
+    model =  model = gtk_tree_view_get_model(widget);
+    if (gtk_tree_model_get_iter(model, &iter, path)) {
+        gtk_tree_model_get(model, &iter, INTERFACES_COL_DEVICE, &value, -1);
+    }
 
-  path = gtk_tree_path_new_from_string (path_str);
+    dialog = gtk_dialog_new_with_buttons("Choose Network ",conv_dlg,
+                                         GTK_DIALOG_MODAL,
+                                         GTK_STOCK_CANCEL,GTK_RESPONSE_CANCEL,
+                                         GTK_STOCK_OK,GTK_RESPONSE_OK,
+                                         NULL);
+    gtk_window_set_position(GTK_WINDOW(dialog),GTK_WIN_POS_CENTER);
+    gtk_window_set_resizable(dialog,FALSE);
+    gtk_dialog_set_default_response(GTK_DIALOG(dialog),GTK_RESPONSE_OK);
+    char str[strlen (value)];
+    strcpy (str, value);
+    sscanf( value, "%*[^>]>%[^<]" , str);
+    device_name = gtk_label_new (_(str));
+    combo = gtk_combo_box_text_new();
+    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
+                                   "Initial Network");
+    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
+                                   "Initial Network two");
+    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
+                                   "Initial Network three");
 
-  gtk_tree_model_get_iter (model, &iter, path);
-  gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-                      INTERFACES_COL_NETWORK, new_text, -1);
-  gtk_tree_path_free (path);
+    gtk_combo_box_set_active(combo, 0);
+    g_signal_connect (G_OBJECT (combo), "changed",
+                    G_CALLBACK (group_or_network_changed),NULL);
+
+    table = gtk_table_new(4,2,FALSE);
+    gtk_table_attach_defaults(GTK_TABLE(table),device_name,0,1,0,1);
+    gtk_table_attach_defaults(GTK_TABLE(table),combo,1,2,0,1);
+    gtk_table_set_row_spacings(GTK_TABLE(table),5);
+    gtk_table_set_col_spacings(GTK_TABLE(table),5);
+    gtk_container_set_border_width(GTK_CONTAINER(table),5);
+    gtk_box_pack_start_defaults(GTK_BOX(GTK_DIALOG(dialog)->vbox),table);
+    gtk_widget_show_all(dialog);
+    result = gtk_dialog_run(GTK_DIALOG(dialog));
+
+    gtk_widget_destroy(dialog);
+
+    switch(result){
+      case GTK_RESPONSE_CANCEL:
+        break;
+      case GTK_RESPONSE_OK:
+        if(combo_group == NULL){
+          gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+                      INTERFACES_COL_NETWORK, "Initial Network", -1);
+          combo_group = NULL;
+        }else{
+          gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+                      INTERFACES_COL_NETWORK, combo_group, -1);
+          combo_group = NULL;
+        }
+        break;
+    }
+    g_free(value);
 }
 
 static void
