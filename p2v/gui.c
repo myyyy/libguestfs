@@ -272,6 +272,7 @@ test_connection_clicked (GtkWidget *w, gpointer data)
   }
   free (config->username);
   config->username = strdup (gtk_entry_get_text (GTK_ENTRY (username_entry)));
+  printf("2222%s\n",config->username );
   if (STREQ (config->username, "")) {
     gtk_label_set_text (GTK_LABEL (spinner_message),
                         _("error: No user name.  If in doubt, use \"root\"."));
@@ -378,8 +379,6 @@ connection_next_clicked (GtkWidget *w, gpointer data)
 {
   /* Switch to the conversion dialog. */
   show_conversion_dialog ();
-  get_group_name();
-  get_network_name();
 }
 
 /*----------------------------------------------------------------------*/
@@ -407,8 +406,9 @@ enum {
   DISKS_COL_DEVICE,
   DISKS_COL_SIZE,
   DISKS_COL_MODEL,
-  NUM_DISKS_COLS,
   DISKS_COL_GROUP,
+  NUM_DISKS_COLS,
+
 };
 
 enum {
@@ -796,7 +796,7 @@ populate_disks (GtkTreeView *disks_list)
 
   disks_store = gtk_list_store_new (NUM_DISKS_COLS,
                                     G_TYPE_BOOLEAN, G_TYPE_STRING,
-                                    G_TYPE_STRING, G_TYPE_STRING);
+                                    G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING);
   if (all_disks != NULL) {
     for (i = 0; all_disks[i] != NULL; ++i) {
       CLEANUP_FREE char *size_filename = NULL;
@@ -804,7 +804,7 @@ populate_disks (GtkTreeView *disks_list)
       CLEANUP_FREE char *size_str = NULL;
       CLEANUP_FREE char *size_gb = NULL;
       CLEANUP_FREE char *model = NULL;
-      // CLEANUP_FREE char *group = NULL;
+      CLEANUP_FREE char *group = NULL;
       uint64_t size;
 
       if (asprintf (&size_filename, "/sys/block/%s/size",
@@ -820,6 +820,8 @@ populate_disks (GtkTreeView *disks_list)
           exit (EXIT_FAILURE);
         }
       }
+      // TODO GET default group
+      asprintf (&group, "%" "PRIu64, size");
 
       if (asprintf (&model_filename, "/sys/block/%s/device/model",
                     all_disks[i]) == -1) {
@@ -841,7 +843,7 @@ populate_disks (GtkTreeView *disks_list)
                           DISKS_COL_DEVICE, all_disks[i],
                           DISKS_COL_SIZE, size_gb,
                           DISKS_COL_MODEL, model,
-                          // DISKS_COL_GROUP, model,
+                          DISKS_COL_GROUP, group,
                           -1);
     }
   }
@@ -882,7 +884,7 @@ populate_disks (GtkTreeView *disks_list)
                                                4,
                                                _("Group"),
                                                disk_col_group,
-                                               "text", DISKS_COL_MODEL,
+                                               "text", DISKS_COL_GROUP,
                                                NULL);
 
   g_signal_connect(disks_list, "row-activated",G_CALLBACK(group_clicked), disks_list);

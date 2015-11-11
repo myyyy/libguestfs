@@ -53,6 +53,9 @@ extern char **all_removable;
 extern char **all_interfaces;
 extern char **group_name;
 extern char **network_name;
+extern char **group_default_name;
+extern char **network_default_name;
+
 /* config.c */
 struct config {
   int verbose;
@@ -86,6 +89,8 @@ struct config {
 
 extern void get_group_name(void);
 extern void get_network_name(void);
+extern void get_network_default_name(void);
+extern void get_group_default_name(void);
 extern struct config *new_config (void);
 extern struct config *copy_config (struct config *);
 extern void free_config (struct config *);

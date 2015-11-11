@@ -31,7 +31,8 @@
 #include "p2v.h"
 char **group_name;
 char **network_name;
-
+char **group_default_name;
+char **network_default_name;
 struct config *
 new_config (void)
 {
@@ -244,4 +245,45 @@ get_group_name(){
     }
     xmlFreeDoc(doc);
 }
-
+void
+get_group_default_name(){
+    xmlDocPtr doc;
+    xmlChar *xpath=(xmlChar*)"/responses/response/output/storagegroup[is-default = 'true']/name";
+    xmlNodeSetPtr nodeset;
+    xmlXPathObjectPtr result;
+    int i;
+    xmlChar *keyword;
+    doc = xmlReadFile("doh.xml", NULL, XML_PARSE_NOBLANKS);
+    result = getnodeset(doc, xpath);
+    if(result){
+        nodeset = result->nodesetval;
+        group_default_name = realloc (group_default_name , sizeof (char *) * (nodeset->nodeNr));
+        for(i=0; i < nodeset->nodeNr; i++){
+            group_default_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            printf("%s",group_default_name[i]);
+        }
+    }
+    xmlFreeDoc(doc);
+    xmlCleanupParser();
+}
+void
+get_network_default_name(){
+    xmlDocPtr doc;
+    xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS' and withPortal = 'true']/internal-name";
+    xmlNodeSetPtr nodeset;
+    xmlXPathObjectPtr result;
+    int i;
+    xmlChar *keyword;
+    doc = xmlReadFile("doh.xml", NULL, XML_PARSE_NOBLANKS);
+    result = getnodeset(doc, xpath);
+    if(result){
+        nodeset = result->nodesetval;
+        network_default_name = realloc (network_default_name , sizeof (char *) * (nodeset->nodeNr));
+        for(i=0; i < nodeset->nodeNr; i++){
+            network_default_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            printf("%s",network_default_name[i]);
+        }
+    }
+    xmlFreeDoc(doc);
+    xmlCleanupParser();
+}
