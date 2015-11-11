@@ -29,7 +29,8 @@
 #include <locale.h>
 #include <assert.h>
 #include <libintl.h>
-
+#include <libxml/parser.h>
+#include <libxml/xpath.h>
 #include <pthread.h>
 
 #pragma GCC diagnostic ignored "-Wstrict-prototypes" /* error in <gtk.h> */
@@ -38,9 +39,17 @@
 #include "ignore-value.h"
 
 #include "p2v.h"
-
+char **group_name;
+char **network_name;
+char **group_default_name;
+char **network_default_name;
 /* Interactive GUI configuration. */
-static void group_or_network_changed();
+static void get_group_name(void);
+static void get_network_name(void);
+static void get_network_default_name(void);
+static void get_group_default_name(void);
+static void group_or_network_changed(void);
+static xmlXPathObjectPtr getnodeset(xmlDocPtr doc, xmlChar *xpath);
 static void create_connection_dialog (struct config *);
 static void create_conversion_dialog (struct config *);
 static void create_running_dialog (void);
@@ -233,7 +242,10 @@ show_connection_dialog (void)
   /* Hide the other dialogs. */
   gtk_widget_hide (conv_dlg);
   gtk_widget_hide (run_dlg);
-
+    get_group_name();
+    get_network_name();
+    get_group_default_name();
+    get_network_default_name();
   /* Show everything except the spinner. */
   gtk_widget_show_all (conn_dlg);
   gtk_widget_hide_all (spinner_hbox);
@@ -1728,3 +1740,114 @@ reboot_clicked (GtkWidget *w, gpointer data)
   sleep (2);
   ignore_value (system ("/sbin/reboot"));
 }
+
+static void
+get_network_name(){
+    xmlKeepBlanksDefault(0);
+    xmlDocPtr doc;
+    xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS']/name";
+    xmlNodeSetPtr nodeset;
+    xmlXPathObjectPtr result;
+    int i;
+    doc = xmlReadFile("doh.xml", NULL, XML_PARSE_NOBLANKS);
+    result = getnodeset(doc, xpath);
+    if(result){
+        nodeset = result->nodesetval;
+        network_name = realloc (network_name , sizeof (char *) * (nodeset->nodeNr));
+        for(i=0; i < nodeset->nodeNr; i++){
+            network_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            printf("network_name:%s",network_name[i]);
+        }
+    }
+    xmlFreeDoc(doc);
+    xmlCleanupParser();
+}
+// Analysis Xml Author:Ian
+static
+xmlXPathObjectPtr getnodeset(xmlDocPtr doc, xmlChar *xpath){
+    xmlXPathContextPtr context;
+    xmlXPathObjectPtr result;
+    context = xmlXPathNewContext(doc);
+    if(context == NULL){
+        printf("Error in xmlXPathNewContext\n");
+        return NULL;
+    }
+    result = xmlXPathEvalExpression(xpath, context);
+    xmlXPathFreeContext(context);
+    if(result == NULL){
+        printf("Error in xmlXPathEvalExpression\n");
+        return NULL;
+    }
+    if(xmlXPathNodeSetIsEmpty(result->nodesetval)){
+        xmlXPathFreeObject(result);
+        printf("No result\n");
+        return NULL;
+    }
+    return result;
+}
+
+static void
+get_group_name(){
+    char docname[] = "response.xml";
+    xmlDocPtr doc;
+    xmlChar *xpath=(xmlChar*)"/responses/response/output/storagegroup/name";
+    xmlNodeSetPtr nodeset;
+    xmlXPathObjectPtr result;
+    int i;
+    doc = xmlParseFile(docname);
+
+    result = getnodeset(doc, xpath);
+    if(result){
+        nodeset = result->nodesetval;
+        group_name = realloc (group_name , sizeof (char *) * (nodeset->nodeNr));
+        for(i=0; i < nodeset->nodeNr; i++){
+            group_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            printf("group_name:%s",group_name[i]);
+        }
+    }
+    xmlFreeDoc(doc);
+}
+
+
+
+static void
+get_group_default_name(){
+    xmlDocPtr doc;
+    xmlChar *xpath=(xmlChar*)"/responses/response/output/storagegroup[is-default = 'true']/name";
+    xmlNodeSetPtr nodeset;
+    xmlXPathObjectPtr result;
+    int i;
+    doc = xmlReadFile("doh.xml", NULL, XML_PARSE_NOBLANKS);
+    result = getnodeset(doc, xpath);
+    if(result){
+        nodeset = result->nodesetval;
+        group_default_name = realloc (group_default_name , sizeof (char *) * (nodeset->nodeNr));
+        for(i=0; i < nodeset->nodeNr; i++){
+            group_default_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            printf("%s",group_default_name[i]);
+        }
+    }
+    xmlFreeDoc(doc);
+    xmlCleanupParser();
+}
+static void
+get_network_default_name(){
+    xmlDocPtr doc;
+    xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS' and withPortal = 'true']/internal-name";
+    xmlNodeSetPtr nodeset;
+    xmlXPathObjectPtr result;
+    int i;
+    doc = xmlReadFile("doh.xml", NULL, XML_PARSE_NOBLANKS);
+    result = getnodeset(doc, xpath);
+    if(result){
+        nodeset = result->nodesetval;
+        network_default_name = realloc (network_default_name , sizeof (char *) * (nodeset->nodeNr));
+        for(i=0; i < nodeset->nodeNr; i++){
+            network_default_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            printf("%s",network_default_name[i]);
+        }
+    }
+    xmlFreeDoc(doc);
+    xmlCleanupParser();
+}
+

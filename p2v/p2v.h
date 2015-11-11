@@ -71,6 +71,7 @@ struct config {
   char **disks;
   char **removable;
   char **interfaces;
+  char **disk_map;
   char **network_map;
   char *output;
   int output_allocation;
@@ -87,10 +88,7 @@ struct config {
 #define OUTPUT_ALLOCATION_SPARSE       1
 #define OUTPUT_ALLOCATION_PREALLOCATED 2
 
-extern void get_group_name(void);
-extern void get_network_name(void);
-extern void get_network_default_name(void);
-extern void get_group_default_name(void);
+
 extern struct config *new_config (void);
 extern struct config *copy_config (struct config *);
 extern void free_config (struct config *);
