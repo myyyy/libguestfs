@@ -43,6 +43,8 @@ char **group_name;
 char **network_name;
 char **group_default_name;
 char **network_default_name;
+char *server_name;
+
 /* Interactive GUI configuration. */
 static void get_group_name(void);
 static void get_network_name(void);
@@ -57,6 +59,7 @@ static void set_group_name(GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data);
 static void set_network_name(GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data);
+static void do_doh_request(char *cmd, char * xml_name);
 
 static void create_connection_dialog (struct config *);
 static void create_conversion_dialog (struct config *);
@@ -336,6 +339,8 @@ test_connection_thread (void *data)
 {
   struct config *copy = data;
   int r;
+  server_name=copy->server;
+  printf("%s\n", server_name);
   // hide port box test [ia]ngtk_widget_hide(port_entry);
   gdk_threads_enter ();
   gtk_label_set_text (GTK_LABEL (spinner_message),
@@ -1821,27 +1826,7 @@ reboot_clicked (GtkWidget *w, gpointer data)
   ignore_value (system ("/sbin/reboot"));
 }
 
-static void
-get_network_name(){
-    xmlKeepBlanksDefault(0);
-    xmlDocPtr doc;
-    xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS']/name";
-    xmlNodeSetPtr nodeset;
-    xmlXPathObjectPtr result;
-    int i;
-    doc = xmlReadFile("doh.xml", NULL, XML_PARSE_NOBLANKS);
-    result = getnodeset(doc, xpath);
-    if(result){
-        nodeset = result->nodesetval;
-        network_name = realloc (network_name , sizeof (char *) * (nodeset->nodeNr));
-        for(i=0; i < nodeset->nodeNr; i++){
-            network_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
-            printf("network_name:%s",network_name[i]);
-        }
-    }
-    xmlFreeDoc(doc);
-    xmlCleanupParser();
-}
+
 // Analysis Xml Author:Ian
 static
 xmlXPathObjectPtr getnodeset(xmlDocPtr doc, xmlChar *xpath){
@@ -1867,15 +1852,42 @@ xmlXPathObjectPtr getnodeset(xmlDocPtr doc, xmlChar *xpath){
 }
 
 static void
+get_network_name(){
+    char* xmlname = "network.xml";
+    char* cmd = "<request id='1' target='supernova'><watch/></request>";
+    do_doh_request(cmd,xmlname);
+
+    xmlDocPtr doc;
+    xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS']/name";
+    xmlNodeSetPtr nodeset;
+    xmlXPathObjectPtr result;
+    int i;
+    doc = xmlReadFile(xmlname, NULL, XML_PARSE_NOBLANKS);
+    result = getnodeset(doc, xpath);
+    if(result){
+        nodeset = result->nodesetval;
+        network_name = realloc (network_name , sizeof (char *) * (nodeset->nodeNr));
+        for(i=0; i < nodeset->nodeNr; i++){
+            network_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            printf("network_name:%s",network_name[i]);
+        }
+    }
+    xmlFreeDoc(doc);
+    xmlCleanupParser();
+}
+
+static void
 get_group_name(){
-    char docname[] = "response.xml";
+    char* xmlname = "group.xml";
+    char* cmd = "<request id='1' target='supernova'><watch/></request>";
+    do_doh_request(cmd,xmlname);
+
     xmlDocPtr doc;
     xmlChar *xpath=(xmlChar*)"/responses/response/output/storagegroup/name";
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
     int i;
-    doc = xmlParseFile(docname);
-
+    doc = xmlReadFile(xmlname, NULL, XML_PARSE_NOBLANKS);
     result = getnodeset(doc, xpath);
     if(result){
         nodeset = result->nodesetval;
@@ -1898,7 +1910,7 @@ get_group_default_name(){
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
     int i;
-    doc = xmlReadFile("doh.xml", NULL, XML_PARSE_NOBLANKS);
+    doc = xmlReadFile("group.xml", NULL, XML_PARSE_NOBLANKS);
     result = getnodeset(doc, xpath);
     if(result){
         nodeset = result->nodesetval;
@@ -1918,7 +1930,7 @@ get_network_default_name(){
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
     int i;
-    doc = xmlReadFile("doh.xml", NULL, XML_PARSE_NOBLANKS);
+    doc = xmlReadFile("network.xml", NULL, XML_PARSE_NOBLANKS);
     result = getnodeset(doc, xpath);
     if(result){
         nodeset = result->nodesetval;
@@ -1931,4 +1943,11 @@ get_network_default_name(){
     xmlFreeDoc(doc);
     xmlCleanupParser();
 }
+static void
+do_doh_request(char *cmd,char * xml_name){
 
+  char *curl_cmd = NULL;
+  asprintf (&curl_cmd, "curl  -s -b cookie_file -c cookie_file -H \"Content-type: text/xml\" -d \"<requests output='XML'>%s</requests>\" http://%s/doh/ > %s", cmd, server_name, "network.xml");
+  printf("%s\n",curl_cmd );
+  system(curl_cmd);
+}
