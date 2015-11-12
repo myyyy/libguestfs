@@ -50,6 +50,14 @@ static void get_network_default_name(void);
 static void get_group_default_name(void);
 static void group_or_network_changed(void);
 static xmlXPathObjectPtr getnodeset(xmlDocPtr doc, xmlChar *xpath);
+static void group_clicked (GtkWidget * widget, GtkTreePath *path,
+                      GtkTreeViewColumn *col, gpointer data);
+
+static void set_group_name(GtkWidget * widget, GtkTreePath *path,
+                      GtkTreeViewColumn *col, gpointer data);
+static void set_network_name(GtkWidget * widget, GtkTreePath *path,
+                      GtkTreeViewColumn *col, gpointer data);
+
 static void create_connection_dialog (struct config *);
 static void create_conversion_dialog (struct config *);
 static void create_running_dialog (void);
@@ -234,18 +242,21 @@ create_connection_dialog (struct config *config)
                     G_CALLBACK (about_button_clicked), NULL);
   g_signal_connect (G_OBJECT (next_button), "clicked",
                     G_CALLBACK (connection_next_clicked), NULL);
+  g_signal_connect (G_OBJECT (next_button), "clicked",
+                    G_CALLBACK (set_group_name), disks_list);
+  g_signal_connect (G_OBJECT (next_button), "clicked",
+                    G_CALLBACK (set_network_name), interfaces_list);
+
 }
+
 
 static void
 show_connection_dialog (void)
 {
+
   /* Hide the other dialogs. */
   gtk_widget_hide (conv_dlg);
   gtk_widget_hide (run_dlg);
-    get_group_name();
-    get_network_name();
-    get_group_default_name();
-    get_network_default_name();
   /* Show everything except the spinner. */
   gtk_widget_show_all (conn_dlg);
   gtk_widget_hide_all (spinner_hbox);
@@ -254,6 +265,7 @@ show_connection_dialog (void)
 static void
 test_connection_clicked (GtkWidget *w, gpointer data)
 {
+
   struct config *config = data;
   const gchar *port_str;
   size_t errors = 0;
@@ -284,7 +296,6 @@ test_connection_clicked (GtkWidget *w, gpointer data)
   }
   free (config->username);
   config->username = strdup (gtk_entry_get_text (GTK_ENTRY (username_entry)));
-  printf("2222%s\n",config->username );
   if (STREQ (config->username, "")) {
     gtk_label_set_text (GTK_LABEL (spinner_message),
                         _("error: No user name.  If in doubt, use \"root\"."));
@@ -348,6 +359,10 @@ test_connection_thread (void *data)
     gtk_widget_set_sensitive (next_button, FALSE);
   }
   else {
+    get_group_name();
+    get_network_name();
+    get_group_default_name();
+    get_network_default_name();
     /* Connection is good. */
     gtk_label_set_text (GTK_LABEL (spinner_message),
                         _("Connected to the conversion server.\n"
@@ -395,8 +410,7 @@ connection_next_clicked (GtkWidget *w, gpointer data)
 
 /*----------------------------------------------------------------------*/
 /* Conversion dialog. */
-static void group_clicked (GtkWidget * widget, GtkTreePath *path,
-                      GtkTreeViewColumn *col, gpointer data);
+
 static void populate_disks (GtkTreeView *disks_list);
 static void populate_removable (GtkTreeView *removable_list);
 static void populate_interfaces (GtkTreeView *interfaces_list);
@@ -412,6 +426,7 @@ static void notify_ui_callback (int type, const char *data);
 static int get_vcpus_from_conv_dlg (void);
 static uint64_t get_memory_from_conv_dlg (void);
 static void output_clicked(GtkWidget *w, gpointer data);
+
 
 enum {
   DISKS_COL_CONVERT = 0,
@@ -645,7 +660,7 @@ create_conversion_dialog (struct config *config)
                                          interfaces_list);
   gtk_container_add (GTK_CONTAINER (interfaces_frame), interfaces_sw);
 
-  /* Pack the top level dialog. */
+ /* Pack the top level dialog. */
   gtk_box_pack_start (GTK_BOX (left_vbox), target_frame, TRUE, TRUE, 0);
   gtk_box_pack_start (GTK_BOX (left_vbox), output_frame, TRUE, TRUE, 0);
   gtk_box_pack_start (GTK_BOX (left_vbox), info_frame, TRUE, TRUE, 0);
@@ -746,6 +761,9 @@ set_info_label (void)
 static void
 repopulate_output_combo (struct config *config)
 {
+
+
+
   GtkTreeModel *model;
   CLEANUP_FREE char *output;
   size_t i;
@@ -755,7 +773,6 @@ repopulate_output_combo (struct config *config)
     output = strdup (config->output);
   else
     output = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (o_combo));
-
   /* Remove existing rows in o_combo. */
   model = gtk_combo_box_get_model (GTK_COMBO_BOX (o_combo));
   gtk_list_store_clear (GTK_LIST_STORE (model));
@@ -805,10 +822,10 @@ populate_disks (GtkTreeView *disks_list)
     *disks_col_size, *disks_col_model, *disk_col_group;
   GtkTreeIter iter;
   size_t i;
-
   disks_store = gtk_list_store_new (NUM_DISKS_COLS,
                                     G_TYPE_BOOLEAN, G_TYPE_STRING,
                                     G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING);
+
   if (all_disks != NULL) {
     for (i = 0; all_disks[i] != NULL; ++i) {
       CLEANUP_FREE char *size_filename = NULL;
@@ -832,9 +849,10 @@ populate_disks (GtkTreeView *disks_list)
           exit (EXIT_FAILURE);
         }
       }
-      // TODO GET default group
-      asprintf (&group, "%" "PRIu64, size");
 
+          asprintf (&group, "%s","");
+
+      // asprintf (&group, "%s",group_name[i]);
       if (asprintf (&model_filename, "/sys/block/%s/device/model",
                     all_disks[i]) == -1) {
         perror ("asprintf");
@@ -899,17 +917,65 @@ populate_disks (GtkTreeView *disks_list)
                                                "text", DISKS_COL_GROUP,
                                                NULL);
 
-  g_signal_connect(disks_list, "row-activated",G_CALLBACK(group_clicked), disks_list);
+  g_signal_connect(disks_list, "row-activated",G_CALLBACK(set_group_name), disks_list);
+  // set_group_name();
   g_signal_connect (disks_col_convert, "toggled",
                     G_CALLBACK (toggled), disks_store);
 
 }
+/*Set default group name Author:Ian*/
+static void
+set_group_name(GtkWidget * widget, GtkTreePath *path,
+                      GtkTreeViewColumn *col, gpointer data){
+    GtkWidget *dialog;
+    GtkWidget *device_name;
+    GtkWidget *table;
+    GtkTreeIter iter;
+    GtkTreeModel *model;
+    char *value;
+    model =  model = gtk_tree_view_get_model(disks_list);
+    gtk_tree_model_get_iter_first(model, &iter);
+    int columns=gtk_tree_model_get_n_columns(model);
+    do
+    {
+      for(int i=0;i<columns;i++)
+        {
+          gtk_tree_model_get (GTK_TREE_MODEL(model),&iter,DISKS_COL_DEVICE,&value,-1);
+          gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+                DISKS_COL_GROUP, group_name[1], -1);
+        }
+    }while(gtk_tree_model_iter_next(model,&iter));
+}
 
+static void
+set_network_name(GtkWidget * widget, GtkTreePath *path,
+                      GtkTreeViewColumn *col, gpointer data){
+    GtkWidget *dialog;
+    GtkWidget *device_name;
+    GtkWidget *table;
+    GtkTreeIter iter;
+    GtkTreeModel *model;
+    char *value;
+    model =  model = gtk_tree_view_get_model(interfaces_list);
+    gtk_tree_model_get_iter_first(model, &iter);
+    int columns=gtk_tree_model_get_n_columns(model);
+    do
+    {
+      for(int i=0;i<columns;i++)
+        {
+          gtk_tree_model_get (GTK_TREE_MODEL(model),&iter,DISKS_COL_DEVICE,&value,-1);
+          gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+                INTERFACES_COL_NETWORK, group_name[1], -1);
+        }
+    }while(gtk_tree_model_iter_next(model,&iter));
+}
 /*Author:Ian*/
 static void
 group_clicked (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data)
 {
+
+
     GtkWidget *dialog;
     GtkWidget *device_name;
     GtkWidget *table;
@@ -919,6 +985,20 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     char *value;
     GtkTreeModel *model_iter = data;
     model =  model = gtk_tree_view_get_model(widget);
+    gtk_tree_model_get_iter_first(model, &iter);
+    int columns=gtk_tree_model_get_n_columns(model);
+    do//开始遍历内容
+    {
+        for(int i=0;i<columns;i++)
+            {
+                gtk_tree_model_get (GTK_TREE_MODEL(model),&iter,DISKS_COL_DEVICE,&value,-1);
+                //将指定单元格的值传给pitem
+                gtk_list_store_set (GTK_LIST_STORE (model), &iter,
+                      DISKS_COL_GROUP, "Initial Storage Group", -1);
+                    printf("%s\n", value);//输出单元格的值
+            }
+    }while(gtk_tree_model_iter_next(model,&iter));
+
     if (gtk_tree_model_get_iter(model, &iter, path)) {
         gtk_tree_model_get(model, &iter, DISKS_COL_DEVICE, &value, -1);
     }
@@ -1806,6 +1886,7 @@ get_group_name(){
         }
     }
     xmlFreeDoc(doc);
+    xmlCleanupParser();
 }
 
 
