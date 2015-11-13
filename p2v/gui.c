@@ -923,7 +923,7 @@ populate_disks (GtkTreeView *disks_list)
                                                "text", DISKS_COL_GROUP,
                                                NULL);
 
-  g_signal_connect(disks_list, "row-activated",G_CALLBACK(set_group_name), disks_list);
+  g_signal_connect(disks_list, "row-activated",G_CALLBACK(group_clicked), disks_list);
   // set_group_name();
   g_signal_connect (disks_col_convert, "toggled",
                     G_CALLBACK (toggled), disks_store);
@@ -933,13 +933,10 @@ populate_disks (GtkTreeView *disks_list)
 static void
 set_group_name(GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data){
-    GtkWidget *dialog;
-    GtkWidget *device_name;
-    GtkWidget *table;
     GtkTreeIter iter;
     GtkTreeModel *model;
     char *value;
-    model =  model = gtk_tree_view_get_model(disks_list);
+    model = gtk_tree_view_get_model(disks_list);
     gtk_tree_model_get_iter_first(model, &iter);
     group_columns=gtk_tree_model_get_n_columns(model);
     do
@@ -956,13 +953,10 @@ set_group_name(GtkWidget * widget, GtkTreePath *path,
 static void
 set_network_name(GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data){
-    GtkWidget *dialog;
-    GtkWidget *device_name;
-    GtkWidget *table;
     GtkTreeIter iter;
     GtkTreeModel *model;
     char *value;
-    model =  model = gtk_tree_view_get_model(interfaces_list);
+    model = gtk_tree_view_get_model(interfaces_list);
     gtk_tree_model_get_iter_first(model, &iter);
     network_columns=gtk_tree_model_get_n_columns(model);
     do
@@ -989,21 +983,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     GtkTreeModel *model;
     gint result;
     char *value;
-    GtkTreeModel *model_iter = data;
-    model =  model = gtk_tree_view_get_model(widget);
-    gtk_tree_model_get_iter_first(model, &iter);
-    int columns=gtk_tree_model_get_n_columns(model);
-    do//开始遍历内容
-    {
-        for(int i=0;i<columns;i++)
-            {
-                gtk_tree_model_get (GTK_TREE_MODEL(model),&iter,DISKS_COL_DEVICE,&value,-1);
-                //将指定单元格的值传给pitem
-                gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-                      DISKS_COL_GROUP, "Initial Storage Group", -1);
-                    printf("%s\n", value);//输出单元格的值
-            }
-    }while(gtk_tree_model_iter_next(model,&iter));
+    model = gtk_tree_view_get_model(widget);
 
     if (gtk_tree_model_get_iter(model, &iter, path)) {
         gtk_tree_model_get(model, &iter, DISKS_COL_DEVICE, &value, -1);
@@ -1023,7 +1003,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
 
     for(int i=0; i<group_columns; i++)
       {
-        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), group_name[i])
+        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), group_name[i]);
       }
 
     gtk_combo_box_set_active(combo, 0);
@@ -1233,7 +1213,7 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     combo = gtk_combo_box_text_new();
     for(int i=0; i<group_columns; i++)
       {
-        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), network_name[i])
+        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), network_name[i]);
       }
     gtk_combo_box_set_active(combo, 0);
     g_signal_connect (G_OBJECT (combo), "changed",
