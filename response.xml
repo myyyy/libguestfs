@@ -1008,9 +1008,7 @@
             <size-used>
                223795478528
             </size-used>
-            <is-default>
-               true
-            </is-default>
+            <is-default>true</is-default>
          </storagegroup>
          <storagegroup id="storagegroup:o4784">
             <name>

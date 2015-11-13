@@ -46,6 +46,8 @@ char **network_default_name;
 char *server_name;
 int group_columns;
 int network_columns;
+int group_num;
+int network_num;
 /* Interactive GUI configuration. */
 static void get_group_name(void);
 static void get_network_name(void);
@@ -946,6 +948,7 @@ set_group_name(GtkWidget * widget, GtkTreePath *path,
           gtk_tree_model_get (GTK_TREE_MODEL(model),&iter,DISKS_COL_DEVICE,&value,-1);
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
                 DISKS_COL_GROUP, group_name[1], -1);
+
         }
     }while(gtk_tree_model_iter_next(model,&iter));
 }
@@ -984,7 +987,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     gint result;
     char *value;
     model = gtk_tree_view_get_model(widget);
-
+    int columns=gtk_tree_model_get_n_columns(model);
     if (gtk_tree_model_get_iter(model, &iter, path)) {
         gtk_tree_model_get(model, &iter, DISKS_COL_DEVICE, &value, -1);
     }
@@ -1000,10 +1003,13 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
 
     device_name = gtk_label_new (_(value));
     combo = gtk_combo_box_text_new();
-
-    for(int i=0; i<group_columns; i++)
+    for(int i=0; i<group_num; i++)
       {
-        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), group_name[i]);
+
+        char name[strlen (group_name[i])];
+        strcpy (name, group_name[i]);
+        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), name);
+        strcpy (name, "");
       }
 
     gtk_combo_box_set_active(combo, 0);
@@ -1193,7 +1199,8 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     gint result;
     char *value;
     GtkTreeModel *model_iter = data;
-    model =  model = gtk_tree_view_get_model(widget);
+    model = gtk_tree_view_get_model(widget);
+    int columns=gtk_tree_model_get_n_columns(model);
     if (gtk_tree_model_get_iter(model, &iter, path)) {
         gtk_tree_model_get(model, &iter, INTERFACES_COL_DEVICE, &value, -1);
     }
@@ -1211,9 +1218,11 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     sscanf( value, "%*[^>]>%[^<]" , str);
     device_name = gtk_label_new (_(str));
     combo = gtk_combo_box_text_new();
-    for(int i=0; i<group_columns; i++)
+    for(int i=0; i<network_num; i++)
       {
-        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), network_name[i]);
+        char name[strlen (network_name[i])];
+        strcpy (name, network_name[i]);
+        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), name);
       }
     gtk_combo_box_set_active(combo, 0);
     g_signal_connect (G_OBJECT (combo), "changed",
@@ -1830,7 +1839,7 @@ xmlXPathObjectPtr getnodeset(xmlDocPtr doc, xmlChar *xpath){
 
 static void
 get_network_name(){
-    char* xmlname = "network.xml";
+    char* xmlname = "doh.xml";
     char* cmd = "<request id='1' target='supernova'><watch/></request>";
     do_doh_request(cmd,xmlname);
 
@@ -1843,10 +1852,10 @@ get_network_name(){
     result = getnodeset(doc, xpath);
     if(result){
         nodeset = result->nodesetval;
+        network_num = nodeset->nodeNr;
         network_name = realloc (network_name , sizeof (char *) * (nodeset->nodeNr));
         for(i=0; i < nodeset->nodeNr; i++){
             network_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
-            printf("network_name:%s",network_name[i]);
         }
     }
     xmlFreeDoc(doc);
@@ -1855,7 +1864,7 @@ get_network_name(){
 
 static void
 get_group_name(){
-    char* xmlname = "group.xml";
+    char* xmlname = "response.xml";
     char* cmd = "<request id='1' target='supernova'><watch/></request>";
     do_doh_request(cmd,xmlname);
 
@@ -1868,10 +1877,10 @@ get_group_name(){
     result = getnodeset(doc, xpath);
     if(result){
         nodeset = result->nodesetval;
+        group_num = nodeset->nodeNr;
         group_name = realloc (group_name , sizeof (char *) * (nodeset->nodeNr));
         for(i=0; i < nodeset->nodeNr; i++){
             group_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
-            printf("group_name:%s",group_name[i]);
         }
     }
     xmlFreeDoc(doc);
@@ -1887,14 +1896,13 @@ get_group_default_name(){
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
     int i;
-    doc = xmlReadFile("group.xml", NULL, XML_PARSE_NOBLANKS);
+    doc = xmlReadFile("response.xml", NULL, XML_PARSE_NOBLANKS);
     result = getnodeset(doc, xpath);
     if(result){
         nodeset = result->nodesetval;
         group_default_name = realloc (group_default_name , sizeof (char *) * (nodeset->nodeNr));
         for(i=0; i < nodeset->nodeNr; i++){
             group_default_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
-            printf("%s",group_default_name[i]);
         }
     }
     xmlFreeDoc(doc);
@@ -1907,14 +1915,13 @@ get_network_default_name(){
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
     int i;
-    doc = xmlReadFile("network.xml", NULL, XML_PARSE_NOBLANKS);
+    doc = xmlReadFile("doh.xml", NULL, XML_PARSE_NOBLANKS);
     result = getnodeset(doc, xpath);
     if(result){
         nodeset = result->nodesetval;
         network_default_name = realloc (network_default_name , sizeof (char *) * (nodeset->nodeNr));
         for(i=0; i < nodeset->nodeNr; i++){
             network_default_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
-            printf("%s",network_default_name[i]);
         }
     }
     xmlFreeDoc(doc);
