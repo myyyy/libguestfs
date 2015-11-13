@@ -44,7 +44,8 @@ char **network_name;
 char **group_default_name;
 char **network_default_name;
 char *server_name;
-
+int group_columns;
+int network_columns;
 /* Interactive GUI configuration. */
 static void get_group_name(void);
 static void get_network_name(void);
@@ -940,10 +941,10 @@ set_group_name(GtkWidget * widget, GtkTreePath *path,
     char *value;
     model =  model = gtk_tree_view_get_model(disks_list);
     gtk_tree_model_get_iter_first(model, &iter);
-    int columns=gtk_tree_model_get_n_columns(model);
+    group_columns=gtk_tree_model_get_n_columns(model);
     do
     {
-      for(int i=0;i<columns;i++)
+      for(int i=0;i<group_columns;i++)
         {
           gtk_tree_model_get (GTK_TREE_MODEL(model),&iter,DISKS_COL_DEVICE,&value,-1);
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
@@ -963,12 +964,12 @@ set_network_name(GtkWidget * widget, GtkTreePath *path,
     char *value;
     model =  model = gtk_tree_view_get_model(interfaces_list);
     gtk_tree_model_get_iter_first(model, &iter);
-    int columns=gtk_tree_model_get_n_columns(model);
+    network_columns=gtk_tree_model_get_n_columns(model);
     do
     {
-      for(int i=0;i<columns;i++)
+      for(int i=0; i<network_columns; i++)
         {
-          gtk_tree_model_get (GTK_TREE_MODEL(model),&iter,DISKS_COL_DEVICE,&value,-1);
+          gtk_tree_model_get (GTK_TREE_MODEL(model), &iter, DISKS_COL_DEVICE,&value, -1);
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
                 INTERFACES_COL_NETWORK, group_name[1], -1);
         }
@@ -1019,12 +1020,11 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
 
     device_name = gtk_label_new (_(value));
     combo = gtk_combo_box_text_new();
-    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
-                                   "Initial Storage Group");
-    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
-                                   "Initial Storage two");
-    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
-                                   "Initial Storage three");
+
+    for(int i=0; i<group_columns; i++)
+      {
+        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), group_name[i])
+      }
 
     gtk_combo_box_set_active(combo, 0);
     g_signal_connect (G_OBJECT (combo), "changed",
@@ -1231,13 +1231,10 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     sscanf( value, "%*[^>]>%[^<]" , str);
     device_name = gtk_label_new (_(str));
     combo = gtk_combo_box_text_new();
-    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
-                                   "Initial Network");
-    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
-                                   "Initial Network two");
-    gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo),
-                                   "Initial Network three");
-
+    for(int i=0; i<group_columns; i++)
+      {
+        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), network_name[i])
+      }
     gtk_combo_box_set_active(combo, 0);
     g_signal_connect (G_OBJECT (combo), "changed",
                     G_CALLBACK (group_or_network_changed),NULL);
