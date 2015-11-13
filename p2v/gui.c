@@ -48,6 +48,8 @@ char **network_default_name;
 char *server_name;
 int group_columns;
 int network_columns;
+int group_num;
+int network_num;
 int is_hide = 0;
 static GtkWidget *combo;
 CLEANUP_FREE char *combo_group;
@@ -435,6 +437,8 @@ static void network_edited_callback (GtkCellRendererToggle *cell, gchar *path_st
 static void set_disks_from_ui (struct config *);
 static void set_removable_from_ui (struct config *);
 static void set_interfaces_from_ui (struct config *);
+static void set_network_map_from_ui (struct config *config);
+static void set_disk_map_from_ui (struct config *config);
 static void conversion_back_clicked (GtkWidget *w, gpointer data);
 static void start_conversion_clicked (GtkWidget *w, gpointer data);
 static void vcpus_or_memory_check_callback (GtkWidget *w, gpointer data);
@@ -991,7 +995,7 @@ populate_disks (GtkTreeView *disks_list)
                                                "text", DISKS_COL_GROUP,
                                                NULL);
    g_signal_connect(disks_list, "row-activated",
-                    G_CALLBACK(set_group_name), disks_list);
+                    G_CALLBACK(group_clicked), disks_list);
   g_signal_connect (disks_col_convert, "toggled",
                     G_CALLBACK (toggled), disks_store);
 }
@@ -1041,9 +1045,6 @@ populate_removable (GtkTreeView *removable_list)
 static void
 set_group_name(GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data){
-    GtkWidget *dialog;
-    GtkWidget *device_name;
-    GtkWidget *table;
     GtkTreeIter iter;
     GtkTreeModel *model;
     char *value;
@@ -1065,9 +1066,6 @@ set_group_name(GtkWidget * widget, GtkTreePath *path,
 static void
 set_network_name(GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data){
-    GtkWidget *dialog;
-    GtkWidget *device_name;
-    GtkWidget *table;
     GtkTreeIter iter;
     GtkTreeModel *model;
     char *value;
@@ -1099,9 +1097,8 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     GtkTreeModel *model;
     gint result;
     char *value;
-    GtkTreeModel *model_iter = data;
     model = gtk_tree_view_get_model(widget);
-
+    int columns=gtk_tree_model_get_n_columns(model);
     if (gtk_tree_model_get_iter(model, &iter, path)) {
         gtk_tree_model_get(model, &iter, DISKS_COL_DEVICE, &value, -1);
     }
@@ -1118,9 +1115,13 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     device_name = gtk_label_new (_(value));
     combo = gtk_combo_box_text_new();
 
-    for(int i=0; i<group_columns; i++)
+    for(int i=0; i<group_num; i++)
       {
-        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), group_name[i])
+
+        char name[strlen (group_name[i])];
+        strcpy (name, group_name[i]);
+        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), name);
+        strcpy (name, "");
       }
 
     gtk_combo_box_set_active(combo, 0);
@@ -1290,10 +1291,12 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     sscanf( value, "%*[^>]>%[^<]" , str);
     device_name = gtk_label_new (_(str));
     combo = gtk_combo_box_text_new();
-    for(int i=0; i<group_columns; i++)
-      {
-        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), network_name[i])
-      }
+    for(int i=0; i<network_num; i++)
+    {
+        char name[strlen (network_name[i])];
+        strcpy (name, network_name[i]);
+        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), name);
+    }
     gtk_combo_box_set_active(combo, 0);
     g_signal_connect (G_OBJECT (combo), "changed",
                     G_CALLBACK (group_or_network_changed), NULL);
@@ -1434,7 +1437,52 @@ set_network_map_from_ui (struct config *config)
 
   config->network_map[j] = NULL;
 }
+static void
+set_disk_map_from_ui (struct config *config)
+{
+  GtkTreeView *list;
+  GtkTreeModel *model;
+  GtkTreeIter iter;
+  gboolean b;
+  const char *s;
+  size_t i, j;GGtkTreeView *list;
+  GtkTreeModel *model;
+  GtkTreeIter iter;
+  gboolean b;
+  const char *s;
+  size_t i, j;
 
+  if (all_disks == NULL) {
+    guestfs_int_free_string_list (config->disk_map);
+    config->disk_map = NULL;
+    return;
+  }
+  list = GTK_TREE_VIEW (disks_list);
+  model = gtk_tree_view_get_model (list);
+
+  guestfs_int_free_string_list (config->disk_map);
+  config->disk_map = malloc (1 +guestfs_int_count_strings(all_disks) * sizeof(char *));
+  if (config->disk_map == NULL) {
+    perror ("malloc");
+    exit (EXIT_FAILURE);
+  }
+  i = j= 0;
+  b = gtk_tree_model_get_iter_first (model, &iter);
+  while (b){
+    gtk_tree_model_get (model, &iter, DISKS_COL_GROUP, &s, -1);
+    if (s) {
+      assert (all_disk[i] !== NULL);
+      if (asprintf (&config->disk_map[i], "%s:%s",all_disk[i], s) == -1) {
+        perror ("asprintf");
+        exit (EXIT_FAILURE);
+      }
+      ++j;
+    }
+    b = gtk_tree_model_iter_next (model, &iter);
+    ++i;
+  }
+  config->disk_map = NULL;
+}
 /* The conversion dialog Back button has been clicked. */
 static void
 conversion_back_clicked (GtkWidget *w, gpointer data)
@@ -1735,6 +1783,7 @@ start_conversion_clicked (GtkWidget *w, gpointer data)
   set_removable_from_ui (config);
   set_interfaces_from_ui (config);
   set_network_map_from_ui (config);
+  set_disk_map_from_ui (config);
 
   /* Output selection. */
   free (config->output);
@@ -1921,6 +1970,7 @@ get_network_name() {
     result = getnodeset(doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
+        network_num = nodeset->nodeNr;
         network_name = realloc (network_name , sizeof (char *) * (nodeset->nodeNr));
         for (i=0; i < nodeset->nodeNr; i++) {
             network_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
@@ -1946,6 +1996,7 @@ get_group_name() {
     result = getnodeset(doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
+        group_num = nodeset->nodeNr;
         group_name = realloc (group_name , sizeof (char *) * (nodeset->nodeNr));
         for (i=0; i < nodeset->nodeNr; i++) {
             group_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
@@ -1978,7 +2029,7 @@ get_group_default_name() {
 }
 static void
 get_network_default_name() {
-    xmlDocPtr doc;
+
     xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS' and withPortal = 'true']/internal-name";
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
@@ -1998,8 +2049,10 @@ get_network_default_name() {
 }
 static void
 do_doh_request(char *cmd,char * xml_name) {
-
+  xmlDocPtr doc;
   char *curl_cmd = NULL;
   asprintf (&curl_cmd, "curl  -s -b cookie_file -c cookie_file -H \"Content-type: text/xml\" -d \"<requests output='XML'>%s</requests>\" http://%s/doh/ > %s", cmd, server_name, "network.xml");
   system(curl_cmd);
+  doc = xmlReadFile("network.xml", NULL, XML_PARSE_NOBLANKS);
+
 }
