@@ -1020,12 +1020,12 @@ set_group_name (GtkWidget * widget, GtkTreePath *path,
     GtkTreeIter iter;
     GtkTreeModel *model;
     char *value;
-    model = gtk_tree_view_get_model(disks_list);
-    gtk_tree_model_get_iter_first(model, &iter);
-    group_columns = gtk_tree_model_get_n_columns(model);
+    model = gtk_tree_view_get_model (disks_list);
+    gtk_tree_model_get_iter_first (model, &iter);
+    group_columns = gtk_tree_model_get_n_columns (model);
     do {
       for (int i=0; i<group_columns; i++) {
-          gtk_tree_model_get (GTK_TREE_MODEL(model), &iter, DISKS_COL_DEVICE, &value, -1);
+          gtk_tree_model_get (GTK_TREE_MODEL (model), &iter, DISKS_COL_DEVICE, &value, -1);
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
                 DISKS_COL_GROUP, group_name[1], -1);
       }
@@ -1064,18 +1064,18 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     GtkTreeModel *model;
     gint result;
     char *value;
-    model = gtk_tree_view_get_model(widget);
-    if (gtk_tree_model_get_iter(model, &iter, path)) {
-        gtk_tree_model_get(model, &iter, DISKS_COL_DEVICE, &value, -1);
+    model = gtk_tree_view_get_model (widget);
+    if (gtk_tree_model_get_iter (model, &iter, path) ) {
+        gtk_tree_model_get (model, &iter, DISKS_COL_DEVICE, &value, -1);
     }
     dialog = gtk_dialog_new_with_buttons ("Choose Storage Group",conv_dlg,
                                          GTK_DIALOG_MODAL,
                                          GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
                                          GTK_STOCK_OK, GTK_RESPONSE_OK,
                                          NULL);
-    gtk_window_set_position(GTK_WINDOW(dialog),GTK_WIN_POS_CENTER);
-    gtk_window_set_resizable(dialog,FALSE);
-    gtk_dialog_set_default_response(GTK_DIALOG(dialog),GTK_RESPONSE_OK);
+    gtk_window_set_position (GTK_WINDOW(dialog),GTK_WIN_POS_CENTER);
+    gtk_window_set_resizable (dialog,FALSE);
+    gtk_dialog_set_default_response (GTK_DIALOG(dialog),GTK_RESPONSE_OK);
 
     device_name = gtk_label_new (_(value));
     combo = gtk_combo_box_text_new();
@@ -1083,7 +1083,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     for (int i=0; group_name[i]!=NULL; i++) {
         char name[strlen (group_name[i])];
         strcpy (name, group_name[i]);
-        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), name);
+        gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT(combo), name);
         strcpy (name, "");
     }
     gtk_combo_box_set_active(combo, 0);
@@ -1091,16 +1091,16 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
                     G_CALLBACK (group_or_network_changed), NULL);
 
     table = gtk_table_new(4, 2, FALSE);
-    gtk_table_attach_defaults(GTK_TABLE(table), device_name, 0, 1, 0, 1);
-    gtk_table_attach_defaults(GTK_TABLE(table), combo, 1, 2, 0, 1);
-    gtk_table_set_row_spacings(GTK_TABLE(table), 5);
-    gtk_table_set_col_spacings(GTK_TABLE(table), 5);
-    gtk_container_set_border_width(GTK_CONTAINER(table), 5);
-    gtk_box_pack_start_defaults(GTK_BOX(GTK_DIALOG(dialog)->vbox), table);
-    gtk_widget_show_all(dialog);
-    result = gtk_dialog_run(GTK_DIALOG(dialog));
+    gtk_table_attach_defaults(GTK_TABLE (table), device_name, 0, 1, 0, 1);
+    gtk_table_attach_defaults(GTK_TABLE (table), combo, 1, 2, 0, 1);
+    gtk_table_set_row_spacings(GTK_TABLE (table), 5);
+    gtk_table_set_col_spacings(GTK_TABLE (table), 5);
+    gtk_container_set_border_width(GTK_CONTAINER (table), 5);
+    gtk_box_pack_start_defaults(GTK_BOX(GTK_DIALOG (dialog)->vbox), table);
+    gtk_widget_show_all (dialog);
+    result = gtk_dialog_run (GTK_DIALOG (dialog) );
 
-    gtk_widget_destroy(dialog);
+    gtk_widget_destroy (dialog);
 
     switch (result) {
       case GTK_RESPONSE_CANCEL:
@@ -1241,34 +1241,34 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
                                          GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
                                          GTK_STOCK_OK, GTK_RESPONSE_OK,
                                          NULL);
-    gtk_window_set_position(GTK_WINDOW(dialog), GTK_WIN_POS_CENTER);
-    gtk_window_set_resizable(dialog, FALSE);
-    gtk_dialog_set_default_response(GTK_DIALOG(dialog), GTK_RESPONSE_OK);
+    gtk_window_set_position (GTK_WINDOW(dialog), GTK_WIN_POS_CENTER);
+    gtk_window_set_resizable (dialog, FALSE);
+    gtk_dialog_set_default_response (GTK_DIALOG(dialog), GTK_RESPONSE_OK);
     char str[strlen (value)];
     strcpy (str, value);
-    sscanf( value, "%*[^>]>%[^<]" , str);
+    sscanf ( value, "%*[^>]>%[^<]" , str);
     device_name = gtk_label_new (_(str));
     combo = gtk_combo_box_text_new();
     for (int i=0; network_name[i] != NULL; i++) {
         char name[strlen (network_name[i])];
         strcpy (name, network_name[i]);
-        gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), name);
+        gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combo), name);
     }
-    gtk_combo_box_set_active(combo, 0);
+    gtk_combo_box_set_active (combo, 0);
     g_signal_connect (G_OBJECT (combo), "changed",
                     G_CALLBACK (group_or_network_changed), NULL);
 
     table = gtk_table_new(4, 2, FALSE);
-    gtk_table_attach_defaults(GTK_TABLE(table), device_name, 0, 1, 0, 1);
-    gtk_table_attach_defaults(GTK_TABLE(table), combo, 1, 2, 0, 1);
-    gtk_table_set_row_spacings(GTK_TABLE(table), 5);
-    gtk_table_set_col_spacings(GTK_TABLE(table), 5);
-    gtk_container_set_border_width(GTK_CONTAINER(table), 5);
-    gtk_box_pack_start_defaults(GTK_BOX(GTK_DIALOG(dialog)->vbox), table);
-    gtk_widget_show_all(dialog);
-    result = gtk_dialog_run(GTK_DIALOG(dialog));
+    gtk_table_attach_defaults (GTK_TABLE(table), device_name, 0, 1, 0, 1);
+    gtk_table_attach_defaults (GTK_TABLE(table), combo, 1, 2, 0, 1);
+    gtk_table_set_row_spacings (GTK_TABLE(table), 5);
+    gtk_table_set_col_spacings (GTK_TABLE(table), 5);
+    gtk_container_set_border_width (GTK_CONTAINER(table), 5);
+    gtk_box_pack_start_defaults(GTK_BOX (GTK_DIALOG (dialog)->vbox), table);
+    gtk_widget_show_all (dialog);
+    result = gtk_dialog_run (GTK_DIALOG (dialog) );
 
-    gtk_widget_destroy(dialog);
+    gtk_widget_destroy (dialog);
 
     switch (result) {
       case GTK_RESPONSE_CANCEL:
@@ -1410,7 +1410,7 @@ set_disk_map_from_ui (struct config *config)
   model = gtk_tree_view_get_model (list);
 
   guestfs_int_free_string_list (config->disk_map);
-  config->disk_map = malloc (1 +guestfs_int_count_strings(all_disks) * sizeof(char *));
+  config->disk_map = malloc (1 +guestfs_int_count_strings (all_disks) * sizeof(char *));
   if (config->disk_map == NULL) {
     perror ("malloc");
     exit (EXIT_FAILURE);
@@ -1913,7 +1913,7 @@ get_network_name() {
     network_doc = do_doh_request(cmd, xmlname);
     xmlChar *xpath = (xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS']/name";
 
-    result = getnodeset(network_doc, xpath);
+    result = getnodeset (network_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
         network_name = realloc (network_name , sizeof (char *) * (nodeset->nodeNr));
@@ -1922,7 +1922,7 @@ get_network_name() {
 
         }
     }
-    xmlCleanupParser();
+    xmlCleanupParser ();
 }
 
 static void
@@ -1934,33 +1934,33 @@ get_group_name() {
     char* cmd = "<request id='1' target='supernova'><watch/></request>";
     group_doc =  do_doh_request(cmd,xmlname);
 
-    xmlChar *xpath=(xmlChar*)"/responses/response/output/storagegroup/name";
-    result = getnodeset(group_doc, xpath);
+    xmlChar *xpath= (xmlChar*)"/responses/response/output/storagegroup/name";
+    result = getnodeset (group_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
         group_name = realloc (group_name , sizeof (char *) * (nodeset->nodeNr));
         for (i=0; i < nodeset->nodeNr; i++) {
-            group_name[i] = xmlNodeListGetString(group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            group_name[i] = xmlNodeListGetString (group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
         }
     }
-    xmlCleanupParser();
+    xmlCleanupParser ();
 }
 static void
 get_group_default_name() {
     int i;
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
-    xmlChar *xpath=(xmlChar*)"/responses/response/output/storagegroup[is-default = 'true']/name";
+    xmlChar *xpath= (xmlChar*)"/responses/response/output/storagegroup[is-default = 'true']/name";
 
-    result = getnodeset(group_doc, xpath);
+    result = getnodeset (group_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
         group_default_name = realloc (group_default_name , sizeof (char *) * (nodeset->nodeNr));
         for (i=0; i < nodeset->nodeNr; i++) {
-            group_default_name[i] = xmlNodeListGetString(group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            group_default_name[i] = xmlNodeListGetString (group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
         }
     }
-    xmlCleanupParser();
+    xmlCleanupParser ();
 }
 static void
 get_network_default_name() {
@@ -1974,24 +1974,21 @@ get_network_default_name() {
         nodeset = result->nodesetval;
         network_default_name = realloc (network_default_name , sizeof (char *) * (nodeset->nodeNr));
         for (i=0; i < nodeset->nodeNr; i++) {
-            network_default_name[i] = xmlNodeListGetString(network_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            network_default_name[i] = xmlNodeListGetString (network_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
 
         }
     }
-    xmlCleanupParser();
+    xmlCleanupParser ();
 }
 xmlDocPtr
-do_doh_request(char *cmd,char * xml_name) {
+do_doh_request (char *cmd,char * xml_name) {
   xmlDocPtr doc;
   char *curl_cmd = NULL;
   asprintf (&curl_cmd, "curl  -s -b cookie_file -c cookie_file -H \"Content-type: text/xml\" -d \"<requests output='XML'>%s</requests>\" http://%s/doh/ > %s", cmd, server_name, xml_name);
-  system(curl_cmd);
-  doc = xmlReadFile(xml_name, NULL, XML_PARSE_NOBLANKS);
+  system (curl_cmd);
+  doc = xmlReadFile (xml_name, NULL, XML_PARSE_NOBLANKS);
 
-  if( remove(xml_name) == 0 )
-      printf("Removed %s.", xml_name);
-  else
-      perror("remove");
-
+  if ( remove (xml_name) != 0 )
+      perror ("remove");
   return doc;
 }
