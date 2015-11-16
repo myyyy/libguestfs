@@ -40,7 +40,7 @@
 #include "ignore-value.h"
 
 #include "p2v.h"
- /* New configuration.for P2v Author:Ian */
+
 char **group_name;
 char **network_name;
 char **group_default_name;
@@ -48,8 +48,6 @@ char **network_default_name;
 char *server_name;
 int group_columns;
 int network_columns;
-int group_num;
-int network_num;
 int is_hide = 0;
 static GtkWidget *combo;
 CLEANUP_FREE char *combo_group;
@@ -702,7 +700,7 @@ create_conversion_dialog (struct config *config)
   /* Signals. */
   g_signal_connect_swapped (G_OBJECT (conv_dlg), "destroy",
                             G_CALLBACK (gtk_main_quit), NULL);
-    /*New signal -> output changed. Author:Ian*/
+
   g_signal_connect (G_OBJECT (o_combo), "changed",
                     G_CALLBACK (output_clicked), config);
   g_signal_connect (G_OBJECT (back), "clicked",
@@ -715,15 +713,14 @@ create_conversion_dialog (struct config *config)
                     G_CALLBACK (vcpus_or_memory_check_callback), NULL);
 }
 
-/*Author:Ian*/
 static void
 output_clicked(GtkWidget *w, gpointer data){
   struct config *config = data;
-  CLEANUP_FREE char *test;
+  CLEANUP_FREE char *output_value;
 
-  test = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (o_combo));
+  output_value = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (o_combo));
 
-  if (test == NULL || STREQ (test, "everrunft") ||STREQ (test, "everrunha")) {
+  if (output_value == NULL || STREQ (output_value, "everrunft") ||STREQ (output_value, "everrunha")) {
 
     gtk_entry_set_text (GTK_ENTRY (os_entry), "");
     gtk_editable_set_editable(GTK_EDITABLE(os_entry), FALSE);
@@ -986,7 +983,7 @@ populate_disks (GtkTreeView *disks_list)
                                                disks_col_model,
                                                "text", DISKS_COL_MODEL,
                                                NULL);
-  /*New treeList for disk group. Author:Ian*/
+
   disk_col_group = gtk_cell_renderer_text_new ();
   gtk_tree_view_insert_column_with_attributes (disks_list,
                                                4,
@@ -1041,7 +1038,6 @@ populate_removable (GtkTreeView *removable_list)
                     G_CALLBACK (toggled), removable_store);
 }
 
-/*Set default group name Author:Ian*/
 static void
 set_group_name(GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data){
@@ -1062,7 +1058,7 @@ set_group_name(GtkWidget * widget, GtkTreePath *path,
     }while(gtk_tree_model_iter_next(model, &iter));
 }
 
-/*Author:Ian*/
+
 static void
 set_network_name(GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data){
@@ -1083,7 +1079,6 @@ set_network_name(GtkWidget * widget, GtkTreePath *path,
     }while(gtk_tree_model_iter_next(model, &iter));
 }
 
-/*Author:Ian*/
 static void
 group_clicked (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data)
@@ -1115,7 +1110,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     device_name = gtk_label_new (_(value));
     combo = gtk_combo_box_text_new();
 
-    for(int i=0; i<group_num; i++)
+    for(int i=0; group_name[i]!=NULL; i++)
       {
 
         char name[strlen (group_name[i])];
@@ -1158,7 +1153,6 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     g_free(value);
 }
 
-/* Author:Ian*/
 static void
 group_or_network_changed(){
   combo_group = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (combo));
@@ -1239,7 +1233,6 @@ populate_interfaces (GtkTreeView *interfaces_list)
   g_signal_connect (interfaces_col_convert, "toggled",
                     G_CALLBACK (toggled), interfaces_store);
 
-  /*Author:Ian*/
   g_signal_connect(interfaces_list, "row-activated",
                     G_CALLBACK(network_clicked), interfaces_list);
 }
@@ -1259,7 +1252,6 @@ toggled (GtkCellRendererToggle *cell, gchar *path_str, gpointer data)
   gtk_tree_path_free (path);
 }
 
-/*Author:Ian*/
 static void
 network_clicked (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data)
@@ -1291,7 +1283,7 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     sscanf( value, "%*[^>]>%[^<]" , str);
     device_name = gtk_label_new (_(str));
     combo = gtk_combo_box_text_new();
-    for(int i=0; i<network_num; i++)
+    for(int i=0; network_name[i]!=NULL; i++)
     {
         char name[strlen (network_name[i])];
         strcpy (name, network_name[i]);
@@ -1931,7 +1923,6 @@ reboot_clicked (GtkWidget *w, gpointer data)
 }
 
 
-/*Analysis Xml Author:Ian*/
 static
 xmlXPathObjectPtr getnodeset(xmlDocPtr doc, xmlChar *xpath) {
     xmlXPathContextPtr context;
@@ -1970,7 +1961,6 @@ get_network_name() {
     result = getnodeset(doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
-        network_num = nodeset->nodeNr;
         network_name = realloc (network_name , sizeof (char *) * (nodeset->nodeNr));
         for (i=0; i < nodeset->nodeNr; i++) {
             network_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
@@ -1996,7 +1986,6 @@ get_group_name() {
     result = getnodeset(doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
-        group_num = nodeset->nodeNr;
         group_name = realloc (group_name , sizeof (char *) * (nodeset->nodeNr));
         for (i=0; i < nodeset->nodeNr; i++) {
             group_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
