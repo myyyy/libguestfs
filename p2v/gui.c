@@ -1091,12 +1091,12 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
                     G_CALLBACK (group_or_network_changed), NULL);
 
     table = gtk_table_new(4, 2, FALSE);
-    gtk_table_attach_defaults(GTK_TABLE (table), device_name, 0, 1, 0, 1);
-    gtk_table_attach_defaults(GTK_TABLE (table), combo, 1, 2, 0, 1);
-    gtk_table_set_row_spacings(GTK_TABLE (table), 5);
-    gtk_table_set_col_spacings(GTK_TABLE (table), 5);
-    gtk_container_set_border_width(GTK_CONTAINER (table), 5);
-    gtk_box_pack_start_defaults(GTK_BOX(GTK_DIALOG (dialog)->vbox), table);
+    gtk_table_attach_defaults (GTK_TABLE (table), device_name, 0, 1, 0, 1);
+    gtk_table_attach_defaults (GTK_TABLE (table), combo, 1, 2, 0, 1);
+    gtk_table_set_row_spacings (GTK_TABLE (table), 5);
+    gtk_table_set_col_spacings (GTK_TABLE (table), 5);
+    gtk_container_set_border_width (GTK_CONTAINER (table), 5);
+    gtk_box_pack_start_defaults (GTK_BOX(GTK_DIALOG (dialog)->vbox), table);
     gtk_widget_show_all (dialog);
     result = gtk_dialog_run (GTK_DIALOG (dialog) );
 
@@ -1264,7 +1264,7 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     gtk_table_set_row_spacings (GTK_TABLE(table), 5);
     gtk_table_set_col_spacings (GTK_TABLE(table), 5);
     gtk_container_set_border_width (GTK_CONTAINER(table), 5);
-    gtk_box_pack_start_defaults(GTK_BOX (GTK_DIALOG (dialog)->vbox), table);
+    gtk_box_pack_start_defaults (GTK_BOX (GTK_DIALOG (dialog)->vbox), table);
     gtk_widget_show_all (dialog);
     result = gtk_dialog_run (GTK_DIALOG (dialog) );
 
