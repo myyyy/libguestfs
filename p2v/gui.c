@@ -343,21 +343,17 @@ test_connection_clicked (GtkWidget *w, gpointer data)
 static void *
 test_connection_thread (void *data)
 {
-
   struct config *copy = data;
   server_name = copy->server;
   int r;
-
   gdk_threads_enter ();
   gtk_label_set_text (GTK_LABEL (spinner_message),
                       _("Testing the connection to the conversion server ..."));
   gtk_spinner_start (GTK_SPINNER (spinner));
   gdk_threads_leave ();
-
   wait_network_online (copy);
   r = test_connection (copy);
   free_config (copy);
-
   gdk_threads_enter ();
   gtk_spinner_stop (GTK_SPINNER (spinner));
 
@@ -694,7 +690,6 @@ create_conversion_dialog (struct config *config)
   /* Signals. */
   g_signal_connect_swapped (G_OBJECT (conv_dlg), "destroy",
                             G_CALLBACK (gtk_main_quit), NULL);
-
   g_signal_connect (G_OBJECT (o_combo), "changed",
                     G_CALLBACK (output_clicked), config);
   g_signal_connect (G_OBJECT (back), "clicked",
@@ -829,6 +824,7 @@ populate_disks (GtkTreeView *disks_list)
   disks_store = gtk_list_store_new (NUM_DISKS_COLS,
                                     G_TYPE_BOOLEAN, G_TYPE_STRING,
                                     G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING);
+
   /* display the root disk, just for user to select a Storage Group for it */
   if (root_disk != NULL)
   {
@@ -839,7 +835,6 @@ populate_disks (GtkTreeView *disks_list)
       CLEANUP_FREE char *model = NULL;
       CLEANUP_FREE char *group = NULL;
       uint64_t size;
-
       if (asprintf (&size_filename, "/sys/block/%s/size",
                     root_disk) == -1) {
         perror ("asprintf");
@@ -864,7 +859,7 @@ populate_disks (GtkTreeView *disks_list)
         exit (EXIT_FAILURE);
       }
       if (g_file_get_contents (model_filename, &model, NULL, NULL)) {
-         /* Need to chomp trailing \n from the content. */
+        /* Need to chomp trailing \n from the content. */
         size_t len = strlen (model);
         if (len > 0 && model[len-1] == '\n')
           model[len-1] = '\0';
@@ -1302,7 +1297,9 @@ set_from_ui_generic (char **all, char ***ret, GtkTreeView *list)
     *ret = NULL;
     return;
   }
+
   model = gtk_tree_view_get_model (list);
+
   guestfs_int_free_string_list (*ret);
   *ret = malloc ((1 + guestfs_int_count_strings (all)) * sizeof (char *));
   if (*ret == NULL) {
