@@ -84,6 +84,41 @@ and source_sound = {
 and source_sound_model =
   AC97 | ES1370 | ICH6 | ICH9 | PCSpeaker | SB16 | USBAudio
 
+and p2v_config = {
+  c_domain_name : string;
+  c_disks : config_disk list;
+  c_networks : config_network list;
+}
+
+and config_disk = {
+  c_disk_name : string;
+  c_storage_group_name : string;
+  c_storage_group_id : string;
+}
+
+and config_network = {
+  c_network_name : string;
+  c_virtual_network_name : string;
+  c_virtal_network_id : string;
+}
+
+and everrun_volume = {
+  e_vol_path : string;
+  e_vol_id : string;
+  e_vol_name : string;
+  e_disk_name : string;
+}
+
+and storage_group = {
+  s_storage_group_id : string;
+  s_storage_group_name : string;
+}
+
+and virtual_network = {
+  v_network_id : string;
+  v_network_name : string;
+}
+
 let rec string_of_source s =
   sprintf "    source name: %s
 hypervisor type: %s
@@ -394,6 +429,7 @@ class virtual output = object
   method disk_create = (new Guestfs.guestfs ())#disk_create
   method virtual create_metadata : source -> target list -> target_buses -> guestcaps -> inspect -> target_firmware -> unit
   method keep_serial_console = true
+  method set_use_config (_ : bool) = ()
 end
 
 type output_allocation = Sparse | Preallocated

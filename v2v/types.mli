@@ -109,6 +109,41 @@ and source_sound = {
 and source_sound_model =
   AC97 | ES1370 | ICH6 | ICH9 | PCSpeaker | SB16 | USBAudio
 
+and p2v_config = {
+  c_domain_name : string;
+  c_disks : config_disk list;
+  c_networks : config_network list;
+}
+
+and config_disk = {
+  c_disk_name : string;
+  c_storage_group_name : string;
+  c_storage_group_id : string;
+}
+
+and config_network = {
+  c_network_name : string;
+  c_virtual_network_name : string;
+  c_virtal_network_id : string;
+}
+
+and everrun_volume = {
+  e_vol_path : string;
+  e_vol_id : string;
+  e_vol_name : string;
+  e_disk_name : string;
+}
+
+and storage_group = {
+  s_storage_group_id : string;
+  s_storage_group_name : string;
+}
+
+and virtual_network = {
+  v_network_id : string;
+  v_network_name : string;
+}
+
 val string_of_source : source -> string
 val string_of_source_disk : source_disk -> string
 
@@ -245,6 +280,7 @@ class virtual output : object
       same signature as Guestfs#disk_create. *)
   method keep_serial_console : bool
   (** Whether this output supports serial consoles (RHEV does not). *)
+  method set_use_config : bool -> unit
 end
 (** Encapsulates all [-o], etc output arguments as an object. *)
 

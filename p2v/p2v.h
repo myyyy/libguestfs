@@ -48,9 +48,13 @@
 /* All disks / removable media / network interfaces discovered
  * when the program started.  Do not change these.
  */
+extern char *root_disk;
+extern char *root_disk_map;
 extern char **all_disks;
+extern char **all_disk_map;
 extern char **all_removable;
 extern char **all_interfaces;
+extern char **all_network_map;
 
 /* config.c */
 struct config {
@@ -64,7 +68,10 @@ struct config {
   int vcpus;
   uint64_t memory;
   int flags;
+  char *root_disk;
+  char *root_disk_map;
   char **disks;
+  char **disk_map;
   char **removable;
   char **interfaces;
   char **network_map;
@@ -113,7 +120,7 @@ extern void cancel_conversion (void);
 /* ssh.c */
 extern int test_connection (struct config *);
 extern mexp_h *open_data_connection (struct config *, int *local_port, int *remote_port);
-extern mexp_h *start_remote_connection (struct config *, const char *remote_dir, const char *libvirt_xml);
+extern mexp_h *start_remote_connection (struct config *, const char *remote_dir, const char *libvirt_xml, const char *config_xml);
 extern const char *get_ssh_error (void);
 
 /* utils.c */
