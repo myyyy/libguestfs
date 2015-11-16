@@ -48,6 +48,8 @@ char **network_default_name;
 char *server_name;
 int group_columns;
 int network_columns;
+xmlDocPtr group_doc;
+xmlDocPtr network_doc;
 static GtkWidget *combo;
 CLEANUP_FREE char *combo_group;
 
@@ -63,7 +65,7 @@ static void set_group_name(GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data);
 static void set_network_name(GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data);
-static void do_doh_request(char *cmd, char * xml_name);
+static xmlDocPtr do_doh_request(char *cmd, char * xml_name);
 static void network_clicked (GtkWidget * widget, GtkTreePath *path,GtkTreeViewColumn *col, gpointer data);
 static void output_clicked(GtkWidget *w, gpointer data);
 
@@ -1947,50 +1949,44 @@ xmlXPathObjectPtr getnodeset(xmlDocPtr doc, xmlChar *xpath) {
 
 static void
 get_network_name() {
-    char* xmlname = "network.xml";
-    char* cmd = "<request id='1' target='supernova'><watch/></request>";
-    do_doh_request(cmd,xmlname);
-
-    xmlDocPtr doc;
-    xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS']/name";
+    int i;
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
-    int i;
-    doc = xmlReadFile(xmlname, NULL, XML_PARSE_NOBLANKS);
-    result = getnodeset(doc, xpath);
+    char* xmlname = "network.xml";
+    char* cmd = "<request id='1' target='supernova'><watch/></request>";
+    network_doc = do_doh_request(cmd,xmlname);
+    xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS']/name";
+
+    result = getnodeset(network_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
         network_name = realloc (network_name , sizeof (char *) * (nodeset->nodeNr));
         for (i=0; i < nodeset->nodeNr; i++) {
-            network_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            network_name[i] = xmlNodeListGetString(network_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
 
         }
     }
-    xmlFreeDoc(doc);
     xmlCleanupParser();
 }
 
 static void
 get_group_name() {
-    char* xmlname = "group.xml";
-    char* cmd = "<request id='1' target='supernova'><watch/></request>";
-    do_doh_request(cmd,xmlname);
-
-    xmlDocPtr doc;
-    xmlChar *xpath=(xmlChar*)"/responses/response/output/storagegroup/name";
+    int i;
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
-    int i;
-    doc = xmlReadFile(xmlname, NULL, XML_PARSE_NOBLANKS);
-    result = getnodeset(doc, xpath);
+    char* xmlname = "group.xml";
+    char* cmd = "<request id='1' target='supernova'><watch/></request>";
+    group_doc =  do_doh_request(cmd,xmlname);
+
+    xmlChar *xpath=(xmlChar*)"/responses/response/output/storagegroup/name";
+    result = getnodeset(group_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
         group_name = realloc (group_name , sizeof (char *) * (nodeset->nodeNr));
         for (i=0; i < nodeset->nodeNr; i++) {
-            group_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            group_name[i] = xmlNodeListGetString(group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
         }
     }
-    xmlFreeDoc(doc);
     xmlCleanupParser();
 }
 
@@ -1998,49 +1994,52 @@ get_group_name() {
 
 static void
 get_group_default_name() {
-    xmlDocPtr doc;
-    xmlChar *xpath=(xmlChar*)"/responses/response/output/storagegroup[is-default = 'true']/name";
+    int i;
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
-    int i;
-    doc = xmlReadFile("group.xml", NULL, XML_PARSE_NOBLANKS);
-    result = getnodeset(doc, xpath);
+    xmlDocPtr doc;
+    xmlChar *xpath=(xmlChar*)"/responses/response/output/storagegroup[is-default = 'true']/name";
+
+    result = getnodeset(group_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
         group_default_name = realloc (group_default_name , sizeof (char *) * (nodeset->nodeNr));
         for (i=0; i < nodeset->nodeNr; i++) {
-            group_default_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            group_default_name[i] = xmlNodeListGetString(group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
         }
     }
-    xmlFreeDoc(doc);
     xmlCleanupParser();
 }
 static void
 get_network_default_name() {
-
-    xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS' and withPortal = 'true']/internal-name";
+    int i;
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
-    int i;
-    doc = xmlReadFile("network.xml", NULL, XML_PARSE_NOBLANKS);
-    result = getnodeset(doc, xpath);
+    xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS' and withPortal = 'true']/internal-name";
+
+    result = getnodeset(network_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
         network_default_name = realloc (network_default_name , sizeof (char *) * (nodeset->nodeNr));
         for (i=0; i < nodeset->nodeNr; i++) {
-            network_default_name[i] = xmlNodeListGetString(doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            network_default_name[i] = xmlNodeListGetString(network_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
 
         }
     }
-    xmlFreeDoc(doc);
     xmlCleanupParser();
 }
-static void
+xmlDocPtr
 do_doh_request(char *cmd,char * xml_name) {
   xmlDocPtr doc;
   char *curl_cmd = NULL;
-  asprintf (&curl_cmd, "curl  -s -b cookie_file -c cookie_file -H \"Content-type: text/xml\" -d \"<requests output='XML'>%s</requests>\" http://%s/doh/ > %s", cmd, server_name, "network.xml");
+  asprintf (&curl_cmd, "curl  -s -b cookie_file -c cookie_file -H \"Content-type: text/xml\" -d \"<requests output='XML'>%s</requests>\" http://%s/doh/ > %s", cmd, server_name, xml_name);
   system(curl_cmd);
-  doc = xmlReadFile("network.xml", NULL, XML_PARSE_NOBLANKS);
+  doc = xmlReadFile(xml_name, NULL, XML_PARSE_NOBLANKS);
 
+  if( remove(xml_name) == 0 )
+      printf("Removed %s.", xml_name);
+  else
+      perror("remove");
+
+  return doc;
 }
