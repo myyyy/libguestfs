@@ -708,7 +708,7 @@ create_conversion_dialog (struct config *config)
 }
 
 static void
-output_clicked(GtkWidget *w, gpointer data){
+output_clicked (GtkWidget *w, gpointer data) {
   struct config *config = data;
   CLEANUP_FREE char *output_value;
 
@@ -829,7 +829,6 @@ populate_disks (GtkTreeView *disks_list)
   disks_store = gtk_list_store_new (NUM_DISKS_COLS,
                                     G_TYPE_BOOLEAN, G_TYPE_STRING,
                                     G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING);
-
 
   if (root_disk != NULL)
   {
@@ -968,7 +967,7 @@ populate_disks (GtkTreeView *disks_list)
                                                disk_col_group,
                                                "text", DISKS_COL_GROUP,
                                                NULL);
-   g_signal_connect(disks_list, "row-activated",
+  g_signal_connect(disks_list, "row-activated",
                     G_CALLBACK(group_clicked), disks_list);
   g_signal_connect (disks_col_convert, "toggled",
                     G_CALLBACK (toggled), disks_store);
@@ -1016,7 +1015,7 @@ populate_removable (GtkTreeView *removable_list)
 }
 
 static void
-set_group_name(GtkWidget * widget, GtkTreePath *path,
+set_group_name (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data){
     GtkTreeIter iter;
     GtkTreeModel *model;
@@ -1024,36 +1023,32 @@ set_group_name(GtkWidget * widget, GtkTreePath *path,
     model = gtk_tree_view_get_model(disks_list);
     gtk_tree_model_get_iter_first(model, &iter);
     group_columns = gtk_tree_model_get_n_columns(model);
-    do
-    {
-      for(int i=0; i<group_columns; i++)
-        {
+    do {
+      for (int i=0; i<group_columns; i++) {
           gtk_tree_model_get (GTK_TREE_MODEL(model), &iter, DISKS_COL_DEVICE, &value, -1);
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
                 DISKS_COL_GROUP, group_name[1], -1);
-        }
-    }while(gtk_tree_model_iter_next(model, &iter));
+      }
+    } while (gtk_tree_model_iter_next(model, &iter));
 }
 
 
 static void
-set_network_name(GtkWidget * widget, GtkTreePath *path,
-                      GtkTreeViewColumn *col, gpointer data){
+set_network_name (GtkWidget * widget, GtkTreePath *path,
+                      GtkTreeViewColumn *col, gpointer data) {
     GtkTreeIter iter;
     GtkTreeModel *model;
     char *value;
     model = gtk_tree_view_get_model(interfaces_list);
     gtk_tree_model_get_iter_first(model, &iter);
-    network_columns=gtk_tree_model_get_n_columns(model);
-    do
-    {
-      for(int i=0; i<network_columns; i++)
-        {
+    network_columns = gtk_tree_model_get_n_columns(model);
+    do {
+      for (int i=0; i<network_columns; i++) {
           gtk_tree_model_get (GTK_TREE_MODEL(model), &iter, DISKS_COL_DEVICE,&value, -1);
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
                 INTERFACES_COL_NETWORK, group_name[1], -1);
-        }
-    }while(gtk_tree_model_iter_next(model, &iter));
+      }
+    } while (gtk_tree_model_iter_next(model, &iter));
 }
 
 static void
@@ -1073,8 +1068,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     if (gtk_tree_model_get_iter(model, &iter, path)) {
         gtk_tree_model_get(model, &iter, DISKS_COL_DEVICE, &value, -1);
     }
-
-    dialog = gtk_dialog_new_with_buttons("Choose Storage Group",conv_dlg,
+    dialog = gtk_dialog_new_with_buttons ("Choose Storage Group",conv_dlg,
                                          GTK_DIALOG_MODAL,
                                          GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
                                          GTK_STOCK_OK, GTK_RESPONSE_OK,
@@ -1086,20 +1080,17 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     device_name = gtk_label_new (_(value));
     combo = gtk_combo_box_text_new();
 
-    for(int i=0; group_name[i]!=NULL; i++)
-      {
-
+    for (int i=0; group_name[i]!=NULL; i++) {
         char name[strlen (group_name[i])];
         strcpy (name, group_name[i]);
         gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), name);
         strcpy (name, "");
-      }
-
+    }
     gtk_combo_box_set_active(combo, 0);
     g_signal_connect (G_OBJECT (combo), "changed",
-                    G_CALLBACK (group_or_network_changed),NULL);
+                    G_CALLBACK (group_or_network_changed), NULL);
 
-    table = gtk_table_new(4,2,FALSE);
+    table = gtk_table_new(4, 2, FALSE);
     gtk_table_attach_defaults(GTK_TABLE(table), device_name, 0, 1, 0, 1);
     gtk_table_attach_defaults(GTK_TABLE(table), combo, 1, 2, 0, 1);
     gtk_table_set_row_spacings(GTK_TABLE(table), 5);
@@ -1111,15 +1102,15 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
 
     gtk_widget_destroy(dialog);
 
-    switch(result){
+    switch (result) {
       case GTK_RESPONSE_CANCEL:
         break;
       case GTK_RESPONSE_OK:
-        if(combo_group == NULL){
+        if (combo_group == NULL) {
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
                       DISKS_COL_MODEL, "Initial Storage Group", -1);
           combo_group = NULL;
-        }else{
+        } else {
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
                       DISKS_COL_MODEL, combo_group, -1);
           combo_group = NULL;
@@ -1130,7 +1121,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
 }
 
 static void
-group_or_network_changed(){
+group_or_network_changed () {
   combo_group = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (combo));
 }
 
@@ -1258,8 +1249,7 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     sscanf( value, "%*[^>]>%[^<]" , str);
     device_name = gtk_label_new (_(str));
     combo = gtk_combo_box_text_new();
-    for(int i=0; network_name[i]!=NULL; i++)
-    {
+    for (int i=0; network_name[i] != NULL; i++) {
         char name[strlen (network_name[i])];
         strcpy (name, network_name[i]);
         gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), name);
@@ -1280,11 +1270,11 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
 
     gtk_widget_destroy(dialog);
 
-    switch(result){
+    switch (result) {
       case GTK_RESPONSE_CANCEL:
         break;
       case GTK_RESPONSE_OK:
-        if(combo_group == NULL){
+        if (combo_group == NULL) {
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
                       INTERFACES_COL_NETWORK, "Initial Network", -1);
           combo_group = NULL;
@@ -1311,9 +1301,7 @@ set_from_ui_generic (char **all, char ***ret, GtkTreeView *list)
     *ret = NULL;
     return;
   }
-
   model = gtk_tree_view_get_model (list);
-
   guestfs_int_free_string_list (*ret);
   *ret = malloc ((1 + guestfs_int_count_strings (all)) * sizeof (char *));
   if (*ret == NULL) {
@@ -1433,7 +1421,7 @@ set_disk_map_from_ui (struct config *config)
     gtk_tree_model_get (model, &iter, DISKS_COL_GROUP, &s, -1);
     if (s) {
       assert (all_disks[i] != NULL);
-      if (asprintf (&config->disk_map[i], "%s:%s",all_disks[i], s) == -1) {
+      if (asprintf (&config->disk_map[i], "%s:%s", all_disks[i], s) == -1) {
         perror ("asprintf");
         exit (EXIT_FAILURE);
       }
@@ -1922,8 +1910,8 @@ get_network_name() {
     xmlXPathObjectPtr result;
     char* xmlname = "network.xml";
     char* cmd = "<request id='1' target='supernova'><watch/></request>";
-    network_doc = do_doh_request(cmd,xmlname);
-    xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS']/name";
+    network_doc = do_doh_request(cmd, xmlname);
+    xmlChar *xpath = (xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS']/name";
 
     result = getnodeset(network_doc, xpath);
     if (result) {
@@ -1957,9 +1945,6 @@ get_group_name() {
     }
     xmlCleanupParser();
 }
-
-
-
 static void
 get_group_default_name() {
     int i;
@@ -1982,7 +1967,7 @@ get_network_default_name() {
     int i;
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
-    xmlChar *xpath=(xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS' and withPortal = 'true']/internal-name";
+    xmlChar *xpath = (xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS' and withPortal = 'true']/internal-name";
 
     result = getnodeset(network_doc, xpath);
     if (result) {
@@ -1998,15 +1983,15 @@ get_network_default_name() {
 xmlDocPtr
 do_doh_request(char *cmd,char * xml_name) {
   xmlDocPtr doc;
-  // char *curl_cmd = NULL;
-  // asprintf (&curl_cmd, "curl  -s -b cookie_file -c cookie_file -H \"Content-type: text/xml\" -d \"<requests output='XML'>%s</requests>\" http://%s/doh/ > %s", cmd, server_name, xml_name);
-  // system(curl_cmd);
-  // doc = xmlReadFile(xml_name, NULL, XML_PARSE_NOBLANKS);
+  char *curl_cmd = NULL;
+  asprintf (&curl_cmd, "curl  -s -b cookie_file -c cookie_file -H \"Content-type: text/xml\" -d \"<requests output='XML'>%s</requests>\" http://%s/doh/ > %s", cmd, server_name, xml_name);
+  system(curl_cmd);
+  doc = xmlReadFile(xml_name, NULL, XML_PARSE_NOBLANKS);
 
-  // if( remove(xml_name) == 0 )
-  //     printf("Removed %s.", xml_name);
-  // else
-  //     perror("remove");
+  if( remove(xml_name) == 0 )
+      printf("Removed %s.", xml_name);
+  else
+      perror("remove");
 
   return doc;
 }
