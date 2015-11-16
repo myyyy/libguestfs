@@ -343,8 +343,9 @@ test_connection_clicked (GtkWidget *w, gpointer data)
 static void *
 test_connection_thread (void *data)
 {
-  server_name = copy->server;
+
   struct config *copy = data;
+  server_name = copy->server;
   int r;
 
   gdk_threads_enter ();
@@ -373,13 +374,6 @@ test_connection_thread (void *data)
       get_network_name();
       get_group_default_name();
       get_network_default_name();
-      /* Set default Storage Groups and Virtual Networks for all disks and networks */
-      char *storage_groups[] = {"Initial Storage Group", "Storage group A", "Storage Group B"};
-      char *virtual_networks[] = {"biz0", "biz1", "biz2"};
-      root_disk_map = strdup ("Initial Storage Group");
-      all_disk_map = guestfs_int_copy_string_list (storage_groups);
-      all_network_map = guestfs_int_copy_string_list (virtual_networks);
-
     /* Connection is good. */
     gtk_label_set_text (GTK_LABEL (spinner_message),
                         _("Connected to the conversion server.\n"
@@ -432,7 +426,6 @@ static void populate_disks (GtkTreeView *disks_list);
 static void populate_removable (GtkTreeView *removable_list);
 static void populate_interfaces (GtkTreeView *interfaces_list);
 static void toggled (GtkCellRendererToggle *cell, gchar *path_str, gpointer data);
-static void network_edited_callback (GtkCellRendererToggle *cell, gchar *path_str, gchar *new_text, gpointer data);
 static void set_disks_from_ui (struct config *);
 static void set_removable_from_ui (struct config *);
 static void set_interfaces_from_ui (struct config *);
@@ -837,27 +830,7 @@ populate_disks (GtkTreeView *disks_list)
                                     G_TYPE_BOOLEAN, G_TYPE_STRING,
                                     G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING);
 
-  /* Just for test */
-  if (root_disk_map != NULL)
-  {
-    printf("root disk map: %s\n", root_disk_map);
-  }
-  if (all_disk_map != NULL)
-  {
-    for (i = 0; all_disk_map[i] != NULL; ++i)
-    {
-      printf("Storage group %d is %s\n", i, all_disk_map[i]);
-    }
-  }
-  if (all_network_map != NULL)
-  {
-    for (i = 0; all_network_map[i] != NULL; ++i)
-    {
-      printf("Network map %d is %s\n", i, all_network_map[i]);
-    }
-  }
 
-  /* display the root disk, just for user to select a Storage Group for it */
   if (root_disk != NULL)
   {
       CLEANUP_FREE char *size_filename = NULL;
@@ -875,20 +848,23 @@ populate_disks (GtkTreeView *disks_list)
       }
       if (g_file_get_contents (size_filename, &size_str, NULL, NULL) &&
           sscanf (size_str, "%" SCNu64, &size) == 1) {
-        size /= 2*1024*1024; /* size from kernel is given in sectors? */
+        size /= 2*1024*1024;
         if (asprintf (&size_gb, "%" PRIu64, size) == -1) {
           perror ("asprintf");
           exit (EXIT_FAILURE);
         }
       }
-      asprintf (&group, "%s", "");
+      if (asprintf (&group, "%s", "") == -1) {
+        perror ("asprintf");
+        exit (EXIT_FAILURE);
+      }
       if (asprintf (&model_filename, "/sys/block/%s/device/model",
                     root_disk) == -1) {
         perror ("asprintf");
         exit (EXIT_FAILURE);
       }
       if (g_file_get_contents (model_filename, &model, NULL, NULL)) {
-        /* Need to chomp trailing \n from the content. */
+
         size_t len = strlen (model);
         if (len > 0 && model[len-1] == '\n')
           model[len-1] = '\0';
@@ -1045,7 +1021,7 @@ set_group_name(GtkWidget * widget, GtkTreePath *path,
     GtkTreeIter iter;
     GtkTreeModel *model;
     char *value;
-    model =  model = gtk_tree_view_get_model(disks_list);
+    model = gtk_tree_view_get_model(disks_list);
     gtk_tree_model_get_iter_first(model, &iter);
     group_columns = gtk_tree_model_get_n_columns(model);
     do
@@ -1094,7 +1070,6 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     gint result;
     char *value;
     model = gtk_tree_view_get_model(widget);
-    int columns=gtk_tree_model_get_n_columns(model);
     if (gtk_tree_model_get_iter(model, &iter, path)) {
         gtk_tree_model_get(model, &iter, DISKS_COL_DEVICE, &value, -1);
     }
@@ -1265,7 +1240,6 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     GtkTreeModel *model;
     gint result;
     char *value;
-    GtkTreeModel *model_iter = data;
     model = gtk_tree_view_get_model(widget);
     if (gtk_tree_model_get_iter(model, &iter, path)) {
         gtk_tree_model_get(model, &iter, INTERFACES_COL_DEVICE, &value, -1);
@@ -1438,13 +1412,7 @@ set_disk_map_from_ui (struct config *config)
   GtkTreeIter iter;
   gboolean b;
   const char *s;
-  size_t i, j;GGtkTreeView *list;
-  GtkTreeModel *model;
-  GtkTreeIter iter;
-  gboolean b;
-  const char *s;
   size_t i, j;
-
   if (all_disks == NULL) {
     guestfs_int_free_string_list (config->disk_map);
     config->disk_map = NULL;
@@ -1464,8 +1432,8 @@ set_disk_map_from_ui (struct config *config)
   while (b){
     gtk_tree_model_get (model, &iter, DISKS_COL_GROUP, &s, -1);
     if (s) {
-      assert (all_disk[i] !== NULL);
-      if (asprintf (&config->disk_map[i], "%s:%s",all_disk[i], s) == -1) {
+      assert (all_disks[i] != NULL);
+      if (asprintf (&config->disk_map[i], "%s:%s",all_disks[i], s) == -1) {
         perror ("asprintf");
         exit (EXIT_FAILURE);
       }
@@ -1997,7 +1965,6 @@ get_group_default_name() {
     int i;
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
-    xmlDocPtr doc;
     xmlChar *xpath=(xmlChar*)"/responses/response/output/storagegroup[is-default = 'true']/name";
 
     result = getnodeset(group_doc, xpath);
@@ -2031,15 +1998,15 @@ get_network_default_name() {
 xmlDocPtr
 do_doh_request(char *cmd,char * xml_name) {
   xmlDocPtr doc;
-  char *curl_cmd = NULL;
-  asprintf (&curl_cmd, "curl  -s -b cookie_file -c cookie_file -H \"Content-type: text/xml\" -d \"<requests output='XML'>%s</requests>\" http://%s/doh/ > %s", cmd, server_name, xml_name);
-  system(curl_cmd);
-  doc = xmlReadFile(xml_name, NULL, XML_PARSE_NOBLANKS);
+  // char *curl_cmd = NULL;
+  // asprintf (&curl_cmd, "curl  -s -b cookie_file -c cookie_file -H \"Content-type: text/xml\" -d \"<requests output='XML'>%s</requests>\" http://%s/doh/ > %s", cmd, server_name, xml_name);
+  // system(curl_cmd);
+  // doc = xmlReadFile(xml_name, NULL, XML_PARSE_NOBLANKS);
 
-  if( remove(xml_name) == 0 )
-      printf("Removed %s.", xml_name);
-  else
-      perror("remove");
+  // if( remove(xml_name) == 0 )
+  //     printf("Removed %s.", xml_name);
+  // else
+  //     perror("remove");
 
   return doc;
 }
