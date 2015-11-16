@@ -48,7 +48,6 @@ char **network_default_name;
 char *server_name;
 int group_columns;
 int network_columns;
-int is_hide = 0;
 static GtkWidget *combo;
 CLEANUP_FREE char *combo_group;
 
