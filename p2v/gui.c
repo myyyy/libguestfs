@@ -1232,9 +1232,9 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     GtkTreeModel *model;
     gint result;
     char *value;
-    model = gtk_tree_view_get_model(widget);
-    if (gtk_tree_model_get_iter(model, &iter, path)) {
-        gtk_tree_model_get(model, &iter, INTERFACES_COL_DEVICE, &value, -1);
+    model = gtk_tree_view_get_model (widget);
+    if (gtk_tree_model_get_iter (model, &iter, path)) {
+        gtk_tree_model_get (model, &iter, INTERFACES_COL_DEVICE, &value, -1);
     }
 
     dialog = gtk_dialog_new_with_buttons ("Choose Network ", conv_dlg,
@@ -1418,7 +1418,7 @@ set_disk_map_from_ui (struct config *config)
   }
   i = j = 0;
   b = gtk_tree_model_get_iter_first (model, &iter);
-  while (b){
+  while (b) {
     gtk_tree_model_get (model, &iter, DISKS_COL_GROUP, &s, -1);
     if (s) {
       assert (all_disks[i] != NULL);
