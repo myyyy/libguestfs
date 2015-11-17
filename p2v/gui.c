@@ -346,14 +346,17 @@ test_connection_thread (void *data)
   struct config *copy = data;
   server_name = copy->server;
   int r;
+
   gdk_threads_enter ();
   gtk_label_set_text (GTK_LABEL (spinner_message),
                       _("Testing the connection to the conversion server ..."));
   gtk_spinner_start (GTK_SPINNER (spinner));
   gdk_threads_leave ();
+
   wait_network_online (copy);
   r = test_connection (copy);
   free_config (copy);
+
   gdk_threads_enter ();
   gtk_spinner_stop (GTK_SPINNER (spinner));
 
@@ -842,8 +845,7 @@ populate_disks (GtkTreeView *disks_list)
       }
       if (g_file_get_contents (size_filename, &size_str, NULL, NULL) &&
           sscanf (size_str, "%" SCNu64, &size) == 1) {
-        /* size from kernel is given in sectors? */
-        size /= 2*1024*1024;
+        size /= 2*1024*1024; /* size from kernel is given in sectors? */
         if (asprintf (&size_gb, "%" PRIu64, size) == -1) {
           perror ("asprintf");
           exit (EXIT_FAILURE);
@@ -1023,7 +1025,7 @@ set_group_name (GtkWidget * widget, GtkTreePath *path,
       for (int i = 0; i < group_columns; i++) {
           gtk_tree_model_get (GTK_TREE_MODEL (model), &iter, DISKS_COL_DEVICE, &value, -1);
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-                DISKS_COL_GROUP, group_name[1], -1);
+                DISKS_COL_GROUP, group_name [1], -1);
       }
     } while (gtk_tree_model_iter_next(model, &iter));
 }
@@ -1076,13 +1078,13 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     device_name = gtk_label_new (_(value));
     combo = gtk_combo_box_text_new();
 
-    for (int i = 0; group_name[i]!=NULL; i++) {
+    for (int i = 0; group_name[i] != NULL; i++) {
         char name[strlen (group_name[i])];
         strcpy (name, group_name[i]);
         gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT(combo), name);
         strcpy (name, "");
     }
-    gtk_combo_box_set_active(combo, 0);
+    gtk_combo_box_set_active (combo, 0);
     g_signal_connect (G_OBJECT (combo), "changed",
                     G_CALLBACK (group_or_network_changed), NULL);
 
@@ -1895,7 +1897,7 @@ xmlXPathObjectPtr getnodeset (xmlDocPtr doc, xmlChar *xpath) {
     }
     if (xmlXPathNodeSetIsEmpty (result->nodesetval)) {
         xmlXPathFreeObject (result);
-        printf("No result\n");
+        printf ("No result\n");
         return NULL;
     }
     return result;
@@ -1932,7 +1934,7 @@ get_group_name () {
     char* cmd = "<request id='1' target='supernova'><watch/></request>";
     group_doc =  do_doh_request (cmd,xmlname);
 
-    xmlChar *xpath= (xmlChar*)"/responses/response/output/storagegroup/name";
+    xmlChar *xpath = (xmlChar*)"/responses/response/output/storagegroup/name";
     result = getnodeset (group_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
@@ -1971,7 +1973,7 @@ get_network_default_name () {
     if (result) {
         nodeset = result->nodesetval;
         network_default_name = realloc (network_default_name , sizeof (char *) * (nodeset->nodeNr));
-        for (i=0; i < nodeset->nodeNr; i++) {
+        for (i = 0; i < nodeset->nodeNr; i++) {
             network_default_name[i] = xmlNodeListGetString (network_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
 
         }

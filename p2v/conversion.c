@@ -773,12 +773,12 @@ generate_config_xml (struct config *config, struct data_conn *data_conns)
 
       if (config->interfaces) {
         for (i = 0; config->interfaces[i] != NULL; ++i) {
-          // const char *target_network;
+          const char *target_network;
           CLEANUP_FREE char *mac_filename = NULL;
           CLEANUP_FREE char *mac = NULL;
 
-          // target_network =
-          //   map_interface_to_network (config, config->interfaces[i]);
+          target_network =
+            map_interface_to_network (config, config->interfaces[i]);
 
           if (asprintf (&mac_filename, "/sys/class/net/%s/address",
                         config->interfaces[i]) == -1) {
