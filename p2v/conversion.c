@@ -81,6 +81,7 @@ static void cleanup_data_conns (struct data_conn *data_conns, size_t nr);
 static char *generate_libvirt_xml (struct config *, struct data_conn *);
 static char *generate_config_xml (struct config *, struct data_conn *);
 static const char *map_interface_to_network (struct config *, const char *interface);
+static const char *map_group_to_disk (struct config *config, const char *disks);
 
 static char *conversion_error;
 
@@ -741,9 +742,32 @@ generate_config_xml (struct config *config, struct data_conn *data_conns)
 
     start_element ("devices") {
 
-      for (i = 0; config->disks[i] != NULL; ++i) {
-        char target_dev[64];
+      char target_root_dev[64];
+      char target_root_disk_map[64];
 
+      strcpy (target_root_dev, config->root_disk);
+      strcpy (target_root_disk_map, config->root_disk_map);
+
+      start_element ("disk") {
+          attribute ("type", "network");
+          attribute ("device", "disk");
+          start_element ("source") {
+            attribute ("protocol", "everrun");
+            start_element ("storage-group") {
+              attribute ("name", target_root_disk_map);
+            } end_element ();
+          } end_element ();
+          start_element ("target") {
+            attribute ("dev", target_root_dev);
+            /* XXX Need to set bus to "ide" or "scsi" here. */
+          } end_element ();
+        } end_element ();
+
+      for (i = 0; config->disks[i] != NULL; ++i) {
+        const char *target_group;
+        char target_dev[64];
+         target_group =
+            map_group_to_disk (config, config->disks[i]);
         if (config->disks[i][0] == '/') {
         target_sd:
           memcpy (target_dev, "sd", 2);
@@ -761,7 +785,7 @@ generate_config_xml (struct config *config, struct data_conn *data_conns)
           start_element ("source") {
             attribute ("protocol", "everrun");
             start_element ("storage-group") {
-              attribute ("name", "Initial Storage Group");
+              attribute ("name", target_group);
             } end_element ();
           } end_element ();
           start_element ("target") {
@@ -795,7 +819,7 @@ generate_config_xml (struct config *config, struct data_conn *data_conns)
           start_element ("interface") {
             attribute ("type", "network");
             start_element ("source") {
-              attribute ("network", "priv0");
+              attribute ("network", target_network);
             } end_element ();
             start_element ("target") {
               attribute ("dev", config->interfaces[i]);
@@ -1031,7 +1055,7 @@ map_interface_to_network (struct config *config, const char *interface)
   size_t i, len;
 
   if (config->network_map == NULL)
-    return "default";
+    return default_network_name;
 
   for (i = 0; config->network_map[i] != NULL; ++i) {
     /* The default map maps everything. */
@@ -1046,5 +1070,28 @@ map_interface_to_network (struct config *config, const char *interface)
   }
 
   /* No mapping found. */
-  return "default";
+  return default_network_name;
+}
+static const char *
+map_group_to_disk (struct config *config, const char *disks)
+{
+  size_t i, len;
+
+  if (config->disk_map == NULL)
+    return default_group_name;
+
+  for (i = 0; config->disk_map[i] != NULL; ++i) {
+    /* The default map maps everything. */
+    if (strchr (config->disk_map[i], ':') == NULL)
+      return config->disk_map[i];
+
+    /* interface: ? */
+    len = strlen (disks);
+    if (STRPREFIX (config->disk_map[i], disks) &&
+        config->disk_map[i][len] == ':')
+      return &config->disk_map[i][len+1];
+  }
+
+  /* No mapping found. */
+  return default_group_name;
 }

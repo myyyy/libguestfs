@@ -43,11 +43,9 @@
 
 char **group_name;
 char **network_name;
-char **group_default_name;
-char **network_default_name;
+char *default_group_name;
+char *default_network_name;
 char *server_name;
-int group_columns;
-int network_columns;
 xmlDocPtr group_doc;
 xmlDocPtr network_doc;
 static GtkWidget *combo;
@@ -55,8 +53,8 @@ CLEANUP_FREE char *combo_group;
 
 static void get_group_name (void);
 static void get_network_name (void);
-static void get_network_default_name (void);
-static void get_group_default_name (void);
+static void get_default_network_name (void);
+static void get_default_group_name (void);
 static void group_or_network_changed (void);
 static xmlXPathObjectPtr getnodeset (xmlDocPtr doc, xmlChar *xpath);
 static void group_clicked (GtkWidget * widget, GtkTreePath *path,
@@ -371,8 +369,8 @@ test_connection_thread (void *data)
   else {
       get_group_name ();
       get_network_name ();
-      get_group_default_name ();
-      get_network_default_name ();
+      get_default_network_name ();
+      get_default_group_name ();
     /* Connection is good. */
     gtk_label_set_text (GTK_LABEL (spinner_message),
                         _("Connected to the conversion server.\n"
@@ -1020,12 +1018,12 @@ set_group_name (GtkWidget * widget, GtkTreePath *path,
     char *value;
     model = gtk_tree_view_get_model (disks_list);
     gtk_tree_model_get_iter_first (model, &iter);
-    group_columns = gtk_tree_model_get_n_columns (model);
+    int group_columns = gtk_tree_model_get_n_columns (model);
     do {
       for (int i = 0; i < group_columns; i++) {
           gtk_tree_model_get (GTK_TREE_MODEL (model), &iter, DISKS_COL_DEVICE, &value, -1);
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-                DISKS_COL_GROUP, group_name [1], -1);
+                DISKS_COL_GROUP, default_group_name, -1);
       }
     } while (gtk_tree_model_iter_next(model, &iter));
 }
@@ -1039,12 +1037,12 @@ set_network_name (GtkWidget * widget, GtkTreePath *path,
     char *value;
     model = gtk_tree_view_get_model(interfaces_list);
     gtk_tree_model_get_iter_first(model, &iter);
-    network_columns = gtk_tree_model_get_n_columns(model);
+    int network_columns = gtk_tree_model_get_n_columns(model);
     do {
       for (int i = 0; i < network_columns; i++) {
           gtk_tree_model_get (GTK_TREE_MODEL(model), &iter, DISKS_COL_DEVICE,&value, -1);
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-                INTERFACES_COL_NETWORK, group_name[1], -1);
+                INTERFACES_COL_NETWORK, default_network_name, -1);
       }
     } while (gtk_tree_model_iter_next(model, &iter));
 }
@@ -1917,9 +1915,12 @@ get_network_name () {
     if (result) {
         nodeset = result->nodesetval;
         network_name = realloc (network_name , sizeof (char *) * (nodeset->nodeNr));
-        for (i = 0; i < nodeset->nodeNr; i++) {
+        if (network_name != NULL) {
+          for (i = 0; i < nodeset->nodeNr; i++) {
             network_name[i] = xmlNodeListGetString (network_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
-
+          }
+        } else {
+          perror ("Network name is required");
         }
     }
     xmlCleanupParser ();
@@ -1939,31 +1940,38 @@ get_group_name () {
     if (result) {
         nodeset = result->nodesetval;
         group_name = realloc (group_name , sizeof (char *) * (nodeset->nodeNr));
-        for (i = 0; i < nodeset->nodeNr; i++) {
+        if (group_name != NULL) {
+          for (i = 0; i < nodeset->nodeNr; i++) {
             group_name[i] = xmlNodeListGetString (group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+          }
+        } else {
+          perror ("Group name is required");
         }
+
     }
     xmlCleanupParser ();
 }
 static void
-get_group_default_name () {
+get_default_group_name () {
     int i;
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
-    xmlChar *xpath= (xmlChar*)"/responses/response/output/storagegroup[is-default = 'true']/name";
+    xmlChar *xpath = (xmlChar*)"/responses/response/output/storagegroup[is-default = 'true']/name";
 
     result = getnodeset (group_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
-        group_default_name = realloc (group_default_name , sizeof (char *) * (nodeset->nodeNr));
-        for (i = 0; i < nodeset->nodeNr; i++) {
-            group_default_name[i] = xmlNodeListGetString (group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+        default_group_name = realloc (default_group_name , sizeof (char *) * (nodeset->nodeNr));
+        if (default_group_name != NULL) {
+          strcpy (default_group_name, xmlNodeListGetString (group_doc, nodeset->nodeTab[0]->xmlChildrenNode, 1));
+        } else{
+          default_group_name = group_name[0];
         }
     }
     xmlCleanupParser ();
 }
 static void
-get_network_default_name () {
+get_default_network_name () {
     int i;
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
@@ -1972,11 +1980,13 @@ get_network_default_name () {
     result = getnodeset (network_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
-        network_default_name = realloc (network_default_name , sizeof (char *) * (nodeset->nodeNr));
-        for (i = 0; i < nodeset->nodeNr; i++) {
-            network_default_name[i] = xmlNodeListGetString (network_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
-
+        default_network_name = realloc (default_network_name , sizeof (char *) * (nodeset->nodeNr));
+        if (default_network_name != NULL) {
+          strcpy (default_network_name, xmlNodeListGetString (network_doc, nodeset->nodeTab[0]->xmlChildrenNode, 1));
+        } else {
+          default_network_name = network_name[0];
         }
+
     }
     xmlCleanupParser ();
 }
