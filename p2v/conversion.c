@@ -766,6 +766,7 @@ generate_config_xml (struct config *config, struct data_conn *data_conns)
       for (i = 0; config->disks[i] != NULL; ++i) {
         const char *target_group;
         char target_dev[64];
+
          target_group =
             map_group_to_disk (config, config->disks[i]);
         if (config->disks[i][0] == '/') {
