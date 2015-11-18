@@ -48,6 +48,8 @@
 /* All disks / removable media / network interfaces discovered
  * when the program started.  Do not change these.
  */
+extern char *default_group_name;
+extern char *default_network_name;
 extern char *root_disk;
 extern char *root_disk_map;
 extern char **all_disks;
