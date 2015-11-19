@@ -49,7 +49,8 @@ char *server_name;
 xmlDocPtr group_doc;
 xmlDocPtr network_doc;
 static GtkWidget *combo;
-CLEANUP_FREE char *combo_group;
+char *combo_group;
+int is_server_everrun = 0;
 
 static void get_group_name (void);
 static void get_network_name (void);
@@ -64,6 +65,7 @@ static void set_group_name (GtkWidget * widget, GtkTreePath *path,
 static void set_network_name (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data);
 static xmlDocPtr do_doh_request(char *cmd, char * xml_name);
+static void do_doh_test_request (void);
 static void network_clicked (GtkWidget * widget, GtkTreePath *path, GtkTreeViewColumn *col, gpointer data);
 static void output_clicked (GtkWidget *w, gpointer data);
 
@@ -367,10 +369,15 @@ test_connection_thread (void *data)
     gtk_widget_set_sensitive (next_button, FALSE);
   }
   else {
+    /* Set default Storage Groups and Virtual Networks for all disks and networks */
+    do_doh_test_request();
+    if (is_server_everrun != 0)
+    {
       get_group_name ();
       get_network_name ();
       get_default_network_name ();
       get_default_group_name ();
+    }
     /* Connection is good. */
     gtk_label_set_text (GTK_LABEL (spinner_message),
                         _("Connected to the conversion server.\n"
@@ -1015,17 +1022,21 @@ set_group_name (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data){
     GtkTreeIter iter;
     GtkTreeModel *model;
-    char *value;
-    model = gtk_tree_view_get_model (disks_list);
-    gtk_tree_model_get_iter_first (model, &iter);
-    int group_columns = gtk_tree_model_get_n_columns (model);
-    do {
-      for (int i = 0; i < group_columns; i++) {
-          gtk_tree_model_get (GTK_TREE_MODEL (model), &iter, DISKS_COL_DEVICE, &value, -1);
-          gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-                DISKS_COL_GROUP, default_group_name, -1);
+    gboolean b;
+
+    model = gtk_tree_view_get_model (GTK_TREE_VIEW (disks_list));
+    b = gtk_tree_model_get_iter_first (model, &iter);
+    while (b)
+    {
+      CLEANUP_FREE char *group = NULL;
+      if (asprintf (&group, "%s", default_group_name) == -1)
+      {
+          perror ("asprintf");
+          exit (EXIT_FAILURE);
       }
-    } while (gtk_tree_model_iter_next(model, &iter));
+      gtk_list_store_set (GTK_LIST_STORE (model), &iter, DISKS_COL_GROUP, group, -1);
+      b = gtk_tree_model_iter_next (model, &iter);
+    }
 }
 
 
@@ -1034,25 +1045,27 @@ set_network_name (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data) {
     GtkTreeIter iter;
     GtkTreeModel *model;
-    char *value;
-    model = gtk_tree_view_get_model(interfaces_list);
-    gtk_tree_model_get_iter_first(model, &iter);
-    int network_columns = gtk_tree_model_get_n_columns(model);
-    do {
-      for (int i = 0; i < network_columns; i++) {
-          gtk_tree_model_get (GTK_TREE_MODEL(model), &iter, DISKS_COL_DEVICE,&value, -1);
-          gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-                INTERFACES_COL_NETWORK, default_network_name, -1);
+    gboolean b;
+
+    model = gtk_tree_view_get_model (GTK_TREE_VIEW (interfaces_list));
+    b = gtk_tree_model_get_iter_first(model, &iter);
+    while (b)
+    {
+      CLEANUP_FREE char *network = NULL;
+      if (asprintf (&network, "%s", default_network_name) == -1)
+      {
+          perror ("asprintf");
+          exit (EXIT_FAILURE);
       }
-    } while (gtk_tree_model_iter_next(model, &iter));
+      gtk_list_store_set (GTK_LIST_STORE (model), &iter, INTERFACES_COL_NETWORK, network, -1);
+      b = gtk_tree_model_iter_next (model, &iter);
+    }
 }
 
 static void
 group_clicked (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data)
 {
-
-
     GtkWidget *dialog;
     GtkWidget *device_name;
     GtkWidget *table;
@@ -1060,7 +1073,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     GtkTreeModel *model;
     gint result;
     char *value;
-    model = gtk_tree_view_get_model (widget);
+    model = gtk_tree_view_get_model (GTK_TREE_VIEW (widget));
     if (gtk_tree_model_get_iter (model, &iter, path) ) {
         gtk_tree_model_get (model, &iter, DISKS_COL_DEVICE, &value, -1);
     }
@@ -1227,7 +1240,7 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     GtkTreeModel *model;
     gint result;
     char *value;
-    model = gtk_tree_view_get_model (widget);
+    model = gtk_tree_view_get_model (GTK_TREE_VIEW (widget));
     if (gtk_tree_model_get_iter (model, &iter, path)) {
         gtk_tree_model_get (model, &iter, INTERFACES_COL_DEVICE, &value, -1);
     }
@@ -1877,9 +1890,8 @@ reboot_clicked (GtkWidget *w, gpointer data)
   ignore_value (system ("/sbin/reboot"));
 }
 
-
-static
-xmlXPathObjectPtr getnodeset (xmlDocPtr doc, xmlChar *xpath) {
+static xmlXPathObjectPtr
+getnodeset (xmlDocPtr doc, xmlChar *xpath) {
     xmlXPathContextPtr context;
     xmlXPathObjectPtr result;
     context = xmlXPathNewContext (doc);
@@ -1902,12 +1914,12 @@ xmlXPathObjectPtr getnodeset (xmlDocPtr doc, xmlChar *xpath) {
 }
 
 static void
-get_network_name () {
+get_network_name (void) {
     int i;
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
-    char* xmlname = "network.xml";
-    char* cmd = "<request id='1' target='supernova'><watch/></request>";
+    char xmlname[] = "network.xml";
+    char cmd[] = "<request id='1' target='supernova'><watch/></request>";
     network_doc = do_doh_request (cmd, xmlname);
     xmlChar *xpath = (xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS']/name";
 
@@ -1917,7 +1929,8 @@ get_network_name () {
         network_name = realloc (network_name , sizeof (char *) * (nodeset->nodeNr));
         if (network_name != NULL) {
           for (i = 0; i < nodeset->nodeNr; i++) {
-            network_name[i] = xmlNodeListGetString (network_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            char *network_name_temp = (char*) xmlNodeListGetString (network_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            network_name[i] = strdup (network_name_temp);
           }
         } else {
           perror ("Network name is required");
@@ -1927,13 +1940,13 @@ get_network_name () {
 }
 
 static void
-get_group_name () {
+get_group_name (void) {
     int i;
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
-    char* xmlname = "group.xml";
-    char* cmd = "<request id='1' target='supernova'><watch/></request>";
-    group_doc =  do_doh_request (cmd,xmlname);
+    char xmlname[] = "group.xml";
+    char cmd[] = "<request id='1' target='supernova'><watch/></request>";
+    group_doc =  do_doh_request (cmd, xmlname);
 
     xmlChar *xpath = (xmlChar*)"/responses/response/output/storagegroup/name";
     result = getnodeset (group_doc, xpath);
@@ -1942,7 +1955,8 @@ get_group_name () {
         group_name = realloc (group_name , sizeof (char *) * (nodeset->nodeNr));
         if (group_name != NULL) {
           for (i = 0; i < nodeset->nodeNr; i++) {
-            group_name[i] = xmlNodeListGetString (group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            char *group_name_temp = (char*) xmlNodeListGetString (group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+            group_name[i] = strdup (group_name_temp);
           }
         } else {
           perror ("Group name is required");
@@ -1952,8 +1966,7 @@ get_group_name () {
     xmlCleanupParser ();
 }
 static void
-get_default_group_name () {
-    int i;
+get_default_group_name (void) {
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
     xmlChar *xpath = (xmlChar*)"/responses/response/output/storagegroup[is-default = 'true']/name";
@@ -1961,18 +1974,17 @@ get_default_group_name () {
     result = getnodeset (group_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
-        default_group_name = realloc (default_group_name , sizeof (char *) * (nodeset->nodeNr));
-        if (default_group_name != NULL) {
-          strcpy (default_group_name, xmlNodeListGetString (group_doc, nodeset->nodeTab[0]->xmlChildrenNode, 1));
+        if (nodeset->nodeNr > 0) {
+          char *default_group_name_temp = (char*) xmlNodeListGetString (group_doc, nodeset->nodeTab[0]->xmlChildrenNode, 1);
+          default_group_name = strdup (default_group_name_temp);
         } else{
-          default_group_name = group_name[0];
+          default_group_name = strdup (group_name[0]);
         }
     }
     xmlCleanupParser ();
 }
 static void
-get_default_network_name () {
-    int i;
+get_default_network_name (void) {
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
     xmlChar *xpath = (xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS' and withPortal = 'true']/internal-name";
@@ -1980,25 +1992,49 @@ get_default_network_name () {
     result = getnodeset (network_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
-        default_network_name = realloc (default_network_name , sizeof (char *) * (nodeset->nodeNr));
-        if (default_network_name != NULL) {
-          strcpy (default_network_name, xmlNodeListGetString (network_doc, nodeset->nodeTab[0]->xmlChildrenNode, 1));
+        if (nodeset->nodeNr > 0) {
+          char *default_network_name_temp = (char*) xmlNodeListGetString (network_doc, nodeset->nodeTab[0]->xmlChildrenNode, 1);
+          default_network_name = strdup (default_network_name_temp);
         } else {
-          default_network_name = network_name[0];
+          default_network_name = strdup (network_name[0]);
         }
-
     }
     xmlCleanupParser ();
 }
-xmlDocPtr
-do_doh_request (char *cmd,char * xml_name) {
+
+static xmlDocPtr
+do_doh_request (char *cmd, char * xml_name) {
   xmlDocPtr doc;
   char *curl_cmd = NULL;
-  asprintf (&curl_cmd, "curl  -s -b cookie_file -c cookie_file -H \"Content-type: text/xml\" -d \"<requests output='XML'>%s</requests>\" http://%s/doh/ > %s", cmd, server_name, xml_name);
-  system (curl_cmd);
+  if (asprintf (&curl_cmd, "curl -H \"Content-type: text/xml\" -d \"<requests output='XML'>%s</requests>\" http://%s/doh/ > %s", cmd, server_name, xml_name) == -1) {
+    perror ("asprintf");
+    exit (EXIT_FAILURE);
+  }
+
+  int r = system (curl_cmd);
+  if (r != 0)
+  {
+    return NULL;
+  }
   doc = xmlReadFile (xml_name, NULL, XML_PARSE_NOBLANKS);
 
   if ( remove (xml_name) != 0 )
       perror ("remove");
   return doc;
+}
+
+static void
+do_doh_test_request (void)
+{
+  char *curl_cmd = NULL;
+
+  if (asprintf (&curl_cmd, "curl -H \"Content-type: text/xml\" -d \"<requests output='XML'><request id='1' target='supernova'><select>supernova/version</select></request></requests>\" http://%s/doh/", server_name) == -1) {
+    perror ("asprintf");
+    exit (EXIT_FAILURE);
+  }
+  int r = system (curl_cmd);
+  if (r == 0)
+  {
+    is_server_everrun = 1;
+  }
 }
