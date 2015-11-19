@@ -66,6 +66,7 @@ static void set_network_name (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data);
 static xmlDocPtr do_doh_request(char *cmd, char * xml_name);
 static void do_doh_test_request (void);
+static xmlDocPtr do_mock_request (char *cmd, char * xml_name);
 static void network_clicked (GtkWidget * widget, GtkTreePath *path, GtkTreeViewColumn *col, gpointer data);
 static void output_clicked (GtkWidget *w, gpointer data);
 
@@ -715,7 +716,7 @@ output_clicked (GtkWidget *w, gpointer data) {
   struct config *config = data;
   CLEANUP_FREE char *output_value;
 
-  output_value = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (o_combo));
+  output_value = gtk_combo_box_get_active_text (GTK_COMBO_BOX (o_combo));
 
   if (output_value == NULL || STREQ (output_value, "everrunft") ||STREQ (output_value, "everrunha")) {
 
@@ -779,7 +780,7 @@ repopulate_output_combo (struct config *config)
   if (config && config->output)
     output = strdup (config->output);
   else
-    output = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (o_combo));
+    output = gtk_combo_box_get_active_text (GTK_COMBO_BOX (o_combo));
 
   /* Remove existing rows in o_combo. */
   model = gtk_combo_box_get_model (GTK_COMBO_BOX (o_combo));
@@ -1034,6 +1035,7 @@ set_group_name (GtkWidget * widget, GtkTreePath *path,
           perror ("asprintf");
           exit (EXIT_FAILURE);
       }
+      printf("group is %s\n", group);
       gtk_list_store_set (GTK_LIST_STORE (model), &iter, DISKS_COL_GROUP, group, -1);
       b = gtk_tree_model_iter_next (model, &iter);
     }
@@ -1077,7 +1079,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     if (gtk_tree_model_get_iter (model, &iter, path) ) {
         gtk_tree_model_get (model, &iter, DISKS_COL_DEVICE, &value, -1);
     }
-    dialog = gtk_dialog_new_with_buttons ("Choose Storage Group",conv_dlg,
+    dialog = gtk_dialog_new_with_buttons ("Choose Storage Group", conv_dlg,
                                          GTK_DIALOG_MODAL,
                                          GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL,
                                          GTK_STOCK_OK, GTK_RESPONSE_OK,
@@ -1092,10 +1094,10 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     for (int i = 0; group_name[i] != NULL; i++) {
         char name[strlen (group_name[i])];
         strcpy (name, group_name[i]);
-        gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT(combo), name);
+        gtk_combo_box_append_text (GTK_COMBO_BOX (combo), name);
         strcpy (name, "");
     }
-    gtk_combo_box_set_active (combo, 0);
+    gtk_combo_box_set_active (GTK_COMBO_BOX (combo), 0);
     g_signal_connect (G_OBJECT (combo), "changed",
                     G_CALLBACK (group_or_network_changed), NULL);
 
@@ -1130,8 +1132,8 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
 }
 
 static void
-group_or_network_changed () {
-  combo_group = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (combo));
+group_or_network_changed (void) {
+  combo_group = gtk_combo_box_get_active_text (GTK_COMBO_BOX (combo));
 }
 
 static void
@@ -1261,9 +1263,9 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     for (int i = 0; network_name[i] != NULL; i++) {
         char name[strlen (network_name[i])];
         strcpy (name, network_name[i]);
-        gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (combo), name);
+        gtk_combo_box_text_append_text (GTK_COMBO_BOX (combo), name);
     }
-    gtk_combo_box_set_active (combo, 0);
+    gtk_combo_box_set_active (GTK_COMBO_BOX (combo), 0);
     g_signal_connect (G_OBJECT (combo), "changed",
                     G_CALLBACK (group_or_network_changed), NULL);
 
@@ -1748,10 +1750,10 @@ start_conversion_clicked (GtkWidget *w, gpointer data)
   /* Output selection. */
   free (config->output);
   config->output =
-    gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (o_combo));
+    gtk_combo_box_get_active_text (GTK_COMBO_BOX (o_combo));
 
   config->output_allocation = OUTPUT_ALLOCATION_NONE;
-  str2 = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (oa_combo));
+  str2 = gtk_combo_box_get_active_text (GTK_COMBO_BOX (oa_combo));
   if (str2) {
     if (STREQ (str2, "sparse"))
       config->output_allocation = OUTPUT_ALLOCATION_SPARSE;
@@ -1919,8 +1921,10 @@ get_network_name (void) {
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
     char xmlname[] = "network.xml";
-    char cmd[] = "<request id='1' target='supernova'><watch/></request>";
-    network_doc = do_doh_request (cmd, xmlname);
+    // char cmd[] = "<request id='1' target='supernova'><watch/></request>";
+    char cmd[] = "network";
+    // network_doc = do_doh_request (cmd, xmlname);
+    network_doc = do_mock_request (cmd, xmlname);
     xmlChar *xpath = (xmlChar*)"/responses/response/output/sharednetwork[role='BUSINESS']/name";
 
     result = getnodeset (network_doc, xpath);
@@ -1945,8 +1949,10 @@ get_group_name (void) {
     xmlNodeSetPtr nodeset;
     xmlXPathObjectPtr result;
     char xmlname[] = "group.xml";
-    char cmd[] = "<request id='1' target='supernova'><watch/></request>";
-    group_doc =  do_doh_request (cmd, xmlname);
+    // char cmd[] = "<request id='1' target='supernova'><watch/></request>";
+    char cmd[] = "watch";
+    // group_doc =  do_doh_request (cmd, xmlname);
+    group_doc =  do_mock_request (cmd, xmlname);
 
     xmlChar *xpath = (xmlChar*)"/responses/response/output/storagegroup/name";
     result = getnodeset (group_doc, xpath);
@@ -2037,4 +2043,25 @@ do_doh_test_request (void)
   {
     is_server_everrun = 1;
   }
+}
+
+static xmlDocPtr
+do_mock_request (char *cmd, char * xml_name) {
+  xmlDocPtr doc;
+  char *curl_cmd = NULL;
+  if (asprintf (&curl_cmd, "curl http://localhost:8999/%s > %s", cmd, xml_name) == -1) {
+    perror ("asprintf");
+    exit (EXIT_FAILURE);
+  }
+
+  int r = system (curl_cmd);
+  if (r != 0)
+  {
+    return NULL;
+  }
+  doc = xmlReadFile (xml_name, NULL, XML_PARSE_NOBLANKS);
+
+  if ( remove (xml_name) != 0 )
+      perror ("remove");
+  return doc;
 }
