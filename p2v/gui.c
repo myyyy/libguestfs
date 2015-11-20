@@ -443,6 +443,8 @@ static void vcpus_or_memory_check_callback (GtkWidget *w, gpointer data);
 static void notify_ui_callback (int type, const char *data);
 static int get_vcpus_from_conv_dlg (void);
 static uint64_t get_memory_from_conv_dlg (void);
+static int disk_check_for_disks (struct config *);
+static int disk_check_for_map (struct config *);
 
 enum {
   DISKS_COL_CONVERT = 0,
@@ -1342,13 +1344,6 @@ set_from_ui_generic (char **all, char ***ret, GtkTreeView *list)
 }
 
 static void
-set_disks_from_ui (struct config *config)
-{
-  set_from_ui_generic (all_disks, &config->disks,
-                       GTK_TREE_VIEW (disks_list));
-}
-
-static void
 set_removable_from_ui (struct config *config)
 {
   set_from_ui_generic (all_removable, &config->removable,
@@ -1360,6 +1355,51 @@ set_interfaces_from_ui (struct config *config)
 {
   set_from_ui_generic (all_interfaces, &config->interfaces,
                        GTK_TREE_VIEW (interfaces_list));
+}
+
+static void
+set_disks_from_ui (struct config *config)
+{
+  GtkTreeView *list;
+  GtkTreeModel *model;
+  GtkTreeIter iter;
+  gboolean b;
+  const char *s;
+  size_t i, j;
+
+  if (disk_check_for_disks (config) == -1) {
+    return;
+  }
+  list = GTK_TREE_VIEW (disks_list);
+  model = gtk_tree_view_get_model (list);
+
+  guestfs_int_free_string_list (config->disks);
+  config->disks = malloc ((1 + guestfs_int_count_strings (all_disks)) * sizeof (char *));
+  if (config->disks == NULL) {
+    perror ("malloc");
+    exit (EXIT_FAILURE);
+  }
+  i = j = 0;
+
+  b = gtk_tree_model_get_iter_first (model, &iter);
+  if (root_disk) {
+    gtk_tree_model_get (model, &iter, DISKS_COL_DEVICE, &s, -1);
+    if (s) {
+      config->root_disk = strdup (s);
+    }
+    b = gtk_tree_model_iter_next (model, &iter);
+  }
+  while (b) {
+    gtk_tree_model_get (model, &iter, DISKS_COL_DEVICE, &s, -1);
+    if (s) {
+      assert (all_disks[i] != NULL);
+      config->disks[j] = strdup (all_disks[i]);
+      ++j;
+    }
+    b = gtk_tree_model_iter_next (model, &iter);
+    ++i;
+  }
+  config->disks[j] = NULL;
 }
 
 static void
@@ -1409,6 +1449,7 @@ set_network_map_from_ui (struct config *config)
 
   config->network_map[j] = NULL;
 }
+
 static void
 set_disk_map_from_ui (struct config *config)
 {
@@ -1418,27 +1459,41 @@ set_disk_map_from_ui (struct config *config)
   gboolean b;
   const char *s;
   size_t i, j;
-  if (all_disks == NULL) {
-    guestfs_int_free_string_list (config->disk_map);
-    config->disk_map = NULL;
+
+  if (disk_check_for_map (config) == -1) {
     return;
   }
   list = GTK_TREE_VIEW (disks_list);
   model = gtk_tree_view_get_model (list);
 
   guestfs_int_free_string_list (config->disk_map);
-  config->disk_map = malloc (1 +guestfs_int_count_strings (all_disks) * sizeof (char *));
+  if (root_disk) {
+    config->disk_map = malloc ((2 + guestfs_int_count_strings (all_disks)) * sizeof (char *));
+  } else {
+    config->disk_map = malloc ((1 + guestfs_int_count_strings (all_disks)) * sizeof (char *));
+  }
   if (config->disk_map == NULL) {
     perror ("malloc");
     exit (EXIT_FAILURE);
   }
   i = j = 0;
   b = gtk_tree_model_get_iter_first (model, &iter);
+  if (root_disk) {
+    gtk_tree_model_get (model, &iter, DISKS_COL_GROUP, &s, -1);
+    if (s) {
+      if (asprintf (&config->disk_map[j], "%s:%s", root_disk, s) == -1) {
+        perror ("asprintf");
+        exit (EXIT_FAILURE);
+      }
+    }
+    b = gtk_tree_model_iter_next (model, &iter);
+    ++j;
+  }
   while (b) {
     gtk_tree_model_get (model, &iter, DISKS_COL_GROUP, &s, -1);
     if (s) {
       assert (all_disks[i] != NULL);
-      if (asprintf (&config->disk_map[i], "%s:%s", all_disks[i], s) == -1) {
+      if (asprintf (&config->disk_map[j], "%s:%s", all_disks[i], s) == -1) {
         perror ("asprintf");
         exit (EXIT_FAILURE);
       }
@@ -1449,6 +1504,53 @@ set_disk_map_from_ui (struct config *config)
   }
   config->disk_map = NULL;
 }
+
+static int
+disk_check_for_disks (struct config *config)
+{
+  if (root_disk == NULL && all_disks != NULL)
+  {
+    free (config->root_disk);
+    config->root_disk = NULL;
+    return 1;
+  }
+  else if (root_disk != NULL && all_disks != NULL)
+  {
+    return 2;
+  }
+  else
+  {
+    free (config->root_disk);
+    config->root_disk = NULL;
+    guestfs_int_free_string_list (config->disks);
+    config->disks = NULL;
+    return -1;
+  }
+}
+
+static int
+disk_check_for_map (struct config *config)
+{
+  if (root_disk == NULL && all_disks != NULL)
+  {
+    free (config->root_disk_map);
+    config->root_disk_map = NULL;
+    return 1;
+  }
+  else if (root_disk != NULL && all_disks != NULL)
+  {
+    return 2;
+  }
+  else
+  {
+    free (config->root_disk_map);
+    config->root_disk_map = NULL;
+    guestfs_int_free_string_list (config->disk_map);
+    config->disk_map = NULL;
+    return -1;
+  }
+}
+
 /* The conversion dialog Back button has been clicked. */
 static void
 conversion_back_clicked (GtkWidget *w, gpointer data)
