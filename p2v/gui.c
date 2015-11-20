@@ -347,7 +347,6 @@ test_connection_thread (void *data)
 {
   struct config *copy = data;
   server_name = strdup (copy->server);
-  printf("[franklin] server name is %s\n", server_name);
   int r;
 
   gdk_threads_enter ();
@@ -1095,7 +1094,6 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
 
     for (int i = 0; group_name[i] != NULL; i++) {
         char *name = strdup (group_name[i]);
-        printf("[franklin] name is %s\n", name);
         gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (sg_combo), name);
         free (name);
     }
@@ -1263,8 +1261,8 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     gtk_dialog_set_default_response (GTK_DIALOG(dialog), GTK_RESPONSE_OK);
     char *str = strdup (value);
     sscanf (value, "%*[^>]>%[^<]" , str);
-    free (str);
     device_name = gtk_label_new (_(str));
+    free (str);
     vn_combo = gtk_combo_box_text_new ();
     for (int i = 0; network_name[i] != NULL; i++) {
         char *name = strdup (network_name[i]);
@@ -1936,14 +1934,11 @@ get_network_name (void) {
     result = getnodeset (network_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
-        network_name = realloc (network_name , sizeof (char *) * (nodeset->nodeNr));
-        if (network_name != NULL) {
-          for (i = 0; i < nodeset->nodeNr; i++) {
-            char *network_name_temp = (char*) xmlNodeListGetString (network_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
-            network_name[i] = strdup (network_name_temp);
-          }
-        } else {
-          perror ("Network name is required");
+        for (i = 0; i < nodeset->nodeNr; i++) {
+          network_name = realloc (network_name , sizeof (char *) * (i + 2));
+          char *network_name_temp = (char*) xmlNodeListGetString (network_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+          network_name[i] = strdup (network_name_temp);
+          network_name[i + 1] = NULL;
         }
     }
     xmlCleanupParser ();
@@ -1964,16 +1959,12 @@ get_group_name (void) {
     result = getnodeset (group_doc, xpath);
     if (result) {
         nodeset = result->nodesetval;
-        group_name = realloc (group_name , sizeof (char *) * (nodeset->nodeNr));
-        if (group_name != NULL) {
-          for (i = 0; i < nodeset->nodeNr; i++) {
-            char *group_name_temp = (char*) xmlNodeListGetString (group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
-            group_name[i] = strdup (group_name_temp);
-          }
-        } else {
-          perror ("Group name is required");
+        for (i = 0; i < nodeset->nodeNr; i++) {
+          group_name = realloc (group_name , sizeof (char *) * (i + 2));
+          char *group_name_temp = (char*) xmlNodeListGetString (group_doc, nodeset->nodeTab[i]->xmlChildrenNode, 1);
+          group_name[i] = strdup (group_name_temp);
+          group_name[i + 1] = NULL;
         }
-
     }
     xmlCleanupParser ();
 }
@@ -1993,7 +1984,6 @@ get_default_group_name (void) {
           default_group_name = strdup (group_name[0]);
         }
     }
-    printf("[franklin] default Storage Group name is %s\n", default_group_name);
     xmlCleanupParser ();
 }
 static void
@@ -2012,7 +2002,6 @@ get_default_network_name (void) {
           default_network_name = strdup (network_name[0]);
         }
     }
-    printf("[franklin] default network name is %s\n", default_network_name);
     xmlCleanupParser ();
 }
 
