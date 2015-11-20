@@ -1980,7 +1980,7 @@ get_default_group_name (void) {
         if (nodeset->nodeNr > 0) {
           char *default_group_name_temp = (char*) xmlNodeListGetString (group_doc, nodeset->nodeTab[0]->xmlChildrenNode, 1);
           default_group_name = strdup (default_group_name_temp);
-        } else{
+        } else {
           default_group_name = strdup (group_name[0]);
         }
     }
