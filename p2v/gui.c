@@ -356,7 +356,8 @@ test_connection_thread (void *data)
   gdk_threads_leave ();
 
   wait_network_online (copy);
-  r = test_connection (copy);
+  // r = test_connection (copy);
+  r  = 0;
   free_config (copy);
 
   gdk_threads_enter ();
@@ -1467,24 +1468,18 @@ set_disk_map_from_ui (struct config *config)
   model = gtk_tree_view_get_model (list);
 
   guestfs_int_free_string_list (config->disk_map);
-  if (root_disk) {
-    config->disk_map = malloc ((2 + guestfs_int_count_strings (all_disks)) * sizeof (char *));
-  } else {
-    config->disk_map = malloc ((1 + guestfs_int_count_strings (all_disks)) * sizeof (char *));
-  }
+  config->disk_map = malloc ((1 + guestfs_int_count_strings (all_disks)) * sizeof (char *));
   if (config->disk_map == NULL) {
     perror ("malloc");
     exit (EXIT_FAILURE);
   }
+
   i = j = 0;
   b = gtk_tree_model_get_iter_first (model, &iter);
   if (root_disk) {
     gtk_tree_model_get (model, &iter, DISKS_COL_GROUP, &s, -1);
     if (s) {
-      if (asprintf (&config->disk_map[j], "%s:%s", root_disk, s) == -1) {
-        perror ("asprintf");
-        exit (EXIT_FAILURE);
-      }
+      config->root_disk_map = strdup (s);
     }
     b = gtk_tree_model_iter_next (model, &iter);
     ++j;

@@ -141,13 +141,14 @@ print_config (struct config *config, FILE *fp)
            config->flags & FLAG_ACPI ? " acpi" : "",
            config->flags & FLAG_APIC ? " apic" : "",
            config->flags & FLAG_PAE  ? " pae"  : "");
-  fprintf (fp, "root disk  . . . . .   %s\n", config->root_disk);
-  fprintf (fp, "root disk map  . . . . .   %s\n", config->root_disk_map);
+  fprintf (fp, "root disk  . . .   %s\n", config->root_disk);
+  fprintf (fp, "root disk map  . . .   %s\n", config->root_disk_map);
   fprintf (fp, "disks  . . . . .  ");
   if (config->disks != NULL) {
     for (i = 0; config->disks[i] != NULL; ++i)
       fprintf (fp, " %s", config->disks[i]);
   }
+  fprintf (fp, "\n");
   fprintf (fp, "disk map  . . . . .  ");
   if (config->disk_map != NULL) {
     for (i = 0; config->disk_map[i] != NULL; ++i)

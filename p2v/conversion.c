@@ -232,6 +232,7 @@ start_conversion (struct config *config,
   fprintf (stderr, "%s: libvirt XML:\n%s", guestfs_int_program_name, libvirt_xml);
 #endif
 
+  printf("[franklin] before compare\n");
   if (strcmp (config->output, "everrunft") == 0 || strcmp (config->output, "everrunha") == 0)
   {
     config_xml = generate_config_xml(config, data_conns);
@@ -696,6 +697,7 @@ cleanup_data_conns (struct data_conn *data_conns, size_t nr)
 static char *
 generate_config_xml (struct config *config, struct data_conn *data_conns)
 {
+  printf("[franklin] generate_config_xml\n");
   char *ret;
   CLEANUP_XMLBUFFERFREE xmlBufferPtr xb = NULL;
   xmlOutputBufferPtr ob;
@@ -742,13 +744,17 @@ generate_config_xml (struct config *config, struct data_conn *data_conns)
 
     start_element ("devices") {
 
-      char target_root_dev[64];
-      char target_root_disk_map[64];
+      if (config->root_disk && config->root_disk_map) {
+        printf("[franklin] add element root\n");
+        char target_root_dev[64];
+        char target_root_disk_map[64];
 
-      strcpy (target_root_dev, config->root_disk);
-      strcpy (target_root_disk_map, config->root_disk_map);
+        strcpy (target_root_dev, config->root_disk);
+        strcpy (target_root_disk_map, config->root_disk_map);
+        printf("root disk is %s\n", target_root_dev);
+        printf("root disk map is %s\n", target_root_dev);
 
-      start_element ("disk") {
+        start_element ("disk") {
           attribute ("type", "network");
           attribute ("device", "disk");
           start_element ("source") {
@@ -762,7 +768,9 @@ generate_config_xml (struct config *config, struct data_conn *data_conns)
             /* XXX Need to set bus to "ide" or "scsi" here. */
           } end_element ();
         } end_element ();
+      }
 
+      printf("[franklin] add element other\n");
       for (i = 0; config->disks[i] != NULL; ++i) {
         const char *target_group;
         char target_dev[64];
@@ -780,6 +788,8 @@ generate_config_xml (struct config *config, struct data_conn *data_conns)
             goto target_sd;
         }
 
+        printf("disk %zu is %s\n", i, target_dev);
+        printf("disk map %zu is %s\n", i, target_group);
         start_element ("disk") {
           attribute ("type", "network");
           attribute ("device", "disk");
