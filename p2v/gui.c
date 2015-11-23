@@ -48,6 +48,7 @@ int group_columns;
 int network_columns;
 int group_num;
 int network_num;
+int test_column = 0;
 /* Interactive GUI configuration. */
 static void get_group_name(void);
 static void get_network_name(void);
@@ -1010,9 +1011,17 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
         strcpy (name, group_name[i]);
         gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), name);
         strcpy (name, "");
-      }
 
-    gtk_combo_box_set_active(combo, 0);
+      }
+    char *group_value;
+    gtk_tree_model_get(model, &iter, DISKS_COL_GROUP, &group_value, -1);
+    for (int i = 0; i < group_num; i++) {
+      if (STREQ (group_name[i], group_value))
+            {
+              gtk_combo_box_set_active (GTK_COMBO_BOX (combo), i);
+            }
+    }
+
     g_signal_connect (G_OBJECT (combo), "changed",
                     G_CALLBACK (group_or_network_changed),NULL);
 
@@ -1034,11 +1043,11 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
       case GTK_RESPONSE_OK:
         if(combo_group == NULL){
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-                      DISKS_COL_MODEL, "Initial Storage Group", -1);
+                      DISKS_COL_MODEL, "Initial", -1);
           combo_group = NULL;
         }else{
           gtk_list_store_set (GTK_LIST_STORE (model), &iter,
-                      DISKS_COL_MODEL, combo_group, -1);
+                      DISKS_COL_GROUP, combo_group, -1);
           combo_group = NULL;
         }
         break;
@@ -1049,6 +1058,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
 /* Author:Ian*/
 static void
 group_or_network_changed(){
+  GtkTreeIter iter;
   combo_group = gtk_combo_box_text_get_active_text (GTK_COMBO_BOX_TEXT (combo));
 }
 static void
@@ -1224,7 +1234,16 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
         strcpy (name, network_name[i]);
         gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(combo), name);
       }
-    gtk_combo_box_set_active(combo, 0);
+
+    char *network_value;
+    gtk_tree_model_get(model, &iter, INTERFACES_COL_NETWORK, &network_value, -1);
+    for (int i= 0; i < network_num; i++) {
+      if (STREQ (network_name[i], network_value))
+            {
+              gtk_combo_box_set_active (GTK_COMBO_BOX (combo), i);
+            }
+    }
+
     g_signal_connect (G_OBJECT (combo), "changed",
                     G_CALLBACK (group_or_network_changed),NULL);
 
