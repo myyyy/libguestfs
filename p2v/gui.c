@@ -1102,7 +1102,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
         free (name);
     }
     // gtk_combo_box_set_active (GTK_COMBO_BOX (sg_combo), 0);
-    gtk_tree_model_get(model, &iter, DISKS_COL_GROUP, &sg_name, -1);
+    gtk_tree_model_get (model, &iter, DISKS_COL_GROUP, &sg_name, -1);
 
     for (int i = 0; group_name[i] != NULL; i++) {
       if (STREQ (group_name[i], sg_name)) {
