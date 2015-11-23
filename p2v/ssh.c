@@ -751,16 +751,6 @@ start_remote_connection (struct config *config,
     goto error;
   }
 
-  if (strcmp (config->output, "everrunft") == 0 || strcmp (config->output, "everrunha") == 0)
-  {
-    if (mexp_printf (h, "echo '%s' > %s/config.xml\n",
-                   config_xml, remote_dir) == -1) {
-      set_ssh_error ("mexp_printf: %m");
-      goto error;
-    }
-  }
-
-
   if (wait_for_prompt (h) == -1)
     goto error;
 
@@ -782,6 +772,16 @@ start_remote_connection (struct config *config,
                    magic) == -1) {
     set_ssh_error ("mexp_printf: %m");
     goto error;
+  }
+
+  /* Upload the config XML to the remote directory. */
+  if (strcmp (config->output, "everrunft") == 0 || strcmp (config->output, "everrunha") == 0)
+  {
+    if (mexp_printf (h, "echo '%s' > %s/config.xml\n",
+                   config_xml, remote_dir) == -1) {
+      set_ssh_error ("mexp_printf: %m");
+      goto error;
+    }
   }
 
   if (wait_for_prompt (h) == -1)

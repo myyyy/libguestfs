@@ -212,7 +212,8 @@ start_conversion (struct config *config,
   time (&now);
   gmtime_r (&now, &tm);
   if (asprintf (&remote_dir,
-                "/tmp/virt-p2v-%04d%02d%02d-XXXXXXXX",
+                "/home/franklin/temp/download/tmp/virt-p2v-%04d%02d%02d-XXXXXXXX",
+                // "/tmp/virt-p2v-%04d%02d%02d-XXXXXXXX",
                 tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday) == -1) {
     perror ("asprintf");
     cleanup_data_conns (data_conns, nr_disks);
@@ -297,19 +298,19 @@ start_conversion (struct config *config,
     if (send_quoted (control_h, config->output_format) == -1)
       goto printf_fail;
   }
+  if (strcmp (config->output, "everrunft") == 0 || strcmp (config->output, "everrunha") == 0) {
+    char *output_storage = NULL;
+    if (asprintf (&output_storage, "%s/config.xml", remote_dir) == -1) {
+      perror ("asprintf");
+      exit (EXIT_FAILURE);
+    }
+    config->output_storage = strdup (output_storage);
+  }
   if (config->output_storage) { /* -os */
     if (mexp_printf (control_h, " -os ") == -1)
       goto printf_fail;
-    if (strcmp (config->output, "everrunft") == 0 || strcmp (config->output, "everrunha") == 0)
-    {
-      if (mexp_printf (control_h, " %s/config.xml", remote_dir) == -1)
-        goto printf_fail;
-    }
-    else
-    {
-      if (send_quoted (control_h, config->output_storage) == -1)
-        goto printf_fail;
-    }
+    if (send_quoted (control_h, config->output_storage) == -1)
+      goto printf_fail;
   }
   if (mexp_printf (control_h, " --root first") == -1)
     goto printf_fail;
@@ -752,7 +753,7 @@ generate_config_xml (struct config *config, struct data_conn *data_conns)
         strcpy (target_root_dev, config->root_disk);
         strcpy (target_root_disk_map, config->root_disk_map);
         printf("root disk is %s\n", target_root_dev);
-        printf("root disk map is %s\n", target_root_dev);
+        printf("root disk map is %s\n", target_root_disk_map);
 
         start_element ("disk") {
           attribute ("type", "network");
@@ -809,23 +810,9 @@ generate_config_xml (struct config *config, struct data_conn *data_conns)
       if (config->interfaces) {
         for (i = 0; config->interfaces[i] != NULL; ++i) {
           const char *target_network;
-          CLEANUP_FREE char *mac_filename = NULL;
-          CLEANUP_FREE char *mac = NULL;
 
           target_network =
             map_interface_to_network (config, config->interfaces[i]);
-
-          if (asprintf (&mac_filename, "/sys/class/net/%s/address",
-                        config->interfaces[i]) == -1) {
-            perror ("asprintf");
-            exit (EXIT_FAILURE);
-          }
-          if (g_file_get_contents (mac_filename, &mac, NULL, NULL)) {
-            size_t len = strlen (mac);
-
-            if (len > 0 && mac[len-1] == '\n')
-              mac[len-1] = '\0';
-          }
 
           start_element ("interface") {
             attribute ("type", "network");
