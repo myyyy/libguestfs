@@ -1079,6 +1079,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     GtkTreeModel *model;
     gint result;
     char *value;
+    char *sg_name;
     model = gtk_tree_view_get_model (GTK_TREE_VIEW (widget));
     if (gtk_tree_model_get_iter (model, &iter, path)) {
         gtk_tree_model_get (model, &iter, DISKS_COL_DEVICE, &value, -1);
@@ -1100,7 +1101,14 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
         gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (sg_combo), name);
         free (name);
     }
-    gtk_combo_box_set_active (GTK_COMBO_BOX (sg_combo), 0);
+    // gtk_combo_box_set_active (GTK_COMBO_BOX (sg_combo), 0);
+    gtk_tree_model_get(model, &iter, DISKS_COL_GROUP, &sg_name, -1);
+
+    for (int i = 0; group_name[i] != NULL; i++) {
+      if (STREQ (group_name[i], sg_name)) {
+        gtk_combo_box_set_active (GTK_COMBO_BOX (sg_combo), i);
+      }
+    }
     g_signal_connect (G_OBJECT (sg_combo), "changed",
                     G_CALLBACK (group_changed), NULL);
 
@@ -1249,6 +1257,7 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     GtkTreeModel *model;
     gint result;
     char *value;
+    char *vn_name;
     model = gtk_tree_view_get_model (GTK_TREE_VIEW (widget));
     if (gtk_tree_model_get_iter (model, &iter, path)) {
         gtk_tree_model_get (model, &iter, INTERFACES_COL_DEVICE, &value, -1);
@@ -1272,7 +1281,13 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
         gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (vn_combo), name);
         free (name);
     }
-    gtk_combo_box_set_active (GTK_COMBO_BOX (vn_combo), 0);
+    // gtk_combo_box_set_active (GTK_COMBO_BOX (vn_combo), 0);
+    gtk_tree_model_get (model, &iter, INTERFACES_COL_NETWORK, &vn_name, -1);
+    for (int i = 0; network_name[i] != NULL; i++) {
+      if (STREQ (network_name[i], vn_name)) {
+        gtk_combo_box_set_active (GTK_COMBO_BOX (vn_combo), i);
+      }
+    }
     g_signal_connect (G_OBJECT (vn_combo), "changed",
                     G_CALLBACK (network_changed), NULL);
 
