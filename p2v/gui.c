@@ -1073,7 +1073,9 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     GtkWidget *device_name;
     GtkWidget *table;
     GtkTreeIter iter;
+
     GtkTreeModel *model;
+
     gint result;
     char *value;
     model = gtk_tree_view_get_model (GTK_TREE_VIEW (widget));
@@ -1097,7 +1099,15 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
         gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (sg_combo), name);
         free (name);
     }
-    gtk_combo_box_set_active (GTK_COMBO_BOX (sg_combo), 0);
+    GtkTreeIter sg_combo_iter;
+    GtkTreeModel *sg_combo_model;
+    sg_combo_model = gtk_combo_box_get_model (GTK_COMBO_BOX (sg_combo));
+    if (gtk_tree_model_get_iter (sg_combo_model, &sg_combo_iter))
+    {
+       gtk_combo_box_set_active_iter(GTK_COMBO_BOX(sg_combo), &sg_combo_iter);
+    }
+
+
     g_signal_connect (G_OBJECT (sg_combo), "changed",
                     G_CALLBACK (group_changed), NULL);
 
@@ -1269,7 +1279,8 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
         gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (vn_combo), name);
         free (name);
     }
-    gtk_combo_box_set_active (GTK_COMBO_BOX (vn_combo), 0);
+    gtk_combo_box_set_active_iter(GTK_COMBO_BOX (vn_combo), &iter);
+
     g_signal_connect (G_OBJECT (vn_combo), "changed",
                     G_CALLBACK (network_changed), NULL);
 
@@ -1341,11 +1352,53 @@ set_from_ui_generic (char **all, char ***ret, GtkTreeView *list)
   (*ret)[j] = NULL;
 }
 
+
 static void
 set_disks_from_ui (struct config *config)
 {
-  set_from_ui_generic (all_disks, &config->disks,
-                       GTK_TREE_VIEW (disks_list));
+  GtkTreeView *list;
+  GtkTreeModel *model;
+  GtkTreeIter iter;
+  gboolean b;
+  const char *s;
+  size_t i, j;
+
+  if (all_disks == NULL) {
+    guestfs_int_free_string_list (config->disks);
+    config->disks = NULL;
+    return;
+  }
+
+  list = GTK_TREE_VIEW (disks_list);
+  model = gtk_tree_view_get_model (list);
+
+  guestfs_int_free_string_list (config->disks);
+  config->disks =
+    malloc ((1 + guestfs_int_count_strings (all_disks))
+            * sizeof (char *));
+  if (config->disks == NULL) {
+    perror ("malloc");
+    exit (EXIT_FAILURE);
+  }
+  i = j = 0;
+
+  b = gtk_tree_model_get_iter_first (model, &iter);
+  while (b) {
+    gtk_tree_model_get (model, &iter, 0, &s, -1);
+    if (s) {
+      assert (all_disks[i] != NULL);
+      if (asprintf (&config->disks[j], "%s:%s",
+                    all_disks[i], s) == -1) {
+        perror ("asprintf");
+        exit (EXIT_FAILURE);
+      }
+      ++j;
+    }
+    b = gtk_tree_model_iter_next (model, &iter);
+    ++i;
+  }
+
+  config->disks[j] = NULL;
 }
 
 static void
