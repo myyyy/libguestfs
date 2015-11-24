@@ -1019,6 +1019,7 @@ populate_removable (GtkTreeView *removable_list)
                     G_CALLBACK (toggled), removable_store);
 }
 
+/* Set default group name */
 static void
 set_group_name (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data){
@@ -1042,7 +1043,7 @@ set_group_name (GtkWidget * widget, GtkTreePath *path,
     }
 }
 
-
+/* Set default network name */
 static void
 set_network_name (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data) {
@@ -1065,6 +1066,7 @@ set_network_name (GtkWidget * widget, GtkTreePath *path,
     }
 }
 
+/* User double clicked the disks list to choose storage group */
 static void
 group_clicked (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data)
@@ -1094,6 +1096,7 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     device_name = gtk_label_new (_(value));
     sg_combo = gtk_combo_box_text_new ();
 
+    /* List of group name */
     for (int i = 0; group_name[i] != NULL; i++) {
         char *name = strdup (group_name[i]);
         gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (sg_combo), name);
@@ -1102,6 +1105,8 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     GtkTreeIter sg_combo_iter;
     GtkTreeModel *sg_combo_model;
     sg_combo_model = gtk_combo_box_get_model (GTK_COMBO_BOX (sg_combo));
+
+     /* Set the active group */
     if (gtk_tree_model_get_iter (sg_combo_model, &sg_combo_iter))
     {
        gtk_combo_box_set_active_iter(GTK_COMBO_BOX(sg_combo), &sg_combo_iter);
@@ -1118,6 +1123,8 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     gtk_table_set_col_spacings (GTK_TABLE (table), 5);
     gtk_container_set_border_width (GTK_CONTAINER (table), 5);
     gtk_box_pack_start_defaults (GTK_BOX (GTK_DIALOG (dialog)->vbox), table);
+
+    /* Show the group combo dialog */
     gtk_widget_show_all (dialog);
     result = gtk_dialog_run (GTK_DIALOG (dialog) );
 
@@ -1141,11 +1148,13 @@ group_clicked (GtkWidget * widget, GtkTreePath *path,
     g_free (value);
 }
 
+/* Get active text from the group combo */
 static void
 group_changed (void) {
   combo_group = gtk_combo_box_get_active_text (GTK_COMBO_BOX (sg_combo));
 }
 
+/* Get active text from the network combo */
 static void
 network_changed (void) {
   combo_group = gtk_combo_box_get_active_text (GTK_COMBO_BOX (vn_combo));
@@ -1245,6 +1254,7 @@ toggled (GtkCellRendererToggle *cell, gchar *path_str, gpointer data)
   gtk_tree_path_free (path);
 }
 
+/* User double clicked the network list to choose network */
 static void
 network_clicked (GtkWidget * widget, GtkTreePath *path,
                       GtkTreeViewColumn *col, gpointer data)
@@ -1274,6 +1284,8 @@ network_clicked (GtkWidget * widget, GtkTreePath *path,
     device_name = gtk_label_new (_(str));
     free (str);
     vn_combo = gtk_combo_box_text_new ();
+
+    /* List of network name */
     for (int i = 0; network_name[i] != NULL; i++) {
         char *name = strdup (network_name[i]);
         gtk_combo_box_text_append_text (GTK_COMBO_BOX_TEXT (vn_combo), name);
@@ -1948,7 +1960,7 @@ reboot_clicked (GtkWidget *w, gpointer data)
   sleep (2);
   ignore_value (system ("/sbin/reboot"));
 }
-
+/* Analysis xml */
 static xmlXPathObjectPtr
 getnodeset (xmlDocPtr doc, xmlChar *xpath) {
     xmlXPathContextPtr context;
@@ -2057,7 +2069,7 @@ get_default_network_name (void) {
     }
     xmlCleanupParser ();
 }
-
+/* Get xml from doh*/
 // static xmlDocPtr
 // do_doh_request (char *cmd, char * xml_name) {
 //   xmlDocPtr doc;
